@@ -49,7 +49,9 @@ func (entity *WikidataEntity) FindWikipediaArticle() (string, string) {
 	return "", ""
 }
 
-func DownloadWikidataJSON(entityID string) (string, error) {
+func DownloadWikidataJSON(entityUrl string) (string, error) {
+	// split entityUrl by Q delimeter
+	entityID := entityUrl[len("http://www.wikidata.org/entity/"):]
 	url := "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=" + entityID + "&format=json"
 	println("Downloading JSON file: ", url)
 	resp, err := http.Get(url)

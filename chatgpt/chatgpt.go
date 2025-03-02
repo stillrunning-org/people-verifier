@@ -123,7 +123,8 @@ const (
 
 func AskChatGPT(messages []Message) (string, error) {
 	requestBody := RequestBody{
-		Model:    "gpt-4",
+		//Model:    "o3-mini-2025-01-31",
+		Model:    "o1-mini-2024-09-12",
 		Messages: messages,
 	}
 
