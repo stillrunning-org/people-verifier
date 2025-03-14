@@ -1,0 +1,972 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q16397",  "Name": "Bruce Lee",  "BirthDate": "1940-11-27T00:00:00Z",  "DeathDate": "1973-07-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruce%20Lee%201973%20%28cropped%29.jpg",  "SiteLinksCnt": 157,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"37313":{"pageid":37313,"ns":0,"title":"Bruce Lee","extract":"Bruce Lee (born Lee Jun-fan; November 27, 1940 \u2013 July 20, 1973) was a Hong Kong-American martial artist, actor, filmmaker, and philosopher. He was the founder of Jeet Kune Do, a hybrid martial arts philosophy which was formed from Lee's experiences in unarmed fighting and self-defense\u2014as well as eclectic, Zen Buddhist and Taoist philosophies\u2014as a new school of martial arts thought. With a film career spanning Hong Kong and the United States, Lee is regarded as the first global Chinese film star and one of the most influential martial artists in the history of  cinema. Known for his roles in five feature-length martial arts films, Lee is credited with helping to popularize martial arts films in the 1970s and promoting Hong Kong action cinema.\nBorn in San Francisco and raised in British Hong Kong, Lee was introduced to the Hong Kong film industry as a child actor by his father. His early martial arts experience included Wing Chun (trained under Ip Man), tai chi, boxing (winning a Hong Kong boxing tournament), and frequent street fighting (neighborhood and rooftop fights). In 1959, Lee moved to Seattle, where he enrolled at the University of Washington in 1961. It was during this time in the United States that he began considering making money by teaching martial arts, even though he aspired to have a career in acting. He opened his first martial arts school, operated out of his home in Seattle. After later adding a second school in Oakland, California, he once drew significant attention at the 1964 Long Beach International Karate Championships of California by making demonstrations and speaking. He subsequently moved to Los Angeles to teach, where his students included Chuck Norris, Sharon Tate, and Kareem Abdul-Jabbar. \nHis roles in America, including playing Kato in The Green Hornet introduced him to American audiences, but the cultural frictions that existed did not allow Lee to fully express himself. After returning to Hong Kong in 1971, Lee landed his first leading role in The Big Boss, directed by Lo Wei. A year later he starred in Fist of Fury, in which he portrayed Chen Zhen, and The Way of the Dragon, directed and written by Lee. He went on to star in the US-Hong Kong co-production Enter the Dragon (1973) and The Game of Death (1978). His Hong Kong and Hollywood-produced films, all of which were commercially successful, elevated Hong Kong martial arts films to a new level of popularity and acclaim, sparking a surge of Western interest in Chinese martial arts. The direction and tone of his films, including their fight choreography and diversification, dramatically influenced and changed martial arts and martial arts films worldwide. With his influence, kung fu films began to displace the wuxia film genre\u2014fights were choreographed more realistically, fantasy elements were discarded for real-world conflicts, and the characterisation of the male lead went from simply being a chivalrous hero to one that embodied the notion of masculinity.\nLee's career was cut short by his sudden death at age 32 from a brain edema, the causes of which remain a matter of dispute. Nevertheless, his films remained popular, gained a large cult following, and became widely imitated and exploited. He became an iconic figure known throughout the world, particularly among the Chinese, based upon his portrayal of Cantonese culture in his films, and among Asian Americans for defying Asian stereotypes in the United States. Since his death, Lee has continued to be a prominent influence on modern combat sports, including judo, karate, mixed martial arts, and boxing, as well as modern popular culture, including film, television, comics, animation, and video games. Time named Lee one of the 100 most important people of the 20th century.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q16397")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q16397",
+  "isRealHuman": true,
+  "birthDate": "1940-11-27",
+  "deathDate": "1973-07-20",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, confirming his age at death as 32.",
+  "shortDescriptionEn": "Bruce Lee (1940–1973) was a Hong Kong-American martial artist, actor, and filmmaker, renowned for founding Jeet Kune Do. He died at 32 from cerebral edema, with causes still debated.",
+  "shortDescriptionFr": "Bruce Lee (1940–1973) était un artiste martial, acteur et réalisateur américano-hongkongais, connu pour avoir fondé le Jeet Kune Do. Il est décédé à 32 ans d'un œdème cérébral, dont les causes sont encore débattues.",
+  "shortDescriptionDe": "Bruce Lee (1940–1973) war ein hongkong-amerikanischer Kampfkünstler, Schauspieler und Filmemacher, bekannt als Gründer des Jeet Kune Do. Er starb im Alter von 32 Jahren an einem Hirnödem, dessen Ursachen noch diskutiert werden.",
+  "shortDescriptionEs": "Bruce Lee (1940–1973) fue un artista marcial, actor y cineasta hongkonés-estadounidense, conocido por fundar el Jeet Kune Do. Murió a los 32 años por un edema cerebral, cuyas causas aún se debaten.",
+  "shortDescriptionRu": "Брюс Ли (1940–1973) — гонконгско-американский мастер боевых искусств, актер и режиссер, известный как основатель Джит Кун До. Он умер в 32 года от отека мозга, причины которого до сих пор обсуждаются.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bruce_Lee",
+    "https://www.britannica.com/biography/Bruce-Lee"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83163",  "Name": "Srinivasa Ramanujan",  "BirthDate": "1887-12-22T00:00:00Z",  "DeathDate": "1920-04-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Srinivasa%20Ramanujan%20-%20OPC%20-%201.jpg",  "SiteLinksCnt": 110,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"47717":{"pageid":47717,"ns":0,"title":"Srinivasa Ramanujan","extract":"Srinivasa Ramanujan Aiyangar\n(22 December 1887 \u2013 26 April 1920) was an Indian mathematician. Often regarded as one of the greatest mathematicians of all time, though he had almost no formal training in pure mathematics, he made substantial contributions to mathematical analysis, number theory, infinite series, and continued fractions, including solutions to mathematical problems then considered unsolvable.\nRamanujan initially developed his own mathematical research in isolation. According to Hans Eysenck, \"he tried to interest the leading professional mathematicians in his work, but failed for the most part. What he had to show them was too novel, too unfamiliar, and additionally presented in unusual ways; they could not be bothered\". Seeking mathematicians who could better understand his work, in 1913 he began a mail correspondence with the English mathematician G. H. Hardy at the University of Cambridge, England. Recognising Ramanujan's work as extraordinary, Hardy arranged for him to travel to Cambridge. In his notes, Hardy commented that Ramanujan had produced groundbreaking new theorems, including some that \"defeated me completely; I had never seen anything in the least like them before\", and some recently proven but highly advanced results.\nDuring his short life, Ramanujan independently compiled nearly 3,900 results (mostly identities and equations). Many were completely novel; his original and highly unconventional results, such as the Ramanujan prime, the Ramanujan theta function, partition formulae and mock theta functions, have opened entire new areas of work and inspired further research. Of his thousands of results, most have been proven correct. The Ramanujan Journal, a scientific journal, was established to publish work in all areas of mathematics influenced by Ramanujan, and his notebooks\u2014containing summaries of his published and unpublished results\u2014have been analysed and studied for decades since his death as a source of new mathematical ideas. As late as 2012, researchers continued to discover that mere comments in his writings about \"simple properties\" and \"similar outputs\" for certain findings were themselves profound and subtle number theory results that remained unsuspected until nearly a century after his death. He became one of the youngest Fellows of the Royal Society and only the second Indian member, and the first Indian to be elected a Fellow of Trinity College, Cambridge.\nIn 1919, ill health\u2014now believed to have been hepatic amoebiasis (a complication from episodes of dysentery many years previously)\u2014compelled Ramanujan's return to India, where he died in 1920 at the age of 32. His last letters to Hardy, written in January 1920, show that he was still continuing to produce new mathematical ideas and theorems. His \"lost notebook\", containing discoveries from the last year of his life, caused great excitement among mathematicians when it was rediscovered in 1976.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83163")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q83163",
+  "isRealHuman": true,
+  "birthDate": "1887-12-22",
+  "deathDate": "1920-04-26",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, confirming the age at death as 32.",
+  "shortDescriptionEn": "Srinivasa Ramanujan was an Indian mathematician who made significant contributions to mathematical analysis, number theory, infinite series, and continued fractions. Despite minimal formal training, he compiled nearly 3,900 results. His health declined due to conditions believed to be related to hepatic amoebiasis, leading to his early death at 32.",
+  "shortDescriptionFr": "Srinivasa Ramanujan était un mathématicien indien qui a apporté des contributions significatives à l'analyse mathématique, à la théorie des nombres, aux séries infinies et aux fractions continues. Malgré une formation formelle minimale, il a compilé près de 3 900 résultats. Sa santé s'est détériorée en raison de conditions que l'on pense liées à une amibiase hépatique, menant à sa mort prématurée à 32 ans.",
+  "shortDescriptionDe": "Srinivasa Ramanujan war ein indischer Mathematiker, der bedeutende Beiträge zur mathematischen Analyse, Zahlentheorie, unendlichen Reihen und Kettenbrüchen leistete. Trotz minimaler formaler Ausbildung stellte er fast 3.900 Ergebnisse zusammen. Sein Gesundheitszustand verschlechterte sich aufgrund von Erkrankungen, die vermutlich mit einer hepatischen Amöbiasis zusammenhingen, was zu seinem frühen Tod im Alter von 32 Jahren führte.",
+  "shortDescriptionEs": "Srinivasa Ramanujan fue un matemático indio que hizo contribuciones significativas al análisis matemático, la teoría de números, las series infinitas y las fracciones continuas. A pesar de tener una formación formal mínima, compiló cerca de 3.900 resultados. Su salud se deterioró debido a condiciones que se cree estaban relacionadas con una amebiasis hepática, lo que llevó a su muerte prematura a los 32 años.",
+  "shortDescriptionRu": "Сриниваса Рамануджан был индийским математиком, внесшим значительный вклад в математический анализ, теорию чисел, бесконечные ряды и непрерывные дроби. Несмотря на минимальное формальное образование, он собрал почти 3900 результатов. Его здоровье ухудшилось из-за заболеваний, предположительно связанных с печеночным амебиазом, что привело к его ранней смерти в возрасте 32 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Srinivasa_Ramanujan",
+    "https://www.thefamouspeople.com/profiles/srinivasa-ramanujan-503.php"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q849",  "Name": "François Villon",  "BirthDate": "1431-01-01T00:00:00Z",  "DeathDate": "1463-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Francois%20Villon%201489.jpg",  "SiteLinksCnt": 96,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"44207":{"pageid":44207,"ns":0,"title":"Fran\u00e7ois Villon","extract":"Fran\u00e7ois Villon (; Modern French: [f\u0281\u0251\u0303swa vij\u0254\u0303]; Middle French: [fr\u00e3\u02d0\u02c8sw\u025b vi\u02c8l\u00f5\u02d0]; c.\u20091431 \u2013 after 1463) is the best known French poet of the Late Middle Ages. He was involved in criminal behavior and had multiple encounters with law enforcement authorities. Villon wrote about some of these experiences in his poems."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q849")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q849",
+  "isRealHuman": true,
+  "birthDate": "1431-04-01",
+  "deathDate": "1463-01-05",
+  "ageAtDeath": 32,
+  "confidence": 70,
+  "confidenceExplained": "The age is estimated based on known historical records up to 1463; the exact date of death is unconfirmed.",
+  "shortDescriptionEn": "François Villon (1431 – after January 5, 1463) was a notable French poet of the late Middle Ages. His life intertwined literary brilliance with criminal activities, leading to multiple imprisonments. After a commuted death sentence in 1463, he was banished from Paris, and his subsequent fate remains unknown.",
+  "shortDescriptionFr": "François Villon (1431 – après le 5 janvier 1463) était un poète français notable de la fin du Moyen Âge. Sa vie mêlait une brillante carrière littéraire à des activités criminelles, entraînant plusieurs emprisonnements. Après une peine de mort commuée en 1463, il fut banni de Paris, et son sort ultérieur reste inconnu.",
+  "shortDescriptionDe": "François Villon (1431 – nach dem 5. Januar 1463) war ein bedeutender französischer Dichter des späten Mittelalters. Sein Leben verband literarisches Genie mit kriminellen Aktivitäten, was zu mehrfachen Inhaftierungen führte. Nach einer umgewandelten Todesstrafe im Jahr 1463 wurde er aus Paris verbannt, und sein weiteres Schicksal ist unbekannt.",
+  "shortDescriptionEs": "François Villon (1431 – después del 5 de enero de 1463) fue un notable poeta francés de la Baja Edad Media. Su vida combinó un brillante talento literario con actividades criminales, lo que lo llevó a múltiples encarcelamientos. Después de una sentencia de muerte conmutada en 1463, fue desterrado de París, y su destino posterior sigue siendo desconocido.",
+  "shortDescriptionRu": "Франсуа Вийон (1431 – после 5 января 1463) был выдающимся французским поэтом позднего Средневековья. Его жизнь сочетала литературный гений с преступной деятельностью, что приводило к неоднократным тюремным заключениям. После замены смертного приговора в 1463 году он был изгнан из Парижа, и его дальнейшая судьба остается неизвестной.",
+  "sources": [
+    "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Villon",
+    "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Villon",
+    "https://de.wikipedia.org/wiki/Fran%C3%A7ois_Villon",
+    "https://es.wikipedia.org/wiki/Fran%C3%A7ois_Villon"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180967",  "Name": "Ādi Shankara",  "BirthDate": "0788-01-01T00:00:00Z",  "DeathDate": "0820-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Raja%20Ravi%20Varma%20-%20Sankaracharya.jpg",  "SiteLinksCnt": 92,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"186184":{"pageid":186184,"ns":0,"title":"Adi Shankara","extract":"Adi Shankara (8th c. CE), also called Adi Shankaracharya (Sanskrit: \u0906\u0926\u093f \u0936\u0919\u094d\u0915\u0930, \u0906\u0926\u093f \u0936\u0919\u094d\u0915\u0930\u093e\u091a\u093e\u0930\u094d\u092f, romanized: \u0100di \u015aa\u1e45kara, \u0100di \u015aa\u1e45kar\u0101c\u0101rya, lit.\u2009'First Shankaracharya', pronounced [a\u02d0d\u032ai \u0255\u0250\u014bk\u0250ra\u02d0t\u0361\u0255a\u02d0rj\u0250]), was an Indian Vedic scholar, philosopher and teacher (acharya) of Advaita Vedanta. Reliable information on Shankara's actual life is scanty, and his true impact lies in his \"iconic representation of Hindu religion and culture,\" despite the fact that most Hindus do not adhere to Advaita Vedanta. Tradition also portrays him as the one who reconciled the various sects (Vaishnavism, Shaivism, and Saktism) with the introduction of the Pa\u00f1c\u0101yatana form of worship, the simultaneous worship of five deities \u2013 Ganesha, Surya, Vishnu, Shiva and Devi, arguing that all deities were but different forms of the one Brahman, the invisible Supreme Being.\nWhile often revered as the most important Indian philosopher, the historical influence of his works on Hindu intellectual thought has been questioned. Until the 10th century Shankara was overshadowed by his older contemporary Ma\u1e47\u1e0dana Mi\u015bra, and there is no mention of him in concurring Hindu, Buddhist or Jain sources until the 11th century. The popular image of Shankara started to take shape in the 14th century, centuries after his death, when Sringeri matha started to receive patronage from the kings of the Vijayanagara Empire and shifted their allegiance from Advaitic Agamic Shaivism to Brahmanical Advaita orthodoxy. Hagiographies dating from the 14th-17th centuries deified him as a ruler-renunciate, travelling on a digvijaya (conquest of the four quarters) across the Indian subcontinent to propagate his philosophy, defeating his opponents in theological debates. These hagiographies portray him as founding four mathas (\"monasteries\"), and Adi Shankara also came to be regarded as the organiser of the Dashanami monastic order, and the unifier of the Shanmata tradition of worship. The title of Shankaracharya, used by heads of certain monasteries in India, is derived from his name.\nDue to his later fame, over 300 texts are attributed to him, including commentaries (Bh\u0101\u1e63ya), introductory topical expositions (Prakara\u1e47a grantha) and poetry (Stotra). However, most of these are likely to be written by admirers or pretenders or scholars with an eponymous name. Works known to be written by Shankara himself are the Brahmasutrabhasya, his commentaries on ten principal Upanishads, his commentary on the Bhagavad Gita, and the Upade\u015bas\u0101hasr\u012b. The authenticity of Shankara being the author of Vivekac\u016b\u1e0d\u0101ma\u1e47i has been questioned and mostly rejected by scholarship.\nHis authentic works present a harmonizing reading of the shastras, with liberating knowledge of the self at its core, synthesizing the Advaita Vedanta teachings of his time. The central concern of Shankara's writings is the liberating knowledge of the true identity of jivatman (individual self) as \u0100tman-Brahman, taking the Upanishads as an independent means of knowledge, beyond the ritually-oriented M\u012bm\u0101\u1e43s\u0101-exegesis of the Vedas. Shankara's Advaita shows influences from Mahayana Buddhism, despite Shankara's critiques; and Hindu Vaishnava opponents have even accused Shankara of being a \"crypto-Buddhist,\" a qualification which is rejected by the Advaita Vedanta tradition, highlighting their respective views on Atman, Anatta and Brahman."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180967")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q180967",
+  "isRealHuman": true,
+  "birthDate": "0788-01-01",
+  "deathDate": "0820-01-01",
+  "ageAtDeath": 32,
+  "confidence": 70,
+  "confidenceExplained": "The dates 788 CE and 820 CE are traditional estimates based on certain historical records, but there is scholarly debate regarding these dates.",
+  "shortDescriptionEn": "Adi Shankara (c. 788–820 CE) was an influential Indian philosopher who consolidated Advaita Vedanta, emphasizing the non-dual nature of reality. He traveled across India to propagate his philosophy, establishing four major monasteries. He passed away at the age of 32, with his exact age at death being a subject of scholarly debate.",
+  "shortDescriptionFr": "Adi Shankara (vers 788–820 EC) était un philosophe indien influent qui a consolidé l'Advaita Vedanta, mettant l'accent sur la nature non dualiste de la réalité. Il a voyagé à travers l'Inde pour propager sa philosophie, établissant quatre grands monastères. Il est décédé à l'âge de 32 ans, bien que cette estimation fasse l'objet de débats parmi les érudits.",
+  "shortDescriptionDe": "Adi Shankara (ca. 788–820 n. Chr.) war ein einflussreicher indischer Philosoph, der die Advaita Vedanta konsolidierte und die nicht-duale Natur der Realität betonte. Er reiste durch Indien, um seine Philosophie zu verbreiten, und gründete vier Hauptklöster. Er verstarb im Alter von 32 Jahren, wobei sein genaues Alter zum Zeitpunkt seines Todes unter Gelehrten diskutiert wird.",
+  "shortDescriptionEs": "Adi Shankara (c. 788–820 d.C.) fue un influyente filósofo indio que consolidó el Advaita Vedanta, enfatizando la naturaleza no dual de la realidad. Viajó por toda la India para propagar su filosofía, estableciendo cuatro monasterios principales. Falleció a la edad de 32 años, aunque esta estimación es objeto de debate académico.",
+  "shortDescriptionRu": "Ади Шанкара (около 788–820 гг. н. э.) был влиятельным индийским философом, который консолидировал Адвайта Веданту, подчеркивая недуальную природу реальности. Он путешествовал по Индии, пропагандируя свою философию, основав четыре основных монастыря. Он скончался в возрасте 32 лет, хотя эта оценка вызывает споры среди ученых.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Adi_Shankara",
+    "https://fr.wikipedia.org/wiki/Adi_Shankara",
+    "https://de.wikipedia.org/wiki/Shankara",
+    "https://es.wikipedia.org/wiki/Adi_Shankara",
+    "https://jkyog.in/en/wisdom/blog/uncovering-the-life-and-legacy-of-adi-shankaracharya"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q133028",  "Name": "Richard III of England",  "BirthDate": "1452-10-11T00:00:00Z",  "DeathDate": "1485-08-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Richard%20III%20earliest%20surviving%20portrait.jpg",  "SiteLinksCnt": 86,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"26284":{"pageid":26284,"ns":0,"title":"Richard III of England","extract":"Richard III (2 October 1452 \u2013 22 August 1485) was King of England from 26 June 1483 until his death in 1485. He was the last king of the Plantagenet dynasty and its cadet branch the House of York. His defeat and death at the Battle of Bosworth Field marked the end of the Middle Ages in England.\nRichard was created Duke of Gloucester in 1461 after the accession to the throne of his older brother Edward IV. This was during the period known as the Wars of the Roses, an era when two branches of the royal family contested the throne; Edward and Richard were Yorkists, and their side of the family faced-off against their Lancastrian cousins. In 1472, Richard married Anne Neville, daughter of Richard Neville, 16th Earl of Warwick, and widow of Edward of Westminster, son of Henry VI. He governed northern England during Edward's reign, and played a role in the invasion of Scotland in 1482. When Edward IV died in April 1483, Richard was named Lord Protector of the realm for Edward's eldest son and successor, the 12-year-old Edward V. Before arrangements were complete for Edward V's coronation, scheduled for 22 June 1483, the marriage of his parents was declared bigamous and therefore invalid. Now officially illegitimate, Edward and his siblings were barred from inheriting the throne. On 25 June, an assembly of lords and commoners endorsed a declaration to this effect, and proclaimed Richard as the rightful king. He was crowned on 6 July 1483. Edward and his younger brother Richard of Shrewsbury, Duke of York, called the \"Princes in the Tower\", disappeared from the Tower of London around August 1483.\nThere were two major rebellions against Richard during his reign. In October 1483, an unsuccessful revolt was led by staunch allies of Edward IV and Richard's former ally, Henry Stafford, 2nd Duke of Buckingham. Then, in August 1485, Henry Tudor and his uncle, Jasper Tudor, landed in Wales with a contingent of French troops, and marched through Pembrokeshire, recruiting soldiers. Henry's forces defeated Richard's army near the Leicestershire town of Market Bosworth. Richard was slain, making him the last English king to die in battle. Henry Tudor then ascended the throne as Henry VII.\nRichard's corpse was taken to the nearby town of Leicester and buried without ceremony. His original tomb monument is believed to have been removed during the English Reformation, and his remains were wrongly thought to have been thrown into the River Soar. In 2012, an archaeological excavation was commissioned by Philippa Langley with the assistance of the Richard III Society on the site previously occupied by Grey Friars Priory. The University of Leicester identified the human skeleton found at the site as that of Richard III as a result of radiocarbon dating, comparison with contemporary reports of his appearance, identification of trauma sustained at Bosworth and comparison of his mitochondrial DNA with that of two matrilineal descendants of his sister Anne. He was reburied in Leicester Cathedral in 2015."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q133028")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q133028",
+  "isRealHuman": true,
+  "birthDate": "1452-10-02",
+  "deathDate": "1485-08-22",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The dates of birth and death are well-documented in historical records, confirming his age at death as 32.",
+  "shortDescriptionEn": "Richard III (2 October 1452 – 22 August 1485) was King of England from 1483 until his death in 1485. He was the last king of the House of York and the Plantagenet dynasty. Richard died in the Battle of Bosworth Field, marking the end of the Wars of the Roses.",
+  "shortDescriptionFr": "Richard III (2 octobre 1452 – 22 août 1485) fut roi d'Angleterre de 1483 jusqu'à sa mort en 1485. Il fut le dernier roi de la maison d'York et de la dynastie Plantagenêt. Richard mourut à la bataille de Bosworth, marquant la fin des guerres des Deux-Roses.",
+  "shortDescriptionDe": "Richard III. (2. Oktober 1452 – 22. August 1485) war von 1483 bis zu seinem Tod 1485 König von England. Er war der letzte König des Hauses York und der Plantagenet-Dynastie. Richard starb in der Schlacht von Bosworth, was das Ende der Rosenkriege markierte.",
+  "shortDescriptionEs": "Ricardo III (2 de octubre de 1452 – 22 de agosto de 1485) fue rey de Inglaterra desde 1483 hasta su muerte en 1485. Fue el último rey de la Casa de York y de la dinastía Plantagenet. Ricardo murió en la Batalla de Bosworth, marcando el fin de las Guerras de las Rosas.",
+  "shortDescriptionRu": "Ричард III (2 октября 1452 – 22 августа 1485) был королем Англии с 1483 года до своей смерти в 1485 году. Он был последним королем из дома Йорков и династии Плантагенетов. Ричард погиб в битве при Босворте, что ознаменовало конец Войн Алой и Белой розы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Richard_III_of_England"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q130812",  "Name": "Mary II of England",  "BirthDate": "1662-05-10T00:00:00Z",  "DeathDate": "1695-01-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/1662%20Mary%20II.jpg",  "SiteLinksCnt": 79,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"20709":{"pageid":20709,"ns":0,"title":"Mary II","extract":"Mary II (30 April 1662 \u2013 28 December 1694) was Queen of England, Scotland, and Ireland with her husband, King William III and II, from 1689 until her death in 1694. She was also Princess of Orange following her marriage on 4 November 1677. Her joint reign with William over Britain is known as that of William and Mary. \nMary was born during the reign of her uncle King Charles II. She was the eldest daughter of James, Duke of York (the future James II of England), and his first wife, Anne Hyde. Mary and her sister Anne were raised as Anglicans at the behest of Charles II, although their parents both converted to Roman Catholicism. Charles lacked legitimate children, making Mary second in the line of succession. At the age of 15, she married her cousin William of Orange, a Protestant. Charles died in 1685 and James became king, making Mary heir presumptive. James's attempts at rule by decree and the birth of his son from a second marriage, James Francis Edward (later known as \"the Old Pretender\"), led to his deposition in the Glorious Revolution of 1688 and the adoption of the English Bill of Rights.\nWilliam and Mary became king and queen regnant. Mary mostly deferred to her husband \u2013 a renowned military leader and principal opponent of Louis XIV \u2013 when he was in England. She did, however, act alone when William was engaged in military campaigns abroad, proving herself to be a powerful, firm, and effective ruler. Mary's death from smallpox in 1694 at the age of 32 left William as sole ruler until his death in 1702, when he was succeeded by Mary's sister, Anne.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q130812")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q130812",
+  "isRealHuman": true,
+  "birthDate": "1662-04-30",
+  "deathDate": "1694-12-28",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "Mary II's birth and death dates are well-documented, with her dying at the age of 32 from smallpox.",
+  "shortDescriptionEn": "Mary II (1662–1694) was Queen of England, Scotland, and Ireland, reigning jointly with her husband, William III. Daughter of James II and Anne Hyde, she married William in 1677. Their reign, known as 'William and Mary,' began after the Glorious Revolution of 1688. Mary died of smallpox in 1694 at age 32, leaving William as sole ruler.",
+  "shortDescriptionFr": "Marie II (1662–1694) fut reine d'Angleterre, d'Écosse et d'Irlande, régnant conjointement avec son mari, Guillaume III. Fille de Jacques II et d'Anne Hyde, elle épousa Guillaume en 1677. Leur règne, connu sous le nom de 'Guillaume et Marie', commença après la Glorieuse Révolution de 1688. Marie mourut de la variole en 1694 à l'âge de 32 ans, laissant Guillaume comme seul souverain.",
+  "shortDescriptionDe": "Maria II. (1662–1694) war Königin von England, Schottland und Irland und regierte gemeinsam mit ihrem Ehemann, Wilhelm III. Tochter von Jakob II. und Anne Hyde, heiratete sie Wilhelm 1677. Ihr gemeinsames Reich, bekannt als 'Wilhelm und Maria', begann nach der Glorreichen Revolution von 1688. Maria starb 1694 im Alter von 32 Jahren an den Pocken, woraufhin Wilhelm als Alleinherrscher folgte.",
+  "shortDescriptionEs": "María II (1662–1694) fue reina de Inglaterra, Escocia e Irlanda, reinando conjuntamente con su esposo, Guillermo III. Hija de Jacobo II y Anne Hyde, se casó con Guillermo en 1677. Su reinado, conocido como 'Guillermo y María', comenzó tras la Revolución Gloriosa de 1688. María murió de viruela en 1694 a los 32 años, dejando a Guillermo como único gobernante.",
+  "shortDescriptionRu": "Мария II (1662–1694) была королевой Англии, Шотландии и Ирландии, правя совместно с мужем, Вильгельмом III. Дочь Якова II и Анны Хайд, она вышла замуж за Вильгельма в 1677 году. Их совместное правление, известное как 'Вильгельм и Мария', началось после Славной революции 1688 года. Мария умерла от оспы в 1694 году в возрасте 32 лет, оставив Вильгельма единоличным правителем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mary_II",
+    "https://www.britannica.com/biography/Mary-II",
+    "https://www.westminster-abbey.org/abbey-commemorations/royals/mary-ii/",
+    "https://www.royal.uk/william-and-mary"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160922",  "Name": "Celestine I",  "BirthDate": "0400-01-01T00:00:00Z",  "DeathDate": "0432-07-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Celestine-Dedek.TIF",  "SiteLinksCnt": 79,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"24152":{"pageid":24152,"ns":0,"title":"Pope Celestine I","extract":"Pope Celestine I (Latin: Caelestinus I) (c. 376 \u2013 1 August 432) was the bishop of Rome from 10 September 422 to his death on 1 August 432. Celestine's pontificate was largely spent combatting various teachings deemed heretical. He was instrumental for the condemnation of Nestorius in the Council of Ephesus when \nCyril of Alexandria appealed him to make a decision, which in response, Celestine  delegated Cyril the job of condemning Nestorius if he did not recant his teachings. He supported the mission of the Gallic bishops that sent Germanus of Auxerre in 429, to Britain to address Pelagianism, and later commissioned Palladius as bishop to the Scots of Ireland and northern Britain."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160922")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q160922",
+  "isRealHuman": true,
+  "birthDate": "376-01-01",
+  "deathDate": "432-08-01",
+  "ageAtDeath": 56,
+  "confidence": 85,
+  "confidenceExplained": "The birth year is an approximation, but the death date is well-documented, allowing for a reasonably accurate age estimation.",
+  "shortDescriptionEn": "Pope Celestine I served as the Bishop of Rome from 422 to 432. His tenure was marked by his firm stance against heresies like Nestorianism and Pelagianism. He played a pivotal role in the Council of Ephesus, leading to the condemnation of Nestorius. He passed away in Rome on 1 August 432.",
+  "shortDescriptionFr": "Le pape Célestin Ier a été évêque de Rome de 422 à 432. Son mandat a été marqué par sa ferme opposition aux hérésies telles que le nestorianisme et le pélagianisme. Il a joué un rôle central lors du Concile d'Éphèse, conduisant à la condamnation de Nestorius. Il est décédé à Rome le 1er août 432.",
+  "shortDescriptionDe": "Papst Coelestin I. war von 422 bis 432 Bischof von Rom. Seine Amtszeit war geprägt von seinem entschiedenen Widerstand gegen Häresien wie den Nestorianismus und den Pelagianismus. Er spielte eine zentrale Rolle beim Konzil von Ephesus, das zur Verurteilung des Nestorius führte. Er verstarb am 1. August 432 in Rom.",
+  "shortDescriptionEs": "El Papa Celestino I sirvió como Obispo de Roma desde 422 hasta 432. Su mandato se caracterizó por su firme oposición a herejías como el nestorianismo y el pelagianismo. Desempeñó un papel fundamental en el Concilio de Éfeso, que llevó a la condena de Nestorio. Falleció en Roma el 1 de agosto de 432.",
+  "shortDescriptionRu": "Папа Целестин I был епископом Рима с 422 по 432 годы. Его понтификат был отмечен решительной борьбой против ересей, таких как несторианство и пелагианство. Он сыграл ключевую роль на Эфесском соборе, приведшем к осуждению Нестория. Скончался в Риме 1 августа 432 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Saint-Celestine-I",
+    "https://en.wikipedia.org/wiki/Pope_Celestine_I",
+    "https://www.catholic.com/encyclopedia/pope-celestine-i-saint"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q168776",  "Name": "Ibrahim I",  "BirthDate": "1615-11-05T00:00:00Z",  "DeathDate": "1648-08-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ibrahim%20I.jpg",  "SiteLinksCnt": 74,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"208591":{"pageid":208591,"ns":0,"title":"Ibrahim of the Ottoman Empire","extract":"Ibrahim (; Ottoman Turkish: \u0627\u0628\u0631\u0627\u0647\u064a\u0645; Turkish: \u0130brahim; 5 November 1615 \u2013 18 August 1648) was the sultan of the Ottoman Empire from 1640 until 1648. He was born in Constantinople, the last son of sultan Ahmed I by K\u00f6sem Sultan, an ethnic Greek originally named Anastasia.\nHe was called Ibrahim the Mad (Turkish: Deli \u0130brahim) due to his mental condition and behavior. However, historian Scott Rank notes that his opponents spread rumors of the sultan's insanity, and some historians suggest he was more incompetent than mad."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q168776")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q168776",
+  "isRealHuman": true,
+  "birthDate": "1615-11-05",
+  "deathDate": "1648-08-18",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming his age at death as 32.",
+  "shortDescriptionEn": "Ibrahim I (1615–1648) was the Sultan of the Ottoman Empire from 1640 until his deposition in 1648. His reign was characterized by political instability and personal eccentricities, leading to his eventual overthrow and execution.",
+  "shortDescriptionFr": "Ibrahim Ier (1615–1648) fut le sultan de l'Empire ottoman de 1640 jusqu'à sa destitution en 1648. Son règne fut marqué par l'instabilité politique et des excentricités personnelles, conduisant à son renversement et à son exécution.",
+  "shortDescriptionDe": "Ibrahim I. (1615–1648) war von 1640 bis zu seiner Absetzung im Jahr 1648 Sultan des Osmanischen Reiches. Seine Herrschaft war geprägt von politischer Instabilität und persönlichen Exzentrizitäten, die zu seinem Sturz und seiner Hinrichtung führten.",
+  "shortDescriptionEs": "Ibrahim I (1615–1648) fue el sultán del Imperio Otomano desde 1640 hasta su deposición en 1648. Su reinado se caracterizó por inestabilidad política y excentricidades personales, lo que llevó a su derrocamiento y ejecución.",
+  "shortDescriptionRu": "Ибрагим I (1615–1648) был султаном Османской империи с 1640 года до своей отставки в 1648 году. Его правление характеризовалось политической нестабильностью и личными эксцентричностями, что привело к его свержению и казни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ibrahim_of_the_Ottoman_Empire"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q168847",  "Name": "Brittany Murphy",  "BirthDate": "1977-11-10T00:00:00Z",  "DeathDate": "2009-12-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Brittany%20Murphy.jpg",  "SiteLinksCnt": 70,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"166777":{"pageid":166777,"ns":0,"title":"Brittany Murphy","extract":"Brittany Anne Murphy-Monjack (n\u00e9e Bertolotti; November 10, 1977 \u2013 December 20, 2009) was an American actress and singer, known for her work in both comedy and drama.\nBorn in Atlanta, Murphy moved to Los Angeles as a teenager to pursue a career in acting. Her breakthrough came when she co-starred as Tai Frasier in Clueless (1995), followed by independent films such as Freeway (1996), and her 1997 Broadway debut in a production of Arthur Miller's A View from the Bridge. She finished the decade with supporting roles in Girl, Interrupted and Drop Dead Gorgeous (both 1999). She voiced Luanne Platter on Fox's King of the Hill for the entirety of its run (1997\u20132010).\nMurphy gained critical recognition for her roles in numerous high-profile film projects during the early 2000s, such as Don't Say a Word (2001), Riding in Cars with Boys (2001), and 8 Mile (2002). Other notable credits included Cherry Falls (2000), Spun (2002), Just Married, Uptown Girls (both 2003), Little Black Book (2004), Sin City (2005), and Happy Feet (2006). \nOn December 20, 2009, Murphy died at age 32 under disputed circumstances. The coroner's verdict was pneumonia, exacerbated by anemia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q168847")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q168847",
+  "isRealHuman": true,
+  "birthDate": "1977-11-10",
+  "deathDate": "2009-12-20",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted, confirming her age at death as 32.",
+  "shortDescriptionEn": "Brittany Murphy was an American actress and singer renowned for her roles in films like 'Clueless' and '8 Mile.' She died unexpectedly at 32 due to pneumonia, anemia, and multiple drug intoxication.",
+  "shortDescriptionFr": "Brittany Murphy était une actrice et chanteuse américaine, célèbre pour ses rôles dans des films tels que 'Clueless' et '8 Mile.' Elle est décédée subitement à 32 ans des suites d'une pneumonie, d'une anémie et d'une intoxication médicamenteuse multiple.",
+  "shortDescriptionDe": "Brittany Murphy war eine amerikanische Schauspielerin und Sängerin, bekannt für ihre Rollen in Filmen wie 'Clueless' und '8 Mile.' Sie starb unerwartet im Alter von 32 Jahren an einer Lungenentzündung, Anämie und multipler Medikamentenvergiftung.",
+  "shortDescriptionEs": "Brittany Murphy fue una actriz y cantante estadounidense, reconocida por sus papeles en películas como 'Clueless' y '8 Mile.' Falleció inesperadamente a los 32 años debido a una neumonía, anemia e intoxicación por múltiples medicamentos.",
+  "shortDescriptionRu": "Бриттани Мерфи была американской актрисой и певицей, известной по ролям в фильмах 'Бестолковые' и '8 миля.' Она неожиданно скончалась в 32 года от пневмонии, анемии и множественной лекарственной интоксикации.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Brittany_Murphy",
+    "https://people.com/who-was-simon-monjack-brittany-murphy-husband-8747427",
+    "https://pagesix.com/2024/12/20/entertainment/brittany-murphy-was-going-through-a-hard-time-while-filming-last-movie-before-death-co-star/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q184212",  "Name": "Théodore Géricault",  "BirthDate": "1791-09-26T00:00:00Z",  "DeathDate": "1824-01-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Horace%20Vernet%2C%20Jean-Louis-Andr%C3%A9-Th%C3%A9odore%20Gericault%2C%20probably%201822%20or%201823%2C%201998.84%2C%20MET.jpg",  "SiteLinksCnt": 70,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"511567":{"pageid":511567,"ns":0,"title":"Th\u00e9odore G\u00e9ricault","extract":"Jean-Louis Andr\u00e9 Th\u00e9odore G\u00e9ricault (French: [\u0292\u0251\u0303lwi \u0251\u0303d\u0281e te\u0254d\u0254\u0281 \u0292e\u0281iko]; 26 September 1791 \u2013 26 January 1824) was a French painter and lithographer, whose best-known painting is The Raft of the Medusa. Despite his short life, he was one of the pioneers of the Romantic movement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q184212")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q184212",
+  "isRealHuman": true,
+  "birthDate": "1791-09-26",
+  "deathDate": "1824-01-26",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Théodore Géricault was a pioneering French Romantic painter, best known for 'The Raft of the Medusa.' His fascination with horses and dramatic compositions marked his brief yet impactful career. He died at 32, likely due to complications from a riding accident and tuberculosis.",
+  "shortDescriptionFr": "Théodore Géricault était un peintre romantique français pionnier, surtout connu pour 'Le Radeau de la Méduse.' Sa fascination pour les chevaux et ses compositions dramatiques ont marqué sa carrière brève mais influente. Il est décédé à 32 ans, probablement en raison de complications d'une chute de cheval et de la tuberculose.",
+  "shortDescriptionDe": "Théodore Géricault war ein wegweisender französischer Romantikmaler, bekannt für 'Das Floß der Medusa.' Seine Faszination für Pferde und dramatische Kompositionen prägten seine kurze, aber einflussreiche Karriere. Er starb im Alter von 32 Jahren, wahrscheinlich aufgrund von Komplikationen nach einem Reitunfall und Tuberkulose.",
+  "shortDescriptionEs": "Théodore Géricault fue un pintor romántico francés pionero, conocido por 'La Balsa de la Medusa.' Su fascinación por los caballos y sus composiciones dramáticas marcaron su breve pero influyente carrera. Murió a los 32 años, probablemente debido a complicaciones de una caída de caballo y tuberculosis.",
+  "shortDescriptionRu": "Теодор Жерико был французским художником-романтиком, известным благодаря 'Плоту Медузы.' Его увлечение лошадьми и драматическими композициями оставили заметный след в искусстве. Он умер в возрасте 32 лет, вероятно, из-за осложнений после падения с лошади и туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault",
+    "https://fr.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault",
+    "https://de.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault",
+    "https://es.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault",
+    "https://it.wikipedia.org/wiki/Th%C3%A9odore_G%C3%A9ricault"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q290227",  "Name": "Étienne de La Boétie",  "BirthDate": "1530-11-11T00:00:00Z",  "DeathDate": "1563-08-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue%20d%27%C3%89tienne%20de%20La%20Bo%C3%A9tie.JPG",  "SiteLinksCnt": 67,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"393256":{"pageid":393256,"ns":0,"title":"\u00c9tienne de La Bo\u00e9tie","extract":"\u00c9tienne or Estienne de La Bo\u00e9tie (French: [etj\u025bn d\u0259 la b\u0254esi] , also [bwati] or [b\u0254eti]; Occitan: Esteve de La Boeti\u00e1; 1 November 1530 \u2013 18 August 1563) was a French magistrate, classicist, writer, poet and political theorist, best remembered for his friendship with essayist Michel de Montaigne. His early political treatise Discourse on Voluntary Servitude was posthumously adopted by the Huguenot movement and is sometimes seen as an early influence on modern anti-statist, utopian and civil disobedience thought."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q290227")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q290227",
+  "isRealHuman": true,
+  "birthDate": "1530-11-01",
+  "deathDate": "1563-08-18",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for precise calculation of age.",
+  "shortDescriptionEn": "Étienne de La Boétie was a French magistrate, writer, and philosopher, renowned for his essay 'Discourse on Voluntary Servitude.' He died on August 18, 1563, at the age of 32, likely from an intestinal illness, possibly the plague.",
+  "shortDescriptionFr": "Étienne de La Boétie était un magistrat, écrivain et philosophe français, connu pour son essai 'Discours de la servitude volontaire.' Il est décédé le 18 août 1563, à l'âge de 32 ans, probablement d'une maladie intestinale, peut-être la peste.",
+  "shortDescriptionDe": "Étienne de La Boétie war ein französischer Magistrat, Schriftsteller und Philosoph, bekannt für seinen Essay 'Abhandlung über die freiwillige Knechtschaft.' Er starb am 18. August 1563 im Alter von 32 Jahren, wahrscheinlich an einer Darmkrankheit, möglicherweise der Pest.",
+  "shortDescriptionEs": "Étienne de La Boétie fue un magistrado, escritor y filósofo francés, conocido por su ensayo 'Discurso sobre la servidumbre voluntaria.' Murió el 18 de agosto de 1563, a los 32 años, probablemente debido a una enfermedad intestinal, posiblemente la peste.",
+  "shortDescriptionRu": "Этьен де Ла Боэси был французским магистратом, писателем и философом, известным своим эссе 'Рассуждение о добровольном рабстве.' Он умер 18 августа 1563 года в возрасте 32 лет, вероятно, от кишечной болезни, возможно, чумы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/%C3%89tienne_de_La_Bo%C3%A9tie",
+    "https://philosophynow.org/issues/136/Etienne_de_la_Boetie_1530-1563"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q152480",  "Name": "Joseph I, Holy Roman Emperor",  "BirthDate": "1678-07-26T00:00:00Z",  "DeathDate": "1711-04-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/JosephI.1705.JPG",  "SiteLinksCnt": 65,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"148318":{"pageid":148318,"ns":0,"title":"Joseph I, Holy Roman Emperor","extract":"Joseph I (Joseph Jacob Ignaz Johann Anton Eustachius; 26 July 1678 \u2013 17 April 1711) was Holy Roman Emperor and ruler of the Habsburg monarchy from 1705 until his death in 1711. He was the eldest son of Leopold I, Holy Roman Emperor from his third wife, Eleonor Magdalene of Neuburg. Joseph was crowned King of Hungary at the age of nine in 1687 and was elected King of the Romans at the age of eleven in 1690. He succeeded to the thrones of Bohemia and the Holy Roman Empire when his father died.\nJoseph continued the War of the Spanish Succession, begun by his father against Louis XIV of France, in an attempt to make his younger brother Charles (later Emperor Charles VI) King of Spain. In the process, however, owing to the victories won by his military commander, Prince Eugene of Savoy, he did succeed in establishing Austrian hegemony over Italy. Joseph also had to contend with a protracted revolt in Hungary, fomented by Louis XIV. Neither conflict was resolved until the Treaty of Utrecht, after his death.\nHis motto was Amore et Timore (Latin for \"Through Love and Fear\")."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q152480")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q152480",
+  "isRealHuman": true,
+  "birthDate": "1678-07-26",
+  "deathDate": "1711-04-17",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by historians, allowing for precise calculation of age at death.",
+  "shortDescriptionEn": "Joseph I (1678–1711) was Holy Roman Emperor from 1705 until his death at age 32 from smallpox. His reign continued the War of the Spanish Succession, aiming to install his brother Charles as King of Spain.",
+  "shortDescriptionFr": "Joseph I (1678–1711) fut empereur du Saint-Empire romain germanique de 1705 jusqu'à sa mort à 32 ans de la variole. Son règne a poursuivi la guerre de Succession d'Espagne, visant à installer son frère Charles comme roi d'Espagne.",
+  "shortDescriptionDe": "Joseph I. (1678–1711) war von 1705 bis zu seinem Tod im Alter von 32 Jahren an den Pocken römisch-deutscher Kaiser. Seine Herrschaft setzte den Spanischen Erbfolgekrieg fort, mit dem Ziel, seinen Bruder Karl als König von Spanien einzusetzen.",
+  "shortDescriptionEs": "José I (1678–1711) fue emperador del Sacro Imperio Romano Germánico desde 1705 hasta su muerte a los 32 años por viruela. Su reinado continuó la Guerra de Sucesión Española, con el objetivo de instalar a su hermano Carlos como rey de España.",
+  "shortDescriptionRu": "Иосиф I (1678–1711) был императором Священной Римской империи с 1705 года до своей смерти в возрасте 32 лет от оспы. Его правление продолжило Войну за испанское наследство, стремясь посадить его брата Карла на испанский трон.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Joseph_I%2C_Holy_Roman_Emperor",
+    "https://www.britannica.com/biography/Joseph-I",
+    "https://www.holyromanempireassociation.com/holy-roman-emperor-joseph-i.html"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183332",  "Name": "Sebastian",  "BirthDate": "0255-01-01T00:00:00Z",  "DeathDate": "0287-01-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sebastia.jpg",  "SiteLinksCnt": 65,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"246833":{"pageid":246833,"ns":0,"title":"Saint Sebastian","extract":"Sebastian (Latin: Sebastianus; c.\u2009AD 255 \u2013 c.\u2009AD 288) was an early Christian saint and martyr. According to traditional belief, he was killed during the Diocletianic Persecution of Christians. He was initially tied to a post or tree and shot with arrows, though this did not kill him. He was, according to tradition, rescued and healed by Irene of Rome, which became a popular subject in 17th-century painting. In all versions of the story, shortly after his recovery he went to Diocletian to warn him about his sins, and as a result was clubbed to death. He is venerated in the Catholic Church and the Orthodox Church as the patron saint of athletics, archery, and plagues. Many view him as the patron saint of these sports.\nThe oldest record of the details of Sebastian's martyrdom is found in the Chronograph of 354, which mentions him as a martyr, venerated on January 20. He is also mentioned in a sermon on Psalm 118 by 4th-century bishop Ambrose of Milan: in his sermon, Ambrose stated that Sebastian came from Milan and that he was already venerated there at that time. The full account of his martyrdom comes from the Passio Sancti Sebastiani, a 5th-century text written by an anonymous author, possibly Arnobius the Younger.\nSebastian is a popular male saint, especially today among athletes. In medieval times, he was regarded as a saint with a special ability to intercede to protect from plague, and devotion to him greatly increased when plague was active."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183332")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q183332",
+  "isRealHuman": true,
+  "birthDate": "255-01-01",
+  "deathDate": "288-01-20",
+  "ageAtDeath": 32,
+  "confidence": 80,
+  "confidenceExplained": "The dates are based on historical estimates; exact records from that period are scarce.",
+  "shortDescriptionEn": "Saint Sebastian was an early Christian martyr, venerated as a saint. He is traditionally believed to have been a captain in the Roman army and was executed for his faith, first being shot with arrows and later clubbed to death.",
+  "shortDescriptionFr": "Saint Sébastien était un martyr chrétien précoce, vénéré comme un saint. On pense traditionnellement qu'il était capitaine dans l'armée romaine et qu'il a été exécuté pour sa foi, d'abord criblé de flèches, puis battu à mort.",
+  "shortDescriptionDe": "Der heilige Sebastian war ein frühchristlicher Märtyrer, der als Heiliger verehrt wird. Er war traditionell ein Hauptmann in der römischen Armee und wurde wegen seines Glaubens hingerichtet, zuerst mit Pfeilen beschossen und später zu Tode geprügelt.",
+  "shortDescriptionEs": "San Sebastián fue un mártir cristiano temprano, venerado como santo. Tradicionalmente se cree que fue capitán en el ejército romano y fue ejecutado por su fe, primero siendo asaeteado y luego golpeado hasta la muerte.",
+  "shortDescriptionRu": "Святой Себастьян был раннехристианским мучеником, почитаемым как святой. Традиционно считается, что он был капитаном в римской армии и был казнен за свою веру, сначала расстрелян из луков, а затем забит до смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Sebastian",
+    "https://www.britannica.com/biography/Saint-Sebastian",
+    "https://hallow.com/saints/sebastian/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q17590",  "Name": "Lawrence of Rome",  "BirthDate": "0225-12-31T00:00:00Z",  "DeathDate": "0258-08-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/St.%20Laurentius%20in%20Dorfkirche%20St.%20Laurentius%20in%20Hornstorf.jpg",  "SiteLinksCnt": 64,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"194273":{"pageid":194273,"ns":0,"title":"Saint Lawrence","extract":"Saint Lawrence or Laurence (Latin: Laurentius, lit. \"laurelled\"; 31 December 225 \u2013 10 August 258) was one of the seven deacons of the city of Rome under Pope Sixtus II who were martyred in the persecution of the Christians that the Roman emperor Valerian ordered in 258."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q17590")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q17590",
+  "isRealHuman": true,
+  "birthDate": "225-12-31",
+  "deathDate": "258-08-10",
+  "ageAtDeath": 32,
+  "confidence": 90,
+  "confidenceExplained": "The birth and death dates are widely accepted in historical records, though exact dates from this period may be approximate.",
+  "shortDescriptionEn": "Saint Lawrence was a 3rd-century deacon of Rome, responsible for the Church's treasury and aiding the poor. During Emperor Valerian's persecution, he was martyred by being roasted on a gridiron for defying orders to surrender the Church's riches, instead presenting the poor as its true treasures.",
+  "shortDescriptionFr": "Saint Laurent était un diacre de Rome au IIIe siècle, responsable du trésor de l'Église et de l'aide aux pauvres. Lors de la persécution de l'empereur Valérien, il fut martyrisé en étant rôti sur un gril pour avoir refusé de livrer les richesses de l'Église, présentant à la place les pauvres comme ses véritables trésors.",
+  "shortDescriptionDe": "Der heilige Laurentius war ein Diakon Roms im 3. Jahrhundert, verantwortlich für den Kirchenschatz und die Unterstützung der Armen. Während der Verfolgung durch Kaiser Valerian wurde er gemartert, indem er auf einem Rost geröstet wurde, weil er sich weigerte, die Reichtümer der Kirche herauszugeben, und stattdessen die Armen als ihre wahren Schätze präsentierte.",
+  "shortDescriptionEs": "San Lorenzo fue un diácono de Roma del siglo III, responsable del tesoro de la Iglesia y de ayudar a los pobres. Durante la persecución del emperador Valeriano, fue martirizado al ser asado en una parrilla por negarse a entregar las riquezas de la Iglesia, presentando en su lugar a los pobres como sus verdaderos tesoros.",
+  "shortDescriptionRu": "Святой Лаврентий был диаконом Рима III века, ответственным за церковную казну и помощь бедным. Во время преследования императора Валериана он был замучен, будучи зажаренным на решетке за отказ выдать богатства Церкви, вместо этого представив бедных как ее истинные сокровища.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Lawrence"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q271853",  "Name": "Nikolai Ostrovsky",  "BirthDate": "1904-09-29T00:00:00Z",  "DeathDate": "1936-12-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/N%20Ostrovskiy.jpg",  "SiteLinksCnt": 63,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"1031399":{"pageid":1031399,"ns":0,"title":"Nikolai Ostrovsky","extract":"Nikolai Alekseyevich Ostrovsky (Russian: \u041d\u0438\u043a\u043e\u043b\u0430\u0439 \u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432\u0438\u0447 \u041e\u0441\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439; Ukrainian: \u041c\u0438\u043a\u043e\u043b\u0430 \u041e\u043b\u0435\u043a\u0441\u0456\u0439\u043e\u0432\u0438\u0447 \u041e\u0441\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0438\u0439, romanized: Mykola Oleksiiovych Ostrovskyi; 29 September 1904 \u2013 22 December 1936) was a Soviet socialist realist writer. He is best known for his novel How the Steel Was Tempered."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q271853")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q271853",
+  "isRealHuman": true,
+  "birthDate": "1904-09-29",
+  "deathDate": "1936-12-22",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The dates are well-documented in multiple reliable sources.",
+  "shortDescriptionEn": "Nikolai Ostrovsky was a Soviet writer best known for his novel 'How the Steel Was Tempered.' Despite battling paralysis and blindness due to illness, he completed his influential work before passing away at 32.",
+  "shortDescriptionFr": "Nikolai Ostrovsky était un écrivain soviétique surtout connu pour son roman 'Comment l'acier fut trempé.' Malgré la paralysie et la cécité dues à la maladie, il a achevé son œuvre influente avant de décéder à 32 ans.",
+  "shortDescriptionDe": "Nikolai Ostrowski war ein sowjetischer Schriftsteller, bekannt für seinen Roman 'Wie der Stahl gehärtet wurde.' Trotz Lähmung und Blindheit aufgrund von Krankheit vollendete er sein einflussreiches Werk vor seinem Tod im Alter von 32 Jahren.",
+  "shortDescriptionEs": "Nikolai Ostrovsky fue un escritor soviético conocido por su novela 'Cómo se templó el acero.' A pesar de sufrir parálisis y ceguera debido a una enfermedad, completó su influyente obra antes de fallecer a los 32 años.",
+  "shortDescriptionRu": "Николай Островский был советским писателем, наиболее известным своим романом 'Как закалялась сталь.' Несмотря на паралич и слепоту из-за болезни, он завершил свою влиятельную работу перед смертью в возрасте 32 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nikolai_Ostrovsky",
+    "https://en.wikipedia.org/wiki/How_the_Steel_Was_Tempered",
+    "https://en.wikipedia.org/wiki/Burials_at_the_Novodevichy_Cemetery"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q194161",  "Name": "Aung San",  "BirthDate": "1915-02-13T00:00:00Z",  "DeathDate": "1947-07-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aung%20San%20color%20portrait.jpg",  "SiteLinksCnt": 61,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"585020":{"pageid":585020,"ns":0,"title":"Aung San","extract":"Bogyoke Aung San (Burmese: \u1017\u102d\u102f\u101c\u103a\u1001\u103b\u102f\u1015\u103a \u1021\u1031\u102c\u1004\u103a\u1006\u1014\u103a\u1038; MLCTS: aung hcan:, pronounced [\u00e0\u028a\u0270\u0303 s\u02b0\u00e1\u0270\u0303]; 13 February 1915 \u2013 19 July 1947) was a Burmese politician, independence activist and revolutionary. He was instrumental in Myanmar's struggle for independence from British rule, but he was assassinated just six months before his goal was realized. Aung San is considered to be the founder of modern-day Myanmar and the Tatmadaw (the country's armed forces), and is commonly referred to by the titles \"Father of the Nation\", \"Father of Independence\", and \"Father of the Tatmadaw\".\nDevoted to ending British Colonial rule in Burma, Aung San founded or was closely associated with many Burmese political groups and movements and explored various schools of political thought throughout his life. He was a life-long anti-imperialist and studied socialism as a student. In his first year of university he was elected to the executive committee of the Rangoon University Students' Union and served as the editor of its newspaper. He joined the Thakin Society in 1938 and served as its general secretary. He also helped establish the Communist Party of Burma in 1939 but quit shortly afterwards due to vehement disagreements with the rest of the party leadership. He subsequently co-founded the People's Revolutionary Party (later the Burma Socialist Party) with the primary goal of Burmese independence from the British.\nShortly before the outbreak of World War II, Aung San fled Burma and went to China to solicit foreign support for Burmese independence. During the Japanese occupation of Burma, he served as the minister of war in the Japan-backed State of Burma led by Dr. Ba Maw. As the tide turned against Japan, he switched sides and merged his forces with the Allies to fight against the Japanese. After World War II, he negotiated Burmese independence from Britain in the Aung San-Attlee agreement. He served as the 5th Premier of the British Crown Colony of Burma from 1946 to 1947. He led his party, the Anti-Fascist People's Freedom League, to victory in the 1947 Burmese general election, but he and most of his cabinet were assassinated shortly before the country became independent.\nAung San's daughter, Aung San Suu Kyi, is a stateswoman, politician, and Nobel Peace Prize laureate. She was Burma's State Counsellor and its 20th (and first female) Minister of Foreign Affairs in Win Myint's Cabinet until the 2021 Myanmar coup d'\u00e9tat."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q194161")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q194161",
+  "isRealHuman": true,
+  "birthDate": "1915-02-13",
+  "deathDate": "1947-07-19",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for an accurate calculation of age.",
+  "shortDescriptionEn": "Aung San was a Burmese nationalist leader instrumental in securing Burma's independence from British rule. He founded the modern Burmese army and is revered as the father of the nation. Tragically, he was assassinated on July 19, 1947, just months before Burma's independence.",
+  "shortDescriptionFr": "Aung San était un leader nationaliste birman, essentiel dans l'obtention de l'indépendance de la Birmanie vis-à-vis de la domination britannique. Il a fondé l'armée birmane moderne et est vénéré comme le père de la nation. Tragiquement, il a été assassiné le 19 juillet 1947, quelques mois avant l'indépendance de la Birmanie.",
+  "shortDescriptionDe": "Aung San war ein birmanischer nationalistischer Führer, der maßgeblich an der Unabhängigkeit Birmas von der britischen Herrschaft beteiligt war. Er gründete die moderne birmanische Armee und wird als Vater der Nation verehrt. Tragischerweise wurde er am 19. Juli 1947, nur wenige Monate vor der Unabhängigkeit Birmas, ermordet.",
+  "shortDescriptionEs": "Aung San fue un líder nacionalista birmano fundamental en la obtención de la independencia de Birmania del dominio británico. Fundó el ejército birmano moderno y es venerado como el padre de la nación. Trágicamente, fue asesinado el 19 de julio de 1947, pocos meses antes de la independencia de Birmania.",
+  "shortDescriptionRu": "Аун Сан был бирманским националистическим лидером, сыгравшим ключевую роль в обеспечении независимости Бирмы от британского правления. Он основал современную бирманскую армию и почитается как отец нации. Трагически, он был убит 19 июля 1947 года, за несколько месяцев до обретения Бирмой независимости.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Aung_San",
+    "https://www.britannica.com/biography/Aung-San"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q182840",  "Name": "Louis the Stammerer",  "BirthDate": "0846-11-05T00:00:00Z",  "DeathDate": "0879-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20II%20de%20France%202.jpg",  "SiteLinksCnt": 59,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"23815052":{"pageid":23815052,"ns":0,"title":"Louis the Stammerer","extract":"Louis the Stammerer (French: Louis le B\u00e8gue; 1 November 846 \u2013 10 April 879) was the king of Aquitaine and later the king of West Francia. He was the eldest son of Emperor Charles the Bald and Ermentrude of Orl\u00e9ans. Louis the Stammerer was physically weak and outlived his father by a year and a half.\nLouis succeeded his younger brother Charles the Child as the ruler of Aquitaine in 866 and his father in West Francia in 877, but he was never crowned emperor. He was crowned king on 8 October 877 by Hincmar, archbishop of Reims, at Compiegne and was crowned a second time in August 878 by Pope John VIII at Troyes while the pope was attending a council there. The pope may have even offered him the imperial crown, but it was declined. Louis had relatively little impact on politics. He was described \"a simple and sweet man, a lover of peace, justice, and religion\". In 878, he gave the counties of Barcelona, Girona, and Besal\u00fa to Wilfred the Hairy. His final act was to march against the invading Vikings, but he fell ill and died on 10 April 879 at Compi\u00e8gne, not long after beginning this final campaign. On his death, his realms were divided between his two sons, Carloman II and Louis III of France."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q182840")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q182840",
+  "isRealHuman": true,
+  "birthDate": "846-11-01",
+  "deathDate": "879-04-10",
+  "ageAtDeath": 32,
+  "confidence": 95,
+  "confidenceExplained": "Multiple historical sources consistently indicate that Louis the Stammerer was born on November 1, 846, and died on April 10, 879, making him 32 years old at the time of his death. While some sources suggest he may have been 33, the majority support the age of 32.",
+  "shortDescriptionEn": "Louis the Stammerer (Louis II of France) was King of West Francia from 877 to 879. He ascended to the throne following the death of his father, Charles the Bald. His reign was brief, and he faced health challenges. In 879, while preparing to confront Viking invasions, he fell ill and died on April 10 at the age of 32.",
+  "shortDescriptionFr": "Louis le Bègue (Louis II de France) fut roi de Francie occidentale de 877 à 879. Il monta sur le trône après la mort de son père, Charles le Chauve. Son règne fut bref, et il eut des problèmes de santé. En 879, alors qu'il se préparait à affronter les invasions vikings, il tomba malade et mourut le 10 avril à l'âge de 32 ans.",
+  "shortDescriptionDe": "Ludwig der Stammler (Ludwig II. von Frankreich) war von 877 bis 879 König des Westfrankenreichs. Er bestieg den Thron nach dem Tod seines Vaters, Karl der Kahle. Seine Herrschaft war kurz, und er hatte gesundheitliche Probleme. Im Jahr 879, als er sich darauf vorbereitete, gegen die Wikingerinvasionen vorzugehen, erkrankte er und starb am 10. April im Alter von 32 Jahren.",
+  "shortDescriptionEs": "Luis el Tartamudo (Luis II de Francia) fue rey de Francia Occidental de 877 a 879. Ascendió al trono tras la muerte de su padre, Carlos el Calvo. Su reinado fue breve y enfrentó problemas de salud. En 879, mientras se preparaba para enfrentar las invasiones vikingas, cayó enfermo y murió el 10 de abril a los 32 años.",
+  "shortDescriptionRu": "Людовик Заика (Людовик II Французский) был королем Западно-Франкского королевства с 877 по 879 год. Он взошел на трон после смерти своего отца, Карла Лысого. Его правление было кратким, и он сталкивался с проблемами со здоровьем. В 879 году, готовясь к отражению нашествий викингов, он заболел и умер 10 апреля в возрасте 32 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Louis_the_Stammerer",
+    "https://www.britannica.com/biography/Louis-II-king-of-France",
+    "https://en.wikipedia.org/wiki/List_of_French_monarchs"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q191767",  "Name": "Edred of England",  "BirthDate": "0923-01-01T00:00:00Z",  "DeathDate": "0955-11-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eadred.jpg",  "SiteLinksCnt": 57,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"58521":{"pageid":58521,"ns":0,"title":"Eadred","extract":"Eadred (also Edred, c.\u2009923 \u2013 23 November 955) was King of the English from 26 May 946 until his death in 955. He was the younger son of Edward the Elder and his third wife Eadgifu, and a grandson of Alfred the Great. His elder brother, Edmund, was killed trying to protect his seneschal from an attack by a violent thief. Edmund's two sons, Eadwig and Edgar, were then young children, so Eadred became king. He suffered from ill health in the last years of his life and he died at the age of a little over thirty, having never married. He was succeeded successively by his nephews, Eadwig and Edgar.\nEadred's elder half-brother \u00c6thelstan inherited the kingship of England south of the Humber in 924, and conquered the south Northumbrian Viking kingdom of York in 927. Edmund and Eadred both inherited kingship of the whole kingdom, lost it shortly afterwards when York accepted Viking kings, and recovered it by the end of their reigns. In 954, the York magnates expelled their last king, Erik Bloodaxe, and Eadred appointed Osullf, the Anglo-Saxon ruler of the north Northumbrian territory of Bamburgh, as the first ealdorman of the whole of Northumbria. \nEadred had been very close to Edmund and inherited many of his leading advisers, such as his mother Eadgifu, Oda, Archbishop of Canterbury, and \u00c6thelstan, ealdorman of East Anglia, who was so powerful that he was known as the \"Half-King\". Dunstan, Abbot of Glastonbury and future Archbishop of Canterbury, was a close friend and adviser, and Eadred appears to have authorised Dunstan to draft charters when he became too ill to attend meetings of the witan (King's Council) in his last years.\nThe English Benedictine Reform did not reach fruition until the reign of Edgar, but Eadred was a strong supporter in its early stages. He was close to two of its leaders, \u00c6thelwold, whom he appointed Abbot of Abingdon, and Dunstan. However, like earlier kings he did not share the view of the circle around \u00c6thelwold that Benedictine monasticism was the only worthwhile religious life and he appointed \u00c6lfsige, a married man with a son, as Bishop of Winchester."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q191767")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q191767",
+  "isRealHuman": true,
+  "birthDate": "c. 923",
+  "deathDate": "955-11-23",
+  "ageAtDeath": 32,
+  "confidence": 90,
+  "confidenceExplained": "Historical records consistently indicate Eadred was born around 923 and died in 955 at about 32 years old. While exact birth dates are not documented, the estimated age is widely accepted.",
+  "shortDescriptionEn": "Eadred was King of the English from 946 to 955. He was the younger son of Edward the Elder and Eadgifu. His reign was marked by efforts to consolidate control over Northumbria, which had fluctuated between English and Viking rule. Eadred suffered from health issues in his later years and died on November 23, 955, at approximately 32 years old.",
+  "shortDescriptionFr": "Eadred fut roi des Anglais de 946 à 955. Il était le fils cadet d'Édouard l'Ancien et d'Eadgifu. Son règne fut marqué par des efforts pour consolider le contrôle sur la Northumbrie, qui avait fluctué entre la domination anglaise et viking. Eadred souffrit de problèmes de santé dans ses dernières années et mourut le 23 novembre 955, à environ 32 ans.",
+  "shortDescriptionDe": "Eadred war von 946 bis 955 König der Engländer. Er war der jüngere Sohn von Eduard dem Älteren und Eadgifu. Seine Herrschaft war geprägt von Bemühungen, die Kontrolle über Northumbria zu festigen, das zwischen englischer und Wikingerherrschaft wechselte. Eadred litt in seinen späteren Jahren an gesundheitlichen Problemen und starb am 23. November 955 im Alter von etwa 32 Jahren.",
+  "shortDescriptionEs": "Eadred fue rey de los ingleses desde 946 hasta 955. Era el hijo menor de Eduardo el Viejo y Eadgifu. Su reinado se caracterizó por los esfuerzos para consolidar el control sobre Northumbria, que había fluctuado entre el dominio inglés y vikingo. Eadred sufrió problemas de salud en sus últimos años y murió el 23 de noviembre de 955, a los aproximadamente 32 años.",
+  "shortDescriptionRu": "Эдред был королем англичан с 946 по 955 год. Он был младшим сыном Эдуарда Старшего и Эадгиву. Его правление было отмечено усилиями по консолидации контроля над Нортумбрией, которая колебалась между английским и викингским правлением. Эдред страдал от проблем со здоровьем в последние годы и умер 23 ноября 955 года в возрасте около 32 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Eadred",
+    "https://fr.wikipedia.org/wiki/Eadred",
+    "https://es.wikipedia.org/wiki/Edred",
+    "https://www.britainexpress.com/History/King-Eadred.htm",
+    "https://www.thefamouspeople.com/profiles/eadred-71154.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q485490",  "Name": "John Bonham",  "BirthDate": "1948-05-31T00:00:00Z",  "DeathDate": "1980-09-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Bonham%201975.jpg",  "SiteLinksCnt": 56,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"163272":{"pageid":163272,"ns":0,"title":"John Bonham","extract":"John Henry Bonham (31 May 1948 \u2013 25 September 1980) was an English musician who was the drummer of the rock band Led Zeppelin. Noted for his speed, power, fast single-footed kick drumming, distinctive sound, and feel for groove, he is regarded as one of the greatest and most influential drummers in history.\nBonham was born in 1948 in Redditch, Worcestershire, and took up drums at age 5, receiving a snare drum at age 10 and a full drum set at age 15. He played with multiple local bands both at school and following school, eventually playing in two different bands with Robert Plant. Following the demise of the Yardbirds in 1968, Bonham joined Plant, guitarist Jimmy Page and bass guitarist John Paul Jones to form Led Zeppelin. \nBonham showcased a hard-hitting hard rock style, but also handled funk and Latin-influenced grooves in later Led Zeppelin releases. Like Keith Moon of the Who, Bonham's drum set grew in size following the band's 1969 concert tours, including congas or timpani and a gong. His drum solo \"Moby Dick\" was featured on the group's second album and was a staple of their concerts, often lasting just over 20 minutes. Outside of Led Zeppelin, Bonham played drums for other artists, including the Family Dogg, Screaming Lord Sutch, Lulu, Jimmy Stevens and Wings. Bonham played with Led Zeppelin until his sudden death at age 32, in September 1980 following a day of heavy drinking. The surviving members disbanded the group out of respect for Bonham.\nA mostly self-taught drummer, Bonham was influenced by Max Roach, Gene Krupa and Buddy Rich. While he was primarily known for his hard-rock style during his lifetime, his reputation as a drummer has grown beyond that genre following his death. He has influenced various drummers, including Dave Grohl, Neil Peart, Chad Smith and Dave Lombardo. He was posthumously inducted into the Rock and Roll Hall of Fame in 1995 as a member of Led Zeppelin. In 2016, Rolling Stone named him the greatest drummer of all time.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q485490")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q485490",
+  "isRealHuman": true,
+  "birthDate": "1948-05-31",
+  "deathDate": "1980-09-25",
+  "ageAtDeath": 32,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented, allowing for precise age calculation.",
+  "shortDescriptionEn": "John Bonham was an English musician, best known as the drummer for the rock band Led Zeppelin. Renowned for his speed, power, and distinctive sound, he is considered one of the greatest drummers in rock history. Bonham died unexpectedly at the age of 32 due to pulmonary aspiration after a day of heavy drinking.",
+  "shortDescriptionFr": "John Bonham était un musicien anglais, surtout connu comme le batteur du groupe de rock Led Zeppelin. Réputé pour sa rapidité, sa puissance et son son distinctif, il est considéré comme l'un des plus grands batteurs de l'histoire du rock. Bonham est décédé subitement à l'âge de 32 ans en raison d'une aspiration pulmonaire après une journée de forte consommation d'alcool.",
+  "shortDescriptionDe": "John Bonham war ein englischer Musiker, bekannt als Schlagzeuger der Rockband Led Zeppelin. Bekannt für seine Geschwindigkeit, Kraft und unverwechselbaren Sound, gilt er als einer der größten Schlagzeuger der Rockgeschichte. Bonham starb unerwartet im Alter von 32 Jahren an einer Aspiration nach einem Tag starken Alkoholkonsums.",
+  "shortDescriptionEs": "John Bonham fue un músico inglés, mejor conocido como el baterista de la banda de rock Led Zeppelin. Reconocido por su velocidad, potencia y sonido distintivo, es considerado uno de los mejores bateristas en la historia del rock. Bonham murió inesperadamente a los 32 años debido a una aspiración pulmonar después de un día de consumo excesivo de alcohol.",
+  "shortDescriptionRu": "Джон Бонэм был английским музыкантом, наиболее известным как барабанщик рок-группы Led Zeppelin. Известный своей скоростью, мощью и отличительным звуком, он считается одним из величайших барабанщиков в истории рока. Бонэм неожиданно скончался в возрасте 32 лет из-за аспирации после дня сильного употребления алкоголя.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Bonham",
+    "https://es.wikipedia.org/wiki/John_Bonham",
+    "https://de.wikipedia.org/wiki/John_Bonham",
+    "https://it.wikipedia.org/wiki/John_Bonham"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q464394",  "Name": "Forugh Farrokhzad",  "BirthDate": "1935-01-05T00:00:00Z",  "DeathDate": "1967-02-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D9%81%D8%B1%D9%88%D8%BA%20%D9%81%D8%B1%D8%AE%D8%B2%D8%A7%D8%AF.jpg",  "SiteLinksCnt": 55,  "Age": 32}
+{"batchcomplete":"","query":{"pages":{"907064":{"pageid":907064,"ns":0,"title":"Forugh Farrokhzad","extract":"Forugh Farrokhzad (Persian: \u0641\u0631\u0648\u063a \u0641\u0631\u062e\u0632\u0627\u062f; 28 December 1934 \u2013 14 February 1967) was an influential Iranian poet and film director. She was a controversial modernist poet and an iconoclastic,  feminist author. Farrokhzad died in a car accident at the age of 32.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q464394")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q464394",
+  "isRealHuman": true,
+  "birthDate": "1934-12-28",
+  "deathDate": "1967-02-14",
+  "ageAtDeath": 32,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are sourced from reputable references, confirming her age at death as 32.",
+  "shortDescriptionEn": "Forugh Farrokhzad was a pioneering Iranian poet and film director, known for her modernist and feminist works. She died in a car accident at the age of 32.",
+  "shortDescriptionFr": "Forugh Farrokhzad était une poétesse et réalisatrice iranienne pionnière, connue pour ses œuvres modernistes et féministes. Elle est décédée dans un accident de voiture à l'âge de 32 ans.",
+  "shortDescriptionDe": "Forugh Farrokhzad war eine wegweisende iranische Dichterin und Filmregisseurin, bekannt für ihre modernistischen und feministischen Werke. Sie starb im Alter von 32 Jahren bei einem Autounfall.",
+  "shortDescriptionEs": "Forugh Farrokhzad fue una poeta y directora de cine iraní pionera, conocida por sus obras modernistas y feministas. Murió en un accidente automovilístico a los 32 años.",
+  "shortDescriptionRu": "Фору́г Фаррохза́д была новаторской иранской поэтессой и режиссёром, известной своими модернистскими и феминистскими произведениями. Она погибла в автомобильной аварии в возрасте 32 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Forugh_Farrokhzad",
+    "https://de.wikipedia.org/wiki/Forugh_Farrochzad",
+    "https://es.wikipedia.org/wiki/Forugh_Farrojzad"
+  ]
+}
+
