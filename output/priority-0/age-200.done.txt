@@ -1,0 +1,49 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43982",  "Name": "Bartholomew the Apostle",  "BirthDate": "-0100-01-01T00:00:00Z",  "DeathDate": "0100-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Matteo%20di%20Giovanni%20003.jpg",  "SiteLinksCnt": 92,  "Age": 200}
+{"batchcomplete":"","query":{"pages":{"64935":{"pageid":64935,"ns":0,"title":"Bartholomew the Apostle","extract":"Bartholomew was one of the twelve apostles of Jesus according to the New Testament. Most scholars today identify Bartholomew as Nathanael, who appears in the Gospel of John (1:45\u201351; cf. 21:2)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43982")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43982",
+  "isRealHuman": true,
+  "birthDate": "10-01-01",
+  "deathDate": "68-01-01",
+  "ageAtDeath": 58,
+  "confidence": 50,
+  "confidenceExplained": "The estimated age is based on traditional accounts and typical age ranges of Jesus' disciples, but lacks precise historical records.",
+  "shortDescriptionEn": "Saint Bartholomew, also known as Nathanael, was one of the twelve apostles of Jesus. He is traditionally believed to have preached in regions including India and Armenia. According to tradition, he was martyred in Armenia by being flayed alive and beheaded for his faith.",
+  "shortDescriptionFr": "Saint Barthélemy, également connu sous le nom de Nathanaël, était l'un des douze apôtres de Jésus. Selon la tradition, il a prêché dans des régions telles que l'Inde et l'Arménie. Il aurait été martyrisé en Arménie, écorché vif et décapité pour sa foi.",
+  "shortDescriptionDe": "Der heilige Bartholomäus, auch bekannt als Nathanael, war einer der zwölf Apostel Jesu. Traditionell wird angenommen, dass er in Regionen wie Indien und Armenien predigte. Laut Überlieferung wurde er in Armenien für seinen Glauben gehäutet und enthauptet.",
+  "shortDescriptionEs": "San Bartolomé, también conocido como Natanael, fue uno de los doce apóstoles de Jesús. Según la tradición, predicó en regiones como India y Armenia. Se cree que fue martirizado en Armenia, siendo desollado vivo y decapitado por su fe.",
+  "shortDescriptionRu": "Святой Варфоломей, также известный как Нафанаил, был одним из двенадцати апостолов Иисуса. Согласно преданию, он проповедовал в таких регионах, как Индия и Армения. Считается, что он был замучен в Армении, будучи освежеванным заживо и обезглавленным за свою веру.",
+  "sources": [
+    "https://www.britannica.com/biography/Saint-Bartholomew",
+    "https://www.biography.com/religious-figure/saint-bartholomew",
+    "https://www.gotquestions.org/how-old-were-Jesus-disciples.html"
+  ]
+}
+
+

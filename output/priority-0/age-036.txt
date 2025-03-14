@@ -1,0 +1,962 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4616",  "Name": "Marilyn Monroe",  "BirthDate": "1926-06-01T00:00:00Z",  "DeathDate": "1962-08-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marilyn%20Monroe%20in%20How%20to%20Marry%20a%20Millionaire.jpg",  "SiteLinksCnt": 230,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"19318":{"pageid":19318,"ns":0,"title":"Marilyn Monroe","extract":"Marilyn Monroe ( MARR-\u0259-lin m\u0259n-ROH; born Norma Jeane Mortenson; June 1, 1926 \u2013  August 4, 1962) was an American actress and model. Known for playing comic \"blonde bombshell\" characters, she became one of the most popular sex symbols of the 1950s and early 1960s, as well as an emblem of the era's sexual revolution. She was a top-billed actress for a decade, and her films grossed $200 million (equivalent to $2 billion in 2024) by her death in 1962.\nBorn in Los Angeles, Monroe spent most of her childhood in foster homes and an orphanage before marrying James Dougherty at the age of 16. She was working in a factory during World War II when she met a photographer from the First Motion Picture Unit and began a successful pin-up modeling career, which led to short-lived film contracts with 20th Century Fox and Columbia Pictures. After roles as a freelancer, she began a longer contract with Fox in 1951, becoming a popular actress with roles in several comedies, including As Young as You Feel and Monkey Business, and in the dramas Clash by Night and Don't Bother to Knock. Monroe faced a scandal when it was revealed that she had posed for nude photographs prior to fame, but the story resulted in increased interest in her films.\nMonroe became one of the most marketable Hollywood stars in 1953. She had leading roles in the film noir Niagara, which overtly relied on her sex appeal, and the comedies Gentlemen Prefer Blondes and How to Marry a Millionaire, which established her star image as a \"dumb blonde\". The same year, her nude images were used as the centerfold and cover of the first issue of Playboy. Monroe played a significant role in the creation and management of her public image, but felt disappointed when typecast and underpaid by the studio. She was briefly suspended in early 1954 for refusing a film project but returned to star in The Seven Year Itch (1955), one of the biggest box office successes of her career.\nWhen the studio was still reluctant to change Monroe's contract, she founded her own film production company in 1954 with her friend Milton Greene. She dedicated 1955 to building the company and began studying method acting under Lee Strasberg at the Actors Studio. Later that year, Fox awarded her a new contract, which gave her more control and a larger salary. Her subsequent roles included a critically acclaimed performance in Bus Stop (1956) and her first independent production in The Prince and the Showgirl (1957), for which she received a BAFTA nomination. She won a Golden Globe for her role in Some Like It Hot (1959), a critical and commercial success. Her last completed film was the drama The Misfits (1961).\nMonroe's troubled private life received much attention. Her marriages to retired baseball star Joe DiMaggio and to playwright Arthur Miller were highly publicized; both ended in divorce. On August 4, 1962, Monroe died at age 36 of an overdose of barbiturates at her Los Angeles home. Her death was ruled a probable suicide. Monroe remains a pop culture icon, with the American Film Institute ranking her as the sixth-greatest female screen legend from the Golden Age of Hollywood.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4616")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4616",
+  "isRealHuman": true,
+  "birthDate": "1926-06-01",
+  "deathDate": "1962-08-04",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Marilyn Monroe (June 1, 1926 – August 4, 1962) was an American actress and model, renowned as a major sex symbol of the 1950s and early 1960s. She died at age 36 from a barbiturate overdose, with her death ruled a probable suicide.",
+  "shortDescriptionFr": "Marilyn Monroe (1er juin 1926 – 4 août 1962) était une actrice et mannequin américaine, reconnue comme un symbole sexuel majeur des années 1950 et du début des années 1960. Elle est décédée à 36 ans d'une overdose de barbituriques, sa mort étant considérée comme un suicide probable.",
+  "shortDescriptionDe": "Marilyn Monroe (1. Juni 1926 – 4. August 1962) war eine amerikanische Schauspielerin und Model, bekannt als bedeutendes Sexsymbol der 1950er und frühen 1960er Jahre. Sie starb im Alter von 36 Jahren an einer Überdosis Barbiturate; ihr Tod wurde als wahrscheinlicher Suizid eingestuft.",
+  "shortDescriptionEs": "Marilyn Monroe (1 de junio de 1926 – 4 de agosto de 1962) fue una actriz y modelo estadounidense, reconocida como un importante símbolo sexual de las décadas de 1950 y principios de 1960. Murió a los 36 años por una sobredosis de barbitúricos, y su muerte fue considerada un probable suicidio.",
+  "shortDescriptionRu": "Мэрилин Монро (1 июня 1926 – 4 августа 1962) была американской актрисой и моделью, известной как главный секс-символ 1950-х и начала 1960-х годов. Она умерла в возрасте 36 лет от передозировки барбитуратов; её смерть была признана вероятным самоубийством.",
+  "sources": [
+    "https://www.britannica.com/biography/Marilyn-Monroe",
+    "https://en.wikipedia.org/wiki/Death_of_Marilyn_Monroe",
+    "https://www.history.com/this-day-in-history/marilyn-monroe-is-found-dead"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5679",  "Name": "Lord Byron",  "BirthDate": "1788-01-22T00:00:00Z",  "DeathDate": "1824-04-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Byron%201813%20by%20Phillips.jpg",  "SiteLinksCnt": 212,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"17566665":{"pageid":17566665,"ns":0,"title":"Lord Byron","extract":"George Gordon Byron, 6th Baron Byron,  (22 January 1788 \u2013 19 April 1824) was a British poet and peer. He is one of the major figures of the Romantic movement, and is regarded as being among the greatest poets of the United Kingdom. Among his best-known works are the lengthy narratives Don Juan and Childe Harold's Pilgrimage; many of his shorter lyrics in Hebrew Melodies also became popular.\nByron was educated at Trinity College, Cambridge, before he travelled extensively in Europe. He lived for seven years in Italy, in Venice, Ravenna, and Pisa after he was forced to flee England due to threats of lynching. During his stay in Italy, he would frequently visit his friend and fellow poet Percy Bysshe Shelley. Later in life, Byron joined the Greek War of Independence to fight the Ottoman Empire, for which Greeks revere him as a folk hero. He died leading a campaign in 1824, at the age of 36, from a fever contracted after the first and second sieges of Missolonghi.\nHis one child conceived within marriage, Ada Lovelace, was a founding figure in the field of computer programming based on her notes for Charles Babbage's Analytical Engine. Byron's extramarital children include Allegra Byron, who died in childhood, and possibly Elizabeth Medora Leigh, daughter of his half-sister Augusta Leigh.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5679")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5679",
+  "isRealHuman": true,
+  "birthDate": "1788-01-22",
+  "deathDate": "1824-04-19",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Lord Byron was a British poet and leading figure in the Romantic movement, known for works like 'Don Juan' and 'Childe Harold's Pilgrimage.' He died at 36 in Greece while supporting the Greek War of Independence.",
+  "shortDescriptionFr": "Lord Byron était un poète britannique et une figure majeure du mouvement romantique, connu pour des œuvres comme 'Don Juan' et 'Childe Harold's Pilgrimage.' Il est mort à 36 ans en Grèce en soutenant la guerre d'indépendance grecque.",
+  "shortDescriptionDe": "Lord Byron war ein britischer Dichter und eine führende Figur der Romantik, bekannt für Werke wie 'Don Juan' und 'Childe Harold's Pilgrimage.' Er starb im Alter von 36 Jahren in Griechenland, während er den griechischen Unabhängigkeitskrieg unterstützte.",
+  "shortDescriptionEs": "Lord Byron fue un poeta británico y figura destacada del movimiento romántico, conocido por obras como 'Don Juan' y 'Childe Harold's Pilgrimage.' Murió a los 36 años en Grecia mientras apoyaba la Guerra de Independencia griega.",
+  "shortDescriptionRu": "Лорд Байрон был британским поэтом и ведущей фигурой романтического движения, известным такими произведениями, как 'Дон Жуан' и 'Паломничество Чайльд Гарольда.' Он умер в 36 лет в Греции, поддерживая Греческую войну за независимость.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lord_Byron",
+    "https://www.britannica.com/biography/Lord-Byron-poet",
+    "https://www.poetryfoundation.org/poets/lord-byron"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q409",  "Name": "Bob Marley",  "BirthDate": "1945-02-06T00:00:00Z",  "DeathDate": "1981-05-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bob%20Marley%201976%20press%20photo.jpg",  "SiteLinksCnt": 161,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"8239846":{"pageid":8239846,"ns":0,"title":"Bob Marley","extract":"Robert Nesta Marley  (6 February 1945 \u2013 11 May 1981) was a Jamaican singer, songwriter, and guitarist. Considered one of the pioneers of reggae, he fused elements of reggae, ska and rocksteady and was renowned for his distinctive vocal and songwriting style. Marley increased the visibility of Jamaican music worldwide and became a global figure in popular culture. He became known as a Rastafarian icon, and he infused his music with a sense of spirituality. Marley is also considered a global symbol of Jamaican music and culture and identity and was controversial in his outspoken support for democratic social reforms. Marley also supported the legalisation of cannabis and advocated for Pan-Africanism.\nBorn in Nine Mile, Jamaica, Marley began his career in 1963, after forming the group Teenagers with Peter Tosh and Bunny Wailer, which became the Wailers. In 1965, they released their debut studio album, The Wailing Wailers, which included the single \"One Love\", a reworking of \"People Get Ready\". It was popular worldwide and established the group as a rising figure in reggae. The Wailers released 11 more studio albums, and after signing to Island Records, changed their name to Bob Marley and the Wailers. While initially employing louder instrumentation and singing, they began engaging in rhythmic-based song construction in the late 1960s and early 1970s, which coincided with Marley's conversion to Rastafari. Around this time, Marley relocated to London, and the group embodied their musical shift with the release of the album The Best of The Wailers (1971).\nBob Marley and the Wailers began to gain international attention after signing to Island and touring in support of the albums Catch a Fire and Burnin' (both 1973). Following their disbandment a year later, Marley carried on under the band's name. The album Natty Dread (1974) received positive reviews. In 1975, following the global popularity of Eric Clapton's version of Marley's \"I Shot the Sheriff\", Marley had his international breakthrough with his first hit outside Jamaica, a live version of \"No Woman, No Cry\", from the Live! album. This was followed by his breakthrough album in the United States, Rastaman Vibration (1976), which reached the Top 50 of the Billboard Soul Charts. A few months later, Marley survived an assassination attempt at his home in Jamaica, which was believed to be politically motivated. He permanently relocated to London, where he recorded the album Exodus, which incorporated elements of blues, soul, and British rock and had commercial and critical success. In 1977, Marley was diagnosed with acral lentiginous melanoma; he died in May 1981, shortly after baptism into the Ethiopian Orthodox Church. Fans around the world expressed their grief, and he received a state funeral in Jamaica.\nThe greatest hits album Legend was released in 1984 and became the best-selling reggae album of all time. Marley also ranks as one of the best-selling music artists of all time, with estimated sales of more than 75 million records worldwide. He was posthumously honoured by Jamaica soon after his death with a designated Order of Merit by his nation. In 1994, Marley was posthumously inducted into the Rock and Roll Hall of Fame. Rolling Stone ranked him No. 11 on its list of the 100 Greatest Artists of All Time. and No. 98 on its list of the 200 Greatest Singers of All Time. His other achievements include a Grammy Lifetime Achievement Award, a star on the Hollywood Walk of Fame, and induction into the Black Music & Entertainment Walk of Fame."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q409")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q409",
+  "isRealHuman": true,
+  "birthDate": "1945-02-06",
+  "deathDate": "1981-05-11",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "The provided information matches the known biographical details of Bob Marley, including his birth and death dates, and age at death.",
+  "shortDescriptionEn": "Bob Marley was a Jamaican singer, songwriter, and guitarist who pioneered reggae music. He died at 36 from melanoma that spread to his lungs and brain.",
+  "shortDescriptionFr": "Bob Marley était un chanteur, auteur-compositeur et guitariste jamaïcain, pionnier du reggae. Il est décédé à 36 ans d'un mélanome qui s'est propagé à ses poumons et à son cerveau.",
+  "shortDescriptionDe": "Bob Marley war ein jamaikanischer Sänger, Songwriter und Gitarrist, der als Pionier des Reggae gilt. Er starb im Alter von 36 Jahren an einem Melanom, das sich auf seine Lungen und sein Gehirn ausbreitete.",
+  "shortDescriptionEs": "Bob Marley fue un cantante, compositor y guitarrista jamaicano, pionero del reggae. Murió a los 36 años debido a un melanoma que se extendió a sus pulmones y cerebro.",
+  "shortDescriptionRu": "Боб Марли был ямайским певцом, автором песен и гитаристом, пионером регги. Он умер в 36 лет от меланомы, распространившейся на его легкие и мозг.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bob_Marley",
+    "https://www.biography.com/musician/bob-marley"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9685",  "Name": "Diana, Princess of Wales",  "BirthDate": "1961-07-01T00:00:00Z",  "DeathDate": "1997-08-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Diana%2C%20Princess%20of%20Wales%201997%20%282%29%20%28cropped%29.jpg",  "SiteLinksCnt": 142,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"24095":{"pageid":24095,"ns":0,"title":"Diana, Princess of Wales","extract":"Diana, Princess of Wales (born Diana Frances Spencer; 1 July 1961 \u2013 31 August 1997), was a member of the British royal family. She was the first wife of Charles III (then Prince of Wales) and mother of Princes William and Harry. Her activism and glamour, which made her an international icon, earned her enduring popularity.\nDiana was born into the British nobility and grew up close to the royal family, living at Park House on their Sandringham estate. In 1981, while working as a nursery teacher's assistant, she became engaged to Charles, the eldest son of Elizabeth II. Their wedding took place at St Paul's Cathedral in July 1981 and made her Princess of Wales, a role in which she was enthusiastically received by the public. The couple had two sons, William and Harry, who were then respectively second and third in the line of succession to the British throne. Diana's marriage to Charles suffered due to their incompatibility and extramarital affairs. They separated in 1992, soon after the breakdown of their relationship became public knowledge. Their marital difficulties were widely publicised, and the couple divorced in 1996.\nAs Princess of Wales, Diana undertook royal duties on behalf of the Queen and represented her at functions across the Commonwealth realms. She was celebrated in the media for her beauty, style, charm, and later, her unconventional approach to charity work. Her patronages were initially centred on children and the elderly, but she later became known for her involvement in two particular campaigns: one involved the social attitudes towards and the acceptance of AIDS patients, and the other for the removal of landmines, promoted through the International Red Cross. She also raised awareness and advocated for ways to help people affected by cancer and mental illness. Diana was initially noted for her shyness, but her charisma and friendliness endeared her to the public and helped her reputation survive the public collapse of her marriage. Considered photogenic, she is regarded as a fashion icon of the 1980s and 1990s.\nIn August 1997, Diana died in a car crash in Paris; the incident led to extensive public mourning and global media attention. An inquest returned a verdict of unlawful killing following Operation Paget, an investigation by the Metropolitan Police. Her legacy has had a significant effect on the royal family and British society."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9685")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9685",
+  "isRealHuman": true,
+  "birthDate": "1961-07-01",
+  "deathDate": "1997-08-31",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely recognized, confirming that Diana was 36 years old at the time of her death.",
+  "shortDescriptionEn": "Diana, Princess of Wales, was a British royal known for her compassion, style, and charitable work. She tragically died in a car crash in Paris at the age of 36.",
+  "shortDescriptionFr": "Diana, princesse de Galles, était une membre de la famille royale britannique, connue pour sa compassion, son style et son travail caritatif. Elle est tragiquement décédée dans un accident de voiture à Paris à l'âge de 36 ans.",
+  "shortDescriptionDe": "Diana, Prinzessin von Wales, war ein Mitglied der britischen Königsfamilie, bekannt für ihr Mitgefühl, ihren Stil und ihre wohltätige Arbeit. Sie starb tragischerweise bei einem Autounfall in Paris im Alter von 36 Jahren.",
+  "shortDescriptionEs": "Diana, Princesa de Gales, fue un miembro de la familia real británica, conocida por su compasión, estilo y trabajo caritativo. Falleció trágicamente en un accidente automovilístico en París a los 36 años.",
+  "shortDescriptionRu": "Диана, принцесса Уэльская, была членом британской королевской семьи, известной своим состраданием, стилем и благотворительной деятельностью. Она трагически погибла в автокатастрофе в Париже в возрасте 36 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diana,_Princess_of_Wales"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44197",  "Name": "Maximilien Robespierre",  "BirthDate": "1758-05-06T00:00:00Z",  "DeathDate": "1794-07-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robespierre.jpg",  "SiteLinksCnt": 126,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"23860776":{"pageid":23860776,"ns":0,"title":"Maximilien Robespierre","extract":"Maximilien Fran\u00e7ois Marie Isidore de Robespierre (; French: [maksimilj\u025b\u0303  \u0281\u0254b\u025bspj\u025b\u0281]; 6 May 1758 \u2013 28 July 1794) was a French lawyer and statesman, widely recognised as one of the most influential and controversial figures of the French Revolution. Robespierre fervently campaigned for the voting rights of all men and their unimpeded admission to the National Guard.  Additionally, he advocated the right to petition, the right to bear arms in self-defence, and the abolition of the Atlantic slave trade. He was a radical Jacobin leader who came to prominence as a member of the Committee of Public Safety, an administrative body of the First French Republic. His legacy has been heavily influenced by his actual or perceived participation in repression of the Revolution's opponents, but is notable for his progressive views for the time.\nAs one of the prominent members of the Paris Commune, Robespierre was elected as a deputy to the National Convention in early September 1792. He joined The Mountain, a radical left-wing faction. However, he faced criticism for purportedly trying to establish either a triumvirate or a dictatorship. In April 1793, Robespierre advocated the mobilisation of a sans-culotte army aiming at enforcing revolutionary laws and eliminating any counter-revolutionary elements. This call led to the armed Insurrection of 31 May \u2013 2 June 1793. On 27 July, he was appointed a member of the Committee of Public Safety.\nRobespierre faced growing disillusionment among others due in part to the politically motivated violence advocated by The Mountain. Increasingly, members of the Convention turned against him, and accusations piled up on 9 Thermidor. Robespierre was arrested and taken to a prison. Approximately 90 individuals, including Robespierre, were executed without trial in the following days, marking the onset of the Thermidorian Reaction.\nA figure deeply divisive during his lifetime, Robespierre's views and policies continue to evoke controversy. Academic and popular discourse persistently engage in debates surrounding his legacy and reputation."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44197")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q44197",
+  "isRealHuman": true,
+  "birthDate": "1758-05-06",
+  "deathDate": "1794-07-28",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Maximilien Robespierre are well-documented in historical records, allowing for an exact calculation of his age at death.",
+  "shortDescriptionEn": "Maximilien Robespierre was a French lawyer and statesman, widely recognized as one of the most influential and controversial figures of the French Revolution. He fervently campaigned for universal male suffrage, the right to petition, the right to bear arms in self-defense, and the abolition of the Atlantic slave trade. As a member of the Committee of Public Safety, he played a pivotal role in the revolutionary government. His tenure is notably marked by his involvement in the Reign of Terror, a period of political repression and mass executions of perceived enemies of the revolution. This period of political repression and mass executions led to his arrest and execution by guillotine on July 28, 1794.",
+  "shortDescriptionFr": "Maximilien Robespierre était un avocat et homme d'État français, largement reconnu comme l'une des figures les plus influentes et controversées de la Révolution française. Il a vigoureusement milité pour le suffrage universel masculin, le droit de pétition, le droit de porter des armes pour l'autodéfense et l'abolition de la traite atlantique des esclaves. En tant que membre du Comité de salut public, il a joué un rôle central dans le gouvernement révolutionnaire. Son mandat est notamment marqué par son implication dans la Terreur, une période de répression politique et d'exécutions massives des ennemis présumés de la révolution. Cette période de répression politique et d'exécutions massives a conduit à son arrestation et à son exécution par guillotine le 28 juillet 1794.",
+  "shortDescriptionDe": "Maximilien Robespierre war ein französischer Anwalt und Staatsmann, weithin anerkannt als eine der einflussreichsten und umstrittensten Persönlichkeiten der Französischen Revolution. Er setzte sich energisch für das allgemeine Männerwahlrecht, das Petitionsrecht, das Recht auf Waffenbesitz zur Selbstverteidigung und die Abschaffung des atlantischen Sklavenhandels ein. Als Mitglied des Wohlfahrtsausschusses spielte er eine zentrale Rolle in der revolutionären Regierung. Seine Amtszeit ist insbesondere durch seine Beteiligung an der Schreckensherrschaft gekennzeichnet, einer Zeit politischer Repression und Massenhinrichtungen vermeintlicher Feinde der Revolution. Diese Zeit der politischen Repression und Massenhinrichtungen führte zu seiner Verhaftung und Hinrichtung durch die Guillotine am 28. Juli 1794.",
+  "shortDescriptionEs": "Maximilien Robespierre fue un abogado y estadista francés, ampliamente reconocido como una de las figuras más influyentes y controvertidas de la Revolución Francesa. Abogó fervientemente por el sufragio masculino universal, el derecho de petición, el derecho a portar armas en defensa propia y la abolición del comercio atlántico de esclavos. Como miembro del Comité de Seguridad Pública, desempeñó un papel central en el gobierno revolucionario. Su mandato se caracteriza notablemente por su participación en el Reinado del Terror, un período de represión política y ejecuciones masivas de los enemigos percibidos de la revolución. Este período de represión política y ejecuciones masivas llevó a su arresto y ejecución por guillotina el 28 de julio de 1794.",
+  "shortDescriptionRu": "Максимилиан Робеспьер был французским юристом и государственным деятелем, широко признанным одной из самых влиятельных и противоречивых фигур Французской революции. Он горячо выступал за всеобщее избирательное право для мужчин, право на подачу петиций, право на ношение оружия для самообороны и отмену атлантической работорговли. Будучи членом Комитета общественного спасения, он сыграл центральную роль в революционном правительстве. Его пребывание на посту особенно отмечено его участием в эпохе террора, периоде политических репрессий и массовых казней предполагаемых врагов революции. Этот период политических репрессий и массовых казней привел к его аресту и казни на гильотине 28 июля 1794 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maximilien_Robespierre",
+    "https://www.britannica.com/biography/Maximilien-Robespierre"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7259",  "Name": "Ada Lovelace",  "BirthDate": "1815-12-10T00:00:00Z",  "DeathDate": "1852-11-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ada%20Byron%20daguerreotype%20by%20Antoine%20Claudet%201843%20or%201850%20-%20cropped.png",  "SiteLinksCnt": 123,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"974":{"pageid":974,"ns":0,"title":"Ada Lovelace","extract":"Augusta Ada King, Countess of Lovelace (n\u00e9e Byron; 10 December 1815 \u2013 27 November 1852), also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation.\nLovelace was the only legitimate child of poet Lord Byron and reformer Anne Isabella Milbanke. All her half-siblings, Lord Byron's other children, were born out of wedlock to other women. Lord Byron separated from his wife a month after Ada was born and left England forever. He died in Greece when she was eight. Lady Byron was anxious about her daughter's upbringing and promoted Lovelace's interest in mathematics and logic in an effort to prevent her from developing her father's perceived insanity. Despite this, Lovelace remained interested in her father, naming her two sons Byron and Gordon. Upon her death, she was buried next to her father at her request. Although often ill in her childhood, Lovelace pursued her studies assiduously. She married William King in 1835. King was made Earl of Lovelace in 1838, Ada thereby becoming Countess of Lovelace.\nLovelace's educational and social exploits brought her into contact with scientists such as Andrew Crosse, Charles Babbage, Sir David Brewster, Charles Wheatstone and Michael Faraday, and the author Charles Dickens, contacts which she used to further her education. Lovelace described her approach as \"poetical science\" and herself as an \"Analyst (& Metaphysician)\".\nWhen she was eighteen, Lovelace's mathematical talents led her to a long working relationship and friendship with fellow British mathematician Charles Babbage, who is known as \"the father of computers\". She was in particular interested in Babbage's work on the Analytical Engine. Lovelace first met him on 5 June 1833, when she and her mother attended one of Charles Babbage's Saturday night soir\u00e9es with their mutual friend, and Lovelace's private tutor, Mary Somerville.\nBetween 1842 and 1843, Lovelace translated an article by the military engineer Luigi Menabrea (later Prime Minister of Italy) about the Analytical Engine, supplementing it with an elaborate set of seven notes, simply called \"Notes\". \nLovelace's notes are important in the early history of computers, especially since the seventh one contained what many consider to be the first computer program\u2014that is, an algorithm designed to be carried out by a machine. Other historians reject this perspective and point out that Babbage's personal notes from 1837 to 1840 contain the first programs for the engine. She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities. Her mindset of \"poetical science\" led her to ask questions about the Analytical Engine (as shown in her notes), examining how individuals and society relate to technology as a collaborative tool. The programming language Ada is named after her.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7259")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7259",
+  "isRealHuman": true,
+  "birthDate": "1815-12-10",
+  "deathDate": "1852-11-27",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, allowing for precise calculation of her age at death.",
+  "shortDescriptionEn": "Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's Analytical Engine. She is often considered the first computer programmer. She died at the age of 36 from uterine cancer.",
+  "shortDescriptionFr": "Ada Lovelace était une mathématicienne et écrivaine anglaise, principalement connue pour son travail sur la machine analytique de Charles Babbage. Elle est souvent considérée comme la première programmeuse informatique. Elle est décédée à l'âge de 36 ans d'un cancer de l'utérus.",
+  "shortDescriptionDe": "Ada Lovelace war eine englische Mathematikerin und Schriftstellerin, hauptsächlich bekannt für ihre Arbeit an Charles Babbages Analytischer Maschine. Sie wird oft als die erste Computerprogrammiererin angesehen. Sie starb im Alter von 36 Jahren an Gebärmutterkrebs.",
+  "shortDescriptionEs": "Ada Lovelace fue una matemática y escritora inglesa, conocida principalmente por su trabajo en la Máquina Analítica de Charles Babbage. A menudo se la considera la primera programadora informática. Murió a los 36 años de cáncer de útero.",
+  "shortDescriptionRu": "Ада Лавлейс была английским математиком и писательницей, известной прежде всего своей работой над Аналитической машиной Чарльза Бэббиджа. Она часто считается первым программистом. Она умерла в возрасте 36 лет от рака матки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ada_Lovelace",
+    "https://www.britannica.com/biography/Ada-Lovelace"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132964",  "Name": "Vladimir Mayakovsky",  "BirthDate": "1893-07-19T00:00:00Z",  "DeathDate": "1930-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Majakovszkij.jpg",  "SiteLinksCnt": 121,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"162145":{"pageid":162145,"ns":0,"title":"Vladimir Mayakovsky","extract":"Vladimir Vladimirovich Mayakovsky (Russian: \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447 \u041c\u0430\u044f\u043a\u043e\u0432\u0441\u043a\u0438\u0439, IPA: [vl\u0250\u02c8d\u02b2im\u02b2\u026ar vl\u0250\u02c8d\u02b2im\u02b2\u026ar\u0259v\u02b2\u026at\u0255 m\u0259j\u026a\u02c8kofsk\u02b2\u026aj] ; 19 July [O.S. 7 July] 1893 \u2013 14 April 1930) was a Russian poet, playwright, artist, and actor. \nDuring his early, pre-Revolution period leading into 1917, Mayakovsky became renowned as a prominent figure of the Russian Futurist movement. He co-signed the Futurist manifesto, A Slap in the Face of Public Taste (1913), and wrote such poems as \"A Cloud in Trousers\" (1915) and \"Backbone Flute\" (1916). Mayakovsky produced a large and diverse body of work during the course of his career: he wrote poems, wrote and directed plays, appeared in films, edited the art journal LEF, and produced agitprop posters in support of the Communist Party during the Russian Civil War of 1917\u20131922.\nThough Mayakovsky's work regularly demonstrated ideological and patriotic support for the ideology of the Bolsheviks and a strong admiration of Vladimir Lenin, his relationship with the Soviet state was always complex and often tumultuous. Mayakovsky often found himself engaged in confrontation with the increasing involvement of the Soviet state in cultural censorship and the development of the State doctrine of Socialist realism. Works that criticized or satirized aspects of the Soviet system, such as the poem \"Talking With the Taxman About Poetry\" (1926), and the plays The Bedbug (1929) and The Bathhouse (1929), met with scorn from the Soviet state and literary establishment.\nIn 1930, Mayakovsky committed suicide. Even after death, his relationship with the Soviet state remained unsteady. Though Mayakovsky had previously been harshly criticized by Soviet governmental bodies such as the Russian Association of Proletarian Writers, Premier Joseph Stalin described Mayakovsky after his death as \"the best and the most talented poet of our Soviet epoch\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132964")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q132964",
+  "isRealHuman": true,
+  "birthDate": "1893-07-19",
+  "deathDate": "1930-04-14",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted in historical records.",
+  "shortDescriptionEn": "Vladimir Mayakovsky was a Russian poet, playwright, artist, and actor, renowned for his leading role in the Russian Futurist movement. He produced a diverse body of work, including poems, plays, and agitprop posters supporting the Communist Party. Despite his ideological support for the Bolsheviks, he often confronted Soviet cultural censorship. In 1930, he committed suicide at the age of 36.",
+  "shortDescriptionFr": "Vladimir Maïakovski était un poète, dramaturge, artiste et acteur russe, connu pour son rôle de premier plan dans le mouvement futuriste russe. Il a produit une œuvre variée, comprenant des poèmes, des pièces de théâtre et des affiches de propagande soutenant le Parti communiste. Malgré son soutien idéologique aux bolcheviks, il s'est souvent heurté à la censure culturelle soviétique. En 1930, il s'est suicidé à l'âge de 36 ans.",
+  "shortDescriptionDe": "Wladimir Majakowski war ein russischer Dichter, Dramatiker, Künstler und Schauspieler, bekannt für seine führende Rolle in der russischen Futurismusbewegung. Er schuf ein vielfältiges Werk, darunter Gedichte, Theaterstücke und Agitprop-Poster zur Unterstützung der Kommunistischen Partei. Trotz seiner ideologischen Unterstützung für die Bolschewiki geriet er oft in Konflikt mit der sowjetischen Kulturzensur. 1930 beging er im Alter von 36 Jahren Selbstmord.",
+  "shortDescriptionEs": "Vladimir Mayakovsky fue un poeta, dramaturgo, artista y actor ruso, reconocido por su papel destacado en el movimiento futurista ruso. Produjo una obra diversa que incluye poemas, obras de teatro y carteles de propaganda en apoyo al Partido Comunista. A pesar de su apoyo ideológico a los bolcheviques, a menudo se enfrentó a la censura cultural soviética. En 1930, se suicidó a los 36 años.",
+  "shortDescriptionRu": "Владимир Маяковский был русским поэтом, драматургом, художником и актером, известным своей ведущей ролью в русском футуристическом движении. Он создал разнообразное наследие, включая стихи, пьесы и агитационные плакаты в поддержку Коммунистической партии. Несмотря на свою идеологическую поддержку большевиков, он часто сталкивался с советской культурной цензурой. В 1930 году он покончил с собой в возрасте 36 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vladimir_Mayakovsky",
+    "https://www.poetryfoundation.org/poets/vladimir-mayakovsky"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41257",  "Name": "Heinrich Hertz",  "BirthDate": "1857-02-22T00:00:00Z",  "DeathDate": "1894-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/HEINRICH%20HERTZ.JPG",  "SiteLinksCnt": 109,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"13445":{"pageid":13445,"ns":0,"title":"Heinrich Hertz","extract":"Heinrich Rudolf Hertz ( HURTS; German: [\u02c8ha\u026an\u0281\u026a\u00e7 h\u025b\u0281ts]; 22 February 1857 \u2013 1 January 1894) was a German physicist, who first conclusively proved the existence of the electromagnetic waves predicted by James Clerk Maxwell's equations of electromagnetism, laying the foundation for the radio and modern telecommunications."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41257")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41257",
+  "isRealHuman": true,
+  "birthDate": "1857-02-22",
+  "deathDate": "1894-01-01",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Heinrich Rudolf Hertz (22 February 1857 – 1 January 1894) was a German physicist who proved the existence of electromagnetic waves, confirming James Clerk Maxwell's theory. His discoveries paved the way for modern wireless communication. Hertz died at the age of 36 due to complications from an infection.",
+  "shortDescriptionFr": "Heinrich Rudolf Hertz (22 février 1857 – 1er janvier 1894) était un physicien allemand qui a prouvé l'existence des ondes électromagnétiques, confirmant la théorie de James Clerk Maxwell. Ses découvertes ont ouvert la voie à la communication sans fil moderne. Hertz est décédé à l'âge de 36 ans des suites d'une infection.",
+  "shortDescriptionDe": "Heinrich Rudolf Hertz (22. Februar 1857 – 1. Januar 1894) war ein deutscher Physiker, der die Existenz elektromagnetischer Wellen nachwies und damit die Theorie von James Clerk Maxwell bestätigte. Seine Entdeckungen ebneten den Weg für die moderne drahtlose Kommunikation. Hertz starb im Alter von 36 Jahren an den Folgen einer Infektion.",
+  "shortDescriptionEs": "Heinrich Rudolf Hertz (22 de febrero de 1857 – 1 de enero de 1894) fue un físico alemán que demostró la existencia de ondas electromagnéticas, confirmando la teoría de James Clerk Maxwell. Sus descubrimientos allanaron el camino para la comunicación inalámbrica moderna. Hertz murió a los 36 años debido a complicaciones de una infección.",
+  "shortDescriptionRu": "Генрих Рудольф Герц (22 февраля 1857 – 1 января 1894) был немецким физиком, доказавшим существование электромагнитных волн, подтвердив теорию Джеймса Клерка Максвелла. Его открытия проложили путь для современной беспроводной связи. Герц умер в возрасте 36 лет из-за осложнений после инфекции.",
+  "sources": [
+    "https://www.britannica.com/biography/Heinrich-Hertz",
+    "https://en.wikipedia.org/wiki/Heinrich_Hertz",
+    "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/pioneers/heinrich-hertz/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q56158",  "Name": "Georges Bizet",  "BirthDate": "1838-10-25T00:00:00Z",  "DeathDate": "1875-06-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Georges%20bizet.jpg",  "SiteLinksCnt": 103,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"67955":{"pageid":67955,"ns":0,"title":"Georges Bizet","extract":"Georges Bizet (n\u00e9 Alexandre C\u00e9sar L\u00e9opold Bizet; 25 October 1838 \u2013 3 June 1875) was a French composer of the Romantic era. Best known for his operas in a career cut short by his early death, Bizet achieved few successes before his final work, Carmen, which has become one of the most popular and frequently performed works in the entire opera repertoire.\nDuring a brilliant student career at the Conservatoire de Paris, Bizet won many prizes, including the prestigious Prix de Rome in 1857. He was recognised as an outstanding pianist, though he chose not to capitalise on this skill and rarely performed in public. Returning to Paris after almost three years in Italy, he found that the main Parisian opera theatres preferred the established classical repertoire to the works of newcomers. His keyboard and orchestral compositions were likewise largely ignored; as a result, his career stalled, and he earned his living mainly by arranging and transcribing the music of others. Restless for success, he began many theatrical projects during the 1860s, most of which were abandoned. Neither of his two operas that reached the stage in this time\u2014Les p\u00eacheurs de perles and La jolie fille de Perth\u2014were immediately successful.\nAfter the Franco-Prussian War of 1870\u20131871, during which Bizet served in the National Guard, he had little success with his one-act opera Djamileh, though an orchestral suite derived from his incidental music to Alphonse Daudet's play L'Arl\u00e9sienne was instantly popular. The production of his final opera, Carmen, was delayed because of fears that its themes of betrayal and murder would offend audiences. After its premiere on 3 March 1875, Bizet was convinced that the work was a failure; he died of a heart attack three months later, unaware that it would prove a spectacular and enduring success.\nBizet's marriage to Genevi\u00e8ve Hal\u00e9vy was intermittently happy and produced one son. After his death, his work, apart from Carmen, was generally neglected. Manuscripts were given away or lost, and published versions of his works were frequently revised and adapted by other hands. He founded no school and had no obvious disciples or successors. After years of neglect, his works began to be performed more frequently in the 20th century. Later commentators have acclaimed him as a composer of brilliance and originality whose premature death was a significant loss to French musical theatre.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q56158")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q56158",
+  "isRealHuman": true,
+  "birthDate": "1838-10-25",
+  "deathDate": "1875-06-03",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "The dates of birth and death are well-documented and widely accepted, allowing for a precise calculation of Bizet's age at death.",
+  "shortDescriptionEn": "Georges Bizet was a French composer of the Romantic era, best known for his opera 'Carmen.' He died suddenly at the age of 36, just three months after its premiere.",
+  "shortDescriptionFr": "Georges Bizet était un compositeur français de l'époque romantique, surtout connu pour son opéra 'Carmen.' Il est décédé subitement à l'âge de 36 ans, seulement trois mois après sa première.",
+  "shortDescriptionDe": "Georges Bizet war ein französischer Komponist der Romantik, bekannt für seine Oper 'Carmen.' Er starb plötzlich im Alter von 36 Jahren, nur drei Monate nach deren Premiere.",
+  "shortDescriptionEs": "Georges Bizet fue un compositor francés de la era romántica, mejor conocido por su ópera 'Carmen.' Murió repentinamente a los 36 años, solo tres meses después de su estreno.",
+  "shortDescriptionRu": "Жорж Бизе был французским композитором эпохи романтизма, наиболее известным своей оперой 'Кармен.' Он внезапно скончался в возрасте 36 лет, всего через три месяца после её премьеры.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Georges_Bizet",
+    "https://www.britannica.com/biography/Georges-Bizet"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82445",  "Name": "Henri de Toulouse-Lautrec",  "BirthDate": "1864-11-24T00:00:00Z",  "DeathDate": "1901-09-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Photolautrec.jpg",  "SiteLinksCnt": 97,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"64689":{"pageid":64689,"ns":0,"title":"Henri de Toulouse-Lautrec","extract":"Comte Henri Marie Raymond de Toulouse-Lautrec-Monfa (24 November 1864 \u2013 9 September 1901), known as Toulouse-Lautrec (French: [tuluz lot\u0281\u025bk]), was a French painter, printmaker, draughtsman, caricaturist, and illustrator whose immersion in the colourful and theatrical life of Paris in the late 19th century allowed him to produce a collection of enticing, elegant, and provocative images of the sometimes decadent affairs of those times.\nBorn into the aristocracy, Toulouse-Lautrec broke both his legs around the time of his adolescence and, possibly due to the rare condition pycnodysostosis, was very short as an adult due to his undersized legs. In addition to alcoholism, he developed an affinity for brothels and prostitutes that directed the subject matter for many of his works, which record details of the late-19th-century bohemian lifestyle in Paris. He is among the painters described as being Post-Impressionists, with Paul C\u00e9zanne, Vincent van Gogh, Paul Gauguin, and Georges Seurat also commonly considered as belonging in this loose group.\nIn a 2005 auction at Christie's auction house, La Blanchisseuse, Toulouse-Lautrec's early painting of a young laundress, sold for US$22.4 million, setting a new record for the artist for a price at auction."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82445")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q82445",
+  "isRealHuman": true,
+  "birthDate": "1864-11-24",
+  "deathDate": "1901-09-09",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted, leading to a high confidence level in the calculated age.",
+  "shortDescriptionEn": "Henri de Toulouse-Lautrec was a French painter and illustrator renowned for his depictions of Parisian nightlife in the late 19th century. He died at 36 from complications related to alcoholism and syphilis.",
+  "shortDescriptionFr": "Henri de Toulouse-Lautrec était un peintre et illustrateur français, célèbre pour ses représentations de la vie nocturne parisienne à la fin du XIXe siècle. Il est décédé à 36 ans des suites de l'alcoolisme et de la syphilis.",
+  "shortDescriptionDe": "Henri de Toulouse-Lautrec war ein französischer Maler und Illustrator, bekannt für seine Darstellungen des Pariser Nachtlebens im späten 19. Jahrhundert. Er starb im Alter von 36 Jahren an den Folgen von Alkoholismus und Syphilis.",
+  "shortDescriptionEs": "Henri de Toulouse-Lautrec fue un pintor e ilustrador francés, reconocido por sus representaciones de la vida nocturna parisina a finales del siglo XIX. Murió a los 36 años debido a complicaciones relacionadas con el alcoholismo y la sífilis.",
+  "shortDescriptionRu": "Анри де Тулуз-Лотрек был французским художником и иллюстратором, известным своими изображениями парижской ночной жизни конца XIX века. Он умер в возрасте 36 лет от осложнений, связанных с алкоголизмом и сифилисом.",
+  "sources": [
+    "https://www.britannica.com/biography/Henri-de-Toulouse-Lautrec",
+    "https://www.biography.com/artists/henri-de-toulouse-lautrec",
+    "https://www.metmuseum.org/essays/henri-de-toulouse-lautrec-1864-1901"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1416",  "Name": "Otho",  "BirthDate": "0032-04-26T00:00:00Z",  "DeathDate": "0069-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Arte%20classicista%2C%20busto%20di%20ottone%2C%20XVI-XVII%20sec%2003.JPG",  "SiteLinksCnt": 87,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"22481":{"pageid":22481,"ns":0,"title":"Otho","extract":"Otho ( OH-tho; born Marcus Salvius Otho; 28 April 32 \u2013 16 April 69) was Roman emperor, ruling for three months from 15 January to 16 April 69. He was the second emperor of the Year of the Four Emperors.\nA member of a noble Etruscan family, Otho was initially a friend and courtier of the young emperor Nero until he was effectively banished to the governorship of the remote province of Lusitania in 58 following his wife Poppaea Sabina's affair with Nero. After a period of moderate rule in the province, he allied himself with Galba, the governor of neighbouring Hispania Tarraconensis, during the revolts of 68. He accompanied Galba on his march to Rome, but revolted and murdered Galba at the start of the next year.\nInheriting the problem of the rebellion of Vitellius, commander of the army in Germania Inferior, Otho led a sizeable force which met Vitellius' army at the Battle of Bedriacum. After initial fighting resulted in 40,000 casualties, and a retreat of his forces, Otho committed suicide rather than fight on, and Vitellius was proclaimed emperor.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1416")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1416",
+  "isRealHuman": true,
+  "birthDate": "32-04-28",
+  "deathDate": "69-04-16",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of Otho are well-documented in historical records, allowing for an exact calculation of his age at death.",
+  "shortDescriptionEn": "Marcus Salvius Otho (April 28, 32 – April 16, 69) was a Roman emperor who ruled for three months in 69 AD. Initially a close associate of Nero, he became emperor after Galba's assassination. Facing defeat by Vitellius's forces, Otho committed suicide at 36 to prevent further civil war.",
+  "shortDescriptionFr": "Marcus Salvius Othon (28 avril 32 – 16 avril 69) fut un empereur romain qui régna pendant trois mois en 69 apr. J.-C. D'abord proche de Néron, il devint empereur après l'assassinat de Galba. Face à la défaite contre les forces de Vitellius, Othon se suicida à 36 ans pour éviter une guerre civile prolongée.",
+  "shortDescriptionDe": "Marcus Salvius Otho (28. April 32 – 16. April 69) war ein römischer Kaiser, der im Jahr 69 n. Chr. drei Monate regierte. Ursprünglich ein enger Vertrauter Neros, wurde er nach der Ermordung von Galba Kaiser. Angesichts der Niederlage gegen Vitellius' Truppen beging Otho mit 36 Jahren Selbstmord, um weiteren Bürgerkrieg zu verhindern.",
+  "shortDescriptionEs": "Marcus Salvius Otho (28 de abril de 32 – 16 de abril de 69) fue un emperador romano que gobernó durante tres meses en el año 69 d.C. Inicialmente cercano a Nerón, se convirtió en emperador tras el asesinato de Galba. Al enfrentar la derrota ante las fuerzas de Vitelio, Otho se suicidó a los 36 años para evitar una guerra civil prolongada.",
+  "shortDescriptionRu": "Марк Сальвий Отон (28 апреля 32 – 16 апреля 69) был римским императором, правившим три месяца в 69 году н.э. Изначально близкий соратник Нерона, он стал императором после убийства Гальбы. Столкнувшись с поражением от войск Вителлия, Отон покончил с собой в 36 лет, чтобы предотвратить дальнейшую гражданскую войну.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Otho",
+    "https://www.britannica.com/biography/Otho",
+    "https://roman-empire.net/emperors/otho"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47149",  "Name": "Sylvester I",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0336-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sylvester%20I.jpg",  "SiteLinksCnt": 87,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"24310":{"pageid":24310,"ns":0,"title":"Pope Sylvester I","extract":"Pope Sylvester I (also Silvester, 285 \u2013 31 December 335) was the bishop of Rome from 31 January 314 until his death on 31 December 335. He filled the See of Rome at an important era in the history of the Western Church, though very little is known of his life. \nDuring his pontificate, he notably convened the Council of Arles in 314, which condemned the separatist Donatist sect, and the First Council of Nicaea in 325, which aimed to resolve the Arian controversy. His pontificate also coincided with the baptism of Roman Emperor Constantine I.\nSylvester I's pontificate coincided with the construction of churches including Old St. Peter's Basilica, the Basilica of the Holy Cross in Jerusalem (Santa Croce in Gerusalemme), as well as the Archbasilica of Saint John Lateran. His feast is celebrated as Saint Sylvester's Day, on 31 December in Western Christianity, and on 2 January in Eastern Christianity."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47149")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47149",
+  "isRealHuman": true,
+  "birthDate": "c. 285",
+  "deathDate": "335-12-31",
+  "ageAtDeath": 50,
+  "confidence": 80,
+  "confidenceExplained": "The birth date is an approximation based on historical records, leading to an estimated age at death.",
+  "shortDescriptionEn": "Pope Sylvester I served as Bishop of Rome from 314 to 335, during which he witnessed the transition of the Roman Empire to Christianity. He died on December 31, 335, and was buried in the Catacomb of Priscilla.",
+  "shortDescriptionFr": "Le pape Sylvestre Ier a été évêque de Rome de 314 à 335, période durant laquelle il a assisté à la transition de l'Empire romain vers le christianisme. Il est décédé le 31 décembre 335 et a été enterré dans les catacombes de Priscille.",
+  "shortDescriptionDe": "Papst Silvester I. war von 314 bis 335 Bischof von Rom und erlebte in dieser Zeit den Übergang des Römischen Reiches zum Christentum. Er starb am 31. Dezember 335 und wurde in der Priscilla-Katakombe beigesetzt.",
+  "shortDescriptionEs": "El Papa Silvestre I sirvió como Obispo de Roma desde 314 hasta 335, durante el cual fue testigo de la transición del Imperio Romano al cristianismo. Murió el 31 de diciembre de 335 y fue enterrado en las Catacumbas de Priscila.",
+  "shortDescriptionRu": "Папа Сильвестр I был епископом Рима с 314 по 335 годы, в течение которых он был свидетелем перехода Римской империи к христианству. Он умер 31 декабря 335 года и был похоронен в катакомбах Присциллы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Sylvester_I",
+    "https://www.britannica.com/biography/Saint-Sylvester-I",
+    "https://www.newadvent.org/cathen/14370a.htm"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132797",  "Name": "Mark",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0336-10-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Mark.jpg",  "SiteLinksCnt": 79,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"63001":{"pageid":63001,"ns":0,"title":"Pope Mark","extract":"Pope Mark (Latin: Marcus) was the bishop of Rome from 18 January to his death on 7 October 336.\n\nLittle is known of Mark's early life. According to the Liber Pontificalis, he was a Roman, and his father's name was Priscus. Mark succeeded Sylvester I as pope on 18 January 336.\nSome evidence suggests that the early lists of bishops and martyrs known as the Depositio episcoporum and Depositio martyrum were begun during his pontificate. According to the Liber Pontificalis, Pope Mark issued a constitution investing the bishop of Ostia with a pallium and confirming his power to consecrate newly elected popes. Likewise according to the Liber Pontificalis, Pope Mark is credited with the foundation of the Basilica of San Marco, a basilica in Rome, and a cemetery church over the Catacomb of Balbina, just outside the city on lands obtained as a donation from Emperor Constantine.\nMark died of natural causes on 7 October and was buried in the catacomb of Balbina. In 1048, his remains were removed to the town of Velletri, and in 1145 were relocated to the Basilica of San Marco in Rome, where they are kept in an urn under the altar. His feast day is celebrated on 7 October. He is particularly venerated at the Abbadia San Salvatore at Monte Amiata."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132797")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q132797",
+  "isRealHuman": true,
+  "birthDate": "Unknown",
+  "deathDate": "336-10-07",
+  "ageAtDeath": 50,
+  "confidence": 50,
+  "confidenceExplained": "The exact birthdate of Pope Mark is not documented. The estimated age of 50 is based on the typical age range of individuals attaining prominent church positions during that era.",
+  "shortDescriptionEn": "Pope Mark served as the Bishop of Rome from January 18 to October 7, 336. Little is known about his early life. His papacy lasted less than ten months, ending with his death from natural causes.",
+  "shortDescriptionFr": "Le pape Marc a servi comme évêque de Rome du 18 janvier au 7 octobre 336. On sait peu de choses sur sa vie antérieure. Son pontificat a duré moins de dix mois et s'est terminé par sa mort de causes naturelles.",
+  "shortDescriptionDe": "Papst Markus diente vom 18. Januar bis zum 7. Oktober 336 als Bischof von Rom. Über sein frühes Leben ist wenig bekannt. Sein Pontifikat dauerte weniger als zehn Monate und endete mit seinem natürlichen Tod.",
+  "shortDescriptionEs": "El Papa Marcos sirvió como Obispo de Roma desde el 18 de enero hasta el 7 de octubre de 336. Se sabe poco sobre su vida temprana. Su pontificado duró menos de diez meses, terminando con su muerte por causas naturales.",
+  "shortDescriptionRu": "Папа Марк служил епископом Рима с 18 января по 7 октября 336 года. О его ранней жизни известно мало. Его понтификат длился менее десяти месяцев и закончился его естественной смертью.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Mark",
+    "https://www.britannica.com/biography/Saint-Mark-pope",
+    "https://www.newadvent.org/cathen/09674a.htm"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q21209",  "Name": "Claus Schenk Graf von Stauffenberg",  "BirthDate": "1907-11-15T00:00:00Z",  "DeathDate": "1944-07-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/VStauffenberg%20vQuirnheim.jpg",  "SiteLinksCnt": 79,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"62935":{"pageid":62935,"ns":0,"title":"Claus von Stauffenberg","extract":"Claus Philipp Maria Justinian Schenk Graf von Stauffenberg (German: [\u02c8kla\u028as f\u0254n \u02c8\u0283ta\u028afn\u0329b\u025b\u0281k] ; 15 November 1907 \u2013 21 July 1944) was a German army officer who is best known for his failed attempt on 20 July 1944 to assassinate Adolf Hitler at the Wolf's Lair, part of Operation Valkyrie, a plan that would have seen the arrest of Nazi leadership in the wake of Hitler's death and an earlier end to World War II.\nAs a military officer from a noble background, Stauffenberg took part in the Invasion of Poland, the 1941\u201342 invasion of the Soviet Union in Operation Barbarossa and the Tunisian campaign during the Second World War. Alongside Major Generals Henning von Tresckow and Hans Oster, he became a key figure in the German resistance to Nazism within the Wehrmacht.\nOn 20 July 1944, Stauffenberg's assassination attempt failed, the explosive he had placed only dealing Hitler minor injuries. The conspirators were arrested, and many of them executed, including Stauffenberg on the day after the attempt. His wife Nina was also arrested, giving birth to their fifth child Konstanze while imprisoned. Their children also included Berthold, who followed in his father's footsteps as a military man, and politician Franz-Ludwig. Konstanze's son Philipp von Schulthess would become an actor and play a supporting role in Valkyrie, a 2008 American film about the 20 July 1944 assassination with Stauffenberg as main character, portrayed by Tom Cruise."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q21209")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q21209",
+  "isRealHuman": true,
+  "birthDate": "1907-11-15",
+  "deathDate": "1944-07-21",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "Claus Schenk Graf von Stauffenberg was a German army officer and aristocrat who played a pivotal role in the German resistance against Adolf Hitler. He is best known for leading the failed assassination attempt on Hitler on 20 July 1944, known as Operation Valkyrie. Following the plot's failure, he was executed by firing squad on 21 July 1944 at the age of 36.",
+  "shortDescriptionFr": "Claus Schenk Graf von Stauffenberg était un officier de l'armée allemande et aristocrate qui a joué un rôle central dans la résistance allemande contre Adolf Hitler. Il est surtout connu pour avoir dirigé la tentative d'assassinat manquée contre Hitler le 20 juillet 1944, connue sous le nom d'Opération Walkyrie. Après l'échec du complot, il a été exécuté par un peloton d'exécution le 21 juillet 1944 à l'âge de 36 ans.",
+  "shortDescriptionDe": "Claus Schenk Graf von Stauffenberg war ein deutscher Offizier und Aristokrat, der eine zentrale Rolle im deutschen Widerstand gegen Adolf Hitler spielte. Er ist vor allem für seine führende Rolle beim fehlgeschlagenen Attentat auf Hitler am 20. Juli 1944, bekannt als Operation Walküre, bekannt. Nach dem Scheitern des Plans wurde er am 21. Juli 1944 im Alter von 36 Jahren durch ein Erschießungskommando hingerichtet.",
+  "shortDescriptionEs": "Claus Schenk Graf von Stauffenberg fue un oficial del ejército alemán y aristócrata que desempeñó un papel fundamental en la resistencia alemana contra Adolf Hitler. Es más conocido por liderar el fallido intento de asesinato de Hitler el 20 de julio de 1944, conocido como Operación Valquiria. Tras el fracaso del complot, fue ejecutado por un pelotón de fusilamiento el 21 de julio de 1944 a la edad de 36 años.",
+  "shortDescriptionRu": "Клаус Шенк Граф фон Штауффенберг был немецким офицером и аристократом, сыгравшим ключевую роль в немецком сопротивлении против Адольфа Гитлера. Он наиболее известен тем, что возглавил неудавшуюся попытку убийства Гитлера 20 июля 1944 года, известную как операция «Валькирия». После провала заговора он был казнен расстрельной командой 21 июля 1944 года в возрасте 36 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Claus_von_Stauffenberg",
+    "https://www.britannica.com/biography/Claus-Graf-Schenk-von-Stauffenberg"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q214559",  "Name": "Ismail I",  "BirthDate": "1487-07-17T00:00:00Z",  "DeathDate": "1524-05-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Shah%20Ismail%20I.%20Inscribed%20%22Ismael%20Sophy%20Rex%20Pers%22.%20Painted%20by%20Cristofano%20dell%27Altissimo%2C%20dated%201552-1568.jpg",  "SiteLinksCnt": 79,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"544668":{"pageid":544668,"ns":0,"title":"Ismail I","extract":"Ismail I (Persian: \u0627\u0633\u0645\u0627\u0639\u06cc\u0644 \u06cc\u06a9\u0645, romanized: Ism\u0101\u02bf\u012bl; 17 July 1487 \u2013 23 May 1524) was the founder and first shah of Safavid Iran, ruling from 1501 until his death in 1524. His reign is often considered the beginning of modern Iranian history, as well as one of the gunpowder empires. The rule of Ismail I is one of the most vital in the history of Iran. Before his accession in 1501, Iran, since its Islamic conquest eight-and-a-half centuries earlier, had not existed as a unified country under native Iranian rule. Although many Iranian dynasties rose to power amidst this whole period, it was only under the Buyids that a vast part of Iran properly returned to Iranian rule (945\u20131055).\nThe dynasty founded by Ismail I would rule for over two centuries, being one of the greatest Iranian empires and at its height being amongst the most powerful empires of its time, ruling all of present-day Iran, the Republic of Azerbaijan, Armenia, most of Georgia, the North Caucasus, and Iraq, as well as parts of modern-day Turkey, Syria, Pakistan, Afghanistan, Uzbekistan, and Turkmenistan. It also reasserted the Iranian identity in large parts of Greater Iran. The legacy of the Safavid Empire was also the revival of Iran as an economic stronghold between East and West, the establishment of an efficient state and bureaucracy based upon \"checks and balances\", its architectural innovations, and patronage for fine arts.\nOne of his first actions was the proclamation of the Twelver denomination of Shia Islam as the official religion of his newly-founded Safavid Empire, marking one of the most important turning points in the history of Islam, which had major consequences for the ensuing history of Iran. He caused sectarian tensions in the Middle East when he destroyed the tombs of the Abbasid caliphs, the Sunni Imam Abu Hanifa an-Nu'man, and the Sufi Muslim ascetic Abdul Qadir Gilani in 1508.\nIsmail I was also a prolific poet who under the pen name Kha\u1e6d\u0101\u02be\u012b (Persian/Azerbaijani: \u062e\u0637\u0627\u0626\u06cc, lit.\u2009'the Cathayan') contributed greatly to the literary development of the Azerbaijani language. He also contributed to Persian literature, though few of his Persian writings survive."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q214559")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q214559",
+  "isRealHuman": true,
+  "birthDate": "1487-07-17",
+  "deathDate": "1524-05-23",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing precise calculation of age at death.",
+  "shortDescriptionEn": "Ismail I (1487–1524) was the founder of the Safavid dynasty in Iran, reigning from 1501 until his death. He established Twelver Shia Islam as the state religion, unifying the nation. Ismail died at 36 near Tabriz, Iran.",
+  "shortDescriptionFr": "Ismail I (1487–1524) fut le fondateur de la dynastie des Séfévides en Iran, régnant de 1501 jusqu'à sa mort. Il établit le chiisme duodécimain comme religion d'État, unifiant la nation. Ismail mourut à 36 ans près de Tabriz, en Iran.",
+  "shortDescriptionDe": "Ismail I. (1487–1524) war der Gründer der Safawiden-Dynastie im Iran und regierte von 1501 bis zu seinem Tod. Er etablierte den zwölfer-schiitischen Islam als Staatsreligion und einte die Nation. Ismail starb im Alter von 36 Jahren in der Nähe von Täbris, Iran.",
+  "shortDescriptionEs": "Ismail I (1487–1524) fue el fundador de la dinastía safávida en Irán, reinando desde 1501 hasta su muerte. Estableció el chiismo duodecimano como religión estatal, unificando la nación. Ismail murió a los 36 años cerca de Tabriz, Irán.",
+  "shortDescriptionRu": "Исмаил I (1487–1524) был основателем династии Сефевидов в Иране, правил с 1501 года до своей смерти. Он установил двунадесятнический шиитский ислам в качестве государственной религии, объединив нацию. Исмаил умер в возрасте 36 лет недалеко от Тебриза, Иран.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ismail_I",
+    "https://www.britannica.com/biography/Ismail-I-shah-of-Iran",
+    "https://simple.wikipedia.org/wiki/Ismail_I"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q181685",  "Name": "Nicolas Carnot",  "BirthDate": "1796-06-01T00:00:00Z",  "DeathDate": "1832-08-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sadi%20Carnot.jpeg",  "SiteLinksCnt": 78,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"28220":{"pageid":28220,"ns":0,"title":"Nicolas L\u00e9onard Sadi Carnot","extract":"Nicolas L\u00e9onard Sadi Carnot (French: [nik\u0254la le\u0254na\u0281 sadi ka\u0281no]; 1 June 1796 \u2013 24 August 1832) was a French military engineer and physicist.  A graduate of the \u00c9cole polytechnique, Carnot served as an officer in the Engineering Arm (le g\u00e9nie) of the French Army.  He also pursued scientific studies and in June 1824 published an essay titled Reflections on the Motive Power of Fire.  In that book, which would be his only publication, Carnot developed the first successful theory of the maximum efficiency of heat engines.\nCarnot's scientific work attracted little attention during his lifetime, but in 1834 it became the object of a detailed commentary and explanation by another French engineer, \u00c9mile Clapeyron.  Clapeyron's commentary in turn attracted the attention of William Thomson (later Lord Kelvin) and Rudolf Clausius.  Thomson used Carnot's analysis to develop an absolute thermodynamic temperature scale, while Clausius used it to define the concept of entropy, thus formalizing the second law of thermodynamics.\nSadi Carnot was the son of Lazare Carnot, an eminent mathematician, engineer, and commander of the French Revolutionary Army and later of the Napoleonic army.  Some of the difficulties that Sadi faced in his own career might have been connected to the persecution of his family by the restored Bourbon monarchy after the fall of Napoleon in 1815.  Sadi Carnot died in relative obscurity at the age of 36, but today he is often characterized as the \"father of thermodynamics\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q181685")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q181685",
+  "isRealHuman": true,
+  "birthDate": "1796-06-01",
+  "deathDate": "1832-08-24",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 36.",
+  "shortDescriptionEn": "Nicolas Léonard Sadi Carnot was a French military engineer and physicist, born on June 1, 1796, in Paris. He is renowned for laying the foundations of thermodynamics, particularly through his work on the Carnot cycle, which describes the maximum efficiency of heat engines. Carnot died on August 24, 1832, at the age of 36, likely due to cholera during an epidemic in Paris.",
+  "shortDescriptionFr": "Nicolas Léonard Sadi Carnot était un ingénieur militaire et physicien français, né le 1er juin 1796 à Paris. Il est connu pour avoir jeté les bases de la thermodynamique, notamment grâce à ses travaux sur le cycle de Carnot, qui décrit l'efficacité maximale des machines thermiques. Carnot est décédé le 24 août 1832, à l'âge de 36 ans, probablement en raison du choléra lors d'une épidémie à Paris.",
+  "shortDescriptionDe": "Nicolas Léonard Sadi Carnot war ein französischer Militäringenieur und Physiker, geboren am 1. Juni 1796 in Paris. Er ist bekannt dafür, die Grundlagen der Thermodynamik gelegt zu haben, insbesondere durch seine Arbeit am Carnot-Zyklus, der die maximale Effizienz von Wärmekraftmaschinen beschreibt. Carnot starb am 24. August 1832 im Alter von 36 Jahren, wahrscheinlich an Cholera während einer Epidemie in Paris.",
+  "shortDescriptionEs": "Nicolas Léonard Sadi Carnot fue un ingeniero militar y físico francés, nacido el 1 de junio de 1796 en París. Es reconocido por sentar las bases de la termodinámica, particularmente a través de su trabajo en el ciclo de Carnot, que describe la eficiencia máxima de las máquinas térmicas. Carnot murió el 24 de agosto de 1832, a la edad de 36 años, probablemente debido al cólera durante una epidemia en París.",
+  "shortDescriptionRu": "Николя Леонар Сади Карно был французским военным инженером и физиком, родившимся 1 июня 1796 года в Париже. Он известен как основоположник термодинамики, особенно благодаря своей работе над циклом Карно, описывающим максимальную эффективность тепловых машин. Карно умер 24 августа 1832 года в возрасте 36 лет, вероятно, от холеры во время эпидемии в Париже.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot",
+    "https://www.britannica.com/biography/Sadi-Carnot-French-scientist",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Carnot_Sadi/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q192885",  "Name": "Vissarion Belinsky",  "BirthDate": "1811-06-11T00:00:00Z",  "DeathDate": "1848-06-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vissarion%20Belinsky%20by%20K%20Gorbunov%201843.jpg",  "SiteLinksCnt": 78,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"483097":{"pageid":483097,"ns":0,"title":"Vissarion Belinsky","extract":"Vissarion Grigoryevich Belinsky (Russian: \u0412\u0438\u0441\u0441\u0430\u0440\u0438\u043e\u043d \u0413\u0440\u0438\u0433\u043e\u0440\u044c\u0435\u0432\u0438\u0447 \u0411\u0435\u043b\u0438\u043d\u0441\u043a\u0438\u0439, romanized: Vissari\u00f3n Grig\u00f3r\u02b9jevi\u010d Bel\u00ednskij, IPA: [v\u02b2\u026as\u0259r\u02b2\u026a\u02c8on \u0261r\u02b2\u026a\u02c8\u0261or\u02b2j\u026av\u02b2\u026ad\u0291 b\u02b2\u026a\u02c8l\u02b2insk\u02b2\u026aj]; June 11 [O.S. May 30] 1811 \u2013 June 7 [O.S. May 26] 1848) was a Russian literary critic of Westernizing tendency. Belinsky played one of the key roles in the career of poet and publisher Nikolay Nekrasov and his popular magazine Sovremennik.  He was the most influential of the Westernizers, especially among the younger generation. He worked primarily as a literary critic, because that area was less heavily censored than political pamphlets. He agreed with Slavophiles that society had precedence over individualism, but he insisted the society had to allow the expression of individual ideas and rights. He strongly opposed Slavophiles on the role of Orthodoxy, which he considered a retrograde force. He emphasized reason and knowledge, and attacked autocracy and theocracy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q192885")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q192885",
+  "isRealHuman": true,
+  "birthDate": "1811-06-11",
+  "deathDate": "1848-06-07",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Vissarion Belinsky was a prominent Russian literary critic known for his influence on Russian literature and his advocacy for social reform. He died of tuberculosis at the age of 36.",
+  "shortDescriptionFr": "Vissarion Belinsky était un critique littéraire russe éminent, connu pour son influence sur la littérature russe et son plaidoyer pour la réforme sociale. Il est décédé de la tuberculose à l'âge de 36 ans.",
+  "shortDescriptionDe": "Vissarion Belinski war ein bedeutender russischer Literaturkritiker, bekannt für seinen Einfluss auf die russische Literatur und sein Eintreten für soziale Reformen. Er starb im Alter von 36 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "Vissarion Belinski fue un destacado crítico literario ruso, conocido por su influencia en la literatura rusa y su defensa de la reforma social. Murió de tuberculosis a los 36 años.",
+  "shortDescriptionRu": "Виссарион Белинский был выдающимся русским литературным критиком, известным своим влиянием на русскую литературу и защитой социальных реформ. Он умер от туберкулеза в возрасте 36 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Vissarion-Grigoryevich-Belinsky",
+    "https://en.wikipedia.org/wiki/Vissarion_Belinsky"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q52934",  "Name": "Carl XII of Sweden",  "BirthDate": "1682-06-27T00:00:00Z",  "DeathDate": "1718-12-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Karl%20XII%201706.jpg",  "SiteLinksCnt": 77,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"104944":{"pageid":104944,"ns":0,"title":"Charles XII of Sweden","extract":"Charles XII, sometimes Carl XII (Swedish: Karl XII) or Carolus Rex (17 June 1682 \u2013 30 November 1718 O.S.), was King of Sweden from 1697 to 1718. He belonged to the House of Palatinate-Zweibr\u00fccken, a branch line of the House of Wittelsbach. Charles was the only surviving son of Charles XI and Ulrika Eleonora the Elder. He assumed power, after a seven-month caretaker government, at the age of fifteen.\nIn 1700, a triple alliance of Denmark\u2013Norway, Saxony\u2013Poland\u2013Lithuania and Russia launched a threefold attack on the Swedish protectorate of Holstein-Gottorp and provinces of Livonia and Ingria, aiming to draw advantage as the Swedish Empire was unaligned and ruled by a young and inexperienced king, thus initiating the Great Northern War. Leading the Swedish army against the alliance, Charles won multiple victories despite being significantly outnumbered. A major victory over a much larger Russian army in 1700, at the Battle of Narva, compelled Peter the Great to sue for peace, an offer that Charles subsequently rejected. By 1706, Charles, now 24 years old, had forced all of his foes into submission. That year, Swedish forces under general Carl Gustav Rehnski\u00f6ld won a decisive victory over a combined army of Saxony and Russia at the Battle of Fraustadt. Russia was now the sole remaining hostile power.\nCharles's subsequent march on Moscow met with initial success as victory followed victory, the most significant of which was the Battle of Holowczyn where the smaller Swedish army routed a Russian army twice its size. The campaign ended with disaster when the Swedish army suffered heavy losses to a Russian force more than twice its size at Poltava. Charles had been incapacitated by a wound prior to the battle, rendering him unable to take command. The defeat was followed by the Surrender at Perevolochna. Charles spent the following years in exile in the Ottoman Empire before returning to lead an assault on Norway, trying to evict the Danish king from the war once more in order to aim all his forces at the Russians. Two campaigns met with frustration and ultimate failure, concluding with his death at the Siege of Fredriksten in 1718. At the time, most of the Swedish Empire was under foreign military occupation, though Sweden itself was still free. This situation was later formalized, albeit moderated in the subsequent Treaty of Nystad. The result was the end of the Swedish Empire, and also of its effectively organized absolute monarchy and war machine, commencing a parliamentary government unique for continental Europe, which would last for half a century until royal autocracy was restored by Gustav III.\nCharles was an exceptionally skilled military leader and tactician as well as an able politician, credited with introducing important tax and legal reforms. As for his famous reluctance towards peace efforts, he is quoted by Voltaire as saying upon the outbreak of the war: \"I have resolved never to start an unjust war but never to end a legitimate one except by defeating my enemies\". With the war consuming more than half his life and nearly all his reign, he never married and fathered no children. He was succeeded by his sister Ulrika Eleonora, who in turn was coerced to hand over all substantial powers to the Riksdag of the Estates and opted to surrender the throne to her husband Friedrich of Hesse-Kassel, who became King Frederick I of Sweden."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q52934")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q52934",
+  "isRealHuman": true,
+  "birthDate": "1682-06-17",
+  "deathDate": "1718-11-30",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, consistently indicating that Charles XII was 36 years old at the time of his death.",
+  "shortDescriptionEn": "Charles XII of Sweden (1682–1718) was the King of Sweden known for his military leadership during the Great Northern War. He died at age 36 during the Siege of Fredriksten in Norway.",
+  "shortDescriptionFr": "Charles XII de Suède (1682–1718) était le roi de Suède connu pour son leadership militaire pendant la Grande Guerre du Nord. Il est mort à 36 ans lors du siège de Fredriksten en Norvège.",
+  "shortDescriptionDe": "Karl XII. von Schweden (1682–1718) war der König von Schweden, bekannt für seine militärische Führung während des Großen Nordischen Krieges. Er starb im Alter von 36 Jahren während der Belagerung von Fredriksten in Norwegen.",
+  "shortDescriptionEs": "Carlos XII de Suecia (1682–1718) fue el rey de Suecia conocido por su liderazgo militar durante la Gran Guerra del Norte. Murió a los 36 años durante el asedio de Fredriksten en Noruega.",
+  "shortDescriptionRu": "Карл XII Шведский (1682–1718) был королем Швеции, известным своим военным лидерством во время Великой Северной войны. Он умер в возрасте 36 лет во время осады Фредрикстена в Норвегии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charles_XII_of_Sweden",
+    "https://www.britannica.com/biography/Charles-XII",
+    "https://historylearning.com/sweden-1611-to-1718/charles-xii-of-sweden/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183221",  "Name": "Jean-Antoine Watteau",  "BirthDate": "1684-10-10T00:00:00Z",  "DeathDate": "1721-07-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosalba%20Carriera%2C%20ritratto%20di%20gentiluomo%20Antoine%20Watteau%2C%20Complesso%20di%20Santa%20Caterina.jpg",  "SiteLinksCnt": 69,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"242867":{"pageid":242867,"ns":0,"title":"Antoine Watteau","extract":"Jean-Antoine Watteau (UK: , US: , French: [\u0292\u0251\u0303 \u0251\u0303twan vato]; baptised 10 October 1684 \u2013 died 18 July 1721) was a French painter and draughtsman whose brief career spurred the revival of interest in colour and movement, as seen in the tradition of Correggio and Rubens. He revitalized the waning Baroque style, shifting it to the less severe, more naturalistic, less formally classical, Rococo. Watteau is credited with inventing the genre of f\u00eates galantes, scenes of bucolic and idyllic charm, suffused with a theatrical air. Some of his best known subjects were drawn from the world of Italian comedy and ballet."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183221")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q183221",
+  "isRealHuman": true,
+  "birthDate": "1684-10-10",
+  "deathDate": "1721-07-18",
+  "ageAtDeath": 36,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, allowing for an exact calculation of Watteau's age at the time of his death.",
+  "shortDescriptionEn": "Jean-Antoine Watteau was a French painter and draughtsman, born on October 10, 1684, in Valenciennes. He is credited with inventing the genre of fêtes galantes, depicting idyllic scenes of aristocratic life. Watteau's health declined due to tuberculosis, leading to his death on July 18, 1721, at the age of 36.",
+  "shortDescriptionFr": "Jean-Antoine Watteau était un peintre et dessinateur français, né le 10 octobre 1684 à Valenciennes. Il est reconnu pour avoir inventé le genre des fêtes galantes, dépeignant des scènes idylliques de la vie aristocratique. La santé de Watteau s'est détériorée en raison de la tuberculose, menant à son décès le 18 juillet 1721, à l'âge de 36 ans.",
+  "shortDescriptionDe": "Jean-Antoine Watteau war ein französischer Maler und Zeichner, geboren am 10. Oktober 1684 in Valenciennes. Er gilt als Erfinder des Genres der fêtes galantes, das idyllische Szenen des aristokratischen Lebens darstellt. Watteaus Gesundheit verschlechterte sich aufgrund von Tuberkulose, was zu seinem Tod am 18. Juli 1721 im Alter von 36 Jahren führte.",
+  "shortDescriptionEs": "Jean-Antoine Watteau fue un pintor y dibujante francés, nacido el 10 de octubre de 1684 en Valenciennes. Se le atribuye la invención del género de las fêtes galantes, que representan escenas idílicas de la vida aristocrática. La salud de Watteau se deterioró debido a la tuberculosis, lo que llevó a su muerte el 18 de julio de 1721, a los 36 años.",
+  "shortDescriptionRu": "Жан-Антуан Ватто был французским художником и рисовальщиком, родившимся 10 октября 1684 года в Валансьене. Ему приписывают изобретение жанра галантных праздников, изображающих идиллические сцены аристократической жизни. Здоровье Ватто ухудшилось из-за туберкулеза, что привело к его смерти 18 июля 1721 года в возрасте 36 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Antoine-Watteau",
+    "https://en.wikipedia.org/wiki/Antoine_Watteau",
+    "https://www.nga.gov/collection/artist-info.1967.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q213614",  "Name": "Cyrano de Bergerac",  "BirthDate": "1619-03-06T00:00:00Z",  "DeathDate": "1655-07-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Savinien%20de%20Cyrano%20de%20Bergerac.JPG",  "SiteLinksCnt": 69,  "Age": 36}
+{"batchcomplete":"","query":{"pages":{"70369":{"pageid":70369,"ns":0,"title":"Cyrano de Bergerac","extract":"Savinien de Cyrano de Bergerac ( SIRR-\u0259-noh d\u0259 BUR-zh\u0259-rak, \u2013 BAIR-, French: [savinj\u025b\u0303 d(\u0259) si\u0281ano d(\u0259) b\u025b\u0281\u0292\u0259\u0281ak]; 6 March 1619 \u2013 28 July 1655) was a French novelist, playwright, epistolarian, and duelist.\nA bold and innovative author, his work was part of the libertine literature of the first half of the 17th century. Today, he is best known as the inspiration for Edmond Rostand's most noted drama, Cyrano de Bergerac (1897), which, although it includes elements of his life, also contains invention and myth.\nSince the 1970s, there has been a resurgence in the study of Cyrano, demonstrated in the abundance of theses, essays, articles and biographies published in France and elsewhere."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q213614")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q213614",
+  "isRealHuman": true,
+  "birthDate": "1619-03-06",
+  "deathDate": "1655-07-28",
+  "ageAtDeath": 36,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, providing a high confidence level in the calculated age.",
+  "shortDescriptionEn": "Savinien de Cyrano de Bergerac (March 6, 1619 – July 28, 1655) was a French novelist, playwright, epistolarian, and duelist. His works are considered among the earliest examples of science fiction. He died at the age of 36, possibly due to injuries from an assassination attempt or a falling beam, though the exact cause remains uncertain.",
+  "shortDescriptionFr": "Savinien de Cyrano de Bergerac (6 mars 1619 – 28 juillet 1655) était un romancier, dramaturge, épistolier et duelliste français. Ses œuvres sont considérées parmi les premiers exemples de science-fiction. Il est décédé à l'âge de 36 ans, possiblement en raison de blessures causées par une tentative d'assassinat ou par la chute d'une poutre, bien que la cause exacte reste incertaine.",
+  "shortDescriptionDe": "Savinien de Cyrano de Bergerac (6. März 1619 – 28. Juli 1655) war ein französischer Romancier, Dramatiker, Epistolograph und Duellant. Seine Werke gelten als einige der frühesten Beispiele für Science-Fiction. Er starb im Alter von 36 Jahren, möglicherweise aufgrund von Verletzungen durch einen Attentatsversuch oder einen herabfallenden Balken, obwohl die genaue Ursache unklar bleibt.",
+  "shortDescriptionEs": "Savinien de Cyrano de Bergerac (6 de marzo de 1619 – 28 de julio de 1655) fue un novelista, dramaturgo, epistológrafo y duelista francés. Sus obras se consideran entre los primeros ejemplos de ciencia ficción. Murió a los 36 años, posiblemente debido a heridas de un intento de asesinato o la caída de una viga, aunque la causa exacta sigue siendo incierta.",
+  "shortDescriptionRu": "Савиньен де Сирано де Бержерак (6 марта 1619 – 28 июля 1655) был французским романистом, драматургом, эпистолярным писателем и дуэлянтом. Его работы считаются одними из первых образцов научной фантастики. Он умер в возрасте 36 лет, возможно, из-за травм, полученных в результате покушения или падения балки, хотя точная причина остается неизвестной.",
+  "sources": [
+    "https://www.britannica.com/biography/Savinien-Cyrano-de-Bergerac",
+    "https://drunkard.com/july-28/",
+    "https://literature.fandom.com/wiki/Cyrano_de_Bergerac"
+  ]
+}
+
+
