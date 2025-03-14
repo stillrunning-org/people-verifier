@@ -1,0 +1,961 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5582",  "Name": "Vincent van Gogh",  "BirthDate": "1853-03-30T00:00:00Z",  "DeathDate": "1890-07-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Self-Portrait%20-%20Google%20Art%20Project%20%28454045%29.jpg",  "SiteLinksCnt": 255,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"32603":{"pageid":32603,"ns":0,"title":"Vincent van Gogh","extract":"Vincent Willem van Gogh (Dutch: [\u02c8v\u026ans\u025bnt \u02c8\u028b\u026al\u0259\u0271 v\u0251\u014b \u02c8\u0263\u0254x] ; 30 March 1853 \u2013 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade, he created approximately 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. His oeuvre includes landscapes, still lifes, portraits, and self-portraits, most of which are characterised by bold colours and dramatic brushwork that contributed to the rise of expressionism in modern art. Van Gogh's work was only beginning to gain critical attention before he died from a self-inflicted gunshot at age 37. During his lifetime, only one of Van Gogh's paintings, The Red Vineyard, was sold. \nBorn into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet and thoughtful, but showed signs of mental instability. As a young man, he worked as an art dealer, often travelling, but became depressed after he was transferred to London. He turned to religion and spent time as a missionary in southern Belgium. Later he drifted into ill-health and solitude. He was keenly aware of modernist trends in art and, while back with his parents, took up painting in 1881. His younger brother, Theo, supported him financially, and the two of them maintained a long correspondence.\nVan Gogh's early works consist of mostly still lifes and depictions of peasant labourers. In 1886, he moved to Paris, where he met members of the artistic avant-garde, including \u00c9mile Bernard and Paul Gauguin, who were seeking new paths beyond Impressionism. Frustrated in Paris and inspired by a growing spirit of artistic change and collaboration, in February 1888 Van Gogh moved to Arles in southern France to establish an artistic retreat and commune. Once there, his paintings grew brighter and he turned his attention to the natural world, depicting local olive groves, wheat fields and sunflowers. Van Gogh invited Gauguin to join him in Arles and eagerly anticipated Gauguin's arrival in late 1888.\nVan Gogh suffered from psychotic episodes and delusions. He worried about his mental stability, and often neglected his physical health, did not eat properly and drank heavily. His friendship with Gauguin ended after a confrontation with a razor when, in a rage, he mutilated his left ear. Van Gogh spent time in psychiatric hospitals, including a period at Saint-R\u00e9my. After he discharged himself and moved to the Auberge Ravoux in Auvers-sur-Oise near Paris, he came under the care of the homeopathic doctor Paul Gachet. His depression persisted, and on 29 July 1890 Van Gogh died from his injuries after shooting himself in the chest with a revolver.\nVan Gogh's work began to attract critical artistic attention in the last year of his life. After his death, his art and life story captured public imagination as an emblem of misunderstood genius, due in large part to the efforts of his widowed sister-in-law Johanna van Gogh-Bonger. His bold use of colour, expressive line and thick application of paint inspired avant-garde artistic groups like the Fauves and German Expressionists in the early 20th century. Van Gogh's work gained widespread critical and commercial success in the following decades, and he has become a lasting icon of the romantic ideal of the tortured artist. Today, Van Gogh's works are among the world's most expensive paintings ever sold. His legacy is celebrated by the Van Gogh Museum in Amsterdam, which holds the world's largest collection of his paintings and drawings."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5582")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5582",
+  "isRealHuman": true,
+  "birthDate": "1853-03-30",
+  "deathDate": "1890-07-29",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, confirming his age at death as 37.",
+  "shortDescriptionEn": "Vincent van Gogh was a Dutch Post-Impressionist painter known for his bold colors and expressive brushwork. Despite mental health struggles, he produced over 2,100 artworks, including 'The Starry Night' and 'Sunflowers.' He died at 37 from a gunshot wound, believed to be self-inflicted.",
+  "shortDescriptionFr": "Vincent van Gogh était un peintre post-impressionniste néerlandais, connu pour ses couleurs vives et son coup de pinceau expressif. Malgré des problèmes de santé mentale, il a produit plus de 2 100 œuvres, dont 'La Nuit étoilée' et 'Les Tournesols'. Il est décédé à 37 ans d'une blessure par balle, considérée comme auto-infligée.",
+  "shortDescriptionDe": "Vincent van Gogh war ein niederländischer postimpressionistischer Maler, bekannt für seine kräftigen Farben und expressiven Pinselstriche. Trotz psychischer Probleme schuf er über 2.100 Kunstwerke, darunter 'Sternennacht' und 'Sonnenblumen'. Er starb im Alter von 37 Jahren an einer Schusswunde, die als selbst zugefügt gilt.",
+  "shortDescriptionEs": "Vincent van Gogh fue un pintor postimpresionista neerlandés, conocido por sus colores intensos y pinceladas expresivas. A pesar de problemas de salud mental, produjo más de 2.100 obras de arte, incluyendo 'La noche estrellada' y 'Los girasoles'. Murió a los 37 años por una herida de bala, considerada autoinfligida.",
+  "shortDescriptionRu": "Винсент ван Гог был нидерландским постимпрессионистским художником, известным своими яркими цветами и экспрессивными мазками. Несмотря на проблемы с психическим здоровьем, он создал более 2 100 произведений искусства, включая 'Звездную ночь' и 'Подсолнухи'. Он умер в 37 лет от огнестрельного ранения, предположительно нанесенного им самим.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7200",  "Name": "Alexander Pushkin",  "BirthDate": "1799-06-06T00:00:00Z",  "DeathDate": "1837-02-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Orest%20Kiprensky%20-%20%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%20%D0%90.%D0%A1.%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 228,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"52790":{"pageid":52790,"ns":0,"title":"Alexander Pushkin","extract":"Alexander Sergeyevich Pushkin (6 June [O.S. 26 May] 1799 \u2013 10 February [O.S. 29 January] 1837) was a Russian poet, playwright, and novelist of the Romantic era. He is considered by many to be the greatest Russian poet, as well as the founder of modern Russian literature.\nPushkin was born into the Russian nobility in Moscow. His father, Sergey Lvovich Pushkin, belonged to an old noble family. One of his maternal great-grandfathers was Major-General Abram Petrovich Gannibal, a nobleman of African origin who was kidnapped from his homeland by the Ottomans, then freed by the Russian Emperor and raised in the Emperor's court household as his godson.\nHe published his first poem at the age of 15, and was widely recognized by the literary establishment by the time of his graduation from the Tsarskoye Selo Lyceum. Upon graduation from the Lyc\u00e9e, Pushkin recited his controversial poem \"Ode to Liberty\", one of several that led to his exile by Emperor Alexander I. While under strict surveillance by the Emperor's political police and unable to publish, Pushkin wrote his most famous play, Boris Godunov. His novel in verse Eugene Onegin was serialized between 1825 and 1832. Pushkin was fatally wounded in a duel with his wife's alleged lover and her sister's husband, Georges-Charles de Heeckeren d'Anth\u00e8s, also known as Dantes-Gekkern, a French officer serving with the Chevalier Guard Regiment.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7200")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7200",
+  "isRealHuman": true,
+  "birthDate": "1799-06-06",
+  "deathDate": "1837-02-10",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Alexander Pushkin was a Russian poet, playwright, and novelist, considered the founder of modern Russian literature. He died at 37 following injuries sustained in a duel defending his wife's honor.",
+  "shortDescriptionFr": "Alexandre Pouchkine était un poète, dramaturge et romancier russe, considéré comme le fondateur de la littérature russe moderne. Il est mort à 37 ans des suites de blessures subies lors d'un duel pour défendre l'honneur de sa femme.",
+  "shortDescriptionDe": "Alexander Puschkin war ein russischer Dichter, Dramatiker und Romanautor, der als Begründer der modernen russischen Literatur gilt. Er starb im Alter von 37 Jahren an den Folgen von Verletzungen, die er sich in einem Duell zugezogen hatte, um die Ehre seiner Frau zu verteidigen.",
+  "shortDescriptionEs": "Aleksandr Pushkin fue un poeta, dramaturgo y novelista ruso, considerado el fundador de la literatura rusa moderna. Murió a los 37 años tras sufrir heridas en un duelo defendiendo el honor de su esposa.",
+  "shortDescriptionRu": "Александр Пушкин был русским поэтом, драматургом и романистом, считающимся основателем современной русской литературы. Он умер в 37 лет от ран, полученных на дуэли, защищая честь своей жены.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_Pushkin",
+    "https://www.britannica.com/biography/Aleksandr-Sergeyevich-Pushkin"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5597",  "Name": "Raphael",  "BirthDate": "1483-04-15T00:00:00Z",  "DeathDate": "1520-04-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Raffaello%20Sanzio.jpg",  "SiteLinksCnt": 183,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"44525":{"pageid":44525,"ns":0,"title":"Raphael","extract":"Raffaello Sanzio da Urbino (Italian: [raffa\u02c8\u025bllo \u02c8santsjo da ur\u02c8bi\u02d0no]; March 28 or April 6, 1483 \u2013 April 6, 1520), now generally known in English as Raphael (UK:  RAF-ay-\u0259l, US:  RAF-ee-\u0259l, RAY-fee-, RAH-fy-EL), was an Italian painter and architect of the High Renaissance. His work is admired for its clarity of form, ease of composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together with Leonardo da Vinci and Michelangelo, he forms the traditional trinity of great masters of that period.\nHis father Giovanni Santi was court painter to the ruler of the small but highly cultured city of Urbino. He died when Raphael was eleven, and Raphael seems to have played a role in managing the family workshop from this point. He probably trained in the workshop of Pietro Perugino, and was described as a fully trained \"master\" by 1500. He worked in or for several cities in north Italy until in 1508 he moved to Rome at the invitation of Pope Julius II, to work on the Apostolic Palace at the Vatican. He was given a series of important commissions there and elsewhere in the city, and began to work as an architect. He was still at the height of his powers at his death in 1520.\nRaphael was enormously productive, running an unusually large workshop and, despite his early death at 37, leaving a large body of work. His career falls naturally into three phases and three styles, first described by Giorgio Vasari: his early years in Umbria, then a period of about four years (1504\u20131508) absorbing the artistic traditions of Florence, followed by his last hectic and triumphant twelve years in Rome, working for two popes and their close associates. Many of his works are found in the Vatican Palace, where the frescoed Raphael Rooms were the central, and the largest, work of his career. The best known work is The School of Athens in the Vatican Stanza della Segnatura. After his early years in Rome, much of his work was executed by his workshop from his drawings, with considerable loss of quality. He was extremely influential in his lifetime, though outside Rome his work was mostly known from his collaborative printmaking.\n\nAfter his death, the influence of his great rival Michelangelo exceeded his until the 18th and 19th centuries, when Raphael's more serene and harmonious qualities were again regarded as the highest models. Thanks to the influence of art historian Johann Joachim Winckelmann, his work became a formative influence on Neoclassical painting, but his techniques would later be explicitly and emphatically rejected by groups such as the Pre-Raphaelite Brotherhood.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5597")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5597",
+  "isRealHuman": true,
+  "birthDate": "1483-04-06",
+  "deathDate": "1520-04-06",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Historical records confirm Raphael's birth in 1483 and his death in 1520 at the age of 37.",
+  "shortDescriptionEn": "Raphael was an Italian painter and architect of the High Renaissance, renowned for his clarity of form and visual achievement of human grandeur. He died at the age of 37 after a sudden illness and was buried in the Pantheon in Rome.",
+  "shortDescriptionFr": "Raphaël était un peintre et architecte italien de la Haute Renaissance, renommé pour sa clarté de forme et sa réalisation visuelle de la grandeur humaine. Il est décédé à l'âge de 37 ans après une maladie soudaine et a été enterré au Panthéon de Rome.",
+  "shortDescriptionDe": "Raffael war ein italienischer Maler und Architekt der Hochrenaissance, bekannt für seine Klarheit der Form und die visuelle Darstellung menschlicher Größe. Er starb im Alter von 37 Jahren nach einer plötzlichen Krankheit und wurde im Pantheon in Rom beigesetzt.",
+  "shortDescriptionEs": "Rafael fue un pintor y arquitecto italiano del Alto Renacimiento, reconocido por su claridad de forma y logro visual de la grandeza humana. Murió a los 37 años después de una enfermedad repentina y fue enterrado en el Panteón de Roma.",
+  "shortDescriptionRu": "Рафаэль был итальянским художником и архитектором Высокого Возрождения, известным своей ясностью формы и визуальным воплощением человеческого величия. Он умер в возрасте 37 лет после внезапной болезни и был похоронен в Пантеоне в Риме.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Raphael",
+    "https://www.nationalgallery.org.uk/artists/raphael"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q493",  "Name": "Arthur Rimbaud",  "BirthDate": "1854-10-20T00:00:00Z",  "DeathDate": "1891-11-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rimbaud.PNG",  "SiteLinksCnt": 138,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"155094":{"pageid":155094,"ns":0,"title":"Arthur Rimbaud","extract":"Jean Nicolas Arthur Rimbaud (UK: , US: ; French: [\u0292\u0251\u0303 nik\u0254la a\u0281ty\u0281 \u0281\u025b\u0303bo] ; 20 October 1854 \u2013 10 November 1891) was a French poet known for his transgressive and surreal themes and for his influence on modern literature and arts, prefiguring surrealism.\nBorn in Charleville, he started writing at a very young age and excelled as a student, but abandoned his formal education in his teenage years to run away to Paris amidst the Franco-Prussian War. During his late adolescence and early adulthood, he produced the bulk of his literary output. Rimbaud completely stopped writing literature at age 20 after assembling his last major work, Illuminations.\nRimbaud was a libertine and a restless soul, having engaged in a hectic, sometimes violent romantic relationship with fellow poet Paul Verlaine, which lasted nearly two years. After his retirement as a writer, he travelled extensively on three continents as a merchant and explorer until his death from cancer just after his thirty-seventh birthday. As a poet, Rimbaud is well known for his contributions to symbolism and, among other works, for A Season in Hell, a precursor to modernist literature."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q493")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q493",
+  "isRealHuman": true,
+  "birthDate": "1854-10-20",
+  "deathDate": "1891-11-10",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Arthur Rimbaud was a French poet known for his transgressive and surreal themes. He started writing at a young age and produced significant literary works before abandoning writing at 20. Afterward, he traveled extensively as a merchant and explorer until his death from cancer at 37.",
+  "shortDescriptionFr": "Arthur Rimbaud était un poète français connu pour ses thèmes transgressifs et surréalistes. Il a commencé à écrire jeune et a produit des œuvres littéraires significatives avant d'abandonner l'écriture à 20 ans. Par la suite, il a beaucoup voyagé en tant que marchand et explorateur jusqu'à sa mort d'un cancer à 37 ans.",
+  "shortDescriptionDe": "Arthur Rimbaud war ein französischer Dichter, bekannt für seine transgressiven und surrealen Themen. Er begann früh zu schreiben und schuf bedeutende literarische Werke, bevor er das Schreiben mit 20 Jahren aufgab. Danach reiste er viel als Kaufmann und Entdecker, bis er im Alter von 37 Jahren an Krebs starb.",
+  "shortDescriptionEs": "Arthur Rimbaud fue un poeta francés conocido por sus temas transgresores y surrealistas. Comenzó a escribir a una edad temprana y produjo obras literarias significativas antes de abandonar la escritura a los 20 años. Posteriormente, viajó extensamente como comerciante y explorador hasta su muerte por cáncer a los 37 años.",
+  "shortDescriptionRu": "Артур Рембо был французским поэтом, известным своими трансгрессивными и сюрреалистическими темами. Он начал писать в молодом возрасте и создал значительные литературные произведения, прежде чем в 20 лет отказаться от писательства. Впоследствии он много путешествовал как купец и исследователь до своей смерти от рака в 37 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Arthur_Rimbaud",
+    "https://www.poetryfoundation.org/poets/arthur-rimbaud"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47365",  "Name": "Marie Antoinette",  "BirthDate": "1755-11-02T00:00:00Z",  "DeathDate": "1793-10-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Louise%20Elisabeth%20Vig%C3%A9e-Lebrun%20-%20Marie-Antoinette%20dit%20%C2%AB%20%C3%A0%20la%20Rose%20%C2%BB%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 128,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"45109":{"pageid":45109,"ns":0,"title":"Marie Antoinette","extract":"Marie Antoinette (; French: [ma\u0281i \u0251\u0303twan\u025bt] ; Maria Antonia Josefa Johanna; 2 November 1755 \u2013 16 October 1793) was the last Queen of France before the French Revolution and the establishment of the French First Republic. She was the wife of Louis XVI. Born Archduchess Maria Antonia of Austria, she was the penultimate child and youngest daughter of Empress Maria Theresa and Emperor Francis I. She married Louis Auguste, Dauphin of France, in May 1770 at the age of 14. She then became the Dauphine of France. On 10 May 1774, her husband ascended the throne as Louis XVI and she became queen.\nAs queen, Marie Antoinette became increasingly a target of criticism by opponents of the domestic and foreign policies of Louis XVI, and those opposed to the monarchy in general. The French libelles accused her of being profligate, promiscuous, having illegitimate children, and harboring sympathies for France's perceived enemies, including her native Austria. She was falsely accused of defrauding the Crown's jewelers in the Affair of the Diamond Necklace, but the accusations damaged her reputation further. During the French Revolution, she became known as Madame D\u00e9ficit because the country's financial crisis was blamed on her lavish spending and her opposition to social and financial reforms proposed by Anne Robert Jacques Turgot and Jacques Necker.\nSeveral events were linked to Marie Antoinette during the Revolution after the government placed the royal family under house arrest in the Tuileries Palace in October 1789. The June 1791 attempted flight to Varennes and her role in the War of the First Coalition were immensely damaging to her image among French citizens. On 10 August 1792, the attack on the Tuileries forced the royal family to take refuge at the Assembly, and they were imprisoned in the Temple Prison on 13 August 1792. On 21 September 1792, France was declared a republic and the monarchy was abolished. Louis XVI was executed by guillotine on 21 January 1793. Marie Antoinette's trial began on 14 October 1793; two days later, she was convicted by the Revolutionary Tribunal of high treason and executed by beheading by guillotine on 16 October 1793 at the Place de la R\u00e9volution during the French Revolution."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47365")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47365",
+  "isRealHuman": true,
+  "birthDate": "1755-11-02",
+  "deathDate": "1793-10-16",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Marie Antoinette (1755–1793) was the last Queen of France before the French Revolution. Married to King Louis XVI, her extravagant lifestyle and foreign origins made her a target for public dissent. Amidst political turmoil, she was executed by guillotine at 37.",
+  "shortDescriptionFr": "Marie-Antoinette (1755–1793) fut la dernière reine de France avant la Révolution française. Épouse du roi Louis XVI, son mode de vie extravagant et ses origines étrangères en firent une cible de la dissidence publique. Au milieu des troubles politiques, elle fut exécutée par guillotine à 37 ans.",
+  "shortDescriptionDe": "Marie Antoinette (1755–1793) war die letzte Königin von Frankreich vor der Französischen Revolution. Als Ehefrau von König Ludwig XVI. machte ihr extravaganter Lebensstil und ihre ausländische Herkunft sie zur Zielscheibe öffentlicher Unzufriedenheit. Inmitten politischer Turbulenzen wurde sie im Alter von 37 Jahren durch die Guillotine hingerichtet.",
+  "shortDescriptionEs": "María Antonieta (1755–1793) fue la última reina de Francia antes de la Revolución Francesa. Casada con el rey Luis XVI, su estilo de vida extravagante y sus orígenes extranjeros la convirtieron en blanco de la disidencia pública. En medio de la agitación política, fue ejecutada en la guillotina a los 37 años.",
+  "shortDescriptionRu": "Мария-Антуанетта (1755–1793) была последней королевой Франции перед Французской революцией. Будучи женой короля Людовика XVI, ее экстравагантный образ жизни и иностранное происхождение сделали ее мишенью для общественного недовольства. В разгар политических потрясений она была казнена на гильотине в возрасте 37 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Marie_Antoinette",
+    "https://www.thetimes.co.uk/article/v-and-a-plans-exhibition-to-shatter-marie-antoinette-myths-zkchtf3dh"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q81960",  "Name": "Robert Burns",  "BirthDate": "1759-01-25T00:00:00Z",  "DeathDate": "1796-07-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Burns%201.jpg",  "SiteLinksCnt": 121,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"21222213":{"pageid":21222213,"ns":0,"title":"Robert Burns","extract":"Robert Burns (25 January 1759 \u2013 21 July 1796), also known familiarly as Rabbie Burns, was a Scottish poet and lyricist. He is widely regarded as the national poet of Scotland and is celebrated worldwide. He is the best known of the poets who have written in the Scots language, although much of his writing is in a \"light Scots dialect\" of English, accessible to an audience beyond Scotland. He also wrote in standard English, and in these writings his political or civil commentary is often at its bluntest.\nHe is regarded as a pioneer of the Romantic movement, and after his death he became a great source of inspiration to the founders of both liberalism and socialism, and a cultural icon in Scotland and among the Scottish diaspora around the world. Celebration of his life and work became almost a national charismatic cult during the 19th and 20th centuries, and his influence has long been strong on Scottish literature. In 2009 he was chosen as the greatest Scot by the Scottish public in a vote run by Scottish television channel STV.\nAs well as making original compositions, Burns also collected folk songs from across Scotland, often revising or adapting them. His poem (and song) \"Auld Lang Syne\" is often sung at Hogmanay (the last day of the year), and \"Scots Wha Hae\" served for a long time as an unofficial national anthem of the country. Other poems and songs of Burns that remain well known across the world today include \"A Red, Red Rose\", \"A Man's a Man for A' That\", \"To a Louse\", \"To a Mouse\", \"The Battle of Sherramuir\", \"Tam o' Shanter\" and \"Ae Fond Kiss\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q81960")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q81960",
+  "isRealHuman": true,
+  "birthDate": "1759-01-25",
+  "deathDate": "1796-07-21",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Robert Burns (January 25, 1759 – July 21, 1796) was a Scottish poet and lyricist, celebrated as the national poet of Scotland. He is renowned for his works in the Scots language and contributions to Scottish culture. Burns died at the age of 37 due to health complications.",
+  "shortDescriptionFr": "Robert Burns (25 janvier 1759 – 21 juillet 1796) était un poète et parolier écossais, célébré comme le poète national de l'Écosse. Il est renommé pour ses œuvres en langue écossaise et ses contributions à la culture écossaise. Burns est décédé à l'âge de 37 ans en raison de complications de santé.",
+  "shortDescriptionDe": "Robert Burns (25. Januar 1759 – 21. Juli 1796) war ein schottischer Dichter und Liedtexter, gefeiert als Nationaldichter Schottlands. Er ist bekannt für seine Werke in schottischer Sprache und seine Beiträge zur schottischen Kultur. Burns starb im Alter von 37 Jahren aufgrund gesundheitlicher Komplikationen.",
+  "shortDescriptionEs": "Robert Burns (25 de enero de 1759 – 21 de julio de 1796) fue un poeta y letrista escocés, celebrado como el poeta nacional de Escocia. Es reconocido por sus obras en lengua escocesa y sus contribuciones a la cultura escocesa. Burns murió a los 37 años debido a complicaciones de salud.",
+  "shortDescriptionRu": "Роберт Бёрнс (25 января 1759 – 21 июля 1796) был шотландским поэтом и лириком, признанным национальным поэтом Шотландии. Он известен своими произведениями на шотландском языке и вкладом в шотландскую культуру. Бёрнс умер в возрасте 37 лет из-за проблем со здоровьем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Burns",
+    "https://www.thetimes.co.uk/article/rare-first-edition-of-robert-burns-poetry-to-go-under-the-hammer-lz9hxb6zb",
+    "https://www.thetimes.co.uk/article/rare-portrait-of-robert-burns-muse-and-friend-found-by-accident-qxtz58wrs"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7474",  "Name": "Rosalind Franklin",  "BirthDate": "1920-07-25T00:00:00Z",  "DeathDate": "1958-04-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosalind%20Franklin.jpg",  "SiteLinksCnt": 102,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"90472":{"pageid":90472,"ns":0,"title":"Rosalind Franklin","extract":"Rosalind Elsie Franklin (25 July 1920 \u2013 16 April 1958) was a British chemist and X-ray crystallographer. Her work was central to the understanding of the molecular structures of DNA (deoxyribonucleic acid), RNA (ribonucleic acid), viruses, coal, and graphite. Although her works on coal and viruses were appreciated in her lifetime, Franklin's contributions to the discovery of the structure of DNA were largely unrecognised during her life, for which Franklin has been variously referred to as the \"wronged heroine\", the \"dark lady of DNA\", the \"forgotten heroine\", a \"feminist icon\", and the \"Sylvia Plath of molecular biology\".\nFranklin graduated in 1941 with a degree in natural sciences from Newnham College, Cambridge, and then enrolled for a PhD in physical chemistry under Ronald George Wreyford Norrish, the 1920 Chair of Physical Chemistry at the University of Cambridge. Disappointed by Norrish's lack of enthusiasm, she took up a research position under the British Coal Utilisation Research Association (BCURA) in 1942. The research on coal helped Franklin earn a PhD from Cambridge in 1945. Moving to Paris in 1947 as a chercheur (postdoctoral researcher) under Jacques Mering at the Laboratoire Central des Services Chimiques de l'\u00c9tat, she became an accomplished X-ray crystallographer. After joining King's College London in 1951 as a research associate, Franklin discovered some key properties of DNA, which eventually facilitated the correct description of the double helix structure of DNA. Owing to disagreement with her director, John Randall, and her colleague Maurice Wilkins, Franklin was compelled to move to Birkbeck College in 1953.\nFranklin is best known for her work on the X-ray diffraction images of DNA while at King's College London, particularly Photo 51, taken by her student Raymond Gosling, which led to the discovery of the DNA double helix for which Francis Crick, James Watson, and Maurice Wilkins shared the Nobel Prize in Physiology or Medicine in 1962. While Gosling actually took the famous Photo 51, Maurice Wilkins showed it to James Watson without her permission.\nWatson suggested that Franklin would have ideally been awarded a Nobel Prize in Chemistry, along with Wilkins but it was not possible because the pre-1974 rule dictated that a Nobel prize could not be awarded posthumously unless the nomination had been made for a then-alive candidate before 1 February of the award year and Franklin died a few years before 1962 when the discovery of the structure of DNA was recognised by the Nobel committee.\nWorking under John Desmond Bernal, Franklin led pioneering work at Birkbeck on the molecular structures of viruses. On the day before she was to unveil the structure of tobacco mosaic virus at an international fair in Brussels, Franklin died of ovarian cancer at the age of 37 in 1958. Her team member Aaron Klug continued her research, winning the Nobel Prize in Chemistry in 1982."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7474")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7474",
+  "isRealHuman": true,
+  "birthDate": "1920-07-25",
+  "deathDate": "1958-04-16",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Rosalind Franklin was a British chemist and X-ray crystallographer whose work was central to understanding the molecular structures of DNA, RNA, viruses, coal, and graphite. Despite her critical contributions to the discovery of DNA's double helix, her role was not fully recognized during her lifetime. She died of ovarian cancer at the age of 37.",
+  "shortDescriptionFr": "Rosalind Franklin était une chimiste et cristallographe britannique dont le travail a été essentiel à la compréhension des structures moléculaires de l'ADN, de l'ARN, des virus, du charbon et du graphite. Malgré ses contributions cruciales à la découverte de la double hélice de l'ADN, son rôle n'a pas été pleinement reconnu de son vivant. Elle est décédée d'un cancer de l'ovaire à l'âge de 37 ans.",
+  "shortDescriptionDe": "Rosalind Franklin war eine britische Chemikerin und Röntgenkristallographin, deren Arbeit maßgeblich zum Verständnis der molekularen Strukturen von DNA, RNA, Viren, Kohle und Graphit beitrug. Trotz ihrer entscheidenden Beiträge zur Entdeckung der DNA-Doppelhelix wurde ihre Rolle zu Lebzeiten nicht vollständig anerkannt. Sie starb im Alter von 37 Jahren an Eierstockkrebs.",
+  "shortDescriptionEs": "Rosalind Franklin fue una química y cristalógrafa británica cuyo trabajo fue fundamental para comprender las estructuras moleculares del ADN, ARN, virus, carbón y grafito. A pesar de sus contribuciones cruciales al descubrimiento de la doble hélice del ADN, su papel no fue plenamente reconocido durante su vida. Murió de cáncer de ovario a los 37 años.",
+  "shortDescriptionRu": "Розалинд Франклин была британским химиком и рентгенографом, чья работа сыграла ключевую роль в понимании молекулярных структур ДНК, РНК, вирусов, угля и графита. Несмотря на ее решающий вклад в открытие двойной спирали ДНК, ее роль не была полностью признана при жизни. Она умерла от рака яичников в возрасте 37 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rosalind_Franklin",
+    "https://www.nature.com/scitable/topicpage/rosalind-franklin-a-crucial-contribution-6538012/",
+    "https://www.nature.com/articles/d41586-023-01313-5"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q202155",  "Name": "Thomas Sankara",  "BirthDate": "1949-12-21T00:00:00Z",  "DeathDate": "1987-10-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Siege%20UNIR%20PS%20Ouaga.jpg",  "SiteLinksCnt": 89,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"165553":{"pageid":165553,"ns":0,"title":"Thomas Sankara","extract":"Thomas Isidore No\u00ebl Sankara (French pronunciation: [t\u0254m\u0251 izid\u0254\u0281 n\u0254\u025bl s\u0251\u0303ka\u0281a]; 21 December 1949 \u2013 15 October 1987) was a Burkinab\u00e8 military officer, Marxist revolutionary and Pan-Africanist who became President of Burkina Faso from 1983, when he took over in a coup, until his assassination in 1987.\nAfter being appointed Prime Minister in 1983, disputes with the sitting government led to Sankara's eventual imprisonment. While he was under house arrest, a group of revolutionaries seized power on his behalf in a popularly-supported coup later that year.\nAt the age of 33, Sankara became the President of the Republic of Upper Volta and launched an unprecedented series of social, ecological, and economic reforms. In 1984, Sankara oversaw the renaming of the country to Burkina Faso ('land of the upright people'), and personally wrote its national anthem. His foreign policy was centred on anti-imperialism and he rejected loans and capital from organizations such as the International Monetary Fund. However, he welcomed some foreign aid in an effort to boost the domestic economy, diversify the sources of assistance, and make Burkina Faso self-sufficient.\nHis domestic policies included famine prevention, agrarian expansion, land reform, and suspending rural poll taxes, as well as a nationwide literacy campaign and vaccination program to reduce meningitis, yellow fever and measles. Sankara's health programmes distributed millions of doses of vaccines to children across Burkina Faso. His government also focused on building schools, health centres, water reservoirs, and infrastructure projects. He combatted desertification of the Sahel by planting more than 10 million trees. Socially, his government enforced the prohibition of female circumcision, forced marriages and polygamy. Sankara reinforced his populist image by ordering the sale of luxury vehicles and properties owned by the government in order to reduce costs. In addition, he banned what he considered the luxury of air conditioning in government offices, and homes of politicians. He established Cuban-inspired Committees for the Defence of the Revolution to serve as a new foundation of society and promote popular mobilization. His Popular Revolutionary Tribunals prosecuted public officials charged with graft, political crimes and corruption, considering such elements of the state counter-revolutionaries. This led to criticism by Amnesty International for alleged human rights violations, such as arbitrary detentions of political opponents.\nSankara's revolutionary programmes and reforms for African self-reliance made him an icon to many of Africa's poverty-stricken nations, and the president remained popular with a substantial majority of his country's citizens, as well as those outside Burkina Faso. Some of his policies alienated elements of the former ruling class, including tribal leaders \u2014 and the governments of France and its ally, the Ivory Coast.\nOn 15 October 1987, Sankara was assassinated by troops led by Blaise Compaor\u00e9, who assumed leadership of the country shortly thereafter. Compaor\u00e9 retained power until the 2014 Burkina Faso uprising. In 2021, he was formally charged with and found guilty for the murder of Sankara by a military tribunal."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q202155")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q202155",
+  "isRealHuman": true,
+  "birthDate": "1949-12-21",
+  "deathDate": "1987-10-15",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, allowing for an accurate calculation of age at death.",
+  "shortDescriptionEn": "Thomas Sankara was a Burkinabé military officer and revolutionary who served as President of Burkina Faso from 1983 until his assassination in 1987. Known for his progressive policies and anti-imperialist stance, he was killed during a coup led by his former ally, Blaise Compaoré.",
+  "shortDescriptionFr": "Thomas Sankara était un officier militaire burkinabé et révolutionnaire qui a servi en tant que président du Burkina Faso de 1983 jusqu'à son assassinat en 1987. Connu pour ses politiques progressistes et sa position anti-impérialiste, il a été tué lors d'un coup d'État mené par son ancien allié, Blaise Compaoré.",
+  "shortDescriptionDe": "Thomas Sankara war ein burkinischer Militär Offizier und Revolutionär, der von 1983 bis zu seiner Ermordung 1987 als Präsident von Burkina Faso diente. Bekannt für seine progressiven Politiken und anti-imperialistische Haltung, wurde er während eines von seinem ehemaligen Verbündeten Blaise Compaoré geführten Putsches getötet.",
+  "shortDescriptionEs": "Thomas Sankara fue un oficial militar y revolucionario burkinés que sirvió como presidente de Burkina Faso desde 1983 hasta su asesinato en 1987. Conocido por sus políticas progresistas y su postura antiimperialista, fue asesinado durante un golpe de Estado liderado por su antiguo aliado, Blaise Compaoré.",
+  "shortDescriptionRu": "Томас Санкара был буркинийским военным офицером и революционером, служившим президентом Буркина-Фасо с 1983 года до его убийства в 1987 году. Известный своими прогрессивными политиками и антиимпериалистической позицией, он был убит во время переворота, возглавленного его бывшим союзником Блэзом Компаоре.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Sankara"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q52938",  "Name": "Gustavus Adolphus of Sweden",  "BirthDate": "1594-12-19T00:00:00Z",  "DeathDate": "1632-11-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Jacob%20Hoefnagel%20-%20Gustavus%20Adolphus%2C%20King%20of%20Sweden%201611-1632%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 83,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"40869264":{"pageid":40869264,"ns":0,"title":"Gustavus Adolphus","extract":"Gustavus Adolphus (9 December [N.S 19 December] 1594 \u2013 6 November [N.S 16 November] 1632), also known in English as Gustav II Adolf or Gustav II Adolph, was King of Sweden from 1611 to 1632, and is credited with the rise of Sweden as a great European power (Swedish: Stormaktstiden). During his reign, Sweden became one of the primary military forces in Europe during the Thirty Years' War, helping to determine the political and religious balance of power in Europe. He was formally and posthumously given the name Gustavus Adolphus the Great (Swedish: Gustav Adolf den store; Latin: Gustavus Adolphus Magnus) by the Riksdag of the Estates in 1634.\nHe is often regarded as one of the greatest military commanders in modern history, with use of an early form of combined arms. His most notable military victory was the Battle of Breitenfeld in 1631. With his resources, logistics, and support, Gustavus Adolphus was positioned to become a major European leader, but he was killed a year later at the Battle of L\u00fctzen. He was assisted in his efforts by Count Axel Oxenstierna, the Lord High Chancellor of Sweden, who also acted as regent after his death.\nComing to the throne at the age of 16, Gustavus Adolphus inherited three wars from his father Charles IX of Sweden: border conflicts with Russia and Denmark\u2013Norway, and a dynastic struggle with his first cousin, King Sigismund III Vasa of Poland. Of these, the Danish war was the most serious. During his reign, Sweden rose from the status of a Baltic Sea basin regional power to one of the great powers of Europe and a model of early modern era government. Gustavus Adolphus is known as the \"father of modern warfare\", or the first modern general. He taught a number of other military commanders, such as Lennart Torstensson, who would go on to expand the boundaries and power of the Swedish Empire after Gustavus Adolphus's death. Spoils meant he became a successful bookraider in Europe, targeting Jesuit library collections.\nHis contributions to Sweden's rise in power included reformation of the administrative structure. For example, he began Parish Registration of the population, so that the central government could more efficiently tax and conscript the people. He is also widely commemorated by Protestants in Europe as the main defender of their cause during the Thirty Years' War, with multiple churches, foundations and other undertakings named after him, including the Gustav-Adolf-Werk."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q52938")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q52938",
+  "isRealHuman": true,
+  "birthDate": "1594-12-09",
+  "deathDate": "1632-11-06",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming his age at death as 37.",
+  "shortDescriptionEn": "Gustavus Adolphus (1594–1632) was the King of Sweden who transformed the country into a major European power. Known as the 'Father of Modern Warfare' for his military innovations, he achieved significant victories during the Thirty Years' War. He died in battle at Lützen in 1632.",
+  "shortDescriptionFr": "Gustave-Adolphe (1594–1632) fut le roi de Suède qui transforma le pays en une grande puissance européenne. Connu comme le 'Père de la guerre moderne' pour ses innovations militaires, il remporta des victoires significatives pendant la guerre de Trente Ans. Il mourut au combat à Lützen en 1632.",
+  "shortDescriptionDe": "Gustav II. Adolf (1594–1632) war der König von Schweden, der das Land zu einer europäischen Großmacht machte. Bekannt als der 'Vater der modernen Kriegsführung' für seine militärischen Innovationen, erzielte er bedeutende Siege im Dreißigjährigen Krieg. Er fiel 1632 in der Schlacht bei Lützen.",
+  "shortDescriptionEs": "Gustavo Adolfo (1594–1632) fue el Rey de Suecia que transformó al país en una potencia europea. Conocido como el 'Padre de la guerra moderna' por sus innovaciones militares, logró victorias significativas durante la Guerra de los Treinta Años. Murió en la batalla de Lützen en 1632.",
+  "shortDescriptionRu": "Густав II Адольф (1594–1632) был королем Швеции, превратившим страну в крупную европейскую державу. Известен как 'Отец современной войны' за свои военные инновации, он одержал значительные победы в Тридцатилетней войне. Погиб в битве при Лютцене в 1632 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gustavus_Adolphus",
+    "https://www.britannica.com/biography/Gustav-II-Adolf",
+    "https://www.worldhistory.org/Gustavus_Adolphus/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180819",  "Name": "Lev Vygotsky",  "BirthDate": "1896-11-17T00:00:00Z",  "DeathDate": "1934-06-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lev-Semyonovich-Vygotsky-1896-1934.jpg",  "SiteLinksCnt": 80,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"95176":{"pageid":95176,"ns":0,"title":"Lev Vygotsky","extract":"Lev Semyonovich Vygotsky (Russian: \u041b\u0435\u0432 \u0421\u0435\u043c\u0451\u043d\u043e\u0432\u0438\u0447 \u0412\u044b\u0433\u043e\u0442\u0441\u043a\u0438\u0439, [v\u0268\u02c8\u0261otsk\u02b2\u026aj]; Belarusian: \u041b\u0435\u045e \u0421\u044f\u043c\u0451\u043d\u0430\u0432\u0456\u0447 \u0412\u044b\u0433\u043e\u0446\u043a\u0456; November 17 [O.S. November 5] 1896 \u2013 June 11, 1934) was a Russian and Soviet psychologist, best known for his work on psychological development in children and creating the framework known as cultural-historical activity theory. After his early death, his books and research were banned in the Soviet Union until Joseph Stalin's death in 1953, with a first collection of major texts published in 1956. \nHis major ideas include:\n\nThe Social Origin of Mind: Vygotsky believed that human mental and cognitive abilities are not biologically determined, but instead created and shaped by use of language and tools in the process of interacting and constructing the cultural and social environment.\nThe Importance of Mediation: He saw mediation as the key to human development, because it leads to the use of cultural tools and becomes a pathway for psychological development through the process of interiorization.\nThe Zone of Proximal Development: Vygotsky introduced the concept of the ZPD which refers to the gap between a child's current level of development and the level they are capable of reaching with tools provided by others with more knowledge.\nThe Significance of Play: Vygotsky viewed play as a crucial aspect of children's development, as he thought of it as the best sandbox to build and develop the practice of mediation."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180819")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q180819",
+  "isRealHuman": true,
+  "birthDate": "1896-11-17",
+  "deathDate": "1934-06-11",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 37.",
+  "shortDescriptionEn": "Lev Vygotsky was a Soviet psychologist known for his work on child development and cultural-historical activity theory. He died at the age of 37 from tuberculosis.",
+  "shortDescriptionFr": "Lev Vygotsky était un psychologue soviétique connu pour ses travaux sur le développement de l'enfant et la théorie de l'activité historico-culturelle. Il est décédé à l'âge de 37 ans de la tuberculose.",
+  "shortDescriptionDe": "Lev Vygotsky war ein sowjetischer Psychologe, bekannt für seine Arbeit zur kindlichen Entwicklung und der kulturhistorischen Aktivitätstheorie. Er starb im Alter von 37 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "Lev Vygotsky fue un psicólogo soviético conocido por su trabajo en el desarrollo infantil y la teoría de la actividad histórico-cultural. Murió a los 37 años de tuberculosis.",
+  "shortDescriptionRu": "Лев Выготский был советским психологом, известным своими работами по развитию ребенка и культурно-исторической теории деятельности. Он умер в возрасте 37 лет от туберкулеза.",
+  "sources": [
+    "https://www.britannica.com/biography/L-S-Vygotsky",
+    "https://en.wikipedia.org/wiki/Lev_Vygotsky",
+    "https://www.verywellmind.com/lev-vygotsky-biography-2795533"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q171465",  "Name": "Mehmed III",  "BirthDate": "1566-06-05T00:00:00Z",  "DeathDate": "1603-12-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/III%20Mehmed.jpg",  "SiteLinksCnt": 74,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"19990":{"pageid":19990,"ns":0,"title":"Mehmed III","extract":"Mehmed III (Ottoman Turkish: \u0645\u062d\u0645\u062f \u062b\u0627\u0644\u062b, Me\u1e25med-i s\u0101lis; Turkish: III. Mehmed; 26 May 1566 \u2013 22 December 1603) was the sultan of the Ottoman Empire from 1595 until his death in 1603. Mehmed was known for ordering the execution of his brothers and leading the army in the Long Turkish War, during which the Ottoman army was victorious at the decisive Battle of Keresztes. This victory was however undermined by some military losses such as in Gy\u0151r and Nikopol. He also ordered the successful quelling of the Jelali rebellions. The sultan also communicated with the court of Elizabeth I on the grounds of stronger commercial relations and in the hopes of England to ally with the Ottomans against the Spanish."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q171465")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q171465",
+  "isRealHuman": true,
+  "birthDate": "1566-05-26",
+  "deathDate": "1603-12-22",
+  "ageAtDeath": 37,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, leading to a high confidence in the calculated age at death.",
+  "shortDescriptionEn": "Mehmed III was the Sultan of the Ottoman Empire from 1595 until his death in 1603 at age 37. His reign was marked by military campaigns, including the Austro-Ottoman War, and internal strife. He died of natural causes and was buried in the Hagia Sophia Mosque.",
+  "shortDescriptionFr": "Mehmed III était le sultan de l'Empire ottoman de 1595 jusqu'à sa mort en 1603 à l'âge de 37 ans. Son règne fut marqué par des campagnes militaires, y compris la guerre austro-ottomane, et des troubles internes. Il est mort de causes naturelles et a été enterré dans la mosquée Sainte-Sophie.",
+  "shortDescriptionDe": "Mehmed III war von 1595 bis zu seinem Tod im Jahr 1603 im Alter von 37 Jahren Sultan des Osmanischen Reiches. Seine Herrschaft war geprägt von Feldzügen, darunter der Österreichisch-Osmanische Krieg, und inneren Unruhen. Er starb eines natürlichen Todes und wurde in der Hagia Sophia Moschee beigesetzt.",
+  "shortDescriptionEs": "Mehmed III fue el sultán del Imperio Otomano desde 1595 hasta su muerte en 1603 a los 37 años. Su reinado estuvo marcado por campañas militares, incluida la guerra austro-otomana, y conflictos internos. Murió por causas naturales y fue enterrado en la Mezquita de Santa Sofía.",
+  "shortDescriptionRu": "Мехмед III был султаном Османской империи с 1595 года до своей смерти в 1603 году в возрасте 37 лет. Его правление было отмечено военными кампаниями, включая австро-османскую войну, и внутренними конфликтами. Он умер естественной смертью и был похоронен в мечети Святой Софии.",
+  "sources": [
+    "https://www.britannica.com/biography/Mehmed-III",
+    "https://en.wikipedia.org/wiki/Mehmed_III",
+    "https://www.findagrave.com/memorial/174818767/mehmed"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q53448",  "Name": "Henry III of France",  "BirthDate": "1551-09-29T00:00:00Z",  "DeathDate": "1589-08-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Quesnel%20Henry%20III%20of%20France%20in%20Polish%20hat.jpg",  "SiteLinksCnt": 74,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"75985":{"pageid":75985,"ns":0,"title":"Henry III of France","extract":"Henry III (French: Henri III, n\u00e9 Alexandre \u00c9douard; Polish: Henryk Walezy; Lithuanian: Henrikas Valua; 19 September 1551 \u2013 2 August 1589) was King of France from 1574 until his assassination in 1589, as well as King of Poland and Grand Duke of Lithuania from 1573 to 1575. \nAs the fourth son of King Henry II of France, he was not expected to inherit the French throne and thus was a good candidate for the vacant throne of the Polish\u2013Lithuanian Commonwealth, where he was elected monarch in 1573. During his brief rule, he signed the Henrician Articles into law, recognizing the szlachta's right to freely elect their monarch. Aged 22, Henry abandoned Poland\u2013Lithuania upon inheriting the French throne when his brother, Charles IX, died without issue.\nFrance was at the time plagued by the Wars of Religion, and Henry's authority was undermined by violent political factions funded by foreign powers: the Catholic League (supported by Spain and the Pope), the Protestant Huguenots (supported by England and the Dutch) and the Malcontents (led by Henry's own brother Francis, Duke of Anjou and Alen\u00e7on, a party of Catholic and Protestant aristocrats who jointly opposed the absolutist ambitions of the king). Henry III was himself a politique, arguing that only a strong and centralised yet religiously tolerant monarchy would save France from collapse.\nAfter the death of Henry's younger brother Francis, Duke of Anjou, and when it became apparent that Henry would not father an heir, the Wars of Religion developed into a dynastic war known as the War of the Three Henrys. Under Salic Law, Henry III's heir apparent was his distant cousin, King Henry III of Navarre, a Protestant. The Catholic League, led by Henry I, Duke of Guise, demanded the exclusion of all Protestant heirs from the line of succession. They instead championed the Catholic Charles, Cardinal of Bourbon, as Henry III's heir presumptive.\nHenry had the Duke of Guise murdered in 1588 and was in turn assassinated by Jacques Cl\u00e9ment, a Catholic League fanatic, in 1589. He was succeeded by the King of Navarre who, as Henry IV, assumed the throne of France as the first king of the House of Bourbon and eventually converted to Catholicism."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q53448")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q53448",
+  "isRealHuman": true,
+  "birthDate": "1551-09-19",
+  "deathDate": "1589-08-02",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Henry III are well-documented in historical records, confirming his age at death as 37.",
+  "shortDescriptionEn": "Henry III of France (1551–1589) was the last king of the Valois dynasty, ruling from 1574 until his assassination in 1589. His reign was marked by the Wars of Religion, and he was assassinated by a Catholic fanatic.",
+  "shortDescriptionFr": "Henri III de France (1551–1589) fut le dernier roi de la dynastie des Valois, régnant de 1574 jusqu'à son assassinat en 1589. Son règne fut marqué par les guerres de Religion, et il fut assassiné par un fanatique catholique.",
+  "shortDescriptionDe": "Heinrich III. von Frankreich (1551–1589) war der letzte König der Valois-Dynastie und regierte von 1574 bis zu seiner Ermordung im Jahr 1589. Seine Herrschaft war geprägt von den Religionskriegen, und er wurde von einem katholischen Fanatiker ermordet.",
+  "shortDescriptionEs": "Enrique III de Francia (1551–1589) fue el último rey de la dinastía Valois, reinando desde 1574 hasta su asesinato en 1589. Su reinado estuvo marcado por las Guerras de Religión, y fue asesinado por un fanático católico.",
+  "shortDescriptionRu": "Генрих III Французский (1551–1589) был последним королем династии Валуа, правившим с 1574 года до своего убийства в 1589 году. Его правление было отмечено религиозными войнами, и он был убит католическим фанатиком.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_III_of_France",
+    "https://www.britannica.com/biography/Henry-III-king-of-France-and-Poland"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q68880",  "Name": "Arminius",  "BirthDate": "-0016-01-01T00:00:00Z",  "DeathDate": "0021-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hermannsdenkmal%20statue.jpg",  "SiteLinksCnt": 74,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"72581":{"pageid":72581,"ns":0,"title":"Arminius","extract":"Arminius (; 18/17 BC\u2013AD 21) was a chieftain of the Germanic Cherusci tribe who is best known for commanding an alliance of Germanic tribes at the Battle of the Teutoburg Forest in AD 9, in which three Roman legions under the command of general and governor Publius Quinctilius Varus were destroyed. His victory at Teutoburg Forest precipitated the Roman Empire's permanent strategic withdrawal and the deprovincialization of Germania Magna, and modern historians regard it as one of Imperial Rome's greatest defeats. As it prevented the Romanization of Germanic peoples east of the Rhine, it has also been considered one of the most decisive battles in history and a turning point in human history.\nBorn a prince of the Cherusci tribe, Arminius was part of the Roman-friendly faction of the tribe. He learned Latin and served in the Roman military, which gained him Roman citizenship, and the rank of eques. After serving with distinction in the Great Illyrian Revolt, he was sent to Germania to aid the local governor Publius Quinctilius Varus in completing the Roman conquest of the Germanic tribes. While in this capacity, Arminius secretly plotted a Germanic revolt against Roman rule, which culminated in the ambush and destruction of three Roman legions in the Teutoburg Forest.\nIn the aftermath of the battle, Arminius fought retaliatory invasions by the Roman general Germanicus in the battles of Pontes Longi, Idistaviso, and the Angrivarian Wall, and defeated a rival, the Marcomanni king Maroboduus. Arminius sought to become a king and was killed by his relatives in 21. He was remembered in Germanic legends for generations afterwards. The Roman historian Tacitus designated Arminius as the liberator of the Germanic tribes and commended him for having fought the Roman Empire to a standstill at the peak of its power.\nDuring the unification of Germany in the 19th century, Arminius was hailed by German nationalists as a symbol of German unity and freedom. Following World War II, however, Arminius' significance diminished in Germany due to the rise of anti-militarism, pacifism, and anti-nationalism; the 2,000th anniversary of his victory at the Teutoburg Forest was only lightly commemorated in Germany."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q68880")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q68880",
+  "isRealHuman": true,
+  "birthDate": "-018-01-01",
+  "deathDate": "019-01-01",
+  "ageAtDeath": 36,
+  "confidence": 90,
+  "confidenceExplained": "Birth and death dates are approximate based on historical records, leading to an estimated age at death.",
+  "shortDescriptionEn": "Arminius was a chieftain of the Germanic Cherusci tribe, best known for leading an alliance of tribes to victory against three Roman legions in the Battle of the Teutoburg Forest in AD 9. He died in 19 CE, likely assassinated by rival Germanic leaders.",
+  "shortDescriptionFr": "Arminius était un chef de la tribu germanique des Chérusques, connu pour avoir mené une alliance de tribus à la victoire contre trois légions romaines lors de la bataille de la forêt de Teutoburg en 9 apr. J.-C. Il est mort en 19 apr. J.-C., probablement assassiné par des chefs germaniques rivaux.",
+  "shortDescriptionDe": "Arminius war ein Anführer des germanischen Stammes der Cherusker, bekannt dafür, dass er ein Bündnis von Stämmen zum Sieg gegen drei römische Legionen in der Schlacht im Teutoburger Wald im Jahr 9 n. Chr. führte. Er starb 19 n. Chr., wahrscheinlich ermordet von rivalisierenden germanischen Führern.",
+  "shortDescriptionEs": "Arminio fue un caudillo de la tribu germánica de los queruscos, conocido por liderar una alianza de tribus que venció a tres legiones romanas en la Batalla del Bosque de Teutoburgo en el año 9 d.C. Murió en el año 19 d.C., probablemente asesinado por líderes germánicos rivales.",
+  "shortDescriptionRu": "Арминий был вождем германского племени херусков, известен тем, что возглавил союз племен, одержавший победу над тремя римскими легионами в битве в Тевтобургском лесу в 9 году н.э. Он умер в 19 году н.э., вероятно, убитый соперничающими германскими лидерами.",
+  "sources": [
+    "https://www.britannica.com/biography/Arminius",
+    "https://en.wikipedia.org/wiki/Arminius"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q182483",  "Name": "Cambyses II",  "BirthDate": "-0558-01-01T00:00:00Z",  "DeathDate": "-0521-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Stela%20Cambyses%20Apis%20closeup.jpg",  "SiteLinksCnt": 68,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"46601":{"pageid":46601,"ns":0,"title":"Cambyses II","extract":"Cambyses II (Old Persian: \ud800\udfa3\ud800\udfb2\ud800\udfa2\ud800\udfaa\ud800\udfa1\ud800\udfb9, romanized: Ka\u1d50b\u016bjiya) was the second King of Kings of the Achaemenid Empire from 530 to 522 BC. He was the son and successor of Cyrus the Great (r.\u2009550 \u2013 530 BC) and his mother was Cassandane. His relatively brief reign was marked by his conquests in North Africa, notably Egypt, which he conquered after his victory over the Egyptian pharaoh Psamtik III (r.\u2009526\u2013525 BC) at the battle of Pelusium in 525 BC. After having established himself in Egypt, he expanded the empire's holdings in Africa, including the conquest of Cyrenaica. In the spring of 522 BC, Cambyses hurriedly left Egypt to deal with a rebellion in Persia. \nBefore his accession, Cambyses had briefly served as the governor of northern Babylonia under his father from April to December 538 BC. Afterwards, he resided in the Babylonian cities of Babylon and Sippar, before being appointed by his father as co-ruler in 530 BC.  His father then set off on an expedition against the Massagetae of Central Asia, where he met his end. Cambyses thus became the sole ruler of the vast Achaemenid Empire, facing no reported  opposition.\nWhile en route in Syria (Eber-Nari), he received a wound to the thigh, which was soon affected by gangrene. Cambyses died three weeks later at a location called Agbatana, which is most likely the modern city of Hama. He died childless, and was thus succeeded by his younger brother Bardiya, who ruled for a short period before being overthrown by Darius the Great (r.\u2009522\u2013486 BC), who went on to increase the power of the Achaemenids even further."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q182483")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q182483",
+  "isRealHuman": true,
+  "birthDate": "-0588-01-01",
+  "deathDate": "-0522-07-01",
+  "ageAtDeath": 36,
+  "confidence": 85,
+  "confidenceExplained": "The estimated age is based on historical records, though exact dates are not definitively known.",
+  "shortDescriptionEn": "Cambyses II was the second King of Kings of the Achaemenid Empire, ruling from 530 to 522 BC. He was the son and successor of Cyrus the Great. His reign included the conquest of Egypt. Cambyses II died in 522 BC under uncertain circumstances, with some accounts suggesting an accidental self-inflicted wound.",
+  "shortDescriptionFr": "Cambyse II était le deuxième Roi des Rois de l'Empire achéménide, régnant de 530 à 522 av. J.-C. Fils et successeur de Cyrus le Grand, son règne a inclus la conquête de l'Égypte. Cambyse II est mort en 522 av. J.-C. dans des circonstances incertaines, certaines sources suggérant une blessure accidentelle auto-infligée.",
+  "shortDescriptionDe": "Kambyses II. war der zweite König der Könige des Achämenidenreiches und regierte von 530 bis 522 v. Chr. Er war der Sohn und Nachfolger von Kyros dem Großen. Seine Herrschaft umfasste die Eroberung Ägyptens. Kambyses II. starb 522 v. Chr. unter unklaren Umständen, wobei einige Berichte auf eine versehentliche selbst zugefügte Wunde hinweisen.",
+  "shortDescriptionEs": "Cambises II fue el segundo Rey de Reyes del Imperio Aqueménida, gobernando desde 530 hasta 522 a.C. Hijo y sucesor de Ciro el Grande, su reinado incluyó la conquista de Egipto. Cambises II murió en 522 a.C. en circunstancias inciertas, con algunos relatos que sugieren una herida accidental autoinfligida.",
+  "shortDescriptionRu": "Камбис II был вторым царем царей Ахеменидской империи, правившим с 530 по 522 годы до н. э. Он был сыном и преемником Кира Великого. Его правление включало завоевание Египта. Камбис II умер в 522 году до н. э. при неясных обстоятельствах; некоторые источники указывают на случайно нанесенную самому себе рану.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cambyses_II",
+    "https://www.britannica.com/biography/Cambyses-II",
+    "https://www.worldhistory.org/Cambyses_II/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q217442",  "Name": "Yazid I",  "BirthDate": "0646-01-01T00:00:00Z",  "DeathDate": "0683-11-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Arab-Sasanian%20coin%20issued%20by%20Yazid%20I%20ibn%20Mu%27awiya%20in%20the%20year%20of%20the%20Battle%20of%20Karbala.jpg",  "SiteLinksCnt": 62,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"402593":{"pageid":402593,"ns":0,"title":"Yazid I","extract":"Yazid ibn Mu'awiya ibn Abi Sufyan (Arabic: \u064a\u0632\u064a\u062f \u0628\u0646 \u0645\u0639\u0627\u0648\u064a\u0629 \u0628\u0646 \u0623\u0628\u064a \u0633\u0641\u064a\u0627\u0646, romanized: Yaz\u012bd ibn Mu\u02bf\u0101wiya ibn \u02beAb\u012b Sufy\u0101n; c.\u2009646 \u2013 11 November 683), commonly known as Yazid I, was the second caliph of the Umayyad Caliphate, ruling from April 680 until his death in November 683. His appointment by his father Mu'awiya I (r.\u2009661\u2013680) was the first hereditary succession to the caliphate in Islamic history. His caliphate was marked by the death of Muhammad's grandson Husayn ibn Ali and the start of the crisis known as the Second Fitna.\nDuring his father's caliphate, Yazid led several campaigns against the Byzantine Empire, including an attack on the Byzantine capital, Constantinople. Yazid's nomination as heir apparent in 676 CE (56 AH) by Mu'awiya was opposed by several Muslim grandees from the Hejaz region, including Husayn and Abd Allah ibn al-Zubayr. The two men refused to recognize Yazid following his accession and took sanctuary in Mecca. When Husayn left for Kufa in Iraq to lead a revolt against Yazid, he was killed with his small band of supporters by Yazid's forces in the Battle of Karbala. Husayn's death caused resentment in the Hejaz, where Ibn al-Zubayr called for a consultative assembly to elect a new caliph. The people of Medina, who supported Ibn al-Zubayr, held other grievances toward the Umayyads. After failing to gain the allegiance of Ibn al-Zubayr and the people of the Hejaz through diplomacy, Yazid sent an army to suppress their rebellion. The army defeated the Medinese in the Battle of al-Harra in August 683 and the city was sacked. Afterward, Mecca was besieged for several weeks until the army withdrew as a result of Yazid's death in November 683. The Caliphate fell into a nearly decade-long civil war, ending with the establishment of the Marwanid dynasty (the Umayyad caliph Marwan I and his descendants).\nYazid continued Mu'awiya's decentralized model of governance, relying on his provincial governors and the tribal nobility. He abandoned Mu'awiya's ambitious raids against the Byzantine Empire and strengthened Syria's military defences. No new territories were conquered during his reign. Yazid is considered an illegitimate ruler and a tyrant by many Muslims due to his hereditary succession, the death of Husayn, and his attack on Medina. Modern historians take a milder view, and consider him a capable ruler, albeit less successful than his father.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q217442")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q217442",
+  "isRealHuman": true,
+  "birthDate": "646-07-20",
+  "deathDate": "683-11-11",
+  "ageAtDeath": 37,
+  "confidence": 90,
+  "confidenceExplained": "Based on historical records, Yazid I was born around 646 and died in 683, making him approximately 37 years old at his death. While exact dates are uncertain, the majority of sources support this estimation.",
+  "shortDescriptionEn": "Yazid I was the second Umayyad caliph, ruling from 680 to 683. His reign is marked by the Battle of Karbala, where Husayn ibn Ali was killed, deepening the Sunni-Shia divide. He died suddenly at around 37 years old.",
+  "shortDescriptionFr": "Yazid I fut le deuxième calife omeyyade, régnant de 680 à 683. Son règne est marqué par la bataille de Karbala, où Husayn ibn Ali fut tué, approfondissant la division sunnite-chiite. Il mourut soudainement à environ 37 ans.",
+  "shortDescriptionDe": "Yazid I. war der zweite umayyadische Kalif und regierte von 680 bis 683. Seine Herrschaft ist geprägt durch die Schlacht von Karbala, in der Husayn ibn Ali getötet wurde, was die sunnitisch-schiitische Spaltung vertiefte. Er starb plötzlich im Alter von etwa 37 Jahren.",
+  "shortDescriptionEs": "Yazid I fue el segundo califa omeya, gobernando desde 680 hasta 683. Su reinado se caracteriza por la Batalla de Karbala, donde Husayn ibn Ali fue asesinado, profundizando la división sunita-chiita. Murió repentinamente a los 37 años.",
+  "shortDescriptionRu": "Язид I был вторым омейядским халифом, правившим с 680 по 683 год. Его правление отмечено битвой при Кербеле, где был убит Хусейн ибн Али, что углубило суннитско-шиитский раскол. Он внезапно умер в возрасте около 37 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Yazid-I",
+    "https://www.newworldencyclopedia.org/entry/Yazid_I",
+    "https://www.thefamouspeople.com/profiles/yazid-i-39266.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41613",  "Name": "Constans II",  "BirthDate": "0630-11-07T00:00:00Z",  "DeathDate": "0668-09-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Solidus%20Constans%20II%20%28obverse%29.jpg",  "SiteLinksCnt": 61,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"252452":{"pageid":252452,"ns":0,"title":"Constans II","extract":"Constans II (Ancient Greek: \u039a\u03ce\u03bd\u03c3\u03c4\u03b1\u03c2, romanized: K\u014dnstas; 7 November 630 \u2013 15 July 668), also called \"the Bearded\" (Ancient Greek: \u1f41 \u03a0\u03c9\u03b3\u03c9\u03bd\u1fb6\u03c4\u03bf\u03c2, romanized: ho P\u014dg\u014dn\u00e3tos), was the Byzantine emperor from 641 to 668. Constans was the last attested emperor to serve as consul, in 642, although the office continued to exist until the reign of Leo VI the Wise (r. 886\u2013912). His religious policy saw him steering a middle line in disputes between the Orthodox and Monothelites by refusing to persecute either and prohibited discussion of the natures of Jesus Christ under the Type of Constans in 648. His reign coincided with Arab invasions under Umar, Uthman, and Mu'awiya I in the late 640s to 660s. Constans was the first emperor to visit Rome since the fall of the Western Roman Empire in 476, and the last one to visit Rome while the Empire still held it.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41613")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41613",
+  "isRealHuman": true,
+  "birthDate": "630-11-07",
+  "deathDate": "668-09-15",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming his age at death as 37.",
+  "shortDescriptionEn": "Constans II, also known as 'the Bearded,' was the Byzantine emperor from 641 to 668. His reign faced significant challenges, including territorial losses to the Arab Caliphate and internal religious disputes. He was assassinated in his bath by his chamberlain in 668 at the age of 37.",
+  "shortDescriptionFr": "Constant II, également connu sous le nom de 'le Barbu', fut empereur byzantin de 641 à 668. Son règne fut marqué par des défis importants, notamment des pertes territoriales face au califat arabe et des disputes religieuses internes. Il fut assassiné dans son bain par son chambellan en 668 à l'âge de 37 ans.",
+  "shortDescriptionDe": "Constans II., auch bekannt als 'der Bärtige', war von 641 bis 668 byzantinischer Kaiser. Seine Herrschaft war geprägt von erheblichen Herausforderungen, darunter Gebietsverluste an das arabische Kalifat und interne religiöse Auseinandersetzungen. Er wurde 668 im Alter von 37 Jahren von seinem Kämmerer in seinem Bad ermordet.",
+  "shortDescriptionEs": "Constante II, también conocido como 'el Barbudo', fue emperador bizantino desde 641 hasta 668. Su reinado enfrentó desafíos significativos, incluyendo pérdidas territoriales ante el Califato árabe y disputas religiosas internas. Fue asesinado en su baño por su chambelán en 668 a la edad de 37 años.",
+  "shortDescriptionRu": "Констант II, также известный как 'Бородатый', был византийским императором с 641 по 668 годы. Его правление было отмечено значительными трудностями, включая территориальные потери в пользу Арабского халифата и внутренние религиозные споры. Он был убит в своей ванне своим камергером в 668 году в возрасте 37 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Constans_II",
+    "https://www.britannica.com/biography/Constans-II-Pogonatus",
+    "https://orthodoxwiki.org/Constans_II"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44426",  "Name": "Rainer Werner Fassbinder",  "BirthDate": "1945-05-31T00:00:00Z",  "DeathDate": "1982-06-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/PER51895%20061.jpg",  "SiteLinksCnt": 61,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"81586":{"pageid":81586,"ns":0,"title":"Rainer Werner Fassbinder","extract":"Rainer Werner Fassbinder (German: [\u02c8\u0281a\u026an\u0250 \u02c8v\u025b\u0281n\u0250 \u02c8fasb\u026and\u0250] ; 31 May 1945 \u2013 10 June 1982), sometimes credited as R. W. Fassbinder, was a German filmmaker, dramatist and actor. He is widely regarded as one of the major figures and catalysts of the New German Cinema movement. Versatile and prolific, his over 40 films span a variety of genres, most frequently blending elements of Hollywood melodrama with social criticism and avant-garde techniques. His films, according to him, explored \"the exploitability of feelings\". His work was deeply rooted in post-war German culture: the aftermath of Nazism, the German economic miracle, and the terror of the Red Army Faction. He worked with a company of actors and technicians who frequently appeared in his projects.\nFassbinder began leading the acting troupe Anti-Theater in 1967, with whom he staged some of his earliest productions. His first feature-length film was a gangster movie called Love Is Colder Than Death (1969); he scored his first domestic commercial success with The Merchant of Four Seasons (1972) and his first international success with Ali: Fear Eats the Soul (1974), both of which are considered masterpieces by contemporary critics. Big-budget projects such as Despair (1978), Lili Marleen and Lola (both 1981) followed.\nHis greatest success came with The Marriage of Maria Braun (1979), chronicling the rise and fall of a German woman in the wake of World War II. Other notable films include the lesbian chamber drama The Bitter Tears of Petra von Kant (1972), Fox and His Friends (1975), Satan's Brew (1976), In a Year of 13 Moons (1978), and Querelle (1982), all of which dealt with homoerotic themes. He also directed the TV series World on a Wire (1973) and Berlin Alexanderplatz (1980).\nFassbinder died on 10 June 1982, at age 37, from a lethal cocktail of cocaine and barbiturates. His career lasted less than two decades, but he was extremely prolific; between 1967 and 1982, he completed over 40 feature films, 24 plays, two television serials, three short films, and four video productions, winning five of the most prestigious prizes for feature film in Germany, including the Golden Bear and multiple German Film Awards. His premature death is often considered  the end of the New German Cinema timeframe."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44426")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q44426",
+  "isRealHuman": true,
+  "birthDate": "1945-05-31",
+  "deathDate": "1982-06-10",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The information provided matches historical records of Rainer Werner Fassbinder, confirming his identity and age at death.",
+  "shortDescriptionEn": "Rainer Werner Fassbinder was a German filmmaker, dramatist, and actor, instrumental in the New German Cinema movement. He died at 37 from a lethal combination of cocaine and barbiturates.",
+  "shortDescriptionFr": "Rainer Werner Fassbinder était un cinéaste, dramaturge et acteur allemand, figure clé du mouvement du Nouveau Cinéma allemand. Il est décédé à 37 ans d'une combinaison mortelle de cocaïne et de barbituriques.",
+  "shortDescriptionDe": "Rainer Werner Fassbinder war ein deutscher Filmemacher, Dramatiker und Schauspieler, der maßgeblich die Bewegung des Neuen Deutschen Films prägte. Er starb im Alter von 37 Jahren an einer tödlichen Mischung aus Kokain und Barbituraten.",
+  "shortDescriptionEs": "Rainer Werner Fassbinder fue un cineasta, dramaturgo y actor alemán, fundamental en el movimiento del Nuevo Cine Alemán. Murió a los 37 años por una combinación letal de cocaína y barbitúricos.",
+  "shortDescriptionRu": "Райнер Вернер Фассбиндер был немецким режиссером, драматургом и актером, сыгравшим ключевую роль в движении нового немецкого кино. Он умер в 37 лет от смертельной комбинации кокаина и барбитуратов.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rainer_Werner_Fassbinder"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q205981",  "Name": "Alexander Friedmann",  "BirthDate": "1888-06-16T00:00:00Z",  "DeathDate": "1925-09-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aleksandr%20Fridman%20cropped.png",  "SiteLinksCnt": 57,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"728892":{"pageid":728892,"ns":0,"title":"Alexander Friedmann","extract":"Alexander Alexandrovich Friedmann (also spelled Friedman or Fridman; ; Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0424\u0440\u0438\u0301\u0434\u043c\u0430\u043d; June 16 [O.S. June 4] 1888 \u2013 September 16, 1925) was a Russian and Soviet physicist and mathematician. He originated the pioneering theory that the universe is expanding, governed by a set of equations he developed known as the Friedmann equations."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q205981")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q205981",
+  "isRealHuman": true,
+  "birthDate": "1888-06-16",
+  "deathDate": "1925-09-16",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reputable sources, confirming that Friedmann was 37 years old at the time of his death.",
+  "shortDescriptionEn": "Alexander Friedmann was a Russian physicist and mathematician best known for proposing that the universe is expanding, governed by equations now bearing his name. He died at 37 from typhoid fever, likely contracted during his return from a vacation in Crimea.",
+  "shortDescriptionFr": "Alexander Friedmann était un physicien et mathématicien russe, surtout connu pour avoir proposé que l'univers est en expansion, régie par des équations portant désormais son nom. Il est décédé à 37 ans de la fièvre typhoïde, probablement contractée lors de son retour de vacances en Crimée.",
+  "shortDescriptionDe": "Alexander Friedmann war ein russischer Physiker und Mathematiker, der vor allem dafür bekannt ist, vorgeschlagen zu haben, dass sich das Universum ausdehnt, geregelt durch Gleichungen, die nun seinen Namen tragen. Er starb im Alter von 37 Jahren an Typhus, den er sich wahrscheinlich bei seiner Rückkehr aus dem Urlaub auf der Krim zugezogen hatte.",
+  "shortDescriptionEs": "Alexander Friedmann fue un físico y matemático ruso, conocido principalmente por proponer que el universo se está expandiendo, regido por ecuaciones que ahora llevan su nombre. Murió a los 37 años de fiebre tifoidea, probablemente contraída durante su regreso de unas vacaciones en Crimea.",
+  "shortDescriptionRu": "Александр Фридман был российским физиком и математиком, наиболее известным предложением о расширении Вселенной, описанным в уравнениях, носящих его имя. Он умер в возрасте 37 лет от тифа, вероятно, зараженного во время возвращения из отпуска в Крыму.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_Friedmann",
+    "https://www.britannica.com/biography/Aleksandr-Aleksandrovich-Friedmann",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Friedmann/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q299710",  "Name": "Guangxu Emperor",  "BirthDate": "1871-08-14T00:00:00Z",  "DeathDate": "1908-11-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Imperial%20Portrait%20of%20Emperor%20Guangxu2.jpg",  "SiteLinksCnt": 57,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"265935":{"pageid":265935,"ns":0,"title":"Guangxu Emperor","extract":"The Guangxu Emperor (14 August 1871 \u2013 14 November 1908), also known by his temple name Emperor Dezong of Qing, personal name Zaitian, was the eleventh emperor of the Qing dynasty, and the ninth Qing emperor to rule over China proper, from 1875 to 1908. His reign was largely dominated by his maternal aunt Empress Dowager Cixi, who was his regent for much of his nominal rule except in the time from 1889 to 1898. He initiated the radical Hundred Days' Reform in the summer of 1898 but was abruptly stopped when the Empress Dowager launched a coup on 21 September, after which he was held under virtual house arrest until his death one decade later.\nEmperor Guangxu was the second son of Yixuan, Prince Chun (a son of the Daoguang Emperor), and his mother, Yehenara Wanzhen, was the sister of Empress Dowager Cixi. After Emperor Tongzhi's death in 1874, he was supported by the two Empress Dowagers (Ci'an and Cixi) to succeed the throne, being adopted at the age of three by Emperor Xianfeng and the two Empress Dowagers, thereby inheriting the throne. During the early years of his reign, the two dowagers jointly handled state affairs. As Ci'an died in 1881, Cixi continued to act as the sole regent. In 1889, Guangxu got married and announced his personal rule. After the failure of the Hundred Days' Reform in 1898, he was confined by Cixi in the Yingtai Pavilion of Zhongnanhai, completely losing his ruling power. In November 1908, he died of arsenic poisoning at Yingtai. He reigned for 34 years, ruled directly for nine of those years, and died at the age of 38 without leaving any descendants. He was buried in the Chongling Mausoleum of the Western Qing Tombs.\nThe emperor's life was turbulent and full of hardships. He was not originally the heir to the throne but was forcibly elevated after Emperor Tongzhi died without an heir. From a young age, he was forced to leave his home and enter the palace, where he was strictly controlled and disciplined by Cixi, enduring many hardships and sorrows. Even after he reached adulthood and began his personal rule, Cixi was unwilling to relinquish her control over state power, making him continue to be a puppet, unable to enjoy the majesty and power of a monarch. During his reign, the Qing dynasty became increasingly impoverished and weak. The Sino-French War, the First Sino-Japanese War, and the Boxer Rebellion followed one after another, causing the dynasty to cede territory and pay indemnities, losing sovereignty and humiliating the nation, leaving the people in misery. Seeing the country's decline, Guangxu allied with intellectuals like Kang Youwei and his disciple Liang Qichao to launch the Hundred Days' Reform in 1898, attempting to save and rejuvenate the nation. However, this movement threatened the position of the privileged classes of traditional Chinese society and was soon suppressed by the conservative forces led by Cixi, resulting in his confinement and loss of political power and personal freedom until his untimely death. His tragic fate is rare among emperors. Although historians do not deny the failures and limitations during his reign, he is still regarded as a relatively progressive and enlightened monarch of the dynasty. His image in historical research and literary works is also mostly positive."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q299710")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q299710",
+  "isRealHuman": true,
+  "birthDate": "1871-08-14",
+  "deathDate": "1908-11-14",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted by historians, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "The Guangxu Emperor (1871–1908) was the eleventh emperor of the Qing dynasty. His reign was dominated by Empress Dowager Cixi, limiting his power. He initiated the Hundred Days' Reform in 1898, aiming for modernization, but it was swiftly overturned by Cixi. He died under house arrest at 37, with later forensic tests revealing arsenic poisoning, leading to speculation about the circumstances of his death.",
+  "shortDescriptionFr": "L'empereur Guangxu (1871–1908) fut le onzième empereur de la dynastie Qing. Son règne fut dominé par l'impératrice douairière Cixi, limitant son pouvoir. Il initia la réforme des Cent Jours en 1898, visant la modernisation, mais elle fut rapidement annulée par Cixi. Il mourut en résidence surveillée à 37 ans, des tests médico-légaux ultérieurs révélant un empoisonnement à l'arsenic, suscitant des spéculations sur les circonstances de sa mort.",
+  "shortDescriptionDe": "Der Guangxu-Kaiser (1871–1908) war der elfte Kaiser der Qing-Dynastie. Seine Herrschaft wurde von der Kaiserinwitwe Cixi dominiert, was seine Macht einschränkte. Er initiierte 1898 die Hundert-Tage-Reform zur Modernisierung, die jedoch schnell von Cixi rückgängig gemacht wurde. Er starb im Hausarrest im Alter von 37 Jahren; spätere forensische Tests ergaben eine Arsenvergiftung, was zu Spekulationen über die Umstände seines Todes führte.",
+  "shortDescriptionEs": "El emperador Guangxu (1871–1908) fue el undécimo emperador de la dinastía Qing. Su reinado estuvo dominado por la emperatriz viuda Cixi, lo que limitó su poder. Inició la Reforma de los Cien Días en 1898, con el objetivo de modernizar el país, pero fue rápidamente revocada por Cixi. Murió bajo arresto domiciliario a los 37 años; pruebas forenses posteriores revelaron envenenamiento por arsénico, lo que generó especulaciones sobre las circunstancias de su muerte.",
+  "shortDescriptionRu": "Император Гуансюй (1871–1908) был одиннадцатым императором династии Цин. Его правление было под влиянием императрицы-вдовы Цыси, что ограничивало его власть. В 1898 году он инициировал Стодневные реформы с целью модернизации, но они были быстро отменены Цыси. Он умер под домашним арестом в возрасте 37 лет; последующие судебно-медицинские тесты выявили отравление мышьяком, что вызвало спекуляции о обстоятельствах его смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guangxu_Emperor",
+    "https://www.britannica.com/biography/Guangxu"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q314256",  "Name": "Thomas Wolfe",  "BirthDate": "1900-10-03T00:00:00Z",  "DeathDate": "1938-09-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Wolfe%201937%201.jpg",  "SiteLinksCnt": 57,  "Age": 37}
+{"batchcomplete":"","query":{"pages":{"165654":{"pageid":165654,"ns":0,"title":"Thomas Wolfe","extract":"Thomas Clayton Wolfe (October 3, 1900 \u2013 September 15, 1938) was an American novelist. He is known largely for his first novel, Look Homeward, Angel (1929), and for the short fiction that appeared during the last years of his life. He was one of the pioneers of autobiographical fiction, and along with William Faulkner, he is considered one of the most important authors of the Southern Renaissance within the American literary canon. He has been dubbed \"North Carolina's most famous writer\".\nWolfe wrote four long novels as well as many short stories, dramatic works, and novellas. He is known for mixing highly original, poetic, rhapsodic, and impressionistic prose with autobiographical writing. His books, written and published from the 1920s to the 1940s, vividly reflect on the American culture and mores of that period, filtered through Wolfe's sensitive and uncomfortable perspective.\nAfter Wolfe's death, Faulkner said that he might have been the greatest talent of their generation, aiming higher than any other writer. Faulkner's endorsement, however, failed to win over mid to late 20th century critics and for a time Wolfe's place in the literary canon was questioned. However, 21st century academics have largely rejected this negative assessment, and a more positive and balanced assessment has emerged, combining renewed interest in his works, particularly his short fiction, with greater appreciation of his experimentation with literary forms, which has secured Wolfe a place in the literary canon. \nWolfe had great influence on Jack Kerouac, and his influence extended to other postwar authors such as Ray Bradbury and Philip Roth, among others."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q314256")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q314256",
+  "isRealHuman": true,
+  "birthDate": "1900-10-03",
+  "deathDate": "1938-09-15",
+  "ageAtDeath": 37,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Thomas Wolfe was an American novelist known for his autobiographical style. He died at 37 from tuberculosis of the brain.",
+  "shortDescriptionFr": "Thomas Wolfe était un romancier américain connu pour son style autobiographique. Il est décédé à 37 ans d'une tuberculose cérébrale.",
+  "shortDescriptionDe": "Thomas Wolfe war ein amerikanischer Romanautor, bekannt für seinen autobiografischen Stil. Er starb im Alter von 37 Jahren an einer Tuberkulose des Gehirns.",
+  "shortDescriptionEs": "Thomas Wolfe fue un novelista estadounidense conocido por su estilo autobiográfico. Murió a los 37 años de tuberculosis cerebral.",
+  "shortDescriptionRu": "Томас Вулф был американским романистом, известным своим автобиографическим стилем. Он умер в 37 лет от туберкулеза мозга.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Wolfe",
+    "https://www.britannica.com/biography/Thomas-Wolfe",
+    "https://northcarolinahistory.org/encyclopedia/thomas-wolfe-1900-1938/"
+  ]
+}
+
