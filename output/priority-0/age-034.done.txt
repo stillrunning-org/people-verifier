@@ -1,0 +1,1013 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q302",  "Name": "Jesus",  "BirthDate": "-0004-01-01T00:00:00Z",  "DeathDate": "0030-04-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Spas%20vsederzhitel%20sinay.jpg",  "SiteLinksCnt": 331,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"1095706":{"pageid":1095706,"ns":0,"title":"Jesus","extract":"Jesus (c.\u20096 to 4 BC \u2013 AD 30 or 33), also referred to as Jesus Christ, Jesus of Nazareth, and many other names and titles, was a first-century Jewish preacher and religious leader. He is the central figure of Christianity and a major figure in Islam, the world's largest religions. Christians and Muslims believe Jesus is the awaited messiah, though the role differs in Christianity and in Islam. Most Christian denominations believe this means Jesus is the incarnation of God the Son and the awaited Christ, a descendant from the Davidic line prophesied in the Old Testament. Virtually all modern scholars of antiquity agree Jesus existed historically. Accounts of Jesus's life are contained in the Gospels, especially the four canonical Gospels in the New Testament. Academic research has yielded various views on the historical reliability of the Gospels and how closely they reflect the historical Jesus.\nJesus was circumcised at eight days old, was baptized by John the Baptist as a young adult, and after 40 days and nights of fasting in the wilderness, began his own ministry. He was an itinerant teacher who interpreted the law of God with divine authority and was often referred to as \"rabbi\". Jesus often debated with his fellow Jews on how to best follow God, engaged in healings, taught in parables, and gathered followers, among whom twelve were appointed as his chosen apostles. He was arrested in Jerusalem and tried by the Jewish authorities, turned over to the Roman government, and crucified on the order of Pontius Pilate, the Roman prefect of Judaea. After his death, his followers became convinced he rose from the dead, and following his ascension, the community they formed eventually became the early Christian Church and expanded as a worldwide movement. It is hypothesized that accounts of his teachings and life were initially conserved by oral transmission, which was the source of the written Gospels.\nChristian theology and Islamic theology agree Jesus was born of a virgin named Mary, performed miracles, founded the Christian Church, then ascended to heaven from where he will return to Earth in the Second Coming. Commonly, Christians believe he was conceived by the Holy Spirit and died by crucifixion as a sacrifice to achieve atonement for sin, which enables people to be reconciled to God. Christians believe Jesus then rose from the dead, ascended into heaven, and will return. The Nicene Creed asserts Jesus will judge the living and the dead, either before or after their bodily resurrection, an event tied to the Second Coming in Christian eschatology. The great majority of Christians worship Jesus as the incarnation of God the Son, the second of three persons of the Trinity. The birth of Jesus is celebrated annually during Christmas, generally on 25 December.  His crucifixion is honoured on Good Friday and his resurrection on Easter Sunday. The world's most widely used calendar era\u2014in which the current year is AD 2025 (or 2025 CE)\u2014is based on the approximate date of the birth of Jesus.\nJesus in Islam is considered the messiah and a prophet of God, who was sent to the Israelites and will return before the Day of Judgement. Muslims do not believe Jesus is God nor a son of God. Most Muslims do not believe that he was killed or crucified but that God raised him into Heaven while he was still alive. Jesus is also revered in the Bah\u00e1\u02bc\u00ed Faith, Druze, and Rastafari religions. In contrast, Judaism rejects the belief Jesus was the awaited Messiah, arguing he did not fulfill messianic prophecies, was not lawfully anointed and was neither divine nor resurrected."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q302")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q302",
+  "isRealHuman": true,
+  "birthDate": "0004-01-01",
+  "deathDate": "0030-04-05",
+  "ageAtDeath": 33,
+  "confidence": 90,
+  "confidenceExplained": "Based on historical and biblical sources, Jesus's age at death is estimated to be between 33 and 39 years, with 34 being a reasonable estimate.",
+  "shortDescriptionEn": "Jesus, also known as Jesus Christ, was a first-century Jewish preacher and religious leader. He is the central figure of Christianity, believed to be the Son of God and the awaited Messiah. Jesus was crucified under Roman governor Pontius Pilate and is believed to have risen from the dead, a foundational event in Christian faith.",
+  "shortDescriptionFr": "Jésus, également connu sous le nom de Jésus-Christ, était un prédicateur juif du premier siècle et un leader religieux. Il est la figure centrale du christianisme, considéré comme le Fils de Dieu et le Messie attendu. Jésus a été crucifié sous le gouverneur romain Ponce Pilate et serait ressuscité des morts, un événement fondamental dans la foi chrétienne.",
+  "shortDescriptionDe": "Jesus, auch bekannt als Jesus Christus, war ein jüdischer Prediger und religiöser Führer des ersten Jahrhunderts. Er ist die zentrale Figur des Christentums, gilt als Sohn Gottes und erwarteter Messias. Jesus wurde unter dem römischen Statthalter Pontius Pilatus gekreuzigt und soll von den Toten auferstanden sein, ein grundlegendes Ereignis im christlichen Glauben.",
+  "shortDescriptionEs": "Jesús, también conocido como Jesucristo, fue un predicador judío del primer siglo y líder religioso. Es la figura central del cristianismo, considerado el Hijo de Dios y el Mesías esperado. Jesús fue crucificado bajo el gobernador romano Poncio Pilato y se cree que resucitó de entre los muertos, un evento fundamental en la fe cristiana.",
+  "shortDescriptionRu": "Иисус, также известный как Иисус Христос, был еврейским проповедником и религиозным лидером первого века. Он является центральной фигурой христианства, считается Сыном Божьим и ожидаемым Мессией. Иисус был распят при римском наместнике Понтии Пилате и, как считается, воскрес из мертвых, что является основополагающим событием в христианской вере.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jesus",
+    "https://en.wikipedia.org/wiki/Chronology_of_Jesus"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7327",  "Name": "Yuri Gagarin",  "BirthDate": "1934-03-09T00:00:00Z",  "DeathDate": "1968-03-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Yuri%20Gagarin%20with%20awards%20%282%29.jpg",  "SiteLinksCnt": 196,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"34226":{"pageid":34226,"ns":0,"title":"Yuri Gagarin","extract":"Yuri Alekseyevich Gagarin (9 March 1934 \u2013 27 March 1968) was a Soviet pilot and cosmonaut who, aboard the first successful crewed spaceflight, became the first person to journey into outer space. Travelling on Vostok 1, Gagarin completed one orbit of Earth on 12 April 1961, with his flight taking 108 minutes. By achieving this major milestone for the Soviet Union amidst the Space Race, he became an international celebrity and was awarded many medals and titles, including his nation's highest distinction: Hero of the Soviet Union.\nHailing from the village of Klushino in the Russian SFSR, Gagarin was a foundryman at a steel plant in Lyubertsy in his youth. He later joined the Soviet Air Forces as a pilot and was stationed at the Luostari Air Base, near the Norway\u2013Soviet Union border, before his selection for the Soviet space programme alongside five other cosmonauts. Following his spaceflight, Gagarin became the deputy training director of the Cosmonaut Training Centre, which was later named after him. He was also elected as a deputy of the Soviet of the Union in 1962 and then to the Soviet of Nationalities, respectively the lower and upper chambers of the Supreme Soviet.\nVostok 1 was Gagarin's only spaceflight, but he served as the backup crew to Soyuz 1, which ended in a fatal crash, killing his friend and fellow cosmonaut Vladimir Komarov. Fearful that a high-level national hero might be killed, Soviet officials banned Gagarin from participating in further spaceflights. After completing training at the Zhukovsky Air Force Engineering Academy in February 1968, he was again allowed to fly regular aircraft. However, Gagarin died five weeks later, when the MiG-15 that he was piloting with flight instructor Vladimir Seryogin crashed near the town of Kirzhach."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7327")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7327",
+  "isRealHuman": true,
+  "birthDate": "1934-03-09",
+  "deathDate": "1968-03-27",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Las fechas de nacimiento y muerte de Yuri Gagarin están bien documentadas y ampliamente aceptadas, lo que proporciona un alto grado de confianza en la exactitud de su edad al momento de su fallecimiento.",
+  "shortDescriptionEn": "Yuri Gagarin was a Soviet cosmonaut who became the first human in space on April 12, 1961, orbiting Earth aboard Vostok 1. He died at age 34 in a jet crash during a routine training flight on March 27, 1968.",
+  "shortDescriptionFr": "Youri Gagarine était un cosmonaute soviétique devenu le premier humain dans l'espace le 12 avril 1961, en orbite autour de la Terre à bord de Vostok 1. Il est décédé à 34 ans dans un accident d'avion lors d'un vol d'entraînement le 27 mars 1968.",
+  "shortDescriptionDe": "Juri Gagarin war ein sowjetischer Kosmonaut, der am 12. April 1961 als erster Mensch im Weltraum die Erde an Bord von Wostok 1 umkreiste. Er starb im Alter von 34 Jahren bei einem Flugzeugabsturz während eines Trainingsflugs am 27. März 1968.",
+  "shortDescriptionEs": "Yuri Gagarin fue un cosmonauta soviético que se convirtió en el primer humano en el espacio el 12 de abril de 1961, orbitando la Tierra a bordo del Vostok 1. Murió a los 34 años en un accidente de avión durante un vuelo de entrenamiento el 27 de marzo de 1968.",
+  "shortDescriptionRu": "Юрий Гагарин был советским космонавтом, ставшим первым человеком в космосе 12 апреля 1961 года, облетевшим Землю на борту Восток-1. Он погиб в возрасте 34 лет в авиакатастрофе во время учебного полета 27 марта 1968 года.",
+  "sources": [
+    "https://es.wikipedia.org/wiki/Yuri_Gagarin",
+    "https://www.huffingtonpost.es/global/desclasifican-grandes-secretos-mision-yuri-gagarin-falsificacion-documentos-circunstancias-tragica-muertebr.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q10490",  "Name": "Ayrton Senna",  "BirthDate": "1960-03-21T00:00:00Z",  "DeathDate": "1994-05-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ayrton%20Senna%20Pesawat%20RC%20Cropped.jpg",  "SiteLinksCnt": 106,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"146638":{"pageid":146638,"ns":0,"title":"Ayrton Senna","extract":"Ayrton Senna da Silva (Brazilian Portuguese: [a\u02c8i\u0281t\u00f5 \u02c8s\u1ebdn\u0250 d\u0250 \u02c8siwv\u0250] ; 21 March 1960 \u2013 1 May 1994) was a Brazilian racing driver, who competed in Formula One from 1984 to 1994. Senna won three Formula One World Drivers' Championship titles with McLaren, and\u2014at the time of his death\u2014held the record for most pole positions (65), among others; he won 41 Grands Prix across 11 seasons.\nBorn and raised in S\u00e3o Paulo, Senna began competitive kart racing aged 13; his first go-kart was built by his father using a lawnmower engine. After twice finishing runner-up at the Karting World Championship, Senna progressed to Formula Ford in 1981, dominating the British and European championships in his debut seasons. He then won the 1983 British Formula Three Championship amidst a close title battle with Martin Brundle, further winning the Macau Grand Prix that year. Senna signed for Toleman in 1984, making his Formula One debut at the Brazilian Grand Prix. After scoring several podium finishes in his rookie season, Senna moved to Lotus in 1985 to replace Nigel Mansell, taking his maiden pole position and victory at the rain-affected Portuguese Grand Prix, a feat he repeated in Belgium. He remained at Lotus for his 1986 and 1987 campaigns, scoring multiple wins in each and finishing third in the latter World Drivers' Championship.\nSenna signed for McLaren in 1988 to partner Alain Prost; together, they won 15 of 16 Grands Prix held that season\u2014driving the Honda-powered MP4/4\u2014with Senna taking his maiden championship by three points after winning a then-record eight Grands Prix. Their fierce rivalry culminated in title-deciding collisions at Suzuka in 1989 and 1990, despite Prost's move to Ferrari in the latter, with Prost winning the former title and Senna taking the following. Senna took seven victories, including his home Grand Prix in Brazil, as he secured his third title in 1991. The dominant Williams-Renault combination prevailed throughout his remaining two seasons at McLaren, with Senna achieving several race wins in each, including his record-breaking sixth Monaco Grand Prix victory in 1993 on his way to again finishing runner-up to Prost in the championship. Senna negotiated a move to Williams for his 1994 campaign, replacing the retired Prost to partner Damon Hill.\nDuring the 1994 San Marino Grand Prix at Imola, Senna died as a result of an accident whilst leading the race, driving the Williams FW16. His state funeral was attended by an estimated three million people. Following subsequent safety reforms, he was the last fatality in the Formula One World Championship until Jules Bianchi in 2015. Senna achieved 41 wins, 65 pole positions, 19 fastest laps and 80 podiums in Formula One; he remains a legendary figure within motorsport for his raw speed and aggressive driving style, and is frequently cited as a national hero of Brazil. He was also widely acclaimed for his wet-weather performances, such as at the 1984 Monaco, 1985 Portuguese and 1993 European Grands Prix. Senna was inducted into the International Motorsports Hall of Fame in 2000."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q10490")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q10490",
+  "isRealHuman": true,
+  "birthDate": "1960-03-21",
+  "deathDate": "1994-05-01",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely recognized, providing complete certainty regarding his age at death.",
+  "shortDescriptionEn": "Ayrton Senna was a Brazilian Formula One driver, celebrated for his exceptional talent and three World Championship titles. His career was tragically cut short at age 34 due to a fatal crash during the 1994 San Marino Grand Prix.",
+  "shortDescriptionFr": "Ayrton Senna était un pilote brésilien de Formule 1, réputé pour son talent exceptionnel et ses trois titres de champion du monde. Sa carrière a été tragiquement interrompue à 34 ans à la suite d'un accident mortel lors du Grand Prix de Saint-Marin en 1994.",
+  "shortDescriptionDe": "Ayrton Senna war ein brasilianischer Formel-1-Fahrer, bekannt für sein außergewöhnliches Talent und drei Weltmeistertitel. Seine Karriere endete tragisch im Alter von 34 Jahren durch einen tödlichen Unfall beim Großen Preis von San Marino 1994.",
+  "shortDescriptionEs": "Ayrton Senna fue un piloto brasileño de Fórmula 1, reconocido por su talento excepcional y tres títulos de campeón mundial. Su carrera se truncó trágicamente a los 34 años debido a un accidente fatal durante el Gran Premio de San Marino en 1994.",
+  "shortDescriptionRu": "Айртон Сенна был бразильским гонщиком Формулы-1, известным своим исключительным талантом и тремя титулами чемпиона мира. Его карьера трагически оборвалась в возрасте 34 лет из-за смертельной аварии на Гран-при Сан-Марино в 1994 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ayrton_Senna",
+    "https://en.wikipedia.org/wiki/Death_of_Ayrton_Senna"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q157309",  "Name": "Simone Weil",  "BirthDate": "1909-02-03T00:00:00Z",  "DeathDate": "1943-08-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Simone%20Weil%2004%20%28cropped%29.png",  "SiteLinksCnt": 90,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"179955":{"pageid":179955,"ns":0,"title":"Simone Weil","extract":"Simone Adolphine Weil ( VAY; French: [sim\u0254n ad\u0254lfin v\u025bj]; 3 February 1909 \u2013 24 August 1943) was a French philosopher, mystic and political activist. Despite her short life, her ideas concerning religion, spirituality, and politics have remained widely influential in contemporary philosophy.\nShe was born in Paris to an Alsatian Jewish family. Her elder brother, Andr\u00e9, would later become a renowned mathematician. After her graduation from formal education, Weil became a teacher. She taught intermittently throughout the 1930s, taking several breaks because of poor health and in order to devote herself to political activism. She assisted in the trade union movement, taking the side of the anarchists known as the Durruti Column in the Spanish Civil War. She worked for more than a year as a labourer, mostly in car factories, so that she could better understand the working class.\nWeil became increasingly religious and inclined towards mysticism as her life progressed. She wrote throughout her life, although most of her writings did not attract much attention until after her death. In the 1950s and '60s, her work became famous in continental Europe and throughout the English-speaking world. Her philosophy and theological thought has continued to be the subject of extensive scholarship across a wide range of fields, covering politics, society, feminism, science, education, and classics."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q157309")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q157309",
+  "isRealHuman": true,
+  "birthDate": "1909-02-03",
+  "deathDate": "1943-08-24",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Simone Weil was a French philosopher, mystic, and political activist known for her writings on spirituality and social issues. She died at 34 from cardiac failure, possibly exacerbated by self-imposed starvation in solidarity with war victims.",
+  "shortDescriptionFr": "Simone Weil était une philosophe, mystique et militante politique française, connue pour ses écrits sur la spiritualité et les questions sociales. Elle est décédée à 34 ans d'une insuffisance cardiaque, possiblement aggravée par une autostarcation imposée en solidarité avec les victimes de guerre.",
+  "shortDescriptionDe": "Simone Weil war eine französische Philosophin, Mystikerin und politische Aktivistin, bekannt für ihre Schriften über Spiritualität und soziale Fragen. Sie starb im Alter von 34 Jahren an Herzversagen, möglicherweise verschärft durch selbst auferlegtes Hungern aus Solidarität mit Kriegsopfern.",
+  "shortDescriptionEs": "Simone Weil fue una filósofa, mística y activista política francesa, conocida por sus escritos sobre espiritualidad y cuestiones sociales. Murió a los 34 años de una insuficiencia cardíaca, posiblemente agravada por la autoimpuesta inanición en solidaridad con las víctimas de la guerra.",
+  "shortDescriptionRu": "Симона Вейль была французским философом, мистиком и политическим активистом, известной своими трудами о духовности и социальных вопросах. Она умерла в 34 года от сердечной недостаточности, возможно, усугубленной добровольным голоданием в знак солидарности с жертвами войны.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Simone_Weil",
+    "https://de.wikipedia.org/wiki/Simone_Weil",
+    "https://es.wikipedia.org/wiki/Simone_Weil",
+    "https://fr.wikipedia.org/wiki/Simone_Weil"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q184623",  "Name": "Georges Danton",  "BirthDate": "1759-10-26T00:00:00Z",  "DeathDate": "1794-04-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anonyme%20-%20Portrait%20de%20Georges%20Danton%20%281759-1794%29%2C%20orateur%20et%20homme%20politique%20-%20P712%20-%20Mus%C3%A9e%20Carnavalet%20-%202.jpg",  "SiteLinksCnt": 88,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"154352":{"pageid":154352,"ns":0,"title":"Georges Danton","extract":"Georges Jacques Danton (; French: [\u0292\u0254\u0281\u0292 d\u0251\u0303t\u0254\u0303]; 26 October 1759 \u2013 5 April 1794) was a leading figure in the French Revolution. A modest and unknown lawyer on the eve of the Revolution, Danton became a famous orator of the Cordeliers Club and was raised to governmental responsibilities as the French Minister of Justice following the fall of the monarchy on the tenth of August 1792, and was allegedly responsible for inciting the September Massacres. He was tasked by the National Convention to intervene in the military conquest of Belgium led by General Dumouriez, and in the spring of 1793 supported the foundation of a Revolutionary Tribunal, becoming the first president of the Committee of Public Safety.\nDuring the Insurrection of 31 May \u2013 2 June 1793, Danton changed his mind on the use of force and lost his seat in the committee afterwards, which solidified the rivalry between him and Maximilien Robespierre. In early October 1793, Danton left politics but was urged to return to Paris to plead, as a moderate, for an end to the Terror. His continual criticism of the Committee of Public Safety provoked further counter-attacks. Robespierre replied to Danton's plea for an end to the Terror on 25 December (5 Niv\u00f4se, year II). At the end of March 1794, Danton made another speech announcing the end of the Terror. Within a week, Danton faced accusations of purported royalist inclinations, leading to his trial and subsequent guillotine execution on charges of conspiracy and venality.\nDanton's role in the onset of the Revolution has been disputed, especially during the French Third Republic; many historians describe him as \"the chief force in the overthrow of the French monarchy and the establishment of the First French Republic\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q184623")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q184623",
+  "isRealHuman": true,
+  "birthDate": "1759-10-26",
+  "deathDate": "1794-04-05",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Georges Jacques Danton was a leading figure in the French Revolution, known for his powerful oratory and significant role in overthrowing the monarchy. He served as the first president of the Committee of Public Safety. However, his opposition to the Reign of Terror led to his arrest and execution by guillotine on April 5, 1794, at the age of 34.",
+  "shortDescriptionFr": "Georges Jacques Danton était une figure majeure de la Révolution française, connu pour son éloquence puissante et son rôle significatif dans le renversement de la monarchie. Il a été le premier président du Comité de salut public. Cependant, son opposition à la Terreur a conduit à son arrestation et à son exécution par guillotine le 5 avril 1794, à l'âge de 34 ans.",
+  "shortDescriptionDe": "Georges Jacques Danton war eine führende Figur der Französischen Revolution, bekannt für seine kraftvolle Redekunst und seine bedeutende Rolle beim Sturz der Monarchie. Er diente als erster Präsident des Wohlfahrtsausschusses. Seine Opposition gegen den Terror führte jedoch zu seiner Verhaftung und Hinrichtung durch die Guillotine am 5. April 1794 im Alter von 34 Jahren.",
+  "shortDescriptionEs": "Georges Jacques Danton fue una figura destacada de la Revolución Francesa, conocido por su poderosa oratoria y su papel significativo en el derrocamiento de la monarquía. Se desempeñó como el primer presidente del Comité de Salvación Pública. Sin embargo, su oposición al Reino del Terror llevó a su arresto y ejecución en la guillotina el 5 de abril de 1794, a la edad de 34 años.",
+  "shortDescriptionRu": "Жорж Жак Дантон был ведущей фигурой Французской революции, известный своим мощным ораторским искусством и значительной ролью в свержении монархии. Он был первым президентом Комитета общественного спасения. Однако его оппозиция к царству террора привела к его аресту и казни на гильотине 5 апреля 1794 года в возрасте 34 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Georges_Danton",
+    "https://www.britannica.com/biography/Georges-Danton",
+    "https://fr.wikipedia.org/wiki/Georges_Jacques_Danton",
+    "https://de.wikipedia.org/wiki/Georges_Danton",
+    "https://es.wikipedia.org/wiki/Georges-Jacques_Danton"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q28494",  "Name": "Heinrich von Kleist",  "BirthDate": "1777-10-18T00:00:00Z",  "DeathDate": "1811-11-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Graff%20Heinrich%20von%20Kleist%20%281%29.jpg",  "SiteLinksCnt": 82,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"216556":{"pageid":216556,"ns":0,"title":"Heinrich von Kleist","extract":"Bernd Heinrich Wilhelm von Kleist (German: [\u02ccha\u026a\u032fn\u0281\u026a\u00e7 f\u0254n \u02c8kla\u026a\u032fst] ; 18 October 1777 \u2013 21 November 1811) was a German poet, dramatist, novelist, short story writer and journalist. His best known works are the theatre plays The Prince of Homburg, Das K\u00e4thchen von Heilbronn, The Broken Jug, Amphitryon and Penthesilea, and the novellas Michael Kohlhaas and The Marquise of O. Kleist died by suicide together with a close female friend who was terminally ill.\nThe Kleist Prize, a prestigious prize for German literature, is named after him, as was the Kleist Theater in his birthplace Frankfurt an der Oder."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q28494")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q28494",
+  "isRealHuman": true,
+  "birthDate": "1777-10-18",
+  "deathDate": "1811-11-21",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Heinrich von Kleist was a German poet, dramatist, novelist, short story writer, and journalist. His notable works include the plays 'The Prince of Homburg' and 'The Broken Jug,' and the novella 'Michael Kohlhaas.' He died by suicide alongside his close friend Henriette Vogel, who was terminally ill.",
+  "shortDescriptionFr": "Heinrich von Kleist était un poète, dramaturge, romancier, nouvelliste et journaliste allemand. Ses œuvres notables incluent les pièces 'Le Prince de Hombourg' et 'La Cruche cassée', ainsi que la nouvelle 'Michael Kohlhaas'. Il s'est suicidé avec son amie proche Henriette Vogel, qui était en phase terminale.",
+  "shortDescriptionDe": "Heinrich von Kleist war ein deutscher Dichter, Dramatiker, Romanautor, Novellist und Journalist. Zu seinen bemerkenswerten Werken zählen die Stücke 'Der Prinz von Homburg' und 'Der zerbrochne Krug' sowie die Novelle 'Michael Kohlhaas'. Er beging Selbstmord zusammen mit seiner engen Freundin Henriette Vogel, die unheilbar krank war.",
+  "shortDescriptionEs": "Heinrich von Kleist fue un poeta, dramaturgo, novelista, cuentista y periodista alemán. Sus obras notables incluyen las obras de teatro 'El príncipe de Homburg' y 'La jarra rota', así como la novela 'Michael Kohlhaas'. Se suicidó junto a su amiga cercana Henriette Vogel, que estaba en fase terminal.",
+  "shortDescriptionRu": "Генрих фон Клейст был немецким поэтом, драматургом, романистом, новеллистом и журналистом. Его известные работы включают пьесы 'Принц Гомбургский' и 'Разбитый кувшин', а также новеллу 'Михаэль Кольхаас'. Он покончил с собой вместе со своей близкой подругой Генриеттой Фогель, которая была неизлечимо больна.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Heinrich_von_Kleist",
+    "https://fr.wikipedia.org/wiki/Heinrich_von_Kleist",
+    "https://de.wikipedia.org/wiki/Heinrich_von_Kleist",
+    "https://es.wikipedia.org/wiki/Heinrich_von_Kleist",
+    "https://it.wikipedia.org/wiki/Heinrich_von_Kleist"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q151789",  "Name": "Peter III of Russia",  "BirthDate": "1728-02-21T00:00:00Z",  "DeathDate": "1762-07-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Coronation%20portrait%20of%20Peter%20III%20of%20Russia%20-1761.JPG",  "SiteLinksCnt": 80,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"46247":{"pageid":46247,"ns":0,"title":"Peter III of Russia","extract":"Peter III Fyodorovich (Russian: \u041f\u0451\u0442\u0440 III \u0424\u0451\u0434\u043e\u0440\u043e\u0432\u0438\u0447, romanized: Pyotr III Fyodorovich; 21 February [O.S. 10 February] 1728 \u2013 17 July [O.S. 6 July] 1762) was Emperor of Russia from 5 January 1762 until 9 July of the same year, when he was overthrown by his wife, Catherine II (the Great). He was born in the German city of Kiel as Charles Peter Ulrich of Schleswig-Holstein-Gottorp (German: Karl Peter Ulrich von Schleswig-Holstein-Gottorp), the grandson of Peter the Great and great-grandson of Charles XI of Sweden.\nAfter a 186-day reign, Peter III was overthrown in a palace coup d'\u00e9tat orchestrated by his wife and soon died under unclear circumstances. The official cause proposed by Catherine's new government was that he died due to hemorrhoids. However, this explanation was met with skepticism, both in Russia and abroad, with notable critics such as Voltaire and d'Alembert expressing doubt about the plausibility of death from such a condition.\nThe personality and activities of Peter III were long disregarded by historians and his figure was seen as purely negative, but since the 1990s, after the dissolution of the Soviet Union, more attention has been directed at the decrees he signed. His most notable reforms were the abolition of the secret police, exemption of nobles from compulsory military service, attempts to secularise church lands and create the first Russian state bank, and equalisation of all religions. He also put an end to the persecution of the Old Believers. Although he is mostly criticised for forming an alliance with Prussia (undoing Russian gains in the Seven Years' War), Catherine continued it and many of his other policies.\nAfter Peter III's death, many impostors thrived, pretending to be him, the most famous of whom were Yemelyan Pugachev and the \"Montenegerin Tsar Peter III\" (Stephan the Little)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q151789")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q151789",
+  "isRealHuman": true,
+  "birthDate": "1728-02-21",
+  "deathDate": "1762-07-17",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Peter III was Emperor of Russia in 1762. Born in Germany, he was overthrown by his wife, Catherine the Great, after a six-month reign and died under unclear circumstances at age 34.",
+  "shortDescriptionFr": "Pierre III fut empereur de Russie en 1762. Né en Allemagne, il fut renversé par son épouse, Catherine la Grande, après un règne de six mois et mourut dans des circonstances floues à l'âge de 34 ans.",
+  "shortDescriptionDe": "Peter III war 1762 Kaiser von Russland. Geboren in Deutschland, wurde er nach einer sechsmonatigen Herrschaft von seiner Frau, Katharina der Großen, gestürzt und starb unter unklaren Umständen im Alter von 34 Jahren.",
+  "shortDescriptionEs": "Pedro III fue Emperador de Rusia en 1762. Nacido en Alemania, fue derrocado por su esposa, Catalina la Grande, tras un reinado de seis meses y murió en circunstancias poco claras a los 34 años.",
+  "shortDescriptionRu": "Пётр III был императором России в 1762 году. Родился в Германии, был свергнут своей женой, Екатериной Великой, после шестимесячного правления и умер при неясных обстоятельствах в возрасте 34 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Peter-III-emperor-of-Russia",
+    "https://en.wikipedia.org/wiki/Peter_III_of_Russia"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q103767",  "Name": "Charlie Parker",  "BirthDate": "1920-08-29T00:00:00Z",  "DeathDate": "1955-03-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Charlie%20Parker%20in%201947.jpg",  "SiteLinksCnt": 76,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"54408":{"pageid":54408,"ns":0,"title":"Charlie Parker","extract":"Charles Parker Jr. (August 29, 1920 \u2013 March 12, 1955), nicknamed \"Bird\" or \"Yardbird\", was an American jazz saxophonist, bandleader, and composer. Parker was a highly influential soloist and leading figure in the development of bebop, a form of jazz characterized by fast tempos, virtuosic technique, and advanced harmonies. He was a virtuoso and introduced revolutionary rhythmic and harmonic ideas into jazz, including rapid passing chords, new variants of altered chords, and chord substitutions. Parker was primarily a player of the alto saxophone.\nParker was an icon for the hipster subculture and later the Beat Generation, personifying the jazz musician as an uncompromising artist and intellectual rather than just an entertainer."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q103767")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q103767",
+  "isRealHuman": true,
+  "birthDate": "1920-08-29",
+  "deathDate": "1955-03-12",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, allowing for precise calculation of Parker's age at the time of his death.",
+  "shortDescriptionEn": "Charlie Parker, known as 'Bird,' was an American jazz saxophonist and composer, pivotal in developing bebop. Despite his immense talent, his life was marred by heroin addiction, leading to health complications that resulted in his untimely death at 34.",
+  "shortDescriptionFr": "Charlie Parker, surnommé 'Bird', était un saxophoniste et compositeur de jazz américain, essentiel au développement du bebop. Malgré son immense talent, sa vie fut marquée par une dépendance à l'héroïne, entraînant des complications de santé qui ont conduit à sa mort prématurée à 34 ans.",
+  "shortDescriptionDe": "Charlie Parker, bekannt als 'Bird', war ein amerikanischer Jazzsaxophonist und Komponist, der maßgeblich zur Entwicklung des Bebop beitrug. Trotz seines immensen Talents war sein Leben von Heroinabhängigkeit geprägt, was zu gesundheitlichen Komplikationen führte, die seinen frühen Tod mit 34 Jahren verursachten.",
+  "shortDescriptionEs": "Charlie Parker, apodado 'Bird', fue un saxofonista y compositor de jazz estadounidense, fundamental en el desarrollo del bebop. A pesar de su inmenso talento, su vida estuvo marcada por la adicción a la heroína, lo que provocó complicaciones de salud que resultaron en su prematura muerte a los 34 años.",
+  "shortDescriptionRu": "Чарли Паркер, известный как 'Bird', был американским джазовым саксофонистом и композитором, сыгравшим ключевую роль в развитии бибопа. Несмотря на его огромный талант, его жизнь была омрачена зависимостью от героина, что привело к проблемам со здоровьем и преждевременной смерти в 34 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charlie_Parker",
+    "https://fr.wikipedia.org/wiki/Charlie_Parker",
+    "https://it.wikipedia.org/wiki/Charlie_Parker",
+    "https://es.wikipedia.org/wiki/Charlie_Parker"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q203715",  "Name": "Gustavo Adolfo Bécquer",  "BirthDate": "1836-02-17T00:00:00Z",  "DeathDate": "1870-12-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Gustavo%20Adolfo%20B%C3%A9cquer%2C%20by%20his%20brother%20Valeriano%20%281862%29.jpg",  "SiteLinksCnt": 76,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"937023":{"pageid":937023,"ns":0,"title":"Gustavo Adolfo B\u00e9cquer","extract":"Gustavo Adolfo Claudio Dom\u00ednguez Bastida (17 February 1836 \u2013 22 December 1870), better known as Gustavo Adolfo B\u00e9cquer (Spanish pronunciation: [\u0261us\u02c8ta\u03b2o a\u02c8\u00f0olfo \u02c8\u03b2eke\u027e]), was a Spanish Romantic poet and writer (mostly short stories), also a playwright, literary columnist, and talented in drawing. Today, some consider him one of the most important figures in Spanish literature, and is considered by some as the most read writer after Miguel de Cervantes. He adopted the alias of B\u00e9cquer as his brother Valeriano B\u00e9cquer, a painter, had done earlier. He was associated with the romanticism and post-romanticism movements and wrote while realism enjoyed success in Spain. He was moderately well-known during his life, but it was after his death that most of his works were published. His best-known works are the Rhymes and the Legends, usually published together as Rimas y leyendas. These poems and tales are essential to studying Spanish literature and common reading for high-school students in Spanish-speaking countries.\nHis work approached the traditional poetry and themes in a modern way, and he is considered the founder of modern Spanish lyricism. B\u00e9cquer's influence on 20th-century poets of the Spanish language can be felt in the works of Luis Cernuda, Octavio Paz, Giannina Braschi, Antonio Machado, and Juan Ram\u00f3n Jim\u00e9nez. B\u00e9cquer himself was influenced \u2013 both directly and indirectly \u2014 by Cervantes, Shakespeare, Goethe, and Heinrich Heine.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q203715")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q203715",
+  "isRealHuman": true,
+  "birthDate": "1836-02-17",
+  "deathDate": "1870-12-22",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Gustavo Adolfo Bécquer was a Spanish Romantic poet and writer, renowned for his 'Rhymes' and 'Legends.' His work delved into themes of love and mystery. He died at 34, likely from tuberculosis.",
+  "shortDescriptionFr": "Gustavo Adolfo Bécquer était un poète et écrivain romantique espagnol, célèbre pour ses 'Rimes' et 'Légendes.' Son œuvre explorait des thèmes d'amour et de mystère. Il est décédé à 34 ans, probablement de la tuberculose.",
+  "shortDescriptionDe": "Gustavo Adolfo Bécquer war ein spanischer romantischer Dichter und Schriftsteller, bekannt für seine 'Reime' und 'Legenden.' Seine Werke behandelten Themen wie Liebe und Geheimnis. Er starb im Alter von 34 Jahren, wahrscheinlich an Tuberkulose.",
+  "shortDescriptionEs": "Gustavo Adolfo Bécquer fue un poeta y escritor romántico español, reconocido por sus 'Rimas' y 'Leyendas.' Su obra exploró temas de amor y misterio. Falleció a los 34 años, probablemente de tuberculosis.",
+  "shortDescriptionRu": "Густаво Адольфо Беккер был испанским романтическим поэтом и писателем, известным своими 'Рифмами' и 'Легендами.' Его работы исследовали темы любви и тайны. Он умер в 34 года, вероятно, от туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gustavo_Adolfo_B%C3%A9cquer",
+    "https://es.wikipedia.org/wiki/Gustavo_Adolfo_B%C3%A9cquer"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q51068",  "Name": "Charles I of Austria",  "BirthDate": "1887-08-17T00:00:00Z",  "DeathDate": "1922-04-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20karl%20of%20austria-hungary%201917.png",  "SiteLinksCnt": 71,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"153477":{"pageid":153477,"ns":0,"title":"Charles I of Austria","extract":"Charles I (German: Karl Franz Josef Ludwig Hubert Georg Otto Maria, Hungarian: K\u00e1roly Ferenc J\u00f3zsef Lajos Hubert Gy\u00f6rgy Ott\u00f3 M\u00e1ria; 17 August 1887 \u2013 1 April 1922) was Emperor of Austria, King of Hungary, and the ruler of the other states of the Habsburg monarchy from November 1916 until the monarchy was abolished in November 1918. He was the last of the monarchs belonging to the House of Habsburg-Lorraine to rule over Austria-Hungary. The son of Archduke Otto of Austria and Princess Maria Josepha of Saxony, Charles became heir presumptive of Emperor Franz Joseph when his uncle Archduke Franz Ferdinand of Austria was assassinated in 1914. In 1911, he married Princess Zita of Bourbon-Parma.\nCharles succeeded to the thrones in November 1916 following the death of his great-uncle, Franz Joseph. He began secret negotiations with the Allies, hoping to peacefully end the First World War, but was unsuccessful. Despite Charles's efforts to preserve the empire by returning it to federalism and by championing Austro-Slavism, Austria-Hungary hurtled into disintegration: Czechoslovakia and the State of Slovenes, Croats and Serbs were proclaimed, and Hungary broke monarchic ties to Austria by the end of October 1918. Following the Armistice of 11 November 1918, Charles \"renounced any participation\" in government affairs, but did not abdicate. However, the Republic of German-Austria was proclaimed the following day, and in April 1919 the National Assembly formally dethroned the Habsburgs and banished Charles from German-Austria for life.\nCharles spent the early part of his exile in Switzerland. He spent the remaining years of his life attempting to restore the monarchy. He made two attempts to reclaim the Hungarian throne in 1921; but failed due to the opposition of Hungary's Calvinist regent Admiral Mikl\u00f3s Horthy. Charles was exiled for a second time to the Portuguese island of Madeira, where he soon fell ill and died of respiratory failure in 1922.\nA deeply religious man, Charles was beatified by the Catholic Church in 2004, with October 21 as his feast day."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q51068")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q51068",
+  "isRealHuman": true,
+  "birthDate": "1887-08-17",
+  "deathDate": "1922-04-01",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming that Charles I of Austria died at the age of 34.",
+  "shortDescriptionEn": "Charles I of Austria (1887–1922) was the last Emperor of Austria and King of Hungary, reigning from 1916 until the end of World War I in 1918. After attempts to reclaim the throne, he was exiled to Madeira, Portugal, where he died of respiratory failure at the age of 34.",
+  "shortDescriptionFr": "Charles Ier d'Autriche (1887–1922) fut le dernier empereur d'Autriche et roi de Hongrie, régnant de 1916 jusqu'à la fin de la Première Guerre mondiale en 1918. Après des tentatives de reprendre le trône, il fut exilé à Madère, au Portugal, où il mourut d'une insuffisance respiratoire à l'âge de 34 ans.",
+  "shortDescriptionDe": "Karl I. von Österreich (1887–1922) war der letzte Kaiser von Österreich und König von Ungarn und regierte von 1916 bis zum Ende des Ersten Weltkriegs 1918. Nach Versuchen, den Thron zurückzuerlangen, wurde er nach Madeira, Portugal, verbannt, wo er im Alter von 34 Jahren an Atemversagen starb.",
+  "shortDescriptionEs": "Carlos I de Austria (1887–1922) fue el último emperador de Austria y rey de Hungría, reinando desde 1916 hasta el final de la Primera Guerra Mundial en 1918. Tras intentos de recuperar el trono, fue exiliado a Madeira, Portugal, donde murió de insuficiencia respiratoria a los 34 años.",
+  "shortDescriptionRu": "Карл I Австрийский (1887–1922) был последним императором Австрии и королём Венгрии, правившим с 1916 года до конца Первой мировой войны в 1918 году. После попыток вернуть трон он был отправлен в изгнание на Мадейру, Португалия, где умер от дыхательной недостаточности в возрасте 34 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charles_I_of_Austria"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q298364",  "Name": "Jeffrey Dahmer",  "BirthDate": "1960-05-21T00:00:00Z",  "DeathDate": "1994-11-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20Dahmer%20HS%20Yearbook.jpg",  "SiteLinksCnt": 70,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"16218":{"pageid":16218,"ns":0,"title":"Jeffrey Dahmer","extract":"Jeffrey Lionel Dahmer (; May 21, 1960 \u2013 November 28, 1994), also known as the Milwaukee Cannibal or the Milwaukee Monster, was an American serial killer and sex offender who killed and dismembered seventeen men and boys between 1978 and 1991. Many of his later murders involved necrophilia, cannibalism, and the permanent preservation of body parts\u2014typically all or part of the skeleton.\nAlthough he was diagnosed with borderline personality disorder (BPD), schizotypal personality disorder (StPD), and a psychotic disorder, Dahmer was found to be legally sane at his trial. He was convicted of fifteen of the sixteen homicides he had committed in Wisconsin and was sentenced to fifteen terms of life imprisonment on February 17, 1992. Dahmer was later sentenced to a sixteenth term of life imprisonment for an additional homicide committed in Ohio in 1978.\nOn November 28, 1994, Dahmer was beaten to death by Christopher Scarver, a fellow inmate at the Columbia Correctional Institution in Portage, Wisconsin."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q298364")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q298364",
+  "isRealHuman": true,
+  "birthDate": "1960-05-21",
+  "deathDate": "1994-11-28",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reliable sources.",
+  "shortDescriptionEn": "Jeffrey Dahmer, known as the Milwaukee Cannibal, was an American serial killer who murdered 17 men and boys between 1978 and 1991. His crimes involved necrophilia and cannibalism. He was killed by a fellow inmate in 1994.",
+  "shortDescriptionFr": "Jeffrey Dahmer, connu sous le nom de Milwaukee Cannibal, était un tueur en série américain qui a assassiné 17 hommes et garçons entre 1978 et 1991. Ses crimes impliquaient la nécrophilie et le cannibalisme. Il a été tué par un codétenu en 1994.",
+  "shortDescriptionDe": "Jeffrey Dahmer, bekannt als der Milwaukee-Kannibale, war ein amerikanischer Serienmörder, der zwischen 1978 und 1991 17 Männer und Jungen ermordete. Seine Verbrechen beinhalteten Nekrophilie und Kannibalismus. Er wurde 1994 von einem Mitgefangenen getötet.",
+  "shortDescriptionEs": "Jeffrey Dahmer, conocido como el Caníbal de Milwaukee, fue un asesino en serie estadounidense que asesinó a 17 hombres y niños entre 1978 y 1991. Sus crímenes involucraron necrofilia y canibalismo. Fue asesinado por un compañero de prisión en 1994.",
+  "shortDescriptionRu": "Джеффри Дамер, известный как Милуокский каннибал, был американским серийным убийцей, который убил 17 мужчин и мальчиков в период с 1978 по 1991 год. Его преступления включали некрофилию и каннибализм. В 1994 году он был убит сокамерником.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jeffrey_Dahmer"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q178953",  "Name": "Vercingetorix",  "BirthDate": "-0079-01-01T00:00:00Z",  "DeathDate": "-0045-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue-vercingetorix-jaude-clermont.jpg",  "SiteLinksCnt": 67,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"32802":{"pageid":32802,"ns":0,"title":"Vercingetorix","extract":"Vercingetorix (Latin: [w\u025brk\u026a\u014b\u02c8\u0261\u025bt\u0254ri\u02d0ks]; Ancient Greek: \u039f\u1f50\u03b5\u03c1\u03ba\u03b9\u03b3\u03b3\u03b5\u03c4\u03cc\u03c1\u03b9\u03be [u.erki\u014b\u0261e\u02c8toriks]; c.\u200980 \u2013 46 BC) was a Gallic king and chieftain of the Arverni tribe who united the Gauls in a failed revolt against Roman forces during the last phase of Julius Caesar's Gallic Wars. After surrendering to Caesar and spending almost six years in prison, he was executed in Rome.\nVercingetorix was the son of Celtillus the Arvernian, leader of the Gallic tribes. Vercingetorix came to power after his formal designation as chieftain of the Arverni at the oppidum Gergovia in 52 BC. He immediately established an alliance with other Gallic tribes, took command, combined all forces and led them in the Celts' most significant revolt against Roman power. He won the Battle of Gergovia against Julius Caesar in which several thousand Romans and their allies were killed and the Roman legions withdrew.\nCaesar had been able to exploit Gaulish internal divisions to easily subjugate the country, since Vercingetorix's attempt to unite the Gauls against Roman invasion came too late. At the Battle of Alesia, also in 52 BC, the Romans besieged and defeated his forces. To spare as many of his men as possible, he gave himself to the Romans. He was held prisoner for five years. In 46 BC, as part of Caesar's triumph, he was paraded through the streets of Rome and then executed by garroting. Vercingetorix is primarily known through Caesar's Commentarii de Bello Gallico (Commentaries on the Gallic War). He is considered a folk hero in France, and especially in Auvergne, his native region."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q178953")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q178953",
+  "isRealHuman": true,
+  "birthDate": "-0082-01-01",
+  "deathDate": "-0046-01-01",
+  "ageAtDeath": 36,
+  "confidence": 80,
+  "confidenceExplained": "The birth date of Vercingetorix is not precisely recorded; however, historical estimates suggest he was born around 82 BC. His death in 46 BC is well-documented, allowing us to approximate his age at death as 36.",
+  "shortDescriptionEn": "Vercingetorix was a chieftain of the Arverni tribe who united the Gauls in a major revolt against Roman forces during the Gallic Wars. He was captured by Julius Caesar in 52 BC after the Siege of Alesia and executed in Rome in 46 BC.",
+  "shortDescriptionFr": "Vercingétorix était un chef de la tribu des Arvernes qui a uni les Gaulois dans une révolte majeure contre les forces romaines pendant les guerres gauloises. Il a été capturé par Jules César en 52 av. J.-C. après le siège d'Alésia et exécuté à Rome en 46 av. J.-C.",
+  "shortDescriptionDe": "Vercingetorix war ein Häuptling des Arverner-Stammes, der die Gallier in einem großen Aufstand gegen die römischen Streitkräfte während der Gallischen Kriege vereinte. Er wurde 52 v. Chr. nach der Belagerung von Alesia von Julius Caesar gefangen genommen und 46 v. Chr. in Rom hingerichtet.",
+  "shortDescriptionEs": "Vercingétorix fue un caudillo de la tribu de los arvernos que unió a los galos en una gran revuelta contra las fuerzas romanas durante las guerras galas. Fue capturado por Julio César en 52 a.C. después del sitio de Alesia y ejecutado en Roma en 46 a.C.",
+  "shortDescriptionRu": "Верцингеторикс был вождем племени арвернов, который объединил галлов в крупном восстании против римских войск во время Галльских войн. Он был захвачен Юлием Цезарем в 52 г. до н.э. после осады Алезии и казнен в Риме в 46 г. до н.э.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vercingetorix",
+    "https://www.britannica.com/biography/Vercingetorix",
+    "https://www.worldhistory.org/vercingetorix/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q270632",  "Name": "Katherine Mansfield",  "BirthDate": "1888-10-14T00:00:00Z",  "DeathDate": "1923-01-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Katherine%20Mansfield%20%28no%20signature%29.jpg",  "SiteLinksCnt": 67,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"162903":{"pageid":162903,"ns":0,"title":"Katherine Mansfield","extract":"Kathleen Mansfield Murry (n\u00e9e Beauchamp; 14 October 1888 \u2013 9 January 1923) was a New Zealand writer and critic who was an important figure in the modernist movement. Her works are celebrated across the world and have been published in 25 languages.\nBorn and raised in a house on Tinakori Road in the Wellington suburb of Thorndon, Mansfield was the third child in the Beauchamp family. She began school in Karori with her sisters, before attending Wellington Girls' College. The Beauchamp girls later switched to the elite Fitzherbert Terrace School, where Mansfield became friends with Maata Mahupuku, who became a muse for early work and with whom she is believed to have had a passionate relationship.\nMansfield wrote short stories and poetry under a variation of her own name, Katherine Mansfield, which explored anxiety, sexuality, Christianity, and existentialism alongside a developing New Zealand identity. When she was 19, she left New Zealand and settled in England, where she became a friend of D. H. Lawrence, Virginia Woolf, Lady Ottoline Morrell and others in the orbit of the Bloomsbury Group. Mansfield was diagnosed with pulmonary tuberculosis in 1917, and she died in France aged 34."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q270632")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q270632",
+  "isRealHuman": true,
+  "birthDate": "1888-10-14",
+  "deathDate": "1923-01-09",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Katherine Mansfield was a renowned New Zealand modernist writer known for her short stories. She died at the age of 34 from tuberculosis.",
+  "shortDescriptionFr": "Katherine Mansfield était une écrivaine moderniste néo-zélandaise renommée, connue pour ses nouvelles. Elle est décédée à l'âge de 34 ans de la tuberculose.",
+  "shortDescriptionDe": "Katherine Mansfield war eine renommierte neuseeländische modernistische Schriftstellerin, bekannt für ihre Kurzgeschichten. Sie starb im Alter von 34 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "Katherine Mansfield fue una renombrada escritora modernista neozelandesa, conocida por sus cuentos. Murió a los 34 años de tuberculosis.",
+  "shortDescriptionRu": "Кэтрин Мэнсфилд была известной новозеландской модернистской писательницей, известной своими рассказами. Она умерла в возрасте 34 лет от туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Katherine_Mansfield",
+    "https://es.wikipedia.org/wiki/Katherine_Mansfield",
+    "https://fr.wikipedia.org/wiki/Katherine_Mansfield",
+    "https://de.wikipedia.org/wiki/Katherine_Mansfield"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q84192",  "Name": "Maximilian I of Mexico",  "BirthDate": "1832-07-06T00:00:00Z",  "DeathDate": "1867-06-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maximilian%20of%20Mexico%20bw.jpg",  "SiteLinksCnt": 66,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"193687":{"pageid":193687,"ns":0,"title":"Maximilian I of Mexico","extract":"Maximilian I (Spanish: Fernando Maximiliano Jos\u00e9 Mar\u00eda de Habsburgo-Lorena; German: Ferdinand Maximilian Josef Maria von Habsburg-Lothringen; 6 July 1832 \u2013 19 June 1867) was an Austrian archduke who became emperor of the Second Mexican Empire from 10 April 1864 until his execution by the Mexican Republic on 19 June 1867.\nA member of the House of Habsburg-Lorraine, Maximilian was the younger brother of Emperor Franz Joseph I of Austria. Before becoming Emperor of Mexico, he was commander-in-chief of the small Imperial Austrian Navy and briefly the Austrian viceroy of Lombardy\u2013Venetia, but was removed by the emperor. Two years before his dismissal, he briefly met with French emperor Napoleon III in Paris, where he was approached by conservative Mexican monarchists seeking a European royal to rule Mexico. Initially Maximilian was not interested, but following his dismissal as viceroy, the Mexican monarchists' plan was far more appealing to him.\nSince Maximilian was a descendant of Charles V, Holy Roman Emperor, King of Spain when the Spaniards conquered the Aztecs (1519\u201321) and first brought Mexico into the Spanish Empire, a status it held until the Mexican independence in 1821, Maximilian seemed a perfect candidate for the conservatives' plans for monarchy in Mexico. Maximilian was interested in assuming the throne, but only with guarantees of French support. Mexican conservatives did not take sufficient account of Maximilian's embrace of liberalism, and Maximilian failed to understand he would be viewed as a foreign outsider. When Maximilian was first mentioned as a possible emperor of Mexico, the idea seemed farfetched, but circumstances changed and made it viable. His tenure as emperor was just three years, ending with his execution by firing squad by forces of the Restored Republic on 19 June 1867.\nPolitical conflicts in Mexico in the 1850s between conservative and liberal factions were domestic disputes initially, but the conservatives' loss on the battlefield to the liberal regime during a three-year civil war (1858\u201361) meant conservatives sought ways to return to power with outside allies, opening a path for France under Napoleon III to intervene in Mexico and set up a puppet regime with conservative Mexican support. When the liberal government of Mexican President Benito Ju\u00e1rez suspended payment on foreign debts in 1861, there was an opening for European powers to intervene militarily in Mexico. The intention of the French and Mexican conservatives was for regime change to oust the liberals, backed by the power of the French army. Mexican monarchists sought a European head of state and, with the brokering of Napoleon III, Maximilian was invited to establish what would come to be known as the Second Mexican Empire. With a pledge of French military support and at the formal invitation of a Mexican delegation, Maximilian accepted the crown of Mexico on 10 April 1864 following a bogus referendum in Mexico that purportedly showed the Mexican people backed him.\nMaximilian's hold on power in Mexico was shaky from the beginning. Rather than enacting policies that would return power to Mexican conservatives, Maximilian instead sought to implement liberal policies, losing him his domestic conservative backers. Internationally, his legitimacy as ruler was in doubt since the United States continued to recognize Benito Ju\u00e1rez as the legal head of state rather than Emperor Maximilian. The U.S. saw the French invasion as a violation of the Monroe Doctrine, but the U.S. was unable to intervene politically due to the American Civil War (1861\u20131865). With the end of the American Civil War in 1865, the United States began providing material aid to Ju\u00e1rez's republican forces. In the face of a renewed U.S. interest in enforcing the Monroe Doctrine, under orders by Napoleon III, the French armies that had propped up Maximilian's regime began withdrawing from Mexico in 1866. With no popular support and republican forces in the ascendant, Maximilian's monarchy collapsed. Maximilian was captured in Quer\u00e9taro. He was tried and executed by the restored Republican government alongside his generals Miguel Miram\u00f3n, a former President of Mexico, and Tom\u00e1s Mej\u00eda Camacho in June 1867. His death marked the end of monarchism as a major force in Mexico. In reassessments of his brief rule, he is portrayed in Mexican history less as the villain of nationalist, republican history and more as a liberal in Mexico, along with Presidents of the Republic Ju\u00e1rez, Sebasti\u00e1n Lerdo de Tejada, and Porfirio D\u00edaz."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q84192")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q84192",
+  "isRealHuman": true,
+  "birthDate": "1832-07-06",
+  "deathDate": "1867-06-19",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are specific, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Maximilian I of Mexico was an Austrian archduke who served as Emperor of Mexico from 1864 until his execution in 1867.",
+  "shortDescriptionFr": "Maximilien Ier du Mexique était un archiduc autrichien qui a servi comme empereur du Mexique de 1864 jusqu'à son exécution en 1867.",
+  "shortDescriptionDe": "Maximilian I. von Mexiko war ein österreichischer Erzherzog, der von 1864 bis zu seiner Hinrichtung im Jahr 1867 als Kaiser von Mexiko diente.",
+  "shortDescriptionEs": "Maximiliano I de México fue un archiduque austriaco que sirvió como emperador de México desde 1864 hasta su ejecución en 1867.",
+  "shortDescriptionRu": "Максимилиан I Мексиканский был австрийским эрцгерцогом, который служил императором Мексики с 1864 года до своей казни в 1867 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maximilian_I_of_Mexico"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q229507",  "Name": "Jayne Mansfield",  "BirthDate": "1933-04-19T00:00:00Z",  "DeathDate": "1967-06-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jayne%20Mansfield%20%28Kiss%20them%20for%20me-1957%29.jpg",  "SiteLinksCnt": 64,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"409842":{"pageid":409842,"ns":0,"title":"Jayne Mansfield","extract":"Jayne Mansfield (born Vera Jayne Palmer; April 19, 1933 \u2013 June 29, 1967) was an American actress, Playboy Playmate, and sex symbol of the 1950s and early 1960s. She was known for her numerous publicity stunts and open personal life. Her film career was short-lived, but she had several box-office successes and won a Theatre World Award and Golden Globe Award. She gained the nickname of Hollywood's \"smartest dumb blonde.\"\nMansfield gained popularity after playing the role of fictional actress Rita Marlowe in Will Success Spoil Rock Hunter? (1955\u20131956) on Broadway, which she reprised in the film adaptation in 1957. Her other film roles include the musical comedy The Girl Can't Help It (1956), the drama The Wayward Bus (1957), the neo-noir Too Hot to Handle (1960), and the sex comedy Promises! Promises! (1963); the last established Mansfield as one of the first major American actresses to perform in a nude scene in a post-silent era film.\nMansfield took her professional name from her first husband public relations professional Paul Mansfield. She married three times, each marriage ending in divorce, and had five children. On June 29, 1967, she died in a traffic collision at age 34."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q229507")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q229507",
+  "isRealHuman": true,
+  "birthDate": "1933-04-19",
+  "deathDate": "1967-06-29",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Jayne Mansfield was an American actress, singer, and model, prominent in the 1950s and early 1960s as a major Hollywood sex symbol. She died in a car accident at the age of 34.",
+  "shortDescriptionFr": "Jayne Mansfield était une actrice, chanteuse et mannequin américaine, célèbre dans les années 1950 et au début des années 1960 en tant que symbole sexuel majeur d'Hollywood. Elle est décédée dans un accident de voiture à l'âge de 34 ans.",
+  "shortDescriptionDe": "Jayne Mansfield war eine amerikanische Schauspielerin, Sängerin und Model, die in den 1950er und frühen 1960er Jahren als bedeutendes Sexsymbol Hollywoods galt. Sie starb im Alter von 34 Jahren bei einem Autounfall.",
+  "shortDescriptionEs": "Jayne Mansfield fue una actriz, cantante y modelo estadounidense, destacada en los años 1950 y principios de los 1960 como un importante símbolo sexual de Hollywood. Murió en un accidente automovilístico a los 34 años.",
+  "shortDescriptionRu": "Джейн Мэнсфилд была американской актрисой, певицей и моделью, известной в 1950-х и начале 1960-х годов как главный секс-символ Голливуда. Она погибла в автокатастрофе в возрасте 34 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jayne_Mansfield",
+    "https://pagesix.com/2024/11/12/celebrity-news/mariska-hargitay-makes-rare-comments-about-her-mothers-traumatic-death/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q84497471",  "Name": "Li Wenliang",  "BirthDate": "1985-10-12T00:00:00Z",  "DeathDate": "2020-02-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/LiWengliang.jpg",  "SiteLinksCnt": 63,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"63040806":{"pageid":63040806,"ns":0,"title":"Li Wenliang","extract":"Li Wenliang (Chinese: \u674e\u6587\u4eae; 12 October 1985 \u2013 7 February 2020) was a Chinese ophthalmologist who warned his colleagues about early COVID-19 infections in Wuhan. \nOn 30 December 2019, Wuhan Centres for Disease Prevention and Control (Wuhan CDC) issued emergency warnings to local hospitals about a number of mysterious \"pneumonia\" cases discovered in the city in the previous week. On the same day, Li, who worked at the Central Hospital of Wuhan, received an internal diagnostic report of a suspected severe acute respiratory syndrome (SARS) patient from other doctors, which he in turn shared with his Wuhan University alumni through a WeChat group. \nLi was dubbed a whistleblower when that shared report later circulated publicly, despite his messaging to his alumni WeChat group to not spread the message outside of the group with the exception to only \"remind their family members and loved ones to be on the alert\". Li did not appear to have intentions of warning the wider public. Rumors of a deadly SARS outbreak subsequently spread on Chinese social media platforms; Wuhan police summoned and admonished him and seven other doctors on 3 January for \"making false comments on the Internet about unconfirmed SARS outbreak.\"\nThe outbreak was later confirmed not to be SARS, but rather a new coronavirus, SARS-CoV-2. Li returned to work and later contracted COVID-19, the disease caused by the virus, from a patient who was not known to be infected. He died from the disease on 7 February 2020, at age 34. A subsequent Chinese official inquiry exonerated him; Wuhan police formally apologized to his family and revoked his admonishment on 19 March. In April 2020, Li was posthumously awarded the May Fourth Medal by the government. By early June 2020, five more doctors from the Wuhan hospital had died from COVID-19."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q84497471")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q84497471",
+  "isRealHuman": true,
+  "birthDate": "1985-10-12",
+  "deathDate": "2020-02-07",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in multiple reliable sources, confirming his age at death as 34.",
+  "shortDescriptionEn": "Li Wenliang was a Chinese ophthalmologist who warned colleagues about early COVID-19 infections in Wuhan. He was reprimanded by authorities for 'spreading rumors.' Li contracted the virus while treating patients and died on February 7, 2020, at age 34.",
+  "shortDescriptionFr": "Li Wenliang était un ophtalmologue chinois qui a averti ses collègues des premières infections au COVID-19 à Wuhan. Il a été réprimandé par les autorités pour 'propagation de rumeurs.' Li a contracté le virus en soignant des patients et est décédé le 7 février 2020, à l'âge de 34 ans.",
+  "shortDescriptionDe": "Li Wenliang war ein chinesischer Augenarzt, der Kollegen über frühe COVID-19-Infektionen in Wuhan informierte. Er wurde von den Behörden wegen 'Verbreitung von Gerüchten' gerügt. Li infizierte sich bei der Behandlung von Patienten mit dem Virus und starb am 7. Februar 2020 im Alter von 34 Jahren.",
+  "shortDescriptionEs": "Li Wenliang fue un oftalmólogo chino que advirtió a sus colegas sobre las primeras infecciones de COVID-19 en Wuhan. Fue reprendido por las autoridades por 'difundir rumores.' Li contrajo el virus mientras trataba a pacientes y murió el 7 de febrero de 2020, a los 34 años.",
+  "shortDescriptionRu": "Ли Вэньлян был китайским офтальмологом, который предупредил коллег о ранних случаях COVID-19 в Ухане. Он был подвергнут критике властями за 'распространение слухов.' Ли заразился вирусом при лечении пациентов и умер 7 февраля 2020 года в возрасте 34 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Li_Wenliang",
+    "https://www.bbc.com/news/world-asia-china-51403795",
+    "https://www.nytimes.com/2020/02/06/world/asia/Li-Wenliang-coronavirus.html"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q182070",  "Name": "Maxentius",  "BirthDate": "0278-01-01T00:00:00Z",  "DeathDate": "0312-10-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maxentius02%20pushkin.jpg",  "SiteLinksCnt": 62,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"76958":{"pageid":76958,"ns":0,"title":"Maxentius","extract":"Marcus Aurelius Valerius Maxentius (c. 283 \u2013 28 October 312) was a Roman emperor from 306 until his death in 312. Despite ruling in Italy and North Africa, and having the recognition of the Senate in Rome, he was not recognized as a legitimate emperor by his fellow emperors.\nHe was the son of former Emperor Maximian and the son-in-law of Emperor Galerius. The latter part of his reign was preoccupied with civil war, allying with Maximinus against Licinius and Constantine. The latter defeated him at the Battle of the Milvian Bridge in 312, where Maxentius, with his army in flight, purportedly perished by drowning in the Tiber river.\nMaxentius was the last emperor permanently to reside in Rome. He attempted to embellish, restore and improve the ancient capital, carrying out important building works, including the Temple of the Divine Romulus (dedicated to his deceased son), the Basilica of Maxentius, which was completed by Constantine, the villa and the circus of Maxentius."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q182070")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q182070",
+  "isRealHuman": true,
+  "birthDate": "283-01-01",
+  "deathDate": "312-10-28",
+  "ageAtDeath": 29,
+  "confidence": 90,
+  "confidenceExplained": "The exact birth date of Maxentius is not definitively recorded, but historical estimates suggest he was born around 283 AD. His death on October 28, 312 AD, is well-documented, allowing for a reasonably accurate calculation of his age at death.",
+  "shortDescriptionEn": "Maxentius was a Roman emperor from 306 to 312 AD, known for his architectural contributions to Rome. His reign ended when he drowned during the Battle of the Milvian Bridge against Constantine the Great.",
+  "shortDescriptionFr": "Maxence était un empereur romain de 306 à 312 apr. J.-C., connu pour ses contributions architecturales à Rome. Son règne s'est terminé lorsqu'il s'est noyé lors de la bataille du pont Milvius contre Constantin le Grand.",
+  "shortDescriptionDe": "Maxentius war ein römischer Kaiser von 306 bis 312 n. Chr., bekannt für seine architektonischen Beiträge in Rom. Seine Herrschaft endete, als er während der Schlacht an der Milvischen Brücke gegen Konstantin den Großen ertrank.",
+  "shortDescriptionEs": "Majencio fue un emperador romano desde 306 hasta 312 d.C., conocido por sus contribuciones arquitectónicas a Roma. Su reinado terminó cuando se ahogó durante la Batalla del Puente Milvio contra Constantino el Grande.",
+  "shortDescriptionRu": "Максенций был римским императором с 306 по 312 годы н.э., известным своими архитектурными вкладом в Рим. Его правление закончилось, когда он утонул во время битвы у Мильвийского моста против Константина Великого.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maxentius",
+    "https://de.wikipedia.org/wiki/Maxentius",
+    "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15001",  "Name": "Alexander Griboyedov",  "BirthDate": "1795-01-15T00:00:00Z",  "DeathDate": "1829-02-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Griboyedov.jpg",  "SiteLinksCnt": 60,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"1290867":{"pageid":1290867,"ns":0,"title":"Alexander Griboyedov","extract":"Alexander Sergeyevich Griboyedov (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447 \u0413\u0440\u0438\u0431\u043e\u0435\u0434\u043e\u0432, romanized: Aleksandr Sergeevich Griboedov; 15 January 1795 \u2013 11 February 1829) was a Russian diplomat, playwright, poet, and composer. His one notable work is the 1823 verse comedy Woe from Wit. He was Russia's ambassador to Qajar Persia, where he and all the embassy staff were  massacred by an angry mob in the aftermath of the ratification of the Treaty of Turkmenchay (1828), which confirmed the cession to Russia of Persia's northern territories comprising Transcaucasia and parts of the North Caucasus. Griboyedov played a pivotal role in the ratification of the treaty. The immediate cause for the incident was Griboyedov giving refuge to Armenians who had escaped from the harems of the Persian shah and his son."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15001")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q15001",
+  "isRealHuman": true,
+  "birthDate": "1795-01-15",
+  "deathDate": "1829-02-11",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Alexander Griboyedov was a Russian diplomat, playwright, poet, and composer, renowned for his 1823 comedy 'Woe from Wit.' He served as the Russian ambassador to Persia, where he was killed at age 34 during a mob attack on the embassy in Tehran.",
+  "shortDescriptionFr": "Alexandre Griboïedov était un diplomate, dramaturge, poète et compositeur russe, connu pour sa comédie de 1823 'Le Malheur d'avoir de l'esprit.' Il a servi comme ambassadeur de Russie en Perse, où il a été tué à 34 ans lors d'une attaque de la foule contre l'ambassade à Téhéran.",
+  "shortDescriptionDe": "Alexander Gribojedow war ein russischer Diplomat, Dramatiker, Dichter und Komponist, bekannt für seine Komödie von 1823 'Wehe dem Verstand.' Er diente als russischer Botschafter in Persien, wo er im Alter von 34 Jahren bei einem Angriff auf die Botschaft in Teheran getötet wurde.",
+  "shortDescriptionEs": "Alexander Griboyédov fue un diplomático, dramaturgo, poeta y compositor ruso, conocido por su comedia de 1823 'Desgracia de tener inteligencia.' Sirvió como embajador ruso en Persia, donde fue asesinado a los 34 años durante un ataque de la multitud a la embajada en Teherán.",
+  "shortDescriptionRu": "Александр Грибоедов был российским дипломатом, драматургом, поэтом и композитором, известным своей комедией 1823 года 'Горе от ума.' Он служил послом России в Персии, где был убит в возрасте 34 лет во время нападения толпы на посольство в Тегеране.",
+  "sources": [
+    "https://www.britannica.com/biography/Aleksandr-Sergeyevich-Griboyedov",
+    "https://en.wikipedia.org/wiki/Alexander_Griboyedov",
+    "https://www.newworldencyclopedia.org/entry/Alexander_Griboyedov"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q152850",  "Name": "Raoul Wallenberg",  "BirthDate": "1912-08-04T00:00:00Z",  "DeathDate": "1947-07-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Wallenberg.jpg",  "SiteLinksCnt": 58,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"171653":{"pageid":171653,"ns":0,"title":"Raoul Wallenberg","extract":"Raoul Gustaf Wallenberg (4 August 1912 \u2013 disappeared 17 January 1945) was a Swedish architect, businessman, diplomat, and humanitarian. He saved thousands of Jews in German-occupied Hungary during the Holocaust from German Nazis and Hungarian fascists during the later stages of World War II. While serving as Sweden's special envoy in Budapest between July and December 1944, Wallenberg issued protective passports and sheltered Jews in buildings which he declared as Swedish territory.\nOn 17 January 1945, during the Siege of Budapest by the Red Army, agents of SMERSH detained Wallenberg on suspicion of espionage, and he subsequently disappeared. In 1957, 12 years after his disappearance, he was reported by Soviet authorities to have died of a suspected myocardial infarction on 17 July 1947 while imprisoned in the Lubyanka, the prison at the headquarters of the NKVD secret police in Moscow. A document released in 2023 as part of The President John F. Kennedy Assassination Records Collection indicates that Vyacheslav Nikonov, then an assistant to the head of the KGB, determined as part of a 1991 inquiry into the circumstances surrounding his disappearance that Wallenberg had likely been executed by Soviet authorities in late 1947 as a result of evidence that he may have been associated with people helping not only Jews but also Nazi war criminals escape prosecution. However, there is no conclusive proof of this and his cause and date of death have been disputed ever since, with some people claiming to have encountered men matching Wallenberg's description until the 1980s in Soviet prisons and psychiatric hospitals. The motives behind Wallenberg's arrest and imprisonment by the Soviet government, along with questions surrounding the circumstances of his death and his ties to US intelligence, remain shrouded in mystery and are the subject of continued speculation. In 2016, the Swedish Tax Agency declared him dead in absentia, with the pro forma date of death noted as 31 July 1952.\nAs a result of his successful efforts to rescue Hungarian Jews, Wallenberg has been the subject of numerous humanitarian honours in the decades following his presumed death. In 1981, US Congressman Tom Lantos, one of those saved by Wallenberg, sponsored a bill making Wallenberg an honorary citizen of the United States, the second person ever to receive this honour.  Wallenberg  also became an honorary citizen of Canada, Hungary, Australia, the United Kingdom and Israel. In 1963 the Israeli agency Yad Vashem designated Wallenberg one of the Righteous Among the Nations.\nNumerous monuments have been dedicated to him, and streets have been named after him throughout the world. The Raoul Wallenberg Committee of the United States was founded in 1981 to \"perpetuate the humanitarian ideals and the nonviolent courage of Raoul Wallenberg\". It gives the Raoul Wallenberg Award annually to recognize persons who carry out those goals. In 2012, Wallenberg was awarded a Congressional Gold Medal by the United States Congress \"in recognition of his achievements and heroic actions during the Holocaust.\" Declassified documents have confirmed that Raoul Wallenberg worked with the Office of Strategic Services (OSS), the predecessor of the CIA.\nAlthough some have claimed that Wallenberg was responsible for rescuing 100,000 Jews who survived the Holocaust in Hungary, historians regard that figure as an exaggeration; Yad Vashem estimates the number of people granted protective paperwork as about 4,500 individuals."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q152850")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+{
+  "id": "http://www.wikidata.org/entity/Q152850",
+  "isRealHuman": true,
+  "birthDate": "1912-08-04",
+  "deathDate": "1947-07-17",
+  "ageAtDeath": 34,
+  "confidence": 95,
+  "confidenceExplained": "Based on the reported dates, Wallenberg's age at death is calculated to be 34. While the exact circumstances of his death are uncertain, the dates themselves are well-documented.",
+  "shortDescriptionEn": "Raoul Wallenberg was a Swedish architect, businessman, diplomat, and humanitarian known for his efforts to rescue thousands of Hungarian Jews during World War II. He was detained by Soviet forces in 1945 and reportedly died in 1947 under unclear circumstances.",
+  "shortDescriptionFr": "Raoul Wallenberg était un architecte, homme d'affaires, diplomate et humanitaire suédois, connu pour ses efforts visant à sauver des milliers de Juifs hongrois pendant la Seconde Guerre mondiale. Il a été arrêté par les forces soviétiques en 1945 et serait décédé en 1947 dans des circonstances peu claires.",
+  "shortDescriptionDe": "Raoul Wallenberg war ein schwedischer Architekt, Geschäftsmann, Diplomat und Humanist, bekannt für seine Bemühungen, während des Zweiten Weltkriegs Tausende ungarische Juden zu retten. Er wurde 1945 von sowjetischen Streitkräften festgenommen und starb Berichten zufolge 1947 unter ungeklärten Umständen.",
+  "shortDescriptionEs": "Raoul Wallenberg fue un arquitecto, empresario, diplomático y humanitario sueco, conocido por sus esfuerzos para rescatar a miles de judíos húngaros durante la Segunda Guerra Mundial. Fue detenido por las fuerzas soviéticas en 1945 y, según informes, murió en 1947 en circunstancias poco claras.",
+  "shortDescriptionRu": "Рауль Валленберг был шведским архитектором, бизнесменом, дипломатом и гуманистом, известным своими усилиями по спасению тысяч венгерских евреев во время Второй мировой войны. Он был задержан советскими войсками в 1945 году и, как сообщается, умер в 1947 году при невыясненных обстоятельствах.",
+  "sources": [
+    "https://www.britannica.com/biography/Raoul-Wallenberg",
+    "https://www.history.com/topics/holocaust/wallenberg-raoul",
+    "https://en.wikipedia.org/wiki/Raoul_Wallenberg"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q213626",  "Name": "Jesse James",  "BirthDate": "1847-09-05T00:00:00Z",  "DeathDate": "1882-04-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jesse%20james%20portrait.jpg",  "SiteLinksCnt": 55,  "Age": 34}
+{"batchcomplete":"","query":{"pages":{"26807275":{"pageid":26807275,"ns":0,"title":"Jesse James","extract":"Jesse Woodson James (September 5, 1847 \u2013 April 3, 1882) was an American outlaw, bank and train robber, guerrilla and leader of the James\u2013Younger Gang. Raised in the \"Little Dixie\" area of Missouri, James and his family maintained strong Southern sympathies. He and his brother Frank James joined pro-Confederate guerrillas known as \"bushwhackers\" operating in Missouri and Kansas during the American Civil War. As followers of William Quantrill and \"Bloody Bill\" Anderson, they were accused of committing atrocities against Union soldiers and civilian abolitionists, including the Centralia Massacre in 1864.\nAfter the war, as members of various gangs of outlaws, Jesse and Frank robbed banks, stagecoaches, and trains across the Midwest, gaining national fame and often popular sympathy despite the brutality of their crimes. The James brothers were most active as members of their own gang from about 1866 until 1876, when as a result of their attempted robbery of a bank in Northfield, Minnesota, several members of the gang were captured or killed. They continued in crime for several years afterward, recruiting new members, but came under increasing pressure from law enforcement seeking to bring them to justice. On April 3, 1882, Jesse James was shot and killed by Robert Ford, a new recruit to the gang who hoped to collect a reward on James's head and a promised amnesty for his previous crimes. Already a celebrity in life, James became a legendary figure of the Wild West after his death.\nPopular portrayals of James as an embodiment of Robin Hood, robbing from the rich and giving to the poor, are a case of romantic revisionism as there is no evidence his gang shared any loot from their robberies with anyone outside their network. Scholars and historians have characterized James as one of many criminals inspired by the regional insurgencies of ex-Confederates following the Civil War, rather than as a manifestation of alleged economic justice or of frontier lawlessness. James continues to be one of the most famous figures from the era, and his life has been dramatized and memorialized numerous times."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q213626")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+Don't forget to return JSON!!!
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q213626",
+  "isRealHuman": true,
+  "birthDate": "1847-09-05",
+  "deathDate": "1882-04-03",
+  "ageAtDeath": 34,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 34.",
+  "shortDescriptionEn": "Jesse James was an American outlaw, bank and train robber, and leader of the James–Younger Gang. He was shot and killed at the age of 34 by Robert Ford, a member of his own gang seeking a reward.",
+  "shortDescriptionFr": "Jesse James était un hors-la-loi américain, braqueur de banques et de trains, et chef du gang James–Younger. Il a été abattu à l'âge de 34 ans par Robert Ford, un membre de son propre gang cherchant une récompense.",
+  "shortDescriptionDe": "Jesse James war ein amerikanischer Gesetzloser, Bank- und Zugräuber und Anführer der James–Younger-Bande. Er wurde im Alter von 34 Jahren von Robert Ford erschossen, einem Mitglied seiner eigenen Bande, der eine Belohnung suchte.",
+  "shortDescriptionEs": "Jesse James fue un forajido estadounidense, ladrón de bancos y trenes, y líder de la banda James–Younger. Fue asesinado a los 34 años por Robert Ford, un miembro de su propia banda que buscaba una recompensa.",
+  "shortDescriptionRu": "Джесси Джеймс был американским преступником, грабителем банков и поездов, лидером банды Джеймса–Янгера. Он был застрелен в возрасте 34 лет Робертом Фордом, членом его собственной банды, стремившимся получить награду.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jesse_James",
+    "https://www.britannica.com/biography/Jesse-James-and-Frank-James",
+    "https://www.history.com/news/7-things-you-might-not-know-about-jesse-james"
+  ]
+}
