@@ -1,0 +1,968 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q303",  "Name": "Elvis Presley",  "BirthDate": "1935-01-08T00:00:00Z",  "DeathDate": "1977-08-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Elvis%20Presley%20Publicity%20Photo%20for%20The%20Trouble%20with%20Girls%201968.jpg",  "SiteLinksCnt": 211,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"9288":{"pageid":9288,"ns":0,"title":"Elvis Presley","extract":"Elvis Aaron Presley (January 8, 1935 \u2013 August 16, 1977), known mononymously as Elvis, was an American singer and actor. Known as the \"King of Rock and Roll\", he is regarded as one of the most significant cultural figures of the 20th century. Presley's energized performances and interpretations of songs, and sexually provocative performance style, combined with a singularly potent mix of influences across color lines during a transformative era in race relations, brought both great success and initial controversy.\nPresley was born in Tupelo, Mississippi; his family moved to Memphis, Tennessee, when he was 13. His music career began there in 1954, at Sun Records with producer Sam Phillips, who wanted to bring the sound of African-American music to a wider audience. Presley, on guitar and accompanied by lead guitarist Scotty Moore and bassist Bill Black, was a pioneer of rockabilly, an uptempo, backbeat-driven fusion of country music and rhythm and blues. In 1955, drummer D. J. Fontana joined to complete the lineup of Presley's classic quartet and RCA Victor acquired his contract in a deal arranged by Colonel Tom Parker, who managed him for the rest of his career. Presley's first RCA Victor single, \"Heartbreak Hotel\", was released in January 1956 and became a number-one hit in the US. Within a year, RCA Victor sold ten million Presley singles. With a series of successful television appearances and chart-topping records, Presley became the leading figure of the newly popular rock and roll; though his performing style and promotion of the then-marginalized sound of African Americans led to him being widely considered a threat to the moral well-being of white American youth.\nIn November 1956, Presley made his film debut in Love Me Tender. Drafted into military service in 1958, he relaunched his recording career two years later with some of his most commercially successful work. Presley held few concerts, and guided by Parker, proceeded to devote much of the 1960s to making Hollywood films and soundtrack albums, most of them critically derided. Some of Presley's most famous films included Jailhouse Rock (1957), Blue Hawaii (1961), and Viva Las Vegas (1964). In 1968, he returned to the stage in the acclaimed NBC television comeback special Elvis, which led to an extended Las Vegas concert residency and a string of highly profitable tours. In 1973, Presley gave the first concert by a solo artist to be broadcast around the world, Aloha from Hawaii. Years of prescription drug abuse and unhealthy eating severely compromised his health, and Presley died unexpectedly in August 1977 at his Graceland estate at the age of 42.\nPresley is one of the best-selling music artists in history, with estimated sales of over 500 million records worldwide. He was commercially successful in many genres, including pop, country, rock and roll, rockabilly, rhythm and blues, adult contemporary, and gospel. He won three Grammy Awards, received the Grammy Lifetime Achievement Award at age 36, and has been inducted into multiple music halls of fame. He holds several records, including the most RIAA-certified gold and platinum albums, the most albums charted on the Billboard 200, the most number-one albums by a solo artist on the UK Albums Chart, and the most number-one singles by any act on the UK Singles Chart. In 2018, Presley was posthumously awarded the Presidential Medal of Freedom.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q303")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q303",
+  "isRealHuman": true,
+  "birthDate": "1935-01-08",
+  "deathDate": "1977-08-16",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The information provided matches the well-documented life events of Elvis Presley, including his birth and death dates, confirming his age at death as 42.",
+  "shortDescriptionEn": "Elvis Presley was an American singer and actor, dubbed the 'King of Rock and Roll.' He died at 42 from a heart attack, with prescription drug use being a contributing factor.",
+  "shortDescriptionFr": "Elvis Presley était un chanteur et acteur américain, surnommé le 'Roi du Rock and Roll.' Il est décédé à 42 ans d'une crise cardiaque, avec l'utilisation de médicaments sur ordonnance comme facteur contributif.",
+  "shortDescriptionDe": "Elvis Presley war ein amerikanischer Sänger und Schauspieler, bekannt als der 'König des Rock and Roll.' Er starb im Alter von 42 Jahren an einem Herzinfarkt, wobei der Gebrauch von verschreibungspflichtigen Medikamenten ein beitragender Faktor war.",
+  "shortDescriptionEs": "Elvis Presley fue un cantante y actor estadounidense, apodado el 'Rey del Rock and Roll.' Murió a los 42 años de un ataque al corazón, con el uso de medicamentos recetados como factor contribuyente.",
+  "shortDescriptionRu": "Элвис Пресли был американским певцом и актером, прозванным 'Королем рок-н-ролла.' Он умер в 42 года от сердечного приступа, при этом использование рецептурных препаратов было сопутствующим фактором.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Elvis_Presley",
+    "https://people.com/elvis-presley-former-nurse-marian-j-cocke-dead-age-98-11693457",
+    "https://nypost.com/2025/03/07/entertainment/elvis-presleys-nurse-who-cared-for-him-during-his-final-days-dies-at-98/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6512",  "Name": "Søren Kierkegaard",  "BirthDate": "1813-05-05T00:00:00Z",  "DeathDate": "1855-11-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8ren%20Kierkegaard%20%281813-1855%29%20-%20%28cropped%29.jpg",  "SiteLinksCnt": 165,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"27069":{"pageid":27069,"ns":0,"title":"S\u00f8ren Kierkegaard","extract":"S\u00f8ren Aabye Kierkegaard ( SORR-\u0259n KEER-k\u0259-gard, US also  -\u2060gor; Danish: [\u02c8s\u0276\u02d0\u0250n \u02c8\u0254\u02c0\u02ccpy\u02c0 \u02c8k\u02b0i\u0250\u032fk\u0259\u02cck\u0252\u02c0] ; 5 May 1813 \u2013 11 November 1855) was a Danish theologian, philosopher, poet, social critic, and religious author who is widely considered to be the first Christian existentialist philosopher. He wrote critical texts on organized religion, Christianity, morality, ethics, psychology, and the philosophy of religion, displaying a fondness for metaphor, irony, and parables. Much of his philosophical work deals with the issues of how one lives as a \"single individual\", giving priority to concrete human reality over abstract thinking and highlighting the importance of personal choice and commitment.\nKierkegaard's theological work focuses on Christian ethics, the institution of the Church, the differences between purely objective proofs of Christianity, the infinite qualitative distinction between man and God, and the individual's subjective relationship to the God-Man Jesus the Christ, which came through faith. Much of his work deals with Christian love. He was extremely critical of the doctrine and practice of Christianity as a state-controlled religion (Caesaropapism) like the Church of Denmark. His psychological work explored the emotions and feelings of individuals when faced with life choices. Unlike Jean-Paul Sartre and the atheistic existentialism paradigm, Kierkegaard focused on Christian existentialism.\nKierkegaard's early work was written using pseudonyms to present distinctive viewpoints interacting in complex dialogue. He explored particularly complex problems from different viewpoints, each under a different pseudonym. He wrote Upbuilding Discourses under his own name and dedicated them to the \"single individual\" who might want to discover the meaning of his works. He wrote: \"Science and scholarship want to teach that becoming objective is the way. Christianity teaches that the way is to become subjective, to become a subject.\" While scientists learn about the world by observation, Kierkegaard emphatically denied that observation alone could reveal the inner workings of the world of the spirit.\nSome of Kierkegaard's key ideas include the concept of \"subjective and objective truths\", the knight of faith, the recollection and repetition dichotomy, angst, the infinite qualitative distinction, faith as a passion, and the three stages on life's way. Kierkegaard wrote in Danish and the reception of his work was initially limited to Scandinavia, but by the turn of the 20th century his writings were translated into French, German, and other major European languages. By the mid-20th century, his thought exerted a substantial influence on philosophy, theology, and Western culture in general."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6512")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6512",
+  "isRealHuman": true,
+  "birthDate": "1813-05-05",
+  "deathDate": "1855-11-11",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "Søren Kierkegaard was a Danish theologian, philosopher, poet, social critic, and religious author, widely considered the first Christian existentialist philosopher. He died at the age of 42 from health complications, possibly related to a spinal disease.",
+  "shortDescriptionFr": "Søren Kierkegaard était un théologien, philosophe, poète, critique social et auteur religieux danois, largement considéré comme le premier philosophe existentialiste chrétien. Il est décédé à l'âge de 42 ans des suites de complications de santé, possiblement liées à une maladie de la colonne vertébrale.",
+  "shortDescriptionDe": "Søren Kierkegaard war ein dänischer Theologe, Philosoph, Dichter, Sozialkritiker und religiöser Autor, der weithin als der erste christliche Existenzphilosoph gilt. Er starb im Alter von 42 Jahren an gesundheitlichen Komplikationen, möglicherweise im Zusammenhang mit einer Wirbelsäulenerkrankung.",
+  "shortDescriptionEs": "Søren Kierkegaard fue un teólogo, filósofo, poeta, crítico social y autor religioso danés, ampliamente considerado como el primer filósofo existencialista cristiano. Murió a los 42 años debido a complicaciones de salud, posiblemente relacionadas con una enfermedad de la columna vertebral.",
+  "shortDescriptionRu": "Сёрен Кьеркегор был датским теологом, философом, поэтом, социальным критиком и религиозным автором, широко известным как первый христианский экзистенциалист. Он умер в возрасте 42 лет от осложнений со здоровьем, возможно, связанных с заболеванием позвоночника.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard",
+    "https://www.britannica.com/biography/Soren-Kierkegaard"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43718",  "Name": "Nikolai Gogol",  "BirthDate": "1809-04-01T00:00:00Z",  "DeathDate": "1852-03-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/N.Gogol%20by%20F.Moller%20%281840%2C%20Tretyakov%20gallery%29.jpg",  "SiteLinksCnt": 152,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"139177":{"pageid":139177,"ns":0,"title":"Nikolai Gogol","extract":"Nikolai Vasilyevich Gogol (1 April [O.S. 20 March] 1809 \u2013 4 March [O.S. 21 February] 1852) was a Russian novelist, short story writer, and playwright of Ukrainian origin.\nGogol used the grotesque in his writings, for example, in his works \"The Nose\", \"Viy\", \"The Overcoat\", and \"Nevsky Prospekt\". These stories, and others such as \"Diary of a Madman\", have also been noted for their proto-surrealist qualities. According to Viktor Shklovsky, Gogol used the technique of defamiliarization when a writer presents common things in an unfamiliar or strange way so that the reader can gain new perspectives and see the world differently. His early works, such as Evenings on a Farm Near Dikanka, were influenced by his Ukrainian upbringing, Ukrainian culture and folklore. His later writing satirised political corruption in contemporary Russia (The Government Inspector, Dead Souls), although Gogol also enjoyed the patronage of Tsar Nicholas I who liked his work. The novel Taras Bulba (1835), the play Marriage (1842), and the short stories \"The Tale of How Ivan Ivanovich Quarreled with Ivan Nikiforovich\", \"The Portrait\", and \"The Carriage\" are also among his best-known works.\nMany writers and critics have recognized Gogol's deep influence on Russian, Ukrainian and world literature. Gogol's influence was acknowledged by Fyodor Dostoevsky, Mikhail Saltykov-Shchedrin, Ry\u016bnosuke Akutagawa, Franz Kafka, Mikhail Bulgakov, Vladimir Nabokov, Flannery O'Connor and others. Eug\u00e8ne-Melchior de Vog\u00fc\u00e9 said: \"We all came out from under Gogol's Overcoat.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43718")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43718",
+  "isRealHuman": true,
+  "birthDate": "1809-03-31",
+  "deathDate": "1852-03-04",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Nikolai Gogol was a Russian novelist and playwright of Ukrainian origin, known for works like 'The Overcoat' and 'Dead Souls.' He died at 42, reportedly refusing food and medical treatment, possibly due to religious fasting or mental illness.",
+  "shortDescriptionFr": "Nikolai Gogol était un romancier et dramaturge russe d'origine ukrainienne, connu pour des œuvres comme 'Le Manteau' et 'Les Âmes mortes.' Il est décédé à 42 ans, ayant apparemment refusé de se nourrir et des soins médicaux, possiblement en raison d'un jeûne religieux ou d'une maladie mentale.",
+  "shortDescriptionDe": "Nikolai Gogol war ein russischer Schriftsteller und Dramatiker ukrainischer Herkunft, bekannt für Werke wie 'Der Mantel' und 'Die toten Seelen.' Er starb im Alter von 42 Jahren, nachdem er angeblich Nahrung und medizinische Behandlung verweigert hatte, möglicherweise aufgrund religiösen Fastens oder psychischer Erkrankung.",
+  "shortDescriptionEs": "Nikolai Gogol fue un novelista y dramaturgo ruso de origen ucraniano, conocido por obras como 'El Capote' y 'Almas muertas.' Falleció a los 42 años, aparentemente tras negarse a comer y recibir tratamiento médico, posiblemente debido a ayuno religioso o enfermedad mental.",
+  "shortDescriptionRu": "Николай Гоголь был русским писателем и драматургом украинского происхождения, известным такими произведениями, как 'Шинель' и 'Мертвые души.' Он умер в возрасте 42 лет, предположительно отказываясь от пищи и медицинской помощи, возможно, из-за религиозного поста или психического заболевания.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nikolai_Gogol"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9327",  "Name": "Guy de Maupassant",  "BirthDate": "1850-08-05T00:00:00Z",  "DeathDate": "1893-07-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maupassant%20par%20Nadar.jpg",  "SiteLinksCnt": 151,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"12274":{"pageid":12274,"ns":0,"title":"Guy de Maupassant","extract":"Henri Ren\u00e9 Albert Guy de Maupassant (UK: , US: ; French: [\u0261i d(\u0259) mopas\u0251\u0303]; 5 August 1850 \u2013 6 July 1893) was a 19th-century French author, celebrated as a master of the short story, as well as a representative of the naturalist school, depicting human lives, destinies and social forces in disillusioned and often pessimistic terms.\nMaupassant was a prot\u00e9g\u00e9 of Gustave Flaubert and his stories are characterized by economy of style and efficient, seemingly effortless d\u00e9nouements. Many are set during the Franco-Prussian War of the 1870s, describing the futility of war and the innocent civilians who, caught up in events beyond their control, are permanently changed by their experiences. He wrote 300 short stories, six novels, three travel books, and one volume of verse. His first published story, \"Boule de Suif\" (\"The Dumpling\", 1880), is often considered his most famous work."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9327")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9327",
+  "isRealHuman": true,
+  "birthDate": "1850-08-05",
+  "deathDate": "1893-07-06",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 42.",
+  "shortDescriptionEn": "Guy de Maupassant was a French writer, born on August 5, 1850, and died on July 6, 1893, at the age of 42. He is renowned for his mastery of the short story and his contributions to the naturalist movement. His death resulted from complications of syphilis, which severely affected his mental and physical health in his later years.",
+  "shortDescriptionFr": "Guy de Maupassant était un écrivain français, né le 5 août 1850 et décédé le 6 juillet 1893, à l'âge de 42 ans. Il est reconnu pour sa maîtrise de la nouvelle et ses contributions au mouvement naturaliste. Sa mort est survenue des suites de la syphilis, qui a gravement affecté sa santé mentale et physique dans ses dernières années.",
+  "shortDescriptionDe": "Guy de Maupassant war ein französischer Schriftsteller, geboren am 5. August 1850 und gestorben am 6. Juli 1893 im Alter von 42 Jahren. Er ist bekannt für seine Meisterschaft in der Kurzgeschichte und seine Beiträge zur naturalistischen Bewegung. Sein Tod resultierte aus Komplikationen der Syphilis, die seine geistige und körperliche Gesundheit in seinen letzten Jahren schwer beeinträchtigte.",
+  "shortDescriptionEs": "Guy de Maupassant fue un escritor francés, nacido el 5 de agosto de 1850 y fallecido el 6 de julio de 1893, a la edad de 42 años. Es reconocido por su maestría en el cuento y sus contribuciones al movimiento naturalista. Su muerte resultó de complicaciones de la sífilis, que afectó gravemente su salud mental y física en sus últimos años.",
+  "shortDescriptionRu": "Ги де Мопассан был французским писателем, родившимся 5 августа 1850 года и умершим 6 июля 1893 года в возрасте 42 лет. Он известен своим мастерством в написании коротких рассказов и вкладом в натуралистическое движение. Его смерть наступила в результате осложнений сифилиса, который серьезно повлиял на его психическое и физическое здоровье в последние годы жизни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guy_de_Maupassant",
+    "https://www.britannica.com/biography/Guy-de-Maupassant"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q512",  "Name": "Vladimir Vysotsky",  "BirthDate": "1938-01-25T00:00:00Z",  "DeathDate": "1980-07-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vladimir%20Vysotsky%201979.jpg",  "SiteLinksCnt": 115,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"411161":{"pageid":411161,"ns":0,"title":"Vladimir Vysotsky","extract":"Vladimir Semyonovich Vysotsky (25 January 1938 \u2013 25 July 1980) was a Soviet singer-songwriter, poet, and actor who had an immense and enduring effect on Soviet culture. He became widely known for his unique singing style and for his lyrics, which featured social and political commentary in often-humorous street jargon. He was also a prominent stage- and screen-actor. Though the official Soviet cultural establishment largely ignored his work, he was remarkably popular during his lifetime and has exerted significant influence on many of Russia's musicians and actors."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q512")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q512",
+  "isRealHuman": true,
+  "birthDate": "1938-01-25",
+  "deathDate": "1980-07-25",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The provided information matches known historical data about Vladimir Vysotsky, including his birth and death dates, confirming his identity and age at death.",
+  "shortDescriptionEn": "Vladimir Vysotsky was a Soviet singer-songwriter, poet, and actor known for his unique singing style and poignant lyrics that provided social and political commentary. He died at the age of 42, with his death widely mourned across the Soviet Union.",
+  "shortDescriptionFr": "Vladimir Vysotsky était un chanteur, auteur-compositeur, poète et acteur soviétique, connu pour son style de chant unique et ses paroles poignantes offrant des commentaires sociaux et politiques. Il est décédé à l'âge de 42 ans, sa mort étant largement pleurée à travers l'Union soviétique.",
+  "shortDescriptionDe": "Vladimir Vysotsky war ein sowjetischer Sänger, Songwriter, Dichter und Schauspieler, bekannt für seinen einzigartigen Gesangsstil und seine eindringlichen Texte, die soziale und politische Kommentare lieferten. Er starb im Alter von 42 Jahren, und sein Tod wurde in der gesamten Sowjetunion betrauert.",
+  "shortDescriptionEs": "Vladimir Vysotsky fue un cantante, compositor, poeta y actor soviético, conocido por su estilo de canto único y letras conmovedoras que ofrecían comentarios sociales y políticos. Murió a los 42 años, y su muerte fue ampliamente lamentada en toda la Unión Soviética.",
+  "shortDescriptionRu": "Владимир Высоцкий был советским певцом, автором песен, поэтом и актером, известным своим уникальным стилем пения и проникновенными текстами, отражавшими социальные и политические реалии. Он умер в возрасте 42 лет, и его смерть была широко оплакана по всему Советскому Союзу.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vladimir_Vysotsky",
+    "https://www.britannica.com/biography/Vladimir-Vysotsky"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82674",  "Name": "Mary I of England",  "BirthDate": "1516-02-28T00:00:00Z",  "DeathDate": "1558-11-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anthonis%20Mor%20001.jpg",  "SiteLinksCnt": 98,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"20713":{"pageid":20713,"ns":0,"title":"Mary I of England","extract":"Mary I (18 February 1516 \u2013 17 November 1558), also known as Mary Tudor, and as \"Bloody Mary\" by her Protestant opponents, was Queen of England and Ireland from July 1553 and Queen of Spain as the wife of King Philip II from January 1556 until her death in 1558. She made vigorous attempts to reverse the English Reformation, which had begun during the reign of her father, King Henry VIII. Her attempt to restore to the Church the property confiscated in the previous two reigns was largely thwarted by Parliament, but during her five-year reign over 280 religious dissenters were burned at the stake in what became known as the Marian persecutions.\nMary was the only surviving child of Henry VIII by his first wife, Catherine of Aragon. She was declared illegitimate and barred from the line of succession following the annulment of her parents' marriage in 1533, though she would later be restored via the Third Succession Act 1543. Her younger half-brother, Edward VI, succeeded their father in 1547 at the age of nine. When Edward became terminally ill in 1553, he attempted to remove Mary from the line of succession because he supposed, correctly, that she would reverse the Protestant reforms that had taken place during his reign. Upon his death, leading politicians proclaimed Mary's and Edward's Protestant cousin, Lady Jane Grey, as queen instead. Mary speedily assembled a force in East Anglia and deposed Jane, who was eventually beheaded. Mary was\u2014excluding the disputed reigns of Jane and the Empress Matilda\u2014the first queen regnant of England. In July 1554, she married Prince Philip of Spain, becoming queen consort of Habsburg Spain on his accession in 1556.\nAfter Mary's death in 1558, her re-establishment of Roman Catholicism in England was reversed by her younger half-sister and successor, Elizabeth I."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82674")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82674",
+  "isRealHuman": true,
+  "birthDate": "1516-02-18",
+  "deathDate": "1558-11-17",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, confirming her age at death as 42.",
+  "shortDescriptionEn": "Mary I of England (1516–1558) was the first queen regnant of England and Ireland, reigning from 1553 until her death. Daughter of Henry VIII and Catherine of Aragon, she is known for her attempt to restore Roman Catholicism in England, during which over 280 religious dissenters were executed, earning her the nickname 'Bloody Mary.' She died at 42, likely from uterine or ovarian cancer.",
+  "shortDescriptionFr": "Marie Ire d'Angleterre (1516–1558) fut la première reine régnante d'Angleterre et d'Irlande, régnant de 1553 jusqu'à sa mort. Fille d'Henri VIII et de Catherine d'Aragon, elle est connue pour sa tentative de restaurer le catholicisme en Angleterre, au cours de laquelle plus de 280 dissidents religieux furent exécutés, lui valant le surnom de 'Marie la Sanglante.' Elle est décédée à 42 ans, probablement d'un cancer de l'utérus ou des ovaires.",
+  "shortDescriptionDe": "Maria I. von England (1516–1558) war die erste regierende Königin von England und Irland und regierte von 1553 bis zu ihrem Tod. Als Tochter von Heinrich VIII. und Katharina von Aragon ist sie bekannt für ihren Versuch, den Katholizismus in England wiederherzustellen, während dessen über 280 religiöse Abweichler hingerichtet wurden, was ihr den Beinamen 'Bloody Mary' einbrachte. Sie starb im Alter von 42 Jahren, wahrscheinlich an Gebärmutter- oder Eierstockkrebs.",
+  "shortDescriptionEs": "María I de Inglaterra (1516–1558) fue la primera reina reinante de Inglaterra e Irlanda, gobernando desde 1553 hasta su muerte. Hija de Enrique VIII y Catalina de Aragón, es conocida por su intento de restaurar el catolicismo en Inglaterra, durante el cual más de 280 disidentes religiosos fueron ejecutados, lo que le valió el apodo de 'María la Sanguinaria.' Murió a los 42 años, probablemente de cáncer uterino u ovárico.",
+  "shortDescriptionRu": "Мария I Английская (1516–1558) была первой правящей королевой Англии и Ирландии, царствовавшей с 1553 года до своей смерти. Дочь Генриха VIII и Екатерины Арагонской, она известна своей попыткой восстановить католицизм в Англии, в ходе которой было казнено более 280 религиозных диссидентов, за что она получила прозвище 'Кровавая Мэри.' Она умерла в 42 года, вероятно, от рака матки или яичников.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mary_I_of_England",
+    "https://www.britannica.com/biography/Mary-I"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q81130",  "Name": "Anders Celsius",  "BirthDate": "1701-12-08T00:00:00Z",  "DeathDate": "1744-05-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anders-Celsius-Head.jpg",  "SiteLinksCnt": 96,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"2722":{"pageid":2722,"ns":0,"title":"Anders Celsius","extract":"Anders Celsius (Swedish: [\u02c8\u00e2n\u02d0d\u025b\u0282 \u02c8s\u025b\u030cl\u02d0s\u026a\u0275s]; 27 November 1701 \u2013 25 April 1744) was a Swedish astronomer, physicist and mathematician. He was professor of astronomy at Uppsala University from 1730 to 1744, but traveled from 1732 to 1735 visiting notable observatories in Germany, Italy and France. He founded the Uppsala Astronomical Observatory in 1741, and in 1742 proposed (an inverted form of) the Centigrade temperature scale which was later renamed Celsius in his honour."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q81130")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q81130",
+  "isRealHuman": true,
+  "birthDate": "1701-11-27",
+  "deathDate": "1744-04-25",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "Anders Celsius was a Swedish astronomer, physicist, and mathematician, renowned for inventing the Celsius temperature scale. He founded the Uppsala Astronomical Observatory in 1741. He died in 1744 at the age of 42 due to tuberculosis.",
+  "shortDescriptionFr": "Anders Celsius était un astronome, physicien et mathématicien suédois, connu pour avoir inventé l'échelle de température Celsius. Il a fondé l'observatoire astronomique d'Uppsala en 1741. Il est décédé en 1744 à l'âge de 42 ans des suites de la tuberculose.",
+  "shortDescriptionDe": "Anders Celsius war ein schwedischer Astronom, Physiker und Mathematiker, bekannt für die Erfindung der Celsius-Temperaturskala. Er gründete 1741 das astronomische Observatorium in Uppsala. Er starb 1744 im Alter von 42 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "Anders Celsius fue un astrónomo, físico y matemático sueco, conocido por inventar la escala de temperatura Celsius. Fundó el Observatorio Astronómico de Uppsala en 1741. Murió en 1744 a los 42 años debido a la tuberculosis.",
+  "shortDescriptionRu": "Андерс Цельсий был шведским астрономом, физиком и математиком, известным изобретением температурной шкалы Цельсия. В 1741 году он основал Астрономическую обсерваторию в Уппсале. Он умер в 1744 году в возрасте 42 лет от туберкулеза.",
+  "sources": [
+    "https://www.britannica.com/biography/Anders-Celsius",
+    "https://en.wikipedia.org/wiki/Anders_Celsius",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Celsius/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q25310",  "Name": "Robert F. Kennedy",  "BirthDate": "1925-11-20T00:00:00Z",  "DeathDate": "1968-06-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bobby%20Kennedy%20-%20restored.jpg",  "SiteLinksCnt": 95,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"21131695":{"pageid":21131695,"ns":0,"title":"Robert F. Kennedy","extract":"Robert Francis Kennedy (November 20, 1925 \u2013 June 6, 1968), also known as RFK, was an American politician and lawyer. He served as the 64th United States attorney general from January 1961 to September 1964, and as a U.S. senator from New York from January 1965 until his assassination in June 1968, when he was running for the Democratic presidential nomination. Like his brothers John F. Kennedy and Ted Kennedy, he was a prominent member of the Democratic Party and is considered an icon of modern American liberalism.\nBorn into the prominent Kennedy family in Brookline, Massachusetts, Kennedy attended Harvard University, and later received his law degree from the University of Virginia. He began his career as a correspondent for The Boston Post and as a lawyer at the Justice Department, but later resigned to manage his brother John's successful campaign for the U.S. Senate in 1952. The following year, Kennedy worked as an assistant counsel to the Senate committee chaired by Senator Joseph McCarthy. He gained national attention as the chief counsel of the Senate Labor Rackets Committee from 1957 to 1959, where he publicly challenged Teamsters President Jimmy Hoffa over the union's corrupt practices. Kennedy resigned from the committee to conduct his brother's successful campaign in the 1960 presidential election. He was appointed United States attorney general at the age of 35, one of the youngest cabinet members in American history. Kennedy served as John's closest advisor until the latter's assassination in 1963.\nKennedy's tenure is known for advocating for the civil rights movement, the fight against organized crime, and involvement in U.S. foreign policy related to Cuba. He authored his account of the Cuban Missile Crisis in a book titled Thirteen Days. As attorney general, Kennedy authorized the Federal Bureau of Investigation (FBI) to wiretap Martin Luther King Jr. and the Southern Christian Leadership Conference on a limited basis. After his brother's assassination, he remained in office during the presidency of Lyndon B. Johnson for several months. He left to run for the U.S. Senate from New York in 1964 and defeated Republican incumbent Kenneth Keating, overcoming criticism that he was a \"carpetbagger\" from Massachusetts. In office, Kennedy opposed U.S. involvement in the Vietnam War and raised awareness of poverty by sponsoring legislation designed to lure private business to blighted communities (i.e., Bedford Stuyvesant Restoration project). He was an advocate for issues related to human rights and social justice by traveling abroad to eastern Europe, Latin America, and South Africa, and formed working relationships with Martin Luther King Jr., Cesar Chavez, and Walter Reuther.\nIn 1968, Kennedy became a leading candidate for the Democratic nomination for the presidency by appealing to poor, African American, Hispanic, Catholic, and young voters. His main challenger in the race was Senator Eugene McCarthy. Shortly after winning the California primary around midnight on June 5, 1968, Kennedy was shot by Sirhan Sirhan, a 24-year-old Palestinian, in retaliation for his support of Israel following the 1967 Six-Day War. Kennedy died 25 hours later. Sirhan was arrested, tried, and convicted, though Kennedy's assassination, like his brother's, continues to be the subject of widespread analysis and numerous conspiracy theories."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q25310")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q25310",
+  "isRealHuman": true,
+  "birthDate": "1925-11-20",
+  "deathDate": "1968-06-06",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming that Robert F. Kennedy was 42 years old at the time of his death.",
+  "shortDescriptionEn": "Robert F. Kennedy was an American politician and lawyer who served as U.S. Attorney General and Senator. He was assassinated in 1968 at the age of 42 during his presidential campaign.",
+  "shortDescriptionFr": "Robert F. Kennedy était un homme politique et avocat américain qui a servi comme procureur général des États-Unis et sénateur. Il a été assassiné en 1968 à l'âge de 42 ans pendant sa campagne présidentielle.",
+  "shortDescriptionDe": "Robert F. Kennedy war ein amerikanischer Politiker und Anwalt, der als US-Generalstaatsanwalt und Senator diente. Er wurde 1968 im Alter von 42 Jahren während seiner Präsidentschaftskampagne ermordet.",
+  "shortDescriptionEs": "Robert F. Kennedy fue un político y abogado estadounidense que se desempeñó como Fiscal General y Senador. Fue asesinado en 1968 a los 42 años durante su campaña presidencial.",
+  "shortDescriptionRu": "Роберт Ф. Кеннеди был американским политиком и юристом, занимавшим посты генерального прокурора США и сенатора. Он был убит в 1968 году в возрасте 42 лет во время своей президентской кампании.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_F._Kennedy",
+    "https://people.com/the-kennedy-family-tree-8782978"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q103285",  "Name": "José Martí",  "BirthDate": "1853-01-28T00:00:00Z",  "DeathDate": "1895-05-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/MartiJohnManuel%20K%20TRestauration.jpg",  "SiteLinksCnt": 92,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"188158":{"pageid":188158,"ns":0,"title":"Jos\u00e9 Mart\u00ed","extract":"Jos\u00e9 Juli\u00e1n Mart\u00ed P\u00e9rez (Spanish: [xo\u02c8se ma\u027e\u02c8ti]; January 28, 1853 \u2013 May 19, 1895) was a Cuban nationalist, poet, philosopher, essayist, journalist, translator, professor, and publisher, who is considered a Cuban national hero because of his role in the liberation of his country from Spain. He was also an important figure in Latin American literature. He was very politically active and is considered an important philosopher and political theorist. Through his writings and political activity, he became a symbol of Cuba's bid for independence from the Spanish Empire in the 19th century, and is referred to as the \"Apostle of Cuban Independence\". From adolescence on, he dedicated his life to the promotion of liberty, political independence for Cuba, and intellectual independence for all Spanish Americans; his death was used as a cry for Cuban independence from Spain by both the Cuban revolutionaries and those Cubans previously reluctant to start a revolt.\nBorn in Havana, Spanish Empire, Mart\u00ed began his political activism at an early age. He traveled extensively in Spain, Latin America, and the United States, raising awareness and support for the cause of Cuban independence. His unification of the Cuban \u00e9migr\u00e9 community, particularly in Florida, was crucial to the success of the Cuban War of Independence against Spain. He was a key figure in the planning and execution of this war, as well as the designer of the Cuban Revolutionary Party and its ideology. He died in military action during the Battle of Dos R\u00edos on May 19, 1895. Mart\u00ed is considered one of the great turn-of-the-century Latin American intellectuals. His written works include a series of poems, essays, letters, lectures, a novel, and a children's magazine.\nHe wrote for numerous Latin American and American newspapers; he also founded a number of newspapers. One of those newspapers, Patria, was an important instrument in his campaign for Cuban independence. After his death, many of his verses from the book Versos Sencillos (Simple Verses) were adapted to the patriotic song \"Guantanamera\", which has become a prominent representative song of Cuba. The concepts of freedom, liberty and democracy are prominent themes in all of his works, which were influential on Nicaraguan poet Rub\u00e9n Dar\u00edo and Chilean poet Gabriela Mistral. Following the 1959 Cuban Revolution, Mart\u00ed's ideology became a major driving force in Cuban politics. He is also regarded as Cuba's \"martyr\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q103285")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q103285",
+  "isRealHuman": true,
+  "birthDate": "1853-01-28",
+  "deathDate": "1895-05-19",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, confirming Martí's age at death as 42.",
+  "shortDescriptionEn": "José Martí was a Cuban nationalist, poet, philosopher, essayist, journalist, translator, professor, and publisher. He played a pivotal role in Cuba's fight for independence from Spain and is celebrated as a national hero. Martí died in military action during the Battle of Dos Ríos on May 19, 1895.",
+  "shortDescriptionFr": "José Martí était un nationaliste cubain, poète, philosophe, essayiste, journaliste, traducteur, professeur et éditeur. Il a joué un rôle central dans la lutte de Cuba pour l'indépendance vis-à-vis de l'Espagne et est célébré comme un héros national. Martí est mort au combat lors de la bataille de Dos Ríos le 19 mai 1895.",
+  "shortDescriptionDe": "José Martí war ein kubanischer Nationalist, Dichter, Philosoph, Essayist, Journalist, Übersetzer, Professor und Verleger. Er spielte eine zentrale Rolle im kubanischen Unabhängigkeitskampf gegen Spanien und wird als Nationalheld gefeiert. Martí fiel am 19. Mai 1895 in der Schlacht von Dos Ríos.",
+  "shortDescriptionEs": "José Martí fue un nacionalista cubano, poeta, filósofo, ensayista, periodista, traductor, profesor y editor. Desempeñó un papel fundamental en la lucha de Cuba por la independencia de España y es celebrado como un héroe nacional. Martí murió en acción militar durante la Batalla de Dos Ríos el 19 de mayo de 1895.",
+  "shortDescriptionRu": "Хосе Марти был кубинским националистом, поэтом, философом, эссеистом, журналистом, переводчиком, профессором и издателем. Он сыграл ключевую роль в борьбе Кубы за независимость от Испании и почитается как национальный герой. Марти погиб в бою во время битвы при Дос-Риос 19 мая 1895 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jos%C3%A9_Mart%C3%AD"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q298033",  "Name": "Lesya Ukrainka",  "BirthDate": "1871-02-25T00:00:00Z",  "DeathDate": "1913-08-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lesya%20Ukrainka%20portrait.jpg",  "SiteLinksCnt": 90,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"1298494":{"pageid":1298494,"ns":0,"title":"Lesya Ukrainka","extract":"Lesya Ukrainka (Ukrainian: \u041b\u0435\u0441\u044f \u0423\u043a\u0440\u0430\u0457\u043d\u043a\u0430, romanized: Lesia Ukrainka, pronounced [\u02c8l\u025bs\u02b2\u0250 \u028akr\u0250\u02c8jink\u0250]; born Larysa Petrivna Kosach, Ukrainian: \u041b\u0430\u0440\u0438\u0441\u0430 \u041f\u0435\u0442\u0440\u0456\u0432\u043d\u0430 \u041a\u043e\u0441\u0430\u0447; 25 February [O.S. 13 February] 1871 \u2013 1 August [O.S. 19 July] 1913) was one of Ukrainian literature's foremost writers, best known for her poems and plays. She was also an active political, civil, and feminist activist.\nAmong her best-known works are the collections of poems On the Wings of Songs (1893), Thoughts and Dreams (1899), Echos (1902), the epic poem Ancient Fairy Tale (1893), One Word (1903), plays Princess (1913), Cassandra (1903\u20131907), In the Catacombs (1905), and Forest Song (1911)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q298033")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q298033",
+  "isRealHuman": true,
+  "birthDate": "1871-02-25",
+  "deathDate": "1913-08-01",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Lesya Ukrainka was a renowned Ukrainian poet, playwright, and activist. Despite battling tuberculosis from a young age, she became a leading figure in Ukrainian literature, advocating for national identity and women's rights. She died at 42 due to complications from her illness.",
+  "shortDescriptionFr": "Lesya Ukrainka était une poétesse, dramaturge et militante ukrainienne renommée. Malgré une tuberculose contractée jeune, elle est devenue une figure de proue de la littérature ukrainienne, défendant l'identité nationale et les droits des femmes. Elle est décédée à 42 ans des suites de sa maladie.",
+  "shortDescriptionDe": "Lesya Ukrainka war eine renommierte ukrainische Dichterin, Dramatikerin und Aktivistin. Trotz ihrer Tuberkuloseerkrankung in jungen Jahren wurde sie zu einer führenden Figur der ukrainischen Literatur und setzte sich für nationale Identität und Frauenrechte ein. Sie starb im Alter von 42 Jahren an den Folgen ihrer Krankheit.",
+  "shortDescriptionEs": "Lesya Ukrainka fue una destacada poeta, dramaturga y activista ucraniana. A pesar de sufrir tuberculosis desde joven, se convirtió en una figura principal de la literatura ucraniana, defendiendo la identidad nacional y los derechos de las mujeres. Falleció a los 42 años debido a complicaciones de su enfermedad.",
+  "shortDescriptionRu": "Леся Украинка была известной украинской поэтессой, драматургом и активисткой. Несмотря на туберкулез, перенесенный в молодом возрасте, она стала ведущей фигурой украинской литературы, отстаивая национальную идентичность и права женщин. Она умерла в 42 года от осложнений своей болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lesya_Ukrainka",
+    "https://www.britannica.com/biography/Lesya-Ukrainka",
+    "https://daily.jstor.org/lesya-ukrainka-ukraines-beloved-writer-and-activist/"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132682",  "Name": "Modest Petrovich Mussorgsky",  "BirthDate": "1839-03-21T00:00:00Z",  "DeathDate": "1881-03-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Modest%20Musorgskiy%201876%20%28cropped%29.jpg",  "SiteLinksCnt": 86,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"64710":{"pageid":64710,"ns":0,"title":"Modest Mussorgsky","extract":"Modest Petrovich Mussorgsky (; Russian: \u041c\u043e\u0434\u0435\u0441\u0442 \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447 \u041c\u0443\u0441\u043e\u0440\u0433\u0441\u043a\u0438\u0439, romanized: Modest Petrovich Musorgsky, IPA: [m\u0250\u02c8d\u025bst p\u02b2\u026a\u02c8trov\u02b2\u026at\u0255 \u02c8mus\u0259rksk\u02b2\u026aj] ; 21 March [O.S. 9 March] 1839 \u2013 28 March [O.S. 16 March] 1881) was a Russian composer, one of the group known as \"The Five.\" He was an innovator of Russian music in the Romantic period and strove to achieve a uniquely Russian musical identity, often in deliberate defiance of the established conventions of Western music.\nMany of Mussorgsky's works were inspired by Russian history, Russian folklore, and other national themes. Such works include the opera Boris Godunov, the orchestral tone poem Night on Bald Mountain and the piano suite Pictures at an Exhibition.\nFor many years, Mussorgsky's works were mainly known in versions revised or completed by other composers. Many of his most important compositions have posthumously come into their own in their original forms, and some of the original scores are now also available."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132682")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q132682",
+  "isRealHuman": true,
+  "birthDate": "1839-03-21",
+  "deathDate": "1881-03-28",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 42.",
+  "shortDescriptionEn": "Modest Mussorgsky was a Russian composer, born on March 21, 1839, and died on March 28, 1881, at the age of 42. He was a member of 'The Five,' a group of composers dedicated to developing a unique Russian musical style. His notable works include the opera 'Boris Godunov,' the orchestral piece 'Night on Bald Mountain,' and the piano suite 'Pictures at an Exhibition.' Mussorgsky struggled with alcoholism, which led to health issues and his early death.",
+  "shortDescriptionFr": "Modeste Moussorgski était un compositeur russe, né le 21 mars 1839 et décédé le 28 mars 1881, à l'âge de 42 ans. Il était membre du 'Groupe des Cinq,' un ensemble de compositeurs dédiés à développer un style musical russe unique. Ses œuvres notables incluent l'opéra 'Boris Godounov,' la pièce orchestrale 'Une nuit sur le mont Chauve,' et la suite pour piano 'Tableaux d'une exposition.' Moussorgski a lutté contre l'alcoolisme, ce qui a conduit à des problèmes de santé et à sa mort prématurée.",
+  "shortDescriptionDe": "Modest Mussorgski war ein russischer Komponist, geboren am 21. März 1839 und gestorben am 28. März 1881 im Alter von 42 Jahren. Er war Mitglied der 'Gruppe der Fünf,' einer Gruppe von Komponisten, die sich der Entwicklung eines einzigartigen russischen Musikstils widmeten. Zu seinen bemerkenswerten Werken zählen die Oper 'Boris Godunow,' das Orchesterstück 'Eine Nacht auf dem kahlen Berge' und die Klaviersuite 'Bilder einer Ausstellung.' Mussorgski kämpfte mit Alkoholismus, was zu gesundheitlichen Problemen und seinem frühen Tod führte.",
+  "shortDescriptionEs": "Modest Músorgski fue un compositor ruso, nacido el 21 de marzo de 1839 y fallecido el 28 de marzo de 1881, a la edad de 42 años. Fue miembro de 'Los Cinco,' un grupo de compositores dedicados a desarrollar un estilo musical ruso único. Sus obras notables incluyen la ópera 'Borís Godunov,' la pieza orquestal 'Una noche en el Monte Pelado,' y la suite para piano 'Cuadros de una exposición.' Músorgski luchó contra el alcoholismo, lo que llevó a problemas de salud y a su muerte prematura.",
+  "shortDescriptionRu": "Модест Мусоргский был русским композитором, родившимся 21 марта 1839 года и умершим 28 марта 1881 года в возрасте 42 лет. Он был членом 'Могучей кучки,' группы композиторов, стремившихся создать уникальный русский музыкальный стиль. Среди его известных произведений — опера 'Борис Годунов,' оркестровая пьеса 'Ночь на Лысой горе' и фортепианный цикл 'Картинки с выставки.' Мусоргский страдал от алкоголизма, что привело к проблемам со здоровьем и его преждевременной смерти.",
+  "sources": [
+    "https://www.britannica.com/biography/Modest-Mussorgsky",
+    "https://www.deutschegrammophon.com/en/composers/modest-petrovich-mussorgsky/biography",
+    "https://www.newworldencyclopedia.org/entry/Modest_Mussorgsky"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q150679",  "Name": "Anthony van Dyck",  "BirthDate": "1599-03-22T00:00:00Z",  "DeathDate": "1641-12-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Anthony%20van%20Dyck%20-%20Self-portrait.jpg",  "SiteLinksCnt": 81,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"294462":{"pageid":294462,"ns":0,"title":"Anthony van Dyck","extract":"Sir Anthony van Dyck (; Dutch: Antoon van Dyck [\u02c8\u0251nto\u02d0\u0271 v\u0251n \u02c8d\u025bik]; 22 March 1599 \u2013 9 December 1641) was a Flemish Baroque artist who became the leading court painter in England after success in the Spanish Netherlands and Italy.\nThe seventh child of Frans van Dyck, a wealthy silk merchant in Antwerp, Anthony painted from an early age. He was successful as an independent painter in his late teens and became a master in the Antwerp Guild on 18 October 1617. By this time, he was working in the studio of the leading northern painter of the day, Peter Paul Rubens, who became a major influence on his work.\nVan Dyck worked in London for some months in 1621, then returned to Flanders for a brief time, before travelling to Italy, where he stayed until 1627, mostly in Genoa. In the late 1620s he completed his greatly admired Iconography series of portrait etchings of mainly other artists and other famous contemporaries. He spent five years in Flanders after his return from Italy, and from 1630 was court painter for the Archduchess Isabella, Habsburg Governor of Flanders. At the request of Charles I of England he returned in 1632 to London as the main court painter.\nWith the exception of Holbein, van Dyck and his contemporary Diego Vel\u00e1zquez were the first painters of pre-eminent talent to work mainly as court portraitists, revolutionising the genre. Van Dyck is best known for his portraits of the aristocracy, most notably Charles I, and his family and associates. He was the dominant influence on English portrait-painting for over 150 years. He also painted mythological, allegorical and biblical subjects, including altarpieces, displayed outstanding facility as a draughtsman, and was an important innovator in watercolour and etching.\nHis influence extends into the modern period. The Van Dyke beard is named after him. During his lifetime, Charles I granted him a knighthood, and he was buried in St Paul's Cathedral, an indication of his standing at the time of his death."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q150679")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q150679",
+  "isRealHuman": true,
+  "birthDate": "1599-03-22",
+  "deathDate": "1641-12-09",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Anthony van Dyck was a Flemish Baroque artist, born in Antwerp in 1599. He became a prominent portrait painter, especially known for his work with the English court. Van Dyck died in London in 1641 at the age of 42 after a prolonged illness.",
+  "shortDescriptionFr": "Anthony van Dyck était un artiste baroque flamand, né à Anvers en 1599. Il est devenu un portraitiste de renom, notamment pour son travail auprès de la cour anglaise. Van Dyck est décédé à Londres en 1641 à l'âge de 42 ans après une longue maladie.",
+  "shortDescriptionDe": "Anthony van Dyck war ein flämischer Barockkünstler, geboren 1599 in Antwerpen. Er wurde ein prominenter Porträtmaler, besonders bekannt für seine Arbeit am englischen Hof. Van Dyck starb 1641 in London im Alter von 42 Jahren nach längerer Krankheit.",
+  "shortDescriptionEs": "Anthony van Dyck fue un artista barroco flamenco, nacido en Amberes en 1599. Se convirtió en un destacado pintor de retratos, especialmente conocido por su trabajo con la corte inglesa. Van Dyck murió en Londres en 1641 a la edad de 42 años después de una prolongada enfermedad.",
+  "shortDescriptionRu": "Антонис ван Дейк был фламандским художником эпохи барокко, родился в Антверпене в 1599 году. Он стал известным портретистом, особенно известным своей работой при английском дворе. Ван Дейк умер в Лондоне в 1641 году в возрасте 42 лет после продолжительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anthony_van_Dyck",
+    "https://www.britannica.com/biography/Anthony-Van-Dyck",
+    "https://www.nga.gov/collection/artist-info.1259.html"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q190089",  "Name": "Duns Scotus",  "BirthDate": "1266-01-01T00:00:00Z",  "DeathDate": "1308-11-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Scoto%20%28Duns%20Scoto%29%20-%20Studiolo%20di%20Federico%20da%20Montefeltro.jpg",  "SiteLinksCnt": 77,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"34293405":{"pageid":34293405,"ns":0,"title":"Duns Scotus","extract":"John Duns Scotus  ( SKOH-t\u0259s; Ecclesiastical Latin: [duns \u02c8sk\u0254tus], \"Duns the Scot\"; c.\u20091265/66 \u2013 8 November 1308) was a Scottish Catholic priest and Franciscan friar, university professor, philosopher and theologian. He is one of the four most important Christian philosopher-theologians of Western Europe in the High Middle Ages, together with Thomas Aquinas, Bonaventure and William of Ockham.\nDuns Scotus has had considerable influence on both Catholic and secular thought. The doctrines for which he is best known are the \"univocity of being\", that existence is the most abstract concept we have, applicable to everything that exists; the formal distinction, a way of distinguishing between different formalities of the same thing; and the idea of haecceity, the property supposed to be in each individual thing that makes it an individual (i.e. a certain \u201cthisness\u201d). Duns Scotus also developed a complex argument for the existence of God, and argued for the Immaculate Conception of Mary. The intellectual tradition derived from Scotus' work is called Scotism.\nDuns Scotus was given the scholastic accolade Doctor Subtilis (\"the subtle doctor\") for his penetrating and subtle manner of thought. He was beatified by Pope John Paul II in 1993.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q190089")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q190089",
+  "isRealHuman": true,
+  "birthDate": "1265-01-01",
+  "deathDate": "1308-11-08",
+  "ageAtDeath": 43,
+  "confidence": 90,
+  "confidenceExplained": "The exact birth date of Duns Scotus is uncertain, but most historical estimates suggest he was born between 1265 and 1266. His death date is well-documented as November 8, 1308. Based on this information, it's reasonable to conclude he was approximately 42 or 43 years old at the time of his death.",
+  "shortDescriptionEn": "John Duns Scotus was a Scottish Catholic priest and Franciscan friar, renowned for his significant contributions to scholastic theology and philosophy during the High Middle Ages. He died on November 8, 1308, in Cologne, Germany, likely due to natural causes, as historical records do not indicate any foul play or specific illness leading to his death.",
+  "shortDescriptionFr": "Jean Duns Scot était un prêtre catholique écossais et frère franciscain, renommé pour ses contributions significatives à la théologie scolastique et à la philosophie au cours du Haut Moyen Âge. Il est décédé le 8 novembre 1308 à Cologne, en Allemagne, probablement de causes naturelles, les archives historiques n'indiquant aucune malveillance ou maladie spécifique ayant conduit à sa mort.",
+  "shortDescriptionDe": "Johannes Duns Scotus war ein schottischer katholischer Priester und Franziskaner, bekannt für seine bedeutenden Beiträge zur scholastischen Theologie und Philosophie im Hochmittelalter. Er starb am 8. November 1308 in Köln, Deutschland, wahrscheinlich eines natürlichen Todes, da historische Aufzeichnungen weder auf ein Verbrechen noch auf eine spezifische Krankheit hinweisen, die zu seinem Tod führte.",
+  "shortDescriptionEs": "Juan Duns Escoto fue un sacerdote católico escocés y fraile franciscano, reconocido por sus significativas contribuciones a la teología escolástica y la filosofía durante la Alta Edad Media. Falleció el 8 de noviembre de 1308 en Colonia, Alemania, probablemente por causas naturales, ya que los registros históricos no indican ninguna acción delictiva o enfermedad específica que condujera a su muerte.",
+  "shortDescriptionRu": "Джон Дунс Скот был шотландским католическим священником и францисканцем, известным своими значительными вкладом в схоластическую теологию и философию в период Высокого Средневековья. Он скончался 8 ноября 1308 года в Кёльне, Германия, вероятно, по естественным причинам, поскольку исторические записи не указывают на какое-либо преступление или конкретное заболевание, приведшее к его смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Duns_Scotus",
+    "https://www.britannica.com/biography/John-Duns-Scotus",
+    "https://plato.stanford.edu/entries/duns-scotus/"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q463945",  "Name": "Teresa Teng",  "BirthDate": "1953-01-29T00:00:00Z",  "DeathDate": "1995-05-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Teresa%20Teng%20la.jpg",  "SiteLinksCnt": 77,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"450210":{"pageid":450210,"ns":0,"title":"Teresa Teng","extract":"Teng Li-Chun (Chinese: \u9127\u9e97\u541b; pinyin: D\u00e8ng L\u00ecj\u016bn; 29 January 1953 \u2013 8 May 1995), commonly known as Teresa Teng, was a Taiwanese singer, actress, musician, and philanthropist. Referred to by some as the \"Eternal Queen of Asian Pop\", she is considered to be one of the most successful and influential Asian artists of all time. Teng is recognized as a cultural icon for her contributions to Chinese pop, giving birth to the phrase, \"Wherever there are Chinese-speaking people, there is the music of Teresa Teng.\" A polyglot, Teng's voice and songs have broken geographical, linguistic and political boundaries across Asia for several decades.\nWith a career spanning almost 30 years, Teng established herself as a dominant and influential force in Asia throughout most of her career, including East Asia, Southeast Asia, and, to some extent, South Asia. Teng is credited as the Far East's first pop superstar and is credited as the pioneer of modern Chinese pop music \u2014 a major force in the development of the Chinese music industry by incorporating western and eastern styles into her music, replacing the most revolutionary songs then prevalent in mainland China and laying the foundation for modern Chinese popular music.\nTeng recorded more than 1,700 songs throughout her career, in her native language, Mandarin, but also Hokkien, Cantonese, Shanghainese, Japanese, Indonesian, English, and Italian. Teng is considered instrumental in bridging the cultural gap across Chinese-speaking regions. She was one of the first artists to connect Japan to some of East and Southeast Asia by singing Japanese pop songs, according to Nippon. In Taiwan, she rose to fame for entertaining the armed forces and singing patriotic songs that appealed to the people of the island. Teng was nicknamed \"the patriotic entertainer\" and \"the soldiers' sweetheart\". To date, Teng's songs have been covered by hundreds of artists worldwide.\nAccording to IFPI's statistics, Teng has sold over 48 million albums, excluding sales in mainland China. In 1986, she was named by Time as one of the seven greatest female singers in the world. In 2009, in an online poll by a Chinese government web portal to celebrate the 60th anniversary of the People's Republic of China, Teng was selected as the \"most influential cultural figure in China since 1949\" by 8.5 million netizens. On the eve of International Women's Day in 2010, she was named \"the most influential woman in modern China\" in a poll conducted by many well-known Chinese media from 1 March to 8 March. In 2022, a street was named after Teng in Ivry-sur-Seine, Grand Paris, from the Municipal council of France. On 21 September 2024, an Indo-Pacific Strategic Think Tank (IPST) conducted a poll in Japan, \"Who is the most famous person in Taiwan?\" Teng won the poll with 53.8% of total votes. She was inducted into the \"Popular Music Hall of Fame\" at the Koga Masao music Museum in Japan in 2007, making Teng the only non-Japanese person to be inducted.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q463945")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q463945",
+  "isRealHuman": true,
+  "birthDate": "1953-01-29",
+  "deathDate": "1995-05-08",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, allowing for precise calculation of age.",
+  "shortDescriptionEn": "Teresa Teng was a Taiwanese singer celebrated for her sweet voice and romantic ballads. She passed away at 42 due to a severe asthma attack while on vacation in Thailand.",
+  "shortDescriptionFr": "Teresa Teng était une chanteuse taïwanaise célèbre pour sa voix douce et ses ballades romantiques. Elle est décédée à 42 ans d'une grave crise d'asthme lors de vacances en Thaïlande.",
+  "shortDescriptionDe": "Teresa Teng war eine taiwanesische Sängerin, bekannt für ihre sanfte Stimme und romantischen Balladen. Sie verstarb im Alter von 42 Jahren an einem schweren Asthmaanfall während eines Urlaubs in Thailand.",
+  "shortDescriptionEs": "Teresa Teng fue una cantante taiwanesa reconocida por su dulce voz y baladas románticas. Falleció a los 42 años debido a un severo ataque de asma mientras estaba de vacaciones en Tailandia.",
+  "shortDescriptionRu": "Тереза Тэн была тайваньской певицей, известной своим нежным голосом и романтическими балладами. Она скончалась в возрасте 42 лет от тяжелого приступа астмы во время отпуска в Таиланде.",
+  "sources": [
+    "https://www.britannica.com/biography/Teresa-Teng",
+    "https://www.scmp.com/magazines/post-magazine/long-reads/article/3261192/what-butler-saw-teresa-tengs-death-chiang-mai-thailand-and-how-she-found-love-there",
+    "https://www.scmp.com/lifestyle/entertainment/article/3261686/singer-teresa-teng-dies-suddenly-thailand-42-leaving-showbiz-mourning-scmp-archive"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q192218",  "Name": "Ted Bundy",  "BirthDate": "1946-11-24T00:00:00Z",  "DeathDate": "1989-01-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ted%20Bundy%20headshot.jpg",  "SiteLinksCnt": 76,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"143377":{"pageid":143377,"ns":0,"title":"Ted Bundy","extract":"Theodore Robert Bundy (n\u00e9 Cowell; November 24, 1946 \u2013 January 24, 1989) was an American serial killer who kidnapped, raped, and murdered dozens of young women and girls during the 1970s. After more than a decade of denials, he confessed to 30 murders. The total number of his victims is likely to be higher.\nBundy's modus operandi typically consisted of simulating having a physical impairment to convince his target that he was in need of assistance or duping her into believing he was an authority figure. He would then lure his victim to a vehicle parked in a more secluded area, at which point he would bludgeon her unconscious, then restrain her with handcuffs before driving his victim to a remote location to be sexually assaulted and killed. \nBundy frequently revisited the bodies of those he abducted, grooming and performing sex acts on the corpses until decomposition and destruction by wild animals made further interactions impossible. He decapitated at least twelve of his victims, keeping their severed heads as mementos in his apartment. On a few occasions, Bundy broke into homes at night and bludgeoned, maimed, strangled and sexually assaulted his victims in their sleep.\nIn 1975, Bundy was arrested and jailed in Utah for aggravated kidnapping and attempted criminal assault. He then became a suspect in a progressively longer list of unsolved homicides in several states. Facing murder charges in Colorado, Bundy engineered two dramatic escapes and committed further assaults in Florida, including three murders, before being recaptured in 1978. For the Florida homicides, he received three death sentences in two trials, and was executed in the electric chair at Florida State Prison on January 24, 1989.\nBiographer Ann Rule characterized Bundy as \"a sadistic sociopath who took pleasure from another human's pain and the control he had over his victims, to the point of death and even after.\" He once described himself as \"the most cold-hearted son of a bitch you'll ever meet,\" a statement with which attorney Polly Nelson, a member of his last defense team, agreed. She wrote that \"Ted was the very definition of heartless evil.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q192218")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q192218",
+  "isRealHuman": true,
+  "birthDate": "1946-11-24",
+  "deathDate": "1989-01-24",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, confirming his age at death as 42.",
+  "shortDescriptionEn": "Ted Bundy was an American serial killer who kidnapped, raped, and murdered numerous young women during the 1970s. After more than a decade of denials, he confessed to 30 homicides. He was executed in the electric chair at Florida State Prison on January 24, 1989.",
+  "shortDescriptionFr": "Ted Bundy était un tueur en série américain qui a enlevé, violé et assassiné de nombreuses jeunes femmes dans les années 1970. Après plus d'une décennie de dénégations, il a avoué 30 homicides. Il a été exécuté sur la chaise électrique à la prison d'État de Floride le 24 janvier 1989.",
+  "shortDescriptionDe": "Ted Bundy war ein amerikanischer Serienmörder, der in den 1970er Jahren zahlreiche junge Frauen entführte, vergewaltigte und ermordete. Nach mehr als einem Jahrzehnt des Leugnens gestand er 30 Morde. Er wurde am 24. Januar 1989 auf dem elektrischen Stuhl im Florida State Prison hingerichtet.",
+  "shortDescriptionEs": "Ted Bundy fue un asesino en serie estadounidense que secuestró, violó y asesinó a numerosas mujeres jóvenes durante la década de 1970. Después de más de una década de negaciones, confesó 30 homicidios. Fue ejecutado en la silla eléctrica en la Prisión Estatal de Florida el 24 de enero de 1989.",
+  "shortDescriptionRu": "Тед Банди был американским серийным убийцей, который похищал, насиловал и убивал многочисленных молодых женщин в 1970-х годах. После более чем десятилетия отрицаний он признался в 30 убийствах. Он был казнен на электрическом стуле в Государственной тюрьме Флориды 24 января 1989 года.",
+  "sources": [
+    "https://www.biography.com/crime/ted-bundy",
+    "https://en.wikipedia.org/wiki/Ted_Bundy",
+    "https://www.britannica.com/biography/Ted-Bundy"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q199491",  "Name": "John IV",  "BirthDate": "0600-01-01T00:00:00Z",  "DeathDate": "0642-10-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Murner%20History%20Cod%20Karlsruhe%203117%20%28crop%29.jpg",  "SiteLinksCnt": 76,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"243546":{"pageid":243546,"ns":0,"title":"Pope John IV","extract":"Pope John IV (Latin: Ioannes IV; died 12 October 642) was the bishop of Rome from 24 December 640 to his death. His election followed a four-month vacancy. He wrote to the clergy of Ireland and Scotland to tell them of the mistakes they were making with regard to the time of keeping Easter and condemned Monothelitism as heresy.\nAccording to sacred tradition, he created the Catholic Church in Croatia with Abbot Martin."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q199491")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q199491",
+  "isRealHuman": true,
+  "birthDate": "circa 587",
+  "deathDate": "642-10-12",
+  "ageAtDeath": 55,
+  "confidence": 70,
+  "confidenceExplained": "The exact birth date of Pope John IV is not definitively known, with estimates suggesting around 587 or 600. Based on this information, it is reasonable to estimate his age at death to be approximately 55.",
+  "shortDescriptionEn": "Pope John IV served as the Bishop of Rome from December 24, 640, until his death on October 12, 642. Born in Dalmatia (modern-day Croatia), he was known for his opposition to the Monothelitism heresy and efforts to aid Balkan Christians during Slavic invasions. He passed away in Rome, likely due to natural causes.",
+  "shortDescriptionFr": "Le pape Jean IV a servi comme évêque de Rome du 24 décembre 640 jusqu'à sa mort le 12 octobre 642. Né en Dalmatie (actuelle Croatie), il était connu pour son opposition à l'hérésie du monothélisme et ses efforts pour aider les chrétiens des Balkans lors des invasions slaves. Il est décédé à Rome, probablement de causes naturelles.",
+  "shortDescriptionDe": "Papst Johannes IV. diente als Bischof von Rom vom 24. Dezember 640 bis zu seinem Tod am 12. Oktober 642. Geboren in Dalmatien (heutiges Kroatien), war er bekannt für seinen Widerstand gegen die monotheletische Häresie und seine Bemühungen, den Christen auf dem Balkan während der slawischen Invasionen zu helfen. Er starb in Rom, wahrscheinlich eines natürlichen Todes.",
+  "shortDescriptionEs": "El Papa Juan IV sirvió como Obispo de Roma desde el 24 de diciembre de 640 hasta su muerte el 12 de octubre de 642. Nacido en Dalmacia (actual Croacia), fue conocido por su oposición a la herejía del monotelismo y sus esfuerzos por ayudar a los cristianos balcánicos durante las invasiones eslavas. Falleció en Roma, probablemente por causas naturales.",
+  "shortDescriptionRu": "Папа Иоанн IV служил епископом Рима с 24 декабря 640 года до своей смерти 12 октября 642 года. Родился в Далмации (современная Хорватия), был известен своей оппозицией монофелитской ереси и усилиями по оказанию помощи балканским христианам во время славянских нашествий. Скончался в Риме, вероятно, по естественным причинам.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_John_IV",
+    "https://www.britannica.com/biography/John-IV-pope",
+    "https://popehistory.com/popes/pope-john-iv/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34464",  "Name": "Philip III of Spain",  "BirthDate": "1578-04-24T00:00:00Z",  "DeathDate": "1621-03-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Felipe-III-de-Espana%20A-Vidal.jpg",  "SiteLinksCnt": 76,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"146843":{"pageid":146843,"ns":0,"title":"Philip III of Spain","extract":"Philip III (Spanish: Felipe III; 14 April 1578 \u2013 31 March 1621) was King of Spain from 1598 until his death in 1621. As Philip II, he was also King of Portugal, Naples, Sicily and Sardinia and Duke of Milan over the same years.\nA member of the House of Habsburg, Philip III was born in Madrid to King Philip II of Spain and his fourth wife, Anna, the daughter of Maximilian II, Holy Roman Emperor and Maria of Spain. Due to the fact that Maria of Spain was his sister, Anna was both Philip II's niece and, through her father Maximilian (Philip's cousin), also his first cousin once removed.\nPhilip III later married his cousin Margaret of Austria, sister of Ferdinand II, Holy Roman Emperor. Although also known in Spain as Philip the Pious, Philip's political reputation abroad has been largely negative. Historians C. V. Wedgwood, R. Stradling and J. H. Elliott have described him, respectively, as an \"undistinguished and insignificant man\", a \"miserable monarch\", and a \"pallid, anonymous creature, whose only virtue appeared to reside in a total absence of vice.\" In particular, Philip's reliance on his chief minister, Francisco de Sandoval y Rojas, 1st Duke of Lerma, drew much criticism at the time and afterwards. For many, the decline of Spain can be dated to the economic difficulties that set in during the early years of his reign. Nonetheless, as the ruler of the Spanish Empire at its height and as the king who achieved a temporary peace with the Dutch (1609\u20131621) and brought Spain into the Thirty Years' War (1618\u20131648) through an (initially) extremely successful campaign, Philip's reign remains a critical period in Spanish history."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34464")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q34464",
+  "isRealHuman": true,
+  "birthDate": "1578-04-14",
+  "deathDate": "1621-03-31",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, providing high confidence in the calculated age.",
+  "shortDescriptionEn": "Philip III of Spain (1578–1621) was King of Spain and Portugal. His reign saw a temporary peace with the Dutch and the expulsion of the Moriscos, which had significant economic consequences. He died in Madrid at the age of 42.",
+  "shortDescriptionFr": "Philippe III d'Espagne (1578–1621) fut roi d'Espagne et du Portugal. Son règne connut une paix temporaire avec les Néerlandais et l'expulsion des Morisques, ce qui eut des conséquences économiques importantes. Il mourut à Madrid à l'âge de 42 ans.",
+  "shortDescriptionDe": "Philipp III. von Spanien (1578–1621) war König von Spanien und Portugal. Seine Regierungszeit war geprägt von einem vorübergehenden Frieden mit den Niederländern und der Vertreibung der Morisken, was erhebliche wirtschaftliche Folgen hatte. Er starb in Madrid im Alter von 42 Jahren.",
+  "shortDescriptionEs": "Felipe III de España (1578–1621) fue rey de España y Portugal. Su reinado vio una paz temporal con los holandeses y la expulsión de los moriscos, lo que tuvo consecuencias económicas significativas. Murió en Madrid a los 42 años.",
+  "shortDescriptionRu": "Филипп III Испанский (1578–1621) был королем Испании и Португалии. Его правление ознаменовалось временным миром с голландцами и изгнанием морисков, что имело значительные экономические последствия. Он умер в Мадриде в возрасте 42 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_III_of_Spain",
+    "https://www.britannica.com/biography/Philip-III-king-of-Spain-and-Portugal"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q167782",  "Name": "Charles V of France",  "BirthDate": "1338-01-29T00:00:00Z",  "DeathDate": "1380-09-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Saint-Denis%20%2893%29%2C%20basilique%2C%20gisant%20de%20Charles%20V%20sculpt%C3%A9%20lorsqu%27il%20avait%2027%20ans%202.jpg",  "SiteLinksCnt": 73,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"77447":{"pageid":77447,"ns":0,"title":"Charles V of France","extract":"Charles V (21 January 1338 \u2013 16 September 1380), called the Wise (French: le Sage; Latin: Sapiens), was King of France from 1364 to his death in 1380. His reign marked an early high point for France during the Hundred Years' War as his armies recovered much of the territory held by the English and successfully reversed the military losses of his predecessors.\nCharles became regent of France when his father John II was captured by the English at the Battle of Poitiers in 1356. To pay for the defense of the kingdom, Charles raised taxes. As a result, he faced hostility from the nobility, led by Charles the Bad, King of Navarre; the opposition of the French bourgeoisie, which was channeled through the Estates-General led by \u00c9tienne Marcel; and with a peasant revolt known as the Jacquerie. Charles overcame all of these rebellions, but in order to liberate his father, he had to conclude the Treaty of Br\u00e9tigny in 1360, in which he abandoned large portions of south-western France to Edward III of England and agreed to pay a huge ransom.\nCharles became king in 1364. With the help of talented advisers, his skillful management of the kingdom allowed him to replenish the royal treasury and to restore the prestige of the House of Valois. He established the first permanent army paid with regular wages, which liberated the French populace from the companies of routiers who regularly plundered the country when not employed. Led by Bertrand du Guesclin, the French Army was able to turn the tide of the Hundred Years' War to Charles' advantage, and by the end of Charles' reign, they had reconquered almost all the territories ceded to the English in 1360. Furthermore, the French fleet, led by Jean de Vienne, managed to attack the English coast for the first time since the beginning of the Hundred Years' War.\nCharles V died in 1380. He was succeeded by his son Charles VI, whose disastrous reign allowed the English to regain control of large parts of France."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q167782")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q167782",
+  "isRealHuman": true,
+  "birthDate": "1338-01-21",
+  "deathDate": "1380-09-16",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, providing high confidence in the calculated age.",
+  "shortDescriptionEn": "Charles V of France (1338–1380), known as 'the Wise,' was king from 1364 until his death at age 42. His reign marked a recovery during the Hundred Years' War, with administrative reforms and territorial reclamation. He died from complications related to a prolonged illness.",
+  "shortDescriptionFr": "Charles V de France (1338–1380), dit 'le Sage', fut roi de 1364 jusqu'à sa mort à 42 ans. Son règne marqua une reprise pendant la guerre de Cent Ans, avec des réformes administratives et la récupération de territoires. Il mourut des suites d'une maladie prolongée.",
+  "shortDescriptionDe": "Karl V. von Frankreich (1338–1380), genannt 'der Weise', war von 1364 bis zu seinem Tod im Alter von 42 Jahren König. Seine Herrschaft zeichnete sich durch eine Erholung während des Hundertjährigen Krieges aus, mit Verwaltungsreformen und territorialen Rückgewinnen. Er starb an den Folgen einer langwierigen Krankheit.",
+  "shortDescriptionEs": "Carlos V de Francia (1338–1380), conocido como 'el Sabio', fue rey desde 1364 hasta su muerte a los 42 años. Su reinado marcó una recuperación durante la Guerra de los Cien Años, con reformas administrativas y recuperación territorial. Murió por complicaciones relacionadas con una enfermedad prolongada.",
+  "shortDescriptionRu": "Карл V Французский (1338–1380), известный как 'Мудрый', был королем с 1364 года до своей смерти в возрасте 42 лет. Его правление ознаменовалось восстановлением во время Столетней войны, административными реформами и возвращением территорий. Он умер от осложнений, связанных с затяжной болезнью.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charles_V_of_France",
+    "https://www.britannica.com/biography/Charles-V-king-of-France",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9839940/",
+    "https://www.medievalists.net/2023/10/charles-the-wise-death/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q58573",  "Name": "Clement II",  "BirthDate": "1005-10-01T00:00:00Z",  "DeathDate": "1047-10-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/ClementeII.jpg",  "SiteLinksCnt": 72,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"24099":{"pageid":24099,"ns":0,"title":"Pope Clement II","extract":"Pope Clement II (Latin: Clemens II; born Suidger von Morsleben; died 9 October 1047) was head of the Catholic Church and ruler of the Papal States from 25 December 1046 until his death in 1047. He was the first in a series of reform-minded popes from Germany. Suidger was the bishop of Bamberg. In 1046, he accompanied King Henry III of Germany, when at the request of laity and clergy of Rome, Henry went to Italy and summoned the Council of Sutri, which deposed Benedict IX and Sylvester III, and accepted the resignation of Gregory VI. Henry suggested Suidger as the next pope, and he was then elected, taking the name of Clement II. Clement then proceeded to crown Henry as emperor. Clement's brief tenure as pope saw the enactment of more stringent prohibitions against simony."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q58573")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q58573",
+  "isRealHuman": true,
+  "birthDate": "1005-01-01",
+  "deathDate": "1047-10-09",
+  "ageAtDeath": 42,
+  "confidence": 90,
+  "confidenceExplained": "The birth year of 1005 is an estimate based on historical records, leading to a calculated age of 42 at death.",
+  "shortDescriptionEn": "Pope Clement II (born Suidger von Morsleben; c. 1005 – October 9, 1047) was head of the Catholic Church from December 25, 1046, until his death. His brief pontificate focused on reforming the Church, particularly against simony. He died suddenly in 1047, with some suspicions of poisoning.",
+  "shortDescriptionFr": "Le pape Clément II (né Suidger von Morsleben; vers 1005 – 9 octobre 1047) fut le chef de l'Église catholique du 25 décembre 1046 jusqu'à sa mort. Son bref pontificat se concentra sur la réforme de l'Église, en particulier contre la simonie. Il mourut soudainement en 1047, avec des soupçons d'empoisonnement.",
+  "shortDescriptionDe": "Papst Clemens II. (geboren als Suidger von Morsleben; um 1005 – 9. Oktober 1047) war vom 25. Dezember 1046 bis zu seinem Tod das Oberhaupt der katholischen Kirche. Sein kurzes Pontifikat konzentrierte sich auf Reformen der Kirche, insbesondere gegen Simonie. Er starb plötzlich im Jahr 1047, wobei es Verdachtsmomente einer Vergiftung gab.",
+  "shortDescriptionEs": "El Papa Clemente II (nacido Suidger von Morsleben; c. 1005 – 9 de octubre de 1047) fue el líder de la Iglesia Católica desde el 25 de diciembre de 1046 hasta su muerte. Su breve pontificado se centró en reformar la Iglesia, particularmente contra la simonía. Murió repentinamente en 1047, con algunas sospechas de envenenamiento.",
+  "shortDescriptionRu": "Папа Климент II (урожденный Суидгер фон Морслебен; ок. 1005 – 9 октября 1047) был главой Католической церкви с 25 декабря 1046 года до своей смерти. Его краткий понтификат был сосредоточен на реформировании Церкви, особенно против симонии. Он внезапно скончался в 1047 году, были подозрения на отравление.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Clement_II",
+    "https://www.britannica.com/biography/Clement-II",
+    "https://www.newadvent.org/cathen/04017a.htm"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q218747",  "Name": "Honoré Gabriel Riqueti, comte de Mirabeau",  "BirthDate": "1749-03-09T00:00:00Z",  "DeathDate": "1791-04-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Boze%20-%20Honor%C3%A9%20de%20Mirabeau.jpg",  "SiteLinksCnt": 70,  "Age": 42}
+{"batchcomplete":"","query":{"pages":{"146780":{"pageid":146780,"ns":0,"title":"Honor\u00e9 Gabriel Riqueti, comte de Mirabeau","extract":"Honor\u00e9 Gabriel Riqueti, Count of Mirabeau (French: [mi\u0281abo]; 9 March 1749 \u2013 2 April 1791) was a French writer, orator, statesman and a prominent figure of the early stages of the French Revolution.\nA member of the nobility, Mirabeau had been involved in numerous scandals that had left his reputation in ruins. Well-known for his oratory skills, Mirabeau quickly rose to the top of the French political hierarchy following his election to the Estates-General in 1789, and was recognized as a leader of the newly organized National Assembly. Among the revolutionaries, Mirabeau was an advocate of the moderate position of constitutional monarchy built on the model of Great Britain. He was also a leading member of the Jacobin Club.\nMirabeau died of pericarditis in 1791 and was regarded as a national hero and a father of the Revolution. He received a grand burial and was the first to be interred at the Panth\u00e9on. During the 1792 Trial of Louis XVI, the discovery that Mirabeau had secretly been in the pay of the king brought him into posthumous disgrace, and two years later his remains were removed from the Panth\u00e9on. Historians are split on whether Mirabeau was a great leader who almost saved the nation from the Terror, a venal demagogue lacking political or moral values, or a traitor in the pay of the enemy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q218747")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q218747",
+  "isRealHuman": true,
+  "birthDate": "1749-03-09",
+  "deathDate": "1791-04-02",
+  "ageAtDeath": 42,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Honoré Gabriel Riqueti, comte de Mirabeau, was a French writer, orator, and statesman who played a pivotal role during the early stages of the French Revolution. Advocating for a constitutional monarchy, he was a prominent member of the National Assembly. He died in 1791 from pericarditis.",
+  "shortDescriptionFr": "Honoré Gabriel Riqueti, comte de Mirabeau, était un écrivain, orateur et homme d'État français qui a joué un rôle central lors des premières étapes de la Révolution française. Défenseur d'une monarchie constitutionnelle, il était un membre éminent de l'Assemblée nationale. Il est décédé en 1791 d'une péricardite.",
+  "shortDescriptionDe": "Honoré Gabriel Riqueti, comte de Mirabeau, war ein französischer Schriftsteller, Redner und Staatsmann, der eine zentrale Rolle in den frühen Phasen der Französischen Revolution spielte. Als Befürworter einer konstitutionellen Monarchie war er ein prominentes Mitglied der Nationalversammlung. Er starb 1791 an einer Perikarditis.",
+  "shortDescriptionEs": "Honoré Gabriel Riqueti, conde de Mirabeau, fue un escritor, orador y estadista francés que desempeñó un papel central durante las primeras etapas de la Revolución Francesa. Defensor de una monarquía constitucional, fue un miembro destacado de la Asamblea Nacional. Murió en 1791 de pericarditis.",
+  "shortDescriptionRu": "Оноре Габриэль Рикети, граф де Мирабо, был французским писателем, оратором и государственным деятелем, сыгравшим ключевую роль на ранних этапах Французской революции. Будучи сторонником конституционной монархии, он был видным членом Национального собрания. Он умер в 1791 году от перикардита.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Honor%C3%A9_Gabriel_Riqueti,_comte_de_Mirabeau"
+  ]
+}
+
