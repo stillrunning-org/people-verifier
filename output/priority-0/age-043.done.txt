@@ -1,0 +1,967 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41264",  "Name": "Johannes Vermeer",  "BirthDate": "1632-10-01T00:00:00Z",  "DeathDate": "1675-12-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Cropped%20version%20of%20Jan%20Vermeer%20van%20Delft%20002.jpg",  "SiteLinksCnt": 112,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"43311":{"pageid":43311,"ns":0,"title":"Johannes Vermeer","extract":"Johannes Vermeer ( v\u0259r-MEER, v\u0259r-MAIR, Dutch: [jo\u02d0\u02c8\u0266\u0251n\u0259s f\u0259r\u02c8me\u02d0r]; see below; also known as Jan Vermeer; October 1632 \u2013 15 December 1675) was a Dutch painter who specialized in domestic interior scenes of middle-class life. He is considered one of the greatest painters of the Dutch Golden Age. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague. He produced relatively few paintings, primarily earning his living as an art dealer. He was not wealthy; at his death, his wife was left in debt.\nVermeer worked slowly and with great care, and frequently used very expensive pigments. He is particularly renowned for making masterful use of light in his work. \"Almost all his paintings\", Hans Koningsberger wrote, \"are apparently set in two smallish rooms in his house in Delft; they show the same furniture and decorations in various arrangements and they often portray the same people, mostly women.\"\nThe modest celebrity he enjoyed during his life gave way to obscurity after his death. He was barely mentioned in Arnold Houbraken's major source book on 17th-century Dutch painting (Grand Theatre of Dutch Painters and Women Artists, published 1718) and, as a result, was omitted from subsequent surveys of Dutch art for nearly two centuries. In the 19th century, Vermeer was rediscovered by Gustav Friedrich Waagen and Th\u00e9ophile Thor\u00e9-B\u00fcrger, who published an essay attributing 66 pictures to him, although only 34 paintings are universally attributed to him today. Since that time, Vermeer's reputation has grown enormously."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41264")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41264",
+  "isRealHuman": true,
+  "birthDate": "1632-10-31",
+  "deathDate": "1675-12-15",
+  "ageAtDeath": 43,
+  "confidence": 95,
+  "confidenceExplained": "The baptism and burial records provide strong evidence of Vermeer's birth and death dates, leading to a high confidence in the calculated age.",
+  "shortDescriptionEn": "Johannes Vermeer was a Dutch painter renowned for his domestic interior scenes and masterful use of light. Baptized on October 31, 1632, in Delft, he spent his life in his hometown. Despite moderate success, he faced financial hardships, especially during the economic downturn of 1672. He died suddenly on December 15, 1675, at the age of 43, leaving behind his wife and eleven children in debt.",
+  "shortDescriptionFr": "Johannes Vermeer était un peintre néerlandais réputé pour ses scènes d'intérieurs domestiques et son utilisation magistrale de la lumière. Baptisé le 31 octobre 1632 à Delft, il a passé sa vie dans sa ville natale. Malgré un succès modéré, il a connu des difficultés financières, notamment lors de la crise économique de 1672. Il est décédé subitement le 15 décembre 1675, à l'âge de 43 ans, laissant derrière lui sa femme et ses onze enfants endettés.",
+  "shortDescriptionDe": "Johannes Vermeer war ein niederländischer Maler, bekannt für seine häuslichen Innenraumszenen und meisterhafte Lichtnutzung. Getauft am 31. Oktober 1632 in Delft, verbrachte er sein Leben in seiner Heimatstadt. Trotz mäßigen Erfolgs hatte er finanzielle Schwierigkeiten, besonders während des wirtschaftlichen Abschwungs von 1672. Er starb plötzlich am 15. Dezember 1675 im Alter von 43 Jahren und hinterließ seine Frau und elf Kinder in Schulden.",
+  "shortDescriptionEs": "Johannes Vermeer fue un pintor neerlandés reconocido por sus escenas de interiores domésticos y su magistral uso de la luz. Bautizado el 31 de octubre de 1632 en Delft, pasó su vida en su ciudad natal. A pesar de un éxito moderado, enfrentó dificultades financieras, especialmente durante la recesión económica de 1672. Murió repentinamente el 15 de diciembre de 1675, a los 43 años, dejando a su esposa y once hijos endeudados.",
+  "shortDescriptionRu": "Ян Вермеер был нидерландским художником, известным своими сценами домашнего интерьера и мастерским использованием света. Крещен 31 октября 1632 года в Делфте, он провел всю свою жизнь в родном городе. Несмотря на умеренный успех, он столкнулся с финансовыми трудностями, особенно во время экономического спада 1672 года. Он внезапно скончался 15 декабря 1675 года в возрасте 43 лет, оставив жену и одиннадцать детей в долгах.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Johannes_Vermeer",
+    "https://www.britannica.com/biography/Johannes-Vermeer"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43977",  "Name": "Jan Hus",  "BirthDate": "1372-01-01T00:00:00Z",  "DeathDate": "1415-07-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20hus%201.jpg",  "SiteLinksCnt": 101,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"16028":{"pageid":16028,"ns":0,"title":"Jan Hus","extract":"Jan Hus (; Czech: [\u02c8jan \u02c8\u0266us] ; c. 1370 \u2013 6 July 1415), sometimes anglicized as John Hus or John Huss, and referred to in historical texts as Iohannes Hus or Johannes Huss, was a Czech theologian and philosopher who became a Church reformer and the inspiration of Hussitism, a key predecessor to Protestantism, and a seminal figure in the Bohemian Reformation. Hus is considered to be the first Church reformer, even though some designate the theorist John Wycliffe. His teachings had a strong influence, most immediately in the approval of a reformed Bohemian religious denomination and, over a century later, on Martin Luther.\nAfter being ordained as a Catholic priest, Hus began to preach in Prague. He opposed many aspects of the Catholic Church in Bohemia, such as its views on ecclesiology, simony, the Eucharist, and other theological topics. Hus was a master, dean and rector at the Charles University in Prague between 1409 and 1410.\nAlexander V issued a Papal bull that excommunicated Hus; however, it was not enforced, and Hus continued to preach. Hus then spoke out against Alexander V's successor, Antipope John XXIII, for his selling of indulgences. Hus' excommunication was then enforced, and he spent the next two years living in exile.\nWhen the Council of Constance assembled, Hus was asked to be there and present his views on the dissension within the Church. When he arrived, with a promise of safe-conduct, he was arrested and put in prison. He was eventually taken in front of the council and asked to recant his views. He refused. On 6 July 1415, he was burned at the stake for \"heresy\" against the teachings of the Catholic Church.\nAfter Hus was executed, the followers of his religious teachings (known as Hussites) refused to elect another Catholic monarch and defeated five consecutive papal crusades between 1420 and 1431 in what became known as the Hussite Wars. Both the Bohemian and the Moravian populations remained majority Hussite until the 1620s, when a Protestant defeat in the Battle of the White Mountain resulted in the Lands of the Bohemian Crown coming under Habsburg dominion for the next 300 years and being subject to immediate and forced conversion to Catholicism in an intense campaign."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43977")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43977",
+  "isRealHuman": true,
+  "birthDate": "1370-01-01",
+  "deathDate": "1415-07-06",
+  "ageAtDeath": 45,
+  "confidence": 80,
+  "confidenceExplained": "The exact birth date of Jan Hus is uncertain, with estimates ranging from 1369 to 1373. The provided birth date of 1370 is a widely accepted estimate, making his age at death approximately 45 years. The death date is well-documented as 6 July 1415.",
+  "shortDescriptionEn": "Jan Hus was a Czech theologian and philosopher who became a Church reformer and a key predecessor to Protestantism. He was executed by burning on 6 July 1415 for heresy against the doctrines of the Catholic Church.",
+  "shortDescriptionFr": "Jan Hus était un théologien et philosophe tchèque qui est devenu un réformateur de l'Église et un précurseur clé du protestantisme. Il a été exécuté par le feu le 6 juillet 1415 pour hérésie contre les doctrines de l'Église catholique.",
+  "shortDescriptionDe": "Jan Hus war ein tschechischer Theologe und Philosoph, der zum Kirchenreformer und wichtigen Vorläufer des Protestantismus wurde. Er wurde am 6. Juli 1415 wegen Ketzerei gegen die Lehren der katholischen Kirche auf dem Scheiterhaufen hingerichtet.",
+  "shortDescriptionEs": "Jan Hus fue un teólogo y filósofo checo que se convirtió en reformador de la Iglesia y un precursor clave del protestantismo. Fue ejecutado en la hoguera el 6 de julio de 1415 por herejía contra las doctrinas de la Iglesia católica.",
+  "shortDescriptionRu": "Ян Гус был чешским теологом и философом, ставшим церковным реформатором и ключевым предшественником протестантизма. Он был казнен через сожжение 6 июля 1415 года за ересь против доктрин Католической церкви.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jan_Hus"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131002",  "Name": "Harun al-Rashid",  "BirthDate": "0766-02-23T00:00:00Z",  "DeathDate": "0809-03-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Harun%20Al-Rashid%20and%20the%20World%20of%20the%20Thousand%20and%20One%20Nights.jpg",  "SiteLinksCnt": 96,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"78388":{"pageid":78388,"ns":0,"title":"Harun al-Rashid","extract":"Ab\u016b Ja\u02bffar H\u0101r\u016bn ibn Mu\u1e25ammad ar-R\u0101sh\u012bd (Arabic: \u0623\u064e\u0628\u064f\u0648 \u062c\u064e\u0639\u0652\u0641\u064e\u0631 \u0647\u064e\u0627\u0631\u064f\u0648\u0646 \u0671\u0628\u0652\u0646\u0650 \u0645\u064f\u062d\u064e\u0645\u064e\u0651\u062f \u0671\u0644\u0652\u0645\u064e\u0647\u0652\u062f\u0650\u064a\u0651, romanized: Ab\u016b Ja'far H\u0101r\u016bn ibn Mu\u1e25ammad al-Mahd\u012b) (Persian: \u0647\u0627\u0631\u0648\u0646 \u0627\u0644\u0631\u0634\u06cc\u062f); famously known as H\u0101r\u016bn ar-R\u0101sh\u012bd (Arabic: \u0647\u064e\u0627\u0631\u064f\u0648\u0646 \u0671\u0644\u0631\u064e\u0651\u0634\u0650\u064a\u062f, romanized: H\u0101r\u016bn ar-Rash\u012bd), was the fifth Abbasid caliph of the Abbasid Caliphate, reigning from September 786 until his death in March 809. His reign is traditionally regarded to be the beginning of the Islamic Golden Age. His epithet al-Rashid translates to  \"the Just\", \"the Upright\", or \"the Rightly-Guided\".\nHarun established the legendary library Bayt al-Hikma (\"House of Wisdom\") in Baghdad in present-day Iraq, and during his rule Baghdad began to flourish as a world center of knowledge, culture and trade. During his rule, the family of Barmakids, which played a deciding role in establishing the Abbasid Caliphate, declined gradually. In 796, he moved his court and government to Raqqa in present-day Syria. Domestically, Harun pursued policies similar to those of his father Al-Mahdi. He released many of the Umayyads and 'Alids his brother Al-Hadi had imprisoned and declared amnesty for all political groups of the Quraysh. Large scale hostilities broke out with Byzantium, and under his rule, the Abbasid Empire reached its peak.\nA Frankish mission came to offer Harun friendship in 799. Harun sent various presents with the emissaries on their return to Charlemagne's court, including a clock that Charlemagne and his retinue deemed to be a conjuration because of the sounds it emanated and the tricks it displayed every time an hour ticked. Portions of the fictional One Thousand and One Nights are set in Harun's court and some of its stories involve Harun himself. Harun's life and court have been the subject of many other tales, both factual and fictitious."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131002")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q131002",
+  "isRealHuman": true,
+  "birthDate": "763-02-17",
+  "deathDate": "809-03-24",
+  "ageAtDeath": 46,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, providing high confidence in the calculated age.",
+  "shortDescriptionEn": "Harun al-Rashid was the fifth Abbasid caliph, ruling from 786 to 809 AD. His reign is often considered the peak of the Islamic Golden Age, with significant advancements in culture, science, and the arts. He died at 46 during a military campaign in present-day Iran.",
+  "shortDescriptionFr": "Harun al-Rashid était le cinquième calife abbasside, régnant de 786 à 809 après J.-C. Son règne est souvent considéré comme l'apogée de l'âge d'or islamique, avec des avancées significatives dans la culture, la science et les arts. Il est mort à 46 ans lors d'une campagne militaire dans l'actuel Iran.",
+  "shortDescriptionDe": "Harun al-Rashid war der fünfte abbasidische Kalif und regierte von 786 bis 809 n. Chr. Seine Herrschaft gilt oft als Höhepunkt des islamischen Goldenen Zeitalters, geprägt von bedeutenden Fortschritten in Kultur, Wissenschaft und Kunst. Er starb im Alter von 46 Jahren während eines Feldzugs im heutigen Iran.",
+  "shortDescriptionEs": "Harun al-Rashid fue el quinto califa abasí, gobernando desde 786 hasta 809 d.C. Su reinado es considerado a menudo como el auge de la Edad de Oro islámica, con avances significativos en cultura, ciencia y artes. Murió a los 46 años durante una campaña militar en el actual Irán.",
+  "shortDescriptionRu": "Харун ар-Рашид был пятым аббасидским халифом, правившим с 786 по 809 годы н.э. Его правление часто считается пиком исламского Золотого века, отмеченного значительными достижениями в культуре, науке и искусстве. Он умер в возрасте 46 лет во время военной кампании на территории современного Ирана.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Harun_al-Rashid"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43999",  "Name": "St. James the Elder, Apostle",  "BirthDate": "0001-01-01T00:00:00Z",  "DeathDate": "0044-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dijon%20fine%20arts%20museum%20mg%201626.jpg",  "SiteLinksCnt": 94,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"171625":{"pageid":171625,"ns":0,"title":"James the Great","extract":"James the Great (Koin\u0113 Greek: \u1f38\u03ac\u03ba\u03c9\u03b2\u03bf\u03c2, romanized: I\u00e1k\u014dbos; Aramaic: \u071d\u0725\u0729\u0718\u0712, romanized: Ya\u02bfq\u014d\u1e07; died AD 44) was one of the Twelve Apostles of Jesus. According to the New Testament, he was the second of the apostles to die after Judas Iscariot and the first to be martyred. Saint James is the patron saint of Spain and, according to tradition, what are believed to be his remains are held in Santiago de Compostela in Galicia.\nHe is also known as James, son of Zebedee, Saint James the Great, Saint James the Greater, St. James the Major, Saint James the Elder, or Saint Jacob, James the Apostle or Santiago.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43999")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43999",
+  "isRealHuman": true,
+  "birthDate": "0001-01-01",
+  "deathDate": "0044-01-01",
+  "ageAtDeath": 43,
+  "confidence": 70,
+  "confidenceExplained": "The estimated age is based on traditional accounts suggesting a birth between 1 and 6 AD and a death in 44 AD, leading to an approximate age of 38 to 43 at death.",
+  "shortDescriptionEn": "Saint James the Greater, one of Jesus' Twelve Apostles, was the brother of John and a prominent figure in early Christianity. He was martyred by beheading under King Herod Agrippa I around AD 44.",
+  "shortDescriptionFr": "Saint Jacques le Majeur, l'un des douze apôtres de Jésus, était le frère de Jean et une figure importante du christianisme primitif. Il a été martyrisé par décapitation sous le roi Hérode Agrippa Ier vers 44 apr. J.-C.",
+  "shortDescriptionDe": "Der heilige Jakobus der Ältere, einer der zwölf Apostel Jesu, war der Bruder von Johannes und eine bedeutende Figur im frühen Christentum. Er wurde um 44 n. Chr. unter König Herodes Agrippa I. durch Enthauptung zum Märtyrer.",
+  "shortDescriptionEs": "Santiago el Mayor, uno de los doce apóstoles de Jesús, era hermano de Juan y una figura destacada en el cristianismo primitivo. Fue martirizado por decapitación bajo el rey Herodes Agripa I alrededor del año 44 d.C.",
+  "shortDescriptionRu": "Святой Иаков Старший, один из двенадцати апостолов Иисуса, был братом Иоанна и значимой фигурой в раннем христианстве. Он был мученически обезглавлен при царе Ироде Агриппе I около 44 года н.э.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_the_Great",
+    "https://www.britannica.com/biography/Saint-James-son-of-Zebedee",
+    "https://saintoftheday.com/st-james-the-greater/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q93182",  "Name": "Louis Braille",  "BirthDate": "1809-01-04T00:00:00Z",  "DeathDate": "1852-01-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20Braille%20by%20%C3%89tienne%20Leroux.jpg",  "SiteLinksCnt": 89,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"61410":{"pageid":61410,"ns":0,"title":"Louis Braille","extract":"Louis Braille ( brayl; French: [lwi b\u0281\u0251j]; 4 January 1809 \u2013 6 January 1852) was a French educator and the inventor of a reading and writing system named after him, braille, intended for use by visually impaired people. His system is used worldwide and remains virtually unchanged to this day.\nBraille was blinded in one eye at the age of three.  This occurred as a result from an accident with a stitching awl in his father's harness making shop. Consequently, an infection set in and spread to both eyes, resulting in total blindness. At that time, there were not many resources in place for the blind, but he nevertheless excelled in his education and received a scholarship to France's Royal Institute for Blind Youth. While still a student there, he began developing a system of tactile code that could allow blind people to read and write quickly and efficiently. Inspired by a system invented by Charles Barbier, Braille's new method was more compact and lent itself to a range of uses, including music. He presented his work to his peers for the first time in 1824, when he was fifteen years old.\nIn adulthood, Braille served as a professor at the Institute and had an avocation as a musician, but he largely spent the remainder of his life refining and extending his system. It went unused by most educators for many years after his death, but posterity has recognized braille as a revolutionary invention, and it has been adapted for use in languages worldwide."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q93182")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q93182",
+  "isRealHuman": true,
+  "birthDate": "1809-01-04",
+  "deathDate": "1852-01-06",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Louis Braille was a French educator and inventor, best known for creating the Braille system of reading and writing for the blind. Blinded by an accident at a young age, he developed his tactile code, which remains largely unchanged today. He died at 43 due to tuberculosis.",
+  "shortDescriptionFr": "Louis Braille était un éducateur et inventeur français, surtout connu pour avoir créé le système de lecture et d'écriture en braille pour les aveugles. Devenu aveugle à la suite d'un accident en bas âge, il a développé son code tactile, qui reste largement inchangé aujourd'hui. Il est décédé à 43 ans de la tuberculose.",
+  "shortDescriptionDe": "Louis Braille war ein französischer Pädagoge und Erfinder, der vor allem für die Entwicklung des Braille-Systems zum Lesen und Schreiben für Blinde bekannt ist. Nachdem er in jungen Jahren durch einen Unfall erblindete, entwickelte er seinen taktilen Code, der bis heute weitgehend unverändert geblieben ist. Er starb im Alter von 43 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "Louis Braille fue un educador e inventor francés, conocido por crear el sistema de lectura y escritura Braille para personas ciegas. Quedó ciego debido a un accidente a una edad temprana y desarrolló su código táctil, que permanece prácticamente sin cambios hasta hoy. Murió a los 43 años debido a la tuberculosis.",
+  "shortDescriptionRu": "Луи Брайль был французским педагогом и изобретателем, наиболее известным созданием системы чтения и письма для слепых — шрифта Брайля. Ослепнув в раннем возрасте из-за несчастного случая, он разработал свою тактильную систему, которая остается практически неизменной по сей день. Он умер в 43 года от туберкулеза.",
+  "sources": [
+    "https://www.britannica.com/biography/Louis-Braille",
+    "https://en.wikipedia.org/wiki/Louis_Braille",
+    "https://museelouisbraille.com/en/biographie"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q188541",  "Name": "Chandragupta Maurya",  "BirthDate": "-0339-01-01T00:00:00Z",  "DeathDate": "-0296-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Chandragupt%20maurya%20Birla%20mandir%206%20dec%202009%20%2831%29%20%28cropped%29.JPG",  "SiteLinksCnt": 83,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"187726":{"pageid":187726,"ns":0,"title":"Chandragupta Maurya","extract":"Chandragupta Maurya (reigned c. 320 BCE \u2013 c. 298 BCE) was the founder and the first emperor of the Maurya Empire, based in Magadha (present-day Bihar) in the Indian subcontinent.\nHis rise to power began in the period of unrest and local warfare that arose after Alexander the Great's Indian campaign and early death in 323 BCE, although the exact chronology and sequence of events remains subject to debate among historians. He started a war against the unpopular Nanda dynasty in Magadha on the Ganges Valley, defeated them and established his own dynasty. In addition, he raised an army to resist the Greeks, defeated them, and took control of the eastern Indus Valley. His conquest of Magadha is generally dated to ca. 322-319 BCE, and his expansion to Punjab subsequently at ca. 317-312 BCE, but some scholars have speculated that he might have initially consolidated his power base in Punjab, before conquering Magadha; an alternative chronology places these events all in the period ca. 311-305 BCE. According to Buddhist and Jain legends, Chandragupta was assisted by his mentor Chanakya, who later became his minister. He expanded his reach subsequently into parts of the western Indus Valley and possibly eastern Afghanistan through a dynastic marriage alliance with Seleucus I Nicator ca. 305-303 BCE. His empire also included Gujarat and a geographically extensive network of cities and trade-routes.\nThere are no historical facts about Chandragupta's origins and early life, only legends, while the narrative of his reign is mainly deduced from a few fragments in Greek and Roman sources, and a few Indian religious texts, all written centuries after his death. The prevailing levels of technology and infrastructure limited the extent of Chandragupta's rule, and the administration was decentralised, with provinces and local governments, and large autonomous regions within its limits. Chandragupta's reign, and the Maurya Empire, which reached its peak under his grandson Ashoka the Great, began an era of economic prosperity, reforms, infrastructure expansions. Buddhism, Jainism and \u0100j\u012bvika prevailed over the non-Maghadian Vedic and Brahmanistic traditions, initiating, under Ashoka, the expansion of Buddhism, and the synthesis of Brahmanic and non-Brahmanic religious traditions which converged in Hinduism. His legend still inspires visions of an undivided Indian nation.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q188541")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q188541",
+  "isRealHuman": true,
+  "birthDate": "-0340-01-01",
+  "deathDate": "-0297-01-01",
+  "ageAtDeath": 43,
+  "confidence": 80,
+  "confidenceExplained": "The estimated age of 43 is based on historical records suggesting Chandragupta Maurya was born around 340 BCE and died around 297 BCE. However, exact dates are uncertain due to the nature of ancient historical records.",
+  "shortDescriptionEn": "Chandragupta Maurya was the founder of the Maurya Empire in ancient India, unifying most of the Indian subcontinent. He later abdicated the throne, adopted Jainism, and is believed to have fasted to death in Shravanabelagola.",
+  "shortDescriptionFr": "Chandragupta Maurya était le fondateur de l'empire Maurya dans l'Inde ancienne, unifiant la majeure partie du sous-continent indien. Il a ensuite abdiqué le trône, adopté le jaïnisme et serait mort de jeûne à Shravanabelagola.",
+  "shortDescriptionDe": "Chandragupta Maurya war der Gründer des Maurya-Reiches im alten Indien und vereinte den größten Teil des indischen Subkontinents. Später dankte er ab, nahm den Jainismus an und soll in Shravanabelagola durch Fasten gestorben sein.",
+  "shortDescriptionEs": "Chandragupta Maurya fue el fundador del Imperio Maurya en la antigua India, unificando la mayor parte del subcontinente indio. Posteriormente abdicó del trono, adoptó el jainismo y se cree que murió de inanición en Shravanabelagola.",
+  "shortDescriptionRu": "Чандрагупта Маурья был основателем империи Маурьев в древней Индии, объединив большую часть Индийского субконтинента. Позже он отрекся от престола, принял джайнизм и, как полагают, умер от голода в Шраванабелаголе.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
+    "https://www.britannica.com/biography/Chandragupta",
+    "https://www.thoughtco.com/chandragupta-maurya-195490"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q127385",  "Name": "Sixtus II",  "BirthDate": "0215-01-01T00:00:00Z",  "DeathDate": "0258-08-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20%E2%80%93%20Sixtus%20II.jpg",  "SiteLinksCnt": 82,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"24274":{"pageid":24274,"ns":0,"title":"Pope Sixtus II","extract":"Pope Sixtus II (Greek: \u03a0\u03ac\u03c0\u03b1\u03c2 \u03a3\u03af\u03be\u03c4\u03bf\u03c2 \u0392\u0384), also written as Pope Xystus II, was bishop of Rome from 31 August 257 until his death on 6 August 258. He was killed along with seven deacons, including Lawrence of Rome, during the persecution of Christians by the Emperor Valerian.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q127385")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q127385",
+  "isRealHuman": true,
+  "birthDate": "0215-01-01",
+  "deathDate": "0258-08-06",
+  "ageAtDeath": 43,
+  "confidence": 60,
+  "confidenceExplained": "The birth date of Pope Sixtus II is not definitively known. While some sources suggest he was born around 215 AD, this is speculative. His death date on August 6, 258 AD, is well-documented. Therefore, the estimated age at death is approximately 43 years, but this estimation has moderate confidence due to the uncertainty of his exact birth date.",
+  "shortDescriptionEn": "Pope Sixtus II served as the Bishop of Rome from August 31, 257, until his martyrdom on August 6, 258. His papacy was marked by efforts to reconcile disputes within the Church, particularly concerning the rebaptism of heretics. During Emperor Valerian's persecution of Christians, Sixtus II was apprehended while conducting a service in a cemetery and was subsequently beheaded along with six deacons.",
+  "shortDescriptionFr": "Le pape Sixte II a servi comme évêque de Rome du 31 août 257 jusqu'à son martyre le 6 août 258. Son pontificat a été marqué par des efforts de réconciliation des disputes au sein de l'Église, notamment concernant le rebaptême des hérétiques. Pendant la persécution des chrétiens par l'empereur Valérien, Sixte II a été appréhendé lors d'un service dans un cimetière et a été ensuite décapité avec six diacres.",
+  "shortDescriptionDe": "Papst Sixtus II. diente als Bischof von Rom vom 31. August 257 bis zu seinem Martyrium am 6. August 258. Sein Pontifikat war geprägt von Bemühungen, Streitigkeiten innerhalb der Kirche zu versöhnen, insbesondere in Bezug auf die Wiedertaufe von Häretikern. Während der Christenverfolgung unter Kaiser Valerian wurde Sixtus II. während eines Gottesdienstes auf einem Friedhof festgenommen und anschließend zusammen mit sechs Diakonen enthauptet.",
+  "shortDescriptionEs": "El Papa Sixto II sirvió como Obispo de Roma desde el 31 de agosto de 257 hasta su martirio el 6 de agosto de 258. Su pontificado se caracterizó por esfuerzos para reconciliar disputas dentro de la Iglesia, particularmente en relación con el rebautismo de herejes. Durante la persecución de cristianos por el emperador Valeriano, Sixto II fue apresado mientras realizaba un servicio en un cementerio y posteriormente fue decapitado junto con seis diáconos.",
+  "shortDescriptionRu": "Папа Сикст II служил епископом Рима с 31 августа 257 года до своего мученичества 6 августа 258 года. Его понтификат был отмечен усилиями по примирению споров внутри Церкви, особенно касающихся повторного крещения еретиков. Во время гонений на христиан при императоре Валериане Сикст II был схвачен во время службы на кладбище и впоследствии обезглавлен вместе с шестью диаконами.",
+  "sources": [
+    "https://www.britannica.com/biography/Saint-Sixtus-II",
+    "https://www.newadvent.org/cathen/14031c.htm",
+    "https://en.wikipedia.org/wiki/Pope_Sixtus_II"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q177854",  "Name": "Lorenzo de' Medici",  "BirthDate": "1449-01-10T00:00:00Z",  "DeathDate": "1492-04-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Verrocchio%20Lorenzo%20de%20Medici.jpg",  "SiteLinksCnt": 82,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"18633":{"pageid":18633,"ns":0,"title":"Lorenzo de' Medici","extract":"Lorenzo di Piero de' Medici (Italian: [lo\u02c8r\u025bntso de \u02c8m\u025b\u02d0dit\u0283i]), known as Lorenzo the Magnificent (Italian: Lorenzo il Magnifico; 1 January 1449 \u2013 8 April 1492), was an Italian statesman, the de facto ruler of the Florentine Republic, and the most powerful patron of Renaissance culture in Italy. Lorenzo held the balance of power within the Italic League, an alliance of states that stabilized political conditions on the Italian Peninsula for decades, and his life coincided with the mature phase of the Italian Renaissance and the golden age of Florence. As a patron, he is best known for his sponsorship of artists such as Botticelli and Michelangelo. On the foreign policy front, Lorenzo manifested a clear plan to stem the territorial ambitions of Pope Sixtus IV, in the name of the balance of the Italic League of 1454. For these reasons, Lorenzo was the subject of the Pazzi conspiracy (1478), in which his brother Giuliano was assassinated. The Peace of Lodi of 1454 that he supported among the various Italian states collapsed with his death. He is buried in the Medici Chapel in Florence."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q177854")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q177854",
+  "isRealHuman": true,
+  "birthDate": "1449-01-01",
+  "deathDate": "1492-04-08",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 43.",
+  "shortDescriptionEn": "Lorenzo de' Medici, known as 'Lorenzo the Magnificent,' was an Italian statesman and de facto ruler of Florence. A leading patron of Renaissance arts, he supported artists like Botticelli and Michelangelo. He died at 43 on April 8, 1492, and is buried in the Medici Chapel in Florence.",
+  "shortDescriptionFr": "Lorenzo de' Medici, surnommé 'Lorenzo le Magnifique', était un homme d'État italien et dirigeant de facto de Florence. Grand mécène de la Renaissance, il a soutenu des artistes tels que Botticelli et Michel-Ange. Il est décédé à 43 ans le 8 avril 1492 et est enterré dans la chapelle des Médicis à Florence.",
+  "shortDescriptionDe": "Lorenzo de' Medici, bekannt als 'Lorenzo der Prächtige', war ein italienischer Staatsmann und de-facto Herrscher von Florenz. Als bedeutender Mäzen der Renaissance förderte er Künstler wie Botticelli und Michelangelo. Er starb im Alter von 43 Jahren am 8. April 1492 und ist in der Medici-Kapelle in Florenz begraben.",
+  "shortDescriptionEs": "Lorenzo de' Medici, conocido como 'Lorenzo el Magnífico', fue un estadista italiano y gobernante de facto de Florencia. Gran mecenas del Renacimiento, apoyó a artistas como Botticelli y Miguel Ángel. Falleció a los 43 años el 8 de abril de 1492 y está enterrado en la Capilla Medici en Florencia.",
+  "shortDescriptionRu": "Лоренцо де Медичи, известный как 'Лоренцо Великолепный', был итальянским государственным деятелем и фактическим правителем Флоренции. Как выдающийся покровитель искусства эпохи Возрождения, он поддерживал таких художников, как Боттичелли и Микеланджело. Он скончался в возрасте 43 лет 8 апреля 1492 года и похоронен в Капелле Медичи во Флоренции.",
+  "sources": [
+    "https://www.britannica.com/biography/Lorenzo-de-Medici",
+    "https://en.wikipedia.org/wiki/Lorenzo_de%27_Medici",
+    "https://www.biography.com/political-figures/lorenzo-de-medici"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102527",  "Name": "Robert Falcon Scott",  "BirthDate": "1868-06-06T00:00:00Z",  "DeathDate": "1912-03-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Scott%20of%20the%20Antarctic%20%28bw%29%20%28cropped%29.jpg",  "SiteLinksCnt": 80,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"25662":{"pageid":25662,"ns":0,"title":"Robert Falcon Scott","extract":"Captain Robert Falcon Scott  (6 June 1868 \u2013 c.\u200929 March 1912) was a British Royal Navy officer and explorer who led two expeditions to the Antarctic regions: the Discovery expedition of 1901\u201304 and the Terra Nova expedition of 1910\u201313.\nOn the first expedition, he set a new southern record by marching to latitude 82\u00b0S and discovered the Antarctic Plateau, on which the South Pole is located. On the second venture, Scott led a party of five which reached the South Pole on 17 January 1912, less than five weeks after Amundsen's South Pole expedition. On the return journey from the Pole, a planned meeting with supporting dog teams from the base camp failed, despite Scott's written instructions, and at a distance of 162 miles (261 km) from their base camp at Hut Point and approximately 12.5 miles (20.1 km) from the next depot, Scott and his companions died. When Scott and his party's bodies were discovered, they had in their possession the first Antarctic fossils discovered. The fossils were determined to be from the Glossopteris tree and proved that Antarctica was once forested and joined to other continents.\nBefore his appointment to lead the Discovery expedition, Scott had a career as a Royal Navy officer. In 1899, he had a chance encounter with Sir Clements Markham, the president of the Royal Geographical Society, and learned of a planned Antarctic expedition, which he soon volunteered to lead. His name became inseparably associated with the Antarctic, the field of work to which he remained committed during the final years of his life.\nFollowing the news of his death, Scott became a celebrated hero, a status reflected by memorials erected across the UK. However, in the last decades of the 20th century, questions were raised about his competence and character. Commentators in the 21st century have regarded Scott more positively after assessing the temperature drop below \u221240 \u00b0C (\u221240 \u00b0F) in March 1912, and after re-discovering Scott's written orders of October 1911, in which he had instructed the dog teams to meet and assist him on the return trip."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102527")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q102527",
+  "isRealHuman": true,
+  "birthDate": "1868-06-06",
+  "deathDate": "1912-03-29",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Captain Robert Falcon Scott (6 June 1868 – c. 29 March 1912) was a British Royal Navy officer and explorer who led two expeditions to the Antarctic regions. He reached the South Pole on 17 January 1912, but perished on the return journey due to extreme conditions.",
+  "shortDescriptionFr": "Le capitaine Robert Falcon Scott (6 juin 1868 – c. 29 mars 1912) était un officier de la Royal Navy britannique et un explorateur qui a dirigé deux expéditions en Antarctique. Il a atteint le pôle Sud le 17 janvier 1912, mais est mort lors du voyage de retour en raison de conditions extrêmes.",
+  "shortDescriptionDe": "Kapitän Robert Falcon Scott (6. Juni 1868 – ca. 29. März 1912) war ein Offizier der britischen Royal Navy und Entdecker, der zwei Expeditionen in die Antarktis leitete. Er erreichte den Südpol am 17. Januar 1912, starb jedoch auf der Rückreise aufgrund extremer Bedingungen.",
+  "shortDescriptionEs": "El capitán Robert Falcon Scott (6 de junio de 1868 – c. 29 de marzo de 1912) fue un oficial de la Royal Navy británica y explorador que dirigió dos expediciones a la Antártida. Alcanzó el Polo Sur el 17 de enero de 1912, pero falleció en el viaje de regreso debido a condiciones extremas.",
+  "shortDescriptionRu": "Капитан Роберт Фолкон Скотт (6 июня 1868 – ок. 29 марта 1912) был офицером британского Королевского флота и исследователем, возглавившим две экспедиции в Антарктику. Он достиг Южного полюса 17 января 1912 года, но погиб на обратном пути из-за экстремальных условий.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Falcon_Scott",
+    "https://www.britannica.com/biography/Robert-Falcon-Scott",
+    "https://www.rmg.co.uk/stories/topics/captain-robert-falcon-scott"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5066520",  "Name": "Chadwick Boseman",  "BirthDate": "1976-11-29T00:00:00Z",  "DeathDate": "2020-08-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Chadwick%20Boseman%20by%20Gage%20Skidmore%20July%202017%20%28cropped%29.jpg",  "SiteLinksCnt": 80,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"26866372":{"pageid":26866372,"ns":0,"title":"Chadwick Boseman","extract":"Chadwick Aaron Boseman (; November 29, 1976 \u2013 August 28, 2020) was an American actor. Through his two-decade career, he appeared in a number of projects spanning both blockbuster and independent films, and received various accolades, including a Golden Globe Award, a Primetime Emmy Award, and a nomination for an Academy Award.\nBorn in South Carolina, Boseman studied directing at Howard University and began his career in theatre. Boseman won a Drama League Directing Fellowship and an acting AUDELCO, along with receiving a Jeff Award nomination for his 2005 play Deep Azure. Transitioning to the screen, his first major role was as a series regular on the NBC drama Persons Unknown (2010) and he landed his breakthrough role as baseball player Jackie Robinson in 42 (2013). He continued to portray historical figures, starring as singer James Brown in Get on Up (2014) and as Thurgood Marshall in Marshall (2017).\nBoseman achieved international fame for playing the Marvel Comics superhero Black Panther in the Marvel Cinematic Universe (MCU) from 2016 to 2019. He appeared in four MCU films, including an eponymous 2018 film. As the first Black actor to headline an MCU film, he was also named in the 2018 Time 100. Boseman's final performance as the character in the Disney+ anthology series What If...? (2021) earned him a posthumous Primetime Emmy Award for Outstanding Character Voice-Over Performance.\nIn 2016, Boseman was diagnosed with colon cancer. He kept his condition private, continuing to act until his death in 2020 from the illness. For his final film role, the drama Ma Rainey's Black Bottom (2020), he received the Golden Globe and SAG Awards for Best Actor, along with a posthumous nomination in the same category at the 93rd Academy Awards."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5066520")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5066520",
+  "isRealHuman": true,
+  "birthDate": "1976-11-29",
+  "deathDate": "2020-08-28",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely reported.",
+  "shortDescriptionEn": "Chadwick Boseman was an American actor known for his roles as Jackie Robinson, James Brown, and Thurgood Marshall, and for portraying T'Challa/Black Panther in the Marvel Cinematic Universe. He died at 43 after a private battle with colon cancer.",
+  "shortDescriptionFr": "Chadwick Boseman était un acteur américain connu pour ses rôles de Jackie Robinson, James Brown et Thurgood Marshall, ainsi que pour son interprétation de T'Challa/Black Panther dans l'univers cinématographique Marvel. Il est décédé à 43 ans après une bataille privée contre le cancer du côlon.",
+  "shortDescriptionDe": "Chadwick Boseman war ein amerikanischer Schauspieler, bekannt für seine Rollen als Jackie Robinson, James Brown und Thurgood Marshall sowie für die Darstellung von T'Challa/Black Panther im Marvel Cinematic Universe. Er starb im Alter von 43 Jahren nach einem privaten Kampf gegen Darmkrebs.",
+  "shortDescriptionEs": "Chadwick Boseman fue un actor estadounidense conocido por sus papeles como Jackie Robinson, James Brown y Thurgood Marshall, y por interpretar a T'Challa/Black Panther en el Universo Cinematográfico de Marvel. Murió a los 43 años después de una batalla privada contra el cáncer de colon.",
+  "shortDescriptionRu": "Чедвик Боузман был американским актером, известным своими ролями Джеки Робинсона, Джеймса Брауна и Тергуда Маршалла, а также исполнением роли Т'Чаллы/Черной Пантеры во Вселенной Марвел. Он умер в возрасте 43 лет после частной борьбы с раком толстой кишки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chadwick_Boseman",
+    "https://people.com/lupita-nyongo-chadwick-boseman-47th-birthday-8754053",
+    "https://as.com/us/tikitakas/lupita-nyongo-recuerda-a-chadwick-boseman-a-cuatro-anos-de-su-muerte-el-duelo-nunca-termina-n/"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q174044",  "Name": "Alexander Nevsky",  "BirthDate": "1220-05-20T00:00:00Z",  "DeathDate": "1263-11-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AlexanderNevskyTitul.jpg",  "SiteLinksCnt": 78,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"152841":{"pageid":152841,"ns":0,"title":"Alexander Nevsky","extract":"Alexander Yaroslavich Nevsky (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u042f\u0440\u043e\u0441\u043b\u0430\u0432\u0438\u0447 \u041d\u0435\u0432\u0441\u043a\u0438\u0439; IPA: [\u0250l\u02b2\u026a\u02c8ksandr j\u026ar\u0250\u02c8s\u026bav\u02b2\u026at\u0255 \u02c8n\u02b2\u025bfsk\u02b2\u026aj] ; monastic name: Aleksiy; 13 May 1221 \u2013 14 November 1263) was Prince of Novgorod (1236\u20131240; 1241\u20131256; 1258\u20131259), Grand Prince of Kiev (1249\u20131263), and Grand Prince of Vladimir (1252\u20131263).\nCommonly regarded as a key figure in medieval Russian history, Alexander was a grandson of Vsevolod the Big Nest and rose to legendary status on account of his military victories in northwestern Russia over Swedish invaders in the 1240 Battle of the Neva, as well as German crusaders in the 1242 Battle on the Ice. He preserved Eastern Orthodoxy, agreeing to pay tribute to the powerful Golden Horde. Metropolitan Macarius of Moscow canonized Alexander Nevsky as a saint of the Russian Orthodox Church in 1547."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q174044")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q174044",
+  "isRealHuman": true,
+  "birthDate": "1220-05-30",
+  "deathDate": "1263-11-14",
+  "ageAtDeath": 43,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, providing high confidence in the calculated age.",
+  "shortDescriptionEn": "Alexander Nevsky was a 13th-century Russian prince renowned for his military victories against Swedish and German invaders. He died on November 14, 1263, in Gorodets, Russia, at the age of 43.",
+  "shortDescriptionFr": "Alexandre Nevski était un prince russe du XIIIe siècle, renommé pour ses victoires militaires contre les envahisseurs suédois et allemands. Il est décédé le 14 novembre 1263 à Gorodets, en Russie, à l'âge de 43 ans.",
+  "shortDescriptionDe": "Alexander Newski war ein russischer Prinz des 13. Jahrhunderts, bekannt für seine militärischen Siege gegen schwedische und deutsche Invasoren. Er starb am 14. November 1263 in Gorodets, Russland, im Alter von 43 Jahren.",
+  "shortDescriptionEs": "Alejandro Nevski fue un príncipe ruso del siglo XIII, reconocido por sus victorias militares contra invasores suecos y alemanes. Murió el 14 de noviembre de 1263 en Gorodets, Rusia, a los 43 años.",
+  "shortDescriptionRu": "Александр Невский был русским князем XIII века, известным своими военными победами над шведскими и немецкими захватчиками. Он умер 14 ноября 1263 года в Городце, Россия, в возрасте 43 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Saint-Alexander-Nevsky",
+    "https://www.oca.org/saints/lives/2023/11/23/103377-repose-of-saint-alexander-nevsky"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q185647",  "Name": "Alexander Scriabin",  "BirthDate": "1872-01-06T00:00:00Z",  "DeathDate": "1915-04-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Skrjabin%20Alexander.jpg",  "SiteLinksCnt": 78,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"221567":{"pageid":221567,"ns":0,"title":"Alexander Scriabin","extract":"Alexander Nikolayevich Scriabin (6 January 1872 [O.S. 25 December 1871] \u2013 27 April [O.S. 14 April] 1915) was a Russian composer and pianist. Before 1903, Scriabin was greatly influenced by the music of Fr\u00e9d\u00e9ric Chopin and composed in a relatively tonal, late-Romantic idiom. Later, and independently of his influential contemporary Arnold Schoenberg, Scriabin developed a much more dissonant musical language that had transcended usual tonality but was not atonal, which accorded with his personal brand of metaphysics. Scriabin found significant appeal in the concept of Gesamtkunstwerk as well as synesthesia, and associated colours with the various harmonic tones of his scale, while his colour-coded circle of fifths was also inspired by theosophy. He is often considered the main Russian symbolist composer and a major representative of the Russian Silver Age.\nScriabin was an innovator as well as one of the most controversial composer-pianists of the early 20th century. The Great Soviet Encyclopedia said of him, \"no composer has had more scorn heaped on him or greater love bestowed.\" Leo Tolstoy described Scriabin's music as \"a sincere expression of genius.\" Scriabin's oeuvre exerted a salient influence on the music world over time, and inspired composers such as Igor Stravinsky, Sergei Prokofiev, and Karol Szymanowski. But Scriabin's importance in the Russian (subsequently Soviet) musical scene, and internationally, drastically declined after his death. According to his biographer Faubion Bowers, \"No one was more famous during their lifetime, and few were more quickly ignored after death.\" Nevertheless, his musical aesthetics have been reevaluated since the 1970s, and his ten published sonatas for piano and other works have been increasingly championed, garnering significant acclaim in recent years."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q185647")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q185647",
+  "isRealHuman": true,
+  "birthDate": "1872-01-06",
+  "deathDate": "1915-04-27",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "The dates of birth and death are well-documented in historical records, allowing for a precise calculation of age.",
+  "shortDescriptionEn": "Alexander Scriabin was a Russian composer and pianist known for his innovative and mystical compositions. He died at the age of 43 from septicemia caused by a carbuncle on his lip.",
+  "shortDescriptionFr": "Alexandre Scriabine était un compositeur et pianiste russe connu pour ses compositions innovantes et mystiques. Il est décédé à l'âge de 43 ans d'une septicémie causée par un furoncle sur sa lèvre.",
+  "shortDescriptionDe": "Alexander Skrjabin war ein russischer Komponist und Pianist, bekannt für seine innovativen und mystischen Kompositionen. Er starb im Alter von 43 Jahren an einer Sepsis, verursacht durch ein Karbunkel an seiner Lippe.",
+  "shortDescriptionEs": "Alexander Scriabin fue un compositor y pianista ruso conocido por sus composiciones innovadoras y místicas. Murió a los 43 años de septicemia causada por un carbunco en su labio.",
+  "shortDescriptionRu": "Александр Скрябин был русским композитором и пианистом, известным своими новаторскими и мистическими произведениями. Он умер в возрасте 43 лет от сепсиса, вызванного карбункулом на его губе.",
+  "sources": [
+    "https://www.britannica.com/biography/Aleksandr-Scriabin",
+    "https://scriabinsociety.com/biography/",
+    "https://en.wikipedia.org/wiki/Alexander_Scriabin"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15208",  "Name": "Catherine I of Russia",  "BirthDate": "1684-04-15T00:00:00Z",  "DeathDate": "1727-05-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20I%20of%20Russia%20by%20Nattier.jpg",  "SiteLinksCnt": 77,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"44239":{"pageid":44239,"ns":0,"title":"Catherine I of Russia","extract":"Catherine I Alekseyevna Mikhailova (born Marta Samuilovna Skavronskaya; 15 April [O.S. 5 April] 1684 \u2013 17 May [O.S. 6 May] 1727) was the second wife and Empress consort of Peter the Great, whom she succeeded as Empress of Russia, ruling from 1725 until her death in 1727.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15208")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q15208",
+  "isRealHuman": true,
+  "birthDate": "1684-04-15",
+  "deathDate": "1727-05-17",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Catherine I of Russia (April 15, 1684 – May 17, 1727) was the second wife of Peter the Great and Empress of Russia from 1725 until her death. Born into poverty, she rose to prominence through her marriage. Catherine died at 43, likely due to tuberculosis.",
+  "shortDescriptionFr": "Catherine Ire de Russie (15 avril 1684 – 17 mai 1727) fut la seconde épouse de Pierre le Grand et impératrice de Russie de 1725 jusqu'à sa mort. Née dans la pauvreté, elle s'éleva grâce à son mariage. Catherine mourut à 43 ans, probablement de la tuberculose.",
+  "shortDescriptionDe": "Katharina I. von Russland (15. April 1684 – 17. Mai 1727) war die zweite Ehefrau von Peter dem Großen und von 1725 bis zu ihrem Tod Kaiserin von Russland. In Armut geboren, stieg sie durch ihre Heirat auf. Katharina starb mit 43 Jahren, wahrscheinlich an Tuberkulose.",
+  "shortDescriptionEs": "Catalina I de Rusia (15 de abril de 1684 – 17 de mayo de 1727) fue la segunda esposa de Pedro el Grande y emperatriz de Rusia desde 1725 hasta su muerte. Nacida en la pobreza, ascendió gracias a su matrimonio. Catalina murió a los 43 años, probablemente de tuberculosis.",
+  "shortDescriptionRu": "Екатерина I России (15 апреля 1684 – 17 мая 1727) была второй женой Петра Великого и императрицей России с 1725 года до своей смерти. Родившись в бедности, она поднялась благодаря браку. Екатерина умерла в 43 года, вероятно, от туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Catherine_I_of_Russia",
+    "https://www.britannica.com/biography/Catherine-I"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q182914",  "Name": "Hassan ibn Ali",  "BirthDate": "0625-03-01T00:00:00Z",  "DeathDate": "0669-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hasan%20Masjid%20an-Nabawi%20Calligraphy.svg",  "SiteLinksCnt": 76,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"419563":{"pageid":419563,"ns":0,"title":"Hasan ibn Ali","extract":"Hasan ibn Ali (Arabic: \u0627\u0644\u0652\u062d\u064e\u0633\u064e\u0646\u0650 \u0628\u0652\u0646 \u0639\u064e\u0644\u0650\u064a\u0651, romanized: al-\u1e24asan ibn \u02bfAl\u012b; c.\u2009625 \u2013 2 April 670) was an Alid political and religious leader. The eldest son of Ali and Fatima and a grandson of the Islamic prophet Muhammad, Hasan briefly ruled as Rashidun caliph from January 661 until August 661. He is considered as the second Imam in Shia Islam, succeeding Ali and preceding his brother Husayn. As a grandson of the prophet, he is part of the ahl al-bayt and the ahl al-kisa, and also participated in the event of the mubahala.\nDuring the caliphate of Ali (r.\u2009656\u2013661), Hasan accompanied him in the military campaigns of the First Fitna. Following Ali's assassination in January 661, Hasan was acknowledged caliph in Kufa. His sovereignty was not recognized by Mu'awiya I (r.\u2009661\u2013680), the governor of Syria, who led an army into Kufa while pressing Hasan for abdication in letters. In response, Hasan sent a vanguard under Ubayd Allah ibn al-Abbas to block Mu'awiya's advance until he arrived with the main army. Meanwhile, Hasan was severely wounded in an abortive assassination attempt by the Kharijites, a faction opposed to both Ali and Mu'awiya. This attack demoralized Hasan's army and led to widespread desertion. Ubayd Allah and most of his troops also defected after Mu'awiya bribed him. In August 661, Hasan signed a peace treaty with Mu'awiya on the condition that the latter should rule in compliance with the Quran and the sunna, a council should appoint his successor, and Hasan's supporters would receive amnesty. Hasan retired from politics and abdicated in Medina where he died either from illness or poisoning, though the early sources are nearly unanimous that he was poisoned. Mu'awiya is commonly viewed as the instigator in the murder of Hasan, which removed an obstacle to the succession of his son Yazid I (r.\u2009680\u2013683).\nCritics of Hasan call his treaty with Mu'awiya an indication of weakness, saying that he intended to surrender from the beginning. Given Mu'awiya's military superiority, supporters of Hasan maintain that his abdication was inevitable after his soldiers mutinied and that he was motivated by the desire for unity and peace among Muslims, which was reportedly predicted by Muhammad in a Sunni hadith. Another Sunni hadith, also attributed to Muhammad, predicted that the prophetic succession would last for thirty years, which may have been interpreted by some early Sunni scholars as evidence that Hasan's caliphate was rightly-guided (r\u0101shid). In Shia theology, the divine infallibility (isma) of Hasan as the second Shia Imam further justified his course of action. As the rightful successor of Muhammad in Shia Islam, Hasan's all-inclusive temporal and religious authority came from divinely-inspired designation (nass), which was not annulled by abdication to Mu'awiya, who usurped only the temporal authority. The imamate and caliphate are viewed as separate institutions in Shia Islam until such time that God would make the Imam victorious."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q182914")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q182914",
+  "isRealHuman": true,
+  "birthDate": "625-03-04",
+  "deathDate": "670-04-02",
+  "ageAtDeath": 45,
+  "confidence": 90,
+  "confidenceExplained": "The birth and death dates are well-documented in historical sources, allowing for a precise calculation of age.",
+  "shortDescriptionEn": "Hasan ibn Ali (625–670) was the eldest son of Ali and Fatimah and the grandson of the Prophet Muhammad. He briefly served as caliph in 661 CE before abdicating to Mu'awiya I to prevent further bloodshed among Muslims. Hasan is revered for his piety and efforts to maintain unity within the Muslim community. He died in Medina, possibly due to poisoning.",
+  "shortDescriptionFr": "Hasan ibn Ali (625–670) était le fils aîné d'Ali et de Fatimah et le petit-fils du prophète Mahomet. Il a brièvement servi comme calife en 661 CE avant d'abdiquer en faveur de Mu'awiya I pour éviter davantage d'effusion de sang parmi les musulmans. Hasan est vénéré pour sa piété et ses efforts pour maintenir l'unité au sein de la communauté musulmane. Il est mort à Médine, possiblement empoisonné.",
+  "shortDescriptionDe": "Hasan ibn Ali (625–670) war der älteste Sohn von Ali und Fatimah und der Enkel des Propheten Muhammad. Er diente 661 n. Chr. kurzzeitig als Kalif, bevor er zugunsten von Mu'awiya I. abdankte, um weiteres Blutvergießen unter den Muslimen zu verhindern. Hasan wird für seine Frömmigkeit und seine Bemühungen um die Einheit der muslimischen Gemeinschaft verehrt. Er starb in Medina, möglicherweise durch Vergiftung.",
+  "shortDescriptionEs": "Hasan ibn Ali (625–670) fue el hijo mayor de Ali y Fátima y el nieto del profeta Mahoma. Sirvió brevemente como califa en 661 EC antes de abdicar en favor de Mu'awiya I para evitar más derramamiento de sangre entre los musulmanes. Hasan es venerado por su piedad y esfuerzos por mantener la unidad dentro de la comunidad musulmana. Murió en Medina, posiblemente debido a un envenenamiento.",
+  "shortDescriptionRu": "Хасан ибн Али (625–670) был старшим сыном Али и Фатимы и внуком пророка Мухаммеда. Он недолго служил халифом в 661 году н.э., прежде чем отречься в пользу Муавии I, чтобы предотвратить дальнейшее кровопролитие среди мусульман. Хасан почитается за свою набожность и усилия по поддержанию единства в мусульманской общине. Он умер в Медине, возможно, из-за отравления.",
+  "sources": [
+    "https://www.britannica.com/biography/Hasan",
+    "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q211789",  "Name": "Stephen II",  "BirthDate": "0714-01-01T00:00:00Z",  "DeathDate": "0757-04-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pape%20Etienne%20II%20%28cropped%29.jpg",  "SiteLinksCnt": 76,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"23813":{"pageid":23813,"ns":0,"title":"Pope Stephen II","extract":"Pope Stephen II (Latin: Stephanus II; 714 \u2013 26 April 757) was born a Roman aristocrat and member of the Orsini family. Stephen was the bishop of Rome from 26 March 752 to his death. Stephen II marks the historical delineation between the Byzantine Papacy and the Frankish Papacy. During Stephen's pontificate, Rome was facing invasion by the Lombards when Stephen II went to Paris to seek assistance from Pepin the Short. Pepin defeated the Lombards and made a gift of land to the pope, eventually leading to the establishment of the Papal States."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q211789")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q182914",
+  "isRealHuman": true,
+  "birthDate": "625-03-04",
+  "deathDate": "670-04-02",
+  "ageAtDeath": 45,
+  "confidence": 90,
+  "confidenceExplained": "The birth and death dates are well-documented in historical sources, allowing for a precise calculation of age.",
+  "shortDescriptionEn": "Hasan ibn Ali (625–670) was the eldest son of Ali and Fatimah and the grandson of the Prophet Muhammad. He briefly served as caliph in 661 CE before abdicating to Mu'awiya I to prevent further bloodshed among Muslims. Hasan is revered for his piety and efforts to maintain unity within the Muslim community. He died in Medina, possibly due to poisoning.",
+  "shortDescriptionFr": "Hasan ibn Ali (625–670) était le fils aîné d'Ali et de Fatimah et le petit-fils du prophète Mahomet. Il a brièvement servi comme calife en 661 CE avant d'abdiquer en faveur de Mu'awiya I pour éviter davantage d'effusion de sang parmi les musulmans. Hasan est vénéré pour sa piété et ses efforts pour maintenir l'unité au sein de la communauté musulmane. Il est mort à Médine, possiblement empoisonné.",
+  "shortDescriptionDe": "Hasan ibn Ali (625–670) war der älteste Sohn von Ali und Fatimah und der Enkel des Propheten Muhammad. Er diente 661 n. Chr. kurzzeitig als Kalif, bevor er zugunsten von Mu'awiya I. abdankte, um weiteres Blutvergießen unter den Muslimen zu verhindern. Hasan wird für seine Frömmigkeit und seine Bemühungen um die Einheit der muslimischen Gemeinschaft verehrt. Er starb in Medina, möglicherweise durch Vergiftung.",
+  "shortDescriptionEs": "Hasan ibn Ali (625–670) fue el hijo mayor de Ali y Fátima y el nieto del profeta Mahoma. Sirvió brevemente como califa en 661 EC antes de abdicar en favor de Mu'awiya I para evitar más derramamiento de sangre entre los musulmanes. Hasan es venerado por su piedad y esfuerzos por mantener la unidad dentro de la comunidad musulmana. Murió en Medina, posiblemente debido a un envenenamiento.",
+  "shortDescriptionRu": "Хасан ибн Али (625–670) был старшим сыном Али и Фатимы и внуком пророка Мухаммеда. Он недолго служил халифом в 661 году н.э., прежде чем отречься в пользу Муавии I, чтобы предотвратить дальнейшее кровопролитие среди мусульман. Хасан почитается за свою набожность и усилия по поддержанию единства в мусульманской общине. Он умер в Медине, возможно, из-за отравления.",
+  "sources": [
+    "https://www.britannica.com/biography/Hasan",
+    "https://en.wikipedia.org/wiki/Hasan_ibn_Ali"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q70538",  "Name": "Carl Wilhelm Scheele",  "BirthDate": "1742-12-09T00:00:00Z",  "DeathDate": "1786-05-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Wilhelm%20Scheele.jpg",  "SiteLinksCnt": 76,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"59483":{"pageid":59483,"ns":0,"title":"Carl Wilhelm Scheele","extract":"Carl Wilhelm Scheele (German: [\u02c8\u0283e\u02d0l\u0259], Swedish: [\u02c8\u0267\u00ea\u02d0l\u025b]; 9 December 1742 \u2013 21 May 1786) was a German Swedish pharmaceutical chemist.   \nScheele discovered oxygen (although Joseph Priestley published his findings first), and identified molybdenum, tungsten, barium, nitrogen, and chlorine, among others. Scheele discovered organic acids tartaric, oxalic, uric, lactic, and citric, as well as hydrofluoric, hydrocyanic, and arsenic acids. He preferred speaking German to Swedish his whole life, as German was commonly spoken among Swedish pharmacists."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q70538")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q70538",
+  "isRealHuman": true,
+  "birthDate": "1742-12-09",
+  "deathDate": "1786-05-21",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming his age at death as 43.",
+  "shortDescriptionEn": "Carl Wilhelm Scheele was a German-Swedish chemist who discovered oxygen, chlorine, and manganese. He died at 43, likely due to exposure to toxic substances during his experiments.",
+  "shortDescriptionFr": "Carl Wilhelm Scheele était un chimiste germano-suédois qui a découvert l'oxygène, le chlore et le manganèse. Il est décédé à 43 ans, probablement en raison de l'exposition à des substances toxiques lors de ses expériences.",
+  "shortDescriptionDe": "Carl Wilhelm Scheele war ein deutsch-schwedischer Chemiker, der Sauerstoff, Chlor und Mangan entdeckte. Er starb im Alter von 43 Jahren, wahrscheinlich aufgrund der Exposition gegenüber giftigen Substanzen während seiner Experimente.",
+  "shortDescriptionEs": "Carl Wilhelm Scheele fue un químico germano-sueco que descubrió el oxígeno, el cloro y el manganeso. Murió a los 43 años, probablemente debido a la exposición a sustancias tóxicas durante sus experimentos.",
+  "shortDescriptionRu": "Карл Вильгельм Шееле был немецко-шведским химиком, открывшим кислород, хлор и марганец. Он умер в возрасте 43 лет, вероятно, из-за воздействия токсичных веществ во время своих экспериментов.",
+  "sources": [
+    "https://www.britannica.com/biography/Carl-Wilhelm-Scheele",
+    "https://en.wikipedia.org/wiki/Carl_Wilhelm_Scheele",
+    "https://www.frontiersin.org/news/2022/03/18/children-in-science-carl-wilhelm-scheele-the-forgotten-chemist"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q172248",  "Name": "Marcus Junius Brutus",  "BirthDate": "-0084-01-01T00:00:00Z",  "DeathDate": "-0041-10-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Brutus%20Massimo.jpg",  "SiteLinksCnt": 75,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"37325":{"pageid":37325,"ns":0,"title":"Marcus Junius Brutus","extract":"Marcus Junius Brutus (; Latin: [\u02c8ma\u02d0rk\u028as ju\u02d0ni\u028as \u02c8bru\u02d0t\u028as]; c. 85 BC \u2013 23 October 42 BC) was a Roman politician, orator, and the most famous of the assassins of Julius Caesar. After being adopted by a relative, he used the name Quintus Servilius Caepio Brutus, which was retained as his legal name. He is often referred to simply as Brutus.\nEarly in his political career, Brutus opposed Pompey, who was responsible for Brutus' father's death. He also was close to Caesar. However, Caesar's attempts to evade accountability in the law courts put him at greater odds with his opponents in the Roman elite and the senate. Brutus eventually came to oppose Caesar and sided with Pompey against Caesar's forces during the ensuing civil war (49\u201345 BC). Pompey was defeated at the Battle of Pharsalus in 48, after which Brutus surrendered to Caesar, who granted him amnesty.\nWith Caesar's increasingly monarchical and autocratic behaviour after the civil war, several senators who later called themselves liberatores (liberators) plotted to assassinate him. Brutus took a leading role in the assassination, which was carried out successfully on the Ides of March (15 March) of 44 BC. In a settlement between the liberatores and the Caesarians, an amnesty was granted to the assassins while Caesar's acts were upheld for two years.\nPopular unrest forced Brutus and his brother-in-law, fellow assassin Gaius Cassius Longinus, to leave Rome in April 44. After a complex political realignment, Octavian \u2013 Caesar's adopted son \u2013 made himself consul and, with his colleague, passed a law retroactively making Brutus and the other conspirators murderers. This led to a second civil war, in which Mark Antony and Octavian fought the liberatores led by Brutus and Cassius. The Caesarians decisively defeated the outnumbered armies of Brutus and Cassius at the two battles at Philippi in October 42. After the defeat Brutus took his own life.\nHis name has become a synonym and byword for \"betrayal\" or \"traitor\" in most languages of Europe. His condemnation for betrayal of Caesar, his friend and benefactor, is perhaps rivalled only by the name of Judas Iscariot, with whom he is portrayed in Dante Alighieri's Inferno. He also has been praised in various narratives, both ancient and modern, as a virtuous and committed republican who fought \u2013 however futilely \u2013 for freedom and against tyranny."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q172248")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q172248",
+  "isRealHuman": true,
+  "birthDate": "-0085-06-01",
+  "deathDate": "-0042-10-23",
+  "ageAtDeath": 43,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are approximate due to historical record variations, but the age at death is consistently reported as 43.",
+  "shortDescriptionEn": "Marcus Junius Brutus (85 BC – 42 BC) was a Roman politician and orator, best known for leading the assassination of Julius Caesar on March 15, 44 BC. Following Caesar's death, Brutus faced military defeat and committed suicide after the Battle of Philippi.",
+  "shortDescriptionFr": "Marcus Junius Brutus (85 av. J.-C. – 42 av. J.-C.) était un homme politique et orateur romain, surtout connu pour avoir dirigé l'assassinat de Jules César le 15 mars 44 av. J.-C. Après la mort de César, Brutus a subi une défaite militaire et s'est suicidé après la bataille de Philippes.",
+  "shortDescriptionDe": "Marcus Junius Brutus (85 v. Chr. – 42 v. Chr.) war ein römischer Politiker und Redner, der vor allem für die Führung des Attentats auf Julius Caesar am 15. März 44 v. Chr. bekannt ist. Nach Caesars Tod erlitt Brutus eine militärische Niederlage und beging nach der Schlacht bei Philippi Selbstmord.",
+  "shortDescriptionEs": "Marcus Junius Brutus (85 a.C. – 42 a.C.) fue un político y orador romano, mejor conocido por liderar el asesinato de Julio César el 15 de marzo de 44 a.C. Tras la muerte de César, Bruto enfrentó una derrota militar y se suicidó después de la Batalla de Filipos.",
+  "shortDescriptionRu": "Марк Юний Брут (85 до н.э. – 42 до н.э.) был римским политиком и оратором, наиболее известным как лидер убийства Юлия Цезаря 15 марта 44 до н.э. После смерти Цезаря Брут потерпел военное поражение и покончил с собой после битвы при Филиппах.",
+  "sources": [
+    "https://www.britannica.com/biography/Marcus-Junius-Brutus",
+    "https://www.worldhistory.org/Marcus_Junius_Brutus/",
+    "https://www.biography.com/political-figures/marcus-junius-brutus"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170386",  "Name": "Innocent II",  "BirthDate": "1100-01-01T00:00:00Z",  "DeathDate": "1143-10-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Innocent%20II%20%E2%80%93%20Santa%20Maria%20in%20Trastevere.jpg",  "SiteLinksCnt": 73,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"24428":{"pageid":24428,"ns":0,"title":"Pope Innocent II","extract":"Pope Innocent II (Latin: Innocentius II; died 24 September 1143), born Gregorio Papareschi, was head of the Catholic Church and ruler of the Papal States from 14 February 1130 to his death in 1143. His election as Pope was controversial, and the first eight years of his reign were marked by a struggle for recognition against the supporters of Anacletus II. He reached an understanding with King Lothair III of Germany, who supported him against Anacletus, and whom he crowned as Holy Roman Emperor. Innocent went on to preside over the Second Council of the Lateran."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170386")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q170386",
+  "isRealHuman": true,
+  "birthDate": "1082-01-01",
+  "deathDate": "1143-09-24",
+  "ageAtDeath": 61,
+  "confidence": 80,
+  "confidenceExplained": "The exact birth date is uncertain, but historical estimates suggest 1082. The death date is well-documented as 24 September 1143.",
+  "shortDescriptionEn": "Pope Innocent II (Gregorio Papareschi) served as head of the Catholic Church from 1130 until his death in 1143. His papacy faced challenges, including a significant schism, but he ultimately restored unity within the Church. He died in Rome on 24 September 1143.",
+  "shortDescriptionFr": "Le pape Innocent II (Gregorio Papareschi) a dirigé l'Église catholique de 1130 jusqu'à sa mort en 1143. Son pontificat a été marqué par des défis, notamment un schisme important, mais il a réussi à restaurer l'unité au sein de l'Église. Il est décédé à Rome le 24 septembre 1143.",
+  "shortDescriptionDe": "Papst Innozenz II. (Gregorio Papareschi) leitete die katholische Kirche von 1130 bis zu seinem Tod im Jahr 1143. Sein Pontifikat war von Herausforderungen geprägt, darunter ein bedeutendes Schisma, aber er stellte letztlich die Einheit innerhalb der Kirche wieder her. Er starb am 24. September 1143 in Rom.",
+  "shortDescriptionEs": "El Papa Inocencio II (Gregorio Papareschi) fue el líder de la Iglesia Católica desde 1130 hasta su muerte en 1143. Su pontificado enfrentó desafíos, incluido un cisma significativo, pero finalmente restauró la unidad dentro de la Iglesia. Falleció en Roma el 24 de septiembre de 1143.",
+  "shortDescriptionRu": "Папа Иннокентий II (Грегорио Папарески) возглавлял Католическую церковь с 1130 года до своей смерти в 1143 году. Его понтификат был отмечен вызовами, включая значительный раскол, но он в конечном итоге восстановил единство внутри Церкви. Он скончался в Риме 24 сентября 1143 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Innocent_II",
+    "https://www.britannica.com/biography/Innocent-II",
+    "https://www.newadvent.org/cathen/08012a.htm"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5236",  "Name": "Edward II of England",  "BirthDate": "1284-05-02T00:00:00Z",  "DeathDate": "1327-09-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/King%20Edward%20II%20of%20England.jpg",  "SiteLinksCnt": 73,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"44848":{"pageid":44848,"ns":0,"title":"Edward II of England","extract":"Edward II (25 April 1284 \u2013 21 September 1327), also known as Edward of Caernarfon or Caernarvon, was King of England from 1307 until he was deposed in January 1327. The fourth son of Edward I, Edward became the heir to the throne following the death of his older brother Alphonso. Beginning in 1300, Edward accompanied his father on campaigns in Scotland, and in 1306 he was knighted in a grand ceremony at Westminster Abbey. Edward succeeded to the throne the next year, following his father's death. In 1308, he married Isabella, daughter of the powerful King Philip IV of France, as part of a long-running effort to resolve the tensions between the English and French crowns.\nEdward had a close and controversial relationship with Piers Gaveston, who had joined his household in 1300. The precise nature of Edward and Gaveston's relationship is uncertain; they may have been friends, lovers, or sworn brothers. Gaveston's arrogance and power as Edward's favourite provoked discontent both among the barons and the French royal family, and Edward was forced to exile him. On Gaveston's return, the barons pressured the King into agreeing to wide-ranging reforms called the Ordinances of 1311. The newly empowered barons banished Gaveston, to which Edward responded by revoking the reforms and recalling his favourite. Led by Edward's cousin Thomas, 2nd Earl of Lancaster, a group of the barons seized and executed Gaveston in 1312, beginning several years of armed confrontation. English forces were pushed back in Scotland, where Edward was decisively defeated by Robert the Bruce at the Battle of Bannockburn in 1314. Widespread famine followed, and criticism of the King's reign mounted.\nThe Despenser family, in particular Hugh Despenser the Younger, became close friends and advisers to Edward, but in 1321 Lancaster and many of the barons seized the Despensers' lands and forced the King to exile them. In response, Edward led a short military campaign, capturing and executing Lancaster. Edward and the Despensers strengthened their grip on power, revoking the 1311 reforms, executing their enemies and confiscating estates. Unable to make progress in Scotland, Edward finally signed a truce with Robert. Opposition to the regime grew, and when Isabella was sent to France to negotiate a peace treaty in 1325, she turned against Edward and refused to return. Isabella allied herself with the exiled Roger Mortimer, and invaded England with a small army in 1326. Edward's regime collapsed and he fled into Wales, where he was captured in November. Edward was forced to relinquish his crown in January 1327 in favour of his son, Edward III of England, and he died in Berkeley Castle on 21 September, probably murdered on the orders of the new regime.\nEdward's relationship with Gaveston inspired Christopher Marlowe's 1592 play Edward II, along with other plays, films, novels and media. Many of these have focused on the possible sexual relationship between the two men. Edward's contemporaries criticised his performance as a king, noting his failures in Scotland and the oppressive regime of his later years, although 19th-century academics have argued that the growth of parliamentary institutions during his reign was a positive development for England over the longer term. Debate has continued into the 21st century as to whether Edward was a lazy and incompetent king, or simply a reluctant and ultimately unsuccessful ruler.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5236")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5236",
+  "isRealHuman": true,
+  "birthDate": "1284-04-25",
+  "deathDate": "1327-09-21",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of Edward II are well-documented in historical records, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Edward II (25 April 1284 – 21 September 1327) was King of England from 1307 until his deposition in January 1327. His reign was marked by military defeats and internal strife, leading to his forced abdication and subsequent mysterious death at Berkeley Castle.",
+  "shortDescriptionFr": "Édouard II (25 avril 1284 – 21 septembre 1327) fut roi d'Angleterre de 1307 jusqu'à sa déposition en janvier 1327. Son règne fut marqué par des défaites militaires et des conflits internes, menant à son abdication forcée et à sa mort mystérieuse au château de Berkeley.",
+  "shortDescriptionDe": "Eduard II. (25. April 1284 – 21. September 1327) war von 1307 bis zu seiner Absetzung im Januar 1327 König von England. Seine Herrschaft war geprägt von militärischen Niederlagen und inneren Konflikten, die zu seiner erzwungenen Abdankung und seinem mysteriösen Tod auf Schloss Berkeley führten.",
+  "shortDescriptionEs": "Eduardo II (25 de abril de 1284 – 21 de septiembre de 1327) fue rey de Inglaterra desde 1307 hasta su deposición en enero de 1327. Su reinado estuvo marcado por derrotas militares y conflictos internos, lo que llevó a su abdicación forzada y a su misteriosa muerte en el castillo de Berkeley.",
+  "shortDescriptionRu": "Эдуард II (25 апреля 1284 – 21 сентября 1327) был королем Англии с 1307 года до своей отречения в январе 1327 года. Его правление было отмечено военными поражениями и внутренними конфликтами, что привело к его вынужденному отречению и последующей загадочной смерти в замке Беркли.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edward_II_of_England",
+    "https://www.britannica.com/biography/Edward-II-king-of-England",
+    "https://www.ianmortimer.com/EdwardII/death.htm"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180919",  "Name": "Natalie Wood",  "BirthDate": "1938-07-20T00:00:00Z",  "DeathDate": "1981-11-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Natalie%20Wood%20Allan%20Warren.jpg",  "SiteLinksCnt": 72,  "Age": 43}
+{"batchcomplete":"","query":{"pages":{"77390":{"pageid":77390,"ns":0,"title":"Natalie Wood","extract":"Natalie Wood (n\u00e9e Zacharenko; July 20, 1938 \u2013 November 29, 1981) was an American actress. She began acting at age four and co-starred at age eight in Miracle on 34th Street (1947). As a teenager, she was nominated for an Academy Award for Best Supporting Actress for her performance in Rebel Without a Cause (1955), followed by a role in John Ford's The Searchers (1956). Wood starred in the musical films West Side Story (1961) and Gypsy (1962) and received nominations for an Academy Award for Best Actress for her performances in Splendor in the Grass (1961) and Love with the Proper Stranger (1963). Her career continued with films such as Sex and the Single Girl (1964), The Great Race (1965), Inside Daisy Clover (1965), This Property Is Condemned (1966), and Bob & Carol & Ted & Alice (1969).\nDuring the 1970s, Wood began a hiatus from film and had two daughters: one with her second husband Richard Gregson, and one with Robert Wagner, her first husband whom she married again after divorcing Gregson. She acted in only two feature films throughout the decade, but she appeared slightly more often in television productions, including a remake of From Here to Eternity (1979) for which she won a Golden Globe Award. Wood's films represented a \"coming of age\" for her and for Hollywood films in general. Critics have suggested that her cinematic career represents a portrait of modern American womanhood in transition, as she was one of the few to take both child roles and those of middle-aged characters.\nOn November 29, 1981, at the age of 43, Wood drowned in the Pacific Ocean at Santa Catalina Island during a break from production of her would-be comeback film Brainstorm (1983). She was with her husband Wagner and Brainstorm co-star Christopher Walken. The events surrounding her death have been the subject of conflicting witness statements, prompting the Los Angeles County Sheriff's Department, under the instruction of the coroner's office, to list her cause of death as \"drowning and other undetermined factors\" in 2012. In 2018, Wagner was named as a person of interest in the ongoing investigation into her death.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180919")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q180919",
+  "isRealHuman": true,
+  "birthDate": "1938-07-20",
+  "deathDate": "1981-11-29",
+  "ageAtDeath": 43,
+  "confidence": 100,
+  "confidenceExplained": "Natalie Wood's birth and death dates are well-documented and widely recognized, confirming her age at death as 43.",
+  "shortDescriptionEn": "Natalie Wood (July 20, 1938 – November 29, 1981) was an American actress acclaimed for her roles in 'Rebel Without a Cause' and 'West Side Story.' She tragically drowned at age 43 under circumstances that have remained a subject of investigation.",
+  "shortDescriptionFr": "Natalie Wood (20 juillet 1938 – 29 novembre 1981) était une actrice américaine, acclamée pour ses rôles dans 'La Fureur de vivre' et 'West Side Story.' Elle s'est tragiquement noyée à l'âge de 43 ans dans des circonstances qui ont fait l'objet d'enquêtes.",
+  "shortDescriptionDe": "Natalie Wood (20. Juli 1938 – 29. November 1981) war eine amerikanische Schauspielerin, bekannt für ihre Rollen in '… denn sie wissen nicht, was sie tun' und 'West Side Story.' Sie ertrank tragischerweise im Alter von 43 Jahren unter Umständen, die Gegenstand von Untersuchungen waren.",
+  "shortDescriptionEs": "Natalie Wood (20 de julio de 1938 – 29 de noviembre de 1981) fue una actriz estadounidense, aclamada por sus papeles en 'Rebelde sin causa' y 'Amor sin barreras.' Trágicamente, se ahogó a los 43 años en circunstancias que han sido objeto de investigación.",
+  "shortDescriptionRu": "Натали Вуд (20 июля 1938 – 29 ноября 1981) была американской актрисой, известной по ролям в фильмах 'Бунтарь без причины' и 'Вестсайдская история.' Трагически утонула в возрасте 43 лет при обстоятельствах, которые остаются предметом расследования.",
+  "sources": [
+    "https://www.britannica.com/biography/Natalie-Wood",
+    "https://people.com/natalie-wood-death-legacy-what-to-know-8643850",
+    "https://www.newsweek.com/entertainment/celebrity-news/everything-know-natalie-wood-mysterious-death-1992858"
+  ]
+}
