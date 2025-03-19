@@ -1,0 +1,963 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9696",  "Name": "John F. Kennedy",  "BirthDate": "1917-05-29T00:00:00Z",  "DeathDate": "1963-11-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20F.%20Kennedy%2C%20White%20House%20color%20photo%20portrait.jpg",  "SiteLinksCnt": 244,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"5119376":{"pageid":5119376,"ns":0,"title":"John F. Kennedy","extract":"John Fitzgerald Kennedy (May 29, 1917 \u2013 November 22, 1963), also known as JFK, was the 35th president of the United States, serving from 1961 until his assassination in 1963. He was the first Roman Catholic and youngest person elected president at 43 years. Kennedy served at the height of the Cold War, and the majority of his foreign policy concerned relations with the Soviet Union and Cuba. A Democrat, Kennedy represented Massachusetts in both houses of the United States Congress prior to his presidency.\nBorn into the prominent Kennedy family in Brookline, Massachusetts, Kennedy graduated from Harvard University in 1940, joining the U.S. Naval Reserve the following year. During World War II, he commanded PT boats in the Pacific theater. Kennedy's survival following the sinking of PT-109 and his rescue of his fellow sailors made him a war hero and earned the Navy and Marine Corps Medal, but left him with serious injuries. After a brief stint in journalism, Kennedy represented a working-class Boston district in the U.S. House of Representatives from 1947 to 1953. He was subsequently elected to the U.S. Senate, serving as the junior senator for Massachusetts from 1953 to 1960. While in the Senate, Kennedy published his book, Profiles in Courage, which won a Pulitzer Prize. Kennedy ran in the 1960 presidential election. His campaign gained momentum after the first televised presidential debates in American history, and he was elected president, narrowly defeating Republican opponent Richard Nixon, the incumbent vice president.\nKennedy's presidency saw high tensions with communist states in the Cold War. He increased the number of American military advisers in South Vietnam, and the Strategic Hamlet Program began during his presidency. In 1961, he authorized attempts to overthrow the Cuban government of Fidel Castro in the failed Bay of Pigs Invasion and Operation Mongoose. In October 1962, U.S. spy planes discovered Soviet missile bases had been deployed in Cuba. The resulting period of tensions, termed the Cuban Missile Crisis, nearly resulted in nuclear war. In August 1961, after East German troops erected the Berlin Wall, Kennedy sent an army convoy to reassure West Berliners of U.S. support, and delivered one of his most famous speeches in West Berlin in June 1963. In 1963, Kennedy signed the first nuclear weapons treaty. He presided over the establishment of the Peace Corps, Alliance for Progress with Latin America, and the continuation of the Apollo program with the goal of landing a man on the Moon before 1970. He supported the civil rights movement but was only somewhat successful in passing his New Frontier domestic policies.\nOn November 22, 1963, Kennedy was assassinated in Dallas. His vice president, Lyndon B. Johnson, assumed the presidency. Lee Harvey Oswald was arrested for the assassination, but he was shot and killed by Jack Ruby two days later. The FBI and the Warren Commission both concluded Oswald had acted alone, but conspiracy theories about the assassination persist. After Kennedy's death, Congress enacted many of his proposals, including the Civil Rights Act of 1964 and the Revenue Act of 1964. Kennedy ranks highly in polls of U.S. presidents with historians and the general public. His personal life has been the focus of considerable sustained interest following public revelations in the 1970s of his chronic health ailments and extramarital affairs. Kennedy is the most recent U.S. president to have died in office."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9696")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9696",
+  "isRealHuman": true,
+  "birthDate": "1917-05-29",
+  "deathDate": "1963-11-22",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of John F. Kennedy are well-documented and universally accepted, making the calculation of his age at death precise.",
+  "shortDescriptionEn": "John F. Kennedy (May 29, 1917 – November 22, 1963) was the 35th President of the United States, serving from 1961 until his assassination in 1963. He was the youngest elected president and faced significant events such as the Cuban Missile Crisis. Kennedy was assassinated in Dallas, Texas, while riding in a motorcade.",
+  "shortDescriptionFr": "John F. Kennedy (29 mai 1917 – 22 novembre 1963) fut le 35ᵉ président des États-Unis, en fonction de 1961 jusqu'à son assassinat en 1963. Il fut le plus jeune président élu et a fait face à des événements majeurs tels que la crise des missiles de Cuba. Kennedy a été assassiné à Dallas, Texas, alors qu'il circulait en cortège.",
+  "shortDescriptionDe": "John F. Kennedy (29. Mai 1917 – 22. November 1963) war der 35. Präsident der Vereinigten Staaten und amtierte von 1961 bis zu seiner Ermordung 1963. Er war der jüngste gewählte Präsident und stand vor bedeutenden Ereignissen wie der Kubakrise. Kennedy wurde in Dallas, Texas, während einer Autofahrt ermordet.",
+  "shortDescriptionEs": "John F. Kennedy (29 de mayo de 1917 – 22 de noviembre de 1963) fue el 35.º presidente de los Estados Unidos, sirviendo desde 1961 hasta su asesinato en 1963. Fue el presidente más joven electo y enfrentó eventos significativos como la crisis de los misiles en Cuba. Kennedy fue asesinado en Dallas, Texas, mientras viajaba en una caravana.",
+  "shortDescriptionRu": "Джон Ф. Кеннеди (29 мая 1917 – 22 ноября 1963) был 35-м президентом США, занимая пост с 1961 года до своего убийства в 1963 году. Он был самым молодым избранным президентом и столкнулся с такими значительными событиями, как Карибский кризис. Кеннеди был убит в Далласе, штат Техас, во время поездки в автоколонне.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_F._Kennedy",
+    "https://www.britannica.com/biography/John-F-Kennedy",
+    "https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/november-22-1963-death-of-the-president"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q30875",  "Name": "Oscar Wilde",  "BirthDate": "1854-10-16T00:00:00Z",  "DeathDate": "1900-11-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Oscar%20Wilde%20by%20Napoleon%20Sarony.%20Three-quarter-length%20photograph%2C%20seated.jpg",  "SiteLinksCnt": 215,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"22614":{"pageid":22614,"ns":0,"title":"Oscar Wilde","extract":"Oscar Fingal O'Fflahertie Wills Wilde (16 October 1854 \u2013 30 November 1900) was an Irish poet and playwright. After writing in different forms throughout the 1880s, he became one of the most popular and influential playwrights in London in the early 1890s. He is best remembered for his epigrams and plays, his 1891 novel The Picture of Dorian Gray, and his criminal conviction for gross indecency for homosexual acts.\nWilde's parents were Anglo-Irish intellectuals in Dublin. In his youth, Wilde learned to speak fluent French and German. At university, he read Greats; he demonstrated himself to be an exceptional classicist, first at Trinity College Dublin, then at Magdalen College, Oxford. He became associated with the emerging philosophy of aestheticism, led by two of his tutors, Walter Pater and John Ruskin. After university, Wilde moved to London into fashionable cultural and social circles.\nWilde tried his hand at various literary activities: he wrote a play, published a book of poems, lectured in the United States and Canada on \"The English Renaissance\" in art and interior decoration, and then returned to London where he lectured on his American travels and wrote reviews for various periodicals. Known for his biting wit, flamboyant dress and glittering conversational skill, Wilde became one of the best-known personalities of his day. At the turn of the 1890s, he refined his ideas about the supremacy of art in a series of dialogues and essays, and incorporated themes of decadence, duplicity, and beauty into what would be his only novel, The Picture of Dorian Gray (1890). Wilde returned to drama, writing Salome (1891) in French while in Paris, but it was refused a licence for England due to an absolute prohibition on the portrayal of Biblical subjects on the English stage. Undiscouraged, Wilde produced four society comedies in the early 1890s, which made him one of the most successful playwrights of late-Victorian London.\nAt the height of his fame and success, while An Ideal Husband (1895) and The Importance of Being Earnest (1895) were still being performed in London, Wilde issued a civil writ against John Sholto Douglas, the 9th Marquess of Queensberry for criminal libel. The Marquess was the father of Wilde's lover, Lord Alfred Douglas. The libel hearings unearthed evidence that caused Wilde to drop his charges and led to his own arrest and criminal prosecution for gross indecency with other males. The jury was unable to reach a verdict and so a retrial was ordered. In the second trial Wilde was convicted and sentenced to two years' hard labour, the maximum penalty, and was jailed from 1895 to 1897. During his last year in prison he wrote De Profundis (published posthumously in abridged form in 1905), a long letter that discusses his spiritual journey through his trials and is a dark counterpoint to his earlier philosophy of pleasure. On the day of his release, he caught the overnight steamer to France, never to return to Britain or Ireland. In France and Italy, he wrote his last work, The Ballad of Reading Gaol (1898), a long poem commemorating the harsh rhythms of prison life.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q30875")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q30875",
+  "isRealHuman": true,
+  "birthDate": "1854-10-16",
+  "deathDate": "1900-11-30",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Oscar Wilde was an Irish poet and playwright, known for his sharp wit and celebrated works like 'The Picture of Dorian Gray' and 'The Importance of Being Earnest.' His life ended tragically after a conviction for 'gross indecency' due to his homosexual relationships, leading to imprisonment and his untimely death at 46.",
+  "shortDescriptionFr": "Oscar Wilde était un poète et dramaturge irlandais, connu pour son esprit vif et des œuvres célèbres comme 'Le Portrait de Dorian Gray' et 'L'Importance d'être Constant.' Sa vie s'est terminée tragiquement après une condamnation pour 'indécence grave' en raison de ses relations homosexuelles, conduisant à l'emprisonnement et à sa mort prématurée à 46 ans.",
+  "shortDescriptionDe": "Oscar Wilde war ein irischer Dichter und Dramatiker, bekannt für seinen scharfsinnigen Witz und gefeierte Werke wie 'Das Bildnis des Dorian Gray' und 'Bunbury oder Ernst sein ist alles.' Sein Leben endete tragisch nach einer Verurteilung wegen 'grober Unanständigkeit' aufgrund seiner homosexuellen Beziehungen, was zu Inhaftierung und seinem frühen Tod im Alter von 46 Jahren führte.",
+  "shortDescriptionEs": "Oscar Wilde fue un poeta y dramaturgo irlandés, conocido por su agudo ingenio y obras célebres como 'El retrato de Dorian Gray' y 'La importancia de llamarse Ernesto.' Su vida terminó trágicamente después de una condena por 'indecencia grave' debido a sus relaciones homosexuales, lo que llevó a su encarcelamiento y a su prematura muerte a los 46 años.",
+  "shortDescriptionRu": "Оскар Уайльд был ирландским поэтом и драматургом, известным своим остроумием и знаменитыми произведениями, такими как 'Портрет Дориана Грея' и 'Как важно быть серьезным.' Его жизнь трагически оборвалась после осуждения за 'грубую непристойность' из-за его гомосексуальных отношений, что привело к тюремному заключению и его преждевременной смерти в возрасте 46 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Oscar_Wilde",
+    "https://www.theguardian.com/culture/2024/sep/21/oscar-wilde-grandson-condemns-new-london-sculpture"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3335",  "Name": "George Orwell",  "BirthDate": "1903-06-25T00:00:00Z",  "DeathDate": "1950-01-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Orwell%20press%20photo.jpg",  "SiteLinksCnt": 203,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"11891":{"pageid":11891,"ns":0,"title":"George Orwell","extract":"Eric Arthur Blair (25 June 1903 \u2013 21 January 1950) was an English novelist, poet, essayist, journalist and critic who wrote under the pen name of George Orwell. His work is characterised by lucid prose, social criticism, opposition to all totalitarianism (both authoritarian communism and fascism), and support of democratic socialism.\nOrwell is best known for his allegorical novella Animal Farm (1945) and the dystopian novel Nineteen Eighty-Four (1949), although his works also encompass literary criticism, poetry, fiction and polemical journalism. His non-fiction works, including The Road to Wigan Pier (1937), documenting his experience of working-class life in the industrial north of England, and Homage to Catalonia (1938), an account of his experiences soldiering for the Republican faction of the Spanish Civil War (1936\u20131939), are as critically respected as his essays on politics, literature, language and culture.\nOrwell's work remains influential in popular culture and in political culture, and the adjective \"Orwellian\"\u2014describing totalitarian and authoritarian social practices\u2014is part of the English language, like many of his neologisms, such as \"Big Brother\", \"Thought Police\", \"Room 101\", \"Newspeak\", \"memory hole\", \"doublethink\", and \"thoughtcrime\". In 2008, The Times named Orwell the second-greatest British writer since 1945."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3335")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q3335",
+  "isRealHuman": true,
+  "birthDate": "1903-06-25",
+  "deathDate": "1950-01-21",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, confirming his age at death as 46.",
+  "shortDescriptionEn": "George Orwell was an English novelist, essayist, journalist, and critic, known for his works 'Animal Farm' and 'Nineteen Eighty-Four'. He died at 46 due to tuberculosis.",
+  "shortDescriptionFr": "George Orwell était un romancier, essayiste, journaliste et critique anglais, connu pour ses œuvres 'La Ferme des animaux' et '1984'. Il est décédé à 46 ans de la tuberculose.",
+  "shortDescriptionDe": "George Orwell war ein englischer Romanautor, Essayist, Journalist und Kritiker, bekannt für seine Werke 'Farm der Tiere' und '1984'. Er starb im Alter von 46 Jahren an Tuberkulose.",
+  "shortDescriptionEs": "George Orwell fue un novelista, ensayista, periodista y crítico inglés, conocido por sus obras 'Rebelión en la granja' y '1984'. Murió a los 46 años debido a la tuberculosis.",
+  "shortDescriptionRu": "Джордж Оруэлл был английским писателем, эссеистом, журналистом и критиком, известным своими произведениями 'Скотный двор' и '1984'. Он умер в возрасте 46 лет от туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/George_Orwell",
+    "https://www.theguardian.com/books/2025/jan/13/george-orwell-to-be-honoured-on-new-2-coin-by-royal-mint"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34670",  "Name": "Albert Camus",  "BirthDate": "1913-11-07T00:00:00Z",  "DeathDate": "1960-01-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Camus%2C%20gagnant%20de%20prix%20Nobel%2C%20portrait%20en%20buste%2C%20pos%C3%A9%20au%20bureau%2C%20faisant%20face%20%C3%A0%20gauche%2C%20cigarette%20de%20tabagisme.jpg",  "SiteLinksCnt": 201,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"983":{"pageid":983,"ns":0,"title":"Albert Camus","extract":"Albert Camus ( ka-MOO; French: [alb\u025b\u0281 kamy] ; 7 November 1913 \u2013 4 January 1960) was a French philosopher, author, dramatist, journalist, world federalist, and political activist. He was the recipient of the 1957 Nobel Prize in Literature at the age of 44, the second-youngest recipient in history. His works include The Stranger, The Plague, The Myth of Sisyphus, The Fall and The Rebel.\nCamus was born in French Algeria to pied-noir parents. He spent his childhood in a poor neighbourhood and later studied philosophy at the University of Algiers. He was in Paris when the Germans invaded France during World War II in 1940. Camus tried to flee but finally joined the French Resistance where he served as editor-in-chief at Combat, an outlawed newspaper. After the war, he was a celebrity figure and gave many lectures around the world. He married twice but had many extramarital affairs. Camus was politically active; he was part of the left that opposed Joseph Stalin and the Soviet Union because of their totalitarianism. Camus was a moralist and leaned towards anarcho-syndicalism. He was part of many organisations seeking European integration. During the Algerian War (1954\u20131962), he kept a neutral stance, advocating a multicultural and pluralistic Algeria, a position that was rejected by most parties.\nPhilosophically, Camus's views contributed to the rise of the philosophy known as absurdism. Some consider Camus's work to show him to be an existentialist, even though he himself firmly rejected the term throughout his lifetime.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34670")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q34670",
+  "isRealHuman": true,
+  "birthDate": "1913-11-07",
+  "deathDate": "1960-01-04",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Albert Camus was a French philosopher and author, known for works like 'The Stranger' and 'The Plague'. He received the Nobel Prize in Literature in 1957 and died in a car accident in 1960 at age 46.",
+  "shortDescriptionFr": "Albert Camus était un philosophe et auteur français, connu pour des œuvres comme 'L'Étranger' et 'La Peste'. Il a reçu le prix Nobel de littérature en 1957 et est décédé dans un accident de voiture en 1960 à l'âge de 46 ans.",
+  "shortDescriptionDe": "Albert Camus war ein französischer Philosoph und Autor, bekannt für Werke wie 'Der Fremde' und 'Die Pest'. Er erhielt 1957 den Nobelpreis für Literatur und starb 1960 im Alter von 46 Jahren bei einem Autounfall.",
+  "shortDescriptionEs": "Albert Camus fue un filósofo y autor francés, conocido por obras como 'El extranjero' y 'La peste'. Recibió el Premio Nobel de Literatura en 1957 y murió en un accidente automovilístico en 1960 a los 46 años.",
+  "shortDescriptionRu": "Альбер Камю был французским философом и писателем, известным такими произведениями, как 'Посторонний' и 'Чума'. Он получил Нобелевскую премию по литературе в 1957 году и погиб в автокатастрофе в 1960 году в возрасте 46 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Albert-Camus",
+    "https://en.wikipedia.org/wiki/Albert_Camus"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q501",  "Name": "Charles Baudelaire",  "BirthDate": "1821-04-09T00:00:00Z",  "DeathDate": "1867-08-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Baudelaire%20crop.jpg",  "SiteLinksCnt": 174,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"5804":{"pageid":5804,"ns":0,"title":"Charles Baudelaire","extract":"Charles Pierre Baudelaire (UK: , US: ; French: [\u0283a\u0281l(\u0259) bodl\u025b\u0281] ; 9 April 1821 \u2013 31 August 1867) was a French poet, essayist, translator and art critic. His poems are described as exhibiting mastery of rhyme and rhythm, containing an exoticism inherited from the Romantics, and are based on observations of real life.\nHis most famous work, a book of lyric poetry titled Les Fleurs du mal (The Flowers of Evil), expresses the changing nature of beauty in the rapidly industrialising Paris caused by Haussmann's renovation of Paris during the mid-19th century. Baudelaire's original style of prose-poetry influenced a generation of poets including Paul Verlaine, Arthur Rimbaud and St\u00e9phane Mallarm\u00e9. He coined the term modernity (modernit\u00e9) to designate the fleeting experience of life in an urban metropolis, and the responsibility of artistic expression to capture that experience. Marshall Berman has credited Baudelaire as being the first Modernist."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q501")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q501",
+  "isRealHuman": true,
+  "birthDate": "1821-04-09",
+  "deathDate": "1867-08-31",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Charles Baudelaire was a French poet, essayist, and art critic, best known for his collection 'Les Fleurs du mal.' He died at the age of 46 due to complications from syphilis, which led to a stroke and partial paralysis.",
+  "shortDescriptionFr": "Charles Baudelaire était un poète, essayiste et critique d'art français, surtout connu pour son recueil 'Les Fleurs du mal.' Il est décédé à l'âge de 46 ans des suites de complications liées à la syphilis, qui ont entraîné un AVC et une paralysie partielle.",
+  "shortDescriptionDe": "Charles Baudelaire war ein französischer Dichter, Essayist und Kunstkritiker, bekannt für seine Sammlung 'Les Fleurs du mal.' Er starb im Alter von 46 Jahren an den Folgen von Syphilis, die zu einem Schlaganfall und teilweiser Lähmung führte.",
+  "shortDescriptionEs": "Charles Baudelaire fue un poeta, ensayista y crítico de arte francés, conocido por su colección 'Las flores del mal.' Murió a los 46 años debido a complicaciones de la sífilis, que le provocaron un derrame cerebral y parálisis parcial.",
+  "shortDescriptionRu": "Шарль Бодлер был французским поэтом, эссеистом и арт-критиком, наиболее известным своим сборником 'Цветы зла.' Он умер в возрасте 46 лет от осложнений сифилиса, которые привели к инсульту и частичному параличу.",
+  "sources": [
+    "https://www.britannica.com/biography/Charles-Baudelaire",
+    "https://poets.org/poet/charles-baudelaire",
+    "https://www.poetryfoundation.org/poets/charles-baudelaire"
+  ]
+}
+
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37463",  "Name": "Pierre Curie",  "BirthDate": "1859-05-15T00:00:00Z",  "DeathDate": "1906-04-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Curie%20by%20Dujardin%20c1906.jpg",  "SiteLinksCnt": 129,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"24509":{"pageid":24509,"ns":0,"title":"Pierre Curie","extract":"Pierre Curie ( KURE-ee; French: [pj\u025b\u0281 ky\u0281i]; 15 May 1859 \u2013 19 April 1906) was a French chemist, physicist and a pioneer in crystallography, magnetism, piezoelectricity and radioactivity. He shared the 1903 Nobel Prize in Physics with his wife, Marie Curie, and Henri Becquerel \"in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel\". With their win, the Curies became the first married couple to win the Nobel Prize, launching the Curie family legacy of five Nobel Prizes.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37463")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37463",
+  "isRealHuman": true,
+  "birthDate": "1859-05-15",
+  "deathDate": "1906-04-19",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, providing a precise age at death.",
+  "shortDescriptionEn": "Pierre Curie was a pioneering French physicist and chemist, known for his work in crystallography, magnetism, piezoelectricity, and radioactivity. He and his wife, Marie Curie, discovered polonium and radium. He died in 1906 at the age of 46 after being struck by a horse-drawn vehicle in Paris.",
+  "shortDescriptionFr": "Pierre Curie était un physicien et chimiste français pionnier, connu pour ses travaux en cristallographie, magnétisme, piézoélectricité et radioactivité. Lui et sa femme, Marie Curie, ont découvert le polonium et le radium. Il est décédé en 1906 à l'âge de 46 ans après avoir été heurté par un véhicule hippomobile à Paris.",
+  "shortDescriptionDe": "Pierre Curie war ein wegweisender französischer Physiker und Chemiker, bekannt für seine Arbeiten in der Kristallographie, im Magnetismus, in der Piezoelektrizität und Radioaktivität. Zusammen mit seiner Frau Marie Curie entdeckte er Polonium und Radium. Er starb 1906 im Alter von 46 Jahren, nachdem er in Paris von einem Pferdefuhrwerk erfasst worden war.",
+  "shortDescriptionEs": "Pierre Curie fue un físico y químico francés pionero, conocido por su trabajo en cristalografía, magnetismo, piezoelectricidad y radiactividad. Junto con su esposa, Marie Curie, descubrió el polonio y el radio. Murió en 1906 a los 46 años después de ser atropellado por un vehículo tirado por caballos en París.",
+  "shortDescriptionRu": "Пьер Кюри был выдающимся французским физиком и химиком, известным своими работами в области кристаллографии, магнетизма, пьезоэлектричества и радиоактивности. Вместе с женой Марией Кюри он открыл полоний и радий. Он погиб в 1906 году в возрасте 46 лет, будучи сбитым конным экипажем в Париже.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/physics/1903/pierre-curie/biographical/",
+    "https://www.britannica.com/biography/Pierre-Curie",
+    "https://en.wikipedia.org/wiki/Pierre_Curie"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7351",  "Name": "Robert Schumann",  "BirthDate": "1810-06-08T00:00:00Z",  "DeathDate": "1856-07-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert-schumann.jpg",  "SiteLinksCnt": 128,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"44887":{"pageid":44887,"ns":0,"title":"Robert Schumann","extract":"Robert Schumann (; German: [\u02c8\u0281o\u02d0b\u025b\u0281t \u02c8\u0283u\u02d0man]; 8 June 1810 \u2013 29 July 1856) was a German composer, pianist, and music critic of the early Romantic era. He composed in all the main musical genres of the time, writing for solo piano, voice and piano, chamber groups, orchestra, choir and the opera. His works typify the spirit of the Romantic era in German music.\nSchumann was born in Zwickau, Saxony, to an affluent middle-class family with no musical connections, and was initially unsure whether to pursue a career as a lawyer or to make a living as a pianist-composer. He studied law at the universities of Leipzig and Heidelberg but his main interests were music and Romantic literature. From 1829 he was a student of the piano teacher Friedrich Wieck, but his hopes for a career as a virtuoso pianist were frustrated by a worsening problem with his right hand, and he concentrated on composition. His early works were mainly piano pieces, including the large-scale Carnaval, Davidsb\u00fcndlert\u00e4nze (Dances of the League of David), Fantasiest\u00fccke (Fantasy Pieces), Kreisleriana and Kinderszenen (Scenes from Childhood) (1834\u20131838). He was a co-founder of the Neue Zeitschrift f\u00fcr Musik (New Musical Journal) in 1834 and edited it for ten years. In his writing for the journal and in his music he distinguished between two contrasting aspects of his personality, dubbing these alter egos \"Florestan\" for his impetuous self and \"Eusebius\" for his gentle poetic side.\nDespite the bitter opposition of Wieck, who did not regard his pupil as a suitable husband for her, Schumann married Wieck's daughter Clara in 1840. In the years immediately following their wedding Schumann composed prolifically, writing, first, songs and song\u2010cycles including Frauenliebe und Leben (\"Woman's Love and Life\") and Dichterliebe (\"Poet's Love\"). He turned his attention to orchestral music in 1841, completing the first of his four symphonies. In the following year he concentrated on chamber music, writing three string quartets, a Piano Quintet and a Piano Quartet. During the rest of the 1840s, between bouts of mental and physical ill health, he composed a variety of piano and other pieces and went with his wife on concert tours in Europe. His only opera, Genoveva (1850), was not a success and has seldom been staged since.\nSchumann and his family moved to D\u00fcsseldorf in 1850 in the hope that his appointment as the city's director of music would provide financial security, but his shyness and mental instability made it difficult for him to work with his orchestra and he had to resign after three years. In 1853 the Schumanns met the twenty-year-old Johannes Brahms, whom Schumann praised in an article in the Neue Zeitschrift f\u00fcr Musik. The following year Schumann's always-precarious mental health deteriorated gravely. He threw himself into the River Rhine but was rescued and taken to a private sanatorium near Bonn, where he lived for more than two years, dying there at the age of 46.\nDuring his lifetime Schumann was recognised for his piano music \u2013 often subtly programmatic \u2013 and his songs. His other works were less generally admired, and for many years there was a widespread belief that those from his later years lacked the inspiration of his early music. More recently this view has been less prevalent, but it is still his piano works and songs from the 1830s and 1840s on which his reputation is primarily based. He had considerable influence in the nineteenth century and beyond. In the German-speaking world the composers Gustav Mahler, Richard Strauss, Arnold Schoenberg and more recently Wolfgang Rihm have been inspired by his music, as were French composers such as Georges Bizet, Gabriel Faur\u00e9, Claude Debussy and Maurice Ravel. Schumann was also a major influence on the Russian school of composers, including Anton Rubinstein and Pyotr Ilyich Tchaikovsky."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7351")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7351",
+  "isRealHuman": true,
+  "birthDate": "1810-06-08",
+  "deathDate": "1856-07-29",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The dates and details provided match historical records of Robert Schumann, confirming his identity and age at death.",
+  "shortDescriptionEn": "Robert Schumann was a German composer and influential music critic of the Romantic era. He composed notable works for piano and voice, including 'Carnaval' and 'Dichterliebe.' Schumann faced mental health challenges later in life, leading to his death at 46 in a sanatorium.",
+  "shortDescriptionFr": "Robert Schumann était un compositeur allemand et un critique musical influent de l'époque romantique. Il a composé des œuvres notables pour piano et voix, notamment 'Carnaval' et 'Dichterliebe.' Schumann a fait face à des problèmes de santé mentale plus tard dans sa vie, menant à sa mort à 46 ans dans un sanatorium.",
+  "shortDescriptionDe": "Robert Schumann war ein deutscher Komponist und einflussreicher Musikkritiker der Romantik. Er komponierte bemerkenswerte Werke für Klavier und Gesang, darunter 'Carnaval' und 'Dichterliebe.' Schumann hatte später im Leben mit psychischen Problemen zu kämpfen, was zu seinem Tod im Alter von 46 Jahren in einem Sanatorium führte.",
+  "shortDescriptionEs": "Robert Schumann fue un compositor alemán y crítico musical influyente de la era romántica. Compuso obras notables para piano y voz, incluyendo 'Carnaval' y 'Dichterliebe.' Schumann enfrentó problemas de salud mental en sus últimos años, lo que lo llevó a su muerte a los 46 años en un sanatorio.",
+  "shortDescriptionRu": "Роберт Шуман был немецким композитором и влиятельным музыкальным критиком эпохи романтизма. Он сочинил известные произведения для фортепиано и голоса, включая 'Карнавал' и 'Любовь поэта'. В поздние годы Шуман столкнулся с психическими проблемами, что привело к его смерти в 46 лет в санатории.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Schumann",
+    "https://www.britannica.com/biography/Robert-Schumann"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83003",  "Name": "Antonio Gramsci",  "BirthDate": "1891-01-22T00:00:00Z",  "DeathDate": "1937-04-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gramsci.png",  "SiteLinksCnt": 118,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"56244":{"pageid":56244,"ns":0,"title":"Antonio Gramsci","extract":"Antonio Francesco Gramsci (UK:  GRAM-shee, US:  GRAHM-shee; Italian: [an\u02c8t\u0254\u02d0njo fran\u02c8t\u0283esko \u02c8\u0261ram\u0283i] ; 22 January 1891 \u2013 27 April 1937) was an Italian Marxist philosopher, linguist, journalist, writer, and politician. He wrote on philosophy, political theory, sociology, history, and linguistics. He was a founding member and one-time leader of the Italian Communist Party. A vocal critic of Benito Mussolini and fascism, he was imprisoned in 1926, where he remained until shortly before his death in 1937.\nDuring his imprisonment, Gramsci wrote more than 30 notebooks and 3,000 pages of history and analysis. His Prison Notebooks are considered a highly original contribution to 20th-century political theory. Gramsci drew insights from varying sources \u2014 not only other Marxists but also thinkers such as Niccol\u00f2 Machiavelli, Vilfredo Pareto, Georges Sorel, and Benedetto Croce. The notebooks cover a wide range of topics, including the history of Italy and Italian nationalism, the French Revolution, fascism, Taylorism and Fordism, civil society, the state, historical materialism, folklore, religion, and high and popular culture.\nGramsci is best known for his theory of cultural hegemony, which describes how the state and ruling capitalist class \u2014 the bourgeoisie \u2014 use cultural institutions to maintain wealth and power in capitalist societies. In Gramsci's view, the bourgeoisie develops a hegemonic culture using ideology rather than violence, economic force, or coercion. He also attempted to break from the economic determinism of orthodox Marxist thought, and so is sometimes described as a neo-Marxist. He held a humanistic understanding of Marxism, seeing it as a philosophy of praxis and an absolute historicism that transcends traditional materialism and traditional idealism."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83003")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83003",
+  "isRealHuman": true,
+  "birthDate": "1891-01-22",
+  "deathDate": "1937-04-27",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming Gramsci's age at death as 46.",
+  "shortDescriptionEn": "Antonio Gramsci was an Italian Marxist philosopher, journalist, linguist, writer, and politician. He co-founded the Italian Communist Party and was imprisoned by Benito Mussolini's fascist regime. During his imprisonment, Gramsci wrote extensively on political theory, sociology, and linguistics. He died on April 27, 1937, at the age of 46, shortly after his release from prison.",
+  "shortDescriptionFr": "Antonio Gramsci était un philosophe marxiste italien, journaliste, linguiste, écrivain et homme politique. Il a cofondé le Parti communiste italien et a été emprisonné par le régime fasciste de Benito Mussolini. Pendant son emprisonnement, Gramsci a beaucoup écrit sur la théorie politique, la sociologie et la linguistique. Il est décédé le 27 avril 1937, à l'âge de 46 ans, peu de temps après sa libération de prison.",
+  "shortDescriptionDe": "Antonio Gramsci war ein italienischer marxistischer Philosoph, Journalist, Linguist, Schriftsteller und Politiker. Er war Mitbegründer der Kommunistischen Partei Italiens und wurde vom faschistischen Regime Benito Mussolinis inhaftiert. Während seiner Haft schrieb Gramsci umfangreich über politische Theorie, Soziologie und Linguistik. Er starb am 27. April 1937 im Alter von 46 Jahren, kurz nach seiner Entlassung aus dem Gefängnis.",
+  "shortDescriptionEs": "Antonio Gramsci fue un filósofo marxista italiano, periodista, lingüista, escritor y político. Cofundó el Partido Comunista Italiano y fue encarcelado por el régimen fascista de Benito Mussolini. Durante su encarcelamiento, Gramsci escribió extensamente sobre teoría política, sociología y lingüística. Murió el 27 de abril de 1937, a los 46 años, poco después de su liberación de la prisión.",
+  "shortDescriptionRu": "Антонио Грамши был итальянским марксистским философом, журналистом, лингвистом, писателем и политиком. Он был соучредителем Итальянской коммунистической партии и был заключен в тюрьму фашистским режимом Бенито Муссолини. Во время своего заключения Грамши много писал о политической теории, социологии и лингвистике. Он умер 27 апреля 1937 года в возрасте 46 лет, вскоре после освобождения из тюрьмы.",
+  "sources": [
+    "https://www.britannica.com/biography/Antonio-Gramsci",
+    "https://plato.stanford.edu/entries/gramsci/",
+    "https://www.masterclass.com/articles/antonio-gramsci-biography"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q169566",  "Name": "H. P. Lovecraft",  "BirthDate": "1890-08-20T00:00:00Z",  "DeathDate": "1937-03-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/H.%20P.%20Lovecraft%2C%20June%201934.jpg",  "SiteLinksCnt": 112,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"13509":{"pageid":13509,"ns":0,"title":"H. P. Lovecraft","extract":"Howard Phillips Lovecraft (US: , UK: ; August 20, 1890 \u2013 March 15, 1937) was an American writer of weird, science, fantasy, and horror fiction. He is best known for his creation of the Cthulhu Mythos.\nBorn in Providence, Rhode Island, Lovecraft spent most of his life in New England. After his father's institutionalization in 1893, he lived affluently until his family's wealth dissipated after the death of his grandfather. Lovecraft then lived with his mother, in reduced financial security, until her institutionalization in 1919. He began to write essays for the United Amateur Press Association and in 1913 wrote a critical letter to a pulp magazine that ultimately led to his involvement in pulp fiction. He became active in the speculative fiction community and was published in several pulp magazines. Lovecraft moved to New York City, marrying Sonia Greene in 1924, and later became the center of a wider group of authors known as the \"Lovecraft Circle\". They introduced him to Weird Tales, which became his most prominent publisher. Lovecraft's time in New York took a toll on his mental state and financial conditions. He returned to Providence in 1926 and produced some of his most popular works, including The Call of Cthulhu, At the Mountains of Madness, The Shadow over Innsmouth, and The Shadow Out of Time. He remained active as a writer for 11 years until his death from intestinal cancer at the age of 46.\nLovecraft's literary corpus is rooted in cosmicism, which was simultaneously his personal philosophy and the main theme of his fiction. Cosmicism posits that humanity is an insignificant part of the cosmos and could be swept away at any moment. He incorporated fantasy and science fiction elements into his stories, representing the perceived fragility of anthropocentrism. This was tied to his ambivalent views on knowledge. His works were largely set in a fictionalized version of New England. Civilizational decline also plays a major role in his works, as he believed that the West was in decline during his lifetime. Lovecraft's early political views were conservative and traditionalist; additionally, he held a number of racist views for much of his adult life. Following the Great Depression, Lovecraft's political views became more socialist while still remaining elitist and aristocratic.\nThroughout his adult life, Lovecraft was never able to support himself from his earnings as an author and editor. He was virtually unknown during his lifetime and was almost exclusively published in pulp magazines before his death. A scholarly revival of Lovecraft's work began in the 1970s, and he is now regarded as one of the most significant 20th-century authors of supernatural horror fiction. Many direct adaptations and spiritual successors followed. Works inspired by Lovecraft, adaptations or original works, began to form the basis of the Cthulhu Mythos, which utilizes Lovecraft's characters, setting, and themes."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q169566")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q169566",
+  "isRealHuman": true,
+  "birthDate": "1890-08-20",
+  "deathDate": "1937-03-15",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Howard Phillips Lovecraft was an American writer known for his weird and horror fiction, particularly the Cthulhu Mythos. He died at 46 due to intestinal cancer, which led to malnutrition and kidney failure.",
+  "shortDescriptionFr": "Howard Phillips Lovecraft était un écrivain américain connu pour sa fiction étrange et horrifique, notamment le Mythe de Cthulhu. Il est décédé à 46 ans d'un cancer intestinal, entraînant la malnutrition et une insuffisance rénale.",
+  "shortDescriptionDe": "Howard Phillips Lovecraft war ein amerikanischer Schriftsteller, bekannt für seine unheimliche und Horrorliteratur, insbesondere den Cthulhu-Mythos. Er starb im Alter von 46 Jahren an Darmkrebs, der zu Unterernährung und Nierenversagen führte.",
+  "shortDescriptionEs": "Howard Phillips Lovecraft fue un escritor estadounidense conocido por su ficción extraña y de terror, particularmente el Mito de Cthulhu. Murió a los 46 años debido a un cáncer intestinal, que llevó a la desnutrición y la insuficiencia renal.",
+  "shortDescriptionRu": "Говард Филлипс Лавкрафт был американским писателем, известным своей странной и ужасной фантастикой, особенно мифами Ктулху. Он умер в 46 лет от рака кишечника, что привело к недоеданию и почечной недостаточности.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/H._P._Lovecraft",
+    "https://www.britannica.com/biography/H-P-Lovecraft",
+    "https://cadenaser.com/nacional/2024/12/13/h-p-lovecraft-el-outsider-de-las-75000-cartas-que-rescataron-del-olvido-dos-amigos-cadena-ser/",
+    "https://www.lemonde.fr/livres/article/2024/11/09/la-chronique-poches-inquietants-de-francois-angelier-h-p-lovecraft-henry-james-adrien-party_6385004_3260.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4593",  "Name": "Rajiv Gandhi",  "BirthDate": "1944-08-20T00:00:00Z",  "DeathDate": "1991-05-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rajiv%20Gandhi%20%281987%29.jpg",  "SiteLinksCnt": 105,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"26129":{"pageid":26129,"ns":0,"title":"Rajiv Gandhi","extract":"Rajiv Gandhi (20 August 1944 \u2013 21 May 1991) was an Indian statesman who was the prime minister of India from 1984 to 1989. He took office after the assassination of his mother, then\u2013prime minister Indira Gandhi, to become at the age of 40 the youngest Indian prime minister. He served until his defeat at the 1989 election, and then became Leader of the Opposition, Lok Sabha, resigning in December 1990, six months before his own assassination.\nGandhi was not related to Mahatma Gandhi. Instead, he was from the politically powerful Nehru\u2013Gandhi family, which had been associated with the Indian National Congress party. For much of his childhood, his maternal grandfather Jawaharlal Nehru was prime minister. Gandhi attended The Doon School, an elite boarding institution, and then the University of Cambridge in the United Kingdom. He returned to India in 1966 and became a professional pilot for the state-owned Indian Airlines. In 1968, he married Sonia Maino; the couple settled in Delhi for a domestic life with their children Rahul and Priyanka. For much of the 1970s, his mother was prime minister and his younger brother Sanjay an MP; despite this, Gandhi remained apolitical.\nAfter Sanjay died in a plane crash in 1980, Gandhi reluctantly entered politics at the behest of his mother. The following year he won his brother's Parliamentary seat of Amethi and became a member of the Lok Sabha, the lower house of India's Parliament. As part of his political grooming, Rajiv was made general secretary of the Congress party and given significant responsibility in organising the 1982 Asian Games.\nOn the morning of 31 October 1984, his mother (the then prime minister) was assassinated by her two Sikh bodyguards Satwant Singh and Beant Singh in the aftermath of Operation Blue Star, an Indian military action to remove Sikh separatist activists from the Golden Temple of the Harmandir Sahib. Later that day, Gandhi was appointed prime minister. His leadership was tested over the next few days as organised mobs rioted against the Sikh community, resulting in anti-Sikh massacres in Delhi. That December, the Congress party won the largest Lok Sabha majority to date, 414 seats out of 541. Gandhi's period in office was mired in controversies such as Bhopal disaster, Bofors scandal and Mohd. Ahmed Khan v. Shah Bano Begum. In 1988, he reversed the coup in Maldives, antagonising militant Tamil groups such as PLOTE, intervening and then sending peacekeeping troops to Sri Lanka in 1987, leading to open conflict with the Liberation Tigers of Tamil Eelam (LTTE). His party was  defeated in the 1989 election.\nGandhi remained Congress president until the elections in 1991. While campaigning for the elections, he was assassinated by a suicide bomber from the LTTE. In 1991, the Indian government posthumously awarded Gandhi the Bharat Ratna, the country's highest civilian award. At the India Leadership Conclave in 2009, the Revolutionary Leader of Modern India award was conferred posthumously on Gandhi."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4593")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4593",
+  "isRealHuman": true,
+  "birthDate": "1944-08-20",
+  "deathDate": "1991-05-21",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The dates of birth and death are well-documented in multiple reliable sources, confirming that Rajiv Gandhi was 46 years old at the time of his death.",
+  "shortDescriptionEn": "Rajiv Gandhi was an Indian politician who served as the 6th Prime Minister of India from 1984 to 1989. He was assassinated in 1991 by a suicide bomber during an election campaign.",
+  "shortDescriptionFr": "Rajiv Gandhi était un homme politique indien qui a servi comme 6e Premier ministre de l'Inde de 1984 à 1989. Il a été assassiné en 1991 par un kamikaze lors d'une campagne électorale.",
+  "shortDescriptionDe": "Rajiv Gandhi war ein indischer Politiker und diente als 6. Premierminister Indiens von 1984 bis 1989. Er wurde 1991 von einem Selbstmordattentäter während eines Wahlkampfs ermordet.",
+  "shortDescriptionEs": "Rajiv Gandhi fue un político indio que sirvió como el 6º Primer Ministro de la India de 1984 a 1989. Fue asesinado en 1991 por un atacante suicida durante una campaña electoral.",
+  "shortDescriptionRu": "Раджив Ганди был индийским политиком, занимавшим пост 6-го премьер-министра Индии с 1984 по 1989 год. Он был убит в 1991 году смертником во время предвыборной кампании.",
+  "sources": [
+    "https://www.britannica.com/biography/Rajiv-Gandhi",
+    "https://en.wikipedia.org/wiki/Assassination_of_Rajiv_Gandhi",
+    "https://en.wikipedia.org/wiki/Rajiv_Gandhi"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q179680",  "Name": "Alfred de Musset",  "BirthDate": "1810-12-11T00:00:00Z",  "DeathDate": "1857-05-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20de%20musset.jpg",  "SiteLinksCnt": 98,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"167150":{"pageid":167150,"ns":0,"title":"Alfred de Musset","extract":"Alfred Louis Charles de Musset-Pathay (French: [alf\u0281\u025bd d\u0259 mys\u025b]; 11 December 1810 \u2013 2 May 1857) was a French dramatist, poet, and novelist. Along with his poetry, he is known for writing the autobiographical novel La Confession d'un enfant du si\u00e8cle (The Confession of a Child of the Century)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q179680")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q179680",
+  "isRealHuman": true,
+  "birthDate": "1810-12-11",
+  "deathDate": "1857-05-02",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Alfred de Musset was a French Romantic poet, dramatist, and novelist, known for works like 'La Confession d'un enfant du siècle.' He died at 46 from heart failure, likely due to his lifestyle and health issues.",
+  "shortDescriptionFr": "Alfred de Musset était un poète, dramaturge et romancier romantique français, connu pour des œuvres comme 'La Confession d'un enfant du siècle.' Il est décédé à 46 ans d'une insuffisance cardiaque, probablement due à son mode de vie et à des problèmes de santé.",
+  "shortDescriptionDe": "Alfred de Musset war ein französischer romantischer Dichter, Dramatiker und Romanautor, bekannt für Werke wie 'La Confession d'un enfant du siècle.' Er starb mit 46 Jahren an Herzversagen, wahrscheinlich aufgrund seines Lebensstils und gesundheitlicher Probleme.",
+  "shortDescriptionEs": "Alfred de Musset fue un poeta, dramaturgo y novelista romántico francés, conocido por obras como 'La Confesión de un niño del siglo.' Murió a los 46 años de insuficiencia cardíaca, probablemente debido a su estilo de vida y problemas de salud.",
+  "shortDescriptionRu": "Альфред де Мюссе был французским романтическим поэтом, драматургом и романистом, известным такими произведениями, как 'Исповедь сына века.' Он умер в 46 лет от сердечной недостаточности, вероятно, из-за образа жизни и проблем со здоровьем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alfred_de_Musset",
+    "https://www.britannica.com/biography/Alfred-de-Musset"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180560",  "Name": "Philip Seymour Hoffman",  "BirthDate": "1967-07-23T00:00:00Z",  "DeathDate": "2014-02-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Seymour%20Hoffman%202011.jpg",  "SiteLinksCnt": 93,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"564099":{"pageid":564099,"ns":0,"title":"Philip Seymour Hoffman","extract":"Philip Seymour Hoffman (July 23, 1967 \u2013 February 2, 2014) was an American actor. Known for his distinctive supporting and character roles\u2014eccentrics, underdogs, and misfits\u2014he acted in many films and theatrical productions, including leading roles, from the early 1990s until his death in 2014. He was voted the greatest actor of the 21st century in a 2024 ranking by The Independent.\nHoffman studied acting at New York University's Tisch School of the Arts. He gained recognition for his supporting work, notably in Scent of a Woman (1992), Boogie Nights (1997), Happiness (1998), The Big Lebowski (1998), Magnolia (1999), The Talented Mr. Ripley (1999), and Almost Famous (2000). He began to occasionally play leading roles, and for his portrayal of the author Truman Capote in Capote (2005), won the Academy Award for Best Actor. Further Oscar nominations came for playing a brutally frank CIA officer in Charlie Wilson's War (2007), a priest accused of child sexual abuse in Doubt (2008), and the charismatic leader of a Scientology-type movement in The Master (2012).\nWhile he mainly worked in independent films, including The Savages (2007) and Synecdoche, New York (2008), Hoffman also appeared in Hollywood blockbusters, such as Twister (1996) and Mission: Impossible III (2006). He played Plutarch Heavensbee in the Hunger Games series (2013\u20132015), in one of his final roles. The feature Jack Goes Boating (2010) marked his debut as a filmmaker. Hoffman was also an accomplished theater actor and director. He joined the off-Broadway LAByrinth Theater Company in 1995, where he directed, produced, and appeared in numerous stage productions. Hoffman received Tony Award nominations for his performances in the Broadway revivals of Sam Shepard's True West (2000), Eugene O'Neill's Long Day's Journey into Night (2003), and Arthur Miller's Death of a Salesman (2012).\nHoffman struggled with drug addiction as a young adult and relapsed in 2012 after many years of abstinence. In February 2014, he died of combined drug intoxication. Remembered for the nuance, depth, and humanity he brought to his diverse roles, Hoffman was described in his obituary in The New York Times as \"perhaps the most ambitious and widely admired American actor of his generation\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180560")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q180560",
+  "isRealHuman": true,
+  "birthDate": "1967-07-23",
+  "deathDate": "2014-02-02",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "Philip Seymour Hoffman was an American actor known for his distinctive supporting and character roles. He died at 46 from combined drug intoxication.",
+  "shortDescriptionFr": "Philip Seymour Hoffman était un acteur américain connu pour ses rôles secondaires distinctifs et ses rôles de caractère. Il est décédé à 46 ans d'une intoxication médicamenteuse combinée.",
+  "shortDescriptionDe": "Philip Seymour Hoffman war ein amerikanischer Schauspieler, bekannt für seine markanten Neben- und Charakterrollen. Er starb im Alter von 46 Jahren an einer kombinierten Drogenvergiftung.",
+  "shortDescriptionEs": "Philip Seymour Hoffman fue un actor estadounidense conocido por sus distintivos papeles secundarios y de carácter. Murió a los 46 años por intoxicación combinada de drogas.",
+  "shortDescriptionRu": "Филип Сеймур Хоффман был американским актером, известным своими характерными второстепенными и характерными ролями. Он умер в 46 лет от комбинированной наркотической интоксикации.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_Seymour_Hoffman",
+    "https://www.imdb.com/name/nm0000450/",
+    "https://www.biography.com/actor/philip-seymour-hoffman"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q150471",  "Name": "E. T. A. Hoffmann",  "BirthDate": "1776-01-24T00:00:00Z",  "DeathDate": "1822-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/E.%20T.%20A.%20Hoffmann%2C%20autorretrato.jpg",  "SiteLinksCnt": 91,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"10151":{"pageid":10151,"ns":0,"title":"E. T. A. Hoffmann","extract":"Ernst Theodor Amadeus Hoffmann (born Ernst Theodor Wilhelm Hoffmann; 24 January 1776 \u2013 25 June 1822) was a German Romantic author of fantasy and Gothic horror, a jurist, composer, music critic and artist. He is the author of the novella The Nutcracker and the Mouse King, on which Pyotr Ilyich Tchaikovsky's ballet The Nutcracker is based. In addition, his stories form the basis of Jacques Offenbach's opera The Tales of Hoffmann, in which Hoffmann appears (heavily fictionalized) as the hero. The ballet Copp\u00e9lia is based on two other stories that Hoffmann wrote, while Schumann's Kreisleriana is based on Hoffmann's character Johannes Kreisler.\nHoffmann's stories highly influenced 19th-century literature, and he is one of the major authors of the Romantic movement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q150471")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q150471",
+  "isRealHuman": true,
+  "birthDate": "1776-01-24",
+  "deathDate": "1822-06-25",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for precise calculation of Hoffmann's age at death.",
+  "shortDescriptionEn": "E.T.A. Hoffmann was a German Romantic author, composer, and artist, renowned for his fantasy and Gothic horror tales. He died in Berlin at the age of 46 due to syphilis-related health complications.",
+  "shortDescriptionFr": "E.T.A. Hoffmann était un auteur romantique allemand, compositeur et artiste, renommé pour ses contes fantastiques et d'horreur gothique. Il est décédé à Berlin à l'âge de 46 ans des suites de complications liées à la syphilis.",
+  "shortDescriptionDe": "E.T.A. Hoffmann war ein deutscher romantischer Autor, Komponist und Künstler, bekannt für seine Fantasy- und Gothic-Horror-Geschichten. Er starb in Berlin im Alter von 46 Jahren an den Folgen von Syphilis.",
+  "shortDescriptionEs": "E.T.A. Hoffmann fue un autor romántico alemán, compositor y artista, conocido por sus cuentos de fantasía y horror gótico. Murió en Berlín a los 46 años debido a complicaciones relacionadas con la sífilis.",
+  "shortDescriptionRu": "Э.Т.А. Гофман был немецким романтическим писателем, композитором и художником, известным своими фантастическими и готическими рассказами. Он умер в Берлине в возрасте 46 лет из-за осложнений, связанных с сифилисом.",
+  "sources": [
+    "https://www.britannica.com/biography/E-T-A-Hoffmann",
+    "https://en.wikipedia.org/wiki/E._T._A._Hoffmann",
+    "https://bachtrack.com/feature-eta-hoffmann-june-2022"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15189",  "Name": "Paul I of Russia",  "BirthDate": "1754-10-01T00:00:00Z",  "DeathDate": "1801-03-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Borovikovskiy%20PtPavla1GRM.jpg",  "SiteLinksCnt": 91,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"148206":{"pageid":148206,"ns":0,"title":"Paul I of Russia","extract":"Paul I (Russian: \u041f\u0430\u0301\u0432\u0435\u043b I \u041f\u0435\u0442\u0440\u043e\u0301\u0432\u0438\u0447, romanized: Pavel I Petrovich; 1 October [O.S. 20 September] 1754 \u2013 23 March [O.S. 11 March] 1801) was Emperor of Russia from 1796 until his assassination in 1801.\nPaul remained overshadowed by his mother, Catherine the Great, for most of his life. He adopted the laws of succession to the Russian throne\u2014rules that lasted until the end of the Romanov dynasty and of the Russian Empire. He also imposed the first limitations on serfdom with the Manifesto of three-day corvee, sought to curtail the privileges of the nobility, pursued various military reforms which were highly unpopular among officers and was known for his unpredictable behavior, all of which contributed to the conspiracy that would take his life.\nIn 1799 he brought Russia into the Second Coalition against Revolutionary France alongside Britain and Austria; the Russian forces achieved several victories at first but withdrew after facing setbacks. Paul then realigned Russia with France and led the creation of the Second League of Armed Neutrality to oppose Britain after Napoleon's rise to power. Toward the end of his reign, he added Kartli and Kakheti in Eastern Georgia to the Russian Empire. He was planning a joint invasion of British India with the French before being killed in a fight with his own officers who were trying to force his abdication. He was succeeded by his son Alexander I.\nHe was de facto Grand Master of the Knights Hospitaller from 1799 to 1801 and ordered the construction of a number of priories of the Order of Malta."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15189")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q15189",
+  "isRealHuman": true,
+  "birthDate": "1754-10-01",
+  "deathDate": "1801-03-23",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "The dates of birth and death are well-documented in historical records, providing a high confidence level in the calculated age.",
+  "shortDescriptionEn": "Paul I of Russia (1754–1801) was Emperor of Russia from 1796 until his assassination in 1801. He implemented significant reforms, including changes to the laws of succession and limitations on serfdom. His unpredictable behavior and unpopular military reforms led to a conspiracy among his officers, resulting in his assassination.",
+  "shortDescriptionFr": "Paul Ier de Russie (1754–1801) fut empereur de Russie de 1796 jusqu'à son assassinat en 1801. Il mit en œuvre des réformes importantes, notamment des modifications des lois de succession et des limitations du servage. Son comportement imprévisible et ses réformes militaires impopulaires conduisirent à une conspiration parmi ses officiers, aboutissant à son assassinat.",
+  "shortDescriptionDe": "Paul I. von Russland (1754–1801) war von 1796 bis zu seiner Ermordung im Jahr 1801 Kaiser von Russland. Er führte bedeutende Reformen durch, darunter Änderungen der Thronfolgeregelungen und Einschränkungen der Leibeigenschaft. Sein unberechenbares Verhalten und seine unbeliebten Militärreformen führten zu einer Verschwörung unter seinen Offizieren, die zu seiner Ermordung führte.",
+  "shortDescriptionEs": "Pablo I de Rusia (1754–1801) fue emperador de Rusia desde 1796 hasta su asesinato en 1801. Implementó reformas significativas, incluyendo cambios en las leyes de sucesión y limitaciones a la servidumbre. Su comportamiento impredecible y sus impopulares reformas militares llevaron a una conspiración entre sus oficiales, resultando en su asesinato.",
+  "shortDescriptionRu": "Павел I (1754–1801) был императором России с 1796 года до своего убийства в 1801 году. Он провел значительные реформы, включая изменения в законах о престолонаследии и ограничения крепостного права. Его непредсказуемое поведение и непопулярные военные реформы привели к заговору среди его офицеров, что привело к его убийству.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Paul_I_of_Russia",
+    "https://www.britannica.com/biography/Paul-emperor-of-Russia"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170596",  "Name": "T. E. Lawrence",  "BirthDate": "1888-08-16T00:00:00Z",  "DeathDate": "1935-05-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Te%20lawrence.jpg",  "SiteLinksCnt": 91,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"43468":{"pageid":43468,"ns":0,"title":"T. E. Lawrence","extract":"Thomas Edward Lawrence  (16 August 1888 \u2013 19 May 1935) was a British Army officer, archaeologist, diplomat and writer known for his role during the Arab Revolt and Sinai and Palestine campaign against the Ottoman Empire in the First World War. The breadth and variety of his activities and associations, and Lawrence's ability to describe them vividly in writing, earned him international fame as Lawrence of Arabia, a title used for the 1962 film based on his wartime activities.\nLawrence was born in Tremadog, Carnarvonshire, Wales, the illegitimate son of Sir Thomas Chapman, an Anglo-Irish landowner, and Sarah Junner, a governess in Chapman's employ. In 1896, Lawrence moved to Oxford, attending the City of Oxford High School for Boys and read history at Jesus College, Oxford from 1907 to 1910. Between 1910 and 1914, he worked as an archaeologist for the British Museum, chiefly at Carchemish in Ottoman Syria.\nAfter the outbreak of war in 1914, Lawrence joined the British Army and was stationed at the Arab Bureau, a military intelligence unit in Egypt. In 1916, he travelled to Mesopotamia and Arabia on intelligence missions and became involved with the Arab revolt against Ottoman rule. Lawrence was ultimately assigned to the British Military Mission in the Hejaz as a liaison to Emir Faisal, a leader of the revolt. He participated in engagements with the Ottoman military culminating in the capture of Damascus in October 1918.\nAfter the war's end, he joined the Foreign Office, working with Faisal. In 1922, Lawrence retreated from public life and served as an enlisted man in the Army and Royal Air Force (RAF) until 1935. He published the Seven Pillars of Wisdom in 1926, an autobiographical account of his participation in the Arab Revolt. Lawrence also translated books into English and wrote The Mint, which detailed his service in the RAF. He corresponded extensively with prominent artists, writers and politicians, and also participated in the development of rescue motorboats for the RAF. Lawrence's public image resulted in part from the sensationalised reporting of the Arab Revolt by American journalist Lowell Thomas, as well as from Seven Pillars of Wisdom. In 1935, Lawrence died at the age of 46 after being injured in a motorcycle accident in Dorset.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170596")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q170596",
+  "isRealHuman": true,
+  "birthDate": "1888-08-16",
+  "deathDate": "1935-05-19",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "T. E. Lawrence, known as 'Lawrence of Arabia,' was a British archaeologist, military officer, diplomat, and writer. Born on August 16, 1888, in Tremadog, Wales, he became renowned for his role in the Arab Revolt during World War I, aiding Arab forces against the Ottoman Empire. His autobiographical account, 'Seven Pillars of Wisdom,' details these experiences. Lawrence died on May 19, 1935, at the age of 46, following a motorcycle accident near his Dorset home.",
+  "shortDescriptionFr": "T. E. Lawrence, connu sous le nom de 'Lawrence d'Arabie', était un archéologue, officier militaire, diplomate et écrivain britannique. Né le 16 août 1888 à Tremadog, au Pays de Galles, il est devenu célèbre pour son rôle dans la révolte arabe pendant la Première Guerre mondiale, aidant les forces arabes contre l'Empire ottoman. Son récit autobiographique, 'Les Sept Piliers de la Sagesse', détaille ces expériences. Lawrence est décédé le 19 mai 1935, à l'âge de 46 ans, à la suite d'un accident de moto près de son domicile dans le Dorset.",
+  "shortDescriptionDe": "T. E. Lawrence, bekannt als 'Lawrence von Arabien', war ein britischer Archäologe, Offizier, Diplomat und Schriftsteller. Geboren am 16. August 1888 in Tremadog, Wales, wurde er für seine Rolle im Arabischen Aufstand während des Ersten Weltkriegs bekannt, als er arabische Kräfte gegen das Osmanische Reich unterstützte. Sein autobiografischer Bericht, 'Die sieben Säulen der Weisheit', beschreibt diese Erfahrungen. Lawrence starb am 19. Mai 1935 im Alter von 46 Jahren nach einem Motorradunfall in der Nähe seines Hauses in Dorset.",
+  "shortDescriptionEs": "T. E. Lawrence, conocido como 'Lawrence de Arabia', fue un arqueólogo, oficial militar, diplomático y escritor británico. Nacido el 16 de agosto de 1888 en Tremadog, Gales, se hizo famoso por su papel en la Revuelta Árabe durante la Primera Guerra Mundial, ayudando a las fuerzas árabes contra el Imperio Otomano. Su relato autobiográfico, 'Los siete pilares de la sabiduría', detalla estas experiencias. Lawrence murió el 19 de mayo de 1935, a los 46 años, tras un accidente de motocicleta cerca de su hogar en Dorset.",
+  "shortDescriptionRu": "Т. Э. Лоуренс, известный как 'Лоуренс Аравийский', был британским археологом, военным офицером, дипломатом и писателем. Родился 16 августа 1888 года в Тремадоге, Уэльс, он стал известен своей ролью в Арабском восстании во время Первой мировой войны, помогая арабским силам против Османской империи. Его автобиографический отчет, 'Семь столпов мудрости', описывает эти события. Лоуренс умер 19 мая 1935 года в возрасте 46 лет после мотоциклетной аварии недалеко от его дома в Дорсете.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/T._E._Lawrence",
+    "https://www.britannica.com/biography/T-E-Lawrence"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q163900",  "Name": "Francis Xavier",  "BirthDate": "1506-04-17T00:00:00Z",  "DeathDate": "1552-12-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Franciscus%20de%20Xabier.jpg",  "SiteLinksCnt": 88,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"10957":{"pageid":10957,"ns":0,"title":"Francis Xavier","extract":"Francis Xavier, SJ (born Francisco de Jasso y Azpilicueta; Latin: Franciscus Xaverius; Basque: Xabierkoa; French: Fran\u00e7ois Xavier; Spanish: Francisco Javier; Portuguese: Francisco Xavier; 7 April 1506 \u2013 3 December 1552), venerated as Saint Francis Xavier, was a Spanish cleric and missionary. He co-founded the Society of Jesus and, as a representative of the Portuguese Empire, led the first Christian mission to Japan.\nBorn in the town of Xavier, Kingdom of Navarre, he was a companion of Ignatius of Loyola and one of the first seven Jesuits who took vows of poverty and chastity at Montmartre, Paris in 1534. He led an extensive mission into Asia, mainly the Portuguese Empire in the East, and was influential in evangelization work, most notably in early modern India. He was extensively involved in the missionary activity in Portuguese India. In 1546, Francis Xavier proposed the establishment of the Goan Inquisition in a letter addressed to King John III of Portugal. While some sources claim that he actually asked for a special minister whose sole office would be to further Christianity in Goa, others disagree with this assertion. As a representative of the king of Portugal, he was also the first major Christian missionary to venture into Borneo, the Maluku Islands, Japan, and other areas. In those areas, struggling to learn the local languages and in the face of opposition, he had less success than he had enjoyed in India. Xavier was about to extend his mission to Ming China, when he died on Shangchuan Island.\nHe was beatified by Pope Paul V on 25 October 1619 and canonized by Pope Gregory XV on 12 March 1622. In 1624, he was made co-patron of Navarre. Known as the \"Apostle of the Indies\", \"Apostle of the Far East\", \"Apostle of China\" and \"Apostle of Japan\", he is considered to be one of the greatest missionaries since Paul the Apostle. In 1927, Pope Pius XI published the decree \"Apostolicorum in Missionibus\" naming Francis Xavier, along with Th\u00e9r\u00e8se of Lisieux, co-patron of all foreign missions. He is now co-patron saint of Navarre, with Fermin. The Day of Navarre in Navarre, Spain, marks the anniversary of Francis Xavier's death, on 3 December."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q163900")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q163900",
+  "isRealHuman": true,
+  "birthDate": "1506-04-07",
+  "deathDate": "1552-12-03",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, allowing for an accurate calculation of his age at death.",
+  "shortDescriptionEn": "Francis Xavier was a Spanish Catholic missionary and co-founder of the Society of Jesus. He conducted extensive missionary work in Asia, including India, Japan, and the Maluku Islands. He died from a fever on Shangchuan Island, China, while awaiting a boat to take him to the mainland.",
+  "shortDescriptionFr": "François Xavier était un missionnaire catholique espagnol et cofondateur de la Compagnie de Jésus. Il a mené un vaste travail missionnaire en Asie, notamment en Inde, au Japon et dans les îles Maluku. Il est mort de fièvre sur l'île de Shangchuan, en Chine, en attendant un bateau pour le continent.",
+  "shortDescriptionDe": "Franz Xaver war ein spanischer katholischer Missionar und Mitbegründer der Gesellschaft Jesu. Er führte umfangreiche Missionsarbeit in Asien durch, einschließlich Indien, Japan und den Molukken. Er starb an Fieber auf der Insel Shangchuan in China, während er auf ein Boot zum Festland wartete.",
+  "shortDescriptionEs": "Francisco Javier fue un misionero católico español y cofundador de la Compañía de Jesús. Realizó una extensa labor misionera en Asia, incluyendo India, Japón y las Islas Molucas. Murió de fiebre en la isla de Shangchuan, China, mientras esperaba un barco al continente.",
+  "shortDescriptionRu": "Франциск Ксаверий был испанским католическим миссионером и соучредителем Общества Иисуса. Он проводил обширную миссионерскую работу в Азии, включая Индию, Японию и Молуккские острова. Он умер от лихорадки на острове Шанчуань в Китае, ожидая лодку на материк.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francis_Xavier"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q130969",  "Name": "Philip IV of France",  "BirthDate": "1268-06-01T00:00:00Z",  "DeathDate": "1314-12-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Philip%20iv%20and%20family.%202%20%28detail%20crop%29.jpg",  "SiteLinksCnt": 83,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"77169":{"pageid":77169,"ns":0,"title":"Philip IV of France","extract":"Philip IV (April\u2013June 1268 \u2013 29 November 1314), called Philip the Fair (French: Philippe le Bel), was King of France from 1285 to 1314. By virtue of his marriage with Joan I of Navarre, he was also King of Navarre and Count of Champagne as Philip I from 1284 to 1305. Although Philip was known to be handsome, hence the epithet le Bel, his rigid, autocratic, imposing, and inflexible personality gained him (from friend and foe alike) other nicknames, such as the Iron King (French: le Roi de fer). His fierce opponent Bernard Saisset, bishop of Pamiers, said of him: \"He is neither man nor beast. He is a statue.\"\nPhilip, seeking to reduce the wealth and power of the nobility and clergy, relied instead on skilful civil servants, such as Guillaume de Nogaret and Enguerrand de Marigny, to govern the kingdom. The king, who sought an uncontested monarchy, compelled his  vassals by wars and restricted their feudal privileges, paving the way for the transformation of France from a feudal country to a centralised early modern state. Internationally, Philip's ambitions made him highly influential in European affairs, and for much of his reign, he sought to place his relatives on foreign thrones. Princes from his house ruled in Hungary, and he tried and failed to make another relative the Holy Roman Emperor.\nThe most notable conflicts of Philip's reign include a dispute with the English over King Edward I's duchy in southwestern France and a war with the County of Flanders, who had rebelled against French royal authority and humiliated Philip at the Battle of the Golden Spurs in 1302. The war with the Flemish resulted in Philip's ultimate victory, after which he received a significant portion of Flemish cities, which were added to the crown lands along with a vast sum of money. Domestically, his reign was marked by struggles with the Jews and the Knights Templar. In heavy debt to both groups, Philip saw them as a \"state within the state\" and a recurring threat to royal power. In 1306 Philip expelled the Jews from France, followed by the total destruction of the Knights Templar in 1307. To further strengthen the monarchy, Philip tried to tax and impose state control over the Catholic Church in France, leading to a violent dispute with Pope Boniface VIII. The ensuing conflict saw the pope's residence at Anagni attacked in September 1303 by French forces with the support of the Colonna family. Pope Boniface was captured and held hostage for several days. This eventually led to the Avignon Papacy of 1309 to 1376.\nHis final year saw a scandal amongst the royal family, known as the Tour de Nesle affair, in which King Philip's three daughters-in-law were accused of adultery. His three sons were successively kings of France: Louis X, Philip V, and Charles IV. Their rapid successive deaths without surviving sons of their own would compromise the future of the French royal house, which had until then seemed secure, precipitating a succession crisis that eventually led to the Hundred Years' War (1337\u20131453)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q130969")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q130969",
+  "isRealHuman": true,
+  "birthDate": "1268-05-01",
+  "deathDate": "1314-11-29",
+  "ageAtDeath": 46,
+  "confidence": 95,
+  "confidenceExplained": "The exact birth date is uncertain, but historical records consistently indicate he was born between April and June 1268, leading to an approximate age of 46 at death.",
+  "shortDescriptionEn": "Philip IV of France (1268–1314), known as Philip the Fair, was King of France from 1285 until his death. His reign was marked by efforts to strengthen the monarchy, including conflicts with the papacy and the dissolution of the Knights Templar. He died following a hunting accident.",
+  "shortDescriptionFr": "Philippe IV de France (1268–1314), connu sous le nom de Philippe le Bel, fut roi de France de 1285 jusqu'à sa mort. Son règne fut marqué par des efforts pour renforcer la monarchie, y compris des conflits avec la papauté et la dissolution des Templiers. Il mourut à la suite d'un accident de chasse.",
+  "shortDescriptionDe": "Philipp IV. von Frankreich (1268–1314), bekannt als Philipp der Schöne, war von 1285 bis zu seinem Tod König von Frankreich. Seine Herrschaft war geprägt von Bestrebungen, die Monarchie zu stärken, einschließlich Konflikten mit dem Papsttum und der Auflösung der Tempelritter. Er starb infolge eines Jagdunfalls.",
+  "shortDescriptionEs": "Felipe IV de Francia (1268–1314), conocido como Felipe el Hermoso, fue rey de Francia desde 1285 hasta su muerte. Su reinado se caracterizó por esfuerzos para fortalecer la monarquía, incluyendo conflictos con el papado y la disolución de los Caballeros Templarios. Murió tras un accidente de caza.",
+  "shortDescriptionRu": "Филипп IV Французский (1268–1314), известный как Филипп Красивый, был королем Франции с 1285 года до своей смерти. Его правление ознаменовалось усилиями по укреплению монархии, включая конфликты с папством и роспуском ордена тамплиеров. Он умер после охотничьего несчастного случая.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_IV_of_France",
+    "https://www.britannica.com/biography/Philip-IV-king-of-France"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q172353",  "Name": "Pyrrhus",  "BirthDate": "-0317-01-01T00:00:00Z",  "DeathDate": "-0271-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pyrrhus%20MAN%20Napoli%20Inv6150%20n03.jpg",  "SiteLinksCnt": 83,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"197745":{"pageid":197745,"ns":0,"title":"Pyrrhus of Epirus","extract":"Pyrrhus ( PIRR-\u0259ss; Ancient Greek: \u03a0\u03cd\u03c1\u03c1\u03bf\u03c2 P\u00fdrrhos; 319/318\u2013272 BC) was a Greek king and statesman of the Hellenistic period. He was king of the Molossians, of the royal Aeacid house, and later he became king (Malalas also called him toparch) of Epirus. He was one of the strongest opponents of early Rome, and had been regarded as one of the greatest generals of antiquity. Several of his victorious battles caused him unacceptably heavy losses, from which the phrase \"Pyrrhic victory\" was coined.\nPyrrhus became king of Epirus in 306 BC at the age of 13, but was dethroned by Cassander four years later. He saw action during the Wars of the Diadochi and regained his throne in 297 BC with the support of Ptolemy I Soter. During what came to be known as the Pyrrhic War, Pyrrhus fought Rome at the behest of Tarentum, scoring costly victories at Heraclea and Asculum. He proceeded to take over Sicily from Carthage but was soon driven out, and lost all his gains in Italy after the Battle of Beneventum in 275 BC.\nPyrrhus seized the Macedonian throne from Antigonus II Gonatas in 274 BC and invaded the Peloponnese in 272 BC. The Epirote assault on Sparta was thwarted, however, and Pyrrhus was killed during a street battle at Argos."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q172353")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q172353",
+  "isRealHuman": true,
+  "birthDate": "-0318-01-01",
+  "deathDate": "-0272-01-01",
+  "ageAtDeath": 46,
+  "confidence": 95,
+  "confidenceExplained": "The dates are based on historical records, though exact birth dates in ancient times are often approximate.",
+  "shortDescriptionEn": "Pyrrhus of Epirus (319/318 – 272 BC) was a Greek king and statesman of the Hellenistic period. He was one of the strongest opponents of early Rome and is regarded as one of the greatest generals of antiquity. He was killed during a street battle at Argos.",
+  "shortDescriptionFr": "Pyrrhus d'Épire (319/318 – 272 av. J.-C.) était un roi grec et homme d'État de la période hellénistique. Il fut l'un des plus fervents opposants de la Rome antique et est considéré comme l'un des plus grands généraux de l'Antiquité. Il fut tué lors d'une bataille de rue à Argos.",
+  "shortDescriptionDe": "Pyrrhus von Epirus (319/318 – 272 v. Chr.) war ein griechischer König und Staatsmann der hellenistischen Zeit. Er war einer der stärksten Gegner des frühen Roms und gilt als einer der größten Feldherren der Antike. Er wurde während eines Straßenkampfes in Argos getötet.",
+  "shortDescriptionEs": "Pirro de Epiro (319/318 – 272 a.C.) fue un rey griego y estadista del período helenístico. Fue uno de los más fuertes oponentes de la Roma temprana y es considerado uno de los más grandes generales de la antigüedad. Murió durante una batalla callejera en Argos.",
+  "shortDescriptionRu": "Пирр Эпирский (319/318 – 272 до н.э.) был греческим царем и государственным деятелем эллинистического периода. Он был одним из самых сильных противников раннего Рима и считается одним из величайших полководцев античности. Погиб во время уличного боя в Аргосе.",
+  "sources": [
+    "https://www.britannica.com/biography/Pyrrhus",
+    "https://en.wikipedia.org/wiki/Pyrrhus_of_Epirus"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q128902",  "Name": "William Pitt the Younger",  "BirthDate": "1759-05-28T00:00:00Z",  "DeathDate": "1806-01-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/OlderPittThe%20Younger%20crop.jpg",  "SiteLinksCnt": 79,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"79451":{"pageid":79451,"ns":0,"title":"William Pitt the Younger","extract":"William Pitt (28 May 1759 \u2013 23 January 1806) was a British statesman who served as the last prime minister of Great Britain from 1783 until the Acts of Union 1800, and then first prime minister of the United Kingdom from January 1801. He left office in March 1801, but served as prime minister again from 1804 until his death in 1806. He was also Chancellor of the Exchequer for all of his time as prime minister. He is known as \"Pitt the Younger\" to distinguish him from his father, William Pitt the Elder, who had also previously served as prime minister.\nPitt's prime ministerial tenure, which came during the reign of King George III, was dominated by major political events in Europe, including the French Revolution and the Napoleonic Wars. Pitt, although often referred to as a Tory, or \"new Tory\", called himself an \"independent Whig\" and was generally opposed to the development of a strict partisan political system.\nPitt was regarded as an outstanding administrator who worked for efficiency and reform, bringing in a new generation of competent administrators. He increased taxes to pay for the great war against France and cracked down on radicalism. To counter the threat of Irish support for France, he engineered the Acts of Union 1800 and tried (but failed) to secure Catholic emancipation as part of the Union. He created the \"new Toryism\", which revived the Tory Party and enabled it to stay in power for the next quarter-century.\nThe historian Asa Briggs argues that his personality did not endear itself to the British mind, for Pitt was too solitary and too colourless, and too often exuded an attitude of superiority. His greatness came in the war with France. Pitt reacted to become what Lord Minto called \"the Atlas of our reeling globe\". William Wilberforce said, \"For personal purity, disinterestedness and love of this country, I have never known his equal.\" Historian Charles Petrie concludes that he was one of the greatest prime ministers \"if on no other ground than that he enabled the country to pass from the old order to the new without any violent upheaval ... He understood the new Britain.\" For this he is ranked highly amongst all British prime ministers in multiple surveys.\nPitt served as prime minister for a total of eighteen years, 343 days, making him the second-longest-serving British prime minister of all time, after Robert Walpole. At age 24, Pitt is the youngest prime minister in British history and is the youngest ever person to hold the position of prime minister in world history."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q128902")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q128902",
+  "isRealHuman": true,
+  "birthDate": "1759-05-28",
+  "deathDate": "1806-01-23",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by historians.",
+  "shortDescriptionEn": "William Pitt the Younger (1759–1806) was a British statesman who served as the youngest Prime Minister. He is known for his administrative reforms and leadership during the French Revolutionary and Napoleonic Wars. Pitt died at the age of 46, likely due to health complications exacerbated by stress and overwork.",
+  "shortDescriptionFr": "William Pitt le Jeune (1759–1806) était un homme d'État britannique qui a servi comme le plus jeune Premier ministre. Il est connu pour ses réformes administratives et son leadership pendant les guerres révolutionnaires françaises et napoléoniennes. Pitt est décédé à l'âge de 46 ans, probablement en raison de problèmes de santé aggravés par le stress et le surmenage.",
+  "shortDescriptionDe": "William Pitt der Jüngere (1759–1806) war ein britischer Staatsmann, der als jüngster Premierminister diente. Er ist bekannt für seine Verwaltungsreformen und seine Führung während der Französischen Revolutions- und Napoleonischen Kriege. Pitt starb im Alter von 46 Jahren, wahrscheinlich aufgrund von gesundheitlichen Problemen, die durch Stress und Überarbeitung verschärft wurden.",
+  "shortDescriptionEs": "William Pitt el Joven (1759–1806) fue un estadista británico que sirvió como el primer ministro más joven. Es conocido por sus reformas administrativas y su liderazgo durante las guerras revolucionarias francesas y napoleónicas. Pitt murió a los 46 años, probablemente debido a complicaciones de salud agravadas por el estrés y el exceso de trabajo.",
+  "shortDescriptionRu": "Уильям Питт Младший (1759–1806) был британским государственным деятелем, служившим самым молодым премьер-министром. Он известен своими административными реформами и лидерством во время Французских революционных и Наполеоновских войн. Питт умер в возрасте 46 лет, вероятно, из-за проблем со здоровьем, усугубленных стрессом и переутомлением.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/William_Pitt_the_Younger",
+    "https://www.britannica.com/biography/William-Pitt-the-Younger",
+    "https://www.history.com/topics/british-history/william-pitt"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131394",  "Name": "Murad II",  "BirthDate": "1404-06-01T00:00:00Z",  "DeathDate": "1451-02-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sultan%20Gazi%20Murad%20Han%20II%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D9%8A%20%D9%85%D8%B1%D8%A7%D8%AF%20%D8%AE%D8%A7%D9%86%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A.jpg",  "SiteLinksCnt": 78,  "Age": 46}
+{"batchcomplete":"","query":{"pages":{"19988":{"pageid":19988,"ns":0,"title":"Murad II","extract":"Murad II (Ottoman Turkish: \u0645\u0631\u0627\u062f \u062b\u0627\u0646\u0649, romanized: Mur\u0101d-\u0131 s\u0101n\u012b, Turkish: II. Murad; June 1404 \u2013 3 February 1451) was twice the sultan of the Ottoman Empire, from 1421 to 1444 and from 1446 to 1451.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131394")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q131394",
+  "isRealHuman": true,
+  "birthDate": "1404-06-16",
+  "deathDate": "1451-02-03",
+  "ageAtDeath": 46,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for precise calculation of age.",
+  "shortDescriptionEn": "Murad II (June 16, 1404 – February 3, 1451) was the Ottoman sultan from 1421 to 1444 and from 1446 to 1451. His reign included significant military campaigns in the Balkans and Anatolia, consolidating and expanding Ottoman territories. He died peacefully in Edirne following a brief illness.",
+  "shortDescriptionFr": "Murad II (16 juin 1404 – 3 février 1451) fut le sultan ottoman de 1421 à 1444 et de 1446 à 1451. Son règne comprenait des campagnes militaires significatives dans les Balkans et en Anatolie, consolidant et étendant les territoires ottomans. Il est décédé paisiblement à Edirne après une brève maladie.",
+  "shortDescriptionDe": "Murad II. (16. Juni 1404 – 3. Februar 1451) war von 1421 bis 1444 und von 1446 bis 1451 Sultan des Osmanischen Reiches. Seine Herrschaft umfasste bedeutende Militärkampagnen auf dem Balkan und in Anatolien, wodurch er die osmanischen Gebiete konsolidierte und erweiterte. Er starb friedlich in Edirne nach kurzer Krankheit.",
+  "shortDescriptionEs": "Murad II (16 de junio de 1404 – 3 de febrero de 1451) fue el sultán otomano desde 1421 hasta 1444 y desde 1446 hasta 1451. Su reinado incluyó campañas militares significativas en los Balcanes y Anatolia, consolidando y expandiendo los territorios otomanos. Murió pacíficamente en Edirne tras una breve enfermedad.",
+  "shortDescriptionRu": "Мурад II (16 июня 1404 – 3 февраля 1451) был султаном Османской империи с 1421 по 1444 год и с 1446 по 1451 год. Его правление включало значительные военные кампании на Балканах и в Анатолии, что способствовало консолидации и расширению османских территорий. Он мирно скончался в Эдирне после короткой болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Murad_II",
+    "https://www.britannica.com/biography/Murad-II",
+    "https://www.allaboutturkey.com/murat2.html"
+  ]
+}
