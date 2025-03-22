@@ -1,0 +1,962 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5588",  "Name": "Frida Kahlo",  "BirthDate": "1907-07-06T00:00:00Z",  "DeathDate": "1954-07-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Frida%20Kahlo%2C%20by%20Guillermo%20Kahlo%20%28cropped%29.jpg",  "SiteLinksCnt": 188,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"162276":{"pageid":162276,"ns":0,"title":"Frida Kahlo","extract":"Magdalena Carmen Frida Kahlo y Calder\u00f3n (Spanish pronunciation: [\u02c8f\u027ei\u00f0a \u02c8kalo]; 6 July 1907 \u2013 13 July 1954) was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a na\u00efve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist. She is also known for painting about her experience of chronic pain.\nBorn to a German father and a mestiza mother (of Pur\u00e9pecha descent), Kahlo spent most of her childhood and adult life at La Casa Azul, her family home in Coyoac\u00e1n \u2013 now publicly accessible as the Frida Kahlo Museum. Although she was disabled by polio as a child, Kahlo had been a promising student headed for medical school until being injured in a bus accident at the age of 18, which caused her lifelong pain and medical problems. During her recovery, she returned to her childhood interest in art with the idea of becoming an artist.\nKahlo's interests in politics and art led her to join the Mexican Communist Party in 1927, through which she met fellow Mexican artist Diego Rivera. The couple married in 1929 and spent the late 1920s and early 1930s travelling in Mexico and the United States together. During this time, she developed her artistic style, drawing her main inspiration from Mexican folk culture, and painted mostly small self-portraits that mixed elements from pre-Columbian and Catholic beliefs. Her paintings raised the interest of surrealist artist Andr\u00e9 Breton, who arranged for Kahlo's first solo exhibition at the Julien Levy Gallery in New York in 1938; the exhibition was a success and was followed by another in Paris in 1939. While the French exhibition was less successful, the Louvre purchased a painting from Kahlo, The Frame, making her the first Mexican artist to be featured in their collection. Throughout the 1940s, Kahlo participated in exhibitions in Mexico and the United States and worked as an art teacher. She taught at the Escuela Nacional de Pintura, Escultura y Grabado (\"La Esmeralda\") and was a founding member of the Seminario de Cultura Mexicana. Kahlo's always-fragile health began to decline in the same decade. While she had had solo exhibitions elsewhere, she had her first solo exhibition in Mexico in 1953, shortly before her death in 1954 at the age of 47.\nKahlo's work as an artist remained relatively unknown until the late 1970s, when her work was rediscovered by art historians and political activists. By the early 1990s, not only had she become a recognized figure in art history, but she was also regarded as an icon for Chicanos, the feminism movement, and the LGBTQ+ community. Kahlo's work has been celebrated internationally as emblematic of Mexican national and Indigenous traditions and by feminists for what is seen as its uncompromising depiction of the female experience and form.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5588")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5588",
+  "isRealHuman": true,
+  "birthDate": "1907-07-06",
+  "deathDate": "1954-07-13",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted.",
+  "shortDescriptionEn": "Frida Kahlo was a renowned Mexican painter known for her vivid self-portraits and works inspired by Mexican culture and nature. Born on July 6, 1907, in Coyoacán, Mexico City, Kahlo's life was marked by physical suffering due to a severe bus accident at the age of 18, which caused multiple fractures and injuries. Despite her health challenges, she became a prominent figure in art, blending realism and fantasy in her paintings to explore themes of identity, postcolonialism, gender, class, and race in Mexican society. She passed away on July 13, 1954, at the age of 47.",
+  "shortDescriptionFr": "Frida Kahlo était une peintre mexicaine renommée, connue pour ses autoportraits vifs et ses œuvres inspirées de la culture et de la nature mexicaines. Née le 6 juillet 1907 à Coyoacán, Mexico, la vie de Kahlo a été marquée par des souffrances physiques dues à un grave accident de bus à l'âge de 18 ans, qui a causé de multiples fractures et blessures. Malgré ses problèmes de santé, elle est devenue une figure éminente de l'art, mélangeant réalisme et fantaisie dans ses peintures pour explorer des thèmes tels que l'identité, le post-colonialisme, le genre, la classe et la race dans la société mexicaine. Elle est décédée le 13 juillet 1954, à l'âge de 47 ans.",
+  "shortDescriptionDe": "Frida Kahlo war eine renommierte mexikanische Malerin, bekannt für ihre lebhaften Selbstporträts und Werke, die von der mexikanischen Kultur und Natur inspiriert sind. Geboren am 6. Juli 1907 in Coyoacán, Mexiko-Stadt, war ihr Leben geprägt von körperlichem Leiden aufgrund eines schweren Busunfalls im Alter von 18 Jahren, der zu zahlreichen Frakturen und Verletzungen führte. Trotz ihrer gesundheitlichen Herausforderungen wurde sie zu einer bedeutenden Figur in der Kunst, indem sie in ihren Gemälden Realismus und Fantasie verband, um Themen wie Identität, Postkolonialismus, Geschlecht, Klasse und Rasse in der mexikanischen Gesellschaft zu erforschen. Sie verstarb am 13. Juli 1954 im Alter von 47 Jahren.",
+  "shortDescriptionEs": "Frida Kahlo fue una pintora mexicana reconocida por sus vívidos autorretratos y obras inspiradas en la cultura y la naturaleza mexicanas. Nacida el 6 de julio de 1907 en Coyoacán, Ciudad de México, la vida de Kahlo estuvo marcada por el sufrimiento físico debido a un grave accidente de autobús a los 18 años, que le causó múltiples fracturas y lesiones. A pesar de sus problemas de salud, se convirtió en una figura destacada en el arte, combinando realismo y fantasía en sus pinturas para explorar temas como la identidad, el poscolonialismo, el género, la clase y la raza en la sociedad mexicana. Falleció el 13 de julio de 1954, a los 47 años.",
+  "shortDescriptionRu": "Фрида Кало была известной мексиканской художницей, известной своими яркими автопортретами и работами, вдохновленными мексиканской культурой и природой. Родилась 6 июля 1907 года в Койоакане, Мехико, жизнь Кало была отмечена физическими страданиями из-за серьезной автобусной аварии в возрасте 18 лет, которая вызвала множественные переломы и травмы. Несмотря на проблемы со здоровьем, она стала выдающейся фигурой в искусстве, сочетая реализм и фантазию в своих картинах, чтобы исследовать такие темы, как идентичность, постколониализм, гендер, класс и раса в мексиканском обществе. Она скончалась 13 июля 1954 года в возрасте 47 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Frida_Kahlo",
+    "https://www.lemonde.fr/en/culture/article/2024/08/30/in-mexico-city-frida-kahlo-reveals-her-innermost-self_6723611_30.html"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7231",  "Name": "Rosa Luxemburg",  "BirthDate": "1871-03-05T00:00:00Z",  "DeathDate": "1919-01-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rosa%20Luxemburg.jpg",  "SiteLinksCnt": 177,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"173758":{"pageid":173758,"ns":0,"title":"Rosa Luxemburg","extract":"Rosa Luxemburg ( LUK-s\u0259m-burg; Polish: R\u00f3\u017ca Luksemburg [\u02c8ru\u0290a \u02c8luks\u025bmburk] ; German: [\u02c8\u0281o\u02d0za \u02c8l\u028aksm\u0329b\u028a\u0281k] ; born Rozalia Luksenburg; 5 March 1871 \u2013 15 January 1919) was a Polish and naturalised-German revolutionary and Marxist theorist. She was a key figure of the socialist movements in Poland and Germany in the early 20th century.\nBorn to a Jewish family in Congress Poland, then part of the Russian Empire, Luxemburg became involved in radical politics at an early age via the Proletariat party, and fled to Switzerland in 1889. She helped found the Social Democracy of the Kingdom of Poland and Lithuania (SDKPiL) party in 1893, and in 1897 was awarded a Doctor of Law in political economy from the University of Zurich, becoming one of the first women in Europe to do so. In 1898, Luxemburg moved to Germany, and soon became a leading figure in the Social Democratic Party of Germany (SPD). Her political activities included teaching Marxist economics at the party's training school. Luxemburg was imprisoned several times, including in Germany and in Congress Poland during the 1905 Revolution.\nAt the outbreak of World War I in 1914, the SPD supported the German war effort, after which Luxemburg and Karl Liebknecht founded the anti-war Spartacus League, which became affiliated with the Independent Social Democratic Party of Germany (USPD) in 1917; the pair were arrested in 1916 for their activities and imprisoned until the November Revolution of 1918, after which they co-founded the Communist Party of Germany. In January 1919, Luxemburg participated in the Spartacist uprising in Berlin, an attempted communist overthrow of the SPD-ruled Weimar Republic. The ill-prepared uprising (considered a blunder by Luxemburg herself) was crushed by the government, which deployed anti-communist Freikorps paramilitaries that captured, tortured, and murdered Luxemburg and Liebknecht.\nLuxemburg argued against the reformist road to socialism advocated by Eduard Bernstein, defending the necessity of a socialist revolution. She also criticised Vladimir Lenin's concept of a vanguard party, instead advocating spontaneous action by the workers, and in particular the mass strike, which she viewed as the supreme form of revolutionary action. In her analyses of the Russian Revolution of 1917, she criticised the controlling character of Lenin and the Bolsheviks. Luxemburg saw the collapse of capitalism as inevitable after it had spread to all areas of the world through the process of imperialism.\nDue to her pointed criticism of both the Leninist and the social democratic schools of Marxism, Luxemburg has always had a somewhat ambivalent reception among scholars and theorists of the political left. Nonetheless, she and Liebknecht were extensively idolised as martyrs by the ruling party of East Germany after World War II. Despite her strong ties and sentimentality towards Polish culture, opposition from the Polish Socialist Party and later criticism from Stalinists have made her a controversial historical figure in the political discourse of the Third Polish Republic."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7231")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7231",
+  "isRealHuman": true,
+  "birthDate": "1871-03-05",
+  "deathDate": "1919-01-15",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of Rosa Luxemburg are well-documented and widely accepted by historians, confirming her age at death as 47.",
+  "shortDescriptionEn": "Rosa Luxemburg (1871–1919) was a Polish-German Marxist theorist, philosopher, and revolutionary socialist. She co-founded the Spartacus League and the Communist Party of Germany. Luxemburg was murdered at age 47 by right-wing paramilitaries during the suppression of the Spartacist uprising in Berlin.",
+  "shortDescriptionFr": "Rosa Luxemburg (1871–1919) était une théoricienne marxiste, philosophe et socialiste révolutionnaire polono-allemande. Elle a cofondé la Ligue spartakiste et le Parti communiste d'Allemagne. Luxemburg a été assassinée à l'âge de 47 ans par des paramilitaires de droite lors de la répression de l'insurrection spartakiste à Berlin.",
+  "shortDescriptionDe": "Rosa Luxemburg (1871–1919) war eine polnisch-deutsche marxistische Theoretikerin, Philosophin und revolutionäre Sozialistin. Sie war Mitbegründerin des Spartakusbundes und der Kommunistischen Partei Deutschlands. Luxemburg wurde im Alter von 47 Jahren von rechtsgerichteten paramilitärischen Einheiten während der Niederschlagung des Spartakusaufstands in Berlin ermordet.",
+  "shortDescriptionEs": "Rosa Luxemburg (1871–1919) fue una teórica marxista, filósofa y socialista revolucionaria polaco-alemana. Cofundó la Liga Espartaquista y el Partido Comunista de Alemania. Luxemburg fue asesinada a los 47 años por paramilitares de derecha durante la represión del levantamiento espartaquista en Berlín.",
+  "shortDescriptionRu": "Роза Люксембург (1871–1919) была польско-немецким марксистским теоретиком, философом и революционной социалисткой. Она соучредила Союз Спартака и Коммунистическую партию Германии. Люксембург была убита в возрасте 47 лет правыми военизированными формированиями во время подавления восстания спартакистов в Берлине.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rosa_Luxemburg",
+    "https://www.britannica.com/biography/Rosa-Luxemburg",
+    "https://www.rosalux.de/en/foundation/historical-centre-for-democratic-socialism-1/rosa-luxemburg/the-life-of-rosa-luxemburg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8605",  "Name": "Simón Bolívar",  "BirthDate": "1783-07-24T00:00:00Z",  "DeathDate": "1830-12-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sim%C3%B3n%20Bol%C3%ADvar%20by%20Acevedo%20Bernal%2C%201922.jpg",  "SiteLinksCnt": 170,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"55917":{"pageid":55917,"ns":0,"title":"Sim\u00f3n Bol\u00edvar","extract":"Sim\u00f3n Jos\u00e9 Antonio de la Sant\u00edsima Trinidad Bol\u00edvar Palacios Ponte y Blanco (24 July 1783 \u2013 17 December 1830) was a Venezuelan statesman and military officer who led what are currently the countries of Colombia, Venezuela, Ecuador, Peru, Panama, and Bolivia to independence from the Spanish Empire. He is known colloquially as El Libertador, or the Liberator of America.\nSim\u00f3n Bol\u00edvar was born in Caracas in the Captaincy General of Venezuela into a wealthy family of American-born Spaniards (criollo) but lost both parents as a child. Bol\u00edvar was educated abroad and lived in Spain, as was common for men of upper-class families in his day. While living in Madrid from 1800 to 1802, he was introduced to Enlightenment philosophy and married Mar\u00eda Teresa Rodr\u00edguez del Toro y Alaysa, who died in Venezuela from yellow fever in 1803. From 1803 to 1805, Bol\u00edvar embarked on a Grand Tour that ended in Rome, where he swore to end the Spanish rule in the Americas. In 1807, Bol\u00edvar returned to Venezuela and promoted Venezuelan independence to other wealthy creoles. When the Spanish authority in the Americas weakened due to Napoleon's Peninsular War, Bol\u00edvar became a zealous combatant and politician in the Spanish-American wars of independence.\nBol\u00edvar began his military career in 1810 as a militia officer in the Venezuelan War of Independence, fighting Royalist forces for the first and second Venezuelan republics and the United Provinces of New Granada. After Spanish forces subdued New Granada in 1815, Bol\u00edvar was forced into exile on Jamaica. In Haiti, Bol\u00edvar met and befriended Haitian revolutionary leader Alexandre P\u00e9tion. After promising to abolish slavery in Spanish America, Bol\u00edvar received military support from P\u00e9tion and returned to Venezuela. He established a third republic in 1817 and then crossed the Andes to liberate New Granada in 1819. Bol\u00edvar and his allies defeated the Spanish in New Granada in 1819, Venezuela and Panama in 1821, Ecuador in 1822, Peru in 1824, and Bolivia in 1825. Venezuela, New Granada, Ecuador, and Panama were merged into the Republic of Colombia (Gran Colombia), with Bol\u00edvar as president there and in Peru and Bolivia.\nIn his final years, Bol\u00edvar became increasingly disillusioned with the South American republics, and distanced from them because of his centralist ideology. He was successively removed from his offices until he resigned the presidency of Colombia and died of tuberculosis in 1830. His legacy is diverse and far-reaching within Latin America and beyond. He is regarded as a hero and national and cultural icon throughout Latin America; the nations of Bolivia and Venezuela (as the Bolivarian Republic of Venezuela) are named after him, and he has been memorialized all over the world in the form of public art or street names and in popular culture."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8605")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8605",
+  "isRealHuman": true,
+  "birthDate": "1783-07-24",
+  "deathDate": "1830-12-17",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of Simón Bolívar are well-documented and widely accepted by historians, providing a high degree of confidence in the accuracy of his age at death.",
+  "shortDescriptionEn": "Simón Bolívar was a Venezuelan military and political leader who played a key role in Latin America's struggle for independence from the Spanish Empire. He led campaigns that resulted in the independence of several South American countries, including Venezuela, Colombia, Ecuador, Peru, and Bolivia. Bolívar died on December 17, 1830, in Santa Marta, Colombia, at the age of 47, likely due to tuberculosis.",
+  "shortDescriptionFr": "Simón Bolívar était un chef militaire et politique vénézuélien qui a joué un rôle clé dans la lutte de l'Amérique latine pour l'indépendance de l'Empire espagnol. Il a mené des campagnes qui ont abouti à l'indépendance de plusieurs pays sud-américains, dont le Venezuela, la Colombie, l'Équateur, le Pérou et la Bolivie. Bolívar est décédé le 17 décembre 1830 à Santa Marta, en Colombie, à l'âge de 47 ans, probablement en raison de la tuberculose.",
+  "shortDescriptionDe": "Simón Bolívar war ein venezolanischer Militär- und politischer Führer, der eine Schlüsselrolle im Unabhängigkeitskampf Lateinamerikas vom spanischen Empire spielte. Er führte Kampagnen an, die zur Unabhängigkeit mehrerer südamerikanischer Länder führten, darunter Venezuela, Kolumbien, Ecuador, Peru und Bolivien. Bolívar starb am 17. Dezember 1830 in Santa Marta, Kolumbien, im Alter von 47 Jahren, wahrscheinlich an Tuberkulose.",
+  "shortDescriptionEs": "Simón Bolívar fue un líder militar y político venezolano que desempeñó un papel clave en la lucha de América Latina por la independencia del Imperio español. Lideró campañas que resultaron en la independencia de varios países sudamericanos, incluyendo Venezuela, Colombia, Ecuador, Perú y Bolivia. Bolívar murió el 17 de diciembre de 1830 en Santa Marta, Colombia, a la edad de 47 años, probablemente debido a tuberculosis.",
+  "shortDescriptionRu": "Симон Боливар был венесуэльским военным и политическим лидером, сыгравшим ключевую роль в борьбе Латинской Америки за независимость от Испанской империи. Он возглавлял кампании, которые привели к независимости нескольких южноамериканских стран, включая Венесуэлу, Колумбию, Эквадор, Перу и Боливию. Боливар умер 17 декабря 1830 года в Санта-Марте, Колумбия, в возрасте 47 лет, вероятно, от туберкулеза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar",
+    "https://elpais.com/america/2024-12-09/ayacucho-diciembre-9-1824-el-final-de-un-imperio-y-el-inicio-de-america-latina.html"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1631",  "Name": "Édith Piaf",  "BirthDate": "1915-12-19T00:00:00Z",  "DeathDate": "1963-10-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Piaf%20Harcourt%201946%202.jpg",  "SiteLinksCnt": 145,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"64963":{"pageid":64963,"ns":0,"title":"\u00c9dith Piaf","extract":"\u00c9dith Giovanna Gassion (19 December 1915 \u2013 10 October 1963), known as \u00c9dith Piaf (French: [edit pjaf]), was a French singer and lyricist best known for performing songs in the cabaret and modern chanson genres. She is widely regarded as France's greatest popular singer and one of the most celebrated performers of the 20th century.\nPiaf's music was often autobiographical, and she specialized in chanson r\u00e9aliste and torch ballads about love, loss and sorrow. Her most widely known songs include \"La Vie en rose\" (1946), \"Non, je ne regrette rien\" (1960), \"Hymne \u00e0 l'amour\" (1949), \"Milord\" (1959), \"La Foule\" (1957), \"L'Accord\u00e9oniste\" (1940), and \"Padam, padam...\" (1951).\nHaving begun her career touring with her father at age fourteen, her fame increased during the German occupation of France and in 1945, Piaf's signature song, \"La Vie en rose\" ('life in pink') was published. She became France's most popular entertainer in the late 1940s, also touring Europe, South America and the United States, where her popularity led to eight appearances on The Ed Sullivan Show.\nPiaf continued to perform, including several series of concerts at the Paris Olympia music hall, until a few months before her death in 1963 at age 47. Her last song, \"L'Homme de Berlin\", was recorded with her husband in April 1963. Since her death, several documentaries and films have been produced about Piaf's life as a touchstone of French culture."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1631")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1631",
+  "isRealHuman": true,
+  "birthDate": "1915-12-19",
+  "deathDate": "1963-10-10",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Édith Piaf's birth and death dates are well-documented and widely recognized.",
+  "shortDescriptionEn": "Édith Piaf was a French singer renowned for her powerful voice and emotive performances. Rising from a challenging childhood, she became an international star with songs like 'La Vie en rose.' Her life was marred by personal tragedies, including the loss of her lover Marcel Cerdan and struggles with addiction. Piaf died at 47 from liver cancer, leaving a lasting legacy in music.",
+  "shortDescriptionFr": "Édith Piaf était une chanteuse française réputée pour sa voix puissante et ses performances émouvantes. Issue d'une enfance difficile, elle est devenue une star internationale avec des chansons comme 'La Vie en rose.' Sa vie a été marquée par des tragédies personnelles, notamment la perte de son amant Marcel Cerdan et des luttes contre la dépendance. Piaf est décédée à 47 ans d'un cancer du foie, laissant un héritage durable dans la musique.",
+  "shortDescriptionDe": "Édith Piaf war eine französische Sängerin, bekannt für ihre kraftvolle Stimme und emotionale Darbietungen. Aus einer schwierigen Kindheit stammend, wurde sie mit Liedern wie 'La Vie en rose' ein internationaler Star. Ihr Leben war von persönlichen Tragödien geprägt, einschließlich des Verlusts ihres Geliebten Marcel Cerdan und Kämpfen mit Sucht. Piaf starb mit 47 Jahren an Leberkrebs und hinterließ ein bleibendes musikalisches Erbe.",
+  "shortDescriptionEs": "Édith Piaf fue una cantante francesa reconocida por su poderosa voz y actuaciones emotivas. Surgida de una infancia difícil, se convirtió en una estrella internacional con canciones como 'La Vie en rose.' Su vida estuvo marcada por tragedias personales, incluyendo la pérdida de su amante Marcel Cerdan y luchas contra la adicción. Piaf murió a los 47 años de cáncer de hígado, dejando un legado duradero en la música.",
+  "shortDescriptionRu": "Эдит Пиаф была французской певицей, известной своим мощным голосом и эмоциональными выступлениями. Пройдя через трудное детство, она стала международной звездой с песнями, такими как 'La Vie en rose.' Ее жизнь была омрачена личными трагедиями, включая потерю возлюбленного Марселя Сердана и борьбу с зависимостью. Пиаф умерла в 47 лет от рака печени, оставив долговечное музыкальное наследие.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+    "https://www.britannica.com/biography/Edith-Piaf",
+    "https://www.biography.com/musician/edith-piaf"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11637",  "Name": "Judy Garland",  "BirthDate": "1922-06-10T00:00:00Z",  "DeathDate": "1969-06-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Judy%20Garland%20The%20Harvey%20Girls%20MGM%20Publicity%20still.jpeg",  "SiteLinksCnt": 144,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"58719":{"pageid":58719,"ns":0,"title":"Judy Garland","extract":"Judy Garland (born Frances Ethel Gumm; June 10, 1922 \u2013 June 22, 1969) was an American actress, singer, and vaudevillian. Renowned for her powerful contralto voice, emotional depth, and versatility, Garland rose to international fame as Dorothy Gale in The Wizard of Oz (1939), a role that cemented her status as a Hollywood legend.\nGarland began her career as a child performer in vaudeville alongside her sisters as part of The Gumm Sisters. At age 13, she was signed by Metro-Goldwyn-Mayer (MGM), where she starred in numerous musical films, including The Wizard of Oz (1939), Meet Me in St. Louis (1944), Easter Parade (1948), and Summer Stock (1950). Known for her collaborations with Mickey Rooney and director Vincente Minnelli (her second husband), Garland became one of MGM's most bankable stars during the Golden Age of Hollywood.\nBeyond her film career, Garland achieved success as a recording artist and concert performer. Her 1961 live album, Judy at Carnegie Hall, won two Grammy Awards, including Album of the Year, making her the first woman to receive the honor. She also hosted her own Emmy-nominated television series, The Judy Garland Show (1963\u20131964), and received a Special Tony Award for her contributions to the revival of vaudeville. Garland's film career saw a resurgence in the 1950s and 1960s with critically acclaimed performances in A Star Is Born (1954) and Judgment at Nuremberg (1961), which she received Academy Award nominations for, and has released eight studio albums. She has additionally received a Golden Globe Award and was one of twelve people in history to receive an Academy Juvenile Award. \nAt age 39, Garland became the youngest, and first female recipient of the Cecil B. DeMille Award for lifetime achievement in the film industry. Throughout her career, Garland recorded and introduced numerous songs including \"Over the Rainbow\", which became her signature song, the Christmas classic \"Have Yourself a Merry Little Christmas\" and the Saint Patrick's Day anthem \"It's a Great Day for the Irish\".\nGarland struggled in her personal life from an early age. The pressures of early stardom affected her physical and mental health from the time she was a teenager; her self-image was influenced by constant criticism from film executives who believed that she was physically unattractive and who manipulated her onscreen physical appearance. She had financial troubles, often owing hundreds of thousands of dollars in back taxes. Throughout her adulthood, she struggled with substance use disorder involving both drugs and alcohol; she died from an accidental barbiturate overdose in 1969, at age 47. In 1997, Garland was posthumously awarded the Grammy Lifetime Achievement Award. Several of her recordings have been inducted into the Grammy Hall of Fame, and in 1999 the American Film Institute ranked her as the eighth-greatest female screen legend of classic Hollywood cinema."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11637")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q11637",
+  "isRealHuman": true,
+  "birthDate": "1922-06-10",
+  "deathDate": "1969-06-22",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are clearly stated in multiple authoritative sources including Wikidata and Wikipedia. The age of 47 is calculated based on exact dates, with her passing occurring just 12 days after her 47th birthday.",
+  "shortDescriptionEn": "Judy Garland (born Frances Ethel Gumm, June 10, 1922 – June 22, 1969) was an American actress and singer, best known for her role as Dorothy in The Wizard of Oz. Renowned for her powerful voice and emotional performances, she achieved fame through film, recordings, and live concerts. Despite her success, Garland battled substance abuse and mental health issues throughout her life and died of an accidental barbiturate overdose at age 47.",
+  "shortDescriptionFr": "Judy Garland (née Frances Ethel Gumm, 10 juin 1922 – 22 juin 1969) était une actrice et chanteuse américaine, célèbre pour son rôle de Dorothy dans Le Magicien d'Oz. Connue pour sa voix puissante et sa sensibilité artistique, elle a connu une carrière impressionnante au cinéma et sur scène. Elle est décédée à 47 ans d'une overdose accidentelle de barbituriques.",
+  "shortDescriptionDe": "Judy Garland (geboren als Frances Ethel Gumm, 10. Juni 1922 – 22. Juni 1969) war eine US-amerikanische Schauspielerin und Sängerin, bekannt durch ihre Rolle als Dorothy in Der Zauberer von Oz. Trotz ihres Erfolgs kämpfte sie mit Suchtproblemen und psychischen Belastungen. Sie starb im Alter von 47 Jahren an einer versehentlichen Überdosis Barbiturate.",
+  "shortDescriptionEs": "Judy Garland (nacida como Frances Ethel Gumm, 10 de junio de 1922 – 22 de junio de 1969) fue una actriz y cantante estadounidense, famosa por su papel de Dorothy en El mago de Oz. A pesar de su gran éxito artístico, enfrentó problemas de salud mental y adicciones. Murió a los 47 años por una sobredosis accidental de barbitúricos.",
+  "shortDescriptionRu": "Джуди Гарленд (урождённая Фрэнсис Этель Гамм, 10 июня 1922 – 22 июня 1969) — американская актриса и певица, прославившаяся ролью Дороти в фильме «Волшебник страны Оз». Несмотря на успех, всю жизнь боролась с зависимостями и психическим здоровьем. Умерла в 47 лет от случайной передозировки барбитуратов.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q11637",
+    "https://en.wikipedia.org/wiki/Judy_Garland",
+    "https://www.imdb.com/name/nm0000023/",
+    "https://www.britannica.com/biography/Judy-Garland"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41749",  "Name": "Joseph Goebbels",  "BirthDate": "1897-10-29T00:00:00Z",  "DeathDate": "1945-05-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20146-1968-101-20A%2C%20Joseph%20Goebbels.jpg",  "SiteLinksCnt": 136,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"15777":{"pageid":15777,"ns":0,"title":"Joseph Goebbels","extract":"Paul Joseph Goebbels (German: [\u02c8pa\u028a\u032fl \u02c8jo\u02d0z\u025bf \u02c8\u0261\u0153bl\u0329s] ; 29 October 1897 \u2013 1 May 1945) was a German Nazi politician and philologist who was the Gauleiter (district leader) of Berlin, chief propagandist for the Nazi Party, and then Reich Minister of Propaganda from 1933 to 1945. He was one of Adolf Hitler's closest and most devoted followers, known for his skills in public speaking and his deeply virulent antisemitism which was evident in his publicly voiced views. He advocated progressively harsher discrimination, including the extermination of the Jews in the Holocaust.\nGoebbels, who aspired to be an author, obtained a doctorate in philology from the University of Heidelberg in 1921. He joined the Nazi Party in 1924, and worked with Gregor Strasser in its northern branch. He was appointed Gauleiter of Berlin in 1926, where he began to take an interest in the use of propaganda to promote the party and its programme. After the Nazis came to power in 1933, Goebbels's Propaganda Ministry quickly gained control over the news media, arts and information in Nazi Germany. He was particularly adept at using the relatively new media of radio and film for propaganda purposes. Topics for party propaganda included antisemitism, attacks on Christian churches, and (after the start of the Second World War) attempts to shape morale.\nIn 1943, Goebbels began to pressure Hitler to introduce measures that would produce \"total war\", including closing businesses not essential to the war effort, conscripting women into the labour force, and enlisting men in previously exempt occupations into the Wehrmacht. Hitler finally appointed him as Reich Plenipotentiary for Total War on 23 July 1944, whereby Goebbels undertook largely unsuccessful measures to increase the number of people available for armaments manufacture and the Wehrmacht.\nAs the war drew to a close and Nazi Germany faced defeat, Magda Goebbels and the Goebbels children joined Hitler in Berlin. They moved into the underground Vorbunker, part of Hitler's underground bunker complex, on 22 April 1945. Hitler committed suicide on 30 April. In accordance with Hitler's will, Goebbels succeeded him as Chancellor of Germany; he served one day in this post. The following day, Goebbels and his wife Magda committed suicide, after having poisoned their six children with a cyanide compound."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41749")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41749",
+  "isRealHuman": true,
+  "birthDate": "1897-10-29",
+  "deathDate": "1945-05-01",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are precisely known and widely confirmed by historical sources. The age at death is a simple and exact calculation: 1945 - 1897 = 48, but he died before his birthday in 1945, making him 47 at death.",
+  "shortDescriptionEn": "Joseph Goebbels (1897–1945) was a German Nazi politician and Propaganda Minister, known for his antisemitic rhetoric and media control in Nazi Germany. He was a close associate of Adolf Hitler and briefly became Chancellor after Hitler's suicide. He died by suicide on May 1, 1945, after poisoning his six children with his wife Magda.",
+  "shortDescriptionFr": "Joseph Goebbels (1897–1945) était un homme politique nazi allemand et ministre de la Propagande, célèbre pour sa rhétorique antisémite et son contrôle des médias. Proche de Hitler, il devint brièvement chancelier après le suicide de ce dernier. Il se suicida le 1er mai 1945 après avoir empoisonné ses six enfants avec sa femme Magda.",
+  "shortDescriptionDe": "Joseph Goebbels (1897–1945) war ein deutscher NS-Politiker und Propagandaminister, bekannt für seine antisemitische Rhetorik und Medienkontrolle. Als enger Vertrauter Hitlers wurde er nach dessen Suizid kurzzeitig Reichskanzler. Am 1. Mai 1945 beging er mit seiner Frau Magda Suizid, nachdem sie ihre sechs Kinder vergiftet hatten.",
+  "shortDescriptionEs": "Joseph Goebbels (1897–1945) fue un político nazi alemán y Ministro de Propaganda, conocido por su retórica antisemita y control de los medios. Cercano a Hitler, asumió brevemente como canciller tras el suicidio de este. Murió por suicidio el 1 de mayo de 1945 tras envenenar a sus seis hijos junto a su esposa Magda.",
+  "shortDescriptionRu": "Йозеф Геббельс (1897–1945) — немецкий нацистский политик и министр пропаганды, известный своей антисемитской риторикой и контролем СМИ. Был близким соратником Гитлера и кратковременно стал канцлером после его самоубийства. 1 мая 1945 года покончил с собой вместе с женой Магдой после того, как они отравили своих шестерых детей.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Joseph_Goebbels",
+    "https://www.wikidata.org/wiki/Q41749",
+    "https://www.britannica.com/biography/Joseph-Goebbels",
+    "https://www.holocaust.org.uk/joseph-goebbels",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1968-101-20A,_Joseph_Goebbels.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q134958",  "Name": "Taras Shevchenko",  "BirthDate": "1814-03-09T00:00:00Z",  "DeathDate": "1861-03-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%A2.%20%D0%93.%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE.%20%D0%9A%D0%B2%D1%96%D1%82%D0%B5%D0%BD%D1%8C%201859.jpg",  "SiteLinksCnt": 129,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"512244":{"pageid":512244,"ns":0,"title":"Taras Shevchenko","extract":"Taras Hryhorovych Shevchenko (Ukrainian: \u0422\u0430\u0440\u0430\u0441 \u0413\u0440\u0438\u0433\u043e\u0440\u043e\u0432\u0438\u0447 \u0428\u0435\u0432\u0447\u0435\u043d\u043a\u043e; Russian: \u0422\u0430\u0440\u0430\u0441 \u0413\u0440\u0438\u0433\u043e\u0440\u044c\u0435\u0432\u0438\u0447 \u0428\u0435\u0432\u0447\u0435\u043d\u043a\u043e; 9 March 1814 \u2013 10 March 1861) was a Ukrainian poet, writer, artist, public and political figure, folklorist and ethnographer. He was a fellow of the Imperial Academy of Arts and a member of the Brotherhood of Saints Cyril and Methodius. He wrote poetry in Ukrainian and prose (nine novellas, a diary, and his autobiography) in Russian, making him one of many iconic figures which belong to several Slavic language cultures. The town in Kazakhstan, currently known as Aktau, was named after Shevchenko in the period of Soviet authority. \nHis literary heritage, in particular the poetry collection Kobzar, is regarded to be the foundation of modern Ukrainian literature and to some degree, the modern Ukrainian language."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q134958")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q134958",
+  "isRealHuman": true,
+  "birthDate": "1814-03-09",
+  "deathDate": "1861-03-10",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Taras Shevchenko are well-documented in historical records, allowing for precise calculation of his age at death.",
+  "shortDescriptionEn": "Taras Shevchenko was a Ukrainian poet, writer, artist, public and political figure, folklorist, and ethnographer. He died on March 10, 1861, at the age of 47, in Saint Petersburg, Russian Empire.",
+  "shortDescriptionFr": "Taras Chevtchenko était un poète, écrivain, artiste, personnalité publique et politique, folkloriste et ethnographe ukrainien. Il est décédé le 10 mars 1861, à l'âge de 47 ans, à Saint-Pétersbourg, dans l'Empire russe.",
+  "shortDescriptionDe": "Taras Schewtschenko war ein ukrainischer Dichter, Schriftsteller, Künstler, öffentlicher und politischer Figur, Folklorist und Ethnograph. Er starb am 10. März 1861 im Alter von 47 Jahren in Sankt Petersburg, Russisches Kaiserreich.",
+  "shortDescriptionEs": "Taras Shevchenko fue un poeta, escritor, artista, figura pública y política, folclorista y etnógrafo ucraniano. Murió el 10 de marzo de 1861, a la edad de 47 años, en San Petersburgo, Imperio Ruso.",
+  "shortDescriptionRu": "Тарас Шевченко был украинским поэтом, писателем, художником, общественным и политическим деятелем, фольклористом и этнографом. Он умер 10 марта 1861 года в возрасте 47 лет в Санкт-Петербурге, Российская империя.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Taras_Shevchenko"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q155979",  "Name": "Alexei Navalny",  "BirthDate": "1976-06-04T00:00:00Z",  "DeathDate": "2024-02-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alexey%20Navalny%20%28cropped%29%202.jpg",  "SiteLinksCnt": 128,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"29174356":{"pageid":29174356,"ns":0,"title":"Alexei Navalny","extract":"Alexei Anatolyevich Navalny (Russian: \u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u0438\u0447 \u041d\u0430\u0432\u0430\u043b\u044c\u043d\u044b\u0439, IPA: [\u0250l\u02b2\u026ak\u02c8s\u02b2ej \u0250n\u0250\u02c8tol\u02b2j\u026av\u02b2\u026at\u0255 n\u0250\u02c8val\u02b2n\u0268j]; 4 June 1976 \u2013 16 February 2024) was a Russian opposition leader, anti-corruption activist and political prisoner. He founded the Anti-Corruption Foundation (FBK) in 2011. He was recognised by Amnesty International as a prisoner of conscience and was awarded the Sakharov Prize for his work on human rights.\nThrough his social media accounts, Navalny and his team published material about corruption in Russia, organised political demonstrations and promoted his campaigns. In a 2011 interview, he described Russia's ruling party\u2014United Russia\u2014as a \"party of crooks and thieves\", which became a popular byname. Navalny and the FBK have published investigations detailing alleged corruption by high-ranking Russian officials and their associates.\nNavalny twice received a suspended sentence for embezzlement, in 2013 and 2014. Both criminal cases have been widely considered politically motivated and intended to bar him from running in future elections. He ran in the 2013 Moscow mayoral election and came in second with 27.2% of the vote, but was barred from running in the 2018 presidential election.\nIn August 2020, Navalny was hospitalised after being severely poisoned with a Novichok nerve agent. He was medically evacuated to Berlin and discharged a month later. He accused President Vladimir Putin of being responsible for his poisoning, and an investigation implicated agents from the Federal Security Service. In January 2021, Navalny returned to Russia and was immediately detained on accusations of violating parole conditions while hospitalised in Germany. Following his arrest, mass protests were held across Russia. The next month, Navalny's suspended sentence was replaced with a prison sentence of over 2+1\u20442 years' detention, and his organisations were later designated as extremist and liquidated. In March 2022, Navalny was sentenced to an additional nine years in prison after being found guilty of embezzlement and contempt of court in a new trial described as a sham by Amnesty International. Following the rejection of his appeal, Navalny was transferred to a high-security prison in June. In August 2023, he received another sentence of 19 years on extremism charges.\nIn December 2023, Navalny went missing from prison for almost three weeks. He re-emerged in an Arctic Circle corrective colony in the Yamalo-Nenets Autonomous Okrug. In 2024, the Russian prison service reported that Navalny had died, which subsequently sparked protests in both Russia and various other countries. Accusations against Putin's government in connection with his death have been made by many Western governments and international organisations."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q155979")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q155979",
+  "isRealHuman": true,
+  "birthDate": "1976-06-04",
+  "deathDate": "2024-02-16",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely reported, providing high confidence in the accuracy of the calculated age.",
+  "shortDescriptionEn": "Alexei Navalny was a Russian opposition leader and anti-corruption activist known for founding the Anti-Corruption Foundation (FBK) in 2011. He gained prominence for exposing corruption within the Russian government and openly opposing President Vladimir Putin. Despite surviving a poisoning attempt in 2020, Navalny was imprisoned upon his return to Russia in 2021. He died in prison on February 16, 2024, at the age of 47, after reportedly feeling unwell during a walk.",
+  "shortDescriptionFr": "Alexeï Navalny était un leader de l'opposition russe et un militant anti-corruption, connu pour avoir fondé la Fondation Anti-Corruption (FBK) en 2011. Il s'est fait connaître en dénonçant la corruption au sein du gouvernement russe et en s'opposant ouvertement au président Vladimir Poutine. Malgré avoir survécu à une tentative d'empoisonnement en 2020, Navalny a été emprisonné à son retour en Russie en 2021. Il est décédé en prison le 16 février 2024, à l'âge de 47 ans, après s'être senti mal lors d'une promenade.",
+  "shortDescriptionDe": "Alexei Nawalny war ein russischer Oppositionsführer und Anti-Korruptions-Aktivist, bekannt für die Gründung der Anti-Korruptions-Stiftung (FBK) im Jahr 2011. Er erlangte Bekanntheit durch die Aufdeckung von Korruption innerhalb der russischen Regierung und seine offene Opposition gegen Präsident Wladimir Putin. Trotz des Überlebens eines Giftanschlags im Jahr 2020 wurde Nawalny bei seiner Rückkehr nach Russland im Jahr 2021 inhaftiert. Er starb am 16. Februar 2024 im Alter von 47 Jahren im Gefängnis, nachdem er sich bei einem Spaziergang unwohl gefühlt hatte.",
+  "shortDescriptionEs": "Alexéi Navalny fue un líder opositor ruso y activista anticorrupción, conocido por fundar la Fundación Anticorrupción (FBK) en 2011. Ganó prominencia por exponer la corrupción dentro del gobierno ruso y oponerse abiertamente al presidente Vladímir Putin. A pesar de sobrevivir a un intento de envenenamiento en 2020, Navalny fue encarcelado a su regreso a Rusia en 2021. Murió en prisión el 16 de febrero de 2024, a la edad de 47 años, después de sentirse mal durante una caminata.",
+  "shortDescriptionRu": "Алексей Навальный был российским оппозиционным лидером и антикоррупционным активистом, известным созданием Фонда борьбы с коррупцией (ФБК) в 2011 году. Он получил известность благодаря разоблачению коррупции в российском правительстве и открытой оппозиции президенту Владимиру Путину. Несмотря на пережитую попытку отравления в 2020 году, Навальный был арестован по возвращении в Россию в 2021 году. Он умер в тюрьме 16 февраля 2024 года в возрасте 47 лет после того, как почувствовал себя плохо во время прогулки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexei_Navalny",
+    "https://www.reuters.com/world/europe/alexei-navalnys-death-what-do-we-know-2024-02-18/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43989",  "Name": "Grigori Rasputin",  "BirthDate": "1869-01-21T00:00:00Z",  "DeathDate": "1916-12-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Grigori%20Rasputin%201916.jpg",  "SiteLinksCnt": 109,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"12804":{"pageid":12804,"ns":0,"title":"Grigori Rasputin","extract":"Grigori Yefimovich Rasputin (; Russian: \u0413\u0440\u0438\u0433\u043e\u0301\u0440\u0438\u0439 \u0415\u0444\u0438\u0301\u043c\u043e\u0432\u0438\u0447 \u0420\u0430\u0441\u043f\u0443\u0301\u0442\u0438\u043d [\u0261r\u02b2\u026a\u02c8\u0261or\u02b2\u026aj j\u026a\u02c8f\u02b2im\u0259v\u02b2\u026at\u0255 r\u0250\u02c8sput\u02b2\u026an]; 21 January [O.S. 9 January] 1869 \u2013  30 December [O.S. 17 December] 1916) was a Russian mystic and faith healer. He is best known for having befriended the imperial family of Nicholas II, the last Emperor of Russia, through whom he gained considerable influence in the final years of the Russian Empire.\nRasputin was born to a family of peasants in the Siberian village of Pokrovskoye, located within Tyumensky Uyezd in Tobolsk Governorate (present-day Yarkovsky District in Tyumen Oblast). He had a religious conversion experience after embarking on a pilgrimage to a monastery in 1897 and has been described as a monk or as a strannik (wanderer or pilgrim), though he held no official position in the Russian Orthodox Church. In 1903 or in the winter of 1904\u20131905, he travelled to Saint Petersburg and captivated a number of religious and social leaders, eventually becoming a prominent figure in Russian society. In November 1905, Rasputin met Nicholas II and his empress consort, Alexandra Feodorovna.\nIn late 1906, Rasputin began acting as a faith healer for Nicholas' and Alexandra's only son, Alexei Nikolaevich, who suffered from haemophilia. He was a divisive figure at court, seen by some Russians as a mystic, visionary and prophet, and by others as a religious charlatan. The extent of Rasputin's power reached an all-time high in 1915, when Nicholas left Saint Petersburg to oversee the Imperial Russian Army as it was engaged in the First World War. In his absence, Rasputin and Alexandra consolidated their influence across the Russian Empire. However, as Russian military defeats mounted on the Eastern Front, both figures became increasingly unpopular, and in the early morning of 30 December [O.S. 17 December] 1916, Rasputin was assassinated by a group of conservative Russian noblemen who opposed his influence over the imperial family.\nHistorians often suggest that Rasputin's scandalous and sinister reputation helped discredit the Tsarist government, thus precipitating the overthrow of the House of Romanov shortly after his assassination. Accounts of his life and influence were often based on common rumors; he remains a mysterious and captivating figure in popular culture."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43989")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43989",
+  "isRealHuman": true,
+  "birthDate": "1869-01-21",
+  "deathDate": "1916-12-30",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by historians. The age at death is confirmed by simple date calculation and consistent across reputable sources.",
+  "shortDescriptionEn": "Grigori Rasputin (1869–1916) was a Russian mystic and faith healer who became influential in the court of Tsar Nicholas II. He gained the trust of the imperial family, particularly Tsarina Alexandra, due to his ability to treat their son's haemophilia. His growing power and controversial reputation led to his assassination in 1916 by nobles who opposed his influence over the royal family.",
+  "shortDescriptionFr": "Grigori Raspoutine (1869–1916) était un mystique et guérisseur russe qui exerçait une grande influence à la cour du tsar Nicolas II. Proche de la famille impériale, notamment grâce à son aide pour soigner le tsarévitch Alexei, il fut assassiné en 1916 par des nobles russes qui craignaient son pouvoir croissant.",
+  "shortDescriptionDe": "Grigori Rasputin (1869–1916) war ein russischer Mystiker und Wunderheiler, der erheblichen Einfluss am Hofe von Zar Nikolaus II. gewann. Besonders durch die Behandlung des kranken Thronfolgers Alexei wurde er der Zarenfamilie nah. Aufgrund seines wachsenden Einflusses wurde er 1916 von Adligen ermordet.",
+  "shortDescriptionEs": "Grigori Rasputin (1869–1916) fue un místico y sanador ruso que ganó gran influencia en la corte del zar Nicolás II. Su relación con la familia imperial, especialmente por ayudar a su hijo enfermo, provocó controversias que culminaron con su asesinato en 1916 por nobles rusos.",
+  "shortDescriptionRu": "Григорий Распутин (1869–1916) — российский мистик и целитель, получивший большое влияние при дворе императора Николая II. Став близким к царской семье из-за лечения цесаревича Алексея, Распутин вызвал недовольство знати и был убит в 1916 году группой заговорщиков.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q43989",
+    "https://en.wikipedia.org/wiki/Grigori_Rasputin",
+    "https://commons.wikimedia.org/wiki/File:Grigori_Rasputin_1916.jpg",
+    "https://www.britannica.com/biography/Grigory-Yefimovich-Rasputin"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15193",  "Name": "Alexander I of Russia",  "BirthDate": "1777-12-23T00:00:00Z",  "DeathDate": "1825-12-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Alexander%20I%20of%20Russia%20by%20Alexander%20Molinari%201813.png",  "SiteLinksCnt": 107,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"27126603":{"pageid":27126603,"ns":0,"title":"Alexander I of Russia","extract":"Alexander I (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 I \u041f\u0430\u0432\u043b\u043e\u0432\u0438\u0447, romanized: Aleksandr I Pavlovich, IPA: [\u0250l\u02b2\u026ak\u02c8sandr \u02c8pavl\u0259v\u02b2\u026at\u0255]; 23 December [O.S. 12 December] 1777 \u2013 1 December [O.S. 19 November] 1825), nicknamed \"the Blessed\", was Emperor of Russia from 1801, the first king of Congress Poland from 1815, and the grand duke of Finland from 1809 to his death in 1825. He ruled Russia during the chaotic period of the Napoleonic Wars. \nThe eldest son of Emperor Paul I and Sophie Dorothea of W\u00fcrttemberg, Alexander succeeded to the throne after his father was murdered. As prince and during the early years of his reign, he often used liberal rhetoric but continued Russia's absolutist policies in practice. In the first years of his reign, he initiated some minor social reforms and (in 1803\u201304) major liberal educational reforms, such as building more universities. Alexander appointed Mikhail Speransky, the son of a village priest, as one of his closest advisors. The over-centralized Collegium ministries were abolished and replaced by the Committee of Ministers, State Council, and Supreme Court to improve the legal system. Plans were made but never consummated, to set up a parliament and sign a constitution. In contrast to his westernizing predecessors such as Peter the Great, Alexander was a Russian nationalist and Slavophile who wanted Russia to develop on the basis of Russian culture rather than European.\nIn foreign policy, he changed Russia's position towards France four times between 1804 and 1812, shifting among neutrality, opposition, and alliance. In 1805 he joined Britain in the War of the Third Coalition against Napoleon, but after suffering massive defeats at the battles of Austerlitz and Friedland, he switched sides and formed an alliance with Napoleon in the Treaty of Tilsit (1807) and joined Napoleon's Continental System. He fought a small-scale naval war against Britain between 1807 and 1812 as well as a short war against Sweden (1808\u201309) after Sweden's refusal to join the Continental System. Alexander and Napoleon hardly agreed, especially regarding Poland, and the alliance collapsed by 1810. Alexander's greatest triumph came in 1812 when Napoleon's invasion of Russia descended into a catastrophe for the French. As part of the winning coalition against Napoleon, he gained territory in Finland and Poland. He formed the Holy Alliance to suppress the revolutionary movements in Europe, which he saw as immoral threats to legitimate Christian monarchs. He also helped Austria's Klemens von Metternich in suppressing all national and liberal movements.\nDuring the second half of his reign, Alexander became increasingly arbitrary, reactionary, and fearful of plots against him; as a result he ended many of the reforms he had made earlier on his reign. He purged schools of foreign teachers, as education became more religiously driven as well as politically conservative. Speransky was replaced as advisor with the strict artillery inspector Aleksey Arakcheyev, who oversaw the creation of military settlements. Alexander died of typhus in December 1825 while on a trip to southern Russia. He left no legitimate children, as his two daughters died in childhood. Neither of his brothers wanted to become emperor. After a period of great confusion (that presaged the failed Decembrist revolt of liberal army officers in the weeks after his death), he was succeeded by his younger brother, Nicholas I."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15193")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q15193",
+  "isRealHuman": true,
+  "birthDate": "1777-12-23",
+  "deathDate": "1825-12-01",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming his age at death as 47.",
+  "shortDescriptionEn": "Alexander I of Russia (1777–1825) was Emperor of Russia from 1801 to 1825, known for his role in defeating Napoleon and initiating various reforms. He died of typhus in Taganrog at the age of 47.",
+  "shortDescriptionFr": "Alexandre Ier de Russie (1777–1825) fut empereur de Russie de 1801 à 1825, connu pour son rôle dans la défaite de Napoléon et l'initiation de diverses réformes. Il mourut du typhus à Taganrog à l'âge de 47 ans.",
+  "shortDescriptionDe": "Alexander I. von Russland (1777–1825) war von 1801 bis 1825 Kaiser von Russland, bekannt für seine Rolle bei der Niederlage Napoleons und die Einleitung verschiedener Reformen. Er starb im Alter von 47 Jahren in Taganrog an Typhus.",
+  "shortDescriptionEs": "Alejandro I de Rusia (1777–1825) fue emperador de Rusia desde 1801 hasta 1825, conocido por su papel en la derrota de Napoleón y la iniciación de diversas reformas. Murió de tifus en Taganrog a los 47 años.",
+  "shortDescriptionRu": "Александр I России (1777–1825) был императором России с 1801 по 1825 год, известен своей ролью в разгроме Наполеона и инициировании различных реформ. Он умер от тифа в Таганроге в возрасте 47 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_I_of_Russia"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q797848",  "Name": "Babur",  "BirthDate": "1483-02-23T00:00:00Z",  "DeathDate": "1531-01-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Humayun%20and%20Babur%20%28Late%20Shah%20Jahan%20Album%29%20Babur%20detail.jpg",  "SiteLinksCnt": 105,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"4551":{"pageid":4551,"ns":0,"title":"Babur","extract":"Babur (Persian: [b\u0251\u02d0.\u03b2u\u027e]; 14 February 1483 \u2013 26 December 1530; born Zah\u012br ud-D\u012bn Muhammad) was the founder of the Mughal Empire in the Indian subcontinent. He was a descendant of Timur and Genghis Khan through his father and mother respectively. He was also given the posthumous name of Firdaws Makani ('Dwelling in Paradise').\nBorn in Andijan in the Fergana Valley (now in Uzbekistan), Babur was the eldest son of Umar Shaikh Mirza II (1456\u20131494, governor of Fergana from 1469 to 1494) and a great-great-great-grandson of Timur (1336\u20131405). Babur ascended the throne of Fergana in its capital Akhsikath in 1494 at the age of twelve and faced rebellion. He conquered Samarkand two years later, only to lose Fergana soon after. In his attempt to reconquer Fergana, he lost control of Samarkand. In 1501, his attempt to recapture both the regions failed when the Uzbek prince Muhammad Shaybani defeated him and founded the Khanate of Bukhara.\nIn 1504, he conquered Kabul, which was under the putative rule of Abdur Razaq Mirza, the infant heir of Ulugh Beg II. Babur formed a partnership with the Safavid emperor Ismail I and reconquered parts of Turkestan, including Samarkand, only to again lose it and the other newly conquered lands to the Shaybanids.\nAfter losing Samarkand for the third time, Babur turned his attention to India and employed aid from the neighbouring Safavid and Ottoman empires. He defeated Ibrahim Lodi, the Sultan of Delhi, at the First Battle of Panipat in 1526 and founded the Mughal Empire. Before the defeat of Lodi at Delhi, the Sultanate of Delhi had been a spent force, long in a state of decline.\nThe rival adjacent Kingdom of Mewar under the rule of Rana Sanga had become one of the most powerful states in North India. Sanga unified several Rajput clans for the first time after Prithviraj Chauhan and advanced on Babur with a grand coalition of 80,000-100,000 Rajputs, engaging Babur in the Battle of Khanwa. Babur arrived at Khanwa with 40,000-50,000 soldiers. Nonetheless, Sanga suffered a major defeat due to Babur's skillful troop positioning and use of gunpowder, specifically matchlocks and small cannons.\nThe Battle of Khanwa was one of the most decisive battles in Indian history, more so than the First Battle of Panipat, as the defeat of Rana Sanga was a watershed event in the Mughal conquest of North India.\nReligiously, Babur started his life as a staunch Sunni Muslim, but he underwent significant evolution. Babur became more tolerant as he conquered new territories and grew older, allowing other religions to peacefully coexist in his empire and at his court. He also displayed a certain attraction to theology, poetry, geography, history, and biology\u2014disciplines he promoted at his court\u2014earning him a frequent association with representatives of the Timurid Renaissance. His religious and philosophical stances are characterized as humanistic.\nBabur married several times. Notable among his children are Humayun, Kamran Mirza, Hindal Mirza, Masuma Sultan Begum, and the author Gulbadan Begum.\nBabur died in 1530 in Agra and Humayun succeeded him. Babur was first buried in Agra but, as per his wishes, his remains were moved to Kabul and reburied. He ranks as a national hero in Uzbekistan and Kyrgyzstan. Many of his poems have become popular folk songs. He wrote the Baburnama in Chaghatai Turkic; it was translated into Persian during the reign (1556\u20131605) of his grandson, the emperor Akbar."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q797848")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q797848",
+  "isRealHuman": true,
+  "birthDate": "1483-02-14",
+  "deathDate": "1530-12-26",
+  "ageAtDeath": 47,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable historical sources confirm Babur's birth and death dates, indicating he was 47 at the time of his death. The slight discrepancies in dates among sources are minimal and do not significantly affect the calculated age.",
+  "shortDescriptionEn": "Babur (February 14, 1483 – December 26, 1530) was the founder of the Mughal Empire in India. A descendant of Timur and Genghis Khan, he established Mughal rule after winning the First Battle of Panipat in 1526. He died at 47 in Agra and was later buried in Kabul.",
+  "shortDescriptionFr": "Babur (14 février 1483 – 26 décembre 1530) était le fondateur de l'Empire moghol en Inde. Descendant de Tamerlan et de Gengis Khan, il établit la domination moghole après avoir remporté la première bataille de Panipat en 1526. Il mourut à 47 ans à Agra et fut ensuite enterré à Kaboul.",
+  "shortDescriptionDe": "Babur (14. Februar 1483 – 26. Dezember 1530) war der Gründer des Mogulreichs in Indien. Als Nachfahre von Timur und Dschingis Khan etablierte er die Mogulherrschaft nach dem Sieg in der Ersten Schlacht von Panipat im Jahr 1526. Er starb im Alter von 47 Jahren in Agra und wurde später in Kabul beigesetzt.",
+  "shortDescriptionEs": "Babur (14 de febrero de 1483 – 26 de diciembre de 1530) fue el fundador del Imperio mogol en India. Descendiente de Tamerlán y Gengis Kan, estableció el dominio mogol tras ganar la Primera Batalla de Panipat en 1526. Murió a los 47 años en Agra y luego fue enterrado en Kabul.",
+  "shortDescriptionRu": "Бабур (14 февраля 1483 – 26 декабря 1530) был основателем Империи Великих Моголов в Индии. Потомок Тимура и Чингисхана, он установил власть Моголов после победы в Первой битве при Панипате в 1526 году. Он умер в возрасте 47 лет в Агре и был позже похоронен в Кабуле.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Babur",
+    "https://www.thoughtco.com/babur-founder-of-the-mughal-empire-195489",
+    "https://study.com/learn/lesson/mughal-emperor-babur-biography-dynasty.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83235",  "Name": "Horatio Nelson",  "BirthDate": "1758-09-29T00:00:00Z",  "DeathDate": "1805-10-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/HoratioNelson1.jpg",  "SiteLinksCnt": 104,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"24874360":{"pageid":24874360,"ns":0,"title":"Horatio Nelson, 1st Viscount Nelson","extract":"Vice-Admiral Horatio Nelson, 1st Viscount Nelson, 1st Duke of Bronte (29 September [O.S. 18 September] 1758 \u2013 21 October 1805) was a Royal Navy officer whose inspirational leadership, grasp of strategy and unconventional tactics brought about a number of decisive British naval victories during the French Revolutionary and Napoleonic Wars. He is widely regarded as one of the greatest naval commanders in history.\nNelson was born into a moderately prosperous Norfolk family and joined the navy through the influence of his uncle, Maurice Suckling, a high-ranking naval officer. Nelson rose rapidly through the ranks and served with leading naval commanders of the period before obtaining his own command at the age of 20, in 1778. He developed a reputation for personal valour and a firm grasp of tactics, but suffered periods of illness and unemployment after the end of the American War of Independence. The outbreak of the French Revolutionary Wars allowed Nelson to return to service, where he was particularly active in the Mediterranean. He fought in several minor engagements off Toulon and was important in the capture of Corsica, where he was wounded and partially lost sight in one eye, and subsequently performed diplomatic duties with the Italian states. In 1797, he distinguished himself while in command of HMS Captain at the Battle of Cape St Vincent. Shortly after that battle, Nelson took part in the Battle of Santa Cruz de Tenerife, where the attack failed and he lost his right arm, forcing him to return to England to recuperate. The following year he won a decisive victory over the French at the Battle of the Nile and remained in the Mediterranean to support the Kingdom of Naples against a French invasion.\nIn 1801, Nelson was dispatched to the Baltic Sea and defeated neutral Denmark at the Battle of Copenhagen. He commanded the blockade of the French and Spanish fleets at Toulon and, after their escape, chased them to the West Indies and back but failed to bring them to battle. After a brief return to England, he took over the C\u00e1diz blockade, in 1805. On 21 October 1805, the Franco-Spanish fleet came out of port, and Nelson's fleet engaged them at the Battle of Trafalgar. The battle became one of Britain's greatest naval victories, but Nelson, aboard HMS Victory, was fatally wounded by a French marksman. His body was brought back to England, where he was accorded a state funeral.\nNelson's death at Trafalgar secured his position as one of Britain's most heroic figures. His signal just prior to the commencement of the battle, \"England expects that every man will do his duty\", is regularly quoted and paraphrased.  Numerous monuments, including Nelson's Column in Trafalgar Square, London, and the Nelson Monument in Edinburgh, have been created in his memory."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83235")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83235",
+  "isRealHuman": true,
+  "birthDate": "1758-09-29",
+  "deathDate": "1805-10-21",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Horatio Nelson was a British naval commander known for his decisive victories during the French Revolutionary and Napoleonic Wars. He was fatally wounded during the Battle of Trafalgar in 1805.",
+  "shortDescriptionFr": "Horatio Nelson était un commandant naval britannique connu pour ses victoires décisives pendant les guerres révolutionnaires françaises et napoléoniennes. Il fut mortellement blessé lors de la bataille de Trafalgar en 1805.",
+  "shortDescriptionDe": "Horatio Nelson war ein britischer Marinekommandant, bekannt für seine entscheidenden Siege während der Französischen Revolutions- und Napoleonischen Kriege. Er wurde 1805 während der Schlacht von Trafalgar tödlich verwundet.",
+  "shortDescriptionEs": "Horatio Nelson fue un comandante naval británico conocido por sus victorias decisivas durante las guerras revolucionarias francesas y napoleónicas. Fue herido de muerte durante la Batalla de Trafalgar en 1805.",
+  "shortDescriptionRu": "Горацио Нельсон был британским военно-морским командующим, известным своими решающими победами во время Французских революционных и Наполеоновских войн. Он был смертельно ранен в битве при Трафальгаре в 1805 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Horatio_Nelson%2C_1st_Viscount_Nelson",
+    "https://www.britannica.com/biography/Horatio-Nelson",
+    "https://www.rmg.co.uk/stories/topics/what-were-nelsons-last-words"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83428",  "Name": "Paracelsus",  "BirthDate": "1493-11-19T00:00:00Z",  "DeathDate": "1541-10-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Paracelsus.jpg",  "SiteLinksCnt": 104,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"152487":{"pageid":152487,"ns":0,"title":"Paracelsus","extract":"Paracelsus (; German: [pa\u0281a\u02c8ts\u025blz\u028as]; c. 1493 \u2013 24 September 1541), born Theophrastus von Hohenheim (full name Philippus Aureolus Theophrastus Bombastus von Hohenheim), was a Swiss physician, alchemist, lay theologian, and philosopher of the German Renaissance.\nHe was a pioneer in several aspects of the \"medical revolution\" of the Renaissance, emphasizing the value of observation in combination with received wisdom. He is credited as the \"father of toxicology\". Paracelsus also had a substantial influence as a prophet or diviner, his \"Prognostications\" being studied by Rosicrucians in the 17th century. Paracelsianism is the early modern medical movement inspired by the study of his works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83428")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83428",
+  "isRealHuman": true,
+  "birthDate": "1493-11-11",
+  "deathDate": "1541-09-24",
+  "ageAtDeath": 47,
+  "confidence": 90,
+  "confidenceExplained": "The birth date is uncertain, but the death date is well-documented. Calculations based on these dates suggest an age of 47 at death.",
+  "shortDescriptionEn": "Paracelsus was a Swiss physician, alchemist, and philosopher known for his contributions to medicine and toxicology. He died in 1541 under circumstances that remain unclear, with theories ranging from natural causes to possible foul play.",
+  "shortDescriptionFr": "Paracelse était un médecin, alchimiste et philosophe suisse, connu pour ses contributions à la médecine et à la toxicologie. Il est décédé en 1541 dans des circonstances peu claires, certaines théories évoquant des causes naturelles, d'autres une possible malveillance.",
+  "shortDescriptionDe": "Paracelsus war ein Schweizer Arzt, Alchemist und Philosoph, bekannt für seine Beiträge zur Medizin und Toxikologie. Er starb 1541 unter unklaren Umständen; die Theorien reichen von natürlichen Ursachen bis hin zu möglichem Mord.",
+  "shortDescriptionEs": "Paracelso fue un médico, alquimista y filósofo suizo, conocido por sus contribuciones a la medicina y la toxicología. Murió en 1541 en circunstancias poco claras, con teorías que van desde causas naturales hasta un posible asesinato.",
+  "shortDescriptionRu": "Парацельс был швейцарским врачом, алхимиком и философом, известным своими вкладом в медицину и токсикологию. Он умер в 1541 году при неясных обстоятельствах; существуют теории как о естественных причинах, так и о возможном убийстве.",
+  "sources": [
+    "https://www.britannica.com/biography/Paracelsus",
+    "https://en.wikipedia.org/wiki/Paracelsus"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q173481",  "Name": "Fernando Pessoa",  "BirthDate": "1888-06-13T00:00:00Z",  "DeathDate": "1935-11-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/216%202310-Fernando-Pessoa.jpg",  "SiteLinksCnt": 103,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"11431":{"pageid":11431,"ns":0,"title":"Fernando Pessoa","extract":"Fernando Ant\u00f3nio Nogueira de Seabra Pessoa (; Portuguese: [f\u0268\u027e\u02c8n\u0250\u0303du p\u0268\u02c8so\u0250]; 13 June 1888 \u2013 30 November 1935) was a Portuguese poet, writer, literary critic, translator, and publisher. He has been described as one of the most significant literary figures of the 20th century and one of the greatest poets in the Portuguese language. He also wrote in and translated from English and French.\nPessoa was a prolific writer both in his own name and approximately seventy-five other names, of which three stand out: Alberto Caeiro, \u00c1lvaro de Campos, and Ricardo Reis. He did not define these as pseudonyms because he felt that this did not capture their true independent intellectual life and instead called them heteronyms, a term he invented. These imaginary figures sometimes held unpopular or extreme views."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q173481")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q173481",
+  "isRealHuman": true,
+  "birthDate": "1888-06-13",
+  "deathDate": "1935-11-30",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted, providing complete certainty about his age at death.",
+  "shortDescriptionEn": "Fernando Pessoa was a Portuguese poet, writer, literary critic, translator, and publisher, considered one of the most significant literary figures of the 20th century. He died on November 30, 1935, at the age of 47, reportedly due to cirrhosis of the liver.",
+  "shortDescriptionFr": "Fernando Pessoa était un poète, écrivain, critique littéraire, traducteur et éditeur portugais, considéré comme l'une des figures littéraires les plus importantes du XXe siècle. Il est décédé le 30 novembre 1935, à l'âge de 47 ans, apparemment d'une cirrhose du foie.",
+  "shortDescriptionDe": "Fernando Pessoa war ein portugiesischer Dichter, Schriftsteller, Literaturkritiker, Übersetzer und Verleger, der als eine der bedeutendsten literarischen Persönlichkeiten des 20. Jahrhunderts gilt. Er starb am 30. November 1935 im Alter von 47 Jahren, vermutlich an Leberzirrhose.",
+  "shortDescriptionEs": "Fernando Pessoa fue un poeta, escritor, crítico literario, traductor y editor portugués, considerado una de las figuras literarias más significativas del siglo XX. Murió el 30 de noviembre de 1935, a los 47 años, supuestamente debido a cirrosis hepática.",
+  "shortDescriptionRu": "Фернандо Пессоа был португальским поэтом, писателем, литературным критиком, переводчиком и издателем, считающимся одной из самых значительных литературных фигур XX века. Он умер 30 ноября 1935 года в возрасте 47 лет, предположительно от цирроза печени.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fernando_Pessoa",
+    "https://casafernandopessoa.pt/en/fernando-pessoa"
+  ]
+}
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q178903",  "Name": "Alexander Hamilton",  "BirthDate": "1757-01-11T00:00:00Z",  "DeathDate": "1804-07-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Hamilton%20by%20John%20Trumbull%2C%201806.png",  "SiteLinksCnt": 102,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"40597":{"pageid":40597,"ns":0,"title":"Alexander Hamilton","extract":"Alexander Hamilton (January 11, 1755 or 1757 \u2013 July 12, 1804) was an American military officer, statesman, and Founding Father who served as the first U.S. secretary of the treasury from 1789 to 1795 during George Washington's presidency.\nBorn out of wedlock in Charlestown, Nevis, Hamilton was orphaned as a child and taken in by a prosperous merchant. He pursued his education in New York City where, despite his young age, he was a prolific and widely read pamphleteer advocating for the American revolutionary cause, though an anonymous one. He then served as an artillery officer in the American Revolutionary War, where he saw military action against the British in the New York and New Jersey campaign, served for years as an aide to General George Washington, and helped secure American victory at the climactic Siege of Yorktown. After the Revolutionary War, Hamilton served as a delegate from New York to the Congress of the Confederation in Philadelphia. He resigned to practice law and founded the Bank of New York. In 1786, Hamilton led the Annapolis Convention to discuss issues that arose under the Articles of Confederation. The next year he was a delegate to the Philadelphia Convention that drafted the Constitution of the United States, which he then helped ratify by writing 51 of the 85 installments of The Federalist Papers.\nAs a trusted member of President Washington's first cabinet, Hamilton served as the first U.S. secretary of the treasury. He envisioned a central government led by an energetic executive, a strong national defense, and a more diversified economy that significantly expanded industry. He successfully argued that the implied powers of the Constitution provided the legal authority to fund the national debt, assume the states' debts, and create the First Bank of the United States, which was funded by a tariff on imports and a whiskey tax. He opposed American entanglement with the succession of unstable French Revolutionary governments and advocated in support of the Jay Treaty under which the U.S. resumed friendly trade relations with the British Empire. He also persuaded Congress to establish the Revenue Cutter Service. Hamilton's views became the basis for the Federalist Party, which was opposed by the Democratic-Republican Party led by Thomas Jefferson. Hamilton and other Federalists supported the Haitian Revolution, and Hamilton helped draft the constitution of Haiti.\nAfter resigning as Secretary of the Treasury, Hamilton resumed his legal and business activities. He was a leader in the abolition of the international slave trade. In the Quasi-War, Hamilton called for mobilization against France, and President John Adams appointed him major general. The army, however, did not see combat. Outraged by Adams' response to the crisis, Hamilton opposed his reelection campaign. Jefferson and Aaron Burr tied for the presidency in the electoral college and, despite philosophical differences, Hamilton endorsed Jefferson over Burr, whom he found unprincipled. When Burr ran for governor of New York in 1804, Hamilton again campaigned against him, arguing that he was unworthy. Taking offense, Burr challenged Hamilton to a pistol duel, taking place in Weehawken, New Jersey, on July 11, 1804. Hamilton was fatally wounded, and then was immediately transported in a delirious state back across the Hudson River to the home of William Bayard Jr. in Greenwich Village, New York for medical attention, but succumbed to his wounds the following day.\nScholars generally regard Hamilton as an astute and intellectually brilliant administrator, politician, and financier who was sometimes impetuous. His ideas are credited with laying the foundation for American finance and government. British historian Paul Johnson stated that Hamilton was a \"genius\u2014the only one of the Founding Fathers fully entitled to that accolade\u2014and he had the elusive, indefinable characteristics of genius.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q178903")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q178903",
+  "isRealHuman": true,
+  "birthDate": "1757-01-11",
+  "deathDate": "1804-07-12",
+  "ageAtDeath": 47,
+  "confidence": 90,
+  "confidenceExplained": "The exact birth year of Alexander Hamilton is debated, with evidence supporting both 1755 and 1757. Given Hamilton's own references to 1757, there is a high degree of confidence in this date, though not absolute.",
+  "shortDescriptionEn": "Alexander Hamilton was a Founding Father of the United States, the first Secretary of the Treasury, and a key author of the Federalist Papers. He died at the age of 47 following a duel with Aaron Burr on July 11, 1804, and succumbed to his injuries the next day.",
+  "shortDescriptionFr": "Alexander Hamilton était un Père fondateur des États-Unis, le premier secrétaire du Trésor et un auteur clé des Federalist Papers. Il est décédé à l'âge de 47 ans à la suite d'un duel avec Aaron Burr le 11 juillet 1804 et a succombé à ses blessures le lendemain.",
+  "shortDescriptionDe": "Alexander Hamilton war ein Gründervater der Vereinigten Staaten, der erste Finanzminister und ein Hauptautor der Federalist Papers. Er starb im Alter von 47 Jahren nach einem Duell mit Aaron Burr am 11. Juli 1804 und erlag am nächsten Tag seinen Verletzungen.",
+  "shortDescriptionEs": "Alexander Hamilton fue un Padre Fundador de los Estados Unidos, el primer Secretario del Tesoro y un autor clave de los Federalist Papers. Murió a los 47 años tras un duelo con Aaron Burr el 11 de julio de 1804 y sucumbió a sus heridas al día siguiente.",
+  "shortDescriptionRu": "Александр Гамильтон был одним из отцов-основателей США, первым министром финансов и ключевым автором «Федералистских статей». Он умер в возрасте 47 лет после дуэли с Аароном Бурром 11 июля 1804 года и скончался от полученных ран на следующий день.",
+  "sources": [
+    "https://www.britannica.com/biography/Alexander-Hamilton-United-States-statesman",
+    "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q123034",  "Name": "Huldrych Zwingli",  "BirthDate": "1484-01-10T00:00:00Z",  "DeathDate": "1531-10-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Zwingli%20Hans%20Asper.jpeg",  "SiteLinksCnt": 97,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"13602":{"pageid":13602,"ns":0,"title":"Huldrych Zwingli","extract":"Huldrych or Ulrich Zwingli (1 January 1484 \u2013 11 October 1531) was a Swiss Christian theologian, musician, and leader of the Reformation in Switzerland. Born during a time of emerging Swiss patriotism and increasing criticism of the Swiss mercenary system, he attended the University of Vienna and the University of Basel, a scholarly center of Renaissance humanism. He continued his studies while he served as a pastor in Glarus and later in Einsiedeln, where he was influenced by the writings of Erasmus. During his tenures at Basel and Einsiedeln, Zwingli began to familiarize himself with many criticisms Christian institutions were facing regarding their reform guidance and garnered scripture which aimed to address such criticisms.\nIn 1519, Zwingli became the Leutpriester (people's priest) of the Grossm\u00fcnster in Z\u00fcrich where he began to preach ideas on reform of the Catholic Church. In his first public controversy in 1522, he attacked the custom of fasting during Lent. In his publications, he noted corruption in the ecclesiastical hierarchy, promoted clerical marriage, and attacked the use of images in places of worship. Among his most notable contributions to the Reformation was his expository preaching, starting in 1519, through the Gospel of Matthew, before eventually using Biblical exegesis to go through the entire New Testament, a radical departure from the Catholic mass. In 1525, he introduced a new communion liturgy to replace the Mass. He also clashed with the Anabaptists, which resulted in their persecution. Historians have debated whether or not he turned Z\u00fcrich into a theocracy.\nThe Reformation spread to other parts of the Swiss Confederation, but several cantons resisted, preferring to remain Catholic. Zwingli formed an alliance of Reformed cantons which divided the Confederation along religious lines. In 1529, a war was averted at the last moment between the two sides. Meanwhile, Zwingli's ideas came to the attention of Martin Luther and other reformers. They met at the Marburg Colloquy and agreed on many points of doctrine, but they could not reach an accord on the doctrine of the Real Presence of Christ in the Eucharist.\nIn 1531, Zwingli's alliance applied an unsuccessful food blockade on the Catholic cantons. The cantons responded with an attack at a moment when Z\u00fcrich was ill-prepared, and Zwingli died on the battlefield. His legacy lives on in the confessions, liturgy, and church orders of the Reformed churches of today.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q123034")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q123034",
+  "isRealHuman": true,
+  "birthDate": "1484-01-01",
+  "deathDate": "1531-10-11",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for precise calculation of age at death.",
+  "shortDescriptionEn": "Huldrych Zwingli was a Swiss theologian and leader of the Reformation in Switzerland. He promoted reforms such as the removal of images from churches and a new communion liturgy. He died in 1531 during the Battle of Kappel, a conflict between Protestant and Catholic cantons.",
+  "shortDescriptionFr": "Huldrych Zwingli était un théologien suisse et un leader de la Réforme en Suisse. Il a promu des réformes telles que la suppression des images dans les églises et une nouvelle liturgie de communion. Il est mort en 1531 lors de la bataille de Kappel, un conflit entre cantons protestants et catholiques.",
+  "shortDescriptionDe": "Huldrych Zwingli war ein Schweizer Theologe und Führer der Reformation in der Schweiz. Er förderte Reformen wie die Entfernung von Bildern aus Kirchen und eine neue Abendmahlsliturgie. Er starb 1531 während der Schlacht bei Kappel, einem Konflikt zwischen protestantischen und katholischen Kantonen.",
+  "shortDescriptionEs": "Huldrych Zwingli fue un teólogo suizo y líder de la Reforma en Suiza. Promovió reformas como la eliminación de imágenes en las iglesias y una nueva liturgia de comunión. Murió en 1531 durante la Batalla de Kappel, un conflicto entre cantones protestantes y católicos.",
+  "shortDescriptionRu": "Гульдрих Цвингли был швейцарским теологом и лидером Реформации в Швейцарии. Он продвигал реформы, такие как удаление изображений из церквей и новая литургия причастия. Он погиб в 1531 году во время битвы при Каппеле, конфликта между протестантскими и католическими кантонами.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Huldrych_Zwingli",
+    "https://www.britannica.com/biography/Huldrych-Zwingli"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160534",  "Name": "Jack Kerouac",  "BirthDate": "1922-03-12T00:00:00Z",  "DeathDate": "1969-10-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kerouac%20by%20Palumbo.jpg",  "SiteLinksCnt": 96,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"15890":{"pageid":15890,"ns":0,"title":"Jack Kerouac","extract":"Jean-Louis Lebris de K\u00e9rouac (; March 12, 1922 \u2013 October 21, 1969), known as Jack Kerouac, was an American novelist and poet who, alongside William S. Burroughs and Allen Ginsberg, was a pioneer of the Beat Generation.\nOf French-Canadian ancestry, Kerouac was raised in a French-speaking home in Lowell, Massachusetts. He \"learned English at age six and spoke with a marked accent into his late teens.\" During World War II, he served in the United States Merchant Marine; he completed his first novel at the time, which was published more than 40 years after his death. His first published book was The Town and the City (1950), and he achieved widespread fame and notoriety with his second, On the Road, in 1957. It made him a beat icon, and he went on to publish 12 more novels and numerous poetry volumes.\nKerouac died in 1969. Since then, his literary prestige has grown, and several previously unseen works have been published. Kerouac is recognized for his style of stream of consciousness spontaneous prose. Thematically, his work covers topics such as his Catholic spirituality, jazz, travel, promiscuity, life in New York City, Buddhism, drugs, and poverty. He became an underground celebrity and, with other Beats, a progenitor of the hippie movement, although he remained antagonistic toward some of its politically radical elements. He has a lasting legacy, greatly influencing many of the cultural icons of the 1960s, including Bob Dylan, the Beatles, Jerry Garcia and the Doors."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160534")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q160534",
+  "isRealHuman": true,
+  "birthDate": "1922-03-12",
+  "deathDate": "1969-10-21",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reliable sources.",
+  "shortDescriptionEn": "Jack Kerouac was an American novelist and poet, a pioneer of the Beat Generation, best known for his novel 'On the Road.' He died at 47 from internal bleeding caused by chronic alcoholism.",
+  "shortDescriptionFr": "Jack Kerouac était un romancier et poète américain, pionnier de la Beat Generation, surtout connu pour son roman 'Sur la route'. Il est décédé à 47 ans d'une hémorragie interne causée par l'alcoolisme chronique.",
+  "shortDescriptionDe": "Jack Kerouac war ein amerikanischer Romancier und Dichter, ein Pionier der Beat Generation, bekannt für seinen Roman 'Unterwegs'. Er starb im Alter von 47 Jahren an inneren Blutungen, verursacht durch chronischen Alkoholismus.",
+  "shortDescriptionEs": "Jack Kerouac fue un novelista y poeta estadounidense, pionero de la Generación Beat, mejor conocido por su novela 'En el camino'. Murió a los 47 años debido a una hemorragia interna causada por el alcoholismo crónico.",
+  "shortDescriptionRu": "Джек Керуак был американским писателем и поэтом, пионером поколения битников, наиболее известным своим романом 'В дороге'. Он умер в 47 лет от внутреннего кровотечения, вызванного хроническим алкоголизмом.",
+  "sources": [
+    "https://www.britannica.com/biography/Jack-Kerouac",
+    "https://en.wikipedia.org/wiki/Jack_Kerouac"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q172788",  "Name": "O. Henry",  "BirthDate": "1862-09-11T00:00:00Z",  "DeathDate": "1910-06-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Sydney%20Porter%20by%20doubleday.jpg",  "SiteLinksCnt": 94,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"43069":{"pageid":43069,"ns":0,"title":"O. Henry","extract":"William Sydney Porter (September 11, 1862 \u2013 June 5, 1910), better known by his pen name O. Henry, was an American writer known primarily for his short stories, though he also wrote poetry and non-fiction. His works include \"The Gift of the Magi\", \"The Duplicity of Hargraves\", and \"The Ransom of Red Chief\", as well as the novel Cabbages and Kings. Porter's stories are known for their naturalist observations, witty narration, and surprise endings.\nBorn in Greensboro, North Carolina, Porter worked at his uncle's pharmacy after finishing school and became a licensed pharmacist at age 19. In March 1882, he moved to Texas, where he initially lived on a ranch, and later settled in Austin, where he met his first wife, Athol Estes. While working as a drafter for the Texas General Land Office, Porter began developing characters for his short stories. He later worked for the First National Bank of Austin, while also publishing a weekly periodical, The Rolling Stone.\nIn 1895, he was charged with embezzlement stemming from an audit of the bank. Before the trial, he fled to Honduras, where he began writing Cabbages and Kings (in which he coined the term \"banana republic\"). Porter surrendered to U.S. authorities when he learned his wife was dying from tuberculosis, and he cared for her until her death in July 1897. He began his five-year prison sentence in March 1898 at the Ohio Penitentiary, where he served as a night druggist. While imprisoned, Porter published 14 stories under various pseudonyms, one being O. Henry.\nReleased from prison early for good behavior, Porter moved to Pittsburgh to be with his daughter Margaret before relocating to New York City, where he wrote 381 short stories. He married Sarah (Sallie) Lindsey Coleman in 1907; she left him two years later. Porter died on June 5, 1910, after years of deteriorating health. Porter's legacy includes the O. Henry Award, an annual prize awarded to outstanding short stories."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q172788")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q172788",
+  "isRealHuman": true,
+  "birthDate": "1862-09-11",
+  "deathDate": "1910-06-05",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "William Sydney Porter, known by his pen name O. Henry, was an American short story writer famous for his witty narratives and surprise endings. He died at the age of 47 due to cirrhosis of the liver, complications of diabetes, and an enlarged heart.",
+  "shortDescriptionFr": "William Sydney Porter, connu sous le nom de plume O. Henry, était un écrivain américain de nouvelles, célèbre pour ses récits pleins d'esprit et ses chutes surprenantes. Il est décédé à l'âge de 47 ans des suites d'une cirrhose du foie, de complications liées au diabète et d'une hypertrophie du cœur.",
+  "shortDescriptionDe": "William Sydney Porter, bekannt unter seinem Pseudonym O. Henry, war ein amerikanischer Kurzgeschichtenschreiber, berühmt für seine witzigen Erzählungen und überraschenden Endungen. Er starb im Alter von 47 Jahren an Leberzirrhose, Komplikationen durch Diabetes und einem vergrößerten Herzen.",
+  "shortDescriptionEs": "William Sydney Porter, conocido por su seudónimo O. Henry, fue un escritor estadounidense de cuentos cortos, famoso por sus narraciones ingeniosas y finales sorprendentes. Murió a los 47 años debido a cirrosis hepática, complicaciones de la diabetes y un corazón agrandado.",
+  "shortDescriptionRu": "Уильям Сидни Портер, известный под псевдонимом О. Генри, был американским писателем коротких рассказов, известным своими остроумными повествованиями и неожиданными концовками. Он умер в возрасте 47 лет от цирроза печени, осложнений диабета и увеличенного сердца.",
+  "sources": [
+    "https://www.britannica.com/biography/O-Henry",
+    "https://en.wikipedia.org/wiki/O._Henry"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q206384",  "Name": "Joseph Addison",  "BirthDate": "1672-05-01T00:00:00Z",  "DeathDate": "1719-06-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Addison%20by%20Sir%20Godfrey%20Kneller%2C%20Bt.jpg",  "SiteLinksCnt": 84,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"163645":{"pageid":163645,"ns":0,"title":"Joseph Addison","extract":"Joseph Addison (1 May 1672 \u2013 17 May 1719) was an English essayist, poet, playwright, and politician. He was the eldest son of Lancelot Addison. His name is usually remembered alongside that of his long-standing friend Richard Steele, with whom he founded The Spectator magazine. His simple prose style marked the end of the mannerisms and conventional classical images of the 17th century."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q206384")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q206384",
+  "isRealHuman": true,
+  "birthDate": "1672-05-01",
+  "deathDate": "1719-06-17",
+  "ageAtDeath": 47,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records.",
+  "shortDescriptionEn": "Joseph Addison (May 1, 1672 – June 17, 1719) was an English essayist, poet, playwright, and politician. He co-founded *The Spectator* magazine with Richard Steele. Addison's notable works include the tragedy *Cato*. He served as Secretary of State but resigned due to health issues and died at 47.",
+  "shortDescriptionFr": "Joseph Addison (1er mai 1672 – 17 juin 1719) était un essayiste, poète, dramaturge et homme politique anglais. Il a cofondé le magazine *The Spectator* avec Richard Steele. Parmi ses œuvres notables figure la tragédie *Cato*. Il a servi comme secrétaire d'État mais a démissionné pour des raisons de santé et est décédé à 47 ans.",
+  "shortDescriptionDe": "Joseph Addison (1. Mai 1672 – 17. Juni 1719) war ein englischer Essayist, Dichter, Dramatiker und Politiker. Er gründete zusammen mit Richard Steele das Magazin *The Spectator*. Zu seinen bemerkenswerten Werken gehört die Tragödie *Cato*. Er diente als Staatssekretär, trat jedoch aus gesundheitlichen Gründen zurück und starb im Alter von 47 Jahren.",
+  "shortDescriptionEs": "Joseph Addison (1 de mayo de 1672 – 17 de junio de 1719) fue un ensayista, poeta, dramaturgo y político inglés. Cofundó la revista *The Spectator* con Richard Steele. Sus obras notables incluyen la tragedia *Cato*. Se desempeñó como Secretario de Estado, pero renunció debido a problemas de salud y murió a los 47 años.",
+  "shortDescriptionRu": "Джозеф Аддисон (1 мая 1672 – 17 июня 1719) был английским эссеистом, поэтом, драматургом и политиком. Он совместно с Ричардом Стилом основал журнал *The Spectator*. Среди его известных работ – трагедия *Като*. Он служил государственным секретарем, но ушел в отставку по состоянию здоровья и умер в 47 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Joseph_Addison",
+    "https://www.britannica.com/biography/Joseph-Addison"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q171411",  "Name": "Oda Nobunaga",  "BirthDate": "1534-07-03T00:00:00Z",  "DeathDate": "1582-07-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Odanobunaga.jpg",  "SiteLinksCnt": 79,  "Age": 47}
+{"batchcomplete":"","query":{"pages":{"22680":{"pageid":22680,"ns":0,"title":"Oda Nobunaga","extract":"Oda Nobunaga (\u7e54\u7530 \u4fe1\u9577, [oda nob\u026f(\ua71c)na\u0261a] ; 23 June 1534 \u2013 21 June 1582) was a Japanese daimy\u014d and one of the leading figures of the Sengoku and Azuchi-Momoyama periods. He was the Tenka-bito (\u5929\u4e0b\u4eba, lit.\u2009'person under heaven') and regarded as the first \"Great Unifier\" of Japan. He is sometimes referred as the \"Demon Daimy\u014d\" and \"Demon King of the Sixth Heaven\".\nNobunaga was an influential figure in Japanese history and is regarded as one of the three great unifiers of Japan, along with his retainers, Toyotomi Hideyoshi and Tokugawa Ieyasu. Nobunaga paved the way for the successful reigns of Hideyoshi and Ieyasu by consolidating power, as head of the very powerful Oda clan, through a series of wars against other daimy\u014d beginning in the 1560s. The period when Nobunaga and Hideyoshi were in power is called the Azuchi\u2013Momoyama period. The name \"Azuchi\u2013Momoyama\" comes from the fact that Nobunaga's castle, Azuchi Castle, was located in Azuchi, Shiga; while Fushimi Castle, where Hideyoshi lived after his retirement, was located in Momoyama.\nNobunaga emerged as the most powerful daimy\u014d, overthrowing the nominally ruling shogun Ashikaga Yoshiaki and dissolving the Ashikaga Shogunate in 1573. He conquered most of Honshu by 1580, and defeated the Ikk\u014d-ikki in the 1580s. Nobunaga's rule was noted for innovative military tactics, fostering of free trade, reforms of Japan's civil government, and the start of the Momoyama historical art period, but also for the brutal suppression of those who refused to cooperate or yield to his demands. \nNobunaga committed seppuku during the Honn\u014d-ji Incident in 1582, when his retainer Akechi Mitsuhide ambushed and trapped him in a temple in Kyoto. Nobunaga was succeeded by Toyotomi Hideyoshi, who along with Tokugawa Ieyasu completed his campaign of national unification shortly afterward."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q171411")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q171411",
+  "isRealHuman": true,
+  "birthDate": "1534-06-23",
+  "deathDate": "1582-06-21",
+  "ageAtDeath": 47,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, providing high confidence in the calculated age.",
+  "shortDescriptionEn": "Oda Nobunaga was a Japanese daimyō known for his role in unifying Japan during the late 16th century. His innovative military strategies and use of firearms revolutionized warfare. He died at 47 during the Honnō-ji Incident, betrayed by his retainer Akechi Mitsuhide.",
+  "shortDescriptionFr": "Oda Nobunaga était un daimyō japonais connu pour son rôle dans l'unification du Japon à la fin du XVIe siècle. Ses stratégies militaires innovantes et son utilisation des armes à feu ont révolutionné la guerre. Il est mort à 47 ans lors de l'incident de Honnō-ji, trahi par son vassal Akechi Mitsuhide.",
+  "shortDescriptionDe": "Oda Nobunaga war ein japanischer Daimyō, bekannt für seine Rolle bei der Vereinigung Japans im späten 16. Jahrhundert. Seine innovativen Militärstrategien und der Einsatz von Feuerwaffen revolutionierten die Kriegsführung. Er starb im Alter von 47 Jahren während des Honnō-ji-Zwischenfalls, verraten von seinem Vasallen Akechi Mitsuhide.",
+  "shortDescriptionEs": "Oda Nobunaga fue un daimyō japonés conocido por su papel en la unificación de Japón a finales del siglo XVI. Sus estrategias militares innovadoras y el uso de armas de fuego revolucionaron la guerra. Murió a los 47 años durante el Incidente de Honnō-ji, traicionado por su vasallo Akechi Mitsuhide.",
+  "shortDescriptionRu": "Ода Нобунага был японским даймё, известным своей ролью в объединении Японии в конце XVI века. Его инновационные военные стратегии и использование огнестрельного оружия революционизировали войну. Он умер в возрасте 47 лет во время инцидента в Хонно-дзи, преданный своим вассалом Акэти Мицухидэ.",
+  "sources": [
+    "https://www.britannica.com/biography/Oda-Nobunaga",
+    "https://www.worldhistory.org/Oda_Nobunaga/",
+    "https://en.wikipedia.org/wiki/Oda_Nobunaga"
+  ]
+}
