@@ -677,52 +677,6 @@ Return back your thinking followed by a JSON with the following fields:
 
 
 
------
-
-
-I have only this information, which might be misleading.
-
-{  "Id": "http://www.wikidata.org/entity/Q2821724",  "Name": "Abu Bakr al-Baghdadi",  "BirthDate": "1971-07-28T00:00:00Z",  "DeathDate": "2019-10-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mugshot%20of%20Abu%20Bakr%20al-Baghdadi%2C%202004.jpg",  "SiteLinksCnt": 93,  "Age": 48}
-{"batchcomplete":"","query":{"pages":{"33348100":{"pageid":33348100,"ns":0,"title":"Abu Bakr al-Baghdadi","extract":"Ibrahim Awad Ibrahim Ali al-Badri (Arabic: \u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0639\u0648\u0627\u062f \u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0639\u0644\u064a \u0627\u0644\u0628\u062f\u0631\u064a, romanized: \u02beIbr\u0101h\u012bm \u02bfAw\u0101d \u02beIbr\u0101h\u012bm Al\u012b al-Badri; 28 July 1971 \u2013 27 October 2019), commonly known by his nom de guerre Abu Bakr al-Baghdadi (Arabic: \u0623\u0628\u0648 \u0628\u0643\u0631 \u0627\u0644\u0628\u063a\u062f\u0627\u062f\u064a, romanized: \u02beAb\u016b Bakr al-Baghd\u0101d\u012b), was an Iraqi militant and leader of the Islamic State (IS) who served as its first caliph from 2014 until his death in 2019.\nBaghdadi was born in Samarra and obtained graduate degrees in Islamic theology in the late 1990s and 2000s. According to supporters, he obtained a PhD at the Islamic University of Baghdad. Following the American invasion of Iraq in March 2003, Baghdadi led the \"Jama'at Jaysh Ahl al-Sunna wal-Jama'ah\" insurgent group in Iraq and was detained with al-Qaeda commanders at the American Camp Bucca in 2004. His group joined the Mujahideen Shura Council (MSC) coalition in 2006 and fought alongside Al-Qaeda in Iraq. Upon the dissolution of the MSC in October 2006, Baghdadi became a leading member of the newly established Islamic State of Iraq organization, and rose through the group's ranks until he was appointed its emir, the highest leader, in 2010. In March 2013, the group renamed itself as the \"Islamic State of Iraq and Levant\" (ISIL), announcing its intention to expand into Syria and forcibly assimilate the Al-Nusra Front, leading to a conflict with Al-Qaeda's general command. In June 2014, the group once again re-designated itself as the \"Islamic State\", and declared itself to be a caliphate. Baghdadi was chosen caliph of the Islamic State by a \"Shura Council\", which represented those members of the Islamic State allegedly qualified to elect a caliph.\nBaghdadi's claim to be \"caliph\" was almost universally rejected by the Muslim community. IS was designated as a terrorist organisation by the United Nations and almost all sovereign states, and Baghdadi was individually considered a terrorist by the United States and many other countries. As leader of IS, Baghdadi led the Islamic State's wars against Iraq and Syria. Baghdadi directed the use of controversial tactics, including the mass use of suicide bombings and the execution of prisoners of war. IS briefly captured substantial territory in Iraq and Syria, but lost all of that territory and almost all of its fighters during Baghdadi's tenure as caliph. Baghdadi would become directly involved in IS's atrocities and human rights violations. These include the genocide of Yazidis in Iraq, extensive sexual slavery, organized rape, floggings, and systematic executions. He directed terrorist activities and massacres. He embraced brutality as part of the organization's propaganda efforts, producing videos displaying sexual slavery and executions via hacking, stoning and burning. Baghdadi himself was a serial rapist who kept several personal sex slaves.\nOn 27 October 2019, Baghdadi killed himself and two children by detonating a suicide vest during the Barisha raid, conducted by the United States following approval from President Donald Trump, in Syria's northwestern Idlib Province. After being offered Islamic funeral rites, his body was buried at sea. IS confirmed his death and named Abu Ibrahim al-Hashimi al-Qurashi as his replacement."}}},"limits":{"extracts":20}}
-
-Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
-
-Return back your thinking followed by a JSON with the following fields:
-- "id" (string, use constant "http://www.wikidata.org/entity/Q2821724")
-- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
-- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
-- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
-- "ageAtDeath" (integer, might be your estimate),
-- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
-- "confidenceExplained" (string, your explanation of the confidence level)
-- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
-- "shortDescriptionFr" (string, short description in French, same as above)
-- "shortDescriptionDe" (string, short description in German, same as above)
-- "shortDescriptionEs" (string, short description in Spanish, same as above)
-- "shortDescriptionRu" (string, short description in Russian, same as above)
-- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
-
-
-{
-  "id": "http://www.wikidata.org/entity/Q2821724",
-  "isRealHuman": true,
-  "birthDate": "1971-07-28",
-  "deathDate": "2019-10-27",
-  "ageAtDeath": 48,
-  "confidence": 100,
-  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources.",
-  "shortDescriptionEn": "Abu Bakr al-Baghdadi was the leader of ISIS from 2010 until his death in 2019. He declared a caliphate in 2014, leading a campaign marked by extreme violence. He died in 2019 during a U.S. military operation in Syria.",
-  "shortDescriptionFr": "Abou Bakr al-Baghdadi était le chef de l'État islamique de 2010 jusqu'à sa mort en 2019. Il a déclaré un califat en 2014, menant une campagne marquée par une violence extrême. Il est mort en 2019 lors d'une opération militaire américaine en Syrie.",
-  "shortDescriptionDe": "Abu Bakr al-Baghdadi war von 2010 bis zu seinem Tod 2019 der Anführer des IS. Er erklärte 2014 ein Kalifat und führte eine Kampagne, die durch extreme Gewalt gekennzeichnet war. Er starb 2019 während einer US-Militäraktion in Syrien.",
-  "shortDescriptionEs": "Abu Bakr al-Baghdadi fue el líder del Estado Islámico desde 2010 hasta su muerte en 2019. Declaró un califato en 2014, liderando una campaña marcada por una violencia extrema. Murió en 2019 durante una operación militar estadounidense en Siria.",
-  "shortDescriptionRu": "Абу Бакр аль-Багдади был лидером ИГИЛ (террористическая организация) с 2010 года до своей смерти в 2019 году. В 2014 году он провозгласил халифат, возглавив кампанию, отмеченную крайней жестокостью. Он погиб в 2019 году во время операции американских военных в Сирии.",
-  "sources": [
-    "https://en.wikipedia.org/wiki/Abu_Bakr_al-Baghdadi",
-    "https://en.wikipedia.org/wiki/Death_of_Abu_Bakr_al-Baghdadi"
-  ]
-}
-
-
 
 -----
 
