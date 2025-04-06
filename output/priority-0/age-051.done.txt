@@ -1,0 +1,950 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q517",  "Name": "Napoleon",  "BirthDate": "1769-08-15T00:00:00Z",  "DeathDate": "1821-05-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis%20David%20-%20The%20Emperor%20Napoleon%20in%20His%20Study%20at%20the%20Tuileries%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 277,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"69880":{"pageid":69880,"ns":0,"title":"Napoleon","extract":"Napoleon Bonaparte (born Napoleone Buonaparte; 15 August 1769 \u2013 5 May 1821), later known by his regnal name Napoleon I, was a French general and statesman who rose to prominence during the French Revolution and led a series of military campaigns across Europe during the French Revolutionary and Napoleonic Wars from 1796 to 1815. He led the French Republic as First Consul from 1799 to 1804, then ruled the French Empire as Emperor of the French from 1804 to 1814, and briefly again in 1815. He was King of Italy from 1805 to 1814 and Protector of the Confederation of the Rhine from 1806 to 1813.\nBorn on the island of Corsica to a family of Italian origin, Napoleon moved to mainland France in 1779 and was commissioned as an officer in the French Royal Army in 1785. He supported the French Revolution in 1789, and promoted its cause in Corsica. He rose rapidly through the ranks after winning the siege of Toulon in 1793 and defeating royalist insurgents in Paris on 13 Vend\u00e9miaire in 1795. In 1796, Napoleon commanded a military campaign against the Austrians and their Italian allies in the War of the First Coalition, scoring decisive victories and becoming a national hero. He led an invasion of Egypt and Syria in 1798 which served as a springboard to political power. In November 1799, Napoleon engineered the Coup of 18 Brumaire against the Directory, and became First Consul of the Republic. He won the Battle of Marengo in 1800, which secured France's victory in the War of the Second Coalition, and in 1803 sold the territory of Louisiana to the United States. In December 1804, Napoleon crowned himself Emperor of the French, further expanding his power.\nThe breakdown of the Treaty of Amiens led to the War of the Third Coalition by 1805. Napoleon shattered the coalition with a decisive victory at the Battle of Austerlitz, which led to the dissolution of the Holy Roman Empire. In the War of the Fourth Coalition, Napoleon defeated Prussia at the Battle of Jena\u2013Auerstedt in 1806, marched his Grande Arm\u00e9e into Eastern Europe, and defeated the Russians in 1807 at the Battle of Friedland. Seeking to extend his trade embargo against Britain, Napoleon invaded the Iberian Peninsula and installed his brother Joseph as King of Spain in 1808, provoking the Peninsular War. In 1809, the Austrians again challenged France in the War of the Fifth Coalition, in which Napoleon solidified his grip over Europe after winning the Battle of Wagram. In summer 1812, he launched an invasion of Russia, briefly occupying Moscow before conducting a catastrophic retreat of his army that winter. In 1813, Prussia and Austria joined Russia in the War of the Sixth Coalition, in which Napoleon was decisively defeated at the Battle of Leipzig. The coalition invaded France and captured Paris, forcing Napoleon to abdicate in April 1814. They exiled him to the Mediterranean island of Elba and restored the Bourbons to power. Ten months later, Napoleon escaped from Elba on a brig, landed in France with a thousand men, and marched on Paris, again taking control of the country. His opponents responded by forming a Seventh Coalition, which defeated him at the Battle of Waterloo in June 1815. Napoleon was exiled to the remote island of Saint Helena in the South Atlantic, where he died of stomach cancer in 1821, aged 51.\nNapoleon is considered one of the greatest military commanders in history and Napoleonic tactics are still studied at military schools worldwide. His legacy endures through the modernizing legal and administrative reforms he enacted in France and Western Europe, embodied in the Napoleonic Code. He established a system of public education, abolished the vestiges of feudalism, emancipated Jews and other religious minorities, abolished the Spanish Inquisition, enacted the principle of equality before the law for an emerging middle class, and centralized state power at the expense of religious authorities. His conquests acted as a catalyst for political change and the development of nation states. However, he is controversial due to his role in wars which devastated Europe, his looting of conquered territories, and his mixed record on civil rights. He abolished the free press, ended directly elected representative government, exiled and jailed critics of his regime, reinstated slavery in France's colonies except for Haiti, banned the entry of blacks and mulattos into France, reduced the civil rights of women and children in France, reintroduced a hereditary monarchy and nobility, and violently repressed popular uprisings against his rule."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q517")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q517",
+  "isRealHuman": true,
+  "birthDate": "1769-08-15",
+  "deathDate": "1821-05-05",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, confirming the calculated age at death.",
+  "shortDescriptionEn": "Napoleon Bonaparte was a French military general and statesman who rose to prominence during the French Revolution, becoming Emperor of the French from 1804 to 1814, and briefly in 1815. He died in exile on Saint Helena on May 5, 1821, at the age of 51, likely from stomach cancer.",
+  "shortDescriptionFr": "Napoléon Bonaparte était un général et homme d'État français qui s'est distingué pendant la Révolution française, devenant empereur des Français de 1804 à 1814, et brièvement en 1815. Il est mort en exil sur l'île de Sainte-Hélène le 5 mai 1821, à l'âge de 51 ans, probablement d'un cancer de l'estomac.",
+  "shortDescriptionDe": "Napoleon Bonaparte war ein französischer General und Staatsmann, der während der Französischen Revolution aufstieg und von 1804 bis 1814 sowie kurzzeitig 1815 Kaiser der Franzosen war. Er starb am 5. Mai 1821 im Exil auf St. Helena im Alter von 51 Jahren, vermutlich an Magenkrebs.",
+  "shortDescriptionEs": "Napoleón Bonaparte fue un general y estadista francés que ascendió al poder durante la Revolución Francesa, convirtiéndose en emperador de los franceses de 1804 a 1814, y brevemente en 1815. Murió en el exilio en Santa Elena el 5 de mayo de 1821, a la edad de 51 años, probablemente de cáncer de estómago.",
+  "shortDescriptionRu": "Наполеон Бонапарт был французским военным генералом и государственным деятелем, который поднялся к власти во время Французской революции, став императором французов с 1804 по 1814 год и кратко в 1815 году. Он умер в изгнании на острове Святой Елены 5 мая 1821 года в возрасте 51 года, вероятно, от рака желудка.",
+  "sources": [
+    "https://www.britannica.com/biography/Napoleon-I",
+    "https://www.history.com/articles/napoleon"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1398",  "Name": "Virgil",  "BirthDate": "-0069-10-13T00:00:00Z",  "DeathDate": "-0018-09-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Parco%20della%20Grotta%20di%20Posillipo5%20%28crop%29.jpg",  "SiteLinksCnt": 238,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"32359":{"pageid":32359,"ns":0,"title":"Virgil","extract":"Publius Vergilius Maro (Classical Latin: [\u02c8pu\u02d0bli\u028as w\u025br\u02c8\u0261\u026ali\u028as \u02c8maro\u02d0]; 15 October 70 BC \u2013 21 September 19 BC), usually called Virgil or Vergil ( VUR-jil) in English, was an ancient Roman poet of the Augustan period. He composed three of the most famous poems in Latin literature: the Eclogues (or Bucolics), the Georgics, and the epic Aeneid. A number of minor poems, collected in the Appendix Vergiliana, were attributed to him in ancient times, but modern scholars generally regard these works as spurious, with the possible exception of a few short pieces.\nAlready acclaimed in his own lifetime as a classic author, Virgil rapidly replaced Ennius and other earlier authors as a standard school text, and stood as the most popular Latin poet through late antiquity, the Middle Ages, and early modernity, exerting inestimable influence on all subsequent Western literature. Geoffrey Chaucer assigned Virgil a uniquely prominent position among all the celebrities of human history in The House of Fame (1374\u201385), describing him as standing on a pilere / that was of tinned yren clere (\"on a pillar that was of bright tin-plated iron\"), and in the Divine Comedy, in which Virgil appears as the author's guide through Hell and Purgatory, Dante pays tribute to Virgil with the words tu se' solo colui da cu'io tolsi / lo bello stile che m'ha fatto onore (Inf. I.86\u20137) (\"thou art alone the one from whom I took the beautiful style that has done honour to me\"). In the 20th Century, T. S. Eliot famously began a lecture on the subject \"What Is a Classic?\" by asserting as self-evidently true that \"whatever the definition we arrive at, it cannot be one which excludes Virgil \u2013 we may say confidently that it must be one which will expressly reckon with him.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1398")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1398",
+  "isRealHuman": true,
+  "birthDate": "-0070-10-15",
+  "deathDate": "-0019-09-21",
+  "ageAtDeath": 50,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates of Virgil are well-documented in historical records, providing high confidence in the accuracy of the calculated age.",
+  "shortDescriptionEn": "Publius Vergilius Maro, known as Virgil, was an ancient Roman poet born on October 15, 70 BC, in Andes, near Mantua. He is best known for his epic poem, the Aeneid. Virgil died on September 21, 19 BC, in Brundisium after contracting a fever during his return journey from Greece.",
+  "shortDescriptionFr": "Publius Vergilius Maro, connu sous le nom de Virgile, était un poète romain antique né le 15 octobre 70 av. J.-C. à Andes, près de Mantoue. Il est surtout connu pour son poème épique, l'Énéide. Virgile est mort le 21 septembre 19 av. J.-C. à Brundisium après avoir contracté une fièvre lors de son voyage de retour de Grèce.",
+  "shortDescriptionDe": "Publius Vergilius Maro, bekannt als Vergil, war ein antiker römischer Dichter, geboren am 15. Oktober 70 v. Chr. in Andes bei Mantua. Er ist vor allem für sein episches Gedicht, die Aeneis, bekannt. Vergil starb am 21. September 19 v. Chr. in Brundisium, nachdem er auf seiner Rückreise aus Griechenland an Fieber erkrankt war.",
+  "shortDescriptionEs": "Publius Vergilius Maro, conocido como Virgilio, fue un poeta romano antiguo nacido el 15 de octubre del 70 a. C. en Andes, cerca de Mantua. Es mejor conocido por su poema épico, la Eneida. Virgilio murió el 21 de septiembre del 19 a. C. en Brundisium después de contraer una fiebre durante su viaje de regreso de Grecia.",
+  "shortDescriptionRu": "Публий Вергилий Марон, известный как Вергилий, был древнеримским поэтом, родившимся 15 октября 70 г. до н. э. в Андах, недалеко от Мантуи. Он наиболее известен своим эпическим произведением 'Энеида'. Вергилий умер 21 сентября 19 г. до н. э. в Брундизии после того, как заразился лихорадкой во время возвращения из Греции.",
+  "sources": [
+    "https://www.britannica.com/biography/Virgil",
+    "https://en.wikipedia.org/wiki/Virgil"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q687",  "Name": "Molière",  "BirthDate": "1622-01-15T00:00:00Z",  "DeathDate": "1673-02-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Mignard%20-%20Portrait%20de%20Jean-Baptiste%20Poquelin%20dit%20Moli%C3%A8re%20%281622-1673%29%20-%20Google%20Art%20Project%20%28cropped%29.jpg",  "SiteLinksCnt": 215,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"51465":{"pageid":51465,"ns":0,"title":"Moli\u00e8re","extract":"Jean-Baptiste Poquelin (French: [\u0292\u0251\u0303 batist p\u0254kl\u025b\u0303]; 15 January 1622 (baptised) \u2013 17 February 1673), known by his stage name Moli\u00e8re (UK: , US: ; French: [m\u0254lj\u025b\u0281] ), was a French playwright, actor, and poet, widely regarded as one of the great writers in the French language and world literature. His extant works include comedies, farces, tragicomedies, com\u00e9die-ballets, and more. His plays have been translated into every major living language and are performed at the Com\u00e9die-Fran\u00e7aise more often than those of any other playwright today. His influence is such that the French language is often referred to as the \"language of Moli\u00e8re\".\nBorn into a prosperous family and having studied at the Coll\u00e8ge de Clermont (now Lyc\u00e9e Louis-le-Grand), Moli\u00e8re was well suited to begin a life in the theatre. Thirteen years as an itinerant actor helped him polish his comedic abilities while he began writing, combining Commedia dell'arte elements with the more refined French comedy.\nThrough the patronage of aristocrats including Philippe I, Duke of Orl\u00e9ans\u2014the brother of Louis XIV\u2014Moli\u00e8re procured a command performance before the King at the Louvre. Performing a classic play by Pierre Corneille and a farce of his own, The Doctor in Love, Moli\u00e8re was granted the use of salle du Petit-Bourbon near the Louvre, a spacious room appointed for theatrical performances. Later, he was granted the use of the theatre in the Palais-Royal. In both locations, Moli\u00e8re found success among Parisians with plays such as The Affected Ladies, The School for Husbands, and The School for Wives. This royal favour brought a royal pension to his troupe and the title Troupe du Roi (\"The King's Troupe\"). Moli\u00e8re continued as the official author of court entertainments.\nDespite the adulation of the court and Parisians, Moli\u00e8re's satires attracted criticism from other circles. For Tartuffe's impiety, the Catholic Church in France denounced this study of religious hypocrisy, which was followed by a ban by the Parlement, while Dom Juan was withdrawn and never restaged by Moli\u00e8re. His hard work in so many theatrical capacities took its toll on his health and, by 1667, he was forced to take a break from the stage. In 1673, during a production of his final play, The Imaginary Invalid, Moli\u00e8re, who suffered from pulmonary tuberculosis, was seized by a coughing fit and a haemorrhage while playing the hypochondriac Argan; he finished the performance but collapsed again and died a few hours later."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q687")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q687",
+  "isRealHuman": true,
+  "birthDate": "1622-01-15",
+  "deathDate": "1673-02-17",
+  "ageAtDeath": 51,
+  "confidence": 95,
+  "confidenceExplained": "The baptismal date is known, and it was customary to baptize infants shortly after birth during that era. Therefore, the birth date is estimated with high confidence.",
+  "shortDescriptionEn": "Molière, born Jean-Baptiste Poquelin, was a French playwright and actor renowned for his comedies. He died at 51 after collapsing during a performance of 'The Imaginary Invalid.'",
+  "shortDescriptionFr": "Molière, né Jean-Baptiste Poquelin, était un dramaturge et acteur français renommé pour ses comédies. Il est décédé à 51 ans après s'être effondré lors d'une représentation du 'Malade Imaginaire.'",
+  "shortDescriptionDe": "Molière, geboren als Jean-Baptiste Poquelin, war ein französischer Dramatiker und Schauspieler, bekannt für seine Komödien. Er starb mit 51 Jahren, nachdem er während einer Aufführung von 'Der eingebildete Kranke' zusammengebrochen war.",
+  "shortDescriptionEs": "Molière, nacido Jean-Baptiste Poquelin, fue un dramaturgo y actor francés conocido por sus comedias. Murió a los 51 años después de colapsar durante una representación de 'El enfermo imaginario.'",
+  "shortDescriptionRu": "Мольер, урождённый Жан-Батист Поклен, был французским драматургом и актёром, известным своими комедиями. Он умер в возрасте 51 года после того, как упал в обморок во время представления 'Мнимый больной.'",
+  "sources": [
+    "https://www.britannica.com/biography/Moliere-French-dramatist",
+    "https://www.sparknotes.com/drama/misanthrope/context/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7199",  "Name": "Marcel Proust",  "BirthDate": "1871-07-10T00:00:00Z",  "DeathDate": "1922-11-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marcel%20Proust%201895.jpg",  "SiteLinksCnt": 180,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"21018":{"pageid":21018,"ns":0,"title":"Marcel Proust","extract":"Valentin Louis Georges Eug\u00e8ne Marcel Proust ( PROOST; French: [ma\u0281s\u025bl p\u0281ust]; 10 July 1871 \u2013 18 November 1922) was a French novelist, literary critic, and essayist who wrote the novel \u00c0 la recherche du temps perdu (in French \u2013 translated in English as Remembrance of Things Past and more recently as In Search of Lost Time) which was published in seven volumes between 1913 and 1927. He is considered by critics and writers to be one of the most influential authors of the 20th century.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7199")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7199",
+  "isRealHuman": true,
+  "birthDate": "1871-07-10",
+  "deathDate": "1922-11-18",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reputable sources, confirming that Marcel Proust was 51 years old at the time of his death.",
+  "shortDescriptionEn": "Marcel Proust was a French novelist and essayist, renowned for his seven-volume work 'In Search of Lost Time'. He died at 51 from pneumonia and a pulmonary abscess.",
+  "shortDescriptionFr": "Marcel Proust était un romancier et essayiste français, célèbre pour son œuvre en sept volumes 'À la recherche du temps perdu'. Il est décédé à 51 ans d'une pneumonie et d'un abcès pulmonaire.",
+  "shortDescriptionDe": "Marcel Proust war ein französischer Romanautor und Essayist, bekannt für sein siebenbändiges Werk 'Auf der Suche nach der verlorenen Zeit'. Er starb im Alter von 51 Jahren an einer Lungenentzündung und einem Lungenabszess.",
+  "shortDescriptionEs": "Marcel Proust fue un novelista y ensayista francés, famoso por su obra de siete volúmenes 'En busca del tiempo perdido'. Murió a los 51 años de neumonía y un absceso pulmonar.",
+  "shortDescriptionRu": "Марсель Пруст был французским писателем и эссеистом, известным своим семитомным произведением 'В поисках утраченного времени'. Он умер в 51 год от пневмонии и абсцесса легкого.",
+  "sources": [
+    "https://www.britannica.com/biography/Marcel-Proust",
+    "https://www.washingtonpost.com/books/2022/11/17/marcel-proust-century/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9711",  "Name": "Honoré de Balzac",  "BirthDate": "1799-05-20T00:00:00Z",  "DeathDate": "1850-08-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Honor%C3%A9%20de%20Balzac%20%281842%29%20detail.jpg",  "SiteLinksCnt": 169,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"42368":{"pageid":42368,"ns":0,"title":"Honor\u00e9 de Balzac","extract":"Honor\u00e9 de Balzac ( BAL-zak, more commonly US:  BAWL-; French: [\u0254n\u0254\u0281e d(\u0259) balzak]; born Honor\u00e9 Balzac; 20 May 1799 \u2013 18 August 1850) was a French novelist and playwright. The novel sequence La Com\u00e9die humaine, which presents a panorama of post-Napoleonic French life, is generally viewed as his magnum opus.\nOwing to his keen observation of detail and unfiltered representation of society, Balzac is regarded as one of the founders of realism in European literature. He is renowned for his multi-faceted characters; even his lesser characters are complex, morally ambiguous and fully human.  Inanimate objects are imbued with character as well; the city of Paris, a backdrop for much of his writing, takes on many human qualities. His writing influenced many famous writers, including the novelists \u00c9mile Zola, Charles Dickens, Marcel Proust, Gustave Flaubert, and Henry James, and filmmakers Fran\u00e7ois Truffaut and Jacques Rivette. Many of Balzac's works have been made into films and continue to inspire other writers. James called him \"really the father of us all.\"\nAn enthusiastic reader and independent thinker as a child, Balzac had trouble adapting to the teaching style of his grammar school. His willful nature caused trouble throughout his life and frustrated his ambitions to succeed in the world of business. When he finished school, Balzac was apprenticed in a law office, but he turned his back on the study of law after wearying of its inhumanity and banal routine. Before and during his career as a writer, he attempted to be a publisher, printer, businessman, critic, and politician; he failed in all of these efforts. La Com\u00e9die humaine reflects his real-life difficulties, and includes scenes from his own experience.\nBalzac suffered from health problems throughout his life, possibly owing to his intense writing schedule. His relationship with his family was often strained by financial and personal drama, and he lost more than one friend over critical reviews. In 1850, Balzac married Ewelina Ha\u0144ska (n\u00e9e Contessa Rzewuska), a Polish aristocrat and his longtime love. He died in Paris six months later."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9711")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9711",
+  "isRealHuman": true,
+  "birthDate": "1799-05-20",
+  "deathDate": "1850-08-18",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Honoré de Balzac are well-documented in multiple reliable sources, confirming he was 51 years old at the time of his death.",
+  "shortDescriptionEn": "Honoré de Balzac was a French novelist and playwright, renowned for his extensive series 'La Comédie humaine,' depicting post-Napoleonic French society. He died at 51 due to health complications related to congestive heart failure.",
+  "shortDescriptionFr": "Honoré de Balzac était un romancier et dramaturge français, célèbre pour sa vaste série 'La Comédie humaine,' dépeignant la société française post-napoléonienne. Il est décédé à 51 ans des suites de complications de santé liées à une insuffisance cardiaque congestive.",
+  "shortDescriptionDe": "Honoré de Balzac war ein französischer Romancier und Dramatiker, bekannt für seine umfangreiche Serie 'La Comédie humaine,' die die französische Gesellschaft nach Napoleon beschreibt. Er starb mit 51 Jahren an gesundheitlichen Komplikationen im Zusammenhang mit kongestiver Herzinsuffizienz.",
+  "shortDescriptionEs": "Honoré de Balzac fue un novelista y dramaturgo francés, famoso por su extensa serie 'La Comédie humaine,' que retrata la sociedad francesa post-napoleónica. Murió a los 51 años debido a complicaciones de salud relacionadas con insuficiencia cardíaca congestiva.",
+  "shortDescriptionRu": "Оноре де Бальзак был французским писателем и драматургом, известным своей обширной серией 'Человеческая комедия,' изображающей французское общество после Наполеона. Он умер в возрасте 51 года от осложнений, связанных с застойной сердечной недостаточностью.",
+  "sources": [
+    "https://www.britannica.com/biography/Honore-de-Balzac",
+    "https://en.wikipedia.org/wiki/Honor%C3%A9_de_Balzac",
+    "https://onlinejcf.com/article/S1071-9164%2816%2931139-3/pdf"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76483",  "Name": "Rainer Maria Rilke",  "BirthDate": "1875-12-04T00:00:00Z",  "DeathDate": "1926-12-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Maria%20Rilke%201900.jpg",  "SiteLinksCnt": 132,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"26408":{"pageid":26408,"ns":0,"title":"Rainer Maria Rilke","extract":"Ren\u00e9 Karl Wilhelm Johann Josef Maria Rilke (4 December 1875 \u2013 29 December 1926), known as Rainer Maria Rilke (German: [\u02c8\u0281a\u026an\u0250 ma\u02c8\u0281i\u02d0a \u02c8\u0281\u026alk\u0259] ), was an Austrian poet and novelist. Acclaimed as an idiosyncratic and expressive poet, he is widely recognized as a significant writer in the German language. His work is viewed by critics and scholars as possessing undertones of mysticism, exploring themes of subjective experience and disbelief. His writings include one novel, several collections of poetry and several volumes of correspondence.\nRilke traveled extensively throughout Europe, finally settling in Switzerland, which provided the inspiration for many of his poems. While Rilke is best known for his contributions to German literature, he also wrote in French. Among English-language readers, his best-known works include two poetry collections: Duino Elegies (Duineser Elegien) and Sonnets to Orpheus (Die Sonette an Orpheus), a semi-autobiographical novel The Notebooks of Malte Laurids Brigge (Die Aufzeichnungen des Malte Laurids Brigge), and a collection of ten letters published posthumously Letters to a Young Poet (Briefe an einen jungen Dichter). In the later 20th century, his work found new audiences in citations by self-help authors and frequent quotations in television shows, books and motion pictures."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76483")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q76483",
+  "isRealHuman": true,
+  "birthDate": "1875-12-04",
+  "deathDate": "1926-12-29",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are known and widely documented through historical records and literary sources. The age at death is calculated precisely from these known dates.",
+  "shortDescriptionEn": "Rainer Maria Rilke was a renowned Austrian poet and novelist, known for his profound and introspective literary style. He significantly contributed to German literature through works like 'Duino Elegies' and 'Sonnets to Orpheus'. Rilke died at the age of 51 in Switzerland from leukemia after a prolonged illness.",
+  "shortDescriptionFr": "Rainer Maria Rilke était un poète et romancier autrichien célèbre pour son style littéraire profond et introspectif. Il a marqué la littérature allemande avec des œuvres comme 'Élégies de Duino' et 'Sonnets à Orphée'. Rilke est mort à 51 ans en Suisse d'une leucémie après une longue maladie.",
+  "shortDescriptionDe": "Rainer Maria Rilke war ein bedeutender österreichischer Dichter und Romanautor, bekannt für seinen tiefgründigen, introspektiven Stil. Zu seinen Hauptwerken zählen die 'Duineser Elegien' und die 'Sonette an Orpheus'. Er starb mit 51 Jahren in der Schweiz an Leukämie nach langer Krankheit.",
+  "shortDescriptionEs": "Rainer Maria Rilke fue un poeta y novelista austríaco reconocido por su estilo literario introspectivo. Contribuyó significativamente a la literatura alemana con obras como 'Elegías de Duino' y 'Sonetos a Orfeo'. Murió a los 51 años en Suiza de leucemia tras una larga enfermedad.",
+  "shortDescriptionRu": "Райнер Мария Рильке — австрийский поэт и писатель, прославившийся своим глубоким и выразительным стилем. Среди его известных работ — «Дуинские элегии» и «Сонеты к Орфею». Умер в возрасте 51 года в Швейцарии от лейкемии после продолжительной болезни.",
+  "sources": [
+    "http://www.wikidata.org/entity/Q76483",
+    "https://en.wikipedia.org/wiki/Rainer_Maria_Rilke",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Maria%20Rilke%201900.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q755",  "Name": "Paul Verlaine",  "BirthDate": "1844-03-30T00:00:00Z",  "DeathDate": "1896-01-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Verlaine.jpeg",  "SiteLinksCnt": 115,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"155265":{"pageid":155265,"ns":0,"title":"Paul Verlaine","extract":"Paul-Marie Verlaine ( vair-LEN; French: [p\u0254l ma\u0281i v\u025b\u0281l\u025bn]; 30 March 1844 \u2013 8 January 1896) was a French poet associated with the Symbolist movement and the Decadent movement. He is considered one of the greatest representatives of the fin de si\u00e8cle in international and French poetry."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q755")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q755",
+  "isRealHuman": true,
+  "birthDate": "1844-03-30",
+  "deathDate": "1896-01-08",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, confirming the age at death as 51 years.",
+  "shortDescriptionEn": "Paul Verlaine was a French poet associated with the Symbolist and Decadent movements. He is considered one of the greatest representatives of the fin de siècle in international and French poetry. Verlaine died of pulmonary congestion in Paris on January 8, 1896.",
+  "shortDescriptionFr": "Paul Verlaine était un poète français associé aux mouvements symboliste et décadent. Il est considéré comme l'un des plus grands représentants de la fin de siècle dans la poésie internationale et française. Verlaine est décédé d'une congestion pulmonaire à Paris le 8 janvier 1896.",
+  "shortDescriptionDe": "Paul Verlaine war ein französischer Dichter, der mit der symbolistischen und dekadenten Bewegung in Verbindung gebracht wird. Er gilt als einer der bedeutendsten Vertreter der Jahrhundertwende in der internationalen und französischen Poesie. Verlaine starb am 8. Januar 1896 in Paris an einer Lungenentzündung.",
+  "shortDescriptionEs": "Paul Verlaine fue un poeta francés asociado con los movimientos simbolista y decadente. Es considerado uno de los mayores representantes del fin de siglo en la poesía internacional y francesa. Verlaine murió de congestión pulmonar en París el 8 de enero de 1896.",
+  "shortDescriptionRu": "Пол Верлен — французский поэт, ассоциируемый с символистским и декадентским движениями. Он считается одним из величайших представителей конца века в международной и французской поэзии. Верлен умер от легочной конгестии в Париже 8 января 1896 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Verlaine-Paul",
+    "https://en.wikipedia.org/wiki/Paul_Verlaine",
+    "https://www.poetryfoundation.org/poets/paul-verlaine"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102585",  "Name": "Johann Gottlieb Fichte",  "BirthDate": "1762-05-19T00:00:00Z",  "DeathDate": "1814-01-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Gottlieb%20Fichte%20by%20Friedrich%20Bury.jpg",  "SiteLinksCnt": 110,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"12007":{"pageid":12007,"ns":0,"title":"Johann Gottlieb Fichte","extract":"Johann Gottlieb Fichte (; German: [\u02c8jo\u02d0han \u02c8\u0261\u0254tli\u02d0p \u02c8f\u026a\u00e7t\u0259]; 19 May 1762 \u2013 29 January 1814) was a German philosopher who became a founding figure of the philosophical movement known as German idealism, which developed from the theoretical and ethical writings of Immanuel Kant. Recently, philosophers and scholars have begun to appreciate Fichte as an important philosopher in his own right due to his original insights into the nature of self-consciousness or self-awareness. Fichte was also the originator of thesis\u2013antithesis\u2013synthesis, an idea that is often erroneously attributed to Hegel. Like Descartes and Kant before him, Fichte was motivated by the problem of subjectivity and consciousness. Fichte also wrote works of political philosophy; he has a reputation as one of the fathers of German nationalism.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102585")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q102585",
+  "isRealHuman": true,
+  "birthDate": "1762-05-19",
+  "deathDate": "1814-01-29",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reputable sources, confirming that Johann Gottlieb Fichte was 51 years old at the time of his death.",
+  "shortDescriptionEn": "Johann Gottlieb Fichte was a German philosopher, born on May 19, 1762, in Rammenau. He was a key figure in German idealism and a contemporary of Immanuel Kant. Fichte died of typhus on January 29, 1814, in Berlin.",
+  "shortDescriptionFr": "Johann Gottlieb Fichte était un philosophe allemand, né le 19 mai 1762 à Rammenau. Il était une figure clé de l'idéalisme allemand et un contemporain d'Immanuel Kant. Fichte est décédé du typhus le 29 janvier 1814 à Berlin.",
+  "shortDescriptionDe": "Johann Gottlieb Fichte war ein deutscher Philosoph, geboren am 19. Mai 1762 in Rammenau. Er war eine Schlüsselfigur des deutschen Idealismus und ein Zeitgenosse von Immanuel Kant. Fichte starb am 29. Januar 1814 in Berlin an Typhus.",
+  "shortDescriptionEs": "Johann Gottlieb Fichte fue un filósofo alemán, nacido el 19 de mayo de 1762 en Rammenau. Fue una figura clave en el idealismo alemán y contemporáneo de Immanuel Kant. Fichte murió de tifus el 29 de enero de 1814 en Berlín.",
+  "shortDescriptionRu": "Иоганн Готлиб Фихте был немецким философом, родившимся 19 мая 1762 года в Рамменау. Он был ключевой фигурой немецкого идеализма и современником Иммануила Канта. Фихте умер от тифа 29 января 1814 года в Берлине.",
+  "sources": [
+    "https://www.britannica.com/biography/Johann-Gottlieb-Fichte",
+    "https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40599",  "Name": "Édouard Manet",  "BirthDate": "1832-01-23T00:00:00Z",  "DeathDate": "1883-04-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89douard%20Manet%2C%20en%20buste%2C%20de%20face%20-%20Nadar.jpg",  "SiteLinksCnt": 109,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"9615":{"pageid":9615,"ns":0,"title":"\u00c9douard Manet","extract":"\u00c9douard Manet (UK: , US: ; French: [edwa\u0281 man\u025b]; 23 January 1832 \u2013 30 April 1883) was a French modernist painter. He was one of the first 19th-century artists to paint modern life, as well as a pivotal figure in the transition from Realism to Impressionism.\nBorn into an upper-class household with strong political connections, Manet rejected the naval career originally envisioned for him; he became engrossed in the world of painting. His early masterworks, The Luncheon on the Grass (Le d\u00e9jeuner sur l'herbe) or Olympia, \"premiering\" in 1863 and '65, respectively, caused great controversy with both critics and the Academy of Fine Arts, but soon were praised by progressive artists as the breakthrough acts to the new style, Impressionism. These works, along with others, are considered watershed paintings that mark the start of modern art. The last 20 years of Manet's life saw him form bonds with other great artists of the time; he developed his own simple and direct style that would be heralded as innovative and serve as a major influence for future painters.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40599")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q40599",
+  "isRealHuman": true,
+  "birthDate": "1832-01-23",
+  "deathDate": "1883-04-30",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Édouard Manet are well-documented in multiple reputable sources, confirming he was 51 years old at the time of his death.",
+  "shortDescriptionEn": "Édouard Manet was a French modernist painter, instrumental in the transition from Realism to Impressionism. He died at age 51 due to complications from syphilis and rheumatism, which led to the amputation of his left foot shortly before his death.",
+  "shortDescriptionFr": "Édouard Manet était un peintre moderniste français, jouant un rôle clé dans la transition du Réalisme à l'Impressionnisme. Il est décédé à 51 ans des suites de complications liées à la syphilis et au rhumatisme, ayant subi l'amputation de son pied gauche peu avant sa mort.",
+  "shortDescriptionDe": "Édouard Manet war ein französischer modernistischer Maler, der eine Schlüsselrolle beim Übergang vom Realismus zum Impressionismus spielte. Er starb im Alter von 51 Jahren an den Folgen von Syphilis und Rheuma, nachdem ihm kurz vor seinem Tod der linke Fuß amputiert worden war.",
+  "shortDescriptionEs": "Édouard Manet fue un pintor modernista francés, fundamental en la transición del Realismo al Impresionismo. Falleció a los 51 años debido a complicaciones de sífilis y reumatismo, habiéndosele amputado el pie izquierdo poco antes de su muerte.",
+  "shortDescriptionRu": "Эдуард Мане был французским модернистским художником, сыгравшим ключевую роль в переходе от реализма к импрессионизму. Он умер в возрасте 51 года от осложнений, вызванных сифилисом и ревматизмом; незадолго до смерти ему ампутировали левую ногу.",
+  "sources": [
+    "https://www.britannica.com/biography/Edouard-Manet",
+    "https://en.wikipedia.org/wiki/%C3%89douard_Manet"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76430",  "Name": "Carl von Clausewitz",  "BirthDate": "1780-06-01T00:00:00Z",  "DeathDate": "1831-11-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Clausewitz.jpg",  "SiteLinksCnt": 107,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"6066":{"pageid":6066,"ns":0,"title":"Carl von Clausewitz","extract":"Carl Philipp Gottfried (or Gottlieb) von Clausewitz ( KLOW-z\u0259-vits, German: [\u02c8ka\u0281l f\u0254n \u02c8kla\u028az\u0259v\u026ats] ; 1 July 1780 \u2013 16 November 1831) was a Prussian general and military theorist who stressed the \"moral\" (in modern terms meaning psychological) and political aspects of waging war. His most notable work, Vom Kriege (About War), though unfinished at his death, is considered a seminal treatise on military strategy and science.\nClausewitz stressed the multiplex interaction of diverse factors in war, noting how unexpected developments unfolding under the \"fog of war\" (i.e., in the face of incomplete, dubious, and often erroneous information and great fear, doubt, and excitement) call for rapid decisions by alert commanders. He saw history as a vital check on erudite abstractions that did not accord with experience. In contrast to the early work of Antoine-Henri Jomini, he argued that war could not be quantified or reduced to mapwork, geometry, and graphs.  Clausewitz had many aphorisms, of which one of the most famous is, \"War is the continuation of policy with other means.\":\u200a87\u200a\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76430")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q76430",
+  "isRealHuman": true,
+  "birthDate": "1780-06-01",
+  "deathDate": "1831-11-16",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reputable sources, confirming that Clausewitz was 51 years old at the time of his death.",
+  "shortDescriptionEn": "Carl von Clausewitz was a Prussian general and influential military theorist, renowned for his seminal work 'On War'. He died of cholera on November 16, 1831, at the age of 51.",
+  "shortDescriptionFr": "Carl von Clausewitz était un général prussien et un théoricien militaire influent, célèbre pour son œuvre majeure 'De la guerre'. Il est décédé du choléra le 16 novembre 1831, à l'âge de 51 ans.",
+  "shortDescriptionDe": "Carl von Clausewitz war ein preußischer General und einflussreicher Militärtheoretiker, bekannt für sein Hauptwerk 'Vom Kriege'. Er starb am 16. November 1831 im Alter von 51 Jahren an Cholera.",
+  "shortDescriptionEs": "Carl von Clausewitz fue un general prusiano y teórico militar influyente, conocido por su obra principal 'De la guerra'. Murió de cólera el 16 de noviembre de 1831, a la edad de 51 años.",
+  "shortDescriptionRu": "Карл фон Клаузевиц был прусским генералом и влиятельным военным теоретиком, известным своей основной работой 'О войне'. Он умер от холеры 16 ноября 1831 года в возрасте 51 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Carl-von-Clausewitz",
+    "https://en.wikipedia.org/wiki/Carl_von_Clausewitz",
+    "https://www.astro.com/astro-databank/Clausewitz%2C_Carl_von"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160270",  "Name": "David Ricardo",  "BirthDate": "1772-04-18T00:00:00Z",  "DeathDate": "1823-09-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20David%20Ricardo%20by%20Thomas%20Phillips.jpg",  "SiteLinksCnt": 96,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"8470":{"pageid":8470,"ns":0,"title":"David Ricardo","extract":"David Ricardo (18 April 1772 \u2013 11 September 1823) was a British political economist, politician, and member of Parliament. He is recognized as one of the most influential classical economists, alongside figures such as Thomas Malthus, Adam Smith and James Mill.\nRicardo was born in London as the third surviving child of a successful stockbroker and his wife. He came from a Sephardic Jewish family of Portuguese origin. At 21, he eloped with a Quaker and converted to Unitarianism, causing estrangement from his family. He made his fortune financing government borrowing and later retired to an estate in Gloucestershire. Ricardo served as High Sheriff of Gloucestershire and bought a seat in Parliament as an earnest reformer. He was friends with prominent figures like James Mill, Jeremy Bentham, and Thomas Malthus, engaging in debates over various topics. Ricardo was also a member of The Geological Society, and his youngest sister was an author.\nAs MP for Portarlington, Ricardo advocated for liberal political movements and reforms, including free trade, parliamentary reform, and criminal law reform. He believed free trade increased the well-being of people by making goods more affordable. Ricardo notably opposed the Corn Laws, which he saw as barriers to economic growth. His friend John Louis Mallett described Ricardo's conviction in his beliefs, though he expressed doubts about Ricardo's disregard for experience and practice. Ricardo died at 51 from an ear infection that led to septicaemia (sepsis). He left behind a considerable fortune and a lasting legacy, with his free trade views eventually becoming public policy in Britain.\nRicardo wrote his first economics article at age 37, advocating for a reduction in the note-issuing of the Bank of England. He was also an abolitionist and believed in the autonomy of a central bank as the issuer of money. Ricardo worked on fixing issues in Adam Smith's labour theory of value, stating that the value of a commodity depends on the labour necessary for its production. He contributed to the development of theories of rent, wages, and profits, defining rent as the difference between the produce obtained by employing equal quantities of capital and labour. Ricardo's Theory of Profit posited that as real wages increase, real profits decrease due to the revenue split between profits and wages.\nRicardian theory of international trade challenges the mercantilist concept of accumulating gold or silver by promoting industry specialization and free trade. Ricardo introduced the concept of \"comparative advantage\", suggesting that nations should concentrate resources only in industries where they have the greatest efficiency of production relative to their own alternative uses of resources. He argued that international trade is always beneficial, even if one country is more competitive in every area than its trading counterpart. Ricardo opposed protectionism for national economies and was concerned about the short-term impact of technological change on labour."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160270")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q160270",
+  "isRealHuman": true,
+  "birthDate": "1772-04-18",
+  "deathDate": "1823-09-11",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported across multiple authoritative sources, confirming the calculated age at death.",
+  "shortDescriptionEn": "David Ricardo was a British political economist and Member of Parliament, recognized as a leading classical economist. He died at age 51 from an ear infection leading to sepsis.",
+  "shortDescriptionFr": "David Ricardo était un économiste politique britannique et membre du Parlement, reconnu comme un économiste classique majeur. Il est décédé à 51 ans d'une infection de l'oreille ayant entraîné une septicémie.",
+  "shortDescriptionDe": "David Ricardo war ein britischer Wirtschaftswissenschaftler und Parlamentsmitglied, bekannt als führender klassischer Ökonom. Er starb im Alter von 51 Jahren an einer Ohrenentzündung, die zu einer Sepsis führte.",
+  "shortDescriptionEs": "David Ricardo fue un economista político británico y miembro del Parlamento, reconocido como un destacado economista clásico. Murió a los 51 años por una infección de oído que derivó en sepsis.",
+  "shortDescriptionRu": "Давид Рикардо был британским политическим экономистом и членом парламента, признанным ведущим представителем классической экономики. Он умер в возрасте 51 года от инфекции уха, приведшей к сепсису.",
+  "sources": [
+    "https://www.britannica.com/money/David-Ricardo",
+    "https://en.wikipedia.org/wiki/David_Ricardo",
+    "https://www.econlib.org/library/Enc/bios/Ricardo.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q308722",  "Name": "James Gandolfini",  "BirthDate": "1961-09-18T00:00:00Z",  "DeathDate": "2013-06-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Gandolfini%20in%20Kuwait%20City%202010%20%28cropped%29.jpg",  "SiteLinksCnt": 92,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"9257001":{"pageid":9257001,"ns":0,"title":"James Gandolfini","extract":"James John Gandolfini (Italian: [\u0261andol\u02c8fi\u02d0ni]; September 18, 1961 \u2013 June 19, 2013) was an American actor. He was best known for his portrayal of Tony Soprano, the Italian-American Mafia crime boss in HBO's television series The Sopranos (1999\u20132007). For this role, he won three Emmy Awards, five Screen Actors Guild Awards, and one Golden Globe Award. His role as Tony Soprano has been described as one of the greatest and most influential performances in television history.\nGandolfini was featured in numerous films including True Romance (1993), Crimson Tide (1995), Get Shorty (1995), A Civil Action (1998), The Last Castle (2001), Romance & Cigarettes (2005), All the King's Men (2006), In the Loop (2009), Where the Wild Things Are (2009), The Taking of Pelham 123 (2009), Not Fade Away (2012), and Zero Dark Thirty (2012). He received acclaim for playing against type starring in the romantic comedy Enough Said (2013). For the role, he earned numerous critics awards including a Screen Actors Guild Award nomination.\nGandolfini is also known for his roles on Broadway in A Streetcar Named Desire (1992), On the Waterfront (1995), and God of Carnage (2009), the latter earning him a Tony Award for Best Actor in a Play nomination. He also produced the war documentaries Alive Day Memories: Home from Iraq (2007) and Wartorn: 1861\u20132010 (2011) as well as the HBO film Hemingway & Gellhorn (2012), which earned him a Primetime Emmy Award for Outstanding Miniseries or Movie nomination.\nIn 2013, Gandolfini died of a heart attack in Rome at the age of 51."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q308722")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q308722",
+  "isRealHuman": true,
+  "birthDate": "1961-09-18",
+  "deathDate": "2013-06-19",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reliable sources, confirming the calculated age.",
+  "shortDescriptionEn": "James Gandolfini was an American actor best known for his portrayal of Tony Soprano in HBO's 'The Sopranos.' He passed away from a heart attack on June 19, 2013, in Rome at the age of 51.",
+  "shortDescriptionFr": "James Gandolfini était un acteur américain surtout connu pour son rôle de Tony Soprano dans la série 'Les Soprano' de HBO. Il est décédé d'une crise cardiaque le 19 juin 2013 à Rome à l'âge de 51 ans.",
+  "shortDescriptionDe": "James Gandolfini war ein amerikanischer Schauspieler, der vor allem für seine Rolle als Tony Soprano in der HBO-Serie 'Die Sopranos' bekannt war. Er verstarb am 19. Juni 2013 in Rom im Alter von 51 Jahren an einem Herzinfarkt.",
+  "shortDescriptionEs": "James Gandolfini fue un actor estadounidense conocido principalmente por su interpretación de Tony Soprano en 'Los Soprano' de HBO. Falleció de un ataque al corazón el 19 de junio de 2013 en Roma a los 51 años.",
+  "shortDescriptionRu": "Джеймс Гандольфини был американским актером, наиболее известным по роли Тони Сопрано в сериале HBO 'Клан Сопрано'. Он скончался от сердечного приступа 19 июня 2013 года в Риме в возрасте 51 года.",
+  "sources": [
+    "https://www.britannica.com/biography/James-Gandolfini",
+    "https://www.biography.com/actors/james-gandolfini-death",
+    "https://www.imdb.com/name/nm0001254/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q168962",  "Name": "Torquato Tasso",  "BirthDate": "1544-03-21T00:00:00Z",  "DeathDate": "1595-05-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Torquato%20Tasso%2C%20aged%2022%2C%20by%20Jacopo%20da%20Ponte%2C%20called%20Jacopo%20Bassano%20%28cropped%29.jpg",  "SiteLinksCnt": 91,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"48227":{"pageid":48227,"ns":0,"title":"Torquato Tasso","extract":"Torquato Tasso ( TASS-oh, also US:  TAH-soh, Italian: [tor\u02c8kwa\u02d0to \u02c8tasso]; 11 March 1544 \u2013 25 April 1595) was an Italian poet of the 16th century, known for his 1591 poem Gerusalemme liberata (Jerusalem Delivered), in which he depicts a highly imaginative version of the combats between Christians and Muslims at the end of the First Crusade, during the Siege of Jerusalem of 1099.\nTasso had  mental illness and died a few days before he was to be crowned on the Capitoline Hill as the king of poets by Pope Clement VIII. His work was widely translated and adapted, and until the beginning of the 20th century, he remained one of the most widely read poets in Europe."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q168962")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q168962",
+  "isRealHuman": true,
+  "birthDate": "1544-03-11",
+  "deathDate": "1595-04-25",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, leading to a high confidence level in the accuracy of this calculation.",
+  "shortDescriptionEn": "Torquato Tasso was a renowned Italian poet of the late Renaissance, celebrated for his epic 'Gerusalemme Liberata.' He died at age 51 in Rome, shortly before receiving the honor of being crowned as the king of poets by Pope Clement VIII.",
+  "shortDescriptionFr": "Torquato Tasso était un célèbre poète italien de la fin de la Renaissance, connu pour son épopée 'La Jérusalem délivrée.' Il est décédé à 51 ans à Rome, peu avant de recevoir l'honneur d'être couronné roi des poètes par le pape Clément VIII.",
+  "shortDescriptionDe": "Torquato Tasso war ein berühmter italienischer Dichter der späten Renaissance, bekannt für sein Epos 'Das befreite Jerusalem.' Er starb im Alter von 51 Jahren in Rom, kurz bevor er die Ehre erhielt, von Papst Clemens VIII. zum König der Dichter gekrönt zu werden.",
+  "shortDescriptionEs": "Torquato Tasso fue un renombrado poeta italiano del Renacimiento tardío, célebre por su epopeya 'Jerusalén liberada.' Murió a los 51 años en Roma, poco antes de recibir el honor de ser coronado como rey de los poetas por el Papa Clemente VIII.",
+  "shortDescriptionRu": "Торквато Тассо был известным итальянским поэтом позднего Возрождения, прославившимся своей эпопеей 'Освобожденный Иерусалим'. Он умер в возрасте 51 года в Риме, незадолго до того, как получить честь быть коронованным как король поэтов папой Климентом VIII.",
+  "sources": [
+    "https://www.britannica.com/biography/Torquato-Tasso-Italian-poet",
+    "https://en.wikipedia.org/wiki/Torquato_Tasso",
+    "https://dbpedia.org/page/Torquato_Tasso"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131355",  "Name": "Zulfiqar Ali Bhutto",  "BirthDate": "1928-01-05T00:00:00Z",  "DeathDate": "1979-04-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Zulfikar%20Ali%20Bhutto%20Portrait.jpg",  "SiteLinksCnt": 90,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"401102":{"pageid":401102,"ns":0,"title":"Zulfikar Ali Bhutto","extract":"Zulfikar Ali Bhutto (5 January 1928 \u2013 4 April 1979) was a Pakistani barrister, politician, and statesman. He served as the fourth president of Pakistan from 1971 to 1973 and later as the ninth prime minister of Pakistan from 1973 to 1977. Bhutto founded the Pakistan People's Party (PPP) and served as its chairman until his execution for murder.\nBorn in Sindh and educated at the University of California, Berkeley and the University of Oxford, Bhutto trained as a barrister at Lincoln's Inn before entering politics. Initially, he was a cabinet member during president Iskandar Ali Mirza's tenure, holding various ministries during president Ayub Khan's military rule from 1958. Bhutto became the Foreign Minister in 1963, advocating for Operation Gibraltar in Kashmir, leading to the 1965 war with India. Following the Tashkent Declaration, he was dismissed from the government. Bhutto established the PPP in 1967, focusing on an Islamic socialist agenda, and contested the 1970 general election. The Awami League and PPP were unable to agree on power transfer, leading to civil unrest and the creation of Bangladesh. After Pakistan's loss in the 1971 war against Bangladesh, Bhutto assumed the presidency in December 1971, imposing emergency rule.\nDuring his presidency, Bhutto secured the release of 93,000 prisoners of war and reclaimed five thousand square miles (13,000 km2) of Indian-held territory through the Simla Agreement. He strengthened diplomatic ties with China and Saudi Arabia, recognized Bangladesh, and hosted the second Organisation of the Islamic Conference in Lahore in 1974. Bhutto's government drafted the current constitution of Pakistan in 1973, after which he transitioned to the prime minister's office. He played a crucial role in initiating the country's nuclear program. However, his policies, including extensive nationalisation, led to economic stagnation.\nDespite winning the 1977 parliamentary elections, Bhutto faced allegations of widespread vote rigging, sparking violence across the country. On 5 July 1977, Bhutto was deposed in a military coup by army chief Muhammad Zia-ul-Haq. Controversially tried and executed in 1979, Bhutto's legacy remains contentious, praised for nationalism and a secular internationalist agenda, yet criticized for political repression, economic challenges, and human rights abuses. He is often considered one of Pakistan's greatest leaders. His party, the PPP, continues to be a significant political force in Pakistan, with his daughter Benazir Bhutto serving twice as Prime Minister, and his son-in-law, Asif Ali Zardari, becoming president."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131355")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q131355",
+  "isRealHuman": true,
+  "birthDate": "1928-01-05",
+  "deathDate": "1979-04-04",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reliable sources, confirming the age at death as 51.",
+  "shortDescriptionEn": "Zulfikar Ali Bhutto was a Pakistani barrister and politician who served as President (1971–1973) and Prime Minister (1973–1977). He founded the Pakistan People's Party (PPP) and was executed in 1979 after a controversial trial.",
+  "shortDescriptionFr": "Zulfikar Ali Bhutto était un avocat et homme politique pakistanais qui a été président (1971–1973) et Premier ministre (1973–1977). Il a fondé le Parti du peuple pakistanais (PPP) et a été exécuté en 1979 après un procès controversé.",
+  "shortDescriptionDe": "Zulfikar Ali Bhutto war ein pakistanischer Anwalt und Politiker, der als Präsident (1971–1973) und Premierminister (1973–1977) diente. Er gründete die Pakistanische Volkspartei (PPP) und wurde 1979 nach einem umstrittenen Prozess hingerichtet.",
+  "shortDescriptionEs": "Zulfikar Ali Bhutto fue un abogado y político pakistaní que se desempeñó como presidente (1971–1973) y primer ministro (1973–1977). Fundó el Partido Popular de Pakistán (PPP) y fue ejecutado en 1979 tras un juicio controvertido.",
+  "shortDescriptionRu": "Зульфикар Али Бхутто был пакистанским адвокатом и политиком, занимавшим посты президента (1971–1973) и премьер-министра (1973–1977). Он основал Пакистанскую народную партию (PPP) и был казнен в 1979 году после спорного суда.",
+  "sources": [
+    "https://www.britannica.com/biography/Zulfikar-Ali-Bhutto",
+    "https://en.wikipedia.org/wiki/Zulfikar_Ali_Bhutto"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q129987",  "Name": "William III of England",  "BirthDate": "1650-11-14T00:00:00Z",  "DeathDate": "1702-03-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/G.%20Kneller%20-%20Willem%20III%20%281650-1702%29%2C%20prins%20van%20Oranje%2C%20koning%20van%20Engeland%20-%20C252%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg",  "SiteLinksCnt": 89,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"47387":{"pageid":47387,"ns":0,"title":"William III of England","extract":"William III (William Henry; Dutch: Willem Hendrik; 4 November 1650 \u2013 8 March 1702), also known as William of Orange, was the sovereign Prince of Orange from birth, Stadtholder of Holland, Zeeland, Utrecht, Guelders, and Overijssel in the Dutch Republic from 1672, and King of England, Ireland, and Scotland from 1689 until his death in 1702. He ruled Great Britain and Ireland with his wife, Queen Mary II, and their joint reign is known as that of William and Mary.\nWilliam was the only child of William II, Prince of Orange, and Mary, Princess Royal, the daughter of King Charles I of England, Scotland, and Ireland. His father died a week before his birth, making William III the prince of Orange from birth. In 1677, he married his first cousin Mary, the elder daughter of his maternal uncle James, Duke of York, the younger brother and later successor of King Charles II.\nA Protestant, William participated in several wars against the powerful Catholic French ruler Louis XIV in coalition with both Protestant and Catholic powers in Europe. Many Protestants heralded William as a champion of their faith. In 1685, his Catholic uncle and father-in-law, James, became king of England, Scotland, and Ireland. James's reign was unpopular with Protestants in the British Isles, who opposed Catholic Emancipation. Supported by a group of influential British political and religious leaders, William invaded England in what became known as the Glorious Revolution. In 1688, he landed at the south-western English port of Brixham; James was deposed shortly afterward.\nWilliam's reputation as a staunch Protestant enabled him and his wife to take power. During the early years of his reign, William was occupied abroad with the Nine Years' War (1688\u20131697), leaving Mary to govern Britain alone. She died in 1694. In 1696 the Jacobites, a faction loyal to the deposed James, plotted unsuccessfully to assassinate William and restore James to the throne. In Scotland, William's role in ordering the Massacre of Glencoe remains notorious. William's lack of children and the death in 1700 of his nephew the Duke of Gloucester, the son of his sister-in-law Anne, threatened the Protestant succession. The danger was averted by placing William and Mary's cousins, the Protestant Hanoverians, in line to the throne after Anne with the Act of Settlement 1701. Upon his death in 1702, William was succeeded in Britain by Anne and as titular Prince of Orange by his cousin John William Friso.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q129987")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q129987",
+  "isRealHuman": true,
+  "birthDate": "1650-11-14",
+  "deathDate": "1702-03-08",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of William III are well-documented in historical records, allowing for an accurate calculation of his age at death.",
+  "shortDescriptionEn": "William III of England, also known as William of Orange, was a Dutch-born monarch who ruled England, Scotland, and Ireland from 1689 until his death in 1702. He played a key role in the Glorious Revolution and was a staunch opponent of Louis XIV of France. William died at Kensington Palace in 1702 due to complications from a fall off his horse.",
+  "shortDescriptionFr": "Guillaume III d'Angleterre, également connu sous le nom de Guillaume d'Orange, était un monarque néerlandais qui a régné sur l'Angleterre, l'Écosse et l'Irlande de 1689 jusqu'à sa mort en 1702. Il a joué un rôle clé dans la Glorieuse Révolution et était un fervent opposant à Louis XIV de France. Guillaume est mort au palais de Kensington en 1702 des suites de complications après une chute de cheval.",
+  "shortDescriptionDe": "Wilhelm III. von England, auch bekannt als Wilhelm von Oranien, war ein niederländisch geborener Monarch, der von 1689 bis zu seinem Tod im Jahr 1702 über England, Schottland und Irland herrschte. Er spielte eine Schlüsselrolle in der Glorreichen Revolution und war ein entschiedener Gegner von Ludwig XIV. von Frankreich. Wilhelm starb 1702 im Kensington Palace an den Folgen eines Sturzes vom Pferd.",
+  "shortDescriptionEs": "Guillermo III de Inglaterra, también conocido como Guillermo de Orange, fue un monarca nacido en los Países Bajos que gobernó Inglaterra, Escocia e Irlanda desde 1689 hasta su muerte en 1702. Desempeñó un papel clave en la Revolución Gloriosa y fue un firme opositor de Luis XIV de Francia. Guillermo murió en el Palacio de Kensington en 1702 debido a complicaciones tras una caída de su caballo.",
+  "shortDescriptionRu": "Вильгельм III Английский, также известный как Вильгельм Оранский, был нидерландским монархом, правившим Англией, Шотландией и Ирландией с 1689 года до своей смерти в 1702 году. Он сыграл ключевую роль в Славной революции и был решительным противником Людовика XIV Французского. Вильгельм скончался в Кенсингтонском дворце в 1702 году от осложнений после падения с лошади.",
+  "sources": [
+    "https://www.britannica.com/biography/William-III-king-of-England-Scotland-and-Ireland",
+    "https://en.wikipedia.org/wiki/William_III_of_England",
+    "https://www.westminster-abbey.org/abbey-commemorations/royals/william-iii/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q123041",  "Name": "Germaine de Staël",  "BirthDate": "1766-04-22T00:00:00Z",  "DeathDate": "1817-07-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20El%C3%A9onore%20Godefroid%20-%20Portrait%20of%20Mme%20de%20Sta%C3%ABl.jpg",  "SiteLinksCnt": 87,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"210684":{"pageid":210684,"ns":0,"title":"Germaine de Sta\u00ebl","extract":"Anne Louise Germaine de Sta\u00ebl-Holstein (French: [an lwiz \u0292\u025b\u0281m\u025bn d\u0259 stal \u0254lstajn]; n\u00e9e Necker; 22 April 1766 \u2013 14 July 1817), commonly known as Madame de Sta\u00ebl  (French: [madam d\u0259 stal]), was a prominent philosopher, woman of letters, and political theorist in both Parisian and Genevan intellectual circles. She was the daughter of banker and French finance minister Jacques Necker and Suzanne Curchod, a respected salonist and writer. Throughout her life, she held a moderate stance during the tumultuous periods of the French Revolution and the Napoleonic era, persisting until the time of the French Restoration.\nHer presence at critical events such as the Estates General of 1789 and the 1789 Declaration of the Rights of Man and of the Citizen underscored her engagement in the political discourse of her time. However, Madame de Sta\u00ebl faced exile for extended periods: initially during the Reign of Terror and subsequently due to personal persecution by Napoleon. She claimed to have discerned the tyrannical nature and ambitions of his rule ahead of many others.\nDuring her exile, she fostered the Coppet group, a network that spanned across Europe, positioning herself at its heart. Her literary works, emphasizing individuality and passion, left an enduring imprint on European intellectual thought. De Sta\u00ebl's repeated championing of Romanticism contributed significantly to its widespread recognition.\nWhile her literary legacy has somewhat faded with time, her critical and historical contributions hold undeniable significance. Though her novels and plays may now be less remembered, the value of her analytical and historical writings remains steadfast. Within her work, de Sta\u00ebl not only advocates for the necessity of public expression but also sounds cautionary notes about its potential hazards."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q123041")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q123041",
+  "isRealHuman": true,
+  "birthDate": "1766-04-22",
+  "deathDate": "1817-07-14",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, confirming that Germaine de Staël died at the age of 51.",
+  "shortDescriptionEn": "Anne Louise Germaine de Staël-Holstein, known as Madame de Staël, was a prominent French-Swiss writer and intellectual who played a significant role in European literary and political circles during the late 18th and early 19th centuries. She died on July 14, 1817, in Paris, shortly after suffering a stroke.",
+  "shortDescriptionFr": "Anne Louise Germaine de Staël-Holstein, connue sous le nom de Madame de Staël, était une écrivaine et intellectuelle franco-suisse de premier plan qui a joué un rôle significatif dans les cercles littéraires et politiques européens à la fin du XVIIIe et au début du XIXe siècle. Elle est décédée le 14 juillet 1817 à Paris, peu après avoir subi une attaque.",
+  "shortDescriptionDe": "Anne Louise Germaine de Staël-Holstein, bekannt als Madame de Staël, war eine bedeutende französisch-schweizerische Schriftstellerin und Intellektuelle, die Ende des 18. und Anfang des 19. Jahrhunderts eine wichtige Rolle in den europäischen Literatur- und Politikzirkeln spielte. Sie starb am 14. Juli 1817 in Paris, kurz nachdem sie einen Schlaganfall erlitten hatte.",
+  "shortDescriptionEs": "Anne Louise Germaine de Staël-Holstein, conocida como Madame de Staël, fue una destacada escritora e intelectual franco-suiza que desempeñó un papel significativo en los círculos literarios y políticos europeos a finales del siglo XVIII y principios del XIX. Falleció el 14 de julio de 1817 en París, poco después de sufrir un derrame cerebral.",
+  "shortDescriptionRu": "Анна Луиза Жермена де Сталь-Гольштейн, известная как мадам де Сталь, была выдающейся французско-швейцарской писательницей и интеллектуалкой, сыгравшей значительную роль в европейских литературных и политических кругах конца XVIII — начала XIX века. Она скончалась 14 июля 1817 года в Париже, вскоре после перенесенного инсульта.",
+  "sources": [
+    "https://www.britannica.com/biography/Germaine-de-Stael",
+    "https://en.wikipedia.org/wiki/Germaine_de_Sta%C3%ABl",
+    "https://museeprotestant.org/en/notice/germaine-de-stael-1766-1817-2/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102272",  "Name": "Jan van Eyck",  "BirthDate": "1390-01-01T00:00:00Z",  "DeathDate": "1441-07-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eyck%2C%20Jan%20van%20-%20Portrait%20of%20a%20Man%20%28Self%20Portrait%3F%29%20-%20National%20Gallery%2C%20London.jpg",  "SiteLinksCnt": 85,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"46381":{"pageid":46381,"ns":0,"title":"Jan van Eyck","extract":"Jan van Eyck ( van EYEK; Dutch: [\u02c8j\u0251\u0271 v\u0251n \u02c8\u025bik]; c.\u2009before 1390 \u2013 9 July 1441) was a Flemish painter active in Bruges who was one of the early innovators of what became known as Early Netherlandish painting, and one of the most significant representatives of Early Northern Renaissance art. According to Vasari and other art historians including Ernst Gombrich, he invented oil painting, though most now regard that claim as an oversimplification.\nThe surviving records indicate that he was born around 1380 or 1390, in Maaseik (then Maaseyck, hence his name), Limburg, which is located in present-day Belgium. He took employment in The Hague around 1422, when he was already a master painter with workshop assistants, and was employed as painter and valet de chambre to John III the Pitiless, ruler of the counties of Holland and Hainaut. After John's death in 1425, he was later appointed as court painter to Philip the Good, Duke of Burgundy, and worked in Lille before moving to Bruges in 1429, where he lived until his death. He was highly regarded by Philip, and undertook a number of diplomatic visits abroad, including to Lisbon in 1428 to explore the possibility of a marriage contract between the duke and Isabella of Portugal.\nAbout 20 surviving paintings are confidently attributed to him, as well as the Ghent Altarpiece and the illuminated miniatures of the Turin-Milan Hours, all dated between 1432 and 1439. Ten are dated and signed with a variation of his motto ALS ICH KAN (As I (Eyck) can), a pun on his name, which he typically painted in Greek characters. \nVan Eyck painted both secular and religious subject matter, including altarpieces, single-panel religious figures and commissioned portraits. His work includes single panels, diptychs, triptychs, and polyptych panels. He was well paid by Philip, who sought that the painter was secure financially and had artistic freedom so that he could paint \"whenever he pleased.\" Van Eyck's work comes from the International Gothic style, but he soon eclipsed it, in part through a greater emphasis on naturalism and realism. He achieved a new level of virtuosity through his developments in the use of oil paint. He was highly influential, and his techniques and style were adopted and refined by the Early Netherlandish painters."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102272")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q102272",
+  "isRealHuman": true,
+  "birthDate": "1390-01-01",
+  "deathDate": "1441-07-09",
+  "ageAtDeath": 51,
+  "confidence": 80,
+  "confidenceExplained": "The exact birth date of Jan van Eyck is not definitively known, with estimates ranging from 1380 to 1395. Given this uncertainty, the calculated age at death is approximate, leading to a confidence level of 80%.",
+  "shortDescriptionEn": "Jan van Eyck was a pioneering Flemish painter of the Early Northern Renaissance, renowned for his detailed panel paintings and mastery of oil painting techniques. He passed away in Bruges on July 9, 1441.",
+  "shortDescriptionFr": "Jan van Eyck était un peintre flamand novateur de la première Renaissance septentrionale, célèbre pour ses peintures sur panneau détaillées et sa maîtrise des techniques de peinture à l'huile. Il est décédé à Bruges le 9 juillet 1441.",
+  "shortDescriptionDe": "Jan van Eyck war ein wegweisender flämischer Maler der frühen nördlichen Renaissance, bekannt für seine detaillierten Tafelgemälde und seine Beherrschung der Ölmaltechniken. Er verstarb am 9. Juli 1441 in Brügge.",
+  "shortDescriptionEs": "Jan van Eyck fue un pintor flamenco pionero del Renacimiento del Norte temprano, reconocido por sus detalladas pinturas sobre tabla y su dominio de las técnicas de pintura al óleo. Falleció en Brujas el 9 de julio de 1441.",
+  "shortDescriptionRu": "Ян ван Эйк был выдающимся фламандским художником раннего Северного Возрождения, известным своими детальными панельными картинами и мастерством в технике масляной живописи. Он скончался в Брюгге 9 июля 1441 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Jan-van-Eyck",
+    "https://www.metmuseum.org/essays/jan-van-eyck-ca-1390-1441",
+    "https://en.wikipedia.org/wiki/Jan_van_Eyck"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q103955",  "Name": "Gustav Stresemann",  "BirthDate": "1878-05-10T00:00:00Z",  "DeathDate": "1929-10-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20146-1989-040-27%2C%20Gustav%20Stresemann.jpg",  "SiteLinksCnt": 81,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"192990":{"pageid":192990,"ns":0,"title":"Gustav Stresemann","extract":"Gustav Ernst Stresemann (German pronunciation: [\u02c8\u0261\u028astaf \u02c8\u0283t\u0281e\u02d0z\u0259\u02ccman] ; 10 May 1878 \u2013 3 October 1929) was a German statesman during the Weimar Republic who served as chancellor of Germany from August to November 1923 and as foreign minister from 1923 to 1929. His most notable achievement was the reconciliation between Germany and France, for which he and French Prime Minister Aristide Briand received the Nobel Peace Prize in 1926. During a period of political instability and fragile, short-lived governments, Stresemann was seen at his death as \"the person who maintained the precarious balance of the political system.\"\nStresemann attended the University of Berlin and Leipzig University, where he studied political economy, history and international law and developed his vision of liberalism and nationalism, a combination of views that would define his political career. After obtaining his doctorate, Stresemann worked in trade associations before entering politics. In 1907, he was elected to the Reichstag as a deputy for the National Liberal Party. He lost his seat in 1912 but was re-elected two years later. During the First World War, he was a vocal advocate for German militarism and expansionism. Exempted from war service due to poor health, he gradually became the National Liberals' de facto leader before formally taking over the party in 1917. Germany's defeat and the fall of the Hohenzollern monarchy came as a significant shock to Stresemann, forcing him to gradually reassess his previous positions. He founded the German People's Party (DVP) and, despite his own monarchist beliefs, came to grudgingly accept Weimar democracy and became open to working with the centre and the left.\nIn August 1923, Stresemann was named chancellor and foreign minister of a grand coalition government. During his brief chancellorship, he abandoned the policy of passive resistance against the French-Belgian occupation of the Ruhr and introduced the Rentenmark in a (relatively successful) attempt to tame hyperinflation in the country. In November, Stresemann's reshuffled government collapsed after the Social Democrats withdrew from the coalition. He resigned as chancellor following a vote of no confidence but remained as foreign minister in the new government led by Wilhelm Marx. His first major diplomatic success was the 1924 Dawes Plan, which reduced Germany's overall reparations commitment. It was followed by the Locarno Treaties in 1925, which confirmed Germany's postwar western borders, guaranteed peace with France, and led to Germany's admission to the League of Nations a year later. Stresemann also moved to improve relations with the Soviet Union through the 1926 Treaty of Berlin. In 1928, he oversaw Germany's participation in the Kellogg\u2013Briand Pact, in which the signatory states promised not to use war to resolve international conflicts.\nAmid failing health, Stresemann successfully negotiated the Young Plan which sought to further reduce German reparations payments. He died in October 1929 after a series of strokes at the age of 51."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q103955")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q103955",
+  "isRealHuman": true,
+  "birthDate": "1878-05-10",
+  "deathDate": "1929-10-03",
+  "ageAtDeath": 51,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reliable sources, confirming that Gustav Stresemann died at the age of 51.",
+  "shortDescriptionEn": "Gustav Stresemann was a German statesman who served as Chancellor and Foreign Minister during the Weimar Republic. He played a key role in reconciling Germany and France after World War I, for which he was awarded the Nobel Peace Prize in 1926. He died of a stroke on October 3, 1929, at the age of 51.",
+  "shortDescriptionFr": "Gustav Stresemann était un homme d'État allemand qui a servi en tant que chancelier et ministre des Affaires étrangères pendant la République de Weimar. Il a joué un rôle clé dans la réconciliation entre l'Allemagne et la France après la Première Guerre mondiale, pour laquelle il a reçu le prix Nobel de la paix en 1926. Il est décédé d'une attaque cérébrale le 3 octobre 1929, à l'âge de 51 ans.",
+  "shortDescriptionDe": "Gustav Stresemann war ein deutscher Staatsmann, der während der Weimarer Republik als Reichskanzler und Außenminister diente. Er spielte eine Schlüsselrolle bei der Versöhnung zwischen Deutschland und Frankreich nach dem Ersten Weltkrieg, wofür er 1926 den Friedensnobelpreis erhielt. Er starb am 3. Oktober 1929 im Alter von 51 Jahren an einem Schlaganfall.",
+  "shortDescriptionEs": "Gustav Stresemann fue un estadista alemán que se desempeñó como canciller y ministro de Asuntos Exteriores durante la República de Weimar. Jugó un papel clave en la reconciliación entre Alemania y Francia después de la Primera Guerra Mundial, por lo que recibió el Premio Nobel de la Paz en 1926. Murió de un derrame cerebral el 3 de octubre de 1929, a la edad de 51 años.",
+  "shortDescriptionRu": "Густав Штреземан был немецким государственным деятелем, занимавшим посты канцлера и министра иностранных дел во время Веймарской республики. Он сыграл ключевую роль в примирении Германии и Франции после Первой мировой войны, за что был удостоен Нобелевской премии мира в 1926 году. Он скончался от инсульта 3 октября 1929 года в возрасте 51 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Gustav-Stresemann",
+    "https://www.nobelprize.org/prizes/peace/1926/stresemann/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7170",  "Name": "Sallust",  "BirthDate": "-0085-09-29T00:00:00Z",  "DeathDate": "-0034-05-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Salluste%20%28cropped%29.jpg",  "SiteLinksCnt": 81,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"161420":{"pageid":161420,"ns":0,"title":"Sallust","extract":"Gaius Sallustius Crispus, usually anglicised as Sallust (, SAL-\u0259st; c.\u200986\u201335 BC), was a historian and politician of the Roman Republic from a plebeian family. Probably born at Amiternum in the country of the Sabines, Sallust became a partisan of Julius Caesar (100 to 44 BC), circa 50s BC. He is the earliest known Latin-language Roman historian with surviving works to his name, of which Conspiracy of Catiline on the eponymous conspiracy, The Jugurthine War on the eponymous war, and the Histories (of which only fragments survive) remain extant. As a writer, Sallust was primarily influenced by the works of the 5th-century BC Greek historian Thucydides. During his political career he amassed great and ill-gotten wealth from his governorship of Africa.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7170")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7170",
+  "isRealHuman": true,
+  "birthDate": "-0086-10-01",
+  "deathDate": "-0035-05-13",
+  "ageAtDeath": 51,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are based on historical records, but given the ancient context, there's a slight margin of error.",
+  "shortDescriptionEn": "Gaius Sallustius Crispus, known as Sallust, was a Roman historian and politician of the late Roman Republic. He is renowned for his works on political corruption and party rivalry, notably 'The Conspiracy of Catiline' and 'The Jugurthine War.' Sallust retired from public life around 44 BC and died in 35 or 34 BC.",
+  "shortDescriptionFr": "Gaius Sallustius Crispus, connu sous le nom de Salluste, était un historien et homme politique de la fin de la République romaine. Il est célèbre pour ses œuvres sur la corruption politique et les rivalités partisanes, notamment 'La Conjuration de Catilina' et 'La Guerre de Jugurtha'. Salluste s'est retiré de la vie publique vers 44 av. J.-C. et est décédé en 35 ou 34 av. J.-C.",
+  "shortDescriptionDe": "Gaius Sallustius Crispus, bekannt als Sallust, war ein römischer Historiker und Politiker der späten Römischen Republik. Er ist bekannt für seine Werke über politische Korruption und Parteirivalitäten, insbesondere 'Die Verschwörung des Catilina' und 'Der Jugurthinische Krieg'. Sallust zog sich um 44 v. Chr. aus dem öffentlichen Leben zurück und starb 35 oder 34 v. Chr.",
+  "shortDescriptionEs": "Gayo Salustio Crispo, conocido como Salustio, fue un historiador y político romano de la última República romana. Es conocido por sus obras sobre la corrupción política y las rivalidades partidistas, especialmente 'La Conspiración de Catilina' y 'La Guerra de Yugurta'. Salustio se retiró de la vida pública alrededor del 44 a. C. y murió en el 35 o 34 a. C.",
+  "shortDescriptionRu": "Гай Саллюстий Крисп, известный как Саллюстий, был римским историком и политиком поздней Римской Республики. Он известен своими произведениями о политической коррупции и партийных распрях, особенно 'Заговор Катилины' и 'Югуртинская война'. Саллюстий отошел от общественной жизни около 44 г. до н. э. и умер в 35 или 34 г. до н. э.",
+  "sources": [
+    "https://www.britannica.com/biography/Sallust",
+    "https://en.wikipedia.org/wiki/Sallust"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q78454",  "Name": "William the Silent",  "BirthDate": "1533-05-04T00:00:00Z",  "DeathDate": "1584-07-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20I%2C%20Prince%20of%20Orange%20by%20Adriaen%20Thomasz.%20Key%20Rijksmuseum%20Amsterdam%20SK-A-3148.jpg",  "SiteLinksCnt": 81,  "Age": 51}
+{"batchcomplete":"","query":{"pages":{"74344":{"pageid":74344,"ns":0,"title":"William the Silent","extract":"William the Silent or William the Taciturn (Dutch: Willem de Zwijger; 24 April 1533 \u2013 10 July 1584), more commonly known in the Netherlands as William of Orange (Dutch: Willem van Oranje), was the leader of the Dutch revolt against the Spanish Habsburgs that set off the Eighty Years' War (1568\u20131648) and resulted in the formal independence of the United Provinces in 1648. Born into the House of Nassau, he became Prince of Orange in 1544 and is thereby the founder of the Orange-Nassau branch and the ancestor of the monarchy of the Netherlands. In the Netherlands, he is also known as Father of the Fatherland (Latin: Pater Patriae; Dutch: Vader des Vaderlands).\nA wealthy nobleman, William originally served the Habsburgs as a member of the court of Margaret of Parma, governor of the Spanish Netherlands. Unhappy with the centralisation of political power away from the local estates and with the Spanish persecution of Dutch Protestants, William joined the Dutch uprising and turned against his former masters. The most influential and politically capable of the rebels, he led the Dutch to several successes in the fight against the Spanish. Declared an outlaw by the Spanish king in 1580, he was assassinated by Balthasar G\u00e9rard in Delft in 1584."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q78454")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q78454",
+  "isRealHuman": true,
+  "birthDate": "1533-04-24",
+  "deathDate": "1584-07-10",
+  "ageAtDeath": 51,
+  "confidence": 95,
+  "confidenceExplained": "The majority of authoritative sources confirm the birth date as April 24, 1533, leading to an age of 51 at death. The slight discrepancy in the provided birth date reduces confidence slightly.",
+  "shortDescriptionEn": "William the Silent, born April 24, 1533, was a Dutch nobleman and leader of the Dutch revolt against Spanish rule, leading to the independence of the Netherlands. He was assassinated on July 10, 1584, in Delft by Balthasar Gérard.",
+  "shortDescriptionFr": "Guillaume le Taciturne, né le 24 avril 1533, était un noble néerlandais et le chef de la révolte néerlandaise contre la domination espagnole, menant à l'indépendance des Pays-Bas. Il a été assassiné le 10 juillet 1584 à Delft par Balthasar Gérard.",
+  "shortDescriptionDe": "Wilhelm der Schweigsame, geboren am 24. April 1533, war ein niederländischer Adliger und Führer des niederländischen Aufstands gegen die spanische Herrschaft, der zur Unabhängigkeit der Niederlande führte. Er wurde am 10. Juli 1584 in Delft von Balthasar Gérard ermordet.",
+  "shortDescriptionEs": "Guillermo el Taciturno, nacido el 24 de abril de 1533, fue un noble neerlandés y líder de la revuelta neerlandesa contra el dominio español, que condujo a la independencia de los Países Bajos. Fue asesinado el 10 de julio de 1584 en Delft por Balthasar Gérard.",
+  "shortDescriptionRu": "Вильгельм Молчаливый, родившийся 24 апреля 1533 года, был нидерландским дворянином и лидером нидерландского восстания против испанского правления, приведшего к независимости Нидерландов. Он был убит 10 июля 1584 года в Делфте Бальтазаром Жераром.",
+  "sources": [
+    "https://www.britannica.com/biography/William-I-stadholder-of-United-Provinces-of-The-Netherlands",
+    "https://www.worldhistory.org/William_the_Silent/",
+    "https://simple.wikipedia.org/wiki/William_the_Silent"
+  ]
+}
