@@ -1,0 +1,923 @@
+
+
+
+----
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q91",  "Name": "Abraham Lincoln",  "BirthDate": "1809-02-12T00:00:00Z",  "DeathDate": "1865-04-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Abraham%20Lincoln%20O-77%20matte%20collodion%20print.jpg",  "SiteLinksCnt": 285,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"307":{"pageid":307,"ns":0,"title":"Abraham Lincoln","extract":"Abraham Lincoln ( LINK-\u0259n; February 12, 1809 \u2013 April 15, 1865) was the 16th president of the United States, serving from 1861 until his assassination in 1865. He led the United States through the American Civil War, defeating the Confederate States of America, playing a major role in the abolition of slavery, expanding the power of the federal government, and modernizing the U.S. economy.\nLincoln was born into poverty in a log cabin in Kentucky, and was raised on the frontier. He was self-educated and became a lawyer, Whig Party leader, Illinois state legislator, and U.S. representative. Angered by the Kansas\u2013Nebraska Act, which opened the territories to slavery, he became a leader of the new Republican Party. He reached a national audience in the 1858 Senate campaign debates against Stephen A. Douglas. Lincoln ran for president in 1860, sweeping the North to gain victory. Pro-slavery elements in the South viewed his election as a threat to slavery, and Southern states began seceding from the nation. They formed the Confederate States of America, which began seizing federal military bases in the South. A little over one month after Lincoln assumed the presidency, Confederate forces attacked Fort Sumter, a U.S. fort in South Carolina. Following the bombardment, Lincoln mobilized forces to suppress the rebellion and restore the union.\nLincoln, a moderate Republican, had to navigate a contentious array of factions with friends and opponents from both the Democratic and Republican parties. His allies, the War Democrats and the Radical Republicans, demanded harsh treatment of the Southern Confederates. He managed the factions by exploiting their mutual enmity, carefully distributing political patronage, and by appealing to the American people. Anti-war Democrats (called \"Copperheads\") despised Lincoln, and some irreconcilable pro-Confederate elements went so far as to plot his assassination. His Gettysburg Address became one of the most famous speeches in American history. Lincoln closely supervised the strategy and tactics in the war effort, including the selection of generals, and implemented a naval blockade of the South's trade. He suspended habeas corpus in Maryland and elsewhere, and he averted war with Britain by defusing the Trent Affair. In 1863, he issued the Emancipation Proclamation, which declared the slaves in the states \"in rebellion\" to be free. It also directed the Army and Navy to \"recognize and maintain the freedom of said persons\" and to receive them \"into the armed service of the United States.\" Lincoln pressured border states to outlaw slavery, and he promoted the Thirteenth Amendment to the U.S. Constitution, which abolished slavery, except as punishment for a crime. Lincoln managed his own successful re-election campaign. He sought to heal the war-torn nation through reconciliation. On April 14, 1865, just five days after the Confederate surrender at Appomattox, he was attending a play at Ford's Theatre in Washington, D.C., with his wife Mary, when he was fatally shot by Confederate sympathizer John Wilkes Booth.\n\nLincoln is remembered as a martyr and a national hero for his wartime leadership and for his efforts to preserve the Union and abolish slavery. He is often ranked in both popular and scholarly polls as the greatest president in American history.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q91")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q91",
+  "isRealHuman": true,
+  "birthDate": "1809-02-12",
+  "deathDate": "1865-04-15",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates of Abraham Lincoln are well-documented historical facts, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Abraham Lincoln was the 16th President of the United States, leading the nation through the Civil War and working to end slavery. He was assassinated at Ford's Theatre in Washington, D.C., on April 14, 1865, and died the following morning.",
+  "shortDescriptionFr": "Abraham Lincoln était le 16e président des États-Unis, dirigeant le pays pendant la guerre de Sécession et œuvrant pour l'abolition de l'esclavage. Il a été assassiné au théâtre Ford à Washington le 14 avril 1865 et est décédé le lendemain matin.",
+  "shortDescriptionDe": "Abraham Lincoln war der 16. Präsident der Vereinigten Staaten, führte das Land durch den Bürgerkrieg und setzte sich für die Abschaffung der Sklaverei ein. Er wurde am 14. April 1865 im Ford's Theatre in Washington erschossen und starb am nächsten Morgen.",
+  "shortDescriptionEs": "Abraham Lincoln fue el 16º presidente de los Estados Unidos, liderando la nación durante la Guerra Civil y trabajando para abolir la esclavitud. Fue asesinado en el Teatro Ford en Washington D.C. el 14 de abril de 1865 y murió a la mañana siguiente.",
+  "shortDescriptionRu": "Авраам Линкольн был 16-м президентом США, руководил страной во время Гражданской войны и стремился к отмене рабства. Он был убит в театре Форда в Вашингтоне 14 апреля 1865 года и скончался на следующее утро.",
+  "sources": [
+    "https://www.britannica.com/biography/Abraham-Lincoln",
+    "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    "https://www.history.com/this-day-in-history/april-15/president-lincoln-dies"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1048",  "Name": "Julius Caesar",  "BirthDate": "-0099-07-01T00:00:00Z",  "DeathDate": "-0043-03-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaius%20Iulius%20Caesar%20%28Vatican%20Museum%29.jpg",  "SiteLinksCnt": 281,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"15924":{"pageid":15924,"ns":0,"title":"Julius Caesar","extract":"Gaius Julius Caesar (12 July 100 BC \u2013 15 March 44 BC) was a Roman general and statesman. A member of the First Triumvirate, Caesar led the Roman armies in the Gallic Wars before defeating his political rival Pompey in a civil war and subsequently became dictator from 49 BC until his assassination in 44 BC. He played a critical role in the events that led to the demise of the Roman Republic and the rise of the Roman Empire.\nIn 60 BC, Caesar, Crassus, and Pompey formed the First Triumvirate, an informal political alliance that dominated Roman politics for several years. Their attempts to amass political power were opposed by many in the Senate, among them Cato the Younger with the private support of Cicero. Caesar rose to become one of the most powerful politicians in the Roman Republic through a string of military victories in the Gallic Wars, completed by 51 BC, which greatly extended Roman territory. During this time, he both invaded Britain and built a bridge across the river Rhine. These achievements and the support of his veteran army threatened to eclipse the standing of Pompey. The alliance between Caesar and Pompey slowly broke down and, by 50 BC, Pompey had realigned himself with the Senate. With his command expiring and the Gallic Wars largely concluded, the Senate ordered Caesar to step down from his military command and return to Rome. In early January 49 BC, Caesar openly defied the Senate by crossing the Rubicon and marching towards Rome at the head of an army. This began Caesar's civil war, which he won, leaving him in a position of near-unchallenged power and influence in 45 BC.\nAfter assuming control of government and pardoning many of his enemies, Caesar set upon vigorous reform and building programme. He created the Julian calendar to replace the republican lunisolar calendar, reduced the size of the grain dole, settled his veterans in new overseas colonies, greatly increased the size of the Senate, and extended citizenship to communities in Spain and what is now northern Italy. In early 44 BC, he was proclaimed \"dictator for life\" (dictator perpetuo). Fearful of his power, domination of the state, and the possibility that he might make himself king, a group of senators led by Brutus and Cassius assassinated Caesar on the Ides of March (15 March) 44 BC. A new series of civil wars broke out and the constitutional government of the Republic was never fully restored. Caesar's great-nephew and adoptive heir Octavian, later known as Augustus, rose to sole power after defeating his opponents thirteen years later. Octavian then set about solidifying his power, transforming the Republic into the Roman Empire.\nCaesar was an accomplished author and historian; much of his life is known from his own accounts of his military campaigns. Other contemporary sources include the letters and speeches of Cicero and the historical writings of Sallust. Later biographies of Caesar by Suetonius and Plutarch are also important sources. Caesar is considered by many historians to be one of the greatest military commanders in history. His cognomen was subsequently adopted as a synonym for \"emperor\"; the title \"Caesar\" was used throughout the Roman Empire, giving rise to modern descendants such as Kaiser and Tsar. He has frequently appeared in literary and artistic works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1048")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1048",
+  "isRealHuman": true,
+  "birthDate": "-0100-07-12",
+  "deathDate": "-0044-03-15",
+  "ageAtDeath": 55,
+  "confidence": 95,
+  "confidenceExplained": "Historical records consistently indicate Julius Caesar was born on 12 July 100 BC and died on 15 March 44 BC, making him 55 years old at the time of his death. The slight uncertainty arises from ancient calendar discrepancies.",
+  "shortDescriptionEn": "Gaius Julius Caesar (12 July 100 BC – 15 March 44 BC) was a Roman general and statesman who played a critical role in the events leading to the demise of the Roman Republic and the rise of the Roman Empire. He was assassinated by a group of senators on the Ides of March.",
+  "shortDescriptionFr": "Gaius Julius Caesar (12 juillet 100 av. J.-C. – 15 mars 44 av. J.-C.) était un général et homme d'État romain qui joua un rôle clé dans la chute de la République romaine et l'ascension de l'Empire romain. Il fut assassiné par un groupe de sénateurs aux Ides de mars.",
+  "shortDescriptionDe": "Gaius Julius Caesar (12. Juli 100 v. Chr. – 15. März 44 v. Chr.) war ein römischer General und Staatsmann, der maßgeblich zum Untergang der Römischen Republik und zum Aufstieg des Römischen Reiches beitrug. Er wurde an den Iden des März von einer Gruppe Senatoren ermordet.",
+  "shortDescriptionEs": "Gayo Julio César (12 de julio de 100 a.C. – 15 de marzo de 44 a.C.) fue un general y estadista romano que desempeñó un papel crucial en la caída de la República romana y el surgimiento del Imperio romano. Fue asesinado por un grupo de senadores en los Idus de marzo.",
+  "shortDescriptionRu": "Гай Юлий Цезарь (12 июля 100 г. до н.э. – 15 марта 44 г. до н.э.) — римский полководец и государственный деятель, сыгравший ключевую роль в падении Римской республики и становлении Римской империи. Был убит группой сенаторов в Иды марта.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Julius_Caesar",
+    "https://www.britannica.com/biography/Julius-Caesar-Roman-ruler",
+    "https://education.nationalgeographic.org/resource/julius-caesar-assassinated/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q255",  "Name": "Ludwig van Beethoven",  "BirthDate": "1770-12-16T00:00:00Z",  "DeathDate": "1827-03-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Beethoven.jpg",  "SiteLinksCnt": 261,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"17914":{"pageid":17914,"ns":0,"title":"Ludwig van Beethoven","extract":"Ludwig van Beethoven (baptised 17 December 1770 \u2013 26 March 1827) was a German composer and pianist. He is one of the most revered figures in the history of Western music; his works rank among the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music. His early period, during which he forged his craft, is typically considered to have lasted until 1802. From 1802 to around 1812, his middle period showed an individual development from the styles of Joseph Haydn and Wolfgang Amadeus Mozart, and is sometimes characterised as heroic. During this time, Beethoven began to grow increasingly deaf. In his late period, from 1812 to 1827, he extended his innovations in musical form and expression.\nBorn in Bonn, Beethoven displayed his musical talent at a young age. He was initially taught intensively by his father, Johann van Beethoven, and later by Christian Gottlob Neefe. Under Neefe's tutelage in 1783, he published his first work, a set of keyboard variations. He found relief from a dysfunctional home life with the family of Helene von Breuning, whose children he loved, befriended, and taught piano. At age 21, he moved to Vienna, which subsequently became his base, and studied composition with Haydn. Beethoven then gained a reputation as a virtuoso pianist, and was soon patronised by Karl Alois, Prince Lichnowsky for compositions, which resulted in his three Opus 1 piano trios (the earliest works to which he accorded an opus number) in 1795.\nBeethoven's first major orchestral work, the First Symphony, premiered in 1800, and his first set of string quartets was published in 1801. Despite his advancing deafness during this period, he continued to conduct, premiering his Third and Fifth Symphonies in 1804 and 1808, respectively. His Violin Concerto appeared in 1806. His last piano concerto (No. 5, Op. 73, known as the Emperor), dedicated to his frequent patron Archduke Rudolf of Austria, premiered in 1811, without Beethoven as soloist. He was almost completely deaf by 1815, and he then gave up performing and appearing in public. He described his problems with health and his unfulfilled personal life in two letters, his Heiligenstadt Testament (1802) to his brothers and his unsent love letter to an unknown \"Immortal Beloved\" (1812).\nAfter 1810, increasingly less socially involved as his hearing loss worsened, Beethoven composed many of his most admired works, including later symphonies, mature chamber music and the late piano sonatas. His only opera, Fidelio, first performed in 1805, was revised to its final version in 1814. He composed the Missa solemnis between 1819 and 1823 and his final Symphony, No. 9, the first major example of a choral symphony, between 1822 and 1824. Written in his last years, his late string quartets, including the Grosse Fuge, of 1825\u20131826 are among his final achievements. After several months of illness, which left him bedridden, he died on 26 March 1827 at the age of 56."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q255")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q255",
+  "isRealHuman": true,
+  "birthDate": "1770-12-16",
+  "deathDate": "1827-03-26",
+  "ageAtDeath": 56,
+  "confidence": 98,
+  "confidenceExplained": "Beethoven's baptism was recorded on December 17, 1770, and it was customary at the time to baptize infants within 24 hours of birth. Therefore, it's widely accepted that he was born on December 16, 1770. His death on March 26, 1827, is well-documented, making the calculation of his age at death reliable.",
+  "shortDescriptionEn": "Ludwig van Beethoven (born December 16, 1770 – died March 26, 1827) was a German composer and pianist, a pivotal figure in the transition between the Classical and Romantic eras in Western music. Despite becoming almost completely deaf later in life, he composed some of his most important works during this period. He died at the age of 56 in Vienna after a prolonged illness, possibly related to liver disease.",
+  "shortDescriptionFr": "Ludwig van Beethoven (né le 16 décembre 1770 – décédé le 26 mars 1827) était un compositeur et pianiste allemand, figure centrale de la transition entre les époques classique et romantique de la musique occidentale. Malgré une surdité presque totale à la fin de sa vie, il composa certaines de ses œuvres les plus importantes durant cette période. Il est décédé à l'âge de 56 ans à Vienne après une longue maladie, probablement liée à une maladie du foie.",
+  "shortDescriptionDe": "Ludwig van Beethoven (geboren am 16. Dezember 1770 – gestorben am 26. März 1827) war ein deutscher Komponist und Pianist, eine zentrale Figur im Übergang von der Klassik zur Romantik in der westlichen Musik. Trotz nahezu vollständiger Taubheit in seinen späteren Jahren komponierte er einige seiner bedeutendsten Werke. Er starb im Alter von 56 Jahren in Wien nach einer längeren Krankheit, möglicherweise bedingt durch eine Lebererkrankung.",
+  "shortDescriptionEs": "Ludwig van Beethoven (nacido el 16 de diciembre de 1770 – fallecido el 26 de marzo de 1827) fue un compositor y pianista alemán, figura clave en la transición entre el Clasicismo y el Romanticismo en la música occidental. A pesar de quedar casi completamente sordo en sus últimos años, compuso algunas de sus obras más importantes durante este período. Murió a los 56 años en Viena tras una prolongada enfermedad, posiblemente relacionada con una enfermedad hepática.",
+  "shortDescriptionRu": "Людвиг ван Бетховен (родился 16 декабря 1770 года – умер 26 марта 1827 года) был немецким композитором и пианистом, ключевой фигурой в переходе от классической к романтической эпохе в западной музыке. Несмотря на почти полную глухоту в последние годы жизни, он создал некоторые из своих самых значимых произведений в этот период. Он умер в возрасте 56 лет в Вене после продолжительной болезни, возможно, связанной с заболеванием печени.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven",
+    "https://www.britannica.com/biography/Ludwig-van-Beethoven",
+    "https://www.history.com/news/beethoven-death-causes"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1067",  "Name": "Dante Alighieri",  "BirthDate": "1265-01-01T00:00:00Z",  "DeathDate": "1321-09-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Dante.jpg",  "SiteLinksCnt": 260,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"8169":{"pageid":8169,"ns":0,"title":"Dante Alighieri","extract":"Dante Alighieri (Italian: [\u02c8dante ali\u02c8\u0261j\u025b\u02d0ri]; most likely baptized Durante di Alighiero degli Alighieri; c.\u2009May 1265 \u2013 September 14, 1321), widely known mononymously as Dante, was an Italian poet, writer, and philosopher. His Divine Comedy, originally called Comed\u00eca (modern Italian: Commedia) and later christened Divina by Giovanni Boccaccio, is widely considered one of the most important poems of the Middle Ages and the greatest literary work in the Italian language.\nDante is known for establishing the use of the vernacular in literature at a time when most poetry was written in Latin, which was accessible only to educated readers. His De vulgari eloquentia (On Eloquence in the Vernacular) was one of the first scholarly defenses of the vernacular. His use of the Florentine dialect for works such as The New Life (1295) and Divine Comedy helped establish the modern-day standardized Italian language. His work set a precedent that important Italian writers such as Petrarch and Boccaccio would later follow.\nDante was instrumental in establishing the literature of Italy, and is considered to be among the country's national poets and the Western world's greatest literary icons. His depictions of Hell, Purgatory, and Heaven provided inspiration for the larger body of Western art and literature. He influenced English writers such as Geoffrey Chaucer, John Milton, and Alfred Tennyson, among many others. In addition, the first use of the interlocking three-line rhyme scheme, or the terza rima, is attributed to him. He is described as the \"father\" of the Italian language, and in Italy he is often referred to as il Sommo Poeta (\"the Supreme Poet\"). Dante, Petrarch, and Boccaccio are also called the tre corone (\"three crowns\") of Italian literature.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1067")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1067",
+  "isRealHuman": true,
+  "birthDate": "1265-05-21",
+  "deathDate": "1321-09-14",
+  "ageAtDeath": 56,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death years are well-documented. The specific birth date is estimated based on astrological references and scholarly consensus, leading to a high confidence level in the calculated age at death.",
+  "shortDescriptionEn": "Dante Alighieri was a seminal Italian poet and philosopher, best known for 'The Divine Comedy.' Born in Florence in 1265, he was exiled due to political conflicts and spent his later years in Ravenna, where he died in 1321 at the age of 56, likely from malaria contracted during a diplomatic mission.",
+  "shortDescriptionFr": "Dante Alighieri était un poète et philosophe italien majeur, célèbre pour 'La Divine Comédie.' Né à Florence en 1265, il fut exilé pour des raisons politiques et passa ses dernières années à Ravenne, où il mourut en 1321 à l'âge de 56 ans, probablement de la malaria contractée lors d'une mission diplomatique.",
+  "shortDescriptionDe": "Dante Alighieri war ein bedeutender italienischer Dichter und Philosoph, bekannt für 'Die Göttliche Komödie.' Geboren 1265 in Florenz, wurde er aus politischen Gründen verbannt und verbrachte seine letzten Jahre in Ravenna, wo er 1321 im Alter von 56 Jahren vermutlich an Malaria starb, die er sich während einer diplomatischen Mission zugezogen hatte.",
+  "shortDescriptionEs": "Dante Alighieri fue un influyente poeta y filósofo italiano, reconocido por 'La Divina Comedia.' Nacido en Florencia en 1265, fue exiliado por conflictos políticos y pasó sus últimos años en Rávena, donde murió en 1321 a los 56 años, probablemente debido a la malaria contraída durante una misión diplomática.",
+  "shortDescriptionRu": "Данте Алигьери был выдающимся итальянским поэтом и философом, наиболее известным по 'Божественной комедии.' Родился во Флоренции в 1265 году, был изгнан по политическим причинам и провел последние годы в Равенне, где умер в 1321 году в возрасте 56 лет, вероятно, от малярии, подхваченной во время дипломатической миссии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dante_Alighieri",
+    "https://www.britannica.com/biography/Dante-Alighieri",
+    "https://www.squaducation.com/blog/death-dante-alighieri",
+    "https://www.internetculturale.it/directories/ViaggiNelTesto/dante/eng/a28.html",
+    "https://www.biography.com/authors-writers/dante"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q19837",  "Name": "Steve Jobs",  "BirthDate": "1955-02-24T00:00:00Z",  "DeathDate": "2011-10-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Jobs%20Headshot%202010-CROP2.jpg",  "SiteLinksCnt": 224,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"7412236":{"pageid":7412236,"ns":0,"title":"Steve Jobs","extract":"Steven Paul Jobs (February 24, 1955 \u2013 October 5, 2011) was an American businessman, inventor, and investor best known for co-founding the technology company Apple Inc. Jobs was also the founder of NeXT and chairman and majority shareholder of Pixar. He was a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.\nJobs was born in San Francisco in 1955 and adopted shortly afterwards. He attended Reed College in 1972 before withdrawing that same year. In 1974, he traveled through India, seeking enlightenment before later studying Zen Buddhism. He and Wozniak co-founded Apple in 1976 to further develop and sell Wozniak's Apple I personal computer. Together, the duo gained fame and wealth a year later with production and sale of the Apple II, one of the first highly successful mass-produced microcomputers. \nJobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the largely unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh launched the desktop publishing industry in 1985 (for example, the Aldus Pagemaker) with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics and PostScript.\nIn 1985, Jobs departed Apple after a long power struggle with the company's board and its then-CEO, John Sculley. That same year, Jobs took some Apple employees with him to found NeXT, a computer platform development company that specialized in computers for higher-education and business markets, serving as its CEO. In 1986, he bought the computer graphics division of Lucasfilm, which was spun off independently as Pixar. Pixar produced the first computer-animated feature film, Toy Story (1995), and became a leading animation studio, producing dozens of commercially successful and critically acclaimed films.\nIn 1997, Jobs returned to Apple as CEO after the company's acquisition of NeXT. He was largely responsible for reviving Apple, which was on the verge of bankruptcy. He worked closely with British designer Jony Ive to develop a line of products and services that had larger cultural ramifications, beginning with the \"Think different\" advertising campaign, and leading to the iMac, iTunes, Mac OS X, Apple Store, iPod, iTunes Store, iPhone, App Store, and iPad. Jobs was also a board member at Gap Inc. from 1999 to 2002. In 2003, Jobs was diagnosed with a pancreatic neuroendocrine tumor. He died of tumor-related respiratory arrest in 2011; in 2022, he was posthumously awarded the Presidential Medal of Freedom. Since his death, he has won 141 patents; Jobs holds over 450 patents in total."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q19837")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q19837",
+  "isRealHuman": true,
+  "birthDate": "1955-02-24",
+  "deathDate": "2011-10-05",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Steve Jobs (1955–2011) was an American entrepreneur and inventor, best known as the co-founder of Apple Inc. He played a pivotal role in the personal computer revolution and led the development of groundbreaking products like the iPhone and iPad. Jobs passed away at the age of 56 due to complications from a pancreatic neuroendocrine tumor.",
+  "shortDescriptionFr": "Steve Jobs (1955–2011) était un entrepreneur et inventeur américain, surtout connu comme cofondateur d'Apple Inc. Il a joué un rôle clé dans la révolution de l'informatique personnelle et a dirigé le développement de produits révolutionnaires comme l'iPhone et l'iPad. Jobs est décédé à l'âge de 56 ans des suites d'une tumeur neuroendocrine pancréatique.",
+  "shortDescriptionDe": "Steve Jobs (1955–2011) war ein amerikanischer Unternehmer und Erfinder, bekannt als Mitbegründer von Apple Inc. Er spielte eine entscheidende Rolle in der Revolution der Personal Computer und leitete die Entwicklung bahnbrechender Produkte wie dem iPhone und iPad. Jobs starb im Alter von 56 Jahren an den Folgen eines neuroendokrinen Pankreastumors.",
+  "shortDescriptionEs": "Steve Jobs (1955–2011) fue un empresario e inventor estadounidense, conocido por ser cofundador de Apple Inc. Desempeñó un papel fundamental en la revolución de la computación personal y lideró el desarrollo de productos innovadores como el iPhone y el iPad. Jobs falleció a los 56 años debido a complicaciones de un tumor neuroendocrino pancreático.",
+  "shortDescriptionRu": "Стив Джобс (1955–2011) — американский предприниматель и изобретатель, наиболее известный как сооснователь компании Apple Inc. Он сыграл ключевую роль в революции персональных компьютеров и возглавил разработку инновационных продуктов, таких как iPhone и iPad. Джобс скончался в возрасте 56 лет от осложнений, вызванных нейроэндокринной опухолью поджелудочной железы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Steve_Jobs",
+    "https://www.britannica.com/biography/Steve-Jobs",
+    "https://www.biography.com/business-leaders/steve-jobs"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5580",  "Name": "Albrecht Dürer",  "BirthDate": "1471-05-30T00:00:00Z",  "DeathDate": "1528-04-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrer%20Alte%20Pinakothek.jpg",  "SiteLinksCnt": 180,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"2402":{"pageid":2402,"ns":0,"title":"Albrecht D\u00fcrer","extract":"Albrecht D\u00fcrer ( DURE-\u0259r, German: [\u02c8alb\u0281\u025b\u00e7t \u02c8dy\u02d0\u0281\u0250]; 21 May 1471 \u2013 6 April 1528), sometimes spelled in English as Durer, was a German painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, D\u00fcrer established his reputation and influence across Europe in his twenties due to his high-quality woodcut prints. He was in contact with the major Italian artists of his time, including Raphael, Giovanni Bellini and Leonardo da Vinci, and from 1512 was patronized by Emperor Maximilian I.\nD\u00fcrer's vast body of work includes engravings, his preferred technique in his later prints, altarpieces, portraits and self-portraits, watercolours and books. The woodcuts series are stylistically more Gothic than the rest of his work, but revolutionised the potential of that medium, while his extraordinary handling of the burin expanded especially the tonal range of his engravings; well-known engravings include the three Meisterstiche (master prints) Knight, Death and the Devil (1513), Saint Jerome in his Study (1514), and Melencolia I (1514). His watercolours mark him as one of the first European landscape artists.\nD\u00fcrer's introduction of classical motifs  and of the nude into Northern art, through his knowledge of Italian artists and German humanists, has secured his reputation as one of the most important figures of the Northern Renaissance. This is reinforced by his theoretical treatises, which involve principles of mathematics for linear perspective and body proportions.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5580")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5580",
+  "isRealHuman": true,
+  "birthDate": "1471-05-21",
+  "deathDate": "1528-04-06",
+  "ageAtDeath": 55,
+  "confidence": 95,
+  "confidenceExplained": "The age at death is calculated based on widely accepted birth and death dates from reputable sources. The slight discrepancy in the provided data likely stems from historical calendar differences or transcription errors.",
+  "shortDescriptionEn": "Albrecht Dürer was a German Renaissance artist renowned for his paintings, engravings, and theoretical writings. He died at 55, possibly from an illness contracted during his travels.",
+  "shortDescriptionFr": "Albrecht Dürer était un artiste de la Renaissance allemande, célèbre pour ses peintures, gravures et écrits théoriques. Il est décédé à 55 ans, probablement d'une maladie contractée lors de ses voyages.",
+  "shortDescriptionDe": "Albrecht Dürer war ein deutscher Renaissancekünstler, bekannt für seine Gemälde, Kupferstiche und theoretischen Schriften. Er starb im Alter von 55 Jahren, möglicherweise an einer auf Reisen erworbenen Krankheit.",
+  "shortDescriptionEs": "Albrecht Dürer fue un artista del Renacimiento alemán, famoso por sus pinturas, grabados y escritos teóricos. Falleció a los 55 años, posiblemente debido a una enfermedad contraída durante sus viajes.",
+  "shortDescriptionRu": "Альбрехт Дюрер был немецким художником эпохи Возрождения, известным своими картинами, гравюрами и теоретическими трудами. Он умер в возрасте 55 лет, возможно, от болезни, подхваченной во время путешествий.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer",
+    "https://www.britannica.com/biography/Albrecht-Durer-German-artist",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Durer/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7328",  "Name": "Vasco da Gama",  "BirthDate": "1469-01-01T00:00:00Z",  "DeathDate": "1525-01-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ignoto%20portoghese%2C%20ritratto%20di%20un%20cavaliere%20dell%27ordine%20di%20cristo%2C%201525-50%20ca.%2002.jpg",  "SiteLinksCnt": 173,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"45080":{"pageid":45080,"ns":0,"title":"Vasco da Gama","extract":"Vasco da Gama ( VAS-koo d\u0259 GA(H)M-\u0259; European Portuguese: [\u02c8va\u0283ku \u00f0\u0250 \u02c8\u0263\u0250m\u0250]; c.\u20091460s \u2013 24 December 1524), was a Portuguese explorer and nobleman who was the first European to reach India by sea.\nHis initial voyage to India by way of the Cape of Good Hope (1497\u20131499) was the first to link Europe and Asia by an ocean route, connecting the Atlantic and the Indian oceans. This was a milestone in Portuguese maritime exploration which marked the beginning of a sea-based phase of globalization. Da Gama's discovery of the sea route to India opened the way for an age of global imperialism and enabled the Portuguese to establish a long-lasting colonial empire along the way from Africa to Asia. Traveling the ocean route allowed the Portuguese to avoid sailing across the highly disputed Mediterranean Sea and traversing the dangerous Arabian Peninsula. The sum of the distances covered in the outward and return voyages made this expedition the longest ocean voyage ever made until then.\nAfter decades of sailors trying to reach the Indies, with thousands of lives and dozens of vessels lost in shipwrecks and attacks, da Gama landed at Kozhikode on 20 May 1498. Unopposed access to the Indian spice routes boosted the economy of the Portuguese Empire, which was previously based along North and coastal West Africa. The main spices at first obtained from Southeast Asia were pepper and cinnamon, but soon included other products, all new to Europe. Portugal maintained a commercial monopoly of these commodities for several decades. It was not until a century later that other European powers were able to challenge Portugal's monopoly and naval supremacy in the Cape Route.\nDa Gama led two of the Portuguese India Armadas, the first and the fourth. The latter was the largest and departed for India three years after his return from the first one. For his contributions, in 1524 da Gama was appointed Governor of India, with the title of Viceroy, and was ennobled as Count of Vidigueira in 1519. He remains a leading figure in the history of exploration, and homages worldwide have celebrated his explorations and accomplishments. The Portuguese national epic poem, Os Lus\u00edadas, was written in his honour by Lu\u00eds de Cam\u00f5es."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7328")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7328",
+  "isRealHuman": true,
+  "birthDate": "1460-01-01",
+  "deathDate": "1524-12-24",
+  "ageAtDeath": 64,
+  "confidence": 85,
+  "confidenceExplained": "The exact birth date of Vasco da Gama is not definitively known, with estimates ranging between 1460 and 1469. Using 1460 as the birth year provides an approximate age at death of 64. Given the uncertainty, the confidence level is set at 85%.",
+  "shortDescriptionEn": "Vasco da Gama was a Portuguese explorer who pioneered the sea route from Europe to India, significantly impacting global trade. He died of malaria in Cochin, India, in 1524, shortly after becoming Governor of Portuguese India.",
+  "shortDescriptionFr": "Vasco de Gama était un explorateur portugais qui a ouvert la route maritime entre l'Europe et l'Inde, influençant le commerce mondial. Il est mort de la malaria à Cochin, en Inde, en 1524, peu après être devenu gouverneur de l'Inde portugaise.",
+  "shortDescriptionDe": "Vasco da Gama war ein portugiesischer Entdecker, der die Seeroute von Europa nach Indien eröffnete und den globalen Handel beeinflusste. Er starb 1524 in Cochin, Indien, an Malaria, kurz nachdem er Gouverneur von Portugiesisch-Indien geworden war.",
+  "shortDescriptionEs": "Vasco da Gama fue un explorador portugués que abrió la ruta marítima de Europa a la India, impactando el comercio global. Murió de malaria en Cochin, India, en 1524, poco después de convertirse en gobernador de la India portuguesa.",
+  "shortDescriptionRu": "Васко да Гама был португальским исследователем, проложившим морской путь из Европы в Индию, что значительно повлияло на мировой торговлю. Он умер от малярии в Кочине, Индия, в 1524 году, вскоре после назначения губернатором Португальской Индии.",
+  "sources": [
+    "https://www.britannica.com/biography/Vasco-da-Gama",
+    "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+    "https://exploration.marinersmuseum.org/subject/vasco-da-gama/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9387",  "Name": "Max Weber",  "BirthDate": "1864-04-21T00:00:00Z",  "DeathDate": "1920-06-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Max%20Weber%20in%201918.png",  "SiteLinksCnt": 165,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"19455":{"pageid":19455,"ns":0,"title":"Max Weber","extract":"Maximilian Carl Emil Weber (; German: [\u02c8ve\u02d0b\u0250]; 21 April 1864 \u2013 14 June 1920) was a German sociologist, historian, jurist, and political economist who was one of the central figures in the development of sociology and the social sciences more generally. His ideas continue to influence social theory and research.\nBorn in Erfurt in 1864, Weber studied law and history in Berlin, G\u00f6ttingen, and Heidelberg. After earning his doctorate in law in 1889 and habilitation in 1891, he taught in Berlin, Freiburg, and Heidelberg. He married his cousin Marianne Schnitger two years later. In 1897, he had a breakdown after his father died following an argument. Weber ceased teaching and travelled until the early 1900s. He recovered and wrote The Protestant Ethic and the Spirit of Capitalism. During the First World War, he initially supported Germany's war effort but became critical of it and supported democratisation. He also gave the lectures \"Science as a Vocation\" and \"Politics as a Vocation\". After the war, Weber co-founded the German Democratic Party, unsuccessfully ran for office, and advised the drafting of the Weimar Constitution. Becoming frustrated with politics, he resumed teaching in Vienna and Munich. He died of pneumonia in 1920 at the age of 56, possibly as a result of the post-war Spanish flu pandemic. A book, Economy and Society, was left unfinished.\nOne of Weber's main intellectual concerns was in understanding the processes of rationalisation, secularisation, and disenchantment. He formulated a thesis arguing that such processes were associated with the rise of capitalism and modernity. Weber also argued that the Protestant work ethic influenced the creation of capitalism in The Protestant Ethic and the Spirit of Capitalism. It was followed by The Economic Ethics of the World Religions, where he examined the religions of China, India, and ancient Judaism. In terms of government, Weber argued that states were defined by their monopoly on violence and categorised social authority into three distinct forms: charismatic, traditional, and rational-legal. He was also a key proponent of methodological antipositivism, arguing for the study of social action through interpretive rather than purely empiricist methods. Weber made a variety of other contributions to economic sociology, political sociology, and the sociology of religion.\nAfter his death, the rise of Weberian scholarship was slowed by the Weimar Republic's political instability and the rise of Nazi Germany. In the post-war era, organised scholarship began to appear, led by Talcott Parsons. Other American and British scholars were also involved in its development. Over the course of the twentieth century, Weber's reputation rose due to the publication of translations of his works and scholarly interpretations of his life and works. As a result of these works, he began to be regarded as a founding father of sociology, alongside Karl Marx and \u00c9mile Durkheim, and one of the central figures in the development of the social sciences more generally."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9387")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9387",
+  "isRealHuman": true,
+  "birthDate": "1864-04-21",
+  "deathDate": "1920-06-14",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming that Max Weber was 56 years old at the time of his death.",
+  "shortDescriptionEn": "Max Weber (1864–1920) was a German sociologist, historian, jurist, and political economist, recognized as one of the founding figures of sociology. He died at the age of 56 from pneumonia, possibly due to the Spanish flu pandemic.",
+  "shortDescriptionFr": "Max Weber (1864–1920) était un sociologue, historien, juriste et économiste politique allemand, reconnu comme l'un des fondateurs de la sociologie. Il est décédé à l'âge de 56 ans d'une pneumonie, possiblement due à la pandémie de grippe espagnole.",
+  "shortDescriptionDe": "Max Weber (1864–1920) war ein deutscher Soziologe, Historiker, Jurist und Nationalökonom, der als einer der Gründerväter der Soziologie gilt. Er starb im Alter von 56 Jahren an einer Lungenentzündung, möglicherweise infolge der Spanischen Grippe.",
+  "shortDescriptionEs": "Max Weber (1864–1920) fue un sociólogo, historiador, jurista y economista político alemán, reconocido como uno de los fundadores de la sociología. Murió a los 56 años de neumonía, posiblemente debido a la pandemia de gripe española.",
+  "shortDescriptionRu": "Макс Вебер (1864–1920) — немецкий социолог, историк, юрист и политэконом, признанный одним из основателей социологии. Умер в возрасте 56 лет от пневмонии, возможно, вследствие пандемии испанского гриппа.",
+  "sources": [
+    "https://www.britannica.com/biography/Max-Weber-German-sociologist",
+    "https://en.wikipedia.org/wiki/Max_Weber",
+    "https://www.thoughtco.com/max-weber-3026495"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43423",  "Name": "Aesop",  "BirthDate": "-0619-01-01T00:00:00Z",  "DeathDate": "-0563-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aesop%20pushkin01.jpg",  "SiteLinksCnt": 162,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"20012109":{"pageid":20012109,"ns":0,"title":"Aesop","extract":"Aesop ( EE-sop; Ancient Greek: \u0391\u1f34\u03c3\u03c9\u03c0\u03bf\u03c2, A\u00eds\u014dpos; c. 620\u2013564 BCE; formerly rendered as \u00c6sop) was a Greek fabulist and storyteller credited with a number of fables now collectively known as Aesop's Fables. Although his existence remains unclear and no writings by him survive, numerous tales credited to him were gathered across the centuries and in many languages in a storytelling tradition that continues to this day. Many of the tales associated with him are characterized by anthropomorphic animal characters.\nScattered details of Aesop's life can be found in ancient sources, including Aristotle, Herodotus, and Plutarch. An ancient literary work called The Aesop Romance tells an episodic, probably highly fictional version of his life, including the traditional description of him as a strikingly ugly slave (\u03b4\u03bf\u1fe6\u03bb\u03bf\u03c2) who by his cleverness acquires freedom and becomes an adviser to kings and city-states. Older spellings of his name have included Esop(e) and Isope. Depictions of Aesop in popular culture over the last 2,500 years have included many works of art and his appearance as a character in numerous books, films, plays, and television programs.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43423")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43423",
+  "isRealHuman": true,
+  "birthDate": "620-01-01",
+  "deathDate": "564-01-01",
+  "ageAtDeath": 56,
+  "confidence": 50,
+  "confidenceExplained": "The dates and details of Aesop's life are based on ancient sources with varying accounts, leading to moderate confidence in their accuracy.",
+  "shortDescriptionEn": "Aesop was a Greek fabulist credited with numerous fables known as Aesop's Fables. He is traditionally believed to have been executed in Delphi around 564 BCE.",
+  "shortDescriptionFr": "Ésope était un fabuliste grec crédité de nombreuses fables connues sous le nom de Fables d'Ésope. On pense traditionnellement qu'il a été exécuté à Delphes vers 564 av. J.-C.",
+  "shortDescriptionDe": "Äsop war ein griechischer Fabeldichter, dem zahlreiche Fabeln zugeschrieben werden, bekannt als Äsops Fabeln. Er soll traditionell um 564 v. Chr. in Delphi hingerichtet worden sein.",
+  "shortDescriptionEs": "Esopo fue un fabulista griego acreditado con numerosas fábulas conocidas como las Fábulas de Esopo. Se cree tradicionalmente que fue ejecutado en Delfos alrededor del 564 a.C.",
+  "shortDescriptionRu": "Эзоп был греческим баснописцем, которому приписывают многочисленные басни, известные как Басни Эзопа. Традиционно считается, что он был казнен в Дельфах около 564 г. до н.э.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Aesop",
+    "https://www.britannica.com/biography/Aesop"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q79822",  "Name": "Adam Mickiewicz",  "BirthDate": "1798-12-24T00:00:00Z",  "DeathDate": "1855-11-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Mickiewicz%20wed%C5%82ug%20dagerotypu%20paryskiego%20z%201842%20roku.jpg",  "SiteLinksCnt": 128,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"158252":{"pageid":158252,"ns":0,"title":"Adam Mickiewicz","extract":"Adam Bernard Mickiewicz (24 December 1798 \u2013 26 November 1855) was a Polish poet, dramatist, essayist, publicist, translator and political activist. He is regarded as national poet in Poland, Lithuania and Belarus. He also largely influenced Ukrainian literature. A principal figure in Polish Romanticism, he is one of Poland's \"Three Bards\" (Polish: Trzej Wieszcze) and is widely regarded as Poland's greatest poet. He is also considered one of the greatest Slavic and European poets and has been dubbed a \"Slavic bard\". A leading Romantic dramatist, he has been compared in Poland and Europe to Byron and Goethe.\nHe is known chiefly for the poetic drama Dziady (Forefathers' Eve) and the national epic poem Pan Tadeusz. His other influential works include Konrad Wallenrod and Gra\u017cyna. All these served as inspiration for uprisings against the three imperial powers that had partitioned the Polish\u2013Lithuanian Commonwealth out of existence.\nMickiewicz was born in the Russian-partitioned territories of the former Grand Duchy of Lithuania, which had been part of the Polish\u2013Lithuanian Commonwealth, and was active in the struggle to win independence for his home region.  After, as a consequence, spending five years exiled to central Russia, in 1829 he succeeded in leaving the Russian Empire and, like many of his compatriots, lived out the rest of his life abroad.  He settled first in Rome, then in Paris, where for a little over three years he lectured on Slavic literature at the Coll\u00e8ge de France. He was an activist, striving for a democratic and independent Poland. He died, probably of cholera, at Istanbul in the Ottoman Empire, where he had gone to help organize Polish forces to fight Russia in the Crimean War.\nIn 1890, his remains were repatriated from Montmorency, Val-d'Oise, in France, to Wawel Cathedral in Krak\u00f3w, Poland."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q79822")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q79822",
+  "isRealHuman": true,
+  "birthDate": "1798-12-24",
+  "deathDate": "1855-11-26",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and consistently reported across multiple authoritative sources. The calculation is straightforward and based on these precise dates.",
+  "shortDescriptionEn": "Adam Mickiewicz (1798–1855) was a Polish poet, dramatist, essayist, and political activist, regarded as one of Poland's greatest literary figures. He died at 56 in Istanbul, likely from cholera, while organizing Polish forces during the Crimean War.",
+  "shortDescriptionFr": "Adam Mickiewicz (1798–1855) était un poète, dramaturge, essayiste et activiste politique polonais, considéré comme l'une des plus grandes figures littéraires de la Pologne. Il est décédé à 56 ans à Istanbul, probablement du choléra, alors qu'il organisait des forces polonaises pendant la guerre de Crimée.",
+  "shortDescriptionDe": "Adam Mickiewicz (1798–1855) war ein polnischer Dichter, Dramatiker, Essayist und politischer Aktivist, der als eine der größten literarischen Persönlichkeiten Polens gilt. Er starb im Alter von 56 Jahren in Istanbul, vermutlich an Cholera, während er polnische Truppen für den Krimkrieg organisierte.",
+  "shortDescriptionEs": "Adam Mickiewicz (1798–1855) fue un poeta, dramaturgo, ensayista y activista político polaco, considerado una de las figuras literarias más importantes de Polonia. Murió a los 56 años en Estambul, probablemente de cólera, mientras organizaba fuerzas polacas durante la Guerra de Crimea.",
+  "shortDescriptionRu": "Адам Мицкевич (1798–1855) — польский поэт, драматург, эссеист и политический активист, считающийся одним из величайших литературных деятелей Польши. Он умер в возрасте 56 лет в Стамбуле, вероятно, от холеры, организуя польские силы во время Крымской войны.",
+  "sources": [
+    "https://www.britannica.com/biography/Adam-Mickiewicz-Polish-poet",
+    "https://en.wikipedia.org/wiki/Adam_Mickiewicz",
+    "https://www.findagrave.com/memorial/20595626/adam-bernard-mickiewicz",
+    "https://culture.pl/en/artist/adam-mickiewicz"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1267",  "Name": "Dag Hammarskjöld",  "BirthDate": "1905-07-29T00:00:00Z",  "DeathDate": "1961-09-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dag%20Hammarskj%C3%B6ld.jpg",  "SiteLinksCnt": 121,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"236428":{"pageid":236428,"ns":0,"title":"Dag Hammarskj\u00f6ld","extract":"Dag Hjalmar Agne Carl Hammarskj\u00f6ld (English:  HAM-\u0259r-shuuld, Swedish: [\u02c8d\u0251\u02d0\u0261 \u02c8h\u00e2m\u02d0ar\u02cc\u0267\u0153ld] ; 29 July 1905 \u2013 18 September 1961) was a Swedish economist and diplomat who served as the second Secretary-General of the United Nations from April 1953 until his death in a plane crash in September 1961. As of 2025, he remains the youngest person to have held the post, having been only 47 years old when he was appointed. He was a son of Hjalmar Hammarskj\u00f6ld, who served as Prime Minister of Sweden from 1914 to 1917.\nHammarskj\u00f6ld's tenure was characterized by efforts to strengthen the newly-formed UN both internally and externally. He led initiatives to improve morale and organisational efficiency while seeking to make the UN more responsive to global issues. He presided over the creation of the first UN peacekeeping forces in Egypt (the UNEF) and the Congo (the ONUC) and personally intervened to defuse or resolve diplomatic crises. Hammarskj\u00f6ld's second term was cut short when he died in a plane crash while en route to cease-fire negotiations during the Congo Crisis.\nHammarskj\u00f6ld was and remains well regarded internationally as a capable diplomat and administrator, and his efforts to resolve various global crises led to him being the only posthumous recipient of the Nobel Peace Prize. In the Western world, his appointment and tenure were hailed as one of the most notable and successful in UN leadership. U.S. President John F. Kennedy called Hammarskj\u00f6ld \"the greatest statesman of our century\". In the third world, however, his legacy is extremely controversial, given his erratic performance in the Congo Crisis, with consequences to this day."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1267")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1267",
+  "isRealHuman": true,
+  "birthDate": "1905-07-29",
+  "deathDate": "1961-09-18",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Dag Hammarskjöld was a Swedish economist and diplomat who served as the second Secretary-General of the United Nations from 1953 until his death in 1961. He died in a plane crash near Ndola, Northern Rhodesia (now Zambia), while en route to negotiate a ceasefire during the Congo Crisis.",
+  "shortDescriptionFr": "Dag Hammarskjöld était un économiste et diplomate suédois, deuxième Secrétaire général des Nations unies de 1953 jusqu'à sa mort en 1961. Il est décédé dans un crash aérien près de Ndola, en Rhodésie du Nord (aujourd'hui Zambie), alors qu'il se rendait à des négociations de cessez-le-feu pendant la crise du Congo.",
+  "shortDescriptionDe": "Dag Hammarskjöld war ein schwedischer Ökonom und Diplomat, der von 1953 bis zu seinem Tod 1961 als zweiter Generalsekretär der Vereinten Nationen diente. Er starb bei einem Flugzeugabsturz nahe Ndola, Nordrhodesien (heute Sambia), auf dem Weg zu Waffenstillstandsverhandlungen während der Kongo-Krise.",
+  "shortDescriptionEs": "Dag Hammarskjöld fue un economista y diplomático sueco que sirvió como segundo Secretario General de las Naciones Unidas desde 1953 hasta su muerte en 1961. Falleció en un accidente aéreo cerca de Ndola, Rodesia del Norte (actual Zambia), mientras se dirigía a negociar un alto el fuego durante la crisis del Congo.",
+  "shortDescriptionRu": "Даг Хаммаршёльд был шведским экономистом и дипломатом, занимавшим пост второго Генерального секретаря ООН с 1953 года до своей смерти в 1961 году. Он погиб в авиакатастрофе возле Ндолы, Северная Родезия (ныне Замбия), по пути на переговоры о прекращении огня во время кризиса в Конго.",
+  "sources": [
+    "https://www.britannica.com/biography/Dag-Hammarskjold",
+    "https://www.nobelprize.org/prizes/peace/1961/hammarskjold/biographical/",
+    "https://en.wikipedia.org/wiki/Dag_Hammarskj%C3%B6ld",
+    "https://www.un.org/sg/en/formersg/dag-hammarskj%C3%B6ld"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36517",  "Name": "Francis Drake",  "BirthDate": "1540-01-01T00:00:00Z",  "DeathDate": "1596-01-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gheeraerts%20Francis%20Drake%201591.jpg",  "SiteLinksCnt": 118,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"11508":{"pageid":11508,"ns":0,"title":"Francis Drake","extract":"Sir Francis Drake (c. 1540 \u2013 28 January 1596) was an English explorer and privateer best known for his circumnavigation of the world in a single expedition between 1577 and 1580. This was the first English circumnavigation, and second circumnavigation overall. He is also known for participating in the early English slaving voyages of his cousin, Sir John Hawkins, and John Lovell. Having started as a simple seaman, in 1588 he was part of the fight against the Spanish Armada as a vice-admiral. \nAt an early age, Drake was placed into the household of a relative, William Hawkins, a prominent sea captain in Plymouth. In 1572, he set sail on his first independent mission, privateering along the Spanish Main. Drake's circumnavigation began on 15 December 1577. He crossed the Pacific Ocean, until then an area of exclusive Spanish interest, and laid claim to New Albion, plundering coastal towns and ships for treasure and supplies as he went. He arrived back in England on 26 September 1580. Elizabeth I awarded Drake a knighthood in 1581 which he received aboard his galleon the Golden Hind.\nDrake's circumnavigation inaugurated an era of conflict with the Spanish and in 1585, the Anglo-Spanish War began. Drake was in command of an expedition to the Americas that attacked Spanish shipping and ports. When Philip II sent the Spanish Armada to England in 1588 as a precursor to its invasion, Drake was second-in-command of the English fleet that fought against and repulsed the Spanish fleet. A year later he led the English Armada in a failed attempt to destroy the remaining Spanish fleet.\nDrake was a member of parliament (MP) for three constituencies: Camelford in 1581, Bossiney in 1584, and Plymouth in 1593. Drake's exploits made him a hero to the English, but his privateering led the Spanish to brand him a pirate, known to them as El Draque (\"The Dragon\" in old Spanish). He died of dysentery after his failed assault on Panama in January 1596."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36517")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36517",
+  "isRealHuman": true,
+  "birthDate": "1540-01-01",
+  "deathDate": "1596-01-28",
+  "ageAtDeath": 56,
+  "confidence": 70,
+  "confidenceExplained": "The exact birth date of Sir Francis Drake is uncertain, with estimates ranging from 1540 to 1544. The commonly accepted birth year is 1540, making his age at death approximately 56 years. However, due to the variability in sources, the confidence in this exact age is moderate.",
+  "shortDescriptionEn": "Sir Francis Drake was an English explorer and privateer who became the first Englishman to circumnavigate the globe between 1577 and 1580. He played a key role in the defeat of the Spanish Armada in 1588. Drake died of dysentery on January 28, 1596, off the coast of Portobelo, Panama, during an unsuccessful expedition.",
+  "shortDescriptionFr": "Sir Francis Drake était un explorateur et corsaire anglais qui est devenu le premier Anglais à faire le tour du monde entre 1577 et 1580. Il a joué un rôle clé dans la défaite de l'Armada espagnole en 1588. Drake est mort de dysenterie le 28 janvier 1596, au large de Portobelo, au Panama, lors d'une expédition infructueuse.",
+  "shortDescriptionDe": "Sir Francis Drake war ein englischer Entdecker und Freibeuter, der zwischen 1577 und 1580 als erster Engländer die Welt umrundete. Er spielte eine Schlüsselrolle bei der Niederlage der spanischen Armada im Jahr 1588. Drake starb am 28. Januar 1596 an Ruhr vor der Küste von Portobelo, Panama, während einer erfolglosen Expedition.",
+  "shortDescriptionEs": "Sir Francis Drake fue un explorador y corsario inglés que se convirtió en el primer inglés en circunnavegar el globo entre 1577 y 1580. Jugó un papel clave en la derrota de la Armada Española en 1588. Drake murió de disentería el 28 de enero de 1596, frente a la costa de Portobelo, Panamá, durante una expedición fallida.",
+  "shortDescriptionRu": "Сэр Фрэнсис Дрейк был английским исследователем и капером, ставшим первым англичанином, совершившим кругосветное плавание между 1577 и 1580 годами. Он сыграл ключевую роль в разгроме испанской Армады в 1588 году. Дрейк умер от дизентерии 28 января 1596 года у побережья Портобело, Панама, во время неудачной экспедиции.",
+  "sources": [
+    "https://www.britannica.com/biography/Francis-Drake",
+    "https://en.wikipedia.org/wiki/Francis_Drake",
+    "https://www.history.com/articles/sir-francis-drake"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q164047",  "Name": "Alexander Pope",  "BirthDate": "1688-05-31T00:00:00Z",  "DeathDate": "1744-06-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Pope%20by%20Michael%20Dahl.jpg",  "SiteLinksCnt": 117,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"48344":{"pageid":48344,"ns":0,"title":"Alexander Pope","extract":"Alexander Pope (21 May 1688 O.S. \u2013 30 May 1744) was an English poet, translator, and satirist of the Enlightenment era who is considered one of the most prominent English poets of the early 18th century. An exponent of Augustan literature,  Pope is best known for his satirical and discursive poetry including The Rape of the Lock, The Dunciad, and An Essay on Criticism, and for his translations of Homer.\nPope is often quoted in The Oxford Dictionary of Quotations, some of his verses having entered common parlance (e.g. \"damning with faint praise\" or \"to err is human; to forgive, divine\")."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q164047")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q164047",
+  "isRealHuman": true,
+  "birthDate": "1688-05-21",
+  "deathDate": "1744-05-30",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Alexander Pope was an English poet and satirist of the Enlightenment era, renowned for works like 'The Rape of the Lock' and 'An Essay on Criticism.' He died at the age of 56 in Twickenham, England, after suffering from chronic health issues.",
+  "shortDescriptionFr": "Alexander Pope était un poète et satiriste anglais de l'époque des Lumières, célèbre pour des œuvres telles que 'The Rape of the Lock' et 'An Essay on Criticism.' Il est décédé à l'âge de 56 ans à Twickenham, en Angleterre, après avoir souffert de problèmes de santé chroniques.",
+  "shortDescriptionDe": "Alexander Pope war ein englischer Dichter und Satiriker der Aufklärungszeit, bekannt für Werke wie 'The Rape of the Lock' und 'An Essay on Criticism.' Er starb im Alter von 56 Jahren in Twickenham, England, nach langjährigen gesundheitlichen Problemen.",
+  "shortDescriptionEs": "Alexander Pope fue un poeta y satírico inglés de la era de la Ilustración, conocido por obras como 'The Rape of the Lock' y 'An Essay on Criticism.' Murió a los 56 años en Twickenham, Inglaterra, tras sufrir problemas de salud crónicos.",
+  "shortDescriptionRu": "Александр Поуп был английским поэтом и сатириком эпохи Просвещения, известным такими произведениями, как 'The Rape of the Lock' и 'An Essay on Criticism.' Он умер в возрасте 56 лет в Туикенеме, Англия, после продолжительных проблем со здоровьем.",
+  "sources": [
+    "https://www.britannica.com/biography/Alexander-Pope-English-author",
+    "https://en.wikipedia.org/wiki/Alexander_Pope",
+    "https://www.poetryfoundation.org/poets/alexander-pope"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q280856",  "Name": "George VI",  "BirthDate": "1895-12-14T00:00:00Z",  "DeathDate": "1952-02-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/King%20George%20VI%20LOC%20matpc.14736%20A%20%28cropped%29.jpg",  "SiteLinksCnt": 116,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"46755":{"pageid":46755,"ns":0,"title":"George VI","extract":"George VI (Albert Frederick Arthur George; 14 December 1895 \u2013 6 February 1952) was King of the United Kingdom and the Dominions of the British Commonwealth from 11 December 1936 until his death in 1952. He was also the last Emperor of India from 1936 until the British Raj was dissolved in August 1947, and the first head of the Commonwealth following the London Declaration of 1949.\nThe future George VI was born during the reign of his great-grandmother Queen Victoria; he was named Albert at birth after his great-grandfather Prince Albert of Saxe-Coburg and Gotha and was known as \"Bertie\" to his family and close friends. His father ascended the throne as George V in 1910. As the second son of the king, Albert was not expected to inherit the throne. He spent his early life in the shadow of his elder brother, Edward, the heir apparent. Albert attended naval college as a teenager and served in the Royal Navy and Royal Air Force during the First World War. In 1920, he was made Duke of York. He married Lady Elizabeth Bowes-Lyon in 1923, and they had two daughters, Elizabeth and Margaret. In the mid-1920s, he engaged speech therapist Lionel Logue to treat his stutter, which he learned to manage to some degree. His elder brother ascended the throne as Edward VIII after their father died in 1936, but Edward abdicated later that year to marry the twice-divorced American socialite Wallis Simpson. As heir presumptive to Edward VIII, Albert became king, taking the regnal name George VI.\nIn September 1939, the British Empire and most Commonwealth countries\u2014but not Ireland\u2014declared war on Nazi Germany, following the invasion of Poland. War with the Kingdom of Italy and the Empire of Japan followed in 1940 and 1941, respectively. George VI was seen as sharing the hardships of the common people and his popularity soared. Buckingham Palace was bombed during the Blitz while the King and Queen were there, and his younger brother the Duke of Kent was killed on active service. George became known as a symbol of British determination to win the war. Britain and its allies were victorious in 1945, but the British Empire declined. Ireland had largely broken away, followed by the independence of India and Pakistan in 1947. George relinquished the title of Emperor of India in June 1948 and instead adopted the new title of Head of the Commonwealth. He was beset by smoking-related health problems in the later years of his reign and died at Sandringham House, aged 56, of a coronary thrombosis. He was succeeded by his elder daughter, Elizabeth II."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q280856")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q280856",
+  "isRealHuman": true,
+  "birthDate": "1895-12-14",
+  "deathDate": "1952-02-06",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented historical facts, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "George VI (Albert Frederick Arthur George; 14 December 1895 – 6 February 1952) was King of the United Kingdom and the Dominions of the British Commonwealth from 1936 until his death. Known for his leadership during World War II, he died at age 56 from a coronary thrombosis at Sandringham House.",
+  "shortDescriptionFr": "George VI (Albert Frederick Arthur George ; 14 décembre 1895 – 6 février 1952) fut roi du Royaume-Uni et des Dominions du Commonwealth britannique de 1936 jusqu'à sa mort. Connu pour son leadership pendant la Seconde Guerre mondiale, il est décédé à 56 ans d'une thrombose coronaire à Sandringham House.",
+  "shortDescriptionDe": "George VI (Albert Frederick Arthur George; 14. Dezember 1895 – 6. Februar 1952) war von 1936 bis zu seinem Tod König des Vereinigten Königreichs und der Dominions des britischen Commonwealth. Bekannt für seine Führung im Zweiten Weltkrieg, starb er im Alter von 56 Jahren an einer koronaren Thrombose in Sandringham House.",
+  "shortDescriptionEs": "Jorge VI (Albert Frederick Arthur George; 14 de diciembre de 1895 – 6 de febrero de 1952) fue rey del Reino Unido y de los Dominios de la Commonwealth británica desde 1936 hasta su muerte. Conocido por su liderazgo durante la Segunda Guerra Mundial, murió a los 56 años de una trombosis coronaria en Sandringham House.",
+  "shortDescriptionRu": "Георг VI (Альберт Фредерик Артур Джордж; 14 декабря 1895 – 6 февраля 1952) — король Соединённого Королевства и доминионов Британского Содружества с 1936 года до своей смерти. Известен своим лидерством во время Второй мировой войны, скончался в 56 лет от коронарного тромбоза в Сандрингем-хаусе.",
+  "sources": [
+    "https://www.britannica.com/biography/George-VI",
+    "https://en.wikipedia.org/wiki/George_VI",
+    "https://www.royal.uk/george-vi",
+    "https://www.history.com/this-day-in-history/february-6/elizabeth-becomes-queen"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q100948",  "Name": "Rachel Carson",  "BirthDate": "1907-05-27T00:00:00Z",  "DeathDate": "1964-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rachel-Carson.jpg",  "SiteLinksCnt": 105,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"81274":{"pageid":81274,"ns":0,"title":"Rachel Carson","extract":"Rachel Louise Carson (May 27, 1907 \u2013 April 14, 1964) was an American marine biologist, writer, and conservationist whose sea trilogy (1941\u20131955) and book Silent Spring (1962) are credited with advancing marine conservation and the global environmental movement.\nCarson began her career as an aquatic biologist in the U.S. Bureau of Fisheries, and became a full-time nature writer in the 1950s. Her widely praised 1951 bestseller The Sea Around Us won her a U.S. National Book Award, recognition as a gifted writer and financial security. Its success prompted the republication of her first book, Under the Sea Wind (1941), in 1952, which was followed by The Edge of the Sea  in 1955 \u2014 both were also bestsellers. This sea trilogy explores the whole of ocean life from the shores to the depths.\nLate in the 1950s, Carson turned her attention to conservation, especially some problems she believed were caused by synthetic pesticides. The result was the book Silent Spring (1962), which brought environmental concerns to an unprecedented share of the American people. Although Silent Spring was met with fierce opposition by chemical companies, it spurred a reversal in national pesticide policy, which led to a nationwide ban on DDT and other pesticides. It also inspired a grassroots environmental movement that led to the creation of the U.S. Environmental Protection Agency. Carson was posthumously awarded the Presidential Medal of Freedom by President Jimmy Carter."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q100948")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q100948",
+  "isRealHuman": true,
+  "birthDate": "1907-05-27",
+  "deathDate": "1964-04-14",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple authoritative sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Rachel Carson (1907–1964) was an American marine biologist, writer, and conservationist whose book 'Silent Spring' (1962) is credited with advancing the global environmental movement. She died at age 56 from breast cancer.",
+  "shortDescriptionFr": "Rachel Carson (1907–1964) était une biologiste marine, écrivaine et écologiste américaine, dont le livre 'Printemps silencieux' (1962) a contribué au mouvement environnemental mondial. Elle est décédée à 56 ans d'un cancer du sein.",
+  "shortDescriptionDe": "Rachel Carson (1907–1964) war eine US-amerikanische Meeresbiologin, Schriftstellerin und Umweltschützerin. Ihr Buch 'Der stumme Frühling' (1962) gilt als wegweisend für die Umweltbewegung. Sie starb mit 56 Jahren an Brustkrebs.",
+  "shortDescriptionEs": "Rachel Carson (1907–1964) fue una bióloga marina, escritora y conservacionista estadounidense. Su libro 'Primavera silenciosa' (1962) impulsó el movimiento ecologista global. Falleció a los 56 años debido a un cáncer de mama.",
+  "shortDescriptionRu": "Рэйчел Карсон (1907–1964) — американский морской биолог, писательница и эколог. Её книга 'Безмолвная весна' (1962) сыграла ключевую роль в развитии экологического движения. Умерла в возрасте 56 лет от рака груди.",
+  "sources": [
+    "https://www.britannica.com/biography/Rachel-Carson",
+    "https://en.wikipedia.org/wiki/Rachel_Carson",
+    "https://www.womenshistory.org/education-resources/biographies/rachel-carson",
+    "https://www.nps.gov/people/rachel-carson.htm"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q161841",  "Name": "Edward Gibbon",  "BirthDate": "1737-05-08T00:00:00Z",  "DeathDate": "1794-01-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Emily%20Gibbon.jpg",  "SiteLinksCnt": 104,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"10310":{"pageid":10310,"ns":0,"title":"Edward Gibbon","extract":"Edward Gibbon  (; 8 May 1737 \u2013 16 January 1794) was an English essayist, historian, and politician. His most important work, The History of the Decline and Fall of the Roman Empire, published in six volumes between 1776 and 1789, is known for the quality and irony of its prose, its use of primary sources, and its polemical criticism of organized religion."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q161841")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q161841",
+  "isRealHuman": true,
+  "birthDate": "1737-05-08",
+  "deathDate": "1794-01-16",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an accurate calculation of age at death.",
+  "shortDescriptionEn": "Edward Gibbon (1737–1794) was an English historian and politician, renowned for his work 'The History of the Decline and Fall of the Roman Empire.' He died at 56 due to complications from surgical procedures addressing a hydrocele.",
+  "shortDescriptionFr": "Edward Gibbon (1737–1794) était un historien et homme politique anglais, célèbre pour son œuvre 'Histoire de la décadence et de la chute de l'Empire romain.' Il est décédé à 56 ans des suites de complications chirurgicales liées à un hydrocele.",
+  "shortDescriptionDe": "Edward Gibbon (1737–1794) war ein englischer Historiker und Politiker, bekannt für sein Werk 'Verfall und Untergang des Römischen Reiches.' Er starb im Alter von 56 Jahren an Komplikationen nach einer Operation wegen eines Hydrozele.",
+  "shortDescriptionEs": "Edward Gibbon (1737–1794) fue un historiador y político inglés, reconocido por su obra 'Historia de la decadencia y caída del Imperio romano.' Falleció a los 56 años debido a complicaciones quirúrgicas por un hidrocele.",
+  "shortDescriptionRu": "Эдвард Гиббон (1737–1794) — английский историк и политик, известный своей работой 'История упадка и падения Римской империи.' Умер в возрасте 56 лет от осложнений после операции по поводу водянки яичка.",
+  "sources": [
+    "https://www.britannica.com/biography/Edward-Gibbon",
+    "https://en.wikipedia.org/wiki/Edward_Gibbon"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5749",  "Name": "Pierre-Joseph Proudhon",  "BirthDate": "1809-01-15T00:00:00Z",  "DeathDate": "1865-01-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Pierre-Joseph%20Proudhon%20%28cropped%29.jpg",  "SiteLinksCnt": 104,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"40949287":{"pageid":40949287,"ns":0,"title":"Pierre-Joseph Proudhon","extract":"Pierre-Joseph Proudhon (UK: , US: ; French: [pj\u025b\u0281 \u0292oz\u025bf p\u0281ud\u0254\u0303]; 15 January 1809 \u2013 19 January 1865) was a French anarchist, socialist, philosopher, and economist who founded mutualist philosophy and is considered by many to be the \"father of anarchism\". He was the first person to call himself an anarchist, using that term, and is widely regarded as one of anarchism's most influential theorists. Proudhon became a member of the French Parliament after the Revolution of 1848, whereafter he referred to himself as a federalist. Proudhon described the liberty he pursued as the synthesis of community and individualism. Some consider his mutualism to be part of individualist anarchism while others regard it to be part of social anarchism.\nProudhon, who was born in Besan\u00e7on, was a printer who taught himself Latin in order to better print books in the language. His best-known assertion is that \"property is theft!\", contained in his first major work, What Is Property? Or, an Inquiry into the Principle of Right and Government (Qu'est-ce que la propri\u00e9t\u00e9? Recherche sur le principe du droit et du gouvernement), published in 1840. The book's publication attracted the attention of the French authorities. It also attracted the scrutiny of Karl Marx, who started a correspondence with its author. The two influenced each other and they met in Paris while Marx was exiled there. Their friendship finally ended when Marx responded to Proudhon's The System of Economic Contradictions, or The Philosophy of Poverty with the provocatively titled The Poverty of Philosophy. The dispute became one of the sources of the split between the anarchist and Marxist wings of the International Working Men's Association. Some such as Edmund Wilson have contended that Marx's attack on Proudhon had its origin in the latter's defense of Karl Gr\u00fcn, whom Marx bitterly disliked, but who had been preparing translations of Proudhon's work.\nProudhon favored workers' councils and associations or cooperatives as well as individual worker/peasant possession over private ownership or the nationalization of land and workplaces. He considered social revolution to be achievable in a peaceful manner. Proudhon unsuccessfully tried to create a national bank, to be funded by what became an abortive attempt at an income tax on capitalists and shareholders. Similar in some respects to a credit union, it would have given interest-free loans. After the death of his follower Mikhail Bakunin, Proudhon's libertarian socialism diverged into individualist anarchism, collectivist anarchism, anarcho-communism and anarcho-syndicalism, with notable proponents such as Carlo Cafiero, Joseph D\u00e9jacque, Peter Kropotkin and Benjamin Tucker.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5749")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5749",
+  "isRealHuman": true,
+  "birthDate": "1809-01-15",
+  "deathDate": "1865-01-19",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Pierre-Joseph Proudhon (1809–1865) was a French philosopher, economist, and the first person to declare himself an anarchist. He is best known for his assertion 'Property is theft!' and his development of mutualist philosophy. Proudhon died at the age of 56 in Passy, Paris, after a life dedicated to political activism and writing.",
+  "shortDescriptionFr": "Pierre-Joseph Proudhon (1809–1865) était un philosophe et économiste français, premier à se déclarer anarchiste. Connu pour son affirmation 'La propriété, c'est le vol !' et sa philosophie mutualiste, il est décédé à l'âge de 56 ans à Passy, Paris, après une vie consacrée à l'activisme politique et à l'écriture.",
+  "shortDescriptionDe": "Pierre-Joseph Proudhon (1809–1865) war ein französischer Philosoph und Ökonom, der sich als erster als Anarchist bezeichnete. Bekannt für seine Aussage 'Eigentum ist Diebstahl!' und seine mutualistische Philosophie, starb er im Alter von 56 Jahren in Passy, Paris, nach einem Leben voller politischer Aktivität und Schriftstellerei.",
+  "shortDescriptionEs": "Pierre-Joseph Proudhon (1809–1865) fue un filósofo y economista francés, el primero en declararse anarquista. Conocido por su afirmación '¡La propiedad es un robo!' y su filosofía mutualista, murió a los 56 años en Passy, París, tras una vida dedicada al activismo político y la escritura.",
+  "shortDescriptionRu": "Пьер-Жозеф Прудон (1809–1865) — французский философ и экономист, первым назвавший себя анархистом. Известен своей фразой 'Собственность — это кража!' и развитием мутуалистской философии. Умер в возрасте 56 лет в Пасси, Париж, после жизни, посвящённой политической активности и писательству.",
+  "sources": [
+    "https://www.britannica.com/biography/Pierre-Joseph-Proudhon",
+    "https://en.wikipedia.org/wiki/Pierre-Joseph_Proudhon",
+    "https://www.findagrave.com/memorial/7287/pierre_joseph-proudhon"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q936976",  "Name": "Henry IV of France",  "BirthDate": "1553-12-23T00:00:00Z",  "DeathDate": "1610-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20IV%20of%20france%20by%20pourbous%20younger.jpg",  "SiteLinksCnt": 103,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"57876":{"pageid":57876,"ns":0,"title":"Henry IV of France","extract":"Henry IV (French: Henri IV; 13 December 1553 \u2013 14 May 1610), also known by the epithets Good King Henry (le Bon Roi Henri) or Henry the Great (Henri le Grand), was King of Navarre (as Henry III) from 1572 and King of France from 1589 to 1610. He was the first monarch of France from the House of Bourbon, a cadet branch of the Capetian dynasty. He pragmatically balanced the interests of the Catholic and Protestant parties in France, as well as among the European states. He was assassinated in Paris in 1610 by a Catholic zealot, and was succeeded by his son Louis XIII.\nHenry was baptised a Catholic but raised in the Protestant faith by his mother, Queen Jeanne III of Navarre. He inherited the throne of Navarre in 1572 on his mother's death. As a Huguenot (Protestant), Henry was involved in the French Wars of Religion, barely escaping assassination in the St. Bartholomew's Day massacre. He later led Protestant forces against the French royal army. Henry inherited the throne of France in 1589 upon the death of Henry III. Henry IV initially kept the Protestant faith (the only French king to do so) and had to fight against the Catholic League, which refused to accept a Protestant monarch. After four years of military stalemate, Henry converted to Catholicism, reportedly saying that \"Paris is well worth a mass\". As a pragmatic politician (politique), he promulgated the Edict of Nantes (1598), which guaranteed religious liberties to Protestants, thereby effectively ending the French Wars of Religion.\nAn active ruler, Henry worked to regularize state finance, promote agriculture, eliminate corruption, and encourage education. He began the first successful French colonization of the Americas. He promoted trade and industry, and prioritized the construction of roads, bridges, and canals to facilitate communication within France and strengthen the country's cohesion. These efforts stimulated economic growth and improved living standards.\nWhile the Edict of Nantes brought religious peace to France, some hardline Catholics and Huguenots remained dissatisfied, leading to occasional outbreaks of violence and conspiracies. Henry IV also faced resistance from certain noble factions who opposed his centralization policies, leading to political instability. His main foreign policy success was the Peace of Vervins in 1598, which made peace in the long-running conflict with Spain. He formed a strategic alliance with England. He also forged alliances with Protestant states, such as the Dutch Republic and several German states, to counter the Catholic powers. His policies contributed to the stability and prominence of France in European affairs."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q936976")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q936976",
+  "isRealHuman": true,
+  "birthDate": "1553-12-13",
+  "deathDate": "1610-05-14",
+  "ageAtDeath": 56,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records and corroborated by multiple reputable sources, including Britannica and Wikipedia. The age at death is calculated based on these precise dates.",
+  "shortDescriptionEn": "Henry IV of France (1553–1610), also known as 'Good King Henry', was the first monarch of the Bourbon dynasty. He is renowned for issuing the Edict of Nantes in 1598, granting religious freedom to Protestants and ending the French Wars of Religion. His reign focused on economic recovery and infrastructure development. He was assassinated in Paris by François Ravaillac, a Catholic zealot, in 1610.",
+  "shortDescriptionFr": "Henri IV de France (1553–1610), surnommé 'le Bon Roi Henri', fut le premier monarque de la dynastie des Bourbons. Il est célèbre pour avoir promulgué l'Édit de Nantes en 1598, accordant la liberté religieuse aux protestants et mettant fin aux guerres de religion. Son règne visait la reprise économique et le développement des infrastructures. Il fut assassiné à Paris par François Ravaillac, un fanatique catholique, en 1610.",
+  "shortDescriptionDe": "Heinrich IV. von Frankreich (1553–1610), bekannt als 'der gute König Heinrich', war der erste Monarch der Bourbonen-Dynastie. Er erließ 1598 das Edikt von Nantes, das den Protestanten Religionsfreiheit gewährte und die Religionskriege beendete. Seine Regierungszeit war geprägt von wirtschaftlicher Erholung und Infrastrukturentwicklung. 1610 wurde er in Paris von dem katholischen Fanatiker François Ravaillac ermordet.",
+  "shortDescriptionEs": "Enrique IV de Francia (1553–1610), conocido como 'el Buen Rey Enrique', fue el primer monarca de la dinastía Borbón. Es recordado por promulgar el Edicto de Nantes en 1598, que otorgó libertad religiosa a los protestantes y puso fin a las guerras de religión. Su reinado se centró en la recuperación económica y el desarrollo de infraestructuras. Fue asesinado en París por François Ravaillac, un fanático católico, en 1610.",
+  "shortDescriptionRu": "Генрих IV Французский (1553–1610), известный как 'Добрый король Генрих', был первым монархом династии Бурбонов. Он издал Нантский эдикт в 1598 году, предоставивший религиозную свободу протестантам и завершивший религиозные войны. Его правление было направлено на экономическое восстановление и развитие инфраструктуры. В 1610 году он был убит в Париже католическим фанатиком Франсуа Равальяком.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_IV_of_France",
+    "https://www.britannica.com/biography/Henry-IV-king-of-France",
+    "https://www.unofficialroyalty.com/assassination-of-king-henri-iv-of-france-1610/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42188",  "Name": "Abel Tasman",  "BirthDate": "1603-01-01T00:00:00Z",  "DeathDate": "1659-10-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Abel%20Tasman%20Navigateur%20en%20Australie%20%28cropped%29.jpg",  "SiteLinksCnt": 100,  "Age": 56}
+{"batchcomplete":"","query":{"pages":{"1988":{"pageid":1988,"ns":0,"title":"Abel Tasman","extract":"Abel Janszoon Tasman (Dutch: [\u02c8a\u02d0b\u0259l \u02c8j\u0251nso\u02d0n \u02c8t\u0251sm\u0251n]; 1603 \u2013 10 October 1659) was a Dutch seafarer and explorer, best known for his voyages of 1642 and 1644 in the service of the Dutch East India Company (VOC). He was responsible for the naming of New Zealand, as well as being the eponym of Tasmania.\nBorn in 1603 in Lutjegast, Netherlands, Tasman started his career as a merchant seaman and became a skilled navigator. In 1633, he joined the VOC and sailed to Batavia, now Jakarta, Indonesia. He participated in several voyages, including one to Japan. In 1642, Tasman was appointed by the VOC to lead an expedition to explore the uncharted regions of the Southern Pacific Ocean. His mission was to discover new trade routes and to establish trade relations with the native inhabitants. After leaving Batavia, Tasman sailed westward to Mauritius, then south to the Roaring Forties, then eastward, and reached the coast of Tasmania, which he named Van Diemen's Land after his patron. He then sailed north east, and was the first European to discover the west coast of New Zealand, which he named Staten Landt, but later renamed Nieuw Zeeland after the Dutch province of Zeeland.\nDespite his achievements, Tasman's expedition was not entirely successful. The encounter with the M\u0101ori people on the South Island of New Zealand resulted in a violent confrontation, which left four of Tasman's men dead. He returned to Batavia without having made any significant contact with the native inhabitants or establishing any trade relations. Nonetheless, Tasman's expedition paved the way for further exploration and colonization of Australia and New Zealand by the British. Tasman continued to serve the Dutch East India Company until his death in 1659, leaving behind a legacy as one of the greatest explorers of his time.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42188")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42188",
+  "isRealHuman": true,
+  "birthDate": "1603-01-01",
+  "deathDate": "1659-10-10",
+  "ageAtDeath": 56,
+  "confidence": 95,
+  "confidenceExplained": "The birth year of 1603 is widely accepted among historians, though the exact date is uncertain. The death date is recorded as October 1659. Given these dates, the age at death is estimated to be 56 years, with a high degree of confidence.",
+  "shortDescriptionEn": "Abel Tasman was a Dutch explorer born in 1603 in Lutjegast, Netherlands. He is best known for his voyages in the 1640s that led to the European discovery of Tasmania and New Zealand. Tasman died in October 1659 in Batavia at the age of 56.",
+  "shortDescriptionFr": "Abel Tasman était un explorateur néerlandais né en 1603 à Lutjegast, aux Pays-Bas. Il est surtout connu pour ses voyages dans les années 1640 qui ont conduit à la découverte européenne de la Tasmanie et de la Nouvelle-Zélande. Tasman est décédé en octobre 1659 à Batavia à l'âge de 56 ans.",
+  "shortDescriptionDe": "Abel Tasman war ein niederländischer Entdecker, geboren 1603 in Lutjegast, Niederlande. Bekannt wurde er durch seine Reisen in den 1640er Jahren, die zur europäischen Entdeckung von Tasmanien und Neuseeland führten. Tasman starb im Oktober 1659 in Batavia im Alter von 56 Jahren.",
+  "shortDescriptionEs": "Abel Tasman fue un explorador neerlandés nacido en 1603 en Lutjegast, Países Bajos. Es conocido por sus viajes en la década de 1640 que llevaron al descubrimiento europeo de Tasmania y Nueva Zelanda. Tasman murió en octubre de 1659 en Batavia a los 56 años.",
+  "shortDescriptionRu": "Абель Тасман был нидерландским исследователем, родившимся в 1603 году в Лютхегасте, Нидерланды. Он известен своими путешествиями в 1640-х годах, приведшими к европейскому открытию Тасмании и Новой Зеландии. Тасман умер в октябре 1659 года в Батавии в возрасте 56 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Abel_Tasman",
+    "https://www.britannica.com/biography/Abel-Tasman",
+    "https://nzhistory.govt.nz/people/abel-tasman",
+    "https://teara.govt.nz/en/biographies/1t17/tasman-abel-janszoon"
+  ]
+}
