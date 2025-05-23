@@ -1,0 +1,925 @@
+
+
+
+-----
+
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7245",  "Name": "Mark Twain",  "BirthDate": "1835-11-30T00:00:00Z",  "DeathDate": "1910-04-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/MarkTwain.LOC.jpg",  "SiteLinksCnt": 240,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"154450":{"pageid":154450,"ns":0,"title":"Mark Twain","extract":"Samuel Langhorne Clemens (November 30, 1835 \u2013 April 21, 1910), known by the pen name Mark Twain, was an American writer, humorist, and essayist. He was praised as the \"greatest humorist the United States has produced,\" with William Faulkner calling him \"the father of American literature.\" Twain's novels include The Adventures of Tom Sawyer (1876) and its sequel, Adventures of Huckleberry Finn (1884), with the latter often called the \"Great American Novel.\" He also wrote A Connecticut Yankee in King Arthur's Court (1889) and Pudd'nhead Wilson (1894) and cowrote The Gilded Age: A Tale of Today (1873) with Charles Dudley Warner. The novelist Ernest Hemingway claimed that \"All modern American literature comes from one book by Mark Twain called Huckleberry Finn.\"\nTwain was raised in Hannibal, Missouri, which later provided the setting for both Tom Sawyer and Huckleberry Finn. He served an apprenticeship with a printer early in his career, and then worked as a typesetter, contributing articles to his older brother Orion Clemens' newspaper. Twain then became a riverboat pilot on the Mississippi River, which provided him the material for Life on the Mississippi (1883). Soon after, Twain headed west to join Orion in Nevada. He referred humorously to his lack of success at mining, turning to journalism for the Virginia City Territorial Enterprise.\nTwain first achieved success as a writer with the humorous story \"The Celebrated Jumping Frog of Calaveras County,\" which was published in 1865; it was based on a story that he heard at Angels Hotel in Angels Camp, California, where Twain had spent some time while he was working as a miner. The short story brought Twain international attention. He wrote both fiction and non-fiction. As his fame grew, Twain became a much sought-after speaker. His wit and satire, both in prose and in speech, earned praise from critics and peers, and Twain was a friend to presidents, artists, industrialists, and European royalty.\nAlthough Twain initially spoke out in favor of American interests in the Hawaiian Islands, he later reversed his position, going on to become vice president of the American Anti-Imperialist League from 1901 until his death in 1910, coming out strongly against the Philippine\u2013American War and American colonialism. Twain published a satirical pamphlet, \"King Leopold's Soliloquy\", in 1905 about Belgian atrocities in the Congo Free State.\nTwain earned a great deal of money from his writing and lectures, but invested in ventures that lost most of it, such as the Paige Compositor, a mechanical typesetter that failed because of its complexity and imprecision. He filed for bankruptcy in the wake of these financial setbacks, but in time overcame his financial troubles with the help of Standard Oil executive Henry Huttleston Rogers. Twain eventually paid all his creditors in full, even though his declaration of bankruptcy meant he was not required to do so. One hundred years after his death, the first volume of his autobiography was published. Twain was born shortly after an appearance of Halley's Comet and predicted that his death would accompany it as well, writing in 1909: \u201cI came in with Halley\u2019s Comet in 1835; it\u2019s coming again next year, and I expect to go out with it. It would be a great disappointment in my life if I don\u2019t. The Almighty has said, no doubt: 'Now here are these two unaccountable freaks; they came in together, they must go out together.'\" He died a day after the comet was at its closest to the Sun."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7245")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7245",
+  "isRealHuman": true,
+  "birthDate": "1835-11-30",
+  "deathDate": "1910-04-21",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Mark Twain (Samuel Langhorne Clemens) was an American writer and humorist, celebrated for classics like 'The Adventures of Tom Sawyer' and 'Adventures of Huckleberry Finn.' He died of a heart attack at age 74 in Redding, Connecticut, shortly after the return of Halley's Comet, as he had famously predicted.",
+  "shortDescriptionFr": "Mark Twain (Samuel Langhorne Clemens) était un écrivain et humoriste américain, célèbre pour des classiques tels que 'Les Aventures de Tom Sawyer' et 'Les Aventures de Huckleberry Finn.' Il est décédé d'une crise cardiaque à l'âge de 74 ans à Redding, Connecticut, peu après le retour de la comète de Halley, comme il l'avait prédit.",
+  "shortDescriptionDe": "Mark Twain (Samuel Langhorne Clemens) war ein amerikanischer Schriftsteller und Humorist, bekannt für Klassiker wie 'Die Abenteuer des Tom Sawyer' und 'Die Abenteuer des Huckleberry Finn.' Er starb im Alter von 74 Jahren an einem Herzinfarkt in Redding, Connecticut, kurz nach der Rückkehr des Halleyschen Kometen, wie er es vorhergesagt hatte.",
+  "shortDescriptionEs": "Mark Twain (Samuel Langhorne Clemens) fue un escritor y humorista estadounidense, célebre por clásicos como 'Las aventuras de Tom Sawyer' y 'Las aventuras de Huckleberry Finn.' Murió de un ataque al corazón a los 74 años en Redding, Connecticut, poco después del regreso del cometa Halley, como había predicho.",
+  "shortDescriptionRu": "Марк Твен (Сэмюэл Лэнгхорн Клеменс) был американским писателем и юмористом, известным по классическим произведениям 'Приключения Тома Сойера' и 'Приключения Гекльберри Финна.' Он умер от сердечного приступа в возрасте 74 лет в Реддинге, Коннектикут, вскоре после возвращения кометы Галлея, как он сам предсказал.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mark_Twain",
+    "https://www.britannica.com/biography/Mark-Twain",
+    "https://www.washingtonpost.com/books/2025/05/15/mark-twain-ron-chernow-biography-review/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9364",  "Name": "Jean-Paul Sartre",  "BirthDate": "1905-06-21T00:00:00Z",  "DeathDate": "1980-04-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Government%20Press%20Office%20%28GPO%29%20-%20Jean%20Paul%20Sartre%20and%20Simone%20De%20Beauvoir%20welcomed%20by%20Avraham%20Shlonsky%20and%20Leah%20Goldberg%20%28cropped%29.jpg",  "SiteLinksCnt": 194,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"16340":{"pageid":16340,"ns":0,"title":"Jean-Paul Sartre","extract":"Jean-Paul Charles Aymard Sartre (, US also ; French: [sa\u0281t\u0281]; 21 June 1905 \u2013 15 April 1980) was a French philosopher, playwright, novelist, screenwriter, political activist, biographer, and literary critic, considered a leading figure in 20th-century French philosophy and Marxism. Sartre was one of the key figures in the philosophy of existentialism (and phenomenology). His work has influenced sociology, critical theory, post-colonial theory, and literary studies. He was awarded the 1964 Nobel Prize in Literature despite attempting to refuse it, saying that he always declined official honors and that \"a writer should not allow himself to be turned into an institution.\"\nSartre held an open relationship with prominent feminist and fellow existentialist philosopher Simone de Beauvoir. Together, Sartre and de Beauvoir challenged the cultural and social assumptions and expectations of their upbringings, which they considered bourgeois, in both lifestyles and thought. The conflict between oppressive, spiritually destructive conformity (mauvaise foi, literally, 'bad faith') and an \"authentic\" way of \"being\" became the dominant theme of Sartre's early work, a theme embodied in his principal philosophical work Being and Nothingness (L'\u00catre et le N\u00e9ant, 1943). Sartre's introduction to his philosophy is his work Existentialism Is a Humanism (L'existentialisme est un humanisme, 1946), originally presented as a lecture."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9364")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9364",
+  "isRealHuman": true,
+  "birthDate": "1905-06-21",
+  "deathDate": "1980-04-15",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Jean-Paul Sartre (1905–1980) was a French philosopher, playwright, novelist, and political activist, renowned for his contributions to existentialism and Marxism. He declined the 1964 Nobel Prize in Literature, emphasizing his belief that a writer should not become an institution. Sartre died at the age of 74 from pulmonary edema in Paris.",
+  "shortDescriptionFr": "Jean-Paul Sartre (1905–1980) était un philosophe, dramaturge, romancier et militant politique français, célèbre pour ses contributions à l'existentialisme et au marxisme. Il a refusé le prix Nobel de littérature en 1964, affirmant qu'un écrivain ne devait pas devenir une institution. Sartre est décédé à l'âge de 74 ans d'un œdème pulmonaire à Paris.",
+  "shortDescriptionDe": "Jean-Paul Sartre (1905–1980) war ein französischer Philosoph, Dramatiker, Romanautor und politischer Aktivist, bekannt für seine Beiträge zum Existentialismus und Marxismus. 1964 lehnte er den Literaturnobelpreis ab, da er der Meinung war, ein Schriftsteller solle keine Institution werden. Sartre starb im Alter von 74 Jahren an einem Lungenödem in Paris.",
+  "shortDescriptionEs": "Jean-Paul Sartre (1905–1980) fue un filósofo, dramaturgo, novelista y activista político francés, reconocido por sus aportes al existencialismo y al marxismo. Rechazó el Premio Nobel de Literatura en 1964, argumentando que un escritor no debe convertirse en una institución. Sartre falleció a los 74 años debido a un edema pulmonar en París.",
+  "shortDescriptionRu": "Жан-Поль Сартр (1905–1980) — французский философ, драматург, романист и политический активист, известный своими трудами по экзистенциализму и марксизму. В 1964 году он отказался от Нобелевской премии по литературе, считая, что писатель не должен становиться институтом. Сартр умер в возрасте 74 лет от отека легких в Париже.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean-Paul_Sartre",
+    "https://www.britannica.com/biography/Jean-Paul-Sartre",
+    "https://www.nobelprize.org/prizes/literature/1964/sartre/biographical/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34787",  "Name": "Friedrich Engels",  "BirthDate": "1820-11-28T00:00:00Z",  "DeathDate": "1895-08-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Engels%20painting2.jpg",  "SiteLinksCnt": 191,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"47096":{"pageid":47096,"ns":0,"title":"Friedrich Engels","extract":"Friedrich Engels ( ENG-g\u0259lz; German: [\u02c8f\u0281i\u02d0d\u0281\u026a\u00e7 \u02c8\u0294\u025b\u014bl\u0329s]; 28 November 1820 \u2013 5 August 1895; in English also spelt as \"Frederick Engels\") was a German philosopher, political theorist, historian, journalist, and revolutionary socialist. He was also a businessman and Karl Marx's lifelong friend and closest collaborator, serving as a leading authority on Marxism.\nEngels, the son of a wealthy textile manufacturer, met Marx in 1844. They jointly authored works including The Holy Family (1844), The German Ideology (written 1846), and The Communist Manifesto (1848), and worked as political organisers and activists in the Communist League and First International. Engels also supported Marx financially for much of his life, enabling him to continue writing after he moved to London in 1849. After Marx's death in 1883, Engels edited from manuscript and completed Volumes II and III of his Das Kapital (1885 and 1894).\nEngels wrote several important works of his own, including The Condition of the Working Class in England (1845), Anti-D\u00fchring (1878), Dialectics of Nature (1878\u20131882), The Origin of the Family, Private Property and the State (1884), and Ludwig Feuerbach and the End of Classical German Philosophy (1886)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34787")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q34787",
+  "isRealHuman": true,
+  "birthDate": "1820-11-28",
+  "deathDate": "1895-08-05",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Friedrich Engels (1820–1895) was a German philosopher, political theorist, and revolutionary socialist. As Karl Marx's close collaborator, he co-authored 'The Communist Manifesto' and supported Marx financially. Engels died of throat cancer at age 74 in London, with his ashes scattered off Beachy Head.",
+  "shortDescriptionFr": "Friedrich Engels (1820–1895) était un philosophe, théoricien politique et socialiste révolutionnaire allemand. Collaborateur proche de Karl Marx, il a coécrit 'Le Manifeste du Parti communiste' et soutenu Marx financièrement. Engels est mort d'un cancer de la gorge à 74 ans à Londres, ses cendres ayant été dispersées au large de Beachy Head.",
+  "shortDescriptionDe": "Friedrich Engels (1820–1895) war ein deutscher Philosoph, politischer Theoretiker und revolutionärer Sozialist. Als enger Mitarbeiter von Karl Marx verfasste er gemeinsam mit ihm das 'Kommunistische Manifest' und unterstützte Marx finanziell. Engels starb im Alter von 74 Jahren in London an Kehlkopfkrebs; seine Asche wurde vor Beachy Head verstreut.",
+  "shortDescriptionEs": "Friedrich Engels (1820–1895) fue un filósofo, teórico político y socialista revolucionario alemán. Colaborador cercano de Karl Marx, coescribió 'El Manifiesto Comunista' y lo apoyó financieramente. Engels murió de cáncer de garganta a los 74 años en Londres, y sus cenizas fueron esparcidas frente a Beachy Head.",
+  "shortDescriptionRu": "Фридрих Энгельс (1820–1895) — немецкий философ, политический теоретик и революционный социалист. Близкий соратник Карла Маркса, он соавтор 'Манифеста Коммунистической партии' и оказывал Марксу финансовую поддержку. Энгельс скончался от рака горла в возрасте 74 лет в Лондоне, его прах был развеян у Бичи-Хеда.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Friedrich_Engels",
+    "https://www.britannica.com/biography/Friedrich-Engels",
+    "https://www.thefamouspeople.com/profiles/friedrich-engels-3785.php",
+    "https://happyhappybirthday.net/en/age/friedrich-engels-person_xsuqu",
+    "https://www.bornglorious.com/person/?pi=34787"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1047",  "Name": "Jawaharlal Nehru",  "BirthDate": "1889-11-14T00:00:00Z",  "DeathDate": "1964-05-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jnehru.jpg",  "SiteLinksCnt": 185,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"16243":{"pageid":16243,"ns":0,"title":"Jawaharlal Nehru","extract":"Jawaharlal Nehru (14 November 1889 \u2013 27 May 1964) was an Indian anti-colonial nationalist, secular humanist, social democrat, and statesman who was a central figure in India during the middle of the 20th century. Nehru was a principal leader of the Indian nationalist movement in the 1930s and 1940s.  Upon India's independence in 1947, he served as the country's first prime minister for 16 years. Nehru promoted parliamentary democracy, secularism, and science and technology during the 1950s, powerfully influencing India's arc as a modern nation. In international affairs, he steered India clear of the two blocs of the Cold War.  A well-regarded author, he wrote books such as Letters from a Father to His Daughter (1929), An Autobiography (1936) and The Discovery of India (1946), that have been read around the world.\nThe son of Motilal Nehru, a prominent lawyer and Indian nationalist, Jawaharlal Nehru was educated in England\u2014at Harrow School and Trinity College, Cambridge, and trained in the law at the Inner Temple. He became a barrister, returned to India, enrolled at the Allahabad High Court and gradually became interested in national politics, which eventually became a full-time occupation. He joined the Indian National Congress, rose to become the leader of a progressive faction during the 1920s, and eventually of the Congress, receiving the support of Mahatma Gandhi, who was to designate Nehru as his political heir. As Congress president in 1929, Nehru called for complete independence from the British Raj.\nNehru and the Congress dominated Indian politics during the 1930s. Nehru promoted the idea of the secular nation-state in the 1937 provincial elections, allowing the Congress to sweep the elections and form governments in several provinces. In September 1939, the Congress ministries resigned to protest Viceroy Lord Linlithgow's decision to join the war without consulting them. After the All India Congress Committee's Quit India Resolution of 8 August 1942, senior Congress leaders were imprisoned, and for a time, the organisation was suppressed. Nehru, who had reluctantly heeded Gandhi's call for immediate independence, and had desired instead to support the Allied war effort during World War II, came out of a lengthy prison term to a much altered political landscape. Under Muhammad Ali Jinnah, the Muslim League had come to dominate Muslim politics in the interim. In the 1946 provincial elections, Congress won the elections, but the League won all the seats reserved for Muslims, which the British interpreted as a clear mandate for Pakistan in some form. Nehru became the interim prime minister of India in September 1946 and the League joined his government with some hesitancy in October 1946.\nUpon India's independence on 15 August 1947, Nehru gave a critically acclaimed speech, \"Tryst with Destiny\"; he was sworn in as the Dominion of India's prime minister and raised the Indian flag at the Red Fort in Delhi. On 26 January 1950, when India became a republic within the Commonwealth of Nations, Nehru became the Republic of India's first prime minister. He embarked on an ambitious economic, social, and political reform programme. Nehru promoted a pluralistic multi-party democracy. In foreign affairs, he led the establishment the Non-Aligned Movement, a group of nations that did not seek membership in the two main ideological blocs of the Cold War. Under Nehru's leadership, the Congress dominated national and state-level politics and won elections in 1951, 1957 and 1962. He died in office from a heart attack in 1964. His birthday is celebrated as Children's Day in India."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1047")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1047",
+  "isRealHuman": true,
+  "birthDate": "1889-11-14",
+  "deathDate": "1964-05-27",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Jawaharlal Nehru (1889–1964) was the first Prime Minister of independent India, serving from 1947 until his death. A central figure in Indian politics, he was instrumental in the country's transition to a republic. Nehru died of a heart attack on May 27, 1964, at the age of 74.",
+  "shortDescriptionFr": "Jawaharlal Nehru (1889–1964) fut le premier Premier ministre de l'Inde indépendante, en fonction de 1947 jusqu'à sa mort. Figure centrale de la politique indienne, il joua un rôle clé dans la transition du pays vers une république. Nehru est décédé d'une crise cardiaque le 27 mai 1964, à l'âge de 74 ans.",
+  "shortDescriptionDe": "Jawaharlal Nehru (1889–1964) war der erste Premierminister des unabhängigen Indien und amtierte von 1947 bis zu seinem Tod. Als zentrale Figur in der indischen Politik spielte er eine entscheidende Rolle beim Übergang des Landes zur Republik. Nehru starb am 27. Mai 1964 im Alter von 74 Jahren an einem Herzinfarkt.",
+  "shortDescriptionEs": "Jawaharlal Nehru (1889–1964) fue el primer Primer Ministro de la India independiente, sirviendo desde 1947 hasta su muerte. Figura central en la política india, fue fundamental en la transición del país a una república. Nehru falleció de un ataque al corazón el 27 de mayo de 1964, a los 74 años.",
+  "shortDescriptionRu": "Джавахарлал Неру (1889–1964) был первым премьер-министром независимой Индии, занимая этот пост с 1947 года до своей смерти. Ключевая фигура в индийской политике, он сыграл важную роль в переходе страны к республике. Неру скончался от сердечного приступа 27 мая 1964 года в возрасте 74 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jawaharlal_Nehru",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Jawaharlal_Nehru",
+    "https://www.britannica.com/biography/Jawaharlal-Nehru",
+    "https://www.bbc.co.uk/history/historic_figures/nehru_jawaharlal.shtml"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36107",  "Name": "Muhammad Ali",  "BirthDate": "1942-01-17T00:00:00Z",  "DeathDate": "2016-06-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ali%2C%20gtfy.00140.jpg",  "SiteLinksCnt": 181,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"63747":{"pageid":63747,"ns":0,"title":"Muhammad Ali","extract":"Muhammad Ali (; born Cassius Marcellus Clay Jr.; January 17, 1942 \u2013 June 3, 2016) was an American professional boxer and social activist. A global cultural icon, widely known by the epithet \"The Greatest\", he is frequently cited as the greatest heavyweight boxer of all time. He held the Ring magazine heavyweight title from 1964 to 1970, was the undisputed champion from 1974 to 1978, and was the WBA and Ring heavyweight champion from 1978 to 1979. In 1999, he was named Sportsman of the Century by Sports Illustrated and the Sports Personality of the Century by the BBC.\nBorn in Louisville, Kentucky, he began training as an amateur boxer at age 12. At 18, he won a gold medal in the light heavyweight division at the 1960 Summer Olympics and turned professional later that year. He joined the Nation of Islam in the early 1960s, but later disavowed it in the mid-1970s. He won the world heavyweight championship, defeating Sonny Liston in a major upset on February 25, 1964, at age 22. During that year, he denounced his birth name as a \"slave name\" and formally changed his name to Muhammad Ali. In 1967, Ali refused to be drafted into the military, owing to his religious beliefs and ethical opposition to the Vietnam War, and was found guilty of draft evasion and stripped of his boxing titles. He stayed out of prison while appealing the decision to the Supreme Court, where his conviction was overturned in 1971. He did not fight for nearly four years and lost a period of peak performance as an athlete. Ali's actions as a conscientious objector to the Vietnam War made him an icon for the larger counterculture of the 1960s generation, and became a prominent, high-profile figure of racial pride for African Americans during the civil rights movement and throughout his career. \nHe fought in several historic boxing matches, including his highly publicized fights with Sonny Liston, Joe Frazier (including the Fight of the Century, the biggest boxing event up until then), the Thrilla in Manila, and his fight with George Foreman in The Rumble in the Jungle. Ali thrived in the spotlight at a time when many boxers let their managers do the talking, and he became renowned for his provocative and outlandish persona. He was famous for trash-talking, often free-styled with rhyme schemes and spoken word poetry, and has been recognized as a pioneer in hip hop. He often predicted in which round he would knock out his opponent. As a boxer, Ali was known for his unorthodox movement, fancy footwork, head movement, and rope-a-dope technique, among others.\nOutside boxing, Ali attained success as a spoken word artist, releasing two studio albums: I Am the Greatest! (1963) and The Adventures of Ali and His Gang vs. Mr. Tooth Decay (1976). Both albums received Grammy Award nominations. He also featured as an actor and writer, releasing two autobiographies. Ali retired from boxing in 1981 and focused on religion, philanthropy, and activism. In 1984, he made public his diagnosis of Parkinson's syndrome, which some reports attributed to boxing-related injuries, though he and his specialist physicians disputed this. He remained an active public figure globally, but in his later years made fewer public appearances as his condition worsened, and was cared for by his family."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36107")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36107",
+  "isRealHuman": true,
+  "birthDate": "1942-01-17",
+  "deathDate": "2016-06-03",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted, allowing for an exact age calculation.",
+  "shortDescriptionEn": "Muhammad Ali (born Cassius Marcellus Clay Jr.) was an American professional boxer and social activist, widely regarded as one of the greatest heavyweight boxers in history. He passed away at 74 due to septic shock, after a long battle with Parkinson's disease.",
+  "shortDescriptionFr": "Muhammad Ali (né Cassius Marcellus Clay Jr.) était un boxeur professionnel et militant social américain, considéré comme l'un des plus grands poids lourds de l'histoire. Il est décédé à 74 ans des suites d'un choc septique, après une longue lutte contre la maladie de Parkinson.",
+  "shortDescriptionDe": "Muhammad Ali (geboren als Cassius Marcellus Clay Jr.) war ein amerikanischer Profiboxer und sozialer Aktivist, der als einer der größten Schwergewichtsboxer der Geschichte gilt. Er starb im Alter von 74 Jahren an septischem Schock nach einem langen Kampf gegen die Parkinson-Krankheit.",
+  "shortDescriptionEs": "Muhammad Ali (nacido como Cassius Marcellus Clay Jr.) fue un boxeador profesional y activista social estadounidense, ampliamente considerado como uno de los más grandes pesos pesados de la historia. Falleció a los 74 años debido a un shock séptico, tras una larga batalla contra la enfermedad de Parkinson.",
+  "shortDescriptionRu": "Мухаммед Али (при рождении Кассиус Марцеллус Клей-младший) был американским профессиональным боксёром и общественным деятелем, широко признанным одним из величайших тяжеловесов в истории. Он скончался в возрасте 74 лет от септического шока после долгой борьбы с болезнью Паркинсона.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Muhammad_Ali",
+    "https://www.britannica.com/biography/Muhammad-Ali-boxer",
+    "https://www.bbc.com/news/health-36455016",
+    "https://www.bbc.com/news/world-us-canada-16011175"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3044",  "Name": "Charles the Great",  "BirthDate": "0740-01-01T00:00:00Z",  "DeathDate": "0814-02-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charlemagne%20denier%20Mayence%20812%20814.jpg",  "SiteLinksCnt": 177,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"5314":{"pageid":5314,"ns":0,"title":"Charlemagne","extract":"Charlemagne ( SHAR-l\u0259-mayn; 2 April 748 \u2013 28 January 814) was King of the Franks from 768, King of the Lombards from 774, and Emperor of what is now known as the Carolingian Empire from 800, holding these titles until his death in 814. He united most of Western and Central Europe, and was the first recognised emperor to rule from the west after the fall of the Western Roman Empire approximately three centuries earlier. Charlemagne's reign was marked by political and social changes that had lasting influence on Europe throughout the Middle Ages.\nA member of the Frankish Carolingian dynasty, Charlemagne was the eldest son of Pepin the Short and Bertrada of Laon. With his brother, Carloman I, he became king of the Franks in 768 following Pepin's death and became the sole ruler three years later. Charlemagne continued his father's policy of protecting the papacy and became its chief defender, removing the Lombards from power in northern Italy in 774. His reign saw a period of expansion that led to the conquests of Bavaria, Saxony, and northern Spain, as well as other campaigns that led Charlemagne to extend his rule over a large part of Europe. Charlemagne spread Christianity to his new conquests (often by force), as seen at the Massacre of Verden against the Saxons. He also sent envoys and initiated diplomatic contact with the Abbasid caliph Harun al-Rashid in the 790s, due to their mutual interest in Iberian affairs.\nIn 800, Charlemagne was crowned emperor in Rome by Pope Leo III. Although historians debate the coronation's significance, the title represented the height of his prestige and authority. Charlemagne's position as the first emperor in the West in over 300 years brought him into conflict with the Eastern Roman Empire in Constantinople. Through his assumption of the imperial title, he is considered the forerunner to the line of Holy Roman Emperors, which persisted into the nineteenth century. As king and emperor, Charlemagne engaged in a number of reforms in administration, law, education, military organisation, and religion, which shaped Europe for centuries. The stability of his reign began a period of cultural activity known as the Carolingian Renaissance.\nCharlemagne died in 814 and was buried at Aachen Cathedral in Aachen, his imperial capital city. He was succeeded by his only surviving legitimate son, Louis the Pious. After Louis, the Frankish kingdom was divided and eventually coalesced into West and East Francia, which later became France and Germany, respectively. Charlemagne's profound influence on the Middle Ages and influence on the territory he ruled has led him to be called the \"Father of Europe\" by many historians. He is seen as a founding figure by multiple European states and a number of historical royal houses of Europe trace their lineage back to him. Charlemagne has been the subject of artworks, monuments and literature during and after the medieval period and is venerated by the Catholic Church.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3044")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q3044",
+  "isRealHuman": true,
+  "birthDate": "0748-04-02",
+  "deathDate": "0814-01-28",
+  "ageAtDeath": 65,
+  "confidence": 90,
+  "confidenceExplained": "The birth year of 748 is supported by recent scholarly consensus, though earlier sources suggest 742. Given the death date is well-documented, the calculated age at death is approximately 65 years.",
+  "shortDescriptionEn": "Charlemagne (Charles the Great) was King of the Franks, King of the Lombards, and the first Holy Roman Emperor. He united much of Western and Central Europe during the early Middle Ages and spearheaded the Carolingian Renaissance. He died in 814 in Aachen, likely from a lung infection.",
+  "shortDescriptionFr": "Charlemagne (Charles le Grand) fut roi des Francs, roi des Lombards et premier empereur du Saint-Empire romain germanique. Il unifia une grande partie de l'Europe occidentale et centrale au début du Moyen Âge et initia la Renaissance carolingienne. Il mourut en 814 à Aix-la-Chapelle, probablement d'une infection pulmonaire.",
+  "shortDescriptionDe": "Karl der Große war König der Franken, König der Langobarden und erster Kaiser des Heiligen Römischen Reiches. Er vereinte große Teile West- und Mitteleuropas im frühen Mittelalter und leitete die karolingische Renaissance ein. Er starb 814 in Aachen, vermutlich an einer Lungeninfektion.",
+  "shortDescriptionEs": "Carlomagno (Carlos el Grande) fue rey de los francos, rey de los lombardos y el primer emperador del Sacro Imperio Romano Germánico. Unificó gran parte de Europa occidental y central durante la Alta Edad Media y promovió el Renacimiento carolingio. Murió en 814 en Aquisgrán, probablemente debido a una infección pulmonar.",
+  "shortDescriptionRu": "Карл Великий был королем франков, королем лангобардов и первым императором Священной Римской империи. Он объединил большую часть Западной и Центральной Европы в раннем Средневековье и инициировал Каролингское возрождение. Умер в 814 году в Ахене, вероятно, от легочной инфекции.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charlemagne",
+    "https://www.britannica.com/biography/Charlemagne",
+    "https://www.history.com/articles/charlemagne"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q48305",  "Name": "Euripides",  "BirthDate": "-0480-01-01T00:00:00Z",  "DeathDate": "-0406-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Euripides%20Pio-Clementino%20Inv302.jpg",  "SiteLinksCnt": 151,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"9808":{"pageid":9808,"ns":0,"title":"Euripides","extract":"Euripides (c.\u2009480 \u2013 c.\u2009406 BC) was a Greek tragedian of classical Athens. Along with Aeschylus and Sophocles, he is one of the three ancient Greek tragedians for whom any plays have survived in full. Some ancient scholars attributed ninety-five plays to him, but the Suda says it was ninety-two at most. Of these, eighteen or nineteen have survived more or less complete (Rhesus is suspect). There are many fragments (some substantial) of most of his other plays. More of his plays have survived intact than those of Aeschylus and Sophocles together, partly because his popularity grew as theirs declined\u2014he became, in the Hellenistic Age, a cornerstone of ancient literary education, along with Homer, Demosthenes, and Menander.\nEuripides is identified with theatrical innovations that have profoundly influenced drama down to modern times, especially in the representation of traditional, mythical heroes as ordinary people in extraordinary circumstances. This new approach led him to pioneer developments that later writers adapted to comedy, some of which are characteristic of romance. He also became \"the most tragic of poets\", focusing on the inner lives and motives of his characters in a way previously unknown. He was \"the creator of ... that cage which is the theatre of Shakespeare's Othello, Racine's Ph\u00e8dre, of Ibsen and Strindberg,\" in which \"imprisoned men and women destroy each other by the intensity of their loves and hates\". But he was also the literary ancestor of comic dramatists as diverse as Menander and George Bernard Shaw.\nKnown among the writers of classical Athens for his unparalleled sympathy towards all victims of society, including women, slaves or strangers, his contemporaries associated him with Socrates as a leader of a decadent intellectualism. Both were frequently lampooned by comic poets such as Aristophanes. Socrates was eventually put on trial and executed as a corrupting influence. Ancient biographies hold that Euripides chose a voluntary exile in old age, dying in Macedonia, but recent scholarship casts doubt on these sources."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q48305")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q48305",
+  "isRealHuman": true,
+  "birthDate": "-0480-01-01",
+  "deathDate": "-0406-01-01",
+  "ageAtDeath": 74,
+  "confidence": 90,
+  "confidenceExplained": "The estimated birth and death years are based on historical records, but exact dates are uncertain. The age at death is calculated from these estimates, leading to a confidence level of 90%.",
+  "shortDescriptionEn": "Euripides was a renowned Greek tragedian of classical Athens, known for his innovative plays that explored complex human emotions and social issues. He died in Macedonia around 406 BC, possibly in voluntary exile.",
+  "shortDescriptionFr": "Euripide était un tragédien grec renommé de l'Athènes classique, connu pour ses pièces innovantes explorant des émotions humaines complexes et des questions sociales. Il est mort en Macédoine vers 406 av. J.-C., peut-être en exil volontaire.",
+  "shortDescriptionDe": "Euripides war ein berühmter griechischer Tragödiendichter des klassischen Athen, bekannt für seine innovativen Stücke, die komplexe menschliche Emotionen und soziale Themen behandelten. Er starb um 406 v. Chr. in Makedonien, möglicherweise im freiwilligen Exil.",
+  "shortDescriptionEs": "Eurípides fue un renombrado trágico griego de la Atenas clásica, conocido por sus obras innovadoras que exploraban emociones humanas complejas y cuestiones sociales. Murió en Macedonia alrededor del 406 a.C., posiblemente en exilio voluntario.",
+  "shortDescriptionRu": "Эврипид был известным греческим трагиком классических Афин, прославившимся своими новаторскими пьесами, исследующими сложные человеческие эмоции и социальные вопросы. Он умер в Македонии около 406 года до н.э., возможно, в добровольном изгнании.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Euripides",
+    "https://www.britannica.com/biography/Euripides",
+    "https://biographyhost.com/p/euripides-biography.html",
+    "https://www.ebsco.com/research-starters/history/greek-dramatist-euripides-dies"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7302",  "Name": "George Frideric Handel",  "BirthDate": "1685-03-05T00:00:00Z",  "DeathDate": "1759-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/George%20Frideric%20Handel%20by%20Balthasar%20Denner.jpg",  "SiteLinksCnt": 150,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"12775":{"pageid":12775,"ns":0,"title":"George Frideric Handel","extract":"George Frideric (or Frederick) Handel ( HAN-d\u0259l; baptised Georg Fried[e]rich H\u00e4ndel, German: [\u02c8\u0261e\u02d0\u0254\u0281k \u02c8f\u0281i\u02d0d\u0281\u026a\u00e7 \u02c8h\u025bndl\u0329] ; 23 February 1685 \u2013 14 April 1759) was a German-British Baroque composer well-known for his operas, oratorios, anthems, concerti grossi, and organ concerti. \nBorn in Halle, Germany, Handel spent his early life in Hamburg and Italy before settling in London in 1712, where he spent the bulk of his career and became a naturalised British subject in 1727. He was strongly influenced both by the middle-German polyphonic choral tradition and by composers of the Italian Baroque. In turn, Handel's music forms one of the peaks of the \"high baroque\" style, bringing Italian opera to its highest development, creating the genres of English oratorio and organ concerto, and introducing a new style into English church music. He is consistently recognized as one of the greatest composers of his age.\nHandel started three commercial opera companies to supply the English nobility with Italian opera. In 1737, he had a physical breakdown, changed direction creatively, addressed the middle class and made a transition to English choral works. After his success with Messiah (1742), he never composed an Italian opera again. His orchestral Water Music and Music for the Royal Fireworks remain steadfastly popular. One of his four coronation anthems, Zadok the Priest, has been performed at every British coronation since 1727. He died a respected and rich man in 1759, aged 74, and was given a state funeral at Westminster Abbey. \nInterest in Handel's music has grown since the mid-20th century. The musicologist Winton Dean wrote that \"Handel was not only a great composer; he was a dramatic genius of the first order.\" His music was admired by Classical-era composers, especially Mozart, Haydn and Beethoven."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7302")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7302",
+  "isRealHuman": true,
+  "birthDate": "1685-02-23",
+  "deathDate": "1759-04-14",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by historians and scholars, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "George Frideric Handel was a German-British Baroque composer renowned for his operas, oratorios, and instrumental compositions. He died in London in 1759 at the age of 74, receiving a state funeral at Westminster Abbey.",
+  "shortDescriptionFr": "George Frideric Handel était un compositeur germano-britannique du baroque, célèbre pour ses opéras, oratorios et compositions instrumentales. Il est décédé à Londres en 1759 à l'âge de 74 ans et a eu des funérailles nationales à l'abbaye de Westminster.",
+  "shortDescriptionDe": "Georg Friedrich Händel war ein deutsch-britischer Komponist des Barock, bekannt für seine Opern, Oratorien und Instrumentalwerke. Er starb 1759 im Alter von 74 Jahren in London und erhielt ein Staatsbegräbnis in der Westminster Abbey.",
+  "shortDescriptionEs": "George Frideric Handel fue un compositor germano-británico del Barroco, reconocido por sus óperas, oratorios y composiciones instrumentales. Falleció en Londres en 1759 a los 74 años y recibió un funeral de estado en la Abadía de Westminster.",
+  "shortDescriptionRu": "Георг Фридрих Гендель был немецко-британским композитором эпохи барокко, известным своими операми, ораториями и инструментальными произведениями. Он умер в Лондоне в 1759 году в возрасте 74 лет и был похоронен с государственными почестями в Вестминстерском аббатстве.",
+  "sources": [
+    "https://www.britannica.com/biography/George-Frideric-Handel",
+    "https://en.wikipedia.org/wiki/George_Frideric_Handel",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/george-frederic-handel"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12306",  "Name": "Millard Fillmore",  "BirthDate": "1800-01-07T00:00:00Z",  "DeathDate": "1874-03-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Millard%20Fillmore.jpg",  "SiteLinksCnt": 138,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"19729548":{"pageid":19729548,"ns":0,"title":"Millard Fillmore","extract":"Millard Fillmore (January 7, 1800 \u2013 March 8, 1874) was the 13th president of the United States, serving from 1850 to 1853. He was the last president to be a member of the Whig Party, and the last to be neither a Democrat nor a Republican. A former member of the U.S. House of Representatives, Fillmore was elected vice president in 1848, and succeeded to the presidency when Zachary Taylor died in July 1850. Fillmore was instrumental in passing the Compromise of 1850, which led to a brief truce in the battle over the expansion of slavery.\nFillmore was born into poverty in the Finger Lakes area of upstate New York. Though he had little formal schooling, he studied to become a lawyer. He became prominent in the Buffalo area as an attorney and politician, and was elected to the New York Assembly in 1828 and the House of Representatives in 1832. Fillmore initially belonged to the Anti-Masonic Party, but became a member of the Whig Party as it formed in the mid-1830s. He was a rival for the state party leadership with Thurlow Weed and his prot\u00e9g\u00e9 William H. Seward. Throughout his career, Fillmore declared slavery evil but said it was beyond the federal government's power to end it; Seward argued that the federal government had a role to play. Fillmore was an unsuccessful candidate for Speaker of the U.S. House of Representatives when the Whigs took control of the chamber in 1841, but was made chairman of the Ways and Means Committee. Defeated in bids for the Whig nomination for vice president and for New York governor in 1844, Fillmore was elected Comptroller of New York in 1847, the first to hold that post by direct election.\nAs vice president, Fillmore was largely ignored by Taylor; even in dispensing patronage in New York, Taylor consulted Weed and Seward. But in his capacity as president of the Senate, Fillmore presided over its angry debates, as the 31st Congress decided whether to allow slavery in the Mexican Cession. Unlike Taylor, Fillmore supported Henry Clay's omnibus bill, the basis of the 1850 Compromise. Upon becoming president in July 1850, he dismissed Taylor's cabinet and pushed Congress to pass the compromise. The Fugitive Slave Act, expediting the return of escaped slaves to those who claimed ownership, was a controversial part of the compromise. Fillmore felt duty-bound to enforce it, though it damaged his popularity and also the Whig Party, which was torn between its Northern and Southern factions. In foreign policy, he supported U.S. Navy expeditions to open trade in Japan, opposed French designs on Hawaii, and was embarrassed by Narciso L\u00f3pez's filibuster expeditions to Cuba. Fillmore failed to win the Whig nomination for president in 1852.\nAs the Whig Party broke up after Fillmore's presidency, he and many in its conservative wing joined the Know Nothings and formed the American Party. Despite his party's emphasis on anti-immigration and anti-Catholic policies, during the 1856 presidential election he said little about immigration, focusing on the preservation of the Union, and won only Maryland. During the American Civil War, Fillmore denounced secession and agreed that the Union must be maintained by force if necessary, but was critical of Abraham Lincoln's war policies. After peace was restored, he supported President Andrew Johnson's Reconstruction policies. Fillmore remained involved in civic interests after his presidency, including as chancellor of the University of Buffalo, which he had helped found in 1846. Historians usually rank Fillmore among the worst presidents in American history, largely for his policies regarding slavery, as well as among the least memorable.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12306")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q12306",
+  "isRealHuman": true,
+  "birthDate": "1800-01-07",
+  "deathDate": "1874-03-08",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Millard Fillmore (1800–1874) was the 13th President of the United States, ascending to the presidency after Zachary Taylor's death. His administration is noted for the Compromise of 1850, which attempted to balance the interests of free and slave states. Fillmore died at the age of 74 in Buffalo, New York, due to a stroke.",
+  "shortDescriptionFr": "Millard Fillmore (1800–1874) fut le 13e président des États-Unis, accédant à la présidence après la mort de Zachary Taylor. Son mandat est marqué par le Compromis de 1850, visant à apaiser les tensions entre États libres et esclavagistes. Fillmore est décédé à l'âge de 74 ans à Buffalo, New York, des suites d'un AVC.",
+  "shortDescriptionDe": "Millard Fillmore (1800–1874) war der 13. Präsident der Vereinigten Staaten und trat das Amt nach dem Tod von Zachary Taylor an. Seine Amtszeit ist bekannt für den Kompromiss von 1850, der die Interessen von freien und Sklavenstaaten ausgleichen sollte. Fillmore starb im Alter von 74 Jahren in Buffalo, New York, an einem Schlaganfall.",
+  "shortDescriptionEs": "Millard Fillmore (1800–1874) fue el 13º presidente de los Estados Unidos, asumiendo el cargo tras la muerte de Zachary Taylor. Su administración es conocida por el Compromiso de 1850, que intentó equilibrar los intereses de los estados libres y esclavistas. Fillmore falleció a los 74 años en Buffalo, Nueva York, debido a un derrame cerebral.",
+  "shortDescriptionRu": "Миллард Филлмор (1800–1874) был 13-м президентом США, заняв пост после смерти Зекарии Тейлора. Его правление известно Компромиссом 1850 года, стремившимся сбалансировать интересы свободных и рабовладельческих штатов. Филлмор скончался в возрасте 74 лет в Буффало, Нью-Йорк, от инсульта.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Millard_Fillmore",
+    "https://www.britannica.com/biography/Millard-Fillmore",
+    "https://www.ducksters.com/biography/uspresidents/millardfillmore.php",
+    "https://www.thefamouspeople.com/profiles/millard-fillmore-4008.php"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40904",  "Name": "Werner Heisenberg",  "BirthDate": "1901-12-05T00:00:00Z",  "DeathDate": "1976-02-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild183-R57262%2C%20Werner%20Heisenberg.jpg",  "SiteLinksCnt": 135,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"33130":{"pageid":33130,"ns":0,"title":"Werner Heisenberg","extract":"Werner Karl Heisenberg (; German: [\u02c8v\u025b\u0281n\u0250 \u02c8ha\u026azn\u0329b\u025b\u0281k] ; 5 December 1901 \u2013 1 February 1976) was a German theoretical physicist, one of the main pioneers of the theory of quantum mechanics and a principal scientist in the Nazi nuclear weapons program during World War II.\nHe published his Umdeutung paper in 1925, a major reinterpretation of old quantum theory. In the subsequent series of papers with Max Born and Pascual Jordan, during the same year, his matrix formulation of quantum mechanics was substantially elaborated. He is known for the uncertainty principle, which he published in 1927. Heisenberg was awarded the 1932 Nobel Prize in Physics \"for the creation of quantum mechanics\".\nHeisenberg also made contributions to the theories of the hydrodynamics of turbulent flows, the atomic nucleus, ferromagnetism, cosmic rays, and subatomic particles. He introduced the concept of a wave function collapse. He was also instrumental in planning the first West German nuclear reactor at Karlsruhe, together with a research reactor in Munich, in 1957.\nFollowing World War II, he was appointed director of the Kaiser Wilhelm Institute for Physics, which soon thereafter was renamed the Max Planck Institute for Physics. He was director of the institute until it was moved to Munich in 1958. He then became director of the Max Planck Institute for Physics and Astrophysics from 1960 to 1970.\nHeisenberg was also president of the German Research Council, chairman of the Commission for Atomic Physics, chairman of the Nuclear Physics Working Group, and president of the Alexander von Humboldt Foundation."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40904")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q40904",
+  "isRealHuman": true,
+  "birthDate": "1901-12-05",
+  "deathDate": "1976-02-01",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Werner Heisenberg (1901–1976) was a German theoretical physicist and a key pioneer of quantum mechanics, best known for formulating the Uncertainty Principle. He died of cancer at age 74 in Munich.",
+  "shortDescriptionFr": "Werner Heisenberg (1901–1976) était un physicien théoricien allemand, pionnier de la mécanique quantique et célèbre pour le principe d'incertitude. Il est décédé d'un cancer à l'âge de 74 ans à Munich.",
+  "shortDescriptionDe": "Werner Heisenberg (1901–1976) war ein deutscher theoretischer Physiker und Mitbegründer der Quantenmechanik, bekannt für die Formulierung der Unschärferelation. Er starb im Alter von 74 Jahren in München an Krebs.",
+  "shortDescriptionEs": "Werner Heisenberg (1901–1976) fue un físico teórico alemán, pionero de la mecánica cuántica y conocido por el principio de incertidumbre. Falleció de cáncer a los 74 años en Múnich.",
+  "shortDescriptionRu": "Вернер Гейзенберг (1901–1976) — немецкий теоретический физик, один из основателей квантовой механики, известен формулировкой принципа неопределенности. Умер от рака в возрасте 74 лет в Мюнхене.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Werner_Heisenberg",
+    "https://www.britannica.com/biography/Werner-Heisenberg",
+    "https://www.nobelprize.org/prizes/physics/1932/heisenberg/facts/",
+    "https://www.findagrave.com/memorial/61842518/werner_karl-heisenberg",
+    "https://www.thefamouspeople.com/profiles/werner-heisenberg-5202.php"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q539",  "Name": "Giuseppe Garibaldi",  "BirthDate": "1807-07-04T00:00:00Z",  "DeathDate": "1882-06-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Giuseppe%20Garibaldi%201861.jpg",  "SiteLinksCnt": 129,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"21486576":{"pageid":21486576,"ns":0,"title":"Giuseppe Garibaldi","extract":"Giuseppe Maria Garibaldi ( GARR-ib-AHL-dee, Italian: [d\u0292u\u02c8z\u025bppe \u0261ari\u02c8baldi] ; 4 July 1807 \u2013 2 June 1882) was an Italian general, revolutionary and republican. He contributed to Italian unification (Risorgimento) and the creation of the Kingdom of Italy. He is considered to be one of Italy's \"fathers of the fatherland\", along with Camillo Benso, Count of Cavour, Victor Emmanuel II of Italy and Giuseppe Mazzini. Garibaldi is also known as the \"Hero of the Two Worlds\" because of his military enterprises in South America and Europe.\nGaribaldi was a follower of the Italian nationalist Mazzini and embraced the republican nationalism of the Young Italy movement. He became a supporter of Italian unification under a democratic republican government. However, breaking with Mazzini, he pragmatically allied himself with the monarchist Cavour and Kingdom of Sardinia in the struggle for independence, subordinating his republican ideals to his nationalist ones until Italy was unified. After participating in an uprising in Piedmont, he was sentenced to death, but escaped and sailed to South America, where he spent 14 years in exile, during which he took part in several wars and learned the art of guerrilla warfare. In 1835 he joined the rebels known as the Ragamuffins (farrapos), in the Ragamuffin War in Brazil, and took up their cause of establishing the Riograndense Republic and later the Catarinense Republic. Garibaldi also became involved in the Uruguayan Civil War, raising an Italian force known as Redshirts, and is still celebrated as an important contributor to Uruguay's reconstitution.\nIn 1848, Garibaldi returned to Italy and commanded and fought in military campaigns that eventually led to Italian unification. The provisional government of Milan made him a general and the Minister of War promoted him to General of the Roman Republic in 1849. When the war of independence broke out in April 1859, he led his Hunters of the Alps in the capture of major cities in Lombardy, including Varese and Como, and reached the frontier of South Tyrol; the war ended with the acquisition of Lombardy. The following year, 1860, he led the Expedition of the Thousand on behalf of, and with the consent of, Victor Emmanuel II, King of Sardinia. The expedition was a success and concluded with the annexation of Sicily, Southern Italy, Marche and Umbria to the Kingdom of Sardinia before the creation of a unified Kingdom of Italy on 17 March 1861. His last military campaign took place during the Franco-Prussian War as commander of the Army of the Vosges.\nGaribaldi became an international figurehead for national independence and republican ideals, and is considered by twentieth-century historiography and popular culture as Italy's greatest national hero. He was showered with admiration and praise by many contemporary intellectuals and political figures, including Abraham Lincoln, William Brown, Francesco de Sanctis, Victor Hugo, Alexandre Dumas, Malwida von Meysenbug, George Sand, Charles Dickens, and Friedrich Engels. Garibaldi also inspired later figures like Jawaharlal Nehru and Che Guevara. Historian A. J. P. Taylor called him \"the only wholly admirable figure in modern history\". In the popular telling of his story, he is associated with the Redshirts that his volunteers, the Garibaldini, wore in lieu of a uniform."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q539")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q539",
+  "isRealHuman": true,
+  "birthDate": "1807-07-04",
+  "deathDate": "1882-06-02",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and corroborated by multiple reputable historical sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Giuseppe Garibaldi (1807–1882) was an Italian general and nationalist who played a central role in the unification of Italy. Known as the 'Hero of the Two Worlds' for his military exploits in South America and Europe, he spent his final years battling arthritis and died peacefully at his home on the island of Caprera.",
+  "shortDescriptionFr": "Giuseppe Garibaldi (1807–1882) était un général et nationaliste italien, figure centrale de l'unification de l'Italie. Surnommé le 'Héros des Deux Mondes' pour ses exploits militaires en Amérique du Sud et en Europe, il passa ses dernières années à lutter contre l'arthrite et mourut paisiblement chez lui sur l'île de Caprera.",
+  "shortDescriptionDe": "Giuseppe Garibaldi (1807–1882) war ein italienischer General und Nationalist, der eine zentrale Rolle bei der Einigung Italiens spielte. Bekannt als der 'Held der zwei Welten' für seine militärischen Einsätze in Südamerika und Europa, verbrachte er seine letzten Jahre mit Arthritis und starb friedlich in seinem Haus auf der Insel Caprera.",
+  "shortDescriptionEs": "Giuseppe Garibaldi (1807–1882) fue un general y nacionalista italiano que desempeñó un papel central en la unificación de Italia. Conocido como el 'Héroe de los Dos Mundos' por sus campañas militares en Sudamérica y Europa, pasó sus últimos años luchando contra la artritis y murió pacíficamente en su hogar en la isla de Caprera.",
+  "shortDescriptionRu": "Джузеппе Гарибальди (1807–1882) был итальянским генералом и националистом, сыгравшим ключевую роль в объединении Италии. Известный как 'Герой двух миров' за свои военные кампании в Южной Америке и Европе, он провел последние годы, страдая от артрита, и мирно скончался в своем доме на острове Капрера.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Giuseppe_Garibaldi",
+    "https://www.britannica.com/biography/Giuseppe-Garibaldi",
+    "https://www.italyonthisday.com/2017/06/the-death-of-giuseppe-garibaldi.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41309",  "Name": "Franz Liszt",  "BirthDate": "1811-10-22T00:00:00Z",  "DeathDate": "1886-07-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Liszt-1870.jpg",  "SiteLinksCnt": 122,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"67379":{"pageid":67379,"ns":0,"title":"Franz Liszt","extract":"Franz Liszt (22 October 1811 \u2013 31 July 1886) was a Hungarian composer, virtuoso pianist, conductor and teacher of the Romantic period. With a diverse body of work spanning more than six decades, he is considered to be one of the most prolific and influential composers of his era, and his piano works continue to be widely performed and recorded.\nLiszt achieved success as a concert pianist from an early age, and received lessons from esteemed musicians Carl Czerny and Antonio Salieri. He gained further renown for his performances during tours of Europe in the 1830s and 1840s, developing a reputation for technical brilliance as well as physical attractiveness. In a phenomenon dubbed \"Lisztomania\", he rose to a degree of stardom and popularity among the public not experienced by the virtuosos who preceded him.\nDuring this period and into his later life, Liszt was a friend, musical promoter and benefactor to many composers of his time, including Hector Berlioz, Fr\u00e9d\u00e9ric Chopin, Robert Schumann, Clara Schumann and Richard Wagner, among others. Liszt coined the terms \"transcription\" and \"paraphrase\", and would perform arrangements of his contemporaries' music to popularise it. Alongside Wagner, Liszt was one of the most prominent representatives of the New German School, a progressive group of composers involved in the \"War of the Romantics\" who developed ideas of programmatic music and harmonic experimentation.\nLiszt taught piano performance to hundreds of students throughout his life, many of whom went on to become notable performers. He left behind an extensive and diverse body of work that influenced his forward-looking contemporaries and anticipated 20th-century ideas and trends. Among Liszt's musical contributions were the concept of the symphonic poem, innovations in thematic transformation and Impressionism in music, and the invention of the masterclass as a method of teaching performance. In a radical departure from his earlier compositional styles, many of Liszt's later works also feature experiments in atonality, foreshadowing developments in 20th-century classical music. Today he is best known for his original piano works, such as the Hungarian Rhapsodies, Ann\u00e9es de p\u00e8lerinage, Transcendental \u00c9tudes, \"La campanella\", and the Piano Sonata in B minor."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41309")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41309",
+  "isRealHuman": true,
+  "birthDate": "1811-10-22",
+  "deathDate": "1886-07-31",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and confirmed by multiple reputable sources, including Britannica and Wikipedia.",
+  "shortDescriptionEn": "Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, and teacher of the Romantic period. He died of heart disease in Bayreuth, Germany, at the age of 74, after attending performances at the Bayreuth Festival.",
+  "shortDescriptionFr": "Franz Liszt était un compositeur, pianiste virtuose, chef d'orchestre et professeur hongrois de la période romantique. Il est décédé d'une maladie cardiaque à Bayreuth, en Allemagne, à l'âge de 74 ans, après avoir assisté à des représentations au Festival de Bayreuth.",
+  "shortDescriptionDe": "Franz Liszt war ein ungarischer Komponist, virtuoser Pianist, Dirigent und Lehrer der Romantik. Er starb im Alter von 74 Jahren in Bayreuth, Deutschland, an einer Herzkrankheit, nachdem er Aufführungen beim Bayreuther Festival besucht hatte.",
+  "shortDescriptionEs": "Franz Liszt fue un compositor, pianista virtuoso, director de orquesta y profesor húngaro del período romántico. Murió de una enfermedad cardíaca en Bayreuth, Alemania, a los 74 años, después de asistir a actuaciones en el Festival de Bayreuth.",
+  "shortDescriptionRu": "Ференц Лист был венгерским композитором, виртуозным пианистом, дирижёром и преподавателем романтической эпохи. Он скончался от сердечного заболевания в Байройте, Германия, в возрасте 74 лет, после посещения представлений на Байройтском фестивале.",
+  "sources": [
+    "https://www.britannica.com/biography/Franz-Liszt",
+    "https://en.wikipedia.org/wiki/Franz_Liszt",
+    "https://www.newyorker.com/magazine/2003/06/09/last-thoughts"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q33550",  "Name": "Frederick II of Prussia",  "BirthDate": "1712-01-24T00:00:00Z",  "DeathDate": "1786-08-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20Zweite%20Alt.jpg",  "SiteLinksCnt": 120,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"99613":{"pageid":99613,"ns":0,"title":"Frederick the Great","extract":"Frederick II (German: Friedrich II.; 24 January 1712 \u2013 17 August 1786) was the monarch of Prussia from 1740 until his death in 1786. He was the last Hohenzollern monarch titled King in Prussia,  declaring himself King of Prussia after annexing Royal Prussia from the Polish\u2013Lithuanian Commonwealth in 1772. His most significant accomplishments include military successes in the Silesian wars, reorganisation of the Prussian Army, the First Partition of Poland, and patronage of the arts and the Enlightenment. Prussia greatly increased its territories and became a major military power in Europe under his rule. He became known as Frederick the Great (German: Friedrich der Gro\u00dfe) and was nicknamed \"Old Fritz\" (German: der Alte Fritz).\nIn his youth, Frederick was more interested in music and philosophy than war, which led to clashes with his authoritarian father, Frederick William I of Prussia. However, upon ascending to the throne, he attacked and annexed the rich Austrian province of Silesia in 1742, winning military acclaim. He became an influential military theorist, whose analyses emerged from his extensive personal battlefield experience and covered issues of strategy, tactics, mobility and logistics.\nFrederick was a supporter of enlightened absolutism, stating that the ruler should be the first servant of the state. He modernised the Prussian bureaucracy and civil service, and pursued religious policies that ranged from tolerance to segregation. He reformed the judicial system and made it possible for men of lower status to become judges and senior bureaucrats. Frederick encouraged immigrants of diverse backgrounds to come to Prussia. While Protestantism remained the favored faith, he allowed religious freedom and tolerated Jews and Catholics in Prussia, however his actions were not entirely without prejudice. He supported the arts and philosophers he favoured, and allowed freedom of the press and literature.  Frederick was almost certainly homosexual, and his sexuality has been the subject of much study. Because he died childless, he was succeeded by his nephew, Frederick William II. He is buried at his favourite residence, Sanssouci in Potsdam.\nNearly all 19th-century German historians made Frederick into a romantic model of a glorified warrior, praising his leadership, administrative efficiency, devotion to duty and success in building Prussia into a great power. Frederick remained an admired historical figure through Germany's defeat in World War I, and the Nazis glorified him as a great German leader prefiguring Adolf Hitler, who personally idolised him. His reputation became less favourable in Germany after World War II, partly due to being symbolically adopted by the Nazis as a historical hero. Historians in the 21st century tend to view Frederick as an outstanding military leader and capable monarch, whose commitment to enlightenment culture and administrative reform built the foundation that allowed the Kingdom of Prussia to contest the Austrian Habsburgs for leadership among the German states.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q33550")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q33550",
+  "isRealHuman": true,
+  "birthDate": "1712-01-24",
+  "deathDate": "1786-08-17",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Frederick II of Prussia (1712–1786), known as Frederick the Great, was a significant 18th-century monarch who transformed Prussia into a major European power through military victories and enlightened reforms. He died at age 74 at his Sanssouci Palace in Potsdam after suffering from various health issues.",
+  "shortDescriptionFr": "Frédéric II de Prusse (1712–1786), connu sous le nom de Frédéric le Grand, fut un monarque du XVIIIe siècle qui transforma la Prusse en une grande puissance européenne grâce à ses victoires militaires et ses réformes éclairées. Il mourut à 74 ans dans son palais de Sanssouci à Potsdam après avoir souffert de divers problèmes de santé.",
+  "shortDescriptionDe": "Friedrich II. von Preußen (1712–1786), bekannt als Friedrich der Große, war ein bedeutender Monarch des 18. Jahrhunderts, der Preußen durch militärische Siege und aufgeklärte Reformen zu einer europäischen Großmacht machte. Er starb im Alter von 74 Jahren in seinem Schloss Sanssouci in Potsdam nach verschiedenen gesundheitlichen Problemen.",
+  "shortDescriptionEs": "Federico II de Prusia (1712–1786), conocido como Federico el Grande, fue un monarca del siglo XVIII que transformó Prusia en una gran potencia europea mediante victorias militares y reformas ilustradas. Murió a los 74 años en su palacio de Sanssouci en Potsdam tras sufrir diversos problemas de salud.",
+  "shortDescriptionRu": "Фридрих II Прусский (1712–1786), известный как Фридрих Великий, был выдающимся монархом XVIII века, превратившим Пруссию в ведущую европейскую державу благодаря военным победам и просвещённым реформам. Он умер в возрасте 74 лет в своём дворце Сан-Суси в Потсдаме после различных проблем со здоровьем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Frederick_the_Great",
+    "https://www.britannica.com/biography/Frederick-II-king-of-Prussia",
+    "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/frederick-the-great/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q72984",  "Name": "Bing Crosby",  "BirthDate": "1903-05-03T00:00:00Z",  "DeathDate": "1977-10-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bing%20Crosby%20Paramount%20Pictures.jpg",  "SiteLinksCnt": 120,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"4010":{"pageid":4010,"ns":0,"title":"Bing Crosby","extract":"Harry Lillis \"Bing\" Crosby Jr. (May 3, 1903 \u2013 October 14, 1977) was an American singer and actor. The first multimedia star, he was one of the most popular and influential musical artists of the 20th century worldwide. Crosby was a leader in record sales, network radio ratings, and motion picture grosses from 1926 to 1977. He was one of the first global cultural icons. Crosby made over 70 feature films and recorded more than 1,600 songs.\nCrosby's early career coincided with recording innovations that allowed him to develop an intimate singing style that influenced many male singers who followed, such as Frank Sinatra, Perry Como, Dean Martin, Dick Haymes, Elvis Presley, and John Lennon. Yank magazine said that Crosby was \"the person who had done the most for the morale of overseas servicemen\" during World War II. In 1948, American polls declared him the \"most admired man alive\", ahead of Jackie Robinson and Pope Pius XII.:\u200a6\u200a In 1948, Music Digest estimated that Crosby's recordings filled more than half of the 80,000 weekly hours allocated to recorded radio music in America.\nCrosby won the Academy Award for Best Actor for his performance in Going My Way (1944) and was nominated for its sequel, The Bells of St. Mary's (1945), opposite Ingrid Bergman, becoming the first of six actors to be nominated twice for playing the same character. Crosby was the number one box office attraction for five consecutive years from 1944 to 1948. At his screen apex in 1946, Crosby starred in three of the year's five highest-grossing films: The Bells of St. Mary's, Blue Skies, and Road to Utopia. In 1963, he received the first Grammy Global Achievement Award. Crosby is one of 33 people to have three stars on the Hollywood Walk of Fame, in the categories of motion pictures, radio, and audio recording. He was also known for his collaborations with his friend Bob Hope, starring in the Road to ... films from 1940 to 1962.\nCrosby influenced the development of the post\u2013World War II recording industry. After seeing a demonstration of a German broadcast quality reel-to-reel tape recorder brought to the United States by John T. Mullin, Crosby invested $50,000 in the California electronics company Ampex to build copies. He then persuaded ABC to allow him to tape his shows and became the first performer to prerecord his radio shows and master his commercial recordings onto magnetic tape. Crosby has been associated with the Christmas season since he starred in Irving Berlin's musical film Holiday Inn and also sang \"White Christmas\" in the film of the same name. Through audio recordings, Crosby produced his radio programs with the same directorial tools and craftsmanship (editing, retaking, rehearsal, time shifting) used in motion picture production, a practice that became the industry standard. In addition to his work with early audio tape recording, Crosby helped finance the development of videotape, bought television stations, bred racehorses, and co-owned the Pittsburgh Pirates baseball team, during which time the team won two World Series (1960 and 1971).\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q72984")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q72984",
+  "isRealHuman": true,
+  "birthDate": "1903-05-03",
+  "deathDate": "1977-10-14",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Bing Crosby was an American singer and actor born on May 3, 1903. He became one of the most influential musical artists of the 20th century, known for his smooth baritone voice and roles in numerous films. Crosby died of a heart attack on October 14, 1977, at the age of 74, while playing golf near Madrid, Spain.",
+  "shortDescriptionFr": "Bing Crosby était un chanteur et acteur américain né le 3 mai 1903. Il est devenu l'un des artistes musicaux les plus influents du XXe siècle, connu pour sa voix de baryton douce et ses rôles dans de nombreux films. Crosby est décédé d'une crise cardiaque le 14 octobre 1977, à l'âge de 74 ans, en jouant au golf près de Madrid, en Espagne.",
+  "shortDescriptionDe": "Bing Crosby war ein amerikanischer Sänger und Schauspieler, geboren am 3. Mai 1903. Er wurde zu einem der einflussreichsten Musikkünstler des 20. Jahrhunderts, bekannt für seine sanfte Baritonstimme und Rollen in zahlreichen Filmen. Crosby starb am 14. Oktober 1977 im Alter von 74 Jahren an einem Herzinfarkt beim Golfspielen in der Nähe von Madrid, Spanien.",
+  "shortDescriptionEs": "Bing Crosby fue un cantante y actor estadounidense nacido el 3 de mayo de 1903. Se convirtió en uno de los artistas musicales más influyentes del siglo XX, conocido por su suave voz de barítono y sus papeles en numerosas películas. Crosby murió de un ataque al corazón el 14 de octubre de 1977, a los 74 años, mientras jugaba al golf cerca de Madrid, España.",
+  "shortDescriptionRu": "Бинг Кросби был американским певцом и актером, родившимся 3 мая 1903 года. Он стал одним из самых влиятельных музыкальных артистов XX века, известным своим мягким баритоном и ролями во многих фильмах. Кросби скончался от сердечного приступа 14 октября 1977 года в возрасте 74 лет, играя в гольф недалеко от Мадрида, Испания.",
+  "sources": [
+    "https://www.britannica.com/biography/Bing-Crosby",
+    "https://www.imdb.com/name/nm0001078/faq/?attribute=age-at-death",
+    "https://www.allvipp.com/retro/bing-crosby-s-cause-of-death"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83158",  "Name": "Jean Cocteau",  "BirthDate": "1889-07-05T00:00:00Z",  "DeathDate": "1963-10-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Cocteau%20b%20Meurisse%201923.jpg",  "SiteLinksCnt": 119,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"15837":{"pageid":15837,"ns":0,"title":"Jean Cocteau","extract":"Jean Maurice Eug\u00e8ne Cl\u00e9ment Cocteau (UK:  KOK-toh, US:  kok-TOH; French: [\u0292\u0251\u0303 m\u0254\u0281is \u00f8\u0292\u025bn klem\u0251\u0303 k\u0254kto]; 5 July 1889 \u2013  11 October 1963) was a French poet, playwright, novelist, designer, film director, visual artist and critic. He was one of the foremost avant-garde artists of the 20th-century and hugely influential on the surrealist and Dadaist movements, among others. The National Observer suggested that \"of the artistic generation whose daring gave birth to Twentieth Century Art, Cocteau came closest to being a Renaissance man\".\nHe is best known for his novels Le Grand \u00c9cart (1923), Le Livre blanc (1928), and Les Enfants Terribles (1929); the stage plays La Voix Humaine (1930), La Machine Infernale (1934), Les Parents terribles (1938), La Machine \u00e0 \u00e9crire (1941), and L'Aigle \u00e0 deux t\u00eates (1946); and the films The Blood of a Poet (1930), Les Parents Terribles (1948), Beauty and the Beast (1946), Orpheus (1950), and Testament of Orpheus (1960), which alongside Blood of a Poet and Orpheus constitute the so-called Orphic Trilogy. He was described as \"one of [the] avant-garde's most successful and influential filmmakers\" by AllMovie. Cocteau, according to Annette Insdorf, \"left behind a body of work unequalled for its variety of artistic expression\".\nThough his body of work encompassed many different mediums, Cocteau insisted on calling himself a poet, classifying the great variety of his works \u2013  poems, novels, plays, essays, drawings, films \u2013  as po\u00e9sie, po\u00e9sie de roman, po\u00e9sie de th\u00eaatre, po\u00e9sie critique, po\u00e9sie graphique and po\u00e9sie cin\u00e9matographique."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83158")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83158",
+  "isRealHuman": true,
+  "birthDate": "1889-07-05",
+  "deathDate": "1963-10-11",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Jean Cocteau (1889–1963) was a French poet, playwright, novelist, designer, film director, visual artist, and critic. A leading figure in the avant-garde movement, he significantly influenced 20th-century art and cinema. He died of a heart attack at his château in Milly-la-Forêt at the age of 74.",
+  "shortDescriptionFr": "Jean Cocteau (1889–1963) était un poète, dramaturge, romancier, designer, réalisateur, artiste visuel et critique français. Figure majeure de l'avant-garde, il a profondément influencé l'art et le cinéma du XXe siècle. Il est décédé d'une crise cardiaque à son château de Milly-la-Forêt à l'âge de 74 ans.",
+  "shortDescriptionDe": "Jean Cocteau (1889–1963) war ein französischer Dichter, Dramatiker, Romanautor, Designer, Filmregisseur, bildender Künstler und Kritiker. Als führende Figur der Avantgarde beeinflusste er maßgeblich die Kunst und das Kino des 20. Jahrhunderts. Er starb im Alter von 74 Jahren an einem Herzinfarkt in seinem Schloss in Milly-la-Forêt.",
+  "shortDescriptionEs": "Jean Cocteau (1889–1963) fue un poeta, dramaturgo, novelista, diseñador, director de cine, artista visual y crítico francés. Figura destacada de la vanguardia, influyó significativamente en el arte y el cine del siglo XX. Falleció de un ataque al corazón en su castillo de Milly-la-Forêt a los 74 años.",
+  "shortDescriptionRu": "Жан Кокто (1889–1963) — французский поэт, драматург, романист, дизайнер, кинорежиссёр, художник и критик. Ведущий представитель авангарда, он оказал значительное влияние на искусство и кино XX века. Умер от сердечного приступа в своём замке в Милли-ла-Форе в возрасте 74 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean_Cocteau",
+    "https://www.britannica.com/biography/Jean-Cocteau",
+    "https://www.theartstory.org/artist/cocteau-jean/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41688",  "Name": "Hendrik Lorentz",  "BirthDate": "1853-07-18T00:00:00Z",  "DeathDate": "1928-02-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/H%20A%20Lorentz%20%28Nobel%29.jpg",  "SiteLinksCnt": 117,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"88183":{"pageid":88183,"ns":0,"title":"Hendrik Lorentz","extract":"Hendrik Antoon Lorentz ( LORR-\u0259nts; Dutch: [\u02c8\u0266\u025bndr\u026ak \u02c8lo\u02d0r\u025bnts]; 18 July 1853 \u2013 4 February 1928) was a Dutch physicist who shared the 1902 Nobel Prize in Physics with Pieter Zeeman for his theoretical explanation of the Zeeman effect. He derived the Lorentz transformation of the special theory of relativity, as well as the Lorentz force, which describes the combined electric and magnetic forces acting on a charged particle in an electromagnetic field. Lorentz was also responsible for the Lorentz oscillator model, a classical model used to describe the anomalous dispersion observed in dielectric materials when the driving frequency of the electric field was near the resonant frequency of the material, resulting in abnormal refractive indices. \nAccording to the biography published by the Nobel Foundation, \"It may well be said that Lorentz was regarded by all theoretical physicists as the world's leading spirit, who completed what was left unfinished by his predecessors and prepared the ground for the fruitful reception of the new ideas based on the quantum theory.\" He received many other honours and distinctions, including a term as chairman of the International Committee on Intellectual Cooperation, the forerunner of UNESCO, between 1925 and 1928. He was the father and doctoral advisor of Geertruida de Haas-Lorentz."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41688")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41688",
+  "isRealHuman": true,
+  "birthDate": "1853-07-18",
+  "deathDate": "1928-02-04",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Hendrik Antoon Lorentz was a Dutch physicist renowned for his work on the Zeeman effect and the Lorentz transformation, foundational to Einstein's theory of relativity. He passed away at the age of 74 in Haarlem, Netherlands.",
+  "shortDescriptionFr": "Hendrik Antoon Lorentz était un physicien néerlandais célèbre pour ses travaux sur l'effet Zeeman et la transformation de Lorentz, éléments clés de la relativité restreinte. Il est décédé à l'âge de 74 ans à Haarlem, aux Pays-Bas.",
+  "shortDescriptionDe": "Hendrik Antoon Lorentz war ein niederländischer Physiker, bekannt für seine Arbeiten zum Zeeman-Effekt und der Lorentz-Transformation, die grundlegend für Einsteins Relativitätstheorie sind. Er starb im Alter von 74 Jahren in Haarlem, Niederlande.",
+  "shortDescriptionEs": "Hendrik Antoon Lorentz fue un físico neerlandés reconocido por su trabajo en el efecto Zeeman y la transformación de Lorentz, fundamentales para la teoría de la relatividad de Einstein. Falleció a los 74 años en Haarlem, Países Bajos.",
+  "shortDescriptionRu": "Хендрик Антон Лоренц — нидерландский физик, известный своими работами по эффекту Зеемана и преобразованию Лоренца, лежащими в основе теории относительности Эйнштейна. Он умер в возрасте 74 лет в Харлеме, Нидерланды.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/physics/1902/lorentz/biographical/",
+    "https://www.britannica.com/biography/Hendrik-Antoon-Lorentz",
+    "https://en.wikipedia.org/wiki/Hendrik_Lorentz"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82984",  "Name": "Pierre de Coubertin",  "BirthDate": "1863-01-01T00:00:00Z",  "DeathDate": "1937-09-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Baron%20Pierre%20de%20Coubertin.jpg",  "SiteLinksCnt": 113,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"25055":{"pageid":25055,"ns":0,"title":"Pierre de Coubertin","extract":"Charles Pierre de Fr\u00e9dy, Baron de Coubertin (French: [\u0283a\u0281l pj\u025b\u0281 d\u0259 f\u0281edi ba\u0281\u0254\u0303 d\u0259 kub\u025b\u0281t\u025b\u0303]; born Pierre de Fr\u00e9dy; 1 January 1863 \u2013 2 September 1937), also known as Pierre de Coubertin and Baron de Coubertin, was a French educator and historian, co-founder of the International Olympic Committee (IOC), and its second president. He is known as the father of the modern Olympic Games. He was particularly active in promoting the introduction of sport in French schools.\nBorn into a French aristocratic family, Coubertin became an academic and studied a broad range of topics, most notably education and history. He graduated with a degree in law and public affairs from the Paris Institute of Political Studies  (Sciences Po). It was at the Paris Institute of Political Studies that he came up with the idea of reviving the Olympic Games.\nThe Pierre de Coubertin World Trophy and the Pierre de Coubertin Medal are named in his honour."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82984")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q82984",
+  "isRealHuman": true,
+  "birthDate": "1863-01-01",
+  "deathDate": "1937-09-02",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, including Britannica and the International Olympic Committee archives, confirming that Pierre de Coubertin was 74 years old at the time of his death.",
+  "shortDescriptionEn": "Pierre de Coubertin was a French educator and historian, best known as the founder of the modern Olympic Games and the second president of the International Olympic Committee. He died at age 74 from a heart attack while walking in La Grange Park in Geneva, Switzerland.",
+  "shortDescriptionFr": "Pierre de Coubertin était un éducateur et historien français, connu comme le fondateur des Jeux olympiques modernes et le deuxième président du Comité international olympique. Il est décédé à l'âge de 74 ans d'une crise cardiaque en se promenant dans le parc La Grange à Genève, en Suisse.",
+  "shortDescriptionDe": "Pierre de Coubertin war ein französischer Pädagoge und Historiker, bekannt als Begründer der modernen Olympischen Spiele und zweiter Präsident des Internationalen Olympischen Komitees. Er starb im Alter von 74 Jahren an einem Herzinfarkt während eines Spaziergangs im La Grange Park in Genf, Schweiz.",
+  "shortDescriptionEs": "Pierre de Coubertin fue un educador e historiador francés, conocido por ser el fundador de los Juegos Olímpicos modernos y el segundo presidente del Comité Olímpico Internacional. Murió a los 74 años de un ataque al corazón mientras paseaba por el parque La Grange en Ginebra, Suiza.",
+  "shortDescriptionRu": "Пьер де Кубертен был французским педагогом и историком, известным как основатель современных Олимпийских игр и второй президент Международного олимпийского комитета. Он умер в возрасте 74 лет от сердечного приступа во время прогулки в парке Ла Гранж в Женеве, Швейцария.",
+  "sources": [
+    "https://www.britannica.com/biography/Pierre-baron-de-Coubertin",
+    "https://en.wikipedia.org/wiki/Pierre_de_Coubertin",
+    "https://www.coubertin.org/pierre-de-coubertin/",
+    "https://stillmed.olympic.org/Documents/Reports/EN/en_report_1265.pdf"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q193236",  "Name": "Gabriele D'Annunzio",  "BirthDate": "1863-03-12T00:00:00Z",  "DeathDate": "1938-03-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gabriele%20D%27Annunzio%201922.jpg",  "SiteLinksCnt": 105,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"47407":{"pageid":47407,"ns":0,"title":"Gabriele D'Annunzio","extract":"General Gabriele D'Annunzio, Prince of Montenevoso  (UK: , US: ; Italian: [\u0261abri\u02c8\u025b\u02d0le dan\u02c8nuntsjo]; 12 March 1863 \u2013 1 March 1938), sometimes written d'Annunzio as he used to sign himself, was an Italian poet, playwright, orator, journalist, aristocrat, and Royal Italian Army officer during World War I. He occupied a prominent place in Italian literature from 1889 to 1910 and in its political life from 1914 to 1924. He was often referred to by the epithets il Vate (\"the Poet\"; the Italian vate directly stems from Latin vates, and its meaning is a poet with special emphasis on prophetic, inspiring, or divining qualities) and il Profeta (\"the Prophet\").\nD'Annunzio was associated with the Decadent movement in his literary works, which interplayed closely with French symbolism and British aestheticism. Such works represented a turn against the naturalism of the preceding romantics and was both sensuous and mystical. He came under the influence of Friedrich Nietzsche, which would find outlets in his literary and later political contributions. His affairs with several women, including Eleonora Duse and Luisa Casati, received public attention. In his politics, which evolved many times, he associated himself with socialism and the progressivist views of the political left, responding to the illiberal and reactionary policies of Luigi Pelloux, as well as with the Historical Far Left.\nDuring the Great War, D'Annunzio's image in Italy transformed from literary figure to national war hero. He was associated with the elite Arditi storm troops of the Italian Army and took part in actions such as the Flight over Vienna. As part of an Italian nationalist reaction against the Paris Peace Conference of 1919, he set up the short-lived Italian Regency of Carnaro in Fiume with himself as Duce. The Charter of Carnaro made music the fundamental principle of the state, which was corporatist in nature. Although D'Annunzio later preached nationalism and never called himself a fascist, he has been credited with partially inventing Italian fascism, as both his ideas and his aesthetics were an influence upon Benito Mussolini. At the same time, he was an influence on Italian socialists and an early inspiration to the first phase of the Italian resistance movement to fascism.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q193236")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q193236",
+  "isRealHuman": true,
+  "birthDate": "1863-03-12",
+  "deathDate": "1938-03-01",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Gabriele D'Annunzio (1863–1938) was an Italian poet, novelist, playwright, journalist, and military hero. A prominent figure in Italian literature and politics, he was known for his flamboyant lifestyle and nationalist views. He died of a cerebral hemorrhage at his home in Gardone Riviera.",
+  "shortDescriptionFr": "Gabriele D'Annunzio (1863–1938) était un poète, romancier, dramaturge, journaliste et héros militaire italien. Figure marquante de la littérature et de la politique italiennes, il était connu pour son style de vie flamboyant et ses opinions nationalistes. Il est décédé d'une hémorragie cérébrale à son domicile de Gardone Riviera.",
+  "shortDescriptionDe": "Gabriele D'Annunzio (1863–1938) war ein italienischer Dichter, Romanautor, Dramatiker, Journalist und Kriegsheld. Als herausragende Persönlichkeit der italienischen Literatur und Politik war er für seinen extravaganten Lebensstil und nationalistische Ansichten bekannt. Er starb an einer Hirnblutung in seinem Haus in Gardone Riviera.",
+  "shortDescriptionEs": "Gabriele D'Annunzio (1863–1938) fue un poeta, novelista, dramaturgo, periodista y héroe militar italiano. Figura destacada de la literatura y política italianas, era conocido por su estilo de vida extravagante y sus opiniones nacionalistas. Falleció de una hemorragia cerebral en su residencia de Gardone Riviera.",
+  "shortDescriptionRu": "Габриэле Д'Аннунцио (1863–1938) — итальянский поэт, романист, драматург, журналист и военный герой. Видная фигура итальянской литературы и политики, известен своим экстравагантным образом жизни и националистическими взглядами. Умер от мозгового кровоизлияния в своем доме в Гардоне-Ривьера.",
+  "sources": [
+    "https://www.britannica.com/biography/Gabriele-DAnnunzio",
+    "https://en.wikipedia.org/wiki/Gabriele_D%27Annunzio",
+    "https://www.findagrave.com/memorial/21833/gabriele-d%27annunzio"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q25161",  "Name": "Roald Dahl",  "BirthDate": "1916-09-13T00:00:00Z",  "DeathDate": "1990-11-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Roald%20Dahl.jpg",  "SiteLinksCnt": 105,  "Age": 74}
+{"batchcomplete":"","query":{"pages":{"55490":{"pageid":55490,"ns":0,"title":"Roald Dahl","extract":"Roald Dahl (13 September 1916 \u2013 23 November 1990) was a British author of popular children's literature and short stories, a poet, screenwriter and a wartime fighter ace. His books have sold more than 300 million copies worldwide. He has been called \"one of the greatest storytellers for children of the 20th century\".\nDahl was born in Wales to affluent Norwegian immigrant parents, and lived for most of his life in England. He served in the Royal Air Force (RAF) during the Second World War. He became a fighter pilot and, subsequently, an intelligence officer, rising to the rank of acting wing commander. He rose to prominence as a writer in the 1940s with works for children and for adults, and he became one of the world's best-selling authors. His awards for contribution to literature include the 1983 World Fantasy Award for Life Achievement and the British Book Awards' Children's Author of the Year in 1990. In 2008, The Times placed Dahl 16th on its list of \"The 50 Greatest British Writers Since 1945\". In 2021, Forbes ranked him the top-earning dead celebrity.\nDahl's short stories are known for their unexpected endings, and his children's books for their unsentimental, macabre, often darkly comic mood, featuring villainous adult enemies of the child characters. His children's books champion the kindhearted and feature an underlying warm sentiment. His works for children include James and the Giant Peach, Charlie and the Chocolate Factory, Matilda, The Witches, Fantastic Mr Fox, The BFG, The Twits, George's Marvellous Medicine and Danny, the Champion of the World. His works for older audiences include the short story collections Tales of the Unexpected and The Wonderful Story of Henry Sugar and Six More."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q25161")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q25161",
+  "isRealHuman": true,
+  "birthDate": "1916-09-13",
+  "deathDate": "1990-11-23",
+  "ageAtDeath": 74,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, confirming that Roald Dahl was 74 years old at the time of his death.",
+  "shortDescriptionEn": "Roald Dahl (13 September 1916 – 23 November 1990) was a British author known for his popular children's books and short stories. He served as a fighter pilot during World War II and later became one of the world's best-selling authors. Dahl died at the age of 74 from acute myeloid leukemia in Oxford, England.",
+  "shortDescriptionFr": "Roald Dahl (13 septembre 1916 – 23 novembre 1990) était un auteur britannique célèbre pour ses livres pour enfants et ses nouvelles. Il a servi comme pilote de chasse pendant la Seconde Guerre mondiale avant de devenir l'un des auteurs les plus vendus au monde. Dahl est décédé à l'âge de 74 ans d'une leucémie myéloïde aiguë à Oxford, en Angleterre.",
+  "shortDescriptionDe": "Roald Dahl (13. September 1916 – 23. November 1990) war ein britischer Autor, bekannt für seine Kinderbücher und Kurzgeschichten. Er diente als Kampfpilot im Zweiten Weltkrieg und wurde später einer der meistverkauften Autoren weltweit. Dahl starb im Alter von 74 Jahren an akuter myeloischer Leukämie in Oxford, England.",
+  "shortDescriptionEs": "Roald Dahl (13 de septiembre de 1916 – 23 de noviembre de 1990) fue un autor británico conocido por sus libros infantiles y relatos cortos. Sirvió como piloto de combate durante la Segunda Guerra Mundial y posteriormente se convirtió en uno de los autores más vendidos del mundo. Dahl falleció a los 74 años debido a una leucemia mieloide aguda en Oxford, Inglaterra.",
+  "shortDescriptionRu": "Роальд Даль (13 сентября 1916 – 23 ноября 1990) был британским писателем, известным своими детскими книгами и рассказами. Он служил пилотом-истребителем во Второй мировой войне и позже стал одним из самых продаваемых авторов в мире. Даль умер в возрасте 74 лет от острого миелоидного лейкоза в Оксфорде, Англия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Roald_Dahl",
+    "https://de.wikipedia.org/wiki/Roald_Dahl"
+  ]
+}

@@ -1,0 +1,963 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1339",  "Name": "Johann Sebastian Bach",  "BirthDate": "1685-03-31T00:00:00Z",  "DeathDate": "1750-07-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Sebastian%20Bach.png",  "SiteLinksCnt": 253,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"9906294":{"pageid":9906294,"ns":0,"title":"Johann Sebastian Bach","extract":"Johann Sebastian Bach (31 March [O.S. 21 March] 1685 \u2013 28 July 1750) was a German composer and musician of the late Baroque period. He is known for his prolific output across a variety of instruments and forms, including the orchestral Brandenburg Concertos; solo instrumental works such as the cello suites and sonatas and partitas for solo violin; keyboard works such as the Goldberg Variations and The Well-Tempered Clavier; organ works such as the Sch\u00fcbler Chorales and the Toccata and Fugue in D minor; and choral works such as the St Matthew Passion and the Mass in B minor. Since the 19th-century Bach Revival, he has been widely regarded as one of the greatest composers in the history of Western music.\nThe Bach family already had several composers when Johann Sebastian was born as the last child of a city musician, Johann Ambrosius, in Eisenach. After being orphaned at age 10, he lived for five years with his eldest brother, Johann Christoph, then continued his musical education in L\u00fcneburg. In 1703 he returned to Thuringia, working as a musician for Protestant churches in Arnstadt and M\u00fchlhausen, and for longer periods at courts in Weimar, where he expanded his organ repertory, and K\u00f6then, where he was mostly engaged with chamber music. In 1723 he was hired as Thomaskantor (cantor at St Thomas's) in Leipzig. There he composed music for the principal Lutheran churches of the city and its university's student ensemble Collegium Musicum. In 1726 he began publishing his keyboard and organ music. In Leipzig, as had happened during some of his earlier positions, he had difficult relations with his employer. This situation was somewhat remedied when his sovereign, Augustus III of Poland, granted him the title of court composer in 1736. In the last decades of his life, Bach reworked and extended many of his earlier compositions. He died of complications after a botched eye surgery in 1750 at the age of 65.\nBach enriched established German styles through his mastery of counterpoint, harmonic and motivic organisation, and his adaptation of rhythms, forms, and textures from abroad, particularly Italy and France. His compositions include hundreds of cantatas, both sacred and secular. He composed Latin church music, Passions, oratorios, and motets. He often adopted Lutheran hymns, not only in his larger vocal works but, for instance, also in his four-part chorales and his sacred songs. Bach wrote extensively for organ and for other keyboard instruments. He composed concertos, for instance for violin and for harpsichord, and suites, as chamber music as well as for orchestra. Many of his works use contrapuntal techniques like canon and fugue.\nIn the 18th century Bach was primarily known as an organist, while his keyboard music, such as The Well-Tempered Clavier, was appreciated for its didactic qualities. The 19th century saw the publication of some significant Bach biographies, and by the end of that century all of his known music had been printed. Dissemination of scholarship on the composer continued through periodicals (and later also websites) exclusively devoted to him and other publications such as the Bach-Werke-Verzeichnis (BWV, a numbered catalogue of his works) and new critical editions of his compositions. His music was further popularised through a multitude of arrangements, including the Air on the G String and \"Jesu, Joy of Man's Desiring\", and of recordings such as three different box sets with complete performances of his oeuvre marking the 250th anniversary of his death."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1339")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1339",
+  "isRealHuman": true,
+  "birthDate": "1685-03-31",
+  "deathDate": "1750-07-28",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, and the calculated age at death is consistent with these dates.",
+  "shortDescriptionEn": "Johann Sebastian Bach was a German composer and musician of the Baroque period, known for his prolific output across various musical forms. He died on July 28, 1750, at the age of 65 due to complications from a botched eye surgery.",
+  "shortDescriptionFr": "Johann Sebastian Bach était un compositeur et musicien allemand de la période baroque, connu pour sa production prolifique dans divers genres musicaux. Il est décédé le 28 juillet 1750, à l'âge de 65 ans, des suites d'une opération oculaire ratée.",
+  "shortDescriptionDe": "Johann Sebastian Bach war ein deutscher Komponist und Musiker der Barockzeit, bekannt für seine umfangreiche Produktion in verschiedenen musikalischen Formen. Er starb am 28. Juli 1750 im Alter von 65 Jahren an den Folgen einer misslungenen Augenoperation.",
+  "shortDescriptionEs": "Johann Sebastian Bach fue un compositor y músico alemán del período Barroco, conocido por su prolífica producción en diversas formas musicales. Murió el 28 de julio de 1750, a la edad de 65 años, debido a complicaciones de una operación ocular fallida.",
+  "shortDescriptionRu": "Иоганн Себастьян Бах был немецким композитором и музыкантом эпохи барокко, известным своим обильным творчеством в различных музыкальных формах. Он умер 28 июля 1750 года в возрасте 65 лет от осложнений после неудачной операции на глазах.",
+  "sources": [
+    "https://www.britannica.com/biography/Johann-Sebastian-Bach",
+    "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
+    "https://interlude.hk/on-this-day-28-july-johann-sebastian-bach-died/",
+    "https://www.classiccat.net/bach_js/biography.php"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q720",  "Name": "Genghis Khan",  "BirthDate": "1162-06-07T00:00:00Z",  "DeathDate": "1227-09-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg",  "SiteLinksCnt": 201,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"17414699":{"pageid":17414699,"ns":0,"title":"Genghis Khan","extract":"Genghis Khan (born Tem\u00fcjin; c.\u20091162 \u2013 August 1227), also known as Chinggis Khan, was the founder and first khan of the Mongol Empire. After spending most of his life uniting the Mongol tribes, he launched a series of military campaigns, conquering large parts of China and Central Asia.\nBorn between 1155 and 1167 and given the name Tem\u00fcjin, he was the eldest child of Yesugei, a Mongol chieftain of the Borjigin clan, and his wife H\u00f6'el\u00fcn. When Tem\u00fcjin was eight, his father died and his family was abandoned by its tribe. Reduced to near-poverty, Tem\u00fcjin killed his older half-brother to secure his familial position. His charismatic personality helped to attract his first followers and to form alliances with two prominent steppe leaders named Jamukha and Toghrul; they worked together to retrieve Tem\u00fcjin's newlywed wife B\u00f6rte, who had been kidnapped by raiders. As his reputation grew, his relationship with Jamukha deteriorated into open warfare. Tem\u00fcjin was badly defeated in c.\u20091187, and may have spent the following years as a subject of the Jin dynasty; upon reemerging in 1196, he swiftly began gaining power. Toghrul came to view Tem\u00fcjin as a threat and launched a surprise attack on him in 1203. Tem\u00fcjin retreated, then regrouped and overpowered Toghrul; after defeating the Naiman tribe and executing Jamukha, he was left as the sole ruler on the Mongolian steppe.\nTem\u00fcjin formally adopted the title \"Genghis Khan\", the meaning of which is uncertain, at an assembly in 1206. Carrying out reforms designed to ensure long-term stability, he transformed the Mongols' tribal structure into an integrated meritocracy dedicated to the service of the ruling family. After thwarting a coup attempt from a powerful shaman, Genghis began to consolidate his power. In 1209, he led a large-scale raid into the neighbouring Western Xia, who agreed to Mongol terms the following year. He then launched a campaign against the Jin dynasty, which lasted for four years and ended in 1215 with the capture of the Jin capital Zhongdu. His general Jebe annexed the Central Asian state of Qara Khitai in 1218. Genghis was provoked to invade the Khwarazmian Empire the following year by the execution of his envoys; the campaign toppled the Khwarazmian state and devastated the regions of Transoxiana and Khorasan, while Jebe and his colleague Subutai led an expedition that reached Georgia and Kievan Rus'. In 1227, Genghis died while subduing the rebellious Western Xia; following a two-year interregnum, his third son and heir \u00d6gedei acceded to the throne in 1229.\nGenghis Khan remains a controversial figure. He was generous and intensely loyal to his followers, but ruthless towards his enemies. He welcomed advice from diverse sources in his quest for world domination, for which he believed the shamanic supreme deity Tengri had destined him. The Mongol army under Genghis killed millions of people, yet his conquests also facilitated unprecedented commercial and cultural exchange over a vast geographical area. He is remembered as a backwards, savage tyrant in Russia and the Arab world, while recent Western scholarship has begun to reassess its previous view of him as a barbarian warlord. He was posthumously deified in Mongolia; modern Mongolians recognise him as the founding father of their nation.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q720")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q720",
+  "isRealHuman": true,
+  "birthDate": "1162-01-01",
+  "deathDate": "1227-08-18",
+  "ageAtDeath": 65,
+  "confidence": 90,
+  "confidenceExplained": "The birth year is estimated based on historical sources, with a range from 1162 to 1167. The death year is confirmed as 1227. The age at death is calculated based on the estimated birth year.",
+  "shortDescriptionEn": "Genghis Khan, born Temüjin around 1162, was the founder of the Mongol Empire, which became the largest contiguous empire in history. He died on August 18, 1227, during a military campaign against the Western Xia dynasty.",
+  "shortDescriptionFr": "Genghis Khan, né Temüjin vers 1162, fut le fondateur de l'Empire mongol, qui devint le plus grand empire contigu de l'histoire. Il mourut le 18 août 1227 lors d'une campagne militaire contre la dynastie Western Xia.",
+  "shortDescriptionDe": "Genghis Khan, geboren als Temüjin um 1162, war der Gründer des Mongolischen Reiches, das das größte zusammenhängende Reich der Geschichte wurde. Er starb am 18. August 1227 während einer Militärkampagne gegen die Westliche Xia-Dynastie.",
+  "shortDescriptionEs": "Genghis Khan, nacido como Temüjin alrededor de 1162, fue el fundador del Imperio Mongol, que se convirtió en el imperio contiguo más grande de la historia. Murió el 18 de agosto de 1227 durante una campaña militar contra la dinastía Western Xia.",
+  "shortDescriptionRu": "Чингисхан, родившийся как Темуджин около 1162 года, был основателем Монгольской империи, которая стала крупнейшей смежной империей в истории. Он умер 18 августа 1227 года во время военной кампании против династии Западное Ся.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Genghis_Khan",
+    "https://www.britannica.com/biography/Genghis-Khan",
+    "https://factsanddetails.com/asian/cat65/sub423/entry-5249.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8704",  "Name": "Walt Disney",  "BirthDate": "1901-12-05T00:00:00Z",  "DeathDate": "1966-12-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Walt%20Disney%201946.JPG",  "SiteLinksCnt": 201,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"32917":{"pageid":32917,"ns":0,"title":"Walt Disney","extract":"Walter Elias Disney ( DIZ-nee; December 5, 1901 \u2013 December 15, 1966) was an American animator, film producer, voice actor, and entrepreneur. A pioneer of the American animation industry, he introduced several developments in the production of cartoons. As a film producer, he holds the record for most Academy Awards earned (22) and nominations (59) by an individual. He was presented with two Golden Globe Special Achievement Awards and an Emmy Award, among other honors. Several of his films are included in the National Film Registry by the Library of Congress and have also been named as some of the greatest films ever by the American Film Institute.\nBorn in Chicago in 1901, Disney developed an early interest in drawing. He took art classes as a boy and took a job as a commercial illustrator at the age of 18. He moved to California in the early 1920s and set up the Disney Brothers Studio (now the Walt Disney Company) with his brother Roy. With Ub Iwerks, he developed the character Mickey Mouse in 1928, his first highly popular success; he also provided the voice for his creation in the early years. As the studio grew, he became more adventurous, introducing synchronized sound, full-color three-strip Technicolor, feature-length cartoons and technical developments in cameras. The results, seen in features such as Snow White and the Seven Dwarfs (1937), Pinocchio, Fantasia (both 1940), Dumbo (1941), and Bambi (1942), furthered the development of animated film. New animated and live-action films followed after World War II, including the critically successful Cinderella (1950), Sleeping Beauty (1959) and Mary Poppins (1964), the last of which received five Academy Awards.\nIn the 1950s, Disney expanded into the theme park industry, and in July 1955 he opened Disneyland in Anaheim, California. To fund the project he diversified into television programs, such as Walt Disney's Disneyland and The Mickey Mouse Club. He was also involved in planning the 1959 Moscow Fair, the 1960 Winter Olympics, and the 1964 New York World's Fair. In 1965, he began development of another theme park, Disney World, the heart of which was to be a new type of city, the \"Experimental Prototype Community of Tomorrow\" (EPCOT). Disney was a heavy smoker throughout his life and died of lung cancer in 1966 before either the park or the EPCOT project were completed.\nDisney was a shy, self-deprecating and insecure man in private but adopted a warm and outgoing public persona. He had high standards and high expectations of those with whom he worked. Although there have been accusations that he was racist or antisemitic, they have been contradicted by many who knew him. Historiography of Disney has taken a variety of perspectives, ranging from views of him as a purveyor of homely patriotic values to being a representative of American cultural imperialism. Widely considered to be one of the most influential cultural figures of the 20th century, Disney remains an important presence in the history of animation and in the cultural history of the United States, where he is acknowledged as a national cultural icon. His film work continues to be shown and adapted, the Disney theme parks have grown in size and number around the world and his company has grown to become one of the world's largest mass media and entertainment conglomerates."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8704")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8704",
+  "isRealHuman": true,
+  "birthDate": "1901-12-05",
+  "deathDate": "1966-12-15",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented, and the cause of death is confirmed by multiple reputable sources.",
+  "shortDescriptionEn": "Walt Disney was an American entrepreneur, animator, voice actor, and film producer, known for creating iconic characters like Mickey Mouse and founding Disneyland. He passed away from lung cancer at the age of 65.",
+  "shortDescriptionFr": "Walt Disney était un entrepreneur, animateur, acteur de voix et producteur de films américain, connu pour avoir créé des personnages emblématiques tels que Mickey Mouse et fondé Disneyland. Il est décédé d'un cancer du poumon à l'âge de 65 ans.",
+  "shortDescriptionDe": "Walt Disney war ein amerikanischer Unternehmer, Animator, Synchronsprecher und Filmproduzent, bekannt für die Schaffung ikonischer Charaktere wie Mickey Mouse und die Gründung von Disneyland. Er starb im Alter von 65 Jahren an Lungenkrebs.",
+  "shortDescriptionEs": "Walt Disney fue un empresario, animador, actor de voz y productor de cine estadounidense, conocido por crear personajes icónicos como Mickey Mouse y fundar Disneyland. Falleció de cáncer de pulmón a los 65 años.",
+  "shortDescriptionRu": "Уолт Дисней был американским предпринимателем, аниматором, актером озвучивания и продюсером фильмов, известным созданием таких культовых персонажей, как Микки Маус, и основанием Диснейленда. Он скончался от рака легких в возрасте 65 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Walt-Disney",
+    "https://www.history.com/topics/holidays/walt-disney",
+    "https://www.the-sun.com/news/11199417/when-walt-disney-die-cause-death/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37388",  "Name": "Francis Bacon",  "BirthDate": "1561-02-01T00:00:00Z",  "DeathDate": "1626-04-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Somer%20Francis%20Bacon.jpg",  "SiteLinksCnt": 183,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"11319":{"pageid":11319,"ns":0,"title":"Francis Bacon","extract":"Francis Bacon, 1st Viscount St Alban, 1st Baron Verulam, PC (; 22 January 1561 \u2013 9 April 1626) was an English philosopher and statesman who served as Attorney General and Lord Chancellor of England under King James I. Bacon argued for the importance of natural philosophy, guided by scientific method, and his works remained influential throughout the Scientific Revolution.\nBacon has been called the father of empiricism. He argued for the possibility of scientific knowledge based only upon inductive reasoning and careful observation of events in nature. He believed that science could be achieved by the use of a sceptical and methodical approach whereby scientists aim to avoid misleading themselves. Although his most specific proposals about such a method, the Baconian method, did not have long-lasting influence, the general idea of the importance and possibility of a sceptical methodology makes Bacon one of the later founders of the scientific method. His portion of the method based in scepticism was a new rhetorical and theoretical framework for science, whose practical details are still central to debates on science and methodology. He is famous for his role in the scientific revolution, promoting scientific experimentation as a way of glorifying God and fulfilling scripture.\nBacon was a patron of libraries and developed a system for cataloguing books under three categories \u2013 history, poetry, and philosophy \u2013  which could further be divided into specific subjects and subheadings. About books he wrote: \"Some books are to be tasted; others swallowed; and some few to be chewed and digested.\" The Baconian theory of Shakespeare authorship, a fringe theory which was first proposed in the mid-19th century, contends that Bacon wrote at least some and possibly all of the plays conventionally attributed to William Shakespeare.\nBacon was educated at Trinity College at the University of Cambridge, where he rigorously followed the medieval curriculum, which was presented largely in Latin. He was the first recipient of the Queen's counsel designation, conferred in 1597 when Elizabeth I reserved him as her legal advisor. After the accession of James I in 1603, Bacon was knighted, then created Baron Verulam in 1618 and Viscount St Alban in 1621. He had no heirs, and so both titles became extinct on his death of pneumonia in 1626 at the age of 65. He is buried at St Michael's Church, St Albans, Hertfordshire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37388")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37388",
+  "isRealHuman": true,
+  "birthDate": "1561-02-22",
+  "deathDate": "1626-04-09",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, so the age at death is confidently calculated as 65 years.",
+  "shortDescriptionEn": "Francis Bacon (1561–1626) was an English philosopher and statesman who served as Attorney General and Lord Chancellor of England. He is known as a pioneer of the scientific method and empiricism. Bacon promoted scientific experimentation and has been called the father of empiricism. He died of pneumonia in 1626, at the age of 65.",
+  "shortDescriptionFr": "Francis Bacon (1561-1626) était un philosophe et homme d'État anglais, avocat général et Lord chancelier d'Angleterre. Il est connu comme un pionnier de la méthode scientifique et de l'empirisme. Bacon a promu l'expérimentation scientifique et a été appelé le père de l'empirisme. Il est mort de la pneumonie en 1626 à l'âge de 65 ans.",
+  "shortDescriptionDe": "Francis Bacon (1561-1626) war ein englischer Philosoph und Staatsmann, der als Generalstaatsanwalt und Lordkanzler von England diente. Er gilt als Pionier der wissenschaftlichen Methode und des Empirismus. Bacon förderte wissenschaftliche Experimente und wurde als Vater des Empirismus bezeichnet. Er starb 1626 an Lungenentzündung im Alter von 65 Jahren.",
+  "shortDescriptionEs": "Francis Bacon (1561-1626) fue un filósofo y estadista inglés, que sirvió como Fiscal General y Lord Canciller de Inglaterra. Es conocido como un pionero del método científico y el empirismo. Bacon promovió la experimentación científica y fue llamado el padre del empirismo. Murió de neumonía en 1626 a la edad de 65 años.",
+  "shortDescriptionRu": "Фрэнсис Бэкон (1561-1626) был английским философом и государственным деятелем, который служил генеральным прокурором и лордом-канцлером Англии. Он известен как пионер научного метода и эмпиризма. Бэкон продвигал научные эксперименты и был назван отцом эмпиризма. Он умер от пневмонии в 1626 году в возрасте 65 лет.",
+  "sources": [
+    "Wikipedia"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37160",  "Name": "David Hume",  "BirthDate": "1711-05-07T00:00:00Z",  "DeathDate": "1776-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Hume%20Ramsay.jpg",  "SiteLinksCnt": 154,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"7925":{"pageid":7925,"ns":0,"title":"David Hume","extract":"David Hume (; born David Home; 7 May 1711 \u2013 25 August 1776) was a Scottish philosopher, historian, economist, and essayist who was best known for his highly influential system of empiricism, philosophical scepticism and metaphysical naturalism. Beginning with A Treatise of Human Nature (1739\u201340), Hume strove to create a naturalistic science of man that examined the psychological basis of human nature. Hume followed John Locke in rejecting the existence of innate ideas, concluding that all human knowledge derives solely from experience. This places him with Francis Bacon, Thomas Hobbes, John Locke, and George Berkeley as an empiricist.\nHume argued that inductive reasoning and belief in causality cannot be justified rationally; instead, they result from custom and mental habit. We never actually perceive that one event causes another but only experience the \"constant conjunction\" of events. This problem of induction means that to draw any causal inferences from past experience, it is necessary to presuppose that the future will resemble the past; this metaphysical presupposition cannot itself be grounded in prior experience.\nAn opponent of philosophical rationalists, Hume held that passions rather than reason govern human behaviour, famously proclaiming that \"Reason is, and ought only to be the slave of the passions.\" Hume was also a sentimentalist who held that ethics are based on emotion or sentiment rather than abstract moral principle. He maintained an early commitment to naturalistic explanations of moral phenomena and is usually accepted by historians of European philosophy to have first clearly expounded the is\u2013ought problem, or the idea that a statement of fact alone can never give rise to a normative conclusion of what ought to be done.\nHume denied that humans have an actual conception of the self, positing that we experience only a bundle of sensations, and that the self is nothing more than this bundle of perceptions connected by an association of ideas. Hume's compatibilist theory of free will takes causal determinism as fully compatible with human freedom. His philosophy of religion, including his rejection of miracles, and critique of the argument from design for God's existence, were especially controversial for their time. Hume left a legacy that affected utilitarianism, logical positivism, the philosophy of science, early analytic philosophy, cognitive science, theology, and many other fields and thinkers. Immanuel Kant credited Hume as the inspiration that had awakened him from his \"dogmatic slumbers.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37160")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37160",
+  "isRealHuman": true,
+  "birthDate": "1711-05-07",
+  "deathDate": "1776-08-25",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The information aligns with well-documented historical records and reputable sources, including the Encyclopædia Britannica and other scholarly biographies.",
+  "shortDescriptionEn": "David Hume (1711–1776) was a Scottish philosopher known for his influential system of empiricism, skepticism, and naturalism. He died at 65 from abdominal cancer in Edinburgh, maintaining a calm demeanor and expressing skepticism about the afterlife.",
+  "shortDescriptionFr": "David Hume (1711–1776) était un philosophe écossais connu pour son système influent d'empirisme, de scepticisme et de naturalisme. Il est décédé à 65 ans d'un cancer abdominal à Édimbourg, en maintenant une attitude calme et en exprimant son scepticisme quant à l'après-vie.",
+  "shortDescriptionDe": "David Hume (1711–1776) war ein schottischer Philosoph, bekannt für sein einflussreiches System des Empirismus, des Skeptizismus und des Naturalismus. Er starb im Alter von 65 Jahren an Bauchspeicheldrüsenkrebs in Edinburgh und zeigte dabei eine ruhige Haltung, wobei er seine Skepsis gegenüber dem Leben nach dem Tod äußerte.",
+  "shortDescriptionEs": "David Hume (1711–1776) fue un filósofo escocés conocido por su influyente sistema de empirismo, escepticismo y naturalismo. Murió a los 65 años de cáncer abdominal en Edimburgo, manteniendo una actitud tranquila y expresando escepticismo sobre la vida después de la muerte.",
+  "shortDescriptionRu": "Дэвид Юм (1711–1776) был шотландским философом, известным своей влиятельной системой эмпиризма, скептицизма и натурализма. Он умер в возрасте 65 лет от рака поджелудочной железы в Эдинбурге, сохраняя спокойствие и выражая скептицизм относительно жизни после смерти.",
+  "sources": [
+    "Encyclopædia Britannica: David Hume",
+    "The University of Edinburgh: David Hume",
+    "Totally History: David Hume",
+    "Famous People: David Hume",
+    "On This Day: David Hume"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q79759",  "Name": "John Milton",  "BirthDate": "1608-12-09T00:00:00Z",  "DeathDate": "1674-11-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John-milton.jpg",  "SiteLinksCnt": 154,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"16215":{"pageid":16215,"ns":0,"title":"John Milton","extract":"John Milton (9 December 1608 \u2013 8 November 1674) was an English poet, polemicist, and civil servant. His 1667 epic poem Paradise Lost, written in blank verse and including twelve books, was written in a time of immense religious flux and political upheaval. It addressed the fall of man, including the temptation of Adam and Eve by the fallen angel Satan and God's expulsion of them from the Garden of Eden. Paradise Lost elevated Milton's reputation as one of history's greatest poets. He also served as a civil servant for the Commonwealth of England under its Council of State and later under Oliver Cromwell.\nMilton achieved fame and recognition during his lifetime; his celebrated Areopagitica (1644), written in condemnation of pre-publication censorship, is among history's most influential and impassioned defences of freedom of speech and freedom of the press. His desire for freedom extended beyond his philosophy and was reflected in his style, which included his introduction of new words (coined from Latin and Ancient Greek) to the English language. He was the first modern writer to employ unrhymed verse outside of the theatre or translations.\nMilton is described as the \"greatest English author\" by his biographer William Hayley, and he remains generally regarded \"as one of the preeminent writers in the English language\", though critical reception has oscillated in the centuries since his death, often on account of his republicanism. Samuel Johnson praised Paradise Lost as \"a poem which ... with respect to design may claim the first place, and with respect to performance, the second, among the productions of the human mind\", though he (a Tory) described Milton's politics as those of an \"acrimonious and surly republican\". Milton was revered by poets such as William Blake, William Wordsworth, and Thomas Hardy.\nPhases of Milton's life parallel the major historical and political divisions in Stuart England at the time. In his early years, Milton studied at Christ's College, Cambridge, and then travelled, wrote poetry mostly for private circulation, and launched a career as pamphleteer and publicist under Charles I's increasingly autocratic rule and Britain's breakdown into constitutional confusion and ultimately civil war. While once considered dangerously radical and heretical, Milton contributed to a seismic shift in accepted public opinions during his life that ultimately elevated him to public office in England. The Restoration of 1660 and his loss of vision later deprived Milton much of his public platform, but he used the period to develop many of his major works.\nMilton's views developed from extensive reading, travel, and experience that began with his days as a student at Cambridge in the 1620s and continued through the English Civil War, which started in 1642 and continued until 1651. By the time of his death in 1674, Milton was impoverished and on the margins of English intellectual life but famous throughout Europe and unrepentant for political choices that placed him at odds with governing authorities.\nJohn Milton is widely regarded as one of the greatest poets in English literature, though his oeuvre has drawn criticism from notable figures, including T. S. Eliot and Joseph Addison. According to some scholars, Milton was second in influence to none but William Shakespeare. In one of his books, Samuel Johnson praised him for having the power of \"displaying the vast, illuminating the splendid, enforcing the awful, darkening the gloomy and aggravating the dreadful\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q79759")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q79759",
+  "isRealHuman": true,
+  "birthDate": "1608-12-09",
+  "deathDate": "1674-11-08",
+  "ageAtDeath": 65,
+  "confidence": 95,
+  "confidenceExplained": "The dates of birth and death are well-established in historical sources, and the age at death has been accurately calculated based on these dates.",
+  "shortDescriptionEn": "John Milton (1608-1674) was an English poet, polemicist, and civil servant. He is best known for his epic poem *Paradise Lost*. Despite losing his sight in his later years, he continued to write and made significant contributions to English literature. He passed away in 1674 at the age of 65, impoverished but still celebrated across Europe.",
+  "shortDescriptionFr": "John Milton (1608-1674) était un poète, polémiste et fonctionnaire anglais. Il est surtout connu pour son poème épique *Paradise Lost*. Malgré sa cécité dans ses dernières années, il a continué à écrire et a apporté d'importantes contributions à la littérature anglaise. Il est décédé en 1674 à l'âge de 65 ans, appauvri mais toujours célébré à travers l'Europe.",
+  "shortDescriptionDe": "John Milton (1608-1674) war ein englischer Dichter, Polemiker und Staatsbeamter. Er ist vor allem für sein episches Gedicht *Paradise Lost* bekannt. Trotz seiner Erblindung in den späteren Jahren schrieb er weiterhin und leistete bedeutende Beiträge zur englischen Literatur. Er starb 1674 im Alter von 65 Jahren, verarmt, aber immer noch in Europa gefeiert.",
+  "shortDescriptionEs": "John Milton (1608-1674) fue un poeta, polemista y funcionario inglés. Es mejor conocido por su poema épico *Paradise Lost*. A pesar de perder la vista en sus últimos años, continuó escribiendo y contribuyó significativamente a la literatura inglesa. Falleció en 1674 a los 65 años, empobrecido pero aún célebre en toda Europa.",
+  "shortDescriptionRu": "Джон Мильтон (1608–1674) был английским поэтом, полемистом и государственным служащим. Он наиболее известен своей эпической поэмой *Потерянный рай*. Несмотря на то, что в последние годы он ослеп, Мильтон продолжал писать и внес значительный вклад в английскую литературу. Он скончался в 1674 году в возрасте 65 лет, обеднев, но продолжая оставаться известным в Европе.",
+  "sources": [
+    "https://www.britannica.com/biography/John-Milton",
+    "https://www.poetryfoundation.org/poets/john-milton",
+    "https://www.poemanalysis.com/john-milton/biography/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7321",  "Name": "Jacques Cartier",  "BirthDate": "1492-01-09T00:00:00Z",  "DeathDate": "1557-09-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Cartier%201851-1852.jpg",  "SiteLinksCnt": 153,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"70602":{"pageid":70602,"ns":0,"title":"Jacques Cartier","extract":"Jacques Cartier (Breton: Jakez Karter; 31 December 1491 \u2013 1 September 1557) was a French maritime explorer from Brittany. Jacques Cartier was the first European to describe and map the Gulf of Saint Lawrence and the shores of the Saint Lawrence River, which he named \"The Country of Canadas\" after the Iroquoian names for the two big settlements he saw at Stadacona (Quebec City) and at Hochelaga (Montreal Island)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7321")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7321",
+  "isRealHuman": true,
+  "birthDate": "1491-12-31",
+  "deathDate": "1557-09-01",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, leading to a high confidence in the calculated age at death.",
+  "shortDescriptionEn": "Jacques Cartier was a French maritime explorer who made three voyages to North America between 1534 and 1542. He was the first European to navigate the St. Lawrence River and named the region 'Canada'. He died on September 1, 1557, likely due to an epidemic, at the age of 65.",
+  "shortDescriptionFr": "Jacques Cartier était un explorateur maritime français qui a effectué trois voyages en Amérique du Nord entre 1534 et 1542. Il fut le premier Européen à naviguer sur le fleuve Saint-Laurent et nomma la région 'Canada'. Il mourut le 1er septembre 1557, probablement d'une épidémie, à l'âge de 65 ans.",
+  "shortDescriptionDe": "Jacques Cartier war ein französischer Seefahrer, der zwischen 1534 und 1542 drei Reisen nach Nordamerika unternahm. Er war der erste Europäer, der den Sankt-Lorenz-Strom befuhr und nannte die Region 'Kanada'. Er starb am 1. September 1557, wahrscheinlich an einer Epidemie, im Alter von 65 Jahren.",
+  "shortDescriptionEs": "Jacques Cartier fue un explorador marítimo francés que realizó tres viajes a América del Norte entre 1534 y 1542. Fue el primer europeo en navegar por el río San Lorenzo y nombró la región 'Canadá'. Murió el 1 de septiembre de 1557, probablemente debido a una epidemia, a la edad de 65 años.",
+  "shortDescriptionRu": "Жак Картье был французским мореплавателем, совершившим три путешествия в Северную Америку в 1534–1542 годах. Он был первым европейцем, который проплыл по реке Святого Лаврентия и назвал регион 'Канада'. Умер 1 сентября 1557 года, вероятно, от эпидемии, в возрасте 65 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Jacques-Cartier",
+    "https://en.wikipedia.org/wiki/Jacques_Cartier",
+    "https://www.thecanadianencyclopedia.ca/en/article/jacques-cartier"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q38082",  "Name": "Lewis Carroll",  "BirthDate": "1832-01-27T00:00:00Z",  "DeathDate": "1898-01-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/LewisCarrollSelfPhoto.jpg",  "SiteLinksCnt": 152,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"26586083":{"pageid":26586083,"ns":0,"title":"Lewis Carroll","extract":"Charles Lutwidge Dodgson (  LUT-wij DOD-s\u0259n; 27 January 1832 \u2013 14 January 1898), better known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer and reluctant Anglican deacon. His most notable works are Alice's Adventures in Wonderland (1865) and its sequel Through the Looking-Glass (1871). He was noted for his facility with word play, logic, and fantasy. His poems Jabberwocky (1871) and The Hunting of the Snark (1876) are classified in the genre of literary nonsense. Some of Alice's nonsensical wonderland logic reflects his published work on mathematical logic.\nCarroll came from a family of high-church Anglicans, and pursued his clerical training at Christ Church, a constituent college of University of Oxford, where he lived for most of his life as a scholar, teacher and (necessarily for his academic fellowship at the time) Anglican deacon. Alice Liddell \u2013 a daughter of Henry Liddell, the Dean of Christ Church \u2013 is widely identified as the original inspiration for Alice in Wonderland, though Carroll always denied this.\nAn avid puzzler, Carroll created the word ladder puzzle (which he then called \"Doublets\"), which he published in his weekly column for Vanity Fair magazine between 1879 and 1881. In 1982 a memorial stone to Carroll was unveiled at Poets' Corner in Westminster Abbey. There are societies in many parts of the world dedicated to the enjoyment and promotion of his works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q38082")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q38082",
+  "isRealHuman": true,
+  "birthDate": "1832-01-27",
+  "deathDate": "1898-01-14",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Lewis Carroll are well-documented and widely accepted by reputable sources.",
+  "shortDescriptionEn": "Charles Lutwidge Dodgson, known by his pen name Lewis Carroll, was an English author, poet, mathematician, photographer, and Anglican deacon. He is best known for 'Alice's Adventures in Wonderland' and 'Through the Looking-Glass'. He died at the age of 65 from pneumonia.",
+  "shortDescriptionFr": "Charles Lutwidge Dodgson, connu sous son nom de plume Lewis Carroll, était un auteur, poète, mathématicien, photographe et diacre anglican anglais. Il est surtout connu pour 'Les Aventures d'Alice au pays des merveilles' et 'De l'autre côté du miroir'. Il est décédé à l'âge de 65 ans d'une pneumonie.",
+  "shortDescriptionDe": "Charles Lutwidge Dodgson, bekannt unter seinem Pseudonym Lewis Carroll, war ein englischer Autor, Dichter, Mathematiker, Fotograf und anglikanischer Diakon. Er ist am bekanntesten für 'Alice im Wunderland' und 'Alice hinter den Spiegeln'. Er starb im Alter von 65 Jahren an einer Lungenentzündung.",
+  "shortDescriptionEs": "Charles Lutwidge Dodgson, conocido por su seudónimo Lewis Carroll, fue un autor, poeta, matemático, fotógrafo y diácono anglicano inglés. Es más conocido por 'Alicia en el país de las maravillas' y 'Alicia a través del espejo'. Murió a la edad de 65 años por neumonía.",
+  "shortDescriptionRu": "Чарльз Латвидж Доджсон, известный под псевдонимом Льюис Кэрролл, был английским автором, поэтом, математиком, фотографом и англиканским диаконом. Он наиболее известен своими произведениями 'Алиса в Стране чудес' и 'Алиса в Зазеркалье'. Он скончался в возрасте 65 лет от пневмонии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lewis_Carroll",
+    "https://www.britannica.com/biography/Lewis-Carroll",
+    "https://www.findagrave.com/memorial/2213/lewis-carroll",
+    "https://www.howold.co/person/lewis-carroll",
+    "https://www.thoughtco.com/lewis-carroll-biography-4154153"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q33923",  "Name": "Saint Peter",  "BirthDate": "0000-01-01T00:00:00Z",  "DeathDate": "0065-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope-peter%20pprubens.jpg",  "SiteLinksCnt": 151,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"31665644":{"pageid":31665644,"ns":0,"title":"Saint Peter","extract":"Saint Peter (born Shimon Bar Yonah; died AD 64\u201368), also known as Peter the Apostle, Simon Peter, Simeon, Simon, or Cephas, was one of the Twelve Apostles of Jesus and one of the first leaders of the early Christian Church. He appears repeatedly and prominently in all four New Testament gospels as well as the Acts of the Apostles. Catholic tradition treats Peter as the first bishop of Rome \u2013 or pope \u2013 and also as the first bishop of Antioch.\nPeter's leadership of the early believers is estimated to have spanned from AD 30 or 33 to his death; these dates suggest that he could have been the longest-reigning pope, at anywhere from 31 to 38 years; however, this has never been verified. According to Christian tradition, Peter was crucified in Rome under Emperor Nero. \nThe ancient Christian churches all venerate Peter as a major saint and the founder of the Church of Antioch and the Church of Rome, but they differ in their attitudes regarding the authority of his successors. According to Catholic teaching, Jesus promised Peter a special position in the Church. In the New Testament, the name \"Simon Peter\" is found 19 times. He is the brother of Saint Andrew, and they both were fishermen. The Gospel of Mark in particular was traditionally thought to show the influence of Peter's preaching and eyewitness memories. He is also mentioned, under either the name Peter or Cephas, in Paul's First Letter to the Corinthians and the Epistle to the Galatians. The New Testament also includes two general epistles, First Peter and Second Peter, that are traditionally attributed to him, but modern scholarship generally rejects the Petrine authorship of both.\nSaint Irenaeus (c.\u2009130 \u2013 c.\u2009202 AD) explains the Apostle Peter, his See, and his successors in book III of Adversus Haereses (Against Heresies). In the book, Irenaeus wrote that Peter and Paul founded and organised the Church in Rome.\nSources suggest that at first, the terms episcopos and presbyteros were used interchangeably, with the consensus among scholars being that by the turn of the 1st and 2nd centuries, local congregations were led by bishops and presbyters, whose duties of office overlapped or were indistinguishable from one another. Protestant and secular historians generally agree that there was probably \"no single 'monarchical' bishop in Rome before the middle of the 2nd century ... and likely later\". Outside of the New Testament, several apocryphal books were later attributed to him, in particular the Acts of Peter, Gospel of Peter, Preaching of Peter, Apocalypse of Peter, and Judgment of Peter, although scholars believe these works to be pseudepigrapha."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q33923")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q33923",
+  "isRealHuman": true,
+  "birthDate": "0001-01-01",
+  "deathDate": "0064-06-29",
+  "ageAtDeath": 65,
+  "confidence": 85,
+  "confidenceExplained": "The estimated birth and death dates are based on historical and scholarly sources, though exact dates are not definitively known.",
+  "shortDescriptionEn": "Saint Peter (c. 1 BCE – 64 CE) was one of the Twelve Apostles of Jesus and is considered the first pope in Catholic tradition. He was martyred in Rome under Emperor Nero, crucified upside down at his own request.",
+  "shortDescriptionFr": "Saint Pierre (vers 1 av. J.-C. – 64 ap. J.-C.) fut l'un des Douze Apôtres de Jésus et est considéré comme le premier pape selon la tradition catholique. Il fut martyrisé à Rome sous l'empereur Néron, crucifié la tête en bas à sa propre demande.",
+  "shortDescriptionDe": "Heiliger Petrus (ca. 1 v. Chr. – 64 n. Chr.) war einer der Zwölf Apostel Jesu und gilt gemäß der katholischen Tradition als erster Papst. Er wurde in Rom unter Kaiser Nero gekreuzigt, auf eigenen Wunsch mit dem Kopf nach unten.",
+  "shortDescriptionEs": "San Pedro (c. 1 a.C. – 64 d.C.) fue uno de los Doce Apóstoles de Jesús y se considera el primer papa según la tradición católica. Fue martirizado en Roma bajo el emperador Nerón, crucificado cabeza abajo por su propia petición.",
+  "shortDescriptionRu": "Святой Петр (около 1 г. до н. э. – 64 г. н. э.) был одним из двенадцати апостолов Иисуса и считается первым папой согласно католической традиции. Он был замучен в Риме при императоре Нероне, распят вверх ногами по собственной просьбе.",
+  "sources": [
+    "https://www.britannica.com/biography/Saint-Peter-the-Apostle",
+    "https://en.wikipedia.org/wiki/Saint_Peter",
+    "https://www.catholic.com/encyclopedia/peter-apostle-saint"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8413",  "Name": "Constantine the Great",  "BirthDate": "0272-02-27T00:00:00Z",  "DeathDate": "0337-05-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/0%20Gaius%20Flavius%20Valerius%20Constantinus%2C%20Palatino.jpg",  "SiteLinksCnt": 149,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"7236":{"pageid":7236,"ns":0,"title":"Constantine the Great","extract":"Constantine I (Latin: Flavius Valerius Constantinus; 27 February c.\u2009272 \u2013 22 May 337), also known as Constantine the Great, was a Roman emperor from AD 306 to 337 and the first Roman emperor to convert to Christianity. He played a pivotal role in elevating the status of Christianity in Rome, decriminalizing Christian practice and ceasing Christian persecution. This was a turning point in the Christianization of the Roman Empire. He founded the city of Constantinople and made it the capital of the Empire, which it remained for over a millennium.\nBorn in Naissus, in Dardania within Moesia Superior (now Ni\u0161, Serbia), Constantine was the son of Flavius Constantius, a Roman army officer of Illyrian origin who would become one of the four emperors of the Tetrarchy. His mother, Helena, was a woman of low birth, probably from Asia Minor in modern Turkey. Later canonised as a saint, she is credited for the conversion of her son in some traditions, though others believe that Constantine converted her. Constantine served with distinction under the Roman emperors Diocletian and Galerius. He began his career by campaigning in the eastern provinces (against the Persians) before being recalled in the west (in AD 305) to fight alongside his father in the province of Britannia. After his father's death in 306, Constantine was proclaimed as augustus (emperor) by his army at Eboracum (York, England). He eventually emerged victorious in the civil wars against emperors Maxentius and Licinius to become the sole ruler of the Roman Empire by 324.\nUpon his ascension, Constantine enacted numerous reforms to strengthen the empire. He restructured the government, separating civil and military authorities. To combat inflation, he introduced the solidus, a new gold coin that became the standard for Byzantine and European currencies for more than a thousand years. The Roman army was reorganised to consist of mobile units (comitatenses), often around the Emperor, to serve on campaigns against external enemies or Roman rebels, and frontier-garrison troops (limitanei) which were capable of countering barbarian raids, but less and less capable, over time, of countering full-scale barbarian invasions. Constantine pursued successful campaigns against the tribes on the Roman frontiers\u2014such as the Franks, the Alemanni, the Goths, and the Sarmatians\u2014and resettled territories abandoned by his predecessors during the Crisis of the Third Century with citizens of Roman culture.\nAlthough Constantine lived much of his life as a pagan and later as a catechumen, he began to favour Christianity beginning in 312, finally becoming a Christian and being baptised by Eusebius of Nicomedia, an Arian bishop, although the Catholic Church and the Coptic Orthodox Church maintain that he was baptised by Pope Sylvester I. He played an influential role in the proclamation of the Edict of Milan in 313, which declared tolerance for Christianity in the Roman Empire. He convoked the First Council of Nicaea in 325 which produced the statement of Christian belief known as the Nicene Creed. The Church of the Holy Sepulchre was built on his orders at the claimed site of Jesus' tomb in Jerusalem and was deemed the holiest place in all of Christendom. The papal claim to temporal power in the High Middle Ages was based on the fabricated Donation of Constantine. He has historically been referred to as the \"First Christian Emperor\", but while he did favour the Christian Church, some modern scholars debate his beliefs and even his comprehension of Christianity. Nevertheless, he is venerated as a saint in Eastern Christianity, and he did much to push Christianity towards the mainstream of Roman culture.\nThe age of Constantine marked a distinct epoch in the history of the Roman Empire and a pivotal moment in the transition from classical antiquity to the Middle Ages. He built a new imperial residence in the city of Byzantium and renamed it New Rome, later adopting the name Constantinople after himself, where it was located in modern Istanbul. It subsequently became the capital of the empire for more than a thousand years, the later Eastern Roman Empire often being referred to in English as the Byzantine Empire, a term never used by the Empire, invented by German historian Hieronymus Wolf. His more immediate political legacy was that he replaced Diocletian's Tetrarchy with the de facto principle of dynastic succession by leaving the empire to his sons and other members of the Constantinian dynasty. His reputation flourished during the lifetime of his children and for centuries after his reign. The medieval church held him up as a paragon of virtue, while secular rulers invoked him as a prototype, a point of reference, and the symbol of imperial legitimacy and identity. At the beginning of the Renaissance, there were more critical appraisals of his reign with the rediscovery of anti-Constantinian sources. Trends in modern and recent scholarship have attempted to balance the extremes of previous scholarship.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8413")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8413",
+  "isRealHuman": true,
+  "birthDate": "0272-02-27",
+  "deathDate": "0337-05-22",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Constantine the Great are well-documented historical facts, leading to a high confidence in the calculated age at death.",
+  "shortDescriptionEn": "Constantine the Great was the first Roman emperor to convert to Christianity, playing a pivotal role in elevating the status of Christianity within the Roman Empire. He founded the city of Constantinople and made it the capital of the Empire, which it remained for over a millennium. He died on May 22, 337, at the age of 65.",
+  "shortDescriptionFr": "Constantin le Grand fut le premier empereur romain à se convertir au christianisme, jouant un rôle clé dans l'élévation du statut du christianisme au sein de l'Empire romain. Il fonda la ville de Constantinople et en fit la capitale de l'Empire, position qu'elle conserva pendant plus d'un millénaire. Il mourut le 22 mai 337, à l'âge de 65 ans.",
+  "shortDescriptionDe": "Konstantin der Große war der erste römische Kaiser, der sich zum Christentum bekannte, und spielte eine entscheidende Rolle bei der Erhebung des Christentums im Römischen Reich. Er gründete die Stadt Konstantinopel und machte sie zur Hauptstadt des Reiches, was sie über ein Jahrtausend blieb. Er starb am 22. Mai 337 im Alter von 65 Jahren.",
+  "shortDescriptionEs": "Constantino el Grande fue el primer emperador romano en convertirse al cristianismo, desempeñando un papel fundamental en la elevación del estatus del cristianismo dentro del Imperio Romano. Fundó la ciudad de Constantinopla y la convirtió en la capital del Imperio, cargo que mantuvo durante más de un milenio. Murió el 22 de mayo de 337 a los 65 años.",
+  "shortDescriptionRu": "Константин Великий был первым римским императором, принявшим христианство, сыграв ключевую роль в повышении статуса христианства в Римской империи. Он основал город Константинополь и сделал его столицей империи, которой он оставался более тысячи лет. Умер 22 мая 337 года в возрасте 65 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Constantine_the_Great",
+    "https://www.britannica.com/biography/Constantine-I-Roman-emperor"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q231690",  "Name": "Bhimrao Ramji Ambedkar",  "BirthDate": "1891-04-14T00:00:00Z",  "DeathDate": "1956-12-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Bhimrao%20Ambedkar.jpg",  "SiteLinksCnt": 147,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"197522":{"pageid":197522,"ns":0,"title":"B. R. Ambedkar","extract":"Bhimrao Ramji Ambedkar (Bh\u012bmr\u0101o R\u0101mj\u012b \u0100mb\u0113\u1e0dkar; 14 April 1891 \u2013 6 December 1956) was an Indian jurist, economist, social reformer and political leader who chaired the committee that drafted the Constitution of India based on the debates of the Constituent Assembly of India and the first draft of Sir Benegal Narsing Rau. Ambedkar served as Law and Justice minister in the first cabinet of Jawaharlal Nehru. He later renounced Hinduism, converted to Buddhism and inspired the Dalit Buddhist movement. \nAfter graduating from Elphinstone College, University of Bombay, Ambedkar studied economics at Columbia University and the London School of Economics, receiving doctorates in 1927 and 1923, respectively, and was among a handful of Indian students to have done so at either institution in the 1920s.  He also trained in the law at Gray's Inn, London.  In his early career, he was an economist, professor, and lawyer. His later life was marked by his political activities; he became involved in campaigning and negotiations for partition, publishing journals, advocating political rights and social freedom for Dalits, and contributing to the establishment of the state of India. In 1956, he converted to Buddhism, initiating mass conversions of Dalits.\nIn 1990, the Bharat Ratna, India's highest civilian award, was posthumously conferred on Ambedkar. The salutation Jai Bhim (lit. \"Hail Bhim\") used by followers honours him.  He is also referred to by the honorific Babasaheb (BAH-b\u0259 SAH-hayb), meaning \"Respected Father\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q231690")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q231690",
+  "isRealHuman": true,
+  "birthDate": "1891-04-14",
+  "deathDate": "1956-12-06",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across reputable sources, ensuring a high level of confidence in the calculated age.",
+  "shortDescriptionEn": "Bhimrao Ramji Ambedkar (1891–1956) was an Indian jurist, economist, social reformer, and political leader who chaired the committee that drafted the Constitution of India. He served as Law and Justice Minister in the first cabinet of Jawaharlal Nehru. In 1956, he converted to Buddhism, initiating mass conversions of Dalits. He died on December 6, 1956, at the age of 65.",
+  "shortDescriptionFr": "Bhimrao Ramji Ambedkar (1891–1956) était un juriste, économiste, réformateur social et homme politique indien qui a présidé le comité chargé de rédiger la Constitution de l'Inde. Il a été ministre de la Loi et de la Justice dans le premier cabinet de Jawaharlal Nehru. En 1956, il se convertit au bouddhisme, initiant des conversions massives de Dalits. Il est décédé le 6 décembre 1956, à l'âge de 65 ans.",
+  "shortDescriptionDe": "Bhimrao Ramji Ambedkar (1891–1956) war ein indischer Jurist, Ökonom, Sozialreformer und Politiker, der den Ausschuss leitete, der die Verfassung Indiens entwarf. Er war Minister für Recht und Justiz im ersten Kabinett von Jawaharlal Nehru. 1956 konvertierte er zum Buddhismus und leitete Massenkonversionen von Dalits ein. Er starb am 6. Dezember 1956 im Alter von 65 Jahren.",
+  "shortDescriptionEs": "Bhimrao Ramji Ambedkar (1891–1956) fue un jurista, economista, reformador social y líder político indio que presidió el comité que redactó la Constitución de la India. Se desempeñó como Ministro de Leyes y Justicia en el primer gabinete de Jawaharlal Nehru. En 1956, se convirtió al budismo, iniciando conversiones masivas de Dalits. Murió el 6 de diciembre de 1956 a los 65 años.",
+  "shortDescriptionRu": "Бхимрао Рамджи Амбедкар (1891–1956) был индийским юристом, экономистом, социальным реформатором и политическим лидером, который возглавил комитет по разработке Конституции Индии. Он был министром юстиции в первом кабинете Джавахарлала Неру. В 1956 году он принял буддизм, инициировав массовые обращения далитов. Он умер 6 декабря 1956 года в возрасте 65 лет.",
+  "sources": [
+    "Wikipedia",
+    "Encyclopaedia Britannica",
+    "Contents101"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11896",  "Name": "Zachary Taylor",  "BirthDate": "1784-11-24T00:00:00Z",  "DeathDate": "1850-07-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Zachary%20Taylor%202.jpg",  "SiteLinksCnt": 141,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"19729624":{"pageid":19729624,"ns":0,"title":"Zachary Taylor","extract":"Zachary Taylor (November 24, 1784 \u2013 July 9, 1850) was an American military officer and politician who was the 12th president of the United States, serving from 1849 until his death in 1850. Taylor was a career officer in the United States Army, rising to the rank of major general and becoming a national hero for his victories in the Mexican\u2013American War. As a result, he won election to the White House despite his vague political beliefs. His top priority as president was to preserve the Union. He died 16 months into his term from a stomach disease. Taylor had the third-shortest presidential term in U.S. history.\nTaylor was born into a prominent family of plantation owners who moved westward from Virginia to Louisville, Kentucky, in his youth. He was the last president born before the adoption of the Constitution. He was commissioned as an officer in the U.S. Army in 1808 and made a name for himself as a captain in the War of 1812. He climbed the ranks of the military, establishing military forts along the Mississippi River and entering the Black Hawk War as a colonel in 1832. His success in the Second Seminole War attracted national attention and earned him the nickname \"Old Rough and Ready\".\nIn 1845, during the annexation of Texas, President James K. Polk dispatched Taylor to the Rio Grande in anticipation of a battle with Mexico over the disputed Texas\u2013Mexico border. The Mexican\u2013American War broke out in April 1846, and Taylor defeated Mexican troops commanded by General Mariano Arista at the battles of Palo Alto and Resaca de la Palma, driving Arista's troops out of Texas. Taylor then led his troops into Mexico, where they defeated Mexican troops commanded by Pedro de Ampudia at the Battle of Monterrey. Defying orders, Taylor led his troops further south and, despite being severely outnumbered, dealt a crushing blow to Mexican forces under General Antonio L\u00f3pez de Santa Anna at the Battle of Buena Vista. Taylor's troops were transferred to the command of Major General Winfield Scott, but Taylor retained his popularity.\nThe Whig Party convinced a reluctant Taylor to lead its ticket in the 1848 presidential election, despite his unclear political tenets and lack of interest in politics. At the 1848 Whig National Convention, Taylor defeated Winfield Scott and former senator Henry Clay for the party's nomination. He won the general election alongside New York politician Millard Fillmore, defeating Democratic Party nominees Lewis Cass and William Orlando Butler, as well as a third-party effort led by former president Martin Van Buren and Charles Francis Adams Sr. of the Free Soil Party. Taylor became the first president to be elected without having previously held political office. As president, he kept his distance from Congress and his Cabinet, even though partisan tensions threatened to divide the Union. Debate over the status of slavery in the Mexican Cession dominated the national political agenda and led to threats of secession from Southerners. Despite being a Southerner and a slaveholder himself, Taylor did not push for the expansion of slavery, and sought sectional harmony above all other concerns. To avoid the issue of slavery, he urged settlers in New Mexico and California to bypass the territorial stage and draft constitutions for statehood, setting the stage for the Compromise of 1850.\nTaylor died suddenly of a stomach disease on July 9, 1850, with his administration having accomplished little aside from the ratification of the Clayton\u2013Bulwer Treaty and having made no progress on the most divisive issue in Congress and the nation: slavery. Vice President Fillmore assumed the presidency and served the remainder of his term. Historians and scholars have ranked Taylor in the bottom quartile of U.S. presidents, owing in part to his short term of office (16 months), though he has been described as \"more a forgettable president than a failed one\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11896")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q11896",
+  "isRealHuman": true,
+  "birthDate": "1784-11-24",
+  "deathDate": "1850-07-09",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The provided birth and death dates allow for an exact calculation of age at death.",
+  "shortDescriptionEn": "Zachary Taylor (1784–1850) was the 12th President of the United States, a military officer and hero in the Mexican–American War. His presidency was marked by attempts to preserve the Union, but he died from a stomach disease just 16 months into his term.",
+  "shortDescriptionFr": "Zachary Taylor (1784–1850) était le 12e président des États-Unis, un officier militaire et un héros de la guerre américano-mexicaine. Sa présidence a été marquée par des tentatives de préserver l'Union, mais il est décédé d'une maladie de l'estomac après seulement 16 mois de mandat.",
+  "shortDescriptionDe": "Zachary Taylor (1784–1850) war der 12. Präsident der Vereinigten Staaten, ein Militärsieger im Mexikanisch-Amerikanischen Krieg. Seine Präsidentschaft versuchte, die Union zu bewahren, aber er starb nach nur 16 Monaten im Amt an einer Magenkrankheit.",
+  "shortDescriptionEs": "Zachary Taylor (1784–1850) fue el 12º presidente de los Estados Unidos, un oficial militar y héroe de la guerra entre México y Estados Unidos. Su presidencia intentó preservar la Unión, pero murió de una enfermedad estomacal después de solo 16 meses en el cargo.",
+  "shortDescriptionRu": "Захари Тейлор (1784–1850) был 12-м президентом США, военным офицером и героем Мексиканско-американской войны. Его президентство было направлено на сохранение Союза, но он умер от болезни желудка всего через 16 месяцев после вступления в должность.",
+  "sources": [
+    "Wikidata Q11896",
+    "Wikipedia: Zachary Taylor"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7311",  "Name": "Giacomo Puccini",  "BirthDate": "1858-12-22T00:00:00Z",  "DeathDate": "1924-11-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/GiacomoPuccini.jpg",  "SiteLinksCnt": 139,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"12750":{"pageid":12750,"ns":0,"title":"Giacomo Puccini","extract":"Giacomo Puccini (22 December 1858 \u2013  29 November 1924) was an Italian composer known primarily for his operas. Regarded as the greatest and most successful proponent of Italian opera after Verdi, he was descended from a long line of composers, stemming from the late Baroque era. Though his early work was firmly rooted in traditional late-nineteenth-century Romantic Italian opera, it later developed in the realistic verismo style, of which he became one of the leading exponents.\nHis most renowned works are La boh\u00e8me (1896), Tosca (1900), Madama Butterfly (1904), and the unfinished Turandot (posthumously completed by Franco Alfano), all of which are among the most frequently performed and recorded in the entirety of the operatic repertoire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7311")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7311",
+  "isRealHuman": true,
+  "birthDate": "1858-12-22",
+  "deathDate": "1924-11-29",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are exact, and the calculated age at death is precise based on these dates.",
+  "shortDescriptionEn": "Giacomo Puccini (1858-1924) was an Italian composer known for his operas like La Bohème, Tosca, and Madama Butterfly. He is considered the most significant opera composer after Verdi. Puccini passed away at the age of 65 after a battle with throat cancer, leaving behind a rich legacy in the world of opera.",
+  "shortDescriptionFr": "Giacomo Puccini (1858-1924) était un compositeur italien connu pour ses opéras comme La Bohème, Tosca et Madama Butterfly. Il est considéré comme le compositeur d'opéra le plus important après Verdi. Puccini est décédé à l'âge de 65 ans après avoir lutté contre un cancer de la gorge, laissant un riche héritage dans le monde de l'opéra.",
+  "shortDescriptionDe": "Giacomo Puccini (1858-1924) war ein italienischer Komponist, bekannt für Opern wie La Bohème, Tosca und Madama Butterfly. Er gilt als der bedeutendste Opernkomponist nach Verdi. Puccini starb im Alter von 65 Jahren nach einem Kampf gegen Kehlkopfkrebs und hinterließ ein reiches Erbe in der Welt der Oper.",
+  "shortDescriptionEs": "Giacomo Puccini (1858-1924) fue un compositor italiano conocido por sus óperas como La Bohème, Tosca y Madama Butterfly. Se considera el compositor de ópera más importante después de Verdi. Puccini murió a los 65 años después de luchar contra el cáncer de garganta, dejando un legado en el mundo de la ópera.",
+  "shortDescriptionRu": "Джакомо Пуччини (1858-1924) был итальянским композитором, известным своими операми, такими как «Богема», «Тоска» и «Мадам Баттерфляй». Он считается самым важным оперным композитором после Верди. Пуччини умер в возрасте 65 лет после борьбы с раком горла, оставив богатое наследие в мире оперы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Giacomo_Puccini",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/GiacomoPuccini.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2161",  "Name": "Tacitus",  "BirthDate": "0055-01-01T00:00:00Z",  "DeathDate": "0120-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Tacitus%2C%20Cornelius%20%2850%20-%20116%29.jpg",  "SiteLinksCnt": 138,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"19594563":{"pageid":19594563,"ns":0,"title":"Tacitus","extract":"Publius Cornelius Tacitus, known simply as Tacitus ( TAS-it-\u0259s, Latin: [\u02c8tak\u026at\u028as]; c.\u2009AD 56 \u2013 c.\u2009120), was a Roman historian and politician. Tacitus is widely regarded as one of the greatest Roman historians by modern scholars.\nThe surviving portions of his two major works\u2014the Annals (Latin: Annales) and the Histories (Latin: Historiae)\u2014examine the reigns of the emperors Tiberius, Claudius, Nero, and those who reigned in the Year of the Four Emperors (69 AD). These two works span the history of the Roman Empire from the death of Augustus (14 AD) to the death of Domitian (96 AD), although there are substantial lacunae in the surviving texts.\nTacitus's other writings discuss oratory (in dialogue format, see Dialogus de oratoribus), Germania (in De origine et situ Germanorum), and the life of his father-in-law, Agricola (the general responsible for much of the Roman conquest of Britain), mainly focusing on his campaign in Britannia (De vita et moribus Iulii Agricolae). Tacitus's Histories offers insights into Roman attitudes towards Jews, descriptions of Jewish customs, and context for the First Jewish\u2013Roman War. His Annals are of interest for providing an early account of the persecution of Christians and one of the earliest extra-Biblical references to the crucifixion of Jesus.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2161")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2161",
+  "isRealHuman": true,
+  "birthDate": "0056-01-01",
+  "deathDate": "0120-01-01",
+  "ageAtDeath": 65,
+  "confidence": 85,
+  "confidenceExplained": "The estimated age at death is based on the general consensus that Tacitus was born around AD 56 and died around AD 120. While exact dates are uncertain, this range is widely accepted among historians.",
+  "shortDescriptionEn": "Publius Cornelius Tacitus (c. AD 56 – c. AD 120) was a Roman historian and public official, renowned for his works Histories and Annals, which provide detailed accounts of the Roman Empire's history. His writings offer critical insights into the reigns of emperors from Tiberius to Domitian. The exact circumstances of his death remain uncertain, but he is believed to have died around AD 120.",
+  "shortDescriptionFr": "Publius Cornelius Tacitus (vers 56 – vers 120) était un historien et fonctionnaire romain, renommé pour ses œuvres Histoires et Annales, qui offrent des récits détaillés de l'histoire de l'Empire romain. Ses écrits fournissent des analyses critiques des règnes des empereurs de Tibère à Domitien. Les circonstances exactes de sa mort demeurent incertaines, mais on pense qu'il est décédé vers l'an 120.",
+  "shortDescriptionDe": "Publius Cornelius Tacitus (ca. 56 – ca. 120) war ein römischer Historiker und Beamter, bekannt für seine Werke Historien und Annalen, die detaillierte Berichte über die Geschichte des Römischen Reiches liefern. Seine Schriften bieten kritische Einblicke in die Herrschaft der Kaiser von Tiberius bis Domitian. Die genauen Umstände seines Todes sind unklar, aber er soll um das Jahr 120 gestorben sein.",
+  "shortDescriptionEs": "Publius Cornelius Tacitus (c. 56 – c. 120) fue un historiador y funcionario romano, conocido por sus obras Historias y Anales, que ofrecen relatos detallados de la historia del Imperio Romano. Sus escritos proporcionan análisis críticos de los reinados de los emperadores desde Tiberio hasta Domiciano. Las circunstancias exactas de su muerte son inciertas, pero se cree que falleció alrededor del año 120.",
+  "shortDescriptionRu": "Публий Корнелий Тацит (около 56 – около 120) был римским историком и государственным деятелем, известным своими произведениями Истории и Анналы, которые предоставляют подробные отчёты о истории Римской империи. Его труды предлагают критический анализ правления императоров от Тиберия до Домициана. Точные обстоятельства его смерти неизвестны, но считается, что он умер около 120 года.",
+  "sources": [
+    "https://www.britannica.com/biography/Tacitus-Roman-historian",
+    "https://en.wikipedia.org/wiki/Tacitus",
+    "https://www.worldhistory.org/tacitus/",
+    "https://worldhistoryedu.com/roman-historian-tacitus/",
+    "https://www.encyclopedia.com/people/history/historians-ancient-biographies/tacitus"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1151",  "Name": "Hector Berlioz",  "BirthDate": "1803-12-11T00:00:00Z",  "DeathDate": "1869-03-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlioz%20Petit%20BNF%20Gallica-crop.jpg",  "SiteLinksCnt": 131,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"53424":{"pageid":53424,"ns":0,"title":"Hector Berlioz","extract":"Louis-Hector Berlioz (11 December 1803 \u2013 8 March 1869) was a French Romantic composer and conductor. His output includes orchestral works such as the Symphonie fantastique and Harold in Italy, choral pieces including the Requiem and L'Enfance du Christ, his three operas Benvenuto Cellini, Les Troyens and B\u00e9atrice et B\u00e9n\u00e9dict, and works of hybrid genres such as the \"dramatic symphony\" Rom\u00e9o et Juliette and the \"dramatic legend\" La Damnation de Faust.\nThe elder son of a provincial physician, Berlioz was expected to follow his father into medicine, and he attended a Parisian medical college before defying his family by taking up music as a profession. His independence of mind and refusal to follow traditional rules and formulas put him at odds with the conservative musical establishment of Paris. He briefly moderated his style sufficiently to win France's premier music prize \u2013 the Prix de Rome \u2013 in 1830, but he learned little from the academics of the Paris Conservatoire. Opinion was divided for many years between those who thought him an original genius and those who viewed his music as lacking in form and coherence.\nAt the age of twenty-four Berlioz fell in love with the Irish Shakespearean actress Harriet Smithson, and he pursued her obsessively until she finally accepted him seven years later. Their marriage was happy at first but eventually foundered. Harriet inspired his first major success, the Symphonie fantastique, in which an idealised depiction of her occurs throughout.\nBerlioz completed three operas, the first of which, Benvenuto Cellini, was an outright failure. The second, the epic Les Troyens (The Trojans), was so large in scale that it was never staged in its entirety during his lifetime. His last opera, B\u00e9atrice et B\u00e9n\u00e9dict \u2013 based on Shakespeare's comedy Much Ado About Nothing \u2013 was a success at its premiere but did not enter the regular operatic repertoire. Meeting only occasional success in France as a composer, Berlioz increasingly turned to conducting, in which he gained an international reputation. He was highly regarded in Germany, Britain and Russia both as a composer and as a conductor. To supplement his earnings he wrote musical journalism throughout much of his career; some of it has been preserved in book form, including his Treatise on Instrumentation (1844), which was influential in the 19th and 20th centuries. Berlioz died in Paris at the age of 65.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1151")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1151",
+  "isRealHuman": true,
+  "birthDate": "1803-12-11",
+  "deathDate": "1869-03-08",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Hector Berlioz are well-documented and widely accepted by reputable sources.",
+  "shortDescriptionEn": "Hector Berlioz was a pioneering French Romantic composer and conductor, known for his innovative works such as 'Symphonie fantastique' and 'La Damnation de Faust'. He died at the age of 65 in Paris on March 8, 1869.",
+  "shortDescriptionFr": "Hector Berlioz était un compositeur et chef d'orchestre français pionnier du romantisme, connu pour ses œuvres innovantes telles que 'Symphonie fantastique' et 'La Damnation de Faust'. Il est décédé à l'âge de 65 ans à Paris le 8 mars 1869.",
+  "shortDescriptionDe": "Hector Berlioz war ein wegweisender französischer romantischer Komponist und Dirigent, bekannt für seine innovativen Werke wie 'Symphonie fantastique' und 'La Damnation de Faust'. Er starb im Alter von 65 Jahren am 8. März 1869 in Paris.",
+  "shortDescriptionEs": "Hector Berlioz fue un compositor y director de orquesta francés pionero del romanticismo, conocido por sus obras innovadoras como 'Symphonie fantastique' y 'La Damnation de Faust'. Murió a los 65 años en París el 8 de marzo de 1869.",
+  "shortDescriptionRu": "Эктор Берлиоз был пионером французского романтизма, композитором и дирижером, известным своими инновационными произведениями, такими как 'Фантастическая симфония' и 'Проклятие Фауста'. Он умер в возрасте 65 лет в Париже 8 марта 1869 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hector_Berlioz",
+    "https://biographyhost.com/p/hector-berlioz-biography.html",
+    "https://www.celebsages.com/hector-berlioz/",
+    "https://www.howold.co/person/hector-berlioz",
+    "https://www.bornglorious.com/person/?pi=1151"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q440",  "Name": "Salvador Allende",  "BirthDate": "1908-06-26T00:00:00Z",  "DeathDate": "1973-09-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Salvador%20Allende%2C%20President%20of%20Chile%2C%20gtfy.00154.jpg",  "SiteLinksCnt": 123,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"51487":{"pageid":51487,"ns":0,"title":"Salvador Allende","extract":"Salvador Guillermo Allende Gossens (26 June 1908 \u2013 11 September 1973) was a Chilean socialist politician who served as the 28th president of Chile from 1970 until his death in 1973. As a socialist committed to democracy, he has been described as the first Marxist to be elected president in a liberal democracy in Latin America.\n\nAllende's involvement in Chilean politics spanned a period of nearly forty years, during which he held various positions including senator, deputy, and cabinet minister. As a life-long committed member of the Socialist Party of Chile, whose foundation he had actively contributed to, he unsuccessfully ran for the national presidency in the 1952, 1958, and 1964 elections. In 1970, he won the presidency as the candidate of the Popular Unity coalition in a close three-way race. He was elected in a run-off by Congress, as no candidate had gained a majority. In office, Allende pursued a policy he called \"The Chilean Path to Socialism\". The coalition government was far from unanimous. Allende said that he was committed to democracy and represented the more moderate faction of the Socialist Party, while the radical wing sought a more radical course. Instead, the Communist Party of Chile favored a gradual and cautious approach that sought cooperation with Christian democrats, which proved influential for the Italian Communist Party and the Historic Compromise.\nAs president, Allende sought to nationalize major industries, expand education, and improve the living standards of the working class. He clashed with the right-wing parties that controlled Congress and with the judiciary. On 11 September 1973, the military moved to oust Allende in a coup d'\u00e9tat supported by the CIA, which initially denied the allegations. In 2000, the CIA admitted its role in the 1970 kidnapping of General Ren\u00e9 Schneider who had refused to use the army to stop Allende's inauguration. Declassified documents released in 2023 showed that US president Richard Nixon, his national security advisor Henry Kissinger, and the United States government, which had branded Allende as a dangerous communist, were aware of the military's plans to overthrow Allende's democratically elected government in the days before the coup d'\u00e9tat. As troops surrounded La Moneda Palace, Allende gave his last speech vowing not to resign. Later that day, Allende died by suicide in his office; the exact circumstances of his death are still disputed. \nFollowing Allende's death, General Augusto Pinochet refused to return authority to a civilian government, and Chile was later ruled by the Government Junta, ending more than four decades of uninterrupted democratic governance, a period known as the Presidential Republic. The military junta that took over dissolved Congress, suspended the Constitution of 1925, and initiated a program of persecuting alleged dissidents, in which at least 3,095 civilians disappeared or were killed. Pinochet's military dictatorship only ended after the successful internationally backed 1989 constitutional referendum led to the peaceful Chilean transition to democracy.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q440")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q440",
+  "isRealHuman": true,
+  "birthDate": "1908-06-26",
+  "deathDate": "1973-09-11",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates of Salvador Allende are well-documented historical facts, and the age at death is directly calculable.",
+  "shortDescriptionEn": "Salvador Allende was the first Marxist president of Chile, elected democratically in 1970. His presidency ended with a military coup in 1973, during which he died by suicide in La Moneda Palace.",
+  "shortDescriptionFr": "Salvador Allende fut le premier président marxiste du Chili, élu démocratiquement en 1970. Sa présidence se termina par un coup d'État militaire en 1973, au cours duquel il se suicida au palais de La Moneda.",
+  "shortDescriptionDe": "Salvador Allende war der erste marxistische Präsident Chiles, der 1970 demokratisch gewählt wurde. Seine Präsidentschaft endete 1973 mit einem Militärputsch, bei dem er sich im Palast von La Moneda das Leben nahm.",
+  "shortDescriptionEs": "Salvador Allende fue el primer presidente marxista de Chile, elegido democráticamente en 1970. Su presidencia terminó con un golpe militar en 1973, durante el cual se suicidó en el Palacio de La Moneda.",
+  "shortDescriptionRu": "Сальвадор Альенде был первым марксистским президентом Чили, избранным демократическим путем в 1970 году. Его президентство закончилось военным переворотом в 1973 году, во время которого он покончил с собой в дворце Ла-Монеда.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Salvador_Allende",
+    "https://en.wikipedia.org/wiki/Death_of_Salvador_Allende",
+    "https://www.britannica.com/biography/Salvador-Allende"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37278",  "Name": "John Paul I",  "BirthDate": "1912-10-17T00:00:00Z",  "DeathDate": "1978-09-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ioannes%20Paulus%20I%2C%20by%20Fotografia%20Felici%2C%201978%20%28cropped%29.jpg",  "SiteLinksCnt": 122,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"24027":{"pageid":24027,"ns":0,"title":"Pope John Paul I","extract":"Pope John Paul I (born Albino Luciani [al\u02c8bi\u02d0no lu\u02c8t\u0283a\u02d0ni]; 17 October 1912 \u2013 28 September 1978) was head of the Catholic Church and sovereign of Vatican City from 26 August 1978 until his death 33 days later. His reign is among the shortest in papal history, giving rise to the most recent year of three popes, the first since 1605. John Paul I remains the most recent Italian-born pope, the last in a succession of such popes that started with Clement VII in 1523.\nBefore the August 1978 papal conclave that elected him, he expressed his desire not to be elected, telling those close to him that he would decline the papacy if elected; upon the cardinals' electing him, he felt an obligation to accept. He was the first pontiff to have a double name, choosing \"John Paul\" in honour of his two immediate predecessors, John XXIII and Paul VI. He explained that he was indebted to John XXIII and to Paul VI for naming him a bishop and a cardinal, respectively. Furthermore, he was the first pope to add the regnal number \"I\", designating himself \"the First\".\nHis two immediate successors, John Paul II and Benedict XVI, later recalled the warm qualities of the late pontiff in several addresses. In Italy, he is remembered with the appellatives of Il Papa del Sorriso (transl.\u2009The Smiling Pope) and Il Sorriso di Dio (transl.\u2009The Smile of God). Time magazine and other publications referred to him as \"The September Pope\". He is also referred to in Italy as \"Papa Luciani\" to distinguish him from his successor of the same papal name. In his hometown of Canale d'Agordo a museum built and named in his honour is dedicated to his life and brief papacy.\nHe was declared a servant of God by his successor, John Paul II, on 23 November 2003, the first step on the road to sainthood. Pope Francis confirmed his heroic virtue on 8 November 2017 and named him as Venerable. Francis presided over his beatification on 4 September 2022."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37278")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37278",
+  "isRealHuman": true,
+  "birthDate": "1912-10-17",
+  "deathDate": "1978-09-28",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented, and the calculation of age at death is straightforward.",
+  "shortDescriptionEn": "Pope John Paul I, born Albino Luciani on October 17, 1912, served as pope for 33 days in 1978. His sudden death at 65 was attributed to a heart attack. Known for his warmth and humility, he earned the nickname 'The Smiling Pope.'",
+  "shortDescriptionFr": "Le pape Jean-Paul Ier, né Albino Luciani le 17 octobre 1912, a servi comme pape pendant 33 jours en 1978. Sa mort soudaine à 65 ans a été attribuée à une crise cardiaque. Connu pour sa chaleur et son humilité, il a gagné le surnom de 'Le Pape Sourire.'",
+  "shortDescriptionDe": "Papst Johannes Paul I, geboren Albino Luciani am 17. Oktober 1912, diente 1978 für 33 Tage als Papst. Sein plötzlicher Tod mit 65 Jahren wurde einem Herzinfarkt zugeschrieben. Bekannt für seine Wärme und Bescheidenheit, erhielt er den Spitznamen 'Der Lächelnde Papst.'",
+  "shortDescriptionEs": "El Papa Juan Pablo I, nacido Albino Luciani el 17 de octubre de 1912, sirvió como papa durante 33 días en 1978. Su muerte repentina a los 65 años se atribuyó a un infarto. Conocido por su calidez y humildad, recibió el apodo de 'El Papa Sonriente.'",
+  "shortDescriptionRu": "Папа Иоанн Павел I, родился Альбино Лучиани 17 октября 1912 года, служил папой 33 дня в 1978 году. Его внезапная смерть в возрасте 65 лет была приписана сердечному приступу. Известен своей теплотой и скромностью, получил прозвище 'Смеющийся Папа.'",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_John_Paul_I",
+    "https://www.britannica.com/biography/John-Paul-I",
+    "https://simple.wikipedia.org/wiki/Pope_John_Paul_I"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82248",  "Name": "John Galsworthy",  "BirthDate": "1867-08-14T00:00:00Z",  "DeathDate": "1933-01-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Galsworthy%202.jpg",  "SiteLinksCnt": 119,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"39658":{"pageid":39658,"ns":0,"title":"John Galsworthy","extract":"John Galsworthy  (; 14 August 1867 \u2013 31 January 1933) was an English novelist and playwright. He is best known for his trilogy of novels collectively called The Forsyte Saga, and two later trilogies, A Modern Comedy and End of the Chapter. He was awarded the 1932 Nobel Prize in Literature.\nBorn to a prosperous upper-middle-class family, Galsworthy was destined for a career as a lawyer, but found it uncongenial and turned instead to writing. He was thirty before his first book was published in 1897, and did not achieve real success until 1906, when The Man of Property, the first of his novels about the Forsyte family was published. In the same year his first play, The Silver Box was staged in London. As a dramatist, he became known for plays with a social message, reflecting, among other themes, the struggle of workers against exploitation, the use of solitary confinement in prisons, the repression of women, jingoism and the politics and morality of war.\nThe Forsyte family series of novels and short stories collectively known as The Forsyte Chronicles is similar in many ways to Galsworthy's family, and the patriarch, Old Jolyon, is modelled on Galsworthy's father. The main sequence runs from the late 19th century to the early 1930s, featuring three generations of the family. The books were popular when first published and their latter-day popularity was boosted considerably when BBC Television broadcast a 26-part adaptation for the author's centenary in 1967.\nAs well as writing plays and novels with social messages, Galsworthy campaigned continually for a wide range of causes about which he felt strongly, from animal welfare to prison reform, censorship and workers' rights. Although seen by many as a radical, he belonged to and supported no political party. His plays are seldom revived, but his novels have been frequently reissued."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82248")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q82248",
+  "isRealHuman": true,
+  "birthDate": "1867-08-14",
+  "deathDate": "1933-01-31",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates, along with the age at death, are well-documented and corroborated by multiple reputable sources.",
+  "shortDescriptionEn": "John Galsworthy was an English novelist and playwright, best known for 'The Forsyte Saga'. He was awarded the 1932 Nobel Prize in Literature. He passed away on January 31, 1933, at the age of 65.",
+  "shortDescriptionFr": "John Galsworthy était un romancier et dramaturge anglais, surtout connu pour 'The Forsyte Saga'. Il a reçu le prix Nobel de littérature en 1932. Il est décédé le 31 janvier 1933, à l'âge de 65 ans.",
+  "shortDescriptionDe": "John Galsworthy war ein englischer Romancier und Dramatiker, bekannt vor allem durch 'The Forsyte Saga'. Er erhielt 1932 den Nobelpreis für Literatur. Er starb am 31. Januar 1933 im Alter von 65 Jahren.",
+  "shortDescriptionEs": "John Galsworthy fue un novelista y dramaturgo inglés, conocido principalmente por 'The Forsyte Saga'. Recibió el Premio Nobel de Literatura en 1932. Falleció el 31 de enero de 1933 a los 65 años.",
+  "shortDescriptionRu": "Джон Голсуорси был английским романистом и драматургом, наиболее известным по 'Саге о Форсайтах'. Он получил Нобелевскую премию по литературе в 1932 году. Умер 31 января 1933 года в возрасте 65 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Galsworthy",
+    "https://www.britannica.com/biography/John-Galsworthy",
+    "https://trove.nla.gov.au/newspaper/article/254303223"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q123469",  "Name": "Sinclair Lewis",  "BirthDate": "1885-02-07T00:00:00Z",  "DeathDate": "1951-01-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sinclair%20Lewis%20by%20Oscar%20Whiite%2C%20Pach%20Brothers%20Studio%2C%20c.%201945%2C%20gelatin%20silver%20print%2C%20from%20the%20National%20Portrait%20Gallery%20-%20NPG-NPG%2093%20388%2023%20%28cropped%29.jpg",  "SiteLinksCnt": 118,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"50714":{"pageid":50714,"ns":0,"title":"Sinclair Lewis","extract":"Harry Sinclair Lewis (February 7, 1885 \u2013 January 10, 1951) was an American novelist, short-story writer, and playwright. In 1930, he became the first author from the United States (and the first from the Americas) to receive the Nobel Prize in Literature, which was awarded \"for his vigorous and graphic art of description and his ability to create, with wit and humor, new types of characters.\" Lewis wrote six popular novels: Main Street (1920), Babbitt (1922), Arrowsmith (1925), Elmer Gantry (1927), Dodsworth (1929), and It Can't Happen Here (1935).\nSeveral of his notable works were critical of American capitalism and materialism during the interwar period. Lewis is respected for his strong characterizations of modern working women. H. L. Mencken wrote of him, \"[If] there was ever a novelist among us with an authentic call to the trade ... it is this red-haired tornado from the Minnesota wilds.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q123469")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q123469",
+  "isRealHuman": true,
+  "birthDate": "1885-02-07",
+  "deathDate": "1951-01-10",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth date and death date are well-documented, so the calculated age is certain.",
+  "shortDescriptionEn": "Harry Sinclair Lewis (1885-1951) was an American novelist, short-story writer, and playwright. He was the first American to win the Nobel Prize in Literature in 1930 for his vivid art of description and his creation of new, complex characters. His notable works include 'Main Street', 'Babbitt', and 'Elmer Gantry'. He was critical of American capitalism and materialism during the interwar period. Lewis died at 65 years old.",
+  "shortDescriptionFr": "Harry Sinclair Lewis (1885-1951) était un romancier, écrivain de nouvelles et dramaturge américain. Il fut le premier Américain à recevoir le prix Nobel de littérature en 1930 pour son art vif de la description et la création de personnages complexes. Ses œuvres notables incluent 'Main Street', 'Babbitt', et 'Elmer Gantry'. Il a critiqué le capitalisme américain et le matérialisme de l'entre-deux-guerres. Lewis est décédé à l'âge de 65 ans.",
+  "shortDescriptionDe": "Harry Sinclair Lewis (1885-1951) war ein amerikanischer Romancier, Kurzgeschichtenschreiber und Dramatiker. Er war der erste Amerikaner, der 1930 den Nobelpreis für Literatur erhielt, für seine lebendige Art der Beschreibung und seine Schaffung neuer, komplexer Charaktere. Zu seinen bekannten Werken gehören 'Main Street', 'Babbitt' und 'Elmer Gantry'. Er kritisierte den amerikanischen Kapitalismus und Materialismus in der Zwischenkriegszeit. Lewis starb im Alter von 65 Jahren.",
+  "shortDescriptionEs": "Harry Sinclair Lewis (1885-1951) fue un novelista, escritor de cuentos y dramaturgo estadounidense. Fue el primer estadounidense en recibir el Premio Nobel de Literatura en 1930 por su vívida descripción artística y su creación de nuevos y complejos personajes. Sus obras más conocidas incluyen 'Main Street', 'Babbitt' y 'Elmer Gantry'. Criticó el capitalismo estadounidense y el materialismo de la época de entreguerras. Lewis murió a los 65 años.",
+  "shortDescriptionRu": "Гарри Синклер Льюис (1885–1951) был американским романистом, писателем коротких рассказов и драматургом. Он стал первым американцем, получившим Нобелевскую премию по литературе в 1930 году за свою яркую художественную манеру описания и создание новых, сложных персонажей. К его известным произведениям относятся 'Main Street', 'Babbitt' и 'Elmer Gantry'. Он критиковал американский капитализм и материализм периода межвоенных лет. Льюис умер в возрасте 65 лет.",
+  "sources": [
+    "Wikidata entry for Sinclair Lewis",
+    "Wikipedia article on Sinclair Lewis"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q33477",  "Name": "Eugène Delacroix",  "BirthDate": "1798-04-26T00:00:00Z",  "DeathDate": "1863-08-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Delacroix%20-%20Portrait%20de%20l%27artiste%20%28ca.1837%29.jpg",  "SiteLinksCnt": 118,  "Age": 65}
+{"batchcomplete":"","query":{"pages":{"169832":{"pageid":169832,"ns":0,"title":"Eug\u00e8ne Delacroix","extract":"Ferdinand Victor Eug\u00e8ne Delacroix ( DEL-\u0259-krwah, -\u2060KRWAH; French: [\u00f8\u0292\u025bn d\u0259lak\u0281wa]; 26 April 1798 \u2013 13 August 1863) was a French Romantic artist who was regarded as the leader of the French Romantic school.\nIn contrast to the Neoclassical perfectionism of his chief rival Ingres, Delacroix took for his inspiration the art of Rubens and painters of the Venetian Renaissance, with an attendant emphasis on colour and movement rather than clarity of outline and carefully modelled form. Dramatic and romantic content characterized the central themes of his maturity, and led him not to the classical models of Greek and Roman art, but to travel in North Africa, in search of the exotic. Friend and spiritual heir to Th\u00e9odore G\u00e9ricault, Delacroix was also inspired by Lord Byron, with whom he shared a strong identification with the \"forces of the sublime\", of nature in often violent action.\nHowever, Delacroix was given to neither sentimentality nor bombast, and his Romanticism was that of an individualist. In the words of Baudelaire, \"Delacroix was passionately in love with passion, but coldly determined to express passion as clearly as possible.\" Together with Ingres, Delacroix is considered one of the last old Masters of painting and is one of the few who was ever photographed.\nAs a painter and muralist, Delacroix's use of expressive brushstrokes and his study of the optical effects of colour profoundly shaped the work of the Impressionists, while his passion for the exotic inspired the artists of the Symbolist movement. A fine lithographer, Delacroix illustrated various works of William Shakespeare, the Scottish author Walter Scott, and the German author Johann Wolfgang von Goethe.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q33477")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q33477",
+  "isRealHuman": true,
+  "birthDate": "1798-04-26",
+  "deathDate": "1863-08-13",
+  "ageAtDeath": 65,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented, and the cause of death is confirmed as a throat infection.",
+  "shortDescriptionEn": "Eugène Delacroix was a French Romantic artist, born on April 26, 1798, in Charenton-Saint-Maurice, France. He died on August 13, 1863, in Paris, France, at the age of 65 due to a throat infection. Delacroix is renowned for his dynamic use of color and brushwork, influencing the development of Impressionism. He is buried in the Père Lachaise Cemetery in Paris.",
+  "shortDescriptionFr": "Eugène Delacroix était un artiste romantique français, né le 26 avril 1798 à Charenton-Saint-Maurice, France. Il est décédé le 13 août 1863 à Paris, France, à l'âge de 65 ans d'une infection de la gorge. Delacroix est renommé pour son utilisation dynamique de la couleur et du coup de pinceau, influençant le développement de l'impressionnisme. Il est enterré au cimetière du Père Lachaise à Paris.",
+  "shortDescriptionDe": "Eugène Delacroix war ein französischer romantischer Künstler, geboren am 26. April 1798 in Charenton-Saint-Maurice, Frankreich. Er starb am 13. August 1863 in Paris, Frankreich, im Alter von 65 Jahren an einer Halsentzündung. Delacroix ist bekannt für seinen dynamischen Einsatz von Farbe und Pinselstrich, der die Entwicklung des Impressionismus beeinflusste. Er ist auf dem Friedhof Père Lachaise in Paris begraben.",
+  "shortDescriptionEs": "Eugène Delacroix fue un artista romántico francés, nacido el 26 de abril de 1798 en Charenton-Saint-Maurice, Francia. Murió el 13 de agosto de 1863 en París, Francia, a la edad de 65 años debido a una infección de garganta. Delacroix es conocido por su uso dinámico del color y la pincelada, influyendo en el desarrollo del Impresionismo. Está enterrado en el Cementerio Père Lachaise en París.",
+  "shortDescriptionRu": "Эжен Делакруа был французским романтическим художником, родился 26 апреля 1798 года в Шарентон-Сен-Морисе, Франция. Умер 13 августа 1863 года в Париже, Франция, в возрасте 65 лет от инфекции горла. Делакруа известен своим динамичным использованием цвета и мазка кисти, что повлияло на развитие импрессионизма. Он похоронен на кладбище Пер-Лашез в Париже.",
+  "sources": [
+    "https://www.britannica.com/biography/Eugene-Delacroix",
+    "https://www.musee-delacroix.fr/en/museum-studio/eugene-delacroix/biography",
+    "https://thetombstonetourist.com/graves/eugene-delacroix/"
+  ]
+}

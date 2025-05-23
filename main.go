@@ -5,14 +5,17 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"stillrunning.org/people-verifier/chatgpt"
+	"os"
+	"path/filepath"
 	"stillrunning.org/people-verifier/wikidata"
-	"time"
+	"strconv"
+	"strings"
 )
 
-func processPerson(db *sql.DB, person *Person) {
+func processPerson(priority int, db *sql.DB, person *Person) {
 	personJson, _ := json.MarshalIndent(person, "", "  ")
-	print("Person JSON: ", string(personJson))
+	personJsonStr := strings.Replace(string(personJson), "\n", "", -1)
+	print("Person JSON: ", personJsonStr)
 
 	entityJson, err := wikidata.DownloadWikidataJSON(person.Id)
 	if err != nil {
@@ -20,6 +23,11 @@ func processPerson(db *sql.DB, person *Person) {
 	}
 	var wikidataEntity wikidata.WikidataEntity
 	err = json.Unmarshal([]byte(entityJson), &wikidataEntity)
+	if err != nil {
+		log.Fatal(err)
+	}
+	sitelinksJson, err := json.MarshalIndent(wikidataEntity.Entities[person.Id[len("http://www.wikidata.org/entity/"):]].Sitelinks, "", "  ")
+	sitelinksJsonStr := strings.Replace(string(sitelinksJson), "\n", "", -1)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,102 +45,76 @@ func processPerson(db *sql.DB, person *Person) {
 	}
 	fmt.Println("Wikipedia summary:", shortDescr)
 
-	messages := []chatgpt.Message{
-		//{Role: "system", Content: "You are a helpful assistant."},
+	dir := filepath.Join(".", "output", "priority-"+strconv.Itoa(priority))
+	err = os.MkdirAll(dir, os.ModePerm)
+	if err != nil {
+		log.Fatal(err)
 	}
 
-	prompts := []struct {
-		code   string
-		prompt string
-	}{
+	fPrompts, err := os.OpenFile(dir+"/age-"+fmt.Sprintf("%03d", person.Age)+".txt", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
+	if err != nil {
+		panic(err)
+	}
+	defer fPrompts.Close()
 
-		{
-			"load_info",
-			"I have these two JSONs related to some person\n\n" +
-				"JSON 1:\n" + string(personJson) + "\n\nJSON 2:\n" + shortDescr +
-				"\n\nWhich well-known historical figure is this information about?",
-		},
-
-		{
-			"is_real",
-			"Reply with a single word \"True\" or \"False\" if that was a real person (True) or not (False): neither a mythical nor a fictional character, nor a non-human (e.g. a famous animal also should fall into False bucket): someone who actually lived on Earth.",
-		},
-
-		{
-			"calculus",
-			"Your answer MUST contain a number following by an explanation, no matter how inaccurate it might be, even if it is just a random number. \n" +
-				"Calculate their age at the moment of dying. Double-check the provided earlier information in external sources. " +
-				"Find out the missing information in external sources. Do your best to do any estimation, judgement or guesses " +
-				"with whatever information you have by hand. ",
-		},
-
-		{
-			"corrected_json",
-			"give me their \"birthDate\", \"deathDate\" and the \"deathAge\" as JSON. Use your best guess and other sources of information if the provided information was not enough. Also, give me confidence score in percentage about the values (\"confidence\" key). Return only JSON; any explanation include as \"explanation\" field in JSON",
-		},
-
-		{
-			"short_descr",
-			"Give me a short description about this person, in English. Include information about their age at the moment of dying and also any circumstances around his death (but not too much, maybe 1-2 sentences: 70% of response about general info, 30% about his death). Return as a plain text.",
-		},
+	_, err = fPrompts.WriteString("\n\n\n-----\n\n\n" + "I have only this information, which might be misleading.\n\n" +
+		personJsonStr + "\n" + shortDescr + "\n\n" +
+		"Figure out who is the real historical figure behind it. Particularly, " +
+		"I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person." +
+		"If the exact number is not possible to determine (e.g. birth- or deathDate is not known), " +
+		"you must use your best judgement, knowledge and any resources (including external) available to figure it out " +
+		"or calculate it, because the number MUST be calculated somehow.\n\n" +
+		"Return back your thinking followed by a JSON with the following fields:\n" +
+		"- \"id\" (string, use constant \"" + person.Id + "\")\n" +
+		"- \"isRealHuman\" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)\n" +
+		"- \"birthDate\" (string in format YYYY-MM-DD, might be your estimate)\n" +
+		"- \"deathDate\" (string in format YYYY-MM-DD,  might be your estimate),\n" +
+		"- \"ageAtDeath\" (integer, might be your estimate),\n" +
+		"- \"confidence\" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)\n" +
+		"- \"confidenceExplained\" (string, your explanation of the confidence level)\n" +
+		"- \"shortDescriptionEn\" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)\n" +
+		"- \"shortDescriptionFr\" (string, short description in French, same as above)\n" +
+		"- \"shortDescriptionDe\" (string, short description in German, same as above)\n" +
+		"- \"shortDescriptionEs\" (string, short description in Spanish, same as above)\n" +
+		"- \"shortDescriptionRu\" (string, short description in Russian, same as above)\n" +
+		"- \"sources\" - (array of strings, the list of sources that you were using to prepare the answer)\n\n\n")
+	if err != nil {
+		panic(err)
 	}
 
-	for _, prompt := range prompts {
-		println("\n\n-----------------------------------\n\n")
-		messages = append(messages, chatgpt.Message{
-			Role:    "user",
-			Content: prompt.prompt,
-		})
-		fmt.Println("Asking ChatGPT:", prompt)
-		response, err := chatgpt.AskChatGPT(messages)
-		if err != nil {
-			// sleep 1 second and retry
-			println("chatgpt error: ", err)
-			err = nil
-			time.Sleep(1 * time.Second)
-			response, err = chatgpt.AskChatGPT(messages)
-			if err != nil {
-				log.Fatal(err)
-			}
-		}
-		fmt.Println("....ChatGPT replied:", response)
-		if prompt.code == "is_real" && response == "False" {
-			break
-		}
-		messages = append(messages, chatgpt.Message{
-			Role:    "assistant",
-			Content: response,
-		})
-		if prompt.code == "short_descr" {
-			response, err = chatgpt.AskChatGPT([]chatgpt.Message{
-				//{Role: "system", Content: "You are a helpful assistant."},
-				{Role: "user", Content: "Translate to Russian: " + response},
-			})
-			fmt.Println(".... Russian description:", response)
-		}
-	}
+	// store sitelinks in a database
+
+	//fSitelinks, err := os.OpenFile(dir+"/age-"+fmt.Sprintf("%03d", person.Age)+".sitelinks.txt", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
+	//if err != nil {
+	//	panic(err)
+	//}
+	//defer fSitelinks.Close()
+	//
+	//_, err = fSitelinks.WriteString("\n\n\n-----\n\n\n" + person.Id + "\n" + person.Name + "\n" + sitelinksJsonStr + "\n")
+	//if err != nil {
+	//	panic(err)
+	//}
 }
 
 func main() {
 
-	cursor := "http://www.wikidata.org/entity/Q1000203"
 	db := OpenDb()
 	defer db.Close()
 
-	for {
-		persons, nextCursor, err := ReadNextPersons(db, cursor)
+	starting_age := 29
+	priority := 0
+
+	for curr_age := starting_age; curr_age < 100000; curr_age++ {
+		persons, err := ReadPersonWithAge(priority, db, curr_age)
 		if err != nil {
 			log.Fatal(err)
 		}
 		for _, person := range persons {
 			fmt.Println(person)
-			processPerson(db, &person)
-			cursor = person.Id
-			println("Successfully processed", cursor)
+			processPerson(priority, db, &person)
+			println("Successfully processed", curr_age)
 		}
-		if nextCursor == "" {
-			break
-		}
+
 	}
 
 }

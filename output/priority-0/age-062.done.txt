@@ -1,0 +1,968 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q868",  "Name": "Aristotle",  "BirthDate": "-0383-01-01T00:00:00Z",  "DeathDate": "-0321-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aristotle%20Altemps%20Inv8575.jpg",  "SiteLinksCnt": 306,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"308":{"pageid":308,"ns":0,"title":"Aristotle","extract":"Aristotle (Attic Greek: \u1f08\u03c1\u03b9\u03c3\u03c4\u03bf\u03c4\u03ad\u03bb\u03b7\u03c2, romanized: Aristot\u00e9l\u0113s; 384\u2013322 BC) was an Ancient Greek philosopher and polymath. His writings cover a broad range of subjects spanning the natural sciences, philosophy, linguistics, economics, politics, psychology, and the arts. As the founder of the Peripatetic school of philosophy in the Lyceum in Athens, he began the wider Aristotelian tradition that followed, which set the groundwork for the development of modern science.\nLittle is known about Aristotle's life. He was born in the city of Stagira in northern Greece during the Classical period. His father, Nicomachus, died when Aristotle was a child, and he was brought up by a guardian. At around eighteen years old, he joined Plato's Academy in Athens and remained there until the age of thirty seven (c.\u2009347 BC). Shortly after Plato died, Aristotle left Athens and, at the request of Philip II of Macedon, tutored his son Alexander the Great beginning in 343 BC. He established a library in the Lyceum, which helped him to produce many of his hundreds of books on papyrus scrolls.\nThough Aristotle wrote many treatises and dialogues for publication, only around a third of his original output has survived, none of it intended for publication. Aristotle provided a complex synthesis of the various philosophies existing prior to him. His teachings and methods of inquiry have had a significant impact across the world, and remain a subject of contemporary philosophical discussion.\nAristotle's views profoundly shaped medieval scholarship. The influence of his physical science extended from late antiquity and the Early Middle Ages into the Renaissance, and was not replaced systematically until the Enlightenment and theories such as classical mechanics were developed. He influenced Judeo-Islamic philosophies during the Middle Ages, as well as Christian theology, especially the Neoplatonism of the Early Church and the scholastic tradition of the Catholic Church.\nAristotle was revered among medieval Muslim scholars as \"The First Teacher\", and among medieval Christians like Thomas Aquinas as simply \"The Philosopher\", while the poet Dante called him \"the master of those who know\". He has been referred to as the first scientist. His works contain the earliest known formal study of logic, and were studied by medieval scholars such as Peter Abelard and Jean Buridan. His influence on logic continued well into the 19th century. In addition, his ethics, although always influential, has gained renewed interest with the modern advent of virtue ethics."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q868")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q868",
+  "isRealHuman": true,
+  "birthDate": "-0384-01-01",
+  "deathDate": "-0322-01-01",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "Aristotle's birth and death years are well-documented in historical records. While exact dates are not specified, the consensus on the years allows for a high-confidence calculation of his age at death.",
+  "shortDescriptionEn": "Aristotle (384–322 BC) was a seminal Ancient Greek philosopher and polymath whose works laid the foundation for Western philosophy and science. Born in Stagira, he studied under Plato and later tutored Alexander the Great. He founded the Lyceum in Athens, contributing extensively to various fields including logic, metaphysics, ethics, and biology. Aristotle died at the age of 62 in Chalcis, Euboea, due to a stomach ailment after fleeing Athens amid political unrest.",
+  "shortDescriptionFr": "Aristote (384–322 av. J.-C.) était un philosophe et polymathe grec ancien dont les travaux ont jeté les bases de la philosophie et de la science occidentales. Né à Stagire, il a étudié sous la direction de Platon et a ensuite été le précepteur d'Alexandre le Grand. Il a fondé le Lycée à Athènes, contribuant largement à divers domaines tels que la logique, la métaphysique, l'éthique et la biologie. Aristote est mort à l'âge de 62 ans à Chalcis, en Eubée, d'une maladie de l'estomac après avoir fui Athènes en raison de troubles politiques.",
+  "shortDescriptionDe": "Aristoteles (384–322 v. Chr.) war ein bedeutender antiker griechischer Philosoph und Universalgelehrter, dessen Werke die Grundlage der westlichen Philosophie und Wissenschaft bildeten. Geboren in Stageira, studierte er bei Platon und unterrichtete später Alexander den Großen. Er gründete das Lykeion in Athen und trug wesentlich zu verschiedenen Bereichen wie Logik, Metaphysik, Ethik und Biologie bei. Aristoteles starb im Alter von 62 Jahren in Chalkis, Euböa, an einer Magenkrankheit, nachdem er Athen aufgrund politischer Unruhen verlassen hatte.",
+  "shortDescriptionEs": "Aristóteles (384–322 a.C.) fue un filósofo y polímata griego antiguo cuyas obras sentaron las bases de la filosofía y la ciencia occidentales. Nacido en Estagira, estudió con Platón y posteriormente fue tutor de Alejandro Magno. Fundó el Liceo en Atenas, contribuyendo ampliamente a campos como la lógica, la metafísica, la ética y la biología. Aristóteles murió a los 62 años en Calcis, Eubea, debido a una dolencia estomacal tras huir de Atenas por disturbios políticos.",
+  "shortDescriptionRu": "Аристотель (384–322 гг. до н. э.) был выдающимся древнегреческим философом и полиматом, чьи труды заложили основы западной философии и науки. Родился в Стагире, учился у Платона, а позже был наставником Александра Великого. Основал Лицей в Афинах, внес значительный вклад в такие области, как логика, метафизика, этика и биология. Аристотель умер в возрасте 62 лет в Халкиде, Эвбея, от желудочного заболевания после бегства из Афин из-за политических волнений.",
+  "sources": [
+    "https://www.britannica.com/biography/Aristotle",
+    "https://en.wikipedia.org/wiki/Aristotle",
+    "https://www.history.com/articles/aristotle",
+    "https://www.famousscientists.org/aristotle/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9554",  "Name": "Martin Luther",  "BirthDate": "1483-11-19T00:00:00Z",  "DeathDate": "1546-02-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lucas%20Cranach%20d.%C3%84.%20-%20Martin%20Luther%2C%201528%20%28Veste%20Coburg%29.jpg",  "SiteLinksCnt": 243,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"7567080":{"pageid":7567080,"ns":0,"title":"Martin Luther","extract":"Martin Luther  ( LOO-th\u0259r; German: [\u02c8ma\u0281ti\u02d0n \u02c8l\u028at\u0250] ; 10 November 1483 \u2013 18 February 1546) was a German priest, theologian, author, hymnwriter, professor, and Augustinian friar. Luther was the seminal figure of the Protestant Reformation, and his theological beliefs form the basis of Lutheranism. He is widely regarded as one of the most influential figures in Western and Christian history.\nLuther was ordained to the priesthood in 1507. He came to reject several teachings and practices of the Roman Catholic Church, in particular the view on indulgences. Luther attempted to resolve these differences amicably, first proposing an academic discussion of the practice and efficacy of indulgences in Ninety-five Theses, which he authored in 1517. In 1520, Pope Leo X demanded that Luther renounce all of his writings, and when Luther refused to do so, excommunicated him in January 1521. Later that year, Holy Roman Emperor Charles V condemned Luther as an outlaw at the Diet of Worms. When Luther died in 1546, Pope Leo X's excommunication was still in effect.\nLuther taught that salvation and, consequently, eternal life are not earned by good deeds; rather, they are received only as the free gift of God's grace through the believer's faith in Jesus Christ. Luther's theology challenged the authority and office of the pope by teaching that the Bible is the only source of divinely revealed knowledge, and opposed sacerdotalism by considering all baptized Christians to be a holy priesthood. Luther's translation of the Bible into German from Latin made the Bible vastly more accessible to the laity, which had a tremendous impact on both the church and German culture. It fostered the development of a standard version of the German language, added several principles to the art of translation, and influenced the writing of an English translation, the Tyndale Bible. His hymns influenced the development of singing in Protestant churches. His marriage to Katharina von Bora, a former nun, set a model for the practice of clerical marriage, allowing Protestant clergy to marry.\nIn two later works, Luther expressed anti-Judaistic views, calling for the expulsion of Jews and the burning of synagogues. These works also targeted Roman Catholics, Anabaptists, and nontrinitarian Christians. Based upon his teachings, despite the fact that Luther did not directly advocate the murder of Jews, some historians contend that his rhetoric contributed to the development of antisemitism in Germany and the emergence, centuries later, of the Nazi Party.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9554")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9554",
+  "isRealHuman": true,
+  "birthDate": "1483-11-10",
+  "deathDate": "1546-02-18",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, with the age at death corroborated by multiple sources. The slight discrepancy in age on his tombstone is noted but does not align with the widely accepted birth date.",
+  "shortDescriptionEn": "Martin Luther (1483–1546) was a German theologian and former Augustinian friar who became a seminal figure in the Protestant Reformation. He challenged the teachings of the Catholic Church, particularly on indulgences, leading to his excommunication. Luther died in his birthplace, Eisleben, after suffering a stroke at the age of 62.",
+  "shortDescriptionFr": "Martin Luther (1483–1546) était un théologien allemand et ancien moine augustinien, figure centrale de la Réforme protestante. Il a contesté les enseignements de l'Église catholique, notamment sur les indulgences, ce qui a conduit à son excommunication. Luther est mort dans sa ville natale d'Eisleben, à l'âge de 62 ans, après avoir subi une attaque.",
+  "shortDescriptionDe": "Martin Luther (1483–1546) war ein deutscher Theologe und ehemaliger Augustinermönch, der eine zentrale Rolle in der protestantischen Reformation spielte. Er stellte die Lehren der katholischen Kirche, insbesondere den Ablasshandel, in Frage, was zu seiner Exkommunikation führte. Luther starb im Alter von 62 Jahren in seiner Geburtsstadt Eisleben nach einem Schlaganfall.",
+  "shortDescriptionEs": "Martín Lutero (1483–1546) fue un teólogo alemán y ex fraile agustino, figura clave en la Reforma protestante. Cuestionó las enseñanzas de la Iglesia católica, especialmente sobre las indulgencias, lo que llevó a su excomunión. Lutero murió en su ciudad natal, Eisleben, a los 62 años, tras sufrir un derrame cerebral.",
+  "shortDescriptionRu": "Мартин Лютер (1483–1546) был немецким теологом и бывшим августинским монахом, ключевой фигурой в протестантской Реформации. Он оспаривал учения католической церкви, особенно по поводу индульгенций, что привело к его отлучению. Лютер умер в своем родном городе Айслебен в возрасте 62 лет после инсульта.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Martin_Luther",
+    "https://www.britannica.com/biography/Martin-Luther",
+    "https://lutheranreformation.org/history/the-death-of-luther/",
+    "https://en.wikipedia.org/wiki/All_Saints%27_Church%2C_Wittenberg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9317",  "Name": "John Maynard Keynes",  "BirthDate": "1883-06-05T00:00:00Z",  "DeathDate": "1946-04-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Keynes%201933.jpg",  "SiteLinksCnt": 175,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"37973":{"pageid":37973,"ns":0,"title":"John Maynard Keynes","extract":"John Maynard Keynes, 1st Baron Keynes  ( KAYNZ; 5 June 1883 \u2013 21 April 1946), was an English economist and philosopher whose ideas fundamentally changed the theory and practice of macroeconomics and the economic policies of governments. Originally trained in mathematics, he built on and greatly refined earlier work on the causes of business cycles. One of the most influential economists of the 20th century, he produced writings that are the basis for the school of thought known as Keynesian economics, and its various offshoots. His ideas, reformulated as New Keynesianism, are fundamental to mainstream macroeconomics. He is known as the \"father of macroeconomics\".\nDuring the Great Depression of the 1930s, Keynes spearheaded a revolution in economic thinking, challenging the ideas of neoclassical economics that held that free markets would, in the short to medium term, automatically provide full employment, as long as workers were flexible in their wage demands. He argued that aggregate demand (total spending in the economy) determined the overall level of economic activity, and that inadequate aggregate demand could lead to prolonged periods of high unemployment, and since wages and labour costs are rigid downwards the economy will not automatically rebound to full employment. Keynes advocated the use of fiscal and monetary policies to mitigate the adverse effects of economic recessions and depressions. After the 1929 crisis, Keynes also turned away from a fundamental pillar of neoclassical economics: free trade. He criticized Ricardian comparative advantage theory (the foundation of free trade), considering the theory's initial assumptions unrealistic, and became definitively protectionist. He detailed these ideas in his magnum opus, The General Theory of Employment, Interest and Money, published in early 1936. By the late 1930s, leading Western economies had begun adopting Keynes's policy recommendations. Almost all capitalist governments had done so by the end of the two decades following Keynes's death in 1946. As a leader of the British delegation, Keynes participated in the design of the international economic institutions established after the end of World War II but was overruled by the American delegation on several aspects.\nKeynes's influence started to wane in the 1970s, partly as a result of the stagflation that plagued the British and American economies during that decade, and partly because of criticism of Keynesian policies by Milton Friedman and other monetarists, who disputed the ability of government to favourably regulate the business cycle with fiscal policy. The 2007\u20132008 financial crisis sparked the 2008\u20132009 Keynesian resurgence. Keynesian economics provided the theoretical underpinning for economic policies undertaken in response to the 2007\u20132008 financial crisis by President Barack Obama of the United States, Prime Minister Gordon Brown of the United Kingdom, and other heads of governments.\nWhen Time magazine included Keynes among its Most Important People of the Century in 1999, it reported that \"his radical idea that governments should spend money they don't have may have saved capitalism\". The Economist has described Keynes as \"Britain's most famous 20th-century economist\". In addition to being an economist, Keynes was also a civil servant, a director of the Bank of England, and a part of the Bloomsbury Group of intellectuals.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9317")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9317",
+  "isRealHuman": true,
+  "birthDate": "1883-06-05",
+  "deathDate": "1946-04-21",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "John Maynard Keynes (1883–1946) was a British economist whose theories fundamentally changed macroeconomic policy. He advocated for government intervention to stabilize economies during downturns. He died at 62 from a heart attack at his home in East Sussex.",
+  "shortDescriptionFr": "John Maynard Keynes (1883–1946) était un économiste britannique dont les théories ont transformé la macroéconomie. Il prônait l'intervention de l'État pour stabiliser l'économie. Il est décédé à 62 ans d'une crise cardiaque à son domicile dans l'East Sussex.",
+  "shortDescriptionDe": "John Maynard Keynes (1883–1946) war ein britischer Ökonom, dessen Theorien die Makroökonomie veränderten. Er befürwortete staatliche Eingriffe zur Stabilisierung der Wirtschaft. Er starb im Alter von 62 Jahren an einem Herzinfarkt in seinem Haus in East Sussex.",
+  "shortDescriptionEs": "John Maynard Keynes (1883–1946) fue un economista británico cuyas teorías cambiaron la macroeconomía. Abogó por la intervención del gobierno para estabilizar la economía. Murió a los 62 años de un ataque al corazón en su hogar en East Sussex.",
+  "shortDescriptionRu": "Джон Мейнард Кейнс (1883–1946) — британский экономист, чьи теории изменили макроэкономику. Он выступал за государственное вмешательство для стабилизации экономики. Умер в 62 года от сердечного приступа в своем доме в Восточном Суссексе.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+    "https://www.britannica.com/money/John-Maynard-Keynes",
+    "https://historydraft.com/story/john-maynard-keynes/death/369/4271",
+    "https://www.newyorker.com/magazine/2002/01/28/buried-treasure-5"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5599",  "Name": "Peter Paul Rubens",  "BirthDate": "1577-07-08T00:00:00Z",  "DeathDate": "1640-05-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Peter%20Paul%20Rubens%20-%20Portrait%20of%20the%20Artist%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 165,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"21463370":{"pageid":21463370,"ns":0,"title":"Peter Paul Rubens","extract":"Sir Peter Paul Rubens ( ROO-b\u0259nz; Dutch: [\u02c8pe\u02d0t\u0259r p\u028cul \u02c8ryb\u0259ns]; 28 June 1577 \u2013 30 May 1640) was a Flemish artist and diplomat. He is considered the most influential artist of the Flemish Baroque tradition. Rubens' highly charged compositions reference erudite aspects of classical and Christian history. His unique and immensely popular Baroque style emphasised movement, colour, and sensuality, which followed the immediate, dramatic artistic style promoted in the Counter-Reformation. Rubens was a painter producing altarpieces, portraits, landscapes, and history paintings of mythological and allegorical subjects. He was also a prolific designer of cartoons for the Flemish tapestry workshops and of frontispieces for the publishers in Antwerp.\nRubens was born and raised in the Holy Roman Empire (modern-day Germany) to parents who were refugees from Antwerp in the Duchy of Brabant in the Southern Netherlands (modern-day Belgium) and moved to Antwerp at about 12. In addition to running a large workshop in Antwerp that produced paintings popular with nobility and art collectors throughout Europe, Rubens was a classically educated humanist scholar and diplomat who was knighted by both Philip IV of Spain and Charles I of England. Rubens was a prolific artist. The catalogue of his works by Michael Jaff\u00e9 lists 1,403 pieces, excluding numerous copies made in his workshop.\nHis commissioned works were mostly history paintings, which included religious and mythological subjects, and hunt scenes. He painted portraits, especially of friends, and self-portraits, and in later life painted several landscapes. Rubens designed tapestries and prints, as well as his own house. He also oversaw the ephemeral decorations of the royal entry into Antwerp by the Cardinal-Infante Ferdinand of Austria in 1635. He wrote a book with illustrations of the palaces in Genoa, which was published in 1622 as Palazzi di Genova. The book was influential in spreading the Genoese palace style in Northern Europe. Rubens was an avid art collector and had one of the largest collections of art and books in Antwerp. He was also an art dealer and is known to have sold important art objects to George Villiers, 1st Duke of Buckingham.\nHe was one of the last major artists to make consistent use of wooden panels as a support medium, even for very large works, but used canvas as well, especially when the work needed to be sent a long distance. For altarpieces, he sometimes painted on slate to reduce reflection problems."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5599")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5599",
+  "isRealHuman": true,
+  "birthDate": "1577-06-28",
+  "deathDate": "1640-05-30",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by historians, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Peter Paul Rubens was a Flemish Baroque painter and diplomat, celebrated for his dynamic compositions and vibrant use of color. He died at 62 in Antwerp, likely due to heart failure caused by chronic gout.",
+  "shortDescriptionFr": "Pierre Paul Rubens était un peintre baroque flamand et diplomate, célèbre pour ses compositions dynamiques et son utilisation vibrante de la couleur. Il est décédé à 62 ans à Anvers, probablement d'une insuffisance cardiaque causée par la goutte chronique.",
+  "shortDescriptionDe": "Peter Paul Rubens war ein flämischer Barockmaler und Diplomat, bekannt für seine dynamischen Kompositionen und lebendige Farbgebung. Er starb im Alter von 62 Jahren in Antwerpen, vermutlich an Herzversagen infolge chronischer Gicht.",
+  "shortDescriptionEs": "Pedro Pablo Rubens fue un pintor barroco flamenco y diplomático, reconocido por sus composiciones dinámicas y uso vibrante del color. Falleció a los 62 años en Amberes, probablemente por insuficiencia cardíaca causada por gota crónica.",
+  "shortDescriptionRu": "Питер Пауль Рубенс был фламандским художником барокко и дипломатом, известным своими динамичными композициями и ярким использованием цвета. Он умер в возрасте 62 лет в Антверпене, вероятно, от сердечной недостаточности, вызванной хронической подагрой.",
+  "sources": [
+    "https://www.britannica.com/biography/Peter-Paul-Rubens",
+    "https://en.wikipedia.org/wiki/Peter_Paul_Rubens",
+    "https://artincontext.org/peter-paul-rubens/",
+    "https://rubenshuis.be/en/biography-rubens"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9391",  "Name": "Ludwig Wittgenstein",  "BirthDate": "1889-04-26T00:00:00Z",  "DeathDate": "1951-04-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ludwig%20Wittgenstein.jpg",  "SiteLinksCnt": 164,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"17741":{"pageid":17741,"ns":0,"title":"Ludwig Wittgenstein","extract":"Ludwig Josef Johann Wittgenstein ( VIT-g\u0259n-s(h)tyne; Austrian German: [\u02c8lu\u02d0dv\u026ak \u02c8jo\u02d0s\u025bf \u02c8jo\u02d0han \u02c8v\u026at\u0261n\u0329\u0283ta\u026an]; 26 April 1889 \u2013 29 April 1951) was an Austrian philosopher who worked primarily in logic, the philosophy of mathematics, the philosophy of mind, and the philosophy of language. \nFrom 1929 to 1947, Wittgenstein taught at the University of Cambridge. Despite his position, only one book of his philosophy was published during his entire life: the 75-page Logisch-Philosophische Abhandlung (Logical-Philosophical Treatise, 1921), which appeared, together with an English translation, in 1922 under the Latin title Tractatus Logico-Philosophicus. His only other published works were an article, \"Some Remarks on Logical Form\" (1929); a book review; and a children's dictionary. His voluminous manuscripts were edited and published posthumously. The first and best-known of this posthumous series is the 1953 book Philosophical Investigations. A 1999 survey among American university and college teachers ranked the Investigations as the most important book of 20th-century philosophy, standing out as \"the one crossover masterpiece in twentieth-century philosophy, appealing across diverse specializations and philosophical orientations\".\nHis philosophy is often divided into an early period, exemplified by the Tractatus, and a later period, articulated primarily in the Philosophical Investigations. The \"early Wittgenstein\" was concerned with the logical relationship between propositions and the world, and he believed that by providing an account of the logic underlying this relationship, he had solved all philosophical problems. The \"later Wittgenstein\", however, rejected many of the assumptions of the Tractatus, arguing that the meaning of words is best understood as their use within a given language game. More precisely, Wittgenstein wrote, \"For a large class of cases of the employment of the word 'meaning'\u2014though not for all\u2014this word can  be explained in this way: the meaning of a word is its use in the language.\"\nBorn in Vienna into one of Europe's richest families, he inherited a fortune from his father in 1913. Before World War I, he \"made a very generous financial bequest to a group of poets and artists chosen by Ludwig von Ficker, the editor of Der Brenner, from artists in need. These included [Georg] Trakl as well as Rainer Maria Rilke and the architect Adolf Loos\", as well as the painter Oskar Kokoschka. \"In autumn 1916, as his sister reported, 'Ludwig made a donation of a million crowns [\"equivalent to about $2,869,000 in 2016 dollars\"] for the construction of a 30cm mortar.'\" Later, in a period of severe personal depression after World War I, he gave away his remaining fortune to his brothers and sisters. Three of his four older brothers died by separate acts of suicide. Wittgenstein left academia several times: serving as an officer on the front line during World War I, where he was decorated a number of times for his courage; teaching in schools in remote Austrian villages, where he encountered controversy for using sometimes violent corporal punishment on both girls and boys (see, for example, the Haidbauer incident), especially during mathematics classes; working during World War II as a hospital porter in London; and working as a hospital laboratory technician at the Royal Victoria Infirmary in Newcastle upon Tyne."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9391")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9391",
+  "isRealHuman": true,
+  "birthDate": "1889-04-26",
+  "deathDate": "1951-04-29",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reputable sources, confirming that Wittgenstein died three days after his 62nd birthday.",
+  "shortDescriptionEn": "Ludwig Wittgenstein (1889–1951) was an Austrian-born British philosopher renowned for his work in logic and the philosophy of language. He died of prostate cancer in Cambridge, England, shortly after his 62nd birthday.",
+  "shortDescriptionFr": "Ludwig Wittgenstein (1889–1951) était un philosophe austro-britannique célèbre pour ses travaux en logique et en philosophie du langage. Il est décédé d'un cancer de la prostate à Cambridge, en Angleterre, peu après son 62e anniversaire.",
+  "shortDescriptionDe": "Ludwig Wittgenstein (1889–1951) war ein österreichisch-britischer Philosoph, bekannt für seine Arbeiten in Logik und Sprachphilosophie. Er starb an Prostatakrebs in Cambridge, England, kurz nach seinem 62. Geburtstag.",
+  "shortDescriptionEs": "Ludwig Wittgenstein (1889–1951) fue un filósofo austro-británico reconocido por su trabajo en lógica y filosofía del lenguaje. Murió de cáncer de próstata en Cambridge, Inglaterra, poco después de cumplir 62 años.",
+  "shortDescriptionRu": "Людвиг Витгенштейн (1889–1951) — австрийско-британский философ, известный своими работами по логике и философии языка. Он скончался от рака простаты в Кембридже, Англия, вскоре после своего 62-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ludwig_Wittgenstein",
+    "https://www.britannica.com/biography/Ludwig-Wittgenstein",
+    "https://en.wikipedia.org/wiki/Deaths_of_philosophers"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q504",  "Name": "Émile Zola",  "BirthDate": "1840-04-02T00:00:00Z",  "DeathDate": "1902-09-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Emile%20Zola%201902.jpg",  "SiteLinksCnt": 162,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"44980":{"pageid":44980,"ns":0,"title":"\u00c9mile Zola","extract":"\u00c9mile \u00c9douard Charles Antoine Zola (, also US: ; French: [emil z\u0254la]; 2 April 1840 \u2013 29 September 1902) was a French novelist, journalist, playwright, the best-known practitioner of the literary school of naturalism, and an important contributor to the development of theatrical naturalism. He was a major figure in the political liberalization of France and in the exoneration of the falsely accused and convicted army officer Alfred Dreyfus, which is encapsulated in his renowned newspaper opinion headlined J'Accuse...!\u200a Zola was nominated for the first and second Nobel Prizes in Literature in 1901 and 1902."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q504")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q504",
+  "isRealHuman": true,
+  "birthDate": "1840-04-02",
+  "deathDate": "1902-09-29",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Émile Zola was a French novelist and journalist, a leading figure in the naturalist literary movement, and an advocate for justice during the Dreyfus Affair. He died at 62 from carbon monoxide poisoning, with some theories suggesting foul play.",
+  "shortDescriptionFr": "Émile Zola était un romancier et journaliste français, figure majeure du naturalisme littéraire et défenseur de la justice lors de l'affaire Dreyfus. Il est décédé à 62 ans d'une intoxication au monoxyde de carbone, certains évoquant un acte malveillant.",
+  "shortDescriptionDe": "Émile Zola war ein französischer Romancier und Journalist, führende Figur des literarischen Naturalismus und Verfechter der Gerechtigkeit während der Dreyfus-Affäre. Er starb im Alter von 62 Jahren an einer Kohlenmonoxidvergiftung; es gibt Theorien über ein mögliches Verbrechen.",
+  "shortDescriptionEs": "Émile Zola fue un novelista y periodista francés, figura destacada del naturalismo literario y defensor de la justicia en el caso Dreyfus. Murió a los 62 años por intoxicación con monóxido de carbono, existiendo teorías sobre un posible acto malicioso.",
+  "shortDescriptionRu": "Эмиль Золя был французским писателем и журналистом, ведущей фигурой литературного натурализма и защитником справедливости в деле Дрейфуса. Он умер в возрасте 62 лет от отравления угарным газом; существуют теории о возможном злонамеренном действии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/%C3%89mile_Zola",
+    "https://www.britannica.com/biography/Emile-Zola",
+    "https://www.historytoday.com/archive/months-past/strange-death-%C3%A9mile-zola"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7326",  "Name": "Hernán Cortés",  "BirthDate": "1485-01-01T00:00:00Z",  "DeathDate": "1547-12-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20de%20Hern%C3%A1n%20Cort%C3%A9s.jpg",  "SiteLinksCnt": 161,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"14013":{"pageid":14013,"ns":0,"title":"Hern\u00e1n Cort\u00e9s","extract":"Hern\u00e1n Cort\u00e9s de Monroy y Pizarro Altamirano, 1st Marquis of the Valley of Oaxaca (December 1485 \u2013 December 2, 1547) was a Spanish conquistador who led an expedition that caused the fall of the Aztec Empire and brought large portions of what is now mainland Mexico under the rule of the King of Castile in the early 16th century. Cort\u00e9s was part of the generation of Spanish explorers and conquistadors who began the first phase of the Spanish colonization of the Americas.\nBorn in Medell\u00edn, Spain, to a family of lesser nobility, Cort\u00e9s chose to pursue adventure and riches in the New World. He went to Hispaniola and later to Cuba, where he received an encomienda (the right to the labor of certain subjects). For a short time, he served as alcalde (magistrate) of the second Spanish town founded on the island. In 1519, he was elected captain of the third expedition to the mainland, which he partly funded. His enmity with the governor of Cuba, Diego Vel\u00e1zquez de Cu\u00e9llar, resulted in the recall of the expedition at the last moment, an order which Cort\u00e9s ignored.\nArriving on the continent, Cort\u00e9s executed a successful strategy of allying with some indigenous people against others. He also used a native woman, Do\u00f1a Marina, as an interpreter. She later gave birth to his first son. When the governor of Cuba sent emissaries to arrest Cort\u00e9s, he fought them and won, using the extra troops as reinforcements. Cort\u00e9s wrote letters directly to the king asking to be acknowledged for his successes instead of being punished for mutiny. After he overthrew the Aztec Empire, Cort\u00e9s was awarded the title of marqu\u00e9s del Valle de Oaxaca, while the more prestigious title of viceroy was given to a high-ranking nobleman, Antonio de Mendoza. In 1541 Cort\u00e9s returned to Spain, where he died six years later of natural causes."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7326")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7326",
+  "isRealHuman": true,
+  "birthDate": "1485-12-01",
+  "deathDate": "1547-12-02",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "The birth year and death date are well-documented in historical records. While the exact birth date is not specified beyond the month and year, the calculation of age at death as 62 years is widely accepted among historians.",
+  "shortDescriptionEn": "Hernán Cortés (1485–1547) was a Spanish conquistador who led the expedition that caused the fall of the Aztec Empire, bringing large parts of mainland Mexico under Spanish rule. He died of natural causes in Castilleja de la Cuesta, near Seville, Spain, at the age of 62.",
+  "shortDescriptionFr": "Hernán Cortés (1485–1547) était un conquistador espagnol qui a dirigé l'expédition ayant entraîné la chute de l'Empire aztèque, plaçant une grande partie du Mexique sous domination espagnole. Il est mort de causes naturelles à Castilleja de la Cuesta, près de Séville, en Espagne, à l'âge de 62 ans.",
+  "shortDescriptionDe": "Hernán Cortés (1485–1547) war ein spanischer Konquistador, der die Expedition leitete, die zum Fall des Aztekenreiches führte und große Teile des heutigen Mexikos unter spanische Herrschaft brachte. Er starb eines natürlichen Todes in Castilleja de la Cuesta, nahe Sevilla, Spanien, im Alter von 62 Jahren.",
+  "shortDescriptionEs": "Hernán Cortés (1485–1547) fue un conquistador español que lideró la expedición que provocó la caída del Imperio azteca, llevando gran parte del actual México bajo dominio español. Murió por causas naturales en Castilleja de la Cuesta, cerca de Sevilla, España, a los 62 años.",
+  "shortDescriptionRu": "Эрнан Кортес (1485–1547) был испанским конкистадором, возглавившим экспедицию, приведшую к падению империи ацтеков и установлению испанского владычества на большей части территории современного Мексики. Он умер естественной смертью в Кастильеха-де-ла-Куэста, недалеко от Севильи, Испания, в возрасте 62 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Hernan-Cortes",
+    "https://en.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s",
+    "https://www.historytoday.com/archive/death-hernando-cortez"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1402",  "Name": "Giovanni Boccaccio",  "BirthDate": "1313-01-01T00:00:00Z",  "DeathDate": "1375-12-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Boccaccio%20by%20Morghen.jpg",  "SiteLinksCnt": 150,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"12957":{"pageid":12957,"ns":0,"title":"Giovanni Boccaccio","extract":"Giovanni Boccaccio (UK:  b\u0259-KATCH-ee-oh, US:  boh-KAH-ch(ee)oh, b\u0259-; Italian: [d\u0292o\u02c8vanni bok\u02c8katt\u0283o]; 16 June 1313 \u2013 21 December 1375) was an Italian writer, poet, correspondent of Petrarch, and an important Renaissance humanist. Born in the town of Certaldo, he became so well known as a writer that he was sometimes simply known as \"the Certaldese\" and one of the most important figures in the European literary panorama of the fourteenth century. Some scholars (including Vittore Branca) define him as the greatest European prose writer of his time, a versatile writer who amalgamated different literary trends and genres, making them converge in original works, thanks to a creative activity exercised under the banner of experimentalism.\nHis most notable works are The Decameron, a collection of short stories, and On Famous Women. The Decameron became a determining element for the Italian literary tradition, especially after Pietro Bembo elevated the Boccaccian style to a model of Italian prose in the sixteenth century. Boccaccio wrote his imaginative literature mostly in Tuscan vernacular, as well as other works in Latin, and is particularly noted for his realistic dialogue which differed from that of his contemporaries, medieval writers who usually followed formulaic models for character and plot. The influence of Boccaccio's works was not limited to the Italian cultural scene but extended to the rest of Europe, exerting influence on authors such as Geoffrey Chaucer, a key figure in English literature, and the later writers Miguel de Cervantes, Lope de Vega and classical theatre in Spain.\nBoccaccio is considered one of the \"Three Crowns\" of Italian literature along with Dante Alighieri and Petrarch. He is remembered for being one of the precursors of humanism, of which he helped lay the foundations in the city of Florence, in conjunction with the activity of his friend and teacher Petrarch. He was the one who initiated Dante's criticism and philology: Boccaccio devoted himself to copying codices of the Divine Comedy and was a promoter of Dante's work and figure.\nIn the twentieth century, Boccaccio was the subject of critical-philological studies by Vittore Branca and Giuseppe Billanovich, and his Decameron was transposed to the big screen by the director and writer Pier Paolo Pasolini.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1402")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1402",
+  "isRealHuman": true,
+  "birthDate": "1313-06-16",
+  "deathDate": "1375-12-21",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "The birth date of 16 June 1313 is widely accepted among scholars, though some sources suggest only the year 1313. The death date of 21 December 1375 is well-documented. Given these dates, the calculated age at death is 62 years, with high confidence.",
+  "shortDescriptionEn": "Giovanni Boccaccio (1313–1375) was an Italian writer, poet, and humanist, renowned for his work 'The Decameron'. He played a significant role in the development of Renaissance humanism and Italian literature. Boccaccio died at the age of 62 in Certaldo, Tuscany, after a period of declining health.",
+  "shortDescriptionFr": "Giovanni Boccaccio (1313–1375) était un écrivain, poète et humaniste italien, célèbre pour son œuvre 'Le Décaméron'. Il a contribué au développement de l'humanisme de la Renaissance et de la littérature italienne. Boccaccio est décédé à l'âge de 62 ans à Certaldo, en Toscane, après une période de santé déclinante.",
+  "shortDescriptionDe": "Giovanni Boccaccio (1313–1375) war ein italienischer Schriftsteller, Dichter und Humanist, bekannt für sein Werk 'Das Dekameron'. Er spielte eine bedeutende Rolle in der Entwicklung des Renaissance-Humanismus und der italienischen Literatur. Boccaccio starb im Alter von 62 Jahren in Certaldo, Toskana, nach einer Phase gesundheitlicher Verschlechterung.",
+  "shortDescriptionEs": "Giovanni Boccaccio (1313–1375) fue un escritor, poeta y humanista italiano, reconocido por su obra 'El Decamerón'. Contribuyó significativamente al desarrollo del humanismo renacentista y la literatura italiana. Boccaccio falleció a los 62 años en Certaldo, Toscana, tras un período de salud deteriorada.",
+  "shortDescriptionRu": "Джованни Боккаччо (1313–1375) — итальянский писатель, поэт и гуманист, известный своим произведением 'Декамерон'. Он сыграл важную роль в развитии гуманизма эпохи Возрождения и итальянской литературы. Боккаччо скончался в возрасте 62 лет в Чертальдо, Тоскана, после периода ухудшения здоровья.",
+  "sources": [
+    "https://www.britannica.com/biography/Giovanni-Boccaccio",
+    "https://en.wikipedia.org/wiki/Giovanni_Boccaccio",
+    "https://www.worldhistory.org/Giovanni_Boccaccio/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8620",  "Name": "Kwame Nkrumah",  "BirthDate": "1909-09-21T00:00:00Z",  "DeathDate": "1972-04-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20National%20Archives%20UK%20-%20CO%201069-50-1.jpg",  "SiteLinksCnt": 148,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"17062":{"pageid":17062,"ns":0,"title":"Kwame Nkrumah","extract":"Francis Kwame Nkrumah (21 September 1909 \u2013 27 April 1972) was a Ghanaian politician, political theorist, and revolutionary. He served as Prime Minister of the Gold Coast from 1952 until 1957, when it gained independence from Britain. He was then the first Prime Minister and then the President of Ghana, from 1957 until 1966. An influential advocate of Pan-Africanism, Nkrumah was a founding member of the Organization of African Unity (OAU) and winner of the Lenin Peace Prize from the Soviet Union in 1962.\nAfter twelve years abroad pursuing higher education, developing his political philosophy, and organizing with other diasporic pan-Africanists, Nkrumah returned to the Gold Coast to begin his political career as an advocate of national independence. He formed the Convention People's Party, which achieved rapid success through its unprecedented appeal to the common voter. He became Prime Minister in 1952 and retained the position when he led Ghana to achieve independence from Britain in 1957, a first in sub-saharan Africa at the time. In 1960, Ghanaians approved a new constitution and elected Nkrumah President.\nHis administration was primarily socialist as well as nationalist. It funded national industrial and energy projects, developed a strong national education system and promoted a pan-Africanist culture. Under Nkrumah, Ghana played a leading role in African international relations and the pan-africanist movement during Africa's decolonization period.\nAfter multiple failed attempts on his life, coupled with increasingly difficult local economic conditions, Nkrumah's government became authoritarian in the 1960s, as he repressed political opposition and conducted elections that were neither free nor fair. In 1964, a constitutional amendment made Ghana a one-party state, with Nkrumah as president for life of both the nation and its party. He fostered a personality cult, forming ideological institutes and adopting the title of 'Osagyefo Dr.' Nkrumah was deposed in 1966 in a coup d'\u00e9tat by the National Liberation Council, under whose supervision the country's economy was privatized. Claims of CIA involvement in his overthrow have never been verified. Nkrumah lived the rest of his life in Guinea, where he was named honorary co-president."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8620")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8620",
+  "isRealHuman": true,
+  "birthDate": "1909-09-21",
+  "deathDate": "1972-04-27",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Kwame Nkrumah (1909–1972) was Ghana's first Prime Minister and President, leading the country to independence in 1957. A key figure in Pan-Africanism, he was overthrown in 1966 and died in exile in Romania in 1972.",
+  "shortDescriptionFr": "Kwame Nkrumah (1909–1972) fut le premier Premier ministre et président du Ghana, menant le pays à l'indépendance en 1957. Figure majeure du panafricanisme, il fut renversé en 1966 et mourut en exil en Roumanie en 1972.",
+  "shortDescriptionDe": "Kwame Nkrumah (1909–1972) war Ghanas erster Premierminister und Präsident, der das Land 1957 zur Unabhängigkeit führte. Als bedeutender Vertreter des Panafrikanismus wurde er 1966 gestürzt und starb 1972 im Exil in Rumänien.",
+  "shortDescriptionEs": "Kwame Nkrumah (1909–1972) fue el primer Primer Ministro y Presidente de Ghana, liderando la independencia en 1957. Figura clave del panafricanismo, fue derrocado en 1966 y murió en el exilio en Rumanía en 1972.",
+  "shortDescriptionRu": "Кваме Нкрума (1909–1972) — первый премьер-министр и президент Ганы, приведший страну к независимости в 1957 году. Видный деятель панафриканизма, был свергнут в 1966 году и умер в изгнании в Румынии в 1972 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kwame_Nkrumah",
+    "https://www.britannica.com/biography/Kwame-Nkrumah",
+    "https://www.sahistory.org.za/people/dr-kwame-nkrumah"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7333",  "Name": "Zheng He",  "BirthDate": "1371-01-01T00:00:00Z",  "DeathDate": "1433-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/2016%20Malakka%2C%20Stadhuys%20%2809%29.jpg",  "SiteLinksCnt": 145,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"34494":{"pageid":34494,"ns":0,"title":"Zheng He","extract":"Zheng He (also romanized Cheng Ho; 1371\u20131433/1435) was a Chinese admiral, explorer, diplomat, and bureaucrat during the early Ming dynasty (1368\u20131644). He is often regarded as the greatest admiral in Chinese history. Born into a Muslim family as Ma He, he later adopted the surname Zheng conferred onto him by the Yongle Emperor (r.\u20091402\u20131424). Between 1405 and 1433, Zheng commanded seven treasure voyages across Asia under the commission of the Yongle Emperor and the succeeding Xuande Emperor (r.\u20091425\u20131435). According to legend, Zheng's largest ships were almost twice as long as any wooden ship ever recorded, and carried hundreds of sailors on four decks.\nA favorite of the Yongle Emperor, whom Zheng assisted in the Jingnan campaign that overthrew the previous Jianwen Emperor in 1402, Zheng He rose to the top of the Ming imperial hierarchy and served as commander of the southern capital Nanjing."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7333")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7333",
+  "isRealHuman": true,
+  "birthDate": "1371-01-01",
+  "deathDate": "1433-01-01",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable sources, including Britannica and Wikipedia, confirm Zheng He's birth year as 1371 and his death in 1433, indicating he was 62 years old at the time of his death.",
+  "shortDescriptionEn": "Zheng He (1371–1433) was a Chinese admiral, explorer, and diplomat during the early Ming dynasty. Born into a Muslim family, he became a trusted eunuch of the Yongle Emperor and led seven major maritime expeditions to expand China's influence. He died in 1433 during his final voyage, likely near Calicut, India.",
+  "shortDescriptionFr": "Zheng He (1371–1433) était un amiral, explorateur et diplomate chinois de la dynastie Ming. Né dans une famille musulmane, il devint un eunuque de confiance de l'empereur Yongle et mena sept grandes expéditions maritimes pour étendre l'influence de la Chine. Il mourut en 1433 lors de son dernier voyage, probablement près de Calicut, en Inde.",
+  "shortDescriptionDe": "Zheng He (1371–1433) war ein chinesischer Admiral, Entdecker und Diplomat der frühen Ming-Dynastie. Geboren in eine muslimische Familie, wurde er ein vertrauenswürdiger Eunuch des Yongle-Kaisers und leitete sieben große maritime Expeditionen zur Ausweitung des chinesischen Einflusses. Er starb 1433 während seiner letzten Reise, wahrscheinlich in der Nähe von Calicut, Indien.",
+  "shortDescriptionEs": "Zheng He (1371–1433) fue un almirante, explorador y diplomático chino de la dinastía Ming. Nacido en una familia musulmana, se convirtió en un eunuco de confianza del emperador Yongle y dirigió siete grandes expediciones marítimas para expandir la influencia de China. Murió en 1433 durante su último viaje, probablemente cerca de Calicut, India.",
+  "shortDescriptionRu": "Чжэн Хэ (1371–1433) был китайским адмиралом, исследователем и дипломатом эпохи ранней династии Мин. Родившись в мусульманской семье, он стал доверенным евнухом императора Юнлэ и возглавил семь крупных морских экспедиций для расширения влияния Китая. Он умер в 1433 году во время своего последнего путешествия, вероятно, недалеко от Каликута, Индия.",
+  "sources": [
+    "https://www.britannica.com/biography/Zheng-He",
+    "https://en.wikipedia.org/wiki/Zheng_He",
+    "https://famous-explorers.org/zheng-he/",
+    "https://www.thoughtco.com/zheng-he-ming-chinas-great-admiral-195236"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2185",  "Name": "Georges Pompidou",  "BirthDate": "1911-07-05T00:00:00Z",  "DeathDate": "1974-04-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Georges%20Pompidou%201969%20%28cropped%29.jpg",  "SiteLinksCnt": 140,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"251592":{"pageid":251592,"ns":0,"title":"Georges Pompidou","extract":"Georges Jean Raymond Pompidou ( POMP-id-oo; French: [\u0292\u0254\u0281\u0292(\u0259) p\u0254\u0303pidu] ; 5 July 1911 \u2013 2 April 1974) was a French politician who served as President of France from 1969 to his death in 1974. He previously served as Prime Minister of France under President Charles de Gaulle from 1962 to 1968, a longevity record under the Fifth Republic.\nIn the context of the strong growth of the last years of the Trente Glorieuses, Pompidou continued De Gaulle's policy of modernisation, which was symbolised by the presidential use of the Concorde, the creation of large industrial groups and the launch of the high-speed train project (TGV). The government invested heavily in the automobile, agribusiness, steel, telecommunications, nuclear and aerospace sectors and also created the minimum wage (SMIC) and the Ministry of the Environment.\nHis foreign policy was pragmatic but in line with the Gaullist principle of French autonomy within the Western Bloc. It was marked by a warming of relations with Richard Nixon's United States, close relations with Leonid Brezhnev's Soviet Union, the launch of the 'snake in the tunnel' and the relaunching of European construction by facilitating the United Kingdom's entry to the EEC in contrast to de Gaulle's opposition. Pompidou died in office in 1974 of Waldenstr\u00f6m's disease, a rare form of blood cancer.\nAn admirer of contemporary art, Pompidou's name remains known worldwide for the Centre Pompidou, which he initiated and was inaugurated in 1977; it subsequently spread the name with its branches in Metz (France), M\u00e1laga (Spain), Brussels (Belgium) and Shanghai (China). A Georges Pompidou Museum is also dedicated to him in his hometown."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2185")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q2185",
+  "isRealHuman": true,
+  "birthDate": "1911-07-05",
+  "deathDate": "1974-04-02",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted. The age at death is calculated based on these dates, resulting in 62 years, 8 months, and 28 days.",
+  "shortDescriptionEn": "Georges Pompidou (1911–1974) was a French politician who served as Prime Minister (1962–1968) and President (1969–1974). He died in office at age 62 from Waldenström's macroglobulinemia, a rare blood cancer.",
+  "shortDescriptionFr": "Georges Pompidou (1911–1974) était un homme politique français, Premier ministre (1962–1968) puis Président de la République (1969–1974). Il est décédé en fonction à l'âge de 62 ans des suites d'une macroglobulinémie de Waldenström, un cancer rare du sang.",
+  "shortDescriptionDe": "Georges Pompidou (1911–1974) war ein französischer Politiker, Premierminister (1962–1968) und Präsident (1969–1974). Er starb im Amt im Alter von 62 Jahren an einer Waldenström-Makroglobulinämie, einer seltenen Blutkrebserkrankung.",
+  "shortDescriptionEs": "Georges Pompidou (1911–1974) fue un político francés, Primer Ministro (1962–1968) y Presidente (1969–1974). Falleció en el cargo a los 62 años debido a una macroglobulinemia de Waldenström, un raro cáncer de la sangre.",
+  "shortDescriptionRu": "Жорж Помпиду (1911–1974) — французский политик, премьер-министр (1962–1968) и президент (1969–1974). Скончался на посту в возрасте 62 лет от макроглобулинемии Вальденстрема, редкой формы рака крови.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Georges_Pompidou",
+    "https://en.wikipedia.org/wiki/Illness_and_death_of_Georges_Pompidou",
+    "https://www.britannica.com/biography/Georges-Jean-Raymond-Pompidou",
+    "https://fr.wikipedia.org/wiki/Georges_Pompidou",
+    "https://fr.wikipedia.org/wiki/Maladie_et_mort_de_Georges_Pompidou"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q410",  "Name": "Carl Sagan",  "BirthDate": "1934-11-09T00:00:00Z",  "DeathDate": "1996-12-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Sagan%20Planetary%20Society.JPG",  "SiteLinksCnt": 140,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"6824":{"pageid":6824,"ns":0,"title":"Carl Sagan","extract":"Carl Edward Sagan (; SAY-g\u0259n; November 9, 1934 \u2013 December 20, 1996) was an American astronomer, planetary scientist and science communicator. His best known scientific contribution is his research on the possibility of extraterrestrial life, including experimental demonstration of the production of amino acids from basic chemicals by exposure to light. He assembled the first physical messages sent into space, the Pioneer plaque and the Voyager Golden Record, which were universal messages that could potentially be understood by any extraterrestrial intelligence that might find them. He argued in favor of the hypothesis, which has since been accepted, that the high surface temperatures of Venus are the result of the greenhouse effect.\nInitially an assistant professor at Harvard, Sagan later moved to Cornell University, where he spent most of his career. He published more than 600 scientific papers and articles and was author, co-author or editor of more than 20 books. He wrote many popular science books, such as The Dragons of Eden, Broca's Brain, Pale Blue Dot and The Demon-Haunted World. He also co-wrote and narrated the award-winning 1980 television series Cosmos: A Personal Voyage, which became the most widely watched series in the history of American public television: Cosmos has been seen by at least 500 million people in 60 countries. A book, also called Cosmos, was published to accompany the series. Sagan also wrote a science-fiction novel, published in 1985, called Contact, which became the basis for the 1997 film Contact. His papers, comprising 595,000 items, are archived in the Library of Congress.\nSagan was a popular public advocate of skeptical scientific inquiry and the scientific method; he pioneered the field of exobiology and promoted the search for extraterrestrial intelligence (SETI). He spent most of his career as a professor of astronomy at Cornell University, where he directed the Laboratory for Planetary Studies. Sagan and his works received numerous awards and honors, including the NASA Distinguished Public Service Medal, the National Academy of Sciences Public Welfare Medal, the Pulitzer Prize for General Nonfiction (for his book The Dragons of Eden), and (for Cosmos: A Personal Voyage) two Emmy Awards, the Peabody Award, and the Hugo Award. He married three times and had five children. After developing myelodysplasia, Sagan died of pneumonia at the age of 62 on December 20, 1996."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q410")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q410",
+  "isRealHuman": true,
+  "birthDate": "1934-11-09",
+  "deathDate": "1996-12-20",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Carl Sagan was an American astronomer, planetary scientist, and science communicator known for popularizing science through works like 'Cosmos'. He passed away at 62 due to pneumonia, a complication from myelodysplasia.",
+  "shortDescriptionFr": "Carl Sagan était un astronome, planétologue et vulgarisateur scientifique américain, célèbre pour avoir popularisé la science avec des œuvres comme 'Cosmos'. Il est décédé à 62 ans d'une pneumonie, complication de la myélodysplasie.",
+  "shortDescriptionDe": "Carl Sagan war ein US-amerikanischer Astronom, Planetenforscher und Wissenschaftskommunikator, bekannt für die Popularisierung der Wissenschaft durch Werke wie 'Kosmos'. Er starb im Alter von 62 Jahren an einer Lungenentzündung, einer Komplikation der Myelodysplasie.",
+  "shortDescriptionEs": "Carl Sagan fue un astrónomo, científico planetario y divulgador científico estadounidense, conocido por popularizar la ciencia a través de obras como 'Cosmos'. Falleció a los 62 años debido a una neumonía, complicación de la mielodisplasia.",
+  "shortDescriptionRu": "Карл Саган был американским астрономом, планетологом и популяризатором науки, известным по работе 'Космос'. Он скончался в возрасте 62 лет от пневмонии, осложнения миелодисплазии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Carl_Sagan",
+    "https://news.cornell.edu/stories/1996/12/carl-sagan-cornell-astronomer-dies-today-dec-20-seattle"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7298",  "Name": "Antonín Dvořák",  "BirthDate": "1841-09-08T00:00:00Z",  "DeathDate": "1904-05-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dvorak.jpg",  "SiteLinksCnt": 140,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"76572":{"pageid":76572,"ns":0,"title":"Anton\u00edn Dvo\u0159\u00e1k","extract":"Anton\u00edn Leopold Dvo\u0159\u00e1k ( d(\u0259-)VOR-zha(h)k; Czech: [\u02c8anto\u0272i\u02d0n \u02c8l\u025bopold \u02c8dvor\u031da\u02d0k] ; 8 September 1841 \u2013 1 May 1904) was a Czech composer. He frequently employed rhythms and other aspects of the folk music of Moravia and his native Bohemia, following the Romantic-era nationalist example of his predecessor Bed\u0159ich Smetana. Dvo\u0159\u00e1k's style has been described as \"the fullest recreation of a national idiom with that of the symphonic tradition, absorbing folk influences and finding effective ways of using them,\" and Dvo\u0159\u00e1k has been described as \"arguably the most versatile... composer of his time\".\nDvo\u0159\u00e1k displayed his musical gifts at an early age, being a talented violin student. The first public performances of his works were in Prague in 1872 and, with special success, in 1873, when he was 31 years old. Seeking recognition beyond the Prague area, he submitted scores of symphonies and other works to German and Austrian competitions. He did not win a prize until 1874, with Johannes Brahms on the jury of the Austrian State Competition. In 1877, after his third win, Brahms recommended Dvo\u0159\u00e1k to his publisher, Simrock, who commissioned what became the Slavonic Dances, Op. 46. The sheet music's high sales and critical reception led to his international success. A London performance of Dvo\u0159\u00e1k's Stabat Mater in 1883 led to many other performances in the United Kingdom, the United States, and eventually Russia in March 1890. The Seventh Symphony was written for London in 1885.\nIn 1892, Dvo\u0159\u00e1k became the director of the National Conservatory of Music of America in New York City. While in the United States, Dvo\u0159\u00e1k wrote his two most successful orchestral works: the Symphony From the New World, which spread his reputation worldwide, and his Cello Concerto, one of the most highly regarded of all cello concerti. On a summer holiday in Spillville, Iowa in 1893, Dvo\u0159\u00e1k also wrote his most famous piece of chamber music, his twelfth String Quartet in F major, Op. 96, the American. While he remained at the Conservatory for a few more years, pay cuts and an onset of homesickness led him to return to Bohemia in 1895.\nAll of Dvo\u0159\u00e1k's ten operas, except his first, have librettos in Czech and were intended to convey the Czech national spirit, as were some of his choral works. By far the most successful of the operas is Rusalka, premiered in 1901. Among his smaller works, the seventh Humoresque and the song \"Songs My Mother Taught Me\" are also widely performed and recorded. The Dvo\u0159\u00e1k Prague International Music Festival is a major series of concerts held annually to celebrate Dvo\u0159\u00e1k's life and works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7298")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7298",
+  "isRealHuman": true,
+  "birthDate": "1841-09-08",
+  "deathDate": "1904-05-01",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Antonín Dvořák (1841–1904) was a Czech composer renowned for integrating Bohemian and Moravian folk music into classical compositions. He died at age 62 from a stroke after a five-week illness in Prague.",
+  "shortDescriptionFr": "Antonín Dvořák (1841–1904) était un compositeur tchèque célèbre pour avoir intégré la musique folklorique bohémienne et morave dans ses compositions classiques. Il est décédé à 62 ans d'un accident vasculaire cérébral après cinq semaines de maladie à Prague.",
+  "shortDescriptionDe": "Antonín Dvořák (1841–1904) war ein tschechischer Komponist, bekannt für die Integration böhmischer und mährischer Volksmusik in klassische Kompositionen. Er starb im Alter von 62 Jahren an einem Schlaganfall nach fünfwöchiger Krankheit in Prag.",
+  "shortDescriptionEs": "Antonín Dvořák (1841–1904) fue un compositor checo conocido por incorporar música folclórica de Bohemia y Moravia en sus composiciones clásicas. Murió a los 62 años de un derrame cerebral tras cinco semanas de enfermedad en Praga.",
+  "shortDescriptionRu": "Антонин Дворжак (1841–1904) — чешский композитор, известный интеграцией богемской и моравской народной музыки в классические произведения. Умер в возрасте 62 лет от инсульта после пяти недель болезни в Праге.",
+  "sources": [
+    "https://www.britannica.com/biography/Antonin-Dvorak",
+    "https://www.antonin-dvorak.cz/en/life/death-and-burial/",
+    "https://www.classicfm.com/composers/dvorak/guides/dvorak-funeral-15/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q27645",  "Name": "Mikhail Bakunin",  "BirthDate": "1814-05-30T00:00:00Z",  "DeathDate": "1876-07-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bakunin%20Nadar.jpg",  "SiteLinksCnt": 135,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"58198":{"pageid":58198,"ns":0,"title":"Mikhail Bakunin","extract":"Mikhail Alexandrovich Bakunin ( b\u0259-KOO-nin; 30 May [O.S. 18 May] 1814 \u2013 1 July 1876) was a Russian revolutionary anarchist. He is among the most influential figures of anarchism and a major figure in the revolutionary socialist, social anarchist, and collectivist anarchist traditions. Bakunin's prestige as a revolutionary also made him one of the most famous ideologues in Europe, gaining substantial influence among radicals throughout Russia and Europe.\nBakunin grew up in Pryamukhino, a family estate in Tver Governorate. From 1840, he studied in Moscow, then in Berlin hoping to enter academia. Later in Paris, he met Karl Marx and Pierre-Joseph Proudhon, who deeply influenced him. Bakunin's increasing radicalism ended hopes of a professorial career. He was expelled from France for opposing the Russian Empire's occupation of Poland. After participating in the 1848 Prague and 1849 Dresden uprisings, Bakunin was imprisoned, tried, sentenced to death, and extradited multiple times. Finally exiled to Siberia in 1857, he escaped via Japan to the United States and then to London, where he worked with Alexander Herzen on the journal Kolokol (The Bell). In 1863, Bakunin left to join the insurrection in Poland, but he failed to reach it and instead spent time in Switzerland and Italy.\nIn 1868, Bakunin joined the International Workingmen's Association, leading the anarchist faction to rapidly grow in influence. The 1872 Hague Congress was dominated by a struggle between Bakunin and Marx, who was a key figure in the General Council of the International and argued for the use of the state to bring about socialism. In contrast, Bakunin and the anarchist faction argued for the replacement of the state by federations of self-governing workplaces and communes. Bakunin could not reach the Netherlands, and the anarchist faction lost the debate in his absence. Bakunin was expelled from the International for maintaining, in Marx's view, a secret organisation within the International, and founded the Anti-Authoritarian International in 1872. From 1870 until his death in 1876, Bakunin wrote his longer works such as Statism and Anarchy and God and the State, but he continued to directly participate in European worker and peasant movements. In 1870, he was involved in an insurrection in Lyon, France. Bakunin sought to take part in an anarchist insurrection in Bologna, Italy, but his declining health forced him to return to Switzerland in disguise.\nBakunin is remembered as a major figure in the history of anarchism, an opponent of Marxism, especially of the dictatorship of the proletariat; and for his predictions that Marxist regimes would be one-party dictatorships ruling over the proletariat, not rule by the proletariat. His book God and the State has been widely translated and remains in print. Bakunin has had a significant influence on thinkers such as Peter Kropotkin, Errico Malatesta, Herbert Marcuse, E. P. Thompson, Neil Postman and A. S. Neill as well as syndicalist organizations such as the IWW, the anarchists in the Spanish Civil War and contemporary anarchists involved in the modern-day anti-globalization movement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q27645")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q27645",
+  "isRealHuman": true,
+  "birthDate": "1814-05-30",
+  "deathDate": "1876-07-01",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Mikhail Bakunin was a Russian revolutionary anarchist and philosopher, recognized as a foundational figure in collectivist anarchism. He died at 62 in Bern, Switzerland, after years of political activism and declining health.",
+  "shortDescriptionFr": "Mikhaïl Bakounine était un anarchiste révolutionnaire et philosophe russe, reconnu comme une figure fondatrice de l'anarchisme collectiviste. Il est décédé à 62 ans à Berne, en Suisse, après des années d'activisme politique et de santé déclinante.",
+  "shortDescriptionDe": "Michail Bakunin war ein russischer revolutionärer Anarchist und Philosoph, der als Gründungsfigur des kollektivistischen Anarchismus gilt. Er starb im Alter von 62 Jahren in Bern, Schweiz, nach Jahren politischen Aktivismus und abnehmender Gesundheit.",
+  "shortDescriptionEs": "Mijaíl Bakunin fue un anarquista revolucionario y filósofo ruso, reconocido como una figura fundamental del anarquismo colectivista. Murió a los 62 años en Berna, Suiza, tras años de activismo político y salud deteriorada.",
+  "shortDescriptionRu": "Михаил Бакунин был российским революционным анархистом и философом, признанным основоположником коллективистского анархизма. Он скончался в возрасте 62 лет в Берне, Швейцария, после многих лет политической активности и ухудшения здоровья.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mikhail_Bakunin",
+    "https://www.britannica.com/biography/Mikhail-Bakunin",
+    "https://www.findagrave.com/memorial/28423600/mikhail_aleksandrovich-bakunin"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8772",  "Name": "Joseph Fourier",  "BirthDate": "1768-01-21T00:00:00Z",  "DeathDate": "1830-05-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fourier2.jpg",  "SiteLinksCnt": 131,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"25767401":{"pageid":25767401,"ns":0,"title":"Joseph Fourier","extract":"Jean-Baptiste Joseph Fourier (; French: [\u0292\u0251\u0303 batist \u0292oz\u025bf fu\u0281je]; 21 March 1768 \u2013 16 May 1830) was a French mathematician and physicist born in Auxerre, Burgundy and best known for initiating the investigation of Fourier series, which eventually developed into Fourier analysis and harmonic analysis, and their applications to problems of heat transfer and vibrations. The Fourier transform and Fourier's law of conduction are also named in his honour. Fourier is also generally credited with the discovery of the greenhouse effect."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8772")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8772",
+  "isRealHuman": true,
+  "birthDate": "1768-03-21",
+  "deathDate": "1830-05-16",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "French mathematician and physicist known for initiating the investigation of Fourier series and the Fourier transform, with significant contributions to heat transfer and vibrations. He died at the age of 62 due to a heart condition.",
+  "shortDescriptionFr": "Mathématicien et physicien français, célèbre pour ses travaux sur les séries de Fourier et la transformée de Fourier, contribuant notablement à l'analyse de la chaleur et des vibrations. Il est décédé à l'âge de 62 ans d'une affection cardiaque.",
+  "shortDescriptionDe": "Französischer Mathematiker und Physiker, bekannt für die Einführung der Fourier-Reihen und der Fourier-Transformation, mit bedeutenden Beiträgen zur Wärmeleitung und Schwingungsanalyse. Er starb im Alter von 62 Jahren an einer Herzkrankheit.",
+  "shortDescriptionEs": "Matemático y físico francés, conocido por iniciar la investigación de las series y transformadas de Fourier, con importantes contribuciones al estudio del calor y las vibraciones. Falleció a los 62 años debido a una afección cardíaca.",
+  "shortDescriptionRu": "Французский математик и физик, известный своими работами по рядам и преобразованиям Фурье, внёс значительный вклад в изучение теплопередачи и вибраций. Умер в возрасте 62 лет от сердечного заболевания.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Joseph_Fourier",
+    "https://www.britannica.com/biography/Joseph-Baron-Fourier",
+    "https://www.thefamouspeople.com/profiles/joseph-fourier-547.php",
+    "https://vedicmathschool.org/joseph-fourier/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132537",  "Name": "Robert Oppenheimer",  "BirthDate": "1904-04-22T00:00:00Z",  "DeathDate": "1967-02-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Oppenheimer%20%28cropped%29.jpg",  "SiteLinksCnt": 123,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"39034":{"pageid":39034,"ns":0,"title":"J. Robert Oppenheimer","extract":"J. Robert Oppenheimer (born Julius Robert Oppenheimer;  OP-\u0259n-hy-m\u0259r; April 22, 1904 \u2013 February 18, 1967) was an American theoretical physicist who served as the director of the Manhattan Project's Los Alamos Laboratory during World War II. He is often called the \"father of the atomic bomb\" for his role in overseeing the development of the first nuclear weapons.\nBorn in New York City, Oppenheimer obtained a degree in chemistry from Harvard University in 1925 and a doctorate in physics from the University of G\u00f6ttingen in Germany in 1927, studying under Max Born. After research at other institutions, he joined the physics faculty at the University of California, Berkeley, where he was made a full professor in 1936. Oppenheimer made significant contributions to physics in the fields of quantum mechanics and nuclear physics, including the Born\u2013Oppenheimer approximation for molecular wave functions; work on the theory of positrons, quantum electrodynamics, and quantum field theory; and the Oppenheimer\u2013Phillips process in nuclear fusion. With his students, he also made major contributions to astrophysics, including the theory of cosmic ray showers, and the theory of neutron stars and black holes.\nIn 1942, Oppenheimer was recruited to work on the Manhattan Project, and in 1943 was appointed director of the project's Los Alamos Laboratory in New Mexico, tasked with developing the first nuclear weapons. His leadership and scientific expertise were instrumental in the project's success, and on July 16, 1945, he was present at the first test of the atomic bomb, Trinity. In August 1945, the weapons were used on Japan in the atomic bombings of Hiroshima and Nagasaki, to date the only uses of nuclear weapons in conflict.\nIn 1947, Oppenheimer was appointed director of the Institute for Advanced Study in Princeton, New Jersey, and chairman of the General Advisory Committee of the new United States Atomic Energy Commission (AEC). He lobbied for international control of nuclear power and weapons in order to avert an arms race with the Soviet Union, and later opposed the development of the hydrogen bomb, partly on ethical grounds. During the Second Red Scare, his stances, together with his past associations with the Communist Party USA, led to an AEC security hearing in 1954 and the revocation of his security clearance. He continued to lecture, write, and work in physics, and in 1963 was given the Enrico Fermi Award as a gesture of political rehabilitation. In 2022, the U.S. government vacated the 1954 revocation of his security clearance."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132537")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q132537",
+  "isRealHuman": true,
+  "birthDate": "1904-04-22",
+  "deathDate": "1967-02-18",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "J. Robert Oppenheimer (1904–1967) was an American theoretical physicist who played a pivotal role in the development of the atomic bomb as the director of the Los Alamos Laboratory during World War II. He died at the age of 62 from laryngeal cancer.",
+  "shortDescriptionFr": "J. Robert Oppenheimer (1904–1967) était un physicien théoricien américain, connu pour son rôle central dans le développement de la bombe atomique en tant que directeur du laboratoire de Los Alamos pendant la Seconde Guerre mondiale. Il est décédé à l'âge de 62 ans d'un cancer du larynx.",
+  "shortDescriptionDe": "J. Robert Oppenheimer (1904–1967) war ein amerikanischer theoretischer Physiker, der eine entscheidende Rolle bei der Entwicklung der Atombombe als Direktor des Los Alamos-Labors während des Zweiten Weltkriegs spielte. Er starb im Alter von 62 Jahren an Kehlkopfkrebs.",
+  "shortDescriptionEs": "J. Robert Oppenheimer (1904–1967) fue un físico teórico estadounidense que desempeñó un papel fundamental en el desarrollo de la bomba atómica como director del Laboratorio de Los Álamos durante la Segunda Guerra Mundial. Murió a los 62 años de cáncer de laringe.",
+  "shortDescriptionRu": "Дж. Роберт Оппенгеймер (1904–1967) был американским теоретическим физиком, сыгравшим ключевую роль в разработке атомной бомбы в качестве директора лаборатории Лос-Аламос во время Второй мировой войны. Он умер в возрасте 62 лет от рака гортани.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/J._Robert_Oppenheimer",
+    "https://www.britannica.com/biography/J-Robert-Oppenheimer",
+    "https://starsunfolded.com/j-robert-oppenheimer/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42013",  "Name": "Anwar Sadat",  "BirthDate": "1918-12-25T00:00:00Z",  "DeathDate": "1981-10-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sadat%201.jpg",  "SiteLinksCnt": 122,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"49522":{"pageid":49522,"ns":0,"title":"Anwar Sadat","extract":"Muhammad Anwar es-Sadat (25 December 1918 \u2013 6 October 1981) was an Egyptian politician and military officer who served as the third president of Egypt, from 15 October 1970 until his assassination by fundamentalist army officers on 6 October 1981. Sadat was a senior member of the Free Officers who overthrew King Farouk I in the Egyptian Revolution of 1952, and a close confidant of President Gamal Abdel Nasser, under whom he served as vice president twice and whom he succeeded as president in 1970. In 1978, Sadat and Menachem Begin, Prime Minister of Israel, signed a peace treaty in cooperation with United States President Jimmy Carter, for which they were recognized with the Nobel Peace Prize.\nIn his 11 years as president, he changed Egypt's trajectory, departing from many political and economic tenets of Nasserism, reinstituting a multi-party system, and launching the Infitah economic policy. As President, he led Egypt in the Yom Kippur War of 1973 to regain Egypt's Sinai Peninsula, which Israel had occupied since the Six-Day War of 1967, making him a hero in Egypt and, for a time, the wider Arab World. Afterwards, he engaged in negotiations with Israel, culminating in the Camp David Accords and the Egypt\u2013Israel peace treaty; this won him and Menachem Begin the Nobel Peace Prize, making Sadat the first Muslim Nobel laureate. \nAlthough reaction to the treaty \u2013 which resulted in the return of Sinai to Egypt \u2013 was generally favorable among Egyptians, it was rejected by the country's Muslim Brotherhood and the left, which felt Sadat had abandoned efforts to ensure a State of Palestine. With the exception of Sudan, the Arab world and the Palestine Liberation Organization (PLO) strongly opposed Sadat's efforts to make a separate peace with Israel without prior consultations with the Arab states. His refusal to reconcile with them over the Palestinian issue resulted in Egypt being suspended from the Arab League from 1979 to 1989. The peace treaty was also one of the primary factors that led to his assassination; on 6 October 1981, militants led by Khalid Islambouli opened fire on Sadat with automatic rifles during the 6 October parade in Cairo, killing him."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42013")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q42013",
+  "isRealHuman": true,
+  "birthDate": "1918-12-25",
+  "deathDate": "1981-10-06",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and widely accepted in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Anwar Sadat was the third President of Egypt, serving from 1970 until his assassination in 1981. He was instrumental in the Egyptian Revolution of 1952 and succeeded Gamal Abdel Nasser as president. In 1978, he signed the Camp David Accords with Israel, earning the Nobel Peace Prize. His peace initiatives led to his assassination by fundamentalist army officers during a military parade in Cairo.",
+  "shortDescriptionFr": "Anouar el-Sadate était le troisième président de l'Égypte, en fonction de 1970 jusqu'à son assassinat en 1981. Il a joué un rôle clé dans la révolution égyptienne de 1952 et a succédé à Gamal Abdel Nasser. En 1978, il a signé les accords de Camp David avec Israël, recevant le prix Nobel de la paix. Ses initiatives de paix ont conduit à son assassinat par des officiers fondamentalistes lors d'un défilé militaire au Caire.",
+  "shortDescriptionDe": "Anwar Sadat war der dritte Präsident Ägyptens und amtierte von 1970 bis zu seiner Ermordung 1981. Er spielte eine Schlüsselrolle in der ägyptischen Revolution von 1952 und folgte Gamal Abdel Nasser als Präsident nach. 1978 unterzeichnete er die Camp-David-Abkommen mit Israel und erhielt den Friedensnobelpreis. Seine Friedensinitiativen führten zu seiner Ermordung durch fundamentalistische Offiziere während einer Militärparade in Kairo.",
+  "shortDescriptionEs": "Anwar Sadat fue el tercer presidente de Egipto, sirviendo desde 1970 hasta su asesinato en 1981. Fue una figura clave en la Revolución Egipcia de 1952 y sucedió a Gamal Abdel Nasser como presidente. En 1978, firmó los Acuerdos de Camp David con Israel, recibiendo el Premio Nobel de la Paz. Sus iniciativas de paz llevaron a su asesinato por oficiales fundamentalistas durante un desfile militar en El Cairo.",
+  "shortDescriptionRu": "Анвар Садат был третьим президентом Египта, занимая должность с 1970 года до своего убийства в 1981 году. Он сыграл ключевую роль в Египетской революции 1952 года и стал преемником Гамаля Абдель Насера. В 1978 году он подписал Кэмп-Дэвидские соглашения с Израилем, за что получил Нобелевскую премию мира. Его мирные инициативы привели к его убийству фундаменталистскими офицерами во время военного парада в Каире.",
+  "sources": [
+    "https://www.britannica.com/biography/Anwar-Sadat",
+    "https://en.wikipedia.org/wiki/Anwar_Sadat",
+    "https://happyhappybirthday.net/en/age/anwar-sadat-person_syaex"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39978",  "Name": "Nostradamus",  "BirthDate": "1503-12-24T00:00:00Z",  "DeathDate": "1566-07-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nostradamus%20by%20Cesar.jpg",  "SiteLinksCnt": 121,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"21615":{"pageid":21615,"ns":0,"title":"Nostradamus","extract":"Michel de Nostredame (December 1503 \u2013 July 1566), usually Latinised as Nostradamus, was a French astrologer, apothecary, physician, and reputed seer, who is best known for his book Les Proph\u00e9ties (published in 1555), a collection of 942 poetic quatrains allegedly predicting future events.\nNostradamus's father's family had originally been Jewish, but had converted to Catholic Christianity a generation before Nostradamus was born. He studied at the University of Avignon, but was forced to leave after just over a year when the university closed due to an outbreak of the plague. He worked as an apothecary for several years before entering the University of Montpellier, hoping to earn a doctorate, but was almost immediately expelled after his work as an apothecary (a manual trade forbidden by university statutes) was discovered. He first married in 1531, but his wife and two children died in 1534 during another plague outbreak. He worked against the plague alongside other doctors before remarrying to Anne Ponsarde, with whom he had six children. He wrote an almanac for 1550 and, as a result of its success, continued writing them for future years as he began working as an astrologer for various wealthy patrons. Catherine de' Medici became one of his foremost supporters. His Les Proph\u00e9ties, published in 1555, relied heavily on historical and literary precedent, and initially received mixed reception. He suffered from severe gout toward the end of his life, which eventually developed into edema. He died on 1 or 2 July 1566. Many popular authors have retold apocryphal legends about his life.\nIn the years since the publication of his Les Proph\u00e9ties, Nostradamus has attracted many supporters, who, along with some of the popular press, credit him with having accurately predicted many major world events. Academic sources reject the notion that Nostradamus had any genuine supernatural prophetic abilities and maintain that the associations made between world events and Nostradamus's quatrains are the result of (sometimes deliberate) misinterpretations or mistranslations. These academics also argue that Nostradamus's predictions are characteristically vague, meaning they could be applied to virtually anything, and are useless for determining whether their author had any real prophetic powers.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39978")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q39978",
+  "isRealHuman": true,
+  "birthDate": "1503-12-14",
+  "deathDate": "1566-07-02",
+  "ageAtDeath": 62,
+  "confidence": 95,
+  "confidenceExplained": "Multiple historical sources confirm the birth date as December 14, 1503, and the death date as July 2, 1566, indicating an age of 62 at death. While some sources suggest alternative birth dates, the majority support December 14.",
+  "shortDescriptionEn": "Michel de Nostredame, known as Nostradamus, was a French astrologer and physician born in December 1503. He gained fame for his book 'Les Prophéties', a collection of 942 quatrains predicting future events. Suffering from severe gout that developed into edema, he died on July 2, 1566, at the age of 62.",
+  "shortDescriptionFr": "Michel de Nostredame, connu sous le nom de Nostradamus, était un astrologue et médecin français né en décembre 1503. Il est célèbre pour son livre 'Les Prophéties', une collection de 942 quatrains prédisant des événements futurs. Souffrant de goutte sévère ayant évolué en œdème, il est décédé le 2 juillet 1566 à l'âge de 62 ans.",
+  "shortDescriptionDe": "Michel de Nostredame, bekannt als Nostradamus, war ein französischer Astrologe und Arzt, geboren im Dezember 1503. Berühmt wurde er durch sein Buch 'Les Prophéties', eine Sammlung von 942 Vierzeilern, die zukünftige Ereignisse vorhersagen sollen. Er litt an schwerer Gicht, die sich zu einem Ödem entwickelte, und starb am 2. Juli 1566 im Alter von 62 Jahren.",
+  "shortDescriptionEs": "Michel de Nostredame, conocido como Nostradamus, fue un astrólogo y médico francés nacido en diciembre de 1503. Es famoso por su libro 'Les Prophéties', una colección de 942 cuartetas que supuestamente predicen eventos futuros. Sufriendo de gota severa que evolucionó a edema, murió el 2 de julio de 1566 a los 62 años.",
+  "shortDescriptionRu": "Мишель де Нострадам, известный как Нострадамус, был французским астрологом и врачом, родился в декабре 1503 года. Он прославился своей книгой 'Пророчества', содержащей 942 четверостишия, якобы предсказывающие будущие события. Страдая от тяжелой подагры, перешедшей в отек, он умер 2 июля 1566 года в возрасте 62 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nostradamus",
+    "https://www.britannica.com/biography/Nostradamus",
+    "https://www.grunge.com/320120/the-sad-death-of-nostradamus/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183167",  "Name": "G. K. Chesterton",  "BirthDate": "1874-05-29T00:00:00Z",  "DeathDate": "1936-06-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gilbert%20Chesterton.jpg",  "SiteLinksCnt": 113,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"12333":{"pageid":12333,"ns":0,"title":"G. K. Chesterton","extract":"Gilbert Keith Chesterton  (29 May 1874 \u2013 14 June 1936) was an English author, philosopher, Christian apologist, and literary and art critic.\nChesterton created the fictional priest-detective Father Brown, and wrote on apologetics, such as his works Orthodoxy and The Everlasting Man. Chesterton routinely referred to himself as an orthodox Christian, and came to identify this position more and more with Catholicism, eventually converting from high church Anglicanism. Biographers have identified him as a successor to such Victorian authors as Matthew Arnold, Thomas Carlyle, John Henry Newman and John Ruskin.\nHe has been referred to as the \"prince of paradox\". Of his writing style, Time observed: \"Whenever possible, Chesterton made his points with popular sayings, proverbs, allegories\u2014first carefully turning them inside out.\" His writings were an influence on Jorge Luis Borges, who compared his work with that of Edgar Allan Poe."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183167")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q183167",
+  "isRealHuman": true,
+  "birthDate": "1874-05-29",
+  "deathDate": "1936-06-14",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Gilbert Keith Chesterton (1874–1936) was an English author, philosopher, and Christian apologist, known for his creation of Father Brown and works like 'Orthodoxy'. He died of congestive heart failure at his home in Beaconsfield.",
+  "shortDescriptionFr": "Gilbert Keith Chesterton (1874–1936) était un écrivain, philosophe et apologiste chrétien anglais, célèbre pour son personnage du père Brown et ses œuvres telles que 'Orthodoxy'. Il est décédé d'une insuffisance cardiaque congestive à son domicile de Beaconsfield.",
+  "shortDescriptionDe": "Gilbert Keith Chesterton (1874–1936) war ein englischer Autor, Philosoph und christlicher Apologet, bekannt für die Figur des Pater Brown und Werke wie 'Orthodoxy'. Er starb an einer kongestiven Herzinsuffizienz in seinem Haus in Beaconsfield.",
+  "shortDescriptionEs": "Gilbert Keith Chesterton (1874–1936) fue un autor, filósofo y apologista cristiano inglés, conocido por su personaje el padre Brown y obras como 'Orthodoxy'. Falleció de insuficiencia cardíaca congestiva en su hogar en Beaconsfield.",
+  "shortDescriptionRu": "Гилберт Кит Честертон (1874–1936) — английский писатель, философ и христианский апологет, известный созданием персонажа отца Брауна и произведениями, такими как 'Orthodoxy'. Он скончался от застойной сердечной недостаточности в своем доме в Биконсфилде.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/G._K._Chesterton",
+    "https://www.britannica.com/biography/G-K-Chesterton",
+    "https://www.thefamouspeople.com/profiles/gilbert-k-chesterton-3803.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1427",  "Name": "Hadrian",  "BirthDate": "0076-01-22T00:00:00Z",  "DeathDate": "0138-07-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bust%20Hadrian%20Musei%20Capitolini%20MC817.jpg",  "SiteLinksCnt": 109,  "Age": 62}
+{"batchcomplete":"","query":{"pages":{"13621":{"pageid":13621,"ns":0,"title":"Hadrian","extract":"Hadrian ( HAY-dree-\u0259n; Latin: Publius Aelius Hadrianus [hadri\u02c8ja\u02d0nus]; 24 January 76 \u2013 10 July 138) was Roman emperor from 117 to 138. Hadrian was born in Italica, close to modern Seville in Spain, an Italic settlement in Hispania Baetica; his branch of the Aelia gens, the Aeli Hadriani, came from the town of Hadria in eastern Italy. He was a member of the Nerva\u2013Antonine dynasty.\nEarly in his political career, Hadrian married Vibia Sabina, grandniece of the ruling emperor, Trajan. The marriage and Hadrian's later succession as emperor were probably promoted by Trajan's wife Pompeia Plotina. Soon after his own succession, Hadrian had four leading senators unlawfully put to death, probably because they seemed to threaten the security of his reign; this earned him the senate's lifelong enmity. He earned further disapproval by abandoning Trajan's expansionist policies and territorial gains in Mesopotamia, Assyria, Armenia, and parts of Dacia. Hadrian preferred to invest in the development of stable, defensible borders and the unification of the empire's disparate peoples as subjects of a panhellenic empire, led by Rome.\nHadrian energetically pursued his own Imperial ideals and personal interests. He visited almost every province of the Empire, and indulged a preference for direct intervention in imperial and provincial affairs, especially building projects. He is particularly known for building Hadrian's Wall, which marked the northern limit of Britannia. In Rome itself, he rebuilt the Pantheon and constructed the vast Temple of Venus and Roma. In Egypt, he may have rebuilt the Serapeum of Alexandria. As an ardent admirer of Greek culture, he promoted Athens as the cultural capital of the Empire. His intense relationship with Greek youth Antinous and the latter's untimely death led Hadrian to establish a widespread, popular cult. Late in Hadrian's reign, he suppressed the Bar Kokhba revolt; he saw this rebellion as a failure of his panhellenic ideal.\nHadrian's last years were marred by chronic illness. His marriage had been both unhappy and childless. In 138 he adopted Antoninus Pius and nominated him as a successor, on condition that Antoninus adopt Marcus Aurelius and Lucius Verus as his own heirs. Hadrian died the same year at Baiae, and Antoninus had him deified, despite opposition from the Senate. Later historians counted him as one of Rome's so-called \"Five Good Emperors\", and as a \"benevolent dictator\". His own Senate found him remote and authoritarian. He has been described as enigmatic and contradictory, with a capacity for both great personal generosity and extreme cruelty and driven by insatiable curiosity, conceit, and ambition."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1427")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1427",
+  "isRealHuman": true,
+  "birthDate": "76-01-24",
+  "deathDate": "138-07-10",
+  "ageAtDeath": 62,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records and corroborated by multiple reputable sources.",
+  "shortDescriptionEn": "Hadrian was a Roman emperor from 117 to 138 CE, renowned for consolidating and strengthening the empire's borders, notably through the construction of Hadrian's Wall in Britain. He was a patron of the arts and architecture, rebuilding the Pantheon and commissioning the Temple of Venus and Roma. Hadrian died at age 62 in Baiae, Italy, after years of chronic illness, and was deified by his successor Antoninus Pius.",
+  "shortDescriptionFr": "Hadrien fut empereur romain de 117 à 138 apr. J.-C., célèbre pour avoir consolidé les frontières de l'empire, notamment par la construction du mur d'Hadrien en Bretagne. Amateur d'art et d'architecture, il fit reconstruire le Panthéon et ériger le Temple de Vénus et de Rome. Hadrien mourut à 62 ans à Baïes, en Italie, après une longue maladie, et fut divinisé par son successeur Antonin le Pieux.",
+  "shortDescriptionDe": "Hadrian war römischer Kaiser von 117 bis 138 n. Chr., bekannt für die Festigung der Reichsgrenzen, insbesondere durch den Bau des Hadrianswalls in Britannien. Als Förderer von Kunst und Architektur ließ er das Pantheon neu errichten und den Tempel der Venus und Roma bauen. Hadrian starb im Alter von 62 Jahren in Baiae, Italien, nach langer Krankheit und wurde von seinem Nachfolger Antoninus Pius vergöttlicht.",
+  "shortDescriptionEs": "Adriano fue emperador romano del 117 al 138 d.C., reconocido por consolidar las fronteras del imperio, especialmente mediante la construcción del Muro de Adriano en Britania. Mecenas de las artes y la arquitectura, reconstruyó el Panteón y mandó erigir el Templo de Venus y Roma. Adriano murió a los 62 años en Baiae, Italia, tras una enfermedad crónica, y fue deificado por su sucesor Antonino Pío.",
+  "shortDescriptionRu": "Адриан был римским императором с 117 по 138 гг. н.э., известен укреплением границ империи, особенно строительством Вала Адриана в Британии. Покровитель искусств и архитектуры, он восстановил Пантеон и построил Храм Венеры и Ромы. Адриан умер в возрасте 62 лет в Байях, Италия, после продолжительной болезни и был обожествлён своим преемником Антонином Пием.",
+  "sources": [
+    "https://www.britannica.com/biography/Hadrian",
+    "https://en.wikipedia.org/wiki/Hadrian",
+    "https://www.worldhistory.org/hadrian/",
+    "https://www.italyonthisday.com/2017/07/the-death-of-hadrian.html"
+  ]
+}

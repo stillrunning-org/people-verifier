@@ -1,0 +1,973 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9061",  "Name": "Karl Marx",  "BirthDate": "1818-05-05T00:00:00Z",  "DeathDate": "1883-03-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Karl%20Marx%20001.jpg",  "SiteLinksCnt": 300,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"16743":{"pageid":16743,"ns":0,"title":"Karl Marx","extract":"Karl Marx (German: [ka\u0281l ma\u0281ks]; 5 May 1818 \u2013 14 March 1883) was a German-born philosopher, political theorist, economist, journalist, and revolutionary socialist. He is best-known for the 1848 pamphlet The Communist Manifesto (written with Friedrich Engels), and his three-volume Das Kapital (1867\u20131894), a critique of classical political economy which employs his theory of historical materialism in an analysis of capitalism, in the culmination of his life's work. Marx's ideas and their subsequent development, collectively known as Marxism, have had enormous influence.\nBorn in Trier in the Kingdom of Prussia, Marx studied at the universities of Bonn, Berlin, and Jena, and received a doctorate in philosophy from the latter in 1841. A Young Hegelian, he was influenced by the philosophy of Georg Wilhelm Friedrich Hegel, and both critiqued and developed Hegel's ideas in works such as The German Ideology (written 1846) and the Grundrisse (written 1857\u20131858). While in Paris in 1844, Marx wrote his Economic and Philosophic Manuscripts and met Engels, who became his closest friend and collaborator. After moving to Brussels in 1845, they were active in the Communist League, and in 1848 they wrote The Communist Manifesto, which expresses Marx's ideas and lays out a programme for revolution. Marx was expelled from Belgium and Germany, and in 1849 moved to London, where he wrote The Eighteenth Brumaire of Louis Bonaparte (1852) and Das Kapital. From 1864, Marx was involved in the International Workingmen's Association (First International), in which he fought the influence of anarchists led by Mikhail Bakunin. In his Critique of the Gotha Programme (1875), Marx wrote on revolution, the state and the transition to communism. He died stateless in 1883 and was buried in Highgate Cemetery.\nMarx's critiques of history, society and political economy hold that human societies develop through class conflict. In the capitalist mode of production, this manifests itself in the conflict between the ruling classes (the bourgeoisie) that control the means of production and the working classes (the proletariat) that enable these means by selling their labour power for wages. Employing his historical materialist approach, Marx predicted that capitalism produced internal tensions like previous socioeconomic systems and that these tensions would lead to its self-destruction and replacement by a new system known as the socialist mode of production. For Marx, class antagonisms under capitalism\u2014owing in part to its instability and crisis-prone nature\u2014would eventuate the working class's development of class consciousness, leading to their conquest of political power and eventually the establishment of a classless, communist society constituted by a free association of producers. Marx actively pressed for its implementation, arguing that the working class should carry out organised proletarian revolutionary action to topple capitalism and bring about socio-economic emancipation.\nMarx has been described as one of the most influential figures of the modern era, and his work has been both lauded and criticised. Marxism has exerted major influence on socialist thought and political movements, with Marxist schools of thought such as Marxism\u2013Leninism and its offshoots becoming the guiding ideologies of revolutionary governments that took power in many countries during the 20th century, known as communist states. Marx's work in economics has had a strong influence on modern heterodox theories of labour and capital, and he is often cited as one of the principal architects of modern sociology."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9061")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9061",
+  "isRealHuman": true,
+  "birthDate": "1818-05-05",
+  "deathDate": "1883-03-14",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented historical facts, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Karl Marx (1818–1883) was a German philosopher, economist, and revolutionary socialist, best known for co-authoring 'The Communist Manifesto' and writing 'Das Kapital'. He died in London at the age of 64 due to bronchitis.",
+  "shortDescriptionFr": "Karl Marx (1818–1883) était un philosophe, économiste et socialiste révolutionnaire allemand, connu pour avoir coécrit 'Le Manifeste du Parti communiste' et écrit 'Le Capital'. Il est décédé à Londres à l'âge de 64 ans des suites d'une bronchite.",
+  "shortDescriptionDe": "Karl Marx (1818–1883) war ein deutscher Philosoph, Ökonom und revolutionärer Sozialist, bekannt für die Mitverfassung des 'Kommunistischen Manifests' und die Autorenschaft von 'Das Kapital'. Er starb in London im Alter von 64 Jahren an Bronchitis.",
+  "shortDescriptionEs": "Karl Marx (1818–1883) fue un filósofo, economista y socialista revolucionario alemán, conocido por coautorizar 'El Manifiesto Comunista' y escribir 'El Capital'. Murió en Londres a los 64 años debido a una bronquitis.",
+  "shortDescriptionRu": "Карл Маркс (1818–1883) — немецкий философ, экономист и революционный социалист, известный как соавтор 'Манифеста коммунистической партии' и автор 'Капитала'. Умер в Лондоне в возрасте 64 лет от бронхита.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Karl_Marx",
+    "https://www.britannica.com/biography/Karl-Marx",
+    "https://www.britannica.com/question/How-did-Karl-Marx-die"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1541",  "Name": "Cicero",  "BirthDate": "-0106-12-31T00:00:00Z",  "DeathDate": "-0042-12-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bust%20of%20Cicero%20%281st-cent.%20BC%29%20-%20Palazzo%20Nuovo%20-%20Musei%20Capitolini%20-%20Rome%202016.jpg",  "SiteLinksCnt": 196,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"6046":{"pageid":6046,"ns":0,"title":"Cicero","extract":"Marcus Tullius Cicero ( SISS-\u0259-roh; Latin: [\u02c8ma\u02d0rk\u028as \u02c8t\u028alli.\u028as \u02c8k\u026ak\u025bro\u02d0]; 3 January 106 BC \u2013 7 December 43 BC) was a Roman statesman, lawyer, scholar, philosopher, orator, writer and Academic skeptic, who tried to uphold optimate principles during the political crises that led to the establishment of the Roman Empire. His extensive writings include treatises on rhetoric, philosophy and politics. He is considered one of Rome's greatest orators and prose stylists and the innovator of what became known as \"Ciceronian rhetoric\". Cicero was educated in Rome and in Greece. He came from a wealthy municipal family of the Roman equestrian order, and served as consul in 63 BC.\nHe greatly influenced both ancient and modern reception of the Latin language. A substantial part of his work has survived, and he was admired by both ancient and modern authors alike. Cicero adapted the arguments of the chief schools of Hellenistic philosophy in Latin and coined a large portion of Latin philosophical vocabulary via lexical innovation (e.g. neologisms such as evidentia, generator, humanitas, infinitio, qualitas, quantitas), almost 150 of which were the result of translating Greek philosophical terms.\nThough he was an accomplished orator and successful lawyer, Cicero believed his political career was his most important achievement. It was during his consulship that the Catiline conspiracy attempted to overthrow the government through an attack on the city by outside forces, and Cicero (by his own account) suppressed the revolt by summarily and controversially executing five conspirators without trial, an act which would later lead to his exile. During the chaotic middle period of the first century BC, marked by civil wars and the dictatorship of Julius Caesar, Cicero was a supporter of the Optimates faction. Following Caesar's death, Cicero became an enemy of Mark Antony in the ensuing power struggle, attacking him in a series of speeches. He was proscribed as an enemy of the state by the Second Triumvirate and consequently executed by soldiers operating on their behalf in 43 BC, having been intercepted during an attempted flight from the Italian peninsula. His severed hands and head (taken by order of Antony and displayed representing the repercussions of his anti-Antonian actions as a writer and as an orator, respectively) were then displayed on the Rostra.\nPetrarch's rediscovery of Cicero's letters is often credited for initiating the 14th-century Renaissance in public affairs, humanism, and classical Roman culture. According to Polish historian Tadeusz Zieli\u0144ski, \"the Renaissance was above all things a revival of Cicero, and only after him and through him of the rest of Classical antiquity.\" The peak of Cicero's authority and prestige came during the 18th-century Enlightenment, and his impact on leading Enlightenment thinkers and political theorists such as John Locke, David Hume, Montesquieu, and Edmund Burke was substantial. His works rank among the most influential in global culture, and today still constitute one of the most important bodies of primary material for the writing and revision of Roman history, especially the last days of the Roman Republic."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1541")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1541",
+  "isRealHuman": true,
+  "birthDate": "-0106-01-03",
+  "deathDate": "-0043-12-07",
+  "ageAtDeath": 63,
+  "confidence": 95,
+  "confidenceExplained": "The age is calculated based on widely accepted historical dates of birth and death. The slight discrepancy in the provided data likely stems from different calendar systems or historical record interpretations.",
+  "shortDescriptionEn": "Marcus Tullius Cicero was a Roman statesman, orator, and philosopher who championed the Republic's ideals. He was assassinated at age 63 on the orders of Mark Antony, with his head and hands displayed in the Forum.",
+  "shortDescriptionFr": "Marcus Tullius Cicero était un homme d'État, orateur et philosophe romain qui défendait les idéaux républicains. Il fut assassiné à 63 ans sur ordre de Marc Antoine, sa tête et ses mains exposées au Forum.",
+  "shortDescriptionDe": "Marcus Tullius Cicero war ein römischer Staatsmann, Redner und Philosoph, der die Ideale der Republik verteidigte. Er wurde im Alter von 63 Jahren auf Befehl von Marcus Antonius ermordet; sein Kopf und seine Hände wurden im Forum ausgestellt.",
+  "shortDescriptionEs": "Marco Tulio Cicerón fue un estadista, orador y filósofo romano que defendió los ideales de la República. Fue asesinado a los 63 años por orden de Marco Antonio, y su cabeza y manos expuestas en el Foro.",
+  "shortDescriptionRu": "Марк Туллий Цицерон был римским государственным деятелем, оратором и философом, защищавшим идеалы Республики. Он был убит в возрасте 63 лет по приказу Марка Антония; его голову и руки выставили на Форуме.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cicero",
+    "https://www.britannica.com/biography/Cicero",
+    "https://www.ancientworldmagazine.com/articles/resigned-fate-death-cicero/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9640",  "Name": "Lyndon B. Johnson",  "BirthDate": "1908-08-27T00:00:00Z",  "DeathDate": "1973-01-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lyndon%20B.%20Johnson%2C%20photo%20portrait%2C%20leaning%20on%20chair%2C%20color%20cropped.jpg",  "SiteLinksCnt": 171,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"54533":{"pageid":54533,"ns":0,"title":"Lyndon B. Johnson","extract":"Lyndon Baines Johnson (; August 27, 1908 \u2013 January 22, 1973), also known as LBJ, was the 36th president of the United States, serving from 1963 to 1969. He became president after the assassination of John F. Kennedy, under whom he had served as the 37th vice president from 1961 to 1963. A Southern Democrat, Johnson previously represented Texas in Congress for over 23 years, first as a U.S. representative from 1937 to 1949, and then as a U.S. senator from 1949 to 1961.\nBorn in Stonewall, Texas, Johnson worked as a teacher and a congressional aide before winning election to the U.S. House of Representatives in 1937. In 1948, he was controversially declared the winner in the Democratic primary for the U.S. Senate election in Texas before winning the general election. He became Senate majority whip in 1951, Senate Democratic leader in 1953 and majority leader in 1954. Senator Kennedy bested Johnson and his other rivals for the 1960 Democratic presidential nomination before surprising many by offering to make Johnson his vice presidential running mate. The Kennedy\u2013Johnson ticket won the general election. Vice President Johnson assumed the presidency in 1963, after President Kennedy was assassinated. The following year, Johnson was elected to the presidency in a landslide, winning the largest share of the popular vote for the Democratic Party in history, and the highest for any candidate since the advent of widespread popular elections in the 1820s.\nJohnson's Great Society was aimed at expanding civil rights, public broadcasting, access to health care, aid to education and the arts, urban and rural development, consumer protection, environmentalism, and public services. He sought to create better living conditions for low-income Americans by spearheading the war on poverty. As part of these efforts, Johnson signed the Social Security Amendments of 1965, which resulted in the creation of Medicare and Medicaid. Johnson made the Apollo program a national priority; enacted the Higher Education Act of 1965, which established federally insured student loans; and signed the Immigration and Nationality Act of 1965, which laid the groundwork for U.S. immigration policy today. Johnson's stance on civil rights put him at odds with other white Southern Democrats. His civil rights legacy was shaped by the Civil Rights Act of 1964, the Voting Rights Act of 1965, and the Civil Rights Act of 1968. Due to his domestic agenda, Johnson's presidency marked the peak of modern American liberalism in the 20th century. Johnson's foreign policy prioritized containment of communism, including in the ongoing Vietnam War.\nJohnson began his presidency with near-universal support, but his approval declined throughout his presidency as the public became frustrated with both the Vietnam War and domestic unrest, including race riots in major cities, increasing public skepticism with his reports and policies (coined the credibility gap), and increasing crime. Johnson initially sought to run for re-election in 1968; however, following disappointing results in the New Hampshire primary, he withdrew his candidacy. Johnson retired to his Texas ranch and kept a low public profile until he died in 1973. Public opinion and academic assessments of Johnson's legacy have fluctuated greatly. Historians and scholars rank Johnson in the upper tier for his accomplishments regarding domestic policy. His administration passed many major laws that made substantial changes in civil rights, health care, welfare, and education. Conversely, Johnson is heavily criticized for his foreign policy, namely escalating American involvement in the Vietnam War."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9640")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9640",
+  "isRealHuman": true,
+  "birthDate": "1908-08-27",
+  "deathDate": "1973-01-22",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Lyndon B. Johnson (1908–1973) was the 36th President of the United States, serving from 1963 to 1969. He assumed the presidency following John F. Kennedy's assassination and was known for his 'Great Society' initiatives, which aimed to eliminate poverty and racial injustice. Johnson signed landmark legislation such as the Civil Rights Act and the Voting Rights Act. Despite his domestic achievements, his presidency was marred by the escalation of the Vietnam War. He died of a heart attack at his Texas ranch at the age of 64.",
+  "shortDescriptionFr": "Lyndon B. Johnson (1908–1973) était le 36e président des États-Unis, en fonction de 1963 à 1969. Il a succédé à John F. Kennedy après son assassinat et est connu pour ses initiatives de la 'Grande Société' visant à éliminer la pauvreté et l'injustice raciale. Johnson a promulgué des lois historiques telles que le Civil Rights Act et le Voting Rights Act. Malgré ses réussites intérieures, sa présidence a été entachée par l'escalade de la guerre du Vietnam. Il est décédé d'une crise cardiaque à son ranch au Texas à l'âge de 64 ans.",
+  "shortDescriptionDe": "Lyndon B. Johnson (1908–1973) war der 36. Präsident der Vereinigten Staaten und amtierte von 1963 bis 1969. Er trat das Amt nach der Ermordung von John F. Kennedy an und ist bekannt für seine 'Great Society'-Programme zur Bekämpfung von Armut und Rassendiskriminierung. Johnson unterzeichnete bedeutende Gesetze wie den Civil Rights Act und den Voting Rights Act. Trotz seiner innenpolitischen Erfolge wurde seine Präsidentschaft durch die Eskalation des Vietnamkriegs überschattet. Er starb im Alter von 64 Jahren an einem Herzinfarkt auf seiner Ranch in Texas.",
+  "shortDescriptionEs": "Lyndon B. Johnson (1908–1973) fue el 36º presidente de los Estados Unidos, sirviendo de 1963 a 1969. Asumió la presidencia tras el asesinato de John F. Kennedy y es conocido por sus iniciativas de la 'Gran Sociedad' destinadas a eliminar la pobreza y la injusticia racial. Johnson firmó leyes históricas como la Ley de Derechos Civiles y la Ley de Derecho al Voto. A pesar de sus logros internos, su presidencia se vio empañada por la escalada de la guerra de Vietnam. Murió de un ataque al corazón en su rancho en Texas a los 64 años.",
+  "shortDescriptionRu": "Линдон Б. Джонсон (1908–1973) был 36-м президентом США, занимая должность с 1963 по 1969 год. Он стал президентом после убийства Джона Ф. Кеннеди и известен своими инициативами 'Великого общества', направленными на устранение бедности и расовой несправедливости. Джонсон подписал важные законы, такие как Закон о гражданских правах и Закон о праве голоса. Несмотря на внутренние достижения, его президентство омрачено эскалацией войны во Вьетнаме. Он скончался от сердечного приступа на своем ранчо в Техасе в возрасте 64 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Lyndon-B-Johnson",
+    "https://www.history.com/this-day-in-history/January-22/lyndon-baines-johnson-dies-in-texas",
+    "https://en.wikipedia.org/wiki/Lyndon_B._Johnson"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6240",  "Name": "Hafez",  "BirthDate": "1325-01-01T00:00:00Z",  "DeathDate": "1389-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohammad%20Shams%20al-Din%20Hafez.jpg",  "SiteLinksCnt": 157,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"204260":{"pageid":204260,"ns":0,"title":"Hafez","extract":"Kh\u0101jeh Shams-od-D\u012bn Mo\u1e25ammad \u1e24\u0101fe\u1e93-e Sh\u012br\u0101z\u012b (Persian: \u062e\u0648\u0627\u062c\u0647 \u0634\u0645\u0633\u200c\u200c\u0627\u0644\u062f\u06cc\u0646 \u0645\u062d\u0645\u062f \u062d\u0627\u0641\u0638 \u0634\u06cc\u0631\u0627\u0632\u06cc), known by his pen name Hafez (\u062d\u0627\u0641\u0638 \u1e24\u0101fe\u1e93 lit.\u2009'the memorizer'  or 'the (safe) keeper'; 1325\u20131390) or Hafiz, was a Persian lyric poet whose collected works are regarded by many Iranians as one of the highest pinnacles of Persian literature. His works are often found in the homes of Persian speakers, who learn his poems by heart and use them as everyday proverbs and sayings. His life and poems have become the subjects of much analysis, commentary, and interpretation, influencing post-14th century Persian writing more than any other Persian author.\nHafez is best known for his Div\u0101n, a collection of his surviving poems probably compiled after his death. His works can be described as \"antinomian\" and with the medieval use of the term \"theosophical\"; the term \"theosophy\" in the 13th and 14th centuries was used to indicate mystical work by \"authors only inspired by the Islamic holy books\" (as distinguished from theology). Hafez primarily wrote in the literary genre of lyric poetry or ghazals, which is the ideal style for expressing the ecstasy of divine inspiration in the mystical form of love poems. He was a Sufi.\nThemes of his ghazals include the beloved, faith and exposing hypocrisy. In his ghazals, he deals with love, wine and taverns, all presenting religious ecstasy and freedom from restraint, whether in actual worldly release or in the voice of the lover. His influence on Persian speakers appears in divination by his poems (Persian: \u0641\u0627\u0644 \u062d\u0627\u0641\u0638, romanized: f\u0101l-e h\u0101fez, somewhat similar to the Roman tradition of Sortes Vergilianae) and in the frequent use of his poems in Persian traditional music, visual art and Persian calligraphy. His tomb is located in his birthplace of Shiraz. Adaptations, imitations, and translations of his poems exist in all major languages."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6240")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q6240",
+  "isRealHuman": true,
+  "birthDate": "1325-01-01",
+  "deathDate": "1389-01-01",
+  "ageAtDeath": 64,
+  "confidence": 85,
+  "confidenceExplained": "The estimated age at death is based on commonly cited birth and death years (1325–1389). However, some sources suggest different birth years, leading to age estimations ranging from 64 to 70. Given these variations, the confidence level is set at 85%.",
+  "shortDescriptionEn": "Hafez (c. 1325–1389) was a renowned Persian lyric poet from Shiraz, celebrated for his ghazals that explore themes of love, mysticism, and faith. He spent most of his life in Shiraz, serving as a court poet and engaging deeply with Sufi traditions. Hafez passed away in his hometown, and his tomb in Shiraz remains a site of literary pilgrimage.",
+  "shortDescriptionFr": "Hafez (v. 1325–1389) était un célèbre poète lyrique persan de Shiraz, connu pour ses ghazals explorant l'amour, le mysticisme et la foi. Il a passé la majeure partie de sa vie à Shiraz, servant comme poète de cour et s'engageant profondément dans les traditions soufies. Hafez est décédé dans sa ville natale, et son tombeau à Shiraz reste un lieu de pèlerinage littéraire.",
+  "shortDescriptionDe": "Hafez (ca. 1325–1389) war ein berühmter persischer Lyriker aus Schiras, bekannt für seine Ghazale über Liebe, Mystik und Glauben. Er verbrachte den Großteil seines Lebens in Schiras, diente als Hofdichter und war tief in die Sufi-Traditionen eingebunden. Hafez starb in seiner Heimatstadt, und sein Grab in Schiras ist ein Ort literarischer Pilgerfahrten.",
+  "shortDescriptionEs": "Hafez (c. 1325–1389) fue un renombrado poeta lírico persa de Shiraz, célebre por sus gazales que exploran el amor, el misticismo y la fe. Pasó la mayor parte de su vida en Shiraz, sirviendo como poeta de la corte y participando profundamente en las tradiciones sufíes. Hafez falleció en su ciudad natal, y su tumba en Shiraz sigue siendo un sitio de peregrinación literaria.",
+  "shortDescriptionRu": "Хафиз (ок. 1325–1389) — выдающийся персидский лирический поэт из Шираза, известный своими газелями о любви, мистике и вере. Он провел большую часть жизни в Ширазе, служил придворным поэтом и был глубоко вовлечен в суфийские традиции. Хафиз скончался в родном городе, и его гробница в Ширазе остается местом литературного паломничества.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hafez",
+    "https://www.britannica.com/biography/Hafez",
+    "https://iranchamber.com/literature/hafez/hafez.php",
+    "https://simple.wikipedia.org/wiki/Hafez"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42831",  "Name": "Ivan Turgenev",  "BirthDate": "1818-11-09T00:00:00Z",  "DeathDate": "1883-09-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Turgenev%20by%20Repin.jpg",  "SiteLinksCnt": 146,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"180913":{"pageid":180913,"ns":0,"title":"Ivan Turgenev","extract":"Ivan Sergeyevich Turgenev ( toor-GHEN-yef, -\u2060GAYN-; Russian: \u0418\u0432\u0430\u043d \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447 \u0422\u0443\u0440\u0433\u0435\u043d\u0435\u0432, IPA: [\u026a\u02c8van s\u02b2\u026ar\u02c8\u0261\u02b2e(j)\u026av\u02b2\u026at\u0255 t\u028ar\u02c8\u0261\u02b2en\u02b2\u026af]; 9 November [O.S. 28 October] 1818 \u2013 3 September [O.S. 22 August] 1883) was a Russian novelist, short story writer, poet, playwright, translator and popularizer of Russian literature in the West.\nHis first major publication, a short story collection titled A Sportsman's Sketches (1852), was a milestone of Russian realism. His novel Fathers and Sons (1862) is regarded as one of the major works of 19th-century fiction.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42831")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42831",
+  "isRealHuman": true,
+  "birthDate": "1818-11-09",
+  "deathDate": "1883-09-03",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Ivan Turgenev was a Russian novelist, short story writer, poet, playwright, and translator, known for works like 'Fathers and Sons' and 'A Sportsman's Sketches'. He played a significant role in popularizing Russian literature in the West. Turgenev died at 64 from complications of metastatic liposarcoma, which had spread to his spinal cord.",
+  "shortDescriptionFr": "Ivan Tourgueniev était un romancier, nouvelliste, poète, dramaturge et traducteur russe, connu pour des œuvres comme 'Pères et Fils' et 'Mémoires d'un chasseur'. Il a joué un rôle important dans la diffusion de la littérature russe en Occident. Tourgueniev est décédé à 64 ans des suites d'un liposarcome métastatique ayant atteint sa moelle épinière.",
+  "shortDescriptionDe": "Iwan Turgenjew war ein russischer Romanautor, Kurzgeschichtenschreiber, Dichter, Dramatiker und Übersetzer, bekannt für Werke wie 'Väter und Söhne' und 'Aufzeichnungen eines Jägers'. Er trug wesentlich zur Popularisierung der russischen Literatur im Westen bei. Turgenjew starb im Alter von 64 Jahren an den Folgen eines metastasierenden Liposarkoms, das seine Wirbelsäule befallen hatte.",
+  "shortDescriptionEs": "Iván Turguénev fue un novelista, cuentista, poeta, dramaturgo y traductor ruso, conocido por obras como 'Padres e hijos' y 'Memorias de un cazador'. Desempeñó un papel clave en la difusión de la literatura rusa en Occidente. Turguénev murió a los 64 años debido a complicaciones de un liposarcoma metastásico que afectó su médula espinal.",
+  "shortDescriptionRu": "Иван Тургенев был русским романистом, автором рассказов, поэтом, драматургом и переводчиком, известным такими произведениями, как 'Отцы и дети' и 'Записки охотника'. Он сыграл важную роль в популяризации русской литературы на Западе. Тургенев умер в возрасте 64 лет от осложнений метастатической липосаркомы, поразившей его спинной мозг.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ivan_Turgenev",
+    "https://www.britannica.com/biography/Ivan-Sergeyevich-Turgenev",
+    "https://www.thefamouspeople.com/profiles/ivan-turgenev-38429.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q38392",  "Name": "William Faulkner",  "BirthDate": "1897-09-25T00:00:00Z",  "DeathDate": "1962-07-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Van%20Vechten%20-%20William%20Faulkner%20%28greyscale%20and%20cropped%29.jpg",  "SiteLinksCnt": 142,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"33718":{"pageid":33718,"ns":0,"title":"William Faulkner","extract":"William Cuthbert Faulkner (; September 25, 1897 \u2013 July 6, 1962) was an American writer. He is best known for his novels and short stories set in the fictional Yoknapatawpha County, Mississippi, a stand-in for Lafayette County where he spent most of his life. A Nobel laureate, Faulkner is one of the most celebrated writers of American literature and often is considered the greatest writer of Southern literature.\nFaulkner was born in New Albany, Mississippi, and raised in Oxford, Mississippi. During World War I, he joined the Royal Canadian Air Force, but did not serve in combat. Returning to Oxford, he attended the University of Mississippi for three semesters before dropping out. He moved to New Orleans, where he wrote his first novel Soldiers' Pay (1925). He went back to Oxford and wrote Sartoris (1927), his first work set in Yoknapatawpha County. In 1929, he published The Sound and the Fury. The following year, he wrote As I Lay Dying. Later that decade, he wrote Light in August, Absalom, Absalom! and The Wild Palms. He also worked as a screenwriter, contributing to Howard Hawks's To Have and Have Not and The Big Sleep, adapted from Raymond Chandler's novel. The former film, adapted from Ernest Hemingway's novel, is the only film with contributions by two Nobel laureates.\nFaulkner's reputation grew following publication of Malcolm Cowley's The Portable Faulkner, and he was  awarded the 1949 Nobel Prize in Literature for \"his powerful and unique contribution to the modern American novel.\" He is the only Mississippi-born Nobel laureate. Two of his works, A Fable (1954) and The Reivers (1962), won the Pulitzer Prize for Fiction. Faulkner died from a heart attack on July 6, 1962, following a fall from his horse the month before. Ralph Ellison called him \"the greatest artist the South has produced\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q38392")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q38392",
+  "isRealHuman": true,
+  "birthDate": "1897-09-25",
+  "deathDate": "1962-07-06",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "William Faulkner (1897–1962) was a Nobel Prize-winning American author known for his complex novels set in the American South. He died at age 64 from a heart attack following a horse-riding accident.",
+  "shortDescriptionFr": "William Faulkner (1897–1962) était un écrivain américain lauréat du prix Nobel, célèbre pour ses romans complexes situés dans le Sud des États-Unis. Il est décédé à 64 ans d'une crise cardiaque après une chute de cheval.",
+  "shortDescriptionDe": "William Faulkner (1897–1962) war ein mit dem Nobelpreis ausgezeichneter amerikanischer Autor, bekannt für seine komplexen Romane, die im amerikanischen Süden spielen. Er starb im Alter von 64 Jahren an einem Herzinfarkt nach einem Reitunfall.",
+  "shortDescriptionEs": "William Faulkner (1897–1962) fue un autor estadounidense galardonado con el Premio Nobel, conocido por sus complejas novelas ambientadas en el sur de Estados Unidos. Murió a los 64 años de un ataque al corazón tras una caída de caballo.",
+  "shortDescriptionRu": "Уильям Фолкнер (1897–1962) — американский писатель, лауреат Нобелевской премии, известный своими сложными романами о юге США. Умер в 64 года от сердечного приступа после падения с лошади.",
+  "sources": [
+    "https://www.britannica.com/biography/William-Faulkner",
+    "https://en.wikipedia.org/wiki/William_Faulkner",
+    "https://www.nobelprize.org/prizes/literature/1949/faulkner/biographical/",
+    "https://deadorkicking.com/william-faulkner-dead-or-alive/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41155",  "Name": "Heraclitus",  "BirthDate": "-0534-01-01T00:00:00Z",  "DeathDate": "-0470-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ca%27%20Rezzonico%20-%20Eraclito%201705%20-%20Giuseppe%20Torretti.jpg",  "SiteLinksCnt": 141,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"13792":{"pageid":13792,"ns":0,"title":"Heraclitus","extract":"Heraclitus (; Ancient Greek: \u1f29\u03c1\u03ac\u03ba\u03bb\u03b5\u03b9\u03c4\u03bf\u03c2 H\u0113r\u00e1kleitos; fl.\u2009c.\u2009500 BC) was an ancient Greek pre-Socratic philosopher from the city of Ephesus, which was then part of the Persian Empire.  He exerts a wide influence on ancient and modern Western philosophy, through the works of such authors as Plato, Aristotle, Hegel, and Heidegger.\nLittle is known of Heraclitus's life. He wrote a single work, only fragments of which have survived.  Even in ancient times, his paradoxical philosophy, appreciation for wordplay, and cryptic, oracular epigrams earned him the epithets \"the dark\" and \"the obscure\". He was considered arrogant and depressed, a misanthrope who was subject to melancholia. Consequently, he became known as \"the weeping philosopher\" in contrast to the ancient atomist philosopher Democritus, who was known as \"the laughing philosopher\".\nThe central ideas of Heraclitus's philosophy are the unity of opposites and the concept of change. Heraclitus saw harmony and justice in strife. He viewed the world as constantly in flux, always \"becoming\" but never \"being\". He expressed this in sayings like \"Everything flows\" (Greek: \u03c0\u03ac\u03bd\u03c4\u03b1 \u03c1\u03b5\u03b9, panta rhei) and \"No man ever steps in the same river twice\". This insistence upon change contrasts with that of the ancient philosopher Parmenides, who believed in a reality of static \"being\".\nHeraclitus believed fire was the arche, the fundamental stuff of the world. In choosing an arche Heraclitus followed the Milesians before him \u2013 Thales with water, Anaximander with apeiron  (lit.\u2009boundless or infinite), and Anaximenes with air. Heraclitus also thought the logos (lit.\u2009word, discourse, or reason) gave structure to the world."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41155")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41155",
+  "isRealHuman": true,
+  "birthDate": "-0535-01-01",
+  "deathDate": "-0475-01-01",
+  "ageAtDeath": 60,
+  "confidence": 90,
+  "confidenceExplained": "The estimated age at death is based on widely accepted historical accounts and scholarly sources, though exact dates are approximate due to the antiquity of records.",
+  "shortDescriptionEn": "Heraclitus of Ephesus (c. 535–475 BCE) was a pre-Socratic Greek philosopher known for his doctrine that change is central to the universe, summarized in the phrase 'everything flows'. He died at around 60 years old, reportedly from dropsy, after attempting an unconventional treatment involving cow dung.",
+  "shortDescriptionFr": "Héraclite d'Éphèse (vers 535–475 av. J.-C.) était un philosophe grec présocratique célèbre pour sa doctrine du changement perpétuel, résumée par l'expression 'tout coule'. Il est décédé à environ 60 ans, apparemment de l'hydropisie, après avoir tenté un traitement inhabituel impliquant de la bouse de vache.",
+  "shortDescriptionDe": "Heraklit von Ephesos (ca. 535–475 v. Chr.) war ein vorsokratischer griechischer Philosoph, bekannt für seine Lehre vom ständigen Wandel, zusammengefasst im Ausdruck 'alles fließt'. Er starb im Alter von etwa 60 Jahren, angeblich an Wassersucht, nachdem er eine ungewöhnliche Behandlung mit Kuhdung versucht hatte.",
+  "shortDescriptionEs": "Heráclito de Éfeso (c. 535–475 a.C.) fue un filósofo griego presocrático conocido por su doctrina del cambio constante, resumida en la frase 'todo fluye'. Murió a los 60 años, supuestamente de hidropesía, tras intentar un tratamiento no convencional con estiércol de vaca.",
+  "shortDescriptionRu": "Гераклит Эфесский (ок. 535–475 до н.э.) — досократический греческий философ, известный своей доктриной постоянных изменений, выраженной фразой 'всё течёт'. Он умер в возрасте около 60 лет, предположительно от водянки, после попытки необычного лечения с использованием коровьего навоза.",
+  "sources": [
+    "https://www.britannica.com/biography/Heraclitus",
+    "https://en.wikipedia.org/wiki/Heraclitus",
+    "https://www.thefamouspeople.com/profiles/heraclitus-1619.php",
+    "https://foundinantiquity.com/2013/09/21/the-five-strangest-deaths-of-the-philosophers/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12312",  "Name": "Franklin Pierce",  "BirthDate": "1804-11-23T00:00:00Z",  "DeathDate": "1869-10-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Franklin%20Pierce.jpg",  "SiteLinksCnt": 137,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"19729467":{"pageid":19729467,"ns":0,"title":"Franklin Pierce","extract":"Franklin Pierce (November 23, 1804 \u2013 October 8, 1869) was the 14th president of the United States, serving from 1853 to 1857. A northern Democrat who believed that the abolitionist movement was a fundamental threat to the nation's unity, he alienated anti-slavery groups by signing the Kansas\u2013Nebraska Act and enforcing the Fugitive Slave Act. Conflict between North and South continued after Pierce's presidency, and, after Abraham Lincoln was elected president in 1860, the Southern states seceded, resulting in the American Civil War.\nPierce was born in New Hampshire, the son of state governor Benjamin Pierce. He served in the House of Representatives from 1833 until his election to the Senate, where he served from 1837 until his resignation in 1842. His private law practice was a success, and he was appointed New Hampshire's U.S. Attorney in 1845. Pierce took part in the Mexican\u2013American War as a brigadier general in the United States Army. Democrats saw him as a compromise candidate uniting Northern and Southern interests, and nominated him for president on the 49th ballot at the 1852 Democratic National Convention. He and running mate William R. King easily defeated the Whig Party ticket of Winfield Scott and William Alexander Graham in the 1852 presidential election.\nAs president, Pierce attempted to enforce neutral standards for civil service while also satisfying the Democratic Party's diverse elements with patronage, an effort that largely failed and turned many in his party against him. He was a Young America expansionist who signed the Gadsden Purchase of land from Mexico and led a failed attempt to acquire Cuba from Spain. He signed trade treaties with Britain and Japan and his Cabinet reformed its departments and improved accountability, but political strife during his presidency overshadowed these successes. His popularity declined sharply in the Northern states after he supported the Kansas\u2013Nebraska Act, which nullified the Missouri Compromise, while many Southern whites continued to support him. The act's passage led to violent conflict over the expansion of slavery in the American West. Pierce's administration was further damaged when several of his diplomats issued the Ostend Manifesto calling for the annexation of Cuba, a document that was roundly criticized. He fully expected the Democrats to renominate him in the 1856 presidential election, but they abandoned him and his bid failed. His reputation in the North suffered further during the American Civil War as he became a vocal critic of President Lincoln.\nPierce was popular and outgoing, but his family life was difficult; his three children died young and his wife, Jane Pierce, suffered from illness and depression for much of her life. Their last surviving son was killed in a train accident while the family was traveling, shortly before Pierce's inauguration. A heavy drinker for much of his life, Pierce died in 1869 of cirrhosis. As a result of his support of the South, as well as failing to hold the Union together in time of strife, historians and scholars generally rank Pierce as one of the worst and least memorable U.S. presidents.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12312")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q12312",
+  "isRealHuman": true,
+  "birthDate": "1804-11-23",
+  "deathDate": "1869-10-08",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented historical facts, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Franklin Pierce was the 14th President of the United States (1853–1857), known for his efforts to maintain national unity amid growing sectional tensions over slavery. His presidency saw the passage of the Kansas-Nebraska Act, which intensified conflicts leading up to the Civil War. Pierce's personal life was marked by tragedy, including the loss of all his children and his wife's chronic illness. He struggled with alcoholism and died of cirrhosis of the liver at age 64.",
+  "shortDescriptionFr": "Franklin Pierce fut le 14e président des États-Unis (1853–1857), connu pour ses tentatives de maintenir l'unité nationale face aux tensions croissantes sur l'esclavage. Son mandat vit l'adoption du Kansas-Nebraska Act, intensifiant les conflits menant à la guerre civile. Sa vie personnelle fut marquée par des tragédies, notamment la perte de ses enfants et la maladie de son épouse. Il souffrit d'alcoolisme et mourut de cirrhose à 64 ans.",
+  "shortDescriptionDe": "Franklin Pierce war der 14. Präsident der Vereinigten Staaten (1853–1857), bekannt für seine Bemühungen, die nationale Einheit angesichts wachsender Spannungen über die Sklaverei zu bewahren. Während seiner Amtszeit wurde der Kansas-Nebraska Act verabschiedet, der die Konflikte vor dem Bürgerkrieg verschärfte. Sein persönliches Leben war von Tragödien geprägt, darunter der Verlust aller Kinder und die Krankheit seiner Frau. Er kämpfte mit Alkoholismus und starb im Alter von 64 Jahren an Leberzirrhose.",
+  "shortDescriptionEs": "Franklin Pierce fue el 14º presidente de los Estados Unidos (1853–1857), conocido por sus esfuerzos para mantener la unidad nacional ante las crecientes tensiones sobre la esclavitud. Su presidencia vio la aprobación de la Ley Kansas-Nebraska, que intensificó los conflictos previos a la Guerra Civil. Su vida personal estuvo marcada por tragedias, incluida la pérdida de todos sus hijos y la enfermedad de su esposa. Luchó contra el alcoholismo y murió de cirrosis hepática a los 64 años.",
+  "shortDescriptionRu": "Франклин Пирс был 14-м президентом США (1853–1857), известным своими попытками сохранить национальное единство на фоне растущих напряжений по поводу рабства. Его президентство ознаменовалось принятием Акта Канзас-Небраска, усилившего конфликты, приведшие к Гражданской войне. Личная жизнь Пирса была омрачена трагедиями, включая потерю всех детей и болезнь жены. Он страдал от алкоголизма и умер от цирроза печени в возрасте 64 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Franklin_Pierce",
+    "https://www.britannica.com/biography/Franklin-Pierce",
+    "https://www.battlefields.org/learn/biographies/franklin-pierce",
+    "https://www.history.com/articles/franklin-pierce",
+    "https://www.battlefields.org/learn/biographies/franklin-pierce"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36456",  "Name": "Hannibal",  "BirthDate": "-0246-01-01T00:00:00Z",  "DeathDate": "-0182-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mommsen%20p265.jpg",  "SiteLinksCnt": 134,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"13959":{"pageid":13959,"ns":0,"title":"Hannibal","extract":"Hannibal (; Punic: \ud802\udd07\ud802\udd0d\ud802\udd01\ud802\udd0f\ud802\udd0b, romanized: \u1e24an\u012bba\u02bfl; 247 \u2013 between 183 and 181 BC) was a Carthaginian general and statesman who commanded the forces of Carthage in their battle against the Roman Republic during the Second Punic War.\nHannibal's father, Hamilcar Barca, was a leading Carthaginian general during the First Punic War. His younger brothers were Mago and Hasdrubal; his brother-in-law was Hasdrubal the Fair, who commanded other Carthaginian armies. Hannibal lived during a period of great tension in the Mediterranean Basin, triggered by the emergence of the Roman Republic as a great power with its defeat of Carthage in the First Punic War. Revanchism prevailed in Carthage, symbolized by the pledge that Hannibal made to his father to \"never be a friend of Rome\".\nIn 218 BC, Hannibal attacked Saguntum (modern Sagunto, Spain), an ally of Rome, in Hispania, sparking the Second Punic War. Hannibal invaded Italy by crossing the Alps with North African war elephants. In his first few years in Italy, as the leader of a Carthaginian and partially Celtic army, he won a succession of victories at the Battle of Ticinus, Trebia, Lake Trasimene, and Cannae, inflicting heavy losses on the Romans. Hannibal was distinguished for his ability to determine both his and his opponent's respective strengths and weaknesses, and to plan battles accordingly. His well-planned strategies allowed him to conquer and ally with several Italian cities that were previously allied to Rome. Hannibal occupied most of southern Italy for 15 years. The Romans, led by Fabius Maximus, avoided directly engaging  him, instead waging a war of attrition (the Fabian strategy). Carthaginian defeats in Hispania prevented Hannibal from being reinforced, and he was unable to win a decisive victory. A counter-invasion of North Africa, led by the Roman general Scipio Africanus, forced him to return to Carthage. Hannibal was eventually defeated at the Battle of Zama, ending the war in a Roman victory.\nAfter the war, Hannibal successfully ran for the office of sufet. He enacted political and financial reforms to enable the payment of the war indemnity imposed by Rome. Those reforms were unpopular with members of the Carthaginian aristocracy and in Rome, and he fled into voluntary exile. During this time, he lived at the Seleucid court, where he acted as military advisor to Antiochus III the Great in his war against Rome. Antiochus met defeat at the Battle of Magnesia and was forced to accept Rome's terms, and Hannibal fled again, making a stop in the Kingdom of Armenia. His flight ended in the court of Bithynia. He was betrayed to the Romans and committed suicide by poisoning himself.\nHannibal is considered one of the greatest military tacticians and generals of Western antiquity, alongside Alexander the Great, Cyrus the Great, Julius Caesar, Scipio Africanus, and Pyrrhus. According to Plutarch, Scipio asked Hannibal \"who the greatest general was\", to which Hannibal replied \"either Alexander or Pyrrhus, then myself\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36456")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36456",
+  "isRealHuman": true,
+  "birthDate": "-0247-01-01",
+  "deathDate": "-0183-01-01",
+  "ageAtDeath": 64,
+  "confidence": 95,
+  "confidenceExplained": "The birth year (247 BCE) and death year (183 BCE) are well-documented in historical sources, providing a high confidence level in the age estimation.",
+  "shortDescriptionEn": "Hannibal Barca (247 BCE – c.183 BCE) was a Carthaginian general renowned for his military tactics during the Second Punic War against Rome. He famously led his army across the Alps into Italy. Facing defeat and capture, he committed suicide by poisoning.",
+  "shortDescriptionFr": "Hannibal Barca (247 av. J.-C. – v.183 av. J.-C.) était un général carthaginois célèbre pour ses tactiques militaires pendant la Deuxième Guerre punique contre Rome. Il a traversé les Alpes avec son armée. Face à la défaite et à la capture, il s'est suicidé par empoisonnement.",
+  "shortDescriptionDe": "Hannibal Barca (247 v. Chr. – ca.183 v. Chr.) war ein karthagischer General, bekannt für seine militärischen Taktiken im Zweiten Punischen Krieg gegen Rom. Er führte seine Armee über die Alpen nach Italien. Angesichts der Niederlage beging er Selbstmord durch Gift.",
+  "shortDescriptionEs": "Aníbal Barca (247 a.C. – c.183 a.C.) fue un general cartaginés famoso por sus tácticas militares durante la Segunda Guerra Púnica contra Roma. Cruzó los Alpes con su ejército. Ante la derrota y la captura, se suicidó con veneno.",
+  "shortDescriptionRu": "Ганнибал Барка (247 до н.э. – ок.183 до н.э.) был карфагенским генералом, известным своими военными тактиками во Второй Пунической войне против Рима. Он пересек Альпы со своей армией. Столкнувшись с поражением, покончил с собой, приняв яд.",
+  "sources": [
+    "https://www.britannica.com/biography/Hannibal-Carthaginian-general-247-183-BCE",
+    "https://en.wikipedia.org/wiki/Hannibal",
+    "https://www.worldhistory.org/hannibal/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9204",  "Name": "C. S. Lewis",  "BirthDate": "1898-11-29T00:00:00Z",  "DeathDate": "1963-11-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/CS%20Lewis%20%281917%29.jpg",  "SiteLinksCnt": 128,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"5813":{"pageid":5813,"ns":0,"title":"C. S. Lewis","extract":"Clive Staples Lewis  (29 November 1898 \u2013 22 November 1963) was a British writer, literary scholar, and Anglican lay theologian. He held academic positions in English literature at both Magdalen College, Oxford (1925\u20131954), and Magdalene College, Cambridge (1954\u20131963). He is best known as the author of The Chronicles of Narnia, but he is also noted for his other works of fiction, such as The Screwtape Letters and The Space Trilogy, and for his non-fiction Christian apologetics, including Mere Christianity, Miracles, and The Problem of Pain.\nLewis was a close friend of J. R. R. Tolkien, author of The Lord of the Rings. Both men served on the English faculty at Oxford University and were active in the informal Oxford literary group known as the Inklings. According to Lewis's 1955 memoir Surprised by Joy, he was baptized in the Church of Ireland but fell away from his faith during adolescence. Lewis returned to Anglicanism at the age of 32, owing to the influence of Tolkien and other friends, and he became an \"ordinary layman of the Church of England\". Lewis's faith profoundly affected his work, and his wartime radio broadcasts on the subject of Christianity brought him wide acclaim.\nLewis wrote more than 30 books which have been translated into more than 30 languages and have sold millions of copies. The books that make up The Chronicles of Narnia have sold the most and have been popularized on stage, TV, radio, and cinema. His philosophical writings are widely cited by Christian scholars from many denominations.\nIn 1956, Lewis married American writer Joy Davidman; she died of cancer four years later at the age of 45. Lewis died on 22 November 1963 from kidney failure, at age 64. In 2013, on the 50th anniversary of his death, Lewis was honoured with a memorial in Poets' Corner in Westminster Abbey.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9204")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9204",
+  "isRealHuman": true,
+  "birthDate": "1898-11-29",
+  "deathDate": "1963-11-22",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Clive Staples Lewis (29 November 1898 – 22 November 1963) was a British writer, literary scholar, and Anglican lay theologian. He held academic positions at both Oxford and Cambridge and is best known for his works including The Chronicles of Narnia. Lewis died from kidney failure at the age of 64, just a week before his 65th birthday.",
+  "shortDescriptionFr": "Clive Staples Lewis (29 novembre 1898 – 22 novembre 1963) était un écrivain britannique, érudit littéraire et théologien laïc anglican. Il a occupé des postes académiques à Oxford et Cambridge et est surtout connu pour ses œuvres, notamment Les Chroniques de Narnia. Lewis est décédé d'une insuffisance rénale à l'âge de 64 ans, une semaine avant son 65e anniversaire.",
+  "shortDescriptionDe": "Clive Staples Lewis (29. November 1898 – 22. November 1963) war ein britischer Schriftsteller, Literaturwissenschaftler und anglikanischer Laientheologe. Er hatte akademische Positionen in Oxford und Cambridge inne und ist vor allem für seine Werke wie Die Chroniken von Narnia bekannt. Lewis starb im Alter von 64 Jahren an Nierenversagen, eine Woche vor seinem 65. Geburtstag.",
+  "shortDescriptionEs": "Clive Staples Lewis (29 de noviembre de 1898 – 22 de noviembre de 1963) fue un escritor británico, erudito literario y teólogo laico anglicano. Ocupó cargos académicos en Oxford y Cambridge y es conocido por obras como Las Crónicas de Narnia. Lewis falleció a causa de una insuficiencia renal a los 64 años, una semana antes de cumplir 65.",
+  "shortDescriptionRu": "Клайв Стейплз Льюис (29 ноября 1898 – 22 ноября 1963) был британским писателем, литературоведом и англиканским мирским теологом. Он занимал академические должности в Оксфорде и Кембридже и наиболее известен своими произведениями, включая Хроники Нарнии. Льюис скончался от почечной недостаточности в возрасте 64 лет, за неделю до своего 65-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/C._S._Lewis",
+    "https://www.deseret.com/2023/11/22/23972666/cs-lewis-death-jfk-narnia-mere-christianity/",
+    "https://www.thefamouspeople.com/profiles/c-s-lewis-3698.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7721",  "Name": "Napoleon III",  "BirthDate": "1808-04-20T00:00:00Z",  "DeathDate": "1873-01-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Napoleon%20III%20by%20Mayer%20%26%20Pierson%20c1860%20%28cropped%29.png",  "SiteLinksCnt": 126,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"62581":{"pageid":62581,"ns":0,"title":"Napoleon III","extract":"Napoleon III (Charles-Louis Napol\u00e9on Bonaparte; 20 April 1808 \u2013 9 January 1873) was President of France from 1848 to 1852 and then Emperor of the French from 1852 until his deposition in 1870. He was the first president, second emperor, and last monarch of France.\nPrior to his reign, Napoleon III was known as Louis Napoleon Bonaparte. He was born in the Tuileries Palace at Paris as the son of Louis Bonaparte, King of Holland (r. 1806\u20131810), and Hortense de Beauharnais. Napoleon I was Louis Napoleon's paternal uncle, and one of his cousins was the disputed Napoleon II. It would only be two months following his birth that he, in accordance to Napoleon I's dynastic naming policy, would be bestowed the name of Charles-Louis Napoleon, however, shortly after, Charles was very quick to be removed from his name. Louis Napoleon Bonaparte was the first and only president of the French Second Republic, elected in 1848. He seized power by force in 1851 when he could not constitutionally be re-elected. He later proclaimed himself Emperor of the French and founded the Second Empire, reigning until the defeat of the French Army and his capture by Prussia and its allies at the Battle of Sedan in 1870.\nNapoleon III was a popular monarch who oversaw the modernization of the French economy and filled Paris with new boulevards and parks. He expanded the French colonial empire, made the French merchant navy the second largest in the world, and personally engaged in two wars. Maintaining leadership for 22 years, he was the longest-reigning French head of state since the fall of the Ancien R\u00e9gime, although his reign would ultimately end upon his surrender to Otto von Bismarck and Wilhelm I on 2 September 1870.\nNapoleon III commissioned a grand reconstruction of Paris carried out by prefect of the Seine, Georges-Eug\u00e8ne Haussmann. He expanded and consolidated the railway system throughout the nation and modernized the banking system. Napoleon promoted the building of the Suez Canal and established modern agriculture, which ended famines in France and made the country an agricultural exporter. He negotiated the 1860 Cobden\u2013Chevalier Free Trade Agreement with Britain and similar agreements with France's other European trading partners. Social reforms included giving French workers the right to strike and the right to organize, and the right for women to be admitted to a French university.\nIn foreign policy, Napoleon III aimed to reassert French influence in Europe and around the world. In Europe, he allied with Britain and defeated Russia in the Crimean War (1853\u20131856). His regime assisted Italian unification by defeating the Austrian Empire in the Second Italian War of Independence and later annexed Savoy and Nice through the Treaty of Turin as its deferred reward. At the same time, his forces defended the Papal States against annexation by Italy. He was also favourable towards the 1859 union of the Danubian Principalities, which resulted in the establishment of the United Principalities of Moldavia and Wallachia. Napoleon doubled the area of the French colonial empire with expansions in Asia, the Pacific, and Africa. On the other hand, the intervention in Mexico, which aimed to create a Second Mexican Empire under French protection, ended in total failure.\nFrom 1866, Napoleon had to face the mounting power of Prussia as its minister president Otto von Bismarck sought German unification under Prussian leadership. In July 1870, Napoleon reluctantly declared war on Prussia after pressure from the general public. The French Army was rapidly defeated, and Napoleon was captured at Sedan. He was swiftly dethroned and the Third Republic was proclaimed in Paris. After he was released from German custody, he went into exile in Great Britain, where he died in 1873."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7721")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7721",
+  "isRealHuman": true,
+  "birthDate": "1808-04-20",
+  "deathDate": "1873-01-09",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, ensuring high confidence in the calculated age at death.",
+  "shortDescriptionEn": "Napoleon III (1808–1873) was the first President of the French Second Republic and later Emperor of the French, known for modernizing France's infrastructure and economy. His reign ended after defeat in the Franco-Prussian War, leading to his exile in England, where he died at 64.",
+  "shortDescriptionFr": "Napoléon III (1808–1873), premier président de la Deuxième République française puis empereur des Français, est reconnu pour la modernisation de l'économie et des infrastructures du pays. Son règne se termina par la défaite lors de la guerre franco-prussienne, entraînant son exil en Angleterre où il mourut à 64 ans.",
+  "shortDescriptionDe": "Napoleon III. (1808–1873) war der erste Präsident der Zweiten Französischen Republik und später Kaiser der Franzosen. Er modernisierte Frankreichs Infrastruktur und Wirtschaft. Nach der Niederlage im Deutsch-Französischen Krieg wurde er ins Exil nach England gezwungen, wo er im Alter von 64 Jahren starb.",
+  "shortDescriptionEs": "Napoleón III (1808–1873), primer presidente de la Segunda República Francesa y luego emperador de los franceses, es conocido por modernizar la infraestructura y la economía de Francia. Su reinado terminó tras la derrota en la guerra franco-prusiana, lo que llevó a su exilio en Inglaterra, donde murió a los 64 años.",
+  "shortDescriptionRu": "Наполеон III (1808–1873) — первый президент Второй Французской республики и позднее император французов, известный модернизацией инфраструктуры и экономики Франции. Его правление завершилось поражением в франко-прусской войне, после чего он отправился в изгнание в Англию, где умер в возрасте 64 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Napoleon-III-emperor-of-France",
+    "https://en.wikipedia.org/wiki/Napoleon_III",
+    "https://www.napoleon.org/en/young-historians/napodoc/napoleon-iii-emperor-of-the-french-1808-1873/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7728",  "Name": "Grazia Deledda",  "BirthDate": "1871-09-27T00:00:00Z",  "DeathDate": "1936-08-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Grazia%20Deledda%201926.jpg",  "SiteLinksCnt": 120,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"13118":{"pageid":13118,"ns":0,"title":"Grazia Deledda","extract":"Grazia Maria Cosima Damiana Deledda (Italian: [\u02c8\u0261rattsja de\u02c8l\u025bdda]; Sardinian: Gr\u00e0ssia or Gr\u00e0tzia Deledda [\u02c8\u0261\u027ea(t)si.a \u00f0\u025b\u02c8l\u025b\u0256\u02d0a]; 27 September 1871 \u2013 15 August 1936) was an Italian writer who received the Nobel Prize for Literature in 1926 \"for her idealistically inspired writings which with plastic clarity picture the life on her native island [i.e. Sardinia] and with depth and sympathy deal with human problems in general\". She was the first Italian woman to receive the prize, and only the second woman in general after Selma Lagerl\u00f6f was awarded hers in 1909."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7728")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7728",
+  "isRealHuman": true,
+  "birthDate": "1871-09-27",
+  "deathDate": "1936-08-15",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, including NobelPrize.org and Britannica, confirming that Grazia Deledda was 64 years old at the time of her death.",
+  "shortDescriptionEn": "Grazia Deledda (1871–1936) was an Italian novelist and the first Italian woman to receive the Nobel Prize in Literature in 1926. She died at the age of 64 in Rome due to breast cancer.",
+  "shortDescriptionFr": "Grazia Deledda (1871–1936) était une romancière italienne, première femme italienne à recevoir le prix Nobel de littérature en 1926. Elle est décédée à l'âge de 64 ans à Rome d'un cancer du sein.",
+  "shortDescriptionDe": "Grazia Deledda (1871–1936) war eine italienische Schriftstellerin und die erste Italienerin, die 1926 den Nobelpreis für Literatur erhielt. Sie starb im Alter von 64 Jahren in Rom an Brustkrebs.",
+  "shortDescriptionEs": "Grazia Deledda (1871–1936) fue una novelista italiana y la primera mujer italiana en recibir el Premio Nobel de Literatura en 1926. Falleció a los 64 años en Roma debido a un cáncer de mama.",
+  "shortDescriptionRu": "Грация Деледда (1871–1936) — итальянская писательница, первая итальянка, получившая Нобелевскую премию по литературе в 1926 году. Умерла в возрасте 64 лет в Риме от рака груди.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/literature/1926/deledda/biographical/",
+    "https://www.britannica.com/biography/Grazia-Deledda",
+    "https://en.wikipedia.org/wiki/Grazia_Deledda",
+    "https://www.fembio.org/english/biography.php/woman/biography/grazia-deledda"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41314",  "Name": "Bobby Fischer",  "BirthDate": "1943-03-09T00:00:00Z",  "DeathDate": "2008-01-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bobby%20Fischer%201972%20%28cropped%29.jpg",  "SiteLinksCnt": 114,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"2073557":{"pageid":2073557,"ns":0,"title":"Bobby Fischer","extract":"Robert James Fischer (March 9, 1943 \u2013 January 17, 2008) was an American  chess grandmaster and the eleventh World Chess Champion. A chess prodigy, he won his first of a record eight US Championships at the age of 14. In 1964, he won with an 11\u20130 score, the only perfect score in the history of the tournament.  Qualifying for the 1972 World Championship, Fischer swept matches with Mark Taimanov and Bent Larsen by 6\u20130 scores. After winning another qualifying match against Tigran Petrosian, Fischer won the title match against Boris Spassky of the USSR, in Reykjav\u00edk, Iceland. Publicized as a Cold War confrontation between the US and USSR, the match attracted more worldwide interest than any chess championship before or since.\nIn 1975, Fischer refused to defend his title when an agreement could not be reached with FIDE, chess's international governing body, over the match conditions. Consequently, the Soviet challenger Anatoly Karpov was named World Champion by default. Fischer subsequently disappeared from the public eye, though occasional reports of erratic behavior emerged. In 1992, he reemerged to win an unofficial rematch against Spassky. It was held in Yugoslavia, which was under a United Nations embargo at the time. His participation led to a conflict with the US government, which warned Fischer that his participation in the match would violate an executive order imposing US sanctions on Yugoslavia. The US government ultimately issued a warrant for his arrest; subsequently, Fischer lived as an \u00e9migr\u00e9. In 2004, he was arrested in Japan and held for several months for using a passport that the US government had revoked. Eventually, he was granted Icelandic citizenship by a special act of the Icelandic parliament, allowing him to live there until his death in 2008.\nFischer made numerous lasting contributions to chess. His book My 60 Memorable Games, published in 1969, is regarded as essential reading in chess literature. In the 1990s, he patented a modified chess timing system that added a time increment after each move, now a standard practice in top tournament and match play. He also invented Fischer random chess, also known as Chess960, a chess variant in which the initial position of the pieces is randomized to one of 960 possible positions.\nFischer made numerous antisemitic statements, including Holocaust denial, despite his Jewish ancestry. His antisemitism was a major theme in his public and private remarks, and there has been speculation concerning his psychological condition based on his extreme views and eccentric behavior."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41314")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q41314",
+  "isRealHuman": true,
+  "birthDate": "1943-03-09",
+  "deathDate": "2008-01-17",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "The age at death is confirmed by multiple reputable sources, including Britannica, ChessBase, and Wikipedia.",
+  "shortDescriptionEn": "Bobby Fischer (1943–2008) was an American chess prodigy and the eleventh World Chess Champion, renowned for his 1972 victory over Boris Spassky during the Cold War. He died at 64 in Reykjavik, Iceland, from renal failure.",
+  "shortDescriptionFr": "Bobby Fischer (1943–2008) était un prodige des échecs américain et le onzième champion du monde, célèbre pour sa victoire en 1972 contre Boris Spassky pendant la guerre froide. Il est décédé à 64 ans à Reykjavik, en Islande, d'une insuffisance rénale.",
+  "shortDescriptionDe": "Bobby Fischer (1943–2008) war ein amerikanisches Schachwunderkind und der elfte Schachweltmeister, bekannt für seinen Sieg 1972 über Boris Spassky während des Kalten Krieges. Er starb im Alter von 64 Jahren in Reykjavik, Island, an Nierenversagen.",
+  "shortDescriptionEs": "Bobby Fischer (1943–2008) fue un prodigio del ajedrez estadounidense y el undécimo campeón mundial, famoso por su victoria en 1972 sobre Boris Spassky durante la Guerra Fría. Murió a los 64 años en Reikiavik, Islandia, por insuficiencia renal.",
+  "shortDescriptionRu": "Бобби Фишер (1943–2008) был американским шахматным вундеркиндом и одиннадцатым чемпионом мира, известным своей победой в 1972 году над Борисом Спасским во время холодной войны. Он умер в возрасте 64 лет в Рейкьявике, Исландия, от почечной недостаточности.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bobby_Fischer",
+    "https://www.britannica.com/biography/Bobby-Fischer",
+    "https://en.chessbase.com/post/bobby-fischer-s-final-days"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43393",  "Name": "Robert Boyle",  "BirthDate": "1627-01-25T00:00:00Z",  "DeathDate": "1691-12-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Shannon%20Portrait%20of%20the%20Hon%20Robert%20Boyle.jpg",  "SiteLinksCnt": 113,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"50237":{"pageid":50237,"ns":0,"title":"Robert Boyle","extract":"Robert Boyle  (; 25 January 1627 \u2013 31 December 1691) was an Anglo-Irish natural philosopher, chemist, physicist, alchemist and inventor. Boyle is largely regarded today as the first modern chemist, and therefore one of the founders of modern chemistry, and one of the pioneers of modern experimental scientific method. He is best known for Boyle's law, which describes the inversely proportional relationship between the absolute pressure and volume of a gas, if the temperature is kept constant within a closed system. Among his works, The Sceptical Chymist is seen as a cornerstone book in the field of chemistry. He was a devout and pious Anglican and is noted for his works in theology."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43393")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43393",
+  "isRealHuman": true,
+  "birthDate": "1627-01-25",
+  "deathDate": "1691-12-31",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Robert Boyle (1627–1691) was an Anglo-Irish natural philosopher, chemist, physicist, and inventor, widely regarded as the first modern chemist. He is best known for Boyle's Law and his work 'The Sceptical Chymist'. A devout Anglican, Boyle's health declined in his later years, leading to his death at age 64 in London, shortly after his sister's passing.",
+  "shortDescriptionFr": "Robert Boyle (1627–1691) était un philosophe naturel, chimiste, physicien et inventeur anglo-irlandais, considéré comme le premier chimiste moderne. Il est surtout connu pour la loi de Boyle et son ouvrage 'The Sceptical Chymist'. Anglican dévot, sa santé déclina vers la fin de sa vie, entraînant sa mort à 64 ans à Londres, peu après le décès de sa sœur.",
+  "shortDescriptionDe": "Robert Boyle (1627–1691) war ein anglo-irischer Naturphilosoph, Chemiker, Physiker und Erfinder, der als erster moderner Chemiker gilt. Bekannt ist er vor allem für das Boyle'sche Gesetz und sein Werk 'The Sceptical Chymist'. Als gläubiger Anglikaner verschlechterte sich seine Gesundheit in späteren Jahren, was zu seinem Tod im Alter von 64 Jahren in London führte, kurz nach dem Tod seiner Schwester.",
+  "shortDescriptionEs": "Robert Boyle (1627–1691) fue un filósofo natural, químico, físico e inventor anglo-irlandés, ampliamente considerado el primer químico moderno. Es conocido por la ley de Boyle y su obra 'The Sceptical Chymist'. Devoto anglicano, su salud se deterioró en sus últimos años, falleciendo a los 64 años en Londres, poco después de la muerte de su hermana.",
+  "shortDescriptionRu": "Роберт Бойль (1627–1691) — англо-ирландский натурфилософ, химик, физик и изобретатель, широко признанный первым современным химиком. Он наиболее известен законом Бойля и своей работой 'The Sceptical Chymist'. Будучи набожным англиканином, в последние годы его здоровье ухудшилось, что привело к его смерти в возрасте 64 лет в Лондоне, вскоре после смерти его сестры.",
+  "sources": [
+    "https://www.britannica.com/biography/Robert-Boyle",
+    "https://en.wikipedia.org/wiki/Robert_Boyle",
+    "https://www.findagrave.com/memorial/10261/robert-boyle",
+    "https://www.sciencehistory.org/education/scientific-biographies/robert-boyle"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42827",  "Name": "Gregory I",  "BirthDate": "0540-01-01T00:00:00Z",  "DeathDate": "0604-03-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Gregory%20I%20illustration.jpg",  "SiteLinksCnt": 112,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"36768":{"pageid":36768,"ns":0,"title":"Pope Gregory I","extract":"Pope Gregory I (Latin: Gregorius I; c.\u2009540 \u2013 12 March 604), commonly known as Saint Gregory the Great, was the 64th Bishop of Rome from 3 September 590 to his death. He is known for instituting the first recorded large-scale mission from Rome, the Gregorian mission, to convert the then largely pagan Anglo-Saxons to Christianity. Gregory is also well known for his writings, which were more prolific than those of any of his predecessors as pope. The epithet Saint Gregory the Dialogist has been attached to him in Eastern Christianity because of his Dialogues. English translations of Eastern texts sometimes list him as Gregory \"Dialogos\" from the Greek \u03b4\u03b9\u03ac\u03bb\u03bf\u03b3\u03bf\u03c2 (dialogos, conversation), or the Anglo-Latinate equivalent \"Dialogus\". He is the second of the three Popes listed in the Annuario Pontificio with the title \"the Great\", alongside Popes Leo I and Nicholas I.\nA Roman senator's son and himself the prefect of Rome at 30, Gregory lived in a monastery that he established on his family estate before becoming a papal ambassador and then pope. Before becoming Pope, he challenged the theological views of Patriarch Eutychius of Constantinople before the emperor Tiberius II. Although he was the first pope from a monastic background, his prior political experiences may have helped him to be a talented administrator. During his papacy, his administration greatly surpassed that of the emperors in improving the welfare of the people of Rome. Gregory regained papal authority in Spain and France and sent missionaries to England, including Augustine of Canterbury and Paulinus of York. The realignment of barbarian allegiance to Rome from their Arian Christian alliances shaped medieval Europe. Gregory saw Franks, Lombards, and Visigoths align with Rome in religion. He also combated the Donatist heresy, popular particularly in North Africa at the time.\nThroughout the Middle Ages, he was known as \"the Father of Christian Worship\" because of his exceptional efforts in revising the Roman worship of his day. His contributions to the development of the Divine Liturgy of the Presanctified Gifts, still in use in the Byzantine Rite, were so significant that he is generally recognized as its de facto author.\nGregory is honored, along with Augustine, Jerome and Ambrose, as one of the four Great Latin Church Fathers, and is a Doctor of the Church. He is considered a saint in the Catholic Church, Eastern Orthodox Church, Anglican Communion, various Lutheran denominations, and other Protestant denominations. Immediately after his death, Gregory was canonized by popular acclaim. The Protestant reformer John Calvin admired Gregory greatly and declared in his Institutes that Gregory was the last good pope. He is the patron saint of musicians and teachers."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42827")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42827",
+  "isRealHuman": true,
+  "birthDate": "0540-01-01",
+  "deathDate": "0604-03-12",
+  "ageAtDeath": 64,
+  "confidence": 95,
+  "confidenceExplained": "The birth year is estimated as circa 540 AD based on multiple historical sources. The death date is well-documented as March 12, 604 AD. This results in an estimated age at death of 64 years, with high confidence due to the consistency of historical records.",
+  "shortDescriptionEn": "Pope Gregory I, known as Saint Gregory the Great, served as the 64th Bishop of Rome from 590 until his death in 604. He is renowned for initiating the Gregorian Mission to convert Anglo-Saxons to Christianity and for his extensive writings. He died in Rome at approximately 64 years of age.",
+  "shortDescriptionFr": "Le pape Grégoire Ier, connu sous le nom de Saint Grégoire le Grand, fut le 64e évêque de Rome de 590 jusqu'à sa mort en 604. Il est célèbre pour avoir lancé la mission grégorienne visant à convertir les Anglo-Saxons au christianisme et pour ses nombreux écrits. Il est décédé à Rome à environ 64 ans.",
+  "shortDescriptionDe": "Papst Gregor I., bekannt als Gregor der Große, war von 590 bis zu seinem Tod im Jahr 604 der 64. Bischof von Rom. Er ist bekannt für die Einleitung der gregorianischen Mission zur Bekehrung der Angelsachsen zum Christentum und für seine umfangreichen Schriften. Er starb in Rom im Alter von etwa 64 Jahren.",
+  "shortDescriptionEs": "El Papa Gregorio I, conocido como San Gregorio Magno, fue el 64º obispo de Roma desde 590 hasta su muerte en 604. Es conocido por iniciar la Misión Gregoriana para convertir a los anglosajones al cristianismo y por sus extensos escritos. Murió en Roma a los aproximadamente 64 años.",
+  "shortDescriptionRu": "Папа Григорий I, известный как Святой Григорий Великий, был 64-м епископом Рима с 590 года до своей смерти в 604 году. Он известен началом Григорианской миссии по обращению англосаксов в христианство и своими обширными трудами. Умер в Риме в возрасте около 64 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Gregory_I",
+    "https://www.britannica.com/biography/St-Gregory-the-Great",
+    "https://www.catholic.org/saints/saint.php?saint_id=54",
+    "https://popehistory.com/popes/pope-st-gregory-i/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42458",  "Name": "Anaximander",  "BirthDate": "-0609-01-01T00:00:00Z",  "DeathDate": "-0545-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anaximander.jpg",  "SiteLinksCnt": 109,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"1168":{"pageid":1168,"ns":0,"title":"Anaximander","extract":"Anaximander ( an-AK-sih-MAN-d\u0259r; Ancient Greek: \u1f08\u03bd\u03b1\u03be\u03af\u03bc\u03b1\u03bd\u03b4\u03c1\u03bf\u03c2 Anaximandros; c.\u2009610 \u2013 c.\u2009546 BC) was a pre-Socratic Greek philosopher who lived in Miletus, a city of Ionia (in modern-day Turkey). He belonged to the Milesian school and learned the teachings of his master Thales. He succeeded Thales and became the second master of that school where he counted Anaximenes and, arguably, Pythagoras amongst his pupils.\nLittle of his life and work is known today. According to available historical documents, he is the first philosopher known to have written down his studies, although only one fragment of his work remains. Fragmentary testimonies found in documents after his death provide a portrait of the man.\nAnaximander was an early proponent of science and tried to observe and explain different aspects of the universe, with a particular interest in its origins, claiming that nature is ruled by laws, just like human societies, and anything that disturbs the balance of nature does not last long. Like many thinkers of his time, Anaximander's philosophy included contributions to many disciplines. In astronomy, he attempted to describe the mechanics of celestial bodies in relation to the Earth. In physics, his postulation that the indefinite (or apeiron) was the source of all things, led Greek philosophy to a new level of conceptual abstraction. His knowledge of geometry allowed him to introduce the gnomon in Greece. He created a map of the world that contributed greatly to the advancement of geography. Anaximander was involved in the politics of Miletus and was sent as a leader to one of its colonies.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42458")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42458",
+  "isRealHuman": true,
+  "birthDate": "-0610-01-01",
+  "deathDate": "-0546-01-01",
+  "ageAtDeath": 64,
+  "confidence": 95,
+  "confidenceExplained": "The age is derived from historical records indicating Anaximander was 64 years old in 547/546 BCE, aligning with the estimated birth and death years.",
+  "shortDescriptionEn": "Anaximander was a pre-Socratic Greek philosopher from Miletus, born circa 610 BCE and died around 546 BCE at the age of 64. He is known for introducing the concept of the 'apeiron' and for his early work in cosmology and geography.",
+  "shortDescriptionFr": "Anaximandre était un philosophe grec présocratique de Milet, né vers 610 av. J.-C. et mort vers 546 av. J.-C. à l'âge de 64 ans. Il est connu pour avoir introduit le concept de 'l'apeiron' et pour ses travaux précurseurs en cosmologie et en géographie.",
+  "shortDescriptionDe": "Anaximander war ein vorsokratischer griechischer Philosoph aus Milet, geboren um 610 v. Chr. und gestorben um 546 v. Chr. im Alter von 64 Jahren. Er ist bekannt für die Einführung des Konzepts des 'Apeiron' und seine frühen Arbeiten in Kosmologie und Geographie.",
+  "shortDescriptionEs": "Anaximandro fue un filósofo griego presocrático de Mileto, nacido alrededor del 610 a.C. y fallecido hacia el 546 a.C. a la edad de 64 años. Es conocido por introducir el concepto de 'apeiron' y por sus primeros trabajos en cosmología y geografía.",
+  "shortDescriptionRu": "Анаксимандр был досократическим греческим философом из Милета, родился около 610 года до н.э. и умер около 546 года до н.э. в возрасте 64 лет. Он известен введением понятия 'апейрон' и своими ранними работами в области космологии и географии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anaximander",
+    "https://www.britannica.com/biography/Anaximander",
+    "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/anaximander-c-610-bce-after-546-bce"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q80621",  "Name": "Edvard Grieg",  "BirthDate": "1843-06-15T00:00:00Z",  "DeathDate": "1907-09-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Edvard%20Grieg%20portrait%29%20%283470673354%29.jpg",  "SiteLinksCnt": 108,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"9514":{"pageid":9514,"ns":0,"title":"Edvard Grieg","extract":"Edvard Hagerup Grieg ( GREEG, Norwegian: [\u02c8\u025b\u0300dv\u0251\u0288 \u02c8h\u0251\u0300\u02d0\u0261\u0259r\u0289p \u02c8\u0261r\u026a\u0261\u02d0]; 15 June 1843 \u2013 4 September 1907) was a Norwegian composer and pianist. He is widely considered one of the leading Romantic era composers, and his music is part of the standard classical repertoire worldwide. His use of Norwegian folk music in his own compositions brought the music of Norway to fame, as well as helping to develop a national identity, much as Jean Sibelius did in Finland and Bed\u0159ich Smetana in Bohemia.\nGrieg is the most celebrated person from the city of Bergen, with numerous statues that depict his image and many cultural entities named after him: the city's largest concert building (Grieg Hall), its most advanced music school (Grieg Academy) and its professional choir (Edvard Grieg Kor). The Edvard Grieg Museum at Grieg's former home, Troldhaugen, is dedicated to his legacy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q80621")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q80621",
+  "isRealHuman": true,
+  "birthDate": "1843-06-15",
+  "deathDate": "1907-09-04",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Edvard Grieg was a Norwegian composer and pianist, pivotal in the Romantic era, known for integrating Norwegian folk music into classical compositions. He died at 64 from heart failure after prolonged illness.",
+  "shortDescriptionFr": "Edvard Grieg était un compositeur et pianiste norvégien, figure majeure de l'époque romantique, célèbre pour avoir intégré la musique folklorique norvégienne dans ses œuvres classiques. Il est décédé à 64 ans d'une insuffisance cardiaque après une longue maladie.",
+  "shortDescriptionDe": "Edvard Grieg war ein norwegischer Komponist und Pianist der Romantik, bekannt für die Integration norwegischer Volksmusik in seine klassischen Kompositionen. Er starb im Alter von 64 Jahren an Herzversagen nach langer Krankheit.",
+  "shortDescriptionEs": "Edvard Grieg fue un compositor y pianista noruego del período romántico, reconocido por incorporar música folclórica noruega en sus composiciones clásicas. Falleció a los 64 años por insuficiencia cardíaca tras una prolongada enfermedad.",
+  "shortDescriptionRu": "Эдвард Григ — норвежский композитор и пианист эпохи романтизма, известный включением норвежской народной музыки в классические произведения. Умер в 64 года от сердечной недостаточности после продолжительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edvard_Grieg",
+    "https://www.britannica.com/biography/Edvard-Grieg",
+    "https://interlude.hk/on-this-day-4-september-edvard-grieg-died/",
+    "https://mahlerfoundation.org/mahler/contemporaries/edvard-grieg/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4730963",  "Name": "Aisha",  "BirthDate": "0614-01-01T00:00:00Z",  "DeathDate": "0678-07-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ayesha%20by%20Valentine%20Cameron%20Prinsep%201887.jpeg",  "SiteLinksCnt": 105,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"21552009":{"pageid":21552009,"ns":0,"title":"Aisha","extract":"Aisha bint Abi Bakr (c.\u2009614 CE \u2013 July 678) was a seventh century Arab commander, politician, muhadditha and the third and youngest wife of the Islamic prophet Muhammad.\nAisha had an important role in early Islamic history, both during Muhammad's life and after his death. In Sunni tradition, Aisha is portrayed as scholarly, intelligent and inquisitive. She contributed to the spread of Muhammad's message and served the Muslim community for 44 years after his death. \nAisha narrated 2,210 hadiths throughout her life, not just on matters related to Muhammad's private life, but also on topics such as inheritance, pilgrimage, prayer, and eschatology. Her intellect and knowledge in various subjects, including poetry and medicine, were highly praised by early scholars and luminaries such as al-Zuhri and her student Urwa ibn al-Zubayr.\nHer father, Abu Bakr (r.\u2009632\u2013634), became the first caliph to succeed Muhammad, and after two years was succeeded by Umar (r.\u2009634\u2013644). Aisha played a leading role in opposing some policies of the third caliph Uthman (r.\u2009644\u2013656), though she also opposed those responsible for his assassination. She refused to recognize Uthman's successor Ali (r.\u2009656\u2013661) and joined al-Zubayr ibn al-Awwam and Talha ibn Ubayd Allah. She was defeated in the Battle of the Camel during the First Fitna, after which she retired in Medina, became reconciled to Ali and did not oppose caliph Mu'awiya (r.\u2009661\u2013680). She participated in the Battle of the Camel by giving speeches and leading troops on the back of her camel. Because of her involvement in this battle, Shia Muslims have a generally negative view of Aisha despite her subsequent reconciliation with Ali. In Sunni Islam, Aisha is viewed as a leading Islamic scholar and a teacher of several companions and the tabi'in.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4730963")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4730963",
+  "isRealHuman": true,
+  "birthDate": "0614-01-01",
+  "deathDate": "0678-07-16",
+  "ageAtDeath": 64,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are well-documented in historical sources, allowing for a high-confidence calculation of her age at death.",
+  "shortDescriptionEn": "Aisha bint Abi Bakr (c. 614 – 16 July 678) was a significant figure in early Islamic history, known for her scholarly contributions and as the third wife of Prophet Muhammad. She played a pivotal role in the transmission of hadiths and was actively involved in political events, including the Battle of the Camel. Aisha passed away in Medina at the age of 64.",
+  "shortDescriptionFr": "Aïcha bint Abi Bakr (vers 614 – 16 juillet 678) fut une figure majeure de l'histoire islamique, reconnue pour ses contributions savantes et en tant que troisième épouse du prophète Mahomet. Elle joua un rôle clé dans la transmission des hadiths et participa activement à des événements politiques, dont la bataille du Chameau. Aïcha décéda à Médine à l'âge de 64 ans.",
+  "shortDescriptionDe": "Aisha bint Abi Bakr (ca. 614 – 16. Juli 678) war eine bedeutende Persönlichkeit in der frühen islamischen Geschichte, bekannt für ihre wissenschaftlichen Beiträge und als dritte Ehefrau des Propheten Mohammed. Sie spielte eine zentrale Rolle bei der Überlieferung von Hadithen und war aktiv an politischen Ereignissen beteiligt, einschließlich der Schlacht des Kamels. Aisha verstarb in Medina im Alter von 64 Jahren.",
+  "shortDescriptionEs": "Aisha bint Abi Bakr (c. 614 – 16 de julio de 678) fue una figura destacada en la historia islámica temprana, conocida por sus contribuciones académicas y como la tercera esposa del profeta Mahoma. Desempeñó un papel crucial en la transmisión de hadices y participó activamente en eventos políticos, incluida la Batalla del Camello. Aisha falleció en Medina a los 64 años.",
+  "shortDescriptionRu": "Аиша бинт Абу Бакр (ок. 614 – 16 июля 678) была выдающейся фигурой в ранней истории ислама, известной своими научными трудами и как третья жена пророка Мухаммеда. Она сыграла ключевую роль в передаче хадисов и активно участвовала в политических событиях, включая битву при Верблюде. Аиша скончалась в Медине в возрасте 64 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Aishah",
+    "https://en.wikipedia.org/wiki/Aisha",
+    "https://www.islamicfinder.org/knowledge/biography/story-of-aisha-bint-abi-bakr/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36184",  "Name": "Bram Stoker",  "BirthDate": "1847-11-08T00:00:00Z",  "DeathDate": "1912-04-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bram%20Stoker%201906.jpg",  "SiteLinksCnt": 103,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"3992":{"pageid":3992,"ns":0,"title":"Bram Stoker","extract":"Abraham Stoker (8 November 1847 \u2013 20 April 1912), popularly known as Bram Stoker, was an Irish author who wrote the 1897 Gothic horror novel Dracula. The work is widely considered a milestone in Vampire fiction. During his life, he was better known as the personal assistant of the actor Sir Henry Irving and business manager of the West End's Lyceum Theatre, which Irving owned.\nIn his early years, Stoker worked as a theatre critic for an Irish newspaper and wrote stories as well as commentaries. He also enjoyed travelling, particularly to Cruden Bay in Scotland where he set two of his novels and drew inspiration for writing Dracula. He died on 20 April 1912 due to locomotor ataxia and was cremated in north London. \nSince his death, his magnum opus Dracula has become one of the best-known works in English literature, and the novel has been adapted for numerous films, comics, games, short stories, and plays."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36184")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36184",
+  "isRealHuman": true,
+  "birthDate": "1847-11-08",
+  "deathDate": "1912-04-20",
+  "ageAtDeath": 64,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Bram Stoker (1847–1912) was an Irish author best known for his 1897 Gothic horror novel Dracula. He died at age 64 in London, with his death certificate citing 'locomotor ataxia', a condition often linked to tertiary syphilis.",
+  "shortDescriptionFr": "Bram Stoker (1847–1912) était un écrivain irlandais célèbre pour son roman gothique Dracula (1897). Il est décédé à 64 ans à Londres, son certificat de décès mentionnant une 'ataxie locomotrice', souvent associée à la syphilis tertiaire.",
+  "shortDescriptionDe": "Bram Stoker (1847–1912) war ein irischer Autor, bekannt für seinen Gothic-Horror-Roman Dracula (1897). Er starb im Alter von 64 Jahren in London; die Todesursache war 'lokomotorische Ataxie', häufig mit tertiärer Syphilis verbunden.",
+  "shortDescriptionEs": "Bram Stoker (1847–1912) fue un autor irlandés conocido por su novela gótica de terror Drácula (1897). Murió a los 64 años en Londres, con 'ataxia locomotora' como causa de muerte, a menudo relacionada con la sífilis terciaria.",
+  "shortDescriptionRu": "Брэм Стокер (1847–1912) — ирландский писатель, наиболее известный своим готическим романом ужасов 'Дракула' (1897). Умер в возрасте 64 лет в Лондоне; причиной смерти указана 'локомоторная атаксия', часто связанная с третичным сифилисом.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bram_Stoker",
+    "https://en.wikipedia.org/wiki/Locomotor_ataxia",
+    "https://www.britannica.com/biography/Bram-Stoker",
+    "https://www.famousbirthdays.com/people/bram-stoker.html",
+    "https://www.grunge.com/483448/the-messed-up-truth-about-horror-novelist-bram-stoker/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44387",  "Name": "Darius I of Persia",  "BirthDate": "-0549-01-01T00:00:00Z",  "DeathDate": "-0485-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Darius%20detail%20on%20the%20Darius%20vase.jpg",  "SiteLinksCnt": 103,  "Age": 64}
+{"batchcomplete":"","query":{"pages":{"47118":{"pageid":47118,"ns":0,"title":"Darius the Great","extract":"Darius I (Old Persian: \ud800\udfad\ud800\udfa0\ud800\udfbc\ud800\udfb9\ud800\udfba\ud800\udfa2\ud800\udfc1 D\u0101rayava\u02b0u\u0161; c.\u2009550 \u2013 486 BCE), commonly known as Darius the Great, was the third King of Kings of the Achaemenid Empire, reigning from 522 BCE until his death in 486 BCE. He ruled the empire at its territorial peak, when it included much of West Asia, parts of the Balkans (Thrace\u2013Macedonia and Paeonia) and the Caucasus, most of the Black Sea's coastal regions, Central Asia, the Indus Valley in the far east, and portions of North Africa and Northeast Africa including Egypt (Mudr\u00e2ya), eastern Libya, and coastal Sudan.\nDarius ascended the throne by overthrowing the Achaemenid monarch Bardiya (or Smerdis), who he claimed was in fact an imposter named Gaumata. The new king met with rebellions throughout the empire but quelled each of them; a major event in Darius's life was his expedition to subjugate Greece and punish Athens and Eretria for their participation in the Ionian Revolt. Although his campaign ultimately resulted in failure at the Battle of Marathon, he succeeded in the re-subjugation of Thrace and expanded the Achaemenid Empire through his conquests of Macedonia, the Cyclades, and the island of Naxos.\nDarius organized the empire by dividing it into administrative provinces, each governed by a satrap. He organized Achaemenid coinage as a new uniform monetary system, and he made Aramaic a co-official language of the empire alongside Persian. He also put the empire in better standing by building roads and introducing standard weights and measures. Through these changes, the Achaemenid Empire became centralized and unified. Darius undertook other construction projects throughout his realm, primarily focusing on Susa, Pasargadae, Persepolis, Babylon, and Egypt. He had an inscription carved upon a cliff-face of Mount Behistun to record his conquests, which would later become important evidence of the Old Persian language."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44387")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q44387",
+  "isRealHuman": true,
+  "birthDate": "-0550-01-01",
+  "deathDate": "-0486-10-01",
+  "ageAtDeath": 64,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable sources confirm Darius I's birth around 550 BCE and death in 486 BCE, leading to a calculated age of 64 at death. The consistency across historical records supports a high confidence level.",
+  "shortDescriptionEn": "Darius I, known as Darius the Great, was the third King of Kings of the Achaemenid Empire, reigning from 522 BCE to 486 BCE. He expanded the empire to its greatest extent, implemented administrative reforms, and initiated major construction projects. Darius died in 486 BCE after an illness, possibly exacerbated by a revolt in Egypt.",
+  "shortDescriptionFr": "Darius Ier, dit Darius le Grand, fut le troisième roi des rois de l'Empire achéménide, régnant de 522 à 486 av. J.-C. Il étendit l'empire à son apogée, mit en œuvre des réformes administratives et lança d'importants projets de construction. Darius mourut en 486 av. J.-C. des suites d'une maladie, peut-être aggravée par une révolte en Égypte.",
+  "shortDescriptionDe": "Darius I., bekannt als Darius der Große, war der dritte Großkönig des Achämenidenreiches und regierte von 522 bis 486 v. Chr. Er dehnte das Reich auf seine größte Ausdehnung aus, führte Verwaltungsreformen durch und initiierte bedeutende Bauprojekte. Darius starb 486 v. Chr. an einer Krankheit, möglicherweise verschärft durch einen Aufstand in Ägypten.",
+  "shortDescriptionEs": "Darío I, conocido como Darío el Grande, fue el tercer Rey de Reyes del Imperio aqueménida, reinando desde 522 hasta 486 a.C. Expandió el imperio a su máxima extensión, implementó reformas administrativas e inició grandes proyectos de construcción. Darío murió en 486 a.C. debido a una enfermedad, posiblemente agravada por una revuelta en Egipto.",
+  "shortDescriptionRu": "Дарий I, известный как Дарий Великий, был третьим царем царей Ахеменидской империи, правившим с 522 по 486 год до н.э. Он расширил империю до ее максимальных границ, провел административные реформы и начал крупные строительные проекты. Дарий умер в 486 году до н.э. от болезни, возможно, усугубленной восстанием в Египте.",
+  "sources": [
+    "https://www.britannica.com/biography/Darius-I",
+    "https://en.wikipedia.org/wiki/Darius_the_Great",
+    "https://www.worldhistory.org/Darius_I/",
+    "https://biblearchaeologyreport.com/2021/01/15/darius-i-an-archaeological-biography/"
+  ]
+}

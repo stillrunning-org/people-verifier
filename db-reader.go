@@ -41,21 +41,24 @@ func ReadPerson(db *sql.DB, id string) (Person, error) {
 	return p, err
 }
 
-func ReadNextPersons(db *sql.DB, cursor string) ([]Person, string, error) {
-	var p Person
+func ReadPersonWithAge(priority int, db *sql.DB, age int) ([]Person, error) {
 	ret := make([]Person, 0)
-	rows, err := db.Query("SELECT id, name, birthDate, deathDate, pic, siteLinksCnt, age "+
-		"FROM persons WHERE id > ? ORDER BY id ASC LIMIT 10", cursor)
+	pageSize := 20
+	if age == 0 || age == 100 {
+		pageSize = 40
+	}
+
+	rows, err := buildQuery(priority, db, age, pageSize)
 	if err != nil {
-		return ret, "", err
+		return ret, err
 	}
 	defer rows.Close()
 
-	nextCursor := ""
 	for rows.Next() {
+		var p Person
 		err := rows.Scan(&p.Id, &p.Name, &p.BirthDate, &p.DeathDate, &p.Pic, &p.SiteLinksCnt, &p.Age)
 		if err != nil {
-			return ret, "", err
+			return ret, err
 		}
 		if strings.HasPrefix(p.BirthDate, "http") {
 			p.BirthDate = ""
@@ -64,7 +67,19 @@ func ReadNextPersons(db *sql.DB, cursor string) ([]Person, string, error) {
 			p.DeathDate = ""
 		}
 		ret = append(ret, p)
-		nextCursor = p.Id
 	}
-	return ret, nextCursor, nil
+	if age == 100 {
+		return ret, nil
+	}
+	return ret, nil
+}
+
+func buildQuery(priority int, db *sql.DB, age int, pageSize int) (*sql.Rows, error) {
+	if age < 100 {
+		return db.Query("SELECT id, name, birthDate, deathDate, pic, siteLinksCnt, age "+
+			"FROM persons WHERE age = ? ORDER BY siteLinksCnt DESC, id ASC LIMIT ? OFFSET ?", age, pageSize, priority*pageSize)
+	} else {
+		return db.Query("SELECT id, name, birthDate, deathDate, pic, siteLinksCnt, age "+
+			"FROM persons WHERE age >= 100 ORDER BY siteLinksCnt DESC, id ASC LIMIT ? OFFSET ?", pageSize, priority*pageSize)
+	}
 }

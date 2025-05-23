@@ -1,0 +1,966 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7186",  "Name": "Marie Curie",  "BirthDate": "1867-11-07T00:00:00Z",  "DeathDate": "1934-07-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Curie%20c.%201920s.jpg",  "SiteLinksCnt": 230,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"20408":{"pageid":20408,"ns":0,"title":"Marie Curie","extract":"Maria Salomea Sk\u0142odowska-Curie (Polish: [\u02c8marja sal\u0254\u02c8m\u025ba skw\u0254\u02c8d\u0254fska k\u02b2i\u02c8ri] ; n\u00e9e Sk\u0142odowska; 7 November 1867 \u2013 4 July 1934), known simply as Marie Curie ( KURE-ee; French: [ma\u0281i ky\u0281i]), was a Polish and naturalised-French physicist and chemist who conducted pioneering research on radioactivity. \nShe was the first woman to win a Nobel Prize, the first person to win a Nobel Prize twice, and the only person to win a Nobel Prize in two scientific fields. Her husband, Pierre Curie, was a co-winner of her first Nobel Prize, making them the first married couple to win the Nobel Prize and launching the Curie family legacy of five Nobel Prizes. She was, in 1906, the first woman to become a professor at the University of Paris.\nShe was born in Warsaw, in what was then the Kingdom of Poland, part of the Russian Empire. She studied at Warsaw's clandestine Flying University and began her practical scientific training in Warsaw. In 1891, aged 24, she followed her elder sister Bronis\u0142awa to study in Paris, where she earned her higher degrees and conducted her subsequent scientific work. In 1895, she married the French physicist Pierre Curie, and she shared the 1903 Nobel Prize in Physics with him and with the physicist Henri Becquerel for their pioneering work developing the theory of \"radioactivity\"\u2014a term she coined. In 1906, Pierre Curie died in a Paris street accident. Marie won the 1911 Nobel Prize in Chemistry for her discovery of the elements polonium and radium, using techniques she invented for isolating radioactive isotopes. \nUnder her direction, the world's first studies were conducted into the treatment of neoplasms by the use of radioactive isotopes. She founded the Curie Institute in Paris in 1920, and the Curie Institute in Warsaw in 1932; both remain major medical research centres. During World War I, she developed mobile radiography units to provide X-ray services to field hospitals.\nWhile a French citizen, Marie Sk\u0142odowska Curie, who used both surnames, never lost her sense of Polish identity. She taught her daughters the Polish language and took them on visits to Poland. She named the first chemical element she discovered polonium, after her native country. \nMarie Curie died in 1934, aged 66, at the Sancellemoz sanatorium in Passy (Haute-Savoie), France, of aplastic anaemia likely from exposure to radiation in the course of her scientific research and in the course of her radiological work at field hospitals during World War I. In addition to her Nobel Prizes, she received numerous other honours and tributes; in 1995 she became the first woman to be entombed on her own merits in the Paris Panth\u00e9on, and Poland declared 2011 the Year of Marie Curie during the International Year of Chemistry. She is the subject of numerous biographical works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7186")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7186",
+  "isRealHuman": true,
+  "birthDate": "1867-11-07",
+  "deathDate": "1934-07-04",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented, and the age at death is directly calculated from these dates.",
+  "shortDescriptionEn": "Marie Curie was a Polish and French physicist and chemist, a pioneering researcher in radioactivity. She won two Nobel Prizes and was the first woman to become a professor at the University of Paris. She died in 1934 of aplastic anemia, likely caused by prolonged exposure to radiation.",
+  "shortDescriptionFr": "Marie Curie était une physicienne et chimiste polonaise et française, pionnière dans la recherche sur la radioactivité. Elle a remporté deux prix Nobel et a été la première femme à devenir professeur à l'Université de Paris. Elle est décédée en 1934 d'une anémie aplastique, probablement causée par une exposition prolongée aux radiations.",
+  "shortDescriptionDe": "Marie Curie war eine polnisch-französische Physikerin und Chemikerin, die bahnbrechende Forschungen zur Radioaktivität durchführte. Sie gewann zwei Nobelpreise und war die erste Frau, die Professorin an der Universität Paris wurde. Sie starb 1934 an aplastischer Anämie, die wahrscheinlich durch ihre langjährige Strahlenexposition verursacht wurde.",
+  "shortDescriptionEs": "Marie Curie fue una física y química polaca y francesa, pionera en la investigación sobre la radiactividad. Ganó dos Premios Nobel y fue la primera mujer en convertirse en profesora en la Universidad de París. Murió en 1934 de anemia aplásica, probablemente causada por la exposición prolongada a la radiación.",
+  "shortDescriptionRu": "Мария Кюри была польско-французским физиком и химиком, пионером в области радиоактивности. Она получила две Нобелевские премии и стала первой женщиной, ставшей профессором в Университете Парижа. Умерла в 1934 году от апластической анемии, вероятно, вызванной длительным воздействием радиации.",
+  "sources": [
+    "Wikidata: Q7186",
+    "Wikimedia Commons: Marie Curie"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6527",  "Name": "Jean-Jacques Rousseau",  "BirthDate": "1712-06-28T00:00:00Z",  "DeathDate": "1778-07-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-Jacques%20Rousseau%20%28painted%20portrait%29.jpg",  "SiteLinksCnt": 222,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"15941":{"pageid":15941,"ns":0,"title":"Jean-Jacques Rousseau","extract":"Jean-Jacques Rousseau (UK: , US: ; French: [\u0292\u0251\u0303\u0292ak \u0281uso]; 28 June 1712 \u2013 2 July 1778) was a Genevan philosopher (philosophe), writer, and composer. His political philosophy influenced the progress of the Age of Enlightenment throughout Europe, as well as aspects of the French Revolution and the development of modern political, economic, and educational thought.\nHis Discourse on Inequality, which argues that private property is the source of inequality, and The Social Contract, which outlines the basis for a legitimate political order, are cornerstones in modern political and social thought. Rousseau's sentimental novel Julie, or the New Heloise (1761) was important to the development of preromanticism and romanticism in fiction. His Emile, or On Education (1762) is an educational treatise on the place of the individual in society. Rousseau's autobiographical writings\u2014the posthumously published Confessions (completed in 1770), which initiated the modern autobiography, and the unfinished Reveries of the Solitary Walker (composed 1776\u20131778)\u2014exemplified the late 18th-century \"Age of Sensibility\", and featured an increased focus on subjectivity and introspection that later characterized modern writing."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6527")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q6527",
+  "isRealHuman": true,
+  "birthDate": "1712-06-28",
+  "deathDate": "1778-07-02",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates, as well as the age at death, are well-documented and widely accepted in historical records.",
+  "shortDescriptionEn": "Jean-Jacques Rousseau was a Swiss-born philosopher, writer, and composer whose political philosophy influenced the Age of Enlightenment throughout Europe, as well as aspects of the French Revolution and the development of modern political, economic, and educational thought. He died of natural causes on July 2, 1778, in Ermenonville, France.",
+  "shortDescriptionFr": "Jean-Jacques Rousseau était un philosophe, écrivain et compositeur d'origine suisse dont la philosophie politique a influencé le Siècle des Lumières en Europe, ainsi que certains aspects de la Révolution française et le développement de la pensée politique, économique et éducative moderne. Il est décédé de causes naturelles le 2 juillet 1778 à Ermenonville, France.",
+  "shortDescriptionDe": "Jean-Jacques Rousseau war ein in der Schweiz geborener Philosoph, Schriftsteller und Komponist, dessen politische Philosophie das Zeitalter der Aufklärung in Europa beeinflusste sowie Aspekte der Französischen Revolution und die Entwicklung der modernen politischen, wirtschaftlichen und pädagogischen Gedanken. Er starb am 2. Juli 1778 in Ermenonville, Frankreich, an natürlichen Ursachen.",
+  "shortDescriptionEs": "Jean-Jacques Rousseau fue un filósofo, escritor y compositor de origen suizo cuya filosofía política influyó en la Ilustración en Europa, así como en aspectos de la Revolución Francesa y el desarrollo del pensamiento político, económico y educativo moderno. Murió de causas naturales el 2 de julio de 1778 en Ermenonville, Francia.",
+  "shortDescriptionRu": "Жан-Жак Руссо был швейцарско-французским философом, писателем и композитором, чья политическая философия оказала влияние на эпоху Просвещения в Европе, а также на аспекты Французской революции и развитие современной политической, экономической и образовательной мысли. Он умер от естественных причин 2 июля 1778 года в Эрменонвиле, Франция.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+    "https://www.britannica.com/biography/Jean-Jacques-Rousseau",
+    "https://playback.fm/person/jean-jacques-rousseau"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9123",  "Name": "Ernest Rutherford",  "BirthDate": "1871-08-30T00:00:00Z",  "DeathDate": "1937-10-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ernest%20Rutherford%20LOC.jpg",  "SiteLinksCnt": 169,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"9603":{"pageid":9603,"ns":0,"title":"Ernest Rutherford","extract":"Ernest Rutherford, 1st Baron Rutherford of Nelson (30 August 1871 \u2013 19 October 1937) was a New Zealand physicist who was a pioneering researcher in both atomic and nuclear physics. He has been described as \"the father of nuclear physics\", and \"the greatest experimentalist since Michael Faraday\". In 1908, he was awarded the Nobel Prize in Chemistry \"for his investigations into the disintegration of the elements, and the chemistry of radioactive substances.\" He was the first Oceanian Nobel laureate, and the first to perform the awarded work in Canada.\nRutherford's discoveries include the concept of radioactive half-life, the radioactive element radon, and the differentiation and naming of alpha and beta radiation. Together with Thomas Royds, Rutherford is credited with proving that alpha radiation is composed of helium nuclei. In 1911, he theorized that atoms have their charge concentrated in a very small nucleus. He arrived at this theory through his discovery and interpretation of Rutherford scattering during the gold foil experiment performed by Hans Geiger and Ernest Marsden. In 1912 he invited Niels Bohr to join his lab, leading to the Bohr-Rutherford model of the atom. In 1917, he performed the first artificially induced nuclear reaction by conducting experiments in which nitrogen nuclei were bombarded with alpha particles. These experiments led him to discover the emission of a subatomic particle that he initially called the \"hydrogen atom\", but later (more precisely) renamed the proton. He is also credited with developing the atomic numbering system alongside Henry Moseley. His other achievements include advancing the fields of radio communications and ultrasound technology.\nRutherford became Director of the Cavendish Laboratory at the University of Cambridge in 1919. Under his leadership, the neutron was discovered by James Chadwick in 1932. In the same year, the first controlled experiment to split the nucleus was performed by John Cockcroft and Ernest Walton, working under his direction. In honour of his scientific advancements, Rutherford was recognised as a baron of the United Kingdom. After his death in 1937, he was buried in Westminster Abbey near Charles Darwin and Isaac Newton. The chemical element rutherfordium (104Rf) was named after him in 1997."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9123")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9123",
+  "isRealHuman": true,
+  "birthDate": "1871-08-30",
+  "deathDate": "1937-10-19",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, confirming that Ernest Rutherford died at the age of 66.",
+  "shortDescriptionEn": "Ernest Rutherford (1871–1937) was a New Zealand-born physicist known as the father of nuclear physics. He discovered the atomic nucleus, differentiated alpha and beta radiation, and conducted the first artificial nuclear reaction. He died at 66 due to complications from surgery for an umbilical hernia.",
+  "shortDescriptionFr": "Ernest Rutherford (1871–1937) était un physicien néo-zélandais, considéré comme le père de la physique nucléaire. Il a découvert le noyau atomique, différencié les radiations alpha et bêta, et réalisé la première réaction nucléaire artificielle. Il est décédé à 66 ans des suites de complications chirurgicales d'une hernie ombilicale.",
+  "shortDescriptionDe": "Ernest Rutherford (1871–1937) war ein neuseeländischer Physiker, bekannt als Vater der Kernphysik. Er entdeckte den Atomkern, unterschied Alpha- und Beta-Strahlung und führte die erste künstliche Kernreaktion durch. Er starb im Alter von 66 Jahren an Komplikationen nach einer Operation wegen eines Nabelbruchs.",
+  "shortDescriptionEs": "Ernest Rutherford (1871–1937) fue un físico neozelandés conocido como el padre de la física nuclear. Descubrió el núcleo atómico, diferenció las radiaciones alfa y beta, y realizó la primera reacción nuclear artificial. Murió a los 66 años debido a complicaciones tras una cirugía de hernia umbilical.",
+  "shortDescriptionRu": "Эрнест Резерфорд (1871–1937) — новозеландский физик, известный как отец ядерной физики. Он открыл атомное ядро, различил альфа- и бета-излучения и провел первую искусственную ядерную реакцию. Умер в возрасте 66 лет от осложнений после операции по удалению пупочной грыжи.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/chemistry/1908/rutherford/biographical/",
+    "https://www.britannica.com/biography/Ernest-Rutherford",
+    "https://en.wikipedia.org/wiki/Ernest_Rutherford",
+    "https://worldofhistorycheatsheet.com/ernest-rutherford/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1149",  "Name": "Indira Gandhi",  "BirthDate": "1917-11-19T00:00:00Z",  "DeathDate": "1984-10-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Face%20detail%2C%20Premier%20Indira%20Gandhi%20%28Congrespartij%29%2C%20Bestanddeelnr%20929-0811%20%28cropped%29.jpg",  "SiteLinksCnt": 159,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"15179":{"pageid":15179,"ns":0,"title":"Indira Gandhi","extract":"Indira Priyadarshini Gandhi (n\u00e9e Nehru; 19 November 1917 \u2013 31 October 1984) was an Indian politician and stateswoman who served as the prime minister of India from 1966 to 1977 and again from 1980 until her assassination in 1984. She was India's first and, to date, only female prime minister, and a central figure in Indian politics as the leader of the Indian National Congress (INC). She was the daughter of Jawaharlal Nehru, the first prime minister of India, and the mother of Rajiv Gandhi, who succeeded her in office as the country's prime minister. Gandhi's cumulative tenure of 15 years and 350 days makes her the second-longest-serving Indian prime minister after her father. Henry Kissinger described her as an \"Iron Lady\", a nickname that became associated with her tough personality.\nDuring her father Jawaharlal Nehru's premiership from 1947 to 1964, Gandhi was his hostess and accompanied him on his numerous foreign trips. In 1959, she played a part in the dissolution of the communist-led Kerala state government as then-president of the Indian National Congress, otherwise a ceremonial position to which she was elected earlier that year. Lal Bahadur Shastri, who had succeeded Nehru as prime minister upon his death in 1964, appointed her minister of information and broadcasting in his government; the same year she was elected to the Rajya Sabha, the upper house of the Indian Parliament. After Shastri's sudden death in January 1966, Gandhi defeated her rival, Morarji Desai, in the INC's parliamentary leadership election to become leader and also succeeded Shastri as prime minister. She led the Congress to victory in two subsequent elections, starting with the 1967 general election, in which she was first elected to the lower house of the Indian parliament, the Lok Sabha. In 1971, her party secured its first landslide victory since her father's sweep in 1962, focusing on issues such as poverty. But following the nationwide state of emergency she implemented, she faced massive anti-incumbency sentiment causing the INC to lose the 1977 election, the first time in the history of India to happen so. She even lost her own parliamentary constituency. However, due to her portrayal as a strong leader and the weak governance of the Janata Party, her party won the next election by a landslide and she returned to the premiership.\nAs prime minister, Gandhi was known for her uncompromising political stances and centralization of power within the executive branch. In 1967, she headed a military conflict with China in which India repelled Chinese incursions into the Himalayas. In 1971, she went to war with Pakistan in support of the independence movement and war of independence in East Pakistan, which resulted in an Indian victory and the independence of Bangladesh, as well as increasing India's influence to the point where it became the sole regional power in South Asia. She played a crucial role in initiating India's first successful nuclear weapon test in 1974. Her rule saw India grow closer to the Soviet Union by signing a friendship treaty in 1971, with India receiving military, financial, and diplomatic support from the Soviet Union during its conflict with Pakistan in the same year. Though India was at the forefront of the non-aligned movement, Gandhi made it one of the Soviet Union's closest allies in Asia, each often supporting the other in proxy wars and at the United Nations. Responding to separatist tendencies and a call for revolution, she instituted a state of emergency from 1975 to 1977, during which she ruled by decree and basic civil liberties were suspended. More than 100,000 political opponents, journalists and dissenters were imprisoned. She faced the growing Sikh separatism movement throughout her fourth premiership; in response, she ordered Operation Blue Star, which involved military action in the Golden Temple and killed hundreds of Sikhs. On 31 October 1984, she was assassinated by two of her bodyguards, both of whom were Sikh nationalists seeking retribution for the events at the temple.\nGandhi is remembered as the most powerful woman in the world during her tenure. Her supporters cite her leadership during victories over geopolitical rivals China and Pakistan, the Green Revolution, a growing economy in the early 1980s, and her anti-poverty campaign that led her to be known as \"Mother Indira\" (a pun on Mother India) among the country's poor and rural classes. Critics note her cult of personality and authoritarian rule of India during the Emergency. In 1999, she was named \"Woman of the Millennium\" in an online poll organized by the BBC. In 2020, she was named by Time magazine among the 100 women who defined the past century as counterparts to the magazine's previous choices for Man of the Year."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1149")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1149",
+  "isRealHuman": true,
+  "birthDate": "1917-11-19",
+  "deathDate": "1984-10-31",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Indira Gandhi was India's first and only female Prime Minister, serving from 1966 to 1977 and again from 1980 until her assassination in 1984. She was a central figure in Indian politics, known for her strong leadership and controversial decisions, including the declaration of the Emergency and Operation Blue Star, which led to her assassination by her Sikh bodyguards.",
+  "shortDescriptionFr": "Indira Gandhi fut la première et unique femme Première ministre de l'Inde, en fonction de 1966 à 1977 puis de 1980 jusqu'à son assassinat en 1984. Figure centrale de la politique indienne, elle est connue pour son leadership fort et ses décisions controversées, telles que la déclaration de l'état d'urgence et l'Opération Blue Star, qui ont conduit à son assassinat par ses gardes du corps sikhs.",
+  "shortDescriptionDe": "Indira Gandhi war die erste und bisher einzige Premierministerin Indiens, die von 1966 bis 1977 und erneut von 1980 bis zu ihrer Ermordung im Jahr 1984 amtierte. Sie war eine zentrale Figur in der indischen Politik, bekannt für ihre starke Führung und umstrittene Entscheidungen, darunter die Ausrufung des Ausnahmezustands und die Operation Blue Star, die zu ihrer Ermordung durch ihre sikhischen Leibwächter führten.",
+  "shortDescriptionEs": "Indira Gandhi fue la primera y única mujer Primera Ministra de la India, sirviendo de 1966 a 1977 y nuevamente de 1980 hasta su asesinato en 1984. Figura central en la política india, es conocida por su liderazgo fuerte y decisiones controvertidas, incluyendo la declaración del estado de emergencia y la Operación Blue Star, que llevaron a su asesinato por parte de sus guardaespaldas sijs.",
+  "shortDescriptionRu": "Индира Ганди была первой и единственной женщиной-премьер-министром Индии, занимая этот пост с 1966 по 1977 год и снова с 1980 года до своего убийства в 1984 году. Центральная фигура в индийской политике, она известна своим сильным лидерством и спорными решениями, включая введение чрезвычайного положения и операцию 'Голубая звезда', которые привели к её убийству сикхскими телохранителями.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Indira_Gandhi",
+    "https://en.wikipedia.org/wiki/Assassination_of_Indira_Gandhi",
+    "https://starsunfolded.com/indira-gandhi/",
+    "https://www.imdb.com/name/nm0304156/",
+    "https://www.telegraphindia.com/my-kolkata/events/when-mrs-indira-gandhi-was-shot-this-day-40-years-ago/cid/2059627"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15975",  "Name": "Montesquieu",  "BirthDate": "1689-01-18T00:00:00Z",  "DeathDate": "1755-02-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Montesquieu%201.png",  "SiteLinksCnt": 152,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"54956":{"pageid":54956,"ns":0,"title":"Montesquieu","extract":"Charles Louis de Secondat, baron de La Br\u00e8de et de Montesquieu (18 January 1689 \u2013 10 February 1755), generally referred to as simply Montesquieu, was a French judge, man of letters, historian, and political philosopher.\nHe is the principal source of the theory of separation of powers, which is implemented in many constitutions throughout the world. He is also known for doing more than any other author to secure the place of the word despotism in the political lexicon. His anonymously published The Spirit of Law (1748), which was received well in both Great Britain and the American colonies, influenced the Founding Fathers of the United States in drafting the U.S. Constitution."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15975")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q15975",
+  "isRealHuman": true,
+  "birthDate": "1689-01-18",
+  "deathDate": "1755-02-10",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Charles Louis de Secondat, Baron de La Brède et de Montesquieu (1689–1755), was a French political philosopher known for his theory of the separation of powers, which influenced modern democratic systems. He died at age 66 in Paris from an ardent fever.",
+  "shortDescriptionFr": "Charles Louis de Secondat, baron de La Brède et de Montesquieu (1689–1755), philosophe politique français célèbre pour sa théorie de la séparation des pouvoirs, influençant les systèmes démocratiques modernes. Il est décédé à 66 ans à Paris d'une fièvre ardente.",
+  "shortDescriptionDe": "Charles Louis de Secondat, Baron de La Brède et de Montesquieu (1689–1755), war ein französischer politischer Philosoph, bekannt für seine Gewaltenteilungstheorie, die moderne Demokratien beeinflusste. Er starb im Alter von 66 Jahren in Paris an einem heftigen Fieber.",
+  "shortDescriptionEs": "Charles Louis de Secondat, barón de La Brède y de Montesquieu (1689–1755), fue un filósofo político francés conocido por su teoría de la separación de poderes, que influyó en los sistemas democráticos modernos. Falleció a los 66 años en París debido a una fiebre ardiente.",
+  "shortDescriptionRu": "Шарль Луи де Секонда, барон де Ла Брэд и де Монтескье (1689–1755) — французский политический философ, известный своей теорией разделения властей, повлиявшей на современные демократические системы. Умер в возрасте 66 лет в Париже от сильной лихорадки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Montesquieu",
+    "https://www.britannica.com/biography/Montesquieu",
+    "https://fr.wikipedia.org/wiki/Montesquieu",
+    "https://www.worldhistory.org/Montesquieu/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43347",  "Name": "Rumi",  "BirthDate": "1207-09-30T00:00:00Z",  "DeathDate": "1273-12-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mevlana-celaleddin-i-rumi-1.jpg",  "SiteLinksCnt": 149,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"16433":{"pageid":16433,"ns":0,"title":"Rumi","extract":"Jal\u0101l al-D\u012bn Mu\u1e25ammad R\u016bm\u012b (Persian: \u062c\u0644\u0627\u0644\u200c\u0627\u0644\u062f\u06cc\u0646 \u0645\u062d\u0645\u0651\u062f \u0631\u0648\u0645\u06cc), or simply Rumi (30 September 1207 \u2013 17 December 1273), was a 13th-century poet, Hanafi faqih (jurist), Islamic scholar, Maturidi theologian (mutakallim), and Sufi mystic born during the Khwarazmian Empire.\nRumi's works were written mostly in Persian, but occasionally he also used Turkish, Arabic and Greek in his verse. His Masnavi (Mathnawi), composed in Konya, is considered one of the greatest poems of the Persian language. Rumi's influence has transcended national borders and ethnic divisions: Iranians, Afghans, Tajiks, Turks, Kurds, Greeks, Central Asian Muslims, as well as Muslims of the Indian subcontinent have greatly appreciated his spiritual legacy for the past seven centuries. His poetry influenced not only Persian literature, but also the literary traditions of the Ottoman Turkish, Chagatai, Pashto, Kurdish, Urdu, and Bengali languages.\nRumi's works are widely read today in their original language across Greater Iran and the Persian-speaking world. His poems have subsequently been translated into many of the world's languages and transposed into various formats. Rumi has been described as the \"most popular poet\", is very popular in Turkey, Azerbaijan and South Asia, \nand has become the \"best selling poet\" in the United States."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43347")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43347",
+  "isRealHuman": true,
+  "birthDate": "1207-09-30",
+  "deathDate": "1273-12-17",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Jalāl al-Dīn Muḥammad Rūmī (1207–1273) was a Persian poet, Islamic scholar, and Sufi mystic whose works have transcended national and ethnic borders. He died of natural causes at the age of 66 in Konya, where his mausoleum remains a site of pilgrimage.",
+  "shortDescriptionFr": "Jalāl al-Dīn Muḥammad Rūmī (1207–1273) était un poète persan, érudit islamique et mystique soufi dont les œuvres ont transcendé les frontières nationales et ethniques. Il est décédé de causes naturelles à l'âge de 66 ans à Konya, où son mausolée reste un lieu de pèlerinage.",
+  "shortDescriptionDe": "Jalāl al-Dīn Muḥammad Rūmī (1207–1273) war ein persischer Dichter, islamischer Gelehrter und Sufi-Mystiker, dessen Werke nationale und ethnische Grenzen überschritten haben. Er starb im Alter von 66 Jahren eines natürlichen Todes in Konya, wo sein Mausoleum ein Pilgerort ist.",
+  "shortDescriptionEs": "Jalāl al-Dīn Muḥammad Rūmī (1207–1273) fue un poeta persa, erudito islámico y místico sufí cuyas obras han trascendido fronteras nacionales y étnicas. Murió por causas naturales a los 66 años en Konya, donde su mausoleo sigue siendo un lugar de peregrinación.",
+  "shortDescriptionRu": "Джалал ад-Дин Мухаммад Руми (1207–1273) был персидским поэтом, исламским ученым и суфийским мистиком, чьи произведения преодолели национальные и этнические границы. Он умер естественной смертью в возрасте 66 лет в Конье, где его мавзолей остается местом паломничества.",
+  "sources": [
+    "https://www.britannica.com/biography/Rumi",
+    "https://en.wikipedia.org/wiki/Rumi",
+    "https://www.answers.com/books-and-literature/What-were-the-circumstances-surrounding-rumis-death"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39212",  "Name": "John Steinbeck",  "BirthDate": "1902-02-27T00:00:00Z",  "DeathDate": "1968-12-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Steinbeck%201939%20%28cropped%29.jpg",  "SiteLinksCnt": 144,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"15825":{"pageid":15825,"ns":0,"title":"John Steinbeck","extract":"John Ernst Steinbeck ( STYNE-bek; February 27, 1902 \u2013 December 20, 1968) was an American writer. He won the 1962 Nobel Prize in Literature \"for his realistic and imaginative writings, combining as they do sympathetic humor and keen social perception\". He has been called \"a giant of American letters.\"\nDuring his writing career, he authored 33 books, with one book coauthored alongside Edward Ricketts, including 16 novels, six non-fiction books, and two collections of short stories. He is widely known for the comic novels Tortilla Flat (1935) and Cannery Row (1945), the multigeneration epic East of Eden (1952), and the novellas The Red Pony (1933) and Of Mice and Men (1937). The Pulitzer Prize\u2013winning The Grapes of Wrath (1939) is considered Steinbeck's masterpiece and part of the American literary canon. By the 75th anniversary of its publishing date, it had sold 14 million copies.\nMuch of Steinbeck's work employs settings in his native central California, particularly in the Salinas Valley and the California Coast Ranges region. His works frequently explored the themes of fate and injustice, especially as applied to downtrodden or everyman protagonists."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39212")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q39212",
+  "isRealHuman": true,
+  "birthDate": "1902-02-27",
+  "deathDate": "1968-12-20",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple authoritative sources, including NobelPrize.org and Britannica, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "John Steinbeck was a Nobel Prize-winning American author known for his realistic and socially perceptive novels such as 'The Grapes of Wrath' and 'Of Mice and Men'. He died of heart failure at age 66 in New York City.",
+  "shortDescriptionFr": "John Steinbeck était un écrivain américain lauréat du prix Nobel, célèbre pour ses romans réalistes et socialement perspicaces tels que 'Les Raisins de la colère' et 'Des souris et des hommes'. Il est décédé d'une insuffisance cardiaque à l'âge de 66 ans à New York.",
+  "shortDescriptionDe": "John Steinbeck war ein amerikanischer Schriftsteller und Nobelpreisträger, bekannt für seine realistischen und sozialkritischen Romane wie 'Früchte des Zorns' und 'Von Mäusen und Menschen'. Er starb im Alter von 66 Jahren in New York an Herzversagen.",
+  "shortDescriptionEs": "John Steinbeck fue un escritor estadounidense galardonado con el Premio Nobel, conocido por sus novelas realistas y socialmente perceptivas como 'Las uvas de la ira' y 'De ratones y hombres'. Murió de insuficiencia cardíaca a los 66 años en Nueva York.",
+  "shortDescriptionRu": "Джон Стейнбек был американским писателем, лауреатом Нобелевской премии, известным своими реалистичными и социально проницательными романами, такими как 'Гроздья гнева' и 'О мышах и людях'. Он умер от сердечной недостаточности в возрасте 66 лет в Нью-Йорке.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/literature/1962/steinbeck/facts/",
+    "https://www.britannica.com/biography/John-Steinbeck",
+    "https://en.wikipedia.org/wiki/John_Steinbeck"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q50020",  "Name": "John Stuart Mill",  "BirthDate": "1806-05-20T00:00:00Z",  "DeathDate": "1873-05-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Stuart%20Mill%20by%20London%20Stereoscopic%20Company%2C%20c1870.jpg",  "SiteLinksCnt": 143,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"15626":{"pageid":15626,"ns":0,"title":"John Stuart Mill","extract":"John Stuart Mill (20 May 1806 \u2013 7 May 1873) was an English philosopher, political economist, politician and civil servant. One of the most influential thinkers in the history of liberalism, he contributed widely to social theory, political theory, and political economy. Dubbed \"the most influential English-speaking philosopher of the nineteenth century\" by the Stanford Encyclopedia of Philosophy, he conceived of liberty as justifying the freedom of the individual in opposition to unlimited state and social control. He advocated political and social reforms such as proportional representation, the emancipation of women, and the development of labour organisations and farm cooperatives. The Columbia Encyclopedia 5th ed. says of him \"at times Mill came close to socialism, a theory repugnant to his predecessors\". He was a proponent of utilitarianism, an ethical theory developed by his predecessor Jeremy Bentham. He contributed to the investigation of scientific methodology, though his knowledge of the topic was based on the writings of others, notably William Whewell, John Herschel, and Auguste Comte, and research carried out for Mill by Alexander Bain. He engaged in written debate with Whewell.\nA member of the Liberal Party and author of the early feminist work The Subjection of Women, Mill was also the second Member of Parliament to call for women's suffrage after Henry Hunt in 1832."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q50020")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q50020",
+  "isRealHuman": true,
+  "birthDate": "1806-05-20",
+  "deathDate": "1873-05-08",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for precise calculation of age at death.",
+  "shortDescriptionEn": "John Stuart Mill (1806–1873) was a prominent English philosopher and political economist, known for his advocacy of utilitarianism and individual liberty. He died at age 66 in Avignon, France, just days before his 67th birthday.",
+  "shortDescriptionFr": "John Stuart Mill (1806–1873) était un philosophe et économiste politique anglais, célèbre pour sa défense de l'utilitarisme et de la liberté individuelle. Il est décédé à 66 ans à Avignon, en France, peu avant son 67e anniversaire.",
+  "shortDescriptionDe": "John Stuart Mill (1806–1873) war ein englischer Philosoph und politischer Ökonom, bekannt für seine Befürwortung des Utilitarismus und der individuellen Freiheit. Er starb im Alter von 66 Jahren in Avignon, Frankreich, kurz vor seinem 67. Geburtstag.",
+  "shortDescriptionEs": "John Stuart Mill (1806–1873) fue un filósofo y economista político inglés, conocido por su defensa del utilitarismo y la libertad individual. Murió a los 66 años en Aviñón, Francia, pocos días antes de cumplir 67.",
+  "shortDescriptionRu": "Джон Стюарт Милль (1806–1873) — английский философ и политический экономист, известный своей защитой утилитаризма и индивидуальной свободы. Умер в возрасте 66 лет в Авиньоне, Франция, за несколько дней до своего 67-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Stuart_Mill",
+    "https://www.britannica.com/biography/John-Stuart-Mill",
+    "https://www.findagrave.com/memorial/8534586/john-stuart-mill"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8612",  "Name": "Andrew Johnson",  "BirthDate": "1808-12-29T00:00:00Z",  "DeathDate": "1875-07-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/President%20Andrew%20Johnson.jpg",  "SiteLinksCnt": 142,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"1624":{"pageid":1624,"ns":0,"title":"Andrew Johnson","extract":"Andrew Johnson (December 29, 1808 \u2013 July 31, 1875) was the 17th president of the United States, serving from 1865 to 1869. He assumed the presidency following the assassination of Abraham Lincoln, as he was vice president at that time. Johnson was a Southern Democrat who ran with Abraham Lincoln on the National Union Party ticket, coming to office as the Civil War concluded. He favored quick restoration of the seceded states to the Union without protection for the newly freed people who were formerly enslaved, as well as pardoning ex-Confederates. This led to conflict with the Republican-dominated Congress, culminating in his impeachment by the House of Representatives in 1868. He was acquitted in the Senate by one vote.\nJohnson was born into poverty and never attended school. He was apprenticed as a tailor and worked in several frontier towns before settling in Greeneville, Tennessee, serving as an alderman and mayor before being elected to the Tennessee House of Representatives in 1835. After briefly serving in the Tennessee Senate, Johnson was elected to the House of Representatives in 1843, where he served five two-year terms. He became governor of Tennessee for four years, and was elected by the legislature to the Senate in 1857. During his congressional service, he sought passage of the Homestead Bill which was enacted soon after he left his Senate seat in 1862. Southern slave states seceded to form the Confederate States of America, including Tennessee, but Johnson remained firmly with the Union. He was the only sitting senator from a Confederate state who did not promptly resign his seat upon learning of his state's secession. In 1862, Lincoln appointed him as Military Governor of Tennessee after most of it had been retaken. In 1864, Johnson was a logical choice as running mate for Lincoln, who wished to send a message of national unity in his re-election campaign, and became vice president after a victorious election in 1864.\nJohnson implemented his own form of Presidential Reconstruction, a series of proclamations directing the seceded states to hold conventions and elections to reform their civil governments. Southern states returned many of their old leaders and passed Black Codes to deprive the freedmen of many civil liberties, but Congressional Republicans refused to seat legislators from those states and advanced legislation to overrule the Southern actions. Johnson vetoed their bills, and Congressional Republicans overrode him, setting a pattern for the remainder of his presidency. Johnson opposed the Fourteenth Amendment, which gave citizenship to former slaves. In 1866, he went on an unprecedented national tour promoting his executive policies, seeking to break Republican opposition. As the conflict grew between the branches of government, Congress passed the Tenure of Office Act, restricting Johnson's ability to fire Cabinet officials. He persisted in trying to dismiss Secretary of War Edwin Stanton but ended up being impeached by the House of Representatives and narrowly avoided conviction in the Senate. He did not win the 1868 Democratic presidential nomination and left office the following year.\nJohnson returned to Tennessee after his presidency and gained some vindication when he was elected to the Senate in 1875, making him the only president to afterwards serve in the Senate. He died five months into his term. Johnson's strong opposition to federally guaranteed rights for black Americans is widely criticized. Historians have consistently ranked him one of the worst presidents in American history.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8612")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8612",
+  "isRealHuman": true,
+  "birthDate": "1808-12-29",
+  "deathDate": "1875-07-31",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for precise calculation of age at death.",
+  "shortDescriptionEn": "Andrew Johnson (1808–1875) was the 17th President of the United States, ascending to the presidency after Abraham Lincoln's assassination. His lenient Reconstruction policies led to conflict with Congress and his impeachment, though he was acquitted. He died of a stroke at age 66 shortly after returning to the U.S. Senate.",
+  "shortDescriptionFr": "Andrew Johnson (1808–1875) fut le 17e président des États-Unis, succédant à Abraham Lincoln après son assassinat. Ses politiques de reconstruction indulgentes ont provoqué des conflits avec le Congrès et son impeachment, bien qu'il ait été acquitté. Il est mort d'une attaque cérébrale à l'âge de 66 ans peu après son retour au Sénat.",
+  "shortDescriptionDe": "Andrew Johnson (1808–1875) war der 17. Präsident der Vereinigten Staaten und trat das Amt nach der Ermordung Abraham Lincolns an. Seine nachsichtige Rekonstruktionspolitik führte zu Konflikten mit dem Kongress und seiner Amtsenthebung, wobei er freigesprochen wurde. Er starb im Alter von 66 Jahren an einem Schlaganfall kurz nach seiner Rückkehr in den US-Senat.",
+  "shortDescriptionEs": "Andrew Johnson (1808–1875) fue el 17º presidente de los Estados Unidos, asumiendo el cargo tras el asesinato de Abraham Lincoln. Sus políticas de reconstrucción indulgentes generaron conflictos con el Congreso y su juicio político, aunque fue absuelto. Murió de un derrame cerebral a los 66 años poco después de regresar al Senado.",
+  "shortDescriptionRu": "Эндрю Джонсон (1808–1875) был 17-м президентом США, заняв пост после убийства Авраама Линкольна. Его мягкая политика Реконструкции вызвала конфликты с Конгрессом и привела к импичменту, хотя он был оправдан. Он умер от инсульта в возрасте 66 лет вскоре после возвращения в Сенат США.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Andrew_Johnson",
+    "https://www.britannica.com/biography/Andrew-Johnson",
+    "https://www.politico.com/story/2009/07/andrew-johnson-dies-july-31-1875-025623",
+    "https://www.nps.gov/people/andrew-johnson.htm"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41683",  "Name": "Thucydides",  "BirthDate": "-0460-01-01T00:00:00Z",  "DeathDate": "-0394-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thucydides%20pushkin01.jpg",  "SiteLinksCnt": 133,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"30864":{"pageid":30864,"ns":0,"title":"Thucydides","extract":"Thucydides ( thew-SID-ih-deez; Ancient Greek: \u0398\u03bf\u03c5\u03ba\u03c5\u03b4\u03af\u03b4\u03b7\u03c2, romanized: Thoukud\u00edd\u0113s [t\u02b0u\u02d0kyd\u01d0d\u025b\u02d0s]; c.\u2009460 \u2013 c.\u2009400 BC) was an Athenian historian and general. His History of the Peloponnesian War recounts the fifth-century BC war between Sparta and Athens until the year 411 BC. Thucydides has been dubbed the father of \"scientific history\" by those who accept his claims to have applied strict standards of  impartiality and evidence-gathering and analysis of cause and effect, without reference to intervention by the gods, as outlined in his introduction to his work.\nThucydides has been called the father of the school of political realism, which views the political behavior of individuals and the subsequent outcomes of relations between states as ultimately mediated by, and constructed upon, fear and self-interest. His text is still studied at universities and military colleges worldwide. The Melian dialogue is regarded as a seminal text of international relations theory, while his version of Pericles's Funeral Oration is widely studied by political theorists, historians, and students of the classics. More generally, Thucydides developed an understanding of human nature to explain behavior in such crises as plagues, massacres, and wars."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41683")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41683",
+  "isRealHuman": true,
+  "birthDate": "-0460-01-01",
+  "deathDate": "-0400-01-01",
+  "ageAtDeath": 60,
+  "confidence": 85,
+  "confidenceExplained": "The birth and death dates are approximate, based on historical estimates. While exact dates are unknown, most scholarly sources agree on a birth around 460 BC and death around 400 BC, leading to an estimated age at death of approximately 60 years.",
+  "shortDescriptionEn": "Thucydides was an Athenian historian and general, renowned for his work 'History of the Peloponnesian War' detailing the conflict between Athens and Sparta. He died around 400 BC, possibly due to natural causes, though exact circumstances remain unknown.",
+  "shortDescriptionFr": "Thucydide était un historien et général athénien, célèbre pour son œuvre 'Histoire de la guerre du Péloponnèse' relatant le conflit entre Athènes et Sparte. Il est décédé vers 400 av. J.-C., probablement de causes naturelles, bien que les circonstances exactes restent inconnues.",
+  "shortDescriptionDe": "Thukydides war ein athenischer Historiker und General, bekannt für sein Werk 'Geschichte des Peloponnesischen Krieges', das den Konflikt zwischen Athen und Sparta beschreibt. Er starb um 400 v. Chr., möglicherweise eines natürlichen Todes, wobei die genauen Umstände unbekannt sind.",
+  "shortDescriptionEs": "Tucídides fue un historiador y general ateniense, reconocido por su obra 'Historia de la guerra del Peloponeso' que narra el conflicto entre Atenas y Esparta. Murió alrededor del 400 a.C., posiblemente por causas naturales, aunque las circunstancias exactas se desconocen.",
+  "shortDescriptionRu": "Фукидид был афинским историком и генералом, известным своим трудом 'История Пелопоннесской войны', описывающим конфликт между Афинами и Спартой. Он умер около 400 года до н.э., возможно, по естественным причинам, хотя точные обстоятельства неизвестны.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thucydides",
+    "https://www.britannica.com/biography/Thucydides-Greek-historian",
+    "https://www.history.com/articles/thucydides",
+    "https://www.ancientgreece.com/s/People/Thucydides/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82925",  "Name": "Joseph Conrad",  "BirthDate": "1857-12-03T00:00:00Z",  "DeathDate": "1924-08-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Conrad-remastered%20to%20black%20and%20white.png",  "SiteLinksCnt": 125,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"15823":{"pageid":15823,"ns":0,"title":"Joseph Conrad","extract":"Joseph Conrad (born J\u00f3zef Teodor Konrad Korzeniowski, Polish: [\u02c8juz\u025bf t\u025b\u02c8\u0254d\u0254r \u02c8k\u0254nrat k\u0254\u0290\u025b\u02c8\u0272\u0254fsk\u02b2i] ; 3 December 1857 \u2013 3 August 1924) was a Polish-British novelist and story writer. He is regarded as one of the greatest writers in the English language and \u2013 though he did not speak English fluently until his twenties (always with a strong foreign accent) \u2013 became a master prose stylist who brought a non-English sensibility into English literature. \nHe wrote novels and stories, many in nautical settings, that depicted crises of human individuality in the midst of what he saw as an indifferent, inscrutable, and amoral world.\nConrad is considered a literary impressionist by some and an early modernist by others, though his works also contain elements of 19th-century realism. His narrative style and anti-heroic characters, as in Lord Jim, have influenced numerous authors. Many dramatic films have been adapted from and inspired by his works. \nNumerous writers and critics have commented that his fictional works, written largely in the first two decades of the 20th century, seem to have anticipated later world events.\nWriting near the peak of the British Empire, Conrad drew on the national experiences of his native Poland\u2014during nearly all his life, parcelled out among three occupying empires\u2014and on his own experiences in the French and British merchant navies, to create short stories and novels that reflect aspects of a European-dominated world\u2014including imperialism and colonialism\u2014and that profoundly explore the human psyche."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82925")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82925",
+  "isRealHuman": true,
+  "birthDate": "1857-12-03",
+  "deathDate": "1924-08-03",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, ensuring a high confidence level in the calculated age at death.",
+  "shortDescriptionEn": "Joseph Conrad (born Józef Teodor Konrad Korzeniowski) was a Polish-British novelist and short-story writer, acclaimed for works like 'Heart of Darkness' and 'Lord Jim'. He died of a heart attack on August 3, 1924, in Bishopsbourne, Kent, England, at the age of 66.",
+  "shortDescriptionFr": "Joseph Conrad (né Józef Teodor Konrad Korzeniowski) était un romancier et nouvelliste polono-britannique, célèbre pour des œuvres telles que 'Au cœur des ténèbres' et 'Lord Jim'. Il est décédé d'une crise cardiaque le 3 août 1924 à Bishopsbourne, Kent, Angleterre, à l'âge de 66 ans.",
+  "shortDescriptionDe": "Joseph Conrad (geboren als Józef Teodor Konrad Korzeniowski) war ein polnisch-britischer Romanautor und Kurzgeschichtenschreiber, bekannt für Werke wie 'Herz der Finsternis' und 'Lord Jim'. Er starb am 3. August 1924 in Bishopsbourne, Kent, England, im Alter von 66 Jahren an einem Herzinfarkt.",
+  "shortDescriptionEs": "Joseph Conrad (nacido como Józef Teodor Konrad Korzeniowski) fue un novelista y cuentista polaco-británico, reconocido por obras como 'El corazón de las tinieblas' y 'Lord Jim'. Falleció de un ataque al corazón el 3 de agosto de 1924 en Bishopsbourne, Kent, Inglaterra, a los 66 años.",
+  "shortDescriptionRu": "Джозеф Конрад (при рождении Юзеф Теодор Конрад Корженёвский) был польско-британским романистом и новеллистом, известным такими произведениями, как 'Сердце тьмы' и 'Лорд Джим'. Он умер от сердечного приступа 3 августа 1924 года в Бишопсборне, Кент, Англия, в возрасте 66 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Joseph-Conrad",
+    "https://en.wikipedia.org/wiki/Joseph_Conrad",
+    "https://www.notablebiographies.com/Co-Da/Conrad-Joseph.html"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q488006",  "Name": "Anatoliy Solovyanenko",  "BirthDate": "1932-09-25T00:00:00Z",  "DeathDate": "1999-07-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anatoliy%20Solovianenko%20-%20Soviet%20Life%2C%20October%201984.jpg",  "SiteLinksCnt": 123,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"33784617":{"pageid":33784617,"ns":0,"title":"Anatoliy Solovianenko","extract":"Anatoliy Borysovych Solovianenko (Ukrainian: \u0410\u043d\u0430\u0442\u043e\u043b\u0456\u0439 \u0411\u043e\u0440\u0438\u0441\u043e\u0432\u0438\u0447 \u0421\u043e\u043b\u043e\u0432'\u044f\u043d\u0435\u043d\u043a\u043e; Russian: \u0410\u043d\u0430\u0442\u043e\u043b\u0438\u0439 \u0411\u043e\u0440\u0438\u0441\u043e\u0432\u0438\u0447 \u0421\u043e\u043b\u043e\u0432\u044c\u044f\u0301\u043d\u0435\u043d\u043a\u043e; 25 September 1932 \u2013 29 July 1999) was a Ukrainian operatic tenor, People's Artist of the USSR (1975), People's Artist of Ukraine, and Shevchenko National Prize winner.\nHe was born into a mining family in Donetsk and graduated from Donetsk Polytechnic Institute in 1954. He also studied singing with Alexander Korobeichenko from 1950. Solovianenko began his career in Donetsk, where there is now a monument in his memory. He made twelve performances at the Metropolitan Opera in Kyiv, then graduated from Kyiv Conservatory in 1978. For 30 years, he was soloist at the Taras Shevchenko National Opera and Ballet Theatre in Kyiv, and performed at Expo 67 in Montreal. During the 1977\u201378 season, Solovianenko performed as a soloist at the New York Metropolitan Opera. He also performed as soloist for the Alexandrov Ensemble during its UK tour 1988, singing \"Kalinka\" and other songs. He recorded 18 LPs of arias, romances and songs.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q488006")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q488006",
+  "isRealHuman": true,
+  "birthDate": "1932-09-25",
+  "deathDate": "1999-07-29",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Anatoliy Solovianenko was a celebrated Ukrainian operatic tenor, honored as People's Artist of the USSR and Ukraine. He passed away suddenly at 66 due to a heart attack.",
+  "shortDescriptionFr": "Anatoliy Solovianenko était un ténor d'opéra ukrainien renommé, honoré comme Artiste du peuple de l'URSS et d'Ukraine. Il est décédé subitement à 66 ans d'une crise cardiaque.",
+  "shortDescriptionDe": "Anatoliy Solovianenko war ein gefeierter ukrainischer Operntenor, ausgezeichnet als Volkskünstler der UdSSR und der Ukraine. Er starb plötzlich im Alter von 66 Jahren an einem Herzinfarkt.",
+  "shortDescriptionEs": "Anatoliy Solovianenko fue un célebre tenor de ópera ucraniano, reconocido como Artista del Pueblo de la URSS y de Ucrania. Falleció repentinamente a los 66 años debido a un ataque al corazón.",
+  "shortDescriptionRu": "Анатолий Соловьяненко был выдающимся украинским оперным тенором, удостоенным звания Народного артиста СССР и Украины. Он внезапно скончался в возрасте 66 лет от сердечного приступа.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anatoliy_Solovianenko",
+    "https://www.wikidata.org/wiki/Q488006",
+    "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CS%5CO%5CSolovianenkoAnatolii"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37193",  "Name": "Robert Koch",  "BirthDate": "1843-12-11T00:00:00Z",  "DeathDate": "1910-05-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Koch.jpg",  "SiteLinksCnt": 120,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"13722":{"pageid":13722,"ns":0,"title":"Robert Koch","extract":"Heinrich Hermann Robert Koch ( KOKH; German: [\u02c8\u0281o\u02d0b\u025b\u0281t \u02c8k\u0254x] ; 11 December 1843 \u2013 27 May 1910) was a German physician and microbiologist. As the discoverer of the specific causative agents of deadly infectious diseases including tuberculosis, cholera and anthrax, he is regarded as one of the main founders of modern bacteriology. As such he is popularly nicknamed the father of microbiology (with Louis Pasteur), and as the father of medical bacteriology. His discovery of the anthrax bacterium (Bacillus anthracis) in 1876 is considered as the birth of modern bacteriology. Koch used his discoveries to establish that germs \"could cause a specific disease\" and directly provided proofs for the germ theory of diseases, therefore creating the scientific basis of public health, saving millions of lives. For his life's work Koch is seen as one of the founders of modern medicine.\nWhile working as a private physician, Koch developed many innovative techniques in microbiology. He was the first to use the oil immersion lens, condenser, and microphotography in microscopy. His invention of the bacterial culture method using agar and glass plates (later developed as the Petri dish by his assistant Julius Richard Petri) made him the first to grow bacteria in the laboratory. In appreciation of his work, he was appointed to government advisor at the Imperial Health Office in 1880, promoted to a senior executive position (Geheimer Regierungsrat) in 1882, Director of Hygienic Institute and Chair (Professor of hygiene) of the Faculty of Medicine at Berlin University in 1885, and the Royal Prussian Institute for Infectious Diseases (later renamed Robert Koch Institute after his death) in 1891.\nThe methods Koch used in bacteriology led to the establishment of a medical concept known as Koch's postulates, four generalized medical principles to ascertain the relationship of pathogens with specific diseases. The concept is still in use in most situations and influences subsequent epidemiological principles such as the Bradford Hill criteria. A major controversy followed when Koch discovered tuberculin as a medication for tuberculosis which was proven to be ineffective, but developed for diagnosis of tuberculosis after his death. For his research on tuberculosis, he received the Nobel Prize in Physiology or Medicine in 1905. The day he announced the discovery of the tuberculosis bacterium, 24 March 1882, has been observed by the World Health Organization as \"World Tuberculosis Day\" every year since 1982."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37193")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q37193",
+  "isRealHuman": true,
+  "birthDate": "1843-12-11",
+  "deathDate": "1910-05-27",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an accurate calculation of age at death.",
+  "shortDescriptionEn": "Robert Koch (1843–1910) was a German physician and pioneering microbiologist who discovered the bacteria responsible for anthrax, tuberculosis, and cholera. He formulated Koch's postulates, laying the foundation for modern bacteriology. He died at age 66 from a heart attack in Baden-Baden, Germany.",
+  "shortDescriptionFr": "Robert Koch (1843–1910) était un médecin et microbiologiste allemand pionnier qui a découvert les bactéries responsables de l'anthrax, de la tuberculose et du choléra. Il a formulé les postulats de Koch, établissant les bases de la bactériologie moderne. Il est décédé à 66 ans d'une crise cardiaque à Baden-Baden, en Allemagne.",
+  "shortDescriptionDe": "Robert Koch (1843–1910) war ein deutscher Arzt und Pionier der Mikrobiologie, der die Bakterien entdeckte, die für Milzbrand, Tuberkulose und Cholera verantwortlich sind. Er formulierte die Kochschen Postulate und legte damit den Grundstein für die moderne Bakteriologie. Er starb im Alter von 66 Jahren an einem Herzinfarkt in Baden-Baden, Deutschland.",
+  "shortDescriptionEs": "Robert Koch (1843–1910) fue un médico y microbiólogo alemán pionero que descubrió las bacterias responsables del ántrax, la tuberculosis y el cólera. Formuló los postulados de Koch, sentando las bases de la bacteriología moderna. Murió a los 66 años de un ataque al corazón en Baden-Baden, Alemania.",
+  "shortDescriptionRu": "Роберт Кох (1843–1910) был немецким врачом и пионером микробиологии, открывшим бактерии, вызывающие сибирскую язву, туберкулез и холеру. Он сформулировал постулаты Коха, заложив основы современной бактериологии. Умер в возрасте 66 лет от сердечного приступа в Баден-Бадене, Германия.",
+  "sources": [
+    "https://www.britannica.com/biography/Robert-Koch",
+    "https://en.wikipedia.org/wiki/Robert_Koch",
+    "https://www.nobelprize.org/prizes/medicine/1905/koch/biographical/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39599",  "Name": "Christiaan Huygens",  "BirthDate": "1629-04-14T00:00:00Z",  "DeathDate": "1695-07-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Christiaan-huygens4.jpg",  "SiteLinksCnt": 118,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"42127":{"pageid":42127,"ns":0,"title":"Christiaan Huygens","extract":"Christiaan Huygens, Lord of Zeelhem,  ( HY-g\u0259nz, US also  HOY-g\u0259nz; Dutch: [\u02c8kr\u026astija\u02d0n \u02c8\u0266\u0153y\u0263\u0259(n)s] ; also spelled Huyghens; Latin: Hugenius; 14 April 1629 \u2013 8 July 1695) was a Dutch mathematician, physicist, engineer, astronomer, and inventor who is regarded as a key figure in the Scientific Revolution. In physics, Huygens made seminal contributions to optics and mechanics, while as an astronomer he studied the rings of Saturn and discovered its largest moon, Titan. As an engineer and inventor, he improved the design of telescopes and invented the pendulum clock, the most accurate timekeeper for almost 300 years. A talented mathematician and physicist, his works contain the first idealization of a physical problem by a set of mathematical parameters, and the first mathematical and mechanistic explanation of an unobservable physical phenomenon.\nHuygens first identified the correct laws of elastic collision in his work De Motu Corporum ex Percussione, completed in 1656 but published posthumously in 1703. In 1659, Huygens derived geometrically the formula in classical mechanics for the centrifugal force in his work De vi Centrifuga, a decade before Isaac Newton. In optics, he is best known for his wave theory of light, which he described in his Trait\u00e9 de la Lumi\u00e8re (1690). His theory of light was initially rejected in favour of Newton's corpuscular theory of light, until Augustin-Jean Fresnel adapted Huygens's principle to give a complete explanation of the rectilinear propagation and diffraction effects of light in 1821. Today this principle is known as the Huygens\u2013Fresnel principle.\nHuygens invented the pendulum clock in 1657, which he patented the same year. His horological research resulted in an extensive analysis of the pendulum in Horologium Oscillatorium (1673), regarded as one of the most important 17th century works on mechanics. While it contains descriptions of clock designs, most of the book is an analysis of pendular motion and a theory of curves. In 1655, Huygens began grinding lenses with his brother Constantijn to build refracting telescopes. He discovered Saturn's biggest moon, Titan, and was the first to explain Saturn's strange appearance as due to \"a thin, flat ring, nowhere touching, and inclined to the ecliptic.\" In 1662, he developed what is now called the Huygenian eyepiece, a telescope with two lenses to diminish the amount of dispersion.\nAs a mathematician, Huygens developed the theory of evolutes and wrote on games of chance and the problem of points in Van Rekeningh in Spelen van Gluck, which Frans van Schooten translated and published as De Ratiociniis in Ludo Aleae (1657). The use of expected values by Huygens and others would later inspire Jacob Bernoulli's work on probability theory."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39599")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q39599",
+  "isRealHuman": true,
+  "birthDate": "1629-04-14",
+  "deathDate": "1695-07-08",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented historical facts, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Christiaan Huygens (1629–1695) was a Dutch mathematician, physicist, astronomer, and inventor. He made significant contributions to the scientific revolution, including the invention of the pendulum clock and the wave theory of light. He died at age 66 after years of illness and depression.",
+  "shortDescriptionFr": "Christiaan Huygens (1629–1695) était un mathématicien, physicien, astronome et inventeur néerlandais. Il a apporté des contributions majeures à la révolution scientifique, notamment l'invention de l'horloge à pendule et la théorie ondulatoire de la lumière. Il est décédé à l'âge de 66 ans après des années de maladie et de dépression.",
+  "shortDescriptionDe": "Christiaan Huygens (1629–1695) war ein niederländischer Mathematiker, Physiker, Astronom und Erfinder. Er leistete bedeutende Beiträge zur wissenschaftlichen Revolution, darunter die Erfindung der Pendeluhr und die Wellentheorie des Lichts. Er starb im Alter von 66 Jahren nach Jahren der Krankheit und Depression.",
+  "shortDescriptionEs": "Christiaan Huygens (1629–1695) fue un matemático, físico, astrónomo e inventor neerlandés. Realizó importantes contribuciones a la revolución científica, incluyendo la invención del reloj de péndulo y la teoría ondulatoria de la luz. Falleció a los 66 años tras años de enfermedad y depresión.",
+  "shortDescriptionRu": "Христиа́н Гю́йгенс (1629–1695) — нидерландский математик, физик, астроном и изобретатель. Он внёс значительный вклад в научную революцию, включая изобретение маятниковых часов и волновую теорию света. Умер в возрасте 66 лет после многих лет болезни и депрессии.",
+  "sources": [
+    "https://www.britannica.com/biography/Christiaan-Huygens",
+    "https://en.wikipedia.org/wiki/Christiaan_Huygens",
+    "https://www.thefamouspeople.com/profiles/christiaan-huygens-4703.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q127398",  "Name": "Moshe ben Maimon",  "BirthDate": "1138-04-06T00:00:00Z",  "DeathDate": "1204-12-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maim%C3%B2nides.jpg",  "SiteLinksCnt": 111,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"19445":{"pageid":19445,"ns":0,"title":"Maimonides","extract":"Moses ben Maimon (1138\u20131204), commonly known as Maimonides (, my-MON-ih-deez) and also referred to by the Hebrew acronym Rambam (Hebrew: \u05e8\u05de\u05d1\u05f4\u05dd), was a Sephardic rabbi and philosopher who became one of the most prolific and influential Torah scholars of the Middle Ages. In his time, he was also a preeminent astronomer and physician, serving as the personal physician of Saladin. He was born on Passover eve 1138 or 1135, and lived in C\u00f3rdoba in al-Andalus (now in Spain) within the Almoravid Empire until his family was expelled for refusing to convert to Islam. Later, he lived in Morocco and Egypt and worked as a rabbi, physician and philosopher.\nDuring his lifetime, most Jews greeted Maimonides' writings on Jewish law and ethics with acclaim and gratitude, even as far away as Iraq and Yemen. Yet, while Maimonides rose to become the revered head of the Jewish community in Egypt, his writings also had vociferous critics, particularly in Spain. He died in Fustat, Egypt, and, according to Jewish tradition, was buried in Tiberias. His tomb in Tiberias is a popular pilgrimage and tourist site.\nHe was posthumously acknowledged as one of the foremost rabbinic decisors and philosophers in Jewish history, and his copious work comprises a cornerstone of Jewish scholarship. His fourteen-volume Mishneh Torah still carries significant canonical authority as a codification of halakha.\nAside from being revered by Jewish historians, Maimonides also figures very prominently in the history of Islamic and Arab sciences. Influenced by Aristotle, Al-Farabi, Ibn Sina, and his contemporary Ibn Rushd, he became a prominent philosopher and polymath in both the Jewish and Islamic worlds."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q127398")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q127398",
+  "isRealHuman": true,
+  "birthDate": "1138-04-06",
+  "deathDate": "1204-12-12",
+  "ageAtDeath": 66,
+  "confidence": 95,
+  "confidenceExplained": "While there is some debate regarding his exact birth date, the majority of sources support April 6, 1138. The death date of December 12, 1204, is well-documented. Therefore, the calculated age at death is 66 years.",
+  "shortDescriptionEn": "Moses ben Maimon, known as Maimonides or Rambam, was a 12th-century Sephardic Jewish philosopher, Torah scholar, and physician. He died at age 66 in Fustat, Egypt, and was later reinterred in Tiberias, Israel.",
+  "shortDescriptionFr": "Moshe ben Maïmon, connu sous le nom de Maïmonide ou Rambam, était un philosophe juif sépharade, érudit de la Torah et médecin du XIIe siècle. Il est décédé à l'âge de 66 ans à Fostat, en Égypte, et a ensuite été réinhumé à Tibériade, en Israël.",
+  "shortDescriptionDe": "Mosche ben Maimon, bekannt als Maimonides oder Rambam, war ein sephardischer jüdischer Philosoph, Tora-Gelehrter und Arzt des 12. Jahrhunderts. Er starb im Alter von 66 Jahren in Fustat, Ägypten, und wurde später in Tiberias, Israel, beigesetzt.",
+  "shortDescriptionEs": "Moisés ben Maimón, conocido como Maimónides o Rambam, fue un filósofo judío sefardí, erudito de la Torá y médico del siglo XII. Murió a los 66 años en Fustat, Egipto, y posteriormente fue enterrado en Tiberíades, Israel.",
+  "shortDescriptionRu": "Моше бен Маймон, известный как Маймонид или Рамбам, был сефардским еврейским философом, ученым Торы и врачом XII века. Он умер в возрасте 66 лет в Фустате, Египет, и позже был перезахоронен в Тверии, Израиль.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maimonides",
+    "https://www.chabad.org/library/article_cdo/aid/111832/jewish/Rambam-Maimonides.htm",
+    "https://jewishvirtuallibrary.org/maimonides-moses",
+    "https://traditiononline.org/20-tevet-maimonides-819th-yahrzeit/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47160",  "Name": "Plautus",  "BirthDate": "-0249-01-01T00:00:00Z",  "DeathDate": "-0183-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Plautus%2018th%20century%20engraving%20%28cropped%29.jpg",  "SiteLinksCnt": 103,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"24171":{"pageid":24171,"ns":0,"title":"Plautus","extract":"Titus Maccius Plautus ( PLAW-t\u0259s; c. 254 \u2013 184 BC) was a Roman playwright of the Old Latin period. His comedies are the earliest Latin literary works to have survived in their entirety. He wrote Palliata comoedia, the genre devised by Livius Andronicus, the innovator of Latin literature. The word Plautine  (PLAW-tyne) refers to both Plautus's own works and works similar to or influenced by his."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47160")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47160",
+  "isRealHuman": true,
+  "birthDate": "-0254-01-01",
+  "deathDate": "-0184-01-01",
+  "ageAtDeath": 70,
+  "confidence": 85,
+  "confidenceExplained": "The birth and death years are based on historical estimates, with the birth year around 254 BC and death in 184 BC. This suggests an age at death of approximately 70 years. However, due to the lack of precise records, there is some uncertainty.",
+  "shortDescriptionEn": "Titus Maccius Plautus was a Roman playwright born around 254 BC in Sarsina, Umbria. He is renowned for his comedies, which are among the earliest Latin literary works to have survived in their entirety. Plautus's works were heavily influenced by Greek New Comedy, particularly the plays of Menander. He adapted these Greek models to suit Roman audiences, infusing them with local humor and cultural references. His plays were characterized by lively dialogue, exaggerated characters, and sharp wit, setting the foundation for Latin comedic tradition and influencing later European theater. Plautus died in 184 BC, likely in Rome, at approximately 70 years of age.",
+  "shortDescriptionFr": "Titus Maccius Plautus était un dramaturge romain né vers 254 av. J.-C. à Sarsina, en Ombrie. Il est célèbre pour ses comédies, parmi les premières œuvres littéraires latines conservées intégralement. Influencé par la Nouvelle Comédie grecque, notamment les pièces de Ménandre, Plaute a adapté ces modèles pour le public romain, y intégrant de l'humour local et des références culturelles. Ses pièces, caractérisées par des dialogues vifs et des personnages exagérés, ont jeté les bases de la tradition comique latine et influencé le théâtre européen ultérieur. Plaute est décédé en 184 av. J.-C., probablement à Rome, à environ 70 ans.",
+  "shortDescriptionDe": "Titus Maccius Plautus war ein römischer Dramatiker, geboren um 254 v. Chr. in Sarsina, Umbrien. Er ist bekannt für seine Komödien, die zu den frühesten vollständig erhaltenen Werken der lateinischen Literatur gehören. Plautus wurde stark von der griechischen Neuen Komödie, insbesondere von Menander, beeinflusst. Er passte diese griechischen Modelle für das römische Publikum an und integrierte lokalen Humor und kulturelle Bezüge. Seine Stücke, geprägt von lebendigen Dialogen und übertriebenen Charakteren, legten den Grundstein für die lateinische Komödientradition und beeinflussten das europäische Theater nachhaltig. Plautus starb 184 v. Chr., wahrscheinlich in Rom, im Alter von etwa 70 Jahren.",
+  "shortDescriptionEs": "Tito Macio Plauto fue un dramaturgo romano nacido alrededor del 254 a.C. en Sarsina, Umbría. Es conocido por sus comedias, que se encuentran entre las primeras obras literarias latinas conservadas en su totalidad. Plauto fue fuertemente influenciado por la Nueva Comedia griega, especialmente por las obras de Menandro. Adaptó estos modelos griegos para el público romano, incorporando humor local y referencias culturales. Sus obras, caracterizadas por diálogos animados y personajes exagerados, sentaron las bases de la tradición cómica latina e influyeron en el teatro europeo posterior. Plauto murió en 184 a.C., probablemente en Roma, a los aproximadamente 70 años de edad.",
+  "shortDescriptionRu": "Тит Макций Плавт был римским драматургом, родившимся около 254 года до н.э. в Сарсине, Умбрия. Он известен своими комедиями, которые являются одними из самых ранних полностью сохранившихся произведений латинской литературы. Плавт был сильно вдохновлен греческой Новой комедией, особенно пьесами Менандра. Он адаптировал эти греческие модели для римской аудитории, добавляя местный юмор и культурные отсылки. Его пьесы, характеризующиеся живыми диалогами и преувеличенными персонажами, заложили основу латинской комедийной традиции и повлияли на последующий европейский театр. Плавт умер в 184 году до н.э., вероятно, в Риме, в возрасте около 70 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Plautus",
+    "https://www.britannica.com/biography/Plautus",
+    "https://www.worldhistory.org/plautus/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46248",  "Name": "Terry Pratchett",  "BirthDate": "1948-04-28T00:00:00Z",  "DeathDate": "2015-03-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/10.12.12TerryPratchettByLuigiNovi1.jpg",  "SiteLinksCnt": 102,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"30029":{"pageid":30029,"ns":0,"title":"Terry Pratchett","extract":"Sir Terence David John Pratchett  (28 April 1948 \u2013 12 March 2015) was an English author, humorist, and satirist, best known for the Discworld series of 41 comic fantasy novels published between 1983 and 2015, and for the apocalyptic comedy novel Good Omens (1990), which he co-wrote with Neil Gaiman.\nPratchett's first novel, The Carpet People, was published in 1971. The first Discworld novel, The Colour of Magic, was published in 1983, after which Pratchett wrote an average of two books a year. The final Discworld novel, The Shepherd's Crown, was published in August 2015, five months after his death.\nWith more than 100 million books sold worldwide in 43 languages, Pratchett was the UK's best-selling author of the 1990s. He was appointed an Officer of the Order of the British Empire (OBE) in 1998 and was knighted for services to literature in the 2009 New Year Honours. In 2001, he won the annual Carnegie Medal for The Amazing Maurice and His Educated Rodents, the first Discworld book marketed for children. He received the World Fantasy Award for Life Achievement in 2010.\nIn December 2007 Pratchett announced that he had been diagnosed with early-onset Alzheimer's disease. He later made a substantial public donation to the Alzheimer's Research Trust (now Alzheimer's Research UK, ARUK), filmed three television programmes chronicling his experiences with the condition for the BBC, and became a patron of ARUK. Pratchett died on 12 March 2015, at the age of 66."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46248")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q46248",
+  "isRealHuman": true,
+  "birthDate": "1948-04-28",
+  "deathDate": "2015-03-12",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Sir Terry Pratchett (1948–2015) was an English author renowned for his Discworld series of 41 comic fantasy novels. Diagnosed with early-onset Alzheimer's disease in 2007, he became an advocate for Alzheimer's research until his death at 66.",
+  "shortDescriptionFr": "Sir Terry Pratchett (1948–2015) était un auteur anglais célèbre pour sa série de romans fantastiques humoristiques Discworld. Diagnostiqué avec la maladie d'Alzheimer précoce en 2007, il est décédé à l'âge de 66 ans.",
+  "shortDescriptionDe": "Sir Terry Pratchett (1948–2015) war ein englischer Autor, bekannt für seine humorvolle Fantasy-Serie Scheibenwelt. 2007 wurde bei ihm eine frühe Form von Alzheimer diagnostiziert; er starb im Alter von 66 Jahren.",
+  "shortDescriptionEs": "Sir Terry Pratchett (1948–2015) fue un autor inglés reconocido por su serie de novelas de fantasía cómica Mundodisco. Diagnosticado con Alzheimer de inicio temprano en 2007, falleció a los 66 años.",
+  "shortDescriptionRu": "Сэр Терри Пратчетт (1948–2015) — английский писатель, известный своей серией юмористических фэнтези-романов «Плоский мир». В 2007 году у него была диагностирована ранняя форма болезни Альцгеймера; он скончался в возрасте 66 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Terry-Pratchett",
+    "https://en.wikipedia.org/wiki/Terry_Pratchett",
+    "https://www.abc.net.au/news/2015-03-13/terry-pratchett-author-of-fantasy-discworld-novels-dies-at-66/6312048"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q187336",  "Name": "Giuseppe Mazzini",  "BirthDate": "1805-06-22T00:00:00Z",  "DeathDate": "1872-03-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Giuseppe%20Mazzini.jpg",  "SiteLinksCnt": 96,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"36948":{"pageid":36948,"ns":0,"title":"Giuseppe Mazzini","extract":"Giuseppe Mazzini (UK: , US: ; Italian: [d\u0292u\u02c8z\u025bppe mat\u02c8tsi\u02d0ni]; 22 June 1805  \u2013 10 March 1872) was an Italian politician, journalist, and activist for the unification of Italy (Risorgimento) and spearhead of the Italian revolutionary movement. His efforts helped bring about the independent and unified Italy in place of the several separate states, many dominated by foreign powers, that existed until the 19th century. An Italian nationalist in the historical radical tradition and a proponent of a republicanism of social-democratic inspiration, Mazzini helped define the modern European movement for popular democracy in a republican state.\nMazzini's thoughts had a very considerable influence on the Italian and European republican movements, in the Constitution of Italy, about Europeanism and more nuanced on many politicians of a later period, among them American president Woodrow Wilson, British prime minister David Lloyd George, Mahatma Gandhi, Indian prime minister Jawaharlal Nehru, and Indian independence activist Vinayak Damodar Savarkar."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q187336")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q187336",
+  "isRealHuman": true,
+  "birthDate": "1805-06-22",
+  "deathDate": "1872-03-10",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Giuseppe Mazzini was an Italian politician, journalist, and activist who played a significant role in the unification of Italy. He founded the revolutionary society Young Italy and was a proponent of republicanism. Mazzini died of pleurisy on 10 March 1872 in Pisa, Italy.",
+  "shortDescriptionFr": "Giuseppe Mazzini était un homme politique, journaliste et activiste italien qui a joué un rôle important dans l'unification de l'Italie. Il a fondé la société révolutionnaire Jeune Italie et était un partisan du républicanisme. Mazzini est mort de la pleurésie le 10 mars 1872 à Pise, en Italie.",
+  "shortDescriptionDe": "Giuseppe Mazzini war ein italienischer Politiker, Journalist und Aktivist, der eine bedeutende Rolle bei der Vereinigung Italiens spielte. Er gründete die revolutionäre Gesellschaft Junges Italien und war ein Befürworter des Republikanismus. Mazzini starb am 10. März 1872 in Pisa, Italien, an Pleuritis.",
+  "shortDescriptionEs": "Giuseppe Mazzini fue un político, periodista y activista italiano que desempeñó un papel importante en la unificación de Italia. Fundó la sociedad revolucionaria Joven Italia y fue un defensor del republicanismo. Mazzini murió de pleuresía el 10 de marzo de 1872 en Pisa, Italia.",
+  "shortDescriptionRu": "Джузеппе Мадзини был итальянским политиком, журналистом и активистом, сыгравшим значительную роль в объединении Италии. Он основал революционное общество 'Молодая Италия' и был сторонником республиканизма. Мадзини умер от плеврита 10 марта 1872 года в Пизе, Италия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Giuseppe_Mazzini",
+    "https://www.britannica.com/biography/Giuseppe-Mazzini",
+    "https://www.encyclopedia.com/people/history/italian-history-biographies/giuseppe-mazzini"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q273708",  "Name": "François de La Rochefoucauld",  "BirthDate": "1613-09-15T00:00:00Z",  "DeathDate": "1680-03-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois%20de%20La%20Rochefoucauld.jpg",  "SiteLinksCnt": 96,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"287047":{"pageid":287047,"ns":0,"title":"Fran\u00e7ois de La Rochefoucauld (writer)","extract":"Fran\u00e7ois de La Rochefoucauld, 2nd Duke of La Rochefoucauld, Prince de Marcillac (; French: [f\u0281\u0251\u0303swa d(\u0259) la \u0281\u0254\u0283fuko]; 15 September  1613 \u2013 17 March 1680) was an accomplished French moralist of the era of French Classical literature and author of Maximes and Memoirs, the only two works of his dense literary \u0153uvre published. His Maximes portrays the callous nature of human conduct, with a cynical attitude towards putative virtue and avowals of affection, friendship, love, and loyalty. Leonard Tancock regards Maximes as \"one of the most deeply felt, most intensely lived texts in French literature\", with his \"experience, his likes and dislikes, sufferings and petty spites ... crystallized into absolute truths.\"\nBorn in Paris in 1613, at a time when the royal court was vacillating between aiding the nobility and threatening it, he was considered an exemplar of the accomplished seventeenth-century nobleman. Until 1650, he bore the title of Prince de Marcillac. His great-grandfather Fran\u00e7ois III, count de La Rochefoucauld, was killed in the St. Bartholomew's Day massacre, being a Huguenot."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q273708")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q273708",
+  "isRealHuman": true,
+  "birthDate": "1613-09-15",
+  "deathDate": "1680-03-17",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an accurate calculation of age at death.",
+  "shortDescriptionEn": "François de La Rochefoucauld (1613–1680) was a French nobleman, writer, and moralist renowned for his 'Maximes,' which offer sharp insights into human nature. He died in Paris at the age of 66.",
+  "shortDescriptionFr": "François de La Rochefoucauld (1613–1680) était un noble, écrivain et moraliste français, célèbre pour ses 'Maximes' offrant des réflexions profondes sur la nature humaine. Il est décédé à Paris à l'âge de 66 ans.",
+  "shortDescriptionDe": "François de La Rochefoucauld (1613–1680) war ein französischer Adliger, Schriftsteller und Moralist, bekannt für seine 'Maximen', die tiefe Einblicke in die menschliche Natur geben. Er starb in Paris im Alter von 66 Jahren.",
+  "shortDescriptionEs": "François de La Rochefoucauld (1613–1680) fue un noble, escritor y moralista francés, conocido por sus 'Máximas' que ofrecen agudas observaciones sobre la naturaleza humana. Murió en París a los 66 años.",
+  "shortDescriptionRu": "Франсуа де Ларошфуко (1613–1680) — французский дворянин, писатель и моралист, известный своими 'Максимами', которые глубоко анализируют человеческую природу. Он скончался в Париже в возрасте 66 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fran%C3%A7ois_de_La_Rochefoucauld_(writer)",
+    "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_de_La_Rochefoucauld",
+    "https://www.wikidata.org/wiki/Q273708"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q178698",  "Name": "W. H. Auden",  "BirthDate": "1907-02-21T00:00:00Z",  "DeathDate": "1973-09-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AudenVanVechten1939.jpg",  "SiteLinksCnt": 95,  "Age": 66}
+{"batchcomplete":"","query":{"pages":{"33276":{"pageid":33276,"ns":0,"title":"W. H. Auden","extract":"Wystan Hugh Auden (; 21 February 1907 \u2013 29 September 1973) was a British-American poet. Auden's poetry is noted for its stylistic and technical achievement, its engagement with politics, morals, love, and religion, and its variety in tone, form, and content. Some of his best known poems are about love, such as \"Funeral Blues\"; on political and social themes, such as \"September 1, 1939\" and \"The Shield of Achilles\"; on cultural and psychological themes, such as The Age of Anxiety; and on religious themes, such as \"For the Time Being\" and \"Horae Canonicae\".\nAuden was born in York and grew up in and near Birmingham in a professional, middle-class family. He attended various English independent (or public) schools and studied English at Christ Church, Oxford. After a few months in Berlin in 1928\u201329, he spent five years (1930\u20131935) teaching in British private preparatory schools. In 1939, he moved to the United States; he became an American citizen in 1946, retaining his British citizenship. Auden taught from 1941 to 1945 in American universities, followed by occasional visiting professorships in the 1950s.\nAuden came to wide public attention in 1930 with his first book, Poems; it was followed in 1932 by The Orators. Three plays written in collaboration with Christopher Isherwood between 1935 and 1938 built his reputation as a left-wing political writer. Auden moved to the United States partly to escape this reputation, and his work in the 1940s, including the long poems \"For the Time Being\" and \"The Sea and the Mirror\", focused on religious themes. He won the Pulitzer Prize for Poetry for his 1947 long poem The Age of Anxiety, the title of which became a popular phrase describing the modern era. From 1956 to 1961, he was Professor of Poetry at Oxford; his lectures were popular with students and faculty and served as the basis for his 1962 prose collection The Dyer's Hand.\nAuden was a prolific writer of prose essays and reviews on literary, political, psychological, and religious subjects, and he worked at various times on documentary films, poetic plays, and other forms of performance. Throughout his career he was both controversial and influential. Critical views on his work ranged from sharply dismissive (treating him as a lesser figure than W. B. Yeats and T. S. Eliot) to strongly affirmative (as in Joseph Brodsky's statement that he had \"the greatest mind of the twentieth century\"). After his death, his poems became known to a much wider public through films, broadcasts, and popular media.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q178698")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q178698",
+  "isRealHuman": true,
+  "birthDate": "1907-02-21",
+  "deathDate": "1973-09-29",
+  "ageAtDeath": 66,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, ensuring a high confidence level in the calculated age at death.",
+  "shortDescriptionEn": "W. H. Auden (1907–1973) was a British-American poet celebrated for his technical skill and thematic range, encompassing love, politics, religion, and psychology. He died at 66 in Vienna, Austria, shortly after delivering a poetry reading.",
+  "shortDescriptionFr": "W. H. Auden (1907–1973) était un poète anglo-américain renommé pour sa maîtrise technique et la diversité de ses thèmes, incluant l'amour, la politique, la religion et la psychologie. Il est décédé à 66 ans à Vienne, en Autriche, peu après une lecture de poésie.",
+  "shortDescriptionDe": "W. H. Auden (1907–1973) war ein britisch-amerikanischer Dichter, bekannt für seine technische Virtuosität und thematische Vielfalt, darunter Liebe, Politik, Religion und Psychologie. Er starb im Alter von 66 Jahren in Wien, Österreich, kurz nach einer Dichterlesung.",
+  "shortDescriptionEs": "W. H. Auden (1907–1973) fue un poeta británico-estadounidense reconocido por su destreza técnica y diversidad temática, abordando el amor, la política, la religión y la psicología. Falleció a los 66 años en Viena, Austria, poco después de una lectura de poesía.",
+  "shortDescriptionRu": "У. Х. Оден (1907–1973) — британско-американский поэт, известный своим техническим мастерством и разнообразием тем, включая любовь, политику, религию и психологию. Он умер в возрасте 66 лет в Вене, Австрия, вскоре после поэтического чтения.",
+  "sources": [
+    "https://www.britannica.com/biography/W-H-Auden",
+    "https://en.wikipedia.org/wiki/W._H._Auden",
+    "https://deadorkicking.com/w-h-auden-dead-or-alive/"
+  ]
+}

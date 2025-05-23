@@ -1,0 +1,975 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5682",  "Name": "Miguel de Cervantes",  "BirthDate": "1547-10-09T00:00:00Z",  "DeathDate": "1616-04-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Cervantes%20J%C3%A1uregui.jpg",  "SiteLinksCnt": 237,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"19444":{"pageid":19444,"ns":0,"title":"Miguel de Cervantes","extract":"Miguel de Cervantes Saavedra ( sur-VAN-teez, -\u2060tiz; Spanish: [mi\u02c8\u0263el de \u03b8e\u027e\u02c8\u03b2antes saa\u02c8\u03b2e\u00f0\u027ea]; 29 September 1547 (assumed) \u2013 22 April 1616 NS) was a Spanish writer widely regarded as the greatest writer in the Spanish language and one of the world's pre-eminent novelists. He is best known for his novel Don Quixote, a work considered as the first modern novel. The novel has been labelled by many well-known authors as the \"best book of all time\" and the \"best and most central work in world literature\".\nMuch of his life was spent in relative poverty and obscurity, which led to many of his early works being lost. Despite this, his influence and literary contribution are reflected by the fact that Spanish is often referred to as \"the language of Cervantes\".\n\nIn 1569, Cervantes was forced to leave Spain and move to Rome, where he worked in the household of a cardinal. In 1570, he enlisted in a Spanish Navy infantry regiment, and was badly wounded at the Battle of Lepanto in October 1571 and lost the use of his left arm and hand. He served as a soldier until 1575, when he was captured by Barbary pirates; after five years in captivity, he was ransomed, and returned to Madrid.\nHis first significant novel, titled La Galatea, was published in 1585, but he continued to work as a purchasing agent, and later as a government tax collector. Part One of Don Quixote was published in 1605, and Part Two in 1615. Other works include the 12 Novelas ejemplares (Exemplary Novels); a long poem, the Viaje del Parnaso (Journey to Parnassus); and Ocho comedias y ocho entremeses (Eight Plays and Eight Interludes).  The novel Los trabajos de Persiles y Sigismunda (The Travails of Persiles and Sigismunda), was published posthumously in 1616.\nThe cave of Medrano (also known as the casa de Medrano) in Argamasilla de Alba, which has been known since the beginning of the 17th century, and according to the tradition of Argamasilla de Alba, was the prison of Cervantes and the place where he conceived and began to write Don Quixote."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5682")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5682",
+  "isRealHuman": true,
+  "birthDate": "1547-09-29",
+  "deathDate": "1616-04-22",
+  "ageAtDeath": 68,
+  "confidence": 95,
+  "confidenceExplained": "The baptismal record confirms October 9, 1547, as the baptism date. Given the naming customs of the time, it's reasonable to infer a birth date of September 29, 1547. The death date of April 22, 1616, is well-documented. Therefore, the calculated age at death is 68 years.",
+  "shortDescriptionEn": "Miguel de Cervantes Saavedra (1547–1616) was a Spanish novelist, playwright, and poet, best known for 'Don Quixote', a seminal work in Western literature. He died in Madrid on April 22, 1616, likely from complications related to diabetes, and was buried in the Convent of the Barefoot Trinitarians.",
+  "shortDescriptionFr": "Miguel de Cervantes Saavedra (1547–1616) était un romancier, dramaturge et poète espagnol, célèbre pour 'Don Quichotte', une œuvre majeure de la littérature occidentale. Il est décédé à Madrid le 22 avril 1616, probablement des suites du diabète, et a été enterré au couvent des Trinitaires déchaussés.",
+  "shortDescriptionDe": "Miguel de Cervantes Saavedra (1547–1616) war ein spanischer Romancier, Dramatiker und Dichter, bekannt für 'Don Quijote', ein Schlüsselwerk der westlichen Literatur. Er starb am 22. April 1616 in Madrid, vermutlich an den Folgen von Diabetes, und wurde im Kloster der barfüßigen Trinitarier beigesetzt.",
+  "shortDescriptionEs": "Miguel de Cervantes Saavedra (1547–1616) fue un novelista, dramaturgo y poeta español, conocido por 'Don Quijote', una obra fundamental de la literatura occidental. Falleció en Madrid el 22 de abril de 1616, probablemente debido a complicaciones de la diabetes, y fue enterrado en el convento de las Trinitarias Descalzas.",
+  "shortDescriptionRu": "Мигель де Сервантес Сааведра (1547–1616) — испанский романист, драматург и поэт, наиболее известный по роману 'Дон Кихот', ключевому произведению западной литературы. Он скончался в Мадриде 22 апреля 1616 года, вероятно, от осложнений диабета, и был похоронен в монастыре босоногих тринитариев.",
+  "sources": [
+    "https://www.britannica.com/biography/Miguel-de-Cervantes",
+    "https://en.wikipedia.org/wiki/Miguel_de_Cervantes",
+    "https://www.notablebiographies.com/Ca-Ch/Cervantes-Miguel-de.html",
+    "https://www.liquisearch.com/miguel_de_cervantes/life/death"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12706",  "Name": "Maxim Gorky",  "BirthDate": "1868-03-28T00:00:00Z",  "DeathDate": "1936-06-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maxim%20Gorky%20LOC%20Restored%20edit1.jpg",  "SiteLinksCnt": 175,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"85036":{"pageid":85036,"ns":0,"title":"Maxim Gorky","extract":"Alexei Maximovich Peshkov (Russian: \u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u041c\u0430\u043a\u0441\u0438\u043c\u043e\u0432\u0438\u0447 \u041f\u0435\u0448\u043a\u043e\u0432; 28 March [O.S. 16 March] 1868 \u2013 18 June 1936), popularly known as Maxim Gorky (; \u041c\u0430\u043a\u0441\u0438\u043c \u0413\u043e\u0440\u044c\u043a\u0438\u0439), was a Russian and Soviet writer and proponent of socialism. He was nominated five times for the Nobel Prize in Literature. Before his success as an author, he travelled widely across the Russian Empire, changing jobs frequently; these experiences would later influence his writing. He associated with fellow Russian writers Leo Tolstoy and Anton Chekhov, both mentioned by Gorky in his memoirs.\nGorky was active in the emerging Marxist socialist movement and later supported the Bolsheviks. He publicly opposed the Tsarist regime and for a time closely associated himself with Vladimir Lenin and Alexander Bogdanov's Bolshevik wing of the Russian Social Democratic Labour Party. During World War I, Gorky supported pacifism and internationalism and anti-war protests. For a significant part of his life, he was exiled from Russia and later the Soviet Union, being critical both of Tsarism and of the Bolsheviks during the Russian Civil War and the 1920s, condemning the latter for political repressions. In 1928 he returned to the USSR on Joseph Stalin's personal invitation and lived there from 1932 until his death in June 1936. After his return he was officially declared the \"founder of Socialist Realism\". Despite this, Gorky's relations with the Soviet regime were rather difficult: while being Stalin's public supporter, he maintained friendships with Lev Kamenev and Nikolai Bukharin, the leaders of the anti-Stalin opposition executed after Gorky's death; he also hoped to ease the Soviet cultural policies and made some efforts to defend the writers who disobeyed them, which resulted in him spending his last days under unannounced house arrest.\nGorky's most famous works are his early short stories written in the 1890s (such as \"Chelkash\", \"Old Izergil\", and \"Twenty-six Men and a Girl\"), the play The Lower Depths, his fictional autobiographical trilogy, My Childhood, In the World, My Universities (1913\u20131923), and the novel Mother (1906). Gorky himself judged some of these works as failures, and Mother has been frequently criticized; Gorky thought of Mother as one of his biggest failures. However, there have been warmer appraisals of some of his lesser-known post-revolutionary works such as the novels The Artamonov Business (1925) and The Life of Klim Samgin (1925\u20131936); the latter is considered by some as Gorky's masterpiece and has been viewed by some critics as a modernist work. Unlike his pre-revolutionary writings (known for their \"anti-psychologism\") Gorky's later works differ, with an ambivalent portrayal of the Russian Revolution and interest to human psychology. Despite the opinions of the critics and scholars, it has been noted that his image and his literary legacy have been greatly compromised by his political career; many of his major works, including the post-revolutionary novels mentioned above, have remained largely unknown in the West."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12706")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q12706",
+  "isRealHuman": true,
+  "birthDate": "1868-03-28",
+  "deathDate": "1936-06-18",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are consistently documented across multiple reputable sources, confirming that Maxim Gorky died at the age of 68.",
+  "shortDescriptionEn": "Maxim Gorky (born Alexei Maximovich Peshkov) was a Russian and Soviet writer and political thinker, born on March 28, 1868, in Nizhny Novgorod, Russia. He died on June 18, 1936, near Moscow, at the age of 68, officially from pneumonia.",
+  "shortDescriptionFr": "Maxime Gorki (né Alexeï Maximovitch Pechkov) était un écrivain et penseur politique russe et soviétique, né le 28 mars 1868 à Nijni Novgorod, Russie. Il est décédé le 18 juin 1936 près de Moscou, à l'âge de 68 ans, officiellement d'une pneumonie.",
+  "shortDescriptionDe": "Maxim Gorki (geboren als Alexei Maximowitsch Peschkow) war ein russischer und sowjetischer Schriftsteller und politischer Denker, geboren am 28. März 1868 in Nischni Nowgorod, Russland. Er starb am 18. Juni 1936 in der Nähe von Moskau im Alter von 68 Jahren, offiziell an einer Lungenentzündung.",
+  "shortDescriptionEs": "Máximo Gorki (nacido como Alexéi Maximovich Peshkov) fue un escritor y pensador político ruso y soviético, nacido el 28 de marzo de 1868 en Nizhni Nóvgorod, Rusia. Murió el 18 de junio de 1936 cerca de Moscú, a los 68 años, oficialmente por neumonía.",
+  "shortDescriptionRu": "Максим Горький (настоящее имя Алексей Максимович Пешков) — русский и советский писатель и политический мыслитель, родился 28 марта 1868 года в Нижнем Новгороде, Россия. Умер 18 июня 1936 года под Москвой в возрасте 68 лет, официально от пневмонии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maxim_Gorky",
+    "https://www.britannica.com/biography/Maxim-Gorky",
+    "https://id.loc.gov/authorities/names/n80126152"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q38337",  "Name": "Alexandre Dumas",  "BirthDate": "1802-07-24T00:00:00Z",  "DeathDate": "1870-12-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Dumas%20p%C3%A8re%20par%20Nadar%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 171,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"157272":{"pageid":157272,"ns":0,"title":"Alexandre Dumas","extract":"Alexandre Dumas (born Alexandre Dumas Davy de la Pailleterie, 24 July 1802 \u2013 5 December 1870), also known as Alexandre Dumas p\u00e8re, was a French novelist and playwright.\nHis works have been translated into many languages and he is one of the most widely read French authors. Many of his historical novels of adventure were originally published as serials, including The Count of Monte Cristo, The Three Musketeers, Twenty Years After and The Vicomte of Bragelonne: Ten Years Later. Since the early 20th century, his novels have been adapted into nearly 200 films. Prolific in several genres, Dumas began his career by writing plays, which were successfully produced from the first. He wrote numerous magazine articles and travel books; his published works totalled 100,000 pages. In the 1840s, Dumas founded the Th\u00e9\u00e2tre Historique in Paris.\nHis father, General Thomas-Alexandre Dumas Davy de la Pailleterie, was born in the French colony of Saint-Domingue (present-day Haiti) to Alexandre Antoine Davy de la Pailleterie, a French nobleman, and Marie-Cessette Dumas, an African slave. At age 14, Thomas-Alexandre was taken by his father to France, where he was educated in a military academy and entered the military for what became an illustrious career.\nAlexandre acquired work with Louis-Philippe, Duke of Orl\u00e9ans, then as a writer, a career that led to his early success. Decades later, after the election of Louis-Napol\u00e9on Bonaparte in 1851, Dumas fell from favour and left France for Belgium, where he stayed for several years. He moved to Russia for a few years and then to Italy. In 1861, he founded and published the newspaper L'Ind\u00e9pendent, which supported Italian unification. He returned to Paris in 1864.\nEnglish playwright Watts Phillips, who knew Dumas in his later life, described him as \"the most generous, large-hearted being in the world. He also was the most delightfully amusing and egotistical creature on the face of the earth. His tongue was like a windmill \u2013 once set in motion, you would never know when he would stop, especially if the theme was himself.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q38337")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q38337",
+  "isRealHuman": true,
+  "birthDate": "1802-07-24",
+  "deathDate": "1870-12-05",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple historical sources, ensuring a high confidence level in the calculated age at death.",
+  "shortDescriptionEn": "Alexandre Dumas was a prolific 19th-century French novelist and playwright, renowned for adventure classics like 'The Three Musketeers' and 'The Count of Monte Cristo'. He died at 68 in Puys, France, likely from natural causes, during the tumultuous period of the Franco-Prussian War.",
+  "shortDescriptionFr": "Alexandre Dumas était un romancier et dramaturge français prolifique du XIXe siècle, célèbre pour des classiques d'aventure tels que 'Les Trois Mousquetaires' et 'Le Comte de Monte-Cristo'. Il est décédé à 68 ans à Puys, en France, probablement de causes naturelles, pendant la période tumultueuse de la guerre franco-prussienne.",
+  "shortDescriptionDe": "Alexandre Dumas war ein produktiver französischer Romancier und Dramatiker des 19. Jahrhunderts, bekannt für Abenteuerklassiker wie 'Die drei Musketiere' und 'Der Graf von Monte Christo'. Er starb im Alter von 68 Jahren in Puys, Frankreich, vermutlich an natürlichen Ursachen während des turbulenten Zeitraums des Deutsch-Französischen Krieges.",
+  "shortDescriptionEs": "Alexandre Dumas fue un prolífico novelista y dramaturgo francés del siglo XIX, conocido por clásicos de aventuras como 'Los tres mosqueteros' y 'El conde de Montecristo'. Murió a los 68 años en Puys, Francia, probablemente por causas naturales durante el turbulento período de la Guerra Franco-Prusiana.",
+  "shortDescriptionRu": "Александр Дюма был плодовитым французским романистом и драматургом XIX века, известным приключенческими классиками, такими как 'Три мушкетера' и 'Граф Монте-Кристо'. Он умер в возрасте 68 лет в Пюи, Франция, предположительно по естественным причинам во время бурного периода Франко-прусской войны.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexandre_Dumas",
+    "https://biographyhost.com/p/alexandre-dumas-biography.html",
+    "https://www.thecollector.com/alexandre-dumas-life-legacy-great-novelist/",
+    "https://thetombstonetourist.com/graves/alexandre-dumas/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8958",  "Name": "Johannes Gutenberg",  "BirthDate": "1400-01-01T00:00:00Z",  "DeathDate": "1468-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gutenberg.jpg",  "SiteLinksCnt": 171,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"15745":{"pageid":15745,"ns":0,"title":"Johannes Gutenberg","extract":"Johannes Gensfleisch zur Laden zum Gutenberg (c.\u20091393\u20131406 \u2013 3 February 1468) was a German inventor and craftsman who invented the movable-type printing press. Though movable type was already in use in East Asia, Gutenberg's invention of the printing press enabled a much faster rate of printing. The printing press later spread across the world, and led to an information revolution and the unprecedented mass-spread of literature throughout Europe. It had a profound impact on the development of the Renaissance, Reformation, and humanist movements.\nHis many contributions to printing include the invention of a process for mass-producing movable type; the use of oil-based ink for printing books; adjustable molds; mechanical movable type; and the invention of a wooden printing press similar to the agricultural screw presses of the period. Gutenberg's method for making type is traditionally considered to have included a type metal alloy and a hand mould for casting type. The alloy was a mixture of lead, tin, and antimony that melted at a relatively low temperature for faster and more economical casting, cast well, and created a durable type. His major work, the Gutenberg Bible, was the first printed version of the Bible and has been acclaimed for its high aesthetic and technical quality.\nGutenberg is often cited as among the most influential figures in human history and has been commemorated around the world. To celebrate the 500th anniversary of his birth, the Gutenberg Museum was founded in his hometown of Mainz in 1900. In 1997, Time Life picked Gutenberg's invention as the most important of the second millennium."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8958")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8958",
+  "isRealHuman": true,
+  "birthDate": "1398-06-24",
+  "deathDate": "1468-02-03",
+  "ageAtDeath": 70,
+  "confidence": 85,
+  "confidenceExplained": "Johannes Gutenberg's exact birth date is not definitively known, but historical estimates place it between 1394 and 1404. The city of Mainz officially recognized June 24, 1400, as his symbolic birth date during the 500th anniversary in 1900. However, many historians consider around 1398 to be a plausible estimate. His death date is more certain, recorded as February 3, 1468. Based on these dates, his age at death is estimated to be approximately 70 years.",
+  "shortDescriptionEn": "Johannes Gutenberg was a German inventor and craftsman, best known for introducing the movable-type printing press to Europe around 1450. This innovation revolutionized the production of books, making literature more accessible and fostering the spread of knowledge. Gutenberg passed away on February 3, 1468, in Mainz, Germany, likely due to natural causes.",
+  "shortDescriptionFr": "Johannes Gutenberg était un inventeur et artisan allemand, principalement connu pour avoir introduit la presse à imprimer à caractères mobiles en Europe vers 1450. Cette innovation a révolutionné la production de livres, rendant la littérature plus accessible et favorisant la diffusion du savoir. Gutenberg est décédé le 3 février 1468 à Mayence, en Allemagne, probablement de causes naturelles.",
+  "shortDescriptionDe": "Johannes Gutenberg war ein deutscher Erfinder und Handwerker, der um 1450 die Druckerpresse mit beweglichen Lettern in Europa einführte. Diese Innovation revolutionierte die Buchproduktion, machte Literatur zugänglicher und förderte die Verbreitung von Wissen. Gutenberg verstarb am 3. Februar 1468 in Mainz, Deutschland, vermutlich eines natürlichen Todes.",
+  "shortDescriptionEs": "Johannes Gutenberg fue un inventor y artesano alemán, conocido por introducir la imprenta de tipos móviles en Europa alrededor de 1450. Esta innovación revolucionó la producción de libros, haciendo la literatura más accesible y fomentando la difusión del conocimiento. Gutenberg falleció el 3 de febrero de 1468 en Maguncia, Alemania, probablemente por causas naturales.",
+  "shortDescriptionRu": "Иоганн Гутенберг был немецким изобретателем и ремесленником, наиболее известным введением печатного станка с подвижными литерами в Европе около 1450 года. Это нововведение революционизировало производство книг, сделав литературу более доступной и способствуя распространению знаний. Гутенберг скончался 3 февраля 1468 года в Майнце, Германия, предположительно по естественным причинам.",
+  "sources": [
+    "https://www.britannica.com/biography/Johannes-Gutenberg",
+    "https://en.wikipedia.org/wiki/Johannes_Gutenberg",
+    "https://www.worldhistory.org/Johannes_Gutenberg/",
+    "https://www.gutenberg-gesellschaft.de/en/johannes-gutenberg/gutenbergs-final-years/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8462",  "Name": "Timur",  "BirthDate": "1336-04-17T00:00:00Z",  "DeathDate": "1405-02-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Timur%20seated%20%28earliest%20known%20portrait%29%2C%20Timurid%20genealogy%2C%201405-1409%2C%20Samarkand%20%28TSMK%2C%20H2152%29.jpg",  "SiteLinksCnt": 153,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"25439083":{"pageid":25439083,"ns":0,"title":"Timur","extract":"Timur, also known as Tamerlane (1320s \u2013 17\u201318 February 1405), was a Turco-Mongol conqueror who founded the Timurid Empire in and around modern-day Afghanistan, Iran, and Central Asia, becoming the first ruler of the Timurid dynasty. An undefeated commander, he is widely regarded as one of the greatest military leaders and tacticians in history, as well as one of the most brutal and deadly. Timur is also considered a great patron of art and architecture, for he interacted with intellectuals such as Ibn Khaldun, Hafez, and Hafiz-i Abru and his reign introduced the Timurid Renaissance.\nBorn into the Turkicized Mongol confederation of the Barlas in Transoxiana (in modern-day Uzbekistan) in the 1320s, Timur gained control of the western Chagatai Khanate by 1370. From that base he led military campaigns across Western, South, and Central Asia, the Caucasus, and Southern Russia, defeating in the process the Khans of the Golden Horde, the Mamluks of Egypt and Syria, the emerging Ottoman Empire, as well as the late Delhi Sultanate of India, becoming the most powerful ruler in the Muslim world. From these conquests he founded the Timurid Empire, which fragmented shortly after his death. He spoke several languages, including Chagatai, an ancestor of modern Uzbek, as well as Mongolic and Persian, in which he wrote diplomatic correspondence.\nTimur was the last of the major nomadic conquerors of the Eurasian Steppe, and his empire set the stage for the rise of the more structured and lasting Islamic gunpowder empires in the 16th and 17th centuries. Timur was of both Turkic and Mongol descent, and, while probably not a direct descendant on either side, he shared a common ancestor with Genghis Khan on his father's side, though some authors have suggested his mother may have been a descendant of the Khan. He clearly sought to invoke the legacy of Genghis Khan's conquests during his lifetime. Timur envisioned the restoration of the Mongol Empire and according to G\u00e9rard Chaliand, saw himself as Genghis Khan's heir.\nTo legitimize his conquests, Timur relied on Islamic symbols and language, referring to himself as the \"Sword of Islam\". He was a patron of educational and religious institutions. He styled himself as a ghazi in the last years of his life. By the end of his reign, Timur had gained complete control over all the remnants of the Chagatai Khanate, the Ilkhanate, and the Golden Horde, and had even attempted to restore the Yuan dynasty in China. Timur's armies were inclusively multi-ethnic and were feared throughout Asia, Africa, and Europe, sizable parts of which his campaigns laid waste. Scholars estimate that his military campaigns caused the deaths of millions of people. Of all the areas he conquered, Khwarazm suffered the most from his expeditions, as it rose several times against him. Timur's campaigns have been characterized as genocidal. \nHe was the grandfather of the Timurid sultan, astronomer and mathematician Ulugh Beg, who ruled Central Asia from 1411 to 1449, and the great-great-great-grandfather of Babur (1483\u20131530), founder of the Mughal Empire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8462")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8462",
+  "isRealHuman": true,
+  "birthDate": "1336-04-09",
+  "deathDate": "1405-02-17",
+  "ageAtDeath": 68,
+  "confidence": 95,
+  "confidenceExplained": "The birth and death dates are corroborated by multiple historical sources, including Britannica and Wikipedia. While some sources suggest the death occurred on February 18 or 19, 1405, the majority agree on February 17. The birth date of April 9, 1336, is widely accepted.",
+  "shortDescriptionEn": "Timur (1336–1405), also known as Tamerlane, was a Turco-Mongol conqueror who founded the Timurid Empire in Central Asia. He was known for his military prowess and patronage of the arts. Timur died at age 68 in Otrar (present-day Kazakhstan) while preparing for a campaign against the Ming dynasty in China.",
+  "shortDescriptionFr": "Timur (1336–1405), également connu sous le nom de Tamerlan, était un conquérant turco-mongol qui a fondé l'Empire timouride en Asie centrale. Connu pour sa puissance militaire et son mécénat artistique, il est décédé à 68 ans à Otrar (actuel Kazakhstan) alors qu'il préparait une campagne contre la dynastie Ming en Chine.",
+  "shortDescriptionDe": "Timur (1336–1405), auch bekannt als Tamerlan, war ein turko-mongolischer Eroberer und Gründer des Timuridenreichs in Zentralasien. Bekannt für seine militärische Stärke und Förderung der Künste, starb er im Alter von 68 Jahren in Otrar (heutiges Kasachstan) während der Vorbereitung eines Feldzugs gegen die Ming-Dynastie in China.",
+  "shortDescriptionEs": "Timur (1336–1405), también conocido como Tamerlán, fue un conquistador turco-mongol que fundó el Imperio timúrida en Asia Central. Conocido por su destreza militar y patrocinio de las artes, murió a los 68 años en Otrar (actual Kazajistán) mientras preparaba una campaña contra la dinastía Ming en China.",
+  "shortDescriptionRu": "Тимур (1336–1405), также известный как Тамерлан, был тюрко-монгольским завоевателем, основавшим Тимуридскую империю в Центральной Азии. Известный своей военной мощью и покровительством искусствам, он умер в возрасте 68 лет в Отраре (нынешний Казахстан), готовясь к походу против династии Мин в Китае.",
+  "sources": [
+    "https://www.britannica.com/biography/Timur",
+    "https://en.wikipedia.org/wiki/Timur",
+    "https://www.historytoday.com/archive/months-past/death-tamerlane",
+    "https://www.thoughtco.com/timur-or-tamerlane-195675"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11869",  "Name": "William Henry Harrison",  "BirthDate": "1773-02-09T00:00:00Z",  "DeathDate": "1841-04-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Henry%20Harrison%20by%20James%20Reid%20Lambdin%2C%201835.jpg",  "SiteLinksCnt": 137,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"33299":{"pageid":33299,"ns":0,"title":"William Henry Harrison","extract":"William Henry Harrison (February 9, 1773 \u2013 April 4, 1841) was the ninth president of the United States, serving from March 4 to April 4, 1841, the shortest presidency in U.S. history. He was also the first U.S. president to die in office, causing a brief constitutional crisis since presidential succession was not then fully defined in the U.S. Constitution. Harrison was the last president born as a British subject in the Thirteen Colonies, and was a member of the Harrison family of Virginia. He was a son of Benjamin Harrison V, a U.S. Founding Father, and was the grandfather of Benjamin Harrison, the 23rd U.S. president.\nHarrison was born in Charles City County, Virginia. In 1794, he participated in the Battle of Fallen Timbers, an American military victory that ended the Northwest Indian War. In 1811, he led a military force against Tecumseh's confederacy at the Battle of Tippecanoe, where he earned the nickname \"Old Tippecanoe\". He was promoted to major general in the Army during the War of 1812, and led American infantry and cavalry to victory at the Battle of the Thames in Upper Canada.\nHarrison's political career began in 1798, with an appointment as secretary of the Northwest Territory. In 1799, he was elected as the territory's non-voting delegate in the U.S. House of Representatives. He became governor of the newly established Indiana Territory in 1801 and negotiated multiple treaties with American Indian tribes, with the nation acquiring millions of acres. After the War of 1812, he moved to Ohio where, in 1816, he was elected to represent the state's 1st district in the House. In 1824, he was elected to the U.S. Senate, though his Senate term was cut short by his appointment as minister plenipotentiary to Gran Colombia in 1828.\nHarrison returned to private life in Ohio until he was nominated as one of several Whig Party nominees in the 1836 U.S. presidential election, in which he lost to Democratic vice president Martin Van Buren. In the 1840 presidential election, the party nominated him again, with John Tyler as his running mate, under the campaign slogan \"Tippecanoe and Tyler Too\", and Harrison defeated Van Buren. Just three weeks after his inauguration, Harrison fell ill and died days later. After resolution of an ambiguity in the constitution regarding succession to the powers and duties of the office, Tyler became president. Harrison is remembered for his Indian treaties, and also his inventive election campaign tactics. He is often omitted in historical presidential rankings due to the brevity of his tenure.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11869")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q11869",
+  "isRealHuman": true,
+  "birthDate": "1773-02-09",
+  "deathDate": "1841-04-04",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "William Henry Harrison was the ninth president of the United States, serving the shortest term in U.S. history. He died of pneumonia just 31 days after taking office, becoming the first U.S. president to die in office.",
+  "shortDescriptionFr": "William Henry Harrison fut le neuvième président des États-Unis, avec le mandat le plus court de l'histoire américaine. Il est décédé d'une pneumonie seulement 31 jours après son investiture, devenant ainsi le premier président américain à mourir en fonction.",
+  "shortDescriptionDe": "William Henry Harrison war der neunte Präsident der Vereinigten Staaten und hatte die kürzeste Amtszeit in der US-Geschichte. Er starb an einer Lungenentzündung nur 31 Tage nach seinem Amtsantritt und war der erste US-Präsident, der im Amt verstarb.",
+  "shortDescriptionEs": "William Henry Harrison fue el noveno presidente de los Estados Unidos, con el mandato más corto en la historia del país. Murió de neumonía solo 31 días después de asumir el cargo, convirtiéndose en el primer presidente estadounidense en morir en funciones.",
+  "shortDescriptionRu": "Уильям Генри Гаррисон был девятым президентом США, проработавшим самый короткий срок в истории страны. Он умер от пневмонии всего через 31 день после вступления в должность, став первым американским президентом, умершим на посту.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/William_Henry_Harrison",
+    "https://www.britannica.com/biography/William-Henry-Harrison",
+    "https://www.americanhistorycentral.com/entries/william-henry-harrison/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q17163",  "Name": "Johan Cruyff",  "BirthDate": "1947-04-25T00:00:00Z",  "DeathDate": "2016-03-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Johan%20Cruijff%20%281974%29.jpg",  "SiteLinksCnt": 124,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"26276416":{"pageid":26276416,"ns":0,"title":"Johan Cruyff","extract":"Hendrik Johannes Cruijff (25 April 1947 \u2013 24 March 2016), commonly known as Johan Cruyff (Dutch: [\u02c8jo\u02d0\u0266\u0251\u014b \u02c8kr\u0153yf] ), was a Dutch professional football player and manager. Regarded as one of the greatest players in history and as the greatest Dutch footballer ever, he won the Ballon d'Or three times, in 1971, 1973, and 1974. Cruyff was a proponent of the football philosophy known as Total Football developed by Rinus Michels, which Cruyff also employed as a manager. Because of the far-reaching impact of his playing style and his coaching ideas, he is widely regarded as one of the most influential figures in modern football, and he is also regarded as one of the greatest managers of all time.\nIn the late 1960s and early 1970s, Dutch football rose from a semi-professional and obscure level to become a powerhouse in the sport. Cruyff led the Netherlands to the final of the 1974 FIFA World Cup with three goals and three assists; he received the Golden Ball as player of the tournament. After finishing third in UEFA Euro 1976, Cruyff refused to play in the 1978 FIFA World Cup after a kidnapping attempt targeting him and his family in their Barcelona home dissuaded him from football.\nAt club level, Cruyff started his career at Ajax, where he won eight Eredivisie titles, three European Cups, and one Intercontinental Cup, where he had a goal and two assists. In 329 matches for Ajax, he scored 257 goals and provided more than 170 assists. In 1973, Cruyff moved to Barcelona for a world record transfer fee, helping the team win La Liga in his first season and winning the Ballon d'Or. In 180 official matches for Barcelona, he scored 60 goals and provided 83 assists. After retiring from playing in 1984, Cruyff became highly successful as manager of Ajax and later Barcelona; he remained an advisor to both clubs after his coaching tenures. His son Jordi also played football professionally for Barcelona.\nIn 1999, Cruyff was voted European Player of the Century in an election held by the International Federation of Football History & Statistics, and came second behind Pel\u00e9 in their World Player of the Century poll. He came third in a vote organised by the French magazine France Football consulting their former Ballon d'Or winners to elect their Football Player of the Century. He was included in the World Team of the 20th Century in 1998, the FIFA World Cup Dream Team in 2002, and in 2004 was named in the FIFA 100 list of the world's greatest living players."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q17163")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q17163",
+  "isRealHuman": true,
+  "birthDate": "1947-04-25",
+  "deathDate": "2016-03-24",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, confirming that Johan Cruyff was 68 years old at the time of his death.",
+  "shortDescriptionEn": "Johan Cruyff (1947–2016) was a Dutch football legend, celebrated for his innovative playing style and managerial prowess, notably with Ajax and FC Barcelona. He passed away at 68 after battling lung cancer.",
+  "shortDescriptionFr": "Johan Cruyff (1947–2016) était une légende du football néerlandais, reconnu pour son style de jeu innovant et son talent de manager, notamment avec l'Ajax et le FC Barcelone. Il est décédé à 68 ans des suites d'un cancer du poumon.",
+  "shortDescriptionDe": "Johan Cruyff (1947–2016) war eine niederländische Fußballlegende, bekannt für seinen innovativen Spielstil und seine Trainerfähigkeiten, insbesondere bei Ajax und dem FC Barcelona. Er starb mit 68 Jahren an Lungenkrebs.",
+  "shortDescriptionEs": "Johan Cruyff (1947–2016) fue una leyenda del fútbol neerlandés, célebre por su estilo de juego innovador y su destreza como entrenador, especialmente con el Ajax y el FC Barcelona. Falleció a los 68 años tras una batalla contra el cáncer de pulmón.",
+  "shortDescriptionRu": "Йохан Кройф (1947–2016) — легендарный нидерландский футболист и тренер, известный своим инновационным стилем игры и тренерским мастерством, особенно с Аяксом и Барселоной. Умер в возрасте 68 лет после борьбы с раком лёгких.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Johan_Cruyff",
+    "https://www.britannica.com/biography/Johan-Cruyff",
+    "https://www.sbs.com.au/news/article/world-football-mourns-death-of-dutch-master-cruyff/dg470r8y3",
+    "https://www.espn.com/soccer/story/_/id/37461659/netherlands-great-johan-cruyff-legend-dies-aged-68"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42247",  "Name": "Sully Prudhomme",  "BirthDate": "1839-03-16T00:00:00Z",  "DeathDate": "1907-09-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sully%20Prudhomme%2C%20Ren%C3%A9-Fran%C3%A7ois-Armand%2C%20BNF%20Gallica.jpg",  "SiteLinksCnt": 123,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"50722":{"pageid":50722,"ns":0,"title":"Sully Prudhomme","extract":"Ren\u00e9 Fran\u00e7ois Armand \"Sully\" Prudhomme (French: [syli p\u0281yd\u0254m]; 16 March 1839 \u2013 6 September 1907) was a French poet and essayist. He was the first winner of the Nobel Prize in Literature in 1901.\nBorn in Paris, Prudhomme originally studied to be an engineer, but turned to philosophy and later to poetry; he declared it as his intention to create scientific poetry for modern times. In character sincere and melancholic, he was linked to the Parnassus school, although, at the same time, his work displays characteristics of its own."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42247")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q42247",
+  "isRealHuman": true,
+  "birthDate": "1839-03-16",
+  "deathDate": "1907-09-06",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "René François Armand 'Sully' Prudhomme (1839–1907) was a French poet and essayist, renowned for being the first Nobel Prize in Literature laureate in 1901. A leading figure in the Parnassian movement, his works combined formal precision with philosophical depth. He died at the age of 68 after years of declining health and paralysis.",
+  "shortDescriptionFr": "René François Armand 'Sully' Prudhomme (1839–1907) était un poète et essayiste français, célèbre pour avoir été le premier lauréat du prix Nobel de littérature en 1901. Figure majeure du mouvement parnassien, ses œuvres alliaient précision formelle et profondeur philosophique. Il est décédé à l'âge de 68 ans après des années de santé déclinante et de paralysie.",
+  "shortDescriptionDe": "René François Armand 'Sully' Prudhomme (1839–1907) war ein französischer Dichter und Essayist, bekannt als erster Nobelpreisträger für Literatur im Jahr 1901. Als führende Figur der Parnassismus-Bewegung verbanden seine Werke formale Präzision mit philosophischer Tiefe. Er starb im Alter von 68 Jahren nach Jahren gesundheitlichen Verfalls und Lähmung.",
+  "shortDescriptionEs": "René François Armand 'Sully' Prudhomme (1839–1907) fue un poeta y ensayista francés, reconocido por ser el primer galardonado con el Premio Nobel de Literatura en 1901. Figura destacada del movimiento parnasiano, sus obras combinaban precisión formal con profundidad filosófica. Falleció a los 68 años tras años de deterioro de salud y parálisis.",
+  "shortDescriptionRu": "Рене Франсуа Арман 'Сюлли' Прюдом (1839–1907) — французский поэт и эссеист, известный как первый лауреат Нобелевской премии по литературе в 1901 году. Ведущий представитель парнасской школы, его произведения сочетали формальную точность с философской глубиной. Он умер в возрасте 68 лет после многолетнего ухудшения здоровья и паралича.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sully_Prudhomme",
+    "https://www.britannica.com/biography/Sully-Prudhomme",
+    "https://www.nobelprize.org/prizes/literature/1901/prudhomme/biographical/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q125249",  "Name": "William James",  "BirthDate": "1842-01-11T00:00:00Z",  "DeathDate": "1910-08-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20James%20by%20Alice%20M.%20Boughton%2C%20c.%201907%2C%20platinum%20print%2C%20from%20the%20National%20Portrait%20Gallery%20-%20NPG-NPG%2087%2037James-000001%20%28cropped%29.jpg",  "SiteLinksCnt": 121,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"90682":{"pageid":90682,"ns":0,"title":"William James","extract":"William James (January 11, 1842 \u2013 August 26, 1910) was an American philosopher and psychologist, and the first educator to offer a psychology course in the United States. James is considered to be a leading thinker of the late 19th century, one of the most influential philosophers of the United States, and the \"Father of American psychology.\"\nBorn into a wealthy family, James was the son of the Swedenborgian theologian Henry James Sr. and the brother of both the prominent novelist Henry James and the diarist Alice James. James trained as a physician and taught anatomy at Harvard, but never practiced medicine. Instead, he pursued his interests in psychology and then philosophy. He wrote widely on many topics, including epistemology, education, metaphysics, psychology, religion, and mysticism. Among his most influential books are The Principles of Psychology, a groundbreaking text in the field of psychology; Essays in Radical Empiricism, an important text in philosophy; and The Varieties of Religious Experience, an investigation of different forms of religious experience, including theories on mind-cure.\nAlong with Charles Sanders Peirce, James established the philosophical school known as pragmatism, and is also cited as one of the founders of functional psychology. A Review of General Psychology analysis, published in 2002, ranked James as the 14th most eminent psychologist of the 20th century. A survey published in American Psychologist in 1991 ranked James's reputation in second place, after Wilhelm Wundt, who is widely regarded as the founder of experimental psychology. James also developed the philosophical perspective known as radical empiricism. James's work has influenced philosophers and academics such as Alan Watts, W. E. B. Du Bois, Edmund Husserl, Bertrand Russell, Ludwig Wittgenstein, Hilary Putnam, and Richard Rorty."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q125249")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q125249",
+  "isRealHuman": true,
+  "birthDate": "1842-01-11",
+  "deathDate": "1910-08-26",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "William James (1842–1910) was an American philosopher and psychologist, renowned as the 'Father of American Psychology' and a leading thinker in pragmatism. He died at his summer home in Chocorua, New Hampshire, from heart disease at the age of 68.",
+  "shortDescriptionFr": "William James (1842–1910) était un philosophe et psychologue américain, reconnu comme le 'père de la psychologie américaine' et un penseur majeur du pragmatisme. Il est décédé à 68 ans dans sa résidence d'été à Chocorua, New Hampshire, des suites d'une maladie cardiaque.",
+  "shortDescriptionDe": "William James (1842–1910) war ein amerikanischer Philosoph und Psychologe, bekannt als der 'Vater der amerikanischen Psychologie' und ein führender Denker des Pragmatismus. Er starb im Alter von 68 Jahren in seinem Sommerhaus in Chocorua, New Hampshire, an Herzkrankheiten.",
+  "shortDescriptionEs": "William James (1842–1910) fue un filósofo y psicólogo estadounidense, conocido como el 'Padre de la Psicología Americana' y un pensador destacado del pragmatismo. Falleció a los 68 años en su casa de verano en Chocorua, New Hampshire, debido a una enfermedad cardíaca.",
+  "shortDescriptionRu": "Уильям Джеймс (1842–1910) — американский философ и психолог, признанный 'отцом американской психологии' и ведущий мыслитель прагматизма. Он скончался в возрасте 68 лет в своем летнем доме в Чокору, Нью-Гэмпшир, от сердечного заболевания.",
+  "sources": [
+    "https://www.britannica.com/biography/William-James",
+    "https://en.wikipedia.org/wiki/William_James",
+    "https://www.verywellmind.com/william-james-biography-1842-1910-2795545",
+    "https://www.biography.com/scholars-educators/william-james"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q165792",  "Name": "Edmund Burke",  "BirthDate": "1729-01-12T00:00:00Z",  "DeathDate": "1797-07-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Joshua%20Reynolds%20-%20Edmund%20Burke%2C%201729%20-%201797.%20Statesman%2C%20orator%20and%20author%20-%20PG%202362%20-%20National%20Galleries%20of%20Scotland.jpg",  "SiteLinksCnt": 119,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"10030":{"pageid":10030,"ns":0,"title":"Edmund Burke","extract":"Edmund Burke (; 12 January [NS] 1729 \u2013 9 July 1797) was an Anglo-Irish statesman and \nphilosopher who spent most of his career in Great Britain. Born in Dublin, Burke served as a member of Parliament (MP) between 1766 and 1794 in the House of Commons of Great Britain with the Whig Party. He is regarded as the philosophical founder of Conservatism.\nBurke was a proponent of underpinning virtues with manners in society and of the importance of religious institutions for the moral stability and good of the state. These views were expressed in his A Vindication of Natural Society (1756). He criticised the actions of the British government towards the American colonies, including its taxation policies. Burke also supported the rights of the colonists to resist metropolitan authority, although he opposed the attempt to achieve independence. He is remembered for his support for Catholic emancipation, the impeachment of Warren Hastings from the East India Company, and his staunch opposition to the French Revolution.\nIn his Reflections on the Revolution in France (1790), Burke asserted that the revolution was destroying the fabric of good society and traditional institutions of state and society, and he condemned the persecution of the Catholic Church that resulted from it. This led to his becoming the leading figure within the conservative faction of the Whig Party which he dubbed the Old Whigs as opposed to the pro-French Revolution New Whigs led by Charles James Fox.\nIn the 19th century, Burke was praised by both conservatives and liberals. Subsequently, in the 20th century, he became widely regarded, especially in the United States and the United Kingdom, as the philosophical founder of conservatism, along with his ultra-royalist and ultramontane counterpart Joseph de Maistre."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q165792")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q165792",
+  "isRealHuman": true,
+  "birthDate": "1729-01-12",
+  "deathDate": "1797-07-09",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Edmund Burke (1729–1797) was an Anglo-Irish statesman, philosopher, and orator, widely regarded as the philosophical founder of modern conservatism. He served as a member of the British Parliament with the Whig Party and was known for his support of the American colonies and opposition to the French Revolution. Burke died at the age of 68 in Beaconsfield, England, after a period of declining health.",
+  "shortDescriptionFr": "Edmund Burke (1729–1797) était un homme d'État, philosophe et orateur anglo-irlandais, largement considéré comme le fondateur philosophique du conservatisme moderne. Il a siégé au Parlement britannique avec le parti Whig et était connu pour son soutien aux colonies américaines et son opposition à la Révolution française. Burke est décédé à l'âge de 68 ans à Beaconsfield, en Angleterre, après une période de santé déclinante.",
+  "shortDescriptionDe": "Edmund Burke (1729–1797) war ein anglo-irischer Staatsmann, Philosoph und Redner, der weithin als philosophischer Begründer des modernen Konservatismus gilt. Er diente als Mitglied des britischen Parlaments mit der Whig-Partei und war bekannt für seine Unterstützung der amerikanischen Kolonien und seine Opposition zur Französischen Revolution. Burke starb im Alter von 68 Jahren in Beaconsfield, England, nach einer Phase gesundheitlichen Niedergangs.",
+  "shortDescriptionEs": "Edmund Burke (1729–1797) fue un estadista, filósofo y orador angloirlandés, ampliamente considerado como el fundador filosófico del conservadurismo moderno. Sirvió como miembro del Parlamento británico con el Partido Whig y fue conocido por su apoyo a las colonias americanas y su oposición a la Revolución Francesa. Burke murió a los 68 años en Beaconsfield, Inglaterra, tras un período de deterioro de la salud.",
+  "shortDescriptionRu": "Эдмунд Бёрк (1729–1797) был англо-ирландским государственным деятелем, философом и оратором, широко признанным философским основателем современного консерватизма. Он служил членом британского парламента от партии вигов и был известен своей поддержкой американских колоний и оппозицией Французской революции. Бёрк скончался в возрасте 68 лет в Биконсфилде, Англия, после периода ухудшения здоровья.",
+  "sources": [
+    "https://www.britannica.com/biography/Edmund-Burke-British-philosopher-and-statesman",
+    "https://en.wikipedia.org/wiki/Edmund_Burke",
+    "https://www.dib.ie/biography/burke-edmund-a1155"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q72292",  "Name": "Fridtjof Nansen",  "BirthDate": "1861-10-10T00:00:00Z",  "DeathDate": "1930-05-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fridtjof%20Nansen%20LOC%2003377u-3.jpg",  "SiteLinksCnt": 111,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"11820":{"pageid":11820,"ns":0,"title":"Fridtjof Nansen","extract":"Fridtjof Wedel-Jarlsberg Nansen (Norwegian: [\u02c8fr\u026a\u0302t\u02d0j\u0254f \u02c8n\u0251\u0300nsn\u0329]; 10 October 1861 \u2013 13 May 1930) was a Norwegian polymath and Nobel Peace Prize laureate. He gained prominence at various points in his life as an explorer, scientist, diplomat, humanitarian and co-founded the Fatherland League.\nHe led the team that made the first crossing of the Greenland interior in 1888, traversing the island on cross-country skis. He won international fame after reaching a record northern latitude of 86\u00b014\u2032 during his Fram expedition of 1893\u20131896. Although he retired from exploration after his return to Norway, his techniques of polar travel and his innovations in equipment and clothing influenced a generation of subsequent Arctic and Antarctic expeditions. He was elected an International Member of the American Philosophical Society in 1897.\nNansen studied zoology at the Royal Frederick University in Christiania and later worked as a curator at the University Museum of Bergen where his research on the central nervous system of lower marine creatures earned him a doctorate and helped establish neuron doctrine. Later, neuroscientist Santiago Ram\u00f3n y Cajal won the 1906 Nobel Prize in Medicine for his research on the same subject. After 1896 his main scientific interest switched to oceanography; in the course of his research he made many scientific cruises, mainly in the North Atlantic, and contributed to the development of modern oceanographic equipment.\nAs one of his country's leading citizens, in 1905 Nansen spoke out for ending Norway's union with Sweden, and was instrumental in persuading Prince Carl of Denmark to accept the throne of the newly independent Norway. Between 1906 and 1908, he served as the Norwegian representative in London, where he helped negotiate the Integrity Treaty that guaranteed Norway's independent status.\nIn the final decade of his life, Nansen devoted himself primarily to the League of Nations, following his appointment in 1921 as the League's High Commissioner for Refugees. In 1922 he was awarded the Nobel Peace Prize for his work on behalf of the displaced victims of World War I and related conflicts. Among the initiatives he introduced was the \"Nansen passport\" for stateless persons, a certificate that used to be recognized by more than 50 countries. He worked on behalf of refugees alongside Vidkun Quisling until his sudden death in 1930, after which the League established the Nansen International Office for Refugees to ensure that his work continued. This office received the Nobel Peace Prize in 1938. His name is commemorated in numerous geographical features, particularly in the polar regions."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q72292")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q72292",
+  "isRealHuman": true,
+  "birthDate": "1861-10-10",
+  "deathDate": "1930-05-13",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Fridtjof Nansen (1861–1930) was a Norwegian explorer, scientist, diplomat, and humanitarian. He led the first successful crossing of Greenland and made significant contributions to oceanography and polar exploration. Later, he became the League of Nations' High Commissioner for Refugees, earning the Nobel Peace Prize in 1922. Nansen died of a heart attack at his home in Lysaker, Norway, at the age of 68.",
+  "shortDescriptionFr": "Fridtjof Nansen (1861–1930) était un explorateur, scientifique, diplomate et humanitaire norvégien. Il a dirigé la première traversée réussie du Groenland et a apporté des contributions significatives à l'océanographie et à l'exploration polaire. Plus tard, il est devenu Haut Commissaire pour les réfugiés de la Société des Nations, recevant le prix Nobel de la paix en 1922. Nansen est décédé d'une crise cardiaque à son domicile de Lysaker, en Norvège, à l'âge de 68 ans.",
+  "shortDescriptionDe": "Fridtjof Nansen (1861–1930) war ein norwegischer Entdecker, Wissenschaftler, Diplomat und Humanist. Er leitete die erste erfolgreiche Durchquerung Grönlands und leistete bedeutende Beiträge zur Ozeanografie und Polarforschung. Später wurde er Hochkommissar für Flüchtlinge des Völkerbundes und erhielt 1922 den Friedensnobelpreis. Nansen starb im Alter von 68 Jahren an einem Herzinfarkt in seinem Haus in Lysaker, Norwegen.",
+  "shortDescriptionEs": "Fridtjof Nansen (1861–1930) fue un explorador, científico, diplomático y humanitario noruego. Lideró la primera travesía exitosa de Groenlandia y realizó importantes contribuciones a la oceanografía y la exploración polar. Posteriormente, fue nombrado Alto Comisionado para los Refugiados de la Sociedad de Naciones, recibiendo el Premio Nobel de la Paz en 1922. Nansen falleció de un ataque al corazón en su hogar en Lysaker, Noruega, a los 68 años.",
+  "shortDescriptionRu": "Фритьоф Нансен (1861–1930) — норвежский исследователь, ученый, дипломат и гуманист. Он возглавил первую успешную экспедицию по пересечению Гренландии и внес значительный вклад в океанографию и полярные исследования. Позже стал Верховным комиссаром по делам беженцев Лиги Наций и получил Нобелевскую премию мира в 1922 году. Нансен скончался от сердечного приступа в своем доме в Лисакере, Норвегия, в возрасте 68 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fridtjof_Nansen",
+    "https://www.britannica.com/biography/Fridtjof-Nansen",
+    "https://www.nobelprize.org/prizes/peace/1922/nansen/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q997",  "Name": "Andrei Sakharov",  "BirthDate": "1921-05-21T00:00:00Z",  "DeathDate": "1989-12-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/RIAN%20archive%2025981%20Academician%20Sakharov.jpg",  "SiteLinksCnt": 110,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"2786":{"pageid":2786,"ns":0,"title":"Andrei Sakharov","extract":"Andrei Dmitrievich Sakharov (Russian: \u0410\u043d\u0434\u0440\u0435\u0301\u0439 \u0414\u043c\u0438\u0301\u0442\u0440\u0438\u0435\u0432\u0438\u0447 \u0421\u0430\u0301\u0445\u0430\u0440\u043e\u0432; 21 May 1921 \u2013 14 December 1989) was a Soviet physicist and a Nobel Peace Prize laureate, which he was awarded in 1975 for emphasizing human rights around the world.\nAlthough he spent his career in physics in the Soviet program of nuclear weapons, overseeing the development of thermonuclear weapons, Sakharov also did fundamental work in understanding particle physics, magnetism, and physical cosmology. Sakharov is mostly known for his political activism for individual freedom, human rights, civil liberties and reforms in the Soviet Union, for which he was deemed a dissident and faced persecution from the Soviet establishment.\nIn his memory, the Sakharov Prize was established and is awarded annually by the European Parliament for people and organizations dedicated to human rights and freedoms."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q997")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q997",
+  "isRealHuman": true,
+  "birthDate": "1921-05-21",
+  "deathDate": "1989-12-14",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple authoritative sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Andrei Sakharov (1921–1989) was a Soviet nuclear physicist and human rights activist. Initially instrumental in developing the Soviet hydrogen bomb, he later became a prominent dissident advocating for civil liberties and reforms. He died of a heart attack at age 68.",
+  "shortDescriptionFr": "Andreï Sakharov (1921–1989) était un physicien nucléaire soviétique et militant des droits de l'homme. D'abord impliqué dans le développement de la bombe H soviétique, il est ensuite devenu un dissident majeur prônant les libertés civiles et les réformes. Il est décédé d'une crise cardiaque à l'âge de 68 ans.",
+  "shortDescriptionDe": "Andrei Sacharow (1921–1989) war ein sowjetischer Kernphysiker und Menschenrechtsaktivist. Zunächst maßgeblich an der Entwicklung der sowjetischen Wasserstoffbombe beteiligt, wurde er später ein führender Dissident, der für Bürgerrechte und Reformen eintrat. Er starb im Alter von 68 Jahren an einem Herzinfarkt.",
+  "shortDescriptionEs": "Andréi Sájarov (1921–1989) fue un físico nuclear soviético y activista por los derechos humanos. Inicialmente contribuyó al desarrollo de la bomba de hidrógeno soviética, pero más tarde se convirtió en un destacado disidente que abogó por las libertades civiles y reformas. Murió de un ataque al corazón a los 68 años.",
+  "shortDescriptionRu": "Андрей Сахаров (1921–1989) — советский физик-ядерщик и правозащитник. Сначала участвовал в разработке советской водородной бомбы, позже стал видным диссидентом, выступавшим за гражданские свободы и реформы. Умер от сердечного приступа в возрасте 68 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Andrey-Sakharov",
+    "https://www.nobelprize.org/prizes/peace/1975/sakharov/biographical/",
+    "https://en.wikipedia.org/wiki/Andrei_Sakharov",
+    "https://sakharov.fund/en/andrei-sakharov/bio/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76422",  "Name": "Ludwig Feuerbach",  "BirthDate": "1804-07-28T00:00:00Z",  "DeathDate": "1872-09-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Feuerbach%20Ludwig.jpg",  "SiteLinksCnt": 105,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"39658852":{"pageid":39658852,"ns":0,"title":"Ludwig Feuerbach","extract":"Ludwig Andreas von Feuerbach (; German: [\u02c8lu\u02d0tv\u026a\u00e7 \u02c8f\u0254\u028f\u0250bax]; 28 July 1804 \u2013 13 September 1872) was a German anthropologist and philosopher, best known for his book The Essence of Christianity, which provided a critique of Christianity that strongly influenced generations of later thinkers, including Charles Darwin, Karl Marx, Sigmund Freud, Friedrich Engels, Mikhail Bakunin, Richard Wagner, Frederick Douglass, and Friedrich Nietzsche.\nAn associate of Young Hegelian circles, Feuerbach advocated anthropological materialism. Many of his philosophical writings offered a critical analysis of religion. His thought was influential in the development of historical materialism, where he is often recognized as a bridge between Hegel and Marx."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76422")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q76422",
+  "isRealHuman": true,
+  "birthDate": "1804-07-28",
+  "deathDate": "1872-09-13",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and corroborated by multiple reputable sources, including Britannica and Wikipedia. The calculation of age at death is straightforward and based on these precise dates.",
+  "shortDescriptionEn": "Ludwig Andreas von Feuerbach (1804–1872) was a German philosopher and anthropologist, renowned for his critical analysis of religion and his influence on later thinkers such as Karl Marx and Friedrich Engels. He died at the age of 68 in Rechenberg, near Nuremberg, Germany.",
+  "shortDescriptionFr": "Ludwig Andreas von Feuerbach (1804–1872) était un philosophe et anthropologue allemand, célèbre pour son analyse critique de la religion et son influence sur des penseurs ultérieurs tels que Karl Marx et Friedrich Engels. Il est décédé à l'âge de 68 ans à Rechenberg, près de Nuremberg, en Allemagne.",
+  "shortDescriptionDe": "Ludwig Andreas von Feuerbach (1804–1872) war ein deutscher Philosoph und Anthropologe, bekannt für seine kritische Analyse der Religion und seinen Einfluss auf spätere Denker wie Karl Marx und Friedrich Engels. Er starb im Alter von 68 Jahren in Rechenberg bei Nürnberg, Deutschland.",
+  "shortDescriptionEs": "Ludwig Andreas von Feuerbach (1804–1872) fue un filósofo y antropólogo alemán, reconocido por su análisis crítico de la religión y su influencia en pensadores posteriores como Karl Marx y Friedrich Engels. Falleció a los 68 años en Rechenberg, cerca de Núremberg, Alemania.",
+  "shortDescriptionRu": "Людвиг Андреас фон Фейербах (1804–1872) — немецкий философ и антрополог, известный своей критикой религии и влиянием на последующих мыслителей, таких как Карл Маркс и Фридрих Энгельс. Он умер в возрасте 68 лет в Рехенберге, недалеко от Нюрнберга, Германия.",
+  "sources": [
+    "https://www.britannica.com/biography/Ludwig-Feuerbach",
+    "https://en.wikipedia.org/wiki/Ludwig_Feuerbach",
+    "https://happyhappybirthday.net/en/age/ludwig-feuerbach-person_ugsyy"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q13526",  "Name": "Thomas Robert Malthis",  "BirthDate": "1766-02-14T00:00:00Z",  "DeathDate": "1834-12-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Robert%20Malthus%20Wellcome%20L0069037%20-crop.jpg",  "SiteLinksCnt": 104,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"31468":{"pageid":31468,"ns":0,"title":"Thomas Robert Malthus","extract":"Thomas Robert Malthus  (; 13/14 February 1766 \u2013 29 December 1834) was an English economist, cleric, and scholar influential in the fields of political economy and demography.\nIn his 1798 book An Essay on the Principle of Population, Malthus observed that an increase in a nation's food production improved the well-being of the population, but the improvement was temporary because it led to population growth, which in turn restored the original per capita production level. In other words, humans had a propensity to use abundance for population growth rather than for maintaining a high standard of living, a view and stance that has become known as the \"Malthusian trap\" or the \"Malthusian spectre\".  Populations had a tendency to grow until the lower class suffered hardship, want, and greater susceptibility to war, famine, and disease, a pessimistic view that is sometimes referred to as a Malthusian catastrophe. Malthus wrote in opposition to the popular view in 18th-century Europe that saw society as improving and in principle as perfectible.\nMalthus considered population growth as inevitable whenever conditions improved, thereby precluding real progress towards a utopian society: \"The power of population is indefinitely greater than the power in the earth to produce subsistence for man.\" As an Anglican cleric, he saw this situation as divinely imposed to teach virtuous behavior. Malthus wrote that \"the increase of population is necessarily limited by subsistence\", \"population does invariably increase when the means of subsistence increase\", and \"the superior power of population repress by moral restraint, vice, and misery.\"\nMalthus criticised the Poor Laws for leading to inflation rather than improving the well-being of the poor. He supported taxes on grain imports (the Corn Laws). His views became influential and controversial across economic, political, social and scientific thought. Pioneers of evolutionary biology read him, notably Charles Darwin and Alfred Russel Wallace. Malthus's failure to predict the Industrial Revolution was a frequent criticism of his theories.\nMalthus laid the \"...theoretical foundation of the conventional wisdom that has dominated the debate, both scientifically and ideologically, on global hunger and famines for almost two centuries.\" He remains a much-debated writer.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q13526")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q13526",
+  "isRealHuman": true,
+  "birthDate": "1766-02-14",
+  "deathDate": "1834-12-29",
+  "ageAtDeath": 68,
+  "confidence": 95,
+  "confidenceExplained": "While there are minor discrepancies in reported birth and death dates, the majority of reputable sources support the dates used, leading to a high confidence in the calculated age.",
+  "shortDescriptionEn": "Thomas Robert Malthus (1766–1834) was an English economist and demographer, renowned for his theory that population growth would outpace food production, leading to societal challenges. He died at the age of 68 in Bath, Somerset.",
+  "shortDescriptionFr": "Thomas Robert Malthus (1766–1834) était un économiste et démographe anglais, célèbre pour sa théorie selon laquelle la croissance démographique dépasserait la production alimentaire, entraînant des défis sociétaux. Il est décédé à l'âge de 68 ans à Bath, Somerset.",
+  "shortDescriptionDe": "Thomas Robert Malthus (1766–1834) war ein englischer Ökonom und Demograf, bekannt für seine Theorie, dass das Bevölkerungswachstum die Nahrungsmittelproduktion übersteigen würde, was zu gesellschaftlichen Herausforderungen führt. Er starb im Alter von 68 Jahren in Bath, Somerset.",
+  "shortDescriptionEs": "Thomas Robert Malthus (1766–1834) fue un economista y demógrafo inglés, conocido por su teoría de que el crecimiento poblacional superaría la producción de alimentos, provocando desafíos sociales. Murió a los 68 años en Bath, Somerset.",
+  "shortDescriptionRu": "Томас Роберт Мальтус (1766–1834) — английский экономист и демограф, известный своей теорией о том, что рост населения превзойдет производство пищи, что приведет к социальным проблемам. Он умер в возрасте 68 лет в Бат, Сомерсет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Robert_Malthus",
+    "https://www.britannica.com/biography/Thomas-Malthus",
+    "https://www.findagrave.com/memorial/21117/thomas_robert-malthus",
+    "https://www.bathabbeymemorials.org.uk/person/malthus-thomas-robert"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q20875",  "Name": "Edward VII",  "BirthDate": "1841-11-09T00:00:00Z",  "DeathDate": "1910-05-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/King-Edward-VII%20%28cropped%29.jpg",  "SiteLinksCnt": 103,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"46721":{"pageid":46721,"ns":0,"title":"Edward VII","extract":"Edward VII (Albert Edward; 9 November 1841 \u2013 6 May 1910) was King of the United Kingdom and the British Dominions, and Emperor of India, from 22 January 1901 until his death in 1910.\nThe second child and eldest son of Queen Victoria and Prince Albert of Saxe-Coburg and Gotha, Edward, nicknamed \"Bertie\", was related to royalty throughout Europe. He was Prince of Wales and heir apparent to the British throne for almost 60 years. During his mother's reign, he was largely excluded from political influence and came to personify the fashionable, leisured elite. He married Princess Alexandra of Denmark in 1863, and the couple had six children. As Prince of Wales, Edward travelled throughout Britain performing ceremonial public duties and represented Britain on visits abroad. His tours of North America in 1860 and of the Indian subcontinent in 1875 proved popular successes. Despite the approval of the public, his reputation as a playboy prince soured his relationship with his mother.\nEdward inherited the throne upon his mother's death in 1901. He played a role in the modernisation of the British Home Fleet and the reorganisation of the British Army after the Second Boer War of 1899\u20131902. He re-instituted traditional ceremonies as public displays and broadened the range of people with whom royalty socialised. He fostered good relations between Britain and other European countries, especially France, for which he was popularly called \"Peacemaker\", but his relationship with his nephew, German Emperor Wilhelm II, was poor.\nThe Edwardian era, which covered Edward's reign and was named after him, coincided with the start of a new century and heralded significant changes in technology and society, including steam turbine propulsion and the rise of socialism. Edward died in 1910 in the midst of a constitutional crisis that was resolved the following year by the Parliament Act 1911, which restricted the power of the unelected House of Lords. Edward was succeeded by his only surviving son, George V."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q20875")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q20875",
+  "isRealHuman": true,
+  "birthDate": "1841-11-09",
+  "deathDate": "1910-05-06",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Edward VII (1841–1910) was King of the United Kingdom and the British Dominions, and Emperor of India, from 1901 until his death. He was the eldest son of Queen Victoria and Prince Albert. Edward died at the age of 68 due to a heart attack following bronchitis.",
+  "shortDescriptionFr": "Édouard VII (1841–1910) fut roi du Royaume-Uni et des Dominions britanniques, ainsi qu'empereur des Indes, de 1901 jusqu'à sa mort. Fils aîné de la reine Victoria et du prince Albert, il est décédé à 68 ans d'une crise cardiaque après une bronchite.",
+  "shortDescriptionDe": "Edward VII. (1841–1910) war von 1901 bis zu seinem Tod König des Vereinigten Königreichs und der britischen Dominions sowie Kaiser von Indien. Als ältester Sohn von Königin Victoria und Prinz Albert starb er im Alter von 68 Jahren an einem Herzinfarkt nach einer Bronchitis.",
+  "shortDescriptionEs": "Eduardo VII (1841–1910) fue rey del Reino Unido y de los Dominios británicos, y emperador de la India, desde 1901 hasta su muerte. Hijo mayor de la reina Victoria y el príncipe Alberto, murió a los 68 años de un ataque al corazón tras sufrir bronquitis.",
+  "shortDescriptionRu": "Эдуард VII (1841–1910) был королем Соединенного Королевства и британских доминионов, а также императором Индии с 1901 года до своей смерти. Старший сын королевы Виктории и принца Альберта, он скончался в возрасте 68 лет от сердечного приступа после бронхита.",
+  "sources": [
+    "https://www.britannica.com/biography/Edward-VII",
+    "https://en.wikipedia.org/wiki/Edward_VII",
+    "https://en.wikipedia.org/wiki/List_of_monarchs_of_the_British_Isles_by_cause_of_death"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83100",  "Name": "Osman I",  "BirthDate": "1258-01-01T00:00:00Z",  "DeathDate": "1326-06-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/I.%20Osman%20Han.jpg",  "SiteLinksCnt": 103,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"22492":{"pageid":22492,"ns":0,"title":"Osman I","extract":"Osman I or Osman Ghazi (Ottoman Turkish: \u0639\u062b\u0645\u0627\u0646 \u063a\u0627\u0632\u0649, romanized: \u02bfOsm\u0101n \u0120\u0101z\u012b; Turkish: I. Osman or Osman Gazi; died 1323/4) was the eponymous founder of the Ottoman Empire (first known as a beylik or emirate). While initially a small Turkoman principality during Osman's lifetime, his beylik transformed into a vast empire in the centuries after his death. It existed until 1922 shortly after the end of World War I, when the sultanate was abolished.\nOwing to the scarcity of historical sources dating from his lifetime, very little factual information about Osman has survived. Not a single written source survives from Osman's reign, and the Ottomans did not record the history of his life until the fifteenth century, more than a hundred years after his death. Because of this, historians find it very challenging to differentiate between fact and myth in the many stories told about him. One historian has even gone so far as to declare it impossible, describing the period of Osman's life as a \"black hole\".\nAccording to later Ottoman tradition, Osman's ancestors were descendants of the Kay\u0131 tribe of Oghuz Turks. However, many scholars of the early Ottomans regard it as a later fabrication meant to reinforce dynastic legitimacy.\nThe Ottoman principality was one of many Anatolian beyliks that emerged in the second half of the thirteenth century. Situated in the region of Bithynia in the north of Asia Minor, Osman's principality found itself particularly well placed to launch attacks on the vulnerable Byzantine Empire, which his descendants would eventually go on to conquer."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83100")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83100",
+  "isRealHuman": true,
+  "birthDate": "1258-01-01",
+  "deathDate": "1326-08-01",
+  "ageAtDeath": 68,
+  "confidence": 75,
+  "confidenceExplained": "Both birth and death dates are approximate due to historical uncertainties. The age at death is estimated based on the most commonly cited years.",
+  "shortDescriptionEn": "Osman I was the founder of the Ottoman Empire, transforming a small principality into a burgeoning state. He died around 1326, shortly after the capture of Bursa, which became the empire's first capital.",
+  "shortDescriptionFr": "Osman I fut le fondateur de l'Empire ottoman, transformant une petite principauté en un État en expansion. Il mourut vers 1326, peu après la prise de Bursa, qui devint la première capitale de l'empire.",
+  "shortDescriptionDe": "Osman I. war der Gründer des Osmanischen Reiches und verwandelte ein kleines Fürstentum in einen aufstrebenden Staat. Er starb um 1326, kurz nach der Eroberung von Bursa, der ersten Hauptstadt des Reiches.",
+  "shortDescriptionEs": "Osman I fue el fundador del Imperio Otomano, transformando un pequeño principado en un estado en expansión. Murió alrededor de 1326, poco después de la captura de Bursa, que se convirtió en la primera capital del imperio.",
+  "shortDescriptionRu": "Осман I был основателем Османской империи, превратив небольшое княжество в развивающееся государство. Он умер около 1326 года, вскоре после захвата Бурсы, ставшей первой столицей империи.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Osman_I",
+    "https://www.britannica.com/biography/Osman-I",
+    "https://www.thefamouspeople.com/profiles/osman-i-37028.php",
+    "https://www.worldhistory.org/Osman_I/",
+    "https://www.findagrave.com/memorial/174804827/osman_i",
+    "https://www.wikidata.org/wiki/Q83100"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q80956",  "Name": "Svante August Arrhenius",  "BirthDate": "1859-02-19T00:00:00Z",  "DeathDate": "1927-10-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Arrhenius2.jpg",  "SiteLinksCnt": 102,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"36586":{"pageid":36586,"ns":0,"title":"Svante Arrhenius","extract":"Svante August Arrhenius ( \u0259-REE-nee-\u0259s, -\u2060RAY-, Swedish: [\u02c8sv\u00e2n\u02d0t\u025b a\u02c8r\u011b\u02d0n\u026a\u0275s]; 19 February 1859 \u2013 2 October 1927) was a Swedish scientist. Originally a physicist, but often referred to as a chemist, Arrhenius was one of the founders of the science of physical chemistry. In 1903, he received the Nobel Prize in Chemistry, becoming the first Swedish Nobel laureate. In 1905, he became the director of the Nobel Institute, where he remained until his death.\nArrhenius was the first to use the principles of physical chemistry to estimate the extent to which increases in the atmospheric carbon dioxide are responsible for the Earth's increasing surface temperature. His work played an important role in the emergence of modern climate science. In the 1960s, Charles David Keeling reliably measured the level of carbon dioxide present in the air showing it was increasing and that, according to the greenhouse hypothesis, it was sufficient to cause significant global warming.\nThe Arrhenius equation, Arrhenius acid, Arrhenius base, lunar crater Arrhenius, Martian crater Arrhenius, the mountain of Arrheniusfjellet, and the Arrhenius Labs at Stockholm University were so named to commemorate his contributions to science."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q80956")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q80956",
+  "isRealHuman": true,
+  "birthDate": "1859-02-19",
+  "deathDate": "1927-10-02",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, including NobelPrize.org and Britannica, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Svante Arrhenius (1859–1927) was a Swedish scientist renowned for his groundbreaking work in physical chemistry, particularly his theory of electrolytic dissociation and early studies on the greenhouse effect. He was the first Swede to receive the Nobel Prize in Chemistry in 1903. Arrhenius remained active in scientific research and administration until his death in Stockholm at the age of 68.",
+  "shortDescriptionFr": "Svante Arrhenius (1859–1927) était un scientifique suédois célèbre pour ses travaux pionniers en chimie physique, notamment sa théorie de la dissociation électrolytique et ses premières études sur l'effet de serre. Il fut le premier Suédois à recevoir le prix Nobel de chimie en 1903. Arrhenius est resté actif dans la recherche scientifique et l'administration jusqu'à sa mort à Stockholm à l'âge de 68 ans.",
+  "shortDescriptionDe": "Svante Arrhenius (1859–1927) war ein schwedischer Wissenschaftler, bekannt für seine bahnbrechenden Arbeiten in der physikalischen Chemie, insbesondere seine Theorie der elektrolytischen Dissoziation und frühe Studien zum Treibhauseffekt. 1903 erhielt er als erster Schwede den Nobelpreis für Chemie. Arrhenius blieb bis zu seinem Tod in Stockholm im Alter von 68 Jahren in der wissenschaftlichen Forschung und Verwaltung aktiv.",
+  "shortDescriptionEs": "Svante Arrhenius (1859–1927) fue un científico sueco reconocido por su trabajo pionero en química física, especialmente su teoría de la disociación electrolítica y estudios tempranos sobre el efecto invernadero. Fue el primer sueco en recibir el Premio Nobel de Química en 1903. Arrhenius permaneció activo en la investigación científica y la administración hasta su muerte en Estocolmo a los 68 años.",
+  "shortDescriptionRu": "Сванте Аррениус (1859–1927) — шведский ученый, известный своими новаторскими работами в области физической химии, особенно теорией электролитической диссоциации и ранними исследованиями парникового эффекта. В 1903 году он стал первым шведом, получившим Нобелевскую премию по химии. Аррениус оставался активным в научных исследованиях и административной деятельности до своей смерти в Стокгольме в возрасте 68 лет.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/chemistry/1903/arrhenius/biographical/",
+    "https://www.britannica.com/biography/Svante-Arrhenius",
+    "https://en.wikipedia.org/wiki/Svante_Arrhenius"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42745",  "Name": "Rita Hayworth",  "BirthDate": "1918-10-17T00:00:00Z",  "DeathDate": "1987-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rita%20Hayworth-publicity.JPG",  "SiteLinksCnt": 101,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"277952":{"pageid":277952,"ns":0,"title":"Rita Hayworth","extract":"Rita Hayworth (born Margarita Carmen Cansino; October 17, 1918 \u2013 May 14, 1987) was an American actress, dancer, and pin-up girl. She achieved fame in the 1940s as one of the top stars of the Golden Age of Hollywood, and appeared in 61 films in total over 37 years. The press coined the term \"The Love Goddess\" to describe Hayworth, after she had become the most glamorous screen idol of the 1940s. She was the top pin-up girl for GIs during World War II.\nHayworth is widely known for her performance in the 1946 film noir Gilda, opposite Glenn Ford, in which she played the femme fatale in her first major dramatic role. She is also known for her performances in Only Angels Have Wings (1939), The Strawberry Blonde (1941), Blood and Sand (1941), The Lady from Shanghai (1947), Pal Joey (1957), and Separate Tables (1958). Fred Astaire, with whom she made two films, You'll Never Get Rich (1941) and You Were Never Lovelier (1942), once called her his favorite dance partner. She also starred in the Technicolor musical Cover Girl (1944), with Gene Kelly. She is listed as one of the top 25 female motion picture stars of all time in the American Film Institute's survey, AFI's 100 Years...100 Stars.\nFor her contribution to the motion picture industry, Hayworth received a star on the Hollywood Walk of Fame at 1645 Vine Street in 1960.\nIn 1980, Hayworth was diagnosed with early-onset Alzheimer's disease, which contributed to her death in 1987 at age 68. The public disclosure and discussion of her illness drew attention to Alzheimer's, and helped to increase public and private funding for research into the disease."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42745")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42745",
+  "isRealHuman": true,
+  "birthDate": "1918-10-17",
+  "deathDate": "1987-05-14",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Rita Hayworth (born Margarita Carmen Cansino) was an American actress and dancer who rose to fame in the 1940s as one of Hollywood's top stars, appearing in 61 films over 37 years. Known for her performance in 'Gilda' (1946), she became a cultural icon and was dubbed 'The Love Goddess.' In 1980, she was diagnosed with early-onset Alzheimer's disease, which contributed to her death in 1987 at age 68.",
+  "shortDescriptionFr": "Rita Hayworth (née Margarita Carmen Cansino) était une actrice et danseuse américaine qui a atteint la célébrité dans les années 1940 en tant que l'une des principales stars d'Hollywood, apparaissant dans 61 films sur 37 ans. Connue pour son rôle dans 'Gilda' (1946), elle est devenue une icône culturelle surnommée 'La Déesse de l'Amour.' En 1980, elle a été diagnostiquée avec la maladie d'Alzheimer à début précoce, qui a contribué à sa mort en 1987 à l'âge de 68 ans.",
+  "shortDescriptionDe": "Rita Hayworth (geboren als Margarita Carmen Cansino) war eine amerikanische Schauspielerin und Tänzerin, die in den 1940er Jahren als einer der größten Stars Hollywoods berühmt wurde und in 61 Filmen über 37 Jahre hinweg auftrat. Bekannt für ihre Rolle in 'Gilda' (1946), wurde sie zu einer kulturellen Ikone, bekannt als 'Die Liebesgöttin.' 1980 wurde bei ihr eine früh einsetzende Alzheimer-Krankheit diagnostiziert, die zu ihrem Tod 1987 im Alter von 68 Jahren beitrug.",
+  "shortDescriptionEs": "Rita Hayworth (nacida como Margarita Carmen Cansino) fue una actriz y bailarina estadounidense que alcanzó la fama en los años 40 como una de las principales estrellas de Hollywood, apareciendo en 61 películas durante 37 años. Conocida por su actuación en 'Gilda' (1946), se convirtió en un ícono cultural apodada 'La Diosa del Amor.' En 1980, fue diagnosticada con la enfermedad de Alzheimer de inicio temprano, que contribuyó a su muerte en 1987 a los 68 años.",
+  "shortDescriptionRu": "Рита Хейворт (урожденная Маргарита Кармен Кансино) была американской актрисой и танцовщицей, ставшей одной из главных звезд Голливуда 1940-х годов, снявшись в 61 фильме за 37 лет. Известна по роли в фильме 'Гильда' (1946), она стала культурным символом, получив прозвище 'Богиня любви.' В 1980 году у нее была диагностирована ранняя болезнь Альцгеймера, которая способствовала ее смерти в 1987 году в возрасте 68 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rita_Hayworth",
+    "https://www.britannica.com/biography/Rita-Hayworth",
+    "https://happyhappybirthday.net/en/age/rita-hayworth-person_syusf",
+    "https://deadorkicking.com/rita-hayworth-dead-or-alive/",
+    "https://www.imdb.com/name/nm0000028/bio/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q80135",  "Name": "Dmitri Shostakovich",  "BirthDate": "1906-09-25T00:00:00Z",  "DeathDate": "1975-08-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dmitri%20Shostakovich%20credit%20Deutsche%20Fotothek%20adjusted.jpg",  "SiteLinksCnt": 101,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"8520":{"pageid":8520,"ns":0,"title":"Dmitri Shostakovich","extract":"Dmitri Dmitriyevich Shostakovich (25 September [O.S. 12 September] 1906 \u2013 9 August 1975) was a Soviet-era Russian composer and pianist who became internationally known after the premiere of his First Symphony in 1926 and thereafter was regarded as a major composer.\nShostakovich achieved early fame in the Soviet Union, but had a complex relationship with its government. His 1934 opera Lady Macbeth of Mtsensk was initially a success but later condemned by the Soviet government, putting his career at risk. In 1948, his work was denounced under the Zhdanov Doctrine, with professional consequences lasting several years. Even after his censure was rescinded in 1956, performances of his music were occasionally subject to state interventions, as with his Thirteenth Symphony (1962). Nevertheless, Shostakovich was a member of the Supreme Soviet of the RSFSR (1947) and the Supreme Soviet of the Soviet Union (from 1962 until his death), as well as chairman of the RSFSR Union of Composers (1960\u20131968). Over the course of his career, he earned several important awards, including the Order of Lenin, from the Soviet government.\nShostakovich combined a variety of different musical techniques in his works. His music is characterized by sharp contrasts, elements of the grotesque, and ambivalent tonality; he was also heavily influenced by neoclassicism and by the late Romanticism of Gustav Mahler. His orchestral works include 15 symphonies and six concerti (two each for piano, violin, and cello). His chamber works include 15 string quartets, a piano quintet, and two piano trios. His solo piano works include two sonatas, an early set of 24 preludes, and a later set of 24 preludes and fugues. Stage works include three completed operas and three ballets. Shostakovich also wrote several song cycles, and a substantial quantity of music for theatre and film.\nShostakovich's reputation has continued to grow after his death. Scholarly interest has increased significantly since the late 20th century, including considerable debate about the relationship between his music and his attitudes toward the Soviet government."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q80135")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q80135",
+  "isRealHuman": true,
+  "birthDate": "1906-09-25",
+  "deathDate": "1975-08-09",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Dmitri Shostakovich (1906–1975) was a prominent Soviet composer and pianist known for his 15 symphonies and numerous chamber works. He died at the age of 68 from lung cancer in Moscow.",
+  "shortDescriptionFr": "Dmitri Chostakovitch (1906–1975) était un compositeur et pianiste soviétique renommé pour ses 15 symphonies et nombreuses œuvres de chambre. Il est décédé à l'âge de 68 ans d'un cancer du poumon à Moscou.",
+  "shortDescriptionDe": "Dmitri Schostakowitsch (1906–1975) war ein bedeutender sowjetischer Komponist und Pianist, bekannt für seine 15 Sinfonien und zahlreiche Kammermusikwerke. Er starb im Alter von 68 Jahren an Lungenkrebs in Moskau.",
+  "shortDescriptionEs": "Dmitri Shostakóvich (1906–1975) fue un destacado compositor y pianista soviético, conocido por sus 15 sinfonías y numerosas obras de cámara. Falleció a los 68 años de cáncer de pulmón en Moscú.",
+  "shortDescriptionRu": "Дмитрий Шостакович (1906–1975) — выдающийся советский композитор и пианист, автор 15 симфоний и многочисленных камерных произведений. Скончался в возрасте 68 лет от рака лёгких в Москве.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Dmitri_Shostakovich",
+    "https://www.britannica.com/biography/Dmitri-Shostakovich",
+    "https://es.wikipedia.org/wiki/Dmitri_Shostak%C3%B3vich"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q18111",  "Name": "Li Keqiang",  "BirthDate": "1955-07-03T00:00:00Z",  "DeathDate": "2023-10-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Li%20Keqiang%20%2820230104%29.jpg",  "SiteLinksCnt": 96,  "Age": 68}
+{"batchcomplete":"","query":{"pages":{"1454147":{"pageid":1454147,"ns":0,"title":"Li Keqiang","extract":"Li Keqiang (Chinese: \u674e\u514b\u5f3a; pinyin: L\u01d0 K\u00e8qi\u00e1ng; 3 July 1955 \u2013 27 October 2023) was a Chinese economist and politician who served as the seventh premier of China from 2013 to 2023. He was also the second-ranked member of the Politburo Standing Committee of the Chinese Communist Party (CCP) from 2012 to 2022. Li was a major part of the \"fifth generation of Chinese leadership\" along with Xi Jinping, the CCP general secretary and president.\nBorn in Hefei, Anhui province, in 1955, Li initially rose through the ranks of Chinese politics through his involvement in the Communist Youth League of China (CYLC), serving as its first secretary from 1993 to 1998. From 1998 to 2004, Li served as the governor of Henan and the province's party secretary. From 2004 to 2007 he served as the party secretary of Liaoning, the top political office in the province. From 2008 to 2013, Li served as the first-ranked vice premier under then-premier Wen Jiabao, overseeing a broad portfolio which included economic development, price controls, finance, climate change, and macroeconomic management.\nInitially seen as a candidate for becoming the paramount leader, Li instead assumed the post of premier in 2013, and facilitated the Chinese government's shifting of priorities from export-led growth to a greater focus on internal consumption. During his term Li headed the State Council and was one of the leading figures behind China's Financial and Economic Affairs, Foreign Affairs, National Security and Deepening Reforms. Additionally, Li and his cabinet initiated the Made in China 2025 strategic plan in May 2015.\nGiven his Youth League experience, Li was generally considered a political ally of former leader Hu Jintao and a member of the Tuanpai faction. Economically seen as advocating reform and liberalization, Li has been described as representing the more pragmatic and technocratic side of China's leadership. Li stepped down from the Politburo Standing Committee in October 2022 and was succeeded as premier by Li Qiang in March 2023. Li died in October 2023 from a heart attack, after leaving office just a few months prior."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q18111")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q18111",
+  "isRealHuman": true,
+  "birthDate": "1955-07-03",
+  "deathDate": "2023-10-27",
+  "ageAtDeath": 68,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and confirmed by multiple reliable sources, allowing for an exact age calculation.",
+  "shortDescriptionEn": "Li Keqiang (1955–2023) was a Chinese economist and politician who served as the Premier of China from 2013 to 2023. Known for his reformist stance and advocacy for market-oriented policies, he played a significant role in China's economic development. Li died suddenly of a heart attack in Shanghai shortly after his retirement.",
+  "shortDescriptionFr": "Li Keqiang (1955–2023) était un économiste et homme politique chinois, Premier ministre de la Chine de 2013 à 2023. Réputé pour son approche réformiste et son soutien aux politiques de marché, il a contribué au développement économique du pays. Il est décédé subitement d'une crise cardiaque à Shanghai peu après sa retraite.",
+  "shortDescriptionDe": "Li Keqiang (1955–2023) war ein chinesischer Ökonom und Politiker, der von 2013 bis 2023 als Premierminister Chinas amtierte. Bekannt für seine reformorientierte Haltung und die Förderung marktwirtschaftlicher Politiken, spielte er eine bedeutende Rolle in Chinas wirtschaftlicher Entwicklung. Li starb plötzlich an einem Herzinfarkt in Shanghai kurz nach seinem Ruhestand.",
+  "shortDescriptionEs": "Li Keqiang (1955–2023) fue un economista y político chino que se desempeñó como Primer Ministro de China de 2013 a 2023. Conocido por su postura reformista y su apoyo a políticas orientadas al mercado, contribuyó significativamente al desarrollo económico del país. Li falleció repentinamente de un ataque al corazón en Shanghái poco después de su jubilación.",
+  "shortDescriptionRu": "Ли Кэцян (1955–2023) — китайский экономист и политик, занимавший пост премьер-министра Китая с 2013 по 2023 год. Известен своей реформаторской позицией и поддержкой рыночных политик, он сыграл значительную роль в экономическом развитии страны. Ли внезапно скончался от сердечного приступа в Шанхае вскоре после выхода на пенсию.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Li_Keqiang",
+    "https://www.aljazeera.com/news/2023/10/27/li-keqiang-former-chinese-premier-has-died-at-age-68",
+    "https://www.ft.com/content/2bb04b08-47ed-45b3-ab36-d8d0aa213731",
+    "https://www.apnews.com/article/537e0dbbc2a4023915cb428f44540468"
+  ]
+}
