@@ -1,0 +1,48 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q130377",  "Name": "Bartolomeu Dias",  "BirthDate": "0456-01-01T00:00:00Z",  "DeathDate": "1500-05-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bartolomeu%20Dias%2C%20South%20Africa%20House%20%28cut%29.JPG",  "SiteLinksCnt": 76,  "Age": 1044}
+{"batchcomplete":"","query":{"pages":{"45592":{"pageid":45592,"ns":0,"title":"Bartolomeu Dias","extract":"Bartolomeu Dias (c.\u20091450 \u2013 29 May 1500) was a Portuguese mariner and explorer. In 1488, he became the first European navigator to round the southern tip of Africa and to demonstrate that the most effective southward route for ships lies in the open ocean, well to the west of the African coast. His discoveries effectively established the sea route between Europe and Asia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q130377")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q130377",
+  "isRealHuman": true,
+  "birthDate": "1450-01-01",
+  "deathDate": "1500-05-29",
+  "ageAtDeath": 50,
+  "confidence": 95,
+  "confidenceExplained": "The birth year is estimated based on historical records indicating he was born around 1450. The death date is well-documented as May 29, 1500. Given these dates, the estimated age at death is approximately 50 years, with a high degree of confidence.",
+  "shortDescriptionEn": "Bartolomeu Dias was a Portuguese explorer who, in 1488, became the first European to sail around the southern tip of Africa, opening the sea route to Asia. He died in 1500 during a storm near the Cape of Good Hope.",
+  "shortDescriptionFr": "Bartolomeu Dias était un explorateur portugais qui, en 1488, fut le premier Européen à naviguer autour de la pointe sud de l'Afrique, ouvrant la route maritime vers l'Asie. Il est mort en 1500 lors d'une tempête près du cap de Bonne-Espérance.",
+  "shortDescriptionDe": "Bartolomeu Dias war ein portugiesischer Entdecker, der 1488 als erster Europäer die Südspitze Afrikas umsegelte und damit den Seeweg nach Asien eröffnete. Er starb 1500 während eines Sturms nahe dem Kap der Guten Hoffnung.",
+  "shortDescriptionEs": "Bartolomeu Dias fue un explorador portugués que, en 1488, se convirtió en el primer europeo en navegar alrededor del extremo sur de África, abriendo la ruta marítima hacia Asia. Murió en 1500 durante una tormenta cerca del cabo de Buena Esperanza.",
+  "shortDescriptionRu": "Бартоломеу Диаш был португальским исследователем, который в 1488 году первым из европейцев обогнул южную оконечность Африки, открыв морской путь в Азию. Он погиб в 1500 году во время шторма у мыса Доброй Надежды.",
+  "sources": [
+    "https://www.britannica.com/biography/Bartolomeu-Dias",
+    "https://en.wikipedia.org/wiki/Bartolomeu_Dias",
+    "https://www.sahistory.org.za/people/bartolomeu-dias"
+  ]
+}
