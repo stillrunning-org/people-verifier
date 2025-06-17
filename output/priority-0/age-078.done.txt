@@ -1,0 +1,973 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1001",  "Name": "Mahatma Gandhi",  "BirthDate": "1869-10-02T00:00:00Z",  "DeathDate": "1948-01-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi%2C%20studio%2C%201931.jpg",  "SiteLinksCnt": 275,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"19379":{"pageid":19379,"ns":0,"title":"Mahatma Gandhi","extract":"Mohandas Karamchand Gandhi (2 October 1869 \u2013 30 January 1948) was an Indian lawyer, anti-colonial nationalist, and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule. He inspired movements for civil rights and freedom across the world. The honorific Mah\u0101tm\u0101 (from Sanskrit, meaning great-souled, or venerable), first applied to him in South Africa in 1914, is now used throughout the world.\nBorn and raised in a Hindu family in coastal Gujarat, Gandhi trained in the law at the Inner Temple in London and was called to the bar at the age of 22. After two uncertain years in India, where he was unable to start a successful law practice, Gandhi moved to South Africa in 1893 to represent an Indian merchant in a lawsuit. He went on to live in South Africa for 21 years. Here, Gandhi raised a family and first employed nonviolent resistance in a campaign for civil rights. In 1915, aged 45, he returned to India and soon set about organising peasants, farmers, and urban labourers to protest against discrimination and excessive land tax.\nAssuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for easing poverty, expanding women's rights, building religious and ethnic amity, ending untouchability, and, above all, achieving swaraj or self-rule. Gandhi adopted the short dhoti woven with hand-spun yarn as a mark of identification with India's rural poor. He began to live in a self-sufficient residential community, to eat simple food, and undertake long fasts as a means of both introspection and political protest. Bringing anti-colonial nationalism to the common Indians, Gandhi led them in challenging the British-imposed salt tax with the 400 km (250 mi) Dandi Salt March in 1930 and in calling for the British to quit India in 1942. He was imprisoned many times and for many years in both South Africa and India.\nGandhi's vision of an independent India based on religious pluralism was challenged in the early 1940s by a Muslim nationalism which demanded a separate homeland for Muslims within British India. In August 1947, Britain granted independence, but the British Indian Empire was partitioned into two dominions, a Hindu-majority India and a Muslim-majority Pakistan. As many displaced Hindus, Muslims, and Sikhs made their way to their new lands, religious violence broke out, especially in the Punjab and Bengal. Abstaining from the official celebration of independence, Gandhi visited the affected areas, attempting to alleviate distress. In the months following, he undertook several hunger strikes to stop the religious violence. The last of these was begun in Delhi on 12 January 1948, when Gandhi was 78. The belief that Gandhi had been too resolute in his defence of both Pakistan and Indian Muslims spread among some Hindus in India. Among these was Nathuram Godse, a militant Hindu nationalist from Pune, western India, who assassinated Gandhi by firing three bullets into his chest at an interfaith prayer meeting in Delhi on 30 January 1948. \nGandhi's birthday, 2 October, is commemorated in India as Gandhi Jayanti, a national holiday, and worldwide as the International Day of Nonviolence. Gandhi is considered to be the Father of the Nation in post-colonial India. During India's nationalist movement and in several decades immediately after, he was also commonly called Bapu, an endearment roughly meaning \"father\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1001")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1001",
+  "isRealHuman": true,
+  "birthDate": "1869-10-02",
+  "deathDate": "1948-01-30",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted historical facts, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Mahatma Gandhi (1869–1948) was an Indian lawyer and anti-colonial nationalist who led India's independence movement through nonviolent resistance. He was assassinated at age 78 by a Hindu nationalist opposed to his inclusive vision for India.",
+  "shortDescriptionFr": "Mahatma Gandhi (1869–1948) était un avocat et nationaliste indien qui a dirigé le mouvement pour l'indépendance de l'Inde par la résistance non violente. Il a été assassiné à l'âge de 78 ans par un nationaliste hindou opposé à sa vision inclusive de l'Inde.",
+  "shortDescriptionDe": "Mahatma Gandhi (1869–1948) war ein indischer Anwalt und antikolonialer Nationalist, der Indiens Unabhängigkeitsbewegung durch gewaltlosen Widerstand anführte. Er wurde im Alter von 78 Jahren von einem hinduistischen Nationalisten ermordet, der seine inklusive Vision für Indien ablehnte.",
+  "shortDescriptionEs": "Mahatma Gandhi (1869–1948) fue un abogado y nacionalista indio que lideró el movimiento de independencia de la India mediante la resistencia no violenta. Fue asesinado a los 78 años por un nacionalista hindú opuesto a su visión inclusiva de la India.",
+  "shortDescriptionRu": "Махатма Ганди (1869–1948) был индийским юристом и антиколониальным националистом, возглавившим движение за независимость Индии через ненасильственное сопротивление. Он был убит в возрасте 78 лет индуистским националистом, выступавшим против его инклюзивного видения Индии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+    "https://www.britannica.com/biography/Mahatma-Gandhi",
+    "https://en.wikipedia.org/wiki/Assassination_of_Mahatma_Gandhi"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4605",  "Name": "Sarah Bernhardt",  "BirthDate": "1844-10-23T00:00:00Z",  "DeathDate": "1923-03-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Face%20detail%2C%20Sarah%20Bernhardt%20as%20Do%C3%B1a%20Sol%20in%20Hernani%20%28cropped%29.png",  "SiteLinksCnt": 188,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"44608":{"pageid":44608,"ns":0,"title":"Sarah Bernhardt","extract":"Sarah Bernhardt (French: [sa\u0281a b\u025b\u0281n\u0251\u0281t]; born Henriette-Rosine Bernard; 22 October 1844 \u2013 26 March 1923) was a French stage actress who starred in some of the most popular French plays of the late 19th and early 20th centuries, including La Dame aux Cam\u00e9lias by Alexandre Dumas fils, Ruy Blas by Victor Hugo, F\u00e9dora and La Tosca by Victorien Sardou, and L'Aiglon by Edmond Rostand. She played female and male roles, including Shakespeare's Hamlet. Rostand called her \"the queen of the pose and the princess of the gesture\", and Hugo praised her \"golden voice\". She made several theatrical tours worldwide and was one of the early prominent actresses to make sound recordings and act in motion pictures.\nShe is also linked with the success of artist Alphonse Mucha, whose work she helped to publicize. Mucha became one of the more sought-after artists of this period for his Art Nouveau style."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4605")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4605",
+  "isRealHuman": true,
+  "birthDate": "1844-10-22",
+  "deathDate": "1923-03-26",
+  "ageAtDeath": 78,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable sources, including Britannica and Wikipedia, confirm her birth date as October 22, 1844, and death date as March 26, 1923. The slight uncertainty in the exact birth date (some sources mention October 23) does not significantly affect the calculated age at death.",
+  "shortDescriptionEn": "Sarah Bernhardt (1844–1923) was a pioneering French stage actress, celebrated for her roles in 'La Dame aux Camélias' and 'Hamlet'. She passed away in Paris at the age of 78 due to kidney failure.",
+  "shortDescriptionFr": "Sarah Bernhardt (1844–1923) était une actrice de théâtre française pionnière, célèbre pour ses rôles dans 'La Dame aux Camélias' et 'Hamlet'. Elle est décédée à Paris à l'âge de 78 ans des suites d'une insuffisance rénale.",
+  "shortDescriptionDe": "Sarah Bernhardt (1844–1923) war eine wegweisende französische Bühnenschauspielerin, bekannt für ihre Rollen in 'Die Kameliendame' und 'Hamlet'. Sie starb in Paris im Alter von 78 Jahren an Nierenversagen.",
+  "shortDescriptionEs": "Sarah Bernhardt (1844–1923) fue una actriz de teatro francesa pionera, reconocida por sus papeles en 'La dama de las camelias' y 'Hamlet'. Falleció en París a los 78 años debido a una insuficiencia renal.",
+  "shortDescriptionRu": "Сара Бернар (1844–1923) — выдающаяся французская театральная актриса, известная ролями в 'Даме с камелиями' и 'Гамлете'. Скончалась в Париже в возрасте 78 лет от почечной недостаточности.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sarah_Bernhardt",
+    "https://www.britannica.com/biography/Sarah-Bernhardt",
+    "https://simple.wikipedia.org/wiki/Sarah_Bernhardt",
+    "https://www.astro.com/astro-databank/Bernhardt%2C_Sarah",
+    "https://www.thetombstonetourist.com/graves/sarah-bernhardt/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9916",  "Name": "Dwight D. Eisenhower",  "BirthDate": "1890-10-14T00:00:00Z",  "DeathDate": "1969-03-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dwight%20D.%20Eisenhower%2C%20official%20photo%20portrait%2C%20May%2029%2C%201959.jpg",  "SiteLinksCnt": 185,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"8182":{"pageid":8182,"ns":0,"title":"Dwight D. Eisenhower","extract":"Dwight David Eisenhower (born David Dwight Eisenhower; October 14, 1890 \u2013 March 28, 1969), also known by his nickname Ike, was the 34th president of the United States, serving from 1953 to 1961. During World War II, he was Supreme Commander of the Allied Expeditionary Force in Europe and achieved the five-star rank as General of the Army. Eisenhower planned and supervised two of the most consequential military campaigns of World War II: Operation Torch in the North Africa campaign in 1942\u20131943 and the invasion of Normandy in 1944.\nEisenhower was born in Denison, Texas, and raised in Abilene, Kansas. His family had a strong religious background, and his mother became a Jehovah's Witness. Eisenhower, however, belonged to no organized church until 1952. He graduated from West Point in 1915 and later married Mamie Doud, with whom he had two sons. During World War I, he was denied a request to serve in Europe and instead commanded a unit that trained tank crews. Between the wars he served in staff positions in the US and the Philippines, reaching the rank of brigadier general shortly before the entry of the US into World War II in 1941. After further promotion Eisenhower oversaw the Allied invasions of North Africa and Sicily before supervising the invasions of France and Germany. After the war ended in Europe, he served as military governor of the American-occupied zone of Germany (1945), Army Chief of Staff (1945\u20131948), president of Columbia University (1948\u20131953), and as the first supreme commander of NATO (1951\u20131952).\nIn 1952, Eisenhower entered the presidential race as a Republican to block the isolationist foreign policies of Senator Robert A. Taft, who opposed NATO. Eisenhower won that year's election and the 1956 election in landslides, both times defeating Adlai Stevenson II. Eisenhower's main goals in office were to contain the spread of communism and reduce federal deficits. In 1953, he considered using nuclear weapons to end the Korean War and may have threatened China with nuclear attack if an armistice was not reached quickly. China did agree and an armistice resulted, which remains in effect. His New Look policy of nuclear deterrence prioritized \"inexpensive\" nuclear weapons while reducing funding for expensive Army divisions. He continued Harry S. Truman's policy of recognizing Taiwan as the legitimate government of China, and he won congressional approval of the Formosa Resolution. His administration provided major aid to help the French fight off Vietnamese Communists in the First Indochina War. After the French left, he gave strong financial support to the new state of South Vietnam. \nHe supported regime-changing military coups in Iran and Guatemala orchestrated by his own administration. During the Suez Crisis of 1956, he condemned the Israeli, British, and French invasion of Egypt, and he forced them to withdraw. He also condemned the Soviet invasion during the Hungarian Revolution of 1956 but took no action. He deployed 15,000 soldiers during the 1958 Lebanon crisis. Near the end of his term, a summit meeting with the Soviet leader Nikita Khrushchev was cancelled when a US spy plane was shot down over the Soviet Union. Eisenhower approved the Bay of Pigs Invasion, which was left to John F. Kennedy to carry out.\nOn the domestic front, Eisenhower governed as a moderate conservative who continued New Deal agencies and expanded Social Security. He covertly opposed Joseph McCarthy and contributed to the end of McCarthyism by openly invoking executive privilege. He signed the Civil Rights Act of 1957 and sent Army troops to enforce federal court orders which integrated schools in Little Rock, Arkansas. His administration undertook the development and construction of the Interstate Highway System, which remains the largest construction of roadways in American history. In 1957, following the Soviet launch of Sputnik, Eisenhower led the American response which included the creation of NASA and the establishment of a stronger, science-based education via the National Defense Education Act. The Soviet Union began to reinforce their own space program, escalating the Space Race. His two terms saw unprecedented economic prosperity except for a minor recession in 1958. In his farewell address, he expressed his concerns about the dangers of massive military spending, particularly deficit spending and government contracts to private military manufacturers, which he dubbed \"the military\u2013industrial complex\". Historical evaluations of his presidency place him among the upper tier of US presidents."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9916")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9916",
+  "isRealHuman": true,
+  "birthDate": "1890-10-14",
+  "deathDate": "1969-03-28",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, confirming that Eisenhower was 78 years old at the time of his death.",
+  "shortDescriptionEn": "Dwight D. Eisenhower was the 34th President of the United States (1953–1961) and a five-star general in the U.S. Army during World War II. He died at age 78 from congestive heart failure at Walter Reed Army Medical Center in Washington, D.C.",
+  "shortDescriptionFr": "Dwight D. Eisenhower était le 34e président des États-Unis (1953–1961) et général cinq étoiles pendant la Seconde Guerre mondiale. Il est décédé à 78 ans d'une insuffisance cardiaque congestive à l'hôpital militaire Walter Reed à Washington, D.C.",
+  "shortDescriptionDe": "Dwight D. Eisenhower war der 34. Präsident der Vereinigten Staaten (1953–1961) und Fünf-Sterne-General im Zweiten Weltkrieg. Er starb im Alter von 78 Jahren an einer kongestiven Herzinsuffizienz im Walter Reed Army Medical Center in Washington, D.C.",
+  "shortDescriptionEs": "Dwight D. Eisenhower fue el 34.º presidente de los Estados Unidos (1953–1961) y general de cinco estrellas durante la Segunda Guerra Mundial. Falleció a los 78 años por insuficiencia cardíaca congestiva en el Centro Médico Militar Walter Reed en Washington, D.C.",
+  "shortDescriptionRu": "Дуайт Д. Эйзенхауэр был 34-м президентом США (1953–1961) и генералом армии во Второй мировой войне. Он умер в возрасте 78 лет от застойной сердечной недостаточности в Военно-медицинском центре Уолтера Рида в Вашингтоне, округ Колумбия.",
+  "sources": [
+    "https://www.politico.com/story/2018/03/28/eisenhower-dies-at-age-78-march-28-1969-484631",
+    "https://www.eisenhowerlibrary.gov/eisenhowers/dwight-d-eisenhowers-final-post",
+    "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7197",  "Name": "Simone de Beauvoir",  "BirthDate": "1908-01-09T00:00:00Z",  "DeathDate": "1986-04-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Simone%20de%20Beauvoir2.png",  "SiteLinksCnt": 173,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"62034":{"pageid":62034,"ns":0,"title":"Simone de Beauvoir","extract":"Simone Lucie Ernestine Marie Bertrand de Beauvoir (UK: , US: ; French: [sim\u0254n d\u0259 bovwa\u0281] ; 9 January 1908 \u2013 14 April 1986) was a French existentialist philosopher, writer, social theorist, and feminist activist. Though she did not consider herself a philosopher, nor was she considered one at the time of her death, she had a significant influence on both feminist existentialism and feminist theory.\nBeauvoir wrote novels, essays, short stories, biographies, autobiographies, and monographs on philosophy, politics, and social issues. She was best known for her \"trailblazing work in feminist philosophy\", The Second Sex (1949), a detailed analysis of women's oppression and a foundational tract of contemporary feminism. She was also known for her novels, the most famous of which were She Came to Stay (1943) and The Mandarins (1954). \nHer most enduring contribution to literature are her memoirs, notably the first volume, M\u00e9moires d'une jeune fille rang\u00e9e (1958). She received the 1954 Prix Goncourt, the 1975 Jerusalem Prize, and the 1978 Austrian State Prize for European Literature. She was also nominated for the Nobel Prize in Literature in 1961, 1969 and 1973. However, Beauvoir generated controversy when she briefly lost her teaching job after being accused of sexually abusing some of her students."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7197")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7197",
+  "isRealHuman": true,
+  "birthDate": "1908-01-09",
+  "deathDate": "1986-04-14",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple sources, confirming she was 78 at the time of her death.",
+  "shortDescriptionEn": "Simone de Beauvoir was a French existentialist philosopher, writer, and feminist activist, best known for her 1949 book *The Second Sex*. She died on April 14, 1986, in Paris at the age of 78, due to pneumonia following complications from an appendectomy.",
+  "shortDescriptionFr": "Simone de Beauvoir était une philosophe existentialiste, écrivaine et militante féministe française, surtout connue pour son ouvrage de 1949 *Le Deuxième Sexe*. Elle est décédée le 14 avril 1986 à Paris, à l'âge de 78 ans, des suites d'une pneumonie après des complications liées à une appendicectomie.",
+  "shortDescriptionDe": "Simone de Beauvoir war eine französische existentialistische Philosophin, Schriftstellerin und feministische Aktivistin, bekannt für ihr Werk *Das andere Geschlecht* von 1949. Sie starb am 14. April 1986 in Paris im Alter von 78 Jahren an einer Lungenentzündung nach Komplikationen einer Blinddarmoperation.",
+  "shortDescriptionEs": "Simone de Beauvoir fue una filósofa existencialista, escritora y activista feminista francesa, conocida por su libro de 1949 *El segundo sexo*. Falleció el 14 de abril de 1986 en París, a los 78 años, debido a una neumonía tras complicaciones de una apendicectomía.",
+  "shortDescriptionRu": "Симона де Бовуар была французским экзистенциалистским философом, писательницей и феминистской активисткой, наиболее известной своей книгой 1949 года *Второй пол*. Она скончалась 14 апреля 1986 года в Париже в возрасте 78 лет от пневмонии после осложнений после аппендэктомии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Simone_de_Beauvoir",
+    "https://www.britannica.com/biography/Simone-de-Beauvoir",
+    "https://www.upi.com/Archives/1986/04/14/Simone-de-Beauvoir-dies-at-78/5557513838800/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36661",  "Name": "Henrik Ibsen",  "BirthDate": "1828-03-20T00:00:00Z",  "DeathDate": "1906-05-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Henrik%20Ibsen%20av%20Eilif%20Peterssen%201895.jpg",  "SiteLinksCnt": 167,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"14236":{"pageid":14236,"ns":0,"title":"Henrik Ibsen","extract":"Henrik Johan Ibsen (; Norwegian: [\u02c8h\u025b\u0300nr\u026ak \u02c8\u026a\u0300psn\u0329]; 20 March 1828 \u2013 23 May 1906) was a Norwegian playwright and theatre director. Ibsen is considered the world's pre-eminent dramatist of the 19th century and is often referred to as \"the father of modern drama.\" He pioneered theatrical realism, but also wrote lyrical epic works. His major works include Brand, Peer Gynt, Emperor and Galilean, A Doll's House, Ghosts, An Enemy of the People, The Wild Duck, Rosmersholm, Hedda Gabler, The Master Builder, and When We Dead Awaken. Ibsen is the most frequently performed dramatist in the world after Shakespeare, and A Doll's House was the world's most performed play in 2006.\nIbsen was born into the merchant elite of the port town of Skien, and had strong family ties to the families who had held power and wealth in Telemark since the mid-1500s. Both his parents belonged socially or biologically to the Paus family of Rising and Altenburgg\u00e5rden\u2014the extended family of the siblings Ole Paus and Hedevig Paus\u2014and Ibsen described his own background as patrician. Ibsen established himself as a theater director in Norway during the 1850s and gained international recognition as a playwright with the plays Brand and Peer Gynt in the 1860s. From 1864, he lived for 27 years in Italy and Germany, primarily in Rome, Dresden, and Munich, making only brief visits to Norway, before moving to Christiania in 1891. Most of Ibsen's plays are set in Norway, often in bourgeois environments and places reminiscent of Skien, and he frequently drew inspiration from family members. Ibsen's early poetic and cinematic play Peer Gynt has strong surreal elements. After Peer Gynt Ibsen abandoned verse and wrote in realistic prose. Several of his later dramas were considered scandalous to many of his era, when European theatre was expected to model strict morals of family life and propriety. Ibsen's later work examined the realities that lay behind the fa\u00e7ades, revealing much that was disquieting to a number of his contemporaries. He had a critical eye and conducted a free inquiry into the conditions of life and issues of morality. In many critics' estimates The Wild Duck and Rosmersholm are \"vying with each other as rivals for the top place among Ibsen's works\"; Ibsen himself regarded Emperor and Galilean as his masterpiece.\nIbsen is considered one of the most important playwrights in the history of world literature, and is widely regarded as the foremost playwright of the nineteenth century. Sigmund Freud considered him on par with Shakespeare and Sophocles, while George Bernard Shaw argued that Ibsen had surpassed Shakespeare as the world's pre-eminent dramatist. Ibsen influenced other playwrights and novelists such as George Bernard Shaw, Oscar Wilde, and James Joyce. Considered a profound poetic dramatist, he is widely regarded as the most important playwright since Shakespeare. Ibsen is commonly described as the most famous Norwegian internationally. Ibsen wrote his plays in Dano-Norwegian, and they were published by the Danish publisher Gyldendal. He was the father of Prime Minister Sigurd Ibsen and a relative of the singer Ole Paus."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36661")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36661",
+  "isRealHuman": true,
+  "birthDate": "1828-03-20",
+  "deathDate": "1906-05-23",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Henrik Ibsen's birth and death dates are well-documented in historical records, confirming he was 78 years old at the time of his death.",
+  "shortDescriptionEn": "Henrik Ibsen (1828–1906) was a Norwegian playwright and theatre director, renowned as the father of modern drama. He died at 78 in Christiania (now Oslo) after suffering a series of strokes.",
+  "shortDescriptionFr": "Henrik Ibsen (1828–1906) était un dramaturge et metteur en scène norvégien, considéré comme le père du théâtre moderne. Il est décédé à 78 ans à Christiania (aujourd'hui Oslo) après avoir subi une série d'attaques cérébrales.",
+  "shortDescriptionDe": "Henrik Ibsen (1828–1906) war ein norwegischer Dramatiker und Theaterregisseur, bekannt als Vater des modernen Dramas. Er starb im Alter von 78 Jahren in Christiania (heute Oslo) nach mehreren Schlaganfällen.",
+  "shortDescriptionEs": "Henrik Ibsen (1828–1906) fue un dramaturgo y director de teatro noruego, reconocido como el padre del drama moderno. Falleció a los 78 años en Christiania (actual Oslo) tras sufrir una serie de accidentes cerebrovasculares.",
+  "shortDescriptionRu": "Генрик Ибсен (1828–1906) — норвежский драматург и театральный режиссёр, признанный отцом современного театра. Он умер в возрасте 78 лет в Христиании (ныне Осло) после серии инсультов.",
+  "sources": [
+    "https://www.britannica.com/biography/Henrik-Ibsen",
+    "https://en.wikipedia.org/wiki/Henrik_Ibsen",
+    "https://trove.nla.gov.au/newspaper/article/14774360",
+    "https://www.liquisearch.com/henrik_ibsen/death"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11817",  "Name": "Andrew Jackson",  "BirthDate": "1767-03-15T00:00:00Z",  "DeathDate": "1845-06-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20jackson%20head.jpg",  "SiteLinksCnt": 161,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"1623":{"pageid":1623,"ns":0,"title":"Andrew Jackson","extract":"Andrew Jackson (March 15, 1767 \u2013 June 8, 1845) was the seventh president of the United States from 1829 to 1837. Before his presidency, he rose to fame as a general in the U.S. Army and served in both houses of the U.S. Congress. Jackson's legacy is controversial. He has been praised as an advocate for working Americans and preserving the union of states, and criticized for his racist policies, particularly towards Native Americans. His political philosophy became the basis for the Democratic Party.\nJackson was born in the colonial Carolinas before the American Revolutionary War. He became a frontier lawyer and married Rachel Donelson Robards. He briefly served in the U.S. House of Representatives and the U.S. Senate, representing Tennessee. After resigning, he served as a justice on the Tennessee Superior Court from 1798 until 1804. Jackson purchased a plantation later known as the Hermitage, becoming a wealthy planter who profited off the forced labor of hundreds of enslaved African Americans during his lifetime. In 1801, he was appointed colonel of the Tennessee militia and was elected its commander. He led troops during the Creek War of 1813\u20131814, winning the Battle of Horseshoe Bend and negotiating the Treaty of Fort Jackson that required the indigenous Creek population to surrender vast tracts of present-day Alabama and Georgia. In the concurrent war against the British, Jackson's victory at the Battle of New Orleans in 1815 made him a national hero. He later commanded U.S. forces in the First Seminole War, which led to the annexation of Florida from Spain. Jackson briefly served as Florida's first territorial governor before returning to the Senate. He ran for president in 1824. He won a plurality of the popular and electoral vote, but no candidate won the electoral majority. With the help of Henry Clay, the House of Representatives elected John Quincy Adams as president. Jackson's supporters alleged that there was a \"corrupt bargain\" between Adams and Clay and began creating a new political coalition that became the Democratic Party in the 1830s.\nJackson ran again in 1828, defeating Adams in a landslide despite issues such as his slave trading and his \"irregular\" marriage. In 1830, he signed the Indian Removal Act. This act, which has been described as ethnic cleansing, displaced tens of thousands of Native Americans from their ancestral homelands east of the Mississippi and resulted in thousands of deaths. Jackson faced a challenge to the integrity of the federal union when South Carolina threatened to nullify a high protective tariff set by the federal government. He threatened the use of military force to enforce the tariff, but the crisis was defused when it was amended. In 1832, he vetoed a bill by Congress to reauthorize the Second Bank of the United States, arguing that it was a corrupt institution. After a lengthy struggle, the Bank was dismantled. In 1835, Jackson became the only president to pay off the national debt. After leaving office, Jackson supported the presidencies of Martin Van Buren and James K. Polk, as well as the annexation of Texas.\nContemporary opinions about Jackson are often polarized. Supporters characterize him as a defender of democracy and the U.S. Constitution, while critics point to his reputation as a demagogue who ignored the law when it suited him. Scholarly rankings of U.S. presidents historically rated Jackson's presidency as above average. Since the late 20th century, his reputation declined, and in the 21st century his placement in rankings of presidents fell."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11817")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q11817",
+  "isRealHuman": true,
+  "birthDate": "1767-03-15",
+  "deathDate": "1845-06-08",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Andrew Jackson (1767–1845) was the seventh president of the United States (1829–1837), known for his populist approach and controversial policies, including the Indian Removal Act. He died at 78 from congestive heart failure at his Tennessee plantation, The Hermitage.",
+  "shortDescriptionFr": "Andrew Jackson (1767–1845) fut le septième président des États-Unis (1829–1837), reconnu pour son approche populiste et ses politiques controversées, notamment l'Indian Removal Act. Il est décédé à 78 ans d'une insuffisance cardiaque congestive dans sa plantation du Tennessee, The Hermitage.",
+  "shortDescriptionDe": "Andrew Jackson (1767–1845) war der siebte Präsident der Vereinigten Staaten (1829–1837), bekannt für seinen populistischen Stil und umstrittene Maßnahmen wie den Indian Removal Act. Er starb im Alter von 78 Jahren an Herzversagen auf seiner Plantage The Hermitage in Tennessee.",
+  "shortDescriptionEs": "Andrew Jackson (1767–1845) fue el séptimo presidente de los Estados Unidos (1829–1837), conocido por su enfoque populista y políticas controvertidas como la Ley de Remoción de Indígenas. Murió a los 78 años de insuficiencia cardíaca congestiva en su plantación en Tennessee, The Hermitage.",
+  "shortDescriptionRu": "Эндрю Джексон (1767–1845) — седьмой президент США (1829–1837), известный своим популистским подходом и спорными мерами, включая Закон о переселении индейцев. Умер в возрасте 78 лет от сердечной недостаточности на своей плантации The Hermitage в Теннесси.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Andrew_Jackson",
+    "https://www.britannica.com/biography/Andrew-Jackson",
+    "https://www.presidentsusa.net/oldestpresident.html",
+    "https://thefamouspersonalities.com/profile/historical-men-andrew-jackson",
+    "https://en.wikipedia.org/wiki/Portraits_of_Andrew_Jackson"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q48226",  "Name": "Ralph Waldo Emerson",  "BirthDate": "1803-05-25T00:00:00Z",  "DeathDate": "1882-04-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ralph%20Waldo%20Emerson%20ca1857%20retouched.jpg",  "SiteLinksCnt": 147,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"26202":{"pageid":26202,"ns":0,"title":"Ralph Waldo Emerson","extract":"Ralph Waldo Emerson (May 25, 1803 \u2013 April 27, 1882), who went by his middle name Waldo, was an American essayist, lecturer, philosopher, minister, abolitionist, and poet who led the Transcendentalist movement of the mid-19th century. He was seen as a champion of individualism and critical thinking, as well as a prescient critic of the countervailing pressures of society and conformity. Friedrich Nietzsche thought he was \"the most gifted of the Americans,\" and Walt Whitman called Emerson his \"master\".\nEmerson gradually moved away from the religious and social beliefs of his contemporaries, formulating and expressing the philosophy of Transcendentalism in his 1836 essay, \"Nature\". Following this work, he gave a speech entitled \"The American Scholar,\" in 1837, which Oliver Wendell Holmes Sr. considered to be America's \"intellectual Declaration of Independence\".\nEmerson wrote most of his important essays as lectures, first, and then, revised them for print. His first two collections of essays, Essays: First Series (1841) and Essays: Second Series (1844), represent the core of his thinking. They include the well-known essays \"Self-Reliance\", \"The Over-Soul,\" \"Circles,\" \"The Poet,\" and \"Experience\". Together, with \"Nature\", these essays made the decade from the mid-1830s to the mid-1840s Emerson's most fertile period. Emerson wrote on a number of subjects, never espousing fixed philosophical tenets, but rather, by developing certain ideas, such as individuality, freedom, the ability for mankind to realize almost anything, and the relationship between the soul and the surrounding world. Emerson's \"nature\" was more philosophical than naturalistic: \"Philosophically considered, the universe is composed of Nature and the Soul.\" Emerson is one of several figures who \"took a more pantheist or pandeist approach, by rejecting views of God as separate from the world\".\nHe remains among the linchpins of the American romantic movement, and his work has greatly influenced the thinkers, writers, and poets that followed him. \"In all my lectures,\" he wrote, \"I have taught one doctrine, namely, the infinitude of the private man.\" Emerson is also well-known as a mentor and friend of Henry David Thoreau, a fellow Transcendentalist."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q48226")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q48226",
+  "isRealHuman": true,
+  "birthDate": "1803-05-25",
+  "deathDate": "1882-04-27",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Ralph Waldo Emerson (1803–1882) was an American essayist, lecturer, philosopher, minister, abolitionist, and poet who led the Transcendentalist movement of the mid-19th century. He championed individualism and critical thinking, influencing generations of writers and thinkers. Emerson died at the age of 78 in Concord, Massachusetts, after suffering from pneumonia.",
+  "shortDescriptionFr": "Ralph Waldo Emerson (1803–1882) était un essayiste, conférencier, philosophe, ministre, abolitionniste et poète américain, leader du mouvement transcendantaliste du milieu du XIXe siècle. Il a défendu l'individualisme et la pensée critique, influençant des générations d'écrivains et de penseurs. Emerson est décédé à l'âge de 78 ans à Concord, Massachusetts, après avoir souffert d'une pneumonie.",
+  "shortDescriptionDe": "Ralph Waldo Emerson (1803–1882) war ein amerikanischer Essayist, Redner, Philosoph, Minister, Abolitionist und Dichter, der die Transzendentalismus-Bewegung Mitte des 19. Jahrhunderts anführte. Er setzte sich für Individualismus und kritisches Denken ein und beeinflusste Generationen von Schriftstellern und Denkern. Emerson starb im Alter von 78 Jahren in Concord, Massachusetts, nachdem er an einer Lungenentzündung gelitten hatte.",
+  "shortDescriptionEs": "Ralph Waldo Emerson (1803–1882) fue un ensayista, conferencista, filósofo, ministro, abolicionista y poeta estadounidense que lideró el movimiento trascendentalista de mediados del siglo XIX. Defendió el individualismo y el pensamiento crítico, influyendo en generaciones de escritores y pensadores. Emerson murió a los 78 años en Concord, Massachusetts, tras sufrir una neumonía.",
+  "shortDescriptionRu": "Ральф Уолдо Эмерсон (1803–1882) был американским эссеистом, лектором, философом, священником, аболиционистом и поэтом, возглавлявшим трансценденталистское движение середины XIX века. Он отстаивал индивидуализм и критическое мышление, влияя на поколения писателей и мыслителей. Эмерсон умер в возрасте 78 лет в Конкорде, Массачусетс, после перенесенной пневмонии.",
+  "sources": [
+    "https://www.britannica.com/biography/Ralph-Waldo-Emerson",
+    "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
+    "https://www.notablebiographies.com/Du-Fi/Emerson-Ralph-Waldo.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36591",  "Name": "Vladimir Nabokov",  "BirthDate": "1899-04-22T00:00:00Z",  "DeathDate": "1977-07-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vladimir%20Nabokov%201973.jpg",  "SiteLinksCnt": 146,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"32442":{"pageid":32442,"ns":0,"title":"Vladimir Nabokov","extract":"Vladimir Vladimirovich Nabokov (Russian: \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447 \u041d\u0430\u0431\u043e\u043a\u043e\u0432 [vl\u0250\u02c8d\u02b2im\u02b2\u026ar vl\u0250\u02c8d\u02b2im\u02b2\u026ar\u0259v\u02b2\u026at\u0255 n\u0250\u02c8bok\u0259f] ; 22 April [O.S. 10 April] 1899 \u2013 2 July 1977), also known by the pen name Vladimir Sirin (\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0421\u0438\u0440\u0438\u043d), was a Russian and American novelist, poet, translator, and entomologist. Born in Imperial Russia in 1899, Nabokov wrote his first nine novels in Russian (1926\u20131938) while living in Berlin, where he met his wife, V\u00e9ra Nabokov. He achieved international acclaim and prominence after moving to the United States, where he began writing in English. Nabokov became an American citizen in 1945 and lived mostly on the East Coast before returning to Europe in 1961, where he settled in Montreux, Switzerland.\nFrom 1948 to 1959, Nabokov was a professor of Russian literature at Cornell University. His 1955 novel Lolita ranked fourth on Modern Library's list of the 100 best 20th-century novels in 1998 and is considered one of the greatest works of 20th-century literature. Nabokov's Pale Fire, published in 1962, ranked 53rd on the same list. His memoir, Speak, Memory, published in 1951, is considered among the greatest nonfiction works of the 20th century, placing eighth on Random House's ranking of 20th-century works. Nabokov was a seven-time finalist for the National Book Award for Fiction. He also was an expert lepidopterist and composer of chess problems. A Time profile wrote that he has \"evolved a vivid English style which combines Joycean word play with a Proustian evocation of mood and setting\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36591")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q36591",
+  "isRealHuman": true,
+  "birthDate": "1899-04-22",
+  "deathDate": "1977-07-02",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Vladimir Nabokov (1899–1977) was a Russian-American novelist, poet, translator, and entomologist, best known for his novel 'Lolita'. He passed away at the age of 78 in Montreux, Switzerland, due to a respiratory virus infection.",
+  "shortDescriptionFr": "Vladimir Nabokov (1899–1977) était un romancier, poète, traducteur et entomologiste russo-américain, surtout connu pour son roman 'Lolita'. Il est décédé à l'âge de 78 ans à Montreux, en Suisse, des suites d'une infection virale respiratoire.",
+  "shortDescriptionDe": "Vladimir Nabokov (1899–1977) war ein russisch-amerikanischer Romancier, Dichter, Übersetzer und Entomologe, bekannt für seinen Roman 'Lolita'. Er starb im Alter von 78 Jahren in Montreux, Schweiz, an einer Atemwegsvirusinfektion.",
+  "shortDescriptionEs": "Vladimir Nabokov (1899–1977) fue un novelista, poeta, traductor y entomólogo ruso-estadounidense, conocido por su novela 'Lolita'. Falleció a los 78 años en Montreux, Suiza, debido a una infección viral respiratoria.",
+  "shortDescriptionRu": "Владимир Набоков (1899–1977) — русско-американский писатель, поэт, переводчик и энтомолог, наиболее известный романом 'Лолита'. Скончался в возрасте 78 лет в Монтрё, Швейцария, от респираторной вирусной инфекции.",
+  "sources": [
+    "https://www.britannica.com/biography/Vladimir-Nabokov",
+    "https://en.wikipedia.org/wiki/Vladimir_Nabokov",
+    "https://www.imdb.com/name/nm0618603/bio/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83396",  "Name": "Eleanor Roosevelt",  "BirthDate": "1884-10-11T00:00:00Z",  "DeathDate": "1962-11-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eleanor%20Roosevelt%20portrait%201933%20%28cropped%29.jpg",  "SiteLinksCnt": 139,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"19280644":{"pageid":19280644,"ns":0,"title":"Eleanor Roosevelt","extract":"Anna Eleanor Roosevelt ( EL-in-or ROH-z\u0259-velt; October 11, 1884 \u2013 November 7, 1962) was an American political figure, diplomat, and activist. She was the longest-serving first lady of the United States, during her husband Franklin D. Roosevelt's four terms as president from 1933 to 1945. Through her travels, public engagement, and advocacy, she largely redefined the role. Widowed in 1945, she served as a United States Delegate to the United Nations General Assembly from 1945 to 1952, and took a leading role in designing the text and gaining international support for the Universal Declaration of Human Rights. In 1948, she was given a standing ovation by the assembly upon their adoption of the declaration. President Harry S. Truman later called her the \"First Lady of the World\" in tribute to her human rights achievements.\nRoosevelt was a member of the prominent and wealthy Roosevelt and Livingston families and a niece of President Theodore Roosevelt. She had an unhappy childhood, having suffered the deaths of both parents and one of her brothers at a young age. At 15, she attended Allenswood Boarding Academy in London and was deeply influenced by its founder and director Marie Souvestre. Returning to the U.S., she married her fifth cousin once removed, Franklin Delano Roosevelt, in 1905. Between 1906 and 1916 she gave birth to six children, one of whom died in infancy. The Roosevelts' marriage became complicated after Eleanor discovered her husband's affair with her social secretary, Lucy Mercer, in 1918. Due to mediation by her mother-in-law, Sara, the liaison was ended officially. After that, both partners started to keep independent agendas, and Eleanor joined the Women's Trade Union League and became active in the New York state Democratic Party. Roosevelt helped persuade her husband to stay in politics after he was stricken with a paralytic illness in 1921. Following Franklin's election as governor of New York in 1928, and throughout the remainder of Franklin's political career, Roosevelt regularly made public appearances on his behalf; and as first lady, while her husband served as president, she greatly influenced the present scope and future of the role.\nRoosevelt was, in her time, one of the world's most widely admired and powerful women. Nevertheless, in her early years in the White House she was controversial for her outspokenness, particularly with respect to her promotion of civil rights for African Americans. She was the first presidential spouse to hold regular press conferences, write a daily newspaper column, write a monthly magazine column, host a weekly radio show, and speak at a national party convention. On a few occasions, she publicly disagreed with her husband's policies. She launched an experimental community at Arthurdale, West Virginia, for the families of unemployed miners, later widely regarded as a failure. She advocated for expanded roles for women in the workplace, the civil rights of African Americans and Asian Americans, and the rights of World War II refugees. \nFollowing her husband's death in 1945, Roosevelt pressed the United States to join and support the United Nations and became its first delegate to the committee on Human Rights. She served as the first chair of the UN Commission on Human Rights and oversaw the drafting of the Universal Declaration of Human Rights. Later, she chaired the John F. Kennedy administration's Presidential Commission on the Status of Women. By the time of her death, Roosevelt was regarded as \"one of the most esteemed women in the world\"; The New York Times called her \"the object of almost universal respect\" in her obituary. In 1999, Roosevelt was ranked ninth in the top ten of Gallup's List of Most Widely Admired People of the 20th Century, and was found to rank as the most admired woman in thirteen different years between 1948 and 1961 in Gallup's annual most admired woman poll. Periodic surveys conducted by the Siena College Research Institute have consistently seen historians assess Roosevelt as the greatest American first lady."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83396")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83396",
+  "isRealHuman": true,
+  "birthDate": "1884-10-11",
+  "deathDate": "1962-11-07",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted by reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Anna Eleanor Roosevelt (1884–1962) was an American political figure, diplomat, and activist. As the longest-serving First Lady of the United States during her husband Franklin D. Roosevelt's four terms, she redefined the role through active engagement in civil rights, women's issues, and humanitarian efforts. After FDR's death, she served as a U.S. delegate to the United Nations, playing a pivotal role in drafting the Universal Declaration of Human Rights. She died at age 78 in her Manhattan home due to complications from aplastic anemia and tuberculosis.",
+  "shortDescriptionFr": "Anna Eleanor Roosevelt (1884–1962) était une figure politique, diplomate et militante américaine. Première dame des États-Unis pendant les quatre mandats de son mari Franklin D. Roosevelt, elle a redéfini ce rôle par son engagement actif en faveur des droits civiques, des droits des femmes et des causes humanitaires. Après la mort de FDR, elle a été déléguée des États-Unis aux Nations Unies, jouant un rôle clé dans la rédaction de la Déclaration universelle des droits de l'homme. Elle est décédée à 78 ans dans sa maison de Manhattan des suites d'une anémie aplasique et de la tuberculose.",
+  "shortDescriptionDe": "Anna Eleanor Roosevelt (1884–1962) war eine amerikanische Politikerin, Diplomatin und Aktivistin. Als längstdienende First Lady der Vereinigten Staaten während der vier Amtszeiten ihres Mannes Franklin D. Roosevelt prägte sie das Amt neu durch ihr Engagement für Bürgerrechte, Frauenrechte und humanitäre Anliegen. Nach FDRs Tod war sie US-Delegierte bei den Vereinten Nationen und spielte eine entscheidende Rolle bei der Ausarbeitung der Allgemeinen Erklärung der Menschenrechte. Sie starb im Alter von 78 Jahren in ihrem Haus in Manhattan an den Folgen von aplastischer Anämie und Tuberkulose.",
+  "shortDescriptionEs": "Anna Eleanor Roosevelt (1884–1962) fue una figura política, diplomática y activista estadounidense. Como la primera dama de los Estados Unidos durante los cuatro mandatos de su esposo Franklin D. Roosevelt, redefinió el papel mediante su participación activa en los derechos civiles, los derechos de las mujeres y causas humanitarias. Tras la muerte de FDR, fue delegada de EE. UU. ante las Naciones Unidas, desempeñando un papel clave en la redacción de la Declaración Universal de los Derechos Humanos. Murió a los 78 años en su casa de Manhattan debido a complicaciones de anemia aplásica y tuberculosis.",
+  "shortDescriptionRu": "Анна Элеонора Рузвельт (1884–1962) была американским политическим деятелем, дипломатом и активисткой. Как первая леди США во время четырёх сроков президента Франклина Д. Рузвельта, она переопределила эту роль, активно участвуя в борьбе за гражданские права, права женщин и гуманитарные инициативы. После смерти ФДР она была делегатом США в ООН и сыграла ключевую роль в разработке Всеобщей декларации прав человека. Она умерла в возрасте 78 лет в своём доме в Манхэттене от осложнений апластической анемии и туберкулёза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
+    "https://www.britannica.com/biography/Eleanor-Roosevelt",
+    "https://www.fdrlibrary.org/er-biography",
+    "https://www.thecrimson.com/article/1962/11/8/eleanor-roosevelt-dies-after-prolonged-illness/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47162",  "Name": "Romain Rolland",  "BirthDate": "1866-01-29T00:00:00Z",  "DeathDate": "1944-12-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Romain%20Rolland%201915.jpg",  "SiteLinksCnt": 136,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"236590":{"pageid":236590,"ns":0,"title":"Romain Rolland","extract":"Romain Rolland (French: [\u0281\u0254m\u025b\u0303 \u0281\u0254l\u0251\u0303]; 29 January 1866 \u2013 30 December 1944) was a French dramatist, novelist, essayist, art historian and mystic who was awarded the Nobel Prize for Literature in 1915 \"as a tribute to the lofty idealism of his literary production and to the sympathy and love of truth with which he has described different types of human beings\".\nHe was an admirer of Mahatma Gandhi and Rabindranath Tagore, wrote a still relevant biography of Gandhi, and is also noted for his correspondence with numerous writers and thinkers across the globe including Maxim Gorki, Rabindranath Tagore and Sigmund Freud."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47162")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47162",
+  "isRealHuman": true,
+  "birthDate": "1866-01-29",
+  "deathDate": "1944-12-30",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Romain Rolland was a French dramatist, novelist, essayist, art historian, and mystic, awarded the Nobel Prize in Literature in 1915 for his idealistic literary works. He died at the age of 78 on December 30, 1944, in Vézelay, France, during the final months of World War II.",
+  "shortDescriptionFr": "Romain Rolland était un dramaturge, romancier, essayiste, historien de l'art et mystique français, lauréat du prix Nobel de littérature en 1915 pour ses œuvres idéalistes. Il est décédé à l'âge de 78 ans le 30 décembre 1944 à Vézelay, France, pendant les derniers mois de la Seconde Guerre mondiale.",
+  "shortDescriptionDe": "Romain Rolland war ein französischer Dramatiker, Romancier, Essayist, Kunsthistoriker und Mystiker, der 1915 für seine idealistischen literarischen Werke mit dem Nobelpreis für Literatur ausgezeichnet wurde. Er starb im Alter von 78 Jahren am 30. Dezember 1944 in Vézelay, Frankreich, in den letzten Monaten des Zweiten Weltkriegs.",
+  "shortDescriptionEs": "Romain Rolland fue un dramaturgo, novelista, ensayista, historiador del arte y místico francés, galardonado con el Premio Nobel de Literatura en 1915 por sus obras idealistas. Falleció a los 78 años el 30 de diciembre de 1944 en Vézelay, Francia, durante los últimos meses de la Segunda Guerra Mundial.",
+  "shortDescriptionRu": "Ромен Роллан был французским драматургом, романистом, эссеистом, искусствоведом и мистиком, удостоенным Нобелевской премии по литературе в 1915 году за свои идеалистические литературные произведения. Он умер в возрасте 78 лет 30 декабря 1944 года в Везле, Франция, в последние месяцы Второй мировой войны.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Romain_Rolland",
+    "https://www.britannica.com/biography/Romain-Rolland",
+    "https://www.nobelprize.org/prizes/literature/1915/rolland/facts/",
+    "https://www.findagrave.com/memorial/11227557/romain-rolland"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2514",  "Name": "Willy Brandt",  "BirthDate": "1913-12-18T00:00:00Z",  "DeathDate": "1992-10-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20B%20145%20Bild-F057884-0009%2C%20Willy%20Brandt.jpg",  "SiteLinksCnt": 118,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"49260":{"pageid":49260,"ns":0,"title":"Willy Brandt","extract":"Willy Brandt (German: [\u02c8v\u026ali\u02d0 \u02c8b\u0281ant] ; born Herbert Ernst Karl Frahm; 18 December 1913 \u2013 8 October 1992) was a German politician and statesman who was leader of the Social Democratic Party of Germany (SPD) from 1964 to 1987 and served as the chancellor of West Germany from 1969 to 1974. He was awarded the Nobel Peace Prize in 1971 for his efforts to strengthen cooperation in Western Europe through the EEC and to achieve reconciliation between West Germany and the countries of Eastern Europe. He was the first Social Democratic chancellor since 1930.\nFleeing to Norway and then Sweden during the Nazi regime and working as a left-wing journalist, he took the name Willy Brandt as a pseudonym to avoid detection by Nazi agents, and then formally adopted the name in 1948. Brandt earned initial fame as governing mayor of West Berlin. He served as the foreign minister and as the vice chancellor in Kurt Georg Kiesinger's cabinet, and became chancellor in 1969.\nAs chancellor, he maintained West Germany's close alignment with the United States and focused on strengthening European integration in Western Europe, while launching the new policy of Ostpolitik aimed at improving relations with Eastern Europe. Brandt was controversial on both the right wing, for his Ostpolitik, and on the left wing, for his support of American policies, including his silence on the Vietnam War that he broke only in 1973, and right-wing authoritarian regimes. The Brandt Report became a recognised measure for describing the general North\u2013South divide in world economics and politics between an affluent North and a poor South. Brandt was also known for his fierce anti-communist policies at the domestic level, culminating in the Radikalenerlass (Anti-Radical Decree) in 1972.\nIn 1970, while visiting a memorial to the Warsaw Ghetto Uprising crushed by the Germans, Brandt unexpectedly knelt and meditated in silence, a moment remembered as the Kniefall von Warschau.\nBrandt resigned as chancellor in 1974, after G\u00fcnter Guillaume, one of his closest aides, was exposed as an agent of the Stasi, the East German secret service. Brandt died from colon cancer in 1992, aged 78."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2514")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q2514",
+  "isRealHuman": true,
+  "birthDate": "1913-12-18",
+  "deathDate": "1992-10-08",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reliable sources, including Wikipedia and Britannica. The age at death is calculated by subtracting the birth year from the death year and adjusting for whether the birthday had occurred yet in the death year.",
+  "shortDescriptionEn": "Willy Brandt (born Herbert Ernst Karl Frahm; 18 December 1913 – 8 October 1992) was a German politician and statesman who served as Chancellor of West Germany from 1969 to 1974. He was awarded the Nobel Peace Prize in 1971 for his efforts to strengthen cooperation in Western Europe and to achieve reconciliation between West Germany and the countries of Eastern Europe. He died from colon cancer in 1992 at the age of 78.",
+  "shortDescriptionFr": "Willy Brandt (né Herbert Ernst Karl Frahm ; 18 décembre 1913 – 8 octobre 1992) était un homme politique et homme d'État allemand qui a été chancelier de la République fédérale d'Allemagne de 1969 à 1974. Il a reçu le prix Nobel de la paix en 1971 pour ses efforts visant à renforcer la coopération en Europe occidentale et à parvenir à une réconciliation entre l'Allemagne de l'Ouest et les pays d'Europe de l'Est. Il est décédé d'un cancer du côlon en 1992 à l'âge de 78 ans.",
+  "shortDescriptionDe": "Willy Brandt (geboren als Herbert Ernst Karl Frahm; 18. Dezember 1913 – 8. Oktober 1992) war ein deutscher Politiker und Staatsmann, der von 1969 bis 1974 Bundeskanzler der Bundesrepublik Deutschland war. 1971 wurde ihm der Friedensnobelpreis für seine Bemühungen um die Stärkung der Zusammenarbeit in Westeuropa und die Versöhnung zwischen Westdeutschland und den Ländern Osteuropas verliehen. Er starb 1992 im Alter von 78 Jahren an Darmkrebs.",
+  "shortDescriptionEs": "Willy Brandt (nacido como Herbert Ernst Karl Frahm; 18 de diciembre de 1913 – 8 de octubre de 1992) fue un político y estadista alemán que se desempeñó como Canciller de Alemania Occidental de 1969 a 1974. Recibió el Premio Nobel de la Paz en 1971 por sus esfuerzos para fortalecer la cooperación en Europa Occidental y lograr la reconciliación entre Alemania Occidental y los países de Europa del Este. Murió de cáncer de colon en 1992 a los 78 años.",
+  "shortDescriptionRu": "Вилли Брандт (урожденный Герберт Эрнст Карл Фрам; 18 декабря 1913 – 8 октября 1992) был немецким политиком и государственным деятелем, занимавшим пост канцлера ФРГ с 1969 по 1974 год. В 1971 году он был удостоен Нобелевской премии мира за усилия по укреплению сотрудничества в Западной Европе и достижению примирения между Западной Германией и странами Восточной Европы. Он скончался от рака толстой кишки в 1992 году в возрасте 78 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Willy_Brandt",
+    "https://www.britannica.com/biography/Willy-Brandt",
+    "https://www.nobelprize.org/prizes/peace/1971/brandt/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1407",  "Name": "Tiberius",  "BirthDate": "-0041-11-14T00:00:00Z",  "DeathDate": "0037-03-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Tiberius%20Portrait%20of%20the%20%27Imperium%20Maius%27%20type%20in%20Museo%20Archeologico%20Nazionale.jpg",  "SiteLinksCnt": 116,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"30536":{"pageid":30536,"ns":0,"title":"Tiberius","extract":"Tiberius Julius Caesar Augustus ( ty-BEER-ee-\u0259s; 16 November 42 BC \u2013 16 March AD 37) was Roman emperor from AD 14 until 37. He succeeded his stepfather Augustus, the first Roman emperor. Tiberius was born in Rome in 42 BC to Roman politician Tiberius Claudius Nero and his wife, Livia Drusilla. In 38 BC, Tiberius's mother divorced his father and married Augustus. Following the untimely deaths of Augustus's two grandsons and adopted heirs, Gaius and Lucius Caesar, Tiberius was designated Augustus's successor. Prior to this, Tiberius had proved himself an able diplomat and one of the most successful Roman generals: his conquests of Pannonia, Dalmatia, Raetia, and (temporarily) parts of Germania laid the foundations for the empire's northern frontier.\nEarly in his career, Tiberius was happily married to Vipsania, daughter of Augustus's friend, distinguished general and intended heir, Marcus Vipsanius Agrippa. They had a son, Drusus Julius Caesar. After Agrippa died, Augustus insisted that Tiberius divorce Vipsania and marry Agrippa's widow, Augustus' own daughter (Tiberius's step-sister) Julia. Tiberius reluctantly gave in. This second marriage proved scandalous, deeply unhappy, and childless; ultimately, Julia was sent into exile by her father. Tiberius adopted his nephew, the able and popular Germanicus, as heir. On Augustus's death in 14, Tiberius became princeps at the age of 55. He seems to have taken on the responsibilities of head of state with great reluctance and perhaps a genuine sense of inadequacy in the role, compared to the capable, self-confident and charismatic Augustus.\nFrom the outset, Tiberius had a difficult, resentful relationship with the Senate and suspected many plots against him. Nevertheless, he proved to be an effective and efficient administrator. After the deaths of his nephew Germanicus in AD 19 and his son Drusus in 23, Tiberius became reclusive and aloof. In 26 he removed himself from Rome and left administration largely in the hands of his ambitious praetorian prefect Sejanus, whom he later had executed for treason, and then Sejanus's replacement, Macro. When Tiberius died, he was succeeded by his grand-nephew and adopted grandson, Germanicus's son Caligula, whose lavish building projects and varyingly successful military endeavours drained much of the wealth that Tiberius had accumulated in the public and Imperial coffers through good management.\nTiberius allowed the worship of his divine Genius in only one temple, in Rome's eastern provinces, and promoted restraint in the empire-wide cult to the deceased Augustus. When Tiberius died, he was given a sumptuous funeral befitting his office, but no divine honours. He came to be remembered as a dark, reclusive and sombre ruler who never really wanted to be emperor; Pliny the Elder called him \"the gloomiest of men\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1407")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1407",
+  "isRealHuman": true,
+  "birthDate": "-0042-11-16",
+  "deathDate": "0037-03-16",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for a precise calculation of Tiberius's age at death.",
+  "shortDescriptionEn": "Tiberius Julius Caesar Augustus (16 November 42 BC – 16 March AD 37) was the second Roman Emperor, ruling from AD 14 to 37. Known for his military prowess and administrative skills, his later years were marked by political purges and reclusion. He died at the age of 78, with some accounts suggesting natural causes, while others hint at possible foul play.",
+  "shortDescriptionFr": "Tibère Jules César Auguste (16 novembre 42 av. J.-C. – 16 mars 37 apr. J.-C.) fut le deuxième empereur romain, régnant de 14 à 37 apr. J.-C. Réputé pour ses compétences militaires et administratives, ses dernières années furent marquées par des purges politiques et une réclusion. Il mourut à l'âge de 78 ans, certains évoquant des causes naturelles, d'autres un possible assassinat.",
+  "shortDescriptionDe": "Tiberius Julius Caesar Augustus (16. November 42 v. Chr. – 16. März 37 n. Chr.) war der zweite römische Kaiser und regierte von 14 bis 37 n. Chr. Bekannt für seine militärischen Erfolge und Verwaltungskünste, waren seine letzten Jahre von politischen Säuberungen und Zurückgezogenheit geprägt. Er starb im Alter von 78 Jahren, wobei einige Quellen natürliche Ursachen, andere ein mögliches Attentat vermuten.",
+  "shortDescriptionEs": "Tiberio Julio César Augusto (16 de noviembre de 42 a.C. – 16 de marzo de 37 d.C.) fue el segundo emperador romano, gobernando desde el 14 hasta el 37 d.C. Reconocido por su destreza militar y habilidades administrativas, sus últimos años estuvieron marcados por purgas políticas y reclusión. Murió a los 78 años, con relatos que sugieren causas naturales y otros que apuntan a un posible asesinato.",
+  "shortDescriptionRu": "Тиберий Юлий Цезарь Август (16 ноября 42 г. до н.э. – 16 марта 37 г. н.э.) был вторым римским императором, правившим с 14 по 37 гг. н.э. Известный своими военными успехами и административными способностями, последние годы его правления были отмечены политическими чистками и уединением. Он умер в возрасте 78 лет; некоторые источники указывают на естественные причины, другие – на возможное убийство.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tiberius",
+    "https://www.britannica.com/biography/Tiberius",
+    "https://www.historyskills.com/classroom/ancient-history/anc-tiberius-reading",
+    "https://blogs.nottingham.ac.uk/mintimperials/2015/03/16/on-this-day-in-37ad-the-roman-emperor-tiberius-died/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42398",  "Name": "Mikhail Sholokhov",  "BirthDate": "1905-05-24T00:00:00Z",  "DeathDate": "1984-02-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87%20%D0%A8%D0%BE%D0%BB%D0%BE%D1%85%D0%BE%D0%B2.jpg",  "SiteLinksCnt": 115,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"248333":{"pageid":248333,"ns":0,"title":"Mikhail Sholokhov","extract":"Mikhail Aleksandrovich Sholokhov (Russian: \u041c\u0438\u0445\u0430\u0438\u043b \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0428\u043e\u043b\u043e\u0445\u043e\u0432, IPA: [\u02c8\u0282ol\u0259x\u0259f]; 24 May [O.S. 11 May] 1905 \u2013 21 February 1984) was a Russian novelist and winner of the 1965 Nobel Prize in Literature. He is known for writing about life and fate of Don Cossacks during the Russian Revolution, the civil war and the period of collectivization, primarily in his most famous novel, And Quiet Flows the Don."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42398")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q42398",
+  "isRealHuman": true,
+  "birthDate": "1905-05-24",
+  "deathDate": "1984-02-21",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported across multiple reputable sources, including Britannica, Wikipedia, and NobelPrize.org. The age at death is corroborated by these sources and aligns with the provided dates.",
+  "shortDescriptionEn": "Mikhail Sholokhov was a Russian novelist and Nobel Prize laureate, renowned for his epic 'And Quiet Flows the Don' depicting the lives of Don Cossacks during tumultuous periods in Russian history. He passed away at 78 in his native Vyoshenskaya, leaving a lasting literary legacy.",
+  "shortDescriptionFr": "Mikhaïl Cholokhov était un romancier russe, lauréat du prix Nobel, célèbre pour son épopée 'Le Don paisible' décrivant la vie des cosaques du Don durant les périodes tumultueuses de l'histoire russe. Il est décédé à 78 ans dans sa ville natale de Viochenskaïa, laissant un héritage littéraire durable.",
+  "shortDescriptionDe": "Michail Scholochow war ein russischer Romanautor und Nobelpreisträger, bekannt für sein Epos 'Der stille Don', das das Leben der Donkosaken während turbulenter Zeiten der russischen Geschichte schildert. Er verstarb im Alter von 78 Jahren in seiner Heimatstadt Wjoschenskaja und hinterließ ein bleibendes literarisches Erbe.",
+  "shortDescriptionEs": "Mijaíl Shólojov fue un novelista ruso y laureado con el Premio Nobel, conocido por su epopeya 'El Don apacible' que retrata la vida de los cosacos del Don durante épocas turbulentas de la historia rusa. Falleció a los 78 años en su natal Vióshenskaya, dejando un legado literario perdurable.",
+  "shortDescriptionRu": "Михаил Шолохов был русским писателем и лауреатом Нобелевской премии, известным своей эпопеей 'Тихий Дон', изображающей жизнь донских казаков в бурные периоды русской истории. Он скончался в возрасте 78 лет в родной Вёшенской, оставив значительное литературное наследие.",
+  "sources": [
+    "https://www.britannica.com/biography/Mikhail-Sholokhov",
+    "https://en.wikipedia.org/wiki/Mikhail_Sholokhov",
+    "https://www.nobelprize.org/prizes/literature/1965/sholokhov/biographical/",
+    "https://age.ninja/celebrity/Mikhail-Sholokhov"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5752",  "Name": "Peter Kropotkin",  "BirthDate": "1842-12-09T00:00:00Z",  "DeathDate": "1921-02-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kropotkin1.jpg",  "SiteLinksCnt": 115,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"51074":{"pageid":51074,"ns":0,"title":"Peter Kropotkin","extract":"Pyotr Alexeyevich Kropotkin (9 December 1842 \u2013 8 February 1921) was a Russian anarchist and geographer known as a proponent of anarchist communism.\nBorn into an aristocratic land-owning family, Kropotkin attended Page Corps and later served as an officer in Siberia, where he participated in several geological expeditions. He was imprisoned for his activism in 1874 and managed to escape two years later. He spent the next 41 years in exile in Switzerland, France (where he was imprisoned for almost four years) and England. While in exile, he gave lectures and published widely on anarchism and geography. Kropotkin returned to Russia after the Russian Revolution in 1917, but he was disappointed by the Bolshevik state.\nKropotkin was a proponent of the idea of decentralized communist society free from central government and based on voluntary associations of self-governing communities and worker-run enterprises. He wrote many books, pamphlets and articles, the most prominent being The Conquest of Bread (1892) and Fields, Factories, and Workshops (1899), with Mutual Aid: A Factor of Evolution (1902) being his principal scientific offering. He contributed the article on anarchism to the eleventh edition of the Encyclop\u00e6dia Britannica and left an unfinished work on anarchist ethical philosophy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5752")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5752",
+  "isRealHuman": true,
+  "birthDate": "1842-12-09",
+  "deathDate": "1921-02-08",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported across multiple reputable sources, including Encyclopædia Britannica and Wikipedia. The age at death is directly calculated from these dates, confirming he was 78 years old.",
+  "shortDescriptionEn": "Peter Kropotkin (1842–1921) was a Russian anarchist and geographer known for advocating anarcho-communism. Born into nobility, he renounced his title to promote a decentralized, cooperative society. He died of pneumonia in Dmitrov, Russia, at the age of 78.",
+  "shortDescriptionFr": "Pierre Kropotkine (1842–1921) était un anarchiste et géographe russe, défenseur du communisme libertaire. Né dans la noblesse, il a renoncé à son titre pour promouvoir une société coopérative décentralisée. Il est décédé d'une pneumonie à Dmitrov, en Russie, à l'âge de 78 ans.",
+  "shortDescriptionDe": "Peter Kropotkin (1842–1921) war ein russischer Anarchist und Geograph, bekannt für seine Befürwortung des anarchokommunismus. Geboren in den Adel, verzichtete er auf seinen Titel, um eine dezentralisierte, kooperative Gesellschaft zu fördern. Er starb im Alter von 78 Jahren an einer Lungenentzündung in Dmitrow, Russland.",
+  "shortDescriptionEs": "Piotr Kropotkin (1842–1921) fue un anarquista y geógrafo ruso, defensor del comunismo anarquista. Nacido en la nobleza, renunció a su título para promover una sociedad cooperativa y descentralizada. Falleció de neumonía en Dmitrov, Rusia, a los 78 años.",
+  "shortDescriptionRu": "Пётр Кропоткин (1842–1921) — русский анархист и географ, известный как сторонник анархо-коммунизма. Родившись в дворянской семье, он отказался от титула, чтобы продвигать децентрализованное, кооперативное общество. Умер от пневмонии в Дмитрове, Россия, в возрасте 78 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Peter_Kropotkin",
+    "https://www.britannica.com/biography/Peter-Alekseyevich-Kropotkin"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39931",  "Name": "Pierre-Auguste Renoir",  "BirthDate": "1841-02-25T00:00:00Z",  "DeathDate": "1919-12-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Auguste%20Renoir%2C%20uncropped%20image.jpg",  "SiteLinksCnt": 112,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"24546":{"pageid":24546,"ns":0,"title":"Pierre-Auguste Renoir","extract":"Pierre-Auguste Renoir (; French: [pj\u025b\u0281 o\u0261yst \u0281\u0259nwa\u0281]; 25 February 1841 \u2013 3 December 1919) was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that \"Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.\"\nHe was the father of actor Pierre Renoir (1885\u20131952), filmmaker Jean Renoir (1894\u20131979) and ceramic artist Claude Renoir (1901\u20131969). He was the grandfather of the filmmaker Claude Renoir (1913\u20131993), son of Pierre.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39931")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q39931",
+  "isRealHuman": true,
+  "birthDate": "1841-02-25",
+  "deathDate": "1919-12-03",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Multiple authoritative sources confirm Renoir's birth on 25 February 1841 and death on 3 December 1919. The age at death is consistently reported as 78 years across these sources, leaving no ambiguity.",
+  "shortDescriptionEn": "Pierre-Auguste Renoir was a French Impressionist painter renowned for his vibrant depictions of everyday life and female sensuality. Despite suffering from debilitating rheumatoid arthritis in his later years, he continued to paint until his death at age 78 in Cagnes-sur-Mer, France.",
+  "shortDescriptionFr": "Pierre-Auguste Renoir était un peintre impressionniste français célèbre pour ses représentations colorées de la vie quotidienne et de la sensualité féminine. Malgré une arthrite rhumatoïde invalidante, il continua à peindre jusqu'à sa mort à l'âge de 78 ans à Cagnes-sur-Mer, France.",
+  "shortDescriptionDe": "Pierre-Auguste Renoir war ein französischer Impressionist, bekannt für seine lebendigen Darstellungen des Alltags und weiblicher Sinnlichkeit. Trotz schwerer rheumatoider Arthritis malte er bis zu seinem Tod im Alter von 78 Jahren in Cagnes-sur-Mer, Frankreich.",
+  "shortDescriptionEs": "Pierre-Auguste Renoir fue un pintor impresionista francés, reconocido por sus representaciones vibrantes de la vida cotidiana y la sensualidad femenina. A pesar de sufrir artritis reumatoide, continuó pintando hasta su muerte a los 78 años en Cagnes-sur-Mer, Francia.",
+  "shortDescriptionRu": "Пьер-Огюст Ренуар был французским художником-импрессионистом, известным своими яркими изображениями повседневной жизни и женской чувственности. Несмотря на тяжелый ревматоидный артрит, он продолжал писать картины до своей смерти в возрасте 78 лет в Кань-сюр-Мер, Франция.",
+  "sources": [
+    "https://www.britannica.com/biography/Pierre-Auguste-Renoir",
+    "https://en.wikipedia.org/wiki/Pierre-Auguste_Renoir",
+    "https://www.findagrave.com/memorial/8087/pierre-auguste-renoir"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41042",  "Name": "Harold Pinter",  "BirthDate": "1930-10-10T00:00:00Z",  "DeathDate": "2008-12-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Harold%20Pinter%201962.jpg",  "SiteLinksCnt": 111,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"89530":{"pageid":89530,"ns":0,"title":"Harold Pinter","extract":"Harold Pinter (; 10 October 1930 \u2013 24 December 2008) was a British playwright, screenwriter, director and actor. A Nobel Prize winner, Pinter was one of the most influential modern British dramatists with a writing career that spanned more than 50 years. His best-known plays include The Birthday Party (1957), The Homecoming (1964) and Betrayal (1978), each of which he adapted for the screen. His screenplay adaptations of others' works include The Servant (1963), The Go-Between (1971), The French Lieutenant's Woman (1981), The Trial (1993) and Sleuth (2007). He also directed or acted in radio, stage, television and film productions of his own and others' works.\nPinter was born and raised in Hackney, east London, and educated at Hackney Downs School. He was a sprinter and a keen cricket player, acting in school plays and writing poetry. He attended the Royal Academy of Dramatic Art but did not complete the course. He was fined for refusing national service as a conscientious objector. Subsequently, he continued training at the Central School of Speech and Drama and worked in repertory theatre in Ireland and England. In 1956 he married actress Vivien Merchant and had a son, Daniel, born in 1958. He left Merchant in 1975 and married author Lady Antonia Fraser in 1980.\nPinter's career as a playwright began with a production of The Room in 1957. His second play, The Birthday Party, closed after eight performances but was enthusiastically reviewed by critic Harold Hobson. His early works were described by critics as \"comedy of menace\". Later plays such as No Man's Land (1975) and Betrayal (1978) became known as \"memory plays\". He appeared as an actor in productions of his own work on radio and film, and directed nearly 50 productions for stage, theatre and screen. Pinter received over 50 awards, prizes and other honours, including the Nobel Prize in Literature in 2005 and the French L\u00e9gion d'honneur in 2007.\nDespite frail health after being diagnosed with oesophageal cancer in December 2001, Pinter continued to act on stage and screen, last performing the title role of Samuel Beckett's one-act monologue Krapp's Last Tape, for the 50th anniversary season of the Royal Court Theatre, in October 2006. He died from liver cancer on 24 December 2008.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41042")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41042",
+  "isRealHuman": true,
+  "birthDate": "1930-10-10",
+  "deathDate": "2008-12-24",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, confirming that Harold Pinter was 78 years old at the time of his death.",
+  "shortDescriptionEn": "Harold Pinter (1930–2008) was a British playwright, screenwriter, director, and actor, renowned for his influential contributions to modern theatre, including works like 'The Birthday Party' and 'The Homecoming'. He was awarded the Nobel Prize in Literature in 2005. Pinter passed away at the age of 78 due to liver cancer.",
+  "shortDescriptionFr": "Harold Pinter (1930–2008) était un dramaturge, scénariste, metteur en scène et acteur britannique, célèbre pour ses contributions influentes au théâtre moderne, notamment 'The Birthday Party' et 'The Homecoming'. Lauréat du prix Nobel de littérature en 2005, il est décédé à l'âge de 78 ans d'un cancer du foie.",
+  "shortDescriptionDe": "Harold Pinter (1930–2008) war ein britischer Dramatiker, Drehbuchautor, Regisseur und Schauspieler, bekannt für seine einflussreichen Beiträge zum modernen Theater, darunter 'The Birthday Party' und 'The Homecoming'. Er erhielt 2005 den Nobelpreis für Literatur und verstarb im Alter von 78 Jahren an Leberkrebs.",
+  "shortDescriptionEs": "Harold Pinter (1930–2008) fue un dramaturgo, guionista, director y actor británico, reconocido por sus contribuciones influyentes al teatro moderno, incluyendo obras como 'The Birthday Party' y 'The Homecoming'. Ganó el Premio Nobel de Literatura en 2005 y falleció a los 78 años debido a un cáncer de hígado.",
+  "shortDescriptionRu": "Гарольд Пинтер (1930–2008) — британский драматург, сценарист, режиссёр и актёр, известный своими влиятельными произведениями в современном театре, такими как 'The Birthday Party' и 'The Homecoming'. Лауреат Нобелевской премии по литературе 2005 года, скончался в возрасте 78 лет от рака печени.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Harold_Pinter",
+    "https://www.britannica.com/biography/Harold-Pinter",
+    "https://www.nobelprize.org/prizes/literature/2005/pinter/facts/",
+    "https://www.findagrave.com/memorial/32396153/harold-pinter"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4457",  "Name": "Franz Beckenbauer",  "BirthDate": "1945-09-11T00:00:00Z",  "DeathDate": "2024-01-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Franz%20Beckenbauer%20%281975%29.jpg",  "SiteLinksCnt": 110,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"152680":{"pageid":152680,"ns":0,"title":"Franz Beckenbauer","extract":"Franz Anton Beckenbauer (German pronunciation: [f\u0281ants \u02c8b\u025bkn\u0329\u02ccba\u028a\u0250] ; 11 September 1945 \u2013 7 January 2024) was a German professional football player, manager, and official. Nicknamed der Kaiser (\"the Emperor\"), he is widely regarded as one of the greatest players of all time, and is one of nine players to have won the FIFA World Cup, the European Champions Cup, and the Ballon d'Or. Beckenbauer was a versatile player who started out as a midfielder, but made his name as a centre-half. He is often credited as having invented the role of the modern sweeper (libero).\nTwice named European Footballer of the Year, Beckenbauer appeared 103 times for West Germany, playing in three FIFA World Cups and two European Championships. He is one of three men, along with Brazil's M\u00e1rio Zagallo and France's Didier Deschamps, to have won the World Cup as a player and as a manager; he lifted the World Cup trophy as captain in 1974, and repeated the feat as a manager in 1990. He was the first captain to lift the World Cup and European Championship at the international level and the European Cup at the club level. He was named in the World Team of the 20th Century in 1998, the FIFA World Cup Dream Team in 2002, the Ballon d'Or Dream Team in 2020, the IFFHS All-time Men's Dream Team in 2021, and in 2004, was listed in the FIFA 100 of the world's greatest living players.\nAt club level with Bayern Munich, Beckenbauer won the European Cup Winners' Cup in 1967 and three consecutive European Cups from 1974 to 1976. The latter feat made him the first player to win three European Cups as captain of his club. He became team manager and later president of Bayern Munich. After two spells with the New York Cosmos he was inducted into the US National Soccer Hall of Fame.\nBeckenbauer led Germany's successful bid to host the 2006 FIFA World Cup and chaired the organizing committee. He worked as a pundit for Sky Germany, and for 34 years as a columnist for the tabloid Bild, both until 2016. Beginning August 2016, he was investigated for fraud and money laundering in connection with the 2006 World Cup. The investigation was closed without a verdict in 2020 as the statute of limitations expired."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4457")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4457",
+  "isRealHuman": true,
+  "birthDate": "1945-09-11",
+  "deathDate": "2024-01-07",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Franz Beckenbauer (1945–2024) was a German football legend, renowned for revolutionizing the sweeper role and leading West Germany to World Cup victories as both player (1974) and manager (1990). He passed away peacefully in his sleep at age 78 in Salzburg, Austria.",
+  "shortDescriptionFr": "Franz Beckenbauer (1945–2024) était une légende du football allemand, célèbre pour avoir révolutionné le poste de libéro et mené l'Allemagne de l'Ouest à la victoire en Coupe du Monde en tant que joueur (1974) et entraîneur (1990). Il est décédé paisiblement dans son sommeil à l'âge de 78 ans à Salzbourg, Autriche.",
+  "shortDescriptionDe": "Franz Beckenbauer (1945–2024) war eine deutsche Fußballlegende, bekannt für die Revolution des Libero-Rolle und den Gewinn der Weltmeisterschaft mit Westdeutschland als Spieler (1974) und Trainer (1990). Er verstarb friedlich im Schlaf im Alter von 78 Jahren in Salzburg, Österreich.",
+  "shortDescriptionEs": "Franz Beckenbauer (1945–2024) fue una leyenda del fútbol alemán, reconocido por revolucionar el rol de líbero y liderar a Alemania Occidental a la victoria en la Copa del Mundo como jugador (1974) y entrenador (1990). Falleció pacíficamente mientras dormía a los 78 años en Salzburgo, Austria.",
+  "shortDescriptionRu": "Франц Беккенбауэр (1945–2024) был легендой немецкого футбола, известным за революцию в роли либеро и победы с Западной Германией на чемпионате мира как игрок (1974) и тренер (1990). Он мирно скончался во сне в возрасте 78 лет в Зальцбурге, Австрия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Franz_Beckenbauer",
+    "https://www.britannica.com/biography/Franz-Beckenbauer",
+    "https://www.abc.net.au/news/2024-01-09/franz-beckenbauer-germany-legend-world-cup-winner-dies-aged-78/103296866",
+    "https://www.transfermarkt.com/franz-beckenbauer/profil/spieler/72347",
+    "https://www.legacy.com/news/celebrity-deaths/franz-beckenbauer-1945-2024-german-soccer-legend/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160554",  "Name": "Mohammad Ali Jinnah",  "BirthDate": "1870-01-01T00:00:00Z",  "DeathDate": "1948-09-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jinnah1945c.jpg",  "SiteLinksCnt": 109,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"37486661":{"pageid":37486661,"ns":0,"title":"Muhammad Ali Jinnah","extract":"Muhammad Ali Jinnah (born Mahomedali Jinnahbhai; 25 December 1876 \u2013 11 September 1948) was a barrister, politician, and the founder of Pakistan. Jinnah served as the leader of the All-India Muslim League from 1913 until the inception of Pakistan on 14 August 1947 and then as Pakistan's first governor-general until his death.\nBorn at Wazir Mansion in Karachi, Jinnah was trained as a barrister at Lincoln's Inn in London, England. Upon his return to India, he enrolled at the Bombay High Court, and took an interest in national politics, which eventually replaced his legal practice. Jinnah rose to prominence in the Indian National Congress in the first two decades of the 20th century. In these early years of his political career, Jinnah advocated Hindu\u2013Muslim unity, helping to shape the 1916 Lucknow Pact between the Congress and the All-India Muslim League, in which Jinnah had also become prominent. Jinnah became a key leader in the All-India Home Rule League, and proposed a fourteen-point constitutional reform plan to safeguard the political rights of Muslims in the Indian subcontinent. In 1920, however, Jinnah resigned from the Congress when it agreed to follow a campaign of satyagraha, which he regarded as political anarchy.\nBy 1940, Jinnah had come to believe that the Muslims of the subcontinent should have their own state to avoid the possible marginalised status they might be reduced to in an independent Hindu\u2013Muslim state. In that year, the Muslim League, led by Jinnah, passed the Lahore Resolution, demanding a separate nation for Indian Muslims. During the Second World War, the League gained strength while leaders of the Congress were imprisoned, and in the provincial elections held shortly after the war, it won most of the seats reserved for Muslims. Ultimately, the Congress and the Muslim League could not reach a power-sharing formula that would allow the entirety of British India to be united as a single state following independence, leading all parties to agree instead to the independence of a Hindu-majority India, and for a predominantly Muslim state of Pakistan.\nAs the first governor-general of Pakistan, Jinnah worked to establish the new nation's government and policies, and to aid the millions of Muslim migrants who had emigrated from neighbouring India to Pakistan after the two states' independence, personally supervising the establishment of refugee camps. Jinnah died at age 71 in September 1948, just over a year after Pakistan gained independence from the United Kingdom. He left a deep and respected legacy in Pakistan. Several universities and public buildings in Pakistan bear Jinnah's name.  He is revered in Pakistan as the Quaid-e-Azam (\"Great Leader\") and Baba-e-Qaum (\"Father of the Nation\"). His birthday is also observed as a national holiday in the country. According to his biographer, Stanley Wolpert, Jinnah remains Pakistan's greatest leader."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160554")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q160554",
+  "isRealHuman": true,
+  "birthDate": "1876-12-25",
+  "deathDate": "1948-09-11",
+  "ageAtDeath": 71,
+  "confidence": 95,
+  "confidenceExplained": "The age at death is calculated based on the widely accepted birth date of December 25, 1876, and the confirmed death date of September 11, 1948. While some records suggest an earlier birth date, the official and commonly recognized date is used here, resulting in an age of 71 years at death.",
+  "shortDescriptionEn": "Muhammad Ali Jinnah (1876–1948) was a barrister and politician who founded Pakistan and served as its first Governor-General. He died at age 71 due to tuberculosis and lung cancer, just over a year after the country's independence.",
+  "shortDescriptionFr": "Muhammad Ali Jinnah (1876–1948) était un avocat et homme politique, fondateur du Pakistan et premier gouverneur général. Il est décédé à 71 ans de la tuberculose et d'un cancer du poumon, peu après l'indépendance du pays.",
+  "shortDescriptionDe": "Muhammad Ali Jinnah (1876–1948) war ein Jurist und Politiker, Gründer Pakistans und erster Generalgouverneur. Er starb im Alter von 71 Jahren an Tuberkulose und Lungenkrebs, kurz nach der Unabhängigkeit des Landes.",
+  "shortDescriptionEs": "Muhammad Ali Jinnah (1876–1948) fue un abogado y político, fundador de Pakistán y su primer gobernador general. Murió a los 71 años debido a tuberculosis y cáncer de pulmón, poco después de la independencia del país.",
+  "shortDescriptionRu": "Мухаммад Али Джинна (1876–1948) — юрист и политик, основатель Пакистана и его первый генерал-губернатор. Умер в возрасте 71 года от туберкулеза и рака легких, вскоре после обретения страной независимости.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Muhammad_Ali_Jinnah",
+    "https://www.britannica.com/biography/Mohammed-Ali-Jinnah",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Muhammad_Ali_Jinnah"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7523",  "Name": "Kublai Khan",  "BirthDate": "1215-09-30T00:00:00Z",  "DeathDate": "1294-02-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumKhubilaiPortrait.jpg",  "SiteLinksCnt": 108,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"20754760":{"pageid":20754760,"ns":0,"title":"Kublai Khan","extract":"Kublai Khan (23 September 1215 \u2013 18 February 1294), also known by his temple name as the Emperor Shizu of Yuan and his regnal name Setsen Khan, was the founder and first emperor of the Mongol-led Yuan dynasty of China. He proclaimed the dynastic name \"Great Yuan\" in 1271, and ruled Yuan China until his death in 1294.\nKublai was the second son of Tolui by his chief wife Sorghaghtani Beki, and a grandson of Genghis Khan. He was almost 12 when Genghis Khan died in 1227. He had succeeded his older brother M\u00f6ngke as Khagan in 1260, but had to defeat his younger brother Ariq B\u00f6ke in the Toluid Civil War lasting until 1264. This episode marked the beginning of the fragmentation of the empire. Kublai's real power was limited to the Yuan Empire, even though as Khagan he still influenced the Ilkhanate and, to a significantly lesser degree, the Golden Horde.\nIn 1271, Kublai established the Yuan dynasty and formally claimed orthodox succession from prior Chinese dynasties. The Yuan dynasty came to rule over most of present-day China, Mongolia, Korea, southern Siberia, and other adjacent areas. He also amassed influence in the Middle East and Europe as Khagan. By 1279, the Yuan conquest of the Song dynasty was completed and Kublai became the first non-Han emperor to rule all of China proper.\nThe imperial portrait of Kublai was part of an album of the portraits of Yuan emperors and empresses, now in the National Palace Museum collection in Taipei. White, the color of the imperial costume of Kublai, was the imperial color of the Yuan dynasty based on the Chinese philosophical concept of the Five Elements."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7523")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7523",
+  "isRealHuman": true,
+  "birthDate": "1215-09-23",
+  "deathDate": "1294-02-18",
+  "ageAtDeath": 78,
+  "confidence": 98,
+  "confidenceExplained": "The birth and death dates are consistently reported across multiple reputable sources, allowing for a precise calculation of age at death. Minor discrepancies in some sources are likely due to differences in calendar systems or rounding methods.",
+  "shortDescriptionEn": "Kublai Khan (1215–1294) was the fifth Khagan of the Mongol Empire and the founder of China's Yuan dynasty. He completed the conquest of China, becoming the first non-Han emperor to rule all of China. He died on February 18, 1294, at the age of 78, after a reign marked by military expansion and administrative reforms.",
+  "shortDescriptionFr": "Kubilai Khan (1215–1294) fut le cinquième Khagan de l'Empire mongol et le fondateur de la dynastie Yuan en Chine. Il acheva la conquête de la Chine, devenant le premier empereur non Han à régner sur l'ensemble du pays. Il mourut le 18 février 1294 à l'âge de 78 ans, après un règne marqué par l'expansion militaire et des réformes administratives.",
+  "shortDescriptionDe": "Kublai Khan (1215–1294) war der fünfte Großkhan des Mongolischen Reiches und Gründer der Yuan-Dynastie in China. Er vollendete die Eroberung Chinas und wurde der erste nicht-Han-Kaiser, der über ganz China herrschte. Er starb am 18. Februar 1294 im Alter von 78 Jahren nach einer Herrschaft, die durch militärische Expansion und Verwaltungsreformen geprägt war.",
+  "shortDescriptionEs": "Kublai Kan (1215–1294) fue el quinto Kan del Imperio mongol y fundador de la dinastía Yuan en China. Completó la conquista de China, convirtiéndose en el primer emperador no Han en gobernar todo el país. Murió el 18 de febrero de 1294 a los 78 años, tras un reinado marcado por la expansión militar y reformas administrativas.",
+  "shortDescriptionRu": "Хубилай-хан (1215–1294) был пятым великим ханом Монгольской империи и основателем династии Юань в Китае. Он завершил завоевание Китая, став первым императором не ханского происхождения, правившим всей страной. Умер 18 февраля 1294 года в возрасте 78 лет после правления, отмеченного военной экспансией и административными реформами.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kublai_Khan",
+    "https://www.britannica.com/biography/Kublai-Khan",
+    "https://worldhistoryedu.com/kublai-khan/",
+    "https://www.history.com/articles/kublai-khan"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q57074",  "Name": "Nelly Sachs",  "BirthDate": "1891-12-10T00:00:00Z",  "DeathDate": "1970-05-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nelly%20Sachs%201966.jpg",  "SiteLinksCnt": 107,  "Age": 78}
+{"batchcomplete":"","query":{"pages":{"335262":{"pageid":335262,"ns":0,"title":"Nelly Sachs","extract":"Nelly Sachs (German pronunciation: [\u02c8n\u025bli\u02d0 zaks] ; 10 December 1891 \u2013 12 May 1970) was a German\u2013Swedish poet and playwright. Her experiences resulting from the rise of the Nazis in World War II Europe transformed her into a poignant spokesperson for the grief and yearnings of her fellow Jews. Her best-known play is Eli: Ein Mysterienspiel vom Leiden Israels (1950); other works include the poems \"Zeichen im Sand\" (1962), \"Verzauberung\" (1970), and the collections of poetry In den Wohnungen des Todes (1947), Flucht und Verwandlung (1959), Fahrt ins Staublose (1961), and Suche nach Lebenden (1971). She was awarded the 1966 Nobel Prize in Literature."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q57074")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q57074",
+  "isRealHuman": true,
+  "birthDate": "1891-12-10",
+  "deathDate": "1970-05-12",
+  "ageAtDeath": 78,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented across multiple authoritative sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Nelly Sachs (1891–1970) was a German–Swedish poet and playwright whose work poignantly addressed the suffering of Jews during the Holocaust. She died of cancer in Stockholm at the age of 78.",
+  "shortDescriptionFr": "Nelly Sachs (1891–1970) était une poétesse et dramaturge germano-suédoise dont l'œuvre évoquait avec émotion la souffrance des Juifs pendant la Shoah. Elle est décédée d'un cancer à Stockholm à l'âge de 78 ans.",
+  "shortDescriptionDe": "Nelly Sachs (1891–1970) war eine deutsch-schwedische Dichterin und Dramatikerin, deren Werke das Leid der Juden während des Holocausts thematisierten. Sie starb im Alter von 78 Jahren in Stockholm an Krebs.",
+  "shortDescriptionEs": "Nelly Sachs (1891–1970) fue una poeta y dramaturga germano-sueca que abordó el sufrimiento de los judíos durante el Holocausto en su obra. Falleció de cáncer en Estocolmo a los 78 años.",
+  "shortDescriptionRu": "Нелли Закс (1891–1970) — немецко-шведская поэтесса и драматург, чьи произведения отражали страдания евреев во время Холокоста. Она умерла от рака в Стокгольме в возрасте 78 лет.",
+  "sources": [
+    "https://www.nobelprize.org/prizes/literature/1966/sachs/biographical/",
+    "https://www.britannica.com/biography/Nelly-Sachs",
+    "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/sachs-nelly-1891-1970",
+    "https://en.wikipedia.org/wiki/Nelly_Sachs"
+  ]
+}

@@ -1,0 +1,975 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q937",  "Name": "Albert Einstein",  "BirthDate": "1879-03-14T00:00:00Z",  "DeathDate": "1955-04-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Einstein%20Head.jpg",  "SiteLinksCnt": 313,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"736":{"pageid":736,"ns":0,"title":"Albert Einstein","extract":"Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist who is best known for developing the theory of relativity. Einstein also made important contributions to quantum mechanics. His mass\u2013energy equivalence formula E = mc2, which arises from special relativity, has been called \"the world's most famous equation\". He received the 1921 Nobel Prize in Physics for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect.\nBorn in the German Empire, Einstein moved to Switzerland in 1895, forsaking his German citizenship (as a subject of the Kingdom of W\u00fcrttemberg) the following year. In 1897, at the age of seventeen, he enrolled in the mathematics and physics teaching diploma program at the Swiss federal polytechnic school in Zurich, graduating in 1900. He acquired Swiss citizenship a year later, which he kept for the rest of his life, and afterwards secured a permanent position at the Swiss Patent Office in Bern. In 1905, he submitted a successful PhD dissertation to the University of Zurich. In 1914, he moved to Berlin to join the Prussian Academy of Sciences and the Humboldt University of Berlin, becoming director of the Kaiser Wilhelm Institute for Physics in 1917; he also became a German citizen again, this time as a subject of the Kingdom of Prussia. In 1933, while Einstein was visiting the United States, Adolf Hitler came to power in Germany. Horrified by the Nazi persecution of his fellow Jews, he decided to remain in the US, and was granted American citizenship in 1940. On the eve of World War II, he endorsed a letter to President Franklin D. Roosevelt alerting him to the potential German nuclear weapons program and recommending that the US begin similar research.\nIn 1905, sometimes described as his annus mirabilis (miracle year), he published four groundbreaking papers. In them, he outlined a theory of the photoelectric effect, explained Brownian motion, introduced his special theory of relativity, and demonstrated that if the special theory is correct, mass and energy are equivalent to each other. In 1915, he proposed a general theory of relativity that extended his system of mechanics to incorporate gravitation. A cosmological paper that he published the following year laid out the implications of general relativity for the modeling of the structure and evolution of the universe as a whole. In 1917, Einstein wrote a paper which introduced the concepts of spontaneous emission and stimulated emission, the latter of which is the core mechanism behind the laser and maser, and which contained a trove of information that would be beneficial to developments in physics later on, such as quantum electrodynamics and quantum optics.\nIn the middle part of his career, Einstein made important contributions to statistical mechanics and quantum theory. Especially notable was his work on the quantum physics of radiation, in which light consists of particles, subsequently called photons. With physicist Satyendra Nath Bose, he laid the groundwork for Bose\u2013Einstein statistics. For much of the last phase of his academic life, Einstein worked on two endeavors that ultimately proved unsuccessful. First, he advocated against quantum theory's introduction of fundamental randomness into science's picture of the world, objecting that God does not play dice. Second, he attempted to devise a unified field theory by generalizing his geometric theory of gravitation to include electromagnetism. As a result, he became increasingly isolated from mainstream modern physics."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q937")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q937",
+  "isRealHuman": true,
+  "birthDate": "1879-03-14",
+  "deathDate": "1955-04-18",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, ensuring the accuracy of the calculated age at death.",
+  "shortDescriptionEn": "Albert Einstein (1879–1955) was a German-born theoretical physicist, best known for developing the theory of relativity and the mass–energy equivalence formula E=mc². He received the 1921 Nobel Prize in Physics for his explanation of the photoelectric effect. Einstein died at the age of 76 from an abdominal aortic aneurysm, choosing not to undergo surgery.",
+  "shortDescriptionFr": "Albert Einstein (1879–1955) était un physicien théoricien né en Allemagne, célèbre pour sa théorie de la relativité et la formule d'équivalence masse-énergie E=mc². Il a reçu le prix Nobel de physique en 1921 pour son explication de l'effet photoélectrique. Einstein est décédé à l'âge de 76 ans d'un anévrisme de l'aorte abdominale, refusant une intervention chirurgicale.",
+  "shortDescriptionDe": "Albert Einstein (1879–1955) war ein in Deutschland geborener theoretischer Physiker, bekannt für die Entwicklung der Relativitätstheorie und die Masse-Energie-Äquivalenzformel E=mc². Er erhielt 1921 den Nobelpreis für Physik für seine Erklärung des photoelektrischen Effekts. Einstein starb im Alter von 76 Jahren an einem Bauchaortenaneurysma und lehnte eine Operation ab.",
+  "shortDescriptionEs": "Albert Einstein (1879–1955) fue un físico teórico nacido en Alemania, conocido por desarrollar la teoría de la relatividad y la fórmula de equivalencia masa-energía E=mc². Recibió el Premio Nobel de Física en 1921 por su explicación del efecto fotoeléctrico. Einstein murió a los 76 años debido a un aneurisma de la aorta abdominal, negándose a una cirugía.",
+  "shortDescriptionRu": "Альберт Эйнштейн (1879–1955) был немецким теоретическим физиком, наиболее известным разработкой теории относительности и формулой эквивалентности массы и энергии E=mc². В 1921 году он получил Нобелевскую премию по физике за объяснение фотоэлектрического эффекта. Эйнштейн скончался в возрасте 76 лет от аневризмы брюшной аорты, отказавшись от хирургического вмешательства.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Albert_Einstein",
+    "https://www.britannica.com/biography/Albert-Einstein",
+    "https://allthatsinteresting.com/albert-einstein-death",
+    "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1405",  "Name": "Augustus",  "BirthDate": "-0062-09-21T00:00:00Z",  "DeathDate": "0014-08-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Augustus%20of%20Prima%20Porta%20%28inv.%202290%29.jpg",  "SiteLinksCnt": 237,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"1273":{"pageid":1273,"ns":0,"title":"Augustus","extract":"Gaius Julius Caesar Augustus (born Gaius Octavius; 23 September 63 BC \u2013 19 August AD 14), also known as Octavian (Latin: Octavianus), was the founder of the Roman Empire. He reigned as the first Roman emperor from 27 BC until his death in AD 14. The reign of Augustus initiated an imperial cult, as well as an era of imperial peace (the Pax Romana or Pax Augusta) in which the Roman world was largely free of armed conflict. The Principate system of government was established during his reign and lasted until the Crisis of the Third Century.\nOctavian was born into an equestrian branch of the plebeian gens Octavia. His maternal great-uncle Julius Caesar was assassinated in 44 BC, and Octavian was named in Caesar's will as his adopted son and heir; as a result, he inherited Caesar's name, estate, and the loyalty of his legions. He, Mark Antony, and Marcus Lepidus formed the Second Triumvirate to defeat the assassins of Caesar. Following their victory at the Battle of Philippi (42 BC), the Triumvirate divided the Roman Republic among themselves and ruled as de facto dictators. The Triumvirate was eventually torn apart by the competing ambitions of its members; Lepidus was exiled in 36 BC, and Antony was defeated by Octavian at the Battle of Actium in 31 BC. Antony and his wife Cleopatra, the Ptolemaic queen of Egypt, killed themselves during Octavian's invasion of Egypt, which then became a Roman province.\nAfter the demise of the Second Triumvirate, Augustus restored the outward facade of the free republic, with governmental power vested in the Roman Senate, the executive magistrates and the legislative assemblies, yet he maintained autocratic authority by having the Senate grant him lifetime tenure as commander-in-chief, tribune and censor. A similar ambiguity is seen in his chosen names, the implied rejection of monarchical titles whereby he called himself Princeps Civitatis 'First Citizen' juxtaposed with his adoption of the title Augustus.\nAugustus dramatically enlarged the empire, annexing Egypt, Dalmatia, Pannonia, Noricum, and Raetia, expanding possessions in Africa, and completing the conquest of Hispania, but he suffered a major setback in Germania. Beyond the frontiers, he secured the empire with a buffer region of client states and made peace with the Parthian Empire through diplomacy. He reformed the Roman system of taxation, developed networks of roads with an official courier system, established a standing army, established the Praetorian Guard as well as official police and fire-fighting services for Rome, and rebuilt much of the city during his reign. Augustus died in AD 14 at age 75, probably from natural causes. Persistent rumors, substantiated somewhat by deaths in the imperial family, have claimed his wife Livia poisoned him. He was succeeded as emperor by his adopted son Tiberius, Livia's son and former husband of Augustus's only biological child, Julia.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1405")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1405",
+  "isRealHuman": true,
+  "birthDate": "-0063-09-23",
+  "deathDate": "0014-08-19",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Gaius Julius Caesar Augustus (23 September 63 BCE – 19 August 14 CE) was the founder and first emperor of the Roman Empire, reigning from 27 BCE until his death. He established the principate and initiated the Pax Romana, a period of relative peace and stability across the empire. Augustus died at age 76 in Nola, Italy, likely of natural causes, and was succeeded by his adopted son Tiberius.",
+  "shortDescriptionFr": "Gaius Julius Caesar Augustus (23 septembre 63 av. J.-C. – 19 août 14 ap. J.-C.) fut le fondateur et premier empereur de l'Empire romain, régnant de 27 av. J.-C. jusqu'à sa mort. Il établit le principat et initia la Pax Romana, une période de paix relative dans l'empire. Auguste mourut à 76 ans à Nola, en Italie, probablement de causes naturelles, et fut succédé par son fils adoptif Tibère.",
+  "shortDescriptionDe": "Gaius Julius Caesar Augustus (23. September 63 v. Chr. – 19. August 14 n. Chr.) war der Gründer und erste Kaiser des Römischen Reiches, regierte von 27 v. Chr. bis zu seinem Tod. Er etablierte das Prinzipat und leitete die Pax Romana ein, eine Zeit relativen Friedens im Reich. Augustus starb im Alter von 76 Jahren in Nola, Italien, vermutlich eines natürlichen Todes, und wurde von seinem Adoptivsohn Tiberius abgelöst.",
+  "shortDescriptionEs": "Gayo Julio César Augusto (23 de septiembre de 63 a.C. – 19 de agosto de 14 d.C.) fue el fundador y primer emperador del Imperio romano, reinando desde el 27 a.C. hasta su muerte. Estableció el principado e inició la Pax Romana, un período de relativa paz en el imperio. Augusto murió a los 76 años en Nola, Italia, probablemente por causas naturales, y fue sucedido por su hijo adoptivo Tiberio.",
+  "shortDescriptionRu": "Гай Юлий Цезарь Август (23 сентября 63 г. до н.э. – 19 августа 14 г. н.э.) был основателем и первым императором Римской империи, правившим с 27 г. до н.э. до своей смерти. Он установил принципат и инициировал Пакс Романа, период относительного мира в империи. Август умер в возрасте 76 лет в Ноле, Италия, вероятно, по естественным причинам, и его преемником стал приемный сын Тиберий.",
+  "sources": [
+    "https://www.britannica.com/biography/Augustus-Roman-emperor",
+    "https://en.wikipedia.org/wiki/Augustus",
+    "https://apnews.com/article/e85073a087103b463836048f70e184dc"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q17714",  "Name": "Stephen Hawking",  "BirthDate": "1942-01-08T00:00:00Z",  "DeathDate": "2018-03-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Relative%20time%20%282886233692%29%20%28Stephen%20Hawking%20cropped%29.jpg",  "SiteLinksCnt": 201,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"19376148":{"pageid":19376148,"ns":0,"title":"Stephen Hawking","extract":"Stephen William Hawking (8 January 1942 \u2013 14 March 2018) was an English theoretical physicist, cosmologist, and author who was director of research at the Centre for Theoretical Cosmology at the University of Cambridge. Between 1979 and 2009, he was the Lucasian Professor of Mathematics at Cambridge, widely viewed as one of the most prestigious academic posts in the world.\nHawking was born in Oxford into a family of physicians. In October 1959, at the age of 17, he began his university education at University College, Oxford, where he received a first-class BA degree in physics. In October 1962, he began his graduate work at Trinity Hall, Cambridge, where, in March 1966, he obtained his PhD in applied mathematics and theoretical physics, specialising in general relativity and cosmology. In 1963, at age 21, Hawking was diagnosed with an early-onset slow-progressing form of motor neurone disease that gradually, over decades, paralysed him. After the loss of his speech, he communicated through a speech-generating device, initially through use of a handheld switch, and eventually by using a single cheek muscle.\nHawking's scientific works included a collaboration with Roger Penrose on gravitational singularity theorems in the framework of general relativity, and the theoretical prediction that black holes emit radiation, often called Hawking radiation. Initially, Hawking radiation was controversial. By the late 1970s, and following the publication of further research, the discovery was widely accepted as a major breakthrough in theoretical physics. Hawking was the first to set out a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics. Hawking was a vigorous supporter of the many-worlds interpretation of quantum mechanics. He also introduced the notion of a micro black hole.\nHawking achieved commercial success with several works of popular science in which he discussed his theories and cosmology in general. His book A Brief History of Time appeared on the Sunday Times bestseller list for a record-breaking 237 weeks. Hawking was a Fellow of the Royal Society, a lifetime member of the Pontifical Academy of Sciences, and a recipient of the Presidential Medal of Freedom, the highest civilian award in the United States. In 2002, Hawking was ranked number 25 in the BBC's poll of the 100 Greatest Britons. He died in 2018 at the age of 76, having lived more than 50 years following his diagnosis of motor neurone disease."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q17714")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q17714",
+  "isRealHuman": true,
+  "birthDate": "1942-01-08",
+  "deathDate": "2018-03-14",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Stephen Hawking was a British theoretical physicist and cosmologist renowned for his work on black holes and the nature of the universe. Despite being diagnosed with ALS at 21, he lived for over five decades, passing away peacefully at 76.",
+  "shortDescriptionFr": "Stephen Hawking était un physicien théoricien et cosmologiste britannique, célèbre pour ses travaux sur les trous noirs et la nature de l'univers. Malgré un diagnostic de SLA à 21 ans, il a vécu plus de cinquante ans, décédant paisiblement à 76 ans.",
+  "shortDescriptionDe": "Stephen Hawking war ein britischer theoretischer Physiker und Kosmologe, bekannt für seine Arbeiten über Schwarze Löcher und die Natur des Universums. Trotz einer ALS-Diagnose im Alter von 21 Jahren lebte er über fünf Jahrzehnte und verstarb friedlich im Alter von 76 Jahren.",
+  "shortDescriptionEs": "Stephen Hawking fue un físico teórico y cosmólogo británico, reconocido por su trabajo sobre los agujeros negros y la naturaleza del universo. A pesar de ser diagnosticado con ELA a los 21 años, vivió más de cinco décadas, falleciendo pacíficamente a los 76 años.",
+  "shortDescriptionRu": "Стивен Хокинг был британским теоретическим физиком и космологом, известным своими работами по чёрным дырам и природе Вселенной. Несмотря на диагноз БАС в 21 год, он прожил более пяти десятилетий и мирно скончался в возрасте 76 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Stephen_Hawking",
+    "https://www.britannica.com/biography/Stephen-Hawking",
+    "https://www.nationalgeographic.com/adventure/article/stephen-hawking-dies-black-hole-physics-universe-obituary"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7604",  "Name": "Leonhard Euler",  "BirthDate": "1707-04-15T00:00:00Z",  "DeathDate": "1783-09-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Leonhard%20Euler.jpg",  "SiteLinksCnt": 184,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"17902":{"pageid":17902,"ns":0,"title":"Leonhard Euler","extract":"Leonhard Euler ( OY-l\u0259r; German: [\u02c8le\u02d0\u0254nha\u0281t \u02c8\u0294\u0254\u028fl\u0250] , Swiss Standard German: [\u02c8le\u0254nhard \u02c8\u0254\u028fl\u0259r]; 15 April 1707 \u2013 18 September 1783) was a Swiss polymath who was active as a mathematician, physicist, astronomer, logician, geographer, and engineer. He founded the studies of graph theory and topology and made influential discoveries in many other branches of mathematics, such as analytic number theory, complex analysis, and infinitesimal calculus. He also introduced much of modern mathematical terminology and notation, including the notion of a mathematical function. He is known for his work in mechanics, fluid dynamics, optics, astronomy, and music theory. Euler has been called a \"universal genius\" who \"was fully equipped with almost unlimited powers of imagination, intellectual gifts and extraordinary memory\". He spent most of his adult life in Saint Petersburg, Russia, and in Berlin, then the capital of Prussia.\nEuler is credited for popularizing the Greek letter \n  \n    \n      \n        \u03c0\n      \n    \n    {\\displaystyle \\pi }\n  \n (lowercase pi) to denote the ratio of a circle's circumference to its diameter, as well as first using the notation \n  \n    \n      \n        f\n        (\n        x\n        )\n      \n    \n    {\\displaystyle f(x)}\n  \n for the value of a function, the letter \n  \n    \n      \n        i\n      \n    \n    {\\displaystyle i}\n  \n to express the imaginary unit \n  \n    \n      \n        \n          \n            \u2212\n            1\n          \n        \n      \n    \n    {\\displaystyle {\\sqrt {-1}}}\n  \n, the Greek letter \n  \n    \n      \n        \u03a3\n      \n    \n    {\\displaystyle \\Sigma }\n  \n (capital sigma) to express summations, the Greek letter \n  \n    \n      \n        \u0394\n      \n    \n    {\\displaystyle \\Delta }\n  \n (capital delta) for finite differences, and lowercase letters to represent the sides of a triangle while representing the angles as capital letters. He gave the current definition of the constant \n  \n    \n      \n        e\n      \n    \n    {\\displaystyle e}\n  \n, the base of the natural logarithm, now known as Euler's number. Euler made contributions to applied mathematics and engineering, such as his study of ships which helped navigation, his three volumes on optics contributed to the design of microscopes and telescopes, and he studied the bending of beams and the critical load of columns.\nEuler is credited with being the first to develop graph theory (partly as a solution for the problem of the Seven Bridges of K\u00f6nigsberg, which is also considered the first practical application of topology). He also became famous for, among many other accomplishments, solving several unsolved problems in number theory and analysis, including the famous Basel problem. Euler has also been credited for discovering that the sum of the numbers of vertices and faces minus the number of edges of a polyhedron equals 2, a number now commonly known as the Euler characteristic. In physics, Euler reformulated Isaac Newton's laws of motion into new laws in his two-volume work Mechanica to better explain the motion of rigid bodies. He contributed to the study of elastic deformations of solid objects. Euler formulated the partial differential equations for the motion of inviscid fluid, and laid the mathematical foundations of potential theory.\nEuler is regarded as arguably the most prolific contributor in the history of mathematics and science, and the greatest mathematician of the 18th century. His 866 publications and his correspondence are being collected in the Opera Omnia Leonhard Euler which, when completed, will consist of 81 quartos.  Several great mathematicians who worked after Euler's death have recognised his importance in the field: Pierre-Simon Laplace said, \"Read Euler, read Euler, he is the master of us all\"; Carl Friedrich Gauss wrote: \"The study of Euler's works will remain the best school for the different fields of mathematics, and nothing else can replace it.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7604")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7604",
+  "isRealHuman": true,
+  "birthDate": "1707-04-15",
+  "deathDate": "1783-09-18",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and widely accepted in historical records. The calculation is straightforward, involving basic date arithmetic without any ambiguities.",
+  "shortDescriptionEn": "Leonhard Euler was a Swiss mathematician and physicist renowned for his foundational contributions to various fields, including calculus, graph theory, and mechanics. He passed away at the age of 76 due to a brain hemorrhage in Saint Petersburg, Russia.",
+  "shortDescriptionFr": "Leonhard Euler était un mathématicien et physicien suisse, célèbre pour ses contributions fondamentales en calcul, théorie des graphes et mécanique. Il est décédé à l'âge de 76 ans d'une hémorragie cérébrale à Saint-Pétersbourg, Russie.",
+  "shortDescriptionDe": "Leonhard Euler war ein Schweizer Mathematiker und Physiker, bekannt für seine grundlegenden Beiträge zur Analysis, Graphentheorie und Mechanik. Er starb im Alter von 76 Jahren an einer Gehirnblutung in Sankt Petersburg, Russland.",
+  "shortDescriptionEs": "Leonhard Euler fue un matemático y físico suizo, reconocido por sus contribuciones fundamentales al cálculo, la teoría de grafos y la mecánica. Falleció a los 76 años debido a una hemorragia cerebral en San Petersburgo, Rusia.",
+  "shortDescriptionRu": "Леонард Эйлер был швейцарским математиком и физиком, известным своими фундаментальными вкладами в анализ, теорию графов и механику. Он скончался в возрасте 76 лет от мозгового кровоизлияния в Санкт-Петербурге, Россия.",
+  "sources": [
+    "https://www.britannica.com/biography/Leonhard-Euler",
+    "https://en.wikipedia.org/wiki/Leonhard_Euler",
+    "https://biographyhost.com/p/leonhard-euler-biography.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7742",  "Name": "Louis XIV of France",  "BirthDate": "1638-09-05T00:00:00Z",  "DeathDate": "1715-09-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20XIV%20of%20France.jpg",  "SiteLinksCnt": 175,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"18553":{"pageid":18553,"ns":0,"title":"Louis XIV","extract":"Louis XIV (Louis-Dieudonn\u00e9; 5 September 1638 \u2013 1 September 1715), also known as Louis the Great (Louis le Grand) or the Sun King (le Roi Soleil), was King of France from 1643 until his death in 1715. His verified reign of 72 years and 110 days is the longest of any sovereign. An emblem of the age of absolutism in Europe, Louis XIV's legacy includes French colonial expansion, the conclusion of the Eighty Years' War involving the Habsburgs, a controlling influence on the style of fine arts and architecture in France, including the transformation of the Palace of Versailles into a center of royal power and politics. Louis XIV's pageantry  and opulence helped define the French Baroque style of art and architecture and promoted his image as absolute ruler of France in the early modern period. \nLouis XIV began his personal rule of France in 1661 after the death of his chief minister Cardinal Mazarin. A believer in the divine right of kings, Louis XIV continued Louis XIII's work of creating a centralized state governed from a capital. Louis XIV sought to eliminate the remnants of feudalism persisting in parts of France by compelling many members of the nobility to reside at his lavish Palace of Versailles. In doing so, he succeeded in pacifying the aristocracy, many of whom had participated in the Fronde rebellions during his minority. He consolidated a system of absolute monarchy in France that endured until the French Revolution. \nLouis XIV enforced uniformity of religion under the Catholic Church. His revocation of the Edict of Nantes abolished the rights of the Huguenot Protestant minority and subjected them to a wave of dragonnades, effectively forcing Huguenots to emigrate or convert, virtually destroying the French Protestant community.\nDuring Louis's long reign, France emerged as the leading European power and regularly made war. A conflict with Spain marked his entire childhood, while during his personal rule, Louis fought three major continental conflicts, each against powerful foreign alliances: the Franco-Dutch War, the Nine Years' War, and the War of the Spanish Succession. In addition, France contested shorter wars such as the War of Devolution and the War of the Reunions. Warfare defined Louis's foreign policy, impelled by his personal ambition for glory and power: \"a mix of commerce, revenge, and pique\". His wars strained France's resources to the utmost, while in peacetime he concentrated on preparing for the next war. He taught his diplomats that their job was to create tactical and strategic advantages for the French military. Upon his death in 1715, Louis XIV left his great-grandson and successor, Louis XV, a powerful but war-weary kingdom, in major debt after the War of the Spanish Succession that had raged on since 1701. \n\nSome of his other notable achievements include the construction of the Canal du Midi, the patronage of artists, and the founding of the French Academy of Sciences.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7742")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7742",
+  "isRealHuman": true,
+  "birthDate": "1638-09-05",
+  "deathDate": "1715-09-01",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in historical records, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Louis XIV (1638–1715), known as the Sun King, was the King of France who reigned for 72 years, the longest in European history. He centralized power, expanded French influence, and transformed the Palace of Versailles into a symbol of absolute monarchy. He died at age 76 from gangrene at Versailles.",
+  "shortDescriptionFr": "Louis XIV (1638–1715), surnommé le Roi Soleil, fut roi de France pendant 72 ans, un règne record en Europe. Il centralisa le pouvoir, étendit l'influence française et transforma le château de Versailles en symbole de la monarchie absolue. Il mourut à 76 ans de la gangrène à Versailles.",
+  "shortDescriptionDe": "Ludwig XIV. (1638–1715), bekannt als der Sonnenkönig, war König von Frankreich mit einer 72-jährigen Regierungszeit, der längsten in Europa. Er zentralisierte die Macht, erweiterte den französischen Einfluss und verwandelte Versailles in ein Symbol des Absolutismus. Er starb im Alter von 76 Jahren an Gangrän in Versailles.",
+  "shortDescriptionEs": "Luis XIV (1638–1715), conocido como el Rey Sol, fue rey de Francia durante 72 años, el reinado más largo en Europa. Centralizó el poder, expandió la influencia francesa y transformó Versalles en un símbolo de la monarquía absoluta. Murió a los 76 años de gangrena en Versalles.",
+  "shortDescriptionRu": "Людовик XIV (1638–1715), известный как Король-Солнце, был королем Франции, правившим 72 года — самый долгий период в европейской истории. Он централизовал власть, расширил влияние Франции и превратил Версаль в символ абсолютной монархии. Умер в возрасте 76 лет от гангрены в Версале.",
+  "sources": [
+    "https://www.britannica.com/biography/Louis-XIV-king-of-France",
+    "https://en.wikipedia.org/wiki/Louis_XIV",
+    "https://en.chateauversailles.fr/discover/history/key-dates/death-louis-xiv-1715"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34453",  "Name": "Boris Yeltsin",  "BirthDate": "1931-02-01T00:00:00Z",  "DeathDate": "2007-04-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%91%D0%BE%D1%80%D0%B8%D1%81%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87%20%D0%95%D0%BB%D1%8C%D1%86%D0%B8%D0%BD-1.jpg",  "SiteLinksCnt": 155,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"23278520":{"pageid":23278520,"ns":0,"title":"Boris Yeltsin","extract":"Boris Nikolayevich Yeltsin (1 February 1931 \u2013 23 April 2007) was a Soviet and Russian politician and statesman who served as President of Russia from 1991 to 1999. He was a member of the Communist Party of the Soviet Union (CPSU) from 1961 to 1990. He later stood as a political independent, during which time he was viewed as being ideologically aligned with liberalism.\nYeltsin was born in Butka, Ural Oblast. He would grow up in Kazan and Berezniki. He worked in construction after studying at the Ural State Technical University. After joining the Communist Party, he rose through its ranks, and in 1976, he became First Secretary of the party's Sverdlovsk Oblast committee. Yeltsin was initially a supporter of the perestroika reforms of Soviet leader Mikhail Gorbachev. He later criticized the reforms as being too moderate and called for a transition to a multi-party representative democracy. In 1987, he was the first person to resign from the Politburo of the Communist Party of the Soviet Union, which established his popularity as an anti-establishment figure. In 1990, he was elected chair of the Russian Supreme Soviet and in 1991 was elected president of the Russian Soviet Federative Socialist Republic (RSFSR), becoming the first popularly-elected head of state in Russian history. Yeltsin allied with various non-Russian nationalist leaders and was instrumental in the formal dissolution of the Soviet Union in December of that year. With the dissolution of the Soviet Union, the RSFSR became the Russian Federation, an independent state. Through that transition, Yeltsin remained in office as president. He was later re-elected in the 1996 Russian presidential election, which critics claimed to be pervasively corrupt.\nHe oversaw the transition of Russia's command economy into a capitalist market economy by implementing economic shock therapy, market exchange rate of the ruble, nationwide privatization, and lifting of price controls. Economic downturn, volatility, and inflation ensued. Amid the economic shift, a small number of oligarchs obtained most of the national property and wealth, while international monopolies dominated the market. A constitutional crisis emerged in 1993 after Yeltsin ordered the unconstitutional dissolution of the Russian parliament, leading parliament to impeach him. The crisis ended after troops loyal to Yeltsin stormed the parliament building and stopped an armed uprising; he then introduced a new constitution which significantly expanded the powers of the president. After the crisis, Yeltsin governed the country in a rule by decree until 1994, as the Supreme Soviet of Russia was absent. Secessionist sentiment in the Russian Caucasus led to the First Chechen War, War of Dagestan, and Second Chechen War between 1994 and 1999. Internationally, Yeltsin promoted renewed collaboration with Europe and signed arms control agreements with the United States. Amid growing internal pressure, he resigned by the end of 1999 and was succeeded as president by his chosen successor, Vladimir Putin, whom he had appointed prime minister a few months earlier. After leaving office, he kept a low profile and was accorded a state funeral upon his death in 2007.\nDomestically, he was highly popular in the late 1980s and early 1990s, although his reputation was damaged by the economic and political crises of his presidency, and he left office widely unpopular with the Russian population. He received praise and criticism for his role in dismantling the Soviet Union, transforming Russia into a representative democracy, and introducing new political, economic, and cultural freedoms to the country. Conversely, he was accused of economic mismanagement, abuse of presidential power, autocratic behavior, corruption, and of undermining Russia's standing as a major world power.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34453")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q34453",
+  "isRealHuman": true,
+  "birthDate": "1931-02-01",
+  "deathDate": "2007-04-23",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Boris Yeltsin was the first President of the Russian Federation, serving from 1991 to 1999. He played a pivotal role in the dissolution of the Soviet Union and implemented significant economic reforms. Yeltsin died at age 76 from heart failure on April 23, 2007.",
+  "shortDescriptionFr": "Boris Eltsine fut le premier président de la Fédération de Russie de 1991 à 1999. Il joua un rôle clé dans la dissolution de l'Union soviétique et mit en œuvre d'importantes réformes économiques. Eltsine est décédé à 76 ans d'une insuffisance cardiaque le 23 avril 2007.",
+  "shortDescriptionDe": "Boris Jelzin war von 1991 bis 1999 der erste Präsident der Russischen Föderation. Er spielte eine entscheidende Rolle beim Zerfall der Sowjetunion und führte bedeutende Wirtschaftsreformen durch. Jelzin starb am 23. April 2007 im Alter von 76 Jahren an Herzversagen.",
+  "shortDescriptionEs": "Borís Yeltsin fue el primer presidente de la Federación Rusa entre 1991 y 1999. Desempeñó un papel crucial en la disolución de la Unión Soviética e implementó reformas económicas significativas. Yeltsin falleció a los 76 años por insuficiencia cardíaca el 23 de abril de 2007.",
+  "shortDescriptionRu": "Борис Ельцин был первым президентом Российской Федерации с 1991 по 1999 год. Он сыграл ключевую роль в распаде Советского Союза и провел значительные экономические реформы. Ельцин скончался 23 апреля 2007 года в возрасте 76 лет от сердечной недостаточности.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Boris_Yeltsin",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Boris_Yeltsin",
+    "https://www.britannica.com/biography/Boris-Yeltsin"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37767",  "Name": "T. S. Eliot",  "BirthDate": "1888-09-26T00:00:00Z",  "DeathDate": "1965-01-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Stearns%20Eliot%20by%20Lady%20Ottoline%20Morrell%20%281934%29.jpg",  "SiteLinksCnt": 153,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"30273":{"pageid":30273,"ns":0,"title":"T. S. Eliot","extract":"Thomas Stearns Eliot  (26 September 1888 \u2013 4 January 1965) was a poet, essayist and playwright. He was a leading figure in English-language Modernist poetry where he reinvigorated the art through his use of language, writing style, and verse structure. He is also noted for his critical essays, which often re-evaluated long-held cultural beliefs.\nBorn in St. Louis, Missouri, to a prominent Boston Brahmin family, he moved to England in 1914 at the age of 25 and went on to settle, work, and marry there. He became a British subject in 1927 at the age of 39 and renounced his American citizenship.\nEliot first attracted widespread attention for his poem \"The Love Song of J. Alfred Prufrock\" from 1914 to 1915, which, at the time of its publication, was considered outlandish. It was followed by The Waste Land (1922), \"The Hollow Men\" (1925), \"Ash Wednesday\" (1930), and Four Quartets (1943). He wrote seven plays, including Murder in the Cathedral (1935) and The Cocktail Party (1949). He was awarded the 1948 Nobel Prize in Literature, \"for his outstanding, pioneer contribution to present-day poetry\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37767")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37767",
+  "isRealHuman": true,
+  "birthDate": "1888-09-26",
+  "deathDate": "1965-01-04",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "T. S. Eliot was a prominent 20th-century poet, essayist, and playwright, known for works like 'The Waste Land' and 'Four Quartets'. He died at age 76 from emphysema in London, with his ashes interred in his ancestral village of East Coker.",
+  "shortDescriptionFr": "T. S. Eliot était un poète, essayiste et dramaturge majeur du XXe siècle, célèbre pour des œuvres telles que 'The Waste Land' et 'Four Quartets'. Il est décédé à 76 ans d'un emphysème à Londres, et ses cendres ont été inhumées dans son village ancestral d'East Coker.",
+  "shortDescriptionDe": "T. S. Eliot war ein bedeutender Dichter, Essayist und Dramatiker des 20. Jahrhunderts, bekannt für Werke wie 'The Waste Land' und 'Four Quartets'. Er starb im Alter von 76 Jahren an Emphysem in London; seine Asche wurde in seinem Ahnenort East Coker beigesetzt.",
+  "shortDescriptionEs": "T. S. Eliot fue un destacado poeta, ensayista y dramaturgo del siglo XX, conocido por obras como 'The Waste Land' y 'Four Quartets'. Falleció a los 76 años de enfisema en Londres, y sus cenizas fueron enterradas en su pueblo ancestral de East Coker.",
+  "shortDescriptionRu": "Т. С. Элиот был выдающимся поэтом, эссеистом и драматургом XX века, известным такими произведениями, как 'The Waste Land' и 'Four Quartets'. Он умер в возрасте 76 лет от эмфиземы в Лондоне, а его прах был захоронен в деревне его предков Ист-Кокер.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/T._S._Eliot",
+    "https://www.britannica.com/biography/T-S-Eliot",
+    "https://tseliot.com/a-life-in-pictures/ph_card_024_alip",
+    "https://www.poetrychangeslives.com/t-s-eliot-heavy-smoking-banker-poet-died-of-emphysema/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82006",  "Name": "Benjamin Disraeli",  "BirthDate": "1804-12-21T00:00:00Z",  "DeathDate": "1881-04-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Disraeli%20%281804%E2%80%931881%29%20cropped.png",  "SiteLinksCnt": 136,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"3875":{"pageid":3875,"ns":0,"title":"Benjamin Disraeli","extract":"Benjamin Disraeli, 1st Earl of Beaconsfield (21 December 1804 \u2013 19 April 1881) was a British statesman, Conservative politician and writer who twice served as Prime Minister of the United Kingdom. He played a central role in the creation of the modern Conservative Party, defining its policies and its broad outreach. Disraeli is remembered for his influential voice in world affairs, his political battles with the Liberal Party leader William Ewart Gladstone, and his one-nation conservatism or \"Tory democracy\". He made the Conservatives the party most identified with the British Empire and military action to expand it, both of which were popular among British voters. He is the only British prime minister to have been born Jewish.\nDisraeli was born in Bloomsbury, at that time a part of Middlesex. His father left Judaism after a dispute at his synagogue; Benjamin became an Anglican at the age of 12. After several unsuccessful attempts, Disraeli entered the House of Commons in 1837. In 1846, Prime Minister Robert Peel split the party over his proposal to repeal the Corn Laws, which involved ending the tariff on imported grain. Disraeli clashed with Peel in the House of Commons, becoming a major figure in the party. When Lord Derby, the party leader, thrice formed governments in the 1850s and 1860s, Disraeli served as Chancellor of the Exchequer and Leader of the House of Commons.\nUpon Derby's retirement in 1868, Disraeli became prime minister briefly before losing that year's general election. He returned to the Opposition before leading the party to a majority in the 1874 general election. He maintained a close friendship with Queen Victoria who, in 1876, elevated him to the peerage as Earl of Beaconsfield. Disraeli's second term was dominated by the Eastern question\u2014the slow decay of the Ottoman Empire and the desire of other European powers, such as Russia, to gain at its expense. Disraeli arranged for the British to purchase a major interest in the Suez Canal Company in Egypt. In 1878, faced with Russian victories against the Ottomans, he worked at the Congress of Berlin to obtain peace in the Balkans at terms favourable to Britain and unfavourable to Russia, its longstanding enemy. This diplomatic victory established Disraeli as one of Europe's leading statesmen.\nWorld events thereafter moved against the Conservatives. Controversial wars in Afghanistan and South Africa undermined his public support. He angered farmers by refusing to reinstitute the Corn Laws in response to poor harvests and cheap imported grain. With Gladstone conducting a massive speaking campaign, the Liberals defeated Disraeli's Conservatives at the 1880 general election. In his final months, Disraeli led the Conservatives in Opposition. Disraeli wrote novels throughout his career, beginning in 1826, and published his last completed novel, Endymion, shortly before he died at the age of 76."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82006")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q82006",
+  "isRealHuman": true,
+  "birthDate": "1804-12-21",
+  "deathDate": "1881-04-19",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Benjamin Disraeli (1804–1881) was a British statesman, novelist, and leader of the Conservative Party who served twice as Prime Minister. He died at 76 from complications of asthma and gout after contracting a chill in March 1881.",
+  "shortDescriptionFr": "Benjamin Disraeli (1804–1881) était un homme d'État britannique, romancier et chef du Parti conservateur, ayant servi deux fois comme Premier ministre. Il est décédé à 76 ans des suites de complications liées à l'asthme et à la goutte après avoir attrapé un refroidissement en mars 1881.",
+  "shortDescriptionDe": "Benjamin Disraeli (1804–1881) war ein britischer Staatsmann, Romanautor und Führer der Konservativen Partei, der zweimal Premierminister war. Er starb im Alter von 76 Jahren an Komplikationen durch Asthma und Gicht, nachdem er sich im März 1881 eine Erkältung zugezogen hatte.",
+  "shortDescriptionEs": "Benjamin Disraeli (1804–1881) fue un estadista británico, novelista y líder del Partido Conservador que sirvió dos veces como Primer Ministro. Murió a los 76 años por complicaciones de asma y gota tras contraer un resfriado en marzo de 1881.",
+  "shortDescriptionRu": "Бенджамин Дизраэли (1804–1881) был британским государственным деятелем, романистом и лидером Консервативной партии, дважды занимавшим пост премьер-министра. Он умер в возрасте 76 лет от осложнений астмы и подагры после простуды в марте 1881 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Benjamin_Disraeli",
+    "https://www.britannica.com/biography/Benjamin-Disraeli",
+    "https://victoriancalendar.blogspot.com/2011/03/april-19-1881-death-of-disraeli.html",
+    "https://www.gov.uk/government/history/past-prime-ministers/benjamin-disraeli-the-earl-of-beaconsfield"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q80440",  "Name": "Anna Akhmatova",  "BirthDate": "1889-06-23T00:00:00Z",  "DeathDate": "1966-03-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Akhmatova.jpg",  "SiteLinksCnt": 126,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"66569":{"pageid":66569,"ns":0,"title":"Anna Akhmatova","extract":"Anna Andreyevna Gorenko (23 June [O.S. 11 June] 1889 \u2013 5 March 1966), better known by the pen name Anna Akhmatova, was a Russian poet, one of the most significant of the 20th century. She reappeared as a voice of Russian poetry during World War II. She was nominated for the Nobel Prize in Literature in 1965 and 1966.\nAkhmatova's work ranges from short lyric poems to intricately structured cycles, such as Requiem (1935\u201340), her tragic masterpiece about the Stalinist terror. Her style, characterised by its economy and emotional restraint, was strikingly original and distinctive to her contemporaries. The strong and clear leading female voice struck a new chord in Russian poetry. Her writing can be said to fall into two periods \u2013 the early work (1912\u201325) and her later work (from around 1936 until her death), divided by a decade of reduced literary output. Her work was condemned and censored by Stalinist authorities, and she is notable for choosing not to emigrate and remaining in the Soviet Union, acting as witness to the events around her. Her perennial themes include meditations on time and memory, and the difficulties of living and writing in the shadow of Stalinism.\nPrimary sources of information about Akhmatova's life are relatively scant, as war, revolution and the Soviet regime caused much of the written record to be destroyed. For long periods she was in official disfavour and many of those who were close to her died in the aftermath of the revolution. Akhmatova's first husband, Nikolai Gumilev, was executed by the Cheka, and her son Lev Gumilev and her common-law husband Nikolay Punin spent many years in the Gulag, where Punin died."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q80440")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q80440",
+  "isRealHuman": true,
+  "birthDate": "1889-06-23",
+  "deathDate": "1966-03-05",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Anna Akhmatova (1889–1966) was a Russian and Soviet poet renowned for her emotionally restrained and clear verse. Her work, including the notable 'Requiem,' reflects personal and collective tragedies during Stalinist repression. She died at age 76 in Domodedovo, near Moscow.",
+  "shortDescriptionFr": "Anna Akhmatova (1889–1966) était une poétesse russe et soviétique célèbre pour ses vers empreints de retenue émotionnelle et de clarté. Son œuvre, notamment 'Requiem,' reflète les tragédies personnelles et collectives sous la répression stalinienne. Elle est décédée à 76 ans à Domodedovo, près de Moscou.",
+  "shortDescriptionDe": "Anna Achmatowa (1889–1966) war eine russische und sowjetische Dichterin, bekannt für ihre emotional zurückhaltende und klare Lyrik. Ihr Werk, darunter 'Requiem,' spiegelt persönliche und kollektive Tragödien während der stalinistischen Repression wider. Sie starb im Alter von 76 Jahren in Domodedowo bei Moskau.",
+  "shortDescriptionEs": "Anna Ajmátova (1889–1966) fue una poeta rusa y soviética reconocida por su poesía de contención emocional y claridad. Su obra, incluyendo 'Réquiem,' refleja tragedias personales y colectivas durante la represión estalinista. Murió a los 76 años en Domodedovo, cerca de Moscú.",
+  "shortDescriptionRu": "Анна Ахматова (1889–1966) — русская и советская поэтесса, известная своей эмоционально сдержанной и ясной поэзией. Её творчество, включая 'Реквием,' отражает личные и коллективные трагедии во времена сталинских репрессий. Она умерла в возрасте 76 лет в Домодедово, под Москвой.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anna_Akhmatova",
+    "https://www.britannica.com/biography/Anna-Akhmatova",
+    "https://www.poetryfoundation.org/poets/anna-akhmatova",
+    "https://en.wikipedia.org/wiki/Requiem_(Anna_Akhmatova)"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q129772",  "Name": "Xenophon",  "BirthDate": "-0429-01-01T00:00:00Z",  "DeathDate": "-0353-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bust%20of%20Xenophon.jpg",  "SiteLinksCnt": 123,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"34155":{"pageid":34155,"ns":0,"title":"Xenophon","extract":"Xenophon of Athens (; Ancient Greek: \u039e\u03b5\u03bd\u03bf\u03c6\u1ff6\u03bd; c.\u2009430 \u2013 355/354 BC) was a Greek military leader, philosopher, and historian. At the age of 30, he was elected as one of the leaders of the retreating Greek mercenaries, the Ten Thousand, who had been part of Cyrus the Younger's attempt to seize control of the Achaemenid Empire. As the military historian Theodore Ayrault Dodge wrote, \"the centuries since have devised nothing to surpass the genius of this warrior\". Xenophon established precedents for many logistical operations and was among the first to describe strategic flanking maneuvers and feints in combat.\nFor at least two millennia, it has been debated whether or not Xenophon was first and foremost a general, historian, or philosopher. For the majority of time in the past two millennia, Xenophon was recognized as a philosopher. Quintilian in The Orator's Education discusses the most prominent historians, orators and philosophers as examples of eloquence and recognizes Xenophon's historical work, but ultimately places Xenophon next to Plato as a philosopher. Today, Xenophon is recognized as one of the greatest writers of antiquity. Xenophon's works span multiple genres and are written in plain Attic Greek, which is why they have often been used in translation exercises for contemporary students of the Ancient Greek language. In the Lives and Opinions of Eminent Philosophers, Diogenes La\u00ebrtius observed that Xenophon was known as the \"Attic Muse\" because of the sweetness of his diction.\nDespite being born an Athenian citizen, Xenophon came to be associated with Sparta, the traditional opponent of Athens. Much of what is known today about the Spartan society comes from Xenophon's royal biography of the Spartan king Agesilaus and the Constitution of the Lacedaemonians. The sub-satrap Mania is primarily known through Xenophon's writings. Xenophon's Anabasis recounts his adventures with the Ten Thousand while in the service of Cyrus the Younger, Cyrus's failed campaign to claim the Persian throne from Artaxerxes II of Persia, and the return of Greek mercenaries after Cyrus's death in the Battle of Cunaxa.\nXenophon wrote Cyropaedia, outlining both military and political methods used by Cyrus the Great to conquer the Neo-Babylonian Empire in 539 BC. Anabasis and Cyropaedia inspired Alexander the Great and other Greeks to conquer Babylon and the Achaemenid Empire in 331 BC. The Hellenica continues directly from the final sentence of Thucydides' History of the Peloponnesian War covering the last seven years of the Peloponnesian War (431\u2013404 BC) and the subsequent forty-two years (404\u2013362 BC) ending with the Second Battle of Mantinea."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q129772")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q129772",
+  "isRealHuman": true,
+  "birthDate": "-0430-01-01",
+  "deathDate": "-0354-01-01",
+  "ageAtDeath": 76,
+  "confidence": 90,
+  "confidenceExplained": "While exact birth and death dates are not definitively recorded, multiple historical sources agree on approximate dates. Xenophon's birth is commonly placed around 430 BCE, and his death around 354 BCE, leading to an estimated age at death of 76 years.",
+  "shortDescriptionEn": "Xenophon of Athens (c. 430 – 354 BCE) was a Greek historian, philosopher, and military leader. He is renowned for his works such as 'Anabasis' and 'Cyropaedia', which provide valuable insights into Greek history and philosophy. Xenophon died around 354 BCE, likely in Corinth, at approximately 76 years of age.",
+  "shortDescriptionFr": "Xénophon d'Athènes (vers 430 – 354 av. J.-C.) était un historien, philosophe et chef militaire grec. Il est célèbre pour ses œuvres telles que 'Anabase' et 'Cyropédie', offrant des perspectives précieuses sur l'histoire et la philosophie grecques. Xénophon est décédé vers 354 av. J.-C., probablement à Corinthe, à environ 76 ans.",
+  "shortDescriptionDe": "Xenophon von Athen (ca. 430 – 354 v. Chr.) war ein griechischer Historiker, Philosoph und Militärführer. Er ist bekannt für Werke wie 'Anabasis' und 'Kyropädie', die wertvolle Einblicke in die griechische Geschichte und Philosophie bieten. Xenophon starb um 354 v. Chr., vermutlich in Korinth, im Alter von etwa 76 Jahren.",
+  "shortDescriptionEs": "Jenofonte de Atenas (c. 430 – 354 a.C.) fue un historiador, filósofo y líder militar griego. Es conocido por obras como 'Anábasis' y 'Ciropedia', que ofrecen valiosas perspectivas sobre la historia y filosofía griegas. Jenofonte murió alrededor del año 354 a.C., probablemente en Corinto, a los 76 años aproximadamente.",
+  "shortDescriptionRu": "Ксенофонт Афинский (ок. 430 – 354 до н.э.) был греческим историком, философом и военным лидером. Он известен такими произведениями, как 'Анабасис' и 'Киропедия', предоставляющими ценные сведения о греческой истории и философии. Ксенофонт умер около 354 года до н.э., вероятно, в Коринфе, в возрасте примерно 76 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Xenophon",
+    "https://en.wikipedia.org/wiki/Xenophon",
+    "https://www.worldhistory.org/xenophon/",
+    "https://www.thefamouspeople.com/profiles/xenophon-4212.php"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q125121",  "Name": "Aretha Franklin",  "BirthDate": "1942-03-25T00:00:00Z",  "DeathDate": "2018-08-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aretha%20Franklin%201968.jpg",  "SiteLinksCnt": 111,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"147367":{"pageid":147367,"ns":0,"title":"Aretha Franklin","extract":"Aretha Louise Franklin ( \u0259-REE-th\u0259; March 25, 1942 \u2013 August 16, 2018) was an American singer, songwriter and pianist. Honored as the \"Queen of Soul\", she was twice named by Rolling Stone magazine as the greatest singer of all time.\nAs a child, Franklin was noticed for her gospel singing at New Bethel Baptist Church in Detroit, Michigan, where her father C. L. Franklin was a minister. At the age of 18, she was signed as a recording artist for Columbia Records. While her career did not immediately flourish, Franklin found acclaim and commercial success once she signed with Atlantic Records in 1966. She recorded albums such as I Never Loved a Man the Way I Love You (1967), Lady Soul (1968), Spirit in the Dark (1970), Young, Gifted and Black (1972), Amazing Grace (1972), and Sparkle (1976), before experiencing problems with the record company. Franklin left Atlantic in 1979 and signed with Arista Records. Her success continued with the albums Jump to It (1982), Who's Zoomin' Who? (1985), Aretha (1986) and A Rose Is Still a Rose (1998).\nFranklin is one of the best-selling music artists, with more than 75 million records sold worldwide. She charted 112 singles on the US Billboard charts, including 73 Hot 100 entries, 17 top-ten pop singles, 96 R&B entries and 20 number-one R&B singles. Her best-known hits include \"I Never Loved a Man (The Way I Love You)\" (1967), \"Respect\" (1967), \"(You Make Me Feel Like) A Natural Woman\" (1967), \"Chain of Fools\" (1967), \"Ain't No Way\" (1968), \"Think\" (1968), \"I Say a Little Prayer\" (1968), \"Call Me\" (1970), \"Don't Play That Song (You Lied)\" (1970), \"Spanish Harlem\" (1971), \"Rock Steady\" (1971), \"Day Dreaming\" (1972), \"Until You Come Back to Me (That's What I'm Gonna Do)\" (1973), \"Something He Can Feel\" (1976), \"Jump to It\" (1982), \"Freeway of Love\" (1985), \"Who's Zoomin' Who\" (1985), \"I Knew You Were Waiting (For Me)\" (a duet with George Michael, 1987) and \"A Rose Is Still a Rose\" (1998). She also made a featured appearance in the 1980 musical-comedy film The Blues Brothers.\nFranklin received numerous honors throughout her career. She  won 18 Grammy Awards out of 44 nominations, including the first eight awards given for Best Female R&B Vocal Performance (1968\u20131975), as well as a Grammy Living Legend Award and Lifetime Achievement Award. She was also awarded the National Medal of Arts and the Presidential Medal of Freedom. In 1987, she became the first female artist to be inducted into the Rock and Roll Hall of Fame. Her other inductions include the UK Music Hall of Fame in 2005, the Gospel Music Hall of Fame in 2012, and posthumously the National Women's Hall of Fame in 2020. In 2019, the Pulitzer Prize jury awarded her a posthumous special citation \"for her indelible contribution to American music and culture for more than five decades\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q125121")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q125121",
+  "isRealHuman": true,
+  "birthDate": "1942-03-25",
+  "deathDate": "2018-08-16",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, making the age calculation precise and certain.",
+  "shortDescriptionEn": "Aretha Franklin was an American singer, songwriter, and pianist, celebrated as the 'Queen of Soul' for her powerful voice and influential music career. She passed away at the age of 76 due to advanced pancreatic cancer.",
+  "shortDescriptionFr": "Aretha Franklin était une chanteuse, compositrice et pianiste américaine, surnommée la 'Reine de la Soul' pour sa voix puissante et sa carrière musicale influente. Elle est décédée à l'âge de 76 ans d'un cancer du pancréas avancé.",
+  "shortDescriptionDe": "Aretha Franklin war eine amerikanische Sängerin, Songwriterin und Pianistin, bekannt als die 'Queen of Soul' für ihre kraftvolle Stimme und ihren Einfluss auf die Musik. Sie starb im Alter von 76 Jahren an fortgeschrittenem Bauchspeicheldrüsenkrebs.",
+  "shortDescriptionEs": "Aretha Franklin fue una cantante, compositora y pianista estadounidense, conocida como la 'Reina del Soul' por su poderosa voz y carrera musical influyente. Falleció a los 76 años debido a un cáncer de páncreas avanzado.",
+  "shortDescriptionRu": "Аретa Франклин была американской певицей, автором песен и пианисткой, известной как 'Королева соула' за её мощный голос и влияние на музыку. Она скончалась в возрасте 76 лет от прогрессирующего рака поджелудочной железы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Aretha_Franklin",
+    "https://www.bbc.com/news/entertainment-arts-45169609",
+    "https://www.britannica.com/biography/Aretha-Franklin",
+    "https://people.com/music/aretha-franklin-dead-at-76/"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q181667",  "Name": "Washington Irving",  "BirthDate": "1783-04-03T00:00:00Z",  "DeathDate": "1859-11-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Irving-Washington-LOC.jpg",  "SiteLinksCnt": 108,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"33726":{"pageid":33726,"ns":0,"title":"Washington Irving","extract":"Washington Irving (April 3, 1783 \u2013 November 28, 1859) was an American short-story writer, essayist, biographer, historian, and diplomat of the early 19th century. He wrote the short stories \"Rip Van Winkle\" (1819) and \"The Legend of Sleepy Hollow\" (1820), both of which appear in his collection The Sketch Book of Geoffrey Crayon, Gent. His historical works include biographies of Oliver Goldsmith, Muhammad, and George Washington, as well as several histories of 15th-century Spain that deal with subjects such as the Alhambra, Christopher Columbus, and the Moors. Irving served as American ambassador to Spain in the 1840s.\nIrving was born and raised in Manhattan to a merchant family. He made his literary debut in 1802 with a series of observational letters to the Morning Chronicle, written under the pseudonym Jonathan Oldstyle. He temporarily moved to England for the family business in 1815, where he achieved fame with the publication of The Sketch Book of Geoffrey Crayon, Gent. which was serialized from 1819 to 1820. He continued to publish regularly throughout his life, and he completed a five-volume biography of George Washington just eight months before his death at age 76 in Tarrytown, New York.\nIrving was one of the first American writers to earn acclaim in Europe, and he encouraged other American authors such as Nathaniel Hawthorne, Henry Wadsworth Longfellow, Herman Melville, and Edgar Allan Poe. He was also admired by some British writers, including Lord Byron, Thomas Campbell, Charles Dickens, Mary Shelley, Francis Jeffrey, and Walter Scott. He advocated for writing as a legitimate profession and argued for stronger laws to protect American writers from copyright infringement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q181667")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q181667",
+  "isRealHuman": true,
+  "birthDate": "1783-04-03",
+  "deathDate": "1859-11-28",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple reputable sources, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Washington Irving (1783–1859) was an American author, essayist, and diplomat, renowned for 'Rip Van Winkle' and 'The Legend of Sleepy Hollow.' He passed away at his Sunnyside estate in Tarrytown, New York, at the age of 76.",
+  "shortDescriptionFr": "Washington Irving (1783–1859) était un écrivain, essayiste et diplomate américain, célèbre pour 'Rip Van Winkle' et 'La Légende de Sleepy Hollow.' Il est décédé à l'âge de 76 ans dans sa résidence de Sunnyside à Tarrytown, New York.",
+  "shortDescriptionDe": "Washington Irving (1783–1859) war ein amerikanischer Schriftsteller, Essayist und Diplomat, bekannt für 'Rip Van Winkle' und 'Die Legende von Sleepy Hollow.' Er starb im Alter von 76 Jahren auf seinem Anwesen Sunnyside in Tarrytown, New York.",
+  "shortDescriptionEs": "Washington Irving (1783–1859) fue un escritor, ensayista y diplomático estadounidense, famoso por 'Rip Van Winkle' y 'La leyenda de Sleepy Hollow.' Falleció a los 76 años en su finca Sunnyside en Tarrytown, Nueva York.",
+  "shortDescriptionRu": "Вашингтон Ирвинг (1783–1859) — американский писатель, эссеист и дипломат, известный по рассказам 'Рип Ван Винкль' и 'Легенда о Сонной Лощине.' Умер в возрасте 76 лет в своем поместье Саннисайд в Тарритауне, штат Нью-Йорк.",
+  "sources": [
+    "https://www.britannica.com/biography/Washington-Irving",
+    "https://en.wikipedia.org/wiki/Washington_Irving",
+    "https://www.thoughtco.com/washington-irving-biography-735849"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1480",  "Name": "Corazon Aquino",  "BirthDate": "1933-01-25T00:00:00Z",  "DeathDate": "2009-08-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Corazon%20Aquino%201986.jpg",  "SiteLinksCnt": 104,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"279605":{"pageid":279605,"ns":0,"title":"Corazon Aquino","extract":"Mar\u00eda Coraz\u00f3n \"Cory\" Sumulong Cojuangco-Aquino  (Tagalog: [k\u0254\u027ea\u02c8s\u0254n k\u0254\u02c8hwa\u014bk\u0254 a\u02c8kino];  January 25, 1933 \u2013 August 1, 2009) was a Filipino politician who served as the 11th president of the Philippines and the first woman president in the country, from 1986 to 1992. She was the most prominent figure of the 1986 People Power Revolution, which ended the two-decade rule of President Ferdinand Marcos and led to the establishment of the current democratic Fifth Philippine Republic.\nAquino was married to Senator Benigno Aquino Jr., who was one of the most prominent critics of President Marcos. After the assassination of her husband on August 21, 1983, she emerged as leader of the opposition against the president. In late 1985, Marcos called for a snap election, and Aquino ran for president with former Senator Salvador Laurel as her running mate for vice president. After the election held on February 7, 1986, the Batasang Pambansa proclaimed Marcos and his running mate Arturo Tolentino as the winners, which prompted allegations of electoral fraud and Aquino's call for massive civil disobedience actions. Subsequently, the People Power Revolution, a non-violent mass demonstration movement, took place from February 22 to 25. The People Power Revolution, along with defections from the Armed Forces of the Philippines and support from the Philippine Catholic Church, ousted Marcos and secured Aquino's accession to the presidency on February 25, 1986. Prior to her election as president, Aquino had not held any elected office. She was the first female president of the Philippines.\nAs president, Aquino oversaw the drafting of the 1987 Constitution, which limited the powers of the presidency and re-established the bicameral Congress, removing the previous dictatorial government structure. Her economic policies focused on forging good economic standing amongst the international community as well as disestablishing Marcos-era crony capitalist monopolies, emphasizing the free market and responsible economy. Her administration pursued peace talks to resolve the Moro conflict, and the result of these talks was creation of the Autonomous Region in Muslim Mindanao. Aquino was criticized for the Mendiola Massacre, which resulted in the shooting deaths of at least 12 peaceful protesters by Philippine state security forces. The Philippines faced various natural calamities in the latter part of Aquino's administration, such as the 1990 Luzon earthquake, 1991 Mt. Pinatubo eruption and Tropical Storm Thelma. Several coup attempts were made against her government. She was succeeded as president by Fidel V. Ramos and returned to civilian life in 1992.\nAquino was diagnosed with colorectal cancer in 2008 and died on August 1, 2009. Her son Benigno Aquino III served as president of the Philippines from 2010 to 2016. After her death, monuments were built and public landmarks were named in honor of Corazon Aquino all around the Philippines. Aquino was regarded as the Mother of Democracy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1480")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1480",
+  "isRealHuman": true,
+  "birthDate": "1933-01-25",
+  "deathDate": "2009-08-01",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Corazon Aquino (1933–2009) was the 11th President of the Philippines and the first woman to hold the office, serving from 1986 to 1992. She led the People Power Revolution that ended Ferdinand Marcos's dictatorship. Aquino died at age 76 from cardiorespiratory arrest due to complications from colorectal cancer.",
+  "shortDescriptionFr": "Corazon Aquino (1933–2009) fut la 11e présidente des Philippines et la première femme à occuper ce poste, de 1986 à 1992. Elle a dirigé la révolution du pouvoir populaire qui a mis fin à la dictature de Ferdinand Marcos. Aquino est décédée à 76 ans d'un arrêt cardiorespiratoire dû à un cancer colorectal.",
+  "shortDescriptionDe": "Corazon Aquino (1933–2009) war die 11. Präsidentin der Philippinen und die erste Frau in diesem Amt, von 1986 bis 1992. Sie führte die People Power Revolution an, die die Diktatur von Ferdinand Marcos beendete. Aquino starb im Alter von 76 Jahren an einem Herz-Kreislauf-Stillstand infolge von Darmkrebs.",
+  "shortDescriptionEs": "Corazon Aquino (1933–2009) fue la 11ª presidenta de Filipinas y la primera mujer en ocupar el cargo, de 1986 a 1992. Lideró la Revolución del Poder Popular que puso fin a la dictadura de Ferdinand Marcos. Aquino falleció a los 76 años debido a un paro cardiorrespiratorio causado por cáncer colorrectal.",
+  "shortDescriptionRu": "Корасон Акино (1933–2009) была 11-м президентом Филиппин и первой женщиной на этом посту, занимая его с 1986 по 1992 год. Она возглавила Революцию народной власти, положившую конец диктатуре Фердинанда Маркоса. Акино скончалась в возрасте 76 лет от остановки сердца вследствие колоректального рака.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Corazon_Aquino",
+    "https://www.britannica.com/biography/Corazon-Aquino",
+    "https://www.gmanetwork.com/news/topstories/nation/168752/former-president-corazon-aquino-people-power-icon-passes-away/story/",
+    "https://www.france24.com/en/20090801-former-president-corazon-aquino-succumbs-cancer-"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1110560",  "Name": "Omm Kalthum",  "BirthDate": "1898-12-31T00:00:00Z",  "DeathDate": "1975-02-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Umm%20Kulthum%20in%201950.jpg",  "SiteLinksCnt": 103,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"214221":{"pageid":214221,"ns":0,"title":"Umm Kulthum","extract":"Umm Kulthum (Arabic: \u0623\u0645 \u0643\u0644\u062b\u0648\u0645; 31 December 1898  \u2013 3 February 1975) was an Egyptian singer, songwriter, and film actress active from the 1920s to the 1970s. She was given the honorific title Kawkab el-Sharq (Arabic: \u0643\u0648\u0643\u0628 \u0627\u0644\u0634\u0631\u0642, lit.\u2009'Planet of the Orient'). Immensely popular throughout the Middle East and beyond, Kulthum is a national icon in her native Egypt; she has been dubbed \"The Voice of Egypt\" and \"Egypt's Fourth Pyramid\". In 2023, Rolling Stone ranked Kulthum at number 61 on its list of the 200 Greatest Singers of All Time.\nHer funeral in 1975 drew a crowd of over 4 million people, the largest human gathering in Egypt's history, even surpassing that of president Nasser.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1110560")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1110560",
+  "isRealHuman": true,
+  "birthDate": "1898-12-31",
+  "deathDate": "1975-02-03",
+  "ageAtDeath": 76,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable sources, including Britannica and Find a Grave, confirm the birth date as December 31, 1898. The death date is consistently reported as February 3, 1975. Calculating the age based on these dates yields 76 years, which aligns with the majority of sources.",
+  "shortDescriptionEn": "Umm Kulthum (1898–1975) was an Egyptian singer, songwriter, and film actress, celebrated as the 'Voice of Egypt' and 'Star of the East'. Her powerful contralto voice and emotive performances captivated audiences across the Arab world from the 1920s to the 1970s. She passed away on February 3, 1975, at the age of 76, due to kidney failure. Her funeral in Cairo drew an unprecedented crowd of over 4 million mourners, marking it as the largest public gathering in Egypt's history.",
+  "shortDescriptionFr": "Oum Kalthoum (1898–1975) était une chanteuse, compositrice et actrice égyptienne, surnommée la 'Voix de l'Égypte' et 'l'Astre de l'Orient'. Sa voix puissante et ses performances émouvantes ont captivé le monde arabe des années 1920 aux années 1970. Elle est décédée le 3 février 1975, à l'âge de 76 ans, des suites d'une insuffisance rénale. Ses funérailles au Caire ont rassemblé plus de 4 millions de personnes, un record historique en Égypte.",
+  "shortDescriptionDe": "Umm Kulthum (1898–1975) war eine ägyptische Sängerin, Songwriterin und Filmschauspielerin, bekannt als die 'Stimme Ägyptens' und 'Stern des Ostens'. Ihre kraftvolle Altstimme und emotionalen Darbietungen begeisterten das arabische Publikum von den 1920er bis zu den 1970er Jahren. Sie verstarb am 3. Februar 1975 im Alter von 76 Jahren an Nierenversagen. Ihre Beerdigung in Kairo zog über 4 Millionen Trauernde an und gilt als größte öffentliche Versammlung in der Geschichte Ägyptens.",
+  "shortDescriptionEs": "Umm Kulthum (1898–1975) fue una cantante, compositora y actriz egipcia, conocida como la 'Voz de Egipto' y 'Estrella de Oriente'. Su poderosa voz de contralto y actuaciones emotivas cautivaron al mundo árabe desde los años 1920 hasta los 1970. Falleció el 3 de febrero de 1975, a los 76 años, debido a una insuficiencia renal. Su funeral en El Cairo reunió a más de 4 millones de personas, siendo la mayor congregación pública en la historia de Egipto.",
+  "shortDescriptionRu": "Умм Кульсум (1898–1975) была египетской певицей, автором песен и актрисой, известной как 'Голос Египта' и 'Звезда Востока'. Её мощный контральто и эмоциональные выступления покорили арабский мир с 1920-х по 1970-е годы. Она скончалась 3 февраля 1975 года в возрасте 76 лет от почечной недостаточности. Её похороны в Каире собрали более 4 миллионов человек, став крупнейшим публичным собранием в истории Египта.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Umm_Kulthum",
+    "https://www.britannica.com/biography/Umm-Kulthum-Egyptian-musician",
+    "https://www.findagrave.com/memorial/245504144/umm-kulthum",
+    "https://happyhappybirthday.net/en/age/umm-kulthum-person_eeeafga",
+    "https://www.arabnews.com/node/2155466/page_action",
+    "https://www.newarab.com/news/why-egypt-making-2025-year-umm-kulthum"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9726",  "Name": "Gioachino Rossini",  "BirthDate": "1792-02-29T00:00:00Z",  "DeathDate": "1868-11-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Composer%20Rossini%20G%201865%20by%20Carjat.jpg",  "SiteLinksCnt": 103,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"12406":{"pageid":12406,"ns":0,"title":"Gioachino Rossini","extract":"Gioachino Antonio Rossini (29 February 1792 \u2013 13 November 1868) was an Italian composer who gained fame for his 39 operas, although he also wrote many songs, some chamber music and piano pieces and some sacred music. He set new standards for both comic and serious opera before retiring from large-scale composition while still in his thirties, at the height of his popularity.\nBorn in Pesaro to parents who were both musicians (his father a trumpeter, his mother a singer), Rossini began to compose by the age of twelve and was educated at music school in Bologna. His first opera was performed in Venice in 1810 when he was 18 years old. In 1815 he was engaged to write operas and manage theatres in Naples. In the period 1810\u20131823, he wrote 34 operas for the Italian stage that were performed in Venice, Milan, Ferrara, Naples and elsewhere; this productivity necessitated an almost formulaic approach for some components (such as overtures) and a certain amount of self-borrowing. During this period he produced his most popular works, including the comic operas L'italiana in Algeri, Il barbiere di Siviglia (known in English as The Barber of Seville) and La Cenerentola, which brought to a peak the opera buffa tradition he inherited from masters such as Domenico Cimarosa and Giovanni Paisiello. He also composed opera seria works such as Tancredi, Otello and Semiramide. All of these attracted admiration for their innovation in melody, harmonic and instrumental colour, and dramatic form. In 1824 he was contracted by the Op\u00e9ra in Paris, for which he produced an opera to celebrate the coronation of Charles X, Il viaggio a Reims (later cannibalised for his first opera in French, Le comte Ory), revisions of two of his Italian operas, Le si\u00e8ge de Corinthe and Mo\u00efse, and in 1829 his last opera, Guillaume Tell.\nRossini's withdrawal from opera for the last 40 years of his life has never been fully explained; contributory factors may have been ill-health, the wealth his success had brought him, and the rise of spectacular grand opera under composers such as Giacomo Meyerbeer. From the early 1830s to 1855, when he left Paris and was based in Bologna, Rossini wrote relatively little. On his return to Paris in 1855 he became renowned for his musical salons on Saturdays, regularly attended by musicians and the artistic and fashionable circles of Paris, for which he wrote the entertaining pieces P\u00e9ch\u00e9s de vieillesse. Guests included Franz Liszt, Anton Rubinstein, Giuseppe Verdi, Meyerbeer, and Joseph Joachim. Rossini's last major composition was his Petite messe solennelle (1863)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9726")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9726",
+  "isRealHuman": true,
+  "birthDate": "1792-02-29",
+  "deathDate": "1868-11-13",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Rossini's birth and death dates are well-documented in historical records, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Gioachino Rossini was a celebrated Italian composer, best known for his 39 operas, including 'The Barber of Seville' and 'William Tell'. He died at 76 in Passy, France, following complications from colorectal cancer surgery.",
+  "shortDescriptionFr": "Gioachino Rossini était un compositeur italien renommé, célèbre pour ses 39 opéras, dont 'Le Barbier de Séville' et 'Guillaume Tell'. Il est décédé à 76 ans à Passy, France, des suites d'une opération du cancer colorectal.",
+  "shortDescriptionDe": "Gioachino Rossini war ein berühmter italienischer Komponist, bekannt für seine 39 Opern, darunter 'Der Barbier von Sevilla' und 'Wilhelm Tell'. Er starb mit 76 Jahren in Passy, Frankreich, nach Komplikationen einer Darmkrebsoperation.",
+  "shortDescriptionEs": "Gioachino Rossini fue un célebre compositor italiano, conocido por sus 39 óperas, incluyendo 'El barbero de Sevilla' y 'Guillermo Tell'. Murió a los 76 años en Passy, Francia, tras complicaciones de una cirugía por cáncer colorrectal.",
+  "shortDescriptionRu": "Джоаккино Россини был знаменитым итальянским композитором, известным своими 39 операми, включая 'Севильского цирюльника' и 'Гильома Телля'. Он умер в возрасте 76 лет в Пасси, Франция, после осложнений от операции по поводу колоректального рака.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gioachino_Rossini",
+    "https://www.britannica.com/biography/Gioachino-Rossini",
+    "https://www.eno.org/composers/gioachino-rossini/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q53783",  "Name": "Enver Hoxha",  "BirthDate": "1908-10-16T00:00:00Z",  "DeathDate": "1985-04-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Enver%20Hoxha%20%28portret%29.jpg",  "SiteLinksCnt": 98,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"10286":{"pageid":10286,"ns":0,"title":"Enver Hoxha","extract":"Enver Halil Hoxha (; Albanian: [\u025bn\u02c8v\u025b\u027e \u02c8h\u0254d\u0292a] ; 16 October 1908 \u2013 11 April 1985) was an Albanian communist revolutionary and politician who was the leader of Albania from 1944 until his death in 1985. He was the First Secretary of the Party of Labour of Albania from 1941 until his death, a member of its Politburo, chairman of the Democratic Front of Albania, and commander-in-chief of the Albanian People's Army. He was the twenty-second prime minister of Albania from 1944 to 1954 and at various times was both foreign minister and defence minister of the country.\nHoxha was born in Gjirokast\u00ebr near Greece in 1908. He was a grammar school teacher in 1936. After the Italian invasion of Albania, he joined the Party of Labour of Albania at its creation in 1941 in the Soviet Union. He was elected First Secretary in March 1943 at the age of 34. Less than two years after the liberation of the country, the monarchy of King Zog I was formally abolished, and Hoxha became the country's de facto head of state.\nAdopting Stalinism, Hoxha converted Albania into a one-party communist state. As a Stalinist, he implemented state atheism and ordered anti-religious persecution of Muslims and Christians. Implementing his radical program, Hoxha used totalitarian methods of governance. His government outlawed traveling abroad and it also outlawed private proprietorship. The government imprisoned, executed, or exiled thousands of landowners, rural clan leaders, peasants who resisted collectivization, and allegedly disloyal party officials. Hoxha was succeeded by Ramiz Alia, who was in charge during the fall of communism in Albania.\nHoxha's government was characterised by his proclaimed firm adherence to anti-revisionist Marxism\u2013Leninism from the mid/late-1960s onwards. After his break with Maoism in the 1976\u20131978 period, numerous Maoist parties around the world declared themselves Hoxhaist. The International Conference of Marxist\u2013Leninist Parties and Organisations (Unity & Struggle) is the best-known association of these parties."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q53783")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q53783",
+  "isRealHuman": true,
+  "birthDate": "1908-10-16",
+  "deathDate": "1985-04-11",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Enver Hoxha was the communist leader of Albania from 1944 until his death in 1985 at age 76. He established a Stalinist regime characterized by strict isolationism, suppression of dissent, and state atheism. Hoxha died in Tirana after years of declining health, including complications from diabetes.",
+  "shortDescriptionFr": "Enver Hoxha était le dirigeant communiste de l'Albanie de 1944 jusqu'à sa mort en 1985 à l'âge de 76 ans. Il a instauré un régime stalinien marqué par l'isolement, la répression des opposants et l'athéisme d'État. Hoxha est décédé à Tirana après des années de problèmes de santé, notamment le diabète.",
+  "shortDescriptionDe": "Enver Hoxha war von 1944 bis zu seinem Tod 1985 im Alter von 76 Jahren kommunistischer Führer Albaniens. Er errichtete ein stalinistisches Regime mit Isolationismus, Unterdrückung von Dissidenten und Staatsatheismus. Hoxha starb in Tirana nach langjähriger Krankheit, einschließlich Diabetes.",
+  "shortDescriptionEs": "Enver Hoxha fue el líder comunista de Albania desde 1944 hasta su muerte en 1985 a los 76 años. Estableció un régimen estalinista caracterizado por el aislamiento, la represión de la disidencia y el ateísmo estatal. Hoxha falleció en Tirana tras años de problemas de salud, incluyendo diabetes.",
+  "shortDescriptionRu": "Энвер Ходжа был коммунистическим лидером Албании с 1944 года до своей смерти в 1985 году в возрасте 76 лет. Он установил сталинистский режим, характеризующийся изоляцией, подавлением инакомыслия и государственным атеизмом. Ходжа скончался в Тиране после многолетних проблем со здоровьем, включая диабет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Enver_Hoxha",
+    "https://www.britannica.com/biography/Enver-Hoxha",
+    "https://www.historytoday.com/archive/months-past/death-enver-hoxha",
+    "https://www.howold.co/person/enver-hoxha",
+    "https://www.sunsigns.org/famousbirthdays/d/profile/enver-hoxha/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83297",  "Name": "John Strutt, 3rd Baron Rayleigh",  "BirthDate": "1842-11-12T00:00:00Z",  "DeathDate": "1919-06-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20William%20Strutt.jpg",  "SiteLinksCnt": 95,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"18381":{"pageid":18381,"ns":0,"title":"John William Strutt, 3rd Baron Rayleigh","extract":"John William Strutt, 3rd Baron Rayleigh (; 12 November 1842 \u2013 30 June 1919), was an English physicist. He spent all of his academic career at the University of Cambridge. Among many honours, he received the Nobel Prize in Physics in 1904 \"for his investigations of the densities of the most important gases and for his discovery of argon in connection with these studies\". He served as president of the Royal Society from 1905 to 1908 and as chancellor of the University of Cambridge from 1908 to 1919.\nRayleigh provided the first theoretical treatment of the elastic scattering of light by particles much smaller than the light's wavelength, a phenomenon now known as \"Rayleigh scattering\", which notably explains why the sky is blue. He studied and described transverse surface waves in solids, now known as \"Rayleigh waves\". He contributed extensively to fluid dynamics, with concepts such as the Rayleigh number (a dimensionless number associated with natural convection), Rayleigh flow, the Rayleigh\u2013Taylor instability, and Rayleigh's criterion for the stability of Taylor\u2013Couette flow. He also formulated the circulation theory of aerodynamic lift. In optics, Rayleigh proposed a well-known criterion for angular resolution. His derivation of the Rayleigh\u2013Jeans law for classical black-body radiation later played an important role in the birth of quantum mechanics (see ultraviolet catastrophe). Rayleigh's textbook The Theory of Sound (1877) is still used today by acousticians and engineers. He introduced the Rayleigh test for circular non-uniformity, of which the Rayleigh plot visualizes.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83297")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q83297",
+  "isRealHuman": true,
+  "birthDate": "1842-11-12",
+  "deathDate": "1919-06-30",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in multiple authoritative sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "John William Strutt, 3rd Baron Rayleigh (1842–1919), was an English physicist who made significant contributions to physics, including the discovery of argon and the explanation of Rayleigh scattering. He passed away at his home in Witham, Essex, at the age of 76.",
+  "shortDescriptionFr": "John William Strutt, 3e baron Rayleigh (1842–1919), était un physicien anglais célèbre pour ses contributions majeures à la physique, notamment la découverte de l'argon et l'explication de la diffusion de Rayleigh. Il est décédé à son domicile à Witham, Essex, à l'âge de 76 ans.",
+  "shortDescriptionDe": "John William Strutt, 3. Baron Rayleigh (1842–1919), war ein englischer Physiker, bekannt für seine bedeutenden Beiträge zur Physik, einschließlich der Entdeckung von Argon und der Erklärung der Rayleigh-Streuung. Er verstarb in seinem Haus in Witham, Essex, im Alter von 76 Jahren.",
+  "shortDescriptionEs": "John William Strutt, 3er barón Rayleigh (1842–1919), fue un físico inglés reconocido por sus importantes contribuciones a la física, incluyendo el descubrimiento del argón y la explicación de la dispersión de Rayleigh. Falleció en su hogar en Witham, Essex, a los 76 años.",
+  "shortDescriptionRu": "Джон Уильям Стретт, 3-й барон Рэлей (1842–1919), был английским физиком, известным своими значительными вкладами в физику, включая открытие аргона и объяснение рассеяния Рэлея. Он скончался в своем доме в Уитэме, Эссекс, в возрасте 76 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh",
+    "https://www.nobelprize.org/prizes/physics/1904/strutt/biographical/",
+    "https://www.britannica.com/biography/John-William-Strutt-3rd-Baron-Rayleigh",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Rayleigh/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q151509",  "Name": "Ibn Saud",  "BirthDate": "1877-01-15T00:00:00Z",  "DeathDate": "1953-11-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ibn%20Saud.png",  "SiteLinksCnt": 93,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"184236":{"pageid":184236,"ns":0,"title":"Ibn Saud","extract":"Abdulaziz bin Abdul Rahman Al Saud (Arabic: \u0639\u0628\u062f \u0627\u0644\u0639\u0632\u064a\u0632 \u0628\u0646 \u0639\u0628\u062f \u0627\u0644\u0631\u062d\u0645\u0646 \u0622\u0644 \u0633\u0639\u0648\u062f; 15 January 1875 \u2013 9 November 1953), known in the Western world mononymously as Ibn Saud (Arabic: \u0627\u0628\u0646 \u0633\u0639\u0648\u062f; Ibn Su\u02bf\u016bd), was the founder and first king of Saudi Arabia, reigning from 23 September 1932 until his death in 1953. He had ruled parts of the kingdom since 1902, having previously been Emir, Sultan, and King of Nejd, and King of Hejaz.\nIbn Saud was the son of Abdul Rahman bin Faisal, Emir of Nejd, and Sara bint Ahmed Al Sudairi. The family were exiled from their residence in the city of Riyadh in 1890. Ibn Saud reconquered Riyadh in 1902, starting three decades of conquests that made him the ruler of nearly all of central and north Arabia. He consolidated his control over the Nejd in 1922, then conquered the Hejaz in 1925. He extended his dominions into what later became the Kingdom of Saudi Arabia in 1932. Ibn Saud's victory and his support for Islamic revivalists would greatly bolster pan-Islamism across the Islamic world. Concording with Wahhabi beliefs, he ordered the demolition of several shrines, the Al-Baqi Cemetery and the Jannat al-Mu'alla. As King, he presided over the discovery of petroleum in Saudi Arabia in 1938 and the beginning of large-scale oil production after World War II. He fathered many children, including 45 sons, and all of the subsequent kings of Saudi Arabia as of 2025."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q151509")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q151509",
+  "isRealHuman": true,
+  "birthDate": "1875-01-15",
+  "deathDate": "1953-11-09",
+  "ageAtDeath": 78,
+  "confidence": 90,
+  "confidenceExplained": "Multiple reputable sources, including Wikipedia and Britannica, cite 15 January 1875 as Ibn Saud's birth date. While some sources suggest alternative years, the majority consensus supports 1875, leading to a calculated age of 78 at death.",
+  "shortDescriptionEn": "Abdulaziz bin Abdul Rahman Al Saud, known as Ibn Saud, was the founder and first king of Saudi Arabia, unifying the nation in 1932. He ruled until his death on 9 November 1953 at the age of 78.",
+  "shortDescriptionFr": "Abdulaziz ben Abdul Rahman Al Saud, connu sous le nom d'Ibn Saoud, était le fondateur et premier roi de l'Arabie saoudite, unifiant la nation en 1932. Il a régné jusqu'à sa mort le 9 novembre 1953 à l'âge de 78 ans.",
+  "shortDescriptionDe": "Abdulaziz ibn Abdul Rahman Al Saud, bekannt als Ibn Saud, war der Gründer und erste König von Saudi-Arabien, der die Nation 1932 vereinte. Er regierte bis zu seinem Tod am 9. November 1953 im Alter von 78 Jahren.",
+  "shortDescriptionEs": "Abdulaziz bin Abdul Rahman Al Saud, conocido como Ibn Saud, fue el fundador y primer rey de Arabia Saudita, unificando la nación en 1932. Gobernó hasta su muerte el 9 de noviembre de 1953 a los 78 años.",
+  "shortDescriptionRu": "Абдулазиз ибн Абдуррахман Аль Сауд, известный как Ибн Сауд, был основателем и первым королем Саудовской Аравии, объединив нацию в 1932 году. Он правил до своей смерти 9 ноября 1953 года в возрасте 78 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ibn_Saud",
+    "https://www.britannica.com/biography/Ibn-Saud",
+    "https://www.historytoday.com/archive/death-ibn-saud",
+    "https://www.wikidata.org/wiki/Q151509"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43107",  "Name": "Diocletian",  "BirthDate": "0240-01-01T00:00:00Z",  "DeathDate": "0316-12-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Istanbul%20-%20Museo%20archeol.%20-%20Diocleziano%20%28284-305%20d.C.%29%20-%20Foto%20G.%20Dall%27Orto%2028-5-2006.jpg",  "SiteLinksCnt": 93,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"8580":{"pageid":8580,"ns":0,"title":"Diocletian","extract":"Diocletian ( DY-\u0259-KLEE-sh\u0259n; Latin: Gaius Aurelius Valerius Diocletianus; Ancient Greek: \u0394\u03b9\u03bf\u03ba\u03bb\u03b7\u03c4\u03b9\u03b1\u03bd\u03cc\u03c2, romanized: Diokletian\u00f3s; 242/245 \u2013 311/312), nicknamed Jovius, was Roman emperor from 284 until his abdication in 305. He was born Diocles to a family of low status in the Roman province of Dalmatia. Diocles rose through the ranks of the military early in his career, eventually becoming a cavalry commander for the army of Emperor Carus. After the deaths of Carus and his son Numerian on a campaign in Persia, Diocles was proclaimed emperor by the troops, taking the name Diocletianus. The title was also claimed by Carus's surviving son, Carinus, but Diocletian defeated him in the Battle of the Margus.\nDiocletian's reign stabilized the empire and ended the Crisis of the Third Century. He initiated the process of the Roman Empire split and appointed fellow officer Maximian as Augustus, co-emperor, in 286. Diocletian reigned in the Eastern Empire, and Maximian reigned in the Western Empire. Diocletian delegated further on 1 March 293, appointing Galerius and Constantius as junior colleagues (each with the title Caesar), under himself and Maximian respectively. Under the Tetrarchy, or \"rule of four\", each tetrarch would rule over a quarter-division of the empire. Diocletian secured the empire's borders and purged it of all threats to his power. He defeated the Sarmatians and Carpi during several campaigns between 285 and 299, the Alamanni in 288, and usurpers in Egypt between 297 and 298. Galerius, aided by Diocletian, campaigned successfully against Persia, the empire's traditional enemy, and in 299, he sacked their capital, Ctesiphon. Diocletian led the subsequent negotiations and achieved a lasting and favorable peace.\nDiocletian separated and enlarged the empire's civil and military services and reorganized the empire's provincial divisions, establishing the largest and most bureaucratic government in the history of the empire. He established new administrative centers in Nicomedia, Mediolanum, Sirmium, and Trevorum, closer to the empire's frontiers than the traditional capital at Rome. Building on third-century trends towards absolutism, he styled himself an autocrat, elevating himself above the empire's masses with imposing forms of court ceremonies and architecture. Bureaucratic and military growth, constant campaigning, and construction projects increased the state's expenditures and necessitated a comprehensive tax reform. From at least 297 on, imperial taxation was standardized, made more equitable, and levied at generally higher rates.\nNot all of Diocletian's plans were successful: the Edict on Maximum Prices (301), his attempt to curb inflation via price controls, was counterproductive and quickly ignored. Although effective while he ruled, Diocletian's tetrarchic system collapsed after his abdication under the competing dynastic claims of Maxentius and Constantine, sons of Maximian and Constantius respectively. The Diocletianic Persecution (303\u2013312), the empire's last, largest, and bloodiest official persecution of Christianity, failed to eliminate Christianity in the empire. After 324, Christianity became the empire's preferred religion under Constantine. Despite these failures and challenges, Diocletian's reforms fundamentally changed the structure of the Roman imperial government and helped stabilize the empire economically and militarily, enabling the empire to remain essentially intact for another 150 years despite being near the brink of collapse in Diocletian's youth. Weakened by illness, Diocletian left the imperial office on 1 May 305, becoming the first Roman emperor to abdicate the position voluntarily. He lived out his retirement in his palace on the Dalmatian coast, tending to his vegetable gardens. His palace eventually became the core of the modern-day city of Split in Croatia.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43107")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43107",
+  "isRealHuman": true,
+  "birthDate": "244-12-22",
+  "deathDate": "311-12-03",
+  "ageAtDeath": 66,
+  "confidence": 90,
+  "confidenceExplained": "The birth date of December 22, 244 CE, is widely cited in historical records, though some sources suggest a range between 242 and 245 CE. The death date of December 3, 311 CE, is consistently reported across multiple sources. Given the consistency of these dates, the calculated age at death is 66 years and 11 months, with a high degree of confidence.",
+  "shortDescriptionEn": "Diocletian (Gaius Aurelius Valerius Diocletianus) was a Roman emperor who ruled from 284 to 305 CE. He is known for stabilizing the empire after the Crisis of the Third Century, instituting significant administrative and military reforms, and establishing the Tetrarchy to ensure orderly succession. After voluntarily abdicating the throne, he retired to his palace in Split, Croatia, where he died of natural causes in 311 CE.",
+  "shortDescriptionFr": "Dioclétien (Gaius Aurelius Valerius Diocletianus) fut empereur romain de 284 à 305. Il est célèbre pour avoir stabilisé l'Empire après la crise du IIIe siècle, mis en œuvre des réformes administratives et militaires majeures, et instauré la Tétrarchie pour assurer une succession ordonnée. Après avoir abdiqué volontairement, il se retira dans son palais à Split, en Croatie, où il mourut de causes naturelles en 311.",
+  "shortDescriptionDe": "Diokletian (Gaius Aurelius Valerius Diocletianus) war römischer Kaiser von 284 bis 305. Er ist bekannt für die Stabilisierung des Reiches nach der Krise des dritten Jahrhunderts, bedeutende Verwaltungs- und Militärreformen sowie die Einführung der Tetrarchie zur geordneten Nachfolge. Nach seiner freiwilligen Abdankung zog er sich in seinen Palast in Split, Kroatien, zurück, wo er 311 eines natürlichen Todes starb.",
+  "shortDescriptionEs": "Diocleciano (Gaius Aurelius Valerius Diocletianus) fue emperador romano de 284 a 305. Es conocido por estabilizar el Imperio tras la crisis del siglo III, implementar importantes reformas administrativas y militares, y establecer la Tetrarquía para asegurar una sucesión ordenada. Tras abdicar voluntariamente, se retiró a su palacio en Split, Croacia, donde murió por causas naturales en 311.",
+  "shortDescriptionRu": "Диоклетиан (Гай Аврелий Валерий Диоклетиан) был римским императором с 284 по 305 годы. Известен стабилизацией империи после кризиса III века, проведением значительных административных и военных реформ, а также учреждением тетрархии для обеспечения упорядоченной преемственности. После добровольного отречения он удалился в свой дворец в Сплите, Хорватия, где умер естественной смертью в 311 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diocletian",
+    "https://www.britannica.com/biography/Diocletian",
+    "https://www.italianartsociety.org/2017/12/roman-emperor-diocletian-born-gaius-aurelius-valerius-diocletianus-on-22-december-244-died-3-december-312-at-age-67-in-the-palace-he-had-built-in-what-is-now-split-croatia/",
+    "https://ancientromelive.org/diocletian/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180099",  "Name": "Margaret Mead",  "BirthDate": "1901-12-16T00:00:00Z",  "DeathDate": "1978-11-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Margaret%20Mead%20%281901-1978%29.jpg",  "SiteLinksCnt": 91,  "Age": 76}
+{"batchcomplete":"","query":{"pages":{"19617":{"pageid":19617,"ns":0,"title":"Margaret Mead","extract":"Margaret Mead (December 16, 1901 \u2013 November 15, 1978) was an American cultural anthropologist, author and speaker, who appeared frequently in the mass media during the 1960s and the 1970s.\nShe earned her bachelor's degree at Barnard College of Columbia University and her M.A. and Ph.D. degrees from Columbia. Mead served as president of the American Association for the Advancement of Science in 1975.\nMead was a communicator of anthropology in modern American and Western culture and was often controversial as an academic. Her reports detailing the attitudes towards sex in South Pacific and Southeast Asian traditional cultures influenced the 1960s sexual revolution. She was a proponent of broadening sexual conventions within the context of Western cultural traditions."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180099")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q180099",
+  "isRealHuman": true,
+  "birthDate": "1901-12-16",
+  "deathDate": "1978-11-15",
+  "ageAtDeath": 76,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and widely accepted. The age at death is calculated directly from these dates.",
+  "shortDescriptionEn": "Margaret Mead (December 16, 1901 – November 15, 1978) was an influential American cultural anthropologist known for her studies of Oceania societies and her work on cultural patterns and personality. Her research contributed significantly to the sexual revolution of the 1960s. She died of pancreatic cancer in New York City at the age of 76.",
+  "shortDescriptionFr": "Margaret Mead (16 décembre 1901 – 15 novembre 1978) était une anthropologue culturelle américaine influente, connue pour ses études sur les sociétés d'Océanie et ses travaux sur les modèles culturels et la personnalité. Ses recherches ont contribué de manière significative à la révolution sexuelle des années 1960. Elle est décédée d'un cancer du pancréas à New York à l'âge de 76 ans.",
+  "shortDescriptionDe": "Margaret Mead (16. Dezember 1901 – 15. November 1978) war eine einflussreiche amerikanische Kulturanthropologin, bekannt für ihre Studien über die Gesellschaften Ozeaniens und ihre Arbeiten zu kulturellen Mustern und Persönlichkeit. Ihre Forschung trug wesentlich zur sexuellen Revolution der 1960er Jahre bei. Sie starb im Alter von 76 Jahren in New York City an Bauchspeicheldrüsenkrebs.",
+  "shortDescriptionEs": "Margaret Mead (16 de diciembre de 1901 – 15 de noviembre de 1978) fue una influyente antropóloga cultural estadounidense, conocida por sus estudios sobre las sociedades de Oceanía y su trabajo sobre patrones culturales y personalidad. Su investigación contribuyó significativamente a la revolución sexual de los años 60. Murió de cáncer de páncreas en Nueva York a los 76 años.",
+  "shortDescriptionRu": "Маргарет Мид (16 декабря 1901 – 15 ноября 1978) была влиятельным американским культурным антропологом, известной своими исследованиями обществ Океании и работами по культурным моделям и личности. Её исследования значительно способствовали сексуальной революции 1960-х годов. Она умерла от рака поджелудочной железы в Нью-Йорке в возрасте 76 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Margaret-Mead",
+    "https://en.wikipedia.org/wiki/Margaret_Mead",
+    "https://www.wikitree.com/wiki/Mead-2862"
+  ]
+}
