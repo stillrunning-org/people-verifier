@@ -1,0 +1,979 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7243",  "Name": "Leo Tolstoy",  "BirthDate": "1828-09-09T00:00:00Z",  "DeathDate": "1910-11-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/L.N.Tolstoy%20Prokudin-Gorsky.jpg",  "SiteLinksCnt": 271,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"18622119":{"pageid":18622119,"ns":0,"title":"Leo Tolstoy","extract":"Count Lev Nikolayevich Tolstoy (; Russian: \u041b\u0435\u0432 \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447 \u0422\u043e\u043b\u0441\u0442\u043e\u0439, IPA: [\u02c8l\u02b2ef n\u02b2\u026ak\u0250\u02c8la(j)\u026av\u02b2\u026at\u0255 t\u0250l\u02c8stoj] ; 9 September [O.S. 28 August] 1828 \u2013  20 November [O.S. 7 November] 1910), usually referred to in English as Leo Tolstoy, was a Russian writer. He is regarded as one of the greatest and most influential authors of all time. He received nominations for the Nobel Prize in Literature every year from 1902 to 1906 and for the Nobel Peace Prize in 1901, 1902, and 1909. Tolstoy never having won a Nobel Prize was a major Nobel Prize controversy, and remains one.\nBorn to an aristocratic family, Tolstoy achieved  acclaim in his twenties with his semi-autobiographical trilogy, Childhood, Boyhood and Youth (1852\u20131856), and with Sevastopol Sketches (1855), based on his experiences in the Crimean War. Tolstoy's War and Peace (1869) and Anna Karenina (1878) are often cited as pinnacles of realist fiction and two of the greatest novels ever written. His oeuvre includes short stories such as \"Alyosha the Pot\" (1905) and \"After the Ball\" (1911) and novellas such as Family Happiness (1859), The Death of Ivan Ilyich (1886) and Hadji Murad (1912). He also wrote plays and essays concerning philosophical, moral and religious themes.\nIn the 1870s, Tolstoy experienced a profound moral crisis, followed by what he regarded as an equally profound spiritual awakening, as outlined in his non-fiction work Confession (1882). His literal interpretation of the ethical teachings of Jesus, centering on the Sermon on the Mount, caused him to become a fervent Christian anarchist and pacifist. His ideas on nonviolent resistance, expressed in such works as The Kingdom of God Is Within You (1894), had a profound impact on such pivotal 20th-century figures as Mahatma Gandhi, Martin Luther King Jr., James Bevel, and Ludwig Wittgenstein. He also became a dedicated advocate of Georgism, the economic philosophy of Henry George, which he incorporated into his writing, particularly in his novel Resurrection (1899).\nTolstoy received praise from countless authors and critics, both during his lifetime and after. Virginia Woolf called Tolstoy \"the greatest of all novelists\", and Gary Saul Morson referred to War and Peace as the greatest of all novels."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7243")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7243",
+  "isRealHuman": true,
+  "birthDate": "1828-09-09",
+  "deathDate": "1910-11-20",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Leo Tolstoy (1828–1910) was a Russian novelist and philosopher, best known for 'War and Peace' and 'Anna Karenina'. He died at age 82 from pneumonia at the Astapovo railway station after leaving his estate in pursuit of a simpler life.",
+  "shortDescriptionFr": "Léon Tolstoï (1828–1910) était un romancier et philosophe russe, célèbre pour 'Guerre et Paix' et 'Anna Karénine'. Il est décédé à 82 ans d'une pneumonie à la gare d'Astapovo après avoir quitté son domaine pour mener une vie plus simple.",
+  "shortDescriptionDe": "Leo Tolstoi (1828–1910) war ein russischer Schriftsteller und Philosoph, bekannt für 'Krieg und Frieden' und 'Anna Karenina'. Er starb im Alter von 82 Jahren an einer Lungenentzündung im Bahnhof Astapowo, nachdem er sein Anwesen verlassen hatte, um ein einfacheres Leben zu führen.",
+  "shortDescriptionEs": "León Tolstói (1828–1910) fue un novelista y filósofo ruso, conocido por 'Guerra y Paz' y 'Ana Karénina'. Murió a los 82 años de neumonía en la estación de tren de Astápovo tras abandonar su finca en busca de una vida más sencilla.",
+  "shortDescriptionRu": "Лев Толстой (1828–1910) — русский писатель и философ, известный по романам 'Война и мир' и 'Анна Каренина'. Умер в возрасте 82 лет от пневмонии на станции Астапово после ухода с родового имения в поисках простой жизни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Leo_Tolstoy",
+    "https://www.britannica.com/biography/Leo-Tolstoy",
+    "https://www.newyorker.com/books/page-turner/facing-death-with-tolstoy",
+    "https://simple.wikipedia.org/wiki/Leo_Tolstoy"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5879",  "Name": "Johann Wolfgang von Goethe",  "BirthDate": "1749-08-28T00:00:00Z",  "DeathDate": "1832-03-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Goethe%20%28Stieler%201828%29.jpg",  "SiteLinksCnt": 270,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"19242322":{"pageid":19242322,"ns":0,"title":"Johann Wolfgang von Goethe","extract":"Johann Wolfgang von Goethe (28 August 1749 \u2013 22 March 1832) was a German polymath, who is widely regarded as the greatest and most influential writer in the German language. His work has had a wide-ranging influence on Western literary, political, and philosophical thought from the late 18th century to the present. A poet, playwright, novelist, scientist, statesman, theatre director, and critic, his works include plays, poetry and aesthetic criticism, as well as treatises on botany, anatomy, and color.\nGoethe took up residence in Weimar in 1775 following the success of his first novel, The Sorrows of Young Werther (1774), and joined a thriving intellectual and cultural environment under the patronage of Duchess Anna Amalia that formed the basis of Weimar Classicism. He was ennobled by Karl August, Duke of Saxe-Weimar, in 1782. Goethe was an early participant in the Sturm und Drang literary movement. During his first ten years in Weimar, Goethe became a member of the Duke's privy council (1776\u20131785), sat on the war and highway commissions, oversaw the reopening of silver mines in nearby Ilmenau, and implemented a series of administrative reforms at the University of Jena. He also contributed to the planning of Weimar's botanical park and the rebuilding of its Ducal Palace.\nGoethe's first major scientific work, the Metamorphosis of Plants, was published after he returned from a 1788 tour of Italy. In 1791 he was made managing director of the theatre at Weimar, and in 1794 he began a friendship with the dramatist, historian, and philosopher Friedrich Schiller, whose plays he premiered until Schiller's death in 1805. During this period Goethe published his second novel, Wilhelm Meister's Apprenticeship; the verse epic Hermann and Dorothea, and, in 1808, the first part of his most celebrated drama, Faust. His conversations and various shared undertakings throughout the 1790s with Schiller, Johann Gottlieb Fichte, Johann Gottfried Herder, Alexander von Humboldt, Wilhelm von Humboldt, and August and Friedrich Schlegel have come to be collectively termed Weimar Classicism.\nThe German philosopher Arthur Schopenhauer named Wilhelm Meister's Apprenticeship one of the four greatest novels ever written, while the American philosopher and essayist Ralph Waldo Emerson selected Goethe as one of six \"representative men\" in his work of the same name (along with Plato, Emanuel Swedenborg, Montaigne, Napoleon, and Shakespeare). Goethe's comments and observations form the basis of several biographical works, notably Johann Peter Eckermann's Conversations with Goethe (1836). His poems were set to music by many composers including Mozart, Beethoven, Schubert, Berlioz, Liszt, Wagner, and Mahler."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5879")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5879",
+  "isRealHuman": true,
+  "birthDate": "1749-08-28",
+  "deathDate": "1832-03-22",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Johann Wolfgang von Goethe (1749–1832) was a German polymath renowned for his contributions to literature, science, and philosophy. He died at the age of 82, reportedly from a heart attack, in Weimar.",
+  "shortDescriptionFr": "Johann Wolfgang von Goethe (1749–1832) était un polymathe allemand célèbre pour ses contributions à la littérature, à la science et à la philosophie. Il est décédé à l'âge de 82 ans, apparemment d'une crise cardiaque, à Weimar.",
+  "shortDescriptionDe": "Johann Wolfgang von Goethe (1749–1832) war ein deutscher Universalgelehrter, bekannt für seine Beiträge zur Literatur, Wissenschaft und Philosophie. Er starb im Alter von 82 Jahren, vermutlich an einem Herzinfarkt, in Weimar.",
+  "shortDescriptionEs": "Johann Wolfgang von Goethe (1749–1832) fue un polímata alemán reconocido por sus aportes a la literatura, la ciencia y la filosofía. Falleció a los 82 años, presuntamente de un ataque al corazón, en Weimar.",
+  "shortDescriptionRu": "Иоганн Вольфганг фон Гёте (1749–1832) — немецкий полимат, известный своими вкладом в литературу, науку и философию. Умер в возрасте 82 лет, предположительно от сердечного приступа, в Веймаре.",
+  "sources": [
+    "https://www.britannica.com/biography/Johann-Wolfgang-von-Goethe",
+    "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe",
+    "https://www.onthisday.com/articles/have-you-heard-the-one-about-johann-goethe",
+    "https://www.findagrave.com/memorial/1185/johann_wolfgang-von_goethe"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5816",  "Name": "Mao Zedong",  "BirthDate": "1893-12-26T00:00:00Z",  "DeathDate": "1976-09-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mao%20Tse%20tung%20in%201965%20Color.png",  "SiteLinksCnt": 223,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"19527":{"pageid":19527,"ns":0,"title":"Mao Zedong","extract":"Mao Zedong (26 December 1893 \u2013 9 September 1976), also known as Chairman Mao, was a Chinese politician, revolutionary, and political theorist who founded the People's Republic of China (PRC) and led the country from its establishment in 1949 until his death in 1976. Mao served as the chairman of the Chinese Communist Party (CCP) from 1943 until his death, and as the party's de facto leader from 1935. His theories, which he advocated as a Chinese adaptation of Marxism\u2013Leninism, are known as Mao Zedong Thought (or Maoism).\nBorn to a peasant family in Shaoshan, Hunan, Mao was influenced early in his life by the events of the 1911 Revolution and May Fourth Movement of 1919, supporting Chinese nationalism and anti-imperialism. He adopted Marxism\u2013Leninism while working as a librarian at Peking University, and in 1921 became a founding member of the Chinese Communist Party. After the start of the Chinese Civil War between the Kuomintang (KMT) and CCP in 1927, Mao led the failed Autumn Harvest Uprising and founded the Jiangxi Soviet. He helped establish the Chinese Red Army and developed a strategy of guerilla warfare. In 1935, Mao became leader of the CCP during the Long March. The CCP allied with the KMT in the Second United Front during the Second Sino-Japanese War starting in 1937, but China's civil war resumed after Japan's surrender in 1945. Mao's forces defeated the Nationalist government, which withdrew to Taiwan in 1949.\nOn 1 October 1949, Mao proclaimed the foundation of the PRC, a one-party state controlled by the CCP. He initiated land redistribution and industrialisation campaigns, suppressed political opponents, intervened in the Korean War, and began the ideological Hundred Flowers and Anti-Rightist Campaigns. In 1958, Mao launched the Great Leap Forward, which aimed to transform China's economy from agrarian to industrial; it resulted in the Great Chinese Famine. In 1966, he initiated the Cultural Revolution, a campaign to remove \"counter-revolutionary\" elements marked by violent class struggle, destruction of historical artifacts, and Mao's cult of personality. From the late 1950s, Mao's foreign policy was dominated by a political split with the Soviet Union, and during the 1970s he began establishing relations with the United States; China was also involved in the Vietnam War and Cambodian Civil War. In 1976, Mao died after suffering a series of heart attacks. He was succeeded as leader by Hua Guofeng, and in 1978 by Deng Xiaoping. The CCP's official evaluation of Mao's legacy both praises him and acknowledges he made errors in his later years.\nMao is considered one of the most significant figures of the 20th century. His policies were responsible for a vast number of deaths, with estimates ranging from 40 to 80 million victims of starvation, persecution, prison labour, and mass executions, and his regime has been described as totalitarian. He has also been credited with transforming China from a semi-colony to a leading world power by advancing literacy, women's rights, basic healthcare, primary education, and life expectancy. Under Mao, China's population grew from about 550 million to more than 900 million. Within China, Mao is widely regarded as a national hero who liberated the country from foreign occupation and exploitation. He became an ideological figurehead and a prominent influence within the international communist movement, inspiring various Maoist organisations."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5816")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5816",
+  "isRealHuman": true,
+  "birthDate": "1893-12-26",
+  "deathDate": "1976-09-09",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Mao Zedong (1893–1976) was a Chinese revolutionary and political leader who founded the People's Republic of China in 1949 and led the nation until his death at age 82 in 1976, following a series of heart attacks.",
+  "shortDescriptionFr": "Mao Zedong (1893–1976) était un révolutionnaire et homme politique chinois qui a fondé la République populaire de Chine en 1949 et l'a dirigée jusqu'à sa mort à 82 ans en 1976, à la suite de plusieurs crises cardiaques.",
+  "shortDescriptionDe": "Mao Zedong (1893–1976) war ein chinesischer Revolutionär und Politiker, der 1949 die Volksrepublik China gründete und das Land bis zu seinem Tod im Alter von 82 Jahren im Jahr 1976 nach mehreren Herzinfarkten führte.",
+  "shortDescriptionEs": "Mao Zedong (1893–1976) fue un revolucionario y líder político chino que fundó la República Popular China en 1949 y la dirigió hasta su muerte a los 82 años en 1976, tras sufrir varios ataques cardíacos.",
+  "shortDescriptionRu": "Мао Цзэдун (1893–1976) был китайским революционером и политическим лидером, основавшим Китайскую Народную Республику в 1949 году и руководившим страной до своей смерти в возрасте 82 лет в 1976 году после серии сердечных приступов.",
+  "sources": [
+    "https://www.britannica.com/biography/Mao-Zedong",
+    "https://en.wikipedia.org/wiki/Mao_Zedong",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Mao_Zedong"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1615",  "Name": "Neil Armstrong",  "BirthDate": "1930-08-05T00:00:00Z",  "DeathDate": "2012-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Neil%20Armstrong%20pose.jpg",  "SiteLinksCnt": 211,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"21247":{"pageid":21247,"ns":0,"title":"Neil Armstrong","extract":"Neil Alden Armstrong (August 5, 1930 \u2013 August 25, 2012) was an American astronaut and aeronautical engineer who, in 1969, became the first person to walk on the Moon. He was also a naval aviator, test pilot, and university professor.\nArmstrong was born and raised in Wapakoneta, Ohio. He entered Purdue University, studying aeronautical engineering, with the U.S. Navy paying his tuition under the Holloway Plan.  He became a midshipman in 1949 and a naval aviator the following year. He saw action in the Korean War, flying the Grumman F9F Panther from the aircraft carrier USS Essex. After the war, he completed his bachelor's degree at Purdue and became a test pilot at the National Advisory Committee for Aeronautics (NACA) High-Speed Flight Station at Edwards Air Force Base in California. He was the project pilot on Century Series fighters and flew the North American X-15 seven times. He was also a participant in the U.S. Air Force's Man in Space Soonest and X-20 Dyna-Soar human spaceflight programs.\nArmstrong joined the NASA Astronaut Corps in the second group, which was selected in 1962. He made his first spaceflight as command pilot of Gemini 8 in March 1966, becoming NASA's first civilian astronaut to fly in space. During this mission with pilot David Scott, he performed the first docking of two spacecraft; the mission was aborted after Armstrong used some of his re-entry control fuel to stabilize a dangerous roll caused by a stuck thruster. During training for Armstrong's second and last spaceflight as commander of Apollo 11, he had to eject from the Lunar Landing Research Vehicle moments before a crash.\nOn July 20, 1969, Armstrong and Apollo 11 Lunar Module (LM) pilot Buzz Aldrin became the first people to land on the Moon, and the next day they spent two and a half hours outside the Lunar Module Eagle spacecraft while Michael Collins remained in lunar orbit in the Apollo Command Module Columbia. When Armstrong first stepped onto the lunar surface, he famously said: \"That's one small step for [a] man, one giant leap for mankind.\" It was broadcast live to an estimated 530 million viewers worldwide. Apollo 11 was a major U.S. victory in the Space Race, by fulfilling a national goal proposed in 1961 by President John F. Kennedy \"of landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Along with Collins and Aldrin, Armstrong was awarded the Presidential Medal of Freedom by President Richard Nixon and received the 1969 Collier Trophy. President Jimmy Carter presented him with the Congressional Space Medal of Honor in 1978, he was inducted into the National Aviation Hall of Fame in 1979, and with his former crewmates received the Congressional Gold Medal in 2009.\nAfter he resigned from NASA in 1971, Armstrong taught in the Department of Aerospace Engineering at the University of Cincinnati until 1979. He served on the Apollo 13 accident investigation and on the Rogers Commission, which investigated the Space Shuttle Challenger disaster. In 2012, Armstrong died because of complications resulting from coronary bypass surgery, at the age of 82."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1615")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1615",
+  "isRealHuman": true,
+  "birthDate": "1930-08-05",
+  "deathDate": "2012-08-25",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Multiple authoritative sources confirm Neil Armstrong's birth and death dates, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Neil Armstrong (1930–2012) was an American astronaut and aeronautical engineer who became the first person to walk on the Moon in 1969. He passed away at the age of 82 due to complications from cardiovascular procedures.",
+  "shortDescriptionFr": "Neil Armstrong (1930–2012) était un astronaute et ingénieur aéronautique américain, premier homme à marcher sur la Lune en 1969. Il est décédé à l'âge de 82 ans des suites de complications liées à des procédures cardiovasculaires.",
+  "shortDescriptionDe": "Neil Armstrong (1930–2012) war ein amerikanischer Astronaut und Luftfahrtingenieur, der 1969 als erster Mensch den Mond betrat. Er verstarb im Alter von 82 Jahren an Komplikationen nach Herzoperationen.",
+  "shortDescriptionEs": "Neil Armstrong (1930–2012) fue un astronauta e ingeniero aeronáutico estadounidense, el primer hombre en caminar sobre la Luna en 1969. Falleció a los 82 años debido a complicaciones de procedimientos cardiovasculares.",
+  "shortDescriptionRu": "Нил Армстронг (1930–2012) — американский астронавт и аэрокосмический инженер, первый человек, ступивший на Луну в 1969 году. Скончался в возрасте 82 лет от осложнений после сердечно-сосудистых процедур.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Neil_Armstrong",
+    "https://www.britannica.com/biography/Neil-Armstrong",
+    "https://www.nasa.gov/people/neil-a-armstrong/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12897",  "Name": "Pelé",  "BirthDate": "1940-10-23T00:00:00Z",  "DeathDate": "2022-12-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pele%20con%20brasil%20%28cropped%29.jpg",  "SiteLinksCnt": 176,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"24953":{"pageid":24953,"ns":0,"title":"Pel\u00e9","extract":"Edson Arantes do Nascimento (Brazilian Portuguese: [\u02c8\u025bd(\u0292i)s\u00f5(w) a\u02c8\u027e\u0250\u0303t\u0283iz du nasi\u02c8m\u1ebdtu]; 23 October 1940 \u2013 29 December 2022), better known by his nickname Pel\u00e9 (Brazilian Portuguese: [pe\u02c8l\u025b]), was a Brazilian professional footballer who played as a forward. Widely regarded as one of the greatest players of all time, he was among the most successful and popular sports figures of the 20th century. His 1,279 goals in 1,363 games, which includes friendlies, is recognised as a Guinness World Record. In 1999, he was named Athlete of the Century by the International Olympic Committee and was included in the Time list of the 100 most important people of the 20th century. In 2000, Pel\u00e9 was voted World Player of the Century by the International Federation of Football History & Statistics (IFFHS) and was one of the two joint winners of the FIFA Player of the Century, alongside Diego Maradona. \nPel\u00e9 began playing for Santos at age 15 and the Brazil national team at 16. During his international career, he won three FIFA World Cups: 1958, 1962 and 1970, the only player to do so and the youngest player to win a World Cup (17). He was nicknamed O Rei (The King) following the 1958 tournament. With 77 goals in 92 games for Brazil, Pel\u00e9 held the record as the national team's top goalscorer for over fifty years. At club level, he is Santos's all-time top goalscorer with 643 goals in 659 games. In a golden era for Santos, he led the club to the 1962 and 1963 Copa Libertadores, and to the 1962 and 1963 Intercontinental Cup. Credited with connecting the phrase \"The Beautiful Game\" with football, Pel\u00e9's \"electrifying play and penchant for spectacular goals\" made him a global star, and his teams toured internationally to take full advantage of his popularity. During his playing days, Pel\u00e9 was for a period the best-paid athlete in the world. After retiring in 1977, Pel\u00e9 was a worldwide ambassador for football and made many acting and commercial ventures. In 2010, he was named the honorary president of the New York Cosmos.\nPel\u00e9 averaged almost a goal per game throughout his career and could strike the ball with either foot, as well as being able to anticipate his opponents' movements. While predominantly a striker, he could also be a playmaker, providing assists with his vision and passing ability. He would often use his dribbling skills to go past opponents. In Brazil, he was hailed as a national hero for his accomplishments in football and for his outspoken support of policies that improve the social conditions of the poor. His emergence at the 1958 World Cup, where he became a black global sporting star, was a source of inspiration. Throughout his career and in his retirement, Pel\u00e9 received numerous individual and team awards for his performance on the field, his record-breaking achievements, and his legacy in the sport."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12897")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q12897",
+  "isRealHuman": true,
+  "birthDate": "1940-10-23",
+  "deathDate": "2022-12-29",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for an exact calculation of age at death.",
+  "shortDescriptionEn": "Pelé (Edson Arantes do Nascimento) was a Brazilian footballer, widely regarded as one of the greatest players of all time. He won three FIFA World Cups (1958, 1962, 1970) and scored over 1,000 goals in his career. Pelé passed away at the age of 82 due to complications from colon cancer.",
+  "shortDescriptionFr": "Pelé (Edson Arantes do Nascimento) était un footballeur brésilien, considéré comme l'un des plus grands joueurs de tous les temps. Il a remporté trois Coupes du Monde de la FIFA (1958, 1962, 1970) et marqué plus de 1 000 buts au cours de sa carrière. Pelé est décédé à l'âge de 82 ans des suites d'un cancer du côlon.",
+  "shortDescriptionDe": "Pelé (Edson Arantes do Nascimento) war ein brasilianischer Fußballspieler, der als einer der größten Spieler aller Zeiten gilt. Er gewann drei FIFA-Weltmeisterschaften (1958, 1962, 1970) und erzielte über 1.000 Tore in seiner Karriere. Pelé verstarb im Alter von 82 Jahren an den Folgen von Darmkrebs.",
+  "shortDescriptionEs": "Pelé (Edson Arantes do Nascimento) fue un futbolista brasileño, ampliamente considerado como uno de los mejores jugadores de todos los tiempos. Ganó tres Copas Mundiales de la FIFA (1958, 1962, 1970) y anotó más de 1.000 goles en su carrera. Pelé falleció a los 82 años debido a complicaciones por cáncer de colon.",
+  "shortDescriptionRu": "Пеле (Эдсон Арантис ду Насименту) был бразильским футболистом, широко признанным одним из величайших игроков всех времен. Он выиграл три чемпионата мира по футболу (1958, 1962, 1970) и забил более 1000 голов за свою карьеру. Пеле скончался в возрасте 82 лет от осложнений, вызванных раком толстой кишки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pel%C3%A9",
+    "https://www.skysports.com/football/news/11095/12761168/pele-brazil-legend-dies-aged-82-after-battle-with-cancer",
+    "https://www.astro.com/astro-databank/Pel%C3%A9",
+    "https://www.gq.com/story/pele-soccer-legend-dead-82"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5432",  "Name": "Francisco Goya",  "BirthDate": "1746-03-30T00:00:00Z",  "DeathDate": "1828-04-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vicente%20L%C3%B3pez%20Porta%C3%B1a%20-%20el%20pintor%20Francisco%20de%20Goya.jpg",  "SiteLinksCnt": 175,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"10868":{"pageid":10868,"ns":0,"title":"Francisco Goya","extract":"Francisco Jos\u00e9 de Goya y Lucientes (; Spanish: [f\u027ean\u02c8\u03b8isko xo\u02c8se \u00f0e \u02c8\u0263o\u029da i lu\u02c8\u03b8jentes]; 30 March 1746 \u2013 16 April 1828) was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries. His paintings, drawings, and engravings reflected contemporary historical upheavals and influenced important 19th- and 20th-century painters. Goya is often referred to as the last of the Old Masters and the first of the moderns.\nGoya was born in Fuendetodos, Aragon to a middle-class family in 1746. He studied painting from age 14 under Jos\u00e9 Luz\u00e1n y Martinez and moved to Madrid to study with Anton Raphael Mengs. He married Josefa Bayeu in 1773. Goya became a court painter to the Spanish Crown in 1786 and this early portion of his career is marked by portraits of the Spanish aristocracy and royalty, and Rococo-style tapestry cartoons designed for the royal palace.\nAlthough Goya's letters and writings survive, little is known about his thoughts. He had a severe and undiagnosed illness in 1793 that left him deaf, after which his work became progressively darker and more pessimistic. His later easel and mural paintings, prints and drawings appear to reflect a bleak outlook on personal, social, and political levels and contrast with his social climbing. He was appointed Director of the Royal Academy in 1795, the year Manuel Godoy made an unfavorable treaty with France. In 1799, Goya became Primer Pintor de C\u00e1mara (Prime Court Painter), the highest rank for a Spanish court painter. In the late 1790s, commissioned by Godoy, he completed his La maja desnuda, a remarkably daring nude for the time and clearly indebted to Diego Vel\u00e1zquez. In 1800\u201301, he painted Charles IV of Spain and His Family, also influenced by Vel\u00e1zquez.\nIn 1807, Napoleon led the French army into the Peninsular War against Spain. Goya remained in Madrid during the war, which seems to have affected him deeply. Although he did not speak his thoughts in public, they can be inferred from his Disasters of War series of prints (although published 35 years after his death) and his 1814 paintings The Second of May 1808 and The Third of May 1808. Other works from his mid-period include the Caprichos and Los Disparates etching series, and a wide variety of paintings concerned with insanity, mental asylums, witches, fantastical creatures and religious and political corruption, all of which suggest that he feared for both his country's fate and his own mental and physical health.\nHis late period culminates with the Black Paintings of 1819\u20131823, applied on oil on the plaster walls of his house the Quinta del Sordo (House of the Deaf Man) where, disillusioned by political and social developments in Spain, he lived in near isolation. Goya eventually abandoned Spain in 1824 to retire to the French city of Bordeaux, accompanied by his much younger maid and companion, Leocadia Weiss, who may have been his lover. There he completed his La Tauromaquia series and a number of other works. Following a stroke that left him paralyzed on his right side, Goya died and was buried on 16 April 1828 aged 82."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5432")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5432",
+  "isRealHuman": true,
+  "birthDate": "1746-03-30",
+  "deathDate": "1828-04-16",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented in multiple authoritative sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Francisco Goya was a Spanish romantic painter and printmaker, considered the most important Spanish artist of the late 18th and early 19th centuries. He died at the age of 82 in Bordeaux, France, after a stroke that left him paralyzed.",
+  "shortDescriptionFr": "Francisco Goya était un peintre et graveur romantique espagnol, considéré comme le plus important artiste espagnol de la fin du XVIIIe et du début du XIXe siècle. Il est décédé à l'âge de 82 ans à Bordeaux, en France, après une attaque cérébrale qui l'a laissé paralysé.",
+  "shortDescriptionDe": "Francisco Goya war ein spanischer romantischer Maler und Radierer, der als bedeutendster spanischer Künstler des späten 18. und frühen 19. Jahrhunderts gilt. Er starb im Alter von 82 Jahren in Bordeaux, Frankreich, nachdem er durch einen Schlaganfall gelähmt wurde.",
+  "shortDescriptionEs": "Francisco Goya fue un pintor y grabador romántico español, considerado el artista español más importante de finales del siglo XVIII y principios del XIX. Murió a los 82 años en Burdeos, Francia, tras sufrir un derrame cerebral que lo dejó paralizado.",
+  "shortDescriptionRu": "Франсиско Гойя был испанским романтическим художником и гравером, считающимся самым важным испанским художником конца XVIII и начала XIX века. Он умер в возрасте 82 лет в Бордо, Франция, после инсульта, который оставил его парализованным.",
+  "sources": [
+    "https://www.britannica.com/biography/Francisco-Goya",
+    "https://en.wikipedia.org/wiki/Francisco_Goya",
+    "https://www.agsa.sa.gov.au/collection-publications/collection/creators/francisco-goya/3263/",
+    "https://www.pomona.edu/museum/collections/etchings-francisco-de-goya/biography-goya"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5208",  "Name": "Huang Xianfan",  "BirthDate": "1899-11-13T00:00:00Z",  "DeathDate": "1982-01-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Huang%20Xianfan%27s%20Graduation%20Photo.jpg",  "SiteLinksCnt": 173,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"22505048":{"pageid":22505048,"ns":0,"title":"Huang Xianfan","extract":"Huang Xianfan (zhuang: Vangz Yenfanh; simplified Chinese: \u9ec4\u73b0\u74a0; traditional Chinese: \u9ec4\u73fe\u74a0; pinyin: Hu\u00e1ng Xi\u00e0nf\u00e1n; Wade\u2013Giles: Hu\u00e1ng Hsi\u00e8nf\u00e1n) (November 13, 1899 \u2013 January 18, 1982) was a Zhuang Chinese historian, ethnologist and educator. Huang is considered one of the founders of modern Chinese ethnology.\nHe dedicated five decades of his life to the study of history and ethnology, his research encompassing a vast range of fields, including Chinese general history, pre-Qin history,medieval history, social and living history, cultural history, ethnology, linguistics, and Zhuang studies.His magnum opus, \"A General Outline of Tang Dynasty Society,\" is widely hailed as the first comprehensive study of Tang dynasty social history in the 20th century. Similarly, his \"National Salvation Movement of the Students of the Imperial Academy during the Song Dynasty\" is recognized as the pioneering monograph on the history of student movements in China. His works,\"A Brief History of the Zhuang Ethnic Group in Guangxi\" and\"A General History of the Zhuang Ethnic Group \"are widely regarded as groundbreaking contributions to the historical and cultural studies of the Zhuang people. His seminal work, \"China's History Did Not Have a Slave Society,\" stands as a landmark challenge within 20th-century Chinese academia to the notion of a slave society in Chinese history. Furthermore, his essay, \"On the Construction of 'Chinese Life Studies,'\" provides a crucial framework for establishing this new academic discipline. His pioneering theories, including the \"Indigenous Origin of the Zhuang People in Guangxi\" and \"The Justification of Nong Zhigao's Rebellion Against the Song Dynasty,\" have become cornerstones for subsequent scholars and are now widely accepted as definitive interpretations.\nHis commitment to education spanned almost fifty years at the university. In his later years, he established the Lijiang Adult University, fostering a vast network of students and leaving an enduring mark on the field and The \"Bagui School\" he created is the first school of ethnic studies in China."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5208")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5208",
+  "isRealHuman": true,
+  "birthDate": "1899-11-13",
+  "deathDate": "1982-01-18",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Huang Xianfan (1899–1982) was a pioneering Chinese historian, ethnologist, and educator of Zhuang ethnicity. Renowned as the 'Father of Zhuang Studies,' he dedicated his life to the exploration of China's ethnic diversity and cultural history. He passed away at the age of 82 due to an intracerebral hemorrhage in Guilin.",
+  "shortDescriptionFr": "Huang Xianfan (1899–1982) était un historien, ethnologue et éducateur chinois d'origine zhuang. Considéré comme le 'Père des études zhuang', il a consacré sa vie à l'exploration de la diversité ethnique et de l'histoire culturelle de la Chine. Il est décédé à l'âge de 82 ans d'une hémorragie intracérébrale à Guilin.",
+  "shortDescriptionDe": "Huang Xianfan (1899–1982) war ein chinesischer Historiker, Ethnologe und Pädagoge zhuangischer Herkunft. Als 'Vater der Zhuang-Studien' widmete er sein Leben der Erforschung der ethnischen Vielfalt und Kulturgeschichte Chinas. Er starb im Alter von 82 Jahren an einer Hirnblutung in Guilin.",
+  "shortDescriptionEs": "Huang Xianfan (1899–1982) fue un historiador, etnólogo y educador chino de etnia zhuang. Reconocido como el 'Padre de los estudios zhuang', dedicó su vida a explorar la diversidad étnica y la historia cultural de China. Falleció a los 82 años debido a una hemorragia intracerebral en Guilin.",
+  "shortDescriptionRu": "Хуан Сяньфань (1899–1982) — китайский историк, этнолог и педагог чжуанского происхождения. Известный как 'отец чжуанских исследований', он посвятил свою жизнь изучению этнического разнообразия и культурной истории Китая. Скончался в возрасте 82 лет от внутричерепного кровоизлияния в Гуйлине.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Huang_Xianfan",
+    "https://fr.wikipedia.org/wiki/Huang_Xianfan",
+    "https://commons.wikimedia.org/wiki/Category:Huang_Xianfan",
+    "https://happyhappybirthday.net/en/age/huang-xianfan-person_fyaq",
+    "https://kids.kiddle.co/Huang_Xianfan"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41117",  "Name": "Kim Il-sung",  "BirthDate": "1912-04-15T00:00:00Z",  "DeathDate": "1994-07-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kim%20Il%20Sung%20Portrait-3.jpg",  "SiteLinksCnt": 157,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"19718837":{"pageid":19718837,"ns":0,"title":"Kim Il Sung","extract":"Kim Il Sung (; Korean: \uae40\uc77c\uc131, Korean pronunciation: [kimils\u0348\u028c\u014b] ; born Kim Song Ju; 15 April 1912 \u2013 8 July 1994) was a Korean politician and the founder of North Korea, which he led as Supreme Leader from its establishment in 1948 until his death in 1994. Afterwards, he was succeeded by his son Kim Jong Il and was declared Eternal President.\nHe held the posts of the Premier from 1948 to 1972 and President from 1972 to 1994. He was the leader of the Workers' Party of Korea (WPK) from 1949 to 1994 (titled as chairman from 1949 to 1966 and as general secretary after 1966). Coming to power after the end of Japanese rule over Korea in 1945 following Japan's surrender in World War II, he authorized the invasion of South Korea in 1950, triggering an intervention in defense of South Korea by the United Nations led by the United States. Following the military stalemate in the Korean War, a ceasefire was signed in July 1953. He was the third-longest serving non-royal head of state/government in the 20th century, in office for more than 45 years.\nUnder his leadership, North Korea was established as a totalitarian socialist personalist dictatorship with a centrally planned economy. It had very close political and economic relations with the Soviet Union. By the 1960s, North Korea had a slightly higher standard of living than the South, which was suffering from political chaos and economic crises. The situation was reversed in the 1970s, as a newly stable South Korea became an economic powerhouse which was fueled by Japanese and American investment, military aid and internal economic development, while North Korea's economy stagnated and then collapsed. Differences emerged between North Korea and the Soviet Union; chief among them was Kim Il Sung's philosophy of Juche, which focused on Korean nationalism and self-reliance. Despite this, the country received funds, subsidies and aid from the USSR and the Eastern Bloc until the dissolution of the USSR in 1991.\nThe resulting loss of economic aid negatively affected North Korea's economy, contributing to widespread famine in 1994. During this period, North Korea also remained critical of the United States defense force's presence in the region, which it considered imperialist, having seized the American ship USS Pueblo in 1968. This was part of an infiltration and subversion campaign to reunify the peninsula under North Korea's rule. Kim outlived his allies, Joseph Stalin and Mao Zedong, by over four and almost two decades, respectively, and remained in power during the terms of office of six South Korean Presidents and ten United States Presidents. Known as the Great Leader (Suryong), he established a far-reaching personality cult which dominates domestic politics in North Korea. At the 6th WPK Congress in 1980, his oldest son Kim Jong Il was elected to be a Presidium member and chosen to be his successor, thus establishing the Kim dynasty."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41117")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41117",
+  "isRealHuman": true,
+  "birthDate": "1912-04-15",
+  "deathDate": "1994-07-08",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented and corroborated by multiple reliable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Kim Il-sung (born Kim Song-ju; April 15, 1912 – July 8, 1994) was the founding leader of North Korea, serving as its Supreme Leader from 1948 until his death in 1994. He established a totalitarian regime centered on the Juche ideology and a pervasive personality cult. Kim died of a heart attack at age 82, and his embalmed body lies in state at the Kumsusan Palace of the Sun in Pyongyang.",
+  "shortDescriptionFr": "Kim Il-sung (né Kim Song-ju ; 15 avril 1912 – 8 juillet 1994) était le fondateur et dirigeant suprême de la Corée du Nord de 1948 jusqu'à sa mort. Il a instauré un régime totalitaire basé sur l'idéologie du Juche et un culte de la personnalité. Il est décédé d'une crise cardiaque à l'âge de 82 ans, et son corps embaumé repose au Palais du Soleil de Kumsusan à Pyongyang.",
+  "shortDescriptionDe": "Kim Il-sung (geboren als Kim Song-ju; 15. April 1912 – 8. Juli 1994) war der Gründungsführer Nordkoreas und regierte das Land von 1948 bis zu seinem Tod. Er etablierte ein totalitäres Regime basierend auf der Juche-Ideologie und einem ausgeprägten Personenkult. Kim starb im Alter von 82 Jahren an einem Herzinfarkt; sein einbalsamierter Körper liegt im Kumsusan-Palast der Sonne in Pjöngjang.",
+  "shortDescriptionEs": "Kim Il-sung (nacido como Kim Song-ju; 15 de abril de 1912 – 8 de julio de 1994) fue el líder fundador de Corea del Norte, gobernando desde 1948 hasta su muerte. Estableció un régimen totalitario centrado en la ideología Juche y un culto a la personalidad. Falleció de un ataque al corazón a los 82 años, y su cuerpo embalsamado se encuentra en el Palacio del Sol de Kumsusan en Pyongyang.",
+  "shortDescriptionRu": "Ким Ир Сен (настоящее имя Ким Сон Чжу; 15 апреля 1912 – 8 июля 1994) — основатель и первый руководитель КНДР, возглавлявший страну с 1948 года до своей смерти. Он установил тоталитарный режим, основанный на идеологии чучхе и культе личности. Скончался от сердечного приступа в возрасте 82 лет; его забальзамированное тело покоится в Дворце Солнца Кымсусан в Пхеньяне.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kim_Il_Sung",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Kim_Il_Sung",
+    "https://biographyhost.com/p/kim-il-sung-biography.html",
+    "https://famdead.com/en/kim-il-sung/"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1276",  "Name": "Leonard Cohen",  "BirthDate": "1934-09-21T00:00:00Z",  "DeathDate": "2016-11-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Leonard%20Cohen%2C%201988%2001.jpg",  "SiteLinksCnt": 132,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"19965375":{"pageid":19965375,"ns":0,"title":"Leonard Cohen","extract":"Leonard Norman Cohen  (September 21, 1934 \u2013 November 7, 2016) was a Canadian songwriter, singer, poet, and novelist. Themes commonly explored throughout his work include faith and mortality, isolation and depression, betrayal and redemption, social and political conflict, and sexual and romantic love, desire, regret, and loss. He was inducted into the Canadian Music Hall of Fame, the Canadian Songwriters Hall of Fame, and the Rock and Roll Hall of Fame. He was invested as a Companion of the Order of Canada, the nation's highest civilian honour. In 2011, he received one of the Prince of Asturias Awards for literature and the ninth Glenn Gould Prize. In 2023, Rolling Stone named Cohen the 103rd-greatest singer.\nCohen pursued a career as a poet and novelist during the 1950s and early 1960s, and did not begin a music career until 1966. His first album, Songs of Leonard Cohen (1967), was followed by three more albums of folk music: Songs from a Room (1969), Songs of Love and Hate (1971) and New Skin for the Old Ceremony (1974). His 1977 record Death of a Ladies' Man, co-written and produced by Phil Spector, was a move away from Cohen's previous minimalist sound.\nIn 1979, Cohen returned with the more traditional Recent Songs, which blended his acoustic style with jazz, East Asian, and Mediterranean influences. Cohen's most famous song, \"Hallelujah\", was released on his seventh album, Various Positions (1984). I'm Your Man in 1988 marked Cohen's turn to synthesized productions. In 1992, Cohen released its follow-up, The Future, which had dark lyrics and references to political and social unrest.\nCohen returned to music in 2001 with the release of Ten New Songs, a major hit in Canada and Europe. His eleventh album, Dear Heather, followed in 2004. In 2005, Cohen discovered that his manager had stolen most of his money and sold his publishing rights, prompting a return to touring to recoup his losses. Following a successful string of tours between 2008 and 2013, he released three albums in the final years of his life: Old Ideas (2012), Popular Problems (2014), and You Want It Darker (2016), the last of which was released three weeks before his death. His fifteenth studio album, Thanks for the Dance, was released in November 2019.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1276")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1276",
+  "isRealHuman": true,
+  "birthDate": "1934-09-21",
+  "deathDate": "2016-11-07",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Leonard Cohen's birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of his age at death.",
+  "shortDescriptionEn": "Leonard Cohen was a Canadian singer-songwriter, poet, and novelist known for his deep, reflective lyrics and distinctive voice. He passed away peacefully in his sleep at the age of 82 after a fall, with leukemia contributing to his death.",
+  "shortDescriptionFr": "Leonard Cohen était un chanteur-compositeur, poète et romancier canadien, célèbre pour ses paroles profondes et sa voix unique. Il est décédé paisiblement dans son sommeil à l'âge de 82 ans après une chute, la leucémie ayant contribué à son décès.",
+  "shortDescriptionDe": "Leonard Cohen war ein kanadischer Singer-Songwriter, Dichter und Romanautor, bekannt für seine tiefgründigen Texte und markante Stimme. Er starb friedlich im Schlaf im Alter von 82 Jahren nach einem Sturz, wobei Leukämie zu seinem Tod beitrug.",
+  "shortDescriptionEs": "Leonard Cohen fue un cantautor, poeta y novelista canadiense, reconocido por sus letras profundas y su voz distintiva. Falleció pacíficamente mientras dormía a los 82 años tras una caída, con la leucemia como factor contribuyente.",
+  "shortDescriptionRu": "Леонард Коэн был канадским певцом, поэтом и романистом, известным своими глубокими текстами и уникальным голосом. Он мирно скончался во сне в возрасте 82 лет после падения; лейкемия способствовала его смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Leonard_Cohen",
+    "https://ew.com/article/2016/11/16/leonard-cohen-died-after-fall-last-days/",
+    "https://www.britannica.com/biography/Leonard-Cohen",
+    "https://www.thefamouspeople.com/profiles/leonard-norman-cohen-2133.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q29179",  "Name": "Francisco Franco",  "BirthDate": "1892-12-04T00:00:00Z",  "DeathDate": "1975-11-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/RETRATO%20DEL%20GRAL.%20FRANCISCO%20FRANCO%20BAHAMONDE%20%28adjusted%20levels%29.jpg",  "SiteLinksCnt": 131,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"11466":{"pageid":11466,"ns":0,"title":"Francisco Franco","extract":"Francisco Franco Bahamonde (born Francisco Paulino Hermenegildo Te\u00f3dulo Franco Bahamonde; 4 December 1892 \u2013 20 November 1975) was a Spanish general who led the Nationalist forces in overthrowing the Second Spanish Republic during the Spanish Civil War and thereafter ruled over Spain from 1939 to 1975 as a dictator, assuming the title Caudillo. This period in Spanish history, from the Nationalist victory to Franco's death, is commonly known as Francoist Spain or as the Francoist dictatorship.\nBorn in Ferrol, Galicia, into an upper-class military family, Franco served in the Spanish Army as a cadet in the Toledo Infantry Academy from 1907 to 1910. While serving in Morocco, he rose through the ranks to become a brigadier general in 1926 at age 33. Two years later, Franco became the director of the General Military Academy in Zaragoza. As a conservative and monarchist, Franco regretted the abolition of the monarchy and the establishment of the Second Republic in 1931, and was devastated by the closing of his academy; nevertheless, he continued his service in the Republican Army. His career was boosted after the right-wing CEDA and PRR won the 1933 election, empowering him to lead the suppression of the 1934 uprising in Asturias. Franco was briefly elevated to Chief of Army Staff before the 1936 election moved the leftist Popular Front into power, relegating him to the Canary Islands.\nInitially reluctant, he joined the July 1936 military coup, which, after failing to take Spain, sparked the Spanish Civil War. During the war, he commanded Spain's African colonial army and later, following the deaths of much of the rebel leadership, became his faction's only leader, being appointed generalissimo and head of state in 1936. He consolidated all nationalist parties into the FET y de las JONS (creating a one-party state) and developed a cult of personality around his rule by founding the Movimiento Nacional. Three years later the Nationalists declared victory, which extended Franco's dictatorship over Spain through a period of repression of political opponents. His dictatorship's use of forced labour, concentration camps and executions led to between 30,000 and 50,000 deaths. Combined with wartime killings, this brings the death toll of the White Terror to between 100,000 and 200,000. During World War II, he maintained Spanish neutrality, but supported the Axis\u2014in recompense to Italy and Germany for their support during the Civil War\u2014damaging the country's international reputation in various ways.\nDuring the start of the Cold War, Franco lifted Spain out of its mid-20th century economic depression through technocratic and economically liberal policies, presiding over a period of accelerated growth known as the \"Spanish miracle\". At the same time, his regime transitioned from a totalitarian state to an authoritarian one with limited pluralism. He became a leader in the anti-communist movement, garnering support from the West, particularly the United States. As the dictatorship relaxed its hard-line policies, Luis Carrero Blanco became Franco's \u00e9minence grise, whose role expanded after Franco began struggling with Parkinson's disease in the 1960s. In 1973, Franco resigned as prime minister\u2014separated from the office of head of state since 1967\u2014due to his advanced age and illness. Nevertheless, he remained in power as the head of state and as commander-in-chief. Franco died in 1975, aged 82, and was entombed in the Valle de los Ca\u00eddos. He restored the monarchy in his final years, being succeeded by Juan Carlos, King of Spain, who led the Spanish transition to democracy.\nThe legacy of Franco in Spanish history remains controversial, as the nature of his dictatorship changed over time. His reign was marked by both brutal repression, with tens of thousands killed, and economic prosperity, which greatly improved the quality of life in Spain. His dictatorial style proved adaptable enough to allow social and economic reform, but still centred on highly centralised government, authoritarianism, nationalism, national Catholicism, anti-freemasonry and anti-communism.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q29179")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q29179",
+  "isRealHuman": true,
+  "birthDate": "1892-12-04",
+  "deathDate": "1975-11-20",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Francisco Franco (1892–1975) was a Spanish general who led the Nationalist forces to victory in the Spanish Civil War and ruled Spain as a dictator from 1939 until his death at age 82 in 1975, following a prolonged illness.",
+  "shortDescriptionFr": "Francisco Franco (1892–1975) était un général espagnol qui a dirigé les forces nationalistes à la victoire lors de la guerre civile espagnole et a gouverné l'Espagne en tant que dictateur de 1939 jusqu'à sa mort à 82 ans en 1975, après une longue maladie.",
+  "shortDescriptionDe": "Francisco Franco (1892–1975) war ein spanischer General, der die nationalistischen Kräfte zum Sieg im Spanischen Bürgerkrieg führte und Spanien von 1939 bis zu seinem Tod im Alter von 82 Jahren im Jahr 1975 nach langer Krankheit als Diktator regierte.",
+  "shortDescriptionEs": "Francisco Franco (1892–1975) fue un general español que lideró a las fuerzas nacionalistas a la victoria en la Guerra Civil Española y gobernó España como dictador desde 1939 hasta su muerte a los 82 años en 1975, tras una prolongada enfermedad.",
+  "shortDescriptionRu": "Франсиско Франко (1892–1975) был испанским генералом, возглавившим националистические силы к победе в Гражданской войне в Испании и правившим страной как диктатор с 1939 года до своей смерти в возрасте 82 лет в 1975 году после продолжительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francisco_Franco",
+    "https://en.wikipedia.org/wiki/Death_and_funeral_of_Francisco_Franco",
+    "https://www.britannica.com/biography/Francisco-Franco"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40912",  "Name": "Frank Sinatra",  "BirthDate": "1915-12-12T00:00:00Z",  "DeathDate": "1998-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Sinatra%20%281957%20studio%20portrait%20close-up%29.jpg",  "SiteLinksCnt": 129,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"11181":{"pageid":11181,"ns":0,"title":"Frank Sinatra","extract":"Francis Albert Sinatra (; December 12, 1915 \u2013 May 14, 1998) was an American singer and actor. Nicknamed the \"Chairman of the Board\", \"Ol' Blue Eyes\", and \"The Voice\", he is regarded as one of the most popular entertainers of the 20th century. Sinatra is among the world's best-selling music artists, with an estimated 150 million record sales globally.\nBorn in Hoboken, New Jersey, Sinatra began his musical career in the swing era and was influenced by the easy-listening vocal style of Bing Crosby. He joined the Harry James band as the vocalist in 1939 before finding success as a solo artist after signing with Columbia Records in 1943, becoming the idol of the \"bobby soxers\". In 1946, Sinatra released his debut album, The Voice of Frank Sinatra. He then signed with Capitol Records and released several albums with arrangements by Nelson Riddle, notably In the Wee Small Hours (1955) and Songs for Swingin' Lovers! (1956). In 1960, Sinatra left Capitol Records to start his own record label, Reprise Records, releasing a string of successful albums. He collaborated with Count Basie on Sinatra-Basie: An Historic Musical First (1962) and It Might as Well Be Swing (1964). In 1965, he recorded September of My Years and starred in the Emmy-winning television special Frank Sinatra: A Man and His Music. After releasing Sinatra at the Sands in 1966, Sinatra recorded one of his most famous collaborations with Tom Jobim, Francis Albert Sinatra & Antonio Carlos Jobim. It was followed by 1968's Francis A. & Edward K. with Duke Ellington. Sinatra retired in 1971 following the release of \"My Way\" but came out of retirement two years later. He recorded several albums and released \"New York, New York\" in 1980.\nSinatra also forged a highly successful acting career. After winning the Academy Award for Best Supporting Actor for From Here to Eternity (1953), he starred in The Man with the Golden Arm (1955) and The Manchurian Candidate (1962). Sinatra also appeared in musicals such as On the Town (1949), Guys and Dolls (1955), High Society (1956), and Pal Joey (1957), which won him a Golden Globe Award. Toward the end of his career, he frequently played detectives, including the title character in Tony Rome (1967). Sinatra received the Golden Globe Cecil B. DeMille Award in 1971. On television, The Frank Sinatra Show began on CBS in 1950, and he continued to make appearances on television throughout the 1950s and 1960s.\nIn 1983, Sinatra was honored at the Kennedy Center Honors. He was awarded the Presidential Medal of Freedom in 1985 and the Congressional Gold Medal in 1997. Sinatra received eleven Grammy Awards, including the Grammy Trustees Award, Grammy Legend Award, and the Grammy Lifetime Achievement Award. American music critic Robert Christgau called him \"the greatest singer of the 20th century\" and he continues to be regarded as an iconic figure.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40912")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q40912",
+  "isRealHuman": true,
+  "birthDate": "1915-12-12",
+  "deathDate": "1998-05-14",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Frank Sinatra's birth and death dates are well-documented across numerous reputable sources, including Wikipedia and Britannica. The age at death is consistently reported as 82, confirming the accuracy of this information.",
+  "shortDescriptionEn": "Frank Sinatra (1915–1998) was an American singer and actor, renowned as one of the most influential entertainers of the 20th century. Known for his smooth voice and charismatic performances, he sold over 150 million records worldwide. Sinatra passed away at the age of 82 due to a heart attack in Los Angeles, with his wife Barbara by his side.",
+  "shortDescriptionFr": "Frank Sinatra (1915–1998) était un chanteur et acteur américain, considéré comme l'un des artistes les plus influents du XXe siècle. Connu pour sa voix suave et ses performances charismatiques, il a vendu plus de 150 millions de disques dans le monde. Sinatra est décédé à l'âge de 82 ans d'une crise cardiaque à Los Angeles, en présence de son épouse Barbara.",
+  "shortDescriptionDe": "Frank Sinatra (1915–1998) war ein amerikanischer Sänger und Schauspieler, der als einer der einflussreichsten Entertainer des 20. Jahrhunderts gilt. Bekannt für seine sanfte Stimme und charismatischen Auftritte, verkaufte er weltweit über 150 Millionen Platten. Sinatra starb im Alter von 82 Jahren an einem Herzinfarkt in Los Angeles, begleitet von seiner Ehefrau Barbara.",
+  "shortDescriptionEs": "Frank Sinatra (1915–1998) fue un cantante y actor estadounidense, reconocido como uno de los artistas más influyentes del siglo XX. Conocido por su voz suave y actuaciones carismáticas, vendió más de 150 millones de discos en todo el mundo. Sinatra falleció a los 82 años debido a un ataque al corazón en Los Ángeles, acompañado por su esposa Barbara.",
+  "shortDescriptionRu": "Фрэнк Синатра (1915–1998) был американским певцом и актером, признанным одним из самых влиятельных артистов XX века. Известный своим мягким голосом и харизматичными выступлениями, он продал более 150 миллионов записей по всему миру. Синатра скончался в возрасте 82 лет от сердечного приступа в Лос-Анджелесе, рядом с ним была его жена Барбара.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Frank_Sinatra",
+    "https://www.britannica.com/biography/Frank-Sinatra",
+    "https://allthatsinteresting.com/frank-sinatra-death",
+    "https://www.imdb.com/name/nm0000069/faq/?attribute=age-at-death"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2677",  "Name": "Wilhelm II",  "BirthDate": "1859-01-27T00:00:00Z",  "DeathDate": "1941-06-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kaiser%20Wilhelm%20II%20of%20Germany%20-%201902.jpg",  "SiteLinksCnt": 125,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"50450":{"pageid":50450,"ns":0,"title":"Wilhelm II","extract":"Wilhelm II (Friedrich Wilhelm Viktor Albert; 27 January 1859 \u2013 4 June 1941) was the last German Emperor and King of Prussia from 1888 until his abdication in 1918, which marked the end of the German Empire as well as the Hohenzollern dynasty's 300-year rule of Prussia.\nBorn during the reign of his granduncle Frederick William IV of Prussia, Wilhelm was the son of Prince Frederick William and Victoria, Princess Royal. Through his mother, he was the eldest of the 42 grandchildren of Queen Victoria of the United Kingdom. In March 1888, Wilhelm's father, Frederick William, ascended the German and Prussian thrones as Frederick III. Frederick died just 99 days later, and his son succeeded him as Wilhelm II.\nIn March 1890, the young Kaiser dismissed longtime Chancellor Otto von Bismarck and assumed direct control over his nation's policies, embarking on a bellicose \"New Course\" to cement Germany's status as a leading world power. Over the course of his reign, the German colonial empire acquired new territories in China and the Pacific (such as Jiaozhou Bay, the Northern Mariana Islands, and the Caroline Islands) and became Europe's largest manufacturer. However, Wilhelm often undermined such progress by making tactless and threatening statements towards other countries without first consulting his ministers. Likewise, his regime did much to alienate itself from other great powers by initiating a massive naval build-up, contesting French control of Morocco, and building a railway through Baghdad that challenged Britain's dominion in the Persian Gulf. By the second decade of the 20th century, Germany could rely only on significantly weaker nations such as Austria-Hungary and the declining Ottoman Empire as allies.\nDespite strengthening Germany's position as a great power by building a powerful navy as well as promoting scientific innovation within its borders, Wilhelm's public statements and erratic foreign policy greatly antagonized the international community and are considered by many to have substantially contributed to the fall of the German Empire. In 1914, his diplomatic brinksmanship culminated in Germany's guarantee of military support to Austria-Hungary during the July Crisis which plunged all of Europe into World War I. A lax wartime leader, Wilhelm left virtually all decision-making regarding strategy and organisation of the war effort to the German Supreme Army Command. By August 1916, this broad delegation of power gave rise to a de facto military dictatorship that dominated the country's policies for the rest of the conflict. Despite emerging victorious over Russia and obtaining significant territorial gains in Eastern Europe, Germany was forced to relinquish all its conquests after a decisive defeat on the Western Front in the autumn of 1918.\nLosing the support of his country's military and many of his subjects, Wilhelm was forced to abdicate during the German Revolution of 1918\u20131919 which converted Germany into an unstable democratic state known as the Weimar Republic. Wilhelm subsequently fled to exile in the Netherlands, where he remained during its occupation by Nazi Germany in 1940 before dying there in 1941."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2677")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q2677",
+  "isRealHuman": true,
+  "birthDate": "1859-01-27",
+  "deathDate": "1941-06-04",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Wilhelm II (Friedrich Wilhelm Viktor Albert; 27 January 1859 – 4 June 1941) was the last German Emperor and King of Prussia, reigning from 1888 until his abdication in 1918. His aggressive foreign policies and militaristic stance contributed to the tensions leading up to World War I. After Germany's defeat, he lived in exile in the Netherlands, where he died at the age of 82.",
+  "shortDescriptionFr": "Guillaume II (Friedrich Wilhelm Viktor Albert ; 27 janvier 1859 – 4 juin 1941) fut le dernier empereur allemand et roi de Prusse, régnant de 1888 jusqu'à son abdication en 1918. Ses politiques étrangères agressives ont contribué aux tensions menant à la Première Guerre mondiale. Après la défaite de l'Allemagne, il vécut en exil aux Pays-Bas, où il mourut à l'âge de 82 ans.",
+  "shortDescriptionDe": "Wilhelm II. (Friedrich Wilhelm Viktor Albert; 27. Januar 1859 – 4. Juni 1941) war der letzte Deutsche Kaiser und König von Preußen, der von 1888 bis zu seiner Abdankung 1918 regierte. Seine aggressive Außenpolitik trug zu den Spannungen vor dem Ersten Weltkrieg bei. Nach der Niederlage Deutschlands lebte er im Exil in den Niederlanden, wo er im Alter von 82 Jahren starb.",
+  "shortDescriptionEs": "Guillermo II (Friedrich Wilhelm Viktor Albert; 27 de enero de 1859 – 4 de junio de 1941) fue el último emperador alemán y rey de Prusia, reinando desde 1888 hasta su abdicación en 1918. Sus políticas exteriores agresivas contribuyeron a las tensiones que llevaron a la Primera Guerra Mundial. Tras la derrota de Alemania, vivió en el exilio en los Países Bajos, donde falleció a los 82 años.",
+  "shortDescriptionRu": "Вильгельм II (Фридрих Вильгельм Виктор Альберт; 27 января 1859 – 4 июня 1941) был последним германским императором и королём Пруссии, правившим с 1888 года до своей отречения в 1918 году. Его агрессивная внешняя политика способствовала напряженности, приведшей к Первой мировой войне. После поражения Германии он жил в изгнании в Нидерландах, где скончался в возрасте 82 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Wilhelm_II",
+    "https://www.britannica.com/biography/William-II-emperor-of-Germany",
+    "https://www.history.com/articles/kaiser-wilhelm-ii"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47480",  "Name": "Paul Dirac",  "BirthDate": "1902-08-08T00:00:00Z",  "DeathDate": "1984-10-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Dirac%2C%201933.jpg",  "SiteLinksCnt": 123,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"24742":{"pageid":24742,"ns":0,"title":"Paul Dirac","extract":"Paul Adrien Maurice Dirac ( dih-RAK; 8 August 1902 \u2013 20 October 1984) was an English mathematical and theoretical physicist who is considered to be one of the founders of quantum mechanics. Dirac laid the foundations for both quantum electrodynamics and quantum field theory. He was the Lucasian Professor of Mathematics at the University of Cambridge, a professor of physics at Florida State University and a 1933 Nobel Prize in Physics recipient.\nDirac graduated from the University of Bristol with a first class honours Bachelor of Science degree in electrical engineering in 1921, and a first class honours Bachelor of Arts degree in mathematics in 1923. Dirac then graduated from the University of Cambridge with a PhD in physics in 1926, writing the first ever thesis on quantum mechanics.\nDirac made fundamental contributions to the early development of both quantum mechanics and quantum electrodynamics, coining the latter term. Among other discoveries, he formulated the Dirac equation in 1928, which describes the behaviour of fermions and predicted the existence of antimatter, which is one of the most important equations in physics, and is regarded by some physicists as the \"real seed of modern physics\". He wrote a famous paper in 1931, which further predicted the existence of antimatter. Dirac shared the 1933 Nobel Prize in Physics with Erwin Schr\u00f6dinger for \"the discovery of new productive forms of atomic theory\". He was the youngest ever theoretician to win the prize, at the age of 31, until T. D. Lee in 1957. Dirac also contributed greatly to the reconciliation of general relativity with quantum mechanics. His 1930 monograph, The Principles of Quantum Mechanics, is one of the most influential texts on quantum mechanics.\nDirac's contributions were not restricted to quantum mechanics. He contributed to the Tube Alloys project, the British programme to research and construct atomic bombs during World War II. Dirac made fundamental contributions to the process of uranium enrichment and the gas centrifuge, and whose work was deemed to be \"probably the most important theoretical result in centrifuge technology\". He also contributed to cosmology, putting forth his large numbers hypothesis. Dirac also anticipated string theory well before its inception, with work such as the Dirac membrane and Dirac\u2013Born\u2013Infeld action, along with other contributions important to modern-day string and gauge theories.\nDirac was regarded by his friends and colleagues as unusual in character. In a 1926 letter to Paul Ehrenfest, Albert Einstein wrote of a Dirac paper, \"I am toiling over Dirac. This balancing on the dizzying path between genius and madness is awful.\" In another letter concerning the Compton effect he wrote, \"I don't understand the details of Dirac at all.\" In 1987, Abdus Salam declared that \"Dirac was undoubtedly one of the greatest physicists of this or any century . . . No man except Einstein has had such a decisive influence, in so short a time, on the course of physics in this century.\" In 1995, Stephen Hawking stated that \"Dirac has done more than anyone this century, with the exception of Einstein, to advance physics and change our picture of the universe\". Antonino Zichichi asserted that Dirac had a greater impact on modern physics than Einstein, while Stanley Deser remarked that \"We all stand on Dirac's shoulders.\" Dirac is widely considered to be on par with Sir Isaac Newton, James Clerk Maxwell, and Einstein."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47480")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47480",
+  "isRealHuman": true,
+  "birthDate": "1902-08-08",
+  "deathDate": "1984-10-20",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented and corroborated by multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Paul Dirac (1902–1984) was an English theoretical physicist and a pioneer in quantum mechanics and quantum electrodynamics. He formulated the Dirac equation, predicting the existence of antimatter, and was awarded the Nobel Prize in Physics in 1933. Dirac passed away at the age of 82 in Tallahassee, Florida, where he had been a professor at Florida State University.",
+  "shortDescriptionFr": "Paul Dirac (1902–1984) était un physicien théoricien anglais, pionnier de la mécanique quantique et de l'électrodynamique quantique. Il a formulé l'équation de Dirac, prédisant l'existence de l'antimatière, et a reçu le prix Nobel de physique en 1933. Dirac est décédé à l'âge de 82 ans à Tallahassee, en Floride, où il était professeur à la Florida State University.",
+  "shortDescriptionDe": "Paul Dirac (1902–1984) war ein englischer theoretischer Physiker und Pionier der Quantenmechanik und Quantenelektrodynamik. Er formulierte die Dirac-Gleichung, die die Existenz von Antimaterie vorhersagte, und erhielt 1933 den Nobelpreis für Physik. Dirac verstarb im Alter von 82 Jahren in Tallahassee, Florida, wo er Professor an der Florida State University war.",
+  "shortDescriptionEs": "Paul Dirac (1902–1984) fue un físico teórico inglés y pionero en la mecánica cuántica y la electrodinámica cuántica. Formuló la ecuación de Dirac, que predijo la existencia de la antimateria, y recibió el Premio Nobel de Física en 1933. Dirac falleció a los 82 años en Tallahassee, Florida, donde fue profesor en la Universidad Estatal de Florida.",
+  "shortDescriptionRu": "Пол Дирак (1902–1984) был английским теоретическим физиком, пионером квантовой механики и квантовой электродинамики. Он сформулировал уравнение Дирака, предсказавшее существование антиматерии, и получил Нобелевскую премию по физике в 1933 году. Дирак скончался в возрасте 82 лет в Таллахасси, Флорида, где был профессором в Университете штата Флорида.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Paul_Dirac",
+    "https://www.britannica.com/biography/Paul-Dirac",
+    "https://www.famousscientists.org/paul-dirac/",
+    "https://www.thefamouspeople.com/profiles/paul-adrien-maurice-dirac-4044.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47561",  "Name": "Ivo Andrić",  "BirthDate": "1892-10-10T00:00:00Z",  "DeathDate": "1975-03-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/S.%20Kragujevic%2C%20Ivo%20Andric%2C%201961.jpg",  "SiteLinksCnt": 116,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"55016":{"pageid":55016,"ns":0,"title":"Ivo Andri\u0107","extract":"Ivo Andri\u0107 (Serbian Cyrillic: \u0418\u0432\u043e \u0410\u043d\u0434\u0440\u0438\u045b, pronounced [\u01d0\u02d0\u028bo \u01ce\u02d0ndrit\u0255]; born Ivan Andri\u0107; 9 October 1892 \u2013 13 March 1975) was a Yugoslav novelist, poet and short story writer who won the Nobel Prize in Literature in 1961. His writings dealt mainly with life in his native Bosnia under Ottoman rule.\nBorn in Travnik in Austria-Hungary, modern-day Bosnia and Herzegovina, Andri\u0107 attended high school in Sarajevo, where he became an active member of several South Slav national youth organizations. Following the assassination of Archduke Franz Ferdinand in June 1914, Andri\u0107 was arrested and imprisoned by the Austro-Hungarian police, who suspected his involvement in the plot. As the authorities were unable to build a strong case against him, he spent much of the war under house arrest, only being released following a general amnesty for such cases in July 1917. After the war, he studied South Slavic history and literature at universities in Zagreb and Graz, eventually attaining his PhD. in Graz in 1924. He worked in the diplomatic service of the Kingdom of Yugoslavia from 1920 to 1923 and again from 1924 to 1941. In 1939, he became Yugoslavia's ambassador to Germany, but his tenure ended in April 1941 with the German-led invasion of his country. Shortly after the invasion, Andri\u0107 returned to German-occupied Belgrade. He lived quietly in a friend's apartment for the duration of World War II, in conditions likened by some biographers to house arrest, and wrote some of his most important works, including Na Drini \u0107uprija (The Bridge on the Drina).\nFollowing the war, Andri\u0107 was named to a number of ceremonial posts in Yugoslavia, which had since come under communist rule. In 1961, the Nobel Committee awarded him the Nobel Prize in Literature, selecting him over writers such as J. R. R. Tolkien, Robert Frost, John Steinbeck and E. M. Forster. The Committee cited \"the epic force with which he ... traced themes and depicted human destinies drawn from his country's history\". Afterwards, Andri\u0107's works found an international audience and were translated into a number of languages. In subsequent years, he received a number of awards in his native country. Andri\u0107's health declined substantially in late 1974 and he died in Belgrade the following March.\nIn the years following Andri\u0107's death, the Belgrade apartment where he spent much of World War II was converted into a museum and a nearby street corner was named in his honour. A number of other cities in the former Yugoslavia also have streets bearing his name. In 2012, filmmaker Emir Kusturica began construction of an ethno-town in eastern Bosnia that is named after Andri\u0107. As Yugoslavia's only Nobel Prize-winning writer, Andri\u0107 was well known and respected in his native country during his lifetime. In Bosnia and Herzegovina, beginning in the 1950s and continuing past the breakup of Yugoslavia, his works have been disparaged by Bosniak literary critics for their supposed anti-Muslim bias. In Croatia, his works had occasionally been blacklisted following Yugoslavia's dissolution in the 1990s, but were rehabilitated by the literary community. He is highly regarded in Serbia for his contributions to Serbian literature."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47561")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47561",
+  "isRealHuman": true,
+  "birthDate": "1892-10-09",
+  "deathDate": "1975-03-13",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-documented across multiple reputable sources, including official records and biographies. The age at death is consistently reported as 82 years.",
+  "shortDescriptionEn": "Ivo Andrić (1892–1975) was a Yugoslav novelist, poet, and diplomat, renowned for his works depicting life in Bosnia under Ottoman rule. He received the Nobel Prize in Literature in 1961. Andrić passed away at the age of 82 in Belgrade after a period of declining health.",
+  "shortDescriptionFr": "Ivo Andrić (1892–1975) était un romancier, poète et diplomate yougoslave, célèbre pour ses œuvres sur la vie en Bosnie sous la domination ottomane. Lauréat du prix Nobel de littérature en 1961, il est décédé à 82 ans à Belgrade après une période de santé déclinante.",
+  "shortDescriptionDe": "Ivo Andrić (1892–1975) war ein jugoslawischer Schriftsteller, Dichter und Diplomat, bekannt für seine Werke über das Leben in Bosnien unter osmanischer Herrschaft. 1961 erhielt er den Nobelpreis für Literatur. Er verstarb im Alter von 82 Jahren in Belgrad nach einer Phase gesundheitlicher Verschlechterung.",
+  "shortDescriptionEs": "Ivo Andrić (1892–1975) fue un novelista, poeta y diplomático yugoslavo, conocido por sus obras sobre la vida en Bosnia bajo el dominio otomano. Ganó el Premio Nobel de Literatura en 1961. Falleció a los 82 años en Belgrado tras un periodo de deterioro de salud.",
+  "shortDescriptionRu": "Иво Андрич (1892–1975) — югославский писатель, поэт и дипломат, известный своими произведениями о жизни в Боснии под османским владычеством. Лауреат Нобелевской премии по литературе 1961 года. Скончался в возрасте 82 лет в Белграде после периода ухудшения здоровья.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ivo_Andri%C4%87",
+    "https://www.nobelprize.org/prizes/literature/1961/andric/facts/",
+    "https://www.britannica.com/biography/Ivo-Andric",
+    "https://www.findagrave.com/memorial/7055057/ivo-andri%C4%87",
+    "https://ivoandric.org.rs/english/biography"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q680",  "Name": "Alessandro Volta",  "BirthDate": "1745-02-18T00:00:00Z",  "DeathDate": "1827-03-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alessandro%20Volta.jpeg",  "SiteLinksCnt": 116,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"1923":{"pageid":1923,"ns":0,"title":"Alessandro Volta","extract":"Alessandro Giuseppe Antonio Anastasio Volta (UK: , US: ; Italian: [ales\u02c8sandro \u02c8v\u0254lta]; 18 February 1745 \u2013 5 March 1827) was an Italian chemist and physicist who was a pioneer of electricity and power, and is credited as the inventor of the electric battery and the discoverer of methane. He invented the voltaic pile in 1799, and reported the results of his experiments in a two-part letter to the president of the Royal Society, which was published in 1800. With this invention, Volta proved that electricity could be generated chemically and debunked the prevalent theory that electricity was generated solely by living beings. Volta's invention sparked a great amount of scientific excitement and led others to conduct similar experiments, which eventually led to the development of the field of electrochemistry.\nVolta drew admiration from Napoleon Bonaparte for his invention, and was invited to the Institute of France to demonstrate his invention to the members of the institute. Throughout his life, Volta enjoyed a certain amount of closeness with the emperor who conferred upon him numerous honours. Volta held the chair of experimental physics at the University of Pavia for nearly 40 years and was widely idolised by his students. Despite his professional success, Volta was inclined towards domestic life and this was more apparent in his later years when he tended to live secluded from public life and more for the sake of his family. He died in 1827 from a series of illnesses which began in 1823. The SI unit of electric potential is named the volt in his honour."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q680")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q680",
+  "isRealHuman": true,
+  "birthDate": "1745-02-18",
+  "deathDate": "1827-03-05",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Alessandro Volta was an Italian physicist and chemist, best known for inventing the electric battery and discovering methane. He died peacefully at his estate in Camnago, Italy, at the age of 82.",
+  "shortDescriptionFr": "Alessandro Volta était un physicien et chimiste italien, célèbre pour avoir inventé la batterie électrique et découvert le méthane. Il est décédé paisiblement dans son domaine à Camnago, en Italie, à l'âge de 82 ans.",
+  "shortDescriptionDe": "Alessandro Volta war ein italienischer Physiker und Chemiker, bekannt für die Erfindung der elektrischen Batterie und die Entdeckung von Methan. Er starb friedlich auf seinem Anwesen in Camnago, Italien, im Alter von 82 Jahren.",
+  "shortDescriptionEs": "Alessandro Volta fue un físico y químico italiano, conocido por inventar la batería eléctrica y descubrir el metano. Falleció pacíficamente en su finca en Camnago, Italia, a los 82 años.",
+  "shortDescriptionRu": "Алессандро Вольта был итальянским физиком и химиком, известным изобретением электрической батареи и открытием метана. Он мирно скончался на своей усадьбе в Камнаго, Италия, в возрасте 82 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Alessandro-Volta",
+    "https://en.wikipedia.org/wiki/Alessandro_Volta",
+    "https://www.famousphysicists.org/alessandro-volta/",
+    "https://www.thefamouspeople.com/profiles/count-alessandro-volta-3273.php",
+    "https://www.famousscientists.org/alessandro-volta/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2604",  "Name": "Pius XII",  "BirthDate": "1876-03-02T00:00:00Z",  "DeathDate": "1958-10-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pius%20XII%20with%20tabard%2C%20by%20Michael%20Pitcairn%2C%201951%20%28retouched%29.jpg",  "SiteLinksCnt": 114,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"23808":{"pageid":23808,"ns":0,"title":"Pope Pius XII","extract":"Pope Pius XII (born Eugenio Maria Giuseppe Giovanni Pacelli, Italian pronunciation: [eu\u02c8d\u0292\u025b\u02d0njo ma\u02c8ri\u02d0a d\u0292u\u02c8z\u025bppe d\u0292o\u02c8vanni pa\u02c8t\u0283\u025blli]; 2 March 1876 \u2013 9 October 1958) was head of the Catholic Church and sovereign of the Vatican City State from 2 March 1939 until his death in October 1958. Before his election to the papacy, he served as secretary of the Department of Extraordinary Ecclesiastical Affairs, papal nuncio to Germany, and Cardinal Secretary of State, in which capacity he worked to conclude treaties with various European and Latin American nations, including the Reichskonkordat treaty with the German Reich.\nWhile the Vatican was officially neutral during World War II, the Reichskonkordat and his leadership of the Catholic Church during the war remain the subject of controversy\u2014including allegations of public silence and inaction concerning the fate of the Jews. Pius employed diplomacy to aid the victims of the Nazis during the war and, through directing the church to provide discreet aid to Jews and others, saved thousands of lives. Pius maintained links to the German resistance, and shared intelligence with the Allies. His strongest public condemnation of genocide was considered inadequate by the Allied Powers, while the Nazis viewed him as an Allied sympathizer who had dishonoured his policy of Vatican neutrality.\nDuring his papacy, the Catholic Church issued the Decree against Communism, declaring that Catholics who profess the atheistic and materialist doctrines of communism are to be excommunicated as apostates from the Christian faith. The church experienced severe persecution and mass deportations of Catholic clergy in the Eastern Bloc. Despite all this, Stalin himself was still open to coordinating with Pius XII on the struggle against persecution of the Catholic church. He explicitly invoked ex cathedra papal infallibility with the dogma of the Assumption of Mary in his Apostolic constitution Munificentissimus Deus. His forty-one encyclicals include Mystici Corporis Christi, on the Church as the Mystical Body of Christ; Mediator Dei on liturgy reform; and Humani generis, in which he instructed theologians to adhere to episcopal teaching and allowed that the human body might have evolved from earlier forms. He eliminated the Italian majority in the College of Cardinals in 1946.\nAfter he died in 1958, Pope Pius XII was succeeded by John XXIII. In the process toward sainthood, his cause for canonization was opened on 18 November 1965 by Paul VI during the final session of the Second Vatican Council. He was made a Servant of God by John Paul II in 1990 and Benedict XVI declared Pius XII Venerable on 19 December 2009. Pacelli remains the last pope to take the regnal name of Pius to the present day.\nThe opening of the Vatican archives provides new insights into Pope Pius XII and his handling of the Holocaust. The disclosed documents suggest that the Pope knowingly withheld information about the persecution of Jews between 1942 and 1945. Historian David Israel Kertzer also points to a secret blackmail attempt by the Nazis: The Vatican was to be made an offer in which ongoing proceedings against priests for child abuse in Germany would be dropped if the Church remained politically neutral.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2604")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q2604",
+  "isRealHuman": true,
+  "birthDate": "1876-03-02",
+  "deathDate": "1958-10-09",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are well-documented across multiple reputable sources, allowing for a precise calculation of age at death.",
+  "shortDescriptionEn": "Pope Pius XII (born Eugenio Maria Giuseppe Giovanni Pacelli) was the head of the Catholic Church from 1939 until his death in 1958. His papacy encompassed the tumultuous period of World War II, during which his actions and inactions regarding the Holocaust have been subjects of extensive debate. He died at the age of 82 in Castel Gandolfo, Italy.",
+  "shortDescriptionFr": "Le pape Pie XII (né Eugenio Maria Giuseppe Giovanni Pacelli) fut le chef de l'Église catholique de 1939 jusqu'à sa mort en 1958. Son pontificat couvrit la période tumultueuse de la Seconde Guerre mondiale, durant laquelle ses actions et inactions concernant l'Holocauste ont fait l'objet de nombreux débats. Il est décédé à l'âge de 82 ans à Castel Gandolfo, en Italie.",
+  "shortDescriptionDe": "Papst Pius XII. (geboren als Eugenio Maria Giuseppe Giovanni Pacelli) war von 1939 bis zu seinem Tod 1958 das Oberhaupt der katholischen Kirche. Sein Pontifikat umfasste die turbulente Zeit des Zweiten Weltkriegs, während der seine Handlungen und Unterlassungen in Bezug auf den Holocaust intensiv diskutiert wurden. Er starb im Alter von 82 Jahren in Castel Gandolfo, Italien.",
+  "shortDescriptionEs": "El Papa Pío XII (nacido Eugenio Maria Giuseppe Giovanni Pacelli) fue el líder de la Iglesia Católica desde 1939 hasta su muerte en 1958. Su pontificado abarcó el turbulento período de la Segunda Guerra Mundial, durante el cual sus acciones e inacciones respecto al Holocausto han sido objeto de extensos debates. Falleció a los 82 años en Castel Gandolfo, Italia.",
+  "shortDescriptionRu": "Папа Пий XII (в миру Эудженио Мария Джузеппе Джованни Пачелли) возглавлял Католическую церковь с 1939 года до своей смерти в 1958 году. Его понтификат пришёлся на бурный период Второй мировой войны, в ходе которого его действия и бездействие в отношении Холокоста стали предметом широких обсуждений. Он скончался в возрасте 82 лет в Кастель-Гандольфо, Италия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Pius_XII",
+    "https://www.britannica.com/biography/Pius-XII",
+    "https://catholic-hierarchy.org/bishop/spope3.html"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170302",  "Name": "Saadi",  "BirthDate": "1210-01-01T00:00:00Z",  "DeathDate": "1292-12-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Saadi%20Shirazi.jpg",  "SiteLinksCnt": 113,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"7270459":{"pageid":7270459,"ns":0,"title":"Saadi Shirazi","extract":"Abu Mohammad Moshrefoldin Mosleh ebn Abdollah ebn Mosharraf, better known by his pen name Saadi (; Persian: \u0633\u0639\u062f\u06cc, romanized: , IPA: [s\u00e6\u0294\u02c8di\u02d0]), also known as Saadi of Shiraz (\u0633\u0639\u062f\u06cc \u0634\u06cc\u0631\u0627\u0632\u06cc, Sa\u02bfd\u012b Sh\u012br\u0101z\u012b; born 1210; died 1291 or 1292), was a Persian poet and prose writer of the medieval period. He is recognized for the quality of his writings and for the depth of his social and moral thoughts.\nSaadi is widely recognized as one of the greatest poets of the classical literary tradition, earning him the nickname \"The Master of Speech\" or \"The Wordsmith\" (\u0627\u0633\u062a\u0627\u062f \u0633\u062e\u0646 ost\u00e2d-e soxan) or simply \"Master\" (\u0627\u0633\u062a\u0627\u062f ost\u00e2d) among Persian scholars. He has been quoted in the Western traditions as well. His book, Bustan has been ranked as one of the 100 greatest books of all time by The Guardian."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170302")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q170302",
+  "isRealHuman": true,
+  "birthDate": "1210-01-01",
+  "deathDate": "1292-12-16",
+  "ageAtDeath": 82,
+  "confidence": 90,
+  "confidenceExplained": "While exact birth and death dates are uncertain, multiple historical sources converge on the years 1210 for birth and 1292 for death, making the estimated age at death approximately 82 years with high confidence.",
+  "shortDescriptionEn": "Saadi Shirazi was a prominent Persian poet and prose writer of the medieval period, renowned for his works 'Bustan' and 'Gulistan' that delve into moral and social themes. He passed away in Shiraz around 1292, likely due to natural causes in his early eighties.",
+  "shortDescriptionFr": "Saadi Shirazi était un poète et prosateur persan éminent du Moyen Âge, célèbre pour ses œuvres 'Bustan' et 'Gulistan' abordant des thèmes moraux et sociaux. Il est décédé à Shiraz vers 1292, probablement de causes naturelles à l'âge d'environ 82 ans.",
+  "shortDescriptionDe": "Saadi Shirazi war ein bedeutender persischer Dichter und Prosaautor des Mittelalters, bekannt für seine Werke 'Bustan' und 'Gulistan', die moralische und soziale Themen behandeln. Er verstarb um 1292 in Shiraz, vermutlich eines natürlichen Todes im Alter von etwa 82 Jahren.",
+  "shortDescriptionEs": "Saadi Shirazi fue un destacado poeta y prosista persa del periodo medieval, conocido por sus obras 'Bustan' y 'Gulistan' que exploran temas morales y sociales. Falleció en Shiraz alrededor de 1292, probablemente por causas naturales a la edad de aproximadamente 82 años.",
+  "shortDescriptionRu": "Саади Ширази был выдающимся персидским поэтом и прозаиком средневековья, известным своими произведениями 'Бустан' и 'Гулистан', посвящёнными моральным и социальным темам. Он скончался в Ширазе около 1292 года, вероятно, по естественным причинам в возрасте примерно 82 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saadi_Shirazi",
+    "https://www.britannica.com/biography/Sadi",
+    "https://www.poemist.com/saadi-shirazi/biography",
+    "https://www.findagrave.com/memorial/11871/saadi-shirazi"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q60429",  "Name": "Chandrasekhara Venkata Raman",  "BirthDate": "1888-11-07T00:00:00Z",  "DeathDate": "1970-11-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20CV%20Raman.JPG",  "SiteLinksCnt": 111,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"276727":{"pageid":276727,"ns":0,"title":"C. V. Raman","extract":"Sir Chandrasekhara Venkata Raman (; 7 November 1888 \u2013 21 November 1970) was an Indian physicist known for his work in the field of light scattering. Using a spectrograph that he developed, he and his student K. S. Krishnan discovered that when light traverses a transparent material, the deflected light changes its wavelength. This phenomenon, a hitherto unknown type of scattering of light, which they called modified scattering was subsequently termed the Raman effect or Raman scattering. In 1930, Raman received the Nobel Prize in Physics for this discovery and was the first Asian and the first non-White to receive a Nobel Prize in any branch of science.\nBorn to Tamil Brahmin parents, Raman was a precocious child, completing his secondary and higher secondary education from St Aloysius' Anglo-Indian High School at the age of 11 and 13, respectively. He topped the bachelor's degree examination of the University of Madras with honours in physics from Presidency College at age 16. His first research paper, on diffraction of light, was published in 1906 while he was still a graduate student. The next year he obtained a master's degree. He joined the Indian Finance Service in Calcutta as Assistant Accountant General at age 19. There he became acquainted with the Indian Association for the Cultivation of Science (IACS), the first research institute in India, which allowed him to carry out independent research and where he made his major contributions in acoustics and optics.\nIn 1917, he was appointed the first Palit Professor of Physics by Ashutosh Mukherjee at the Rajabazar Science College under the University of Calcutta. On his first trip to Europe, seeing the Mediterranean Sea motivated him to identify the prevailing explanation for the blue colour of the sea at the time, namely the reflected Rayleigh-scattered light from the sky, as being incorrect. He founded the Indian Journal of Physics in 1926. He moved to Bangalore in 1933 to become the first Indian director of the Indian Institute of Science. He founded the Indian Academy of Sciences the same year. He established the Raman Research Institute in 1948 where he worked to his last days.\nThe Raman effect was discovered on 28 February 1928. The day is celebrated annually by the Government of India as the National Science Day."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q60429")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q60429",
+  "isRealHuman": true,
+  "birthDate": "1888-11-07",
+  "deathDate": "1970-11-21",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and consistently reported across multiple authoritative sources, confirming that Sir C.V. Raman was 82 years old at the time of his death.",
+  "shortDescriptionEn": "Sir Chandrasekhara Venkata Raman was an Indian physicist renowned for discovering the Raman Effect, a phenomenon in light scattering. He was awarded the Nobel Prize in Physics in 1930, becoming the first Asian to receive a Nobel in science. Raman continued his research at the Raman Research Institute in Bangalore until his death from natural causes on November 21, 1970, at the age of 82.",
+  "shortDescriptionFr": "Sir Chandrasekhara Venkata Raman était un physicien indien célèbre pour sa découverte de l'effet Raman, un phénomène de diffusion de la lumière. Il a reçu le prix Nobel de physique en 1930, devenant ainsi le premier Asiatique à obtenir un Nobel en sciences. Raman a poursuivi ses recherches à l'Institut de recherche Raman à Bangalore jusqu'à sa mort de causes naturelles le 21 novembre 1970, à l'âge de 82 ans.",
+  "shortDescriptionDe": "Sir Chandrasekhara Venkata Raman war ein indischer Physiker, bekannt für die Entdeckung des Raman-Effekts, eines Phänomens der Lichtstreuung. 1930 erhielt er den Nobelpreis für Physik und war damit der erste Asiate, der einen Nobelpreis in den Naturwissenschaften erhielt. Raman forschte bis zu seinem natürlichen Tod am 21. November 1970 im Alter von 82 Jahren am Raman-Forschungsinstitut in Bangalore.",
+  "shortDescriptionEs": "Sir Chandrasekhara Venkata Raman fue un físico indio reconocido por descubrir el efecto Raman, un fenómeno en la dispersión de la luz. Recibió el Premio Nobel de Física en 1930, siendo el primer asiático en obtener un Nobel en ciencias. Raman continuó su investigación en el Instituto de Investigación Raman en Bangalore hasta su muerte por causas naturales el 21 de noviembre de 1970, a los 82 años.",
+  "shortDescriptionRu": "Сэр Чандрасекхара Венката Раман был индийским физиком, известным открытием эффекта Рамана — явления рассеяния света. В 1930 году он получил Нобелевскую премию по физике, став первым азиатом, удостоенным Нобеля в области науки. Раман продолжал исследования в Институте исследований Рамана в Бангалоре до своей смерти от естественных причин 21 ноября 1970 года в возрасте 82 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/C-V-Raman",
+    "https://en.wikipedia.org/wiki/C._V._Raman",
+    "https://www.ias.ac.in/About_IASc/History/Prof._C._V._Raman",
+    "https://currentaffairs.adda247.com/c-v-raman-biography/",
+    "https://byjus.com/free-ias-prep/this-day-in-history-nov21/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43182",  "Name": "Eratosthenes",  "BirthDate": "-0275-01-01T00:00:00Z",  "DeathDate": "-0193-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eratosthenes.jpg",  "SiteLinksCnt": 110,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"46117":{"pageid":46117,"ns":0,"title":"Eratosthenes","extract":"Eratosthenes of Cyrene (; Ancient Greek: \u1f18\u03c1\u03b1\u03c4\u03bf\u03c3\u03b8\u03ad\u03bd\u03b7\u03c2 [eratost\u02b0\u00e9n\u025b\u02d0s]; c. 276 BC \u2013 c.\u2009195/194 BC) was an Ancient Greek polymath: a mathematician, geographer, poet, astronomer, and music theorist. He was a man of learning, becoming the chief librarian at the Library of Alexandria. His work is comparable to what is now known as the study of geography, and he introduced some of the terminology still used today, even coining the terms geography and geographer.\nHe is best known for being the first person known to calculate the Earth's circumference, which he did by using the extensive survey results he could access in his role at the Library. His calculation was remarkably accurate (his error margin turned out to be less than 1%). He was the first to calculate Earth's axial tilt, which similarly proved to have remarkable accuracy. He created the first global projection of the world, incorporating parallels and meridians based on the available geographic knowledge of his era.\nEratosthenes was the founder of scientific chronology; he used Egyptian and Persian records to estimate the dates of the main events of the Trojan War, dating the sack of Troy to 1183 BC. In number theory, he introduced the sieve of Eratosthenes, an efficient method of identifying prime numbers and composite numbers.\nHe was a figure of influence in many fields who yearned to understand the complexities of the entire world. His devotees nicknamed him Pentathlos after the Olympians who were well rounded competitors, for he had proven himself to be knowledgeable in every area of learning. Yet, according to an entry in the Suda (a 10th-century encyclopedia), some critics scorned him, calling him Number 2 because he always came in second in all his endeavours.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43182")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43182",
+  "isRealHuman": true,
+  "birthDate": "-0276-01-01",
+  "deathDate": "-0194-01-01",
+  "ageAtDeath": 82,
+  "confidence": 95,
+  "confidenceExplained": "Multiple historical sources consistently report that Eratosthenes was born around 276 BC and died around 194 BC, indicating he lived to be approximately 82 years old.",
+  "shortDescriptionEn": "Eratosthenes of Cyrene was a Greek polymath known for calculating Earth's circumference and devising the Sieve of Eratosthenes. Serving as chief librarian at the Library of Alexandria, he made significant contributions to various fields. In his later years, after becoming blind, he reportedly ended his life by voluntary starvation around 194 BC at the age of 82.",
+  "shortDescriptionFr": "Ératosthène de Cyrène était un polymathe grec célèbre pour avoir calculé la circonférence de la Terre et inventé le crible d'Ératosthène. En tant que bibliothécaire en chef à la Bibliothèque d'Alexandrie, il a apporté des contributions majeures à plusieurs disciplines. Devenu aveugle dans ses dernières années, il serait mort de faim volontairement vers 194 av. J.-C. à l'âge de 82 ans.",
+  "shortDescriptionDe": "Eratosthenes von Kyrene war ein griechischer Universalgelehrter, bekannt für die Berechnung des Erdumfangs und das Sieb des Eratosthenes. Als Leiter der Bibliothek von Alexandria leistete er bedeutende Beiträge in verschiedenen Bereichen. In seinen späteren Jahren, nach dem Erblinden, soll er sich durch freiwilliges Verhungern um 194 v. Chr. im Alter von 82 Jahren das Leben genommen haben.",
+  "shortDescriptionEs": "Eratóstenes de Cirene fue un polímata griego conocido por calcular la circunferencia de la Tierra y por idear el Criba de Eratóstenes. Como bibliotecario jefe en la Biblioteca de Alejandría, realizó importantes contribuciones en diversas disciplinas. En sus últimos años, tras quedarse ciego, se dice que murió por inanición voluntaria alrededor del 194 a.C. a la edad de 82 años.",
+  "shortDescriptionRu": "Эратосфен из Кирены был греческим ученым, известным расчетом окружности Земли и созданием решета Эратосфена. Будучи главным библиотекарем Александрийской библиотеки, он внес значительный вклад в различные области. В последние годы жизни, ослепнув, он, по сообщениям, умер от добровольного голодания около 194 года до н.э. в возрасте 82 лет.",
+  "sources": [
+    "https://www.britannica.com/biography/Eratosthenes",
+    "https://en.wikipedia.org/wiki/Eratosthenes",
+    "https://famous-mathematicians.org/eratosthenes/",
+    "https://www.thefamouspeople.com/profiles/eratosthenes-6505.php"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q134982",  "Name": "David Lloyd George",  "BirthDate": "1863-01-17T00:00:00Z",  "DeathDate": "1945-03-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Lloyd%20George.jpg",  "SiteLinksCnt": 108,  "Age": 82}
+{"batchcomplete":"","query":{"pages":{"46836":{"pageid":46836,"ns":0,"title":"David Lloyd George","extract":"David Lloyd George, 1st Earl Lloyd-George of Dwyfor (17 January 1863 \u2013 26 March 1945) was Prime Minister of the United Kingdom from 1916 to 1922. A Liberal Party politician from Wales, he was known for leading the United Kingdom during the First World War, for social-reform policies, for his role in the Paris Peace Conference, and for negotiating the establishment of the Irish Free State.\nBorn in Chorlton-on-Medlock, Manchester, and raised in Llanystumdwy, Lloyd George gained a reputation as an orator and proponent of a Welsh blend of radical Liberal ideas that included support for Welsh devolution, the disestablishment of the Church of England in Wales, equality for labourers and tenant farmers, and reform of land ownership. He won an 1890 by-election to become the Member of Parliament for Caernarvon Boroughs, and was continuously re-elected to the role for 55 years. He served in Henry Campbell-Bannerman's cabinet from 1905. After H. H. Asquith succeeded to the premiership in 1908, Lloyd George replaced him as Chancellor of the Exchequer. To fund extensive welfare reforms, he proposed taxes on land ownership and high incomes in the 1909 People's Budget, which the Conservative-dominated House of Lords rejected. The resulting constitutional crisis was only resolved after elections in 1910 and passage of the Parliament Act 1911. His budget was enacted in 1910, with the National Insurance Act 1911 and other measures helping to establish the modern welfare state. He was embroiled in the 1913 Marconi scandal but remained in office and secured the disestablishment of the Church of England in Wales.\nIn 1915, Lloyd George became Minister of Munitions and expanded artillery shell production for the war. In 1916, he was appointed Secretary of State for War but was frustrated by his limited power and clashes with Army commanders over strategy. Asquith proved ineffective as prime minister and was replaced by Lloyd George in December 1916.  He centralised authority by creating a smaller war cabinet. To combat food shortages caused by u-boats, he implemented the convoy system, established rationing, and stimulated farming. After supporting the disastrous French Nivelle Offensive in 1917, he had to reluctantly approve Field Marshal Haig's plans for the Battle of Passchendaele, which resulted in huge casualties with little strategic benefit. Against British military commanders, he was finally able to see the Allies brought under one command in March 1918. The war effort turned in Allied favour and was won in November. Following the December 1918 \"Coupon\" election, he and the Conservatives maintained their coalition with popular support.\nLloyd George was a leading proponent at the Paris Peace Conference of 1919, but the situation in Ireland worsened, erupting into the Irish War of Independence, which lasted until Lloyd George negotiated independence for the Irish Free State in 1921. At home, he initiated education and housing reforms, but trade-union militancy rose to record levels, the economy became depressed in 1920 and unemployment rose; spending cuts followed in 1921\u201322, and in 1922 he became embroiled in a scandal over the sale of honours and the Chanak Crisis. The Carlton Club meeting decided the Conservatives should end the coalition and contest the next election alone. Lloyd George resigned as prime minister, but continued as the leader of a Liberal faction. After an awkward reunion with Asquith's faction in 1923, Lloyd George led the weak Liberal Party from 1926 to 1931. He proposed innovative schemes for public works and other reforms, but made only modest gains in the 1929 election. After 1931, he was a mistrusted figure heading a small rump of breakaway Liberals opposed to the National Government. In 1940, he refused to serve in Churchill's War Cabinet. He was elevated to the peerage in 1945 but died before he could take his seat in the House of Lords."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q134982")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q134982",
+  "isRealHuman": true,
+  "birthDate": "1863-01-17",
+  "deathDate": "1945-03-26",
+  "ageAtDeath": 82,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented in historical records, confirming the age at death as 82.",
+  "shortDescriptionEn": "David Lloyd George (1863–1945) was a British Liberal politician who served as Prime Minister from 1916 to 1922, leading the UK through World War I and initiating significant social reforms. He died of cancer at age 82 at his home in Tŷ Newydd, Wales, and was buried beside the River Dwyfor.",
+  "shortDescriptionFr": "David Lloyd George (1863–1945) était un homme politique libéral britannique, Premier ministre de 1916 à 1922, ayant dirigé le Royaume-Uni pendant la Première Guerre mondiale et lancé d'importantes réformes sociales. Il est décédé d'un cancer à 82 ans à son domicile de Tŷ Newydd, au Pays de Galles, et a été enterré près de la rivière Dwyfor.",
+  "shortDescriptionDe": "David Lloyd George (1863–1945) war ein britischer liberaler Politiker und Premierminister von 1916 bis 1922, der das Vereinigte Königreich durch den Ersten Weltkrieg führte und bedeutende Sozialreformen einleitete. Er starb im Alter von 82 Jahren an Krebs in seinem Haus in Tŷ Newydd, Wales, und wurde am Fluss Dwyfor beigesetzt.",
+  "shortDescriptionEs": "David Lloyd George (1863–1945) fue un político liberal británico que sirvió como Primer Ministro de 1916 a 1922, liderando al Reino Unido durante la Primera Guerra Mundial e iniciando importantes reformas sociales. Murió de cáncer a los 82 años en su hogar en Tŷ Newydd, Gales, y fue enterrado junto al río Dwyfor.",
+  "shortDescriptionRu": "Дэвид Ллойд Джордж (1863–1945) — британский либеральный политик, занимавший пост премьер-министра с 1916 по 1922 год, руководивший Великобританией во время Первой мировой войны и инициировавший значительные социальные реформы. Он умер от рака в возрасте 82 лет в своем доме в Ти-Ньюидде, Уэльс, и был похоронен рядом с рекой Двифор.",
+  "sources": [
+    "https://www.britannica.com/biography/David-Lloyd-George",
+    "https://en.wikipedia.org/wiki/David_Lloyd_George",
+    "https://www.library.wales/discover-learn/digital-exhibitions/david-lloyd-george/the-life-and-work-of-david-lloyd-george/david-lloyd-georges-death-and-funeral"
+  ]
+}
