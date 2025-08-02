@@ -1,0 +1,53 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9181",  "Name": "Abraham",  "BirthDate": "-1812-01-01T00:00:00Z",  "DeathDate": "-1637-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Harmensz.%20van%20Rijn%20035.jpg",  "SiteLinksCnt": 184,  "Age": 175}
+{"batchcomplete":"","query":{"pages":{"1436":{"pageid":1436,"ns":0,"title":"Abraham","extract":"Abraham (originally Abram) is the common Hebrew patriarch of the Abrahamic religions, including Judaism, Christianity, and Islam. In Judaism, he is the founding father of the special relationship between the Jews and God; in Christianity, he is the spiritual progenitor of all believers, whether Jewish or non-Jewish; and in Islam, he is a link in the chain of Islamic prophets that begins with Adam and culminates in Muhammad. As the namesake of the Abrahamic religions, Abraham is also revered in other Abrahamic religions, such as the Bah\u00e1\u02bc\u00ed Faith and the Druze faith.\nThe story of the life of Abraham, as told in the narrative of the Book of Genesis in the Hebrew Bible, revolves around the themes of posterity and land. He is said to have been called by God to leave the house of his father Terah and settle in the land of Canaan, which God now promises to Abraham and his progeny. This promise is subsequently inherited by Isaac, Abraham's son by his wife Sarah, while Isaac's half-brother Ishmael is also promised that he will be the founder of a great nation. Abraham purchases a tomb (the Cave of the Patriarchs) at Hebron to be Sarah's grave, thus establishing his right to the land; and, in the second generation, his heir Isaac is married to a woman from his own kin to earn his parents' approval. Abraham later marries Keturah and has six more sons; but, on his death, when he is buried beside Sarah, it is Isaac who receives \"all Abraham's goods\" while the other sons receive only \"gifts\".\nMost scholars view the patriarchal age, along with the Exodus and the period of the biblical judges, as a late literary construct that does not relate to any particular historical era, and after a century of exhaustive archaeological investigation, no evidence has been found for a historical Abraham. It is largely concluded that the Torah, the series of books that includes Genesis, was composed during the early Persian period, c.\u2009500 BC, as a result of tensions between Jewish landowners who had stayed in Judah during the Babylonian captivity and traced their right to the land through their \"father Abraham\", and the returning exiles who based their counterclaim on Moses and the Exodus tradition of the Israelites."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9181")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q9181",
+  "isRealHuman": false,
+  "birthDate": "-1812-01-01",
+  "deathDate": "-1637-01-01",
+  "ageAtDeath": 175,
+  "confidence": 10,
+  "confidenceExplained": "Based entirely on biblical tradition with no independent historical corroboration, actual lifespan is purely legendary.",
+  "shortDescriptionEn": "Abraham is the patriarch revered in Judaism, Christianity and Islam; the Bible says he died at the age of 175 after a long life in the land of Canaan, buried in Hebron.",
+  "shortDescriptionFr": "Abraham est le patriarche vénéré dans le judaïsme, le christianisme et l’islam ; selon la Bible, il mourut à l’âge de 175 ans après une longue vie en Canaan, enterré à Hébron.",
+  "shortDescriptionDe": "Abraham ist der Patriarch, der im Judentum, Christentum und Islam verehrt wird; laut Bibel starb er im Alter von 175 Jahren nach einem langen Leben in Kanaan und wurde in Hebron begraben.",
+  "shortDescriptionEs": "Abraham es el patriarca venerado en judaísmo, cristianismo e islam; según la Biblia, murió a los 175 años tras una larga vida en Canaán, y fue enterrado en Hebrón.",
+  "shortDescriptionRu": "Авраам — патриарх, почитаемый в иудаизме, христианстве и исламе; согласно Библии, он умер в возрасте 175 лет после долгой жизни в Ханаане и был похоронен в Хевроне.",
+  "sources": [
+    "Bible: Genesis 25:7‑8",
+    "GotQuestions.org “How old was Abraham when he died?”",
+    "Wikipedia “Abraham” article",
+    "Scholarly consensus on historicity (Thompson, Van Seters, etc.)"
+  ]
+}
+
+
+-----

@@ -1,0 +1,988 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5878",  "Name": "Gabriel García Márquez",  "BirthDate": "1927-03-06T00:00:00Z",  "DeathDate": "2014-04-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gabriel%20Garcia%20Marquez.jpg",  "SiteLinksCnt": 201,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"27827075":{"pageid":27827075,"ns":0,"title":"Gabriel Garc\u00eda M\u00e1rquez","extract":"Gabriel Jos\u00e9 Garc\u00eda M\u00e1rquez (Latin American Spanish: [\u0261a\u02c8\u03b2\u027ejel \u0263a\u027e\u02c8si.a \u02c8ma\u027e.kes] ; 6 March 1927 \u2013 17 April 2014) was a Colombian writer and journalist, known affectionately as Gabo ([\u02c8\u0261a\u03b2o]) or Gabito ([\u0261a\u02c8\u03b2ito]) throughout Latin America. Considered one of the most significant authors of the 20th century, particularly in the Spanish language, he was awarded the 1972 Neustadt International Prize for Literature and the 1982 Nobel Prize in Literature. He pursued a self-directed education that resulted in leaving law school for a career in journalism. From early on he showed no inhibitions in his criticism of Colombian and foreign politics. In 1958, he married Mercedes Barcha Pardo; they had two sons, Rodrigo and Gonzalo.\nGarc\u00eda M\u00e1rquez started as a journalist and wrote many acclaimed non-fiction works and short stories. He is best known for his novels, such as One Hundred Years of Solitude (1967) which sold over fifty million copies, Chronicle of a Death Foretold (1981), and Love in the Time of Cholera (1985). His works have achieved significant critical acclaim and widespread commercial success, most notably for popularizing a literary style known as magic realism, which uses magical elements and events in otherwise ordinary and realistic situations. Some of his works are set in the fictional village of Macondo (mainly inspired by his birthplace, Aracataca), and most of them explore the theme of solitude. He is the most-translated Spanish-language author.\n\"He was awarded the Nobel Prize for Literature in 1982, mostly for his masterpiece Cien a\u00f1os de soledad (1967; One Hundred Years of Solitude). He was the fourth Latin American to be so honored, having been preceded by Chilean poets Gabriela Mistral in 1945 and Pablo Neruda in 1971 and by Guatemalan novelist Miguel \u00c1ngel Asturias in 1967. With Jorge Luis Borges, Garc\u00eda M\u00e1rquez is the best-known Latin American writer in history.\"\nUpon Garc\u00eda M\u00e1rquez's death in April 2014, Juan Manuel Santos, the president of Colombia, called him \"the greatest Colombian who ever lived.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5878")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5878",
+  "isRealHuman": true,
+  "birthDate": "1927-03-06",
+  "deathDate": "2014-04-17",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Multiple credible sources agree on these exact birth and death dates, and the simple calculation from those yields age 87.",
+  "shortDescriptionEn": "Gabriel García Márquez (born 1927‑03‑06 – died 2014‑04‑17) was a Colombian novelist, journalist and Nobel laureate famous for One Hundred Years of Solitude and magical realism. He died in Mexico City at age 87 after declining health including lung infections.",
+  "shortDescriptionFr": "Gabriel García Márquez (né le 06 mars 1927 – décédé le 17 avril 2014) était un romancier et journaliste colombien, lauréat du prix Nobel, célèbre pour Cent ans de solitude et le réalisme magique. Il est mort à Mexico à 87 ans après des problèmes de santé, notamment des infections pulmonaires.",
+  "shortDescriptionDe": "Gabriel García Márquez (geboren 06. März 1927 – gestorben 17. April 2014) war ein kolumbianischer Schriftsteller und Journalist, Nobelpreisträger, berühmt für Hundert Jahre Einsamkeit und magischen Realismus. Er starb in Mexiko‑Stadt im Alter von 87 Jahren nach gesundheitlichen Problemen wie Lungeninfektionen.",
+  "shortDescriptionEs": "Gabriel García Márquez (nacido el 06‑03‑1927, fallecido el 17‑04‑2014) fue un novelista y periodista colombiano, premio Nobel, conocido por Cien años de soledad y el realismo mágico. Murió en Ciudad de México a los 87 años tras problemas de salud como infecciones pulmonares.",
+  "shortDescriptionRu": "Габриэль Гарсиа Маркес (род. 06.03.1927 — умер 17.04.2014) — колумбийский писатель и журналист, лауреат Нобелевской премии, автор «Сто лет одиночества» и магического реализма. Умер в Мехико в возрасте 87 лет после проблем со здоровьем, включая легочные инфекции.",
+  "sources": [
+    "turn0search0",
+    "turn0search2",
+    "turn0search9",
+    "turn0search3",
+    "turn0search16"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7416",  "Name": "Margaret Thatcher",  "BirthDate": "1925-10-13T00:00:00Z",  "DeathDate": "2013-04-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Margaret%20Thatcher%20stock%20portrait%20%28cropped%29.jpg",  "SiteLinksCnt": 200,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"19831":{"pageid":19831,"ns":0,"title":"Margaret Thatcher","extract":"Margaret Hilda Thatcher, Baroness Thatcher (n\u00e9e Roberts; 13 October 1925 \u2013 8 April 2013), was a British stateswoman and Conservative politician who served as Prime Minister of the United Kingdom from 1979 to 1990 and Leader of the Conservative Party from 1975 to 1990. She was the longest-serving British prime minister of the 20th century and the first woman to hold the position. As prime minister, she implemented policies that came to be known as Thatcherism. A Soviet journalist dubbed her the \"Iron Lady\", a nickname that became associated with her uncompromising politics and leadership style.\nThatcher studied chemistry at Somerville College, Oxford, and worked briefly as a research chemist before becoming a barrister. She was elected Member of Parliament for Finchley in 1959. Edward Heath appointed her secretary of state for education and science in his 1970\u20131974 government. In 1975, she defeated Heath in the Conservative Party leadership election to become leader of the opposition, the first woman to lead a major political party in the UK.\nOn becoming prime minister after winning the 1979 general election, Thatcher introduced a series of economic policies intended to reverse high inflation and Britain's struggles in the wake of the Winter of Discontent and an oncoming recession. Her political philosophy and economic policies emphasised greater individual liberty, the privatisation of state-owned companies, and reducing the power and influence of trade unions. Her popularity in her first years in office waned amid the recession and rising unemployment. Victory in the 1982 Falklands War and the recovering economy brought a resurgence of support, resulting in her landslide re-election in 1983. She survived an assassination attempt by the Provisional IRA in the 1984 Brighton hotel bombing and achieved a political victory against the National Union of Mineworkers in the 1984\u201385 miners' strike. In 1986, Thatcher oversaw the deregulation of UK financial markets, leading to an economic boom, in what came to be known as the Big Bang.\nThatcher was re-elected for a third term with another landslide in 1987, but her subsequent support for the Community Charge (also known as the \"poll tax\") was widely unpopular, and her increasingly Eurosceptic views on the European Community were not shared by others in her cabinet. She resigned as prime minister and party leader in 1990, after a challenge was launched to her leadership, and was succeeded by John Major, her chancellor of the Exchequer. After retiring from the Commons in 1992, she was given a life peerage as Baroness Thatcher (of Kesteven in the County of Lincolnshire) which entitled her to sit in the House of Lords. In 2013, she died of a stroke at the Ritz Hotel, London, at the age of 87.\nA polarising figure in British politics, Thatcher is nonetheless viewed favourably in historical rankings and public opinion of British prime ministers. Her tenure constituted a realignment towards neoliberal policies in Britain; the complex legacy attributed to this shift continues to be debated into the 21st century."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7416")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7416",
+  "isRealHuman": true,
+  "birthDate": "1925-10-13",
+  "deathDate": "2013-04-08",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are publicly documented and cross-verified across multiple reputable sources including Wikipedia and historical archives. The age at death is a straightforward calculation with no ambiguity.",
+  "shortDescriptionEn": "Margaret Thatcher (1925–2013) was a British stateswoman and the first female Prime Minister of the UK, serving from 1979 to 1990. Known for her conservative policies and strong leadership style, she passed away from a stroke at the Ritz Hotel in London at the age of 87.",
+  "shortDescriptionFr": "Margaret Thatcher (1925–2013) était une femme d'État britannique et la première femme Premier ministre du Royaume-Uni, en poste de 1979 à 1990. Réputée pour sa politique conservatrice, elle est décédée d'un AVC à l'hôtel Ritz à Londres à l'âge de 87 ans.",
+  "shortDescriptionDe": "Margaret Thatcher (1925–2013) war eine britische Staatsfrau und die erste Premierministerin des Vereinigten Königreichs, von 1979 bis 1990 im Amt. Bekannt für ihren konservativen Kurs, starb sie im Alter von 87 Jahren an einem Schlaganfall im Ritz Hotel in London.",
+  "shortDescriptionEs": "Margaret Thatcher (1925–2013) fue una estadista británica y la primera mujer en ocupar el cargo de Primera Ministra del Reino Unido, desde 1979 hasta 1990. Falleció de un derrame cerebral en el Hotel Ritz de Londres a los 87 años.",
+  "shortDescriptionRu": "Маргарет Тэтчер (1925–2013) — британский государственный деятель, первая женщина-премьер-министр Великобритании (1979–1990). Известна своей жёсткой политикой, умерла от инсульта в отеле Ritz в Лондоне в возрасте 87 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Margaret_Thatcher",
+    "https://www.britannica.com/biography/Margaret-Thatcher",
+    "https://www.bbc.com/news/uk-politics-22067155"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q30547",  "Name": "Mother Teresa",  "BirthDate": "1910-08-26T00:00:00Z",  "DeathDate": "1997-09-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/MotherTeresa%20090.jpg",  "SiteLinksCnt": 192,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"347105":{"pageid":347105,"ns":0,"title":"Mother Teresa","extract":"Mary Teresa Bojaxhiu (born Anjez\u00eb Gonxhe Bojaxhiu, Albanian: [a\u02c8\u0272\u025bz\u0259 \u02c8\u0261\u0254nd\u0292\u025b b\u0254ja\u02c8d\u0292i.u]; 26 August 1910 \u2013 5 September 1997), better known as Mother Teresa or Saint Mother Teresa, was an Albanian-Indian Catholic nun, founder of the Missionaries of Charity and is a Catholic saint. Born in Skopje, then part of the Ottoman Empire, she was raised in a devoutly Catholic family. At the age of 18, she moved to Ireland to join the Sisters of Loreto and later to India, where she lived most of her life and carried out her missionary work. On 4 September 2016, she was canonised by the Catholic Church as Saint Teresa of Calcutta. The anniversary of her death, 5 September, is now observed as her feast day.\nMother Teresa founded the Missionaries of Charity, a religious congregation that was initially dedicated to serving \"the poorest of the poor\" in the slums of Calcutta. Over the decades, the congregation grew to operate in over 133 countries, as of 2012, with more than 4,500 nuns managing homes for those dying from HIV/AIDS, leprosy, and tuberculosis, as well as running soup kitchens, dispensaries, mobile clinics, orphanages, and schools. Members of the order take vows of chastity, poverty, and obedience and also profess a fourth vow: to give \"wholehearted free service to the poorest of the poor.\"\nMother Teresa received several honours, including the 1962 Ramon Magsaysay Peace Prize and the 1979 Nobel Peace Prize. Her life and work have inspired books, documentaries, and films. Her authorized biography, written by Navin Chawla, was published in 1992, and on 6 September 2017, she was named a co-patron of the Roman Catholic Archdiocese of Calcutta alongside St Francis Xavier. However, she was also a controversial figure, drawing criticism for her staunch opposition to abortion, divorce and contraception, as well as the poor conditions and lack of medical care or pain relief in her houses for the dying."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q30547")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q30547",
+  "isRealHuman": true,
+  "birthDate": "1910-08-26",
+  "deathDate": "1997-09-05",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are precisely documented in historical and public records, and the calculated age of 87 is confirmed by multiple biographical sources.",
+  "shortDescriptionEn": "Mother Teresa (born Anjezë Gonxhe Bojaxhiu) was an Albanian-Indian Catholic nun and missionary, founder of the Missionaries of Charity. She spent most of her life serving the poor in Calcutta, India. She died at the age of 87 on 5 September 1997, after years of declining health.",
+  "shortDescriptionFr": "Mère Teresa (née Anjezë Gonxhe Bojaxhiu) était une religieuse et missionnaire catholique albanaise-indienne, fondatrice des Missionnaires de la Charité. Elle a consacré sa vie aux pauvres à Calcutta. Elle est décédée à 87 ans le 5 septembre 1997, après une longue période de problèmes de santé.",
+  "shortDescriptionDe": "Mutter Teresa (geboren als Anjezë Gonxhe Bojaxhiu) war eine albanisch-indische katholische Nonne und Missionarin, Gründerin der Missionarinnen der Nächstenliebe. Sie starb am 5. September 1997 im Alter von 87 Jahren nach gesundheitlichen Komplikationen.",
+  "shortDescriptionEs": "Madre Teresa (Anjezë Gonxhe Bojaxhiu) fue una monja y misionera católica albanesa-india, fundadora de las Misioneras de la Caridad. Dedicó su vida a los pobres en Calcuta. Falleció el 5 de septiembre de 1997 a los 87 años, tras problemas de salud prolongados.",
+  "shortDescriptionRu": "Мать Тереза (в миру Аньеза Гонжа Бояджиу) — албанско-индийская католическая монахиня и миссионерка, основательница Миссионерок любви. Умерла 5 сентября 1997 года в возрасте 87 лет после продолжительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mother_Teresa",
+    "https://www.wikidata.org/wiki/Q30547",
+    "https://www.britannica.com/biography/Mother-Teresa",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/MotherTeresa%20090.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7317",  "Name": "Giuseppe Verdi",  "BirthDate": "1813-10-10T00:00:00Z",  "DeathDate": "1901-01-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Verdi%20by%20Giovanni%20Boldini.jpg",  "SiteLinksCnt": 169,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"12958":{"pageid":12958,"ns":0,"title":"Giuseppe Verdi","extract":"Giuseppe Fortunino Francesco Verdi ( VAIR-dee; Italian: [d\u0292u\u02c8z\u025bppe \u02c8verdi]; 9 or 10 October 1813 \u2013 27 January 1901) was an Italian composer best known for his operas. He was born near Busseto, a small town in the province of Parma, to a family of moderate means, receiving a musical education with the help of a local patron, Antonio Barezzi. Verdi came to dominate the Italian opera scene after the era of Gioachino Rossini, Vincenzo Bellini, and Gaetano Donizetti, whose works significantly influenced him.\nIn his early operas, Verdi demonstrated sympathy with the Risorgimento movement which sought the unification of Italy. He also served briefly as an elected politician. The chorus \"Va, pensiero\" from his early opera Nabucco (1842), and similar choruses in later operas, were much in the spirit of the unification movement, and the composer himself became esteemed as a representative of these ideals. An intensely private person, Verdi did not seek to ingratiate himself with popular movements. As he became professionally successful, he was able to reduce his operatic workload and sought to establish himself as a landowner in his native region. He found further fame with the three peaks of his 'middle period': Rigoletto (1851), Il trovatore and La traviata (both 1853). He surprised the musical world by returning, after his success with the opera Aida (1871), with three late masterpieces: his Requiem (1874), and the operas Otello (1887) and Falstaff (1893).\nVerdi's operas remain among the most popular in the repertory. In 2013, the bicentenary of his birth was widely celebrated around the world with television and radio broadcasts and live performances."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7317")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7317",
+  "isRealHuman": true,
+  "birthDate": "1813-10-10",
+  "deathDate": "1901-01-27",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Multiple authoritative biographies agree on birth in October 1813 (9 or 10) and death 27 January 1901, all reporting age 87.",
+  "shortDescriptionEn": "Italian composer Giuseppe Fortunino Francesco Verdi (born near Busseto on 9 or 10 October 1813, died in Milan on 27 January 1901) was one of the greatest masters of 19th‑century opera; he died aged 87 after suffering a stroke and passing away in his suite at the Grand Hotel in Milan.",
+  "shortDescriptionFr": "Compositeur italien Giuseppe Fortunino Francesco Verdi (né près de Busseto le 9 ou 10 octobre 1813, mort à Milan le 27 janvier 1901) fut l’un des plus grands maîtres de l’opéra du XIXe siècle ; il mourut à 87 ans après un accident vasculaire cérébral dans sa suite du Grand Hôtel de Milan.",
+  "shortDescriptionDe": "Der italienische Komponist Giuseppe Fortunino Francesco Verdi (geboren nahe Busseto am 9. oder 10. Oktober 1813, gestorben in Mailand am 27. Januar 1901) zählt zu den größten Opernmeistern des 19. Jahrhunderts. Er starb im Alter von 87 Jahren in seiner Suite im Grand Hotel in Mailand nach einem Schlaganfall.",
+  "shortDescriptionEs": "El compositor italiano Giuseppe Fortunino Francesco Verdi (nacido cerca de Busseto el 9 o 10 de octubre de 1813, fallecido en Milán el 27 de enero de 1901) fue uno de los más grandes maestros de la ópera del siglo XIX; murió a los 87 años tras sufrir un derrame cerebral en su suite del Gran Hotel en Milán.",
+  "shortDescriptionRu": "Итальянский композитор Джузеппе Фортунатино Франческо Верди (родился близ Буссето 9 или 10 октября 1813, умер в Милане 27 января 1901) был одним из величайших мастеров оперы XIX века; он скончался в возрасте 87 лет после инсульта в своей гостиничной комнате в Милане.",
+  "sources": [
+    "Wikipedia article on Giuseppe Verdi",
+    "Encyclopaedia Britannica biography",
+    "Find a Grave memorial page",
+    "History Today obituary article",
+    "Italy On This Day report",
+    "Casa Verdi biography site"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q38203",  "Name": "Helen Keller",  "BirthDate": "1880-06-27T00:00:00Z",  "DeathDate": "1968-06-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Helen%20Keller%20circa%201920%20-%20restored.jpg",  "SiteLinksCnt": 158,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"14254":{"pageid":14254,"ns":0,"title":"Helen Keller","extract":"Helen Adams Keller (June 27, 1880 \u2013 June 1, 1968) was an American author, disability rights advocate, political activist and lecturer. Born in West Tuscumbia, Alabama, she lost her sight and her hearing after a bout of illness when she was 19 months old. She then communicated primarily using home signs until the age of seven, when she met her first teacher and life-long companion Anne Sullivan. Sullivan taught Keller language, including reading and writing. After an education at both specialist and mainstream schools, Keller attended Radcliffe College of Harvard University and became the first deafblind person in the United States to earn a Bachelor of Arts degree.\nKeller was also a prolific author, writing 14 books and hundreds of speeches and essays on topics ranging from animals to Mahatma Gandhi. Keller campaigned for those with disabilities and for women's suffrage, labor rights, and world peace. In 1909, she joined the Socialist Party of America (SPA). She was a founding member of the American Civil Liberties Union (ACLU).\nKeller's autobiography, The Story of My Life (1903), publicized her education and life with Sullivan. It was adapted as a play by William Gibson, later adapted as a film under the same title, The Miracle Worker. Her birthplace has been designated and preserved as a National Historic Landmark. Since 1954, it has been operated as a house museum, and sponsors an annual \"Helen Keller Day\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q38203")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q38203",
+  "isRealHuman": true,
+  "birthDate": "1880-06-27",
+  "deathDate": "1968-06-01",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Birth‑ and death‑dates are well‑documented and cross‑checked by multiple authoritative biography and history sources.",
+  "shortDescriptionEn": "Helen Adams Keller (1880‑06‑27 to 1968‑06‑01) was an American author, political activist and lecturer who, despite losing sight and hearing at 19 months old, became the first deaf‑blind person in the U.S. to earn a Bachelor of Arts degree, wrote extensively, and campaigned for disability rights, women’s suffrage, labor rights and world peace; she died at age 87 after a long life of advocacy.",
+  "shortDescriptionFr": "Helen Adams Keller (27 juin 1880‑1er juin 1968) était une auteure américaine, militante politique et conférencière qui, malgré sa surdité et sa cécité dès 19 mois, fut la première personne sourde‑aveugle aux États‑Unis à obtenir un baccalauréat, écrivit beaucoup et milita pour les droits des personnes handicapées, le suffrage féminin, les droits des travailleurs et la paix mondiale ; elle est morte à 87 ans après une longue vie d’engagement.",
+  "shortDescriptionDe": "Helen Adams Keller (27. Juni 1880–1. Juni 1968) war eine amerikanische Autorin, politisch aktive Fürsprecherin und Vortragende, die trotz ihres Wachhörigkeits‑ und Sehverlusts mit 19 Monaten die erste taubblinde Person in den USA war, die einen BA‑Abschluss erwarb. Sie schrieb viel und setzte sich für Behindertenrechte, Frauenwahlrecht, Arbeiterrechte und Weltfrieden ein; sie starb im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Helen Adams Keller (27 de junio de 1880–1 de junio de 1968) fue una escritora, activista política y conferenciante estadounidense que, tras perder la vista y el oído a los 19 meses, se convirtió en la primera persona sordociega en EE. UU. en obtener un título de Bachelor of Arts. Escribió extensamente y luchó por los derechos de las personas con discapacidad, el sufragio femenino, los derechos laborales y la paz mundial; murió a los 87 años tras una larga vida de activismo.",
+  "shortDescriptionRu": "Хелен Адамс Келлер (27 июня 1880–1 июня 1968) — американская писательница, политическая активистка и лектор, которая, несмотря на потерю зрения и слуха в возрасте 19 месяцев, стала первой в США человеком с глухотой и слепотой, получившим степень бакалавра искусств. Она написала множество книг, участвовала в борьбе за права инвалидов, избирательные права женщин, права трудящихся и мир во всём мире; умерла в возрасте 87 лет.",
+  "sources": [
+    "turn0search0",
+    "turn0search1",
+    "turn0search38",
+    "turn0search11",
+    "turn1search12"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34479",  "Name": "Hirohito",  "BirthDate": "1901-04-29T00:00:00Z",  "DeathDate": "1989-01-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hirohito%20in%20dress%20uniform.jpg",  "SiteLinksCnt": 152,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"10287":{"pageid":10287,"ns":0,"title":"Hirohito","extract":"Hirohito (29 April 1901 \u2013 7 January 1989), posthumously honored as Emperor Sh\u014dwa, was the 124th emperor of Japan according to the traditional order of succession, from 25 December 1926 until his death in 1989. He remains Japan's longest-reigning emperor as well as one of the world's longest-reigning monarchs. As emperor during the Sh\u014dwa era, Hirohito oversaw the rise of Japanese militarism, Japan's expansionism in Asia, the outbreak of the Second Sino-Japanese War and World War II, and the postwar Japanese economic miracle.\nHirohito was born during the reign of his paternal grandfather, Emperor Meiji, as the first child of the Crown Prince Yoshihito and Crown Princess Sadako (later Emperor Taish\u014d and Empress Teimei). When Emperor Meiji died in 1912, Hirohito's father ascended the throne, and Hirohito was proclaimed crown prince and heir apparent in 1916. In 1921, he made an official visit to Great Britain and Western Europe, marking the first time a Japanese crown prince traveled abroad. Owing to his father's ill health, Hirohito became his regent that year. In 1924, Hirohito married Princess Nagako Kuni, and they had seven children. He became emperor upon his father's death in 1926.\nAs Japan's head of state, Emperor Hirohito presided over the rise of militarism in Japanese politics. In 1931, he made no objection when Japan's Kwantung Army staged the Mukden incident as a pretext for its invasion of Manchuria. Following the onset of the Second Sino-Japanese War in 1937, tensions steadily grew between Japan and the United States. Once Hirohito formally sanctioned his government's decision to go to war against the U.S. and its allies on 1 December 1941, the Pacific War began one week later with a Japanese attack on Pearl Harbor as well as on other U.S. and British colonies in the region. After atomic bombs were dropped on Japan and the Soviet Union invaded Japanese-occupied Manchuria, Hirohito called upon his country's forces to surrender in a radio broadcast on 15 August 1945. The extent of his involvement in military decision-making and wartime culpability remain subjects of historical debate.\nFollowing the surrender of Japan, Emperor Hirohito was not prosecuted for war crimes at the Tokyo War Crimes Tribunal even though the Japanese had waged war in his name. The head of the Allied occupation of the country, Douglas MacArthur, believed that a cooperative emperor would facilitate a peaceful occupation and other U.S. postwar objectives. MacArthur therefore excluded any evidence from the tribunal which could have incriminated Hirohito or other members of the royal family. In 1946, Hirohito was pressured by the Allies into renouncing his divinity. Under Japan's new constitution drafted by U.S. officials, his role as emperor was redefined in 1947 as \"the symbol of the State and of the unity of the people\". Upon his death in January 1989, he was succeeded by his eldest son, Akihito."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34479")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q34479",
+  "isRealHuman": true,
+  "birthDate": "1901-04-29",
+  "deathDate": "1989-01-07",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Birth and death dates are well‑documented in multiple reliable sources, and the age is straightforward to compute.",
+  "shortDescriptionEn": "Hirohito (Emperor Shōwa) was the 124th Emperor of Japan, reigning from 1926 until his death. He presided over Japan during World War II and its aftermath; he died of intestinal (duodenum) cancer in January 1989 at the age of 87.",
+  "shortDescriptionFr": "Hirohito (Empereur Shōwa) fut le 124ᵉ empereur du Japon, régnant de 1926 jusqu’à sa mort. Il dirigea le Japon durant la Seconde Guerre mondiale et son après‑guerre ; il est décédé d’un cancer de l’intestin en janvier 1989 à l’âge de 87 ans.",
+  "shortDescriptionDe": "Hirohito (Kaiser Shōwa) war der 124. Tennō von Japan und regierte von 1926 bis zu seinem Tod. Er führte Japan im Zweiten Weltkrieg und durch die Nachkriegszeit; er starb im Januar 1989 an Darmkrebs im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Hirohito (Emperador Shōwa) fue el 124.º emperador de Japón, reinando desde 1926 hasta su muerte. Presidió Japón durante la Segunda Guerra Mundial y su posguerra; falleció de cáncer de intestino en enero de 1989 a los 87 años.",
+  "shortDescriptionRu": "Хирохито (император Сёва) был 124‑м императором Японии, царствовал с 1926 по 1989 годы. Он руководил страной во Второй мировой войне и в послевоенный период; умер от рака кишечника в январе 1989 года в возрасте 87 лет.",
+  "sources": [
+    "Wikipedia article on Hirohito",
+    "Britannica biography of Hirohito",
+    "Wiki‑data entry Q34479",
+    "Wikipedia article on his death and state funeral"
+  ]
+}
+
+
+
+-----
+
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q16574",  "Name": "Chiang Kai-shek",  "BirthDate": "1887-10-31T00:00:00Z",  "DeathDate": "1975-04-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Chiang%20Kai-shek%EF%BC%88%E8%94%A3%E4%B8%AD%E6%AD%A3%EF%BC%89.jpg",  "SiteLinksCnt": 135,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"6859":{"pageid":6859,"ns":0,"title":"Chiang Kai-shek","extract":"Chiang Kai-shek (31 October 1887 \u2013 5 April 1975) was a Chinese politician, revolutionary, and general who led the Republic of China (ROC) from 1928 until his death in 1975. His government was based in mainland China until it was defeated in the Chinese Civil War by the Chinese Communist Party (CCP) in 1949, after which he continued to lead the Republic of China on the island of Taiwan. Chiang served as leader of the Nationalist Kuomintang (KMT) party and the commander-in-chief of the National Revolutionary Army (NRA) from 1926 until his death, during which he was known as Generalissimo.\nBorn in Zhejiang, Chiang received a military education in China and Japan and joined Sun Yat-sen's Tongmenghui organization in 1908. After the 1911 Revolution, he was a founding member of the KMT and head of the Whampoa Military Academy from 1924. After Sun's death in 1925, Chiang became leader of the party and commander-in-chief of the NRA, and from 1926 to 1928 led the Northern Expedition, which nominally reunified China under a Nationalist government based in Nanjing. The KMT\u2013CCP alliance broke down in 1927 as Chiang massacred the communists in Shanghai, starting the Chinese Civil War. Chiang sought to modernise and unify the ROC during the Nanjing decade, although hostilities with the CCP continued. After Japan's invasion of Manchuria in 1931, his government tried to avoid a war while pursuing economic and social reconstruction. In 1936, Chiang was kidnapped by his generals in the Xi'an Incident and forced to form an anti-Japanese Second United Front with the CCP, and between 1937 and 1945 led China in the Second Sino-Japanese War, mostly from the wartime capital of Chongqing. As the leader of a major Allied power, he attended the 1943 Cairo Conference to discuss the terms for Japan's surrender in 1945, including the return of Taiwan, where he suppressed the February 28 uprising in 1947.\nWhen World War II ended, the civil war with the CCP (led by Mao Zedong) resumed. In 1949, Chiang's government was defeated and retreated to Taiwan, where he imposed martial law and the White Terror, a campaign of mass political repression; they lasted until 1987 and 1992, respectively. Beginning in 1948, he was re-elected five times by the same Eternal Parliament with six-year terms as President of the ROC, the head of a de facto one-party state, for 25 years till his death. Chiang presided over land reform, economic growth, and crises in the Taiwan Strait in 1954\u20131955 and again in 1958. He was considered the legitimate leader of China by the United Nations until 1971, when the ROC's seat was transferred to the People's Republic of China. After Chiang's death in 1975, he was succeeded as leader of the KMT by his son Chiang Ching-kuo, who was elected president in following terms by the same parliament since 1978.\nChiang is a controversial figure. Supporters credit him with unifying the nation and ending the century of humiliation, leading the resistance against Japan, fostering economic development and promoting Chinese culture in contrast to Mao's Cultural Revolution. He is also credited with safeguarding Forbidden City treasures during the wars with Japan and the CCP, eventually relocating some of the best to Taiwan, where he founded the National Palace Museum. Critics fault him for his early pacifism toward Japan's occupation of Manchuria, flooding of the Yellow River, cronyism and corruption with the four big families, and his right-wing dictatorship on both mainland China and Taiwan."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q16574")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q16574",
+  "isRealHuman": true,
+  "birthDate": "1887-10-31",
+  "deathDate": "1975-04-05",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are historically confirmed, enabling exact calculation of age at death as 87 years.",
+  "shortDescriptionEn": "Chiang Kai-shek (1887–1975) was a Chinese military and political leader who ruled the Republic of China from 1928 until his death. He led the Nationalist government during the Chinese Civil War, retreated to Taiwan in 1949, and continued as president until dying at age 87 in 1975 after prolonged illness.",
+  "shortDescriptionFr": "Chiang Kaï-chek (1887–1975) était un dirigeant militaire et politique chinois, chef de la République de Chine de 1928 à sa mort. Il dirigea la résistance contre le Japon et s'exila à Taïwan après la guerre civile, où il mourut à 87 ans en 1975.",
+  "shortDescriptionDe": "Chiang Kai-shek (1887–1975) war ein chinesischer Militär- und Politiker, der von 1928 bis zu seinem Tod die Republik China leitete. Nach dem Rückzug nach Taiwan 1949 regierte er weiter bis zu seinem Tod im Alter von 87 Jahren im Jahr 1975.",
+  "shortDescriptionEs": "Chiang Kai-shek (1887–1975) fue un líder militar y político chino que gobernó la República de China desde 1928 hasta su muerte. Tras perder la guerra civil, se refugió en Taiwán, donde murió en 1975 a los 87 años.",
+  "shortDescriptionRu": "Чан Кайши (1887–1975) — китайский политик и военный деятель, возглавлявший Китайскую Республику с 1928 года. После поражения в гражданской войне управлял Тайванем до своей смерти в возрасте 87 лет в 1975 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chiang_Kai-shek",
+    "https://www.wikidata.org/wiki/Q16574",
+    "https://www.britannica.com/biography/Chiang-Kai-shek"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37060",  "Name": "José Saramago",  "BirthDate": "1922-11-16T00:00:00Z",  "DeathDate": "2010-06-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/JSJoseSaramago.jpg",  "SiteLinksCnt": 134,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"48422":{"pageid":48422,"ns":0,"title":"Jos\u00e9 Saramago","extract":"Jos\u00e9 de Sousa Saramago  (European Portuguese: [\u0292u\u02c8z\u025b \u00f0\u0268 \u02c8soz\u0250 s\u0250\u027e\u0250\u02c8ma\u0263u]; 16 November 1922 \u2013 18 June 2010) was a Portuguese writer. He was the recipient of the 1998 Nobel Prize in Literature for his \"parables sustained by imagination, compassion and irony [with which he] continually enables us once again to apprehend an elusory reality.\" His works, some of which can be seen as allegories, commonly present subversive perspectives on historic events, emphasizing the theopoetic human factor. In 2003 Harold Bloom described Saramago as \"the most gifted novelist alive in the world today\" and in 2010 said he considers Saramago to be \"a permanent part of the Western canon\", while James Wood praises \"the distinctive tone to his fiction because he narrates his novels as if he were someone both wise and ignorant.\"\nMore than two million copies of Saramago's books have been sold in Portugal alone and his work has been translated into 25 languages. A proponent of libertarian communism, Saramago criticized institutions such as the Catholic Church, the European Union and the International Monetary Fund. An atheist, he defended love as an instrument to improve the human condition. In 1992, the Government of Portugal under Prime Minister An\u00edbal Cavaco Silva ordered the removal of one of his works, The Gospel According to Jesus Christ, from the Aristeion Prize's shortlist, claiming the work was religiously offensive. Disheartened by this political censorship of his work, Saramago went into exile on the Spanish island of Lanzarote, where he lived alongside his Spanish wife Pilar del R\u00edo until his death in 2010.\nSaramago was a founding member of the National Front for the Defense of Culture in Lisbon in 1992.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37060")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37060",
+  "isRealHuman": true,
+  "birthDate": "1922-11-16",
+  "deathDate": "2010-06-18",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are well-established historical facts confirmed by multiple sources including Wikipedia and Wikidata. The age at death is a straightforward calculation from these dates.",
+  "shortDescriptionEn": "José Saramago was a Portuguese novelist and Nobel Laureate best known for his allegorical and subversive literary works. He died at the age of 87 in exile on the Spanish island of Lanzarote, where he had relocated following a political censorship incident in Portugal.",
+  "shortDescriptionFr": "José Saramago était un romancier portugais et lauréat du prix Nobel, célèbre pour ses œuvres allégoriques et subversives. Il est décédé à 87 ans en exil sur l'île espagnole de Lanzarote, après un acte de censure politique au Portugal.",
+  "shortDescriptionDe": "José Saramago war ein portugiesischer Schriftsteller und Nobelpreisträger, bekannt für seine allegorischen und subversiven Werke. Er starb im Alter von 87 Jahren im Exil auf der spanischen Insel Lanzarote, nachdem sein Werk in Portugal zensiert worden war.",
+  "shortDescriptionEs": "José Saramago fue un novelista portugués y premio Nobel, reconocido por sus obras alegóricas y subversivas. Murió a los 87 años en el exilio en la isla española de Lanzarote, tras un episodio de censura política en Portugal.",
+  "shortDescriptionRu": "Жозе Сарамагу — португальский писатель и лауреат Нобелевской премии, известный своими аллегорическими и провокационными произведениями. Он умер в возрасте 87 лет в изгнании на испанском острове Лансароте после цензуры его книги в Португалии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jos%C3%A9_Saramago",
+    "https://www.wikidata.org/wiki/Q37060",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/JSJoseSaramago.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6538",  "Name": "Günter Grass",  "BirthDate": "1927-10-16T00:00:00Z",  "DeathDate": "2015-04-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%BCnter%20Grass%20auf%20dem%20Blauen%20Sofa.jpg",  "SiteLinksCnt": 134,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"23473348":{"pageid":23473348,"ns":0,"title":"G\u00fcnter Grass","extract":"G\u00fcnter Wilhelm Grass (German: [\u02c8\u0261\u028fnt\u0250 \u02c8\u0261\u0281as] ; 16 October 1927 \u2013 13 April 2015) was a German novelist, poet, playwright, illustrator, graphic artist, sculptor, and recipient of the 1999 Nobel Prize in Literature.\nHe was born in the Free City of Danzig (now Gda\u0144sk, Poland). At age 17, he was drafted into the military and served from late 1944 in the Waffen-SS. He was taken as a prisoner of war by US forces at the end of the war in May 1945. He was released in April 1946. Trained as a stonemason and sculptor, Grass began writing in the 1950s. In his fiction, he frequently returned to the Danzig of his childhood.\nGrass is best known for his first novel, The Tin Drum (1959), a key text in European magic realism. It was the first book of his Danzig Trilogy, the other two being Cat and Mouse and Dog Years. His works are frequently considered to have a left-wing political dimension, and Grass was an active supporter of the Social Democratic Party of Germany (SPD).\nThe Tin Drum was adapted as a film of the same name, which won both the 1979 Palme d'Or and the Academy Award for Best Foreign Language Film. In 1999, the Swedish Academy awarded Grass the Nobel Prize in Literature, praising him as a writer \"whose frolicsome black fables portray the forgotten face of history\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6538")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6538",
+  "isRealHuman": true,
+  "birthDate": "1927-10-16",
+  "deathDate": "2015-04-13",
+  "ageAtDeath": 87,
+  "confidence": 98,
+  "confidenceExplained": "Birth and death dates are reliably documented in multiple authoritative sources, all indicating age at death of 87. Slight chance of off‑by‑one day error, very low.",
+  "shortDescriptionEn": "Günter Grass (born 16 October 1927, died 13 April 2015) was a German novelist, poet, playwright, graphic artist and sculptor, best known for his novel The Tin Drum which earned him the 1999 Nobel Prize in Literature. He died in Lübeck at 87 after a sudden illness, reportedly a lung infection following rapid onset.",
+  "shortDescriptionFr": "Günter Grass (né le 16 octobre 1927, décédé le 13 avril 2015) était un romancier, poète, dramaturge, artiste graphique et sculpteur allemand, célèbre pour son roman La Tonneau de ferraille, qui lui valut le Nobel de littérature en 1999. Il est décédé à Lübeck à 87 ans d’une infection pulmonaire survenue soudainement.",
+  "shortDescriptionDe": "Günter Grass (geboren am 16. Oktober 1927, gestorben am 13. April 2015) war ein deutscher Schriftsteller, Poet, Dramatiker sowie Grafik‑ und Bildkünstler, bekannt durch seinen Roman Die Blechtrommel, der ihm 1999 den Nobelpreis für Literatur einbrachte. Er starb in Lübeck im Alter von 87 Jahren nach einer schnellen Krankheit, offenbar an einer Lungeninfektion.",
+  "shortDescriptionEs": "Günter Grass (nacido el 16 de octubre de 1927, fallecido el 13 de abril de 2015) fue un novelista alemán, poeta, dramaturgo, artista gráfico y escultor, famoso por su novela El tambor de hojalata, que le valió el Premio Nobel de Literatura en 1999. Murió en Lübeck a los 87 años tras una enfermedad repentina, aparentemente una infección pulmonar.",
+  "shortDescriptionRu": "Гюнтер Грасс (родился 16 октября 1927 года, умер 13 апреля 2015 года) — немецкий романист, поэт, драматург, график и скульптор, наиболее известен своим романом «Жестяной барабан», за который получил Нобелевскую премию по литературе в 1999 году. Он скончался в Любеке в возрасте 87 лет после внезапной болезни, предположительно из‑за легочной инфекции.",
+  "sources": [
+    "turn0search0",
+    "turn0search5",
+    "turn0search17",
+    "turn0search4",
+    "turn0search2",
+    "turn0search6",
+    "turn0search8",
+    "turn0search13",
+    "turn0search28"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37610",  "Name": "David Ben-Gurion",  "BirthDate": "1886-10-16T00:00:00Z",  "DeathDate": "1973-12-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/David%20Ben-Gurion%20%28D597-087%29.jpg",  "SiteLinksCnt": 129,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"67765":{"pageid":67765,"ns":0,"title":"David Ben-Gurion","extract":"This page is subject to the extended confirmed restriction related to the Arab-Israeli conflict.\n\nDavid Ben-Gurion ( ben GOOR-ee-\u0259n; Hebrew: \u05d3\u05b8\u05bc\u05d5\u05b4\u05d3 \u05d1\u05b6\u05bc\u05df\u05be\u05d2\u05bc\u05d5\u05bc\u05e8\u05b4\u05d9\u05bc\u05d5\u05b9\u05df [da\u02c8vid ben \u0261u\u0281\u02c8jon] ; born David Gr\u00fcn; 16 October 1886 \u2013 1 December 1973) was the primary national founder and first prime minister of the State of Israel. As head of the Jewish Agency from 1935, and later president of the Jewish Agency Executive, he was the de facto leader of the Jewish community in Palestine, and largely led the movement for an independent Jewish state in Mandatory Palestine.\nBorn in P\u0142o\u0144sk, then part of Congress Poland, to Polish Jewish parents, he immigrated to the Palestine region of the Ottoman Empire in 1906. Adopting the name of Ben-Gurion in 1909, he rose to become the preeminent leader of the Jewish community in British-ruled Mandatory Palestine from 1935 until the establishment of the State of Israel in 1948, which he led until 1963 with a short break in 1954\u201355. Ben-Gurion's interest for Zionism developed early in his life, leading him to become a major Zionist leader, and the executive head of the World Zionist Organization in 1946. \nOn 14 May 1948, he formally proclaimed the establishment of Israel, and was the first to sign the Israeli Declaration of Independence, which he had helped to write. Under Ben-Gurion's leadership, the 1948 Arab\u2013Israeli War saw the uniting of the various Jewish militias into the Israel Defense Forces (IDF), and the expulsion and flight of a majority of the Palestinian Arab population. Subsequently, he became known as \"Israel's founding father\". Following the war, Ben-Gurion served as Israel's first prime minister and minister of defence. As prime minister, he helped build state institutions, presiding over national projects aimed at the development of the country. He also oversaw the absorption of Jewish immigrants. A major part of his foreign policy was improving relations with West Germany through a reparations agreement in compensation for Nazi confiscation of Jewish property during the Holocaust.\nIn 1954, he resigned as prime minister and minister of defence but remained a member of the Knesset. He returned as minister of defence in 1955 after the Lavon Affair and the resignation of Pinhas Lavon. Later that year he became prime minister again, following the 1955 elections. He backed Israel's reprisal operations to Arab guerrilla attacks and its invasion of Egypt, along with Britain and France, during the Suez Crisis in 1956. He stepped down from office in 1963, and retired from political life in 1970. He then moved to his modest \"hut\" in Sde Boker, a kibbutz in the Negev desert, where he lived until his death. Posthumously, Ben-Gurion was named one of Time magazine's 100 Most Important People of the 20th century."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37610")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37610",
+  "isRealHuman": true,
+  "birthDate": "1886-10-16",
+  "deathDate": "1973-12-01",
+  "ageAtDeath": 87,
+  "confidence": 98,
+  "confidenceExplained": "Multiple high‑quality historical sources confirm the exact birth and death dates and his age at passing.",
+  "shortDescriptionEn": "David Ben‑Gurion (1886–1973) was the primary national founder and first prime minister of the State of Israel; he died following a cerebral hemorrhage at age 87.",
+  "shortDescriptionFr": "David Ben‑Gurion (1886‑1973) fut le principal fondateur national et premier Premier ministre de l’État d’Israël ; il mourut suite à une hémorragie cérébrale à l’âge de 87 ans.",
+  "shortDescriptionDe": "David Ben‑Gurion (1886–1973) war der wichtigste nationale Gründer und erste Premierminister des Staates Israel; er starb nach einer Gehirnblutung im Alter von 87 Jahren.",
+  "shortDescriptionEs": "David Ben‑Gurion (1886–1973) fue el principal fundador nacional y primer primer ministro del Estado de Israel; falleció tras una hemorragia cerebral a los 87 años.",
+  "shortDescriptionRu": "Давид Бен‑Гурион (1886–1973) был основателем и первым премьер‑министром Государства Израиль; умер от церебрального кровоизлияния в возрасте 87 лет.",
+  "sources": [
+    "britannica.com biography entry",
+    "Wikipedia article",
+    "Historydraft timeline and death account",
+    "Jewish Telegraphic Agency report"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2518",  "Name": "Helmut Kohl",  "BirthDate": "1930-04-03T00:00:00Z",  "DeathDate": "2017-06-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Helmut%20Kohl%20%281996%29.jpg",  "SiteLinksCnt": 127,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"41896":{"pageid":41896,"ns":0,"title":"Helmut Kohl","extract":"Helmut Josef Michael Kohl (German: [\u02c8h\u025blmu\u02d0t \u02c8ko\u02d0l] ; 3 April 1930 \u2013 16 June 2017) was a German politician who served as chancellor of Germany from 1990 to 1998 and, prior to German reunification, as the chancellor of West Germany from 1982 to 1990. He was leader of the Christian Democratic Union (CDU) from 1973 to 1998 and oversaw the end of the Cold War, the German reunification and the creation of the European Union (EU). Kohl\u2019s 16-year tenure is the longest of any German chancellor since Otto von Bismarck, and is the longest for any democratically elected chancellor of Germany.\nBorn in Ludwigshafen to a Catholic family, Kohl joined the CDU in 1946 at the age of 16. He earned a PhD in history at Heidelberg University in 1958 and worked as a business executive before becoming a full-time politician. He was elected as the youngest member of the Parliament of Rhineland-Palatinate in 1959 and from 1969 to 1976 was minister president of the Rhineland-Palatinate state. Viewed during the 1960s and the early 1970s as a progressive within the CDU, he was elected national chairman of the party in 1973. After he had become party leader, Kohl was increasingly seen as a more conservative figure. In the 1976 and 1980 federal elections his party performed well, but the social-liberal government of social democrat Helmut Schmidt was able to remain in power. After Schmidt had lost the support of the liberal FDP in 1982, Kohl was elected Chancellor through a constructive vote of no confidence, forming a coalition government with the FDP. Kohl chaired the G7 in 1985 and 1992.\nAs Chancellor, Kohl was committed to European integration and especially to the Franco-German relationship; he was also a steadfast ally of the United States and supported Ronald Reagan's more aggressive policies to weaken the Soviet Union. Following the Revolutions of 1989, his government acted decisively, culminating in the German reunification in 1990. Kohl and French president Fran\u00e7ois Mitterrand were the architects of the Maastricht Treaty which established the EU and the Euro currency. Kohl was also a central figure in the eastern enlargement of the EU, and his government led the effort to push for international recognition of Croatia, Slovenia, and Bosnia and Herzegovina when the states declared independence. He played an instrumental role in resolving the Bosnian War. Domestically Kohl's policies from 1990 focused on integrating former East Germany into reunified Germany, and he moved the federal capital from the \"provisional capital\" Bonn back to Berlin, although he never resided there because the government offices were only relocated in 1999. Kohl also greatly increased federal spending on arts and culture. After his chancellorship, Kohl became honorary chairman of the CDU in 1998 but resigned from the position in 2000 in the wake of the CDU donations scandal which damaged his reputation domestically.\nKohl received the 1988 Charlemagne Prize and was named Honorary Citizen of Europe by the European Council in 1998. Following his death, Kohl was honoured with the first-ever European act of state in Strasbourg. Kohl was described as \"the greatest European leader of the second half of the 20th century\" by US presidents George H. W. Bush and Bill Clinton."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2518")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q2518",
+  "isRealHuman": true,
+  "birthDate": "1930-04-03",
+  "deathDate": "2017-06-16",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Birth and death dates are precise and match official historical records. The age calculation is straightforward and confirmed by the data.",
+  "shortDescriptionEn": "Helmut Kohl (1930–2017) was a German politician and statesman who served as Chancellor of Germany during its reunification and helped shape the European Union. He died at the age of 87 on June 16, 2017.",
+  "shortDescriptionFr": "Helmut Kohl (1930–2017) était un homme politique allemand, chancelier de l'Allemagne réunifiée et artisan de l'Union européenne. Il est décédé à l'âge de 87 ans le 16 juin 2017.",
+  "shortDescriptionDe": "Helmut Kohl (1930–2017) war ein deutscher Politiker, der als Kanzler die Wiedervereinigung Deutschlands leitete und die EU mitgestaltete. Er starb am 16. Juni 2017 im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Helmut Kohl (1930–2017) fue un político alemán, canciller durante la reunificación de Alemania y figura clave en la creación de la Unión Europea. Falleció el 16 de junio de 2017 a los 87 años.",
+  "shortDescriptionRu": "Хельмут Коль (1930–2017) — немецкий политик, канцлер объединённой Германии и один из архитекторов ЕС. Скончался 16 июня 2017 года в возрасте 87 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Helmut_Kohl",
+    "http://www.wikidata.org/entity/Q2518",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Helmut%20Kohl%20%281996%29.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9161",  "Name": "Josip Broz",  "BirthDate": "1892-05-07T00:00:00Z",  "DeathDate": "1980-05-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Josip%20Broz%20Tito%20uniform%20portrait.jpg",  "SiteLinksCnt": 126,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"16567":{"pageid":16567,"ns":0,"title":"Josip Broz Tito","extract":"Josip Broz (Serbo-Croatian Cyrillic: \u0408\u043e\u0441\u0438\u043f \u0411\u0440\u043e\u0437, pronounced [j\u01d2sip br\u00f4\u02d0z] ; 7 May 1892 \u2013 4 May 1980), commonly known as Tito ( TEE-toh; \u0422\u0438\u0442\u043e, pronounced [t\u00eeto]), was a Yugoslav communist revolutionary and politician who served in various positions of national leadership from 1943 until his death in 1980. During World War II, he led the Yugoslav Partisans, often regarded as the most effective resistance movement in German-occupied Europe. Following Yugoslavia's liberation in 1945, he served as its prime minister from 1945 to 1963, and president from 1953 until his death in 1980. The political ideology and policies promulgated by Tito are known as Titoism.\nTito was born to a Croat father and a Slovene mother in Kumrovec in what was then Austria-Hungary. Drafted into military service, he distinguished himself, becoming the youngest sergeant major in the Austro-Hungarian Army of that time. After being seriously wounded and captured by the Russians during World War I, he was sent to a work camp in the Ural Mountains. Tito participated in some events of the Russian Revolution in 1917 and the subsequent Russian Civil War. Upon his return to the Balkans in 1920, he entered the newly established Kingdom of Yugoslavia, where he joined the Communist Party of Yugoslavia. Having assumed de facto control over the party by 1937, Tito was formally elected its general secretary in 1939 and later its president, the title he held until his death. During World War II, after the Nazi invasion of the area, he led the Yugoslav guerrilla movement, the Partisans (1941\u20131945). By the end of the war, the Partisans, with the Allies' backing since mid-1943, took power in Yugoslavia.\nAfter the war, Tito served as the prime minister (1945\u20131963), president (1953\u20131980; from 1974 president for life), and marshal of Yugoslavia, the highest rank of the Yugoslav People's Army (JNA). In 1945, under his leadership, Yugoslavia became a communist state, which was eventually renamed the Socialist Federal Republic of Yugoslavia. Despite being one of the founders of the Cominform, he became the first Cominform member and the only leader in Joseph Stalin's lifetime to defy Soviet hegemony in the Eastern Bloc, leading to Yugoslavia's expulsion from the organisation in 1948 in what was known as the Tito\u2013Stalin split. In the following years, alongside other political leaders and Marxist theorists such as Edvard Kardelj and Milovan \u0110ilas, he initiated the idiosyncratic model of socialist self-management in which firms were managed by workers' councils and all workers were entitled to workplace democracy and equal share of profits. Tito wavered between supporting a centralised or more decentralised federation and ended up favouring the latter to keep ethnic tensions under control; thus, the constitution was gradually developed to delegate as much power as possible to each republic in keeping with the Marxist theory of withering away of the state. He envisaged the SFR of Yugoslavia as a \"federal republic of equal nations and nationalities, freely united on the principle of brotherhood and unity in achieving specific and common interest.\" A very powerful cult of personality arose around him, which the League of Communists of Yugoslavia maintained even after his death. After Tito's death, Yugoslavia's leadership was transformed into an annually rotating presidency to give representation to all of its nationalities and prevent the emergence of an authoritarian leader. Twelve years later, as communism collapsed in Eastern Europe and ethnic tensions escalated, Yugoslavia dissolved and descended into a series of interethnic wars.\nHistorians critical of Tito view his presidency as authoritarian and see him as a dictator, while others characterise him as a benevolent dictator. He was a popular public figure both in Yugoslavia and abroad, and remains popular in the former countries of Yugoslavia. Tito was viewed as a unifying symbol, with his internal policies maintaining the peaceful coexistence of the nations of the Yugoslav federation. He gained further international attention as a co-founder of the Non-Aligned Movement, alongside Jawaharlal Nehru of India, Gamal Abdel Nasser of Egypt, Kwame Nkrumah of Ghana, and Sukarno of Indonesia. With a highly favourable reputation abroad in both Cold War blocs, he received a total of 98 foreign decorations, including the Legion of Honour and the Order of the Bath."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9161")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9161",
+  "isRealHuman": true,
+  "birthDate": "1892-05-07",
+  "deathDate": "1980-05-04",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are precisely known and confirmed by multiple reliable sources, including Wikipedia and Wikidata. The calculation is straightforward.",
+  "shortDescriptionEn": "Josip Broz Tito (1892–1980) was a Yugoslav communist revolutionary and statesman who served as prime minister and president of Yugoslavia. He led the anti-fascist Partisans during WWII and later maintained a federal republic through a combination of socialism and decentralization. Tito died in Ljubljana in 1980, just three days before his 88th birthday, at the age of 87.",
+  "shortDescriptionFr": "Josip Broz Tito (1892–1980) était un révolutionnaire communiste et homme d'État yougoslave, premier ministre puis président de la Yougoslavie. Il a dirigé la résistance contre les nazis pendant la Seconde Guerre mondiale. Il est mort à Ljubljana en 1980, trois jours avant ses 88 ans, à l'âge de 87 ans.",
+  "shortDescriptionDe": "Josip Broz Tito (1892–1980) war ein jugoslawischer kommunistischer Revolutionär und Staatsmann, der als Premierminister und Präsident Jugoslawiens diente. Er führte den Widerstand gegen die Nazis im Zweiten Weltkrieg an. Tito starb 1980 in Ljubljana, drei Tage vor seinem 88. Geburtstag, im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Josip Broz Tito (1892–1980) fue un revolucionario comunista y estadista yugoslavo que ejerció como primer ministro y presidente. Lideró la resistencia contra los nazis durante la Segunda Guerra Mundial. Murió en Ljubljana en 1980, tres días antes de cumplir 88 años, a los 87.",
+  "shortDescriptionRu": "Иосип Броз Тито (1892–1980) — югославский коммунистический революционер и государственный деятель, премьер-министр и президент Югославии. Возглавлял партизанское движение в годы Второй мировой войны. Умер в Любляне в 1980 году за три дня до своего 88-летия, в возрасте 87 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Josip_Broz_Tito",
+    "http://www.wikidata.org/entity/Q9161",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Josip%20Broz%20Tito%20uniform%20portrait.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q58978",  "Name": "Max Born",  "BirthDate": "1882-12-11T00:00:00Z",  "DeathDate": "1970-01-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Max%20Born.jpg",  "SiteLinksCnt": 119,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"61866":{"pageid":61866,"ns":0,"title":"Max Born","extract":"Max Born (German: [\u02c8maks \u02c8b\u0254\u0281n] ; 11 December 1882 \u2013 5 January 1970) was a German-British physicist who was instrumental in the development of quantum mechanics. He also made contributions to solid-state physics and optics, and supervised the work of a number of notable physicists in the 1920s and 1930s. Born shared the 1954 Nobel Prize in Physics with Walther Bothe \"for his fundamental research in quantum mechanics, especially in the statistical interpretation of the wave function\".\nBorn entered the University of G\u00f6ttingen in 1904, where he met the three renowned mathematicians Felix Klein, David Hilbert, and Hermann Minkowski. He wrote his PhD thesis on the subject of the stability of elastic wires and tapes, winning the university's Philosophy Faculty Prize. In 1905, he began researching special relativity with Minkowski, and subsequently wrote his habilitation thesis on the Thomson model of the atom. A chance meeting with Fritz Haber in Berlin in 1918 led to discussion of how an ionic compound is formed when a metal reacts with a halogen, which is today known as the Born\u2013Haber cycle.\nIn World War I he was originally placed as a radio  operator, but his specialist knowledge led to his being moved to research duties on sound ranging. In 1921 Born returned to G\u00f6ttingen, where he arranged another chair for his long-time friend and colleague James Franck. Under Born, G\u00f6ttingen became one of the world's foremost centres for physics. In 1925 Born and Werner Heisenberg formulated the matrix mechanics representation of quantum mechanics. The following year, he formulated the now-standard interpretation of the probability density function for \u03c8*\u03c8 in the Schr\u00f6dinger equation, for which he was awarded the Nobel Prize in 1954. His influence extended far beyond his own research. Max Delbr\u00fcck, Siegfried Fl\u00fcgge, Friedrich Hund, Pascual Jordan, Maria Goeppert-Mayer, Lothar Wolfgang Nordheim, Robert Oppenheimer, and Victor Weisskopf all received their PhD degrees under Born at G\u00f6ttingen, and his assistants included Enrico Fermi, Werner Heisenberg, Gerhard Herzberg, Friedrich Hund, Wolfgang Pauli, L\u00e9on Rosenfeld, Edward Teller, and Eugene Wigner.\nIn January 1933, the Nazi Party came to power in Germany, and Born, who was Jewish, was suspended from his professorship at the University of G\u00f6ttingen. He emigrated to the United Kingdom, where he took a job at St John's College, Cambridge, and wrote a popular science book, The Restless Universe, as well as Atomic Physics, which soon became a standard textbook. In October 1936, he became the Tait Professor of Natural Philosophy at the University of Edinburgh, where, working with German-born assistants E. Walter Kellermann and Klaus Fuchs, he continued his research into physics. Born became a naturalised British subject on 31 August 1939, one day before World War II broke out in Europe. He remained in Edinburgh until 1952. He retired to Bad Pyrmont, in West Germany, and died in a hospital in G\u00f6ttingen on 5 January 1970."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q58978")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q58978",
+  "isRealHuman": true,
+  "birthDate": "1882-12-11",
+  "deathDate": "1970-01-05",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are precise and cross-validated from multiple reliable sources including Wikipedia and NobelPrize.org. The age calculation from 1882-12-11 to 1970-01-05 yields exactly 87 years and 25 days, confirming the reported age.",
+  "shortDescriptionEn": "Max Born (1882–1970) was a German-British physicist who made foundational contributions to quantum mechanics and statistical interpretations of wave functions. He mentored many prominent scientists and won the 1954 Nobel Prize. He died at the age of 87 in a hospital in Göttingen, West Germany.",
+  "shortDescriptionFr": "Max Born (1882–1970) était un physicien germano-britannique, pionnier de la mécanique quantique. Lauréat du prix Nobel de physique en 1954, il a formé de nombreux scientifiques renommés. Il est décédé à 87 ans dans un hôpital de Göttingen, en Allemagne de l'Ouest.",
+  "shortDescriptionDe": "Max Born (1882–1970) war ein deutsch-britischer Physiker und Mitbegründer der Quantenmechanik. Er erhielt 1954 den Nobelpreis für Physik. Born starb im Alter von 87 Jahren in einem Krankenhaus in Göttingen, Westdeutschland.",
+  "shortDescriptionEs": "Max Born (1882–1970) fue un físico germano-británico que contribuyó significativamente a la mecánica cuántica y ganó el Premio Nobel en 1954. Murió a los 87 años en un hospital de Gotinga, Alemania Occidental.",
+  "shortDescriptionRu": "Макс Борн (1882–1970) — немецко-британский физик, один из основателей квантовой механики, лауреат Нобелевской премии 1954 года. Умер в возрасте 87 лет в больнице города Гёттинген, Западная Германия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Max_Born",
+    "https://www.nobelprize.org/prizes/physics/1954/born/biographical/",
+    "http://www.wikidata.org/entity/Q58978",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Max%20Born.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q45661",  "Name": "Coco Chanel",  "BirthDate": "1883-08-19T00:00:00Z",  "DeathDate": "1971-01-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Coco%20Chanel%20in%20Los%20Angeles%2C%201931%20%28cropped%29.jpg",  "SiteLinksCnt": 115,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"11291214":{"pageid":11291214,"ns":0,"title":"Coco Chanel","extract":"Gabrielle Bonheur \"Coco\" Chanel ( sh\u0259-NEL, French: [\u0261ab\u0281ij\u025bl b\u0254n\u0153\u0281 k\u0254ko \u0283an\u025bl] ; 19 August 1883 \u2013 10 January 1971) was a French fashion designer and businesswoman. The founder and namesake of the Chanel brand, she was credited in the post-World War I era with popularising a sporty, casual chic as the feminine standard of style. She is the only fashion designer listed on Time magazine's list of the 100 most influential people of the 20th century. A prolific fashion creator, Chanel extended her influence beyond couture clothing  into jewellery, handbags, and fragrance. Her signature scent, Chanel No. 5, has become an iconic product, and Chanel herself designed her famed interlocked-CC monogram, which has been in use since the 1920s.\nHer couture house closed in 1939, with the outbreak of World War II. Chanel stayed in France during the Nazi German occupation and collaborated with the occupiers and the Vichy puppet regime. Declassified documents revealed that she had collaborated directly with the Nazi intelligence service, the Sicherheitsdienst. One plan in late 1943 was for her to carry an SS peace overture to Churchill to end the war. Chanel began a liaison with a German diplomat/spy she had known before the war, Baron (Freiherr) Hans G\u00fcnther von Dincklage. After the end of the war, Chanel was interrogated about her relationship with Dincklage, but she was not charged as a collaborator due to intervention by her friend\u2014British prime minister Winston Churchill. When the war ended, Chanel moved to Switzerland before returning to Paris in 1954 to revive her fashion house."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q45661")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q45661",
+  "isRealHuman": true,
+  "birthDate": "1883-08-19",
+  "deathDate": "1971-01-10",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Coco Chanel's birth and death dates are well documented in historical records and encyclopedic sources. The age at death is calculated directly from these exact dates.",
+  "shortDescriptionEn": "Coco Chanel was a renowned French fashion designer and founder of the Chanel brand. She revolutionized women’s fashion with her casual elegance. Chanel died at the age of 87 in 1971, after returning to prominence following a controversial wartime past.",
+  "shortDescriptionFr": "Coco Chanel était une célèbre créatrice de mode française et fondatrice de la marque Chanel. Elle a révolutionné la mode féminine par son élégance décontractée. Elle est décédée à 87 ans en 1971, après un retour marqué par une histoire controversée pendant la guerre.",
+  "shortDescriptionDe": "Coco Chanel war eine berühmte französische Modedesignerin und Gründerin der Marke Chanel. Sie prägte die Damenmode durch ihren lässigen Stil. Sie starb im Alter von 87 Jahren im Jahr 1971, nachdem sie nach einer umstrittenen Kriegsvergangenheit zurückgekehrt war.",
+  "shortDescriptionEs": "Coco Chanel fue una famosa diseñadora de moda francesa y fundadora de la marca Chanel. Transformó la moda femenina con su estilo elegante y sencillo. Murió a los 87 años en 1971, tras un regreso marcado por su polémico pasado durante la guerra.",
+  "shortDescriptionRu": "Коко Шанель — известный французский модельер и основательница бренда Chanel. Она изменила женскую моду, сделав её более элегантной и удобной. Умерла в возрасте 87 лет в 1971 году после возвращения на модную сцену, несмотря на критику за связи с нацистами.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q45661",
+    "https://en.wikipedia.org/wiki/Coco_Chanel",
+    "https://commons.wikimedia.org/wiki/File:Coco_Chanel_in_Los_Angeles,_1931_(cropped).jpg",
+    "https://www.britannica.com/biography/Coco-Chanel"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132805",  "Name": "Thomas Hardy",  "BirthDate": "1840-06-02T00:00:00Z",  "DeathDate": "1928-01-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomashardy%20restored.jpg",  "SiteLinksCnt": 114,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"44743":{"pageid":44743,"ns":0,"title":"Thomas Hardy","extract":"Thomas Hardy (2 June 1840 \u2013 11 January 1928) was an English novelist and poet. A Victorian realist in the tradition of George Eliot, he was influenced both in his novels and in his poetry by Romanticism, including the poetry of William Wordsworth. He was highly critical of much in Victorian society, especially on the declining status of rural people in Britain such as those from his native South West England.\nWhile Hardy wrote poetry throughout his life and regarded himself primarily as a poet, his first collection was not published until 1898. Initially, he gained fame as the author of novels such as Far from the Madding Crowd (1874), The Mayor of Casterbridge (1886), Tess of the d'Urbervilles (1891) and Jude the Obscure (1895). During his lifetime, Hardy's poetry was acclaimed by younger poets (particularly the Georgians) who viewed him as a mentor. After his death his poems were lauded by Ezra Pound, W. H. Auden and Philip Larkin.\nMany of his novels concern tragic characters struggling against their passions and social circumstances, and they are often set in the semi-fictional region of Wessex; initially based on the medieval Anglo-Saxon kingdom, Hardy's Wessex eventually came to include the counties of Dorset, Wiltshire, Somerset, Devon, Hampshire and much of Berkshire, in south-west and south central England. Two of his novels, Tess of the d'Urbervilles and Far from the Madding Crowd, were listed in the top 50 on the BBC's survey The Big Read."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132805")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q132805",
+  "isRealHuman": true,
+  "birthDate": "1840-06-02",
+  "deathDate": "1928-01-11",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reliable sources confirm his birth and death dates and age.",
+  "shortDescriptionEn": "Thomas Hardy was an English novelist and poet (born 2 June 1840 – died 11 January 1928), celebrated for works like *Tess of the d’Urbervilles* and *Far from the Madding Crowd*; he died at age 87 of pleurisy after dictating his last poem.",
+  "shortDescriptionFr": "Thomas Hardy était un romancier et poète anglais (né le 2 juin 1840 – décédé le 11 janvier 1928), célèbre pour *Tess of the d’Urbervilles* et *Far from the Madding Crowd* ; il est mort à 87 ans d’une pleurésie après avoir dicté son dernier poème.",
+  "shortDescriptionDe": "Thomas Hardy war ein englischer Romanautor und Dichter (geboren am 2. Juni 1840 – gestorben am 11. Januar 1928), bekannt durch Werke wie *Tess of the d’Urbervilles* und *Far from the Madding Crowd*; er starb mit 87 Jahren an Brustfellentzündung, nachdem er sein letztes Gedicht diktiert hatte.",
+  "shortDescriptionEs": "Thomas Hardy fue un novelista y poeta inglés (nacido el 2 de junio de 1840 – fallecido el 11 de enero de 1928), famoso por obras como *Tess of the d’Urbervilles* y *Far from the Madding Crowd*; murió a los 87 años de pleuresía tras dictar su último poema.",
+  "shortDescriptionRu": "Томас Харди был английским романистом и поэтом (родился 2 июня 1840 г. – умер 11 января 1928 г.), известен такими произведениями, как «Тэсс из рода д’Эрбервиллей» и «Вдали от обезумевшего народа»; умер в возрасте 87 лет от плеврита после того, как продиктовал своё последнее стихотворение.",
+  "sources": [
+    "turn0search0",
+    "turn0search2",
+    "turn0search6",
+    "turn0search20",
+    "turn0search12"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q75612",  "Name": "Isaac Bashevis Singer",  "BirthDate": "1904-07-14T00:00:00Z",  "DeathDate": "1991-07-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dan%20Hadani%20collection%20%28990044399930205171%29%20%28cropped%29.jpg",  "SiteLinksCnt": 111,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"15511":{"pageid":15511,"ns":0,"title":"Isaac Bashevis Singer","extract":"Isaac Bashevis Singer (Yiddish: \u05d9\u05e6\u05d7\u05e7 \u05d1\u05d0\u05b7\u05e9\u05e2\u05f0\u05d9\u05e1 \u05d6\u05d9\u05e0\u05d2\u05e2\u05e8; 1903 \u2013 July 24, 1991) was a Polish-born Jewish-American novelist, short-story writer, memoirist, essayist, and translator. Some of his works were adapted for the theater. He wrote and published first in Yiddish and later translated his own works into English with the help of editors and collaborators. He was awarded the Nobel Prize for Literature in 1978. A leading figure in the Yiddish literary movement, he was awarded two U.S. National Book Awards, one in Children's Literature for his memoir A Day of Pleasure: Stories of a Boy Growing Up in Warsaw (1970) and one in Fiction for his collection A Crown of Feathers and Other Stories (1974)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q75612")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q75612",
+  "isRealHuman": true,
+  "birthDate": "1903-11-11",
+  "deathDate": "1991-07-24",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Birth date has some scholarly uncertainty, but most modern sources use November 11 1903 and list age 87 at death.",
+  "shortDescriptionEn": "Isaac Bashevis Singer (b. November 11 1903 – d. July 24 1991) was a Polish‑born Jewish‑American novelist, short‑story writer, memoirist and translator. He received the Nobel Prize in Literature in 1978. He died in Surfside, Florida after suffering strokes at the age of 87.",
+  "shortDescriptionFr": "Isaac Bashevis Singer (né le 11 novembre 1903 – mort le 24 juillet 1991) était un romancier polonais‑américain d’origine juive, nouvelliste, mémorialiste et traducteur. Lauréat du prix Nobel de littérature en 1978. Il est décédé à Surfside, Floride, après des AVC, à l’âge de 87 ans.",
+  "shortDescriptionDe": "Isaac Bashevis Singer (geboren am 11. November 1903 – gestorben am 24. Juli 1991) war ein polnisch‑amerikanischer jüdischer Romanautor, Kurzgeschichten‑Schriftsteller, Memoirenschreiber und Übersetzer. Nobelpreisträger für Literatur 1978. Er starb in Surfside, Florida, nach mehreren Schlaganfällen im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Isaac Bashevis Singer (nacido el 11 de noviembre de 1903 – fallecido el 24 de julio de 1991) fue un novelista, cuentista, memorista y traductor judío nacido en Polonia y nacionalizado estadounidense. Premio Nobel de Literatura en 1978. Murió en Surfside, Florida tras sufrir accidentes cerebrovasculares, a los 87 años.",
+  "shortDescriptionRu": "Айзек Бешевис Сингер (род. 11 ноября 1903 г. – ум. 24 июля 1991 г.) был польско‑американским писателем, автором романов, рассказов, мемуаров и переводчиком, внёсшим вклад в литературу на идише. Лауреат Нобелевской премии по литературе 1978 г. Умер в Серфсайд, Флорида, после серии инсультов в возрасте 87 лет.",
+  "sources": [
+    "turn0search0",
+    "turn0search1",
+    "turn0search3",
+    "turn0search16",
+    "turn0search17"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q163366",  "Name": "Ezra Pound",  "BirthDate": "1885-10-30T00:00:00Z",  "DeathDate": "1972-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ezra%20Pound%20by%20Alvin%20Langdon%20Coburn%2C%201913%2C%20collotype%20photograph%2C%20from%20the%20National%20Portrait%20Gallery%20-%20NPG-NPG%2078%2014Pound-000001.jpg",  "SiteLinksCnt": 107,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"44203":{"pageid":44203,"ns":0,"title":"Ezra Pound","extract":"Ezra Weston Loomis Pound (30 October 1885 \u2013 1 November 1972) was an American poet and critic, a major figure in the early modernist poetry movement, and a collaborator in Fascist Italy and the Sal\u00f2 Republic during World War II. His works include Ripostes (1912), Hugh Selwyn Mauberley (1920), and his 800-page epic poem The Cantos (c.\u20091917\u20131962).\nPound's contribution to poetry began in the early 20th century with his role in developing Imagism, a movement stressing precision and economy of language. Working in London as foreign editor of several American literary magazines, he helped discover and shape the work of contemporaries such as H. D., Robert Frost, T. S. Eliot, Ernest Hemingway, and James Joyce. He was responsible for the 1914 serialization of Joyce's A Portrait of the Artist as a Young Man, the 1915 publication of Eliot's \"The Love Song of J. Alfred Prufrock\", and the serialization from 1918 of Joyce's Ulysses. Hemingway wrote in 1932 that, for poets born in the late 19th or early 20th century, not to be influenced by Pound would be \"like passing through a great blizzard and not feeling its cold\".\nAngered by the carnage of World War I, Pound blamed the war on finance capitalism, which he called \"usury\". He moved to Italy in 1924 and through the 1930s and 1940s promoted an economic theory known as social credit, wrote for publications owned by the British fascist Sir Oswald Mosley, embraced Benito Mussolini's fascism, and expressed support for Adolf Hitler. During World War II, Pound recorded hundreds of paid radio propaganda broadcasts for the fascist Italian government and its later incarnation as a German puppet state, in which he attacked the United States federal government, Franklin D. Roosevelt, Great Britain, international finance, munitions makers, arms dealers, Jews, and others, as abettors and prolongers of the war. He also praised both eugenics and the Holocaust in Italy, while urging American GIs to throw down their rifles and surrender. In 1945, Pound was captured by the Italian Resistance and handed over to the U.S. Army's Counterintelligence Corps, who held him pending extradition and prosecution based on an indictment for treason. He spent months in a U.S. military detention camp near Pisa, including three weeks in an outdoor steel cage. Ruled mentally unfit to stand trial, Pound was incarcerated for over 12 years at St. Elizabeths psychiatric hospital in Washington, D.C., whose doctors viewed Pound as a narcissist and a psychopath, but otherwise completely sane.\nWhile in custody in Italy, Pound began work on sections of The Cantos, which were published as The Pisan Cantos (1948), for which he was awarded the Bollingen Prize for Poetry in 1949 by the Library of Congress, causing enormous controversy. After a campaign by his fellow writers, he was released from St. Elizabeth's in 1958 and returned to Italy, where he posed for the press giving the Fascist salute and called the United States \"an insane asylum\". Pound remained in Italy until his death in 1972. His economic and political views have ensured that his life and literary legacy remain highly controversial.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q163366")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q163366",
+  "isRealHuman": true,
+  "birthDate": "1885-10-30",
+  "deathDate": "1972-11-01",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Birth and death dates are documented reliably in multiple standard biographical sources; age calculation (87) is straightforward.",
+  "shortDescriptionEn": "Ezra Weston Loomis Pound was an American poet and critic born in 1885, a driving force behind Imagism and modernist poetry, who edited and promoted writers like T. S. Eliot and James Joyce. He spent decades in Europe, embraced Fascist Italy during World War II, broadcast propaganda, was arrested on treason charges, committed to St. Elizabeths psychiatric hospital, released in 1958, and died in Venice in 1972 aged 87.",
+  "shortDescriptionFr": "Ezra Weston Loomis Pound était un poète et critique américain né en 1885, moteur de l’Imagisme et du modernisme poétique, éditeur de T. S. Eliot et James Joyce. Il vécut en Europe, adopta le fascisme en Italie pendant la Seconde Guerre mondiale, fit des émissions de propagande, fut arrêté pour trahison, interné à l’hôpital psychiatrique de St. Elizabeths, libéré en 1958, et mourut à Venise en 1972 à 87 ans.",
+  "shortDescriptionDe": "Ezra Weston Loomis Pound war ein US‑amerikanischer Dichter und Kritiker, geboren 1885, Wegbereiter des Imagismus und der modernen Poesie, Herausgeber von T. S. Eliot und James Joyce. Er lebte in Europa, unterstützte im Zweiten Weltkrieg faschistisches Italien, hielt Propagandasendungen, wurde wegen Hochverrats verhaftet, in St. Elizabeths psychiatrische Klinik eingewiesen, 1958 entlassen und starb 1972 in Venedig im Alter von 87 Jahren.",
+  "shortDescriptionEs": "Ezra Weston Loomis Pound fue un poeta y crítico estadounidense nacido en 1885, figura clave del Imagismo y la poesía modernista, editor de T. S. Eliot y James Joyce. Vivió en Europa, apoyó el fascismo en Italia durante la Segunda Guerra Mundial, realizó emisiones de propaganda, fue arrestado por traición, internado en el hospital psiquiátrico St. Elizabeths, liberado en 1958 y falleció en Venecia en 1972 a los 87 años.",
+  "shortDescriptionRu": "Эзра Уэстон Лумис Паунд (1885–1972) — американский поэт и критик, основоположник движения имажизма и модернистской поэзии, редактор Т. С. Элиота и Джеймса Джойса. Жил в Европе, поддерживал фашистскую Италию во время Второй мировой войны, вел пропагандистские передачи, был арестован по обвинению в госизмене, заключён в психбольницу St. Elizabeths, освобождён в 1958 году и умер в Венеции в возрасте 87 лет.",
+  "sources": [
+    "Wikipedia article on Ezra Pound",
+    "Britannica entry on Ezra Pound",
+    "Geneastar / Encyclopedia.com family biography",
+    "Find a Grave memorial page"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q18391",  "Name": "Elie Wiesel",  "BirthDate": "1928-09-30T00:00:00Z",  "DeathDate": "2016-07-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Elie%20Wiesel%202012%20Shankbone.JPG",  "SiteLinksCnt": 103,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"10518":{"pageid":10518,"ns":0,"title":"Elie Wiesel","extract":"Eliezer \"Elie\" Wiesel (September 30, 1928 \u2013 July 2, 2016) was a Romanian-born American writer, professor, political activist, Nobel laureate, and Holocaust survivor. He authored 57 books, written mostly in French and English, including Night, a work based on his experiences as a Jewish prisoner in the Auschwitz and Buchenwald concentration camps.\nIn his political activities Wiesel became a regular speaker on the subject of the Holocaust and remained a strong defender of human rights during his lifetime. He also advocated for victims of oppression including Soviet and Ethiopian Jews, the apartheid in South Africa, the Bosnian genocide, Sudan, the Kurds and the Armenian genocide, Argentina's Desaparecidos or Nicaragua's Miskito people. He was a strong supporter of the state of Israel and was personally close to Benjamin Netanyahu.\nHe was a professor of the humanities at Boston University, which created the Elie Wiesel Center for Jewish Studies in his honor. He helped establish the United States Holocaust Memorial Museum in Washington, D.C.\nWiesel received awards including the Nobel Peace Prize in 1986. He was a founding board member of the New York Human Rights Foundation and remained active in it throughout his life."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q18391")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q18391",
+  "isRealHuman": true,
+  "birthDate": "1928-09-30",
+  "deathDate": "2016-07-02",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Elie Wiesel's birth and death dates are well-documented and widely corroborated by historical records and major reputable sources. The age at death is confirmed by both direct calculation and multiple biographies.",
+  "shortDescriptionEn": "Elie Wiesel (1928–2016) was a Romanian-born American writer, Holocaust survivor, and Nobel Peace Prize laureate. He authored 57 books, including 'Night', based on his concentration camp experiences. He died at age 87 after a lifetime of advocating for human rights and Holocaust remembrance.",
+  "shortDescriptionFr": "Elie Wiesel (1928–2016) était un écrivain américain né en Roumanie, survivant de la Shoah et lauréat du prix Nobel de la paix. Auteur de 57 livres, dont « La Nuit », il est mort à l'âge de 87 ans après avoir consacré sa vie à la défense des droits de l'homme.",
+  "shortDescriptionDe": "Elie Wiesel (1928–2016) war ein in Rumänien geborener US-amerikanischer Schriftsteller, Holocaust-Überlebender und Friedensnobelpreisträger. Er starb im Alter von 87 Jahren und engagierte sich lebenslang für Menschenrechte und die Erinnerung an den Holocaust.",
+  "shortDescriptionEs": "Elie Wiesel (1928–2016) fue un escritor estadounidense nacido en Rumanía, superviviente del Holocausto y premio Nobel de la Paz. Falleció a los 87 años tras una vida dedicada a los derechos humanos y la memoria del Holocausto.",
+  "shortDescriptionRu": "Эли Визель (1928–2016) — румынско-американский писатель, переживший Холокост, лауреат Нобелевской премии мира. Он умер в возрасте 87 лет, посвятив жизнь защите прав человека и сохранению памяти о Холокосте.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q18391",
+    "https://en.wikipedia.org/wiki/Elie_Wiesel",
+    "https://www.nobelprize.org/prizes/peace/1986/wiesel/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q202878",  "Name": "Mae West",  "BirthDate": "1893-08-17T00:00:00Z",  "DeathDate": "1980-11-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20West%20-%201936.jpg",  "SiteLinksCnt": 103,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"173082":{"pageid":173082,"ns":0,"title":"Mae West","extract":"Mary Jane \"Mae\" West (August 17, 1893 \u2013 November 22, 1980) was an American actress, singer, comedian, screenwriter, and playwright whose career spanned over seven decades. Considered a sex symbol, she was known for her breezy sexual independence and her lighthearted bawdy double entendres, often delivered in a husky contralto voice. She was active in vaudeville and on stage in New York City before moving to Los Angeles to begin a career in the film industry.\nWest was one of the most controversial movie stars of her day; she encountered problems especially with censorship. She once quipped, \"I believe in censorship. I made a fortune out of it.\" She bucked the studio system by making comedy out of conventional beliefs, and the Depression-era audience admired her for it. When her film career ended, she wrote books and plays, continued to perform in Las Vegas and London and on radio and television, and recorded rock and roll albums. In 1999, the American Film Institute posthumously voted her the 15th-greatest female screen legend of classic American cinema."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q202878")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q202878",
+  "isRealHuman": true,
+  "birthDate": "1893-08-17",
+  "deathDate": "1980-11-22",
+  "ageAtDeath": 87,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable sources (Britannica, Wikipedia, Find a Grave, IMDb) consistently report the same birth and death dates and age of 87.",
+  "shortDescriptionEn": "Mae West (born Mary Jane West; 1893–1980) was an American actress, singer, playwright, screenwriter and comedian, famed for her bawdy double entendres and breezy sexual independence. She died on November 22, 1980 in Los Angeles at age 87 after suffering complications from a stroke.",
+  "shortDescriptionFr": "Mae West (née Mary Jane West ; 1893–1980) était une actrice, chanteuse, dramaturge, scénariste et comédienne américaine, célèbre pour ses doubles sens osés et son indépendance sexuelle affirmée. Elle est décédée le 22 novembre 1980 à Los Angeles à l’âge de 87 ans des suites d’un AVC.",
+  "shortDescriptionDe": "Mae West (geborene Mary Jane West; 1893–1980) war eine US‑amerikanische Schauspielerin, Sängerin, Dramatikerin, Drehbuchautorin und Komödiantin, bekannt für ihre schlüpfrigen Doppeldeutigkeiten und sexuelle Unabhängigkeit. Sie starb am 22. November 1980 in Los Angeles im Alter von 87 Jahren an den Folgen eines Schlaganfalls.",
+  "shortDescriptionEs": "Mae West (nacida Mary Jane West; 1893–1980) fue una actriz, cantante, dramaturga, guionista y humorista estadounidense, famosa por sus dobles sentidos atrevidos y su independencia sexual. Falleció el 22 de noviembre de 1980 en Los Ángeles a los 87 años tras sufrir complicaciones de un derrame cerebral.",
+  "shortDescriptionRu": "Мей Уэст (урождённая Мэри Джейн Уэст; 1893–1980) была американской актрисой, певицей, драматургом, сценаристкой и комедианткой, прославившейся своими откровенными двусмысленностями и сексуальной независимостью. Она умерла 22 ноября 1980 года в Лос‑Анджелесе в возрасте 87 лет от осложнений инсульта.",
+  "sources": [
+    "turn0search1",
+    "turn0search4",
+    "turn0search6",
+    "turn0search0",
+    "turn0search7",
+    "turn0search32"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83233",  "Name": "Jacques Cousteau",  "BirthDate": "1910-06-11T00:00:00Z",  "DeathDate": "1997-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Yves%20Cousteau.jpg",  "SiteLinksCnt": 98,  "Age": 87}
+{"batchcomplete":"","query":{"pages":{"16252":{"pageid":16252,"ns":0,"title":"Jacques Cousteau","extract":"Jacques-Yves Cousteau,  (, also UK: , French: [\u0292ak iv kusto]; 11 June 1910 \u2013 25 June 1997) was a French naval officer,  oceanographer, filmmaker and author. He co-invented the first successful  open-circuit self-contained underwater breathing apparatus (SCUBA), called the Aqua-Lung, which assisted him in producing some of the first underwater documentaries.\nCousteau wrote many books describing his undersea explorations. In his first book, The Silent World: A Story of Undersea Discovery and Adventure, Cousteau surmised the existence of the echolocation abilities of porpoises. The book was adapted into an underwater documentary called The Silent World. Co-directed by Cousteau and Louis Malle, it was one of the first films to use underwater cinematography to document the ocean depths in color. The film won the 1956 Palme d'Or at the Cannes Film Festival and remained the only documentary to do so until 2004 (when Fahrenheit 9/11 received the award). It was also awarded the Academy Award for Best Documentary in 1957.\nFrom 1966 to 1976, he hosted The Undersea World of Jacques Cousteau, a documentary television series, presented on American commercial television stations. A second documentary series, The Cousteau Odyssey, ran from 1977 to 1982 on public television stations."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83233")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q83233",
+  "isRealHuman": true,
+  "birthDate": "1910-06-11",
+  "deathDate": "1997-06-25",
+  "ageAtDeath": 87,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are well-documented and consistent across official records. The age calculation is precise with a confirmed 14 days past his 87th birthday.",
+  "shortDescriptionEn": "Jacques-Yves Cousteau was a pioneering French naval officer, oceanographer, and filmmaker who co-invented the Aqua-Lung and brought marine exploration to the public through acclaimed documentaries. He passed away in Paris in 1997 at age 87, shortly after his birthday.",
+  "shortDescriptionFr": "Jacques-Yves Cousteau était un officier de marine, océanographe et cinéaste français pionnier, co-inventeur de l'Aqua-Lung. Il a popularisé l'exploration marine à travers ses documentaires. Il est décédé à Paris en 1997 à l'âge de 87 ans, peu après son anniversaire.",
+  "shortDescriptionDe": "Jacques-Yves Cousteau war ein französischer Marineoffizier, Ozeanograf und Filmemacher, der das Tauchatemgerät Aqua-Lung mitentwickelte und durch Dokumentarfilme die Meereswelt bekannt machte. Er starb 1997 in Paris im Alter von 87 Jahren, kurz nach seinem Geburtstag.",
+  "shortDescriptionEs": "Jacques-Yves Cousteau fue un oficial naval, oceanógrafo y cineasta francés pionero que co-inventó el Aqua-Lung y popularizó la exploración marina con sus documentales. Falleció en París en 1997 a los 87 años, poco después de su cumpleaños.",
+  "shortDescriptionRu": "Жак-Ив Кусто — французский морской офицер, океанограф и кинорежиссёр, соавтор изобретения акваланга и популяризатор подводных исследований через документальные фильмы. Он умер в Париже в 1997 году в возрасте 87 лет, вскоре после дня рождения.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q83233",
+    "https://en.wikipedia.org/wiki/Jacques_Cousteau",
+    "https://www.britannica.com/biography/Jacques-Cousteau",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Yves%20Cousteau.jpg"
+  ]
+}
+

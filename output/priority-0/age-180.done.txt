@@ -1,0 +1,56 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q671872",  "Name": "Isaac",  "BirthDate": "-1850-01-01T00:00:00Z",  "DeathDate": "-1670-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Horst%2C%20Gerrit%20Willemsz.%20-%20Isaac%20blessing%20Jacob%20-%20Google%20Art%20Project%20%28cropped%29.jpg",  "SiteLinksCnt": 100,  "Age": 180}
+{"batchcomplete":"","query":{"pages":{"15192":{"pageid":15192,"ns":0,"title":"Isaac","extract":"Isaac ( EYE-z\u0259k; Biblical Hebrew: \u05d9\u05b4\u05e6\u05b0\u05d7\u05b8\u05e7\u200e, romanized: Y\u012b\u1e63\u1e25\u0101q; Ancient Greek: \u1f38\u03c3\u03b1\u03ac\u03ba, romanized: Isa\u00e1k; Arabic: \u0625\u0633\u062d\u0670\u0642/\u0625\u0633\u062d\u0627\u0642, romanized: Is\u1e25\u0101q; Amharic: \u12ed\u1235\u1210\u1245) is one of the three patriarchs of the Israelites and an important figure in the Abrahamic religions, including Judaism, Christianity, and Islam. Isaac first appears in the Torah, in which he is the son of Abraham and Sarah, the father of Jacob and Esau, and the grandfather of the twelve tribes of Israel. \nIsaac's name means \"he will laugh\", reflecting the laughter, in disbelief, of Abraham and Sarah, when told by God that they would have a child. He is the only patriarch whose name was not changed, and the only one who did not move out of Canaan. According to the narrative, he died aged 180, the longest-lived of the three patriarchs.\nRecent scholarship has discussed the possibility that Isaac could have originally been an ancestor from the Beersheba region who was venerated at a sanctuary.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q671872")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q671872",
+  "isRealHuman": false,
+  "birthDate": "-2066-01-01",
+  "deathDate": "-1886-01-01",
+  "ageAtDeath": 180,
+  "confidence": 70,
+  "confidenceExplained": "Age of 180 is given explicitly in Genesis; chronology relies on traditional biblical dating (e.g. Ussher), uncertain by modern standards.",
+  "shortDescriptionEn": "Isaac is the biblical patriarch, son of Abraham and Sarah, father of Jacob and Esau; according to Genesis 35:28 he died at age 180 after living a long and blessed life.",
+  "shortDescriptionFr": "Isaac est le patriarche biblique, fils d’Abraham et Sarah, père de Jacob et Ésaü ; selon Genèse 35:28 il mourut à l’âge de 180 ans après une vie longue et bénie.",
+  "shortDescriptionDe": "Isaak ist der biblische Patriarch, Sohn Abrahams und Saras, Vater von Jakob und Esau; laut Genesis 35,28 starb er im Alter von 180 Jahren nach einem langen und gesegneten Leben.",
+  "shortDescriptionEs": "Isaac es el patriarca bíblico, hijo de Abraham y Sara, padre de Jacob y Esaú; según Génesis 35:28 murió a los 180 años tras una vida larga y bendecida.",
+  "shortDescriptionRu": "Исаак – библейский патриарх, сын Авраама и Сары, отец Иакова и Исава; согласно Бытие 35:28 он умер в возрасте 180 лет после долгой и благословенной жизни.",
+  "sources": [
+    "turn0search9",
+    "turn0search33",
+    "turn0search0",
+    "turn0search7",
+    "turn0search19",
+    "turn0search16",
+    "turn0search5",
+    "turn0news36"
+  ]
+}
