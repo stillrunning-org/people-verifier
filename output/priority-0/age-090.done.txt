@@ -1,0 +1,977 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8016",  "Name": "Winston Churchill",  "BirthDate": "1874-11-30T00:00:00Z",  "DeathDate": "1965-01-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Winston%20Churchill%20-%2019086236948.jpg",  "SiteLinksCnt": 253,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"33265":{"pageid":33265,"ns":0,"title":"Winston Churchill","extract":"Sir Winston Leonard Spencer Churchill (30 November 1874 \u2013 24 January 1965) was a British statesman, military officer, and writer who was Prime Minister of the United Kingdom from 1940 to 1945 (during the Second World War) and again from 1951 to 1955. For some 62 of the years between 1900 and 1964, he was a member of parliament (MP) and represented a total of five constituencies over that time. Ideologically an adherent to economic liberalism and imperialism, he was for most of his career a member of the Conservative Party, which he led from 1940 to 1955. He was a member of the Liberal Party from 1904 to 1924.\nOf mixed English and American parentage, Churchill was born in Oxfordshire into the wealthy, aristocratic Spencer family. He joined the British Army in 1895 and saw action in British India, the Mahdist War and the Second Boer War, gaining fame as a war correspondent and writing books about his campaigns. Elected a Conservative MP in 1900, he defected to the Liberals in 1904. In H. H. Asquith's Liberal government, Churchill was president of the Board of Trade and later Home Secretary, championing prison reform and workers' social security. As First Lord of the Admiralty during the First World War he oversaw the Gallipoli campaign; but, after it proved a disaster, was demoted to Chancellor of the Duchy of Lancaster. He resigned in November 1915 and joined the Royal Scots Fusiliers on the Western Front for six months. In 1917, he returned to government under David Lloyd George and served successively as Minister of Munitions, Secretary of State for War, Secretary of State for Air, and Secretary of State for the Colonies, overseeing the Anglo-Irish Treaty and British foreign policy in the Middle East. After two years out of Parliament, he was Chancellor of the Exchequer in Stanley Baldwin's Conservative government, returning sterling in 1925 to the gold standard, depressing the UK economy.\nOut of government during his so-called \"wilderness years\" in the 1930s, Churchill took the lead in calling for rearmament to counter the threat of militarism in Nazi Germany. At the outbreak of the Second World War he was re-appointed First Lord of the Admiralty. In May 1940, he became prime minister, succeeding Neville Chamberlain. Churchill formed a national government and oversaw British involvement in the Allied war effort against the Axis powers, resulting in victory in 1945. After the Conservatives' defeat in the 1945 general election, he became Leader of the Opposition. Amid the developing Cold War with the Soviet Union, he publicly warned of an \"iron curtain\" of Soviet influence in Europe and promoted European unity. Between his terms, he wrote several books recounting his experience during the war. He was awarded the Nobel Prize in Literature in 1953. He lost the 1950 election but was returned to office in 1951. His second term was preoccupied with foreign affairs, especially Anglo-American relations and preservation of what remained of the British Empire, with India no longer a part of it. Domestically, his government's priority was their extensive housebuilding programme, in which they were successful. In declining health, Churchill resigned in 1955, remaining an MP until 1964. Upon his death in 1965, he was given a state funeral.\nOne of the 20th century's most significant figures, Churchill remains popular in the UK and the rest of the Anglosphere. He is generally viewed as a victorious wartime leader who played an integral role in defending liberal democracy against the spread of fascism. He has sometimes been criticised for his imperialism and certain comments on race, in addition to some wartime decisions such as area bombing, but historians nevertheless rank Churchill as one of the greatest British prime ministers."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8016")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q8016",
+  "isRealHuman": true,
+  "birthDate": "1874-11-30",
+  "deathDate": "1965-01-24",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "Birth and death dates are well‑documented across multiple reputable sources; age calculation is straightforward.",
+  "shortDescriptionEn": "Sir Winston Leonard Spencer‑Churchill (1874–1965) was a British statesman, writer and wartime Prime Minister, who led the United Kingdom during World War II and again in the early 1950s. He died in London following a stroke at age 90.",
+  "shortDescriptionFr": "Sir Winston Leonard Spencer‑Churchill (1874–1965) était un homme d’État britannique, écrivain et Premier ministre durant la Seconde Guerre mondiale et au début des années 1950. Il est décédé à Londres des suites d’un accident vasculaire cérébral à l’âge de 90 ans.",
+  "shortDescriptionDe": "Sir Winston Leonard Spencer‑Churchill (1874–1965) war ein britischer Staatsmann, Schriftsteller und während des Zweiten Weltkriegs sowie Anfang der 1950er Jahre Premierminister. Er starb in London nach einem Schlaganfall im Alter von 90 Jahren.",
+  "shortDescriptionEs": "Sir Winston Leonard Spencer‑Churchill (1874–1965) fue un estadista británico, escritor y Primer Ministro durante la Segunda Guerra Mundial y de nuevo en los años 50. Murió en Londres tras un derrame cerebral a los 90 años.",
+  "shortDescriptionRu": "Сэр Уинстон Леонард Спенсер‑Черчилль (1874–1965) — британский политик, писатель и премьер‑министр во время Второй мировой войны и в начале 1950‑х. Умер в Лондоне от инсульта в возрасте 90 лет.",
+  "sources": [
+    "turn0search1",
+    "turn0search2",
+    "turn0search16",
+    "turn0search22",
+    "turn0search27"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11256",  "Name": "Fidel Castro",  "BirthDate": "1926-08-13T00:00:00Z",  "DeathDate": "2016-11-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fidel%20Castro%201950s.jpg",  "SiteLinksCnt": 202,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"38301":{"pageid":38301,"ns":0,"title":"Fidel Castro","extract":"Fidel Alejandro Castro Ruz ( KASS-troh; Latin American Spanish: [fi\u02c8\u00f0el ale\u02c8xand\u027eo \u02c8kast\u027eo \u02c8rus]; 13 August 1926 \u2013 25 November 2016) was a Cuban revolutionary and politician who was the leader of Cuba from 1959 to 2008, serving as the prime minister of Cuba from 1959 to 1976 and president from 1976 to 2008. Ideologically a Marxist\u2013Leninist and Cuban nationalist, he also served as the first secretary of the Communist Party of Cuba from 1965 until 2011. Under his administration, Cuba became a one-party communist state; industry and business were nationalized, and socialist reforms were implemented throughout society.\nBorn in Bir\u00e1n, the son of a wealthy Spanish farmer, Castro adopted leftist and anti-imperialist ideas while studying law at the University of Havana. After participating in rebellions against right-wing governments in the Dominican Republic and Colombia, he planned the overthrow of Cuban president Fulgencio Batista, launching a failed attack on the Moncada Barracks in 1953. After a year's imprisonment, Castro travelled to Mexico where he formed a revolutionary group, the 26th of July Movement, with his brother, Ra\u00fal Castro, and Ernesto \"Che\" Guevara. Returning to Cuba, Castro took a key role in the Cuban Revolution by leading the Movement in a guerrilla war against Batista's forces from the Sierra Maestra. After Batista's overthrow in 1959, Castro assumed military and political power as Cuba's prime minister. The United States came to oppose Castro's government and unsuccessfully attempted to remove him by assassination, economic embargo, and counter-revolution, including the Bay of Pigs Invasion of 1961. Countering these threats, Castro aligned with the Soviet Union and allowed the Soviets to place nuclear weapons in Cuba, resulting in the Cuban Missile Crisis\u2014a defining incident of the Cold War\u2014in 1962.\nAdopting a Marxist\u2013Leninist model of development, Castro converted Cuba into a one-party, socialist state under Communist Party rule, the first in the Western Hemisphere. Policies introducing central economic planning and expanding healthcare and education were accompanied by state control of the press and the suppression of internal dissent. Abroad, Castro supported anti-imperialist revolutionary groups, backing the establishment of Marxist governments in Chile, Nicaragua, and Grenada, as well as sending troops to aid allies in the Yom Kippur, Ogaden, and Angolan Civil War. These actions, coupled with Castro's leadership of the Non-Aligned Movement from 1979 to 1983 and Cuban medical internationalism, increased Cuba's profile on the world stage. Following the dissolution of the Soviet Union in 1991, Castro led Cuba through the economic downturn of the \"Special Period\", embracing environmentalist and anti-globalization ideas. In the 2000s, Castro forged alliances in the Latin American \"pink tide\"\u2014namely with Hugo Ch\u00e1vez's Venezuela\u2014and formed the Bolivarian Alliance for the Americas. In 2006, Castro transferred his responsibilities to Vice President Ra\u00fal Castro, who was elected to the presidency by the National Assembly in 2008.\nThe longest-serving non-royal head of state in the 20th and 21st centuries, Castro polarized world opinion. His supporters view him as a champion of socialism and anti-imperialism whose revolutionary government advanced economic and social justice while securing Cuba's independence from American hegemony. His critics view him as a dictator whose administration oversaw human rights abuses, the exodus of many Cubans, and the impoverishment of the country's economy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11256")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q11256",
+  "isRealHuman": true,
+  "birthDate": "1926-08-13",
+  "deathDate": "2016-11-25",
+  "ageAtDeath": 90,
+  "confidence": 99,
+  "confidenceExplained": "Multiple authoritative sources (Wikipedia, Britannica, contemporary obituaries) consistently report the birth and death dates and his age as 90, so I’m highly confident.",
+  "shortDescriptionEn": "Fidel Alejandro Castro Ruz (1926‑2016) was a Cuban revolutionary and political leader who governed Cuba from 1959 to 2008, first as prime minister and then as president. He transformed Cuba into the first communist state in the Western Hemisphere, implementing socialist reforms and aligning with the Soviet bloc. He died of natural causes in his sleep on 25 November 2016, at the age of 90.",
+  "shortDescriptionFr": "Fidel Alejandro Castro Ruz (1926‑2016) était un dirigeant révolutionnaire et politique cubain, à la tête de Cuba de 1959 à 2008, d’abord en tant que premier ministre puis président. Il a transformé Cuba en premier État communiste du continent américain, en instaurant des réformes socialistes et en s’alignant sur le bloc soviétique. Il est décédé de cause naturelle dans son sommeil le 25 novembre 2016, à l’âge de 90 ans.",
+  "shortDescriptionDe": "Fidel Alejandro Castro Ruz (1926‑2016) war ein kubanischer revolutionärer Staatsführer, der Kuba von 1959 bis 2008 zuerst als Premierminister, dann als Präsident regierte. Er verwandelte Kuba in den ersten kommunistischen Staat in der westlichen Hemisphäre und setzte sozialistische Reformen um, im Bündnis mit dem sowjetischen Block. Er starb am 25. November 2016 im Schlaf aus natürlichen Ursachen im Alter von 90 Jahren.",
+  "shortDescriptionEs": "Fidel Alejandro Castro Ruz (1926‑2016) fue un líder revolucionario y político cubano que gobernó Cuba de 1959 a 2008, primero como primer ministro y luego como presidente. Transformó Cuba en el primer Estado comunista del hemisferio occidental, implantando reformas socialistas y alineándose con el bloque soviético. Falleció por causas naturales en su sueño el 25 de noviembre de 2016 a los 90 años.",
+  "shortDescriptionRu": "Фидель Алехандро Кастро Рус (1926‑2016) — кубинский революционер и политический лидер, руководил Кубой с 1959 по 2008 годы сначала как премьер‑министр, затем как президент. Он преобразовал Кубу в первый коммунистический государство в западном полушарии, проводя социалистические реформы и сближаясь с Советским блоком. Скончался естественной смертью во сне 25 ноября 2016 года в возрасте 90 лет.",
+  "sources": [
+    "Wikipedia: Fidel Castro",
+    "Britannica: Fidel Castro biography",
+    "Death and state funeral of Fidel Castro (Wikipedia)",
+    "RFE/RL obituary",
+    "CNN fast facts"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7235",  "Name": "Sophocles",  "BirthDate": "-0495-01-01T00:00:00Z",  "DeathDate": "-0405-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ny%20Carlsberg%20Glyptothek%20-%20Sophokles.jpg",  "SiteLinksCnt": 202,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"26984":{"pageid":26984,"ns":0,"title":"Sophocles","extract":"Sophocles (c. 497/496 \u2013 winter 406/405 BC) was an ancient Greek tragedian known as one of three from whom at least one play has survived in full. His first plays were written later than, or contemporary with, those of Aeschylus and earlier than, or contemporary with, those of Euripides. Sophocles wrote more than 120 plays, but only seven have survived in a complete form: Ajax, Antigone, Women of Trachis, Oedipus Rex, Electra, Philoctetes, and Oedipus at Colonus. For almost fifty years, Sophocles was the most celebrated playwright in the dramatic competitions of the city-state of Athens, which took place during the religious festivals of the Lenaea and the Dionysia. He competed in thirty competitions, won twenty-four, and was never judged lower than second place. Aeschylus won thirteen competitions and was sometimes defeated by Sophocles; Euripides won four.\nThe most famous tragedies of Sophocles feature Oedipus and Antigone: they are generally known as the Theban plays, though each was part of a different tetralogy (the other members of which are now lost). Sophocles influenced the development of drama, most importantly by adding a third actor (attributed to Sophocles by Aristotle; to Aeschylus by Themistius), thereby reducing the importance of the chorus in the presentation of the plot. He also developed his characters to a greater extent than earlier playwrights.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7235")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7235",
+  "isRealHuman": true,
+  "birthDate": "-0496-01-01",
+  "deathDate": "-0406-01-01",
+  "ageAtDeath": 90,
+  "confidence": 90,
+  "confidenceExplained": "Estimated birth circa 496 BC and death in winter 406 BC gives an age of ~90; sources indicate 90–92, so one‑year uncertainty remains.",
+  "shortDescriptionEn": "Sophocles was an ancient Greek tragedian born around 497/496 BC and died in winter of 406/405 BC at about 90 years old; he revolutionized drama by adding a third actor and deep character development, and reportedly died either while reciting Antigone or choking on grapes at a festival.",
+  "shortDescriptionFr": "Sophocle était un tragédien grec antique né vers 497/496 av. J.‑C. et mort durant l’hiver 406/405 av. J.‑C., vers 90 ans ; il transforma le drame en ajoutant un troisième acteur et un développement approfondi des personnages, et aurait succombé soit en récitant Antigone, soit en s’étranglant en mangeant des raisins lors d’un festival.",
+  "shortDescriptionDe": "Sophokles war ein antiker griechischer Tragödiendichter, geboren um 497/496 v. Chr. und gestorben im Winter 406/405 v. Chr. im Alter von etwa 90 Jahren; er revolutionierte das Drama durch die Einführung eines dritten Schauspielers und tiefer Charakterentwicklung und soll beim Rezitieren von Antigone oder beim Verschlucken von Trauben auf einem Fest gestorben sein.",
+  "shortDescriptionEs": "Sófocles fue un trágico griego antiguo, nacido alrededor de 497/496 a. C. y fallecido en el invierno de 406/405 a. C. con unos 90 años; revolucionó el drama al añadir un tercer actor y desarrollar profundamente sus personajes, y se dice que murió mientras recitaba Antígona o atragantado con uvas en un festival.",
+  "shortDescriptionRu": "Софокл — древнегреческий трагик, родился около 497/496 г. до н. э. и умер зимой 406/405 г. до н. э. примерно в 90 лет; он революционизировал драму, введя третьего актёра и глубокую проработку персонажей, и, согласно легендам, умер либо при декламации «Антигоны», либо подавившись виноградом на фестивале.",
+  "sources": [
+    "Wikipedia article 'Sophocles' (en)",
+    "Softschools.com biography of Sophocles"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4612",  "Name": "Marlene Dietrich",  "BirthDate": "1901-12-27T00:00:00Z",  "DeathDate": "1992-05-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marlene%20Dietrich%20in%20No%20Highway%20%281951%29%20%28Cropped%29.png",  "SiteLinksCnt": 193,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"145325":{"pageid":145325,"ns":0,"title":"Marlene Dietrich","extract":"Marie Magdalene \"Marlene\" Dietrich (, German: [ma\u0281\u02c8le\u02d0n\u0259 \u02c8di\u02d0t\u0281\u026a\u00e7] ; 27 December 1901 \u2013 6 May 1992) was a German and American actress and singer whose career spanned nearly seven decades.\nIn 1920s Berlin, Dietrich performed on the stage and in silent films. Her performance as Lola Lola in Josef von Sternberg's The Blue Angel (1930) brought her international acclaim and a contract with Paramount Pictures. She starred in many Hollywood films, including six iconic roles directed by Sternberg: Morocco (1930) (her only Academy Award nomination), Dishonored (1931), Shanghai Express and Blonde Venus (both 1932), The Scarlet Empress (1934), The Devil Is a Woman (1935). She successfully traded on her glamorous persona and exotic looks, and became one of the era's highest-paid actresses. Throughout World War II, she was a high-profile entertainer in the United States. Although she delivered notable performances in several post-war films, including Billy Wilder's A Foreign Affair (1948), Alfred Hitchcock's Stage Fright (1950), Billy Wilder's Witness for the Prosecution (1957), Orson Welles's Touch of Evil (1958), and Stanley Kramer's Judgment at Nuremberg (1961), she spent most of the 1950s to the 1970s touring the world as a marquee live-show performer.\nDietrich was known for her humanitarian efforts during World War II, housing German and French exiles, providing financial support and advocating their American citizenship. For her work on improving morale on the front lines during the war, she received several honors from the United States, France, Belgium, and Israel. In 1999, the American Film Institute named Dietrich the ninth greatest female screen legend of classic Hollywood cinema."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4612")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4612",
+  "isRealHuman": true,
+  "birthDate": "1901-12-27",
+  "deathDate": "1992-05-06",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are clearly documented and widely verified from authoritative sources including Wikipedia and Wikidata, enabling an exact calculation of age.",
+  "shortDescriptionEn": "Marlene Dietrich (1901–1992) was a German-American actress and singer whose career spanned nearly 70 years. She gained international fame in 'The Blue Angel' (1930) and became one of Hollywood's top stars. She was also celebrated for her wartime humanitarian work. Dietrich died at age 90 in Paris after years of reclusion due to declining health.",
+  "shortDescriptionFr": "Marlene Dietrich (1901–1992) était une actrice et chanteuse germano-américaine dont la carrière a duré près de 70 ans. Célèbre pour son rôle dans 'L'Ange bleu', elle fut aussi une figure humanitaire pendant la Seconde Guerre mondiale. Elle est décédée à l'âge de 90 ans à Paris après une longue période de retrait.",
+  "shortDescriptionDe": "Marlene Dietrich (1901–1992) war eine deutsch-amerikanische Schauspielerin und Sängerin mit einer fast 70-jährigen Karriere. International bekannt wurde sie mit 'Der blaue Engel'. Während des Zweiten Weltkriegs engagierte sie sich humanitär. Sie starb im Alter von 90 Jahren in Paris nach Jahren des Rückzugs.",
+  "shortDescriptionEs": "Marlene Dietrich (1901–1992) fue una actriz y cantante germano-estadounidense con una carrera de casi siete décadas. Alcanzó fama mundial con 'El ángel azul' y fue reconocida por su labor humanitaria en la Segunda Guerra Mundial. Murió a los 90 años en París tras años de retiro.",
+  "shortDescriptionRu": "Марлен Дитрих (1901–1992) — немецко-американская актриса и певица, чья карьера длилась почти 70 лет. Прославилась фильмом 'Голубой ангел' и активно участвовала в гуманитарной деятельности во Второй мировой. Скончалась в Париже в возрасте 90 лет после долгих лет уединения.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q4612",
+    "https://en.wikipedia.org/wiki/Marlene_Dietrich",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Marlene%20Dietrich%20in%20No%20Highway%20(1951)%20(Cropped).png"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11806",  "Name": "John Adams",  "BirthDate": "1735-10-30T00:00:00Z",  "DeathDate": "1826-07-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Official%20Presidential%20portrait%20of%20John%20Adams%20%28by%20John%20Trumbull%2C%20circa%201792%29.jpg",  "SiteLinksCnt": 180,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"10410626":{"pageid":10410626,"ns":0,"title":"John Adams","extract":"John Adams (October 30, 1735 \u2013 July 4, 1826) was an American Founding Father who served as the second president of the United States from 1797 to 1801. Before his presidency, he was a leader of the American Revolution that achieved independence from Great Britain. During the latter part of the Revolutionary War and in the early years of the new nation, he served the U.S. government as a senior diplomat in Europe. Adams was the first person to hold the office of vice president of the United States, serving from 1789 to 1797. He was a dedicated diarist and regularly corresponded with important contemporaries, including his wife and adviser Abigail Adams and his friend and political rival Thomas Jefferson.\nA lawyer and political activist prior to the Revolution, Adams was devoted to the right to counsel and presumption of innocence. He defied anti-British sentiment and successfully defended British soldiers against murder charges arising from the Boston Massacre. Adams was a Massachusetts delegate to the Continental Congress and became a leader of the revolution. He assisted Jefferson in drafting the Declaration of Independence in 1776 and was its primary advocate in Congress. As a diplomat, he helped negotiate a peace treaty with Great Britain and secured vital governmental loans. Adams was the primary author of the Massachusetts Constitution in 1780, which influenced the United States Constitution, as did his essay Thoughts on Government.\nAdams was elected to two terms as vice president under President George Washington and was elected as the United States' second president in 1796. He was the only president elected under the banner of the Federalist Party. Adams's term was dominated by the issue of the French Revolutionary Wars, and his insistence on American neutrality led to fierce criticism from both the Jeffersonian Republicans and from some in his own party, led by his rival Alexander Hamilton. Adams signed the controversial Alien and Sedition Acts and built up the Army and Navy in an undeclared naval war with France. He was the first president to reside in the White House.\nIn his bid in 1800 for reelection to the presidency, opposition from Federalists and accusations of despotism from Jeffersonians led to Adams losing to his vice president and former friend Jefferson, and he retired to Massachusetts. He eventually resumed his friendship with Jefferson by initiating a continuing correspondence. He and Abigail started the Adams political family, which includes their son John Quincy Adams, the sixth president. John Adams died on July 4, 1826 \u2013 the fiftieth anniversary of the adoption of the Declaration of Independence. New Englanders Adams and his son are the only presidents of the first twelve who never owned slaves. Historians and scholars have favorably ranked his administration.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11806")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q11806",
+  "isRealHuman": true,
+  "birthDate": "1735-10-30",
+  "deathDate": "1826-07-04",
+  "ageAtDeath": 90,
+  "confidence": 99,
+  "confidenceExplained": "Well‑documented birth and death dates across multiple reputable historical sources; calculation trivial.",
+  "shortDescriptionEn": "John Adams (1735–1826) was an American Founding Father and the second President of the United States (1797–1801); he died at his home in Quincy, Massachusetts on July 4, 1826, the 50th anniversary of the Declaration of Independence, at age 90 of heart failure.",
+  "shortDescriptionFr": "John Adams (1735–1826) fut un Père fondateur américain et le deuxième président des États-Unis (1797–1801) ; il mourut chez lui à Quincy (Massachusetts) le 4 juillet 1826, le 50ᵉ anniversaire de la Déclaration d’indépendance, à l’âge de 90 ans d’une insuffisance cardiaque.",
+  "shortDescriptionDe": "John Adams (1735–1826) war ein amerikanischer Gründervater und der zweite Präsident der Vereinigten Staaten (1797–1801); er starb am 4. Juli 1826 in Quincy, Massachusetts, dem 50. Jahrestag der Unabhängigkeitserklärung, im Alter von 90 Jahren an Herzversagen.",
+  "shortDescriptionEs": "John Adams (1735–1826) fue un Padre Fundador estadounidense y el segundo presidente de los Estados Unidos (1797–1801); falleció en su casa en Quincy, Massachusetts, el 4 de julio de 1826, el 50.º aniversario de la Declaración de Independencia, a los 90 años de edad por insuficiencia cardíaca.",
+  "shortDescriptionRu": "Джон Адамс (1735–1826) был американским Отцом-основателем и вторым Президентом США (1797–1801); он скончался 4 июля 1826 года в Куинси (штат Массачусетс), в 50‑ю годовщину Декларации независимости, в возрасте 90 лет от сердечной недостаточности.",
+  "sources": [
+    "Wikipedia article on John Adams",
+    "Britannica biography of John Adams",
+    "TotallyHistory timeline",
+    "Simple Wikipedia",
+    "People.com ranking of longest‑lived US presidents"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5264",  "Name": "Hippocrates",  "BirthDate": "-0459-01-01T00:00:00Z",  "DeathDate": "-0369-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hippocrates%20rubens.jpg",  "SiteLinksCnt": 169,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"13486":{"pageid":13486,"ns":0,"title":"Hippocrates","extract":"Hippocrates of Kos (; Ancient Greek: \u1f39\u03c0\u03c0\u03bf\u03ba\u03c1\u03ac\u03c4\u03b7\u03c2 \u1f41 \u039a\u1ff7\u03bf\u03c2, romanized: Hippokr\u00e1t\u0113s ho K\u00f4ios; c.\u2009460 \u2013 c.\u2009370 BC), also known as Hippocrates II, was a Greek physician and philosopher of the classical period who is considered one of the most outstanding figures in the history of medicine. He is traditionally referred to as the \"Father of Medicine\" in recognition of his lasting contributions to the field, such as the use of prognosis and clinical observation, the systematic categorization of diseases, and the (however misguided) formulation of humoral theory. His studies set out the basic ideas of modern-day specialties, including surgery, urology, neurology, acute medicine and orthopedics. The Hippocratic school of medicine revolutionized ancient Greek medicine, establishing it as a discipline distinct from other fields with which it had traditionally been associated (theurgy and philosophy), thus establishing medicine as a profession.\nHowever, the achievements of the writers of the Hippocratic Corpus, the practitioners of Hippocratic medicine, and the actions of Hippocrates himself were often conflated; thus very little is known about what Hippocrates actually thought, wrote, and did. Hippocrates is commonly portrayed as the paragon of the ancient physician and credited with coining the Hippocratic Oath, which is still relevant and in use today. He is also credited with greatly advancing the systematic study of clinical medicine, summing up the medical knowledge of previous schools, and prescribing practices for physicians through the Hippocratic Corpus and other works.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5264")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q5264",
+  "isRealHuman": true,
+  "birthDate": "-0459-01-01",
+  "deathDate": "-0369-01-01",
+  "ageAtDeath": 90,
+  "confidence": 85,
+  "confidenceExplained": "The dates are approximate (circa 460–370 BCE), but widely accepted by historians and consistent across sources. The age 90 is an estimate based on these ranges, and while not precise to the day, it reflects historical consensus.",
+  "shortDescriptionEn": "Hippocrates of Kos was a Greek physician of the classical era, often called the 'Father of Medicine' for his foundational role in separating medicine from superstition. He likely died around 369 BCE at the age of 90, but the exact circumstances of his death remain unknown.",
+  "shortDescriptionFr": "Hippocrate de Cos était un médecin grec de l'époque classique, considéré comme le 'Père de la médecine'. Il serait mort vers 369 av. J.-C. à l'âge de 90 ans, bien que les circonstances précises de sa mort soient inconnues.",
+  "shortDescriptionDe": "Hippokrates von Kos war ein griechischer Arzt der klassischen Zeit und gilt als 'Vater der Medizin'. Er starb vermutlich um 369 v. Chr. im Alter von 90 Jahren; genaue Umstände seines Todes sind nicht überliefert.",
+  "shortDescriptionEs": "Hipócrates de Cos fue un médico griego de la época clásica, considerado el 'Padre de la Medicina'. Probablemente murió hacia el 369 a.C. a los 90 años, aunque se desconocen los detalles de su fallecimiento.",
+  "shortDescriptionRu": "Гиппократ с острова Кос — греческий врач классического периода, известный как «Отец медицины». Предположительно умер около 369 года до н.э. в возрасте 90 лет, но точные обстоятельства смерти неизвестны.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q5264",
+    "https://en.wikipedia.org/wiki/Hippocrates",
+    "https://www.britannica.com/biography/Hippocrates"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q35236",  "Name": "Herbert Hoover",  "BirthDate": "1874-08-10T00:00:00Z",  "DeathDate": "1964-10-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/President%20Hoover%20portrait.jpg",  "SiteLinksCnt": 155,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"13682":{"pageid":13682,"ns":0,"title":"Herbert Hoover","extract":"Herbert Clark Hoover (August 10, 1874 \u2013 October 20, 1964) was the 31st president of the United States, serving from 1929 to 1933. A wealthy mining engineer before his presidency, Hoover led the wartime Commission for Relief in Belgium and was the director of the U.S. Food Administration, followed by post-war relief of Europe. As a member of the Republican Party, he served as United States Secretary of Commerce from 1921 to 1928 before being elected president in 1928. His presidency was dominated by the Great Depression, and his policies and methods to combat it were seen as lackluster. Amid his unpopularity, he decisively lost reelection to Franklin D. Roosevelt in 1932.\nBorn to a Quaker family in West Branch, Iowa, Hoover grew up in Oregon. He was one of the first graduates of the new Stanford University in 1895. Hoover took a position with a London-based mining company working in Australia and China. He rapidly became a wealthy mining engineer. In 1914, the outbreak of World War I, he organized and headed the Commission for Relief in Belgium, an international relief organization that provided food to occupied Belgium. When the U.S. entered the war in 1917, President Woodrow Wilson appointed Hoover to lead the Food Administration. He became famous as his country's \"food dictator\". After the war, Hoover led the American Relief Administration, which provided food to the starving millions in Central and Eastern Europe, especially Russia. Hoover's wartime service made him a favorite of many progressives, and he unsuccessfully sought the Republican nomination in the 1920 U.S. presidential election.\nHoover served as the secretary of commerce under presidents Warren G. Harding and Calvin Coolidge. Hoover was an unusually active and visible Cabinet member, becoming known as \"Secretary of Commerce and Under-Secretary of all other departments.\" He was influential in the development of air travel and radio. Hoover led the federal response to the Great Mississippi Flood of 1927. He won the Republican nomination in the 1928 presidential election and defeated Democratic candidate Al Smith in a landslide. In 1929, Hoover assumed the presidency. However, during his first year in office, the stock market crashed, signaling the onset of the Great Depression, which dominated Hoover's presidency until its end. His response to the depression was widely seen as lackluster and he scapegoated Mexican Americans for the economic crisis. Approximately one million Mexican Americans were forcibly \"repatriated\" to Mexico in a forced migration campaign known as the Mexican Repatriation even though a majority of them were born in the United States.\nIn the midst of the Great Depression, he was decisively defeated by Democratic nominee Franklin D. Roosevelt in the 1932 presidential election. Hoover's retirement was over 31 years long, one of the longest presidential retirements. He authored numerous works and became increasingly conservative in retirement. He strongly criticized Roosevelt's foreign policy and the New Deal. In the 1940s and 1950s, public opinion of Hoover improved, largely due to his service in various assignments for presidents Harry S. Truman and Dwight D. Eisenhower, including chairing the influential Hoover Commission. Critical assessments of his presidency by historians and political scientists generally rank him as a significantly below-average president, although Hoover has received praise for his actions as a humanitarian and public official."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q35236")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q35236",
+  "isRealHuman": true,
+  "birthDate": "1874-08-10",
+  "deathDate": "1964-10-20",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are exact and verified from multiple authoritative historical sources, including Wikidata and Wikipedia. The age at death is straightforward to calculate.",
+  "shortDescriptionEn": "Herbert Hoover (1874–1964) was the 31st president of the United States, known for his humanitarian efforts and leadership during World War I and his controversial presidency during the Great Depression. He died at the age of 90, having lived a long post-presidency life engaged in public service and writing.",
+  "shortDescriptionFr": "Herbert Hoover (1874–1964) fut le 31e président des États-Unis, célèbre pour son travail humanitaire et son rôle pendant la Première Guerre mondiale, mais critiqué pour sa gestion de la Grande Dépression. Il est décédé à l'âge de 90 ans après une longue retraite active.",
+  "shortDescriptionDe": "Herbert Hoover (1874–1964) war der 31. Präsident der Vereinigten Staaten, bekannt für seine humanitäre Arbeit und seine Rolle im Ersten Weltkrieg. Während seiner Amtszeit fiel die Große Depression, was zu Kritik führte. Er starb im Alter von 90 Jahren.",
+  "shortDescriptionEs": "Herbert Hoover (1874–1964) fue el 31º presidente de los Estados Unidos, reconocido por su labor humanitaria y criticado por su gestión de la Gran Depresión. Falleció a los 90 años tras una extensa vida pública.",
+  "shortDescriptionRu": "Герберт Гувер (1874–1964) — 31-й президент США, известный гуманитарной деятельностью и спорным управлением во время Великой депрессии. Умер в возрасте 90 лет после долгой общественной жизни.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q35236",
+    "https://en.wikipedia.org/wiki/Herbert_Hoover",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Hoover%20portrait.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4573",  "Name": "Sean Connery",  "BirthDate": "1930-08-25T00:00:00Z",  "DeathDate": "2020-10-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sean%20Connery%20%281983%29.jpg",  "SiteLinksCnt": 141,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"26709":{"pageid":26709,"ns":0,"title":"Sean Connery","extract":"Sir Thomas Sean Connery (25 August 1930 \u2013 31 October 2020) was a Scottish actor. He was the first actor to portray fictional British secret agent James Bond in motion pictures, starring in seven Bond films between 1962 and 1983. Connery originated the role in Dr. No (1962) and continued starring as Bond in the Eon Productions films From Russia with Love (1963), Goldfinger (1964), Thunderball (1965), You Only Live Twice (1967) and Diamonds Are Forever (1971). Connery made his final appearance in the franchise in Never Say Never Again (1983), a non-Eon-produced Bond film.\nConnery is also known for his notable collaborations with directors such as Alfred Hitchcock, Sidney Lumet and John Huston. Their films in which Connery appeared included Marnie (1964), The Hill (1965), The Offence (1973), Murder on the Orient Express (1974) and The Man Who Would Be King (1975). He also acted in Robin and Marian (1976), A Bridge Too Far (1977), Time Bandits (1981), Highlander (1986), The Name of the Rose (1986), Indiana Jones and the Last Crusade (1989), The Hunt for Red October (1990), Dragonheart (1996), The Rock (1996) and Finding Forrester (2000). His final on-screen role was as Allan Quatermain in The League of Extraordinary Gentlemen (2003).\nConnery received numerous accolades. For his role in The Untouchables (1987), he received the Academy Award for Best Supporting Actor, the first Scottish actor to win the achievement, and the Golden Globe Award for Best Supporting Actor \u2013 Motion Picture, and in the same year he received the BAFTA Award for Best Actor for his role in The Name of the Rose (1986). He also received honorary awards such as the Cecil B. DeMille Award in 1987, the BAFTA Fellowship in 1998 and the Kennedy Center Honors in 1999. \nConnery was made a Commander of the Order of Arts and Letters in France and a knight by Queen Elizabeth II for his services to drama in 2000."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4573")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q4573",
+  "isRealHuman": true,
+  "birthDate": "1930-08-25",
+  "deathDate": "2020-10-31",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "Birth and death dates are consistently reported across authoritative sources (Wikipedia, Britannica, major news outlets), so the age calculation is highly reliable.",
+  "shortDescriptionEn": "Sean Connery (1930–2020) was a Scottish actor best known as the first James Bond on screen; he died peacefully in his sleep in the Bahamas aged 90.",
+  "shortDescriptionFr": "Sean Connery (1930‑2020) était un acteur écossais surtout connu comme le premier James Bond à l’écran ; il est mort paisiblement dans son sommeil aux Bahamas à 90 ans.",
+  "shortDescriptionDe": "Sean Connery (1930–2020) war ein schottischer Schauspieler, bekannt als erster James Bond im Film ; er starb im Schlaf auf den Bahamas im Alter von 90 Jahren.",
+  "shortDescriptionEs": "Sean Connery (1930–2020) fue un actor escocés, famoso por ser el primer James Bond en la gran pantalla; falleció plácidamente en su sueño en Bahamas a los 90 años.",
+  "shortDescriptionRu": "Шон Коннери (1930–2020) был шотландским актёром, первым воплотившим Джеймса Бонда на экране; скончался во сне на Багамах в возрасте 90 лет.",
+  "sources": [
+    "turn0search0",
+    "turn0search4",
+    "turn0search1",
+    "turn0search16"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37103",  "Name": "Florence Nightingale",  "BirthDate": "1820-05-12T00:00:00Z",  "DeathDate": "1910-08-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Florence%20Nightingale%20%28H%20Hering%20NPG%20x82368%29.jpg",  "SiteLinksCnt": 138,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"100127":{"pageid":100127,"ns":0,"title":"Florence Nightingale","extract":"Florence Nightingale (; 12 May 1820 \u2013 13 August 1910) was an English social reformer, statistician and the founder of modern nursing. Nightingale came to prominence while serving as a manager and trainer of nurses during the Crimean War, in which she organised care for wounded soldiers at Constantinople. She significantly reduced death rates by improving hygiene and living standards. Nightingale gave nursing a favourable reputation and became an icon of Victorian culture, especially in the persona of \"The Lady with the Lamp\" making rounds of wounded soldiers at night.\nRecent commentators have asserted that Nightingale's Crimean War achievements were exaggerated by the media at the time, but critics agree on the importance of her later work in professionalising nursing roles for women. In 1860, she laid the foundation of professional nursing with the establishment of her nursing school at St Thomas' Hospital in London. It was the first secular nursing school in the world and is now part of King's College London. In recognition of her pioneering work in nursing, the Nightingale Pledge taken by new nurses, and the Florence Nightingale Medal, the highest international distinction a nurse can achieve, were named in her honour, and the annual International Nurses Day is celebrated on her birthday. Her social reforms included improving healthcare for all sections of British society, advocating better hunger relief in India, helping to abolish prostitution laws that were harsh for women, and expanding the acceptable forms of female participation in the workforce.\nNightingale was an innovator in statistics; she represented her analysis in graphical forms to ease drawing conclusions and actionables from data. She is famous for usage of the polar area diagram, also called the Nightingale rose diagram, which is equivalent to a modern circular histogram. This diagram is still regularly used in data visualisation.\nNightingale was a prodigious and versatile writer. In her lifetime, much of her published work was concerned with spreading medical knowledge. Some of her tracts were written in simple English so that they could easily be understood by those with poor literary skills. She was also a pioneer in data visualisation with the use of infographics, using graphical presentations of statistical data in an effective way. Much of her writing, including her extensive work on religion and mysticism, has only been published posthumously."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37103")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37103",
+  "isRealHuman": true,
+  "birthDate": "1820-05-12",
+  "deathDate": "1910-08-13",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "Precise birth and death dates are documented in multiple independent reputable sources, allowing exact calculation of age.",
+  "shortDescriptionEn": "Florence Nightingale (1820‑1910) was an English social reformer, statistician and founder of modern nursing, famed for reducing death rates during the Crimean War and establishing the first secular nursing school in London; she died peacefully in London at age 90 after long illness.",
+  "shortDescriptionFr": "Florence Nightingale (1820‑1910) était une réformatrice sociale anglaise, statisticienne et fondatrice des soins infirmiers modernes, célèbre pour avoir réduit le taux de mortalité pendant la guerre de Crimée et fondé la première école laïque d’infirmières à Londres ; elle est décédée paisiblement à Londres à l’âge de 90 ans après une longue maladie.",
+  "shortDescriptionDe": "Florence Nightingale (1820‑1910) war eine englische Sozialreformerin, Statistikerin und Gründerin der modernen Krankenpflege; sie senkte die Sterblichkeit während des Krimkriegs erheblich und gründete die erste weltliche Pflegeschule in London; sie starb nach langer Krankheit friedlich in London im Alter von 90 Jahren.",
+  "shortDescriptionEs": "Florence Nightingale (1820‑1910) fue una reformadora social inglesa, estadística y fundadora de la enfermería moderna, célebre por reducir las tasas de mortalidad durante la Guerra de Crimea y crear la primera escuela laica de enfermería en Londres; falleció en Londres a los 90 años tras una larga enfermedad.",
+  "shortDescriptionRu": "Флоренс Найтингейл (1820‑1910) была английской общественной реформаторкой, статистиком и основательницей современной сестринской службы; она прославилась снижением смертности во время Крымской войны и созданием первой светской школы медсестёр в Лондоне; умерла в Лондоне в 90 лет после продолжительной болезни.",
+  "sources": [
+    "Wikipedia / en article on Florence Nightingale",
+    "Britannica summary of Florence Nightingale",
+    "History and Biography online sites (Biography Online, COVE, Science Museum)",
+    "COVE article mentions cause heart failure"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47087",  "Name": "Arthur C. Clarke",  "BirthDate": "1917-12-16T00:00:00Z",  "DeathDate": "2008-03-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Arthur%20C.%20Clarke%201965.jpg",  "SiteLinksCnt": 124,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"18598148":{"pageid":18598148,"ns":0,"title":"Arthur C. Clarke","extract":"Sir Arthur Charles Clarke  (16 December 1917 \u2013 19 March 2008) was an English  science fiction writer, science writer, futurist, inventor, undersea explorer, and television series host.\nHe co-wrote the screenplay for the 1968 film 2001: A Space Odyssey, widely regarded as one of the most influential films of all time. Clarke was a science fiction writer, an avid populariser of space travel, and a futurist of distinguished ability. He wrote many books and many essays for popular magazines. In 1961, he received the Kalinga Prize, a UNESCO award for popularising science. Clarke's science and science fiction writings earned him the moniker \"Prophet of the Space Age\". His science fiction writings in particular earned him a number of Hugo and Nebula awards, which along with a large readership, made him one of the towering figures of the genre. For many years Clarke, Robert Heinlein, and Isaac Asimov were known as the \"Big Three\" of science fiction.\nClarke was a lifelong proponent of space travel. In 1934, while still a teenager, he joined the British Interplanetary Society (BIS). In 1945, he proposed a satellite communication system using geostationary orbits. He was the chairman of the BIS from 1946 to 1947 and again in 1951\u20131953.\nClarke emigrated to Ceylon (now Sri Lanka) in 1956, to pursue his interest in scuba diving. That year, he discovered the underwater ruins of the ancient original Koneswaram Temple in Trincomalee. Clarke augmented his popularity in the 1980s, as the host of television shows such as Arthur C. Clarke's Mysterious World. He lived in Sri Lanka until his death.\nClarke was appointed Commander of the Order of the British Empire (CBE) in 1989 \"for services to British cultural interests in Sri Lanka\". He was knighted in 1998 and was awarded Sri Lanka's highest civil honour, Sri Lankabhimanya, in 2005."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47087")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q47087",
+  "isRealHuman": true,
+  "birthDate": "1917-12-16",
+  "deathDate": "2008-03-19",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are exact and corroborated by multiple reputable sources. The age of 90 at death is confirmed by calculation and matches known biographies.",
+  "shortDescriptionEn": "Sir Arthur C. Clarke (1917–2008) was a British science fiction writer, futurist, inventor, and undersea explorer, best known for co-writing '2001: A Space Odyssey'. He spent his final decades in Sri Lanka and died at age 90 after respiratory complications.",
+  "shortDescriptionFr": "Sir Arthur C. Clarke (1917–2008) était un écrivain britannique de science-fiction, futurologue, inventeur et explorateur sous-marin, célèbre pour avoir coécrit '2001, l’Odyssée de l’espace'. Il a vécu ses dernières années au Sri Lanka et est décédé à 90 ans de complications respiratoires.",
+  "shortDescriptionDe": "Sir Arthur C. Clarke (1917–2008) war ein britischer Science-Fiction-Autor, Futurist, Erfinder und Unterwasserforscher. Er war Mitautor von '2001: Odyssee im Weltraum' und starb im Alter von 90 Jahren in Sri Lanka an Atemwegserkrankungen.",
+  "shortDescriptionEs": "Sir Arthur C. Clarke (1917–2008) fue un escritor británico de ciencia ficción, futurista, inventor y explorador submarino, conocido por coescribir '2001: Una odisea del espacio'. Falleció a los 90 años en Sri Lanka debido a problemas respiratorios.",
+  "shortDescriptionRu": "Сэр Артур Кларк (1917–2008) — британский писатель-фантаст, футуролог, изобретатель и подводный исследователь, соавтор сценария «2001 год: Космическая одиссея». Скончался в возрасте 90 лет на Шри-Ланке от респираторных осложнений.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
+    "http://www.wikidata.org/entity/Q47087",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Arthur%20C.%20Clarke%201965.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47619",  "Name": "Nadine Gordimer",  "BirthDate": "1923-11-20T00:00:00Z",  "DeathDate": "2014-07-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nadine%20Gordimer%2001.JPG",  "SiteLinksCnt": 119,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"179599":{"pageid":179599,"ns":0,"title":"Nadine Gordimer","extract":"Nadine Gordimer (20 November 1923 \u2013 13 July 2014) was a South African writer and political activist. She received the Nobel Prize in Literature in 1991, recognised as a writer \"who through her magnificent epic writing has ... been of very great benefit to humanity\".\nGordimer was one of the most honoured female writers of her generation. She received the Booker Prize for The Conservationist, and the Central News Agency Literary Award for The Conservationist, Burger's Daughter and July's People.\nGordimer's writing dealt with moral and racial issues, particularly apartheid in South Africa. Under that regime, works such as Burger's Daughter were banned. She was active in the anti-apartheid movement, joining the African National Congress during the days when the organisation was banned, and gave Nelson Mandela advice on his famous 1964 defence speech at the trial which led to his conviction for life. She was also active in HIV/AIDS causes."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47619")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q47619",
+  "isRealHuman": true,
+  "birthDate": "1923-11-20",
+  "deathDate": "2014-07-13",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "Multiple reputable biographical sources (Wikipedia, Britannica, NobelPrize.org, major news obituaries) agree on birth and death dates and state that she died aged 90.",
+  "shortDescriptionEn": "Nadine Gordimer (20 November 1923 – 13 July 2014) was a South African writer and political activist, awarded the Nobel Prize in Literature in 1991. She died in Johannesburg at age 90 after a short illness, surrounded by her family.",
+  "shortDescriptionFr": "Nadine Gordimer (20 novembre 1923 – 13 juillet 2014) était une écrivaine sud‑africaine et militante politique, lauréate du prix Nobel de littérature en 1991. Elle est décédée à Johannesburg à l’âge de 90 ans après une brève maladie, entourée de sa famille.",
+  "shortDescriptionDe": "Nadine Gordimer (20. November 1923 – 13. Juli 2014) war eine südafrikanische Schriftstellerin und politische Aktivistin, Nobelpreisträgerin für Literatur 1991. Sie starb in Johannesburg im Alter von 90 Jahren nach kurzer Krankheit im Kreis ihrer Familie.",
+  "shortDescriptionEs": "Nadine Gordimer (20 de noviembre de 1923 – 13 de julio de 2014) fue una escritora y activista política sudafricana, galardonada con el Premio Nobel de Literatura en 1991. Falleció en Johannesburgo a los 90 años tras una breve enfermedad, rodeada de su familia.",
+  "shortDescriptionRu": "Надин Гордимeр (20 ноября 1923 – 13 июля 2014) — южноафриканская писательница и политическая активистка, лауреат Нобелевской премии по литературе 1991 года. Умерла в Йоханнесбурге в возрасте 90 лет после краткой болезни в окружении близких.",
+  "sources": [
+    "turn0search0",
+    "turn0search6",
+    "turn0search4",
+    "turn0search19",
+    "turn0search13"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q49325",  "Name": "Albert Schweitzer",  "BirthDate": "1875-01-14T00:00:00Z",  "DeathDate": "1965-09-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-D0116-0041-019%2C%20Albert%20Schweitzer.jpg",  "SiteLinksCnt": 117,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"1029":{"pageid":1029,"ns":0,"title":"Albert Schweitzer","extract":"Ludwig Philipp Albert Schweitzer  (German: [\u02c8alb\u025b\u0281t \u02c8\u0283va\u026ats\u0250] ; 14 January 1875 \u2013 4 September 1965) was a German and French polymath from Alsace. He was a theologian, organist, musicologist, writer, humanitarian, philosopher, and physician. As a Lutheran minister, Schweitzer challenged both the secular view of the historical Jesus as depicted by the historical-critical method current at this time, as well as the traditional Christian view. His contributions to the interpretation of Pauline Christianity concern the role of Paul's mysticism of \"being in Christ\" as primary and the doctrine of justification by faith as secondary.\nHe received the 1952 Nobel Peace Prize for his philosophy of \"Reverence for Life\", becoming the eighth Frenchman to be awarded that prize. His philosophy was expressed in many ways, but most famously in founding and sustaining the H\u00f4pital Albert Schweitzer in Lambar\u00e9n\u00e9, French Equatorial Africa (now Gabon). As a music scholar and organist, he studied the music of German composer Johann Sebastian Bach and influenced the Organ Reform Movement (Orgelbewegung)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q49325")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q49325",
+  "isRealHuman": true,
+  "birthDate": "1875-01-14",
+  "deathDate": "1965-09-04",
+  "ageAtDeath": 90,
+  "confidence": 98,
+  "confidenceExplained": "Multiple authoritative sources consistently give 14 Jan 1875 – 4 Sep 1965, age at death 90; few uncertainties remain.",
+  "shortDescriptionEn": "Albert Schweitzer (1875–1965) was a German‑French theologian, organist, musicologist, philosopher, physician, writer, and humanitarian, awarded the 1952 Nobel Peace Prize for his philosophy of “Reverence for Life”. He died in Lambaréné, Gabon, at age 90, after years of service at his hospital in the African jungle.",
+  "shortDescriptionFr": "Albert Schweitzer (1875–1965) était un théologien, organiste, musicologue, philosophe, médecin, écrivain et humanitaire germano‑français, lauréat du prix Nobel de la paix en 1952 pour sa philosophie de la « Révérence pour la vie ». Il est mort à Lambaréné, au Gabon, à l’âge de 90 ans, après des années de service à son hôpital en pleine jungle africaine.",
+  "shortDescriptionDe": "Albert Schweitzer (1875–1965) war ein deutsch‑französischer Theologe, Organist, Musikwissenschaftler, Philosoph, Arzt, Schriftsteller und Humanist, der 1952 den Friedensnobelpreis für seine Philosophie der „Ehrfurcht vor dem Leben“ erhielt. Er starb mit 90 Jahren in Lambaréné, Gabun, nach jahrzehntelangem Einsatz in seinem Dschungel‑Krankenhaus.",
+  "shortDescriptionEs": "Albert Schweitzer (1875–1965) fue un teólogo, organista, musicólogo, filósofo, médico, escritor y humanitario franco‑alemán, galardonado con el Premio Nobel de la Paz en 1952 por su filosofía de la “Reverencia por la Vida”. Falleció en Lambaréné, Gabón, a los 90 años, tras años de servicio en su hospital en la jungla africana.",
+  "shortDescriptionRu": "Альберт Швейцер (1875–1965) — немецко‑французский теолог, органист, музыковед, философ, врач, писатель и гуманитарий, лауреат Нобелевской премии мира 1952 года за философию «Почтения к жизни». Умер в Ламбарене, Габон, в возрасте 90 лет после многих лет службы в своём госпитале в африканской джунгли.",
+  "sources": [
+    "turn0search0",
+    "turn0search1",
+    "turn0search12",
+    "turn0search14",
+    "turn0search6"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43033",  "Name": "Desmond Tutu",  "BirthDate": "1931-10-07T00:00:00Z",  "DeathDate": "2021-12-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Archbishop-Tutu-medium.jpg",  "SiteLinksCnt": 115,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"8401973":{"pageid":8401973,"ns":0,"title":"Desmond Tutu","extract":"Desmond Mpilo Tutu (7 October 1931 \u2013 26 December 2021) was a South African Anglican bishop and theologian, known for his work as an anti-apartheid and human rights activist. He was Bishop of Johannesburg from 1985 to 1986 and then Archbishop of Cape Town from 1986 to 1996, in both cases being the first Black African to hold the position. Theologically, he sought to fuse ideas from Black theology with African theology.\nTutu was born of mixed Xhosa and Motswana heritage to a poor family in Klerksdorp, South Africa. Entering adulthood, he trained as a teacher and married Nomalizo Leah Tutu, with whom he had several children. In 1960, he was ordained as an Anglican priest and in 1962 moved to the United Kingdom to study theology at King's College London. In 1966 he returned to southern Africa, teaching at the Federal Theological Seminary and then the University of Botswana, Lesotho and Swaziland. In 1972, he became the Theological Education Fund's director for Africa, a position based in London but necessitating regular tours of the African continent. Back in southern Africa in 1975, he served first as dean of St Mary's Cathedral in Johannesburg and then as Bishop of Lesotho; from 1978 to 1985 he was general-secretary of the South African Council of Churches. He emerged as one of the most prominent opponents of South Africa's apartheid system of racial segregation and white minority rule. Although warning the National Party government that anger at apartheid would lead to racial violence, as an activist he stressed non-violent protest and foreign economic pressure to bring about universal suffrage.\nIn 1985, Tutu became Bishop of Johannesburg and in 1986 the Archbishop of Cape Town, the most senior position in southern Africa's Anglican hierarchy. In this position, he emphasised a consensus-building model of leadership and oversaw the introduction of female priests. Also in 1986, he became president of the All Africa Conference of Churches, resulting in further tours of the continent. After President F. W. de Klerk released the anti-apartheid activist Nelson Mandela from prison in 1990 and the pair led negotiations to end apartheid and introduce multi-racial democracy, Tutu assisted as a mediator between rival black factions. After the 1994 general election resulted in a coalition government headed by Mandela, the latter selected Tutu to chair the Truth and Reconciliation Commission to investigate past human rights abuses committed by both pro and anti-apartheid groups. Following apartheid's fall, Tutu campaigned for gay rights and spoke out on a wide range of subjects, among them his criticism of South African presidents Thabo Mbeki and Jacob Zuma, his opposition to the Iraq War, and describing Israel's treatment of Palestinians as apartheid. In 2010, he retired from public life, but continued to speak out on numerous topics and events.\nAs Tutu rose to prominence in the 1970s, different socio-economic groups and political classes held a wide range of views about him, from critical to admiring. He was popular among South Africa's black majority and was internationally praised for his work involving anti-apartheid activism, for which he won the Nobel Peace Prize and other international awards. He also compiled several books of his speeches and sermons."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43033")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43033",
+  "isRealHuman": true,
+  "birthDate": "1931-10-07",
+  "deathDate": "2021-12-26",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "Both the birth and death dates are precisely known and publicly verified through multiple reputable sources. Age calculated directly from those dates.",
+  "shortDescriptionEn": "Desmond Tutu (1931–2021) was a South African Anglican bishop and renowned anti-apartheid activist. He served as Archbishop of Cape Town and chaired the Truth and Reconciliation Commission after apartheid. He died in Cape Town at the age of 90 after a long illness related to prostate cancer.",
+  "shortDescriptionFr": "Desmond Tutu (1931–2021) était un évêque anglican sud-africain et militant célèbre contre l'apartheid. Il a présidé la Commission Vérité et Réconciliation. Il est décédé au Cap à l'âge de 90 ans des suites d'une longue maladie liée au cancer de la prostate.",
+  "shortDescriptionDe": "Desmond Tutu (1931–2021) war ein südafrikanischer anglikanischer Bischof und bedeutender Anti-Apartheid-Aktivist. Er leitete die Wahrheits- und Versöhnungskommission. Er starb im Alter von 90 Jahren in Kapstadt an den Folgen einer langen Krankheit aufgrund von Prostatakrebs.",
+  "shortDescriptionEs": "Desmond Tutu (1931–2021) fue un obispo anglicano sudafricano y destacado activista contra el apartheid. Presidió la Comisión de Verdad y Reconciliación. Murió en Ciudad del Cabo a los 90 años tras una larga enfermedad relacionada con el cáncer de próstata.",
+  "shortDescriptionRu": "Десмонд Туту (1931–2021) — южноафриканский англиканский архиепископ и видный борец с апартеидом. Возглавлял Комиссию по правде и примирению. Умер в Кейптауне в возрасте 90 лет после продолжительной болезни, связанной с раком простаты.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Desmond_Tutu",
+    "https://www.britannica.com/biography/Desmond-Tutu",
+    "https://www.nytimes.com/2021/12/26/obituaries/desmond-tutu-dead.html",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Archbishop-Tutu-medium.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q765",  "Name": "Dario Fo",  "BirthDate": "1926-03-24T00:00:00Z",  "DeathDate": "2016-10-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dario%20Fo%2C%20Italian%20playwright.jpg",  "SiteLinksCnt": 108,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"176791":{"pageid":176791,"ns":0,"title":"Dario Fo","extract":"Dario Luigi Angelo Fo (Italian: [\u02c8da\u02d0rjo \u02c8f\u0254]; 24 March 1926 \u2013 13 October 2016) was an Italian playwright, actor, theatre director, stage designer, songwriter, political campaigner for the Italian left wing and the recipient of the 1997 Nobel Prize in Literature. In his time he was \"arguably the most widely performed contemporary playwright in world theatre\". Much of his dramatic work depends on improvisation and comprises the recovery of \"illegitimate\" forms of theatre, such as those performed by giullari (medieval strolling players) and, more famously, the ancient Italian style of commedia dell'arte.\nHis plays have been translated into 30 languages and performed across the world, including in Argentina, Bulgaria, Canada, Chile, India, Iran, the Netherlands, Poland, Romania, South Africa, South Korea, Spain, Sri Lanka, Sweden, the United Kingdom, the United States, and Yugoslavia. His work of the 1960s, 1970s and 1980s is peppered with criticisms of assassinations, corruption, organised crime, racism, Roman Catholic theology, and war. Throughout the 1990s and 2000s, he took to lampooning Forza Italia and its leader Silvio Berlusconi, while his targets of the 2010s included the banks amid the European sovereign-debt crisis. Also in the 2010s, he became the main ideologue of the Five Star Movement, the anti-establishment party led by Beppe Grillo, often referred to by its members as \"the Master\".\nFo's solo pi\u00e8ce c\u00e9l\u00e8bre, titled Mistero Buffo and performed across Europe, Asia, Canada and Latin America over a 30-year period, is recognised as one of the most controversial and popular spectacles in postwar European theatre and has been denounced by Cardinal Ugo Poletti, Cardinal Vicar for the Diocese of Rome, as \"the most blasphemous show in the history of television\". The title of the original English translation of Non Si Paga! Non Si Paga! (Can't Pay? Won't Pay!) has passed into the English language, and the play is described as capturing \"something universal in actions and reactions of the working class\".\nHis receipt of the 1997 Nobel Prize in Literature marked the \"international acknowledgment of Fo as a major figure in twentieth-century world theatre\". The Swedish Academy praised Fo as a writer \"who emulates the jesters of the Middle Ages in scourging authority and upholding the dignity of the downtrodden\". He owned and operated a theatre company. Fo was an atheist."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q765")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q765",
+  "isRealHuman": true,
+  "birthDate": "1926-03-24",
+  "deathDate": "2016-10-13",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are precise and consistently documented in multiple authoritative sources, including Wikidata and public obituaries. The age calculation (2016 - 1926 = 90) is straightforward and exact, as his birthday occurred earlier in the year he died.",
+  "shortDescriptionEn": "Dario Fo was an Italian playwright, actor, and Nobel Prize-winning dramatist known for his satirical works rooted in commedia dell'arte. He died at the age of 90 in Milan in 2016 due to a serious lung illness.",
+  "shortDescriptionFr": "Dario Fo était un dramaturge, acteur et metteur en scène italien, lauréat du prix Nobel, connu pour ses œuvres satiriques inspirées de la commedia dell'arte. Il est mort à 90 ans à Milan en 2016 d'une grave maladie pulmonaire.",
+  "shortDescriptionDe": "Dario Fo war ein italienischer Dramatiker, Schauspieler und Nobelpreisträger, bekannt für seine satirischen Theaterstücke im Stil der Commedia dell’arte. Er starb 2016 im Alter von 90 Jahren in Mailand an einer schweren Lungenerkrankung.",
+  "shortDescriptionEs": "Dario Fo fue un dramaturgo, actor y director italiano galardonado con el Premio Nobel, conocido por su teatro satírico basado en la commedia dell’arte. Falleció en Milán en 2016 a los 90 años debido a una grave enfermedad pulmonar.",
+  "shortDescriptionRu": "Дарио Фо — итальянский драматург, актёр и лауреат Нобелевской премии, известный своими сатирическими пьесами в стиле комедии дель арте. Умер в Милане в 2016 году в возрасте 90 лет от тяжёлой болезни лёгких.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q765",
+    "https://en.wikipedia.org/wiki/Dario_Fo",
+    "https://www.theguardian.com/stage/2016/oct/13/dario-fo-obituary",
+    "https://www.nobelprize.org/prizes/literature/1997/fo/biographical/"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43522",  "Name": "Antoni van Leeuwenhoek",  "BirthDate": "1632-10-24T00:00:00Z",  "DeathDate": "1723-08-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Verkolje%20-%20Antonie%20van%20Leeuwenhoek.jpg",  "SiteLinksCnt": 106,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"42001":{"pageid":42001,"ns":0,"title":"Antonie van Leeuwenhoek","extract":"Antonie Philips van Leeuwenhoek  ( AHN-t\u0259-nee vahn LAY-v\u0259n-hook, -\u2060huuk; Dutch: [\u02c8\u0251nto\u02d0ni v\u0251n \u02c8le\u02d0u.\u0259(n)\u02cc\u0266uk] ; 24 October 1632 \u2013 26 August 1723) was a Dutch microbiologist and microscopist in the Golden Age of Dutch science and technology. A largely self-taught man in science, he is commonly known as \"the Father of Microbiology\", and one of the first microscopists and microbiologists. Van Leeuwenhoek is best known for his pioneering work in microscopy and for his contributions toward the establishment of microbiology as a scientific discipline.\nRaised in Delft, Dutch Republic, Van Leeuwenhoek worked as a draper in his youth and founded his own shop in 1654. He became well-recognized in municipal politics and developed an interest in lensmaking. In the 1670s, he started to explore microbial life with his microscope.\nUsing single-lensed microscopes of his own design and make, Van Leeuwenhoek was the first to observe and to experiment with microbes, which he originally referred to as dierkens, diertgens or diertjes. He was the first to relatively determine their size. Most of the \"animalcules\" are now referred to as unicellular organisms, although he observed multicellular organisms in pond water. He was also the first to document microscopic observations of muscle fibers, bacteria, spermatozoa, red blood cells, crystals in gouty tophi, and among the first to see blood flow in capillaries. Although Van Leeuwenhoek did not write any books, he described his discoveries in chaotic letters to the Royal Society, which published many of his letters in their Philosophical Transactions."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43522")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q43522",
+  "isRealHuman": true,
+  "birthDate": "1632-10-24",
+  "deathDate": "1723-08-26",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are historically well-documented and consistent across academic and encyclopedic sources. The age at death (90) is a straightforward calculation based on the dates.",
+  "shortDescriptionEn": "Antonie van Leeuwenhoek (1632–1723) was a Dutch microbiologist and microscopist, renowned for his pioneering work using handcrafted microscopes to observe microorganisms. He died peacefully at the age of 90 in Delft, likely of natural causes given his advanced age.",
+  "shortDescriptionFr": "Antonie van Leeuwenhoek (1632–1723) était un microbiologiste et microscopiste néerlandais, célèbre pour ses travaux novateurs sur les micro-organismes. Il est décédé paisiblement à l'âge de 90 ans à Delft, probablement de causes naturelles.",
+  "shortDescriptionDe": "Antonie van Leeuwenhoek (1632–1723) war ein niederländischer Mikrobiologe und Mikroskopiker, bekannt für seine bahnbrechenden mikroskopischen Entdeckungen. Er starb im Alter von 90 Jahren in Delft vermutlich eines natürlichen Todes.",
+  "shortDescriptionEs": "Antonie van Leeuwenhoek (1632–1723) fue un microbiólogo y microscopista neerlandés, famoso por sus descubrimientos pioneros de microorganismos. Murió a los 90 años en Delft, probablemente por causas naturales.",
+  "shortDescriptionRu": "Антони ван Левенгук (1632–1723) — нидерландский микробиолог и микроскопист, основоположник микробиологии. Умер в возрасте 90 лет в Делфте, вероятно, по естественным причинам.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek",
+    "https://www.britannica.com/biography/Antonie-van-Leeuwenhoek",
+    "http://www.wikidata.org/entity/Q43522",
+    "https://commons.wikimedia.org/wiki/File:Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q57298",  "Name": "Abdullah of Saudi Arabia",  "BirthDate": "1924-08-01T00:00:00Z",  "DeathDate": "2015-01-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/King%20Abdullah%20bin%20Abdul%20al-Saud%20January%202007.jpg",  "SiteLinksCnt": 106,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"19186951":{"pageid":19186951,"ns":0,"title":"Abdullah of Saudi Arabia","extract":"This page is subject to the extended confirmed restriction related to the Arab-Israeli conflict.\n\nAbdullah bin Abdulaziz Al Saud (Arabic: \u0639\u0628\u062f \u0627\u0644\u0644\u0647 \u0628\u0646 \u0639\u0628\u062f\u0627\u0644\u0639\u0632\u064a\u0632 \u0622\u0644 \u0633\u0639\u0648\u062f, romanized: \u02bfAbd All\u0101h ibn \u02bfAbd al \u02bfAz\u012bz \u0100l Su\u02bf\u016bd, Najdi Arabic pronunciation: [\u02a2\u00e6b\u02c8d\u0251\u026b.\u026b\u0250 ben \u02c8\u02a2\u00e6bd\u00e6l \u02a2\u00e6\u02c8zi\u02d0z \u0294\u00e6\u02d0l s\u00e6\u02c8\u02a2u\u02d0d]; 1 August 1924 \u2013 23 January 2015) was King and Prime Minister of Saudi Arabia from 1 August 2005 until his death in 2015. Prior to his accession, he was Crown Prince of Saudi Arabia since 13 June 1982. He was the tenth son of King Abdulaziz, the founder of Saudi Arabia.\nAbdullah was the son of King Abdulaziz and Fahda bint Asi Al Shuraim. His mother was a member of the Al Rashid dynasty, historical rivals of the Al Saud dynasty. Abdullah held important political posts throughout most of his adult life. In 1961 he became mayor of Mecca, his first public office. The following year, he was appointed commander of the Saudi Arabian National Guard, a post he was still holding when he became king. He also served as deputy defense minister and was named crown prince when his half-brother Fahd took the throne in 1982. After King Fahd suffered a serious stroke in 1995, Abdullah became the de facto ruler of Saudi Arabia until ascending the throne a decade later.\nDuring his reign, Abdullah maintained close relations with the United States and the United Kingdom and bought billions of dollars worth of defense equipment from both states. Abdullah maintained the status quo when there were waves of protest in the kingdom during the Arab Spring. He held four of his daughters, which he fathered with Al Anoud Al Fayez whom he married when she was age 15, captive against their will.\nThe three crown princes during Abdullah's reign were among the full brothers of King Fahd. Upon becoming king in 2005, Abdullah appointed his half-brother Sultan bin Abdulaziz as crown prince. When Sultan died in 2011, Sultan's full brother Nayef was named heir to the throne, but Nayef himself died the next year. Abdullah then named Salman bin Abdulaziz as crown prince. According to various reports, Abdullah married up to 30 times and had more than 35 children. He was among the wealthiest royals in the world. Upon his death in 2015 at age 90, he was succeeded as King by his half-brother Salman, although Crown Prince Mohammed bin Salman would become de facto ruler of Saudi Arabia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q57298")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q57298",
+  "isRealHuman": true,
+  "birthDate": "1924-08-01",
+  "deathDate": "2015-01-23",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "Birth and death dates are consistently reported across multiple reliable sources; calculation is straightforward.",
+  "shortDescriptionEn": "King Abdullah bin Abdulaziz Al Saud (born 1 August 1924, died 23 January 2015) was the King and Prime Minister of Saudi Arabia from 2005 until his death. He ruled for nearly a decade, overseeing moderate reforms and international diplomacy; he died in Riyadh aged 90 after a bout of pneumonia and lung-related illness.",
+  "shortDescriptionFr": "Le roi Abdullah ben Abdulaziz Al Saoud (né le 1er août 1924, décédé le 23 janvier 2015) fut roi et Premier ministre d’Arabie saoudite de 2005 jusqu’à sa mort. Il dirigea le royaume pendant près d’une décennie, menant plusieurs réformes modérées et une diplomatie active ; il mourut à Riyadh à l’âge de 90 ans des suites d’une pneumonie et de complications pulmonaires.",
+  "shortDescriptionDe": "König Abdullah bin Abdulaziz Al Saud (geboren am 1. August 1924, gestorben am 23. Januar 2015) war von 2005 bis zu seinem Tod König und Premierminister von Saudi‑Arabien. Er regierte fast eine Dekade, leitete moderate Reformen ein und betrieb aktive internationale Diplomatie; er starb in Riad im Alter von 90 Jahren an den Folgen einer Lungenentzündung und Atemwegserkrankung.",
+  "shortDescriptionEs": "El rey Abdullah bin Abdulaziz Al Saud (nacido el 1 de agosto de 1924, fallecido el 23 de enero de 2015) fue Rey y Primer Ministro de Arabia Saudí desde 2005 hasta su muerte. Gobernó casi una década, impulsando reformas moderadas y diplomacia internacional; murió en Riad a los 90 años tras padecer neumonía y problemas pulmonares.",
+  "shortDescriptionRu": "Король Абдулла ибн Абдулазиз Аль Сауд (родился 1 августа 1924 года, умер 23 января 2015 года) был королём и премьер-министром Саудовской Аравии с 2005 по 2015 год. Руководил страной почти десять лет, проводил умеренные реформы и вел активную внешнюю политику; умер в Эр‑Рияде в возрасте 90 лет от осложнений пневмонии и легочных заболеваний.",
+  "sources": [
+    "turn0search0",
+    "turn0search5",
+    "turn0search16",
+    "turn0search4",
+    "turn0search2"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q152384",  "Name": "Joan Miró",  "BirthDate": "1893-04-20T00:00:00Z",  "DeathDate": "1983-12-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Joan%20Miro%20%28cropped%29.jpg",  "SiteLinksCnt": 103,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"63093":{"pageid":63093,"ns":0,"title":"Joan Mir\u00f3","extract":"Joan Mir\u00f3 i Ferr\u00e0 ( mi-ROH, US also  mee-ROH; Catalan: [\u0292u\u02c8an mi\u02c8\u027eoj f\u0259\u02c8ra]; 20 April 1893 \u2013 25 December 1983) was a Catalan Spanish painter, sculptor and ceramist. A museum dedicated to his work, the Fundaci\u00f3 Joan Mir\u00f3, was established in his native city of Barcelona in 1975, and another, the Fundaci\u00f3 Pilar i Joan Mir\u00f3, was established in his adoptive city of Palma in 1981.\nEarning international acclaim, his work has been interpreted as  Surrealism but with a personal style, sometimes also veering into Fauvism and Expressionism. He was notable for his interest in the unconscious or the subconscious mind, reflected in his re-creation of the childlike. His difficult-to-classify works also had a manifestation of Catalan pride. In numerous interviews dating from the 1930s onwards, Mir\u00f3 expressed contempt for conventional painting methods as a way of supporting bourgeois society, and declared an \"assassination of painting\" in favour of upsetting the visual elements of established painting."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q152384")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+{
+  "id": "http://www.wikidata.org/entity/Q152384",
+  "isRealHuman": true,
+  "birthDate": "1893-04-20",
+  "deathDate": "1983-12-25",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are precise and consistent across multiple verified sources including Wikidata and Wikipedia. The age was calculated by exact date difference, confirming he was 90 years old.",
+  "shortDescriptionEn": "Joan Miró was a renowned Catalan Spanish painter, sculptor, and ceramist born in 1893. Celebrated for his contributions to Surrealism with a distinctive, abstract style, he died on December 25, 1983, in Palma, Mallorca at the age of 90 after a long and acclaimed artistic career.",
+  "shortDescriptionFr": "Joan Miró était un célèbre peintre, sculpteur et céramiste catalan espagnol né en 1893. Connu pour son style surréaliste unique, il est décédé le 25 décembre 1983 à Palma de Majorque à l'âge de 90 ans, après une longue carrière artistique internationalement reconnue.",
+  "shortDescriptionDe": "Joan Miró war ein bedeutender katalanisch-spanischer Maler, Bildhauer und Keramiker, geboren 1893. Berühmt für seinen einzigartigen surrealistischen Stil, starb er am 25. Dezember 1983 in Palma de Mallorca im Alter von 90 Jahren nach einer langen künstlerischen Laufbahn.",
+  "shortDescriptionEs": "Joan Miró fue un reconocido pintor, escultor y ceramista catalán español nacido en 1893. Conocido por su estilo surrealista personal, falleció el 25 de diciembre de 1983 en Palma de Mallorca a los 90 años tras una destacada carrera artística.",
+  "shortDescriptionRu": "Жоан Миро — известный каталонский испанский художник, скульптор и керамист, родившийся в 1893 году. Он прославился своим уникальным сюрреалистическим стилем и умер 25 декабря 1983 года в Пальме, Майорка, в возрасте 90 лет после долгой творческой карьеры.",
+  "sources": [
+    "https://www.wikidata.org/wiki/Q152384",
+    "https://en.wikipedia.org/wiki/Joan_Miró",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Joan%20Miro%20%28cropped%29.jpg"
+  ]
+}
+
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q179266",  "Name": "Jiddu Krishnamurti",  "BirthDate": "1895-05-12T00:00:00Z",  "DeathDate": "1986-02-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jiddu%20Krishnamurti%2001.jpg",  "SiteLinksCnt": 103,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"179095":{"pageid":179095,"ns":0,"title":"Jiddu Krishnamurti","extract":"Jiddu Krishnamurti ( JID-oo KRISH-n\u0259-MOOR-tee; 11 May 1895 \u2013 17 February 1986) was an Indian philosopher, speaker, writer, and spiritual figure. Adopted by members of the Theosophical tradition as a child, he was raised to fill the advanced role of World Teacher, but in adulthood he rejected this mantle and distanced himself from the related religious movement. He spent the rest of his life speaking to groups and individuals around the world; many of these talks have been published. He also wrote many books, among them The First and Last Freedom (1954) and Commentaries on Living (1956\u201360). His last public talk was in January 1986, a month before his death at his home in Ojai, California.\nKrishnamurti asserted that \"truth is a pathless land\" and advised against following any doctrine, discipline, teacher, guru, or authority, including himself. He emphasized choiceless awareness, psychological inquiry, and freedom from religious, spiritual, and cultural conditioning. His supporters \u2014 working through non-profit foundations in India, Britain, and the United States \u2014 oversee several independent schools based on his views on education, and continue to distribute his thousands of talks, group and individual discussions, and writings in a variety of media formats and languages."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q179266")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q179266",
+  "isRealHuman": true,
+  "birthDate": "1895-05-11",
+  "deathDate": "1986-02-17",
+  "ageAtDeath": 90,
+  "confidence": 99,
+  "confidenceExplained": "Birth and death dates are well-documented and widely cited. The small discrepancy in birth date (May 11 vs May 12) is minor and doesn't affect the age calculation significantly.",
+  "shortDescriptionEn": "Jiddu Krishnamurti was a real Indian philosopher, writer, and spiritual teacher known for rejecting organized religion and authority. He died at the age of 90 in Ojai, California, in February 1986 after giving his final public talk just a month earlier.",
+  "shortDescriptionFr": "Jiddu Krishnamurti était un philosophe, écrivain et enseignant spirituel indien qui rejetait la religion organisée. Il est décédé à l'âge de 90 ans à Ojai, Californie, en février 1986, un mois après sa dernière conférence publique.",
+  "shortDescriptionDe": "Jiddu Krishnamurti war ein indischer Philosoph, Schriftsteller und spiritueller Lehrer, der organisierte Religion ablehnte. Er starb im Alter von 90 Jahren im Februar 1986 in Ojai, Kalifornien, kurz nach seinem letzten öffentlichen Vortrag.",
+  "shortDescriptionEs": "Jiddu Krishnamurti fue un filósofo, escritor y maestro espiritual indio que rechazó la religión organizada. Murió a los 90 años en Ojai, California, en febrero de 1986, tras su última charla pública un mes antes.",
+  "shortDescriptionRu": "Джидду Кришнамурти был индийским философом, писателем и духовным учителем, отвергавшим организованные религии. Он умер в возрасте 90 лет в феврале 1986 года в Охае, Калифорния, спустя месяц после последнего публичного выступления.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jiddu_Krishnamurti",
+    "http://www.wikidata.org/entity/Q179266",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Jiddu%20Krishnamurti%2001.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1523",  "Name": "Ramesses II",  "BirthDate": "-1302-01-01T00:00:00Z",  "DeathDate": "-1212-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Colossal%20bust%20of%20Ramesses%20II%20in%20the%20British%20Museum.jpg",  "SiteLinksCnt": 101,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"21476519":{"pageid":21476519,"ns":0,"title":"Ramesses II","extract":"Ramesses II (; Ancient Egyptian: r\ua725-ms-sw, R\u012b\ua725a-mas\u0113-s\u0259, Ancient Egyptian pronunciation: [\u027ei\u02d0\u0295ama\u02c8se\u02d0s\u0259]; c.\u20091303 BC \u2013 1213 BC), commonly known as Ramesses the Great, was an Egyptian pharaoh. He was the third ruler of the Nineteenth Dynasty. Along with Thutmose III of the Eighteenth Dynasty, he is often regarded as the greatest, most celebrated, and most powerful pharaoh of the New Kingdom, which itself was the most powerful period of ancient Egypt. He is also widely considered one of ancient Egypt's most successful warrior pharaohs, conducting no fewer than 15 military campaigns, all resulting in victories, excluding the Battle of Kadesh, generally considered a stalemate.\nIn ancient Greek sources, he is called Ozymandias, derived from the first part of his Egyptian-language regnal name: Usermaatre Setepenre. Ramesses was also referred to as the \"Great Ancestor\" by successor pharaohs and the Egyptian people.\nFor the early part of his reign, he focused on building cities, temples, and monuments. After establishing the city of Pi-Ramesses in the Nile Delta, he designated it as Egypt's new capital and used it as the main staging point for his campaigns in Syria. Ramesses led several military expeditions into the Levant, where he reasserted Egyptian control over Canaan and Phoenicia; he also led a number of expeditions into Nubia, all commemorated in inscriptions at Beit el-Wali and Gerf Hussein. He celebrated an unprecedented thirteen or fourteen Sed festivals\u2014more than any other pharaoh.\nEstimates of his age at death vary, although 90 or 91 is considered to be the most likely figure. Upon his death, he was buried in a tomb (KV7) in the Valley of the Kings; his body was later moved to the Royal Cache, where it was discovered by archaeologists in 1881. Ramesses' mummy is now on display at the National Museum of Egyptian Civilization, located in the city of Cairo.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1523")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q1523",
+  "isRealHuman": true,
+  "birthDate": "-1303-01-01",
+  "deathDate": "-1213-01-01",
+  "ageAtDeath": 90,
+  "confidence": 95,
+  "confidenceExplained": "The dates are widely accepted among historians, with slight year variations. Multiple reputable sources including the British Museum, Egyptological literature, and Wikipedia agree on a ~90-year lifespan.",
+  "shortDescriptionEn": "Ramesses II, also known as Ramesses the Great, was the third pharaoh of Egypt's Nineteenth Dynasty. Renowned for his military leadership, extensive building projects, and long reign, he died at approximately 90 years of age and was buried in the Valley of the Kings before his mummy was moved and rediscovered in 1881.",
+  "shortDescriptionFr": "Ramsès II, également connu sous le nom de Ramsès le Grand, fut le troisième pharaon de la XIXe dynastie d'Égypte. Célèbre pour ses campagnes militaires et ses constructions monumentales, il mourut vers l'âge de 90 ans et fut enterré dans la Vallée des Rois avant d'être redécouvert en 1881.",
+  "shortDescriptionDe": "Ramses II., auch Ramses der Große genannt, war der dritte Pharao der 19. Dynastie Ägyptens. Er war bekannt für seine militärischen Erfolge und monumentalen Bauwerke und starb im Alter von etwa 90 Jahren. Er wurde im Tal der Könige bestattet, später umgebettet und 1881 wiederentdeckt.",
+  "shortDescriptionEs": "Ramsés II, conocido como Ramsés el Grande, fue el tercer faraón de la dinastía XIX de Egipto. Famoso por sus campañas militares y sus grandes obras arquitectónicas, murió aproximadamente a los 90 años y fue enterrado en el Valle de los Reyes; su momia fue hallada en 1881.",
+  "shortDescriptionRu": "Рамсес II, также известный как Рамсес Великий, был третьим фараоном XIX династии Египта. Прославился своими военными походами и строительством храмов. Умер в возрасте около 90 лет, был похоронен в Долине царей, его мумия была найдена в 1881 году.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ramesses_II",
+    "https://www.britannica.com/biography/Ramses-II",
+    "https://www.worldhistory.org/Ramesses_II/",
+    "https://www.britishmuseum.org/collection/object/Y_EA19"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160627",  "Name": "Alfred Russel Wallace",  "BirthDate": "1823-01-08T00:00:00Z",  "DeathDate": "1913-11-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred-Russel-Wallace-c1895.jpg",  "SiteLinksCnt": 101,  "Age": 90}
+{"batchcomplete":"","query":{"pages":{"1494":{"pageid":1494,"ns":0,"title":"Alfred Russel Wallace","extract":"Alfred Russel Wallace (8 January 1823 \u2013 7 November 1913) was an English naturalist, explorer, geographer, anthropologist, biologist and illustrator. He independently conceived the theory of evolution through natural selection; his 1858 paper on the subject was published that year alongside extracts from Charles Darwin's earlier writings on the topic. It spurred Darwin to set aside the \"big species book\" he was drafting and to quickly write an abstract of it, which was published in 1859 as On the Origin of Species.\nWallace did extensive fieldwork, starting in the Amazon River basin. He then did fieldwork in the Malay Archipelago, where he identified the faunal divide now termed the Wallace Line, which separates the Indonesian archipelago into two distinct parts: a western portion in which the animals are largely of Asian origin, and an eastern portion where the fauna reflect Australasia. He was considered the 19th century's leading expert on the geographical distribution of animal species, and is sometimes called the \"father of biogeography\", or more specifically of zoogeography.\nWallace was one of the leading evolutionary thinkers of the 19th century, working on warning coloration in animals and reinforcement (sometimes known as the Wallace effect), a way that natural selection could contribute to speciation by encouraging the development of barriers against hybridisation. Wallace's 1904 book Man's Place in the Universe was the first serious attempt by a biologist to evaluate the likelihood of life on other planets. He was one of the first scientists to write a serious exploration of whether there was life on Mars.\nAside from scientific work, he was a social activist, critical of what he considered to be an unjust social and economic system in 19th-century Britain. His advocacy of spiritualism and his belief in a non-material origin for the higher mental faculties of humans strained his relationship with other scientists. He was one of the first prominent scientists to raise concerns over the environmental impact of human activity. He wrote prolifically on both scientific and social issues; his account of his adventures and observations during his explorations in Southeast Asia, The Malay Archipelago, was first published in 1869. It continues to be both popular and highly regarded."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160627")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of strings, the list of sources that you were using to prepare the answer)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q160627",
+  "isRealHuman": true,
+  "birthDate": "1823-01-08",
+  "deathDate": "1913-11-07",
+  "ageAtDeath": 90,
+  "confidence": 100,
+  "confidenceExplained": "Both birth and death dates are historically well-documented and confirmed by multiple reliable sources including Wikipedia and Wikidata. The age at death is a simple calculation from exact dates.",
+  "shortDescriptionEn": "Alfred Russel Wallace (1823–1913) was an English naturalist and co-discoverer of the theory of evolution through natural selection. Known as the 'father of biogeography', he worked extensively in the Amazon and Malay Archipelago. He died at age 90 at his home in Dorset, England, after a productive life in science and activism.",
+  "shortDescriptionFr": "Alfred Russel Wallace (1823–1913) était un naturaliste anglais, co-découvreur de la théorie de la sélection naturelle. Il a beaucoup voyagé en Amazonie et en Asie du Sud-Est. Il est décédé à l'âge de 90 ans à son domicile dans le Dorset, en Angleterre.",
+  "shortDescriptionDe": "Alfred Russel Wallace (1823–1913) war ein englischer Naturforscher und Mitentdecker der Theorie der natürlichen Selektion. Er forschte in Amazonien und Südostasien. Er starb im Alter von 90 Jahren in seinem Haus in Dorset, England.",
+  "shortDescriptionEs": "Alfred Russel Wallace (1823–1913) fue un naturalista inglés y co-descubridor de la teoría de la selección natural. Realizó extensos trabajos en el Amazonas y el sudeste asiático. Murió a los 90 años en su casa en Dorset, Inglaterra.",
+  "shortDescriptionRu": "Альфред Рассел Уоллес (1823–1913) — английский натуралист, один из открывателей теории естественного отбора. Проводил исследования в Амазонии и Малайском архипелаге. Умер в возрасте 90 лет в своем доме в Дорсете, Англия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alfred_Russel_Wallace",
+    "http://www.wikidata.org/entity/Q160627",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred-Russel-Wallace-c1895.jpg"
+  ]
+}
