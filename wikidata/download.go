@@ -7,6 +7,8 @@ import (
 	"net/url"
 )
 
+const userAgent = "people-verifier/1.0 (+https://stillrunning.org/people-verifier)"
+
 type WikidataEntity struct {
 	Entities map[string]struct {
 		Labels map[string]struct {
@@ -54,7 +56,13 @@ func DownloadWikidataJSON(entityUrl string) (string, error) {
 	entityID := entityUrl[len("http://www.wikidata.org/entity/"):]
 	url := "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=" + entityID + "&format=json"
 	println("Downloading JSON file: ", url)
-	resp, err := http.Get(url)
+	req, err := http.NewRequest(http.MethodGet, url, nil)
+	if err != nil {
+		return "", fmt.Errorf("failed to build Wikidata request: %v", err)
+	}
+	req.Header.Set("User-Agent", userAgent)
+
+	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		return "", fmt.Errorf("failed to fetch Wikidata entity: %v", err)
 	}
@@ -72,7 +80,13 @@ func DownloadWikipediaBriefSummary(wikiLang string, title string) (string, error
 	downloadUrl := "https://" + wikiLang + ".wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=" +
 		url.QueryEscape(title) + "&redirects="
 	println("Downloading Wikipedia summary: ", downloadUrl)
-	resp, err := http.Get(downloadUrl)
+	req, err := http.NewRequest(http.MethodGet, downloadUrl, nil)
+	if err != nil {
+		return "", fmt.Errorf("failed to build Wikipedia request: %v", err)
+	}
+	req.Header.Set("User-Agent", userAgent)
+
+	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		return "", err
 	}

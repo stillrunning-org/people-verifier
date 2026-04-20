@@ -7,9 +7,10 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"stillrunning.org/people-verifier/wikidata"
 	"strconv"
 	"strings"
+
+	"stillrunning.org/people-verifier/wikidata"
 )
 
 func processPerson(priority int, db *sql.DB, person *Person) {
@@ -19,18 +20,23 @@ func processPerson(priority int, db *sql.DB, person *Person) {
 
 	entityJson, err := wikidata.DownloadWikidataJSON(person.Id)
 	if err != nil {
+		log.Println("at 0")
 		log.Fatal(err)
 	}
 	var wikidataEntity wikidata.WikidataEntity
 	err = json.Unmarshal([]byte(entityJson), &wikidataEntity)
 	if err != nil {
+		log.Println("at 1")
+		log.Println(entityJson)
 		log.Fatal(err)
 	}
 	sitelinksJson, err := json.MarshalIndent(wikidataEntity.Entities[person.Id[len("http://www.wikidata.org/entity/"):]].Sitelinks, "", "  ")
-	sitelinksJsonStr := strings.Replace(string(sitelinksJson), "\n", "", -1)
 	if err != nil {
+		log.Println("at 2")
 		log.Fatal(err)
 	}
+	sitelinksJsonStr := strings.Replace(string(sitelinksJson), "\n", "", -1)
+	_ = sitelinksJsonStr
 
 	lang, title := wikidataEntity.FindWikipediaArticle()
 	fmt.Println("Wikipedia article:", lang, title)
@@ -64,6 +70,7 @@ func processPerson(priority int, db *sql.DB, person *Person) {
 		"If the exact number is not possible to determine (e.g. birth- or deathDate is not known), " +
 		"you must use your best judgement, knowledge and any resources (including external) available to figure it out " +
 		"or calculate it, because the number MUST be calculated somehow.\n\n" +
+		"The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was \"real\" - not real figures will be filtered out anyway.\n\n" +
 		"Return back your thinking followed by a JSON with the following fields:\n" +
 		"- \"id\" (string, use constant \"" + person.Id + "\")\n" +
 		"- \"isRealHuman\" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)\n" +
@@ -77,7 +84,7 @@ func processPerson(priority int, db *sql.DB, person *Person) {
 		"- \"shortDescriptionDe\" (string, short description in German, same as above)\n" +
 		"- \"shortDescriptionEs\" (string, short description in Spanish, same as above)\n" +
 		"- \"shortDescriptionRu\" (string, short description in Russian, same as above)\n" +
-		"- \"sources\" - (array of strings, the list of sources that you were using to prepare the answer)\n\n\n")
+		"- \"sources\" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)\n\n\n")
 	if err != nil {
 		panic(err)
 	}
@@ -101,7 +108,7 @@ func main() {
 	db := OpenDb()
 	defer db.Close()
 
-	starting_age := 29
+	starting_age := 3
 	priority := 0
 
 	for curr_age := starting_age; curr_age < 100000; curr_age++ {
