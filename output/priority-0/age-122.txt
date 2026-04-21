@@ -1,0 +1,31 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q51676",  "Name": "Aaron",  "BirthDate": "-1395-01-01T00:00:00Z",  "DeathDate": "-1273-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Berg%C3%A9%2C%20Aaron-%20Aaron%2C%20KBS-FRB.jpg",  "SiteLinksCnt": 93,  "Age": 122}
+{"batchcomplete":"","query":{"pages":{"1006":{"pageid":1006,"ns":0,"title":"Aaron","extract":"According to the Old Testament of the Bible, Aaron (  AIR-\u0259n or   ARR-\u0259n) was an Israelite prophet, high priest, and the elder brother of Moses. Information about Aaron comes exclusively from religious texts, such as the Hebrew Bible, the New Testament (Luke, Acts, and Hebrews), and the Quran.\nThe Hebrew Bible relates that, unlike Moses, who grew up in the Egyptian royal court, Aaron and his elder sister Miriam remained with their kinsmen in the northeastern region of the Nile Delta. When Moses first confronted the Egyptian king about the enslavement of the Israelites, Aaron served as his brother's spokesman to the Pharaoh. Part of the Law given to Moses at Sinai granted Aaron the priesthood for himself and his male descendants, and he became the first High Priest of the Israelites. Levitical priests or kohanim are traditionally believed and halakhically required to be of direct patrilineal descent from Aaron.\nAccording to the Book of Numbers, Aaron died at 123 years of age, on Mount Hor, in the fortieth year after the Israelites had come out of the land of Egypt. Deuteronomy, however, places these events at Moseroth.\nThomas R\u00f6mer argues the Pentateuch reflects unresolved tensions between Moses, Aaron, and the Levites, with Moses portrayed as dominant."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q51676")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
