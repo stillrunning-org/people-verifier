@@ -1,0 +1,1050 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12871",  "Name": "Simon the Zealot",  "BirthDate": "0100-01-01T00:00:00Z",  "DeathDate": "0107-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ribera-san%20simon.jpg",  "SiteLinksCnt": 80,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"314682":{"pageid":314682,"ns":0,"title":"Simon the Zealot","extract":"Simon the Zealot (Acts 1:13, Luke 6:15), also the Canaanite or the Canaanean (Matthew 10:4, Mark 3:18; Ancient Greek: \u03a3\u03af\u03bc\u03c9\u03bd \u1f41 \u039a\u03b1\u03bd\u03b1\u03bd\u03af\u03c4\u03b7\u03c2; Coptic: \u2ca5\u2c93\u2c99\u2cb1\u2c9b \u2ca1\u2c93-\u2c95\u2c81\u2c9b\u2c81\u2c9b\u2c89\u2c9f\u2ca5; Classical Syriac: \u072b\u0721\u0725\u0718\u0722 \u0729\u0722\u0722\u071d\u0710), was one of the apostles of Jesus. A few pseudepigraphical writings were connected to him, but Jerome does not include him in De viris illustribus written between 392 and 393 AD."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12871")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q12871",
+  "isRealHuman": true,
+  "birthDate": "0005-01-01",
+  "deathDate": "0065-01-01",
+  "ageAtDeath": 60,
+  "confidence": 35,
+  "confidenceExplained": "The identification as Simon the Zealot, one of the Twelve Apostles, is strong, but no contemporary source gives an exact birth or death date. The age 60 is a reasoned estimate based on the commonly repeated c. 5 CE to c. 65 CE dating and on the fact that he was already an adult during Jesus' ministry. Traditions about his death vary widely, so the number is plausible rather than certain.",
+  "shortDescriptionEn": "Simon the Zealot, also known as Simon the Cananaean, was one of the Twelve Apostles of Jesus and is remembered in early Christian tradition as a missionary preacher. The New Testament gives only his name, but later accounts connect him with preaching in places such as Egypt and Persia. The most widespread Western tradition says he died around 65 CE as a martyr in Persia, often described as having been killed with a saw, though other traditions place his death elsewhere.",
+  "shortDescriptionFr": "Simon le Zélote, aussi appelé Simon le Cananéen, fut l'un des Douze Apôtres de Jésus et reste dans la tradition chrétienne comme un prédicateur missionnaire. Le Nouveau Testament ne livre presque rien sur sa vie, mais des récits postérieurs le rattachent à des missions en Égypte et en Perse. La tradition occidentale la plus répandue le fait mourir vers 65 apr. J.-C. en martyr en Perse, parfois scié en deux, même si d'autres traditions situent sa mort ailleurs.",
+  "shortDescriptionDe": "Simon der Zelot, auch Simon der Kananäer genannt, war einer der Zwölf Apostel Jesu und gilt in der frühen christlichen Überlieferung als Wanderprediger und Missionar. Das Neue Testament nennt im Wesentlichen nur seinen Namen, spätere Traditionen verbinden ihn jedoch mit Missionen in Ägypten und Persien. Die verbreitetste westliche Überlieferung lässt ihn um 65 n. Chr. als Märtyrer in Persien sterben, oft mit dem Motiv des Zersägens, auch wenn andere Traditionen seinen Tod anders verorten.",
+  "shortDescriptionEs": "Simón el Zelote, también llamado Simón el Cananeo, fue uno de los Doce Apóstoles de Jesús y la tradición cristiana lo recuerda como predicador y misionero. El Nuevo Testamento apenas da detalles sobre su vida, pero relatos posteriores lo relacionan con misiones en Egipto y Persia. La tradición occidental más difundida sostiene que murió hacia el año 65 d. C. como mártir en Persia, a menudo descrito como ejecutado con una sierra, aunque otras tradiciones sitúan su muerte en otro lugar.",
+  "shortDescriptionRu": "Симон Зилот, также известный как Симон Кананит, был одним из двенадцати апостолов Иисуса и в раннехристианской традиции почитается как проповедник и миссионер. Новый Завет сообщает о нём очень мало, но более поздние предания связывают его с проповедью в Египте и Персии. Наиболее распространённая западная традиция говорит, что он умер около 65 года н. э. мученической смертью в Персии, где его нередко описывают как казнённого пилой, хотя существуют и другие версии его кончины.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Simon_the_Zealot",
+    "https://www.britannica.com/biography/Saint-Simon-the-Apostle",
+    "https://www.newadvent.org/cathen/13796b.htm",
+    "https://www.biblegateway.com/passage/?search=Luke+6%3A15%2CActs+1%3A13&version=NIV",
+    "https://www.museodelprado.es/en/the-collection/art-work/saint-simon/0679cee8-ea16-47dc-81f8-179530faaa68",
+    "https://commons.wikimedia.org/wiki/File%3ARibera-san_simon.jpg",
+    "https://commons.wikimedia.org/wiki/File%3ARubens_apostel_simon.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46814",  "Name": "Severus",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0307-09-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Follis-Flavius%20Valerius%20Severus-trier%20RIC%20650a.jpg",  "SiteLinksCnt": 58,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"168093":{"pageid":168093,"ns":0,"title":"Severus II","extract":"Flavius Valerius Severus (died September 307), also called Severus II, was a Roman emperor from 306 to 307, and a member of the Tetrarchy. He shared control of the western half of the empire with Constantine I, but spent most of his short reign in a civil war against the usurper Maxentius, who later killed him and took over Italy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46814")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q46814",
+  "isRealHuman": true,
+  "birthDate": "0263-01-01",
+  "deathDate": "0307-09-16",
+  "ageAtDeath": 44,
+  "confidence": 63,
+  "confidenceExplained": "The identification is highly secure: Q46814 matches Flavius Valerius Severus (Severus II), and his death in September 307 is supported by multiple sources, with 16 September specifically given by Livius. The uncertain part is his birth year, which is not documented exactly; I estimated 263 from a scholarly range of ca. 260-265 CE, so the age 44 is a reasoned midpoint estimate rather than a directly attested ancient figure.",
+  "shortDescriptionEn": "Flavius Valerius Severus, known as Severus II, was a Roman emperor of the Tetrarchy who rose from the army in Illyricum to become Caesar under Constantius I and then Augustus in the West in 306. His brief reign was consumed by the revolt of Maxentius; after his troops deserted him near Ravenna, he was captured and died in September 307, probably at Tres Tabernae, either executed or forced to open his veins.",
+  "shortDescriptionFr": "Flavius Valerius Severus, dit Sévère II, fut un empereur romain de la Tétrarchie, passé de l'armée en Illyrie au rang de César sous Constance Ier puis d'Auguste d'Occident en 306. Son bref règne fut englouti par la révolte de Maxence ; abandonné par ses troupes près de Ravenne, il fut capturé et mourut en septembre 307, probablement à Tres Tabernae, soit exécuté, soit contraint de s'ouvrir les veines.",
+  "shortDescriptionDe": "Flavius Valerius Severus, bekannt als Severus II., war ein römischer Kaiser der Tetrarchie, der aus dem Heer in Illyrien aufstieg, unter Constantius I. Caesar wurde und 306 zum Augustus des Westens erhoben wurde. Seine kurze Herrschaft wurde vom Aufstand des Maxentius überschattet; nachdem ihn seine Truppen bei Ravenna im Stich gelassen hatten, geriet er in Gefangenschaft und starb im September 307, wohl bei Tres Tabernae, entweder durch Hinrichtung oder erzwungenen Suizid durch Öffnen der Adern.",
+  "shortDescriptionEs": "Flavio Valerio Severo, conocido como Severo II, fue un emperador romano de la Tetrarquía que ascendió desde el ejército en Iliria hasta ser nombrado césar por Constancio I y luego augusto de Occidente en 306. Su breve reinado quedó marcado por la rebelión de Majencio; tras ser abandonado por sus tropas cerca de Rávena, fue capturado y murió en septiembre de 307, probablemente en Tres Tabernae, ejecutado o forzado a suicidarse abriéndose las venas.",
+  "shortDescriptionRu": "Флавий Валерий Север, известный как Север II, был римским императором эпохи тетрархии: он сделал карьеру в армии в Иллирике, стал цезарем при Констанции I, а в 306 году — августом Запада. Его недолгое правление прошло на фоне мятежа Максенция; после того как войска оставили его у Равенны, он попал в плен и умер в сентябре 307 года, вероятно в Трес-Таберне, будучи либо казнён, либо вынужден вскрыть себе вены.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Severus_II",
+    "https://www.britannica.com/biography/Severus",
+    "https://www.livius.org/articles/person/severus-ii/",
+    "https://www.britishmuseum.org/collection/term/BIOG98327",
+    "https://roman-emperors.sites.luc.edu/severus.htm",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1002/9781444338386.wbeah19199",
+    "https://commons.wikimedia.org/wiki/File:Follis-Flavius_Valerius_Severus-trier_RIC_650a_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Severus_II_Aureus_Joanneum.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q191707",  "Name": "Leo II",  "BirthDate": "0467-01-01T00:00:00Z",  "DeathDate": "0474-11-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Leo%20%28474%29-coin.jpg",  "SiteLinksCnt": 55,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"252247":{"pageid":252247,"ns":0,"title":"Leo II (emperor)","extract":"Leo II (Ancient Greek: \u039b\u03ad\u03c9\u03bd, Le\u014dn; c.\u2009467 \u2013 474), called the Younger, briefly reigned as a child emperor of the Eastern Roman Empire from 473 to 474. He was the son of Zeno, the Isaurian general and future emperor, and Ariadne, a daughter of the emperor Leo I (r.\u2009457\u2013474). Leo II was made co-emperor with his grandfather Leo I on 17 November 473, and became sole emperor on 18 January 474 after Leo I died of dysentery. His father Zeno was made co-emperor by the Byzantine Senate on 29 January, and they co-ruled for a short time before Leo II died in late 474. He is sometimes surnamed with the epithet \"the Small\" (Latin: Minor; Ancient Greek: \u1f41 \u039c\u03b9\u03ba\u03c1\u03cc\u03c2), probably to distinguish him from his grandfather and augustus Leo I (Ancient Greek: \u1f41 \u039c\u03ad\u03b3\u03b1\u03c2, romanized: ho M\u00e9gas, lit.\u2009'the Great')."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q191707")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q191707",
+  "isRealHuman": true,
+  "birthDate": "0467-01-01",
+  "deathDate": "0474-11-10",
+  "ageAtDeath": 7,
+  "confidence": 88,
+  "confidenceExplained": "Confidence is high that this is Leo II, the Eastern Roman child emperor, and that he died at age 7: multiple sources agree on c. 467 as his birth year and on age 7 at death. Confidence is not higher because the exact birth day is unknown and the exact death day is disputed; Britannica gives 474-11-10, while Wikidata/Wikimedia Commons give 474-11-17 and Wikipedia notes only late 474/November 474.",
+  "shortDescriptionEn": "Leo II was the child emperor of the Eastern Roman Empire in 474, grandson of Leo I and son of Zeno, raised to the throne to secure the dynasty during a tense political moment in Constantinople. After only a few months as emperor and co-ruler with his father, he died in the capital at about age 7 in late 474, most likely of natural causes, though later writers sometimes suspected poisoning because his death left Zeno as sole ruler.",
+  "shortDescriptionFr": "Léon II fut le jeune empereur de l’Empire romain d’Orient en 474, petit-fils de Léon Ier et fils de Zénon, porté sur le trône pour assurer la succession dynastique à Constantinople. Après seulement quelques mois de règne et de corègne avec son père, il mourut dans la capitale vers l’âge de 7 ans à la fin de l’année 474, probablement de causes naturelles, même si des auteurs postérieurs ont évoqué un empoisonnement parce que sa mort laissa Zénon seul maître de l’Empire.",
+  "shortDescriptionDe": "Leo II war 474 der kindliche Kaiser des Oströmischen Reiches, Enkel Leos I. und Sohn Zenons; seine Erhebung sollte in einer angespannten Lage in Konstantinopel die Dynastie sichern. Nach nur wenigen Monaten als Kaiser und Mitregent seines Vaters starb er Ende 474 in der Hauptstadt im Alter von etwa 7 Jahren, wahrscheinlich eines natürlichen Todes, auch wenn spätere Autoren wegen Zenons Alleinherrschaft eine Vergiftung vermuteten.",
+  "shortDescriptionEs": "León II fue el niño emperador del Imperio romano de Oriente en 474, nieto de León I e hijo de Zenón, elevado al trono para asegurar la sucesión dinástica en Constantinopla. Tras solo unos meses como emperador y corregente con su padre, murió en la capital hacia los 7 años a fines de 474, probablemente por causas naturales, aunque autores posteriores sospecharon envenenamiento porque su muerte dejó a Zenón como único soberano.",
+  "shortDescriptionRu": "Лев II был малолетним императором Восточной Римской империи в 474 году, внуком Льва I и сыном Зенона; его возвели на престол, чтобы закрепить династическую преемственность в Константинополе. После всего нескольких месяцев правления и соправительства с отцом он умер в столице в конце 474 года примерно в 7-летнем возрасте, вероятнее всего естественной смертью, хотя позднейшие авторы подозревали отравление, поскольку после его смерти Зенон стал единоличным правителем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Leo_II_(emperor)",
+    "https://www.britannica.com/biography/Leo-II-Roman-emperor",
+    "https://www.wikidata.org/wiki/Q191707",
+    "https://commons.wikimedia.org/wiki/Category:Leo_II_(imperator)",
+    "https://www.livius.org/pictures/a/roman-emperors/leo-ii-coin/"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q229159",  "Name": "Margaret, Maid of Norway",  "BirthDate": "1283-04-16T00:00:00Z",  "DeathDate": "1290-09-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Margaret%2C%20Maid%20of%20Norway.jpg",  "SiteLinksCnt": 51,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"39843":{"pageid":39843,"ns":0,"title":"Margaret, Maid of Norway","extract":"Margaret (Norwegian: Margrete, Scottish Gaelic: Maighread; March or April 1283 \u2013 26/29 September 1290), known as the Maid of Norway, was the queen-designate of Scotland from 1286 until her death. As she was never inaugurated, her status as monarch is uncertain and has been debated by historians.\nMargaret was the daughter of King Eric II of Norway and Margaret of Scotland. By the end of the reign of her maternal grandfather, King Alexander III of Scotland, she was his only surviving descendant and had been recognized as heir presumptive. When Alexander III died in 1286, and his posthumous child was stillborn, Margaret succeeded to the Scottish crown.\nOwing to her young age, she remained in Norway rather than going to Scotland. Her father and the Scottish leaders negotiated her marriage to Edward of Caernarfon, son of King Edward I of England. She was finally sent to Great Britain in September 1290 but died in Orkney, sparking the succession dispute between thirteen competitors for the crown of Scotland."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q229159")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q229159",
+  "isRealHuman": true,
+  "birthDate": "1283-04-09",
+  "deathDate": "1290-09-26",
+  "ageAtDeath": 7,
+  "confidence": 94,
+  "confidenceExplained": "Very high for the age, lower for the exact death day. The best-supported evidence places her birth on 9 April 1283 or between March and 9 April 1283, and her death in late September 1290, often narrowed to 26-29 September. Any plausible combination gives an age at death of 7, so the integer is highly reliable even though the exact day of death is not.",
+  "shortDescriptionEn": "Margaret, Maid of Norway, was the Norwegian-born daughter of King Eric II of Norway and the granddaughter and designated heir of Alexander III of Scotland. Recognized as Scotland's queen-designate after the royal line failed, she sailed toward her kingdom in 1290, fell gravely ill during the voyage, and died in Orkney, triggering the succession crisis later known as the Great Cause.",
+  "shortDescriptionFr": "Marguerite, dite la « Demoiselle de Norvège », était la fille du roi Éric II de Norvège et la petite-fille d'Alexandre III d'Écosse, dont elle devint l'héritière désignée. Reconnue comme reine désignée d'Écosse après l'extinction de la lignée directe, elle partit pour prendre possession de son royaume en 1290, tomba gravement malade en mer et mourut aux Orcades, ouvrant la grande crise successorale écossaise.",
+  "shortDescriptionDe": "Margaret, die « Magd von Norwegen », war die in Norwegen geborene Tochter König Eriks II. und die Enkelin Alexanders III. von Schottland, dessen designierte Erbin sie wurde. Als vorgesehene Königin Schottlands brach sie 1290 in ihr Reich auf, erkrankte auf der Überfahrt schwer und starb auf Orkney, was die schottische Thronfolgekrise auslöste.",
+  "shortDescriptionEs": "Margarita, la « Doncella de Noruega », fue la hija nacida en Noruega del rey Erico II y la nieta y heredera designada de Alejandro III de Escocia. Reconocida como reina designada de Escocia tras extinguirse la línea directa, zarpó hacia su reino en 1290, enfermó gravemente durante el viaje y murió en las Orcadas, desencadenando la crisis sucesoria escocesa.",
+  "shortDescriptionRu": "Маргарет, «Дева Норвегии», была рождённой в Норвегии дочерью короля Эйрика II и внучкой Александра III Шотландского, став его назначенной наследницей. После пресечения прямой линии её признали королевой-наследницей Шотландии, но в 1290 году по пути в своё королевство она тяжело заболела и умерла на Оркнейских островах, вызвав шотландский династический кризис.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Margaret,_Maid_of_Norway",
+    "https://www.wikidata.org/wiki/Q229159",
+    "https://www.britannica.com/biography/Margaret-queen-of-Scotland",
+    "https://www.undiscoveredscotland.co.uk/usbiography/monarchs/margaret.html",
+    "https://commons.wikimedia.org/wiki/File:Margaret,_Maid_of_Norway.jpg"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q143559",  "Name": "Lysander",  "BirthDate": "-0401-01-01T00:00:00Z",  "DeathDate": "-0394-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lysander-Sparta.jpg",  "SiteLinksCnt": 49,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"54626":{"pageid":54626,"ns":0,"title":"Lysander","extract":"Lysander (; Ancient Greek: \u039b\u03cd\u03c3\u03b1\u03bd\u03b4\u03c1\u03bf\u03c2 Lysandros; c. 454 BC \u2013 395 BC) was a Spartan commander and statesman who was one of the leading military and political leaders of Sparta during the Peloponnesian Wars. He destroyed the Athenian fleet at the Battle of Aegospotami in 405 BC, forcing Athens to capitulate and bringing the Peloponnesian Wars to an end. He then played a key role in Sparta's domination of Greece for the next decade until his death at the Battle of Haliartus.\nLysander's vision for Sparta differed from most Spartans; he wanted to overthrow the Athenian Empire and replace it with Spartan hegemony."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q143559")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q143559",
+  "isRealHuman": true,
+  "birthDate": "-0454-01-01",
+  "deathDate": "-0395-01-01",
+  "ageAtDeath": 59,
+  "confidence": 84,
+  "confidenceExplained": "The identification is very strong: this is Lysander of Sparta. The death year and place are well established (395 BC, Haliartus/Boeotia). The main uncertainty is the birth year, which is usually given only as circa 454 BC, and no exact birth or death day is known. That means the exact age could have been about 58 or 59, but 59 is the best single-number estimate and is the age most commonly implied by standard references.",
+  "shortDescriptionEn": "Lysander was a Spartan commander and statesman who became one of the chief architects of Sparta’s final victory in the Peloponnesian War, most famously by destroying the Athenian fleet and forcing Athens to surrender. After helping impose Spartan power across Greece, he was killed in 395 BC near the walls of Haliartus in Boeotia during the opening of the Corinthian War, when his force advanced too aggressively before full support arrived.",
+  "shortDescriptionFr": "Lysandre fut un commandant et homme d'État spartiate, l'un des principaux artisans de la victoire finale de Sparte dans la guerre du Péloponnèse, notamment par la destruction de la flotte athénienne et la reddition d'Athènes. Après avoir contribué à imposer l'hégémonie spartiate en Grèce, il fut tué en 395 av. J.-C. près des murs d'Haliarte, en Béotie, au début de la guerre de Corinthe, lors d'une attaque menée trop tôt avant l'arrivée de tous ses renforts.",
+  "shortDescriptionDe": "Lysander war ein spartanischer Feldherr und Staatsmann, der zu den wichtigsten Architekten des spartanischen Sieges im Peloponnesischen Krieg gehörte, vor allem durch die Vernichtung der athenischen Flotte und die erzwungene Kapitulation Athens. Nachdem er die spartanische Vorherrschaft in Griechenland mit aufgebaut hatte, fiel er 395 v. Chr. nahe den Mauern von Haliartos in Böotien zu Beginn des Korinthischen Krieges, als er mit seinen Truppen zu früh angriff.",
+  "shortDescriptionEs": "Lisandro fue un comandante y estadista espartano que se convirtió en uno de los principales artífices de la victoria final de Esparta en la guerra del Peloponeso, sobre todo al destruir la flota ateniense y forzar la rendición de Atenas. Después de ayudar a imponer la hegemonía espartana en Grecia, murió en 395 a. C. cerca de las murallas de Haliarto, en Beocia, al comienzo de la guerra de Corinto, cuando lanzó un ataque prematuro antes de recibir apoyo completo.",
+  "shortDescriptionRu": "Лисандр был спартанским полководцем и государственным деятелем, одним из главных творцов окончательной победы Спарты в Пелопоннесской войне: именно он разгромил афинский флот и вынудил Афины капитулировать. После установления спартанского господства в Греции он погиб в 395 году до н. э. у стен Галиарта в Беотии в самом начале Коринфской войны, когда слишком рано повёл свои силы в атаку.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lysander",
+    "https://www.britannica.com/biography/Lysander-Greek-military-leader",
+    "https://www.worldhistory.org/Lysander/",
+    "https://en.wikipedia.org/wiki/Battle_of_Haliartus",
+    "https://commons.wikimedia.org/wiki/File:Lysander-Sparta.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7714263",  "Name": "Grumpy Cat",  "BirthDate": "2012-04-04T00:00:00Z",  "DeathDate": "2019-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Grumpy%20Cat%20%2814556024763%29%20%28cropped%29.jpg",  "SiteLinksCnt": 41,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"37865040":{"pageid":37865040,"ns":0,"title":"Grumpy Cat","extract":"Tardar Sauce (April 4, 2012 \u2013 May 14, 2019), nicknamed Grumpy Cat, was an American internet celebrity cat. She was known for her permanently \"grumpy\" facial appearance, which was caused by an underbite and feline dwarfism. She came to prominence when a photograph of her was posted on September 22, 2012, on social news website Reddit by Bryan Bundesen, the brother of her owner Tabatha Bundesen. \"Lolcats\" and parodies created from the photograph by Reddit users became popular. She was the subject of a popular Internet meme in which humorously negative, cynical images were made from photographs of her.\nAs of June 3, 2023, Grumpy Cat had 8.3 million total likes on Facebook, 2.5 million followers on Instagram 1.3 million followers on Twitter and 275,000 subscribers on YouTube."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7714263")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q7714263",
+  "isRealHuman": false,
+  "birthDate": "2012-04-04",
+  "deathDate": "2019-05-14",
+  "ageAtDeath": 7,
+  "confidence": 99,
+  "confidenceExplained": "Multiple independent sources agree that Q7714263 is Grumpy Cat (Tardar Sauce), an individual cat rather than a human, and they consistently give the same birth and death dates: 2012-04-04 and 2019-05-14. That makes the age-at-death calculation exact at 7 years. I am leaving 1% uncertainty only because death-circumstance details come from public reporting and family announcements rather than a civil registry.",
+  "shortDescriptionEn": "Grumpy Cat, born Tardar Sauce, was an American internet-famous cat whose underbite and feline dwarfism gave her the permanently displeased expression that made her one of the defining memes of the 2010s after a 2012 Reddit post. She died at her home in Morristown, Arizona, on 2019-05-14 from complications of a urinary tract infection, aged 7, and her family announced her death shortly afterward.",
+  "shortDescriptionFr": "Grumpy Cat, née Tardar Sauce, était une chatte américaine devenue une icône d’Internet : son prognathisme et son nanisme félin lui donnaient l’expression renfrognée qui a fait d’elle l’un des mèmes les plus célèbres des années 2010 après une photo publiée sur Reddit en 2012. Elle est morte chez elle à Morristown, en Arizona, le 14 mai 2019, des suites de complications liées à une infection urinaire, à l’âge de 7 ans, décès annoncé peu après par sa famille.",
+  "shortDescriptionDe": "Grumpy Cat, geboren als Tardar Sauce, war eine US-amerikanische Internet-Berühmtheit unter den Katzen; ihr Unterbiss und feliner Zwergwuchs verliehen ihr den dauerhaft mürrischen Ausdruck, der sie nach einem Reddit-Foto von 2012 zu einem prägenden Meme der 2010er machte. Sie starb am 14. Mai 2019 in ihrem Zuhause in Morristown, Arizona, an Komplikationen einer Harnwegsinfektion im Alter von 7 Jahren; ihre Familie gab den Tod kurz darauf bekannt.",
+  "shortDescriptionEs": "Grumpy Cat, nacida como Tardar Sauce, fue una gata estadounidense convertida en celebridad de Internet: su prognatismo y enanismo felino le daban la expresión permanentemente gruñona que la convirtió en uno de los memes más famosos de la década de 2010 tras una foto publicada en Reddit en 2012. Murió en su casa de Morristown, Arizona, el 14 de mayo de 2019 por complicaciones de una infección urinaria, a los 7 años, y su familia anunció la noticia poco después.",
+  "shortDescriptionRu": "Grumpy Cat, настоящее имя Тардар Соус, была американской кошкой-интернет-знаменитостью: из-за недокуса и кошачьего карликовости у неё было постоянно «сердитое» выражение морды, сделавшее её одним из самых узнаваемых мемов 2010-х после фото на Reddit в 2012 году. Она умерла дома в Морристауне, Аризона, 14 мая 2019 года от осложнений инфекции мочевыводящих путей в возрасте 7 лет; вскоре семья сообщила о её смерти публично.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Grumpy_Cat",
+    "https://www.wikidata.org/wiki/Q7714263",
+    "https://www.nytimes.com/2019/05/17/business/media/grumpy-cat-dead.html",
+    "https://time.com/5590976/grumpy-cat-dead/",
+    "https://www.grumpycats.com/about",
+    "https://commons.wikimedia.org/wiki/Category:Grumpy_Cat",
+    "https://www.instagram.com/p/Bxjs_9zBmjU/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q298624",  "Name": "Antiochus VI Dionysus",  "BirthDate": "-0147-01-01T00:00:00Z",  "DeathDate": "-0140-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AntiochusVI.jpg",  "SiteLinksCnt": 37,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"92230":{"pageid":92230,"ns":0,"title":"Antiochus VI Dionysus","extract":"Antiochus VI Dionysus (c. 148\u2013142/1 BC), king of the Hellenistic Seleucid kingdom, was the son of Alexander Balas and Cleopatra Thea, daughter of Ptolemy VI of Egypt."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q298624")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q298624",
+  "isRealHuman": true,
+  "birthDate": "-0147-01-01",
+  "deathDate": "-0140-01-01",
+  "ageAtDeath": 7,
+  "confidence": 64,
+  "confidenceExplained": "The person identification is highly secure, but the exact birth and death years are not. Modern references place his birth anywhere from 150 to 145 BC, with common narrower estimates around 148 or c.147 BC, while his death is usually placed in 142/141 BC. I therefore use the common normalized reconstruction of 148 BC to 141 BC, which gives an estimated age at death of 7. A plausible range would be roughly 6 to 8.",
+  "shortDescriptionEn": "Antiochus VI Dionysus was a Seleucid child king, the son of Alexander Balas and Cleopatra Thea, raised to the throne in 145/144 BC by Diodotus Tryphon during the civil wars against Demetrius II. He was mainly a dynastic figurehead rather than an independent ruler, and he died very young in 142/141 BC, probably after Tryphon had him killed when he was no longer useful, though some ancient accounts say he died during an operation.",
+  "shortDescriptionFr": "Antiochos VI Dionysos fut un jeune roi séleucide, fils d’Alexandre Balas et de Cléopâtre Théa, placé sur le trône en 145/144 av. J.-C. par Diodote Tryphon pendant les guerres civiles contre Démétrios II. Il resta surtout un souverain de façade plutôt qu’un dirigeant autonome, et mourut très jeune en 142/141 av. J.-C., probablement assassiné lorsque Tryphon n’eut plus besoin de lui, même si une tradition ancienne parle d’une opération chirurgicale.",
+  "shortDescriptionDe": "Antiochos VI. Dionysos war ein seleukidischer Knabenkönig, Sohn von Alexander Balas und Kleopatra Thea, der 145/144 v. Chr. von Diodotos Tryphon im Bürgerkrieg gegen Demetrios II. auf den Thron gehoben wurde. Er blieb vor allem eine dynastische Galionsfigur statt eines selbständigen Herrschers und starb sehr jung 142/141 v. Chr., wahrscheinlich nachdem Tryphon ihn beseitigen ließ, auch wenn einige antike Berichte von einem Tod bei einer Operation sprechen.",
+  "shortDescriptionEs": "Antíoco VI Dioniso fue un joven rey seléucida, hijo de Alejandro Balas y Cleopatra Tea, elevado al trono en 145/144 a. C. por Diódoto Trifón durante las guerras civiles contra Demetrio II. Fue sobre todo una figura dinástica y no un gobernante independiente, y murió muy joven en 142/141 a. C., probablemente asesinado cuando Trifón dejó de necesitarlo, aunque alguna tradición antigua afirma que murió durante una operación.",
+  "shortDescriptionRu": "Антиох VI Дионис был юным царём державы Селевкидов, сыном Александра Баласа и Клеопатры Теа, которого в 145/144 гг. до н. э. возвёл на престол Диодот Трифон в ходе борьбы против Деметрия II. Он оставался скорее династической фигурой, чем самостоятельным правителем, и умер совсем молодым в 142/141 гг. до н. э., вероятно, когда Трифон приказал избавиться от него, хотя часть античных авторов писала о смерти во время хирургической операции.",
+  "sources": [
+    "http://en.wikipedia.org/wiki/Antiochus_VI_Dionysus",
+    "http://www.iranicaonline.org/articles/antiochus-1-thirteen-kings-of-the-seleucid-dynasty/",
+    "http://www.livius.org/articles/person/antiochus-vi-dionysus/",
+    "http://en.wikipedia.org/wiki/Alexander_Balas",
+    "http://www.jewishencyclopedia.com/articles/1591-antiochus-vi",
+    "http://commons.wikimedia.org/wiki/File:AntiochusVI.jpg",
+    "http://commons.wikimedia.org/wiki/File:Antiochus_VI_-_face.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q295509",  "Name": "Laurentius",  "BirthDate": "0500-01-01T00:00:00Z",  "DeathDate": "0507-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Laurentius%20antipope.png",  "SiteLinksCnt": 36,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"1351167":{"pageid":1351167,"ns":0,"title":"Antipope Laurentius","extract":"Laurentius (possibly Caelius) was the Archpriest of Santa Prassede and later antipope of the See of Rome. Elected in 498 at the Basilica Saint Mariae (presumably Saint Maria Maggiore) with the support of a dissenting faction with Byzantine sympathies, who were supported by Eastern Roman Emperor Anastasius I Dicorus, in opposition to Pope Symmachus, the division between the two opposing factions split not only the church, but the Senate and the people of Rome. However, Laurentius remained in Rome as pope until 506."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q295509")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q295509",
+  "isRealHuman": true,
+  "birthDate": "0450-01-01",
+  "deathDate": "0507-01-01",
+  "ageAtDeath": 57,
+  "confidence": 42,
+  "confidenceExplained": "The identification is strong: this is Antipope Laurentius, the Roman archpriest of Santa Prassede and rival of Symmachus in the Laurentian Schism. The death year is only approximate, with sources clustering around 506/507 and several stating that he died about a year after being expelled from Rome in 506. No birth year is recorded in standard references, so the birth date and resulting age are informed estimates based on his already being a senior cleric and serious papal claimant by 498.",
+  "shortDescriptionEn": "Antipope Laurentius was a Roman archpriest of Santa Prassede who became the chief rival of Pope Symmachus after the disputed papal election of 498, a conflict that split the clergy, senate, and people of Rome during the Laurentian Schism. Backed by an important anti-Symmachan faction and associated with a more conciliatory line toward Constantinople, he remained a major force in Roman church politics for years. After losing the struggle, he was driven from Rome, withdrew to an estate belonging to his supporter Festus, and died there in austere retirement around 507.",
+  "shortDescriptionFr": "L'antipape Laurent était un archiprêtre romain de Sainte-Praxède qui devint le principal rival du pape Symmaque après l'élection pontificale contestée de 498, un conflit qui divisa le clergé, le sénat et le peuple de Rome durant le schisme laurentien. Soutenu par une importante faction hostile à Symmaque et lié à une ligne plus conciliante envers Constantinople, il resta pendant des années une figure majeure de la politique ecclésiastique romaine. Après sa défaite, il fut chassé de Rome, se retira sur un domaine de son partisan Festus et y mourut vers 507 dans une retraite austère.",
+  "shortDescriptionDe": "Gegenpapst Laurentius war ein römischer Archipresbyter von Santa Prassede und wurde nach der umstrittenen Papstwahl von 498 zum wichtigsten Rivalen von Papst Symmachus. Der daraus entstandene laurentianische Schisma spaltete Klerus, Senat und Bevölkerung Roms. Gestützt von einer bedeutenden gegnerischen Partei und verbunden mit einer ausgleichenderen Haltung gegenüber Konstantinopel blieb er jahrelang eine wichtige Gestalt der römischen Kirchenpolitik. Nach seiner Niederlage wurde er aus Rom verdrängt, zog sich auf ein Landgut seines Anhängers Festus zurück und starb dort um 507 in asketischer Zurückgezogenheit.",
+  "shortDescriptionEs": "El antipapa Laurencio fue un archipreste romano de Santa Práxedes que se convirtió en el principal rival del papa Símaco tras la disputada elección papal de 498, conflicto que dividió al clero, al senado y al pueblo de Roma durante el cisma laurenciano. Respaldado por una facción importante contraria a Símaco y asociado con una postura más conciliadora hacia Constantinopla, siguió siendo durante años una figura central de la política eclesiástica romana. Tras perder la lucha, fue expulsado de Roma, se retiró a una propiedad de su partidario Festo y murió allí hacia 507 en retiro austero.",
+  "shortDescriptionRu": "Антипапа Лаврентий был римским архипресвитером церкви Санта-Прасседе и стал главным соперником папы Симмаха после спорных выборов 498 года, вызвавших лаврентианский раскол, который разделил духовенство, сенат и жителей Рима. Его поддерживала влиятельная антисиммахова партия, а сам он был связан с более примирительной линией по отношению к Константинополю, поэтому несколько лет оставался заметной фигурой римской церковной политики. Потерпев поражение, он был вытеснен из Рима, удалился в имение своего сторонника Феста и умер там около 507 года в суровом уединении.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antipope_Laurentius",
+    "https://www.britannica.com/biography/Laurentius",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lawrence-antipope",
+    "https://www.catholic.com/encyclopedia/pope-symmachus-saint",
+    "https://commons.wikimedia.org/wiki/File:Laurentius_antipope.png",
+    "https://gallica.bnf.fr/ark:/12148/btv1b52506706r/f830.item"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q473506",  "Name": "Louis Joseph, Dauphin of France",  "BirthDate": "1781-10-22T00:00:00Z",  "DeathDate": "1789-06-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Louis%20Joseph%20of%20France.jpg",  "SiteLinksCnt": 34,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"1617182":{"pageid":1617182,"ns":0,"title":"Louis Joseph, Dauphin of France","extract":"Louis Joseph (Louis Joseph Xavier Fran\u00e7ois; 22 October 1781 \u2013 4 June 1789) was Dauphin of France as the second child and first son of King Louis XVI and Marie Antoinette. As son of a king of France, he was a fils de France (\"Child of France\"). Louis Joseph died aged seven from tuberculosis and was succeeded as Dauphin (and thus heir-apparent) by his four-year-old brother Louis Charles."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q473506")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q473506",
+  "isRealHuman": true,
+  "birthDate": "1781-10-22",
+  "deathDate": "1789-06-04",
+  "ageAtDeath": 7,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across multiple independent reference pages, and the age was calculated directly from those dates. Confidence is not 100 only because some secondary summaries are not primary archival records, but the agreement is very strong.",
+  "shortDescriptionEn": "Louis Joseph, Dauphin of France, was the second child and first son of Louis XVI and Marie Antoinette, making him heir apparent to the French throne from birth. Raised at Versailles and celebrated as the long-awaited male heir of the Bourbon dynasty, he never lived to enter public life: after years of fragile health and worsening illness, he died at Meudon in 1789 from tuberculosis, only weeks after the Estates-General opened and just before the French Revolution transformed his family's world.",
+  "shortDescriptionFr": "Louis-Joseph, dauphin de France, était le deuxième enfant et le premier fils de Louis XVI et de Marie-Antoinette, ce qui fit de lui l’héritier du trône dès sa naissance. Élevé à Versailles et célébré comme l’héritier masculin tant attendu des Bourbons, il n’eut jamais le temps d’entrer dans la vie publique : après des années de santé fragile et d’une maladie de plus en plus sévère, il mourut à Meudon en 1789 de la tuberculose, quelques semaines après l’ouverture des États généraux, à la veille du bouleversement révolutionnaire.",
+  "shortDescriptionDe": "Louis Joseph, Dauphin von Frankreich, war das zweite Kind und der erste Sohn von Ludwig XVI. und Marie Antoinette und damit von Geburt an Thronerbe. Er wuchs in Versailles auf und galt als der lang ersehnte männliche Erbe der Bourbonen, trat aber nie ins öffentliche Leben ein: Nach Jahren schwacher Gesundheit und zunehmender Krankheit starb er 1789 in Meudon an Tuberkulose, nur wenige Wochen nach der Eröffnung der Generalstände und unmittelbar vor dem Umbruch der Französischen Revolution.",
+  "shortDescriptionEs": "Luis José, delfín de Francia, fue el segundo hijo y el primer varón de Luis XVI y María Antonieta, por lo que fue heredero del trono francés desde su nacimiento. Criado en Versalles y celebrado como el esperado heredero masculino de los Borbones, nunca llegó a desempeñar un papel público: tras años de salud frágil y una enfermedad cada vez más grave, murió en Meudon en 1789 de tuberculosis, apenas unas semanas después de la apertura de los Estados Generales y en la antesala de la Revolución francesa.",
+  "shortDescriptionRu": "Луи-Жозеф, дофин Франции, был вторым ребёнком и первым сыном Людовика XVI и Марии-Антуанетты, поэтому с рождения считался наследником французского престола. Он рос в Версале и воспринимался как долгожданный мужской наследник династии Бурбонов, но так и не успел вступить в публичную жизнь: после нескольких лет слабого здоровья и усиливавшейся болезни он умер в Медоне в 1789 году от туберкулёза, всего через несколько недель после открытия Генеральных штатов и на пороге Французской революции.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Louis_Joseph,_Dauphin_of_France",
+    "https://fr.wikipedia.org/wiki/Louis-Joseph_de_France",
+    "https://collection.nationalmuseum.se/sv/collection/item/132462/",
+    "https://commons.wikimedia.org/wiki/Category:Louis-Joseph,_Dauphin_of_France",
+    "https://commons.wikimedia.org/wiki/File:Louis_Joseph_of_France.jpg",
+    "https://francearchives.gouv.fr/fr/agent/908096186"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q735288",  "Name": "Jani Beg",  "BirthDate": "1350-01-01T00:00:00Z",  "DeathDate": "1357-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jani%20Beg%20Khan%20enthroned%2C%20in%20Timurid%20genealogy%201405-1409%20%28Topkapi%20Sarayi%20M%C3%BCzesi%2C%20H2152%29%20f.38b.jpg",  "SiteLinksCnt": 33,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"1755270":{"pageid":1755270,"ns":0,"title":"Jani Beg","extract":"Jani Beg (Persian: \u062c\u0627\u0646\u06cc \u0628\u06cc\u06af, Turki/Kypchak: \u062c\u0627\u0646\u06cc \u0628\u06a9; died 1357), also known as Janibek Khan, was Khan of the Golden Horde from 1342 until his death in 1357. After his father, \u00d6z Beg Khan, died in 1341, Jani Beg defeated his older brother, Tini Beg, to become khan."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q735288")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q735288",
+  "isRealHuman": true,
+  "birthDate": "1300-01-01",
+  "deathDate": "1357-07-22",
+  "ageAtDeath": 57,
+  "confidence": 62,
+  "confidenceExplained": "The identity is very secure and the death date is fairly strong, because multiple sources place Jani Beg's death in 1357 and tie Berdi Beg's succession to 22 July 1357. The weak point is the birth date: no solid primary date is preserved in the sources I found. I therefore estimated c.1300 from contextual evidence: he was already an established prince by 1340, his son Berdi Beg was an adult political actor by the mid-1350s, and some traditions describe Jani Beg as old or infirm in 1357. So 57 is a reasoned estimate, not a documented exact age.",
+  "shortDescriptionEn": "Jani Beg, also known as Janibek Khan, was khan of the Golden Horde from 1342 to 1357 and one of its last powerful rulers. After the death of his father Öz Beg Khan, he seized the throne from his brother Tini Beg, backed Moscow in Rus' politics, pressured Black Sea trade centers, and brought the Horde to a final high point by taking Tabriz and extending influence into Azerbaijan. He died on 22 July 1357 after falling gravely ill during or just after the Persian campaign; several medieval traditions blamed court nobles or his son Berdi Beg, so the exact cause of death remains uncertain.",
+  "shortDescriptionFr": "Jani Beg, aussi connu sous le nom de Janibek Khan, fut le khan de la Horde d'Or de 1342 à 1357 et l'un de ses derniers grands souverains. Après la mort de son père Öz Beg Khan, il s'empara du trône au détriment de son frère Tini Beg, soutint Moscou dans la politique des principautés russes, pesa sur le commerce de la mer Noire et porta encore la Horde à son apogée en prenant Tabriz et en imposant son autorité sur l'Azerbaïdjan. Il mourut le 22 juillet 1357 après être tombé gravement malade pendant ou juste après la campagne de Perse; plusieurs traditions médiévales accusent les grands du royaume ou son fils Berdi Beg, si bien que la cause exacte reste incertaine.",
+  "shortDescriptionDe": "Jani Beg, auch Janibek Khan genannt, war von 1342 bis 1357 Khan der Goldenen Horde und einer ihrer letzten mächtigen Herrscher. Nach dem Tod seines Vaters Öz Beg Khan riss er den Thron an sich, setzte sich gegen seinen Bruder Tini Beg durch, unterstützte Moskau in der Rus'-Politik, griff in den Schwarzmeerhandel ein und führte die Horde mit der Einnahme von Tabriz und dem Vorstoß nach Aserbaidschan noch einmal zu einem Höhepunkt. Er starb am 22. Juli 1357, nachdem er während oder kurz nach dem Persienfeldzug schwer erkrankt war; mehrere mittelalterliche Überlieferungen geben Hofadligen oder seinem Sohn Berdi Beg die Schuld, weshalb die genaue Todesursache unklar bleibt.",
+  "shortDescriptionEs": "Jani Beg, también conocido como Janibek Kan, fue kan de la Horda de Oro entre 1342 y 1357 y uno de sus últimos gobernantes realmente poderosos. Tras la muerte de su padre Öz Beg Kan, arrebató el trono a su hermano Tini Beg, apoyó a Moscú en la política de la Rus', presionó los centros comerciales del mar Negro y llevó a la Horda a un último momento de esplendor al tomar Tabriz y extender su influencia sobre Azerbaiyán. Murió el 22 de julio de 1357 después de enfermar gravemente durante o justo después de la campaña persa; varias tradiciones medievales culparon a nobles de la corte o a su hijo Berdi Beg, por lo que la causa exacta sigue siendo incierta.",
+  "shortDescriptionRu": "Джани Бег, также известный как Джанибек-хан, был ханом Золотой Орды в 1342–1357 годах и одним из её последних по-настоящему сильных правителей. После смерти своего отца Узбек-хана он захватил престол, устранив брата Тини-Бека, поддерживал Москву в делах русских княжеств, влиял на черноморскую торговлю и довёл Орду до нового пика, взяв Тебриз и распространив влияние на Азербайджан. Он умер 22 июля 1357 года, тяжело заболев во время или сразу после персидского похода; средневековые источники также подозревали знать двора или его сына Бердибека, поэтому точная причина смерти остаётся неясной.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jani_Beg",
+    "https://www.wikidata.org/wiki/Q735288",
+    "https://en.wikipedia.org/wiki/Berdi_Beg",
+    "https://www.britannica.com/biography/Jani-Beg-Mongol-ruler",
+    "https://www.britannica.com/place/Mongol-empire/The-Golden-Horde",
+    "https://commons.wikimedia.org/wiki/File:Jani_Beg_Khan_enthroned,_in_Timurid_genealogy_1405-1409_(Topkapi_Sarayi_M%C3%BCzesi,_H2152)_f.38b.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jani_Beg_Khan,_in_Timurid_genealogy_1405-1409_(Topkapi_Sarayi_M%C3%BCzesi,_H2152)_f.38b.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Jani_Beg",
+    "https://dokumen.pub/the-golden-horde-in-world-history.html"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37089",  "Name": "Andronikos V Palaiologos",  "BirthDate": "1400-01-01T00:00:00Z",  "DeathDate": "1407-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Andronikos%20V%20Palaiologos%20and%20family.jpg",  "SiteLinksCnt": 32,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"4760249":{"pageid":4760249,"ns":0,"title":"Andronikos V Palaiologos","extract":"Andronikos V Palaiologos or Andronicus V Palaeologus (Greek: \u0391\u03bd\u03b4\u03c1\u03cc\u03bd\u03b9\u03ba\u03bf\u03c2 \u03a0\u03b1\u03bb\u03b1\u03b9\u03bf\u03bb\u03cc\u03b3\u03bf\u03c2, romanized: Andr\u00f3nikos Palaiol\u00f3gos; c. 1400\u20131407) was the Byzantine ruler of the city of Thessalonica and surrounding territories from 1403 to his death in 1407, alongside his father John VII Palaiologos. Though they did not control Constantinople, John and Andronikos ruled Thessalonica with the full Byzantine imperial title, recognized by the ruling senior emperor, John VII's uncle Manuel II Palaiologos.\nRecognized as third-in-line to Constantinople, Andronikos' parents had high hopes for his future and regarded him as the future legitimate senior Byzantine emperor. These hopes were dashed when Andronikos died in 1407, just seven years old. On account of his ephemeral status and short life, Andronikos is a shadowy historical figure of whom little is known. He was not acknowledged by modern historians until 1967, who had previously believed John VII to be childless."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37089")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q37089",
+  "isRealHuman": true,
+  "birthDate": "1400-01-01",
+  "deathDate": "1407-01-01",
+  "ageAtDeath": 7,
+  "confidence": 95,
+  "confidenceExplained": "The age at death is very strong because a scholarly edition of the funeral monody explicitly says Andronikos died 'at the age of seven'. Confidence is not 100 because the exact birth and death day/month are unknown and the year is reconstructed from a narrow historical window; the JSON dates are normalized estimates, but the age 7 is highly likely to be correct.",
+  "shortDescriptionEn": "Andronikos V Palaiologos was the young son of John VII Palaiologos and Irene Gattilusio, presented as a Byzantine co-emperor in Thessalonica and as a hoped-for heir of the Palaiologan line. His brief prominence ended with his death in childhood in 1407, probably at Thessalonica, and his death at age seven shattered his parents’ dynastic hopes and left only a faint trace in the historical record.",
+  "shortDescriptionFr": "Andronikos V Paléologue était le jeune fils de Jean VII Paléologue et d’Irène Gattilusio, présenté comme coempereur byzantin à Thessalonique et comme héritier attendu de la dynastie des Paléologues. Sa brève destinée s’acheva avec sa mort durant l’enfance en 1407, probablement à Thessalonique, et sa disparition à l’âge de sept ans anéantit les espoirs dynastiques de ses parents.",
+  "shortDescriptionDe": "Andronikos V. Palaiologos war der junge Sohn von Johannes VII. Palaiologos und Irene Gattilusio, der in Thessaloniki als byzantinischer Mitkaiser auftrat und als künftiger Erbe der Palaiologen galt. Seine kurze Laufbahn endete mit seinem Tod im Kindesalter im Jahr 1407, wohl in Thessaloniki, und sein Sterben im Alter von sieben Jahren zerstörte die dynastischen Hoffnungen seiner Eltern.",
+  "shortDescriptionEs": "Andronikos V Paleólogo fue el joven hijo de Juan VII Paleólogo e Irene Gattilusio, presentado como coemperador bizantino en Tesalónica y como heredero esperado de la dinastía paleóloga. Su breve protagonismo terminó con su muerte en la niñez en 1407, probablemente en Tesalónica, y su fallecimiento a los siete años truncó las aspiraciones dinásticas de sus padres.",
+  "shortDescriptionRu": "Андроник V Палеолог был юным сыном Иоанна VII Палеолога и Ирины Гаттилузио, представленным как византийский соправитель в Фессалонике и как предполагаемый наследник династии Палеологов. Его недолгая судьба оборвалась смертью в детстве в 1407 году, вероятно в Фессалонике, и кончина в семилетнем возрасте разрушила династические надежды его родителей.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Andronikos_V_Palaiologos",
+    "https://archive.org/stream/Jahrbuch-der-osterreichischen-byzantinistik/JOB%2016%201967_djvu.txt",
+    "https://www.jstor.org/stable/pdf/1291411.pdf",
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/846DABC9192ABF704D1F3EFA19282507/9781108836593mfm2_xxi-xxiii.pdf/historical_figures.pdf",
+    "https://commons.wikimedia.org/wiki/File:Andronikos_V_Palaiologos_and_family.png",
+    "https://en.wikipedia.org/wiki/John_VII_Palaiologos"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q359829",  "Name": "Simeon of Jerusalem",  "BirthDate": "0100-01-01T00:00:00Z",  "DeathDate": "0107-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Menologion%20of%20Basil%20036.jpg",  "SiteLinksCnt": 28,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"1567895":{"pageid":1567895,"ns":0,"title":"Simeon of Jerusalem","extract":"Simeon of Jerusalem, or Simon of Clopas (Hebrew: \u05e9\u05de\u05e2\u05d5\u05df \u05d4\u05e7\u05dc\u05e4\u05d5\u05e1), was a Jewish Christian leader and according to most Christian traditions the second Bishop of Jerusalem (63 or 70\u2013107 or 117), succeeding James, brother of Jesus. Simeon is sometimes identified with Simon, brother of Jesus, and has also been identified with the Apostle Simon the Zealot."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q359829")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q359829",
+  "isRealHuman": true,
+  "birthDate": "-0013-01-01",
+  "deathDate": "0107-01-01",
+  "ageAtDeath": 120,
+  "confidence": 62,
+  "confidenceExplained": "The identification of this person as Simeon/Symeon of Jerusalem, son of Clopas, is strong in early Christian tradition. The exact year of death is uncertain, though 106/107 is the most common traditional dating, and the reported age of 120 comes from Hegesippus as preserved by Eusebius. Because both the birth year and exact death year are reconstructed rather than directly documented, and the age may be stylized or exaggerated, confidence is moderate.",
+  "shortDescriptionEn": "Simeon of Jerusalem, also known as Simon of Clopas, was an early Jewish Christian leader remembered as the second bishop of Jerusalem after James and traditionally as a kinsman of Jesus; he is also associated with guiding Jerusalem believers to safety before the city’s destruction. In extreme old age he was denounced under Trajan as both a descendant of David and a Christian, tortured for several days, and finally crucified near Jerusalem.",
+  "shortDescriptionFr": "Siméon de Jérusalem, aussi appelé Simon de Clopas, fut un dirigeant judéo-chrétien des débuts, considéré comme le deuxième évêque de Jérusalem après Jacques et traditionnellement comme un parent de Jésus; on lui attribue aussi la conduite des fidèles vers Pella avant la destruction de la ville. Très âgé, il fut dénoncé sous Trajan comme descendant de David et chrétien, torturé plusieurs jours, puis crucifié près de Jérusalem.",
+  "shortDescriptionDe": "Simeon von Jerusalem, auch Simon von Klopas genannt, war ein früher judenchristlicher Führer, der als zweiter Bischof von Jerusalem nach Jakobus gilt und traditionell als Verwandter Jesu angesehen wird; außerdem verbindet man ihn mit der Flucht der Jerusalemer Christen nach Pella vor der Zerstörung der Stadt. Im hohen Alter wurde er unter Trajan als Nachkomme Davids und als Christ angezeigt, mehrere Tage gefoltert und schließlich in der Nähe von Jerusalem gekreuzigt.",
+  "shortDescriptionEs": "Simeón de Jerusalén, también llamado Simón de Clopás, fue un dirigente judeocristiano de los primeros tiempos, recordado como segundo obispo de Jerusalén tras Santiago y tradicionalmente como pariente de Jesús; también se le asocia con la salida de los cristianos hacia Pella antes de la destrucción de la ciudad. Ya muy anciano, fue denunciado bajo Trajano como descendiente de David y cristiano, torturado durante varios días y finalmente crucificado cerca de Jerusalén.",
+  "shortDescriptionRu": "Симеон Иерусалимский, также известный как Симон, сын Клопы, был одним из ранних иудео-христианских лидеров, которого помнят как второго епископа Иерусалима после Иакова и традиционно считают родственником Иисуса; ему также приписывают руководство бегством иерусалимских христиан в Пеллу перед разрушением города. В глубокой старости его при Траяне обвинили как потомка Давида и христианина, несколько дней пытали, а затем распяли близ Иерусалима.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Simeon_of_Jerusalem",
+    "https://www.newadvent.org/fathers/250103.htm",
+    "https://www.ccel.org/ccel/schaff/npnf201.iii.viii.xxxii.html",
+    "https://www.newadvent.org/cathen/08355a.htm",
+    "https://www.ecatholic2000.com/butler/vol2/february81.shtml",
+    "https://commons.wikimedia.org/wiki/File:Menologion_of_Basil_036.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q467662",  "Name": "Guru Har Krishan",  "BirthDate": "1656-07-07T00:00:00Z",  "DeathDate": "1664-03-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Guru%20Har%20Krishan%20Ji%20Gurudwara%20Pothi%20Mala.jpg",  "SiteLinksCnt": 28,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"545817":{"pageid":545817,"ns":0,"title":"Guru Har Krishan","extract":"Guru Har Krishan (Gurmukhi: \u0a17\u0a41\u0a30\u0a42 \u0a39\u0a30\u0a3f \u0a15\u0a4d\u0a30\u0a3f\u0a38\u0a3c\u0a28, pronunciation: [\u0261\u028aru\u02d0 h\u0259\u027e k\u027e\u026a\u0283\u0259n]; 7 July 1656\u201330 March 1664) also known as Bal Guru (Child Guru), or Hari Krishan Sahib, was the eighth of the ten Sikh gurus. At the age of five, he succeeded his father, Guru Har Rai, and became the youngest guru in Sikhism. He contracted smallpox in 1664 and died before reaching his eighth birthday, with the shortest reign as guru, lasting only two years, five months, and 24 days.\nHe is remembered in the Sikh tradition for saying \"Baba Bakale\" before he died, which Sikhs interpreted to identify his grand-uncle Guru Tegh Bahadur as his successor."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q467662")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q467662",
+  "isRealHuman": true,
+  "birthDate": "1656-07-07",
+  "deathDate": "1664-03-30",
+  "ageAtDeath": 7,
+  "confidence": 93,
+  "confidenceExplained": "The identification is very strong: this is Guru Har Krishan, the eighth Sikh Guru. SGPC and Wikipedia agree on the exact birth and death dates (1656-07-07 to 1664-03-30), and Britannica independently confirms the same historical figure and year of death. The only uncertainty is that some secondary sources round his age to 8 or use traditional counting, but the strict calculation from the dates gives 7 full years.",
+  "shortDescriptionEn": "Guru Har Krishan was the eighth Sikh Guru and the youngest of the ten Gurus, succeeding his father Guru Har Rai in 1661 while still a child. He is remembered for his compassion, humility, and spiritual authority, especially for helping the sick in Delhi during an epidemic; he contracted smallpox there and died on 30 March 1664 at the age of 7.",
+  "shortDescriptionFr": "Guru Har Krishan fut le huitième gourou du sikhisme et le plus jeune des dix gourous, succédant à son père Guru Har Rai en 1661 alors qu’il était encore enfant. Il est surtout honoré pour sa compassion, son humilité et son autorité spirituelle; après avoir aidé les malades à Delhi pendant une épidémie, il contracta la variole et mourut le 30 mars 1664 à l’âge de 7 ans.",
+  "shortDescriptionDe": "Guru Har Krishan war der achte Sikh-Guru und der jüngste der zehn Gurus; er folgte 1661 seinem Vater Guru Har Rai bereits als Kind nach. Er wird besonders für sein Mitgefühl, seine Bescheidenheit und seine geistliche Autorität verehrt; während einer Epidemie in Delhi kümmerte er sich um Kranke, erkrankte selbst an Pocken und starb am 30. März 1664 im Alter von 7 Jahren.",
+  "shortDescriptionEs": "Guru Har Krishan fue el octavo gurú del sijismo y el más joven de los diez gurús, al suceder a su padre Guru Har Rai en 1661 siendo todavía un niño. Es recordado por su compasión, humildad y autoridad espiritual, especialmente por atender a los enfermos en Delhi durante una epidemia; allí contrajo viruela y murió el 30 de marzo de 1664 a la edad de 7 años.",
+  "shortDescriptionRu": "Гуру Хар Кришан был восьмым сикхским гуру и самым юным из десяти гуру, став преемником своего отца Гуру Хар Рая в 1661 году ещё ребёнком. Его почитают за сострадание, смирение и духовный авторитет; во время эпидемии в Дели он помогал больным, заразился оспой и умер 30 марта 1664 года в возрасте 7 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guru_Har_Krishan",
+    "https://www.britannica.com/biography/Guru-Hari-Krishen",
+    "https://old.sgpc.net/gurus/guruharkrishan.asp",
+    "https://www.sikhiwiki.org/index.php/Guru_Har_Krishan",
+    "https://www.wikidata.org/wiki/Q467662"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7503",  "Name": "Emperor Bing of Song",  "BirthDate": "1272-02-19T00:00:00Z",  "DeathDate": "1279-03-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Song%20Modi.jpg",  "SiteLinksCnt": 27,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"656424":{"pageid":656424,"ns":0,"title":"Zhao Bing","extract":"Zhao Bing (12 February 1272 \u2013 19 March 1279), also known as Emperor Bing of Song or Bing, Emperor of Song (\u5b8b\u5e1d\u663a), was the 18th and last emperor of the Song dynasty of China, who ruled as a minor between 6 and 7 years of age.\nHe was also the ninth and last emperor of the Southern Song dynasty. He reigned for around 313 days in 1278 and 1279.  His reign, and the Song dynasty, ended with the Song's total defeat by the Mongol-led Yuan dynasty at the naval Battle of Yamen.\nZhao Bing and his entourage had been observing the naval combat from some coastal cliffs nearby.  As the victorious enemy approached, the young emperor's advisor, Lu Xiufu, held the boy in his arms as the two of them leapt from the clifftops, killing them both."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7503")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7503",
+  "isRealHuman": true,
+  "birthDate": "1272-02-12",
+  "deathDate": "1279-03-19",
+  "ageAtDeath": 7,
+  "confidence": 96,
+  "confidenceExplained": "Multiple sources identify Q7503 as Zhao Bing (Emperor Bing of Song) and converge on the same standard Gregorian dates: 1272-02-12 to 1279-03-19. That computes to 7 full years at death. The dates in the prompt differ by 7 days on both birth and death, but that still produces the same integer age of 7, which makes the final age highly robust. The small uncertainty is mostly due to historical calendar-conversion differences and traditional East Asian age reckoning, which can make some texts say 8 or 9.",
+  "shortDescriptionEn": "Zhao Bing, known as Emperor Bing of Song, was the last emperor of the Song dynasty and the final ruler of the Southern Song. Enthroned as a small child in 1278 while the court was fleeing the Mongol-led Yuan advance, he reigned only briefly before the dynasty collapsed. During the Battle of Yamen in 1279, with defeat certain, the loyal official Lu Xiufu took the seven-year-old emperor into the sea, and his death became the dramatic final act of the Song dynasty.",
+  "shortDescriptionFr": "Zhao Bing, connu sous le nom d’empereur Bing des Song, fut le dernier empereur de la dynastie Song et le dernier souverain des Song du Sud. Monté sur le trône alors qu’il n’était qu’un enfant en 1278, au moment où la cour fuyait l’avancée des Yuan mongols, il ne régna que très peu de temps avant l’effondrement du royaume. Lors de la bataille navale de Yamen en 1279, la défaite étant certaine, le fidèle Lu Xiufu emporta le jeune empereur de sept ans dans la mer, scellant la fin tragique de la dynastie Song.",
+  "shortDescriptionDe": "Zhao Bing, bekannt als Kaiser Bing der Song, war der letzte Kaiser der Song-Dynastie und der letzte Herrscher der Südlichen Song. Er wurde 1278 als kleines Kind auf den Thron gesetzt, während der Hof bereits vor dem mongolisch geführten Yuan-Reich floh, und seine Herrschaft dauerte nur kurz. In der Seeschlacht von Yamen 1279, als die Niederlage unausweichlich war, sprang der loyale Beamte Lu Xiufu mit dem siebenjährigen Kaiser ins Meer, was das dramatische Ende der Song-Dynastie markierte.",
+  "shortDescriptionEs": "Zhao Bing, conocido como el emperador Bing de Song, fue el último emperador de la dinastía Song y el último soberano de los Song del Sur. Subió al trono siendo apenas un niño en 1278, cuando la corte huía del avance de la dinastía Yuan dirigida por los mongoles, y su reinado fue muy breve. En la batalla naval de Yamen de 1279, cuando la derrota ya era inevitable, el leal Lu Xiufu se lanzó al mar con el emperador de siete años, en el episodio final y más dramático de la dinastía Song.",
+  "shortDescriptionRu": "Чжао Бин, известный как император Бин из династии Сун, был последним императором династии Сун и последним правителем Южной Сун. Он взошёл на престол совсем ребёнком в 1278 году, когда двор уже отступал перед наступлением монгольской династии Юань, и правил совсем недолго. Во время морской битвы при Ямэне в 1279 году, когда поражение стало неизбежным, верный сановник Лу Сюфу бросился в море с семилетним императором на руках, и эта смерть стала трагическим финалом династии Сун.",
+  "sources": [
+    "http://en.wikipedia.org/wiki/Zhao_Bing",
+    "http://www.wikidata.org/entity/Q7503",
+    "http://en.wikipedia.org/wiki/Battle_of_Yamen",
+    "http://commons.wikimedia.org/wiki/File:Song_Modi.jpg",
+    "http://commons.wikimedia.org/wiki/Category:Emperor_Bing_of_Song",
+    "http://ctext.org/datawiki.pl?if=en&res=857776",
+    "http://www.jstor.org/stable/23497530"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q507623",  "Name": "Vaballathus",  "BirthDate": "0266-01-01T00:00:00Z",  "DeathDate": "0273-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AURELIANUS%20RIC%20V%20381-795833%20%28reverse%29.jpg",  "SiteLinksCnt": 25,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"2191581":{"pageid":2191581,"ns":0,"title":"Vaballathus","extract":"Septimius Vaballathus (Palmyrene Aramaic: \ud802\udc65\ud802\udc64\ud802\udc61\ud802\udc60\ud802\udc6b\ud802\udc76\u200e, romanized: Wahb\u02bealat; Arabic: \u0648\u0647\u0628 \u0627\u0644\u0644\u0627\u062a\u200e, romanized: Wahb All\u0101t, lit.\u2009'Gift of All\u0101t'; c.\u2009259 \u2013 c.\u2009274 AD) was emperor of the Palmyrene Empire centred at Palmyra in the region of Syria. \nHe came to power as a child under his regent mother Zenobia, who led a revolt against the Roman Empire and formed the independent Palmyrene Empire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q507623")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q507623",
+  "isRealHuman": true,
+  "birthDate": "0259-01-01",
+  "deathDate": "0274-01-01",
+  "ageAtDeath": 15,
+  "confidence": 54,
+  "confidenceExplained": "The person's identity is secure, but the dates are not. Accessible sources agree that Vaballathus was a child ruler under Zenobia, yet they conflict on his birth year (commonly 259, sometimes 266, and some reconstructions imply about 257) and on his death (possibly en route to Rome after Aurelian's victory, or still alive in Rome after 274). I therefore use 259 and 274 as the best single estimate for a website and calculate an estimated age at death of 15.",
+  "shortDescriptionEn": "Septimius Vaballathus, known in Palmyrene as Wahballat, was the young ruler of Palmyra and the son of Zenobia and Odaenathus. He became king in 267 while still a child, ruled under his mother’s regency, and briefly stood at the center of the Palmyrene challenge to Rome before Aurelian crushed the state in 272. Captured with Zenobia after Palmyra’s defeat, he most likely died in Roman captivity on the journey west or soon after, at an estimated age of 15.",
+  "shortDescriptionFr": "Septimius Vaballathus, appelé Wahballat en palmyrénien, fut le jeune souverain de Palmyre et le fils de Zénobie et d’Odénath. Devenu roi en 267 alors qu’il était encore enfant, il régna sous la régence de sa mère et incarna brièvement l’ambition de l’Empire palmyrénien face à Rome, jusqu’à la reconquête d’Aurélien en 272. Capturé avec Zénobie après la chute de Palmyre, il mourut très probablement en captivité romaine pendant le transfert vers l’ouest ou peu après, vers l’âge estimé de 15 ans.",
+  "shortDescriptionDe": "Septimius Vaballathus, auf Palmyrenisch Wahballat, war der junge Herrscher von Palmyra und der Sohn Zenobias und Odaenaths. Er wurde 267 noch als Kind König, stand unter der Regentschaft seiner Mutter und geriet kurzzeitig ins Zentrum der palmyrenischen Herausforderung gegen Rom, ehe Aurelian den Staat 272 zerschlug. Nach der Niederlage Palmyras wurde er zusammen mit Zenobia gefangen genommen und starb wahrscheinlich in römischer Gefangenschaft auf dem Weg nach Westen oder kurz danach, im geschätzten Alter von 15 Jahren.",
+  "shortDescriptionEs": "Septimius Vaballathus, conocido en palmireno como Wahballat, fue el joven gobernante de Palmira e hijo de Zenobia y Odenato. Se convirtió en rey en 267 siendo todavía un niño, gobernó bajo la regencia de su madre y quedó brevemente en el centro del desafío palmireno contra Roma antes de que Aureliano destruyera ese poder en 272. Capturado junto con Zenobia tras la derrota de Palmira, lo más probable es que muriera en cautiverio romano durante el traslado hacia Occidente o poco después, con una edad estimada de 15 años.",
+  "shortDescriptionRu": "Септимий Вабаллат, известный по-пальмирски как Вахбаллат, был юным правителем Пальмиры, сыном Зенобии и Одената. В 267 году он стал царем еще ребенком, правил при регентстве матери и ненадолго оказался в центре пальмирского вызова Риму, пока Аврелиан не разгромил это государство в 272 году. После падения Пальмиры его схватили вместе с Зенобией; вероятнее всего, он умер в римском плену по пути на запад или вскоре после этого, примерно в 15 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vaballathus",
+    "https://www.britannica.com/biography/Wahballat",
+    "https://en.wikipedia.org/wiki/Palmyrene_Empire",
+    "https://roman-emperors.sites.luc.edu/zenobia.htm",
+    "https://www.livius.org/articles/person/vaballathus/",
+    "https://commons.wikimedia.org/wiki/Category:Vaballathus",
+    "https://commons.wikimedia.org/wiki/File:Vaballathus.jpg"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q552224",  "Name": "Valerian II",  "BirthDate": "0250-01-01T00:00:00Z",  "DeathDate": "0257-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/ValerianusIIae.jpg",  "SiteLinksCnt": 24,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"1939647":{"pageid":1939647,"ns":0,"title":"Valerian II","extract":"Publius Licinius Cornelius Valerianus (died 258), also known as Valerian II (), was the eldest son of Roman Emperor Gallienus and Augusta Cornelia Salonina who was of Greek origin and grandson of the Emperor Valerian who was of a noble and traditional senatorial family.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q552224")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q552224",
+  "isRealHuman": true,
+  "birthDate": "0244-01-01",
+  "deathDate": "0258-03-01",
+  "ageAtDeath": 14,
+  "confidence": 43,
+  "confidenceExplained": "The identification as Valerian II and the death year 258 are strong. The exact birth date is not recorded in surviving sources, so the age is estimated from evidence that he was probably no more than fifteen when made Caesar in 256, plus the likely timing of Gallienus' marriage to Salonina. That makes 14 the best single-number estimate, but it could plausibly be off by about a year.",
+  "shortDescriptionEn": "Valerian II, born Publius Licinius Cornelius Valerianus, was the eldest son of Emperor Gallienus and Empress Cornelia Salonina, and the grandson of Emperor Valerian. Raised as a dynastic prince during the Crisis of the Third Century, he was made Caesar and sent to represent imperial authority on the Danube frontier. He died in early 258 while still very young, probably at Sirmium, in circumstances that ancient and modern writers regard as suspicious; his death helped trigger the revolt of Ingenuus and ended one of Rome's most fragile succession plans.",
+  "shortDescriptionFr": "Valérien II, né Publius Licinius Cornelius Valerianus, était le fils aîné de l'empereur Gallien et de l'impératrice Cornelia Salonina, ainsi que le petit-fils de l'empereur Valérien. Prince dynastique au temps de la crise du IIIe siècle, il fut nommé César et envoyé représenter l'autorité impériale sur la frontière danubienne. Il mourut au début de l'an 258, alors qu'il était encore très jeune, probablement à Sirmium, dans des circonstances jugées suspectes par les historiens; sa mort contribua à déclencher la révolte d'Ingenuus et brisa un projet de succession déjà fragile.",
+  "shortDescriptionDe": "Valerian II., mit vollem Namen Publius Licinius Cornelius Valerianus, war der älteste Sohn von Kaiser Gallienus und Kaiserin Cornelia Salonina sowie der Enkel Kaiser Valerians. Als dynastischer Prinz in der Reichskrise des 3. Jahrhunderts wurde er zum Caesar erhoben und an die Donaugrenze geschickt, um dort die kaiserliche Autorität zu vertreten. Er starb Anfang 258 noch in sehr jungen Jahren, wahrscheinlich in Sirmium, unter Umständen, die als verdächtig gelten; sein Tod trug zum Aufstand des Ingenuus bei und zerstörte einen ohnehin unsicheren Nachfolgeplan.",
+  "shortDescriptionEs": "Valeriano II, nacido como Publius Licinius Cornelius Valerianus, fue el hijo mayor del emperador Galieno y de la emperatriz Cornelia Salonina, y nieto del emperador Valeriano. Como príncipe dinástico en plena Crisis del siglo III, fue nombrado César y enviado a representar la autoridad imperial en la frontera del Danubio. Murió a comienzos del año 258 siendo aún muy joven, probablemente en Sirmio, en circunstancias que las fuentes consideran sospechosas; su muerte ayudó a desencadenar la rebelión de Ingenuo y frustró uno de los planes sucesorios más frágiles de Roma.",
+  "shortDescriptionRu": "Валериан II, полное имя Публий Лициний Корнелий Валериан, был старшим сыном императора Галлиена и императрицы Корнелии Салонины, а также внуком императора Валериана. Как династический наследник эпохи кризиса III века, он был возведён в ранг цезаря и отправлен представлять императорскую власть на дунайской границе. Он умер в начале 258 года, будучи ещё совсем молодым, вероятно в Сирмии, при обстоятельствах, которые считаются подозрительными; его смерть способствовала мятежу Ингенуя и разрушила один из самых хрупких планов римского престолонаследия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Valerian_II",
+    "https://www.britishmuseum.org/collection/term/BIOG100207",
+    "https://en.wikipedia.org/wiki/Gallienus",
+    "https://en.wikipedia.org/wiki/Cornelia_Salonina",
+    "https://roman-emperors.sites.luc.edu/gallval.htm",
+    "https://www.britishmuseum.org/collection/object/C_R-4203"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2357646",  "Name": "Archduchess Maria Theresa of Austria",  "BirthDate": "1762-03-20T00:00:00Z",  "DeathDate": "1770-01-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Theresia%20Daughter%20of%20Isabella%20de%20Parma.jpg",  "SiteLinksCnt": 22,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"7609193":{"pageid":7609193,"ns":0,"title":"Archduchess Maria Theresa of Austria (1762\u20131770)","extract":"Archduchess Maria Theresa of Austria (German: Maria Theresia Elisabeth Philippine Luise Josepha Johanna; English: Mary Theresa Elisabeth Philippine Louise Josepha Joan; 20 March 1762 \u2013 23 January 1770) was a daughter of Joseph II, Holy Roman Emperor, and his first wife, Isabella of Parma. By birth, she was a member of the ruling House of Habsburg."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2357646")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2357646",
+  "isRealHuman": true,
+  "birthDate": "1762-03-20",
+  "deathDate": "1770-01-23",
+  "ageAtDeath": 7,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date align across Wikipedia, Wikidata, and the Imperial Crypt entry. The age at death follows directly from those exact dates. I am leaving 1% uncertainty because some secondary sources differ slightly on minor details such as the wording of the cause of death.",
+  "shortDescriptionEn": "Archduchess Maria Theresa of Austria (1762–1770) was the only surviving child of Joseph II and Isabella of Parma, a Habsburg princess born at Schönbrunn and cherished as the first grandchild of Empress Maria Theresa. She died at Schönbrunn on 23 January 1770, aged 7, after an illness described as pleurisy with high fever, and her death devastated her father; she was buried in Vienna’s Imperial Crypt.",
+  "shortDescriptionFr": "L’archiduchesse Marie-Thérèse d’Autriche (1762–1770) fut l’unique enfant survivante de Joseph II et d’Isabelle de Parme, née à Schönbrunn dans la maison de Habsbourg-Lorraine et très chérie par sa famille impériale. Elle y mourut le 23 janvier 1770 à l’âge de 7 ans, à la suite d’une maladie décrite comme une pleurésie avec forte fièvre; sa mort bouleversa son père, et elle fut inhumée dans la crypte impériale de Vienne.",
+  "shortDescriptionDe": "Erzherzogin Maria Theresia von Österreich (1762–1770) war das einzige überlebende Kind Josephs II. und Isabella von Parma, wurde in Schönbrunn geboren und gehörte dem Haus Habsburg-Lothringen an. Sie starb dort am 23. Januar 1770 im Alter von 7 Jahren nach einer in den Quellen als Brustfellentzündung mit hohem Fieber beschriebenen Krankheit; ihr Tod traf ihren Vater schwer, und sie wurde in der Wiener Kaisergruft beigesetzt.",
+  "shortDescriptionEs": "La archiduquesa María Teresa de Austria (1762–1770) fue la única hija superviviente de José II e Isabel de Parma, una princesa de la casa de Habsburgo-Lorena nacida en Schönbrunn y muy querida por la familia imperial. Murió allí el 23 de enero de 1770, a los 7 años, tras una enfermedad descrita como pleuresía con fiebre muy alta; su muerte destrozó a su padre y fue sepultada en la Cripta Imperial de Viena.",
+  "shortDescriptionRu": "Эрцгерцогиня Мария Терезия Австрийская (1762–1770) была единственной выжившей дочерью Иосифа II и Изабеллы Пармской, принцессой дома Габсбургов-Лотарингских, родившейся в Шёнбрунне и любимой внучкой императрицы Марии Терезии. Она умерла там 23 января 1770 года в возрасте 7 лет после болезни, которую источники описывают как плеврит с высокой температурой; её смерть тяжело переживал отец, а похоронили её в Императорском склепе в Вене.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Archduchess_Maria_Theresa_of_Austria_(1762%E2%80%931770)",
+    "https://www.wikidata.org/wiki/Q2357646",
+    "https://www.kaisergruft.com/de/erzherzogin-maria-theresia-1770",
+    "https://commons.wikimedia.org/wiki/File:Maria_Theresia_Daughter_of_Isabella_de_Parma.jpg",
+    "https://www.khm.at/objektdb/detail/7563/",
+    "https://commons.wikimedia.org/wiki/Category:Maria_Theresa_of_Austria_(1762-1770)"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q570149",  "Name": "Gibica",  "BirthDate": "0400-01-01T00:00:00Z",  "DeathDate": "0407-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/HILDEBRANT%20ROSENGARTEN.png",  "SiteLinksCnt": 21,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"2160655":{"pageid":2160655,"ns":0,"title":"Gj\u00faki","extract":"Gibica, better know by his later legendary names Gj\u00faki or Gibeche, was an early king of the Burgundians. He is attested as one of the earlier kings in the prologue to the Lex Burgundionum (516 AD); otherwise, nothing is known about the historical figure. In later Germanic heroic legend, he becomes the father of other Burgundian kings and figures, including Gunther/Gunnarr and Gudrun/Kriemhild. Depending on the text, he may also be the father of Giselher, Gernot, and/or H\u00f6gni. Some German sources, including the Nibelungenlied, replace the name Gibeche with another name such as Dancrat."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q570149")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q570149",
+  "isRealHuman": true,
+  "birthDate": "0350-01-01",
+  "deathDate": "0407-01-01",
+  "ageAtDeath": 57,
+  "confidence": 34,
+  "confidenceExplained": "Gibica is a historical Burgundian king name preserved in the Lex Burgundionum and linked in later tradition to Gundahar/Gunther, so the person is likely historical. But no contemporary source records his birth date, exact death date, place of death, or cause of death. The commonly used death year around 407 is itself approximate, and the birth year here is inferred from dynastic chronology: Gundahar is attested as an adult ruler by 411 and died in 437, so a father born around 350 is plausible. The resulting age of 57 is therefore an informed reconstruction rather than a documented age.",
+  "shortDescriptionEn": "Gibica, also known as Gebicca, Gjúki, or Gibeche, was an early king of the Burgundians and one of the oldest named figures in the Burgundian royal tradition. He stands at the beginning of the line later associated with Gundahar/Gunther and the legends that fed into the Nibelung cycle, linking a shadowy historical Rhine frontier ruler with medieval heroic memory. He likely died around 407, probably as power passed to the next Burgundian generation; no surviving source records the exact place, cause, or narrative circumstances of his death.",
+  "shortDescriptionFr": "Gibica, aussi appelé Gebicca, Gjúki ou Gibeche, fut un ancien roi des Burgondes et l’un des plus vieux noms conservés dans la tradition royale burgonde. Il se trouve à l’origine de la lignée plus tard associée à Gundahar/Gunther et aux récits qui nourriront la matière des Nibelungen, reliant un souverain mal connu de la frontière rhénane à la mémoire héroïque médiévale. Il semble être mort vers 407, probablement au moment du passage du pouvoir à la génération suivante; aucune source conservée n’indique le lieu exact, la cause ou le récit précis de sa mort.",
+  "shortDescriptionDe": "Gibica, auch Gebicca, Gjúki oder Gibeche genannt, war ein früher König der Burgunder und eine der ältesten namentlich greifbaren Gestalten der burgundischen Überlieferung. Er steht am Anfang jener Linie, die später mit Gundahar/Gunther und den Stoffen des Nibelungenkreises verbunden wurde, und verbindet einen nur schemenhaft fassbaren Herrscher am Rhein mit der mittelalterlichen Heldensage. Er starb wahrscheinlich um 407, wohl während der Machtübergang auf die nächste Generation erfolgte; Ort, Ursache und genauer Hergang seines Todes sind nicht überliefert.",
+  "shortDescriptionEs": "Gibica, también llamado Gebicca, Gjúki o Gibeche, fue uno de los primeros reyes de los burgundios y una de las figuras más antiguas conservadas por nombre dentro de la tradición real burgundia. Se le sitúa en el origen de la línea vinculada después con Gundahar/Gunther y con las leyendas que desembocaron en el ciclo de los Nibelungos, uniendo a un gobernante apenas documentado de la frontera del Rin con la memoria heroica medieval. Parece haber muerto hacia 407, seguramente en el paso del poder a la generación siguiente; ninguna fuente conserva el lugar exacto, la causa ni un relato directo de su muerte.",
+  "shortDescriptionRu": "Гибика, также известный как Гебикка, Гьюки или Гибехе, был ранним королём бургундов и одной из самых древних по имени известных фигур бургундской царской традиции. Его обычно ставят у истоков линии, позднее связанной с Гундахарием/Гунтером и сюжетами, вошедшими в нибелунгский цикл, то есть на стыке смутно засвидетельствованной истории рейнского пограничья и средневекового героического предания. По всей видимости, он умер около 407 года, вероятно в момент перехода власти к следующему поколению; ни место, ни причина, ни подробное описание его смерти в источниках не сохранились.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gj%C3%BAki",
+    "https://en.wikipedia.org/wiki/Burgundians",
+    "https://en.wikipedia.org/wiki/Gunther",
+    "https://en.wikipedia.org/wiki/List_of_kings_of_Burgundy",
+    "https://www.wikidata.org/wiki/Q570149",
+    "https://amesfoundation.law.harvard.edu/CLH/mats/MAT13CLH.03B.pdf",
+    "https://commons.wikimedia.org/wiki/File:HILDEBRANT_ROSENGARTEN.png",
+    "https://digi.ub.uni-heidelberg.de/diglit/cpg359/0086"
+  ]
+}
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q668424",  "Name": "Diego, Prince of Asturias",  "BirthDate": "1575-08-25T00:00:00Z",  "DeathDate": "1582-12-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Prinzen%20Don%20Diego%2C%20Sohn%20K%C3%B6nig%20Philipps%20II.%20von%20Spanien%20und%20K%C3%B6nigin%20Annas%20von%20%C3%96sterreich.jpg",  "SiteLinksCnt": 20,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"7751190":{"pageid":7751190,"ns":0,"title":"Diego, Prince of Asturias","extract":"Diego, Prince of Asturias and Portugal (Diego Felix; 15 August 1575 \u2013 21 November 1582) was the fourth son of Philip II of Spain and his third son by his fourth wife, Anna of Austria."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q668424")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q668424",
+  "isRealHuman": true,
+  "birthDate": "1575-07-12",
+  "deathDate": "1582-11-21",
+  "ageAtDeath": 7,
+  "confidence": 94,
+  "confidenceExplained": "The identity is certain, and the age at death is highly reliable because both competing birth dates found in sources (12 July 1575 and 15 August 1575) still result in an age of 7 at death on 21 November 1582. Confidence is slightly below maximum because sources disagree on the exact birth date.",
+  "shortDescriptionEn": "Diego Félix of Austria, Prince of Asturias and Portugal, was the son of Philip II of Spain and Anna of Austria and became heir to the Spanish and Portuguese crowns while still a child. Raised in the ceremonial world of the Habsburg court, he was seen as a key dynastic hope until he died in Madrid in 1582, probably of smallpox, at the age of 7, a blow that devastated his father.",
+  "shortDescriptionFr": "Diego Félix d’Autriche, prince des Asturies et de Portugal, était le fils de Philippe II d’Espagne et d’Anne d’Autriche, et il devint très jeune l’héritier des couronnes d’Espagne et du Portugal. Élevé au cœur de la cour des Habsbourg, il incarnait un grand espoir dynastique jusqu’à sa mort à Madrid en 1582, probablement de la variole, à l’âge de 7 ans, une perte qui accabla son père.",
+  "shortDescriptionDe": "Diego Félix von Österreich, Fürst von Asturien und Portugal, war ein Sohn Philipps II. von Spanien und Annas von Österreich und wurde schon als Kind Erbe der spanischen und portugiesischen Krone. Er wuchs am streng zeremoniellen Habsburgerhof auf und galt als große dynastische Hoffnung, bis er 1582 in Madrid wahrscheinlich an den Pocken starb – im Alter von 7 Jahren, was seinen Vater schwer traf.",
+  "shortDescriptionEs": "Diego Félix de Austria, príncipe de Asturias y de Portugal, fue hijo de Felipe II de España y de Ana de Austria, y se convirtió siendo niño en heredero de las coronas española y portuguesa. Criado en el ambiente solemne de la corte de los Habsburgo, representó una gran esperanza dinástica hasta que murió en Madrid en 1582, probablemente de viruela, a los 7 años, una pérdida que dejó desolado a su padre.",
+  "shortDescriptionRu": "Диего Феликс Австрийский, принц Астурийский и Португальский, был сыном Филиппа II Испанского и Анны Австрийской и ещё ребёнком стал наследником испанской и португальской корон. Он рос при торжественном дворе Габсбургов и считался важнейшей династической надеждой, пока не умер в Мадриде в 1582 году, вероятно от оспы, в возрасте 7 лет; эта утрата тяжело ударила по его отцу.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diego,_Prince_of_Asturias",
+    "https://de.wikipedia.org/wiki/Diego_von_%C3%96sterreich",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8872442/",
+    "https://www.liechtensteincollections.at/en/collections-online/portrait-of-don-diego-son-of-king-philip-ii-of-spain-and-queen-anna-of-austria",
+    "https://commons.wikimedia.org/wiki/File:Prinzen_Don_Diego,_Sohn_K%C3%B6nig_Philipps_II._von_Spanien_und_K%C3%B6nigin_Annas_von_%C3%96sterreich.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Infante_Diego_of_Spain"
+  ]
+}
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q447750",  "Name": "Eudokia of Heliopolis",  "BirthDate": "0100-01-01T00:00:00Z",  "DeathDate": "0107-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Eudokia%20of%20Heliopolis.jpg",  "SiteLinksCnt": 17,  "Age": 7}
+{"batchcomplete":"","query":{"pages":{"8251171":{"pageid":8251171,"ns":0,"title":"Eudokia of Heliopolis","extract":"Eudokia of Heliopolis (Greek: \u0395\u1f50\u03b4\u03bf\u03ba\u03af\u03b1) was a Samarian woman who lived in Heliopolis of Phoenicia (present day Baalbek, Lebanon).\nShe should not be confused with the martyr Eudokia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q447750")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
+{
+  "id": "http://www.wikidata.org/entity/Q447750",
+  "isRealHuman": true,
+  "birthDate": "0079-03-01",
+  "deathDate": "0165-03-01",
+  "ageAtDeath": 86,
+  "confidence": 48,
+  "confidenceExplained": "The identity is clear: this is Eudokia/Eudocia of Heliopolis, the Samaritan martyr associated with Baalbek. The weak point is chronology: sources disagree between 107 and ca. 160-170, and some Orthodox reference material treats the life as partly legendary and anachronistic. I estimated age 86 by combining the recurring tradition that she entered monastic life at age 30 with the OCA life stating she then lived 56 more years.",
+  "shortDescriptionEn": "Early Christian martyr and abbess from Heliopolis of Phoenicia (modern Baalbek, Lebanon), remembered in tradition as a Samaritan woman who abandoned a wealthy former life, gave away her fortune, entered monastic life around age thirty, and became known for repentance, austerity, charity, and miracle stories. During a later persecution of Christians she was arrested by the governor of Heliopolis and beheaded, probably in the mid-2nd century.",
+  "shortDescriptionFr": "Martyre chrétienne des premiers siècles et abbesse d’Héliopolis de Phénicie (l’actuelle Baalbek, au Liban), elle est présentée par la tradition comme une Samaritaine qui renonça à une vie luxueuse, distribua sa fortune, entra au monastère vers l’âge de trente ans et devint célèbre pour sa pénitence, son ascèse, sa charité et les miracles qui lui furent attribués. Lors d’une persécution contre les chrétiens, elle fut arrêtée par le gouverneur d’Héliopolis puis décapitée, probablement au milieu du IIe siècle.",
+  "shortDescriptionDe": "Frühchristliche Märtyrerin und Äbtissin aus Heliopolis in Phönizien (dem heutigen Baalbek im Libanon), die in der Überlieferung als Samaritanerin erscheint, die ein wohlhabendes früheres Leben aufgab, ihr Vermögen verschenkte, etwa mit dreißig ins monastische Leben eintrat und für Buße, Askese, Wohltätigkeit und Wundergeschichten bekannt wurde. Während einer späteren Christenverfolgung wurde sie vom Statthalter von Heliopolis festgenommen und durch Enthauptung hingerichtet, wahrscheinlich in der Mitte des 2. Jahrhunderts.",
+  "shortDescriptionEs": "Mártir cristiana primitiva y abadesa de Heliópolis de Fenicia (la actual Baalbek, Líbano), recordada por la tradición como una mujer samaritana que abandonó una vida acomodada, repartió su fortuna, ingresó en la vida monástica hacia los treinta años y llegó a ser célebre por su arrepentimiento, su austeridad, su caridad y los milagros asociados a su nombre. Durante una persecución contra los cristianos fue arrestada por el gobernador de Heliópolis y decapitada, probablemente a mediados del siglo II.",
+  "shortDescriptionRu": "Раннехристианская мученица и игуменья из Илиополя Финикийского (современный Баальбек, Ливан), известная в предании как самарянка, отказавшаяся от богатой прежней жизни, раздавшая своё состояние, вступившая в монашескую жизнь примерно в тридцать лет и прославившаяся покаянием, аскезой, милосердием и рассказами о чудесах. Во время одного из гонений на христиан она была схвачена правителем Илиополя и обезглавлена, вероятнее всего в середине II века.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Eudokia_of_Heliopolis",
+    "https://www.oca.org/saints/lives/2026/03/01/100625-martyr-eudokia-of-heliopolis",
+    "https://www.oca.org/readings/daily/2039/03/01",
+    "https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D0%B4%D0%BE%D0%BA%D0%B8%D1%8F_%D0%98%D0%BB%D0%B8%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F",
+    "https://orthochristian.com/167991.html",
+    "https://www.wikidata.org/wiki/Q447750",
+    "https://commons.wikimedia.org/wiki/Category:Eudokia_of_Heliopolis"
+  ]
+}
