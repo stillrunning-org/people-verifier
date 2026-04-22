@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatGPT Prompt Runner</title>
+  <style>
+    :root {
+      --bg: #0f1220;
+      --panel: #171b2e;
+      --panel-2: #1e2440;
+      --text: #e9ecf8;
+      --muted: #b3bbd6;
+      --line: #313a63;
+      --accent: #7aa2ff;
+      --accent-2: #91f0c0;
+      --danger: #ff8f8f;
+      --warning: #ffd58f;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    p { margin: 0 0 12px; color: var(--muted); }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      background: #0c1020;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      font: 14px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    textarea.small { min-height: 120px; }
+    textarea.output { min-height: 260px; }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    button, .link-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    button:hover, .link-btn:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    button.primary {
+      background: linear-gradient(180deg, #2b58c9, #22439a);
+      border-color: #3b67d2;
+    }
+
+    button.danger {
+      background: #4f2323;
+      border-color: #854444;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 12px;
+    }
+
+    .prompt-card {
+      background: #101529;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .prompt-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .prompt-title {
+      font-weight: 700;
+      font-size: 15px;
+      word-break: break-word;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      border: 1px solid var(--line);
+      background: #121831;
+      white-space: nowrap;
+    }
+
+    .badge.ready { color: var(--accent-2); border-color: #356b50; }
+    .badge.pending { color: var(--warning); border-color: #6a5530; }
+    .badge.done { color: var(--accent-2); border-color: #356b50; }
+
+    .timer {
+      font: 13px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--warning);
+    }
+
+    .preview {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      max-height: 96px;
+      overflow: auto;
+      white-space: pre-wrap;
+      border-top: 1px dashed var(--line);
+      padding-top: 10px;
+    }
+
+    .notice {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .status {
+      font-size: 13px;
+      min-height: 1.3em;
+      color: var(--accent-2);
+    }
+
+    .status.error { color: var(--danger); }
+
+    .summary {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .summary .badge {
+      background: #0d1326;
+    }
+
+    code.inline {
+      background: #0d1326;
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>ChatGPT Prompt Runner</h1>
+    <p>Paste your raw prompt batch, generate one ChatGPT link per prompt, and paste results back in. Everything is saved in localStorage.</p>
+
+    <section class="panel">
+      <h2>1) Prompt batch input</h2>
+      <p>Paste the full content from file 1 here.</p>
+      <textarea id="promptsInput" placeholder="Paste the full prompt batch here..."></textarea>
+      <div class="row">
+        <button id="parseBtn" class="primary">Parse prompts</button>
+        <button id="resetBtn" class="danger">Reset saved state</button>
+      </div>
+      <div class="summary" id="summaryBadges"></div>
+      <div class="notice">Prompt ID is taken from the first match of <code class="inline">"Id": "..."</code> inside each prompt block.</div>
+    </section>
+
+    <section class="panel">
+      <h2>2) Generate links</h2>
+      <div id="promptCards" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>3) Paste ChatGPT result</h2>
+      <p>Paste one ChatGPT answer here, then click <strong>Add result</strong>. The app will match it to the right prompt, insert it under that prompt, and hide the corresponding link.</p>
+      <textarea id="resultInput" class="small" placeholder="Paste one ChatGPT answer here..."></textarea>
+      <div class="row">
+        <button id="addResultBtn" class="primary">Add result</button>
+        <button id="clearResultBtn">Clear pasted result</button>
+      </div>
+      <div id="matchStatus" class="status"></div>
+    </section>
+
+    <section class="panel">
+      <h2>4) Combined done-style output</h2>
+      <p>This is rebuilt in the same order as your original prompt file, with each pasted result inserted under its prompt.</p>
+      <textarea id="combinedOutput" class="output" readonly></textarea>
+      <div class="row">
+        <button id="copyOutputBtn">Copy combined output</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const STORAGE_KEY = 'chatgpt-prompt-runner-v2';
+
+      const els = {
+        promptsInput: document.getElementById('promptsInput'),
+        parseBtn: document.getElementById('parseBtn'),
+        resetBtn: document.getElementById('resetBtn'),
+        promptCards: document.getElementById('promptCards'),
+        summaryBadges: document.getElementById('summaryBadges'),
+        resultInput: document.getElementById('resultInput'),
+        addResultBtn: document.getElementById('addResultBtn'),
+        clearResultBtn: document.getElementById('clearResultBtn'),
+        matchStatus: document.getElementById('matchStatus'),
+        combinedOutput: document.getElementById('combinedOutput'),
+        copyOutputBtn: document.getElementById('copyOutputBtn')
+      };
+
+      let state = loadState();
+      let timerHandle = null;
+
+      init();
+
+      function init() {
+        els.promptsInput.value = state.rawPromptsText || '';
+        els.resultInput.value = state.resultDraft || '';
+        bindEvents();
+        renderAll();
+        startTicker();
+      }
+
+      function defaultState() {
+        return {
+          rawPromptsText: '',
+          resultDraft: '',
+          prompts: []
+        };
+      }
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return defaultState();
+          const parsed = JSON.parse(raw);
+          return {
+            rawPromptsText: parsed.rawPromptsText || '',
+            resultDraft: parsed.resultDraft || '',
+            prompts: Array.isArray(parsed.prompts) ? parsed.prompts : []
+          };
+        } catch (err) {
+          return defaultState();
+        }
+      }
+
+      function saveState() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      }
+
+      function bindEvents() {
+        els.parseBtn.addEventListener('click', handleParse);
+        els.resetBtn.addEventListener('click', handleReset);
+        els.addResultBtn.addEventListener('click', handleAddResult);
+        els.clearResultBtn.addEventListener('click', () => {
+          state.resultDraft = '';
+          els.resultInput.value = '';
+          setStatus('Pasted result cleared.', false);
+          saveState();
+        });
+        els.resultInput.addEventListener('input', () => {
+          state.resultDraft = els.resultInput.value;
+          saveState();
+        });
+        els.promptsInput.addEventListener('input', () => {
+          state.rawPromptsText = els.promptsInput.value;
+          saveState();
+        });
+        els.copyOutputBtn.addEventListener('click', copyCombinedOutput);
+      }
+
+      function handleParse() {
+        const raw = els.promptsInput.value;
+        state.rawPromptsText = raw;
+
+        const parsedPrompts = parsePromptBlocks(raw);
+        const previousById = new Map(state.prompts.map(p => [p.id, p]));
+
+        state.prompts = parsedPrompts.map((prompt, index) => {
+          const existing = previousById.get(prompt.id);
+          const parsedHasResult = !!(prompt.result && prompt.result.trim());
+          const existingHasResult = !!(existing && existing.result && existing.result.trim());
+          const finalResult = parsedHasResult
+            ? prompt.result.trim()
+            : (existingHasResult ? existing.result.trim() : '');
+          const completed = parsedHasResult || !!(existing && existing.completed && existingHasResult);
+          const keepInProgress = !completed && !!(existing && existing.linkGenerated);
+
+          return {
+            index,
+            id: prompt.id,
+            shortId: prompt.shortId,
+            originalBlock: prompt.originalBlock,
+            title: prompt.title,
+            launchedAt: keepInProgress && existing ? existing.launchedAt : null,
+            linkGenerated: keepInProgress,
+            completed,
+            result: finalResult
+          };
+        });
+
+        saveState();
+        renderAll();
+
+        const completedCount = state.prompts.filter(p => p.completed).length;
+        const message = completedCount
+          ? `Parsed ${state.prompts.length} prompts. Detected ${completedCount} existing result${completedCount === 1 ? '' : 's'}.`
+          : `Parsed ${state.prompts.length} prompt${state.prompts.length === 1 ? '' : 's'}.`;
+        setStatus(message, false);
+      }
+
+      function handleReset() {
+        if (!confirm('Clear saved prompts, timers, and results from localStorage?')) return;
+        state = defaultState();
+        localStorage.removeItem(STORAGE_KEY);
+        els.promptsInput.value = '';
+        els.resultInput.value = '';
+        renderAll();
+        setStatus('Saved state reset.', false);
+      }
+
+      function parsePromptBlocks(rawText) {
+        const normalized = normalizeNewlines(rawText || '');
+        const pieces = normalized
+          .split(/^\s*-----\s*$/m)
+          .map(part => part.trim())
+          .filter(Boolean);
+
+        return pieces.map((block, index) => {
+          const split = splitPromptAndExistingResult(block);
+          const id = extractPromptId(split.promptBlock) || extractPromptId(block) || `prompt-${index + 1}`;
+          const shortId = simplifyId(id);
+          return {
+            id,
+            shortId,
+            title: shortId,
+            originalBlock: split.promptBlock,
+            result: split.resultBlock
+          };
+        });
+      }
+
+      function extractPromptId(text) {
+        const patterns = [
+          /"Id"\s*:\s*"([^"]+)"/i,
+          /use constant\s+"([^"]+)"/i,
+          /"id"\s*\(string,\s*use constant\s+"([^"]+)"\)/i
+        ];
+
+        for (const pattern of patterns) {
+          const match = text.match(pattern);
+          if (match) return match[1].trim();
+        }
+        return null;
+      }
+
+      function splitPromptAndExistingResult(block) {
+        const normalized = normalizeNewlines(block).trim();
+        if (!normalized) {
+          return { promptBlock: '', resultBlock: '' };
+        }
+
+        const bulletRegex = /^-\s+"[^"]+".*$/gm;
+        let lastBullet = null;
+        let match;
+        while ((match = bulletRegex.exec(normalized)) !== null) {
+          lastBullet = match;
+        }
+
+        if (!lastBullet) {
+          return { promptBlock: normalized, resultBlock: '' };
+        }
+
+        const promptEnd = lastBullet.index + lastBullet[0].length;
+        const promptPart = normalized.slice(0, promptEnd).trim();
+        const trailing = normalized.slice(promptEnd).trim();
+
+        if (!trailing) {
+          return { promptBlock: promptPart, resultBlock: '' };
+        }
+
+        if (!looksLikeExistingResult(trailing)) {
+          return { promptBlock: normalized, resultBlock: '' };
+        }
+
+        return {
+          promptBlock: promptPart,
+          resultBlock: trailing
+        };
+      }
+
+      function looksLikeExistingResult(text) {
+        if (!text) return false;
+        return (
+          /"ageAtDeath"\s*:/i.test(text) ||
+          /"shortDescriptionEn"\s*:/i.test(text) ||
+          /"confidence"\s*:/i.test(text) ||
+          /\{[\s\S]*"isRealHuman"\s*:/i.test(text) ||
+          /^\{[\s\S]*\}$/i.test(text)
+        );
+      }
+
+      function simplifyId(id) {
+        if (!id) return 'unknown';
+        const match = id.match(/(Q\d+)$/i);
+        return match ? match[1] : id;
+      }
+
+      function getChatGptUrl(promptText) {
+        return `https://chatgpt.com/?prompt=${encodeURIComponent(promptText)}`;
+      }
+
+      function renderAll() {
+        renderSummary();
+        renderPromptCards();
+        renderCombinedOutput();
+      }
+
+      function renderSummary() {
+        const total = state.prompts.length;
+        const launched = state.prompts.filter(p => p.linkGenerated && !p.completed).length;
+        const completed = state.prompts.filter(p => p.completed).length;
+        const waiting = total - launched - completed;
+
+        els.summaryBadges.innerHTML = '';
+        [
+          { label: `Total: ${total}` },
+          { label: `Ready: ${waiting}` },
+          { label: `Open: ${launched}` },
+          { label: `Done: ${completed}` }
+        ].forEach(item => {
+          const span = document.createElement('span');
+          span.className = 'badge';
+          span.textContent = item.label;
+          els.summaryBadges.appendChild(span);
+        });
+      }
+
+      function renderPromptCards() {
+        els.promptCards.innerHTML = '';
+
+        if (!state.prompts.length) {
+          const empty = document.createElement('p');
+          empty.className = 'muted';
+          empty.textContent = 'No prompts parsed yet.';
+          els.promptCards.appendChild(empty);
+          return;
+        }
+
+        state.prompts.forEach((prompt, idx) => {
+          const card = document.createElement('div');
+          card.className = 'prompt-card';
+
+          const head = document.createElement('div');
+          head.className = 'prompt-head';
+
+          const left = document.createElement('div');
+          const title = document.createElement('div');
+          title.className = 'prompt-title';
+          title.textContent = `Prompt ${idx + 1}: ${prompt.shortId}`;
+          title.title = prompt.id;
+          const fullId = document.createElement('div');
+          fullId.className = 'muted';
+          fullId.textContent = prompt.id;
+          left.appendChild(title);
+          left.appendChild(fullId);
+
+          const right = document.createElement('div');
+          const badge = document.createElement('span');
+          badge.className = 'badge ' + getPromptStatusClass(prompt);
+          badge.textContent = getPromptStatusLabel(prompt);
+          right.appendChild(badge);
+          head.appendChild(left);
+          head.appendChild(right);
+          card.appendChild(head);
+
+          const actionRow = document.createElement('div');
+          actionRow.className = 'row';
+
+          if (!prompt.linkGenerated && !prompt.completed) {
+            const btn = document.createElement('button');
+            btn.className = 'primary';
+            btn.textContent = `Generate ChatGPT link for ${prompt.shortId}`;
+            btn.addEventListener('click', () => launchPrompt(prompt.id));
+            actionRow.appendChild(btn);
+          }
+
+          if (prompt.linkGenerated && !prompt.completed) {
+            const link = document.createElement('a');
+            link.className = 'link-btn';
+            link.href = getChatGptUrl(prompt.originalBlock);
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = `Open ChatGPT for ${prompt.shortId}`;
+            actionRow.appendChild(link);
+
+            const timer = document.createElement('span');
+            timer.className = 'timer';
+            timer.textContent = 'Elapsed: ' + formatElapsed(prompt.launchedAt);
+            actionRow.appendChild(timer);
+          }
+
+          if (prompt.completed) {
+            const done = document.createElement('span');
+            done.className = 'badge done';
+            done.textContent = 'Result added';
+            actionRow.appendChild(done);
+          }
+
+          card.appendChild(actionRow);
+
+          const preview = document.createElement('div');
+          preview.className = 'preview';
+          preview.textContent = getPreview(prompt);
+          card.appendChild(preview);
+
+          els.promptCards.appendChild(card);
+        });
+      }
+
+      function getPromptStatusClass(prompt) {
+        if (prompt.completed) return 'done';
+        if (prompt.linkGenerated) return 'pending';
+        return 'ready';
+      }
+
+      function getPromptStatusLabel(prompt) {
+        if (prompt.completed) return 'done';
+        if (prompt.linkGenerated) return 'in progress';
+        return 'ready';
+      }
+
+      function getPreview(prompt) {
+        if (prompt.completed && prompt.result) {
+          return 'Saved result:\n' + prompt.result.slice(0, 300) + (prompt.result.length > 300 ? '…' : '');
+        }
+        return prompt.originalBlock.slice(0, 300) + (prompt.originalBlock.length > 300 ? '…' : '');
+      }
+
+      function launchPrompt(promptId) {
+        const prompt = state.prompts.find(p => p.id === promptId);
+        if (!prompt || prompt.completed) return;
+
+        prompt.linkGenerated = true;
+        if (!prompt.launchedAt) prompt.launchedAt = Date.now();
+        saveState();
+        renderAll();
+
+        window.open(getChatGptUrl(prompt.originalBlock), '_blank', 'noopener');
+        setStatus(`Opened ChatGPT link for ${prompt.shortId}.`, false);
+      }
+
+      function handleAddResult() {
+        const rawResult = els.resultInput.value.trim();
+        if (!rawResult) {
+          setStatus('Paste a ChatGPT result first.', true);
+          return;
+        }
+
+        const match = findMatchingPrompt(rawResult);
+        if (!match) {
+          setStatus('Could not determine which prompt this result belongs to. Include the JSON with its id field, or paste a result from a prompt that is already opened.', true);
+          return;
+        }
+
+        const prompt = match.prompt;
+        const cleanedResult = stripPromptIfPasted(prompt.originalBlock, rawResult).trim();
+
+        prompt.result = cleanedResult;
+        prompt.completed = true;
+        prompt.linkGenerated = false;
+        saveState();
+
+        els.resultInput.value = '';
+        state.resultDraft = '';
+        renderAll();
+        setStatus(`Added result to ${prompt.shortId}.`, false);
+      }
+
+      function findMatchingPrompt(resultText) {
+        const knownIds = state.prompts.map(prompt => ({
+          prompt,
+          fullId: prompt.id,
+          shortId: prompt.shortId
+        }));
+
+        const jsonIdMatch = resultText.match(/"id"\s*:\s*"([^"]+)"/i);
+        if (jsonIdMatch) {
+          const matched = knownIds.find(item => item.fullId === jsonIdMatch[1].trim());
+          if (matched) return matched;
+        }
+
+        const promptIdMatch = resultText.match(/"Id"\s*:\s*"([^"]+)"/i);
+        if (promptIdMatch) {
+          const matched = knownIds.find(item => item.fullId === promptIdMatch[1].trim());
+          if (matched) return matched;
+        }
+
+        const fullIdHit = knownIds.find(item => resultText.includes(item.fullId));
+        if (fullIdHit) return fullIdHit;
+
+        const shortIdHit = knownIds.find(item => resultText.includes(item.shortId));
+        if (shortIdHit) return shortIdHit;
+
+        const active = state.prompts.filter(p => p.linkGenerated && !p.completed);
+        if (active.length === 1) return { prompt: active[0] };
+
+        const incomplete = state.prompts.filter(p => !p.completed);
+        if (incomplete.length === 1) return { prompt: incomplete[0] };
+
+        return null;
+      }
+
+      function stripPromptIfPasted(originalBlock, resultText) {
+        const normalizedOriginal = normalizeNewlines(originalBlock).trim();
+        const normalizedResult = normalizeNewlines(resultText).trim();
+
+        if (normalizedResult.startsWith(normalizedOriginal)) {
+          return normalizedResult.slice(normalizedOriginal.length).trim();
+        }
+        return normalizedResult;
+      }
+
+      function renderCombinedOutput() {
+        const parts = state.prompts.map(prompt => {
+          let piece = prompt.originalBlock.trim();
+          if (prompt.result && prompt.result.trim()) {
+            piece += '\n\n' + prompt.result.trim();
+          }
+          return piece;
+        });
+
+        const combined = parts.join('\n\n\n-----\n\n\n');
+        els.combinedOutput.value = combined;
+      }
+
+      function copyCombinedOutput() {
+        els.combinedOutput.select();
+        els.combinedOutput.setSelectionRange(0, els.combinedOutput.value.length);
+
+        let ok = false;
+        try {
+          ok = document.execCommand('copy');
+        } catch (err) {
+          ok = false;
+        }
+
+        setStatus(ok ? 'Combined output copied.' : 'Could not copy automatically. Select and copy the output manually.', !ok);
+      }
+
+      function startTicker() {
+        if (timerHandle) clearInterval(timerHandle);
+        timerHandle = setInterval(() => {
+          const hasRunning = state.prompts.some(p => p.linkGenerated && !p.completed && p.launchedAt);
+          if (hasRunning) renderPromptCards();
+        }, 1000);
+      }
+
+      function formatElapsed(startTs) {
+        if (!startTs) return '00:00';
+        const totalSeconds = Math.max(0, Math.floor((Date.now() - startTs) / 1000));
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+        if (hours > 0) {
+          return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+
+      function normalizeNewlines(text) {
+        return (text || '').replace(/\r\n/g, '\n');
+      }
+
+      function setStatus(message, isError) {
+        els.matchStatus.textContent = message || '';
+        els.matchStatus.className = 'status' + (isError ? ' error' : '');
+      }
+    })();
+  </script>
+</body>
+</html>
