@@ -180,6 +180,34 @@
 
     .status.error { color: var(--danger); }
 
+    .hotkey-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 8px 12px;
+      border: 1px dashed var(--line);
+      border-radius: 12px;
+      background: #121831;
+    }
+
+    .result-tools {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+    }
+
+    .result-stats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     .summary {
       display: flex;
       gap: 8px;
@@ -219,6 +247,9 @@
 
     <section class="panel">
       <h2>2) Generate links</h2>
+      <div class="row">
+        <div class="hotkey-hint">Hotkey: <code class="inline">Ctrl/Cmd + Enter</code> opens the next ready prompt.</div>
+      </div>
       <div id="promptCards" class="grid"></div>
     </section>
 
@@ -226,9 +257,12 @@
       <h2>3) Paste ChatGPT result</h2>
       <p>Paste one ChatGPT answer here, then click <strong>Add result</strong>. The app will match it to the right prompt, insert it under that prompt, and hide the corresponding link.</p>
       <textarea id="resultInput" class="small" placeholder="Paste one ChatGPT answer here..."></textarea>
-      <div class="row">
-        <button id="addResultBtn" class="primary">Add result</button>
-        <button id="clearResultBtn">Clear pasted result</button>
+      <div class="result-tools">
+        <div class="row">
+          <button id="addResultBtn" class="primary">Add result</button>
+          <button id="clearResultBtn">Clear pasted result</button>
+        </div>
+        <div id="resultStats" class="result-stats"></div>
       </div>
       <div id="matchStatus" class="status"></div>
     </section>
@@ -256,6 +290,7 @@
         resultInput: document.getElementById('resultInput'),
         addResultBtn: document.getElementById('addResultBtn'),
         clearResultBtn: document.getElementById('clearResultBtn'),
+        resultStats: document.getElementById('resultStats'),
         matchStatus: document.getElementById('matchStatus'),
         combinedOutput: document.getElementById('combinedOutput'),
         copyOutputBtn: document.getElementById('copyOutputBtn')
@@ -319,6 +354,7 @@
           state.rawPromptsText = els.promptsInput.value;
           saveState();
         });
+        document.addEventListener('keydown', handleGlobalHotkeys);
         els.copyOutputBtn.addEventListener('click', copyCombinedOutput);
       }
 
@@ -466,7 +502,47 @@
       function renderAll() {
         renderSummary();
         renderPromptCards();
+        renderResultStats();
         renderCombinedOutput();
+      }
+
+      function renderResultStats() {
+        if (!els.resultStats) return;
+
+        const total = state.prompts.length;
+        const completed = state.prompts.filter(p => p.completed).length;
+        const open = state.prompts.filter(p => p.linkGenerated && !p.completed).length;
+        const remaining = Math.max(0, total - completed);
+
+        els.resultStats.innerHTML = '';
+        [
+          { label: `Done: ${completed}/${total}` },
+          { label: `Remaining: ${remaining}` },
+          { label: `Open: ${open}` }
+        ].forEach(item => {
+          const span = document.createElement('span');
+          span.className = 'badge';
+          span.textContent = item.label;
+          els.resultStats.appendChild(span);
+        });
+      }
+
+      function handleGlobalHotkeys(event) {
+        const isOpenNextHotkey = (event.ctrlKey || event.metaKey) && event.key === 'Enter';
+        if (!isOpenNextHotkey) return;
+
+        event.preventDefault();
+        openNextReadyPrompt();
+      }
+
+      function openNextReadyPrompt() {
+        const nextPrompt = state.prompts.find(p => !p.linkGenerated && !p.completed);
+        if (!nextPrompt) {
+          setStatus('No ready prompts left to open.', true);
+          return;
+        }
+
+        launchPrompt(nextPrompt.id);
       }
 
       function renderSummary() {
