@@ -1,0 +1,1029 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4583",  "Name": "Anne Frank",  "BirthDate": "1929-06-12T00:00:00Z",  "DeathDate": "1945-02-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anne%20Frank%20%28cropped%29.jpg",  "SiteLinksCnt": 166,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"804581":{"pageid":804581,"ns":0,"title":"Anne Frank","extract":"Annelies Marie Frank (12 June 1929 \u2013 c. February or March 1945) was a German-born Jewish diarist and Holocaust victim. She gained worldwide notability posthumously for keeping a diary documenting her life in hiding during the German occupation of the Netherlands. In the diary, she regularly described her family's everyday life in their hiding place in an Amsterdam attic from 1942 until their arrest in 1944.\nAnne Frank was born in Frankfurt, Germany, in 1929. In 1934, when she was four and a half, Frank and her family moved to Amsterdam after Adolf Hitler of the Nazi Party was elected to govern Germany. By May 1940, her family was trapped in Amsterdam due to Germany's occupation. Frank lost her German citizenship in 1941 and became stateless. Despite spending most of her life in the Netherlands and being a de facto Dutch national, she never officially became a Dutch citizen. As persecution of the Jewish population increased in July 1942, the family went into hiding in rooms concealed behind a bookcase in the building where Frank's father, Otto Frank, worked. The family was arrested two years later by the Gestapo, on 4 August 1944.\nFollowing their arrest, the Franks were transported to concentration camps. On 1 November 1944, Anne Frank and her sister Margot were transferred from Auschwitz to the Bergen-Belsen concentration camp, where they died (presumably of typhus) a few months later. The Red Cross estimated that they died in March 1945, with Dutch authorities setting 31 March as the official date. Later research has alternatively suggested that they may have died in February or early March.\nOtto Frank, the only Holocaust survivor in the family, returned to Amsterdam after World War II to find that Anne's diary had been saved by his secretaries, Miep Gies and Bep Voskuijl. Moved by his daughter's repeated wishes to be an author, Otto Frank published her diary in 1947. It was translated from its original Dutch version and first published in English in 1952 as The Diary of a Young Girl (originally Het Achterhuis in Dutch, lit.\u2009'the back house'; English: The Secret Annex) and has since been translated into over 70 languages. With the publication of The Diary of a Young Girl, Anne became one of the most-discussed Jewish victims of the Holocaust. One of the world's best-known books, Anne's diary is the basis for several plays and films."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4583")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4583",
+  "isRealHuman": true,
+  "birthDate": "1929-06-12",
+  "deathDate": "1945-02-28",
+  "ageAtDeath": 15,
+  "confidence": 98,
+  "confidenceExplained": "Anne Frank's exact day of death is unknown, but authoritative sources place it in February 1945 or, more broadly, February or March 1945. Since she was born on 1929-06-12, any credible death date in that range means she died before turning 16. The estimated deathDate here is 1945-02-28 as a best-fit approximation based on research suggesting she likely died in late February 1945.",
+  "shortDescriptionEn": "Anne Frank was a German-born Jewish diarist who became one of the best-known victims of the Holocaust after her diary, written while her family hid in Amsterdam during the Nazi occupation, was published by her father and read around the world. Arrested in 1944 and deported through Auschwitz to Bergen-Belsen, she died there of typhus in early 1945, aged 15, shortly before the camp was liberated.",
+  "shortDescriptionFr": "Anne Frank était une jeune diariste juive née en Allemagne, devenue l’une des victimes de la Shoah les plus connues grâce à son journal, rédigé pendant les deux années où sa famille se cacha à Amsterdam sous l’occupation nazie. Arrêtée en 1944 puis déportée via Auschwitz à Bergen-Belsen, elle y mourut du typhus au début de 1945, à l’âge de 15 ans, peu avant la libération du camp.",
+  "shortDescriptionDe": "Anne Frank war eine in Deutschland geborene jüdische Tagebuchschreiberin, die durch ihr Tagebuch weltberühmt wurde, das sie während des Verstecks ihrer Familie in Amsterdam unter der NS-Besatzung schrieb. Nach ihrer Verhaftung 1944 wurde sie über Auschwitz nach Bergen-Belsen deportiert, wo sie Anfang 1945 im Alter von 15 Jahren an Typhus starb, kurz vor der Befreiung des Lagers.",
+  "shortDescriptionEs": "Anne Frank fue una joven diarista judía nacida en Alemania que se convirtió en una de las víctimas más conocidas del Holocausto gracias al diario que escribió mientras su familia permanecía escondida en Ámsterdam durante la ocupación nazi. Arrestada en 1944 y deportada por Auschwitz hasta Bergen-Belsen, murió allí de tifus a comienzos de 1945, con 15 años, poco antes de la liberación del campo.",
+  "shortDescriptionRu": "Анна Франк — еврейская девочка-дневниковед немецкого происхождения, ставшая одной из самых известных жертв Холокоста благодаря своему дневнику, который она писала, скрываясь с семьёй в Амстердаме во время нацистской оккупации. После ареста в 1944 году её депортировали через Аушвиц в Берген-Бельзен, где она умерла от тифа в начале 1945 года в возрасте 15 лет, незадолго до освобождения лагеря.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anne_Frank",
+    "https://www.annefrank.org/en/anne-frank/who-was-anne-frank/",
+    "https://www.annefrank.org/en/timeline/17/anne-and-margot-die-exhausted-in-the-bergen-belsen-concentration-camp/",
+    "https://www.annefrank.org/en/about-us/news-and-press/news/2015/3/31/anne-franks-last-months/",
+    "https://encyclopedia.ushmm.org/content/en/article/anne-frank-biography",
+    "https://www.britannica.com/biography/Anne-Frank"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83229",  "Name": "Edward VI of England",  "BirthDate": "1537-10-12T00:00:00Z",  "DeathDate": "1553-07-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20VI%20of%20England%20c.%201546.jpg",  "SiteLinksCnt": 93,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"10245":{"pageid":10245,"ns":0,"title":"Edward VI","extract":"Edward VI (12 October 1537 \u2013 6 July 1553) was King of England and Ireland from 28 January 1547 until his death in 1553. He was crowned on 20 February 1547 at the age of nine. The only surviving son of Henry VIII by his third wife, Jane Seymour, Edward was the first English monarch to be raised as a Protestant. During his reign, the realm was governed by a regency council because Edward never reached maturity. The council was first led by his uncle Edward Seymour, Duke of Somerset (1547\u20131549), and then by John Dudley, Duke of Northumberland (1550\u20131553).\nEdward's reign was marked by many economic problems and social unrest that in 1549 erupted into riot and rebellion. An expensive war with Scotland, at first successful, ended with military withdrawal from Scotland and Boulogne-sur-Mer in exchange for peace. The transformation of the Church of England into a recognisably Protestant body also occurred under Edward, who took great interest in religious matters. His father, Henry VIII, had severed the link between the English Church and Rome but continued to uphold most Catholic doctrine and ceremony. During Edward's reign, Protestantism was established for the first time in England, with reforms that included the abolition of clerical celibacy and the Latin Mass and the imposition of compulsory English in church services, including a communion service with a Protestant emphasis. \nIn 1553, at age 15, Edward fell ill. When his sickness was discovered to be terminal, he and his council drew up a \"Devise for the Succession\" to prevent the country's return to Catholicism. Edward named his Protestant first cousin once removed, Lady Jane Grey, as his heir, excluding his half-sisters, Mary and Elizabeth. This decision was disputed following Edward's death, and Jane was deposed by Mary\u2014the elder of the two half-sisters\u2014nine days after becoming queen. Mary, a Catholic, reversed Edward's Protestant reforms during her reign, but after her, Elizabeth restored them in 1559."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83229")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q83229",
+  "isRealHuman": true,
+  "birthDate": "1537-10-12",
+  "deathDate": "1553-07-06",
+  "ageAtDeath": 15,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable sources agree that Edward VI was born on 1537-10-12 and died on 1553-07-06. The conflicting 1553-07-16 value is very likely a Julian-to-Gregorian calendar conversion of the same event, not a different death date. Either way, he had not yet reached his 16th birthday, so the age-at-death calculation of 15 is extremely secure.",
+  "shortDescriptionEn": "Edward VI was the only surviving legitimate son of Henry VIII and Jane Seymour, and he became king of England and Ireland in 1547 at just nine years old. His brief reign accelerated the English Reformation through Protestant reforms and the Book of Common Prayer. After months of decline from a likely tubercular lung infection, he died at Greenwich Palace on 6 July 1553 aged 15, setting off the succession crisis that briefly put Lady Jane Grey on the throne before Mary I prevailed.",
+  "shortDescriptionFr": "Édouard VI, fils légitime survivant d’Henri VIII et de Jane Seymour, devint roi d’Angleterre et d’Irlande en 1547 à seulement neuf ans. Son court règne accéléra la Réforme anglaise par d’importantes mesures protestantes et l’introduction du Book of Common Prayer. Après des mois de déclin, probablement dus à une infection pulmonaire tuberculeuse, il mourut au palais de Greenwich le 6 juillet 1553 à l’âge de 15 ans, déclenchant la crise de succession qui porta brièvement Lady Jane Grey au pouvoir avant l’avènement de Marie Ire.",
+  "shortDescriptionDe": "Eduard VI. war der einzige überlebende eheliche Sohn Heinrichs VIII. und Jane Seymours und wurde 1547 im Alter von nur neun Jahren König von England und Irland. Seine kurze Herrschaft trieb die englische Reformation mit protestantischen Reformen und dem Book of Common Prayer deutlich voran. Nach monatelanger Krankheit, wahrscheinlich einer tuberkulösen Lungeninfektion, starb er am 6. Juli 1553 im Greenwich Palace im Alter von 15 Jahren und löste damit die Thronfolgekrise aus, in der kurzzeitig Lady Jane Grey erhoben wurde, bevor Maria I. sich durchsetzte.",
+  "shortDescriptionEs": "Eduardo VI fue el único hijo legítimo superviviente de Enrique VIII y Jane Seymour, y se convirtió en rey de Inglaterra e Irlanda en 1547 con solo nueve años. Su breve reinado impulsó la Reforma inglesa mediante reformas protestantes y la implantación del Book of Common Prayer. Tras meses de deterioro, probablemente por una infección pulmonar tuberculosa, murió en el palacio de Greenwich el 6 de julio de 1553 a los 15 años, desencadenando la crisis sucesoria que llevó brevemente a Lady Jane Grey al trono antes del triunfo de María I.",
+  "shortDescriptionRu": "Эдуард VI был единственным законным сыном Генриха VIII и Джейн Сеймур, пережившим младенчество, и стал королём Англии и Ирландии в 1547 году всего в девять лет. Его короткое правление заметно ускорило английскую Реформацию благодаря протестантским преобразованиям и введению Книги общих молитв. После нескольких месяцев тяжёлой болезни, вероятно туберкулёзной лёгочной инфекции, он умер во дворце Гринвич 6 июля 1553 года в возрасте 15 лет, что вызвало кризис престолонаследия и краткое воцарение леди Джейн Грей перед приходом к власти Марии I.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edward_VI",
+    "https://www.britannica.com/biography/Edward-VI",
+    "https://www.royal.uk/edward-vi",
+    "https://www.westminster-abbey.org/abbey-commemorations/royals/edward-vi",
+    "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/edward-vi/",
+    "https://www.britannica.com/science/Julian-calendar"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q103314",  "Name": "Constantine",  "BirthDate": "0700-01-01T00:00:00Z",  "DeathDate": "0715-04-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/PopeConstantine.jpg",  "SiteLinksCnt": 72,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"74261":{"pageid":74261,"ns":0,"title":"Pope Constantine","extract":"Pope Constantine (Latin: Constantinus; 664 \u2013 9 April 715) was the bishop of Rome from 25 March 708 to his death on 9 April 715. One of the last popes of the Byzantine Papacy, the defining moment of his pontificate was his 710/711 visit to Constantinople, where he compromised with Justinian II on the Trullan canons of the Quinisext Council. The city's next papal visit occurred in 1967."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q103314")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q103314",
+  "isRealHuman": true,
+  "birthDate": "0664-07-01",
+  "deathDate": "0715-04-09",
+  "ageAtDeath": 50,
+  "confidence": 68,
+  "confidenceExplained": "Identity is very strong: the entity is Pope Constantine, and sources consistently agree on death date 715-04-09 and birth year 664. Confidence is not higher because the exact birth month and day are not known, so the exact age could be 50 or 51. I estimated 50 by using a midpoint-of-year birth estimate rather than an artificial January 1 placeholder.",
+  "shortDescriptionEn": "Pope Constantine was a Syrian-born bishop of Rome who led the Catholic Church from 708 to 715 and was one of the last important popes of the Byzantine Papacy. He is best remembered for traveling to Constantinople and negotiating with Emperor Justinian II over the disputed Trullan canons, helping preserve relations between Rome and the eastern empire. He died in Rome on 9 April 715, at about age 50, near the end of a seven-year pontificate; no precise cause of death is securely recorded in the main historical sources.",
+  "shortDescriptionFr": "Le pape Constantin était un évêque de Rome d’origine syrienne qui dirigea l’Église catholique de 708 à 715 et fut l’un des derniers grands papes de la papauté byzantine. On se souvient surtout de lui pour son voyage à Constantinople et pour ses négociations avec l’empereur Justinien II au sujet des canons contestés du concile in Trullo, qui aidèrent à préserver les relations entre Rome et l’Empire d’Orient. Il mourut à Rome le 9 avril 715, vers l’âge de 50 ans, au terme d’un pontificat de sept ans ; aucune cause précise de sa mort n’est solidement attestée par les principales sources historiques.",
+  "shortDescriptionDe": "Papst Konstantin war ein aus Syrien stammender Bischof von Rom, der die katholische Kirche von 708 bis 715 leitete und zu den letzten bedeutenden Päpsten des byzantinischen Papsttums gehörte. Besonders bekannt ist er für seine Reise nach Konstantinopel und seine Verhandlungen mit Kaiser Justinian II. über die umstrittenen Trullanischen Kanones, mit denen er die Beziehungen zwischen Rom und dem Oströmischen Reich stabilisierte. Er starb am 9. April 715 in Rom im Alter von etwa 50 Jahren, gegen Ende eines siebenjährigen Pontifikats; eine genaue Todesursache ist in den wichtigsten historischen Quellen nicht sicher überliefert.",
+  "shortDescriptionEs": "El papa Constantino fue un obispo de Roma de origen sirio que dirigió la Iglesia católica entre 708 y 715 y fue una de las últimas figuras destacadas del Papado bizantino. Se le recuerda sobre todo por su viaje a Constantinopla y por sus negociaciones con el emperador Justiniano II sobre los controvertidos cánones trullanos, con las que ayudó a mantener las relaciones entre Roma y el imperio oriental. Murió en Roma el 9 de abril de 715, con unos 50 años, al final de un pontificado de siete años; las fuentes históricas principales no conservan una causa de muerte precisa.",
+  "shortDescriptionRu": "Папа Константин был уроженцем Сирии и епископом Рима, возглавлявшим Католическую церковь с 708 по 715 год; он считается одной из последних крупных фигур эпохи византийского папства. Больше всего он известен поездкой в Константинополь и переговорами с императором Юстинианом II по поводу спорных Трулльских канонов, что помогло сохранить отношения между Римом и Восточной империей. Он умер в Риме 9 апреля 715 года примерно в возрасте 50 лет, в конце семилетнего понтификата; точная причина смерти в основных исторических источниках не зафиксирована.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Constantine",
+    "https://www.wikidata.org/wiki/Q103314",
+    "https://www.britannica.com/biography/Constantine-pope",
+    "https://www.catholic-hierarchy.org/bishop/bconstan.html",
+    "https://www.newadvent.org/cathen/04294b.htm",
+    "https://commons.wikimedia.org/wiki/File:Pope_Constantine.jpg",
+    "https://commons.wikimedia.org/wiki/File:88-Constantine.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q192920",  "Name": "Edward the Martyr",  "BirthDate": "0963-01-01T00:00:00Z",  "DeathDate": "0978-03-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Edward%20the%20Martyr%20-%20MS%20Royal%2014%20B%20VI.jpg",  "SiteLinksCnt": 54,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"47382":{"pageid":47382,"ns":0,"title":"Edward the Martyr","extract":"Edward the Martyr (c.\u2009962 \u2013 18 March 978) was King of the English from 8 July 975 until he was killed in 978. He was the eldest son of King Edgar (r. 959\u2013975). On Edgar's death, the succession to the throne was contested between Edward's supporters and those of his younger half-brother, the future King \u00c6thelred the Unready. As they were both children, it is unlikely that they played an active role in the dispute, which was probably between rival family alliances. Edward's principal supporters were Dunstan, Archbishop of Canterbury, and \u00c6thelwine, Ealdorman of East Anglia, while \u00c6thelred was backed by his mother Queen \u00c6lfthryth and her friend \u00c6thelwold, Bishop of Winchester. The dispute was quickly settled. Edward was chosen as king and \u00c6thelred received the lands traditionally allocated to the king's eldest son in compensation.\nEdgar had been a strong and overbearing king and a supporter of the monastic reform movement. He had forced the lay nobility and secular clergy to surrender land and sell it at low prices to the monasteries. \u00c6thelwold had been the most active and ruthless in seizing land for his monasteries with Edgar's assistance. The nobles took advantage of Edgar's death to get their lands back, mainly by legal actions but sometimes by force. The leading magnates were split into two factions, the supporters of \u00c6lfhere, Ealdorman of Mercia, and \u00c6thelwine, who both seized some monastic lands which they believed belonged to them, but also estates claimed by their rivals. The disputes never led to warfare.\nEdward's short reign was brought to an end by his murder in March 978 in unclear circumstances. He was killed on his step-mother \u00c6lfthryth's estate at the Gap of Corfe in Dorset, and hurriedly buried at Wareham. A year later, his body was translated with great ceremony to Shaftesbury Abbey in Dorset. Contemporary writers do not name the murderer, but almost all narratives in the period after the Norman Conquest name \u00c6lfthryth. Some modern historians agree, but others do not. Another theory is that the killers were thegns of \u00c6thelred, probably acting without orders.\nMedieval kings were believed to be sacrosanct, and Edward's murder deeply troubled contemporaries who regarded it as a mortal sin. He soon came to be revered as a saint, and his feast of 18 March is listed in the festal calendar of the Book of Common Prayer of the Church of England. Edward was known in his own time for physical and verbal abuse of his associates and companions, and historians consider his veneration thoroughly undeserved."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q192920")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q192920",
+  "isRealHuman": true,
+  "birthDate": "0962-07-01",
+  "deathDate": "0978-03-18",
+  "ageAtDeath": 15,
+  "confidence": 62,
+  "confidenceExplained": "The identification is very strong: this is Edward the Martyr, King of the English. The death date 978-03-18 is well supported, but the birth year is only approximate and varies between c. 962 and c. 963 across standard references. Because no exact birthday is known, the age could plausibly be 15 or 16; I chose 15 from a mid-962 estimate and because some major reference data rounds his birth to 963.",
+  "shortDescriptionEn": "Edward the Martyr was an Anglo-Saxon King of the English, the elder son of Edgar the Peaceful, who ruled from 975 to 978 during a sharp succession struggle involving supporters of his half-brother Æthelred. His brief reign ended when he was killed at Corfe in Dorset on 18 March 978, probably in a political murder, after which he was remembered as a royal martyr and later revered as a saint.",
+  "shortDescriptionFr": "Édouard le Martyr fut un roi anglo-saxon des Anglais, fils aîné d’Edgar le Pacifique, qui régna de 975 à 978 au milieu d’une vive lutte de succession avec le parti de son demi-frère Æthelred. Son bref règne prit fin lorsqu’il fut tué à Corfe, dans le Dorset, le 18 mars 978, probablement lors d’un meurtre politique, avant d’être honoré plus tard comme saint.",
+  "shortDescriptionDe": "Eduard der Märtyrer war ein angelsächsischer König der Engländer, der älteste Sohn Edgars des Friedfertigen, und regierte von 975 bis 978 während eines heftigen Nachfolgestreits mit den Anhängern seines Halbbruders Æthelred. Seine kurze Herrschaft endete, als er am 18. März 978 in Corfe in Dorset getötet wurde, wahrscheinlich bei einem politischen Mord; später wurde er als Heiliger verehrt.",
+  "shortDescriptionEs": "Eduardo el Mártir fue un rey anglosajón de los ingleses, hijo mayor de Edgar el Pacífico, que reinó de 975 a 978 en medio de una dura lucha sucesoria con los partidarios de su medio hermano Æthelred. Su breve reinado terminó cuando fue asesinado en Corfe, Dorset, el 18 de marzo de 978, probablemente en un crimen político, y más tarde fue venerado como santo.",
+  "shortDescriptionRu": "Эдуард Мученик был англосаксонским королём англичан, старшим сыном Эдгара Мирного, и правил с 975 по 978 год на фоне острого спора о престолонаследии с сторонниками его сводного брата Этельреда. Его недолгое правление завершилось 18 марта 978 года, когда его убили в Корфе, Дорсет, вероятно в результате политического убийства; позднее его стали почитать как святого.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edward_the_Martyr",
+    "https://www.britannica.com/biography/Edward-king-of-England-circa-963-978",
+    "https://www.wikidata.org/wiki/Q192920",
+    "https://commons.wikimedia.org/wiki/File:Edward_the_Martyr_-_MS_Royal_14_B_VI.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw38326/",
+    "https://commons.wikimedia.org/wiki/Category:Edward_the_Martyr"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2939142",  "Name": "Carlo Acutis",  "BirthDate": "1991-05-03T00:00:00Z",  "DeathDate": "2006-10-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Covent%20Garden%2C%20Corpus%20Christi%20Catholic%20Church%2C%20Carlo%20Acutis%20memorial.jpg",  "SiteLinksCnt": 54,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"53974686":{"pageid":53974686,"ns":0,"title":"Carlo Acutis","extract":"Carlo Acutis (3 May 1991 \u2013 12 October 2006) was an English-born Italian Catholic teenager known for his devotion to the Eucharist and his use of digital media to promote Catholic devotion. Born in London and raised in Milan, he developed an early interest in computers and video games, teaching himself programming and web design and assisting his parish and school with digital projects.\nActive in parish life, he served as a catechist and helped inspire several people to convert to Catholicism. He later created a website documenting Eucharistic miracles and Marian apparitions. He was diagnosed with acute promyelocytic leukaemia and died at the age of fifteen. Since his death, his relics have been displayed in Assisi, and his exhibitions on Eucharistic miracles have travelled worldwide.\nIn 2020, he was beatified by the Catholic Church after its recognition of a 2013 miracle in Campo Grande attributed to his intercession. A second miracle in Italy was attributed to him in 2024, making him eligible for canonisation. Acutis was canonised on 7 September 2025, alongside Pier Giorgio Frassati. Acutis is the first millennial to become a Catholic saint, and has been referred to as the \"patron saint of the Internet\" and \"God's influencer\".\nA commentator for the Catholic Review has written that skepticism for Acutis' canonisation cause exists among some of the faithful and the secular world, noting that his short life offered few extraordinary actions. A report by The Economist interviewed childhood friends of Acutis, who recalled him as kind but not necessarily pious or religious. Questions have also been raised about financial support provided by Acutis's family, suggesting that it may have accelerated the process; but Fr. Nicola Gori, Acutis' postulator, stated that money did not influence the cause."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2939142")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2939142",
+  "isRealHuman": true,
+  "birthDate": "1991-05-03",
+  "deathDate": "2006-10-12",
+  "ageAtDeath": 15,
+  "confidence": 99,
+  "confidenceExplained": "Multiple independent sources agree on Carlo Acutis's birth date (1991-05-03) and death date (2006-10-12), including Wikipedia, Vatican News, and Britannica. The age calculation is straightforward because he died after his birthday in 2006, so his integer age at death is exactly 15.",
+  "shortDescriptionEn": "Carlo Acutis was an English-born Italian Catholic teenager, computer enthusiast, and creator of a widely shared website documenting Eucharistic miracles, which made him an enduring symbol of youthful faith in the digital age. Raised in Milan and canonized in 2025 as the first millennial saint of the Catholic Church, he died in Monza in 2006 after a short illness caused by acute promyelocytic leukemia, at the age of 15.",
+  "shortDescriptionFr": "Carlo Acutis était un adolescent catholique italien né en Angleterre, passionné d’informatique, connu pour avoir créé un site web consacré aux miracles eucharistiques, ce qui a fait de lui une figure marquante de la foi à l’ère numérique. Élevé à Milan et canonisé en 2025 comme premier saint millénial de l’Église catholique, il est mort à Monza en 2006 d’une leucémie promyélocytaire aiguë après une brève maladie, à l’âge de 15 ans.",
+  "shortDescriptionDe": "Carlo Acutis war ein in England geborener italienischer katholischer Jugendlicher, Computerbegeisterter und Schöpfer einer viel beachteten Website über eucharistische Wunder, durch die er zu einer prägenden Figur des Glaubens im digitalen Zeitalter wurde. Er wuchs in Mailand auf und wurde 2025 als erster Heiliger der Millennial-Generation der katholischen Kirche heiliggesprochen; 2006 starb er in Monza nach kurzer Krankheit an akuter promyelozytischer Leukämie im Alter von 15 Jahren.",
+  "shortDescriptionEs": "Carlo Acutis fue un adolescente católico italiano nacido en Inglaterra, aficionado a la informática y creador de un difundido sitio web sobre milagros eucarísticos, lo que lo convirtió en una figura destacada de la fe en la era digital. Criado en Milán y canonizado en 2025 como el primer santo milénico de la Iglesia católica, murió en Monza en 2006 tras una breve enfermedad causada por leucemia promielocítica aguda, a los 15 años.",
+  "shortDescriptionRu": "Карло Акутис — родившийся в Англии итальянский католический подросток, увлекавшийся компьютерами и создавший широко известный сайт о евхаристических чудесах, благодаря чему стал заметной фигурой веры в цифровую эпоху. Он вырос в Милане и был канонизирован в 2025 году как первый святой-миллениал Католической церкви; в 2006 году умер в Монце после недолгой болезни, вызванной острым промиелоцитарным лейкозом, в возрасте 15 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Carlo_Acutis",
+    "https://www.vaticannews.va/en/pope/news/2024-05/pope-francis-saints-decrees-miracle-acutis-allamano.html",
+    "https://www.vaticannews.va/en/pope/news/2025-09/pope-leo-saints-call-us-to-god-make-masterpieces-of-our-lives.html",
+    "https://www.britannica.com/biography/Carlo-Acutis",
+    "https://www.carloacutis.com/en/association/biografia"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q297742",  "Name": "Margaret the Virgin",  "BirthDate": "0292-01-01T00:00:00Z",  "DeathDate": "0307-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/St.Marina%20the%20Martyr%20holding%20a%20devil.jpg",  "SiteLinksCnt": 53,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"194385":{"pageid":194385,"ns":0,"title":"Margaret the Virgin","extract":"Margaret, known as Margaret of Antioch in the West, and as Saint Marina the Great Martyr (Ancient Greek: \u1f09\u03b3\u03af\u03b1 \u039c\u03b1\u03c1\u03af\u03bd\u03b1) in the East, is celebrated as a saint on 20 July in Western Christianity, on 30th of July (Julian calendar) by the Eastern Orthodox Church, and on Epip 23 and Hathor 23 in the Coptic Orthodox Church. The teenage Margaret is said to have been tortured and beheaded when she refused to renounce Christianity and give her virginity to a Roman official in the 4th century. She was reputed to have promised very powerful indulgences to those who wrote or read her life or invoked her intercessions; these no doubt helped the spread of her following. Margaret is one of the Fourteen Holy Helpers in Roman Catholic tradition."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q297742")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q297742",
+  "isRealHuman": false,
+  "birthDate": "0289-01-01",
+  "deathDate": "0304-01-01",
+  "ageAtDeath": 15,
+  "confidence": 35,
+  "confidenceExplained": "The identification is strong: Q297742 is Saint Margaret of Antioch, also known as Saint Marina the Great Martyr. The age 15 is the standard traditional estimate derived from late hagiographic sources that place her martyrdom around 304 and describe her as fifteen. Confidence is limited because modern reference works say the story is largely legendary and there are no contemporary records fixing exact birth or death dates.",
+  "shortDescriptionEn": "Margaret of Antioch, venerated in the East as Saint Marina the Great Martyr, was one of the most famous virgin martyrs of medieval Christianity and later one of the Fourteen Holy Helpers. Tradition places her in Antioch in Pisidia during the Diocletianic persecution, where she refused the Roman prefect Olybrius, endured torture for her faith, and was finally beheaded at about age 15.",
+  "shortDescriptionFr": "Marguerite d’Antioche, vénérée en Orient sous le nom de sainte Marine la Grande Martyre, fut l’une des vierges martyres les plus célèbres du christianisme médiéval et plus tard l’une des Quatorze Saints Auxiliateurs. La tradition la situe à Antioche de Pisidie pendant la persécution de Dioclétien : elle refusa le préfet romain Olybrius, subit la torture pour sa foi, puis fut finalement décapitée vers l’âge de 15 ans.",
+  "shortDescriptionDe": "Margareta von Antiochia, im Osten als die heilige Marina die Großmärtyrin verehrt, war eine der berühmtesten jungfräulichen Märtyrerinnen des mittelalterlichen Christentums und später eine der Vierzehn Nothelfer. Die Überlieferung verortet sie in Antiochia in Pisidien während der diokletianischen Verfolgung, wo sie den römischen Statthalter Olybrius zurückwies, Folter wegen ihres Glaubens erlitt und schließlich im Alter von etwa 15 Jahren enthauptet wurde.",
+  "shortDescriptionEs": "Margarita de Antioquía, venerada en Oriente como santa Marina la Gran Mártir, fue una de las vírgenes mártires más famosas del cristianismo medieval y más tarde una de los Catorce Santos Auxiliadores. La tradición la sitúa en Antioquía de Pisidia durante la persecución de Diocleciano, donde rechazó al prefecto romano Olybrius, soportó torturas por su fe y finalmente fue decapitada hacia los 15 años.",
+  "shortDescriptionRu": "Маргарита Антиохийская, почитаемая на Востоке как святая Марина Великая мученица, была одной из самых известных дев-мучениц средневекового христианства и позднее вошла в число Четырнадцати святых помощников. По преданию, она жила в Антиохии Писидийской во время гонений Диоклетиана, отвергла римского правителя Олибрия, перенесла пытки за свою веру и в конце концов была обезглавлена примерно в 15 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Margaret_the_Virgin",
+    "https://www.britannica.com/biography/Saint-Margaret-of-Antioch",
+    "https://www.oca.org/saints/lives/2026/07/17/102042-great-martyr-marina-margaret-of-antioch",
+    "https://www.newadvent.org/cathen/09652b.htm",
+    "https://academic.oup.com/british-academy-scholarship-online/book/30309",
+    "https://www.getty.edu/cona/CONAIconographyRecord.aspx?iconid=901000590"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39938",  "Name": "Ptolemy XIII Theos Philopator",  "BirthDate": "-0061-01-01T00:00:00Z",  "DeathDate": "-0046-01-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Ptolemy%20XIII%20Theos%20Philopator.jpg",  "SiteLinksCnt": 52,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"83949":{"pageid":83949,"ns":0,"title":"Ptolemy XIII Theos Philopator","extract":"Ptolemy XIII Theos Philopator (Ancient Greek: \u03a0\u03c4\u03bf\u03bb\u03b5\u03bc\u03b1\u1fd6\u03bf\u03c2 \u0398\u03b5\u03cc\u03c2 \u03a6\u03b9\u03bb\u03bf\u03c0\u03ac\u03c4\u03c9\u03c1, Ptolema\u0129os; c. 62 BC \u2013 13 January 47 BC) was Pharaoh of Egypt from 51 to 47 BC, and one of the last members of the Ptolemaic dynasty (305\u201330 BC). He was the son of Ptolemy XII and the brother of and co-ruler with Cleopatra VII. Cleopatra's exit from Egypt caused a civil war to break out between the pharaohs. Ptolemy later ruled jointly with his other sister, Arsinoe IV."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39938")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q39938",
+  "isRealHuman": true,
+  "birthDate": "-0061-07-01",
+  "deathDate": "-0046-01-13",
+  "ageAtDeath": 14,
+  "confidence": 72,
+  "confidenceExplained": "The identification is certain, and the death in 47 BCE—very often given as 13 January 47 BCE—is well supported. The weak point is the birth date: ancient evidence does not preserve an exact birthday, and modern references vary between 62/61 BCE and even between age 14 and 15 at death. I therefore use a synthetic estimated birth date and give 14 as the best single-number estimate with medium confidence.",
+  "shortDescriptionEn": "Ptolemy XIII Theos Philopator was the teenage Ptolemaic pharaoh who became co-ruler of Egypt with his sister Cleopatra VII in 51 BCE, then fell into a fierce dynastic struggle shaped by court intrigue, Pompey’s murder, and Julius Caesar’s intervention. Defeated in the Alexandrian War after the Battle of the Nile, he drowned in the Nile in 47 BCE while fleeing, ending his short and turbulent reign.",
+  "shortDescriptionFr": "Ptolémée XIII Théos Philopator fut le jeune pharaon ptolémaïque qui régna sur l’Égypte avec sa sœur Cléopâtre VII à partir de 51 av. J.-C., avant d’être entraîné dans une violente lutte dynastique marquée par les intrigues de cour, le meurtre de Pompée et l’intervention de Jules César. Battu pendant la guerre d’Alexandrie après la bataille du Nil, il se noya dans le Nil en 47 av. J.-C. alors qu’il fuyait, mettant fin à un règne bref et tourmenté.",
+  "shortDescriptionDe": "Ptolemaios XIII. Theos Philopator war der jugendliche ptolemäische Pharao, der ab 51 v. Chr. gemeinsam mit seiner Schwester Kleopatra VII. über Ägypten herrschte und dann in einen erbitterten Dynastiekonflikt geriet, geprägt von Hofintrigen, der Ermordung des Pompeius und dem Eingreifen Julius Caesars. Nach der Niederlage im Alexandrinischen Krieg und in der Schlacht am Nil ertrank er 47 v. Chr. bei der Flucht im Nil, womit seine kurze und unruhige Herrschaft endete.",
+  "shortDescriptionEs": "Ptolomeo XIII Teos Filópator fue el joven faraón ptolemaico que gobernó Egipto junto a su hermana Cleopatra VII desde 51 a. C., antes de quedar atrapado en una guerra dinástica marcada por intrigas palaciegas, el asesinato de Pompeyo y la intervención de Julio César. Derrotado en la guerra alejandrina tras la batalla del Nilo, murió ahogado en el Nilo en 47 a. C. mientras huía, poniendo fin a un reinado breve y convulso.",
+  "shortDescriptionRu": "Птолемей XIII Теос Филопатор — юный фараон династии Птолемеев, который с 51 года до н. э. правил Египтом вместе с сестрой Клеопатрой VII, а затем оказался в центре ожесточённой династической борьбы, связанной с придворными интригами, убийством Помпея и вмешательством Юлия Цезаря. Потерпев поражение в Александрийской войне после битвы на Ниле, он утонул в Ниле в 47 году до н. э. при бегстве, и этим закончилась его короткая и бурная власть.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ptolemy_XIII_Theos_Philopator",
+    "https://www.britannica.com/biography/Ptolemy-XIII-Theos-Philopator",
+    "https://www.britannica.com/biography/Cleopatra-queen-of-Egypt",
+    "https://www.worldhistory.org/Ptolemy_XIII_Theos_Philopator/",
+    "https://www.instonebrewer.com/TyndaleSites/Egypt/ptolemies/ptolemy_xiii.htm",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1002/9781444338386.wbeah07092",
+    "https://www.jstor.org/stable/44079777",
+    "https://www.getty.edu/art/collection/object/103TTK",
+    "https://www.imj.org.il/en/collections/539680-0",
+    "https://www.imj.org.il/en/collections/539780-0"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q711801",  "Name": "Arthur, Prince of Wales",  "BirthDate": "1486-09-29T00:00:00Z",  "DeathDate": "1502-04-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anglo-Flemish%20School%2C%20Arthur%2C%20Prince%20of%20Wales%20%28Granard%20portrait%29%20-004.jpg",  "SiteLinksCnt": 50,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"177655":{"pageid":177655,"ns":0,"title":"Arthur, Prince of Wales","extract":"Arthur, Prince of Wales (19/20 September 1486 \u2013 2 April 1502) was the eldest son of King Henry VII of England and Elizabeth of York, and an older brother to the future King Henry VIII. He was Duke of Cornwall from birth, and he was created Prince of Wales and Earl of Chester in 1489. As the heir apparent of his father, Arthur was viewed by contemporaries as the great hope of the newly established House of Tudor. His mother was the daughter of the Yorkist king, Edward IV, and his birth cemented the union between the House of Lancaster and the House of York.\nPlans for Arthur's marriage began before his third birthday. At the age of eleven, he was formally betrothed to Catherine of Aragon, a daughter of the powerful Catholic Monarchs in Spain, in an effort to forge an Anglo-Spanish alliance against France and Scotland. Arthur was well educated and was in good health for the majority of his life. Soon after his marriage to Catherine in 1501, the couple took up residence at Ludlow Castle in Shropshire, where Arthur died six months later, possibly from the sweating sickness, which Catherine survived. Catherine later firmly stated that the marriage had not been consummated. \nOne year after Arthur's death, Henry VII renewed his efforts to seal a marital alliance with Spain by arranging for Catherine to marry Arthur's younger brother Henry, who would ascend to the throne in 1509 as King Henry VIII. The question over whether Arthur and Catherine had consummated their marriage was much later, and in a completely different political context, exploited by Henry VIII and his court. They pointed out that it says in the Bible, \"If a man shall take his brother's wife, it is an unclean thing; they shall be childless.\" If Catherine's marriage to Arthur had actually been consummated, her marriage to Henry would have been a sin according to their interpretation, which would justify an annulment. This strategy was employed in order to cast doubt upon the validity of Catherine's union with Henry VIII, eventually leading to the separation between the Church of England and the Roman Catholic Church."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q711801")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q711801",
+  "isRealHuman": true,
+  "birthDate": "1486-09-20",
+  "deathDate": "1502-04-02",
+  "ageAtDeath": 15,
+  "confidence": 99,
+  "confidenceExplained": "Arthur, Prince of Wales, is securely identified. The exact birth day is slightly disputed in sources (often 19/20 September 1486, while some structured databases show 29 September due to calendar normalization), but every serious date variant still makes him 15 years old when he died on 2 April 1502. So the age-at-death number is very high confidence even though the exact birth-date notation varies.",
+  "shortDescriptionEn": "Arthur Tudor, Prince of Wales, was the eldest son of Henry VII and Elizabeth of York, the first great hope of the Tudor dynasty, and the young husband of Catherine of Aragon. Raised as heir to the English throne and celebrated as the symbol of peace between Lancaster and York, he never became king: he died at Ludlow Castle in 1502, only a few months after his marriage, probably from sweating sickness, aged just 15.",
+  "shortDescriptionFr": "Arthur Tudor, prince de Galles, était le fils aîné d’Henri VII et d’Élisabeth d’York, le premier grand espoir de la dynastie Tudor, et le jeune mari de Catherine d’Aragon. Élevé pour succéder au trône d’Angleterre et présenté comme le symbole de la réconciliation entre Lancastre et York, il ne régna jamais : il mourut au château de Ludlow en 1502, quelques mois seulement après son mariage, probablement de la suette, à l’âge de 15 ans.",
+  "shortDescriptionDe": "Arthur Tudor, Prinz von Wales, war der älteste Sohn Heinrichs VII. und Elisabeths von York, die erste große Hoffnung der Tudor-Dynastie und der junge Ehemann Katharinas von Aragon. Als Thronerbe Englands erzogen und als Symbol der Vereinigung von Lancaster und York gefeiert, wurde er nie König: Er starb 1502 auf Ludlow Castle, nur wenige Monate nach seiner Hochzeit, wahrscheinlich an der Schweißkrankheit, im Alter von nur 15 Jahren.",
+  "shortDescriptionEs": "Arturo Tudor, príncipe de Gales, fue el hijo mayor de Enrique VII e Isabel de York, la primera gran esperanza de la dinastía Tudor y el joven esposo de Catalina de Aragón. Educado como heredero del trono inglés y visto como símbolo de la unión entre Lancaster y York, nunca llegó a reinar: murió en el castillo de Ludlow en 1502, apenas unos meses después de su boda, probablemente de la enfermedad del sudor, con solo 15 años.",
+  "shortDescriptionRu": "Артур Тюдор, принц Уэльский, был старшим сыном Генриха VII и Елизаветы Йоркской, первой большой надеждой династии Тюдоров и юным мужем Екатерины Арагонской. Его воспитывали как наследника английского престола и как символ примирения Ланкастеров и Йорков, но королём он так и не стал: в 1502 году он умер в замке Ладлоу всего через несколько месяцев после свадьбы, вероятно от потливой горячки, в возрасте 15 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Arthur,_Prince_of_Wales",
+    "https://www.wikidata.org/wiki/Q711801",
+    "https://www.worcestercathedral.co.uk/heritage/prince-arthur",
+    "https://www.englishmonarchs.co.uk/tudor_22.html",
+    "https://tudorhistory.org/people/arthur/",
+    "https://commons.wikimedia.org/wiki/File:Anglo-Flemish_School,_Arthur,_Prince_of_Wales_(Granard_portrait)_-004.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q159716",  "Name": "Ataulf",  "BirthDate": "0400-01-01T00:00:00Z",  "DeathDate": "0415-09-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ata%C3%BAlfo.jpg",  "SiteLinksCnt": 48,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"152533":{"pageid":152533,"ns":0,"title":"Athaulf","extract":"Athaulf (also Athavulf, Atawulf, or Ataulf and Adolf, Latinized as Ataulphus) (c. 370 \u2013 15 August 415) was king of the Visigoths from 411 to 415. During his reign, he transformed the Visigothic state from a tribal kingdom to a major political power of late antiquity."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q159716")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q159716",
+  "isRealHuman": true,
+  "birthDate": "0370-01-01",
+  "deathDate": "0415-08-15",
+  "ageAtDeath": 45,
+  "confidence": 73,
+  "confidenceExplained": "The identity is very clear: Q159716 is Athaulf (Ataulf/Ataulphus), king of the Visigoths. The age estimate is less certain because his birth year is only approximate (commonly given as circa 370), and there is some disagreement in secondary/Wikimedia-linked material over whether he died on 15 August 415 or in early September 415. Using the most widely cited combination, c. 370 and 15 August 415, gives an estimated age at death of 45.",
+  "shortDescriptionEn": "Athaulf, also known as Ataulf or Ataulphus, was king of the Visigoths from 411 to 415 and the successor of Alaric. He helped turn the Visigoths from a migrating warrior people into a major political force of late antiquity, led them from Italy into Gaul and Hispania, and married Galla Placidia, linking Gothic and Roman power at a dramatic moment in imperial history. His career ended violently in Barcelona in 415, when he was assassinated by a retainer tied to the faction of Sarus during an internal feud, cutting short a reign of growing ambition and leaving the Visigothic kingdom in sudden turmoil.",
+  "shortDescriptionFr": "Athaulf, aussi appelé Ataulf ou Ataulphus, fut roi des Wisigoths de 411 à 415 et le successeur d’Alaric. Il contribua à transformer les Wisigoths d’un peuple guerrier en migration en une grande puissance politique de l’Antiquité tardive, les mena d’Italie en Gaule puis en Hispanie, et épousa Galla Placidia, rapprochant de façon spectaculaire les mondes gothique et romain. Sa carrière se termina brutalement à Barcelone en 415, lorsqu’il fut assassiné par un homme lié à la faction de Sarus lors d’une rivalité interne, ce qui mit fin à un règne prometteur et plongea le royaume dans le désordre.",
+  "shortDescriptionDe": "Athaulf, auch Ataulf oder Ataulphus genannt, war von 411 bis 415 König der Westgoten und Nachfolger Alarichs. Er machte aus den Westgoten zunehmend eine bedeutende politische Macht der Spätantike, führte sie von Italien nach Gallien und Hispanien und heiratete Galla Placidia, wodurch sich gotische und römische Politik eng berührten. Sein Aufstieg endete 415 in Barcelona gewaltsam, als er von einem Gefolgsmann aus dem Umfeld der Sarus-Partei in einer inneren Machtfehde ermordet wurde, was seine ehrgeizige Herrschaft abrupt beendete.",
+  "shortDescriptionEs": "Athaulf, también llamado Ataúlfo o Ataulphus, fue rey de los visigodos entre 411 y 415 y sucesor de Alarico. Ayudó a convertir a los visigodos de un pueblo guerrero en movimiento en una gran fuerza política de la Antigüedad tardía, los condujo de Italia a la Galia y a Hispania, y se casó con Gala Placidia, uniendo de forma llamativa la política goda y la romana. Su trayectoria terminó de manera violenta en Barcelona en 415, cuando fue asesinado por un servidor vinculado a la facción de Saro en medio de una lucha interna, dejando al reino visigodo en una crisis repentina.",
+  "shortDescriptionRu": "Атаульф, также известный как Атаулф или Атаульфус, был королём вестготов в 411–415 годах и преемником Алариха. Он сыграл важную роль в превращении вестготов из кочующей военной силы в крупного политического игрока поздней Античности, провёл их из Италии в Галлию и Испанию и женился на Галле Плацидии, связав готский и римский миры в один из самых драматичных моментов эпохи. Его путь оборвался в Барселоне в 415 году, когда он был убит человеком, связанным с партией Саруса, во время внутренней распри, что внезапно завершило его правление и вызвало смуту среди вестготов.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Athaulf",
+    "https://www.britannica.com/biography/Ataulphus",
+    "https://www.wikidata.org/wiki/Q159716",
+    "https://commons.wikimedia.org/wiki/Category:Ata%C3%BAlfo",
+    "https://en.wikipedia.org/wiki/Galla_Placidia"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q294795",  "Name": "Simon Magus",  "BirthDate": "0050-01-01T00:00:00Z",  "DeathDate": "0065-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Basilica%20Saint-Sernin%20-%20Simon%20Magus.jpg",  "SiteLinksCnt": 42,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"28018":{"pageid":28018,"ns":0,"title":"Simon Magus","extract":"Simon Magus (Greek \u03a3\u03af\u03bc\u03c9\u03bd \u1f41 \u03bc\u03ac\u03b3\u03bf\u03c2, Latin: Simon Magus), also known as Simon the Magician, was a religious figure whose confrontation with Peter is recorded in the Acts of the Apostles. The act of simony, or paying for position, is named after Simon, who tried to buy his way into the power of the Apostles.\nAccording to Acts, Simon was a Samaritan magus or religious figure of the 1st century AD and a convert to Christianity, baptised by Philip the Evangelist. Simon later clashed with Peter. Accounts of Simon by writers of the second century exist, but are not considered verifiable. Surviving traditions about Simon appear in traditional texts, such as those of Irenaeus, Justin Martyr, Hippolytus, and Epiphanius, where he is often described as the founder of Gnosticism, which has been accepted by some modern scholars, while others reject claims that he was a Gnostic, maintaining that he was merely considered to be one by the Church Fathers.\nJustin, who was himself a 2nd-century native of Samaria, wrote that nearly all the Samaritans in his time were adherents of a certain Simon of Gitta, a village not far from Flavia Neapolis. Irenaeus believed him to have been the founder of the sect of the Simonians. Hippolytus quotes from a work he attributes to Simon or his followers the Simonians, Apophasis Megale, or Great Declaration. According to the early church heresiologists, Simon is also supposed to have written several lost treatises, two of which bear the titles The Four Quarters of the World and The Sermons of the Refuter.\nIn apocryphal works including the Acts of Peter, Pseudo-Clementines, and the Epistle of the Apostles, Simon also appears as a formidable sorcerer with the ability to levitate and fly at will. He is sometimes referred to as \"the Bad Samaritan\" due to his malevolent character. The Apostolic Constitutions also accuses him of \"lawlessness\" (antinomianism)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q294795")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q294795",
+  "isRealHuman": true,
+  "birthDate": "0005-01-01",
+  "deathDate": "0065-01-01",
+  "ageAtDeath": 60,
+  "confidence": 38,
+  "confidenceExplained": "Simon Magus is very likely based on a historical 1st-century Samaritan religious figure, but no exact ancient birth or death date survives. The age estimate is reconstructed from Acts 8, which shows him as an already established adult by the mid-30s CE, Justin Martyr's notice that he was active in Rome under Claudius, and later Roman death traditions connected with Nero. The number 60 is therefore a reasoned estimate, not a documented exact age.",
+  "shortDescriptionEn": "Simon Magus, or Simon of Gitta, was a 1st-century Samaritan wonder-worker and religious teacher remembered from the Acts of the Apostles for his clash with Peter after trying to buy apostolic power, which gave rise to the word 'simony'. Later Christian tradition places his death in Rome after a public display of magic ended in a catastrophic fall and fatal injuries.",
+  "shortDescriptionFr": "Simon le Mage, ou Simon de Gitta, fut un thaumaturge et chef religieux samaritain du Ier siècle, connu par les Actes des Apôtres pour son affrontement avec Pierre après avoir tenté d’acheter le pouvoir apostolique, à l’origine du mot « simonie ». La tradition chrétienne postérieure situe sa mort à Rome après une démonstration publique de magie qui se termina par une chute catastrophique et des blessures mortelles.",
+  "shortDescriptionDe": "Simon Magus, auch Simon von Gitta, war ein samaritanischer Wundertäter und religiöser Lehrer des 1. Jahrhunderts, der in der Apostelgeschichte durch seinen Konflikt mit Petrus bekannt wurde, nachdem er apostolische Macht kaufen wollte; davon leitet sich der Begriff „Simonie“ ab. Die spätere christliche Überlieferung verlegt seinen Tod nach Rom, wo eine öffentliche Machtdemonstration mit einem schweren Sturz und tödlichen Verletzungen endete.",
+  "shortDescriptionEs": "Simón el Mago, o Simón de Gitta, fue un taumaturgo y dirigente religioso samaritano del siglo I, recordado en los Hechos de los Apóstoles por su choque con Pedro después de intentar comprar el poder apostólico, origen del término «simonía». La tradición cristiana posterior sitúa su muerte en Roma tras una exhibición pública de magia que terminó en una caída catastrófica y heridas mortales.",
+  "shortDescriptionRu": "Симон Волхв, или Симон из Гитты, был самарянским чудотворцем и религиозным деятелем I века, известным по «Деяниям апостолов» своим столкновением с апостолом Петром после попытки купить апостольскую силу; от его имени произошло слово «симония». Позднее христианское предание относит его смерть к Риму, где публичное магическое представление закончилось тяжёлым падением и смертельными травмами.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Simon_Magus",
+    "https://www.britannica.com/biography/Simon-Magus",
+    "https://www.biblegateway.com/passage/?search=Acts+8%3A9-24&version=NIV",
+    "https://www.britannica.com/biography/Saint-Stephen",
+    "https://www.newadvent.org/fathers/0126.htm",
+    "https://www.newadvent.org/fathers/0103123.htm",
+    "https://www.newadvent.org/cathen/13797b.htm"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q317146",  "Name": "Alexandros of Aphrodisias",  "BirthDate": "0200-01-01T00:00:00Z",  "DeathDate": "0215-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20of%20Aphrodisias%20%28page%20189%20crop%29.jpg",  "SiteLinksCnt": 42,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"1599":{"pageid":1599,"ns":0,"title":"Alexander of Aphrodisias","extract":"Alexander of Aphrodisias (Ancient Greek: \u1f08\u03bb\u03ad\u03be\u03b1\u03bd\u03b4\u03c1\u03bf\u03c2 \u1f41 \u1f08\u03c6\u03c1\u03bf\u03b4\u03b9\u03c3\u03b9\u03b5\u03cd\u03c2, romanized: Alexandros ho Aphrodisieus; fl.\u2009200 AD) was a Peripatetic philosopher and the most celebrated of the Ancient Greek commentators on the writings of Aristotle. He was a native of Aphrodisias in Caria and lived and taught in Athens at the beginning of the 3rd century, where he held a position as head of the Peripatetic school. He wrote many commentaries on the works of Aristotle, extant are those on the Prior Analytics, Topics, Meteorology, Sense and Sensibilia, and Metaphysics. Several original treatises also survive, and include a work On Fate, in which he argues against the Stoic doctrine of necessity; and one On the Soul. His commentaries on Aristotle were considered so useful that he was styled, by way of pre-eminence, \"the commentator\" (\u1f41 \u1f10\u03be\u03b7\u03b3\u03b7\u03c4\u03ae\u03c2)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q317146")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q317146",
+  "isRealHuman": true,
+  "birthDate": "0150-01-01",
+  "deathDate": "0211-01-01",
+  "ageAtDeath": 61,
+  "confidence": 42,
+  "confidenceExplained": "The identity is very secure, but the exact birth and death dates are not preserved in ancient sources. What is securely anchored is that Alexander was active and held an endowed chair in philosophy between 198 and 209 CE. I therefore reject the misleading 0200 birth year and use a best-fit modern reconstruction of c. 150 to c. 211, so the age 61 is an informed estimate rather than a documented fact.",
+  "shortDescriptionEn": "Alexander of Aphrodisias was a Greek Peripatetic philosopher from Aphrodisias in Caria and the most influential ancient commentator on Aristotle, later known simply as \"the Commentator.\" Active in Athens around 198-209 CE as head of the Peripatetic school, he wrote major works such as On Fate and On the Soul; he likely died around 211, probably in Athens, at about 61 years old, after a distinguished teaching career, though the exact circumstances of his death are unknown.",
+  "shortDescriptionFr": "Alexandre d'Aphrodise était un philosophe péripatéticien grec originaire d'Aphrodisias en Carie et le plus influent commentateur antique d'Aristote, au point d'être appelé plus tard simplement « le Commentateur ». Actif à Athènes vers 198-209 apr. J.-C. comme chef de l'école péripatéticienne, il a écrit des œuvres majeures comme Du destin et Du âme ; il serait mort vers 211, probablement à Athènes, à environ 61 ans, après une brillante carrière d'enseignement, même si les circonstances exactes de sa mort restent inconnues.",
+  "shortDescriptionDe": "Alexander von Aphrodisias war ein griechischer Peripatetiker aus Aphrodisias in Karien und der einflussreichste antike Kommentator des Aristoteles, später schlicht als „der Kommentator“ bekannt. Er wirkte um 198-209 n. Chr. in Athen als Leiter der peripatetischen Schule und verfasste wichtige Schriften wie Über das Schicksal und Über die Seele; wahrscheinlich starb er um 211, wohl in Athen, im Alter von etwa 61 Jahren nach einer bedeutenden Lehrtätigkeit, auch wenn die genauen Umstände seines Todes unbekannt sind.",
+  "shortDescriptionEs": "Alejandro de Afrodisias fue un filósofo peripatético griego de Afrodisias, en Caria, y el comentarista antiguo más influyente de Aristóteles, conocido más tarde simplemente como «el Comentador». Activo en Atenas hacia 198-209 d. C. como jefe de la escuela peripatética, escribió obras fundamentales como Sobre el destino y Sobre el alma; probablemente murió hacia 211, seguramente en Atenas, con unos 61 años, tras una destacada carrera docente, aunque las circunstancias exactas de su muerte no se conocen.",
+  "shortDescriptionRu": "Александр Афродисийский был греческим философом-перипатетиком из Афродисии в Карии и самым влиятельным античным комментатором Аристотеля, которого позднее называли просто «Комментатором». Около 198-209 гг. н. э. он возглавлял перипатетическую школу в Афинах и написал важные труды, включая «О судьбе» и «О душе»; вероятно, он умер около 211 года, скорее всего в Афинах, примерно в возрасте 61 года, после долгой преподавательской карьеры, хотя точные обстоятельства его смерти неизвестны.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_of_Aphrodisias",
+    "https://plato.stanford.edu/entries/alexander-aphrodisias/",
+    "https://www.britannica.com/biography/Alexander-of-Aphrodisias",
+    "https://www.wikidata.org/wiki/Q317146",
+    "https://docs.rwu.edu/saahp_fp/15/",
+    "https://commons.wikimedia.org/wiki/Category:Alexander_of_Aphrodisias",
+    "https://commons.wikimedia.org/wiki/File:Alexander_of_Aphrodisias_%28page_189_crop%29.jpg",
+    "https://www.nga.gov/artworks/44008-aristotle-and-alexander-aphrodisias"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q316398",  "Name": "Haakon II of Norway",  "BirthDate": "1147-01-01T00:00:00Z",  "DeathDate": "1162-07-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Haakon%20Herdebreis%20saga-Tittelfrise-G.%20Munthe.jpg",  "SiteLinksCnt": 34,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"1452916":{"pageid":1452916,"ns":0,"title":"Haakon II","extract":"Haakon II Sigurdsson (1147 \u2013 7 July 1162), also known as Haakon Herdebrei meaning Haakon Broadshoulder, was King of Norway from 1157 until 1162 during the civil war era in Norway."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q316398")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q316398",
+  "isRealHuman": true,
+  "birthDate": "1147-01-01",
+  "deathDate": "1162-07-07",
+  "ageAtDeath": 15,
+  "confidence": 89,
+  "confidenceExplained": "The identity is very clear: authoritative and reference sources agree this is Haakon II Sigurdsson of Norway, known as Håkon Herdebrei. The death date 7 July 1162 is repeated across Wikidata/Commons and Wikipedia-derived historical references, and the age 15 is stated directly in multiple sources. Confidence is not higher only because the exact day and month of birth are unknown, so the birthDate field is an estimate based on the attested birth year 1147.",
+  "shortDescriptionEn": "Haakon II Sigurdsson, better known as Håkon Herdebrei (“Broadshoulder”), was a teenage king of Norway during the turbulent civil war era and the son of King Sigurd Munn. Raised up by his father’s supporters, he ruled from 1157 until 1162 before being killed at the Battle of Sekken, where Erling Skakke’s forces defeated his fleet and cut short his reign at about fifteen years of age.",
+  "shortDescriptionFr": "Haakon II Sigurdsson, plus connu sous le nom de Håkon Herdebrei (« aux larges épaules »), fut un très jeune roi de Norvège pendant la violente époque des guerres civiles et le fils du roi Sigurd Munn. Porté au pouvoir par les partisans de son père, il régna de 1157 à 1162 avant d’être tué lors de la bataille de Sekken, où les forces d’Erling Skakke écrasèrent sa flotte et mirent fin à son règne vers l’âge de quinze ans.",
+  "shortDescriptionDe": "Haakon II. Sigurdsson, besser bekannt als Håkon Herdebrei („Breitschulter“), war ein jugendlicher König von Norwegen in der unruhigen Zeit der norwegischen Bürgerkriege und ein Sohn von König Sigurd Munn. Von den Anhängern seines Vaters erhoben, herrschte er von 1157 bis 1162, bis er in der Schlacht von Sekken fiel, als die Truppen Erling Skakkes seine Flotte schlugen und seine kurze Herrschaft im Alter von etwa fünfzehn Jahren beendeten.",
+  "shortDescriptionEs": "Haakon II Sigurdsson, más conocido como Håkon Herdebrei («el de hombros anchos»), fue un rey adolescente de Noruega durante la agitada era de las guerras civiles y era hijo del rey Sigurd Munn. Elevado por los partidarios de su padre, reinó de 1157 a 1162 hasta que murió en la batalla de Sekken, donde las fuerzas de Erling Skakke derrotaron su flota y pusieron fin a su breve reinado cuando tenía alrededor de quince años.",
+  "shortDescriptionRu": "Хокон II Сигурдссон, более известный как Хокон Хердебрей («Широкоплечий»), был юным королём Норвегии в бурную эпоху гражданских войн и сыном короля Сигурда Мунна. Возведённый на престол сторонниками своего отца, он правил с 1157 по 1162 год, пока не погиб в битве при Секкене, где силы Эрлинга Скакке разгромили его флот и оборвали его короткое правление примерно в пятнадцатилетнем возрасте.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Haakon_II",
+    "https://no.wikipedia.org/wiki/H%C3%A5kon_Herdebrei",
+    "https://www.britannica.com/biography/Haakon-II-Sigurdsson",
+    "https://snl.no/H%C3%A5kon_2._Herdebrei",
+    "https://www.wikidata.org/wiki/Q316398",
+    "https://commons.wikimedia.org/wiki/Category:Haakon_II_of_Norway",
+    "https://en.wikisource.org/wiki/Heimskringla/Saga_of_Hakon_Herdebreid"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q357253",  "Name": "Emperor Chūkyō",  "BirthDate": "1218-11-06T00:00:00Z",  "DeathDate": "1234-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Ch%C5%ABky%C5%8D%20by%20K%C5%8Dtar%C5%8D%20Miyake.jpg",  "SiteLinksCnt": 31,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"195037":{"pageid":195037,"ns":0,"title":"Emperor Ch\u016bky\u014d","extract":"Emperor Ch\u016bky\u014d (\u4ef2\u606d\u5929\u7687, Ch\u016bky\u014d-tenn\u014d) (30 October 1218 \u2013 18 June 1234) was the 85th emperor of Japan, according to the traditional order of succession. His reign spanned only two months in 1221, and he was not officially listed amongst the emperors until 1870 because of doubts caused by the length of his reign. The Imperial Household Agency recognizes Kuj\u014d no misasagi (\u4e5d\u689d\u9675) near T\u014dfuku-ji in Fushimi-ku, Kyoto as his tomb."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q357253")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q357253",
+  "isRealHuman": true,
+  "birthDate": "1218-10-30",
+  "deathDate": "1234-06-18",
+  "ageAtDeath": 15,
+  "confidence": 97,
+  "confidenceExplained": "High confidence because the identity is secure and both date renderings found in reliable sources—1218-10-30/1234-06-18 and the 7-day-shifted 1218-11-06/1234-06-25 used by some structured datasets—yield the same age at death: 15. I am not using 100 because premodern Japanese dates are sometimes normalized differently in modern databases.",
+  "shortDescriptionEn": "Emperor Chūkyō was the 85th emperor of Japan, the son of Emperor Juntoku, and one of the most short-lived rulers in Japanese history. Placed on the throne as a child in 1221, he lost it after only about two months when the Kamakura shogunate crushed the Jōkyū Incident, and he was not officially restored to the imperial list until 1870. He died in 1234 at age 15 after years away from power, and the standard sources do not clearly record a cause of death.",
+  "shortDescriptionFr": "L’empereur Chūkyō fut le 85e empereur du Japon, fils de l’empereur Juntoku, et l’un des souverains au règne le plus bref de l’histoire japonaise. Placé sur le trône alors qu’il était encore enfant en 1221, il fut déposé après environ deux mois lorsque le shogunat de Kamakura écrasa la rébellion de Jōkyū, puis ne fut réintégré officiellement dans la liste impériale qu’en 1870. Il mourut en 1234 à l’âge de 15 ans, après des années loin du pouvoir, et les sources de référence ne donnent pas clairement la cause de sa mort.",
+  "shortDescriptionDe": "Kaiser Chūkyō war der 85. Kaiser Japans, ein Sohn von Kaiser Juntoku und einer der am kürzesten regierenden Herrscher der japanischen Geschichte. Er kam 1221 noch als Kind auf den Thron, verlor ihn aber schon nach rund zwei Monaten, als das Kamakura-Shogunat den Jōkyū-Aufstand niederschlug; offiziell in die Kaiserreihe aufgenommen wurde er erst 1870. Er starb 1234 im Alter von 15 Jahren nach Jahren fern der Macht, wobei die Standardquellen keine eindeutig überlieferte Todesursache nennen.",
+  "shortDescriptionEs": "El emperador Chūkyō fue el 85.º emperador de Japón, hijo del emperador Juntoku y uno de los soberanos de reinado más breve de la historia japonesa. Subió al trono siendo un niño en 1221, pero lo perdió tras apenas unos dos meses cuando el shogunato de Kamakura aplastó el incidente de Jōkyū, y no fue reconocido oficialmente como emperador hasta 1870. Murió en 1234 a los 15 años, después de años alejado del poder, y las fuentes de referencia no conservan con claridad la causa de su muerte.",
+  "shortDescriptionRu": "Император Тюкё был 85-м императором Японии, сыном императора Дзюнтоку и одним из самых недолговечных правителей в японской истории. В 1221 году он взошёл на престол ещё ребёнком, но потерял его примерно через два месяца после того, как сёгунат Камакура подавил смуту Дзёкю; официально в список императоров его включили лишь в 1870 году. Он умер в 1234 году в возрасте 15 лет, проведя годы вдали от власти, а стандартные источники не сообщают ясно установленную причину смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Emperor_Ch%C5%ABky%C5%8D",
+    "https://ja.wikipedia.org/wiki/%E4%BB%B2%E6%81%AD%E5%A4%A9%E7%9A%87",
+    "https://www.kunaicho.go.jp/visit/ryobo/085.html",
+    "https://kotobank.jp/word/%E4%BB%B2%E6%81%AD%E5%A4%A9%E7%9A%87-97141",
+    "https://commons.wikimedia.org/wiki/File:Emperor_Ch%C5%ABky%C5%8D_by_K%C5%8Dtar%C5%8D_Miyake.jpg",
+    "https://commons.wikimedia.org/wiki/File:Emperor_Chukyo.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q363572",  "Name": "Francis Phoebus of Navarre",  "BirthDate": "1467-04-27T00:00:00Z",  "DeathDate": "1483-02-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Francois%20Febus.jpg",  "SiteLinksCnt": 30,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"2834414":{"pageid":2834414,"ns":0,"title":"Francis Phoebus","extract":"Francis Phoebus (Basque: Frantzisko Febus, French: Fran\u00e7ois F\u00e9bus, Occitan: Franc\u00e9s F\u00e8bus, Spanish: Francisco Febo; 4 December 1467 \u2013 7 January 1483) was King of Navarre (1479\u20131483), Viscount of Bearn, and Count of Foix (1472). He was the son of Gaston, Prince of Viana, and grandson of Queen Eleanor, whom he succeeded. She recommended him to ally with France.\nHe succeeded to the throne of Navarre in 1479 after the death of his grandmother Eleanor of Navarre. His succession was approved by the Agramont party, while the Beaumont party fell behind Ferdinand the Catholic who started to build up political and military pressure on the Kingdom of Navarre in the run-up to the fully-fledged invasion of 1512.\nDuring his brief reign, he was under the protection of his mother, the regent Magdalena of Valois. He died young while playing the pipe, arguably poisoned. He was buried in Lescar."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q363572")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q363572",
+  "isRealHuman": true,
+  "birthDate": "1467-12-04",
+  "deathDate": "1483-01-30",
+  "ageAtDeath": 15,
+  "confidence": 82,
+  "confidenceExplained": "Identification is very strong: this is the historical King of Navarre Francis Phoebus / François Fébus / Francisco Febo. The exact dates are not fully stable across sources: Wikidata and English Wikipedia conflict with French and Navarre-focused historical sources, especially on the death date. I therefore used the more strongly supported 30 January 1483 death date and the most commonly repeated exact birth date, 4 December 1467. That gives age 15, which is also supported by later Navarre scholarship describing him as dying at fifteen.",
+  "shortDescriptionEn": "Francis Phoebus, also known as François Fébus or Francisco Febo, was the teenage King of Navarre, Count of Foix and Viscount of Béarn, who inherited a fragile Pyrenean realm in 1479 and ruled under the regency of his mother, Magdalena of France, while France and Aragon competed for influence over his kingdom. His reign was brief and politically tense: he died suddenly at Pau in 1483, probably from illness, though later tradition said he was poisoned after playing a flute, and the crown passed to his sister Catherine.",
+  "shortDescriptionFr": "François Phoebus, dit aussi François Fébus, fut le très jeune roi de Navarre, comte de Foix et vicomte de Béarn, héritier d’un royaume pyrénéen fragile en 1479 et gouverné sous la régence de sa mère, Madeleine de France, au milieu des rivalités entre la France et l’Aragon. Son règne fut bref et tendu sur le plan politique : il mourut soudainement à Pau en 1483, probablement d’une maladie, même si une tradition tardive parla d’un empoisonnement après avoir voulu jouer de la flûte, et la couronne passa à sa sœur Catherine.",
+  "shortDescriptionDe": "Francis Phoebus, auch François Fébus oder Francisco Febo genannt, war der jugendliche König von Navarra, Graf von Foix und Vizegraf von Béarn, der 1479 ein politisch fragiles Pyrenäenreich erbte und unter der Regentschaft seiner Mutter Magdalena von Frankreich regierte, während Frankreich und Aragón um Einfluss rangen. Seine Herrschaft dauerte nur kurz und stand unter starkem Druck: Er starb 1483 plötzlich in Pau, vermutlich an einer Krankheit, obwohl spätere Überlieferungen von einer Vergiftung nach dem Spielen einer Flöte berichten, worauf seine Schwester Katharina die Krone erbte.",
+  "shortDescriptionEs": "Francisco Febo, también conocido como François Fébus, fue el joven rey de Navarra, conde de Foix y vizconde de Bearne, que heredó en 1479 un reino pirenaico frágil y gobernó bajo la regencia de su madre, Magdalena de Francia, en medio de la rivalidad entre Francia y Aragón. Su reinado fue corto y tenso: murió de forma repentina en Pau en 1483, probablemente por enfermedad, aunque una tradición posterior sostuvo que fue envenenado al tocar una flauta, y la corona pasó a su hermana Catalina.",
+  "shortDescriptionRu": "Франсис Феб, также известный как Франсуа Фебюс и Франсиско Фебо, был юным королём Наварры, графом де Фуа и виконтом Беарна, унаследовавшим в 1479 году хрупкое пиренейское королевство и правившим под регентством своей матери Магдалены Французской на фоне соперничества Франции и Арагона. Его правление оказалось очень коротким и напряжённым: он внезапно умер в По в 1483 году, вероятно от болезни, хотя поздняя традиция утверждала, что его отравили после игры на флейте, и корона перешла к его сестре Екатерине.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francis_Phoebus",
+    "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Phoebus",
+    "https://revistas.navarra.es/index.php/PV/article/view/2148",
+    "https://dialnet.unirioja.es/descarga/articulo/2354708.pdf",
+    "https://revistas.navarra.es/index.php/PV/article/view/2324/1428",
+    "https://www.navarra.es/es/-/nota-prensa/el-museo-de-navarra-adquiere-tres-monedas-navarras-de-epoca-medieval?back=true&pageBackId=7574878",
+    "https://en.numista.com/catalogue/pieces426085.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q19254",  "Name": "Philip I",  "BirthDate": "1346-08-13T00:00:00Z",  "DeathDate": "1361-11-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/PhilippeRouvre.jpg",  "SiteLinksCnt": 27,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"628922":{"pageid":628922,"ns":0,"title":"Philip I, Duke of Burgundy","extract":"Philip of Rouvres (1346 \u2013 21 November 1361) was the Count of Burgundy (as Philip II) and Count of Artois (as Philip III) from 1347, Duke of Burgundy (as Philip I) from 1349, and Count of Auvergne and Boulogne (as Philip III) from 1360. He was the only son of Philip, heir to the Duchy of Burgundy, and Joan I, heiress of Auvergne and Boulogne."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q19254")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q19254",
+  "isRealHuman": true,
+  "birthDate": "1346-08-05",
+  "deathDate": "1361-11-21",
+  "ageAtDeath": 15,
+  "confidence": 93,
+  "confidenceExplained": "Identification is certain: this is Philip of Rouvres, Philip I, Duke of Burgundy. The integer age at death is very reliable because both main date pairs found in sources (5 Aug 1346 / 21 Nov 1361 and 13 Aug 1346 / 29 Nov 1361) produce age 15. Confidence is below 100 only because some sources disagree on the exact birth and death day, and Britannica gives only 1345 and November 1361, implying age 16.",
+  "shortDescriptionEn": "Philip of Rouvres, known as Philip I, Duke of Burgundy, inherited Burgundy, the County of Burgundy, Artois, Auvergne and Boulogne while still a child, becoming the last Capetian duke of Burgundy. During the plague-stricken autumn of 1361 he dictated his will on 11 November and died at Rouvres-en-Plaine on 21 November, probably of plague, though some later accounts mention injuries from a riding accident; he was only 15.",
+  "shortDescriptionFr": "Philippe de Rouvres, dit Philippe Ier, duc de Bourgogne, hérita enfant du duché de Bourgogne, du comté de Bourgogne, de l’Artois, de l’Auvergne et du Boulogne, devenant le dernier duc capétien de Bourgogne. Au cœur de l’automne pestilentiel de 1361, il dicta son testament le 11 novembre puis mourut à Rouvres-en-Plaine le 21 novembre, probablement de la peste, même si des récits plus tardifs évoquent une chute de cheval; il n’avait que 15 ans.",
+  "shortDescriptionDe": "Philipp von Rouvres, bekannt als Philipp I., Herzog von Burgund, erbte noch als Kind Burgund, die Grafschaft Burgund, Artois, Auvergne und Boulogne und war der letzte kapetingische Herzog von Burgund. Im von der Pest geprägten Herbst 1361 diktierte er am 11. November sein Testament und starb am 21. November in Rouvres-en-Plaine, wahrscheinlich an der Pest, auch wenn spätere Berichte einen Reitunfall nennen; er wurde nur 15 Jahre alt.",
+  "shortDescriptionEs": "Felipe de Rouvres, conocido como Felipe I, duque de Borgoña, heredó siendo niño Borgoña, el condado de Borgoña, Artois, Auvernia y Boulogne, y fue el último duque capeto de Borgoña. En el otoño de 1361, marcado por la peste, dictó su testamento el 11 de noviembre y murió en Rouvres-en-Plaine el 21 de noviembre, probablemente de peste, aunque algunos relatos posteriores hablan de un accidente a caballo; tenía solo 15 años.",
+  "shortDescriptionRu": "Филипп де Рувр, известный как Филипп I, герцог Бургундии, унаследовал Бургундию, графство Бургундию, Артуа, Овернь и Булонь ещё ребёнком и стал последним герцогом Бургундии из капетингской линии. Во время чумной осени 1361 года он продиктовал завещание 11 ноября и умер в Рувр-ан-Плен 21 ноября, вероятно от чумы, хотя в более поздних рассказах упоминается несчастный случай при верховой езде; ему было всего 15 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_I,_Duke_of_Burgundy",
+    "https://fr.wikipedia.org/wiki/Philippe_Ier_de_Bourgogne",
+    "https://www.wikidata.org/wiki/Q19254",
+    "https://www.britannica.com/biography/Philip-I-duke-of-Burgundy",
+    "https://francearchives.gouv.fr/fr/agent/18771047",
+    "https://guerre-de-cent-ans.fr/philippe-rouvres.htm",
+    "https://en.numista.com/catalogue/ruler.php?id=147",
+    "https://commons.wikimedia.org/wiki/File:Philip_I_of_Burgundy.jpg",
+    "https://commons.wikimedia.org/wiki/File:PhilippeRouvre.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Philip_I,_Duke_of_Burgundy"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q240610",  "Name": "Euphemia",  "BirthDate": "0289-01-01T00:00:00Z",  "DeathDate": "0304-09-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/St%20Euphemia.jpg",  "SiteLinksCnt": 27,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"3823589":{"pageid":3823589,"ns":0,"title":"Euphemia","extract":"Euphemia (Greek: \u0395\u1f50\u03c6\u03b7\u03bc\u03af\u03b1; 'well-spoken [of]'), known as Euphemia the All-praised in the Eastern Orthodox Church, was a virgin martyr, who died for her faith at Chalcedon in 303 AD.\nAccording to tradition, Euphemia was martyred for refusing to offer sacrifices to Ares. She was arrested and after suffering various tortures, died in the arena at Chalcedon from a wound sustained from a bear. Her tomb became a site of pilgrimages. She is commemorated on September 16."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q240610")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q240610",
+  "isRealHuman": true,
+  "birthDate": "0289-01-01",
+  "deathDate": "0304-09-16",
+  "ageAtDeath": 15,
+  "confidence": 62,
+  "confidenceExplained": "The identification as Saint Euphemia of Chalcedon is strong, but her birth date is not historically attested and even her death year varies across sources between 303 and 304. I therefore use 15 as an informed estimate based on a plausible birth year of 289 and a traditional martyrdom date in 304, which also fits the structured data you provided.",
+  "shortDescriptionEn": "Saint Euphemia of Chalcedon was an early Christian virgin martyr from Chalcedon in Bithynia, honored across Eastern and Western Christianity and later linked to the great church and council that bore her name. During Diocletian's persecution she refused to sacrifice to Ares, endured torture, and was killed in the arena, traditionally after a bear wounded her.",
+  "shortDescriptionFr": "Sainte Euphémie de Chalcédoine fut une jeune martyre chrétienne de Chalcédoine en Bithynie, vénérée en Orient comme en Occident et plus tard associée à la grande église puis au concile de Chalcédoine. Pendant la persécution de Dioclétien, elle refusa de sacrifier à Arès, subit plusieurs tortures et mourut dans l'arène, selon la tradition après avoir été blessée par un ours.",
+  "shortDescriptionDe": "Die heilige Euphemia von Chalcedon war eine frühe christliche Jungfrau und Märtyrin aus Chalcedon in Bithynien, die in der Ost- und Westkirche verehrt und später mit der berühmten Kirche sowie dem Konzil von Chalcedon verbunden wurde. Während der Verfolgungen unter Diokletian weigerte sie sich, Ares Opfer darzubringen, erlitt Folterungen und starb in der Arena, der Überlieferung nach nachdem ein Bär sie verwundet hatte.",
+  "shortDescriptionEs": "Santa Eufemia de Calcedonia fue una joven mártir cristiana de Calcedonia, en Bitinia, venerada tanto en Oriente como en Occidente y más tarde vinculada a la gran iglesia y al concilio celebrados allí. Durante la persecución de Diocleciano se negó a ofrecer sacrificios a Ares, soportó torturas y murió en la arena, tradicionalmente después de ser herida por un oso.",
+  "shortDescriptionRu": "Святая Евфимия Халкидонская была раннехристианской девой-мученицей из Халкидона в Вифинии, почитаемой и на Востоке, и на Западе, а позднее связанной со знаменитым храмом и Халкидонским собором. Во время гонений Диоклетиана она отказалась принести жертву Аресу, перенесла пытки и погибла на арене, по преданию после раны, нанесённой медведем.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Euphemia",
+    "https://www.wikidata.org/wiki/Q240610",
+    "https://csla.history.ox.ac.uk/record.php?recid=S00017",
+    "https://www.oca.org/saints/lives/2023/09/16/102626-great-martyr-euphemia-the-all-praised",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/euphemia-st",
+    "https://www.oxfordreference.com/abstract/10.1093/acref/9780195046526.001.0001/acref-9780195046526-e-1800",
+    "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_St._Euphemia_-_1454.jpg",
+    "https://commons.wikimedia.org/wiki/File:St_Euphemia.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q441429",  "Name": "Michael I Komnenos Doukas",  "BirthDate": "1200-01-01T00:00:00Z",  "DeathDate": "1215-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Seal%20of%20Michael%20Komnenos%20Doukas.png",  "SiteLinksCnt": 27,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"3169726":{"pageid":3169726,"ns":0,"title":"Michael I Komnenos Doukas","extract":"Michael I Komnenos Doukas, Latinized as Comnenus Ducas (Greek: \u039c\u03b9\u03c7\u03b1\u03ae\u03bb \u039a\u03bf\u03bc\u03bd\u03b7\u03bd\u03cc\u03c2 \u0394\u03bf\u03cd\u03ba\u03b1\u03c2, romanized: Mikha\u0113l Komn\u0113nos Doukas), and in modern sources often recorded as Michael I Angelos, a name he never used, was the founder and first ruler of the Despotate of Epirus from c.\u20091205 until his assassination in 1214/15.\nBorn c.\u20091170, Michael was a descendant of Alexios I Komnenos and a cousin of emperors Isaac II Angelos and Alexios III Angelos. He began his public career in 1190, as a hostage to the Third Crusade, and went on to serve as governor of the province of Mylasa and Melanoudion in the 1190s and again in c.\u20091200/01. During the latter tenure he rebelled against Alexios III but was defeated and forced to flee to the Seljuk Turks. In the aftermath of the sack of Constantinople by the Fourth Crusade in 1204, he attached himself to Boniface of Montferrat. Soon, however, he abandoned the Crusader leader and went to Epirus, where he established himself as ruler, apparently through marriage with the daughter or widow of a local magnate.\nMichael's domain in Epirus became a refuge and centre of resistance of the Greeks against the Latin Crusaders. At about the same time, according to some modern scholars, he may have led the abortive Greek resistance to the Crusaders in the Peloponnese, which was crushed at the Battle of the Olive Grove of Kountouras; according to other views, he may have led a campaign there between 1207 and 1209. In order to avoid invasion and buy time to consolidate his position in Epirus, Michael soon entered into negotiations with Pope Innocent III, and concluded treaties with the Latin Empire and the Republic of Venice. In the meantime, his rule received a boost in legitimacy when he ransomed the deposed Alexios III from captivity. According to later chroniclers, Alexios III conferred the hereditary rule of Epirus to Michael and his descendants.\nBy 1210, Michael was secure enough to launch an attack against the Latin Kingdom of Thessalonica, in conjunction with the Bulgarians. Repelled by the intervention of the Latin Emperor Henry of Flanders, Michael quickly switched sides and joined the Latins to prevent the city from falling into Bulgarian hands. In 1212, he conquered most of Thessaly from the Lombard lords of Thessalonica. At about the same time, his troops briefly took over the Lordship of Salona. He then went on to recover Dyrrhachium and the island of Corfu from the Venetians in 1213\u20131214, but was thwarted in his attempt to push further north into Zeta. He was assassinated soon after in his sleep, and was succeeded by his half-brother Theodore Komnenos Doukas."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q441429")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q441429",
+  "isRealHuman": true,
+  "birthDate": "1170-01-01",
+  "deathDate": "1215-01-01",
+  "ageAtDeath": 45,
+  "confidence": 62,
+  "confidenceExplained": "The person is securely identified as Michael I Komnenos Doukas. However, his birth is only estimated at about 1170, and his death is given as late 1214 or 1215. That means the exact age cannot be known precisely; 45 is the best single-number estimate from the conventional 1170–1215 dating, but 44 is also plausible.",
+  "shortDescriptionEn": "Michael I Komnenos Doukas was a Byzantine Greek nobleman who founded the Despotate of Epirus after the Fourth Crusade, turning it into a strong Greek successor state and a refuge for resistance to Latin rule. A skilled survivor in a fractured empire, he expanded his power through war and diplomacy before being assassinated in his sleep in 1214 or 1215, probably at Velegrada, by a servant named Rhomaios.",
+  "shortDescriptionFr": "Michel Ier Comnène Doukas était un noble byzantin grec et le fondateur du despotat d’Épire après la quatrième croisade, qu’il transforma en puissant État grec de succession et en refuge contre la domination latine. Habile chef dans un empire brisé, il étendit son pouvoir par la guerre et la diplomatie avant d’être assassiné dans son sommeil en 1214 ou 1215, probablement à Velegrada, par un serviteur nommé Rhomaios.",
+  "shortDescriptionDe": "Michael I. Komnenos Doukas war ein byzantinisch-griechischer Adliger und der Gründer des Despotats Epirus nach dem Vierten Kreuzzug, das er zu einem starken griechischen Nachfolgestaat und Zufluchtsort des Widerstands gegen die lateinische Herrschaft machte. In einer zersplitterten Welt gewann er mit Krieg und Diplomatie an Macht, bevor er 1214 oder 1215, wahrscheinlich in Velegrada, im Schlaf von einem Diener namens Rhomaios ermordet wurde.",
+  "shortDescriptionEs": "Miguel I Comneno Ducas fue un noble bizantino griego y el fundador del Despotado de Epiro tras la Cuarta Cruzada, que convirtió en un sólido estado griego sucesor y en refugio de la resistencia frente al dominio latino. Hábil en la guerra y la diplomacia, amplió su poder antes de ser asesinado mientras dormía en 1214 o 1215, probablemente en Velegrada, por un sirviente llamado Rhomaios.",
+  "shortDescriptionRu": "Михаил I Комнин Дука был византийским греческим аристократом и основателем Эпирского деспотата после Четвёртого крестового похода, превратив его в сильное греческое государство-преемник и убежище сопротивления латинскому владычеству. Он укрепил и расширил свою власть войной и дипломатией, но в 1214 или 1215 году был убит во сне, вероятно в Велеграде, слугой по имени Ромайос.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Michael_I_Komnenos_Doukas",
+    "https://www.britannica.com/biography/Michael-Angelus-Ducas-Comnenus",
+    "https://commons.wikimedia.org/wiki/File:Seal_of_Michael_Komnenos_Doukas.png",
+    "https://commons.wikimedia.org/wiki/File:Michael_I_of_Epirus_seal.png",
+    "https://commons.wikimedia.org/wiki/File:Berat_-_Festung_1b_Zwinger_Monogramm_Michael_Komnenos.jpg",
+    "https://www.worldhistory.org/image/12564/michael-i-komnenos-doukas/",
+    "https://www.ngccoin.com/news/article/8668/silver-aspron-trachy-Michael-I/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q465593",  "Name": "Kiến Phúc",  "BirthDate": "1869-02-12T00:00:00Z",  "DeathDate": "1884-07-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kien%20Phuc.jpg",  "SiteLinksCnt": 25,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"1531220":{"pageid":1531220,"ns":0,"title":"Ki\u1ebfn Ph\u00fac","extract":"Ki\u1ebfn Ph\u00fac (Hanoi: [ki\u0259n\u02e7\u02e6 f\u028awk\u0361p\u031a\u02e7\u02e6], 12 February 1869 \u2013 31 July 1884) was a child emperor of Vietnam, who reigned for less than 8 months, 1883\u20131884, as the 7th emperor of the Nguy\u1ec5n dynasty."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q465593")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q465593",
+  "isRealHuman": true,
+  "birthDate": "1869-02-12",
+  "deathDate": "1884-07-31",
+  "ageAtDeath": 15,
+  "confidence": 97,
+  "confidenceExplained": "The birth and death dates are consistent across English Wikipedia, Vietnamese Wikipedia, and Vietnamese museum/history sources. The age calculation is straightforward because Kiến Phúc died after his birthday in 1884, so the correct integer age is 15. Confidence is slightly below 100 because the exact cause of death is debated, but that does not materially affect the age calculation.",
+  "shortDescriptionEn": "Kiến Phúc, born Nguyễn Phúc Ưng Đăng, was the seventh emperor of Vietnam’s Nguyễn dynasty, elevated to the throne in 1883 as the adopted heir of Tự Đức during a violent court crisis and growing French domination. His reign lasted less than eight months; he died in Huế at just 15, officially after illness, though later accounts kept alive rumors that he had been poisoned.",
+  "shortDescriptionFr": "Kiến Phúc, né Nguyễn Phúc Ưng Đăng, fut le septième empereur de la dynastie Nguyễn au Vietnam, porté sur le trône en 1883 comme héritier adoptif de Tự Đức dans un contexte de crise de cour et de pression française croissante. Son règne dura moins de huit mois ; il mourut à Huế à seulement 15 ans, officiellement après une maladie, même si des rumeurs d’empoisonnement ont perduré.",
+  "shortDescriptionDe": "Kiến Phúc, geboren als Nguyễn Phúc Ưng Đăng, war der siebte Kaiser der vietnamesischen Nguyễn-Dynastie und wurde 1883 als adoptierter Erbe Tự Đứcs in einer Zeit von Hofintrigen und wachsendem französischem Einfluss auf den Thron gesetzt. Seine Herrschaft dauerte weniger als acht Monate; er starb in Huế mit nur 15 Jahren, offiziell nach einer Krankheit, doch später hielten sich hartnäckige Vergiftungsgerüchte.",
+  "shortDescriptionEs": "Kiến Phúc, nacido como Nguyễn Phúc Ưng Đăng, fue el séptimo emperador de la dinastía Nguyễn de Vietnam, elevado al trono en 1883 como heredero adoptivo de Tự Đức en medio de una crisis cortesana y de la creciente presión francesa. Su reinado duró menos de ocho meses; murió en Huế con solo 15 años, oficialmente por enfermedad, aunque después circularon persistentes rumores de envenenamiento.",
+  "shortDescriptionRu": "Киен Фук, родившийся как Нгуен Фук Ынг Данг, был седьмым императором вьетнамской династии Нгуен и взошёл на престол в 1883 году как приёмный наследник Ты Дыка в период придворного кризиса и усиления французского влияния. Его правление длилось меньше восьми месяцев; он умер в Хюэ всего в 15 лет, официально после болезни, хотя позднее упорно ходили слухи об отравлении.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ki%E1%BA%BFn_Ph%C3%BAc",
+    "https://vi.wikipedia.org/wiki/Ki%E1%BA%BFn_Ph%C3%BAc",
+    "https://commons.wikimedia.org/wiki/File:Kien_Phuc.jpg",
+    "https://baotanglichsu.vn/vi/Articles/3098/15477/cai-chet-bi-an-cua-vua-kien-phuc.html",
+    "https://dohungmuseum.com/en/kings-kien-phuc-thanh-thai-duy-tan/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q700564",  "Name": "Archduke Charles Joseph of Austria",  "BirthDate": "1745-02-01T00:00:00Z",  "DeathDate": "1761-01-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20van%20Meytens%20003.jpg",  "SiteLinksCnt": 25,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"24328802":{"pageid":24328802,"ns":0,"title":"Archduke Charles Joseph of Austria (born 1745)","extract":"Archduke Charles Joseph of Austria (Carl Josef Emanuel Johann Nepomuk Anton Prokop; 1 February 1745 \u2013 18 January 1761) was the second son and seventh child of the Habsburg ruler Empress Maria Theresa and her husband, Francis I, Holy Roman Emperor."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q700564")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q700564",
+  "isRealHuman": true,
+  "birthDate": "1745-02-01",
+  "deathDate": "1761-01-18",
+  "ageAtDeath": 15,
+  "confidence": 99,
+  "confidenceExplained": "There is a same-named Habsburg archduke from 1649–1664, but Wikidata Q700564, the supplied birth/death dates, and the English and German Wikipedia entries all point unambiguously to the 1745–1761 son of Maria Theresa. Because both dates are exact, the age at death is directly calculable as 15.",
+  "shortDescriptionEn": "Archduke Charles Joseph of Austria was the second son of Empress Maria Theresa and Francis I, Holy Roman Emperor, a gifted and charismatic Habsburg prince whose closeness to his parents and rivalry with his elder brother Joseph II gave him notable dynastic importance despite his short life. He died of smallpox at Schönbrunn Palace in Vienna on 18 January 1761, only 15 years old and just two weeks short of his sixteenth birthday, a loss that deeply shook the imperial family and altered the Habsburg line of succession.",
+  "shortDescriptionFr": "L'archiduc Charles-Joseph d'Autriche était le deuxième fils de l'impératrice Marie-Thérèse et de François Ier, un prince habsbourgeois brillant et charmant dont la faveur auprès de ses parents et la rivalité avec son frère aîné Joseph II lui donnèrent une place particulière dans la dynastie malgré sa courte vie. Il mourut de la variole au palais de Schönbrunn à Vienne le 18 janvier 1761, à 15 ans, deux semaines avant ses seize ans, et sa disparition bouleversa la famille impériale tout en modifiant la succession des Habsbourg.",
+  "shortDescriptionDe": "Erzherzog Karl Joseph von Österreich war der zweite Sohn Maria Theresias und Franz Stephans, ein begabter und charmanter Habsburgerprinz, der als Lieblingssohn seiner Eltern und als Rivale seines älteren Bruders Joseph II. dynastische Bedeutung gewann. Er starb am 18. Januar 1761 im Schloss Schönbrunn in Wien an den Pocken, nur 15 Jahre alt und knapp zwei Wochen vor seinem 16. Geburtstag; sein früher Tod traf die Kaiserfamilie schwer und veränderte die habsburgische Erbfolge.",
+  "shortDescriptionEs": "El archiduque Carlos José de Austria fue el segundo hijo de la emperatriz María Teresa y de Francisco I, un príncipe Habsburgo inteligente y carismático cuya cercanía con sus padres y rivalidad con su hermano mayor José II le dieron un peso dinástico notable pese a su vida breve. Murió de viruela en el palacio de Schönbrunn de Viena el 18 de enero de 1761, con 15 años y a solo dos semanas de cumplir 16, y su muerte sacudió a la familia imperial y cambió la línea sucesoria de los Habsburgo.",
+  "shortDescriptionRu": "Эрцгерцог Карл Иосиф Австрийский был вторым сыном императрицы Марии Терезии и Франца I, одарённым и обаятельным принцем дома Габсбургов, чьё положение любимого сына и соперничество со старшим братом Иосифом II придавали ему заметное династическое значение. Он умер от оспы в Шёнбрунне в Вене 18 января 1761 года в возрасте 15 лет, всего за две недели до шестнадцатилетия, и эта ранняя смерть тяжело ударила по императорской семье и изменила порядок наследования у Габсбургов.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Archduke_Charles_Joseph_of_Austria_(born_1745)",
+    "https://www.wikidata.org/wiki/Q700564",
+    "https://de.wikipedia.org/wiki/Karl_Joseph_von_%C3%96sterreich_(1745%E2%80%931761)",
+    "https://www.habsburger.net/en/chapter/maria-theresas-children",
+    "https://commons.wikimedia.org/wiki/Category:Archduke_Karl_Joseph_of_Austria",
+    "https://commons.wikimedia.org/wiki/File:Archduke_Karl_Joseph_(1745%E2%80%931761).jpg",
+    "https://commons.wikimedia.org/wiki/File:Karl_Joseph_of_Austria,_miniature_-_Hofburg.png"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q893453",  "Name": "Unsinkable Sam",  "BirthDate": "1940-01-01T00:00:00Z",  "DeathDate": "1955-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Oscar%2C%20cat%20from%20the%20German%20ship%20%27Bismarck%27.jpg",  "SiteLinksCnt": 25,  "Age": 15}
+{"batchcomplete":"","query":{"pages":{"15452099":{"pageid":15452099,"ns":0,"title":"Unsinkable Sam","extract":"Oscar (known by his nickname, Unsinkable Sam, or by the Germanized spelling of his name, Oskar) was a ship's cat who purportedly served during World War II with both the Kriegsmarine and the Royal Navy and survived the sinking of three ships in 1941 \u2013 the German battleship Bismarck, and then the British destroyer HMS Cossack and aircraft carrier HMS Ark Royal. While contemporary reports of the story were widely publicised in 1941 after the sinking of Ark Royal, including photographs of Oscar, there is no firm evidence to link the cat to Bismarck or Cossack."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q893453")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q893453",
+  "isRealHuman": false,
+  "birthDate": "1940-06-30",
+  "deathDate": "1955-06-30",
+  "ageAtDeath": 15,
+  "confidence": 60,
+  "confidenceExplained": "Identification is strong: Q893453 is Oscar/Oskar, nicknamed Unsinkable Sam, a ship's cat rather than a human. The death year 1955 is repeated by Wikipedia and Royal Museums Greenwich, and a newspaper-based WartimeNI article describes Oscar as a 1-year-old cat in 1941, supporting an estimated 1940 birth year. Exact birth and death dates are not documented, and some parts of the wartime story are disputed, so the day and month are midpoint estimates and the age 15 should be treated as a best estimate, not a proven exact number.",
+  "shortDescriptionEn": "Oscar, better known as Unsinkable Sam, was the black-and-white ship's cat associated with the Bismarck, HMS Cossack, and HMS Ark Royal during World War II. Publicized in 1941 after surviving a series of wartime sinkings and later retired to Gibraltar and then a sailors' home in Belfast, he became one of the best-known animal mascots of the war. Parts of his early story remain disputed, but his fame endured through press reports and a portrait preserved at the National Maritime Museum. After years ashore, he died of natural causes in Belfast in 1955, ending an extraordinary maritime life in quiet retirement.",
+  "shortDescriptionFr": "Oscar, plus connu sous le surnom d'Unsinkable Sam, était le chat de bord noir et blanc associé au Bismarck, au HMS Cossack et au HMS Ark Royal pendant la Seconde Guerre mondiale. Rendu célèbre en 1941 après avoir survécu à plusieurs naufrages, puis retiré du service à Gibraltar avant d'être installé dans un foyer de marins à Belfast, il devint l'un des animaux mascottes les plus célèbres de la guerre. Une partie de ses premiers exploits reste discutée, mais sa renommée fut entretenue par la presse et par un portrait conservé au National Maritime Museum. Il mourut de causes naturelles à Belfast en 1955, après une fin de vie paisible loin de la mer.",
+  "shortDescriptionDe": "Oskar, besser bekannt als Unsinkable Sam, war der schwarz-weiße Schiffskater, der im Zweiten Weltkrieg mit der Bismarck, der HMS Cossack und der HMS Ark Royal in Verbindung gebracht wurde. 1941 wurde er berühmt, nachdem er mehrere Schiffsuntergänge überlebt hatte; anschließend kam er erst nach Gibraltar und später in ein Seemannsheim in Belfast, wo er zu einem der bekanntesten Tiermaskottchen des Krieges wurde. Teile seiner frühen Geschichte sind umstritten, doch Zeitungsberichte und ein heute im National Maritime Museum bewahrtes Porträt hielten seinen Ruhm lebendig. 1955 starb er in Belfast eines natürlichen Todes und beendete ein außergewöhnlich gefährliches Leben in ruhigem Ruhestand.",
+  "shortDescriptionEs": "Oscar, más conocido como Unsinkable Sam, fue el gato de barco blanco y negro vinculado al Bismarck, al HMS Cossack y al HMS Ark Royal durante la Segunda Guerra Mundial. Se hizo famoso en 1941 tras sobrevivir a varios hundimientos y, después de ser retirado del mar y pasar por Gibraltar, terminó viviendo en un hogar para marineros en Belfast, donde se convirtió en uno de los animales más célebres del conflicto. Parte de su historia temprana sigue siendo discutida, pero la prensa y un retrato conservado en el National Maritime Museum mantuvieron viva su fama. Murió de causas naturales en Belfast en 1955, cerrando en tierra una vida marcada por los naufragios.",
+  "shortDescriptionRu": "Оскар, более известный как Непотопляемый Сэм, — чёрно-белый корабельный кот, которого связывают с «Бисмарком», HMS Cossack и HMS Ark Royal во время Второй мировой войны. Он прославился в 1941 году после того, как пережил несколько кораблекрушений, а затем был списан на берег, жил в Гибралтаре и позже в доме для моряков в Белфасте, став одним из самых известных животных-талисманов войны. Часть его ранней биографии остаётся спорной, но газетные публикации и портрет, хранящийся в National Maritime Museum, сохранили его известность. В 1955 году он умер в Белфасте естественной смертью, завершив поразительную морскую историю тихой жизнью на суше.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Unsinkable_Sam",
+    "https://www.rmg.co.uk/collections/objects/rmgc-object-203480",
+    "https://archives.wartimeni.com/article/oscar-the-luckiest-cat-in-wartime-northern-ireland/",
+    "https://www.wikidata.org/wiki/Q893453",
+    "https://commons.wikimedia.org/wiki/File:Oscar%2C_cat_from_the_German_ship_%27Bismarck%27.jpg"
+  ]
+}
