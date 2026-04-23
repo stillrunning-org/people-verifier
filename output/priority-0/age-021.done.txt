@@ -1,0 +1,999 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7723",  "Name": "Napoleon II",  "BirthDate": "1811-03-20T00:00:00Z",  "DeathDate": "1832-07-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Moritz%20Daffinger%20-%20Der%20Herzog%20von%20Reichstadt%20-%202085%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg",  "SiteLinksCnt": 77,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"62116":{"pageid":62116,"ns":0,"title":"Napoleon II","extract":"Napoleon II (Napol\u00e9on Fran\u00e7ois Charles Joseph Bonaparte; 20 March 1811 \u2013 22 July 1832) was the disputed Emperor of the French for 2 days in 1815. He was the son of Emperor Napoleon I and Empress Marie Louise, daughter of Emperor Francis I of Austria.\nNapoleon II had been Prince Imperial of France and King of Rome since birth. After the fall of his father, he lived the rest of his life in Vienna and was known in the Austrian court as Franz, Duke of Reichstadt for his adult life (from the German version of his second given name, along with a title his grandfather granted him in 1818).  He was posthumously given the nickname L'Aiglon (\"the Eaglet\").\nWhen Napoleon I tried to abdicate on 4 April 1814, he said that his son would rule as emperor. However, the coalition victors refused to acknowledge his son as successor, and Napoleon I was forced to abdicate unconditionally some days later. Although Napoleon II never actually ruled France, he was briefly the titular Emperor of the French after the second fall of his father. He died of tuberculosis at the age of 21.\nHis cousin, Louis-Napol\u00e9on Bonaparte, founded the Second French Empire in 1852 and ruled as Emperor Napoleon III. He was also the maternal great-great-grandson of Empress Maria Theresa, Empress of Habsburg Dominions and Francis I, Holy Roman Emperor and great-grandson of Maria Carolina of Austria, Queen of Naples and Sicily."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7723")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7723",
+  "isRealHuman": true,
+  "birthDate": "1811-03-20",
+  "deathDate": "1832-07-22",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "Birth and death dates are consistently given as 1811-03-20 and 1832-07-22 by multiple high-quality sources, including Wikipedia, Britannica, Fondation Napoleon, and Schoenbrunn Palace. The age at death is therefore an exact calendar calculation: 21 years.",
+  "shortDescriptionEn": "Napoleon II, born Napoléon François Charles Joseph Bonaparte, was the only legitimate son of Napoleon I and Marie Louise of Austria, styled King of Rome at birth and briefly recognized by Bonapartists as Emperor of the French in 1815 before spending most of his life in Vienna as the Duke of Reichstadt. Frail and politically sidelined, he died of tuberculosis at Schönbrunn Palace on 22 July 1832, aged 21, after months of declining health.",
+  "shortDescriptionFr": "Napoléon II, né Napoléon François Charles Joseph Bonaparte, fut le fils unique légitime de Napoléon Ier et de Marie-Louise d’Autriche, titré roi de Rome à sa naissance et brièvement revendiqué comme empereur des Français en 1815 avant de vivre surtout à Vienne sous le nom de duc de Reichstadt. Affaibli et tenu à l’écart du pouvoir, il mourut de la tuberculose au palais de Schönbrunn le 22 juillet 1832, à 21 ans, après plusieurs mois de déclin.",
+  "shortDescriptionDe": "Napoleon II., geboren als Napoléon François Charles Joseph Bonaparte, war der einzige eheliche Sohn Napoleons I. und Marie-Louises von Österreich, bei seiner Geburt König von Rom und 1815 für kurze Zeit von Bonapartisten als Kaiser der Franzosen angesehen, bevor er den größten Teil seines Lebens in Wien als Herzog von Reichstadt verbrachte. Krank und politisch ausgeschaltet starb er am 22. Juli 1832 im Schloss Schönbrunn an Tuberkulose, 21 Jahre alt, nach Monaten schwindender Gesundheit.",
+  "shortDescriptionEs": "Napoleón II, nacido Napoléon François Charles Joseph Bonaparte, fue el único hijo legítimo de Napoleón I y María Luisa de Austria, nombrado Rey de Roma al nacer y brevemente reclamado por los bonapartistas como emperador de los franceses en 1815, antes de pasar casi toda su vida en Viena como duque de Reichstadt. Débil de salud y apartado de la política, murió de tuberculosis en el palacio de Schönbrunn el 22 de julio de 1832, a los 21 años, tras meses de deterioro.",
+  "shortDescriptionRu": "Наполеон II, урождённый Наполеон Франсуа Шарль Жозеф Бонапарт, был единственным законным сыном Наполеона I и Марии-Луизы Австрийской, с рождения носил титул короля Рима и в 1815 году недолго считался бонапартистами императором французов, а затем провёл почти всю жизнь в Вене как герцог Рейхштадтский. Болезненный и отстранённый от политики, он умер от туберкулёза во дворце Шёнбрунн 22 июля 1832 года в возрасте 21 года после нескольких месяцев ухудшения здоровья.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Napoleon_II",
+    "https://www.britannica.com/biography/Napoleon-Francois-Charles-Joseph-Bonaparte-Herzog-von-Reichstadt",
+    "https://www.napoleon.org/en/history-of-the-two-empires/biographies/napoleon-ii/",
+    "https://www.schoenbrunn.at/en/about-schoenbrunn/the-palace/tour-of-the-palace/napoleon-room",
+    "https://www.wikidata.org/wiki/Q7723"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47878",  "Name": "Sid Vicious",  "BirthDate": "1957-05-10T00:00:00Z",  "DeathDate": "1979-02-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sid%20Vicious%201978%20%28cropped%29.jpg",  "SiteLinksCnt": 75,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"158287":{"pageid":158287,"ns":0,"title":"Sid Vicious","extract":"John Simon Ritchie (10 May 1957 \u2013 2 February 1979), better known by his stage name Sid Vicious, was an English musician, best known as the second bassist for the punk rock band Sex Pistols. After his death in 1979 at the age of 21, he remained an icon of the punk subculture; one of his friends noted that he embodied \"everything in punk that was dark, decadent and nihilistic\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47878")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q47878",
+  "isRealHuman": true,
+  "birthDate": "1957-05-10",
+  "deathDate": "1979-02-02",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "The identification is very strong because the provided Wikidata ID, Wikipedia entry, Britannica biography, and the Sex Pistols' official biography all point to the same person and the same birth/death dates. Calculating from 1957-05-10 to 1979-02-02 gives 21 full years.",
+  "shortDescriptionEn": "Sid Vicious, born John Simon Ritchie, was the snarling face of British punk and the bassist most associated with the Sex Pistols, becoming one of the defining symbols of late-1970s rebellion despite his brief, chaotic career. After the breakup of the band and the turmoil surrounding Nancy Spungen's death, he died of a heroin overdose in New York in 1979, aged 21.",
+  "shortDescriptionFr": "Sid Vicious, né John Simon Ritchie, fut le visage rageur du punk britannique et le bassiste emblématique des Sex Pistols, devenu en très peu de temps l’un des grands symboles de la rébellion rock de la fin des années 1970. Après la séparation du groupe et dans le climat tragique qui suivit la mort de Nancy Spungen, il mourut d’une overdose d’héroïne à New York en 1979, à 21 ans.",
+  "shortDescriptionDe": "Sid Vicious, geboren als John Simon Ritchie, war das wilde Aushängeschild des britischen Punk und der Bassist, mit dem die Sex Pistols bis heute am stärksten verbunden werden; trotz seiner kurzen Karriere wurde er zu einer Schlüsselfigur der späten 1970er. Nach dem Zerfall der Band und den Wirren um den Tod von Nancy Spungen starb er 1979 in New York an einer Heroin-Überdosis, im Alter von 21 Jahren.",
+  "shortDescriptionEs": "Sid Vicious, nacido John Simon Ritchie, fue el rostro más feroz del punk británico y el bajista más asociado con los Sex Pistols, convertido en un símbolo duradero de la rebeldía musical de finales de los años setenta pese a una carrera brevísima. Tras la ruptura del grupo y en medio del caso por la muerte de Nancy Spungen, murió de una sobredosis de heroína en Nueva York en 1979, con 21 años.",
+  "shortDescriptionRu": "Сид Вишес, урождённый Джон Саймон Ричи, стал самым узнаваемым лицом британского панка и басистом, с которым прежде всего связывают Sex Pistols; несмотря на очень короткую карьеру, он превратился в символ бунтарской культуры конца 1970-х. После распада группы и на фоне трагедии вокруг смерти Нэнси Спанджен он умер от передозировки героина в Нью-Йорке в 1979 году, в возрасте 21 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sid_Vicious",
+    "https://www.britannica.com/biography/Sid-Vicious",
+    "https://www.sexpistolsofficial.com/bio/sid-vicious/",
+    "https://www.history.com/this-day-in-history/february-2/sid-vicious-dies-of-a-drug-overdose-in-new-york-city",
+    "https://www.theguardian.com/culture/1979/feb/03/artsfeatures"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76972",  "Name": "Sophie Scholl",  "BirthDate": "1921-05-09T00:00:00Z",  "DeathDate": "1943-02-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gestapo%20photo%20of%20Sophie%20Scholl%20taken%20after%20her%20capture%20on%20February%2018%2C%201943-2.jpg",  "SiteLinksCnt": 75,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"240876":{"pageid":240876,"ns":0,"title":"Sophie Scholl","extract":"Sophia Magdalena Scholl (9 May 1921 \u2013 22 February 1943) was a German student and anti-Nazi political activist, active in the White Rose non-violent resistance group in Nazi Germany. \nRaised in a politically engaged family, Scholl initially joined the Bund Deutscher M\u00e4del, the female branch of the Hitler Youth, but later became critical of the Nazi regime. Influenced by philosophy, theology, and the writings of Theodor Haecker, she became involved in passive resistance efforts alongside her brother, Hans, and fellow students. The White Rose distributed leaflets calling for opposition to the Nazi state, citing ethical and philosophical arguments against its policies. In February 1943, after being caught distributing leaflets at LMU Munich, she and her brother Hans were arrested by the Gestapo, interrogated, and convicted of high treason in a show trial presided over by Roland Freisler. They were sentenced to death and executed by guillotine.\nAfter her death, copies of the final White Rose leaflet were air-dropped over Germany by the Allies. In the decades following her death, numerous schools, streets, and memorials have been named in her and her brother's honor for their role in anti-Nazi resistance. Her story has been depicted in several films, books, and other media, including the Oscar nominated film Sophie Scholl \u2013 The Final Days."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76972")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q76972",
+  "isRealHuman": true,
+  "birthDate": "1921-05-09",
+  "deathDate": "1943-02-22",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "Very high confidence: multiple independent sources agree on the exact birth date (1921-05-09) and death date (1943-02-22). The age-at-death calculation is direct and unambiguous because she died before her 22nd birthday.",
+  "shortDescriptionEn": "Sophie Scholl was a German student and anti-Nazi activist of the White Rose resistance group, known for helping write and distribute leaflets urging moral and political opposition to Hitler's regime. Arrested at Ludwig Maximilian University Munich after scattering leaflets with her brother Hans, she was tried for high treason and executed by guillotine in Munich on 22 February 1943 at age 21.",
+  "shortDescriptionFr": "Sophie Scholl était une étudiante allemande et une militante antinazie de la Rose blanche, connue pour avoir aidé à rédiger et diffuser des tracts appelant à une opposition morale et politique au régime hitlérien. Arrêtée à l'université Louis-et-Maximilien de Munich après avoir lancé des tracts avec son frère Hans, elle fut jugée pour haute trahison et exécutée par guillotine à Munich le 22 février 1943, à l'âge de 21 ans.",
+  "shortDescriptionDe": "Sophie Scholl war eine deutsche Studentin und Widerstandskämpferin der Weißen Rose, bekannt dafür, gemeinsam mit anderen Flugblätter gegen das NS-Regime zu verfassen und zu verbreiten. Nachdem sie mit ihrem Bruder Hans an der LMU München beim Verteilen von Flugblättern entdeckt worden war, wurde sie wegen Hochverrats vor Gericht gestellt und am 22. Februar 1943 im Alter von 21 Jahren in München mit der Guillotine hingerichtet.",
+  "shortDescriptionEs": "Sophie Scholl fue una estudiante alemana y activista antinazi de la Rosa Blanca, conocida por ayudar a redactar y distribuir panfletos que pedían una oposición moral y política al régimen de Hitler. Fue arrestada en la Universidad Ludwig Maximilian de Múnich tras lanzar panfletos junto a su hermano Hans, juzgada por alta traición y ejecutada en la guillotina en Múnich el 22 de febrero de 1943 a los 21 años.",
+  "shortDescriptionRu": "Софи Шолль была немецкой студенткой и антинацистской активисткой группы «Белая роза», известной тем, что участвовала в написании и распространении листовок с призывом к моральному и политическому сопротивлению режиму Гитлера. После того как её вместе с братом Гансом задержали в Мюнхенском университете при распространении листовок, её судили за государственную измену и 22 февраля 1943 года казнили на гильотине в Мюнхене в возрасте 21 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sophie_Scholl",
+    "https://www.britannica.com/biography/Sophie-Scholl",
+    "https://www.gdw-berlin.de/en/recess/biographies/index_of_persons/biographie/view-bio/sophie-scholl/?no_cache=1",
+    "https://www.nationalww2museum.org/war/articles/sophie-scholl-and-white-rose",
+    "https://www.weisse-rose-stiftung.de/white-rose-resistance-group/",
+    "https://www.lmu.de/en/about-lmu/lmu-at-a-glance/history/contexts/1942-43-the-white-rose-resistance-group/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183240",  "Name": "Saint Lucy",  "BirthDate": "0283-01-01T00:00:00Z",  "DeathDate": "0304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Francisco%20de%20Zurbar%C3%A1n%20045.jpg",  "SiteLinksCnt": 69,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"294501":{"pageid":294501,"ns":0,"title":"Saint Lucy","extract":"Lucia of Syracuse (c.\u2009283 \u2013 304 AD), also called Santa Lucia (Latin: Sancta Lucia) and better known as Saint Lucy, was a Roman Christian martyr who died during the Diocletianic Persecution. She is venerated as a saint in Catholic, Anglican, Lutheran, Eastern Orthodox and Oriental Orthodox Christianity. She is one of eight women (including the Virgin Mary) explicitly commemorated by Catholics in the Canon of the Mass. Her traditional feast day, known in Europe as Saint Lucy's Day, is observed by Western Christians on 13 December. Lucia of Syracuse was honored in the Middle Ages and remained a well-known saint in early modern England. She is one of the best known virgin martyrs, along with Agatha of Sicily, Agnes of Rome, Cecilia of Rome, and Catherine of Alexandria."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183240")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q183240",
+  "isRealHuman": true,
+  "birthDate": "0283-01-01",
+  "deathDate": "0304-12-13",
+  "ageAtDeath": 21,
+  "confidence": 62,
+  "confidenceExplained": "The identification is strong: this is Lucia of Syracuse (Saint Lucy), a Christian martyr traditionally said to have died in Syracuse in 304. The age is only moderately certain because her birth year is usually given as circa 283 and her exact birth day is unknown. I estimated the death date as 13 December based on her traditional feast day and calculated the most likely completed age as 21.",
+  "shortDescriptionEn": "Saint Lucy, or Lucia of Syracuse, was an early fourth-century Christian martyr from Roman Sicily whose cult spread widely across Europe, making her one of the best-known virgin saints and a figure long associated with light and the protection of sight. Tradition says that after refusing a pagan marriage and giving her wealth to the poor, she was denounced as a Christian and executed in Syracuse during Diocletian’s persecution in 304.",
+  "shortDescriptionFr": "Sainte Lucie, ou Lucia de Syracuse, fut une martyre chrétienne du début du IVe siècle originaire de la Sicile romaine, dont le culte se diffusa largement en Europe et fit d’elle l’une des vierges saintes les plus célèbres, associée à la lumière et à la protection de la vue. Selon la tradition, après avoir refusé un mariage païen et distribué ses biens aux pauvres, elle fut dénoncée comme chrétienne puis exécutée à Syracuse pendant la persécution de Dioclétien en 304.",
+  "shortDescriptionDe": "Die heilige Lucia von Syrakus war eine christliche Märtyrerin des frühen 4. Jahrhunderts aus dem römischen Sizilien, deren Verehrung sich weit über Europa verbreitete und sie zu einer der bekanntesten jungfräulichen Heiligen machte, besonders verbunden mit Licht und dem Schutz der Augen. Der Überlieferung nach verweigerte sie eine heidnische Ehe, verschenkte ihren Besitz an die Armen und wurde daraufhin als Christin angezeigt und 304 in Syrakus während der diokletianischen Verfolgung hingerichtet.",
+  "shortDescriptionEs": "Santa Lucía, o Lucía de Siracusa, fue una mártir cristiana de comienzos del siglo IV nacida en la Sicilia romana, cuyo culto se extendió ampliamente por Europa y la convirtió en una de las santas vírgenes más conocidas, vinculada durante siglos con la luz y la protección de la vista. Según la tradición, tras rechazar un matrimonio pagano y repartir su fortuna entre los pobres, fue denunciada como cristiana y ejecutada en Siracusa durante la persecución de Diocleciano en 304.",
+  "shortDescriptionRu": "Святая Лючия, или Люсия Сиракузская, была христианской мученицей начала IV века из римской Сицилии; её почитание широко распространилось по Европе, и она стала одной из самых известных дев-мучениц, традиционно связанной со светом и защитой зрения. По преданию, после отказа от языческого брака и раздачи имущества бедным её донесли как на христианку, и в 304 году она была казнена в Сиракузах во время гонений Диоклетиана.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Lucy",
+    "https://www.britannica.com/biography/Saint-Lucy",
+    "https://www.newadvent.org/cathen/09414a.htm",
+    "https://www.catholicculture.org/culture/liturgicalyear/calendar/day.cfm?date=2016-12-13",
+    "https://catecheticalcentre.org/wp-content/uploads/2021/12/Lucy-1-1.pdf"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44200",  "Name": "Billy the Kid",  "BirthDate": "1859-09-17T00:00:00Z",  "DeathDate": "1881-07-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Billy%20the%20Kid%20corrected.jpg",  "SiteLinksCnt": 66,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"151855":{"pageid":151855,"ns":0,"title":"Billy the Kid","extract":"Henry McCarty (September 17 or November 23, 1859 \u2013 July 14, 1881), alias William H. Bonney, better known as Billy the Kid, was an American outlaw and gunfighter of the Old West who was linked to nine murders. He was solely responsible for four of them, and he may have played a role in five, alongside other men. He is also noted for his involvement in New Mexico's Lincoln County War.\nMcCarty was orphaned at the age of 15. His first arrest was for stealing food at the age of 16 in 1875. Ten days later, he robbed a Chinese laundry and was arrested again, but escaped shortly afterwards. He fled from New Mexico Territory into neighboring Arizona Territory, making himself both an outlaw and a federal fugitive. In 1877, he began to call himself \"William H. Bonney.\"\nAfter killing a blacksmith during an altercation in August 1877, Bonney became a wanted man in Arizona and returned to New Mexico, where he joined a group of cattle rustlers. He became well known in the region when he joined the Regulators and took part in the Lincoln County War of 1878. He and two other Regulators were later charged with killing three men, including Lincoln County Sheriff William J. Brady and one of his deputies.\nBonney's notoriety grew in December 1880 when the Las Vegas Gazette, in Las Vegas, New Mexico, and The Sun, in New York City, carried stories about his crimes. Sheriff Pat Garrett captured Bonney later that month. In April 1881, Bonney was tried for and convicted of Brady's murder and was sentenced to hang in May of that year. He escaped from jail on April 28, killing two sheriff's deputies in the process, and evaded capture for more than two months. Garrett shot and killed Bonney, by then aged 21, in Fort Sumner on July 14, 1881. During his short career as an outlaw, Bonney was the subject of numerous U.S. newspaper articles, some as far away as New York.\nDuring the decades following his death, stories spread that Bonney had survived, and a number of men claimed to be him. The legend of Billy the Kid endures in American culture, and he remains one of the most notorious figures from the era, whose life and likeness have been frequently dramatized in the Western genre. More than 50 films and several broadcast programs have featured Billy the Kid."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44200")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44200",
+  "isRealHuman": true,
+  "birthDate": "1859-11-23",
+  "deathDate": "1881-07-14",
+  "ageAtDeath": 21,
+  "confidence": 98,
+  "confidenceExplained": "Billy the Kid's exact birth day is disputed, but the leading dates used by reliable sources are September 17, 1859 and November 23, 1859. Because he died on July 14, 1881, both plausible dates make him 21 at death. So the exact birthDate is an estimate, but the ageAtDeath is highly reliable.",
+  "shortDescriptionEn": "Billy the Kid, born Henry McCarty and also known as William H. Bonney, was a young American outlaw and gunfighter of the Old West whose name became inseparable from New Mexico's Lincoln County War and the mythology of the frontier. After escaping jail while under sentence of death, he was tracked to Fort Sumner and shot by Sheriff Pat Garrett on July 14, 1881, dying at just 21 and becoming a legend almost immediately.",
+  "shortDescriptionFr": "Billy the Kid, né Henry McCarty et aussi connu sous le nom de William H. Bonney, fut un jeune hors-la-loi et tireur de l'Ouest américain, resté célèbre pour la guerre du comté de Lincoln au Nouveau-Mexique et pour la légende qu'il inspira dans la culture populaire. Après s'être évadé de prison alors qu'il attendait son exécution, il fut retrouvé à Fort Sumner et abattu par le shérif Pat Garrett le 14 juillet 1881, à seulement 21 ans.",
+  "shortDescriptionDe": "Billy the Kid, geboren als Henry McCarty und auch als William H. Bonney bekannt, war ein junger Outlaw und Revolverheld des amerikanischen Wilden Westens, der vor allem durch den Lincoln-County-Krieg in New Mexico und seinen schnellen Legendenstatus berühmt wurde. Nach einem Gefängnisausbruch kurz vor seiner geplanten Hinrichtung wurde er in Fort Sumner aufgespürt und am 14. Juli 1881 von Sheriff Pat Garrett erschossen; er war erst 21 Jahre alt.",
+  "shortDescriptionEs": "Billy the Kid, nacido como Henry McCarty y también conocido como William H. Bonney, fue un joven forajido y pistolero del Viejo Oeste estadounidense, célebre por su papel en la guerra del condado de Lincoln en Nuevo México y por la leyenda que creció a su alrededor. Tras escapar de la cárcel cuando esperaba su ejecución, fue localizado en Fort Sumner y abatido por el sheriff Pat Garrett el 14 de julio de 1881, con solo 21 años.",
+  "shortDescriptionRu": "Билли Кид, урождённый Генри Маккарти, также известный как Уильям Х. Бонни, был молодым американским преступником и стрелком эпохи Дикого Запада, чьё имя особенно связано с войной в округе Линкольн в Нью-Мексико и последующей легендой о фронтире. После побега из тюрьмы, когда он уже ожидал казни, его выследили в Форт-Самнере, где 14 июля 1881 года шериф Пэт Гарретт застрелил его; ему был всего 21 год.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Billy_the_Kid",
+    "https://www.britannica.com/biography/Billy-the-Kid-American-outlaw",
+    "https://www.pbs.org/wgbh/americanexperience/features/billy-life-and-legend-billy-kid/",
+    "https://www.history.com/this-day-in-history/november-23/billy-the-kid-born",
+    "https://commons.wikimedia.org/wiki/File:Billy_the_Kid_corrected.jpg",
+    "https://www.fortsumner.net/parksrec/page/billy-kids-gravesite"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q193406",  "Name": "Pocahontas",  "BirthDate": "1596-01-01T00:00:00Z",  "DeathDate": "1617-03-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/NPG%2065%2061%20Pocahontas.tif",  "SiteLinksCnt": 65,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"237523":{"pageid":237523,"ns":0,"title":"Pocahontas","extract":"Pocahontas (US: , UK: ; born Amonute, also known as Matoaka and Rebecca Rolfe; c. 1596 \u2013 March 1617) was a Native American woman belonging to the Powhatan people, notable for her association with the colonial settlement at Jamestown, Virginia. She was the daughter of Wahunsenacawh, the paramount chief of a network of tributary tribes in the Tsenacommacah (known in English as the Powhatan Confederacy), encompassing the Tidewater region of what is today the U.S. state of Virginia.\nPocahontas was captured and held for ransom by English colonists during hostilities in 1613. During her captivity, she was encouraged to convert to Christianity and was baptized under the name Rebecca. She married the tobacco planter John Rolfe in April 1614 at the age of about 17 or 18, and she bore their son, Thomas Rolfe, in January 1615.\nIn 1616, the Rolfes travelled to London, where Pocahontas was presented to English society as an example of the \"civilized savage\" in hopes of stimulating investment in Jamestown. On this trip, she may have met Squanto, a Patuxet man from New England. Pocahontas became a celebrity, was elegantly f\u00eated, and attended a masque at Whitehall Palace. In 1617, the Rolfes intended to sail for Virginia, but Pocahontas died at Gravesend, Kent, England, of unknown causes, aged 20 or 21. She was buried in St George's Church, Gravesend; her grave's exact location is unknown because the church was rebuilt after being destroyed by a fire.\nNumerous places, landmarks, and products in the United States have been named after Pocahontas. Her story has been romanticized over the years, many aspects of which are fictional. Many of the stories told about her by the English explorer John Smith have been contested by her documented descendants. She is a subject of art, literature, and film. Many famous people have claimed to be among her descendants, including members of the First Families of Virginia, First Lady Edith Wilson, American actor Glenn Strange, and astronomer Percival Lowell."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q193406")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q193406",
+  "isRealHuman": true,
+  "birthDate": "1596-07-01",
+  "deathDate": "1617-03-21",
+  "ageAtDeath": 20,
+  "confidence": 62,
+  "confidenceExplained": "Moderate confidence. Her death in Gravesend in March 1617 and burial on 1617-03-21 are well attested, but her birth date is not exact and is variously given as circa 1595, 1596, or 1597 by reputable sources. Historians therefore usually give her age at death as 20 or 21. I chose 20 to avoid the misleading January 1 placeholder effect and because a strong official source, the U.S. National Park Service, presents her as c.1597-March 1617 and says she lived only twenty years.",
+  "shortDescriptionEn": "Pocahontas, later Rebecca Rolfe, was a Powhatan woman and the daughter of Wahunsenacawh (Chief Powhatan) whose life became closely tied to the Jamestown colony; after being held by the English, she converted to Christianity, married John Rolfe, and visited London in 1616 as a prominent symbol of the Virginia colony. While preparing to sail back to Virginia, she fell gravely ill at Gravesend in March 1617 and died there at about age 20, after which she was buried at St George's Church.",
+  "shortDescriptionFr": "Pocahontas, devenue Rebecca Rolfe, était une femme powhatan et la fille de Wahunsenacawh (le chef Powhatan), dont la vie fut étroitement liée à la colonie de Jamestown ; retenue par les Anglais, elle se convertit au christianisme, épousa John Rolfe et se rendit à Londres en 1616 comme figure marquante de la colonie de Virginie. Alors qu'elle s'apprêtait à repartir pour la Virginie, elle tomba gravement malade à Gravesend en mars 1617 et y mourut vers l'âge de 20 ans, avant d'être inhumée à l'église St George.",
+  "shortDescriptionDe": "Pocahontas, später Rebecca Rolfe, war eine Powhatan-Frau und die Tochter von Wahunsenacawh (Chief Powhatan), deren Leben eng mit der Kolonie Jamestown verbunden war; nach ihrer Gefangennahme durch die Engländer trat sie zum Christentum über, heiratete John Rolfe und reiste 1616 als prominentes Aushängeschild der Kolonie Virginia nach London. Als sie nach Virginia zurückkehren wollte, erkrankte sie im März 1617 in Gravesend schwer und starb dort im Alter von etwa 20 Jahren; beigesetzt wurde sie in der St George's Church.",
+  "shortDescriptionEs": "Pocahontas, más tarde Rebecca Rolfe, fue una mujer powhatan e hija de Wahunsenacawh (el jefe Powhatan), cuya vida quedó estrechamente ligada a la colonia de Jamestown; tras ser retenida por los ingleses, se convirtió al cristianismo, se casó con John Rolfe y viajó a Londres en 1616 como figura destacada de la colonia de Virginia. Cuando se preparaba para regresar a Virginia, enfermó gravemente en Gravesend en marzo de 1617 y murió allí con unos 20 años, tras lo cual fue enterrada en la iglesia de St George.",
+  "shortDescriptionRu": "Покахонтас, позднее Ребекка Ролф, была женщиной народа поухатан и дочерью Вахунсенакава (вождя Поухатана), чья жизнь тесно переплелась с колонией Джеймстаун; побывав в английском плену, она приняла христианство, вышла замуж за Джона Рольфа и в 1616 году посетила Лондон как заметный символ колонии Виргиния. Готовясь отплыть обратно в Виргинию, она тяжело заболела в Грейвсенде в марте 1617 года и умерла там примерно в 20 лет, после чего была похоронена в церкви Святого Георгия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pocahontas",
+    "https://www.nps.gov/people/pocahontas.htm",
+    "https://www.nps.gov/jame/learn/historyculture/pocahontas-her-life-and-legend.htm",
+    "https://www.britannica.com/biography/Pocahontas",
+    "https://encyclopediavirginia.org/entries/pocahontas-d-1617/",
+    "https://virginiahistory.org/learn/life-portrait-pocahontas"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46837",  "Name": "Hostilian",  "BirthDate": "0230-01-01T00:00:00Z",  "DeathDate": "0251-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aureus%20Hostilian%20RIC%200183a.JPG",  "SiteLinksCnt": 57,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"147751":{"pageid":147751,"ns":0,"title":"Hostilian","extract":"Hostilian (Latin: Gaius Valens Hostilianus Messius Quintus; died c. July 251) was briefly Roman emperor in 251. Hostilian was born to Decius and Herennia Etruscilla at an unknown date and elevated to caesar in 250 by Decius. After Decius and Herennius Etruscus, Hostilian's brother, were killed at the Battle of Abritus, an ambush by the Goths, Trebonianus Gallus was proclaimed emperor by the legions. Almost immediately, he elevated Hostilian to co-emperor and his own son, Volusianus, to caesar. Hostilian died soon after, either due to plague or being murdered by Trebonianus Gallus."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46837")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q46837",
+  "isRealHuman": true,
+  "birthDate": "0236-01-01",
+  "deathDate": "0251-07-01",
+  "ageAtDeath": 15,
+  "confidence": 62,
+  "confidenceExplained": "The identification of Hostilian is certain, and a July 251 death is better supported than a later date. The weak point is his birth year: ancient sources do not preserve an exact date. Older reference works often imply c.230, which would yield age 20-21, but more recent scholarship cited in a 2022 study argues that he was 14 or 15 when elevated to caesar in 250 and about 15 when he died, implying a birth around 236. I therefore use 15 as the best single-number estimate, but with only moderate confidence.",
+  "shortDescriptionEn": "Hostilian was a Roman emperor in 251, the younger son of Decius and a prince of the Crisis of the Third Century. Raised to caesar and then recognized as co-emperor after the Roman defeat at Abritus, he ruled only briefly before dying in Rome, most likely during the plague that was devastating the empire, though some ancient writers claimed he was murdered.",
+  "shortDescriptionFr": "Hostilien fut empereur romain en 251, fils cadet de Dèce et figure de la crise du troisième siècle. Élevé au rang de césar puis reconnu comme coempereur après la défaite romaine d’Abrittus, il ne régna que très peu de temps avant de mourir à Rome, probablement de la peste qui ravageait l’Empire, même si certains auteurs antiques parlèrent d’un meurtre.",
+  "shortDescriptionDe": "Hostilian war 251 römischer Kaiser, der jüngere Sohn des Decius und eine Gestalt der Reichskrise des 3. Jahrhunderts. Zuerst zum Caesar erhoben und nach der Niederlage von Abrittus als Mitkaiser anerkannt, herrschte er nur kurz und starb dann in Rom, wahrscheinlich an der Seuche, die das Reich verheerte, auch wenn einige antike Autoren von Mord sprachen.",
+  "shortDescriptionEs": "Hostiliano fue emperador romano en 251, hijo menor de Decio y figura de la crisis del siglo III. Elevado a césar y luego reconocido como coemperador tras la derrota romana en Abrito, gobernó muy poco tiempo antes de morir en Roma, probablemente a causa de la peste que golpeaba al imperio, aunque algunos autores antiguos afirmaron que fue asesinado.",
+  "shortDescriptionRu": "Гостилиан был римским императором в 251 году, младшим сыном Деция и одним из представителей кризиса III века. Сначала он был возведён в ранг цезаря, а после поражения римлян при Абритте признан соправителем, но правил совсем недолго и умер в Риме, вероятнее всего во время эпидемии, опустошавшей империю, хотя некоторые античные авторы обвиняли в его смерти убийц.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hostilian",
+    "https://www.britannica.com/biography/Hostilian",
+    "https://www.livius.org/articles/person/hostilian/",
+    "https://roman-emperors.sites.luc.edu/hehost.htm",
+    "https://history.uaic.ro/wp-content/uploads/2022/08/Classica-et-Christiana-17-1-2022.pdf"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q157966",  "Name": "Amenhotep I",  "BirthDate": "-1526-01-01T00:00:00Z",  "DeathDate": "-1505-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Amenhotep%20I%20Stele.jpg",  "SiteLinksCnt": 56,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"545982":{"pageid":545982,"ns":0,"title":"Amenhotep I","extract":"Amenhotep I () or Amenophis I ( from Ancient Greek \u1f08\u03bc\u03ad\u03bd\u03c9\u03c6\u03b9\u03c2), was the second Pharaoh of the 18th Dynasty of Egypt. His reign is generally dated from 1526 to 1506 BC (Low Chronology).\nHe was a son of Ahmose I and Ahmose-Nefertari but had an elder brother, Ahmose-ankh, and was not expected to inherit the throne. However, sometime in the eight years between Ahmose I's 17th regnal year and his death, his heir apparent died and Amenhotep became crown prince. He then acceded to the throne and ruled for about 21 years.\nAlthough his reign is poorly documented, it is possible to piece together a basic history from available evidence. He inherited the kingdom formed by his father's military conquests and maintained dominance over Nubia and the Nile Delta but probably did not attempt to maintain Egyptian power in the Levant. He continued the rebuilding of temples in Upper Egypt and revolutionized mortuary complex design by separating his tomb from his mortuary temple, setting a trend in royal funerary monuments which would persist throughout the New Kingdom. After his death, he was deified as a patron god of Deir el-Medina."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q157966")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q157966",
+  "isRealHuman": true,
+  "birthDate": "-1539-01-01",
+  "deathDate": "-1504-01-01",
+  "ageAtDeath": 35,
+  "confidence": 78,
+  "confidenceExplained": "High confidence that the figure is Amenhotep I and that 21 refers to his reign length, not his age. The best available age estimate comes from a modern CT study of his mummy, which placed him at about 35 years old. Confidence is not higher because his exact birth date is unknown, ancient Egyptian chronology differs by a couple of years across sources, and forensic age estimation is approximate rather than exact.",
+  "shortDescriptionEn": "Amenhotep I was an early New Kingdom pharaoh of Egypt and the second ruler of the 18th Dynasty, remembered for consolidating power after the wars of liberation, campaigning in Nubia, rebuilding temples, and shaping royal funerary traditions. He ruled for about 21 years and was later worshipped as a patron deity at Deir el-Medina; modern CT analysis of his mummy suggests he died at about 35 years old, but no definite cause of death can be identified, and his body was rewrapped by priests after posthumous damage from tomb robbers.",
+  "shortDescriptionFr": "Amenhotep Ier fut un pharaon du début du Nouvel Empire et le deuxième souverain de la XVIIIe dynastie, connu pour avoir consolidé l'Égypte après les guerres de libération, mené des campagnes en Nubie, restauré des temples et influencé l'architecture funéraire royale. Il régna environ 21 ans et fut ensuite vénéré comme divinité protectrice à Deir el-Médineh ; une analyse CT moderne de sa momie indique qu'il mourut vers 35 ans, sans cause de décès clairement identifiable, et que son corps fut réenveloppé par des prêtres après des dégradations posthumes dues à des pillards.",
+  "shortDescriptionDe": "Amenhotep I. war ein Pharao des frühen Neuen Reiches und der zweite Herrscher der 18. Dynastie. Er festigte Ägyptens Macht nach den Befreiungskriegen, führte Feldzüge in Nubien, ließ Tempel erneuern und prägte die königliche Grabarchitektur nachhaltig. Er regierte etwa 21 Jahre und wurde später in Deir el-Medina als Schutzgott verehrt; eine moderne CT-Untersuchung seiner Mumie legt ein Sterbealter von etwa 35 Jahren nahe, doch eine eindeutige Todesursache ließ sich nicht feststellen, und sein Leichnam wurde nach Schäden durch Grabräuber von Priestern neu umwickelt.",
+  "shortDescriptionEs": "Amenhotep I fue un faraón del inicio del Imperio Nuevo y el segundo gobernante de la dinastía XVIII, recordado por consolidar el poder egipcio tras las guerras de liberación, hacer campaña en Nubia, reconstruir templos y marcar la tradición funeraria real. Reinó alrededor de 21 años y más tarde fue venerado como dios protector en Deir el-Medina; un análisis moderno por tomografía de su momia sugiere que murió hacia los 35 años, aunque no se ha podido determinar una causa de muerte clara, y su cuerpo fue vuelto a envolver por sacerdotes tras sufrir daños póstumos por saqueadores.",
+  "shortDescriptionRu": "Аменхотеп I был фараоном раннего Нового царства и вторым правителем XVIII династии, известным укреплением власти Египта после войн за освобождение, походами в Нубию, восстановлением храмов и важными изменениями в царской погребальной традиции. Он правил около 21 года и позднее почитался как покровитель Дейр-эль-Медины; современное КТ-исследование его мумии показывает, что он умер примерно в 35 лет, но точную причину смерти установить не удалось, а его тело было заново завернуто жрецами после посмертных повреждений, нанесённых грабителями гробниц.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Amenhotep_I",
+    "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2021.778498/full",
+    "https://www.britannica.com/biography/Amenhotep-I",
+    "https://www.britishmuseum.org/collection/object/Y_EA683",
+    "https://www.brooklynmuseum.org/objects/4247"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46846",  "Name": "Valentinian II",  "BirthDate": "0371-01-01T00:00:00Z",  "DeathDate": "0392-05-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20emperor%20Valentinian%20II%20detail.JPG",  "SiteLinksCnt": 56,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"74663":{"pageid":74663,"ns":0,"title":"Valentinian II","extract":"Valentinian II (Latin: Valentinianus; 371 \u2013 15 May 392) was a Roman emperor in the western part of the Roman Empire between AD 375 and 392. He was at first junior co-ruler of his half-brother, then was sidelined by a usurper, and finally became sole ruler after 388, albeit with limited de facto powers. He was the youngest emperor (co-ruler) in the Western Roman Empire (aged 4).\nA son of emperor Valentinian I and empress Justina, he was raised to the imperial office at the age of four by military commanders upon his father's death. Until 383, Valentinian II remained a junior partner to his older half-brother Gratian in ruling the Western empire, while the East was governed by his uncle Valens until 378 and Theodosius I from 379. When the usurper emperor Magnus Maximus killed Gratian in 383, the court of Valentinian II in Milan became the locus of confrontations between adherents to Nicene and Arian Christianity. In 387, Maximus invaded Italy, spurring Valentinian II and his family to escape to Thessalonica where they successfully sought Theodosius's aid. Theodosius defeated Maximus in battle and re-installed Valentinian II.\nValentinian II ruled from Gaul after being restored to power in 388. He was largely under the control of Arbogast, a powerful general and regent. In 392, Valentinian II was found dead in his palace, a death some at the time believed was a suicide and others a murder orchestrated by Arbogast, whom the emperor had tried to dismiss."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46846")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q46846",
+  "isRealHuman": true,
+  "birthDate": "371-10-01",
+  "deathDate": "392-05-15",
+  "ageAtDeath": 20,
+  "confidence": 72,
+  "confidenceExplained": "Very high confidence that Valentinian II was a historical Roman emperor and that he died on 392-05-15. Moderate confidence on the exact age at death: the birth year 371 is secure, but the exact birthday is not. I estimated 371-10-01 because ancient-history references place his birth in autumn 371 and he was still described as four years old when proclaimed emperor in November 375; that makes him 20 at death. Some modern reference works list him as 21 because they count only the year span 371-392.",
+  "shortDescriptionEn": "Valentinian II was Western Roman emperor from 375 to 392, raised to the throne as a child after the death of his father Valentinian I and later restored by Theodosius I after the usurpation of Magnus Maximus. Much of his reign was dominated by stronger figures around him, especially the general Arbogast, and he was found dead at Vienne in 392, probably hanged, with ancient and modern sources divided between suicide and political murder.",
+  "shortDescriptionFr": "Valentinien II fut empereur romain d’Occident de 375 à 392, proclamé alors qu’il était enfant après la mort de son père Valentinien Ier, puis rétabli sur le trône par Théodose Ier après l’usurpation de Magnus Maximus. Une grande partie de son règne se déroula sous l’influence de personnages plus puissants, surtout le général Arbogast, et il fut retrouvé mort à Vienne en 392, probablement pendu, dans des circonstances encore débattues entre suicide et assassinat politique.",
+  "shortDescriptionDe": "Valentinian II. war von 375 bis 392 weströmischer Kaiser; nach dem Tod seines Vaters Valentinian I. wurde er noch als Kind erhoben und nach der Usurpation des Magnus Maximus von Theodosius I. wieder eingesetzt. Einen Großteil seiner Herrschaft bestimmten mächtigere Männer, vor allem der Heermeister Arbogast, und 392 wurde er in Vienne tot aufgefunden, vermutlich erhängt; bis heute ist umstritten, ob es Selbstmord oder ein politischer Mord war.",
+  "shortDescriptionEs": "Valentiniano II fue emperador romano de Occidente entre 375 y 392, proclamado cuando era un niño tras la muerte de su padre Valentiniano I y restituido luego por Teodosio I después de la usurpación de Magno Máximo. Gran parte de su reinado estuvo controlada por figuras más poderosas, sobre todo el general Arbogasto, y en 392 apareció muerto en Vienne, probablemente ahorcado, en un caso que sigue debatido entre suicidio y asesinato político.",
+  "shortDescriptionRu": "Валентиниан II был императором Западной Римской империи в 375–392 годах: его провозгласили августом ещё ребёнком после смерти отца, Валентиниана I, а позже Феодосий I вернул ему трон после узурпации Магна Максима. Большую часть правления им управляли более сильные фигуры, прежде всего военачальник Арбогаст, и в 392 году его нашли мёртвым в Вьенне, вероятно повешенным; источники до сих пор спорят, было ли это самоубийство или политическое убийство.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Valentinian_II",
+    "https://www.britannica.com/biography/Valentinian-II",
+    "https://www.livius.org/articles/person/valentinian-ii/",
+    "https://doi.org/10.1093/acrefore/9780199381135.013.6661",
+    "https://commons.wikimedia.org/wiki/File:Statue_of_emperor_Valentinian_II.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q205289",  "Name": "Louis V of France",  "BirthDate": "0966-01-01T00:00:00Z",  "DeathDate": "0987-05-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Amiel%20-%20Louis%20V%20of%20France.jpg",  "SiteLinksCnt": 55,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"293942":{"pageid":293942,"ns":0,"title":"Louis V of France","extract":"Louis V (c.\u2009966 or 967 \u2013 22 May 987), also known as Louis the Lazy (French: Louis le Fain\u00e9ant), was a king of West Francia from 979 (co-reigning first with his father Lothair until 986) to his early death in 987. During his reign, the nobility essentially ruled the country. Dying childless, Louis V was the last Carolingian monarch in West Francia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q205289")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q205289",
+  "isRealHuman": true,
+  "birthDate": "0967-01-01",
+  "deathDate": "0987-05-22",
+  "ageAtDeath": 20,
+  "confidence": 80,
+  "confidenceExplained": "Identification is very strong: this is Louis V of France. Confidence is lower on the exact age because medieval sources do not preserve a secure full birth date; modern references usually give his birth as 967, around 967, or 966/967. I used 0967-01-01 as a practical estimate to provide a full YYYY-MM-DD date and calculate a single age. If one instead chose a 966 birth year, the age could be 21.",
+  "shortDescriptionEn": "Louis V of France, called Louis the Lazy, was the last Carolingian king of West Francia, ruling first alongside his father Lothair and then alone in 986-987. His brief reign showed how weak royal power had become, with the great nobles dominating politics, and his childless death cleared the way for Hugh Capet and the Capetian dynasty. He died very young after a hunting accident in the Forest of Halatte near Senlis, probably from injuries suffered in a fall from his horse.",
+  "shortDescriptionFr": "Louis V de France, dit Louis le Faineant, fut le dernier roi carolingien de Francie occidentale, d'abord associe au trone par son pere Lothaire puis seul roi en 986-987. Son regne tres court revela l'affaiblissement du pouvoir royal, largement domine par les grands seigneurs, et sa mort sans heritier ouvrit la voie a Hugues Capet et a la dynastie capetienne. Il mourut tres jeune a la suite d'un accident de chasse dans la foret d'Halatte pres de Senlis, probablement apres une chute de cheval.",
+  "shortDescriptionDe": "Ludwig V. von Frankreich, genannt Ludwig der Faule, war der letzte karolingische Konig Westfrankens; zunachst regierte er an der Seite seines Vaters Lothar, dann 986-987 allein. Seine kurze Herrschaft zeigte, wie stark die Macht bereits bei den Grossen des Reiches lag, und sein kinderloser Tod ebnete Hugo Capet und den Kapetingern den Weg. Er starb jung nach einem Jagdunfall im Wald von Halatte bei Senlis, wahrscheinlich an den Folgen eines Sturzes vom Pferd.",
+  "shortDescriptionEs": "Luis V de Francia, llamado Luis el Holgazan, fue el ultimo rey carolingio de la Francia Occidental; primero reino junto a su padre Lotario y luego solo entre 986 y 987. Su breve gobierno reflejo hasta que punto la nobleza controlaba ya la politica, y su muerte sin descendencia abrio el camino a Hugo Capeto y a la dinastia capeta. Murio muy joven tras un accidente de caza en el bosque de Halatte, cerca de Senlis, probablemente por las heridas sufridas al caer del caballo.",
+  "shortDescriptionRu": "Людовик V Французский, прозванный Ленивым, был последним королем Западной Франкии из династии Каролингов: сначала он правил вместе с отцом Лотарем, а затем самостоятельно в 986-987 годах. Его короткое царствование показало, насколько ослабла королевская власть и насколько усилилась знать; смерть без наследников открыла путь Гуго Капету и династии Капетингов. Он умер совсем молодым после несчастного случая на охоте в лесу Галатт близ Санлиса, вероятно от травм после падения с лошади.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Louis_V_of_France",
+    "https://www.britannica.com/biography/Louis-V",
+    "https://fr.wikipedia.org/wiki/Louis_V_le_Fain%C3%A9ant",
+    "https://commons.wikimedia.org/wiki/Category:Louis_V_of_France",
+    "https://www.wikidata.org/wiki/Q205289"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q158148",  "Name": "Grand Duchess Tatiana Nikolaevna of Russia",  "BirthDate": "1897-06-10T00:00:00Z",  "DeathDate": "1918-07-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Duchess%20Tatiana%20Nikolaevna%2C%201914.png",  "SiteLinksCnt": 50,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"68064":{"pageid":68064,"ns":0,"title":"Grand Duchess Tatiana Nikolaevna of Russia","extract":"Grand Duchess Tatiana Nikolaevna of Russia (Russian: \u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430;\n10 June [O.S. 29 May] 1897 \u2013 17 July 1918) was the second daughter of Tsar Nicholas II, the last monarch of Russia, and Tsarina Alexandra Feodorovna. She was born at Peterhof Palace, near Saint Petersburg.\nTatiana was the younger sister of Grand Duchess Olga and the elder sister of Grand Duchess Maria, Grand Duchess Anastasia, and Tsarevich Alexei. Throughout her life, she was considered to be the most beautiful of all her sisters and the most aristocratic in appearance. She was known amongst her siblings as \"the governess\" for her domineering but also maternal ways. Tatiana was the closest of all the children to her mother (Tsarina Alexandra), often spending many hours reading to her. During World War I, she chaired many charitable committees and (along with her older sister, Grand Duchess Olga) trained to become a nurse. She tended to wounded soldiers on the grounds of Tsarskoye Selo from 1914 to 1917. Her time as a nurse came to an end with her family's arrest in 1917 after the first Russian Revolution.\nHer murder by Bolshevik revolutionaries on 17 July 1918 resulted in her canonization as a passion bearer by the Russian Orthodox Church. Tatiana and all her siblings were soon rumored to have survived the murder, and dozens of impostors claimed to be surviving Romanovs; author Michael Occleshaw speculated that a woman named Larissa Tudor might have been Tatiana. However, the deaths of all the last Tsar's family, including Tatiana, at the hands of Bolsheviks have since been established by scientific evidence."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q158148")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q158148",
+  "isRealHuman": true,
+  "birthDate": "1897-06-10",
+  "deathDate": "1918-07-17",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "The identification is very strong: the Wikidata ID, Wikipedia entry, and Romanov-family biographical sources all align on Grand Duchess Tatiana Nikolaevna of Russia, born 1897-06-10 and dead 1918-07-17. The age calculation from those dates is straightforward and gives 21 full years. I am not using 100 only because some historical sources describe the execution as occurring on the night of July 16-17, 1918, but that does not change the integer age at death.",
+  "shortDescriptionEn": "Grand Duchess Tatiana Nikolaevna of Russia was the second daughter of Tsar Nicholas II and Empress Alexandra, remembered for her poise, strong sense of duty, and work as a Red Cross nurse caring for wounded soldiers during World War I. After the fall of the Romanov dynasty, she was held with her family and executed by Bolshevik captors in Yekaterinburg on 17 July 1918 at the age of 21.",
+  "shortDescriptionFr": "La grande-duchesse Tatiana Nikolaïevna de Russie était la deuxième fille du tsar Nicolas II et de l'impératrice Alexandra, connue pour son maintien, son sens du devoir et son service comme infirmière de la Croix-Rouge auprès des blessés pendant la Première Guerre mondiale. Après la chute de la dynastie des Romanov, elle fut détenue avec sa famille puis exécutée par ses geôliers bolcheviques à Iekaterinbourg le 17 juillet 1918, à l'âge de 21 ans.",
+  "shortDescriptionDe": "Großfürstin Tatjana Nikolajewna von Russland war die zweite Tochter von Zar Nikolaus II. und Kaiserin Alexandra und wurde für ihre Haltung, ihr Pflichtbewusstsein und ihren Einsatz als Rotkreuzschwester für Verwundete im Ersten Weltkrieg bekannt. Nach dem Sturz der Romanows wurde sie mit ihrer Familie gefangen gehalten und am 17. Juli 1918 in Jekaterinburg von bolschewistischen Bewachern im Alter von 21 Jahren hingerichtet.",
+  "shortDescriptionEs": "La gran duquesa Tatiana Nikoláyevna de Rusia fue la segunda hija del zar Nicolás II y de la emperatriz Alejandra, admirada por su porte, su disciplina y su labor como enfermera de la Cruz Roja con soldados heridos durante la Primera Guerra Mundial. Tras la caída de los Romanov, fue retenida junto a su familia y ejecutada por sus captores bolcheviques en Ekaterimburgo el 17 de julio de 1918, a los 21 años.",
+  "shortDescriptionRu": "Великая княжна Татьяна Николаевна Романова была второй дочерью императора Николая II и императрицы Александры Фёдоровны; её запомнили как сдержанную, волевую и очень ответственную представительницу династии, а в годы Первой мировой войны — как сестру милосердия, ухаживавшую за ранеными. После падения Романовых она находилась под арестом вместе с семьёй и была расстреляна большевистскими охранниками в Екатеринбурге 17 июля 1918 года в возрасте 21 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Grand_Duchess_Tatiana_Nikolaevna_of_Russia",
+    "https://www.theromanovfamily.com/grand-duchess-tatiana-nikolaevna-of-russia/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2652717/",
+    "https://commons.wikimedia.org/wiki/Grand_Duchess_Tatiana_Nikolaevna_of_Russia",
+    "https://commons.wikimedia.org/wiki/File:Grand_Duchess_Tatiana_Nikolaevna_of_Russia,_1915.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q52151598",  "Name": "Juice Wrld",  "BirthDate": "1998-12-02T00:00:00Z",  "DeathDate": "2019-12-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Juice%20Wrld%20VMAs.png",  "SiteLinksCnt": 50,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"56848560":{"pageid":56848560,"ns":0,"title":"Juice Wrld","extract":"Jarad Anthony Higgins (December 2, 1998 \u2013 December 8, 2019), known professionally as Juice Wrld (pronounced \"juice world\"; stylized as Juice WRLD), was an American rapper, singer, and songwriter. He emerged as a leading figure in the emo and SoundCloud rap genres, which garnered mainstream attention during the mid-to-late 2010s. His stage name, which he said represents \"taking over the world\", was derived from the crime thriller film Juice (1992).\nHiggins began his career as an independent artist in 2015 under the name JuicetheKidd, and signed a recording contract with fellow Chicago rapper Lil Bibby's Grade A Productions in 2017; he entered a joint venture with Interscope Records early the following year. He gained recognition with the diamond-certified 2018 single \"Lucid Dreams\", which peaked at number two on the Billboard Hot 100. The song preceded his triple platinum debut album Goodbye & Good Riddance (2018), which also included the Billboard Hot 100 entries \"All Girls Are the Same\", \"Lean wit Me\", \"Wasted\", and \"Armed and Dangerous\". He then released the collaborative mixtape Wrld on Drugs (2018) with Future, as well as his second album, Death Race for Love (2019); the latter contained the hit single \"Robbery\" and became Higgins's first number one debut on the US Billboard 200.\nHiggins died of a drug overdose on December 8, 2019. His first posthumous album, Legends Never Die (2020), matched chart records for most successful posthumous debut and for most U.S. top-ten entries from one album, while the single \"Come & Go\" (with Marshmello) became Higgins's second song to reach number two on the Hot 100. His second posthumous album, Fighting Demons (2021), was released alongside the documentary film Juice Wrld: Into the Abyss and contained the U.S. top 20 single \"Already Dead\". His third posthumous album, The Party Never Ends (2024), was released alongside an appearance and virtual concert in the video game Fortnite."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q52151598")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q52151598",
+  "isRealHuman": true,
+  "birthDate": "1998-12-02",
+  "deathDate": "2019-12-08",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "The birth date and death date are consistently reported by multiple high-quality sources, including Wikipedia, Britannica, and Chicago news coverage. The age is a straightforward calculation from those exact dates: he died six days after his 21st birthday.",
+  "shortDescriptionEn": "Juice WRLD, born Jarad Anthony Higgins, was a Chicago rapper, singer, and songwriter who became one of the defining voices of emo rap and the SoundCloud era with hits such as \"Lucid Dreams,\" \"All Girls Are the Same,\" and \"Robbery.\" He died on December 8, 2019, just six days after his 21st birthday, after a medical emergency linked to an accidental overdose of oxycodone and codeine.",
+  "shortDescriptionFr": "Juice WRLD, de son vrai nom Jarad Anthony Higgins, était un rappeur, chanteur et auteur-compositeur de Chicago, figure majeure de l’emo rap et de la génération SoundCloud grâce à des titres comme « Lucid Dreams », « All Girls Are the Same » et « Robbery ». Il est mort le 8 décembre 2019, six jours après son 21e anniversaire, après une urgence médicale ensuite attribuée à une overdose accidentelle d’oxycodone et de codéine.",
+  "shortDescriptionDe": "Juice WRLD, mit bürgerlichem Namen Jarad Anthony Higgins, war ein US-Rapper, Sänger und Songwriter aus Chicago und eine Schlüsselfigur von Emo-Rap und der SoundCloud-Ära mit Songs wie „Lucid Dreams“, „All Girls Are the Same“ und „Robbery“. Er starb am 8. Dezember 2019, sechs Tage nach seinem 21. Geburtstag, nach einem medizinischen Notfall; später wurde sein Tod als versehentliche Überdosis durch Oxycodon- und Codein-Toxizität eingestuft.",
+  "shortDescriptionEs": "Juice WRLD, cuyo nombre real era Jarad Anthony Higgins, fue un rapero, cantante y compositor de Chicago que se convirtió en una de las voces clave del emo rap y de la era SoundCloud con éxitos como « Lucid Dreams », « All Girls Are the Same » y « Robbery ». Murió el 8 de diciembre de 2019, seis días después de cumplir 21 años, tras una emergencia médica que más tarde se determinó como una sobredosis accidental por toxicidad de oxicodona y codeína.",
+  "shortDescriptionRu": "Juice WRLD, настоящее имя Джарад Энтони Хиггинс, был американским рэпером, певцом и автором песен из Чикаго, одной из ключевых фигур эмо-рэпа и эпохи SoundCloud благодаря таким хитам, как «Lucid Dreams», «All Girls Are the Same» и «Robbery». Он умер 8 декабря 2019 года, через шесть дней после 21-летия, после неотложного состояния; позднее причиной смерти была признана случайная передозировка из-за токсического действия оксикодона и кодеина.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Juice_Wrld",
+    "https://www.britannica.com/biography/Juice-WRLD",
+    "https://abc7chicago.com/post/juice-wrld-cause-of-death-released-by-medical-examiner/5870880/",
+    "https://www.cbsnews.com/chicago/news/juice-wrld-autopsy-drug-overdose-oxycodone-codeine/",
+    "https://pitchfork.com/news/juice-wrld-death-ruled-an-accidental-overdose/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q29388200",  "Name": "Lil Peep",  "BirthDate": "1996-11-01T00:00:00Z",  "DeathDate": "2017-11-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lil-Peep%20PrettyPuke%20Photoshoot.png",  "SiteLinksCnt": 47,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"52953841":{"pageid":52953841,"ns":0,"title":"Lil Peep","extract":"Gustav Elijah \u00c5hr (Swedish: [\u02c8o\u02d0r]; November 1, 1996 \u2013 November 15, 2017), known professionally as Lil Peep, was an American rapper and singer-songwriter. He was a member of the hip-hop collective GothBoiClique, and is credited as being a leading figure of the emo rap sub-genre, and an inspiration in alternative youth subcultures.\nBorn in Allentown, Pennsylvania, to an American mother and a Swedish father and raised on Long Island, \u00c5hr started producing and releasing music on SoundCloud in 2013 under the name Trap Goose, later changing his stage name to Lil Peep because his mother had called him \"Peep\" since he was a baby. Two years later, in 2015, he emerged as an immensely popular musician on the platform following the release of his single \"Star Shopping\", and his popularity grew further with his release of mixtapes Lil Peep; Part One and Live Forever later that year. In 2016, Lil Peep released his widely acclaimed mixtapes Crybaby and Hellboy. He also participated in collaborative musical projects, leading to the release of California Girls and Vertigo.\nLil Peep's first live performance was as a member of Schemaposse on February 12, 2016, in Tucson, Arizona. Later that year, he toured briefly with Fat Nick, Smokepurpp, and others. In the spring of 2017, Lil Peep embarked on his first solo tour, performing to packed venues in three Russian cities, making his way across western Europe, and then across the United States. Soon after the tour, Lil Peep moved to London, where he recorded his EP Goth Angel Sinner, and in August he released his debut studio album, Come Over When You're Sober, Pt. 1. While his mixtapes explored emo, trap, lo-fi and alternative rock, his debut album was a transition into pop-punk and rap rock. His second album, Come Over When You're Sober, Pt. 2, was released in 2018 and debuted at number four on the Billboard 200. \nOn November 15, 2017, Lil Peep died on his tour bus before a scheduled performance in Tucson, his second to last scheduled show on a 33-date tour of the United States. The Pima County medical examiner's office, which conducted toxicology tests on Lil Peep, ruled his cause of death an accidental overdose of fentanyl, a powerful opioid, and alprazolam, a benzodiazepine sedative. His death was observed as a great loss to 21st-century music. \"He could have been his generation's Kurt Cobain\", a Rolling Stone profile stated. A documentary film about him, Everybody's Everything, was released in 2019."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q29388200")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q29388200",
+  "isRealHuman": true,
+  "birthDate": "1996-11-01",
+  "deathDate": "2017-11-15",
+  "ageAtDeath": 21,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable sources agree on both the birth date and death date, so the age calculation is exact: he died 14 days after his 21st birthday.",
+  "shortDescriptionEn": "Lil Peep, born Gustav Elijah Åhr, was an American rapper and singer-songwriter who became one of the defining voices of emo rap through his rise on SoundCloud, his work with GothBoiClique, and releases such as Hellboy, Crybaby, and Come Over When You're Sober, Pt. 1. He died in Tucson, Arizona, before a scheduled tour performance, and the medical examiner ruled his death an accidental overdose involving fentanyl and alprazolam.",
+  "shortDescriptionFr": "Lil Peep, né Gustav Elijah Åhr, était un rappeur et auteur-compositeur-interprète américain devenu l’une des figures majeures de l’emo rap grâce à son ascension sur SoundCloud, son passage dans GothBoiClique et des projets comme Hellboy, Crybaby et Come Over When You're Sober, Pt. 1. Il est mort à Tucson, en Arizona, avant un concert prévu de sa tournée, et le médecin légiste a conclu à une overdose accidentelle impliquant du fentanyl et de l’alprazolam.",
+  "shortDescriptionDe": "Lil Peep, geboren als Gustav Elijah Åhr, war ein US-amerikanischer Rapper und Singer-Songwriter, der durch seinen Aufstieg auf SoundCloud, seine Zugehörigkeit zu GothBoiClique und Veröffentlichungen wie Hellboy, Crybaby und Come Over When You're Sober, Pt. 1 zu einer prägenden Stimme des Emo-Rap wurde. Er starb in Tucson, Arizona, kurz vor einem geplanten Auftritt, und der Gerichtsmediziner stellte eine versehentliche Überdosis mit Fentanyl und Alprazolam fest.",
+  "shortDescriptionEs": "Lil Peep, nacido como Gustav Elijah Åhr, fue un rapero y cantante-compositor estadounidense que se convirtió en una de las figuras clave del emo rap gracias a su ascenso en SoundCloud, su trabajo con GothBoiClique y lanzamientos como Hellboy, Crybaby y Come Over When You're Sober, Pt. 1. Murió en Tucson, Arizona, antes de una actuación programada de su gira, y el forense determinó que la causa fue una sobredosis accidental de fentanilo y alprazolam.",
+  "shortDescriptionRu": "Lil Peep, родившийся как Густав Элайджа Ор, был американским рэпером и автором-исполнителем, ставшим одной из ключевых фигур эмо-рэпа благодаря взлёту на SoundCloud, участию в GothBoiClique и релизам Hellboy, Crybaby и Come Over When You're Sober, Pt. 1. Он умер в Тусоне, штат Аризона, перед запланированным концертом тура; судмедэксперт признал причиной смерти случайную передозировку фентанилом и алпразоламом.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lil_Peep",
+    "https://lilpeep.com/",
+    "https://www.billboard.com/music/rb-hip-hop/lil-peep-career-timeline-8039377/",
+    "https://pitchfork.com/news/lil-peep-cause-of-death-determined-fentanyl-xanax-overdose/",
+    "https://www.latimes.com/entertainment/music/la-et-ms-lil-peep-obituary-20171116-story.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q312381",  "Name": "Henry Stuart, Lord Darnley",  "BirthDate": "1545-12-07T00:00:00Z",  "DeathDate": "1567-02-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20Henry%20Stuart%2C%20Lord%20Darnley%2C%201545%20-%201567.%20Consort%20of%20Mary%2C%20Queen%20of%20Scots%20-%20PG%202279%20-%20National%20Galleries%20of%20Scotland.jpg",  "SiteLinksCnt": 46,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"70208":{"pageid":70208,"ns":0,"title":"Henry Stuart, Lord Darnley","extract":"Henry Stuart, Lord Darnley (1546 \u2013 10 February 1567) was King of Scotland as the second husband of Mary, Queen of Scots, from 29 July 1565 until his murder. Darnley had one child with Mary, James VI of Scotland and I of England. Less than a year after the birth of his son, Darnley was murdered at Kirk o' Field in 1567. Many contemporary narratives describing his life and death refer to him as simply Lord Darnley, his title as heir apparent to the Earldom of Lennox."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q312381")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q312381",
+  "isRealHuman": true,
+  "birthDate": "1545-12-07",
+  "deathDate": "1567-02-10",
+  "ageAtDeath": 21,
+  "confidence": 73,
+  "confidenceExplained": "The identification is certain and the death date is very solid, but the birth year is disputed. Britannica and major museum catalogues still use 7 December 1545, which gives age 21, while some newer research summarized by Wikipedia suggests 1546, which would make him 20. I chose 1545-12-07 because it remains widely used by authoritative reference works and art institutions.",
+  "shortDescriptionEn": "Henry Stuart, Lord Darnley, was the English-born nobleman who became king consort of Scotland through his 1565 marriage to Mary, Queen of Scots, and was the father of the future James VI and I. Handsome, ambitious and notoriously unstable, he was drawn into court intrigue and linked to the murder of David Riccio; in February 1567 his lodging at Kirk o' Field in Edinburgh was destroyed in an explosion, and he was found dead outside, making his end one of the most infamous royal murders in Scottish history.",
+  "shortDescriptionFr": "Henry Stuart, Lord Darnley, était un noble né en Angleterre devenu roi consort d'Écosse par son mariage avec Marie, reine d'Écosse, en 1565, et le père du futur Jacques VI et Ier. Beau, ambitieux et politiquement dangereux, il fut mêlé aux intrigues de cour et associé au meurtre de David Riccio; en février 1567, son logis de Kirk o' Field à Édimbourg fut détruit par une explosion et on retrouva son corps à l'extérieur, dans l'un des crimes royaux les plus célèbres de l'histoire écossaise.",
+  "shortDescriptionDe": "Henry Stuart, Lord Darnley, war ein in England geborener Adliger, der durch seine Heirat mit Maria Stuart im Jahr 1565 Königsgemahl von Schottland wurde und der Vater des späteren Jakob VI./I. war. Der gutaussehende, ehrgeizige und politisch unberechenbare Darnley geriet tief in die Hofintrigen und wurde mit dem Mord an David Riccio in Verbindung gebracht; im Februar 1567 wurde seine Unterkunft in Kirk o' Field in Edinburgh durch eine Explosion zerstört, und man fand ihn tot außerhalb des Gebäudes - ein bis heute berüchtigter königlicher Mordfall.",
+  "shortDescriptionEs": "Henry Stuart, Lord Darnley, fue el noble nacido en Inglaterra que se convirtió en rey consorte de Escocia al casarse en 1565 con María, reina de Escocia, y fue el padre del futuro Jacobo VI y I. Apuesto, ambicioso y profundamente inestable en la política de la corte, quedó ligado a las intrigas y al asesinato de David Riccio; en febrero de 1567 su residencia en Kirk o' Field, en Edimburgo, voló por los aires y apareció muerto fuera del edificio, en uno de los asesinatos reales más notorios de la historia escocesa.",
+  "shortDescriptionRu": "Генрих Стюарт, лорд Дарнли, был английским аристократом, ставшим королём-консортом Шотландии после брака с Марией Стюарт в 1565 году, и отцом будущего Якова VI и I. Красивый, честолюбивый и крайне неустойчивый в придворной политике, он оказался втянут в интриги и был связан с убийством Давида Риччо; в феврале 1567 года его дом в Кирк-о-Филд в Эдинбурге был разрушен взрывом, а самого Дарнли нашли мёртвым снаружи, что сделало его гибель одним из самых громких королевских убийств в истории Шотландии.",
+  "sources": [
+    "http://en.wikipedia.org/wiki/Henry_Stuart,_Lord_Darnley",
+    "http://www.britannica.com/biography/Henry-Stewart-Lord-Darnley",
+    "http://www.npg.org.uk/collections/search/person/mp01188/henry-stuart-lord-darnley",
+    "http://www.nationalgalleries.org/art-and-artists/2256",
+    "http://en.wikipedia.org/wiki/Murder_of_Lord_Darnley",
+    "http://www.bl.uk/stories/blogs/posts/the-tragedy-of-lord-darnley"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q217290",  "Name": "Yazdegerd I",  "BirthDate": "0400-01-01T00:00:00Z",  "DeathDate": "0421-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Plate%2C%20the%20king%20Yazdgard%20I%2C%20slaying%20a%20stag%20%28Cropped%29.jpg",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"140676":{"pageid":140676,"ns":0,"title":"Yazdegerd I","extract":"Yazdegerd I (also spelled Yazdgerd and Yazdgird; Middle Persian: \ud802\udf69\ud802\udf66\ud802\udf63\ud802\udf6a\ud802\udf65\ud802\udf72\ud802\udf69) was the Sasanian King of Kings (shahanshah) of Iran from 399 to 420. A son of Shapur III (r.\u2009383\u2013388), he succeeded his brother Bahram IV (r.\u2009388\u2013399) after the latter's assassination.\nThe largely uneventful reign of Yazdegerd I is seen in Sasanian history as a period of renewal, although he was periodically known as \"the Sinner\" in native sources, Yazdegerd was more competent than his immediate predecessors. He enjoyed cordial relations with the Eastern Roman Empire and was entrusted by Arcadius with the guardianship of his son Theodosius. Yazdegerd I is known for his friendly relations with the Jews as well as the Christians of the Church of the East, which he acknowledged in 410. As a result, he was compared by the Jews and Christians to Cyrus the Great, the Achaemenid emperor who liberated the Jews from captivity in Babylon.\nHis religious policies were disliked by the nobility and the Zoroastrian clergy, whose power and influence he strove to curb. These efforts eventually backfired and Yazdegerd I met his end at the hands of the nobility in the remote northeast. The nobles then sought to prevent Yazdegerd's sons from ascending the throne; his eldest son, Shapur IV, was quickly killed after his accession and replaced with Khosrow. Another son, Bahram V, hurried to the Sasanian capital of Ctesiphon with an Arab army and pressured the nobility to acknowledge him as shah."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q217290")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q217290",
+  "isRealHuman": true,
+  "birthDate": "0375-01-01",
+  "deathDate": "0420-01-01",
+  "ageAtDeath": 45,
+  "confidence": 58,
+  "confidenceExplained": "The identification is certain and the death year 420 is well supported by major reference works, but no exact birth date is established in the standard sources. The birth year 375 is a reasoned estimate based on the fact that Yazdegerd I was already ruling in 399 and had several sons old enough to play major political and military roles by 420, so the age at death is an informed approximation rather than a documented exact number.",
+  "shortDescriptionEn": "Yazdegerd I was the Sasanian shahanshah of Iran from 399 to 420, remembered as an able and sharp-minded ruler who stabilized the empire, kept peace with the Eastern Roman Empire, and showed notable tolerance toward Jews and Christians for much of his reign. His efforts to curb the power of aristocrats and Zoroastrian clergy made him dangerous enemies, and he died in 420 in the northeast of the empire—reported as illness in one tradition, but more likely a politically motivated killing later reshaped into the legend of a fatal horse attack.",
+  "shortDescriptionFr": "Yazdegerd Ier fut le shahanshah sassanide d’Iran de 399 à 420, un souverain habile et cultivé qui stabilisa l’empire, maintint la paix avec l’Empire romain d’Orient et montra pendant une grande partie de son règne une tolérance marquée envers les Juifs et les chrétiens. Sa volonté de limiter la puissance des grands et du clergé zoroastrien lui valut de puissants ennemis, et il mourut en 420 dans le nord-est de l’empire — maladie selon une tradition, mais plus probablement assassinat politique ensuite transformé en légende d’un cheval meurtrier.",
+  "shortDescriptionDe": "Yazdegerd I. war von 399 bis 420 der sasanidische Großkönig des Iran, ein kluger und energischer Herrscher, der das Reich festigte, Frieden mit dem Oströmischen Reich hielt und Juden wie Christen lange Zeit vergleichsweise tolerant behandelte. Sein Versuch, den Einfluss von Adel und zoroastrischer Priesterschaft zu beschneiden, schuf ihm mächtige Feinde; 420 starb er im Nordosten des Reiches — laut einer Überlieferung an Krankheit, nach heutiger Einschätzung aber eher durch einen politischen Mord, der später als Geschichte von einem tödlichen Pferd ausgeschmückt wurde.",
+  "shortDescriptionEs": "Yazdegerd I fue el shahanshah sasánida de Irán entre 399 y 420, un monarca hábil y de gran inteligencia que estabilizó el imperio, mantuvo la paz con el Imperio romano de Oriente y mostró durante buena parte de su reinado una tolerancia poco común hacia judíos y cristianos. Su intento de frenar el poder de la nobleza y del clero zoroastriano le ganó enemigos formidables, y murió en 420 en el noreste del imperio: una tradición habla de enfermedad, pero muchos historiadores ven más probable un asesinato político después convertido en la leyenda de un caballo mortal.",
+  "shortDescriptionRu": "Йездигерд I был шаханшахом Сасанидского Ирана в 399–420 годах — умным и сильным правителем, который укрепил державу, сохранял мир с Восточной Римской империей и значительную часть царствования проявлял заметную терпимость к иудеям и христианам. Попытка ограничить влияние знати и зороастрийского жречества сделала его опасным для элит, и в 420 году он умер на северо-востоке державы: одна традиция говорит о болезни, но более вероятным считается политическое убийство, позднее превращённое в легенду о смертельном ударе белого коня.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Yazdegerd_I",
+    "https://www.iranicaonline.org/articles/yazdegerd-i/",
+    "https://www.britannica.com/biography/Yazdegerd-I",
+    "https://www.iranicaonline.org/articles/bahram-the-name-of-six-sasanian-kings/bahram-v/",
+    "https://www.metmuseum.org/art/collection/search/326007"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q220240",  "Name": "Huni",  "BirthDate": "-2650-01-01T00:00:00Z",  "DeathDate": "-2629-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Huni-StatueHead%20BrooklynMuseum.png",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"1586815":{"pageid":1586815,"ns":0,"title":"Huni","extract":"Huni (original reading unknown) was an ancient Egyptian king, the last pharaoh of the Third Dynasty of Egypt during the Old Kingdom period. Based on the Turin king list, he is commonly credited with a reign of 24 years, ending c. 2613 BC.\nHuni's chronological position as the last king of the third dynasty is fairly certain, but there is uncertainty about the succession order of rulers at the end of the third dynasty. It is also unclear under which Hellenized name the ancient historian Manetho listed him in his Aegyptiacae: mostly likely Aches, as Winfried Barta proposes. Many Egyptologists believe that Huni was the father and direct predecessor of King Sneferu, but this is questioned by other scholars. Huni is seen by scholars as a confusing figure in Egyptian history, because he was long remembered in Egyptian traditions, but very few documents, objects or monuments from his reign have survived."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q220240")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q220240",
+  "isRealHuman": true,
+  "birthDate": "-2673-01-01",
+  "deathDate": "-2613-01-01",
+  "ageAtDeath": 60,
+  "confidence": 39,
+  "confidenceExplained": "High confidence that the person is Huni, the last pharaoh of Egypt's Third Dynasty. Moderate confidence in a death around 2613 BCE because that is a common modern chronological endpoint for his reign. Low confidence in the exact birth year, because no contemporary birth record survives; the birth date and age are therefore historical estimates based on his reign length, the broad 27th-century BCE birth window, and traditions that he may already have been an established official before becoming king.",
+  "shortDescriptionEn": "Huni was the last pharaoh of Egypt's Third Dynasty, ruling at the threshold of the Old Kingdom and remembered as the predecessor, and possibly a relative, of Sneferu. Although few monuments from his reign survive, he is linked with royal building activity at Elephantine and with the final transition toward the age of the great pyramids. He likely died around 2613 BCE after a reign of about twenty-four years, probably of natural causes, but the exact circumstances of his death and even the location of his tomb remain unknown.",
+  "shortDescriptionFr": "Houni fut le dernier pharaon de la IIIe dynastie d'Égypte, régnant à l'aube de l'Ancien Empire et restant dans les traditions comme le prédécesseur, et peut-être le parent, de Snéfrou. Peu de monuments de son règne ont survécu, mais il est associé à des constructions royales à Éléphantine et à la transition finale vers l'époque des grandes pyramides. Il serait mort vers 2613 av. J.-C. après environ vingt-quatre ans de règne, probablement de cause naturelle, mais les circonstances exactes de sa mort et même l'emplacement de sa tombe demeurent inconnus.",
+  "shortDescriptionDe": "Huni war der letzte Pharao der 3. Dynastie Ägyptens und regierte am Übergang zum Alten Reich; in der Überlieferung gilt er als Vorgänger und möglicherweise Verwandter von Sneferu. Aus seiner Regierungszeit sind nur wenige Denkmäler erhalten, doch er wird mit königlichen Bauprojekten auf Elephantine und mit der letzten Entwicklung hin zur Epoche der großen Pyramiden verbunden. Er starb wahrscheinlich um 2613 v. Chr. nach etwa vierundzwanzig Regierungsjahren, vermutlich eines natürlichen Todes, doch die genauen Umstände seines Todes und selbst die Lage seines Grabes sind unbekannt.",
+  "shortDescriptionEs": "Huni fue el último faraón de la Tercera Dinastía de Egipto y gobernó en el umbral del Imperio Antiguo; la tradición lo recuerda como antecesor, y quizá pariente, de Snefru. Han sobrevivido pocos monumentos de su reinado, pero se le relaciona con actividad constructiva real en Elefantina y con la transición final hacia la era de las grandes pirámides. Probablemente murió hacia 2613 a. C. tras unos veinticuatro años de reinado, seguramente por causas naturales, aunque las circunstancias exactas de su muerte e incluso la ubicación de su tumba siguen siendo desconocidas.",
+  "shortDescriptionRu": "Хуни был последним фараоном III династии Египта и правил на рубеже эпохи Древнего царства; в традиции он запомнился как предшественник, а возможно и родственник, Снофру. От его правления сохранилось очень мало памятников, но его связывают с царскими строительными проектами на Элефантине и с завершающим этапом перехода к эпохе великих пирамид. Вероятно, он умер около 2613 года до н. э. после примерно двадцати четырёх лет на троне, скорее всего естественной смертью, однако точные обстоятельства его смерти и даже место его захоронения остаются неизвестными.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Huni",
+    "https://www.britannica.com/biography/Huni",
+    "https://www.worldhistory.org/Third_Dynasty_of_Egypt/",
+    "https://www.britannica.com/place/Maydum",
+    "https://www.brooklynmuseum.org/objects/3482",
+    "https://commons.wikimedia.org/wiki/File:Huni-StatueHead_BrooklynMuseum.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Huni"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q276310",  "Name": "Duncan Edwards",  "BirthDate": "1936-10-01T00:00:00Z",  "DeathDate": "1958-02-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/DuncanEdwards1.jpg",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"425351":{"pageid":425351,"ns":0,"title":"Duncan Edwards","extract":"Duncan Edwards (1 October 1936 \u2013 21 February 1958) was an English footballer who played as a left-half for Manchester United and the England national team. He was one of the Busby Babes, the young United team formed under manager Matt Busby in the mid-1950s, playing 177 matches for the club. He was noted for his physical strength, toughness, and level of authority on the pitch, and has been ranked amongst the toughest players of all time. One of eight players who died as a result of the Munich air disaster, he survived initially but succumbed to his injuries in hospital two weeks later. Many of his contemporaries have described him as one of the best, if not the best, players with whom they had played.\nBorn in Woodside, Dudley, Edwards signed for Manchester United as a teenager and went on to become the youngest player to play in the Football League First Division and at the time the youngest England player since the Second World War, going on to play 18 times for his country at top level. In a professional career of less than five years he helped United to win two Football League championships and two FA Charity Shields, and reach the semi-finals of the European Cup."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q276310")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q276310",
+  "isRealHuman": true,
+  "birthDate": "1936-10-01",
+  "deathDate": "1958-02-21",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "Birth and death dates are consistent across multiple reliable sources, including Wikipedia, Manchester United's official site, and Dudley Council. The age calculation from 1936-10-01 to 1958-02-21 is straightforward: 21 completed years.",
+  "shortDescriptionEn": "Duncan Edwards was an English footballer, a Manchester United and England midfielder, and one of the most gifted members of Matt Busby’s Busby Babes. Already a league champion and international at a very young age, he died at 21 after fighting for 15 days against the injuries he suffered in the Munich air disaster in February 1958.",
+  "shortDescriptionFr": "Duncan Edwards était un footballeur anglais, milieu de terrain de Manchester United et de l’équipe d’Angleterre, considéré comme l’un des plus grands talents des Busby Babes de Matt Busby. Déjà champion d’Angleterre et international malgré une carrière très brève, il est mort à 21 ans après quinze jours de lutte contre les blessures subies lors de la catastrophe aérienne de Munich en février 1958.",
+  "shortDescriptionDe": "Duncan Edwards war ein englischer Fußballer, Mittelfeldspieler von Manchester United und der englischen Nationalmannschaft, und galt als eines der größten Talente der Busby Babes von Matt Busby. Trotz seiner kurzen Profikarriere war er bereits Meister und Nationalspieler; er starb mit 21 Jahren, nachdem er 15 Tage lang gegen die Verletzungen aus dem Flugzeugunglück von München im Februar 1958 gekämpft hatte.",
+  "shortDescriptionEs": "Duncan Edwards fue un futbolista inglés, centrocampista del Manchester United y de la selección de Inglaterra, y una de las grandes joyas de los Busby Babes de Matt Busby. Con una carrera muy corta ya había sido campeón de liga e internacional, pero murió con 21 años tras resistir durante 15 días las lesiones sufridas en el desastre aéreo de Múnich de febrero de 1958.",
+  "shortDescriptionRu": "Дункан Эдвардс — английский футболист, полузащитник «Манчестер Юнайтед» и сборной Англии, считавшийся одним из самых ярких талантов команды «малышей Басби». Несмотря на очень короткую карьеру, он успел стать чемпионом Англии и игроком национальной сборной, но умер в 21 год после 15 дней борьбы с травмами, полученными в авиакатастрофе в Мюнхене в феврале 1958 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Duncan_Edwards",
+    "https://www.manutd.com/en/news/detail/duncan-edwards-tribute-article-ahead-of-munich-air-disaster-anniversary",
+    "https://www.dudley.gov.uk/things-to-do/museums/dudley-museum-at-the-archives/local-heroes/duncan-edwards-1936-1958/",
+    "https://www.britannica.com/event/Munich-air-disaster"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2845322",  "Name": "Anandi Gopal Joshi",  "BirthDate": "1865-03-31T00:00:00Z",  "DeathDate": "1887-02-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Anandibai%20Joshee%2C%20M.D.%2C%20Class%201886.jpg",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"7580309":{"pageid":7580309,"ns":0,"title":"Anandi Gopal Joshi","extract":"Anandibai Gopalrao Joshi (Marathi: \u0906\u0928\u0902\u0926\u0940\u092c\u093e\u0908 \u0917\u094b\u092a\u093e\u0933\u0930\u093e\u0935 \u091c\u094b\u0936\u0940; 31 March 1865 \u2013 26 February 1887) was the first Indian female doctor of western medicine along with Kadambini Ganguly. \nAnandibai travelled to New York from Kolkata (Calcutta) by ship, chaperoned by two female English missionary acquaintances of the Thorborns. The George Robinson the Viceroy of India had funded her education. She was the first woman from the erstwhile Bombay presidency of British India to study and graduate with a two-year degree in western medicine in the United States. She was also referred to as Anandibai Joshi and Anandi Gopal Joshi (where Gopal came from Gopalrao, her husband's first name)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2845322")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2845322",
+  "isRealHuman": true,
+  "birthDate": "1865-03-31",
+  "deathDate": "1887-02-26",
+  "ageAtDeath": 21,
+  "confidence": 98,
+  "confidenceExplained": "The identification is very strong: the name variants, profession, and life events all point to Anandibai Gopalrao Joshi. Independent sources agree on the exact birth date (1865-03-31) and death date (1887-02-26), so the computed age at death of 21 is highly reliable. I am not using an estimate here; the small remaining uncertainty only reflects normal variation in secondary historical summaries, not the dates themselves.",
+  "shortDescriptionEn": "Anandibai Gopalrao Joshi was a pioneering Indian physician, widely recognized as the first woman from India to earn a degree in Western medicine in the United States after studying at the Woman's Medical College of Pennsylvania. Inspired by the death of her infant son and determined to improve women's healthcare, she became a symbol of education and reform, but died of tuberculosis in Pune in 1887, shortly after returning to India and before she could begin the medical post she had accepted.",
+  "shortDescriptionFr": "Anandibai Gopalrao Joshi fut une médecin indienne pionnière, largement reconnue comme la première femme originaire d’Inde à obtenir aux États-Unis un diplôme de médecine occidentale, après des études au Woman's Medical College of Pennsylvania. Marquée par la mort de son fils nouveau-né et décidée à améliorer les soins aux femmes, elle devint un symbole d’éducation et de réforme, mais mourut de la tuberculose à Pune en 1887, peu après son retour en Inde et avant de pouvoir prendre le poste médical qui l’attendait.",
+  "shortDescriptionDe": "Anandibai Gopalrao Joshi war eine wegweisende indische Ärztin und gilt weithin als die erste Frau aus Indien, die in den Vereinigten Staaten einen Abschluss in westlicher Medizin erwarb, am Woman's Medical College of Pennsylvania. Der Tod ihres neugeborenen Sohnes prägte ihren Entschluss, die medizinische Versorgung von Frauen zu verbessern; so wurde sie zu einem Symbol für Bildung und gesellschaftlichen Wandel, starb jedoch 1887 in Pune an Tuberkulose, kurz nach ihrer Rückkehr nach Indien und noch bevor sie ihre zugesagte Stelle antreten konnte.",
+  "shortDescriptionEs": "Anandibai Gopalrao Joshi fue una médica india pionera, ampliamente reconocida como la primera mujer de la India en obtener en Estados Unidos un título de medicina occidental, tras estudiar en el Woman's Medical College of Pennsylvania. Impulsada por la muerte de su hijo recién nacido y decidida a mejorar la atención sanitaria de las mujeres, se convirtió en un símbolo de educación y reforma, pero murió de tuberculosis en Pune en 1887, poco después de regresar a la India y antes de poder asumir el puesto médico que había aceptado.",
+  "shortDescriptionRu": "Анандибаи Гопалрао Джоши была выдающейся индийской женщиной-врачом и широко считается первой женщиной из Индии, получившей в США диплом по западной медицине, окончив Woman's Medical College of Pennsylvania. После смерти своего новорождённого сына она решила посвятить себя улучшению женского здравоохранения и стала символом образования и перемен, однако в 1887 году умерла от туберкулёза в Пуне вскоре после возвращения в Индию, не успев приступить к должности, на которую была назначена.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anandi_Gopal_Joshi",
+    "https://blogs.loc.gov/international-collections/2020/03/anandibai-joshee-the-first-indian-woman-to-earn-a-medical-degree-in-the-united-states/",
+    "https://drexel.edu/legacy-center/the-collections/research-guides/joshee/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11426306/",
+    "https://www.saada.org/explore/archive/entities/anandibai-joshee"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q333241",  "Name": "Alexander Ulyanov",  "BirthDate": "1866-04-12T00:00:00Z",  "DeathDate": "1887-05-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Aleksandr%20Ulyanov.jpg",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"752939":{"pageid":752939,"ns":0,"title":"Aleksandr Ulyanov","extract":"Aleksandr Ilyich Ulyanov (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440 \u0418\u043b\u044c\u0438\u0301\u0447 \u0423\u043b\u044c\u044f\u0301\u043d\u043e\u0432; 12 April [O.S. 31 March] 1866 \u2013 20 May [O.S. 8 May] 1887) was a Russian revolutionary and political activist who was executed for planning an assassination against Alexander III of Russia. He was the elder brother of Vladimir Lenin, the founder of the Soviet Union; his execution pushed his younger brother into activism."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q333241")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q333241",
+  "isRealHuman": true,
+  "birthDate": "1866-04-12",
+  "deathDate": "1887-05-20",
+  "ageAtDeath": 21,
+  "confidence": 98,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata and multiple biographical sources. Calculating from 1866-04-12 to 1887-05-20 gives an age of 21. The only minor caveat is Old Style/New Style calendar notation, but it does not change the integer age at death.",
+  "shortDescriptionEn": "Aleksandr Ilyich Ulyanov was a Russian revolutionary, natural science student, and member of Narodnaya Volya, best known as the elder brother of Vladimir Lenin. A gifted student who moved from academic promise into anti-tsarist politics, he helped prepare a plot against Tsar Alexander III and was arrested, tried, and hanged at Shlisselburg in 1887 at the age of 21.",
+  "shortDescriptionFr": "Aleksandr Ilitch Oulianov était un révolutionnaire russe, étudiant en sciences naturelles et membre de la Narodnaïa Volia, surtout connu comme le frère aîné de Vladimir Lénine. Étudiant brillant passé du monde universitaire à la lutte anti-tsariste, il participa à la préparation d’un attentat contre le tsar Alexandre III, puis fut arrêté, jugé et pendu à Schlüsselbourg en 1887 à l’âge de 21 ans.",
+  "shortDescriptionDe": "Aleksandr Iljitsch Uljanow war ein russischer Revolutionär, Naturwissenschaftsstudent und Mitglied der Narodnaja Wolja, zudem der ältere Bruder Wladimir Lenins. Der begabte Student wandte sich aus dem akademischen Milieu der anti-zaristischen Politik zu, beteiligte sich an den Vorbereitungen eines Attentats auf Zar Alexander III. und wurde 1887 nach Verhaftung und Prozess in Schlüsselburg im Alter von 21 Jahren gehängt.",
+  "shortDescriptionEs": "Aleksandr Ilich Uliánov fue un revolucionario ruso, estudiante de ciencias naturales y miembro de Naródnaya Volia, además de hermano mayor de Vladímir Lenin. Alumno brillante que pasó de la promesa académica a la política antizarista, participó en la preparación de un atentado contra el zar Alejandro III y, tras ser arrestado y juzgado, fue ahorcado en Shlisselburg en 1887 a los 21 años.",
+  "shortDescriptionRu": "Александр Ильич Ульянов — русский революционер, студент-естествоиспытатель и участник «Народной воли», старший брат Владимира Ленина. Способный молодой учёный, перешедший от академической карьеры к антицаристскому подполью, он участвовал в подготовке покушения на Александра III, был арестован, осуждён и повешен в Шлиссельбурге в 1887 году в возрасте 21 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Aleksandr_Ulyanov",
+    "https://www.wikidata.org/wiki/Q333241",
+    "https://commons.wikimedia.org/wiki/File:Aleksandr_Ulyanov.jpg",
+    "https://spartacus-educational.com/RUSulyanov.htm",
+    "https://www.prlib.ru/en/news/2035708"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44600",  "Name": "Kaspar Hauser",  "BirthDate": "1812-04-30T00:00:00Z",  "DeathDate": "1833-12-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kaspar%20hauser.jpg",  "SiteLinksCnt": 45,  "Age": 21}
+{"batchcomplete":"","query":{"pages":{"172472":{"pageid":172472,"ns":0,"title":"Kaspar Hauser","extract":"Kaspar Hauser (30 April 1812 \u2013 17 December 1833) was a German youth who claimed to have grown up in the total isolation of a darkened cell. His claims, and his subsequent death from a stab wound, sparked much debate and controversy both in Nuremberg and abroad. Theories propounded at the time identified Hauser as a member of the grand ducal House of Baden, hidden away because of dynastic intrigue. However, there were also allegations that Hauser was an impostor. In 2024, a scientific study ruled out Hauser's princely descent by comparing mitochondrial DNA haplotypes with the House of Baden."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44600")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44600",
+  "isRealHuman": true,
+  "birthDate": "1812-04-30",
+  "deathDate": "1833-12-17",
+  "ageAtDeath": 21,
+  "confidence": 99,
+  "confidenceExplained": "Kaspar Hauser is a well-documented historical person, and his birth and death dates are consistent across Wikidata, Wikipedia, and Encyclopaedia Britannica. The age-at-death calculation is straightforward because both exact dates are known. The main uncertainty around Hauser concerns his origins and the interpretation of his fatal stabbing, not the dates used to calculate his age.",
+  "shortDescriptionEn": "Kaspar Hauser was a German youth whose sudden appearance in Nuremberg in 1828, together with his claim that he had grown up in near-total isolation, made him one of the great human mysteries of 19th-century Europe. Rumors linked him to the House of Baden, while others saw him as an impostor; whatever his origins, his life ended dramatically in Ansbach, where he suffered a chest stab wound in December 1833 and died three days later at age 21, sealing his legend.",
+  "shortDescriptionFr": "Kaspar Hauser était un jeune Allemand dont l’apparition soudaine à Nuremberg en 1828, accompagnée de son récit d’une enfance passée presque entièrement dans l’isolement, en fit l’une des grandes énigmes humaines de l’Europe du XIXe siècle. Des rumeurs le rattachaient à la maison de Bade, tandis que d’autres le tenaient pour un imposteur ; quoi qu’il en soit, sa vie s’acheva dramatiquement à Ansbach, où il reçut un coup de couteau à la poitrine en décembre 1833 et mourut trois jours plus tard à 21 ans.",
+  "shortDescriptionDe": "Kaspar Hauser war ein deutscher Jugendlicher, dessen plötzliches Auftauchen 1828 in Nürnberg und dessen Behauptung, fast völlig isoliert aufgewachsen zu sein, ihn zu einer der großen menschlichen Rätselgestalten des 19. Jahrhunderts machten. Gerüchte verbanden ihn mit dem Haus Baden, andere hielten ihn für einen Betrüger; sein Leben endete jedenfalls dramatisch in Ansbach, wo er im Dezember 1833 eine Stichverletzung in die Brust erlitt und drei Tage später im Alter von 21 Jahren starb.",
+  "shortDescriptionEs": "Kaspar Hauser fue un joven alemán cuya aparición repentina en Núremberg en 1828, junto con su afirmación de haber crecido casi totalmente aislado, lo convirtió en uno de los grandes misterios humanos de la Europa del siglo XIX. Algunos rumores lo relacionaron con la Casa de Baden y otros lo consideraron un impostor; en cualquier caso, su vida terminó de forma dramática en Ansbach, donde sufrió una puñalada en el pecho en diciembre de 1833 y murió tres días después a los 21 años.",
+  "shortDescriptionRu": "Каспар Хаузер — немецкий юноша, внезапно появившийся в Нюрнберге в 1828 году и утверждавший, что вырос почти в полной изоляции, из-за чего стал одной из самых известных человеческих загадок Европы XIX века. Слухи связывали его с домом Бадена, другие считали его самозванцем; как бы то ни было, его жизнь закончилась драматически в Ансбахе, где в декабре 1833 года он получил ножевое ранение в грудь и умер через три дня в возрасте 21 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kaspar_Hauser",
+    "https://www.wikidata.org/wiki/Q44600",
+    "https://www.britannica.com/biography/Kaspar-Hauser",
+    "https://commons.wikimedia.org/wiki/File:Kaspar_hauser.jpg"
+  ]
+}
