@@ -1,0 +1,1022 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7312",  "Name": "Franz Schubert",  "BirthDate": "1797-01-31T00:00:00Z",  "DeathDate": "1828-11-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Franz%20Schubert%20by%20Wilhelm%20August%20Rieder%201875%20larger%20version.png",  "SiteLinksCnt": 170,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"44888":{"pageid":44888,"ns":0,"title":"Franz Schubert","extract":"Franz Peter Schubert (; German: [f\u0281ants \u02c8pe\u02d0t\u0250 \u02c8\u0283u\u02d0b\u0250t]; 31 January 1797 \u2013 19 November 1828) was an Austrian composer of the late Classical and early Romantic eras. Despite his short life, Schubert left behind a vast oeuvre of more than 1,000 compositions, including over 600 Lieder (art songs in German) and other vocal works, seven complete symphonies, sacred music, operas, incidental music, and a large body of piano and chamber music. Among these are the songs \"Gretchen am Spinnrade\", \"Erlk\u00f6nig\" and \"Ave Maria\"; the Trout Quintet; the Symphony No. 8 in B minor (Unfinished); the Symphony No. 9 in C major (The Great); the String Quartet No. 14 in D minor (Death and the Maiden); the String Quintet in C major; the Impromptus for solo piano; the last three piano sonatas; the Fantasia in F minor for piano four hands; the incidental music to the play Rosamunde; the song cycles Die sch\u00f6ne M\u00fcllerin and Winterreise; and the song collection Schwanengesang.\nBorn in the Himmelpfortgrund suburb of Vienna, Schubert showed uncommon gifts for music from an early age. His father gave him his first violin lessons and his elder brother gave him piano lessons, but Schubert soon exceeded their abilities. In 1808, at the age of eleven, he became a pupil at the Stadtkonvikt school, where he became acquainted with the orchestral music of Joseph Haydn, Wolfgang Amadeus Mozart, and Ludwig van Beethoven. He left the Stadtkonvikt at the end of 1813 and returned home to live with his father, where he began studying to become a schoolteacher. Despite this, he continued his studies in composition with Antonio Salieri and still composed prolifically. In 1821, Schubert was admitted to the Gesellschaft der Musikfreunde as a performing member, which helped establish his name among the Viennese citizenry. He gave a concert of his works to critical acclaim in March 1828, the only time he did so in his career. He died eight months later at the age of 31, the cause officially attributed to typhoid fever, but believed by some historians to be syphilis.\nAppreciation of Schubert's music while he was alive was limited to a relatively small circle of admirers in Vienna, but interest in his work increased greatly in the decades following his death. Felix Mendelssohn, Robert Schumann, Franz Liszt, Johannes Brahms and other 19th-century composers discovered and championed his works. Today, Schubert is considered one of the greatest composers in the history of Western classical music and his music continues to be widely performed.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7312")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7312",
+  "isRealHuman": true,
+  "birthDate": "1797-01-31",
+  "deathDate": "1828-11-19",
+  "ageAtDeath": 31,
+  "confidence": 100,
+  "confidenceExplained": "Franz Schubert's birth and death dates are consistently given by major reference sources as 31 January 1797 and 19 November 1828. Calculating from those dates gives an age at death of 31 years, because his birthday had already occurred in 1828.",
+  "shortDescriptionEn": "Franz Peter Schubert was an Austrian composer who helped bridge the late Classical and early Romantic eras. Celebrated for his gift for melody, he wrote more than a thousand works, including hundreds of Lieder, major chamber music, piano works, masses, and symphonies such as the Unfinished Symphony. His music became far more widely admired after his death. Schubert died in Vienna on 19 November 1828 at the age of 31; the official diagnosis was typhoid fever, though later writers have discussed other possible causes.",
+  "shortDescriptionFr": "Franz Peter Schubert était un compositeur autrichien qui fit le lien entre la fin de l’époque classique et les débuts du romantisme. Réputé pour son sens mélodique, il composa plus de mille œuvres, dont des centaines de Lieder, de la musique de chambre, des pièces pour piano, des messes et des symphonies comme l’Inachevée. Sa renommée grandit surtout après sa mort. Schubert mourut à Vienne le 19 novembre 1828, à l’âge de 31 ans ; le diagnostic officiel fut la fièvre typhoïde, même si d’autres hypothèses ont ensuite été avancées.",
+  "shortDescriptionDe": "Franz Peter Schubert war ein österreichischer Komponist, der die späte Klassik mit der frühen Romantik verband. Berühmt für seinen melodischen Einfallsreichtum, schrieb er mehr als tausend Werke, darunter Hunderte Lieder, bedeutende Kammermusik, Klavierstücke, Messen und Sinfonien wie die Unvollendete. Große Anerkennung fand seine Musik vor allem nach seinem Tod. Schubert starb am 19. November 1828 in Wien im Alter von 31 Jahren; offiziell wurde Typhus diagnostiziert, obwohl später auch andere Ursachen diskutiert wurden.",
+  "shortDescriptionEs": "Franz Peter Schubert fue un compositor austríaco que unió el final del periodo clásico con los comienzos del romanticismo. Admirado por su talento melódico, escribió más de mil obras, entre ellas cientos de Lieder, música de cámara, piezas para piano, misas y sinfonías como la Inacabada. Su prestigio creció mucho después de su muerte. Schubert murió en Viena el 19 de noviembre de 1828, a los 31 años; el diagnóstico oficial fue fiebre tifoidea, aunque con el tiempo se han propuesto otras explicaciones.",
+  "shortDescriptionRu": "Франц Петер Шуберт был австрийским композитором, связавшим позднюю классику с ранним романтизмом. Его особенно ценят за мелодический дар; он написал более тысячи произведений, включая сотни песен-лидер, камерную музыку, фортепианные пьесы, мессы и симфонии, среди них «Неоконченную». Широкое признание пришло к его музыке уже после смерти. Шуберт умер в Вене 19 ноября 1828 года в возрасте 31 года; официальной причиной считалась брюшная лихорадка, хотя позднее обсуждались и другие версии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Franz_Schubert",
+    "https://www.britannica.com/biography/Franz-Schubert",
+    "https://www.britannica.com/summary/Franz-Schubert",
+    "https://www.wikidata.org/wiki/Q7312"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q33941",  "Name": "Julian",  "BirthDate": "0331-11-18T00:00:00Z",  "DeathDate": "0363-06-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gold%20Solidus%20of%20Julian%20the%20Apostate%2C%20Sirmium.jpg",  "SiteLinksCnt": 94,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"16300":{"pageid":16300,"ns":0,"title":"Julian (emperor)","extract":"Julian (Latin: Flavius Claudius Julianus; Ancient Greek: \u1f38\u03bf\u03c5\u03bb\u03b9\u03b1\u03bd\u03cc\u03c2 Ioulianos; 331 \u2013 26 June 363) was the Caesar of the West from 355 to 360 and Roman emperor from 361 to 363, as well as a notable philosopher and author in Greek. His rejection of Christianity, and his promotion of Neoplatonic Hellenism caused him to be remembered as Julian the Apostate in the Christian tradition.\nA nephew of Constantine the Great, Julian was one of few in the imperial family to survive the purges and civil wars during the reign of Constantius II, his cousin. Julian became an orphan as a child after his father was executed in 337, and spent much of his life under Constantius's close supervision. However, the emperor allowed Julian freedom to pursue an education in the Greek-speaking east. In 355, Constantius II summoned Julian to court and appointed him to rule Gaul. Julian was successful in his rule, defeating and counterattacking Germanic raids across the Rhine and encouraging the provinces' return to prosperity. In 360, he was proclaimed emperor by his soldiers at Lutetia (Paris), sparking a civil war with Constantius. However, Constantius died before the two could face each other in battle, having named Julian as his successor to prevent further bloodshed.\nIn 363, Julian embarked on an ambitious campaign against the Sasanian Empire. The campaign was initially successful, securing a victory outside Ctesiphon in Mesopotamia. However, he did not attempt to besiege the capital. Julian instead moved into Persia's heartland, but he soon faced supply problems and was forced to retreat northwards while being ceaselessly harassed by Persian skirmishers. During the Battle of Samarra, Julian was mortally wounded. He was succeeded by Jovian, a senior officer in the imperial guard, who was obliged to cede territory, including Nisibis, in order to save the trapped Roman forces. Julian and Jovian were the last sole emperors to rule the whole Empire for their entire reign, after which it was permanently divided between a Western and Eastern court.\nJulian was the last non-Christian ruler of the Roman Empire, and he believed that it was necessary to restore the Empire's ancient Roman values and traditions in order to save it from dissolution. He purged the top-heavy state bureaucracy, and attempted to revive traditional Roman religious practices at the expense of Christianity. His efforts to build a Third Temple in Jerusalem were probably intended to harm Christianity rather than please Jews. Julian also forbade Christians from teaching and learning classical texts."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q33941")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q33941",
+  "isRealHuman": true,
+  "birthDate": "0331-11-17",
+  "deathDate": "0363-06-26",
+  "ageAtDeath": 31,
+  "confidence": 90,
+  "confidenceExplained": "The identification is very strong: the supplied Wikidata ID and Wikipedia extract both point to Julian, Roman emperor and philosopher. The exact birth day varies slightly across derived data, and some sources give the death date as June 26/27, 363 or the birth year as 331/332. Using Wikidata's specific date of 17 November 331 and the commonly cited death date of 26 June 363 gives age 31; Britannica also explicitly states that he died at age 31.",
+  "shortDescriptionEn": "Julian, known as Julian the Apostate, was a Roman emperor, scholar, military commander, and philosopher who ruled from 361 to 363. A nephew of Constantine the Great, he was raised in the imperial family, governed Gaul successfully, and tried to revive traditional Roman religion after rejecting Christianity. In 363, during his Persian campaign, he was mortally wounded near Samarra while retreating from Mesopotamia and died shortly afterward at the age of 31.",
+  "shortDescriptionFr": "Julien, connu sous le nom de Julien l’Apostat, fut empereur romain, lettré, chef militaire et philosophe de 361 à 363. Neveu de Constantin le Grand, il grandit au sein de la famille impériale, gouverna la Gaule avec succès et tenta de restaurer les cultes traditionnels romains après avoir rejeté le christianisme. En 363, pendant sa campagne contre les Perses, il fut mortellement blessé près de Samarra lors de la retraite de Mésopotamie et mourut peu après à l’âge de 31 ans.",
+  "shortDescriptionDe": "Julian, bekannt als Julian der Abtrünnige, war römischer Kaiser, Gelehrter, Feldherr und Philosoph und regierte von 361 bis 363. Als Neffe Konstantins des Großen wuchs er in der kaiserlichen Familie auf, verwaltete Gallien erfolgreich und versuchte nach seiner Abkehr vom Christentum, die traditionellen römischen Kulte wiederzubeleben. Im Jahr 363 wurde er während seines Persienfeldzugs beim Rückzug aus Mesopotamien nahe Samarra tödlich verwundet und starb kurz darauf im Alter von 31 Jahren.",
+  "shortDescriptionEs": "Juliano, conocido como Juliano el Apóstata, fue emperador romano, erudito, comandante militar y filósofo, y gobernó de 361 a 363. Sobrino de Constantino el Grande, creció dentro de la familia imperial, administró la Galia con éxito e intentó restaurar la religión romana tradicional tras rechazar el cristianismo. En 363, durante su campaña persa, fue herido mortalmente cerca de Samarra mientras se retiraba de Mesopotamia y murió poco después a los 31 años.",
+  "shortDescriptionRu": "Юлиан, известный как Юлиан Отступник, был римским императором, ученым, военачальником и философом, правившим с 361 по 363 год. Племянник Константина Великого, он вырос в императорской семье, успешно управлял Галлией и после отказа от христианства пытался возродить традиционные римские культы. В 363 году, во время персидского похода, он был смертельно ранен близ Самарры при отступлении из Месопотамии и вскоре умер в возрасте 31 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Julian_(emperor)",
+    "https://www.wikidata.org/wiki/Q33941",
+    "https://www.britannica.com/biography/Julian-Roman-emperor",
+    "https://www.britannica.com/summary/Julian-Roman-emperor"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1434",  "Name": "Commodus",  "BirthDate": "0161-08-30T00:00:00Z",  "DeathDate": "0192-12-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Commodus%20Musei%20Capitolini%20MC1120.jpg",  "SiteLinksCnt": 85,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"44324":{"pageid":44324,"ns":0,"title":"Commodus","extract":"Commodus (; Latin: [\u02c8k\u0254mm\u0254d\u028as]; 31 August 161 \u2013 31 December 192) was Roman emperor from 177 to 192, first serving as nominal co-emperor under his father Marcus Aurelius and then ruling alone from 180. Commodus's sole reign is commonly thought to mark the end of the Pax Romana, a golden age of peace and prosperity in the history of the Roman Empire.\nCommodus accompanied his father during the Marcomannic Wars in 172 and on a tour of the Eastern provinces in 176. The following year, he became the youngest emperor and consul up to that point, at the age of 16. His sole reign saw less military conflict than that of Marcus Aurelius, but internal intrigues and conspiracies abounded, goading Commodus to an increasingly dictatorial style of leadership. This culminated in his creating a deific personality cult, including his performances as a gladiator in the Colosseum. Throughout his reign, Commodus entrusted the management of affairs to his palace chamberlain and praetorian prefects, namely Saoterus, Perennis, and Cleander.\nCommodus was assassinated by the wrestler Narcissus in 192, ending the Nerva\u2013Antonine dynasty. He was succeeded by Pertinax, the first claimant in the tumultuous Year of the Five Emperors."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1434")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1434",
+  "isRealHuman": true,
+  "birthDate": "0161-08-31",
+  "deathDate": "0192-12-31",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable biographical sources give Commodus's birth date as 31 August 161 and death date as 31 December 192. The age calculation is straightforward: he died four months after his 31st birthday. The only uncertainty is the one-day discrepancy in the supplied timestamp data, likely caused by historical calendar/date normalization rather than a different historical date.",
+  "shortDescriptionEn": "Commodus was a Roman emperor, the son of Marcus Aurelius, who ruled first as co-emperor and then alone from 180 to 192. His reign is often remembered as a turning point after the stability of the Pax Romana, marked by court intrigue, autocratic rule, and his notorious public performances as a gladiator. In late 192, after a conspiracy formed around members of his inner circle, he was first poisoned unsuccessfully and then strangled by the wrestler Narcissus, dying in Rome at the age of 31.",
+  "shortDescriptionFr": "Commode fut un empereur romain, fils de Marc Aurèle, d’abord associé au pouvoir puis seul souverain de 180 à 192. Son règne est souvent vu comme un tournant après la stabilité de la Pax Romana, marqué par les intrigues de cour, un pouvoir de plus en plus autoritaire et ses célèbres apparitions comme gladiateur. À la fin de 192, après une conspiration menée dans son entourage proche, il fut d’abord empoisonné sans succès puis étranglé par le lutteur Narcissus, mourant à Rome à l’âge de 31 ans.",
+  "shortDescriptionDe": "Commodus war ein römischer Kaiser und der Sohn Mark Aurels; zunächst regierte er als Mitkaiser, ab 180 dann allein bis 192. Seine Herrschaft gilt oft als Wendepunkt nach der Stabilität der Pax Romana und war geprägt von Hofintrigen, zunehmend autokratischer Regierung und seinen berüchtigten Auftritten als Gladiator. Ende 192 wurde in seinem engsten Umfeld eine Verschwörung geschmiedet: Nachdem ein Giftanschlag scheiterte, wurde er von dem Ringer Narcissus erdrosselt und starb in Rom im Alter von 31 Jahren.",
+  "shortDescriptionEs": "Cómodo fue un emperador romano, hijo de Marco Aurelio, que gobernó primero como coemperador y luego en solitario desde 180 hasta 192. Su reinado suele recordarse como un punto de inflexión tras la estabilidad de la Pax Romana, marcado por intrigas palaciegas, un gobierno cada vez más autoritario y sus famosas actuaciones como gladiador. A finales de 192, tras una conspiración en su círculo cercano, fue primero envenenado sin éxito y luego estrangulado por el luchador Narciso, muriendo en Roma a los 31 años.",
+  "shortDescriptionRu": "Коммод был римским императором, сыном Марка Аврелия: сначала он правил как соправитель, а с 180 по 192 год — единолично. Его правление часто считают переломом после стабильности Pax Romana; оно запомнилось придворными интригами, всё более самовластным стилем власти и необычными публичными выступлениями императора в роли гладиатора. В конце 192 года против него составили заговор приближённые: после неудачного отравления Коммода задушил борец Нарцисс, и он умер в Риме в возрасте 31 года.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Commodus%20Musei%20Capitolini%20MC1120.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bust_of_Emperor_Commodus,_front_-_Getty_Museum_(92.SA.48).jpg",
+    "https://en.wikipedia.org/wiki/Commodus#/media/File:Commodus_Musei_Capitolini_MC1120.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Commodus",
+    "https://www.britannica.com/biography/Commodus",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Commodus%20Musei%20Capitolini%20MC1120.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bust_of_Emperor_Commodus,_front_-_Getty_Museum_(92.SA.48).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q30121972",  "Name": "Charlie Kirk",  "BirthDate": "1993-10-14T00:00:00Z",  "DeathDate": "2025-09-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Kirk%20%2853952923573%29%20%28headshot%20cropped%29.jpg",  "SiteLinksCnt": 84,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"53245776":{"pageid":53245776,"ns":0,"title":"Charlie Kirk","extract":"Charles James  Kirk (October 14, 1993 \u2013 September 10, 2025) was an American right-wing political activist, entrepreneur, and media personality. He co\u2011founded the conservative student organization Turning Point USA (TPUSA) in 2012 and served as its executive director until his assassination in 2025. A key ally of Donald Trump, he became one of the most prominent voices of the MAGA movement within the Republican Party, publishing several books and hosting The Charlie Kirk Show.\nBorn and raised in the Chicago suburbs of Arlington Heights and Prospect Heights, Kirk became politically active in high school. He briefly attended college before dropping out to focus on building TPUSA with political donor Bill Montgomery. The project later expanded into affiliate groups such as Turning Point Action and Turning Point Faith. Kirk's activism centered on mobilizing conservative students and promoting Republican causes nationwide.\nKirk advocated for a range of conservative positions, including opposition to abortion, gun control, DEI programs, and LGBTQ rights. Over time, he aligned with the Christian right and advocated for Christian nationalism. His more controversial positions included criticism of the Civil Rights Act of 1964 and Martin Luther King Jr., as well as promotion of COVID-19 misinformation, false allegations of electoral fraud in 2020, and the white genocide conspiracy theory.\nOn September 10, 2025, Kirk was fatally shot  by a rooftop sniper while speaking at a TPUSA debate event at Utah Valley University. His assassination drew international attention and condemnation of political violence, while also sparking partisan dispute. On September 21, almost 100,000 people attended his memorial service at State Farm Stadium in Glendale, Arizona."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q30121972")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q30121972",
+  "isRealHuman": true,
+  "birthDate": "1993-10-14",
+  "deathDate": "2025-09-10",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistently reported by Wikipedia, Britannica, and AP. The age is a straightforward calculation: Charlie Kirk died on 2025-09-10, about one month before his 32nd birthday on 2025-10-14, so he was 31.",
+  "shortDescriptionEn": "Charlie Kirk was an American conservative political activist, media personality, author, and co-founder of Turning Point USA, a major youth-oriented political organization. He became a prominent voice in Republican and pro-Trump politics through campus events, commentary, books, and The Charlie Kirk Show. On September 10, 2025, he was shot and killed while speaking at a Turning Point USA event at Utah Valley University in Orem, Utah, an attack widely described as a political assassination.",
+  "shortDescriptionFr": "Charlie Kirk était un militant politique conservateur américain, personnalité médiatique, auteur et cofondateur de Turning Point USA, une importante organisation politique destinée aux jeunes. Il est devenu une voix influente de la droite républicaine et pro-Trump grâce à ses interventions sur les campus, ses commentaires, ses livres et The Charlie Kirk Show. Le 10 septembre 2025, il a été tué par balle alors qu’il s’exprimait lors d’un événement de Turning Point USA à l’Utah Valley University, à Orem, dans l’Utah, une attaque largement décrite comme un assassinat politique.",
+  "shortDescriptionDe": "Charlie Kirk war ein US-amerikanischer konservativer politischer Aktivist, Medienpersönlichkeit, Autor und Mitgründer von Turning Point USA, einer einflussreichen politischen Jugendorganisation. Durch Campusveranstaltungen, Kommentare, Bücher und The Charlie Kirk Show wurde er zu einer bekannten Stimme der republikanischen und pro-Trump geprägten Rechten. Am 10. September 2025 wurde er während eines Auftritts bei einer Turning-Point-USA-Veranstaltung an der Utah Valley University in Orem, Utah, erschossen; der Angriff wurde weithin als politisches Attentat beschrieben.",
+  "shortDescriptionEs": "Charlie Kirk fue un activista político conservador estadounidense, figura mediática, autor y cofundador de Turning Point USA, una influyente organización política juvenil. Se convirtió en una voz destacada del republicanismo y del movimiento pro-Trump mediante actos universitarios, comentarios, libros y The Charlie Kirk Show. El 10 de septiembre de 2025 fue asesinado a tiros mientras hablaba en un evento de Turning Point USA en la Universidad del Valle de Utah, en Orem, Utah, en un ataque ampliamente descrito como un asesinato político.",
+  "shortDescriptionRu": "Чарли Кирк был американским консервативным политическим активистом, медиаперсоной, автором и сооснователем Turning Point USA, влиятельной молодежной политической организации. Он стал заметным голосом республиканского и протрамповского движения благодаря выступлениям в университетах, комментариям, книгам и программе The Charlie Kirk Show. 10 сентября 2025 года он был застрелен во время выступления на мероприятии Turning Point USA в Университете долины Юты в городе Орем, штат Юта; это нападение широко описывалось как политическое убийство.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charlie_Kirk",
+    "https://apnews.com/article/charlie-kirk-shooting-utah-university-republicans-8357c3d102de09e3320fde761258131a",
+    "https://apnews.com/article/charlie-kirk-conservative-activist-shot-546165a8151104e0938a5e085be1e8bd",
+    "https://www.britannica.com/biography/Charlie-Kirk",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Kirk%20%2853952923573%29%20%28headshot%20cropped%29.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34013",  "Name": "Georges Seurat",  "BirthDate": "1859-12-02T00:00:00Z",  "DeathDate": "1891-03-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Georges%20Seurat%201888%20%28cropped%29.jpg",  "SiteLinksCnt": 79,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"62031":{"pageid":62031,"ns":0,"title":"Georges Seurat","extract":"Georges Pierre Seurat (UK:  SUR-ah, -\u2060\u0259, US:  suu-RAH; French: [\u0292\u0254\u0281\u0292 pj\u025b\u0281 s\u0153\u0281a]; 2 December 1859 \u2013 29 March 1891) was a French post-Impressionist artist. He devised the painting techniques known as chromoluminarism and pointillism and used cont\u00e9 crayon for drawings on paper with a rough surface.\nSeurat's artistic personality combined qualities that are usually thought of as opposed and incompatible: on the one hand, his extreme and delicate sensibility, on the other, a passion for logical abstraction and an almost mathematical precision of mind. His large-scale work A Sunday Afternoon on the Island of La Grande Jatte (1884\u20131886) altered the direction of modern art by initiating Neo-Impressionism, and is one of the icons of late 19th-century painting."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34013")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q34013",
+  "isRealHuman": true,
+  "birthDate": "1859-12-02",
+  "deathDate": "1891-03-29",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The birth date, death date, and age at death are consistently reported by major references including Wikipedia, Wikidata, Britannica, and museum/medical-history sources. The exact medical cause of death is uncertain, but that does not affect the age calculation: from 1859-12-02 to 1891-03-29, Georges Seurat had not yet reached his 32nd birthday, so he was 31.",
+  "shortDescriptionEn": "Georges Seurat was a French Post-Impressionist painter whose precise, luminous technique helped launch Neo-Impressionism and made pointillism famous. His masterpiece A Sunday Afternoon on the Island of La Grande Jatte changed the course of modern painting with its disciplined dots of color and carefully structured calm. He died in Paris at only 31 after a brief illness; the exact cause remains uncertain, with infectious angina, meningitis, pneumonia, and diphtheria all cited by later sources.",
+  "shortDescriptionFr": "Georges Seurat était un peintre postimpressionniste français dont la technique lumineuse et méthodique a contribué à fonder le néo-impressionnisme et à rendre célèbre le pointillisme. Son chef-d’œuvre Un dimanche après-midi à l’Île de la Grande Jatte a marqué l’histoire de l’art moderne par ses touches colorées rigoureusement organisées. Il est mort à Paris à seulement 31 ans après une maladie brève; la cause exacte reste incertaine, les sources évoquant notamment une angine infectieuse, une méningite, une pneumonie ou la diphtérie.",
+  "shortDescriptionDe": "Georges Seurat war ein französischer postimpressionistischer Maler, dessen präzise und leuchtende Malweise den Neoimpressionismus prägte und den Pointillismus berühmt machte. Sein Hauptwerk Ein Sonntagnachmittag auf der Insel La Grande Jatte veränderte die moderne Malerei durch seine disziplinierte Farbpunkte-Technik und strenge Komposition. Er starb in Paris im Alter von nur 31 Jahren nach kurzer Krankheit; die genaue Todesursache ist unsicher, genannt werden unter anderem infektiöse Angina, Meningitis, Lungenentzündung und Diphtherie.",
+  "shortDescriptionEs": "Georges Seurat fue un pintor francés postimpresionista cuya técnica precisa y luminosa impulsó el neoimpresionismo e hizo célebre el puntillismo. Su obra maestra Tarde de domingo en la isla de la Grande Jatte transformó la pintura moderna con sus puntos de color cuidadosamente ordenados y su composición serena. Murió en París con solo 31 años tras una enfermedad breve; la causa exacta no está clara, y las fuentes mencionan angina infecciosa, meningitis, neumonía o difteria.",
+  "shortDescriptionRu": "Жорж Сёра был французским художником-постимпрессионистом, чья точная и световая живописная система стала основой неоимпрессионизма и прославила пуантилизм. Его шедевр «Воскресный день на острове Гранд-Жатт» изменил развитие современной живописи благодаря строгой композиции и мозаике цветных точек. Он умер в Париже всего в 31 год после короткой болезни; точная причина смерти остается неясной, среди версий называют инфекционную ангину, менингит, пневмонию и дифтерию.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Georges_Seurat",
+    "https://www.britannica.com/biography/Georges-Seurat",
+    "https://www.wikidata.org/wiki/Q34013",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3294336/",
+    "https://www.guggenheim.org/artwork/artist/georges-seurat",
+    "https://commons.wikimedia.org/wiki/File:Georges_Seurat_1888.jpg",
+    "https://commons.wikimedia.org/wiki/File:PORTRAIT_DE_GEORGES_SEURAT.PNG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q184634",  "Name": "Boudica",  "BirthDate": "0030-01-01T00:00:00Z",  "DeathDate": "0061-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Queen%20Boudica%20by%20John%20Opie.jpg",  "SiteLinksCnt": 78,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"4517":{"pageid":4517,"ns":0,"title":"Boudica","extract":"Boudica or Boudicca (, from Brythonic *boudi 'victory, win' + *-k\u0101 (adjectival suffix), i.e. 'Victorious Woman', known in Latin chronicles as Boadicea or Boudicea, and in Welsh as Buddug, pronounced [\u02c8b\u0268\u00f0\u0268\u0261]) was a queen of the ancient British Iceni tribe, who led a failed uprising against the conquering forces of the Roman Empire in AD 60 or 61. She is considered a British national heroine and a symbol of the struggle for justice and independence.\nBoudica's husband Prasutagus, with whom she had two daughters, ruled as a nominally independent ally of Rome. He left his kingdom jointly to his daughters and to the Roman emperor in his will. When he died, his will was ignored, and the kingdom was annexed and his property taken. According to the Roman historian Tacitus, Boudica was flogged and her daughters raped. The historian Cassius Dio wrote that previous imperial donations to influential Britons were confiscated and the Roman financier and philosopher Seneca called in the loans he had forced on the reluctant Britons.\nIn 60/61, Boudica led the Iceni and other British tribes in revolt. They destroyed Camulodunum (modern Colchester), earlier the capital of the Trinovantes, but at that time a colonia for discharged Roman soldiers. Upon hearing of the revolt, the Roman governor Gaius Suetonius Paulinus hurried from the island of Mona (modern Anglesey) to Londinium, the 20-year-old commercial settlement that was the rebels' next target. Unable to defend the settlement, he abandoned it. Boudica's army defeated a detachment of the Legio IX Hispana, and burnt both Londinium and Verulamium. In all, an estimated 70,000\u201380,000 Romans and Britons were killed by Boudica's followers. Suetonius, meanwhile, regrouped his forces, possibly in the West Midlands, and despite being heavily outnumbered, he decisively defeated the Britons. Boudica died, by suicide or illness, shortly afterwards. The crisis of 60/61 caused Nero to consider withdrawing all his imperial forces from Britain, but Suetonius's victory over Boudica confirmed Roman control of the province.\nInterest in these events was revived in the English Renaissance and led to Boudica's fame in the Victorian era and as a cultural symbol in Britain."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q184634")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q184634",
+  "isRealHuman": true,
+  "birthDate": "0030-01-01",
+  "deathDate": "0061-01-01",
+  "ageAtDeath": 31,
+  "confidence": 35,
+  "confidenceExplained": "The identity is very secure: this is Boudica, the historical Iceni queen. The age is much less certain because no reliable ancient source gives her birth date, and even the death year is usually given as AD 60 or 61. I used the common approximate birth year AD 30 and the death year AD 61, producing an estimated age at death of 31.",
+  "shortDescriptionEn": "Boudica was the queen of the Iceni, a Celtic people of eastern Britain, and one of the most famous leaders of resistance to Roman rule. After Roman officials ignored her late husband Prasutagus’s will and humiliated her family, she led a major uprising in AD 60/61, destroying Camulodunum, Londinium, and Verulamium before Roman forces crushed the revolt. She died soon afterward at about 31, either by taking poison or from illness after defeat.",
+  "shortDescriptionFr": "Boudica fut la reine des Icènes, un peuple celte de l’est de la Bretagne, et l’une des grandes figures de la résistance à Rome. Après que les autorités romaines eurent ignoré le testament de son mari Prasutagus et humilié sa famille, elle mena en 60/61 une vaste révolte qui détruisit Camulodunum, Londinium et Verulamium avant d’être écrasée par l’armée romaine. Elle mourut peu après, vers l’âge de 31 ans, soit par empoisonnement volontaire, soit de maladie après la défaite.",
+  "shortDescriptionDe": "Boudica war Königin der Icener, eines keltischen Volkes im Osten Britanniens, und eine der bekanntesten Anführerinnen des Widerstands gegen Rom. Nachdem römische Beamte das Testament ihres verstorbenen Mannes Prasutagus missachtet und ihre Familie gedemütigt hatten, führte sie 60/61 n. Chr. einen großen Aufstand an, bei dem Camulodunum, Londinium und Verulamium zerstört wurden, bevor die Römer die Rebellion niederschlugen. Kurz darauf starb sie im Alter von etwa 31 Jahren, entweder durch Gift oder an einer Krankheit nach der Niederlage.",
+  "shortDescriptionEs": "Boudica fue reina de los icenos, un pueblo celta del este de Britania, y una de las figuras más célebres de la resistencia contra Roma. Después de que las autoridades romanas ignoraran el testamento de su esposo Prasutago y humillaran a su familia, encabezó en el año 60/61 una gran rebelión que destruyó Camulodunum, Londinium y Verulamium antes de ser derrotada por el ejército romano. Murió poco después, hacia los 31 años, posiblemente por veneno o por enfermedad tras la derrota.",
+  "shortDescriptionRu": "Боудикка была царицей иценов, кельтского народа восточной Британии, и одной из самых известных предводительниц сопротивления римскому владычеству. После того как римские власти проигнорировали завещание ее мужа Прасутага и унизили ее семью, она возглавила восстание 60/61 года, в ходе которого были разрушены Камулодун, Лондиний и Веруламиум, прежде чем римляне подавили мятеж. Вскоре после поражения она умерла примерно в 31 год — по разным версиям, приняв яд или скончавшись от болезни.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Queen%20Boudica%20by%20John%20Opie.jpg",
+    "https://commons.wikimedia.org/wiki/File:Boudicca_Statue.png",
+    "https://en.wikipedia.org/wiki/Boudica#/media/File:Boudica_statue,_Westminster.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Boudica",
+    "https://www.britannica.com/biography/Boudicca",
+    "https://www.worldhistory.org/Boudicca/",
+    "https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/sources/",
+    "https://www.natgeokids.com/uk/discover/history/general-history/boudica-facts/",
+    "https://commons.wikimedia.org/wiki/File:Queen_Boudica_by_John_Opie.jpg",
+    "https://commons.wikimedia.org/wiki/File:Boudicca_Statue.png"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q182128",  "Name": "Giovanni Pico della Mirandola",  "BirthDate": "1463-03-05T00:00:00Z",  "DeathDate": "1494-11-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico1.jpg",  "SiteLinksCnt": 76,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"152575":{"pageid":152575,"ns":0,"title":"Giovanni Pico della Mirandola","extract":"Giovanni Pico della Mirandola (Latin: Johannes Picus de Mirandula; 24 February 1463 \u2013 17 November 1494) was an Italian Renaissance nobleman and philosopher. He is famed for the events of 1486, when, at the age of 23, he proposed to defend 900 theses on religion, philosophy, natural philosophy, and magic against all comers, for which he wrote the Oration on the Dignity of Man, which has been called the \"Manifesto of the Renaissance\", and a key text of Renaissance humanism and of what has been called the \"Hermetic Reformation\". He was the founder of the tradition of Christian Kabbalah, a key tenet of early modern Western esotericism. The 900 Theses was the first printed book to be universally banned by the Church. Pico is sometimes seen as a proto-Protestant, because his 900 theses anticipated many Protestant views."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q182128")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q182128",
+  "isRealHuman": true,
+  "birthDate": "1463-02-24",
+  "deathDate": "1494-11-17",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable references agree on 24 February 1463 as the birth date and 17 November 1494 as the death date, and the age calculation gives 31. The alternate dates 1463-03-05 and 1494-11-26 are best explained as calendar-converted equivalents, and they also produce age 31.",
+  "shortDescriptionEn": "Giovanni Pico della Mirandola was an Italian Renaissance nobleman and philosopher, celebrated for his astonishing learning, his 900 Theses, and the Oration on the Dignity of Man, a landmark text of Renaissance humanism. He helped shape Christian Kabbalah and tried to reconcile philosophy, theology, and ancient wisdom traditions. He died in Florence at 31 during a tense political and religious moment; his death was long considered mysterious, and later investigations pointed to arsenic poisoning, though the full story remains debated.",
+  "shortDescriptionFr": "Giovanni Pico della Mirandola était un noble et philosophe italien de la Renaissance, célèbre pour son érudition exceptionnelle, ses 900 thèses et l’Oration sur la dignité de l’homme, texte majeur de l’humanisme renaissant. Il contribua à la Kabbale chrétienne et chercha à rapprocher philosophie, théologie et traditions antiques. Il mourut à Florence à 31 ans dans un climat politique et religieux tendu; sa mort fut longtemps jugée mystérieuse, et des analyses ultérieures ont suggéré un empoisonnement à l’arsenic, sans lever toutes les incertitudes.",
+  "shortDescriptionDe": "Giovanni Pico della Mirandola war ein italienischer Adliger und Philosoph der Renaissance, bekannt für seine außergewöhnliche Gelehrsamkeit, seine 900 Thesen und die Rede über die Würde des Menschen, einen Schlüsseltext des Renaissance-Humanismus. Er prägte die christliche Kabbala mit und versuchte, Philosophie, Theologie und antike Weisheitstraditionen zu verbinden. Er starb in Florenz mit 31 Jahren in einer politisch und religiös angespannten Zeit; sein Tod galt lange als rätselhaft, und spätere Untersuchungen deuteten auf Arsenvergiftung hin, auch wenn die genaue Verantwortung umstritten bleibt.",
+  "shortDescriptionEs": "Giovanni Pico della Mirandola fue un noble y filósofo italiano del Renacimiento, famoso por su erudición extraordinaria, sus 900 tesis y la Oración sobre la dignidad del hombre, una obra clave del humanismo renacentista. Influyó en la Cábala cristiana e intentó unir filosofía, teología y antiguas tradiciones de sabiduría. Murió en Florencia a los 31 años en un contexto político y religioso muy tenso; su muerte se consideró durante siglos misteriosa, y análisis posteriores apuntaron a envenenamiento por arsénico, aunque el caso no está cerrado del todo.",
+  "shortDescriptionRu": "Джованни Пико делла Мирандола был итальянским дворянином и философом эпохи Возрождения, прославившимся выдающейся ученостью, 900 тезисами и «Речью о достоинстве человека», одним из ключевых текстов ренессансного гуманизма. Он повлиял на развитие христианской каббалы и стремился примирить философию, богословие и древние традиции мудрости. Он умер во Флоренции в 31 год на фоне политической и религиозной напряженности; его смерть долго считалась загадочной, а поздние исследования указали на возможное отравление мышьяком, хотя детали остаются спорными.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Giovanni_Pico_della_Mirandola",
+    "https://www.britannica.com/biography/Giovanni-Pico-della-Mirandola-conte-di-Concordia",
+    "https://plato.stanford.edu/entries/pico-della-mirandola/",
+    "https://www.newadvent.org/cathen/10352a.htm",
+    "https://www.york.ac.uk/archaeology/about/news/2018/poisoning-histories-in-the-italian-renaissance/",
+    "https://commons.wikimedia.org/wiki/File:Pico1.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Giovanni_Pico_della_Mirandola"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q159369",  "Name": "Arcadius",  "BirthDate": "0377-01-02T00:00:00Z",  "DeathDate": "0408-05-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Arcadius%20Istanbul%20Museum.PNG",  "SiteLinksCnt": 73,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"2180":{"pageid":2180,"ns":0,"title":"Arcadius","extract":"Arcadius (Ancient Greek: \u1f08\u03c1\u03ba\u03ac\u03b4\u03b9\u03bf\u03c2 Arkadios; c. 377 \u2013 1 May 408) was Roman emperor from 383 to his death in 408. He was the eldest son of the Augustus Theodosius I (r.\u2009379\u2013395) and his first wife Aelia Flaccilla, and the brother of Honorius (r.\u2009393\u2013423). Arcadius ruled the eastern half of the empire from 395, when their father died, while Honorius ruled the west. In his time, he was seen as a weak ruler dominated by a series of powerful ministers and by his wife, Aelia Eudoxia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q159369")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q159369",
+  "isRealHuman": true,
+  "birthDate": "0377-01-02",
+  "deathDate": "0408-05-01",
+  "ageAtDeath": 31,
+  "confidence": 88,
+  "confidenceExplained": "The identification as Arcadius, Eastern Roman emperor, is very strong. The death date of 1 May 408 is supported by multiple sources. The birth year 377 is widely supported, while the exact day, 2 January, comes from the provided Wikidata-style data and is less strongly corroborated by narrative sources. In any case, the most defensible calculated age at death is 31.",
+  "shortDescriptionEn": "Arcadius was the Eastern Roman emperor from 383 to 408, first as co-emperor under his father Theodosius I and later as ruler of the eastern half of the empire while his brother Honorius ruled the West. His reign was marked less by personal command than by the influence of powerful ministers, court politics, Gothic pressure, and his wife Aelia Eudoxia. He died in Constantinople on 1 May 408, apparently from natural or unspecified causes, at about 31 years old, leaving the throne to his young son Theodosius II.",
+  "shortDescriptionFr": "Arcadius fut empereur romain d’Orient de 383 à 408, d’abord comme coempereur sous son père Théodose Ier, puis comme souverain de la partie orientale de l’empire tandis que son frère Honorius gouvernait l’Occident. Son règne fut surtout marqué par l’influence de ministres puissants, les intrigues de cour, la pression des Goths et le rôle de son épouse Aelia Eudoxia. Il mourut à Constantinople le 1er mai 408, apparemment de causes naturelles ou non précisées, vers l’âge de 31 ans, laissant le trône à son jeune fils Théodose II.",
+  "shortDescriptionDe": "Arcadius war von 383 bis 408 oströmischer Kaiser, zunächst als Mitkaiser unter seinem Vater Theodosius I. und später als Herrscher über die östliche Reichshälfte, während sein Bruder Honorius den Westen regierte. Seine Regierungszeit war weniger von eigener Tatkraft als von mächtigen Ministern, Hofintrigen, gotischem Druck und dem Einfluss seiner Frau Aelia Eudoxia geprägt. Er starb am 1. Mai 408 in Konstantinopel, offenbar eines natürlichen oder nicht näher bekannten Todes, im Alter von etwa 31 Jahren; sein junger Sohn Theodosius II. folgte ihm nach.",
+  "shortDescriptionEs": "Arcadio fue emperador romano de Oriente entre 383 y 408, primero como coemperador bajo su padre Teodosio I y después como gobernante de la mitad oriental del imperio, mientras su hermano Honorio gobernaba Occidente. Su reinado estuvo marcado más por la influencia de ministros poderosos, las intrigas de la corte, la presión de los godos y el papel de su esposa Aelia Eudoxia que por su liderazgo personal. Murió en Constantinopla el 1 de mayo de 408, al parecer por causas naturales o no especificadas, con unos 31 años, y fue sucedido por su joven hijo Teodosio II.",
+  "shortDescriptionRu": "Аркадий был восточным римским императором с 383 по 408 год: сначала соправителем при своём отце Феодосии I, затем правителем восточной части империи, тогда как его брат Гонорий управлял Западом. Его правление запомнилось влиянием могущественных министров, придворными интригами, давлением готов и ролью его жены Элии Евдоксии, а не личной энергией императора. Он умер в Константинополе 1 мая 408 года, по-видимому от естественных или неуточнённых причин, примерно в 31 год; престол перешёл к его малолетнему сыну Феодосию II.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Arcadius",
+    "https://www.britannica.com/biography/Arcadius",
+    "https://www.livius.org/articles/person/arcadius/",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/arcadius-roman-emperor",
+    "https://www.worldhistory.org/image/8799/head-of-emperor-arcadius/",
+    "https://www.wikidata.org/wiki/Q159369"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8827",  "Name": "Propertius",  "BirthDate": "-0046-01-01T00:00:00Z",  "DeathDate": "-0015-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Properce.jpg",  "SiteLinksCnt": 72,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"769387":{"pageid":769387,"ns":0,"title":"Propertius","extract":"Sextus Propertius was a Latin elegiac poet of the Augustan age. He was born around 50\u201345 BC in Assisium (now Assisi) and died shortly after 15 BC. \nPropertius's surviving work comprises four books of Elegies (Elegiae). He was a friend of the poets Gallus and Virgil and, with them, had as his patron Maecenas and, through Maecenas, the emperor Augustus. Although Propertius was not as renowned in his own time as other Latin elegists, he is today regarded by scholars as a major poet."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8827")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8827",
+  "isRealHuman": true,
+  "birthDate": "-0046-01-01",
+  "deathDate": "-0015-01-01",
+  "ageAtDeath": 31,
+  "confidence": 55,
+  "confidenceExplained": "Propertius is securely identifiable as Sextus Propertius, a historical Roman poet. However, ancient sources do not preserve exact birth or death dates. Modern references place his birth roughly between 50 and 45 BC, with wider estimates such as 55–43 BCE, and his death shortly after 15 BC or after 16 BCE. I used 46 BC and 15 BC as a reasonable point estimate because it fits the common range and the supplied record. The calculated age at death is therefore 31, but the exact age may plausibly have been a few years higher or lower.",
+  "shortDescriptionEn": "Sextus Propertius was a Roman elegiac poet of the Augustan age, best known for his four books of Elegies and for the passionate poetic persona built around Cynthia. Born in Umbria and later active in Rome, he moved in the literary world linked to Maecenas, Virgil, and Augustus. Very little is known about his final years; his last book appeared after 16 BC, and he seems to have died shortly afterward, probably around 15 BC, leaving no clear ancient account of the cause or circumstances.",
+  "shortDescriptionFr": "Sextus Propertius fut un poète élégiaque romain de l’époque augustéenne, surtout connu pour ses quatre livres d’Élégies et pour la figure amoureuse de Cynthia. Né en Ombrie puis actif à Rome, il fréquenta le milieu littéraire associé à Mécène, à Virgile et au pouvoir d’Auguste. Ses dernières années restent obscures; son dernier livre parut après 16 av. J.-C., et il semble être mort peu après, probablement vers 15 av. J.-C., sans récit antique précis sur la cause ou les circonstances de sa mort.",
+  "shortDescriptionDe": "Sextus Propertius war ein römischer Elegiendichter der augusteischen Zeit, berühmt für seine vier Bücher der Elegien und die leidenschaftliche dichterische Welt um Cynthia. Er stammte aus Umbrien und wirkte später in Rom, im literarischen Umfeld von Maecenas, Vergil und Augustus. Über seine letzten Jahre ist nur wenig bekannt; sein letztes Buch erschien nach 16 v. Chr., und er starb offenbar kurz danach, wahrscheinlich um 15 v. Chr., ohne dass eine genaue antike Nachricht zu Ursache oder Umständen seines Todes überliefert ist.",
+  "shortDescriptionEs": "Sexto Propercio fue un poeta elegíaco romano de la época de Augusto, célebre por sus cuatro libros de Elegías y por la intensa figura literaria de Cynthia. Nacido en Umbría y activo después en Roma, perteneció al ambiente literario relacionado con Mecenas, Virgilio y Augusto. Se sabe muy poco de sus últimos años; su último libro apareció después del 16 a. C., y probablemente murió poco después, hacia el 15 a. C., sin que se conserve una explicación antigua clara sobre la causa o las circunstancias de su muerte.",
+  "shortDescriptionRu": "Секст Проперций был римским элегическим поэтом эпохи Августа, известным четырьмя книгами «Элегий» и страстным поэтическим образом возлюбленной Цинтии. Он родился в Умбрии, затем жил и писал в Риме, в литературной среде, связанной с Меценатом, Вергилием и Августом. О его последних годах известно мало: последняя книга появилась после 16 года до н. э., а умер он, вероятно, вскоре после этого, около 15 года до н. э.; античные источники не сохранили точного рассказа о причине или обстоятельствах смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Propertius",
+    "https://www.britannica.com/biography/Sextus-Propertius",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Propertius,_Sextus",
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-latin-love-elegy/propertius/9F8A2AF8C8DD2840872669607A48FD31",
+    "https://la.wikipedia.org/wiki/Fasciculus:Properce.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q173196",  "Name": "Michael Collins",  "BirthDate": "1890-10-16T00:00:00Z",  "DeathDate": "1922-08-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Collins%201921.jpg",  "SiteLinksCnt": 71,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"97509":{"pageid":97509,"ns":0,"title":"Michael Collins (Irish leader)","extract":"Michael Collins (Irish: M\u00edche\u00e1l \u00d3 Coile\u00e1in; 16 October 1890 \u2013 22 August 1922) was an Irish revolutionary, soldier and politician who was a leading figure in the early-20th century struggle for Irish independence. During the War of Independence he was Director of Intelligence of the Irish Republican Army (IRA). He served in the government of the self-declared Irish Republic as the Minister for Home Affairs and later as the Minister for Finance. He was Chairman of the Provisional Government of the Irish Free State from January 1922 and commander-in-chief of the National Army from July until he died in an ambush in August 1922, during the Civil War.\nCollins was born in Woodfield, County Cork, the youngest of eight children. He moved to London in 1906 to become a clerk in the Post Office Savings Bank at Blythe House. He was a member of the London GAA, through which he became associated with the Irish Republican Brotherhood and the Gaelic League. He returned to Ireland in January 1916 and fought in the Easter Rising. He was taken prisoner and held in the Frongoch internment camp as a prisoner of war, but he was released in December 1916.\nCollins subsequently rose through the ranks of the Irish Volunteers and Sinn F\u00e9in. He was elected as MP for South Cork in December 1918. Sinn F\u00e9in's elected members (later known as TDs) formed an Irish parliament, the First D\u00e1il, in January 1919 and declared the independence of the Irish Republic. Collins was appointed Minister for Finance. In the ensuing War of Independence, he was Director of Organisation and Adjutant General for the Irish Volunteers, and Director of Intelligence of the IRA. He gained fame as a guerrilla warfare strategist, planning many successful attacks on British forces together with 'the Squad', such as the \"Bloody Sunday\" assassinations of key British intelligence agents in November 1920.\nAfter the July 1921 ceasefire, Collins was one of five plenipotentiaries sent by the D\u00e1il cabinet at the request of \u00c9amon de Valera, to negotiate peace terms in London. The resulting Anglo-Irish Treaty, signed in December 1921, would establish the Irish Free State but depended on an oath of allegiance to the Crown. De Valera and other republican leaders found this clause of the treaty most difficult to accept. Collins viewed the treaty as offering \"the freedom to achieve freedom\", and helped persuade a majority of the D\u00e1il to ratify the treaty. A provisional government was formed under his chairmanship in early 1922. During this time he secretly provided support for an IRA offensive in Northern Ireland. It was soon disrupted by the Irish Civil War, in which Collins was commander-in-chief of the National Army. He was shot and killed in an ambush by anti-Treaty forces in August 1922."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q173196")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q173196",
+  "isRealHuman": true,
+  "birthDate": "1890-10-16",
+  "deathDate": "1922-08-22",
+  "ageAtDeath": 31,
+  "confidence": 100,
+  "confidenceExplained": "Michael Collins' birth and death dates are consistently given as 16 October 1890 and 22 August 1922 in major reference sources. Since he died before reaching his birthday in October 1922, the correct integer age at death is 31.",
+  "shortDescriptionEn": "Michael Collins was an Irish revolutionary, soldier and politician who became one of the central figures in Ireland’s struggle for independence. He served as IRA Director of Intelligence, helped negotiate the Anglo-Irish Treaty, chaired the Provisional Government of the Irish Free State, and became commander-in-chief of the National Army. He died at age 31 during the Irish Civil War, when his convoy was ambushed by anti-Treaty forces at Béal na Bláth in County Cork.",
+  "shortDescriptionFr": "Michael Collins était un révolutionnaire, soldat et homme politique irlandais, l’une des figures majeures de la lutte pour l’indépendance de l’Irlande. Directeur du renseignement de l’IRA, il participa aux négociations du traité anglo-irlandais, présida le gouvernement provisoire de l’État libre d’Irlande et devint commandant en chef de l’Armée nationale. Il mourut à 31 ans pendant la guerre civile irlandaise, lorsque son convoi fut pris dans une embuscade par des forces anti-traité à Béal na Bláth, dans le comté de Cork.",
+  "shortDescriptionDe": "Michael Collins war ein irischer Revolutionär, Soldat und Politiker und eine der Schlüsselfiguren im Kampf Irlands um Unabhängigkeit. Er war Geheimdienstdirektor der IRA, wirkte an den Verhandlungen zum Anglo-Irischen Vertrag mit, führte die Provisorische Regierung des Irischen Freistaats und wurde Oberbefehlshaber der National Army. Er starb im Alter von 31 Jahren während des Irischen Bürgerkriegs, als sein Konvoi bei Béal na Bláth im County Cork von Anti-Vertrags-Kräften überfallen wurde.",
+  "shortDescriptionEs": "Michael Collins fue un revolucionario, soldado y político irlandés, una figura central en la lucha de Irlanda por la independencia. Fue director de inteligencia del IRA, ayudó a negociar el Tratado Anglo-Irlandés, presidió el Gobierno Provisional del Estado Libre Irlandés y llegó a ser comandante en jefe del Ejército Nacional. Murió a los 31 años durante la Guerra Civil Irlandesa, cuando su convoy fue emboscado por fuerzas contrarias al tratado en Béal na Bláth, en el condado de Cork.",
+  "shortDescriptionRu": "Майкл Коллинз был ирландским революционером, военным и политиком, одной из ключевых фигур борьбы Ирландии за независимость. Он возглавлял разведку ИРА, участвовал в переговорах по англо-ирландскому договору, руководил Временным правительством Ирландского свободного государства и стал главнокомандующим Национальной армии. Он погиб в возрасте 31 года во время Гражданской войны в Ирландии, когда его конвой попал в засаду сил противников договора у Бéal na Bláth в графстве Корк.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Michael_Collins_(Irish_leader)",
+    "https://www.britannica.com/biography/Michael-Collins-Irish-statesman",
+    "https://www.museum.ie/en-IE/Collections-Research/Art-and-Industry-Collections/Exploring-the-Irish-Wars%2C-1919-1923/Bitter-Divisions/Beal-na-mBlath%2C-22-August-1922"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2756349",  "Name": "Liam Payne",  "BirthDate": "1993-08-29T00:00:00Z",  "DeathDate": "2024-10-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Liam%20Payne%20for%20UNICEF%202023.png",  "SiteLinksCnt": 68,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"40605906":{"pageid":40605906,"ns":0,"title":"Liam Payne","extract":"Liam James Payne (29 August 1993 \u2013 16 October 2024) was an English singer and songwriter. He was a member of the pop band One Direction, one of the best-selling boy bands of all time, alongside Niall Horan, Zayn Malik, Harry Styles, and Louis Tomlinson. Payne twice auditioned as a solo artist on the British television series The X Factor in 2008 and 2010; in the latter, he was invited to join One Direction alongside fellow contestants, placing third and later achieving global success.\nFollowing One Direction's hiatus in 2016, Payne pursued a solo career, signing with Republic Records in North America. In 2017, he released his debut solo single \"Strip That Down\", which reached number three on the UK singles chart and number ten on the US Billboard Hot 100. The song received multi-platinum certifications in both countries. The following year, he released \"For You\", a collaboration with Rita Ora which became a hit worldwide and received gold or platinum certifications in several countries. His debut and sole solo album, LP1, was released in December 2019. During the first three years of his solo career, Payne sold over 18 million singles, 2.4 million albums, and amassed 3.9 billion streams. In addition to his solo work, Payne produced remixes under the pseudonyms Big Payno and Payno, remixing tracks for both his group and for singer Cheryl.\nPayne struggled with substance abuse and mental illness throughout his career. On 16 October 2024, he died at the age of 31 after falling from a third-floor balcony at a hotel in Buenos Aires, Argentina, while intoxicated. Following his death, Payne's track \"Teardrops\" debuted on the UK singles chart, alongside the re-entry of 11 of his other works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2756349")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2756349",
+  "isRealHuman": true,
+  "birthDate": "1993-08-29",
+  "deathDate": "2024-10-16",
+  "ageAtDeath": 31,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are exact and consistently reported by multiple reliable sources. Liam Payne was born on 1993-08-29 and died on 2024-10-16, which is after his 31st birthday and before his 32nd, so the calculated age at death is 31.",
+  "shortDescriptionEn": "Liam Payne was an English singer and songwriter who rose to global fame as a member of One Direction, one of the most successful pop groups of the 2010s. After the band’s hiatus, he launched a solo career, with hits including “Strip That Down” and the album LP1. He died in Buenos Aires on 16 October 2024 at the age of 31 after falling from a third-floor hotel balcony; investigators reported traumatic injuries and substance-related circumstances around the incident.",
+  "shortDescriptionFr": "Liam Payne était un chanteur et auteur-compositeur anglais, devenu célèbre dans le monde entier comme membre de One Direction, l’un des groupes pop les plus marquants des années 2010. Après la pause du groupe, il a poursuivi une carrière solo, notamment avec “Strip That Down” et l’album LP1. Il est mort à Buenos Aires le 16 octobre 2024, à l’âge de 31 ans, après une chute du balcon du troisième étage d’un hôtel; l’enquête a fait état de blessures traumatiques et de circonstances liées à la consommation de substances.",
+  "shortDescriptionDe": "Liam Payne war ein englischer Sänger und Songwriter, der als Mitglied von One Direction weltberühmt wurde, einer der erfolgreichsten Popgruppen der 2010er Jahre. Nach der Pause der Band startete er eine Solokarriere, unter anderem mit “Strip That Down” und dem Album LP1. Er starb am 16. Oktober 2024 im Alter von 31 Jahren in Buenos Aires nach einem Sturz von einem Hotelbalkon im dritten Stock; Ermittler berichteten von schweren Verletzungen und substanzbezogenen Umständen.",
+  "shortDescriptionEs": "Liam Payne fue un cantante y compositor inglés que alcanzó fama mundial como integrante de One Direction, uno de los grupos pop más exitosos de la década de 2010. Tras la pausa de la banda, desarrolló una carrera en solitario con canciones como “Strip That Down” y el álbum LP1. Murió en Buenos Aires el 16 de octubre de 2024, a los 31 años, después de caer desde el balcón del tercer piso de un hotel; la investigación señaló lesiones traumáticas y circunstancias relacionadas con el consumo de sustancias.",
+  "shortDescriptionRu": "Лиам Пейн был английским певцом и автором песен, получившим мировую известность как участник One Direction, одной из самых успешных поп-групп 2010-х годов. После паузы в работе группы он начал сольную карьеру, выпустив, среди прочего, хит “Strip That Down” и альбом LP1. Он умер в Буэнос-Айресе 16 октября 2024 года в возрасте 31 года после падения с балкона третьего этажа отеля; следствие сообщало о травмах от падения и обстоятельствах, связанных с употреблением веществ.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Liam_Payne",
+    "https://www.reuters.com/world/one-direction-singer-liam-payne-found-dead-buenos-aires-local-media-reports-2024-10-16/",
+    "https://www.britannica.com/biography/Liam-Payne",
+    "https://apnews.com/article/dae90a8090a46cf4af72d8fe359f38df",
+    "https://www.theguardian.com/music/2024/nov/07/liam-payne-argentina-investigation"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q187998",  "Name": "Cesare Borgia",  "BirthDate": "1475-09-22T00:00:00Z",  "DeathDate": "1507-03-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Cesare%20Borgia%2C%20Duke%20of%20Valentinois.jpg",  "SiteLinksCnt": 66,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"7504":{"pageid":7504,"ns":0,"title":"Cesare Borgia","extract":"Cesare Borgia (13 September 1475 \u2013 13 March 1507) was an Italian cardinal deacon and later a condottiero, as well as a member of the Spanish House of Borgia. He was the illegitimate son of Pope Alexander VI and sibling to Lucrezia Borgia.\nAfter initially entering the Church and becoming a cardinal on his father's election to the papacy, he resigned his diaconal profession after the death of his brother in 1498. He was employed as a condottiero for King Louis XII of France around 1500, and occupied both Milan and Naples during the Italian Wars. At the same time, he carved out a state for himself in Central Italy, but he was unable to retain power for long after his father's death. His quest for political power was a major inspiration for The Prince by the renowned Florentine historian, Niccol\u00f2 Machiavelli."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q187998")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q187998",
+  "isRealHuman": true,
+  "birthDate": "1475-09-13",
+  "deathDate": "1507-03-12",
+  "ageAtDeath": 31,
+  "confidence": 92,
+  "confidenceExplained": "High confidence on the person and the age at death. The main uncertainty is the exact calendar day of death: reliable sources variously give 12 or 13 March 1507, and Wikidata-style dates may reflect calendar conversion. With the best-supported birth date of 13 September 1475, either 12 or 13 March 1507 gives an age at death of 31.",
+  "shortDescriptionEn": "Cesare Borgia was a Renaissance prince, former cardinal, condottiero, and one of the most notorious members of the Borgia family. The son of Pope Alexander VI and brother of Lucrezia Borgia, he tried to build a personal state in central Italy and became a political example for Machiavelli’s The Prince. After his father’s death, his power collapsed; he was imprisoned, escaped to Navarre, and was killed near Viana during a stormy military action, ambushed after outriding his own men.",
+  "shortDescriptionFr": "César Borgia fut un prince de la Renaissance, ancien cardinal, condottiere et l’un des membres les plus célèbres de la famille Borgia. Fils du pape Alexandre VI et frère de Lucrèce Borgia, il tenta de se tailler un État en Italie centrale et inspira en partie Le Prince de Machiavel. Après la mort de son père, son pouvoir s’effondra; emprisonné puis évadé, il gagna la Navarre et mourut près de Viana, surpris dans une embuscade après s’être trop avancé lors d’une opération militaire sous l’orage.",
+  "shortDescriptionDe": "Cesare Borgia war ein Renaissancefürst, ehemaliger Kardinal, Condottiere und eine der berüchtigtsten Gestalten der Familie Borgia. Als Sohn von Papst Alexander VI. und Bruder Lucrezia Borgias versuchte er, in Mittelitalien ein eigenes Herrschaftsgebiet aufzubauen, und wurde zu einem wichtigen Vorbild für Machiavellis Der Fürst. Nach dem Tod seines Vaters brach seine Macht zusammen; er wurde gefangen gesetzt, entkam nach Navarra und fiel nahe Viana in einem Hinterhalt, nachdem er seine Begleiter bei einem stürmischen Militäreinsatz abgehängt hatte.",
+  "shortDescriptionEs": "César Borgia fue un príncipe renacentista, antiguo cardenal, condotiero y uno de los miembros más célebres y temidos de la familia Borgia. Hijo del papa Alejandro VI y hermano de Lucrecia Borgia, intentó crear un estado propio en el centro de Italia y sirvió como ejemplo político para El príncipe de Maquiavelo. Tras la muerte de su padre perdió el poder; fue encarcelado, escapó a Navarra y murió cerca de Viana, emboscado después de adelantarse demasiado a sus hombres durante una acción militar en plena tormenta.",
+  "shortDescriptionRu": "Чезаре Борджиа был князем эпохи Возрождения, бывшим кардиналом, кондотьером и одним из самых известных представителей семьи Борджиа. Сын папы Александра VI и брат Лукреции Борджиа, он пытался создать собственное государство в Центральной Италии и стал одним из политических примеров для трактата Макиавелли «Государь». После смерти отца его власть рухнула; он был заключён в тюрьму, бежал в Наварру и погиб близ Вианы, попав в засаду после того, как во время военной вылазки в бурю оторвался от своих людей.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cesare_Borgia",
+    "https://www.britannica.com/biography/Cesare-Borgia",
+    "https://www.historytoday.com/archive/months-past/death-cesare-borgia",
+    "https://www.rutaborjaborgia.com/en/epoca/2-365/cesar-borgia-y-viana.php",
+    "https://commons.wikimedia.org/wiki/File:Anon-Cesare-Borgia.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q188692",  "Name": "Rudolph Valentino",  "BirthDate": "1895-05-06T00:00:00Z",  "DeathDate": "1926-08-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%22Last%20Photo%20of%20Rudolph%20Valentino%22%201926.jpg",  "SiteLinksCnt": 66,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"45396":{"pageid":45396,"ns":0,"title":"Rudolph Valentino","extract":"Rodolfo Pietro Filiberto Raffaele Guglielmi di Valentina d'Antonguolla (May 6, 1895 \u2013 August 23, 1926), known professionally as Rudolph Valentino or mononymously as Valentino, was an Italian-born actor and dancer. Dubbed the Latin Lover, he became one of the most iconic stars of American silent cinema and an enduring symbol of old Hollywood glamour. Rising to international fame in the early 1920s, Valentino was celebrated for his exotic screen persona, romantic intensity, and expressive performances, which helped redefine male stardom during the silent era.\nOften referred to as the first Latin Lover and the Great Lover, Valentino began his career as a taxi dancer, later moving into ballroom dancing, before he achieved breakthrough success with the film The Four Horsemen of the Apocalypse (1921), which popularized the Argentine tango dance with American audiences. He subsequently starred in several box-office hits such as The Sheik (1921), Blood and Sand (1922), The Eagle (1925), and The Son of the Sheik (1926). His on-screen image\u2014sensual, passionate, and unconventional by the standards of the time\u2014made him the first screen sex symbol, which provoked both fervent adoration and cultural backlash, making him a lightning rod in debates about masculinity, sexuality, and modernity in the 1920s.\nDespite a career that lasted only a few years at its peak, Valentino's influence on popular culture was profound. In 1925, he established a film award recognizing artistic achievement, the Rudolph Valentino Medal, which was a precursor to the Academy Award. His sudden death in 1926 at the age of 31 from complications of peritonitis following surgery for appendicitis and gastric ulcers triggered mass public mourning, cementing his status as a legendary figure of early cinema.\nValentino's life has depicted in several biographical films: Valentino (1951), The Legend of Valentino (1975), and Valentino (1977). From 1972 to 2006, his legacy was further commemorated through the annual Rudolph Valentino Award, presented in Italy in recognition of acting achievement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q188692")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q188692",
+  "isRealHuman": true,
+  "birthDate": "1895-05-06",
+  "deathDate": "1926-08-23",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given as 1895-05-06 and 1926-08-23 by Wikipedia, Britannica, Wikimedia Commons, and medical literature discussing Valentino's fatal condition. The age calculation is straightforward: he had turned 31 on 1926-05-06 and died on 1926-08-23, so his age at death was 31 years.",
+  "shortDescriptionEn": "Rudolph Valentino was an Italian-born actor and dancer who became one of the defining icons of American silent cinema, famed for films such as The Four Horsemen of the Apocalypse, The Sheik, Blood and Sand, The Eagle, and The Son of the Sheik. Celebrated as the “Latin Lover” and a symbol of 1920s screen glamour, he died suddenly in New York at 31 from peritonitis and complications after surgery related to a ruptured or perforated ulcer, triggering extraordinary public mourning.",
+  "shortDescriptionFr": "Rudolph Valentino était un acteur et danseur d’origine italienne devenu l’une des grandes icônes du cinéma muet américain, célèbre pour des films comme Les Quatre Cavaliers de l’Apocalypse, Le Cheik, Arènes sanglantes, L’Aigle noir et Le Fils du Cheik. Surnommé le « Latin Lover » et symbole du glamour des années 1920, il mourut brutalement à New York à 31 ans d’une péritonite et de complications après une opération liée à un ulcère rompu ou perforé, provoquant une immense émotion publique.",
+  "shortDescriptionDe": "Rudolph Valentino war ein in Italien geborener Schauspieler und Tänzer, der zu einer der prägenden Ikonen des amerikanischen Stummfilms wurde, berühmt durch Filme wie Die vier Reiter der Apokalypse, Der Scheich, Blut und Sand, Der Adler und Der Sohn des Scheichs. Als „Latin Lover“ und Symbol des Hollywood-Glamours der 1920er Jahre gefeiert, starb er in New York mit 31 Jahren plötzlich an Peritonitis und Komplikationen nach einer Operation wegen eines gerissenen oder perforierten Geschwürs, was eine außergewöhnliche öffentliche Trauer auslöste.",
+  "shortDescriptionEs": "Rudolph Valentino fue un actor y bailarín nacido en Italia que se convirtió en uno de los grandes iconos del cine mudo estadounidense, famoso por películas como Los cuatro jinetes del Apocalipsis, El caíd, Sangre y arena, El águila negra y El hijo del caíd. Celebrado como el “Latin Lover” y símbolo del glamour cinematográfico de los años veinte, murió repentinamente en Nueva York a los 31 años por peritonitis y complicaciones tras una cirugía relacionada con una úlcera rota o perforada, desatando un duelo público extraordinario.",
+  "shortDescriptionRu": "Рудольф Валентино был итальянским актёром и танцовщиком, ставшим одной из главных икон американского немого кино благодаря фильмам «Четыре всадника Апокалипсиса», «Шейх», «Кровь и песок», «Орёл» и «Сын шейха». Прославленный как «латинский любовник» и символ голливудского гламура 1920-х годов, он внезапно умер в Нью-Йорке в возрасте 31 года от перитонита и осложнений после операции, связанной с разрывом или перфорацией язвы, что вызвало массовую общественную скорбь.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rudolph_Valentino",
+    "https://www.britannica.com/biography/Rudolph-Valentino",
+    "https://scholars.duke.edu/publication/1621498",
+    "https://commons.wikimedia.org/wiki/Category:Rudolph_Valentino",
+    "https://www.wikidata.org/wiki/Q188692"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q295548",  "Name": "André Chénier",  "BirthDate": "1762-10-30T00:00:00Z",  "DeathDate": "1794-07-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Beaux-Arts%20de%20Carcassonne%20-%20Portrait%20d%27Andr%C3%A9%20Ch%C3%A9nier%20-%20Suv%C3%A9e%20-%20Joconde04400001220.jpg",  "SiteLinksCnt": 66,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"245369":{"pageid":245369,"ns":0,"title":"Andr\u00e9 Ch\u00e9nier","extract":"Andr\u00e9 Marie Ch\u00e9nier (French pronunciation: [\u0251\u0303d\u0281e ma\u0281i \u0283enje]; 30 October 1762 \u2013 25 July 1794) was a French poet associated with the events of the French Revolution, during which he was sentenced to death. His sensual, emotive poetry marks him as one of the precursors of the Romantic movement. His career was brought to an abrupt end when he was guillotined for supposed \"crimes against the state\". Ch\u00e9nier's life has been the subject of Umberto Giordano's opera Andrea Ch\u00e9nier and other works of art."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q295548")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q295548",
+  "isRealHuman": true,
+  "birthDate": "1762-10-30",
+  "deathDate": "1794-07-25",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given as 30 October 1762 and 25 July 1794 by Wikipedia, Wikidata, Wikimedia Commons, BnF, Larousse, and Britannica. The age is calculated as completed years: from 1762-10-30 to 1794-07-25 is 31 years, because he died about three months before his 32nd birthday. Confidence is not 100 only because historical biographical dates can sometimes reflect calendar or archival conventions, but the agreement among major references is very strong.",
+  "shortDescriptionEn": "André Marie Chénier was a French poet and political journalist whose refined, emotionally charged verse helped anticipate Romanticism while still drawing on classical models. Born in Constantinople and raised in France, he became known for poetry that was admired even more after his death. During the French Revolution, his anti-Jacobin writings and political associations made him vulnerable; he was condemned by the Revolutionary Tribunal and guillotined in Paris on 25 July 1794, at age 31, just days before Robespierre fell.",
+  "shortDescriptionFr": "André Marie Chénier fut un poète et journaliste politique français, dont les vers sensibles et nourris de culture antique annoncent par certains aspects le romantisme. Né à Constantinople puis élevé en France, il laissa une œuvre largement reconnue après sa mort. Pendant la Révolution française, ses prises de position contre les Jacobins et ses relations politiques le rendirent suspect ; condamné par le Tribunal révolutionnaire, il fut guillotiné à Paris le 25 juillet 1794, à l’âge de 31 ans, quelques jours avant la chute de Robespierre.",
+  "shortDescriptionDe": "André Marie Chénier war ein französischer Dichter und politischer Journalist, dessen gefühlvolle, klassisch geprägte Lyrik später als Vorläufer der Romantik galt. In Konstantinopel geboren und in Frankreich aufgewachsen, wurde sein literarischer Ruf vor allem nach seinem Tod gefestigt. Während der Französischen Revolution machten ihn seine antijakobinischen Texte und politischen Verbindungen verdächtig; er wurde vom Revolutionstribunal verurteilt und am 25. Juli 1794 in Paris im Alter von 31 Jahren guillotiniert, nur wenige Tage vor dem Sturz Robespierres.",
+  "shortDescriptionEs": "André Marie Chénier fue un poeta y periodista político francés cuya poesía refinada, emotiva y de inspiración clásica lo convirtió en un precursor del romanticismo. Nacido en Constantinopla y criado en Francia, su obra alcanzó gran reconocimiento sobre todo después de su muerte. Durante la Revolución francesa, sus escritos contra los jacobinos y sus vínculos políticos lo hicieron sospechoso; fue condenado por el Tribunal Revolucionario y guillotinado en París el 25 de julio de 1794, a los 31 años, pocos días antes de la caída de Robespierre.",
+  "shortDescriptionRu": "Андре Мари Шенье был французским поэтом и политическим журналистом, чья эмоциональная, изящная и обращённая к античности поэзия позднее стала восприниматься как предвестие романтизма. Он родился в Константинополе и вырос во Франции, а настоящая слава пришла к его произведениям уже после смерти. Во время Французской революции его антиякобинские выступления и политические связи сделали его подозреваемым; он был осуждён Революционным трибуналом и гильотинирован в Париже 25 июля 1794 года в возрасте 31 года, всего за несколько дней до падения Робеспьера.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9_Ch%C3%A9nier",
+    "https://www.wikidata.org/wiki/Q295548",
+    "https://commons.wikimedia.org/wiki/Andr%C3%A9_Ch%C3%A9nier",
+    "https://www.britannica.com/biography/Andre-Marie-de-Chenier",
+    "https://essentiels.bnf.fr/fr/litterature/18e-siecle/d82c8468-ea13-484f-8e2e-5c17066e32fa-litterature-en-revolution/article/4eed99a0-2c52-488f-b46b-703a2e78280c-andre-chenier",
+    "https://www.larousse.fr/encyclopedie/litterature/Andr%C3%A9_Ch%C3%A9nier/172382",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ch%C3%A9nier,_Andr%C3%A9_de"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q315509",  "Name": "Philip Sidney",  "BirthDate": "1554-12-10T00:00:00Z",  "DeathDate": "1586-10-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Philip%20Sidney%20from%20NPG.jpg",  "SiteLinksCnt": 60,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"156674":{"pageid":156674,"ns":0,"title":"Philip Sidney","extract":"Sir Philip Sidney (30 November 1554 \u2013 17 October 1586) was an English poet, courtier, scholar and soldier who is remembered as one of the most prominent figures of the Elizabethan age.\nHis works include a sonnet sequence, Astrophil and Stella, a treatise, The Defence of Poesy (also known as The Defence of Poesie or An Apology for Poetrie) and a pastoral romance, The Countess of Pembroke's Arcadia. He died fighting the Spanish in the Netherlands, age 31, and his funeral procession in London was one of the most lavish ever seen."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q315509")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q315509",
+  "isRealHuman": true,
+  "birthDate": "1554-11-30",
+  "deathDate": "1586-10-17",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The identity is unambiguous: the Wikidata ID, name, portrait, and biography all point to Sir Philip Sidney. Multiple reputable sources give his birth as 30 November 1554 and death as 17 October 1586. The supplied 1554-12-10 date is likely a Gregorian conversion of the Julian date, but the calendar discrepancy does not affect the integer age: he died before his birthday in 1586, so he was 31.",
+  "shortDescriptionEn": "Sir Philip Sidney was one of the brilliant figures of Elizabethan England: a poet, courtier, diplomat, scholar, and soldier, best remembered for Astrophil and Stella, The Defence of Poesy, and Arcadia. Admired as an ideal Renaissance gentleman, he combined literary ambition with public service. He died at 31 after being wounded in the thigh at the Battle of Zutphen while fighting Spanish forces in the Netherlands; infection set in, and he died weeks later at Arnhem.",
+  "shortDescriptionFr": "Sir Philip Sidney fut l’une des grandes figures de l’Angleterre élisabéthaine : poète, courtisan, diplomate, érudit et soldat, il est surtout connu pour Astrophil and Stella, The Defence of Poesy et Arcadia. Il incarna l’idéal du gentilhomme de la Renaissance, mêlant talent littéraire et service public. Il mourut à 31 ans après avoir été blessé à la cuisse lors de la bataille de Zutphen contre les forces espagnoles aux Pays-Bas; la blessure s’infecta et il succomba quelques semaines plus tard à Arnhem.",
+  "shortDescriptionDe": "Sir Philip Sidney gehörte zu den herausragenden Gestalten des elisabethanischen England: Dichter, Höfling, Diplomat, Gelehrter und Soldat, bekannt vor allem für Astrophil and Stella, The Defence of Poesy und Arcadia. Er galt als Idealbild des Renaissance-Gentleman, der literarische Begabung mit öffentlichem Dienst verband. Er starb mit 31 Jahren, nachdem er in der Schlacht bei Zutphen gegen spanische Truppen in den Niederlanden am Oberschenkel verwundet worden war; die Wunde entzündete sich, und er starb Wochen später in Arnhem.",
+  "shortDescriptionEs": "Sir Philip Sidney fue una de las figuras más brillantes de la Inglaterra isabelina: poeta, cortesano, diplomático, erudito y soldado, recordado sobre todo por Astrophil and Stella, The Defence of Poesy y Arcadia. Encarnó el ideal del caballero renacentista, combinando talento literario y servicio público. Murió a los 31 años tras recibir una herida en el muslo en la batalla de Zutphen, mientras combatía contra fuerzas españolas en los Países Bajos; la herida se infectó y falleció semanas después en Arnhem.",
+  "shortDescriptionRu": "Сэр Филип Сидни был одной из ярчайших фигур елизаветинской Англии: поэт, придворный, дипломат, учёный и солдат, наиболее известный по произведениям Astrophil and Stella, The Defence of Poesy и Arcadia. Современники видели в нём образцового джентльмена эпохи Возрождения, сочетавшего литературный дар и государственную службу. Он умер в 31 год после ранения в бедро в битве при Зютфене против испанских войск в Нидерландах; рана загноилась, и спустя несколько недель он скончался в Арнеме.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Philip%20Sidney%20from%20NPG.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw07877/Sir-Philip-Sidney",
+    "https://www.npg.org.uk/collections/search/portrait/mw150540"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_Sidney",
+    "https://www.britannica.com/biography/Philip-Sidney",
+    "https://www.english.cam.ac.uk/sidney/sidney_biography.htm",
+    "https://www.npg.org.uk/collections/search/person/mp04113/sir-philip-sidney",
+    "https://www.npg.org.uk/collections/search/portrait/mw07877/Sir-Philip-Sidney",
+    "https://commons.wikimedia.org/wiki/File:Sir_Philip_Sidney_from_NPG.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q485635",  "Name": "Keith Haring",  "BirthDate": "1958-05-04T00:00:00Z",  "DeathDate": "1990-02-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Keith%20Haring%20%281986%29.jpg",  "SiteLinksCnt": 59,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"306478":{"pageid":306478,"ns":0,"title":"Keith Haring","extract":"Keith Allen Haring (May 4, 1958 \u2013 February 16, 1990) was an American artist whose pop art emerged from the New York City graffiti subculture of the 1980s. His animated imagery has \"become a widely recognized visual language\". Much of his work includes sexual allusions that turned into social activism by using the images to advocate for safe sex and AIDS awareness. In addition to solo gallery exhibitions, he participated in renowned national and international group shows such as documenta in Kassel, the Whitney Biennial in New York, the S\u00e3o Paulo Biennial, and the Venice Biennale. The Whitney Museum held a retrospective of his art in 1997.\nHaring's popularity grew from his spontaneous drawings in New York City subways: chalk outlines of figures, dogs, and other stylized images on blank black advertising spaces. After gaining public recognition, he created colorful larger scale murals, many commissioned. He produced more than 50 public artworks between 1982 and 1989, many of them created voluntarily for hospitals, day care centers and schools. In 1986, he opened the Pop Shop as an extension of his work. His later work often conveyed political and societal themes\u2014anti-crack, anti-apartheid, safe sex, homosexuality and AIDS\u2014through his own iconography.\nHaring died of AIDS-related complications on February 16, 1990. In 2014, he was one of the inaugural honorees in the Rainbow Honor Walk in San Francisco, a walk of fame noting LGBTQ+ people who have \"made significant contributions in their fields\". In 2019, he was one of the inaugural 50 American \"pioneers, trailblazers, and heroes\" inducted on the National LGBTQ Wall of Honor within the Stonewall National Monument in New York City's Stonewall Inn."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q485635")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q485635",
+  "isRealHuman": true,
+  "birthDate": "1958-05-04",
+  "deathDate": "1990-02-16",
+  "ageAtDeath": 31,
+  "confidence": 100,
+  "confidenceExplained": "Keith Haring's birth date, death date, and age at death are consistently reported by Wikipedia, the Keith Haring Foundation, Britannica, Tate, and other references. The calculation is straightforward: he died on 1990-02-16, before his 32nd birthday on 1990-05-04, so he was 31.",
+  "shortDescriptionEn": "Keith Haring was an American artist whose bold, energetic pop-art figures grew out of New York City's 1980s graffiti and subway culture. His instantly recognizable line work carried messages about love, sexuality, anti-apartheid activism, anti-drug campaigns, and AIDS awareness, and he created public murals, exhibitions, and the Pop Shop to make art widely accessible. Diagnosed with AIDS in the late 1980s, he turned his final years into a period of urgent activism and image-making. He died in New York City from AIDS-related complications on February 16, 1990, at the age of 31.",
+  "shortDescriptionFr": "Keith Haring était un artiste américain dont les figures pop, audacieuses et pleines d'énergie sont issues de la culture graffiti et du métro new-yorkais des années 1980. Son langage visuel immédiatement reconnaissable abordait l'amour, la sexualité, la lutte contre l'apartheid, les campagnes antidrogue et la sensibilisation au sida, tandis que ses fresques publiques, ses expositions et le Pop Shop rendaient l'art plus accessible. Diagnostiqué séropositif à la fin des années 1980, il transforma ses dernières années en une période d'activisme intense et de création urgente. Il est mort à New York de complications liées au sida le 16 février 1990, à l'âge de 31 ans.",
+  "shortDescriptionDe": "Keith Haring war ein amerikanischer Künstler, dessen kraftvolle Pop-Art-Figuren aus der New Yorker Graffiti- und U-Bahn-Kultur der 1980er Jahre hervorgingen. Seine sofort erkennbare Bildsprache behandelte Liebe, Sexualität, Anti-Apartheid, Kampagnen gegen Drogen und AIDS-Aufklärung; mit öffentlichen Wandbildern, Ausstellungen und dem Pop Shop wollte er Kunst für ein breites Publikum zugänglich machen. Nach seiner AIDS-Diagnose in den späten 1980er Jahren wurden seine letzten Jahre zu einer Phase dringlicher künstlerischer und politischer Arbeit. Er starb am 16. Februar 1990 in New York City an AIDS-bedingten Komplikationen, im Alter von 31 Jahren.",
+  "shortDescriptionEs": "Keith Haring fue un artista estadounidense cuyas figuras pop, audaces y llenas de movimiento surgieron de la cultura del graffiti y del metro de Nueva York en los años ochenta. Su lenguaje visual, reconocible al instante, trató temas como el amor, la sexualidad, la lucha contra el apartheid, las campañas contra las drogas y la concienciación sobre el sida; además, creó murales públicos, exposiciones y el Pop Shop para acercar el arte a más personas. Tras ser diagnosticado con sida a finales de los años ochenta, convirtió sus últimos años en una etapa de activismo y creación urgente. Murió en Nueva York por complicaciones relacionadas con el sida el 16 de febrero de 1990, a los 31 años.",
+  "shortDescriptionRu": "Кит Харинг был американским художником, чьи яркие и динамичные образы поп-арта выросли из нью-йоркской граффити- и метро-культуры 1980-х годов. Его мгновенно узнаваемый визуальный язык говорил о любви, сексуальности, борьбе с апартеидом, антинаркотических кампаниях и информировании о СПИДе; через общественные муралы, выставки и Pop Shop он стремился сделать искусство доступным широкой публике. После диагноза СПИД в конце 1980-х его последние годы стали временем срочного творчества и активизма. Он умер в Нью-Йорке от осложнений, связанных со СПИДом, 16 февраля 1990 года в возрасте 31 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Keith_Haring",
+    "https://www.haring.com/!/about-haring/bio",
+    "https://www.britannica.com/biography/Keith-Haring",
+    "https://www.tate.org.uk/art/art-terms/g/graffiti-art/five-things-know-keith-haring",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Keith%20Haring%20%281986%29.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q150953",  "Name": "Henry VI",  "BirthDate": "1165-11-08T00:00:00Z",  "DeathDate": "1197-10-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Codex%20Manesse%20Heinrich%20VI.%20%28HRR%29.jpg",  "SiteLinksCnt": 58,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"27485318":{"pageid":27485318,"ns":0,"title":"Henry VI, Holy Roman Emperor","extract":"Henry VI (German: Heinrich VI.; November 1165 \u2013 28 September 1197), a member of the Hohenstaufen dynasty, was King of Germany (King of the Romans) from 1169 and Holy Roman Emperor from 1191 until his death. From 1194 he was also King of Sicily as the husband and co-ruler of Queen Constance I.\nHenry was the second son of Emperor Frederick Barbarossa and Beatrice I, Countess of Burgundy. Well educated in the Latin language, as well as Roman and canon law, Henry was also a patron of poets and a skilled poet himself. In 1186 he married Constance of Sicily. Henry, stuck in the Hohenstaufen conflict with the House of Welf until 1194, had to enforce the inheritance claims by his wife against her nephew Count Tancred of Lecce. Henry's attempt to conquer the Kingdom of Sicily failed at the siege of Naples in 1191 due to an epidemic, with Empress Constance captured. Based on an enormous ransom for the release and submission of King Richard I of England, he conquered Sicily in 1194; however, the intended unification with the Holy Roman Empire ultimately failed due to the opposition of the Papacy. In Sicily, Henry had a reputation for ruthless suppression of political opponents. To this day, he is sometimes given the epithet \"the Cruel\" (il crudele) by Italian historiographers.\nHenry threatened to invade the Byzantine Empire after 1194 and succeeded in extracting a ransom, the Alamanikon, from Emperor Alexios III Angelos in return for cancelling the invasion. He made the Kingdom of Cyprus and the Armenian Kingdom of Cilicia formal subjects of the empire and compelled Tunis and Tripolitania to pay tribute to him. In 1195 and 1196, he attempted to turn the Holy Roman Empire from an elective to a hereditary monarchy, the so-called Erbreichsplan, but met strong resistance from the prince-electors. Henry pledged to go on crusade in 1195 and began preparations. A revolt in Sicily was crushed in 1197. The Crusaders set sail for the Holy Land that same year but Henry died of malaria at Messina on 28 September 1197 before he could join them. His death plunged the Empire into the chaos of the German throne dispute for the next 17 years."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q150953")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q150953",
+  "isRealHuman": true,
+  "birthDate": "1165-11-08",
+  "deathDate": "1197-10-05",
+  "ageAtDeath": 31,
+  "confidence": 94,
+  "confidenceExplained": "The identity is clear: Q150953 is Henry VI, Holy Roman Emperor. The death date appears as 28 September 1197 in many narrative sources and as 5 October 1197 in some structured datasets; these are best understood as Julian versus proleptic Gregorian renderings of the same date. His exact birth day is less consistently given than his birth month, but using 8 November 1165 and either death-date rendering gives age 31, since he died before his 32nd birthday.",
+  "shortDescriptionEn": "Henry VI was a Hohenstaufen ruler, son of Frederick Barbarossa, King of the Romans from childhood, Holy Roman Emperor from 1191, and King of Sicily from 1194 through his marriage to Constance of Sicily. Educated, politically ambitious, and remembered as both a patron of poets and a severe ruler in Sicily, he tried to expand imperial authority across Italy and the Mediterranean. While preparing a crusade and ruling from Sicily, he died at Messina in 1197, probably of malaria or a related fever, at the age of 31; his death helped trigger years of instability in the Empire.",
+  "shortDescriptionFr": "Henri VI fut un souverain Hohenstaufen, fils de Frédéric Barberousse, roi des Romains dès l’enfance, empereur du Saint-Empire à partir de 1191 et roi de Sicile à partir de 1194 par son mariage avec Constance de Sicile. Instruit, ambitieux et parfois impitoyable, il renforça le pouvoir impérial en Italie et en Méditerranée tout en étant connu comme protecteur des poètes. Alors qu’il préparait une croisade et gouvernait depuis la Sicile, il mourut à Messine en 1197, probablement de la malaria ou d’une fièvre proche, à l’âge de 31 ans; sa disparition provoqua une longue crise de succession impériale.",
+  "shortDescriptionDe": "Heinrich VI. war ein Herrscher aus dem Haus der Hohenstaufen, Sohn Friedrich Barbarossas, seit seiner Kindheit römisch-deutscher König, ab 1191 Kaiser des Heiligen Römischen Reiches und ab 1194 König von Sizilien durch seine Ehe mit Konstanze von Sizilien. Er galt als gebildet, machtbewusst und in Sizilien als harter Herrscher, war zugleich aber auch Förderer und Kenner höfischer Dichtung. Während er von Sizilien aus eine Kreuzzugspolitik vorbereitete, starb er 1197 in Messina, wahrscheinlich an Malaria oder einem ähnlichen Fieber, im Alter von 31 Jahren; sein Tod stürzte das Reich in einen langwierigen Thronstreit.",
+  "shortDescriptionEs": "Enrique VI fue un gobernante de la dinastía Hohenstaufen, hijo de Federico Barbarroja, rey de los Romanos desde la infancia, emperador del Sacro Imperio Romano Germánico desde 1191 y rey de Sicilia desde 1194 por su matrimonio con Constanza de Sicilia. Culto, ambicioso y recordado en Sicilia por su dureza, intentó ampliar la autoridad imperial en Italia y el Mediterráneo, además de proteger la cultura cortesana. Mientras preparaba una cruzada y gobernaba desde Sicilia, murió en Mesina en 1197, probablemente de malaria o de una fiebre similar, a los 31 años; su muerte abrió una grave crisis sucesoria en el Imperio.",
+  "shortDescriptionRu": "Генрих VI был правителем из династии Гогенштауфенов, сыном Фридриха Барбароссы, королём Германии с детства, императором Священной Римской империи с 1191 года и королём Сицилии с 1194 года благодаря браку с Констанцией Сицилийской. Образованный и честолюбивый, он стремился усилить императорскую власть в Италии и Средиземноморье, покровительствовал поэтам, но в Сицилии запомнился суровыми расправами с противниками. Во время подготовки крестового похода он умер в Мессине в 1197 году, вероятно от малярии или сходной лихорадки, в возрасте 31 года; его смерть привела к затяжному спору за германский престол.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_VI,_Holy_Roman_Emperor",
+    "https://www.britannica.com/biography/Henry-VI-Holy-Roman-emperor",
+    "https://www.wikidata.org/wiki/Q150953",
+    "https://commons.wikimedia.org/wiki/Category:Henry_VI,_Holy_Roman_Emperor",
+    "https://en.numista.com/catalogue/ruler.php?id=5834"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q244383",  "Name": "Rose of Lima",  "BirthDate": "1586-04-20T00:00:00Z",  "DeathDate": "1617-08-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Santa%20Rosa%20de%20Lima%20Ebrafol.jpg",  "SiteLinksCnt": 58,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"355422":{"pageid":355422,"ns":0,"title":"Rose of Lima","extract":"Rose of Lima, TOSD (born Isabel Flores de Oliva; 20 April 1586 \u2013 24 August 1617) (Latin: Rosa Limana, Spanish: Rosa de Lima), was a member of the Third Order of Saint Dominic in Lima, Peru, Spanish Empire, who became known for both her life of severe penance and her care of the poverty stricken of the city through her own private efforts.\nRose of Lima was born to a noble family and is the patron saint of embroidery, gardening, and cultivation of blooming flowers. She was the first person born in the Americas to be canonized as a saint.\nAs a saint, Rose of Lima has been designated as a co-patroness of the Philippines, along with Pudentiana; both saints were moved to second-class patronage in September 1942 by Pope Pius XII, but Rose remains the primary patroness of Peru and of the local people of Latin America. Her image was formerly featured on the highest-denomination banknote of Peru."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q244383")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q244383",
+  "isRealHuman": true,
+  "birthDate": "1586-04-20",
+  "deathDate": "1617-08-24",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable sources identify the person as Rose of Lima, born Isabel Flores de Oliva, with birth date 1586-04-20 and death date 1617-08-24. Since she died after her birthday in 1617, the completed age is 31 years. Confidence is very high; the only minor uncertainty is that some secondary sources mention April 20/30 due to calendar or reporting variation, but the Wikidata/Wikipedia date and the age of 31 are consistent.",
+  "shortDescriptionEn": "Rose of Lima, born Isabel Flores de Oliva in colonial Lima, was a Dominican tertiary remembered for her intense religious devotion, severe asceticism, needlework, gardening, and direct care for the poor and sick. She became the first person born in the Americas to be canonized by the Catholic Church and is venerated as a patron of Peru, Latin America, gardeners, florists, and embroiderers. After years of fragile health and self-denial, she died in Lima on 24 August 1617 at the age of 31, reportedly after a long illness and already revered locally for holiness.",
+  "shortDescriptionFr": "Rose de Lima, née Isabel Flores de Oliva à Lima coloniale, fut une tertiaire dominicaine connue pour sa dévotion intense, son ascèse rigoureuse, ses travaux d’aiguille, son jardinage et son aide directe aux pauvres et aux malades. Elle devint la première personne née dans les Amériques à être canonisée par l’Église catholique et elle est vénérée comme patronne du Pérou, de l’Amérique latine, des jardiniers, des fleuristes et des brodeurs. Affaiblie par des années de pénitence et de santé fragile, elle mourut à Lima le 24 août 1617 à l’âge de 31 ans, après une longue maladie, déjà considérée comme sainte par beaucoup.",
+  "shortDescriptionDe": "Rosa von Lima, geboren als Isabel Flores de Oliva im kolonialen Lima, war eine dominikanische Terziarin, die für ihre tiefe Frömmigkeit, strenge Askese, Handarbeiten, Gartenarbeit und Hilfe für Arme und Kranke bekannt wurde. Sie war die erste in Amerika geborene Person, die von der katholischen Kirche heiliggesprochen wurde, und gilt als Patronin Perus, Lateinamerikas, der Gärtner, Floristen und Stickerinnen. Nach Jahren schwacher Gesundheit und harter Bußübungen starb sie am 24. August 1617 in Lima im Alter von 31 Jahren, nach langer Krankheit und bereits mit dem Ruf großer Heiligkeit.",
+  "shortDescriptionEs": "Rosa de Lima, nacida Isabel Flores de Oliva en la Lima colonial, fue una terciaria dominica recordada por su profunda devoción, su severa vida ascética, sus labores de costura, su jardinería y su ayuda directa a los pobres y enfermos. Fue la primera persona nacida en América canonizada por la Iglesia católica y es venerada como patrona del Perú, de América Latina, de los jardineros, floristas y bordadores. Tras años de salud frágil y penitencias extremas, murió en Lima el 24 de agosto de 1617 a los 31 años, después de una larga enfermedad y ya venerada por muchos como santa.",
+  "shortDescriptionRu": "Роза Лимская, урождённая Исабель Флорес де Олива, родилась в колониальной Лиме и стала доминиканской терциаркой, известной глубокой религиозностью, строгим аскетизмом, рукоделием, садоводством и заботой о бедных и больных. Она стала первым человеком, родившимся в Америке, которого канонизировала Католическая церковь, и почитается как покровительница Перу, Латинской Америки, садовников, флористов и вышивальщиц. После многих лет слабого здоровья и суровых покаянных практик она умерла в Лиме 24 августа 1617 года в возрасте 31 года, после продолжительной болезни и уже при жизни окружённая славой святости.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Rose_of_Lima",
+    "https://www.britannica.com/biography/Saint-Rose-of-Lima",
+    "https://www.vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/2633-august-23-saint-rose-of-lima.html",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Santa%20Rosa%20de%20Lima%20Ebrafol.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q551730",  "Name": "Luc de Clapiers, marquis de Vauvenargues",  "BirthDate": "1715-08-06T00:00:00Z",  "DeathDate": "1747-05-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/LucdeClapiers-marquisdeVauvenarges.jpg",  "SiteLinksCnt": 57,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"1804818":{"pageid":1804818,"ns":0,"title":"Luc de Clapiers, marquis de Vauvenargues","extract":"Luc de Clapiers, marquis de Vauvenargues (French: [vovna\u0281\u0261]; 6 August 1715 \u2013 28 May 1747) was a French writer and moralist. He died at age 31, in broken health, having published the year prior\u2014anonymously\u2014a collection of essays and aphorisms with the encouragement of Voltaire, his friend (20 years his senior). He first received public notice under his own name in 1797, and from 1857 on, his aphorisms became popular."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q551730")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q551730",
+  "isRealHuman": true,
+  "birthDate": "1715-08-06",
+  "deathDate": "1747-05-28",
+  "ageAtDeath": 31,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, Britannica, Wikidata-linked sources, and other biographical references. The calculated age is exact: from 1715-08-06 to 1747-05-28, he had not yet reached his 32nd birthday, so he died at 31. Confidence is not 100 only because historical biographical data can occasionally contain calendar or transcription inconsistencies.",
+  "shortDescriptionEn": "Luc de Clapiers, marquis de Vauvenargues, was a French nobleman, former army officer, essayist, and moralist whose aphorisms later earned him a lasting place in Enlightenment literature. Encouraged by Voltaire, he published his main collection of essays and maxims shortly before his death. His health had been damaged by military hardship, including the retreat from Prague, and later illness left him weakened, disfigured, and nearly blind. He died in Paris on 28 May 1747 at the age of 31.",
+  "shortDescriptionFr": "Luc de Clapiers, marquis de Vauvenargues, était un noble français, ancien officier, essayiste et moraliste dont les maximes ont ensuite trouvé une place durable dans la littérature des Lumières. Encouragé par Voltaire, il publia son principal recueil d’essais et de réflexions peu avant sa mort. Sa santé avait été ruinée par les épreuves militaires, notamment la retraite de Prague, puis aggravée par la maladie qui l’affaiblit, le défigura et le rendit presque aveugle. Il mourut à Paris le 28 mai 1747, à l’âge de 31 ans.",
+  "shortDescriptionDe": "Luc de Clapiers, Marquis de Vauvenargues, war ein französischer Adliger, ehemaliger Offizier, Essayist und Moralist, dessen Aphorismen später einen festen Platz in der Literatur der Aufklärung erhielten. Von Voltaire ermutigt, veröffentlichte er kurz vor seinem Tod seine wichtigste Sammlung von Essays und Maximen. Seine Gesundheit war durch militärische Strapazen, besonders den Rückzug aus Prag, schwer geschädigt worden; eine spätere Krankheit schwächte ihn zusätzlich, entstellte ihn und machte ihn fast blind. Er starb am 28. Mai 1747 in Paris im Alter von 31 Jahren.",
+  "shortDescriptionEs": "Luc de Clapiers, marqués de Vauvenargues, fue un noble francés, antiguo oficial del ejército, ensayista y moralista cuyas máximas acabaron ocupando un lugar destacado en la literatura de la Ilustración. Animado por Voltaire, publicó su principal colección de ensayos y aforismos poco antes de morir. Su salud quedó gravemente dañada por las penurias militares, incluida la retirada de Praga, y una enfermedad posterior lo dejó debilitado, desfigurado y casi ciego. Murió en París el 28 de mayo de 1747, a los 31 años.",
+  "shortDescriptionRu": "Люк де Клапье, маркиз де Вовенарг, был французским дворянином, бывшим офицером, эссеистом и моралистом, чьи афоризмы позднее заняли заметное место в литературе эпохи Просвещения. При поддержке Вольтера он незадолго до смерти опубликовал свой главный сборник эссе и максим. Его здоровье было подорвано военными тяготами, особенно отступлением из Праги, а последующая болезнь ослабила его, изуродовала и почти лишила зрения. Он умер в Париже 28 мая 1747 года в возрасте 31 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Luc_de_Clapiers,_marquis_de_Vauvenargues",
+    "https://www.britannica.com/biography/Luc-de-Clapiers-Marquis-de-Vauvenargues",
+    "https://www.wikidata.org/wiki/Q551730",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Vauvenargues,_Luc_de_Clapiers,_Marquis_de",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/LucdeClapiers-marquisdeVauvenarges.jpg",
+    "https://www.meisterdrucke.uk/fine-art-prints/Charles-Amedee-Colin/68091/Luc-de-Clapiers-%281715-47%29-Marquis-of-Vauvenargues.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q205372",  "Name": "Absalom",  "BirthDate": "-1008-01-01T00:00:00Z",  "DeathDate": "-0977-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Absalom%20Albert%20Weisgerber.jpg",  "SiteLinksCnt": 55,  "Age": 31}
+{"batchcomplete":"","query":{"pages":{"1438":{"pageid":1438,"ns":0,"title":"Absalom","extract":"Absalom (Hebrew: \u05d0\u05b7\u05d1\u05b0\u05e9\u05b8\u05c1\u05dc\u05d5\u05b9\u05dd\u200e, romanized: \u02beA\u1e07\u0161\u0101l\u014dm, lit.\u2009'Father of Peace'), according to the Hebrew Bible, was an Israelite prince. Born to David and Maacah, who was from Geshur, he was the only full sibling of Tamar. He is described in the Hebrew Bible as being exceptionally beautiful, as is his sister. In the narrative of 2 Samuel 13, his sister Tamar takes refuge at his house after she is raped by their paternal half-brother Amnon (born to David and Ahinoam, who was from Jezreel); David is angered by the incident, but does nothing, as Amnon is his heir apparent. Infuriated by the rape and David's inaction, Absalom assassinates Amnon and subsequently flees to Geshur, which is ruled by his and Tamar's maternal grandfather Talmai.\nFollowing three years in exile, he returns to Israel and rallies popular support against the House of David. A war ensues when Absalom's rebels mobilize at Hebron and begin fighting David's army in an attempt to overthrow him, but their revolt ends in failure when Absalom is killed by David's nephew and army commander Joab during the Battle of the Wood of Ephraim. In the aftermath of his death, Absalom's sister is described as being left \"a desolate woman in her brother's house\" and the sole guardian of his orphaned daughter, who is also named Tamar."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q205372")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q205372",
+  "isRealHuman": true,
+  "birthDate": "-1008-01-01",
+  "deathDate": "-0977-01-01",
+  "ageAtDeath": 31,
+  "confidence": 35,
+  "confidenceExplained": "The calculated age is 31 because the available Wikidata chronology gives circa 1009 BCE for birth and circa 978 BCE for death, encoded here as ISO-style astronomical years -1008 and -0977. Confidence is low-to-moderate because the Hebrew Bible preserves Absalom's story but not precise birth and death dates; the dates are later chronological estimates rather than contemporary records.",
+  "shortDescriptionEn": "Absalom was an Israelite prince remembered as the third son of King David and Maacah of Geshur. Famous for his beauty, charisma, and long hair, he became one of the most dramatic figures in David’s family story: after avenging his sister Tamar by killing Amnon, he spent years in exile before returning and leading a rebellion against his father. His revolt collapsed in the Battle of the Wood of Ephraim, where he was caught in a tree while fleeing on a mule and was killed by Joab despite David’s order to spare him. He died at about 31.",
+  "shortDescriptionFr": "Absalom était un prince israélite, connu comme le troisième fils du roi David et de Maaca de Geshur. Célèbre pour sa beauté, son charisme et sa longue chevelure, il occupe une place tragique dans l’histoire familiale de David : après avoir vengé sa sœur Tamar en tuant Amnon, il vécut en exil avant de revenir et de mener une révolte contre son père. Sa rébellion échoua lors de la bataille de la forêt d’Éphraïm, où il fut pris dans un arbre en fuyant sur une mule et tué par Joab malgré l’ordre de David de l’épargner. Il mourut vers 31 ans.",
+  "shortDescriptionDe": "Absalom war ein israelitischer Prinz, bekannt als dritter Sohn König Davids und Maachas von Geschur. Berühmt für seine Schönheit, Ausstrahlung und sein langes Haar, gehört er zu den tragischsten Gestalten in Davids Familiengeschichte: Nachdem er seine Schwester Tamar durch die Tötung Amnons gerächt hatte, lebte er im Exil, kehrte später zurück und führte einen Aufstand gegen seinen Vater an. Seine Rebellion scheiterte in der Schlacht im Wald von Ephraim; auf der Flucht mit einem Maultier blieb er in einem Baum hängen und wurde von Joab getötet, obwohl David befohlen hatte, ihn zu verschonen. Er starb mit etwa 31 Jahren.",
+  "shortDescriptionEs": "Absalón fue un príncipe israelita, recordado como el tercer hijo del rey David y de Maacá de Guesur. Famoso por su belleza, carisma y larga cabellera, es una de las figuras más dramáticas de la historia familiar de David: tras vengar a su hermana Tamar matando a Amnón, pasó años en el exilio antes de regresar y encabezar una rebelión contra su padre. Su levantamiento fracasó en la batalla del bosque de Efraín, donde quedó atrapado en un árbol mientras huía en una mula y fue asesinado por Joab pese a la orden de David de perdonarlo. Murió aproximadamente a los 31 años.",
+  "shortDescriptionRu": "Авессалом был израильским царевичем, известным как третий сын царя Давида и Маахи из Гессура. Прославленный красотой, обаянием и длинными волосами, он стал одной из самых драматичных фигур в семейной истории Давида: отомстив за сестру Фамарь убийством Амнона, он жил в изгнании, затем вернулся и поднял восстание против отца. Его мятеж был разгромлен в битве в лесу Ефремовом; спасаясь на муле, он зацепился за дерево и был убит Иоавом, несмотря на приказ Давида сохранить ему жизнь. Он умер примерно в 31 год.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Absalom%20Albert%20Weisgerber.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%20Weisgerber%20-%20Absalom%20%281914%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Absalom%20Albert%20Weisgerber%20%282%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Saarbr%C3%BCcken%2C%20Moderne%20Galerie%2C%20Albert%20Weisgerber%2C%20Absalom%20am%20Baum%20h%C3%A4ngend.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Absalom",
+    "https://www.wikidata.org/wiki/Q205372",
+    "https://www.britannica.com/biography/Absalom",
+    "https://www.biblegateway.com/passage/?search=2+Samuel+18&version=LSB",
+    "https://commons.wikimedia.org/wiki/File:Absalom_Albert_Weisgerber.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Death_of_Absalom"
+  ]
+}
