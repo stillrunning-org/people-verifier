@@ -1,0 +1,1048 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q302",  "Name": "Jesus Christ",  "BirthDate": "-0005-01-01T00:00:00Z",  "DeathDate": "0030-04-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Spas%20vsederzhitel%20sinay%20%28cropped1%29.jpg",  "SiteLinksCnt": 342,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"1095706":{"pageid":1095706,"ns":0,"title":"Jesus","extract":"Jesus (c.\u20096 to 4 BC \u2013 AD 30 or 33), also referred to as Jesus Christ, Jesus of Nazareth, and by various other names and titles, was a 1st-century Jewish preacher and religious leader in the Roman province of Judaea. He is the central figure of Christianity, the world's largest religion. Most Christians consider Jesus to be the incarnation of God the Son and the awaited messiah, or Christ, a descendant of the Davidic line prophesied in the Old Testament. Virtually all modern scholars of antiquity agree that Jesus existed historically. Accounts of Jesus's life are contained in the Gospels, especially the four canonical Gospels of the New Testament. Since the Enlightenment, academic research has produced various views on the historical reliability of the Gospels and the extent to which they reflect the historical Jesus.\nAccording to Christian tradition, as represented in the Gospels and the Acts of the Apostles, Jesus was circumcised at eight days old, presented at the Temple in Jerusalem at forty days old, baptized by John the Baptist as a young adult, and, after 40 days and nights of fasting in the wilderness, began his public ministry. He was an itinerant teacher whom his followers believed to possess divine authority in interpreting Jewish law. Jesus often debated with other Jews, most commonly the Pharisees and Sadducees, about how best to follow God, engaged in healings, taught in parables, and gathered followers, 12 of whom he appointed as his apostles. According to the New Testament accounts, he was arrested in Jerusalem and tried by the Sanhedrin, handed over to the Roman authorities, and crucified on the order of Pontius Pilate, the Roman prefect of Judaea. After his death, his followers became convinced that he rose from the dead, and the community they formed eventually developed into the early Christian Church, which expanded into a worldwide movement.\nChristian theology includes the beliefs that Jesus was conceived by the Holy Spirit, was born of a virgin named Mary, performed miracles, founded the Christian Church, died by crucifixion as a sacrifice for atonement for sin, rose from the dead on the third day, and ascended into Heaven, from where he will return. Christians commonly believe that Jesus enables people to be reconciled to God. The Nicene Creed asserts that Jesus will judge the living and the dead, either before or after their bodily resurrection, an event associated with the Second Coming of Jesus in Christian eschatology. The great majority of Christians worship Jesus as the incarnation of God the Son, the second of the three persons of the Trinity. The birth of Jesus in Bethlehem is celebrated annually, generally on 25 December, as Christmas. His crucifixion is commemorated on Good Friday and his resurrection on Easter Sunday. The world's most widely used calendar era\u2014in which the current year is AD 2026 (or 2026 CE)\u2014is traditionally based on the approximate date of the birth of Jesus.\nMainstream Judaism rejects the belief that Jesus was the awaited messiah, holding that he did not fulfill messianic prophecies, was not lawfully anointed, and was neither divine nor resurrected. In contrast, Jesus in Islam is considered the messiah and a prophet of God, who was sent to the Israelites and will return to Earth before the Day of Judgement. Muslims believe that Jesus was born of the virgin Mary but was neither God nor the son of God. Most Muslims do not believe that he was killed or crucified, but that God raised him into Heaven while he was still alive. Jesus is also revered in the Bah\u00e1\u02bc\u00ed and Druze faiths, as well as in Rastafari."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q302")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q302",
+  "isRealHuman": true,
+  "birthDate": "-0005-01-01",
+  "deathDate": "0030-04-05",
+  "ageAtDeath": 35,
+  "confidence": 45,
+  "confidenceExplained": "The age is an estimate. Common scholarly ranges place Jesus' birth around 6–4 BCE and his death around AD 30 or 33, so the exact age cannot be known. Using the early-birth and AD 30 death estimate encoded in the supplied data gives 35; plausible historical estimates cluster roughly in the mid-to-late 30s.",
+  "shortDescriptionEn": "Jesus of Nazareth, also known as Jesus Christ, was a 1st-century Galilean Jewish preacher and religious leader whose teachings became the foundation of Christianity. He preached about God’s kingdom, taught in parables, gathered disciples, and became one of the most influential figures in world history. He died in Jerusalem after being arrested, handed over to Roman authorities, and crucified under Pontius Pilate, probably around AD 30.",
+  "shortDescriptionFr": "Jésus de Nazareth, aussi appelé Jésus-Christ, était un prédicateur juif galiléen du Ier siècle et un chef religieux dont l’enseignement est devenu le fondement du christianisme. Il prêchait le royaume de Dieu, enseignait par paraboles, rassemblait des disciples et devint l’une des figures les plus influentes de l’histoire mondiale. Il mourut à Jérusalem après son arrestation, sa remise aux autorités romaines et sa crucifixion sous Ponce Pilate, probablement vers l’an 30.",
+  "shortDescriptionDe": "Jesus von Nazareth, auch Jesus Christus genannt, war ein jüdischer Prediger aus Galiläa im 1. Jahrhundert und ein religiöser Lehrer, dessen Botschaft zur Grundlage des Christentums wurde. Er verkündete das Reich Gottes, lehrte in Gleichnissen, sammelte Jünger um sich und wurde zu einer der einflussreichsten Gestalten der Weltgeschichte. Er starb in Jerusalem, nachdem er verhaftet, den römischen Behörden übergeben und unter Pontius Pilatus gekreuzigt worden war, wahrscheinlich um das Jahr 30 n. Chr.",
+  "shortDescriptionEs": "Jesús de Nazaret, también conocido como Jesucristo, fue un predicador judío galileo del siglo I y un líder religioso cuyas enseñanzas dieron origen al cristianismo. Predicó sobre el reino de Dios, enseñó mediante parábolas, reunió discípulos y llegó a ser una de las figuras más influyentes de la historia mundial. Murió en Jerusalén tras ser arrestado, entregado a las autoridades romanas y crucificado bajo Poncio Pilato, probablemente hacia el año 30 d. C.",
+  "shortDescriptionRu": "Иисус из Назарета, также известный как Иисус Христос, был галилейским иудейским проповедником I века и религиозным учителем, чьи учения легли в основу христианства. Он проповедовал Царство Божье, учил притчами, собрал учеников и стал одной из самых влиятельных фигур мировой истории. Он умер в Иерусалиме после ареста, передачи римским властям и распятия при Понтии Пилате, вероятно около 30 года н. э.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jesus",
+    "https://www.britannica.com/biography/Jesus",
+    "https://en.wikipedia.org/wiki/Date_of_the_birth_of_Jesus",
+    "https://en.wikipedia.org/wiki/Chronology_of_Jesus",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/christ-jesus"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q254",  "Name": "Wolfgang Amadeus Mozart",  "BirthDate": "1756-01-27T00:00:00Z",  "DeathDate": "1791-12-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Wolfgang-amadeus-mozart%201.jpg",  "SiteLinksCnt": 270,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"33163":{"pageid":33163,"ns":0,"title":"Wolfgang Amadeus Mozart","extract":"Wolfgang Amadeus Mozart (27 January 1756 \u2013 5 December 1791) was a Classical composer and musician. He completed more than 800 works in his life\u2014including outstanding examples of most of the genres of his time: symphonies, concertos, chamber music, opera, and choral music.\nBorn in Salzburg, Mozart quickly emerged as a child prodigy under the training of his father Leopold, a skilled pedagogue. At age five, he was already competent on keyboard and violin, had begun to compose, and had performed before European royalty. His father took him on a grand tour of Europe and then three trips to Italy. At 17 he was a musician at the Salzburg court but grew restless and travelled in search of a better position. A fruitless journey in search of employment (1777\u20131779) led him to Paris, Mannheim, Munich, and eventually back to Salzburg. During this time he wrote his five violin concertos, the Sinfonia Concertante, various masses, and the opera Idomeneo.\nWhile he was visiting Vienna in 1781, Mozart's quarrels with his Salzburg employers came to a head and he was dismissed. He chose to remain in Vienna, where he stayed for the rest of his life, achieving fame and some financial success, but no long-term security. During Mozart's early years in Vienna he produced several notable works, such as the opera Die Entf\u00fchrung aus dem Serail, the Great Mass in C minor, the \"Haydn\" Quartets and a number of symphonies. Throughout his Vienna years Mozart composed more than a dozen piano concertos, many considered some of his greatest achievements.\nIn the final years of his life, he wrote many of his best-known works, including his last three symphonies, culminating in the Jupiter, the serenade Eine kleine Nachtmusik, his Clarinet Concerto, the operas Le nozze di Figaro, Don Giovanni, Cos\u00ec fan tutte and Die Zauberfl\u00f6te, the Piano Concerto No. 27 and his Requiem. The Requiem was largely unfinished at the time of his death at age 35.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q254")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q254",
+  "isRealHuman": true,
+  "birthDate": "1756-01-27",
+  "deathDate": "1791-12-05",
+  "ageAtDeath": 35,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are exact and consistently reported by major reference sources. Calculating from 1756-01-27 to 1791-12-05 gives 35 full years, so the age at death is 35.",
+  "shortDescriptionEn": "Wolfgang Amadeus Mozart was an Austrian composer and musician of the Classical period, celebrated for operas, symphonies, concertos, chamber music, and sacred works that helped define Western music. A child prodigy from Salzburg, he later built his mature career in Vienna. He died there on 5 December 1791 at age 35 after a short illness; the exact medical cause remains uncertain, and his Requiem was left unfinished.",
+  "shortDescriptionFr": "Wolfgang Amadeus Mozart était un compositeur et musicien autrichien de la période classique, célèbre pour ses opéras, symphonies, concertos, œuvres de chambre et musique sacrée qui ont marqué l’histoire de la musique occidentale. Enfant prodige né à Salzbourg, il fit ensuite carrière à Vienne. Il y mourut le 5 décembre 1791 à l’âge de 35 ans après une brève maladie; la cause médicale exacte reste incertaine, et son Requiem demeura inachevé.",
+  "shortDescriptionDe": "Wolfgang Amadeus Mozart war ein österreichischer Komponist und Musiker der Wiener Klassik, berühmt für Opern, Sinfonien, Konzerte, Kammermusik und geistliche Werke, die die westliche Musik entscheidend prägten. Als Wunderkind aus Salzburg machte er später in Wien Karriere. Dort starb er am 5. Dezember 1791 im Alter von 35 Jahren nach kurzer Krankheit; die genaue Todesursache ist bis heute unsicher, und sein Requiem blieb unvollendet.",
+  "shortDescriptionEs": "Wolfgang Amadeus Mozart fue un compositor y músico austríaco del período clásico, famoso por óperas, sinfonías, conciertos, música de cámara y obras sacras que transformaron la música occidental. Niño prodigio nacido en Salzburgo, desarrolló su etapa madura en Viena. Murió allí el 5 de diciembre de 1791 a los 35 años tras una breve enfermedad; la causa médica exacta sigue siendo incierta, y su Réquiem quedó inconcluso.",
+  "shortDescriptionRu": "Вольфганг Амадей Моцарт был австрийским композитором и музыкантом эпохи классицизма, прославившимся операми, симфониями, концертами, камерной и духовной музыкой, которые оказали огромное влияние на западную музыкальную традицию. Уроженец Зальцбурга и вундеркинд, он позднее работал в Вене. Там он умер 5 декабря 1791 года в возрасте 35 лет после непродолжительной болезни; точная медицинская причина смерти остается спорной, а его «Реквием» остался незавершенным.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+    "https://commons.wikimedia.org/wiki/File:W_A_Mozart_at_21c.jpg",
+    "https://picryl.com/media/mozart-wolfgang-amadeus-773c6a"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+    "https://www.britannica.com/biography/Wolfgang-Amadeus-Mozart",
+    "https://www.wikidata.org/wiki/Q254",
+    "https://en.wikipedia.org/wiki/Death_of_Wolfgang_Amadeus_Mozart",
+    "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+    "https://commons.wikimedia.org/wiki/File:W_A_Mozart_at_21c.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40662",  "Name": "John the Baptist",  "BirthDate": "-0005-01-01T00:00:00Z",  "DeathDate": "0030-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Accademia%20-%20St%20John%20the%20Baptist%20by%20Titian%20Cat314.jpg",  "SiteLinksCnt": 127,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"16125":{"pageid":16125,"ns":0,"title":"John the Baptist","extract":"John the Baptist (c.\u20096 BC \u2013 c.\u2009AD 30) was a Jewish preacher active in the area of the Jordan River in the early first century AD. He is also known as Saint John the Forerunner in Eastern Orthodoxy and Oriental Orthodoxy, Saint John the Immerser in the Baptist tradition, and as the prophet Yahya ibn Zakariya in Islam. He is sometimes referred to as John the Baptiser.\nJohn is mentioned by the Roman Jewish historian Josephus, and he is revered as a major religious figure in Christianity, Islam, the Bah\u00e1\u02bc\u00ed Faith, the Druze faith, and Mandaeism; in the last of these he is considered to be the final and most vital prophet. He is considered to be a prophet of God by all of the aforementioned faiths, and is honoured as a saint in many Christian denominations. According to the New Testament, John anticipated a messianic figure greater than himself; in the Gospels, he is portrayed as the precursor or forerunner of Jesus. According to the Gospel of Matthew, Jesus himself identifies John as \"Elijah who is to come\", which is a direct reference to the Book of Malachi (Malachi 4:5), as confirmed by the angel Gabriel, who announced John's birth to his father Zechariah. According to the Gospel of Luke, John and Jesus were relatives.\n\nSome scholars think that John belonged to the Essenes, a semi-ascetic Jewish sect who expected a messiah and practised ritual baptism. John used baptism as the central symbol or sacrament of his pre-messianic movement. Most biblical scholars agree that John baptized Jesus, and several New Testament accounts report that some of Jesus's early followers had previously been followers of John. According to the New Testament, John was sentenced to death and subsequently beheaded by Herod Antipas around AD 30 after John rebuked him for divorcing his wife and then unlawfully wedding Herodias, the wife of his brother Herod Philip I. Josephus also mentions John in the Antiquities of the Jews and states that he was executed by order of Herod Antipas in the fortress at Machaerus.\nFollowers of John existed into the second century AD, and some proclaimed him to be the Messiah awaited by Jews. In modern times, the followers of John the Baptist are the Mandaeans, an ancient ethnoreligious group who believe that he is their greatest and final prophet. In the Roman martyrology, John is the only saint whose birth and death are both commemorated."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40662")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q40662",
+  "isRealHuman": true,
+  "birthDate": "-0005-06-24",
+  "deathDate": "0030-08-29",
+  "ageAtDeath": 35,
+  "confidence": 55,
+  "confidenceExplained": "The age is an informed estimate. Major references place John the Baptist's birth around the first decade BCE, often summarized as c. 6 BC, and his death around AD 30, though scholarly ranges such as 28–36 CE also appear. Using the traditional June 24 birth commemoration and August 29 death commemoration as date placeholders, and treating 6 BC as astronomical year -0005, he would have been about 35 at death. The exact day and even the exact year remain uncertain.",
+  "shortDescriptionEn": "John the Baptist was a Jewish preacher and prophetic figure active near the Jordan River in the early first century. Remembered in Christianity as the forerunner of Jesus and in Islam as the prophet Yahya, he called people to repentance and used baptism as the central sign of renewal. His public influence and criticism of Herod Antipas's marriage led to his imprisonment; ancient and biblical traditions say he was executed by Herod's order, commonly remembered as a beheading at Machaerus around AD 30.",
+  "shortDescriptionFr": "Jean le Baptiste était un prédicateur juif et une figure prophétique active près du Jourdain au début du Ier siècle. Vénéré dans le christianisme comme le précurseur de Jésus et connu dans l’islam comme le prophète Yahya, il appelait à la repentance et faisait du baptême le signe central du renouveau spirituel. Son influence publique et sa critique du mariage d’Hérode Antipas entraînèrent son arrestation; les traditions anciennes et bibliques rapportent qu’il fut exécuté sur ordre d’Hérode, généralement par décapitation à Machéronte vers l’an 30.",
+  "shortDescriptionDe": "Johannes der Täufer war ein jüdischer Prediger und prophetischer Gestalt, die im frühen 1. Jahrhundert am Jordan wirkte. Im Christentum gilt er als Vorläufer Jesu, im Islam ist er als Prophet Yahya bekannt; seine Botschaft rief zur Umkehr auf, und die Taufe stand im Mittelpunkt seines Wirkens. Seine große öffentliche Wirkung und seine Kritik an der Ehe des Herodes Antipas führten zu seiner Gefangennahme; antike und biblische Überlieferungen berichten, dass er auf Befehl des Herodes hingerichtet wurde, meist als Enthauptung in Machärus um das Jahr 30 erinnert.",
+  "shortDescriptionEs": "Juan el Bautista fue un predicador judío y figura profética activa cerca del río Jordán a comienzos del siglo I. Recordado en el cristianismo como precursor de Jesús y en el islam como el profeta Yahya, llamó al arrepentimiento y convirtió el bautismo en el signo central de renovación. Su influencia pública y su crítica al matrimonio de Herodes Antipas provocaron su encarcelamiento; las tradiciones antiguas y bíblicas afirman que fue ejecutado por orden de Herodes, normalmente recordado como una decapitación en Maqueronte hacia el año 30.",
+  "shortDescriptionRu": "Иоанн Креститель был еврейским проповедником и пророческой фигурой, действовавшей у реки Иордан в начале I века. В христианстве он почитается как предтеча Иисуса, а в исламе известен как пророк Яхья; он призывал к покаянию и сделал крещение главным знаком духовного обновления. Его общественное влияние и критика брака Ирода Антипы привели к аресту; древние и библейские традиции сообщают, что он был казнён по приказу Ирода, обычно это описывается как обезглавливание в Махероне около 30 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_the_Baptist",
+    "https://www.britannica.com/biography/Saint-John-the-Baptist",
+    "https://www.livius.org/sources/content/josephus/jewish-antiquities/josephus-on-john-the-baptist/",
+    "https://www.bibleodyssey.org/articles/john-the-baptist/",
+    "https://en.wikipedia.org/wiki/Beheading_of_John_the_Baptist",
+    "https://commons.wikimedia.org/wiki/File:John_baptist_byzantine.jpeg",
+    "https://commons.wikimedia.org/wiki/File:John_the_Baptist_of_Macedonia.jpg",
+    "https://commons.wikimedia.org/wiki/File:Saint_John_the_Baptist_-_Saint_John_the_Baptist_-_Google_Art_Project.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q161672",  "Name": "Patrice Lumumba",  "BirthDate": "1925-07-02T00:00:00Z",  "DeathDate": "1961-01-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/PatriceLumumba1960.jpg",  "SiteLinksCnt": 113,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"49240":{"pageid":49240,"ns":0,"title":"Patrice Lumumba","extract":"Patrice \u00c9mery Lumumba (  p\u0259-TREESS luu-MUUM-b\u0259; born Isa\u00efe Tasumbu Tawosa; 2 July 1925 \u2013 17 January 1961) was a Congolese politician and independence leader who served as the first prime minister of the First Congolese Republic (which is today the Democratic Republic of the Congo) from June until September 1960, following the May 1960 election. Lumumba was the leader of the Congolese National Movement (MNC) from 1958 until his assassination in 1961. Ideologically an African nationalist and pan-Africanist, he played a significant role in the transformation of the Congo from a colony of Belgium into an independent republic.\nShortly after Congolese independence in June 1960, a mutiny broke out in the army, marking the beginning of the Congo Crisis. After a coup led by Joseph-D\u00e9sir\u00e9 Mobutu, Lumumba attempted to escape to Stanleyville to join his supporters who had established a new anti-Mobutu state called the Free Republic of the Congo. Lumumba was captured en route by state authorities under Joseph-D\u00e9sir\u00e9 Mobutu, sent to the State of Katanga and, with the help of Belgian mercenaries, tortured and executed by the separatist Katangan authorities of Mo\u00efse Tshombe. His body was then dissolved in acid. In 2002, Belgium formally apologised for its role in the execution, admitting \"moral responsibility\", and in 2022, it returned Lumumba\u2019s tooth to his family. He is seen as a martyr for the pan-African movement."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q161672")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q161672",
+  "isRealHuman": true,
+  "birthDate": "1925-07-02",
+  "deathDate": "1961-01-17",
+  "ageAtDeath": 35,
+  "confidence": 100,
+  "confidenceExplained": "Patrice Lumumba's birth and death dates are consistently listed as 2 July 1925 and 17 January 1961 by Wikipedia, Britannica, and South African History Online. Calculating from those dates gives 35 full years at death, because he died before his 36th birthday.",
+  "shortDescriptionEn": "Patrice Émery Lumumba was a Congolese nationalist, pan-Africanist, and the first prime minister of the independent Republic of the Congo in 1960. A powerful symbol of anti-colonial politics, he helped lead the country out of Belgian rule during one of Africa’s most turbulent independence moments. After being forced from office during the Congo Crisis, he was captured, transferred to Katanga, tortured, and executed by firing squad on 17 January 1961.",
+  "shortDescriptionFr": "Patrice Émery Lumumba fut un nationaliste congolais, panafricaniste, et le premier Premier ministre de la République du Congo indépendante en 1960. Figure majeure de l’anticolonialisme, il incarna l’espoir d’un Congo souverain au moment de la fin de la domination belge. Renversé pendant la crise congolaise, il fut capturé, transféré au Katanga, torturé puis exécuté par peloton d’exécution le 17 janvier 1961.",
+  "shortDescriptionDe": "Patrice Émery Lumumba war ein kongolesischer Nationalist, Panafrikanist und 1960 der erste Premierminister der unabhängigen Republik Kongo. Als zentrale Stimme des Antikolonialismus stand er für den Übergang des Landes aus belgischer Kolonialherrschaft in die Unabhängigkeit. Während der Kongokrise wurde er entmachtet, gefangen genommen, nach Katanga gebracht, gefoltert und am 17. Januar 1961 durch ein Erschießungskommando getötet.",
+  "shortDescriptionEs": "Patrice Émery Lumumba fue un nacionalista congoleño, panafricanista y el primer primer ministro de la República del Congo independiente en 1960. Fue una de las figuras más importantes de la lucha anticolonial africana y simbolizó las esperanzas de soberanía tras el dominio belga. Durante la Crisis del Congo fue apartado del poder, capturado, trasladado a Katanga, torturado y ejecutado por un pelotón de fusilamiento el 17 de enero de 1961.",
+  "shortDescriptionRu": "Патрис Эмери Лумумба был конголезским националистом, панафриканистом и первым премьер-министром независимой Республики Конго в 1960 году. Он стал одним из главных символов антиколониального движения и надежд на суверенное будущее страны после бельгийского правления. Во время Конголезского кризиса его отстранили от власти, захватили, перевезли в Катангу, пытали и расстреляли 17 января 1961 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Patrice_Lumumba",
+    "https://www.britannica.com/biography/Patrice-Lumumba",
+    "https://www.britannica.com/story/how-did-patrice-lumumba-die",
+    "https://www.sahistory.org.za/people/patrice-emery-lumumba",
+    "https://commons.wikimedia.org/wiki/Category:Patrice_Lumumba"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q186326",  "Name": "Ryūnosuke Akutagawa",  "BirthDate": "1892-03-01T00:00:00Z",  "DeathDate": "1927-07-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Akutagawa%20Ryunosuke%20photo.jpg",  "SiteLinksCnt": 94,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"186538":{"pageid":186538,"ns":0,"title":"Ry\u016bnosuke Akutagawa","extract":"Ry\u016bnosuke Akutagawa (\u82a5\u5ddd \u9f8d\u4e4b\u4ecb, Akutagawa Ry\u016bnosuke; Japanese pronunciation: [\u027e\u02b2\u026f\u02d0.no.s\u026f\u0325.ke], 1 March 1892 \u2013 24 July 1927), art name Ch\u014dk\u014dd\u014d Shujin (\u6f84\u6c5f\u5802\u4e3b\u4eba), was a Japanese writer active in the Taish\u014d period in Japan. He is regarded as the \"father of the Japanese short story\", and Japan's premier literary award, the Akutagawa Prize, is named after him. He took his own life at the age of 35 through an overdose of barbital."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q186326")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q186326",
+  "isRealHuman": true,
+  "birthDate": "1892-03-01",
+  "deathDate": "1927-07-24",
+  "ageAtDeath": 35,
+  "confidence": 98,
+  "confidenceExplained": "The birth and death dates are consistently reported as 1892-03-01 and 1927-07-24 in major reference sources. Calculating completed Gregorian years gives 35. One Japanese institutional source lists age 36, probably using traditional age reckoning, but for age at the moment of death in completed years, 35 is the correct value.",
+  "shortDescriptionEn": "Ryūnosuke Akutagawa was a Japanese writer of the Taishō period, celebrated for sharply crafted short stories such as Rashōmon, In a Grove, The Nose, and Hell Screen. Often called a defining figure of the modern Japanese short story, he gave his name to Japan’s prestigious Akutagawa Prize. In his final years he struggled with anxiety, fragile health, and fear of mental illness; on 24 July 1927, he died by suicide from a barbital overdose in Tokyo at the age of 35.",
+  "shortDescriptionFr": "Ryūnosuke Akutagawa fut un écrivain japonais de l’ère Taishō, célèbre pour ses nouvelles d’une grande précision comme Rashōmon, Dans le fourré, Le Nez et Figures infernales. Figure majeure de la nouvelle japonaise moderne, il a donné son nom au prestigieux prix Akutagawa. Dans ses dernières années, il fut marqué par l’anxiété, une santé fragile et la peur de la maladie mentale; le 24 juillet 1927, il mourut par suicide à Tokyo après une overdose de barbital, à l’âge de 35 ans.",
+  "shortDescriptionDe": "Ryūnosuke Akutagawa war ein japanischer Schriftsteller der Taishō-Zeit, berühmt für kunstvoll verdichtete Erzählungen wie Rashōmon, Im Dickicht, Die Nase und Höllenqualen. Er gilt als prägende Gestalt der modernen japanischen Kurzgeschichte; nach ihm ist der renommierte Akutagawa-Preis benannt. In seinen letzten Jahren litt er unter Angstzuständen, angeschlagener Gesundheit und der Furcht vor psychischer Erkrankung; am 24. Juli 1927 starb er in Tokio durch Suizid nach einer Überdosis Barbital, im Alter von 35 Jahren.",
+  "shortDescriptionEs": "Ryūnosuke Akutagawa fue un escritor japonés del periodo Taishō, admirado por relatos breves de gran intensidad como Rashōmon, En el bosque, La nariz y El biombo del infierno. Considerado una figura decisiva del cuento japonés moderno, dio nombre al prestigioso Premio Akutagawa. En sus últimos años sufrió ansiedad, problemas de salud y temor a la enfermedad mental; el 24 de julio de 1927 murió por suicidio en Tokio tras una sobredosis de barbital, a los 35 años.",
+  "shortDescriptionRu": "Рюноскэ Акутагава был японским писателем эпохи Тайсё, прославившимся точными и напряжёнными рассказами, среди них «Расёмон», «В чаще», «Нос» и «Муки ада». Его считают одной из ключевых фигур современной японской новеллы; в его честь названа престижная премия Акутагавы. В последние годы он страдал от тревоги, слабого здоровья и страха перед психическим заболеванием; 24 июля 1927 года он покончил с собой в Токио, приняв передозировку барбитала, в возрасте 35 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ry%C5%ABnosuke_Akutagawa",
+    "https://www.britannica.com/biography/Akutagawa-Ryunosuke",
+    "https://www.ndl.go.jp/portrait/e/datas/224/index.html",
+    "https://commons.wikimedia.org/wiki/Category:Ry%C5%ABnosuke_Akutagawa",
+    "https://commons.wikimedia.org/wiki/File:Akutagawa_Ryunosuke_photo.jpg",
+    "https://commons.wikimedia.org/wiki/File:AkutagawaRyunosuke.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ryunosuke_Akutagawa_02.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1500",  "Name": "José Rizal",  "BirthDate": "1861-06-19T00:00:00Z",  "DeathDate": "1896-12-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jose%20Rizal%20full.jpg",  "SiteLinksCnt": 89,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"25084169":{"pageid":25084169,"ns":0,"title":"Jos\u00e9 Rizal","extract":"Jos\u00e9 Protasio Rizal Mercado y Alonso Realonda (Spanish: [xo\u02c8se ri\u02c8sal, -\u02c8\u03b8al], Tagalog: [ho\u02c8se \u027ei\u02c8sal]; June 19, 1861 \u2013 December 30, 1896) was a Filipino nationalist, writer, and polymath active at the end of the Spanish colonial period of the Philippines. He is popularly considered a national hero of the Philippines. An ophthalmologist by profession, Rizal became a writer and a key member of the Filipino Propaganda Movement in the 1880s, which advocated political reforms for the colony under Spain.\nBy the early 1890s, amidst the Calamba land dispute, Rizal grew more separatist in his stance, conflicting with several colleagues in the Propaganda Movement. On July 6, 1892, a few days after establishing the secret society La Liga Filipina within Manila, Rizal was arrested by Spanish authorities for alleged possession of a seditious document, being banished to Dapitan in the island of Mindanao. During his exile, Rizal met Josephine Bracken, an Irish woman who later became his common-law wife.\nAfter four years in exile, Rizal left Dapitan for Cuba in August 1896 with the permission of Governor General Ram\u00f3n Blanco, intending to serve as a doctor in the Spanish territory. However, at a stopover in Barcelona, he was arrested on October 6, 1896 after the Philippine Revolution broke out; the revolution was inspired by his writings. In December 1896, he was executed by the Spanish colonial government for the crime of rebellion. Though he was not actively involved in its planning or conduct, he ultimately approved of its goals, which eventually resulted in Philippine independence.\nRizal is widely considered one of the greatest and most influential figures in the Philippines, and has been recommended to be so honored by an officially empaneled National Heroes Committee. However, no law, executive order or proclamation has been enacted or issued officially proclaiming any Filipino historical figure as a national hero. He wrote the novels Noli Me T\u00e1ngere (1887) and El filibusterismo (1891), which together are taken as a national epic, in addition to numerous poems and essays."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1500")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1500",
+  "isRealHuman": true,
+  "birthDate": "1861-06-19",
+  "deathDate": "1896-12-30",
+  "ageAtDeath": 35,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikipedia, Britannica, and National Historical Commission of the Philippines material. The age calculation is straightforward: José Rizal was born on 1861-06-19 and died on 1896-12-30, after his 35th birthday and before his 36th.",
+  "shortDescriptionEn": "José Rizal was a Filipino nationalist, novelist, physician, and reformist thinker whose writings, especially Noli Me Tangere and El filibusterismo, helped expose abuses under Spanish colonial rule and inspired the Philippine nationalist movement. Trained as an ophthalmologist and active in the Propaganda Movement, he argued for civic rights, education, and political reform. After the Philippine Revolution began, Spanish authorities accused him of rebellion; he was tried by court-martial and executed by firing squad at Bagumbayan, Manila, on 30 December 1896, at age 35, becoming a powerful martyr figure in Philippine history.",
+  "shortDescriptionFr": "José Rizal était un nationaliste philippin, romancier, médecin et penseur réformateur dont les œuvres, notamment Noli Me Tangere et El filibusterismo, ont dénoncé les abus du pouvoir colonial espagnol et nourri le mouvement national philippin. Ophtalmologiste de formation et acteur du Mouvement de propagande, il défendait les droits civiques, l’éducation et les réformes politiques. Après le déclenchement de la Révolution philippine, les autorités espagnoles l’accusèrent de rébellion; jugé par un conseil de guerre, il fut exécuté par peloton d’exécution à Bagumbayan, Manille, le 30 décembre 1896, à l’âge de 35 ans, devenant une figure martyre majeure de l’histoire philippine.",
+  "shortDescriptionDe": "José Rizal war ein philippinischer Nationalist, Romanautor, Arzt und Reformdenker, dessen Schriften, besonders Noli Me Tangere und El filibusterismo, Missstände der spanischen Kolonialherrschaft offenlegten und die philippinische Nationalbewegung prägten. Als ausgebildeter Augenarzt und Mitglied der Propaganda-Bewegung setzte er sich für Bürgerrechte, Bildung und politische Reformen ein. Nach Beginn der Philippinischen Revolution wurde er von den spanischen Behörden der Rebellion beschuldigt; nach einem Militärprozess wurde er am 30. Dezember 1896 in Bagumbayan, Manila, im Alter von 35 Jahren durch ein Erschießungskommando hingerichtet und wurde zu einer zentralen Märtyrerfigur der philippinischen Geschichte.",
+  "shortDescriptionEs": "José Rizal fue un nacionalista filipino, novelista, médico y pensador reformista cuyas obras, especialmente Noli Me Tangere y El filibusterismo, denunciaron los abusos del dominio colonial español e inspiraron el movimiento nacional filipino. Formado como oftalmólogo y vinculado al Movimiento de Propaganda, defendió los derechos civiles, la educación y las reformas políticas. Tras el estallido de la Revolución filipina, las autoridades españolas lo acusaron de rebelión; fue juzgado por un consejo de guerra y ejecutado por fusilamiento en Bagumbayan, Manila, el 30 de diciembre de 1896, a los 35 años, convirtiéndose en una figura mártir fundamental de la historia filipina.",
+  "shortDescriptionRu": "Хосе Рисаль был филиппинским националистом, писателем, врачом и реформатором, чьи произведения, особенно Noli Me Tangere и El filibusterismo, разоблачали злоупотребления испанского колониального правления и вдохновляли филиппинское национальное движение. По профессии офтальмолог и участник Пропагандистского движения, он выступал за гражданские права, образование и политические реформы. После начала Филиппинской революции испанские власти обвинили его в мятеже; после военного суда он был расстрелян в Багумбаяне, Манила, 30 декабря 1896 года в возрасте 35 лет, став одной из ключевых фигур-мучеников в истории Филиппин.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal",
+    "https://www.britannica.com/biography/Jose-Rizal",
+    "https://philhistoricsites.nhcp.gov.ph/registry_database/jose-rizal-1861-1896-7/",
+    "https://en.wikipedia.org/wiki/Trial_and_execution_of_Jos%C3%A9_Rizal",
+    "https://commons.wikimedia.org/wiki/File:Jose_Rizal_full.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_of_Jos%C3%A9_Rizal_(1883).jpg",
+    "https://commons.wikimedia.org/wiki/Category:Jos%C3%A9_Rizal"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82457",  "Name": "William Wallace",  "BirthDate": "1270-01-01T00:00:00Z",  "DeathDate": "1305-08-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Wallace.jpg",  "SiteLinksCnt": 88,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"33832":{"pageid":33832,"ns":0,"title":"William Wallace","extract":"Sir William Wallace (Scottish Gaelic: Uilleam Uallas, pronounced [\u02c8\u026f\u028eam \u02c8u\u0259l\u032a\u02e0\u0259s\u032a]; Norman French: William le Waleys; c.\u20091270 \u2013 23 August 1305) was a Scottish knight who became one of the main leaders during the First War of Scottish Independence.\nAlong with Andrew Moray, Wallace defeated an English army at the Battle of Stirling Bridge in September 1297. He was appointed Guardian of Scotland and served until his defeat at the Battle of Falkirk in July 1298. In August 1305, Wallace was captured in Robroyston, near Glasgow, and handed over to King Edward I of England, who had him hanged, drawn and quartered for high treason and crimes against English civilians.\nSince his death, Wallace has obtained a legendary status beyond his homeland. He is the protagonist of Blind Harry's 15th-century epic poem The Wallace and the subject of literary works by Jane Porter and Sir Walter Scott, and of the Academy Award-winning film Braveheart."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82457")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82457",
+  "isRealHuman": true,
+  "birthDate": "1270-01-01",
+  "deathDate": "1305-08-23",
+  "ageAtDeath": 35,
+  "confidence": 78,
+  "confidenceExplained": "The death date is well supported as 23 August 1305 by Wikipedia, Britannica, and the National Wallace Monument. The birth date is not exact; most reliable summaries give it as circa 1270, so 1270-01-01 is an estimated placeholder used to calculate the required integer age. Because the birth month and day are unknown, the age 35 is best treated as approximate, though it matches the commonly stated 'aged about 35'.",
+  "shortDescriptionEn": "Sir William Wallace was a Scottish knight and one of the central military leaders of the First War of Scottish Independence. With Andrew Moray, he helped win the Battle of Stirling Bridge in 1297 and was later appointed Guardian of Scotland. After defeat at Falkirk and years as a fugitive, he was captured near Glasgow in 1305, taken to London, tried for treason, and executed at Smithfield by hanging, drawing, and quartering.",
+  "shortDescriptionFr": "Sir William Wallace était un chevalier écossais et l’un des principaux chefs militaires de la première guerre d’indépendance de l’Écosse. Aux côtés d’Andrew Moray, il remporta la bataille du pont de Stirling en 1297 et fut ensuite nommé Gardien de l’Écosse. Après sa défaite à Falkirk et plusieurs années de fuite, il fut capturé près de Glasgow en 1305, conduit à Londres, jugé pour trahison et exécuté à Smithfield par pendaison, éviscération et écartèlement.",
+  "shortDescriptionDe": "Sir William Wallace war ein schottischer Ritter und einer der wichtigsten militärischen Führer im Ersten Schottischen Unabhängigkeitskrieg. Zusammen mit Andrew Moray errang er 1297 den Sieg in der Schlacht von Stirling Bridge und wurde später zum Guardian of Scotland ernannt. Nach der Niederlage bei Falkirk und Jahren auf der Flucht wurde er 1305 nahe Glasgow gefangen genommen, nach London gebracht, wegen Hochverrats verurteilt und in Smithfield gehängt, ausgeweidet und gevierteilt.",
+  "shortDescriptionEs": "Sir William Wallace fue un caballero escocés y uno de los principales líderes militares de la Primera Guerra de Independencia de Escocia. Junto con Andrew Moray, obtuvo la victoria en la batalla del puente de Stirling en 1297 y después fue nombrado Guardián de Escocia. Tras la derrota de Falkirk y varios años como fugitivo, fue capturado cerca de Glasgow en 1305, llevado a Londres, juzgado por traición y ejecutado en Smithfield mediante ahorcamiento, destripamiento y descuartizamiento.",
+  "shortDescriptionRu": "Сэр Уильям Уоллес был шотландским рыцарем и одним из главных военных лидеров Первой войны за независимость Шотландии. Вместе с Эндрю Мореем он одержал победу в битве у Стерлингского моста в 1297 году и позднее был назначен Хранителем Шотландии. После поражения при Фолкерке и нескольких лет в бегах он был схвачен близ Глазго в 1305 году, доставлен в Лондон, осуждён за измену и казнён в Смитфилде через повешение, потрошение и четвертование.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/William_Wallace",
+    "https://www.britannica.com/biography/William-Wallace",
+    "https://www.nationalwallacemonument.com/william-wallace/",
+    "https://www.nationalwallacemonument.com/2023/07/wallaces-capture-and-execution/",
+    "https://www.wikidata.org/wiki/Q82457",
+    "https://commons.wikimedia.org/wiki/Category:William_Wallace"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q120993",  "Name": "Amedeo Modigliani",  "BirthDate": "1884-07-12T00:00:00Z",  "DeathDate": "1920-01-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Amedeo%20Modigliani%201918%20restored.jpg",  "SiteLinksCnt": 87,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"62016":{"pageid":62016,"ns":0,"title":"Amedeo Modigliani","extract":"Amedeo Clemente Modigliani (US: ; Italian: [ame\u02c8d\u025b\u02d0o modi\u028e\u02c8\u028ea\u02d0ni]; 12 July 1884 \u2013 24 January 1920) was an Italian painter and sculptor of the \u00c9cole de Paris who worked mainly in France. He is known for portraits and nudes in a modern style characterised by a surreal elongation of faces, necks, and figures \u2014 works that were not received well during his lifetime, but later became much sought after. Modigliani was born and spent his youth in Italy, where he studied the art of antiquity and the Renaissance. In 1906, he moved to Paris, where he came into contact with such artists as Pablo Picasso and Constantin Br\u00e2ncu\u0219i. By 1912, Modigliani was exhibiting highly stylised sculptures with Cubists of the Section d'Or group at the Salon d'Automne.\nModigliani's oeuvre includes paintings and drawings. From 1909 to 1914, he devoted himself mainly to sculpture. His main subjects were portraits and full figures, both in images and in the sculpture. Modigliani had little success while alive but after his death achieved great popularity. He died of tubercular meningitis, at the age of 35, in Paris."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q120993")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q120993",
+  "isRealHuman": true,
+  "birthDate": "1884-07-12",
+  "deathDate": "1920-01-24",
+  "ageAtDeath": 35,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Wikidata, Britannica, Wikimedia Commons, and a PubMed-indexed article. Calculating from 1884-07-12 to 1920-01-24 gives 35 full years, since Modigliani died before his birthday in July 1920.",
+  "shortDescriptionEn": "Amedeo Modigliani was an Italian painter and sculptor associated with the École de Paris, best known for elegant portraits and nudes with elongated faces, necks, and figures. Born in Livorno, he moved to Paris in 1906 and became part of the avant-garde world around Montparnasse, developing a style that was little rewarded during his lifetime but later became iconic. His health, long weakened by tuberculosis and hard living, collapsed in January 1920; he died in Paris of tubercular meningitis at the age of 35.",
+  "shortDescriptionFr": "Amedeo Modigliani était un peintre et sculpteur italien rattaché à l’École de Paris, célèbre pour ses portraits et nus aux visages, cous et silhouettes allongés. Né à Livourne, il s’installa à Paris en 1906 et participa à la vie artistique d’avant-garde de Montparnasse, avec une œuvre peu reconnue de son vivant mais devenue majeure par la suite. Sa santé, fragilisée depuis longtemps par la tuberculose et une vie précaire, se dégrada brutalement en janvier 1920; il mourut à Paris d’une méningite tuberculeuse à l’âge de 35 ans.",
+  "shortDescriptionDe": "Amedeo Modigliani war ein italienischer Maler und Bildhauer der École de Paris, berühmt für Porträts und Akte mit langgezogenen Gesichtern, Hälsen und Figuren. In Livorno geboren, zog er 1906 nach Paris und wurde Teil der avantgardistischen Kunstszene von Montparnasse; zu Lebzeiten blieb sein Erfolg begrenzt, später wurde sein Stil weltberühmt. Seine durch Tuberkulose und ein entbehrungsreiches Leben geschwächte Gesundheit brach Anfang 1920 zusammen; er starb in Paris an tuberkulöser Meningitis im Alter von 35 Jahren.",
+  "shortDescriptionEs": "Amedeo Modigliani fue un pintor y escultor italiano vinculado a la École de Paris, conocido por retratos y desnudos de rostros, cuellos y figuras alargadas. Nacido en Livorno, se trasladó a París en 1906 y entró en el ambiente de vanguardia de Montparnasse, creando un estilo que apenas fue apreciado en vida pero que después se volvió emblemático. Su salud, debilitada durante años por la tuberculosis y una vida difícil, se derrumbó en enero de 1920; murió en París de meningitis tuberculosa a los 35 años.",
+  "shortDescriptionRu": "Амедео Модильяни был итальянским художником и скульптором, связанным с Парижской школой, прославившимся портретами и ню с вытянутыми лицами, шеями и фигурами. Родившись в Ливорно, он переехал в Париж в 1906 году и вошёл в авангардную среду Монпарнаса; при жизни его работы ценились мало, но позже стали знаковыми для модернизма. Его здоровье, давно подорванное туберкулёзом и тяжёлым образом жизни, резко ухудшилось в январе 1920 года; он умер в Париже от туберкулёзного менингита в возрасте 35 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Amedeo_Modigliani",
+    "https://www.wikidata.org/wiki/Q120993",
+    "https://www.britannica.com/biography/Amedeo-Modigliani",
+    "https://commons.wikimedia.org/wiki/Amedeo_Modigliani",
+    "https://pubmed.ncbi.nlm.nih.gov/30246774/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131581",  "Name": "Henry V of England",  "BirthDate": "1386-09-24T00:00:00Z",  "DeathDate": "1422-09-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20V%20Miniature.jpg",  "SiteLinksCnt": 87,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"45597":{"pageid":45597,"ns":0,"title":"Henry V of England","extract":"Henry V (16 September 1386 \u2013 31 August 1422), also called Henry of Monmouth, was King of England, Lord of Ireland, and Duke of Aquitaine from 1413 until his death in 1422. Despite his relatively short reign, Henry's outstanding military successes in the Hundred Years' War against France made England one of the strongest military powers in Europe. Immortalised in Shakespeare's Henriad plays, Henry is known and celebrated as one of the greatest warrior-kings of medieval England.\nHenry of Monmouth, the eldest son of Henry IV, became heir apparent and Prince of Wales after his father seized the throne in 1399. During the reign of his father, the young Prince Henry gained early military experience in Wales during the Glynd\u0175r rebellion, and by fighting against the powerful Percy family of Northumberland. He played an important part at the Battle of Shrewsbury despite being just sixteen years of age. As he entered adulthood, Henry played an increasingly central role in England's government due to the declining health of his father, but disagreements between Henry and his father led to political conflict between the two. After his father's death in March 1413, Henry ascended to the throne of England and assumed complete control of the country, also reviving the historic English claim to the French throne.\nIn 1415, Henry followed in the wake of his great-grandfather, Edward III, by renewing the Hundred Years' War with France, beginning the Lancastrian phase of the conflict (1415\u20131453). His first military campaign included capturing the port of Harfleur and a famous victory at the Battle of Agincourt, which inspired a proto-nationalistic fervour in England and Wales. During his second campaign (1417\u20131420), his armies captured Paris and conquered most of northern France, including the formerly English-held Duchy of Normandy. Taking advantage of political divisions within France, Henry put unparalleled pressure on Charles VI of France (\"the Mad\"), resulting in the largest holding of French territory by an English king since the Angevin Empire. The Treaty of Troyes (1420) recognised Henry V as regent of France and heir apparent to the French throne, disinheriting Charles's own son, the Dauphin Charles. Henry subsequently married Charles VI's daughter, Catherine of Valois. The treaty ratified the unprecedented formation of a union between the kingdoms of England and France, in the person of Henry, upon the death of the ailing Charles. However, Henry died in August 1422, less than two months before his father-in-law, and was succeeded by his only son and heir, the infant Henry VI.\nAnalyses of Henry's reign are varied. According to Charles Ross, he was widely praised for his personal piety, bravery, and military genius; Henry was admired even by contemporary French chroniclers. However, his occasionally cruel temperament and lack of focus regarding domestic affairs have made him the subject of criticism. Nonetheless, Adrian Hastings believes his militaristic pursuits during the Hundred Years' War fostered a strong sense of English nationalism and set the stage for the rise of England (later Great Britain) to prominence as a dominant global power."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131581")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q131581",
+  "isRealHuman": true,
+  "birthDate": "1386-09-16",
+  "deathDate": "1422-08-31",
+  "ageAtDeath": 35,
+  "confidence": 88,
+  "confidenceExplained": "The identity is certain: the data describes Henry V of England. The age-at-death calculation is also strong: using the commonly cited historical dates 1386-09-16 to 1422-08-31 gives 35, because he died shortly before his 36th birthday. The confidence is not 100 because some reputable sources list his birth year as 1387 or mark it uncertain, but the supplied data, Wikipedia extract, and common historical dating support age 35.",
+  "shortDescriptionEn": "Henry V of England, also known as Henry of Monmouth, was a Lancastrian king whose short reign became famous for military ambition, royal discipline, and the dramatic English victory at Agincourt during the Hundred Years' War. He forced the Treaty of Troyes, making himself heir to the French throne. He died at 35 at Vincennes near Paris, most likely from dysentery contracted during campaigning after the Siege of Meaux, before he could inherit France.",
+  "shortDescriptionFr": "Henri V d’Angleterre, aussi appelé Henri de Monmouth, fut un roi lancastrien dont le règne bref resta associé à l’ambition militaire, à l’autorité royale et à la victoire anglaise d’Azincourt pendant la guerre de Cent Ans. Le traité de Troyes le reconnut comme héritier du trône de France. Il mourut à 35 ans à Vincennes, près de Paris, probablement de dysenterie contractée en campagne après le siège de Meaux, avant de pouvoir hériter de la France.",
+  "shortDescriptionDe": "Heinrich V. von England, auch Heinrich von Monmouth genannt, war ein König aus dem Haus Lancaster, dessen kurze Herrschaft durch militärischen Ehrgeiz, strenge Königsherrschaft und den englischen Sieg bei Azincourt im Hundertjährigen Krieg berühmt wurde. Der Vertrag von Troyes machte ihn zum Erben des französischen Thrones. Er starb mit 35 Jahren in Vincennes bei Paris, wahrscheinlich an Dysenterie, die er sich während des Feldzugs nach der Belagerung von Meaux zugezogen hatte.",
+  "shortDescriptionEs": "Enrique V de Inglaterra, también llamado Enrique de Monmouth, fue un rey lancasteriano cuyo breve reinado quedó marcado por la ambición militar, la autoridad real y la célebre victoria inglesa en Agincourt durante la guerra de los Cien Años. El Tratado de Troyes lo reconoció como heredero del trono francés. Murió a los 35 años en Vincennes, cerca de París, probablemente de disentería contraída en campaña tras el sitio de Meaux, antes de heredar Francia.",
+  "shortDescriptionRu": "Генрих V Английский, также известный как Генрих Монмутский, был королём из династии Ланкастеров, чьё короткое правление прославилось военной решимостью, сильной королевской властью и победой англичан при Азенкуре в ходе Столетней войны. По договору в Труа он стал наследником французского престола. Он умер в 35 лет в Венсене близ Парижа, вероятнее всего от дизентерии, подхваченной во время кампании после осады Мо.",
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/File:Henry_V_Miniature.jpg",
+    "https://commons.wikimedia.org/wiki/File:Henry_V_of_England_miniature.jpg",
+    "https://commons.wikimedia.org/wiki/File:King_Henry_V_from_NPG.jpg",
+    "https://www.npg.org.uk/collections/search/person/mp02142/king-henry-v"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_V_of_England",
+    "https://www.britannica.com/biography/Henry-V-king-of-England",
+    "https://www.britannica.com/summary/Henry-V-king-of-England",
+    "https://www.npg.org.uk/collections/search/person/mp02142/king-henry-v",
+    "https://commons.wikimedia.org/wiki/File:Henry_V_Miniature.jpg",
+    "https://commons.wikimedia.org/wiki/File:Henry_V_of_England_miniature.jpg",
+    "https://commons.wikimedia.org/wiki/File:King_Henry_V_from_NPG.jpg",
+    "https://www.smithsonianmag.com/history/true-story-henry-v-englands-warrior-king-180973432/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q167477",  "Name": "Anthony of Padua",  "BirthDate": "1195-08-22T00:00:00Z",  "DeathDate": "1231-06-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Sant%27Antonio%20da%20Padova%20by%20Alvise%20Vivarini%20-%20Correr%20Museum.jpg",  "SiteLinksCnt": 82,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"86895":{"pageid":86895,"ns":0,"title":"Anthony of Padua","extract":"Anthony of Padua, OFM, or Anthony of Lisbon; born Fernando Martins de Bulh\u00f5es (15 August 1195 \u2013 13 June 1231) was a Portuguese Catholic priest and member of the Order of Friars Minor.\nAnthony was born to and raised by a wealthy family in Lisbon, Portugal, and died in Padua, Italy. Noted by his contemporaries for his powerful preaching, expert knowledge of scripture, and undying love and devotion to the poor and the sick, he was one of the most quickly canonized saints in church history, being canonized less than a year after his death.\nHe was proclaimed a Doctor of the Church by Pope Pius XII on 16 January 1946."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q167477")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q167477",
+  "isRealHuman": true,
+  "birthDate": "1195-08-15",
+  "deathDate": "1231-06-13",
+  "ageAtDeath": 35,
+  "confidence": 94,
+  "confidenceExplained": "The death date of 13 June 1231 is consistently supported by major references, and the birth date is commonly given as 15 August 1195, though some sources phrase the exact day as traditional or believed. Even if only the birth year 1195 is treated as certain, a death in June 1231 before the August birthday makes the calculated age 35.",
+  "shortDescriptionEn": "Anthony of Padua, born Fernando Martins de Bulhões in Lisbon, was a Portuguese Franciscan friar, priest, preacher, theologian, and later Doctor of the Church. Celebrated for his learning, forceful sermons, and care for the poor, he became one of medieval Christianity’s most beloved saints and was canonized less than a year after his death. Worn down by illness and intense preaching, he collapsed near Padua and died at Arcella on 13 June 1231, aged 35.",
+  "shortDescriptionFr": "Antoine de Padoue, né Fernando Martins de Bulhões à Lisbonne, fut un frère franciscain portugais, prêtre, prédicateur, théologien et plus tard docteur de l’Église. Admiré pour son savoir, la puissance de ses sermons et son attention aux pauvres, il devint l’un des saints les plus populaires du christianisme médiéval et fut canonisé moins d’un an après sa mort. Affaibli par la maladie et par une prédication intense, il s’effondra près de Padoue et mourut à Arcella le 13 juin 1231, à l’âge de 35 ans.",
+  "shortDescriptionDe": "Antonius von Padua, geboren als Fernando Martins de Bulhões in Lissabon, war ein portugiesischer Franziskaner, Priester, Prediger, Theologe und späterer Kirchenlehrer. Berühmt für seine Bildung, seine eindringlichen Predigten und seine Sorge um die Armen, wurde er zu einem der beliebtesten Heiligen des mittelalterlichen Christentums und weniger als ein Jahr nach seinem Tod heiliggesprochen. Von Krankheit und rastlosem Predigen erschöpft, brach er nahe Padua zusammen und starb am 13. Juni 1231 in Arcella im Alter von 35 Jahren.",
+  "shortDescriptionEs": "Antonio de Padua, nacido Fernando Martins de Bulhões en Lisboa, fue un fraile franciscano portugués, sacerdote, predicador, teólogo y más tarde doctor de la Iglesia. Reconocido por su cultura, la fuerza de sus sermones y su dedicación a los pobres, llegó a ser uno de los santos más queridos del cristianismo medieval y fue canonizado menos de un año después de morir. Debilitado por la enfermedad y por una intensa actividad de predicación, se desplomó cerca de Padua y murió en Arcella el 13 de junio de 1231, a los 35 años.",
+  "shortDescriptionRu": "Антоний Падуанский, родившийся в Лиссабоне как Фернанду Мартинш де Бульойнш, был португальским францисканцем, священником, проповедником, богословом и позднее Учителем Церкви. Его ценили за образованность, силу проповедей и заботу о бедных; он стал одним из самых почитаемых святых средневекового христианства и был канонизирован менее чем через год после смерти. Изнурённый болезнями и напряжённым служением, он потерял силы близ Падуи и умер в Арчелле 13 июня 1231 года в возрасте 35 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/(Venice)%20Sant%27Antonio%20da%20Padova%20by%20Alvise%20Vivarini%20-%20Correr%20Museum.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Antonius%20Padua%20Alvise%20Vivarini.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco%20de%20Zurbar%C3%A1n%20-%20Sto%20Antonio%20de%20Padua.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Antonio%20de%20Padua%20con%20el%20Ni%C3%B1o%20Jes%C3%BAs%2C%20por%20Francisco%20de%20Zurbar%C3%A1n.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anthony_of_Padua",
+    "https://www.vaticannews.va/en/saints/06/13/saint-anthony-of-padua.html",
+    "https://www.britannica.com/biography/Saint-Anthony-of-Padua",
+    "https://www.santantonio.org/en/content/1231-his-death",
+    "https://commons.wikimedia.org/wiki/File:(Venice)_Sant%27Antonio_da_Padova_by_Alvise_Vivarini_-_Correr_Museum.jpg",
+    "https://commons.wikimedia.org/wiki/File:Antonius_Padua_Alvise_Vivarini.jpg",
+    "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_Sto_Antonio_de_Padua.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q939",  "Name": "Pedro I of Brazil",  "BirthDate": "1798-10-12T00:00:00Z",  "DeathDate": "1834-09-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/DpedroI-brasil-full.jpg",  "SiteLinksCnt": 82,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"81480":{"pageid":81480,"ns":0,"title":"Pedro I of Brazil","extract":"Dom Pedro I (12 October 1798 \u2013 24 September 1834), known in Brazil and in Portugal as \"the Liberator\" (Portuguese: o Libertador) or \"the Soldier King\" (o Rei Soldado) in Portugal, was the founder and first ruler of the Empire of Brazil from 1822 to 1831 (under the name of Pedro I) and King of Portugal in 1826 (under the name of Pedro IV).\nBorn in Lisbon, Pedro was the fourth child of King Dom John VI of Portugal and Queen Carlota Joaquina, and thus a member of the House of Braganza. When the country was invaded by French troops in 1807, he and his family fled to Portugal's largest and wealthiest colony, Brazil. The outbreak of the Liberal Revolution of 1820 in Lisbon compelled Pedro I's father to return to Portugal in April 1821, leaving him to rule Brazil as regent. He had to deal with challenges from revolutionaries and insubordination by Portuguese troops, all of which he subdued. The Portuguese government's threat to revoke the political autonomy that Brazil had enjoyed since 1808 was met with widespread discontent in Brazil. Pedro I chose the Brazilian side and declared Brazil's independence from Portugal on 7 September 1822. On 12 October, he was acclaimed Emperor and by March 1824 had defeated all armies loyal to Portugal. A few months later, Pedro I crushed the short-lived Confederation of the Equator, a failed secession attempt by provincial rebels in Brazil's northeast.\nA secessionist rebellion in the southern province of Cisplatina in early 1825, and the subsequent attempt by the United Provinces of the R\u00edo de la Plata to annex it, led the Empire into the Cisplatine War. In March 1826, Pedro I briefly became king of Portugal before abdicating in favor of his eldest daughter, Dona Maria II. The situation worsened in 1828 when the war in the south resulted in Brazil's loss of Cisplatina. During the same year in Lisbon, Maria II's throne was usurped by Prince Dom Miguel, Pedro I's younger brother. The Emperor's concurrent and scandalous sexual affair with Domitila de Castro tarnished his reputation. Other difficulties arose in the Brazilian parliament, where a struggle over whether the government would be chosen by the monarch or by the legislature dominated political debates from 1826 to 1831. Unable to deal with problems in both Brazil and Portugal simultaneously, on 7 April 1831 Pedro I abdicated in favor of his son Dom Pedro II, and sailed for Europe.\nPedro I invaded Portugal at the head of an army in July 1832. Faced at first with what seemed a national civil war, he soon became involved in a wider conflict that enveloped the Iberian Peninsula in a struggle between proponents of liberalism and those seeking a return to absolutism. Pedro I died of tuberculosis in September 1834, just a few months after he and the liberals had emerged victorious. He was hailed by both contemporaries and posterity as a key figure who helped spread the liberal ideals that allowed Brazil and Portugal to move from absolutist regimes to representative forms of government."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q939")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q939",
+  "isRealHuman": true,
+  "birthDate": "1798-10-12",
+  "deathDate": "1834-09-24",
+  "ageAtDeath": 35,
+  "confidence": 100,
+  "confidenceExplained": "The identity and dates are consistent across Wikidata, Wikipedia, Britannica, and Wikimedia Commons. Pedro I was born on 1798-10-12 and died on 1834-09-24, before reaching his 36th birthday, so the calculated age at death is 35.",
+  "shortDescriptionEn": "Pedro I of Brazil, also known as Pedro IV of Portugal, was a member of the House of Braganza, the founder and first emperor of independent Brazil, and briefly king of Portugal. He played a decisive role in Brazil’s break from Portuguese rule in 1822 and later returned to Europe to support liberal constitutional rule in Portugal. After years of political strain, war, and declining health, he died of tuberculosis at Queluz Palace on 24 September 1834, aged 35.",
+  "shortDescriptionFr": "Pierre Ier du Brésil, également connu sous le nom de Pierre IV de Portugal, appartenait à la maison de Bragance. Fondateur et premier empereur du Brésil indépendant, il joua un rôle décisif dans la rupture avec le Portugal en 1822, puis revint en Europe pour défendre la monarchie constitutionnelle portugaise. Après des années de tensions politiques, de guerre et de santé déclinante, il mourut de la tuberculose au palais de Queluz le 24 septembre 1834, à l’âge de 35 ans.",
+  "shortDescriptionDe": "Pedro I. von Brasilien, auch Pedro IV. von Portugal, gehörte zum Haus Braganza und war der Gründer sowie erste Kaiser des unabhängigen Brasilien. 1822 spielte er eine Schlüsselrolle bei Brasiliens Loslösung von Portugal und kehrte später nach Europa zurück, um die liberale konstitutionelle Ordnung in Portugal zu unterstützen. Nach Jahren politischer Belastungen, Krieg und nachlassender Gesundheit starb er am 24. September 1834 im Palast von Queluz an Tuberkulose, im Alter von 35 Jahren.",
+  "shortDescriptionEs": "Pedro I de Brasil, también conocido como Pedro IV de Portugal, fue miembro de la Casa de Braganza, fundador y primer emperador del Brasil independiente. Desempeñó un papel decisivo en la ruptura de Brasil con Portugal en 1822 y más tarde regresó a Europa para defender el constitucionalismo liberal en Portugal. Tras años de tensión política, guerra y deterioro de su salud, murió de tuberculosis en el palacio de Queluz el 24 de septiembre de 1834, a los 35 años.",
+  "shortDescriptionRu": "Педру I Бразильский, также известный как Педру IV Португальский, принадлежал к дому Браганса и стал основателем и первым императором независимой Бразилии. Он сыграл ключевую роль в отделении Бразилии от Португалии в 1822 году, а позднее вернулся в Европу, чтобы поддержать либеральный конституционный порядок в Португалии. После лет политического напряжения, войны и ухудшения здоровья он умер от туберкулёза во дворце Келуш 24 сентября 1834 года в возрасте 35 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pedro_I_of_Brazil",
+    "https://www.wikidata.org/wiki/Q939",
+    "https://www.britannica.com/biography/Pedro-I",
+    "https://commons.wikimedia.org/wiki/Pedro_I_do_Brasil"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q13898",  "Name": "Guy Fawkes",  "BirthDate": "1570-04-23T00:00:00Z",  "DeathDate": "1606-02-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Guy%20Fawkes%20%28cropped%29.jpg",  "SiteLinksCnt": 78,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"12707":{"pageid":12707,"ns":0,"title":"Guy Fawkes","extract":"Guy Fawkes (; 13 April 1570 \u2013 31 January 1606), also known as Guido Fawkes while fighting for the Spanish, was a member of a group of provincial English Catholics involved in the failed Gunpowder Plot of 1605. He was born and educated in York; his father died when Fawkes was eight years old, after which his mother married a recusant Catholic.\nFawkes converted to Catholicism and left for mainland Europe, where he fought for Catholic Spain in the Eighty Years' War against Protestant Dutch reformers in the Low Countries. He travelled to Spain to seek support for a Catholic rebellion in England without success. He later met Thomas Wintour, with whom he returned to England. Wintour introduced him to Robert Catesby, who planned to assassinate King James I and restore a Catholic monarch to the throne. The plotters leased an undercroft beneath the House of Lords; Fawkes was placed in charge of the gunpowder that they stockpiled there. The authorities were prompted by an anonymous letter to search Westminster Palace during the early hours of 5 November, and they found Fawkes guarding the explosives. He was questioned and tortured over the next few days and confessed to wanting to blow up the House of Lords.\nFawkes was sentenced to be hanged, drawn and quartered. However, at his execution on 31 January, he died when his neck was broken as he was hanged, with some sources claiming that he deliberately jumped to make this happen; he thus avoided the agony of his sentence. He became synonymous with the Gunpowder Plot, the failure of which has been commemorated in the UK as Guy Fawkes Night since 5 November 1605, when his effigy is traditionally burned on a bonfire, commonly accompanied by fireworks."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q13898")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q13898",
+  "isRealHuman": true,
+  "birthDate": "1570-04-13",
+  "deathDate": "1606-01-31",
+  "ageAtDeath": 35,
+  "confidence": 98,
+  "confidenceExplained": "Guy Fawkes's birth date is usually given as presumed 13 April 1570, inferred from his baptism on 16 April, and his execution date is consistently given as 31 January 1606 in standard historical accounts. The Wikidata-style dates appear to be Gregorian conversions, but both date systems give the same age at death: 35.",
+  "shortDescriptionEn": "Guy Fawkes, also known as Guido Fawkes, was an English soldier and Catholic conspirator best remembered for his role in the Gunpowder Plot of 1605, a failed attempt to blow up the House of Lords and kill King James I. Born in York, he fought for Catholic Spain before joining Robert Catesby's conspiracy. After being discovered guarding barrels of gunpowder beneath Parliament, he was tortured, tried for high treason, and sentenced to be hanged, drawn and quartered. On 31 January 1606, he died at the gallows in Westminster, reportedly breaking his neck and avoiding the full brutality of the sentence.",
+  "shortDescriptionFr": "Guy Fawkes, aussi connu sous le nom de Guido Fawkes, était un soldat anglais et conspirateur catholique surtout célèbre pour son rôle dans la Conspiration des poudres de 1605, une tentative manquée de faire exploser la Chambre des lords et de tuer le roi Jacques Ier. Né à York, il combattit pour l’Espagne catholique avant de rejoindre le complot de Robert Catesby. Découvert alors qu’il gardait des barils de poudre sous le Parlement, il fut torturé, jugé pour haute trahison et condamné à être pendu, éviscéré et écartelé. Le 31 janvier 1606, il mourut à la potence à Westminster, apparemment en se brisant le cou, échappant ainsi au supplice complet prévu par la sentence.",
+  "shortDescriptionDe": "Guy Fawkes, auch als Guido Fawkes bekannt, war ein englischer Soldat und katholischer Verschwörer, der vor allem durch seine Rolle im Gunpowder Plot von 1605 berühmt wurde, einem gescheiterten Versuch, das House of Lords zu sprengen und König Jakob I. zu töten. Geboren in York, kämpfte er für das katholische Spanien, bevor er sich Robert Catesbys Verschwörung anschloss. Nachdem man ihn beim Bewachen von Schießpulverfässern unter dem Parlament entdeckt hatte, wurde er gefoltert, wegen Hochverrats verurteilt und zum Hängen, Ausweiden und Vierteilen bestimmt. Am 31. Januar 1606 starb er am Galgen in Westminster, offenbar durch einen Genickbruch, wodurch ihm die volle Grausamkeit der Strafe erspart blieb.",
+  "shortDescriptionEs": "Guy Fawkes, también conocido como Guido Fawkes, fue un soldado inglés y conspirador católico recordado sobre todo por su papel en la Conspiración de la Pólvora de 1605, un intento fallido de volar la Cámara de los Lores y matar al rey Jacobo I. Nacido en York, luchó por la España católica antes de unirse al complot de Robert Catesby. Tras ser descubierto vigilando barriles de pólvora bajo el Parlamento, fue torturado, juzgado por alta traición y condenado a ser ahorcado, destripado y descuartizado. El 31 de enero de 1606 murió en la horca en Westminster, al parecer al romperse el cuello, evitando así la brutalidad completa de la sentencia.",
+  "shortDescriptionRu": "Гай Фокс, также известный как Гвидо Фокс, был английским солдатом и католическим заговорщиком, наиболее известным по участию в Пороховом заговоре 1605 года — неудачной попытке взорвать Палату лордов и убить короля Якова I. Родившись в Йорке, он служил в войсках католической Испании, а затем присоединился к заговору Роберта Кейтсби. Его обнаружили под зданием парламента, где он охранял бочки с порохом; после этого Фокса пытали, судили за государственную измену и приговорили к повешению, потрошению и четвертованию. 31 января 1606 года он умер на виселице в Вестминстере, вероятно, сломав шею и избежав полной жестокости приговора.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guy_Fawkes",
+    "https://www.britannica.com/biography/Guy-Fawkes",
+    "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/the-gunpowder-plot-of-1605/overview/people-behind-the-plot/guy-fawkes-/",
+    "https://www.hrp.org.uk/tower-of-london/history-and-stories/guy-fawkes-and-the-gunpowder-plot/",
+    "https://www.londonmuseum.org.uk/collections/london-stories/guy-fawkes-gunpowder-plot/",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Guy%20Fawkes%20%28cropped%29.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q161775",  "Name": "Saint Stephen",  "BirthDate": "0001-01-01T00:00:00Z",  "DeathDate": "0036-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/St-stephen.jpg",  "SiteLinksCnt": 74,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"33482790":{"pageid":33482790,"ns":0,"title":"Saint Stephen","extract":"Stephen (Greek: \u03a3\u03c4\u03ad\u03c6\u03b1\u03bd\u03bf\u03c2, romanized: St\u00e9phanos, lit.\u2009'wreath, crown'; c.\u2009AD 5 \u2013 c.\u200934) is traditionally venerated as the protomartyr or first martyr of Christianity. According to the Acts of the Apostles, he was a deacon in the early church at Jerusalem who angered members of various synagogues by his teachings. Accused of blasphemy at his trial, he made a speech denouncing the Jewish authorities who were sitting in judgment on him and was then stoned to death. Saul of Tarsus, a Pharisee and Roman citizen who would later become Paul the Apostle, was also involved as a witness in Stephen's execution.\nThe only source for information about Stephen is the New Testament book of the Acts of the Apostles. Stephen is mentioned in Acts 6 as one of the Greek-speaking Hellenistic Jews selected to administer the daily charitable distribution of food to the Greek-speaking widows.\nThe Catholic, Anglican, Oriental Orthodox, Eastern Orthodox, and Lutheran churches and the Church of the East venerate Stephen as a saint. Artistic representations often show Stephen with a crown symbolising martyrdom, three stones, martyr's palm frond, censer, and often holding a miniature church building. Stephen is often shown as a young, beardless man with a tonsure, wearing a deacon's vestments"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q161775")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q161775",
+  "isRealHuman": true,
+  "birthDate": "0005-01-01",
+  "deathDate": "0034-01-01",
+  "ageAtDeath": 29,
+  "confidence": 45,
+  "confidenceExplained": "The exact birth and death dates are not known. Wikipedia gives Saint Stephen as born circa AD 5 and dying circa AD 34, while its infobox also allows a death range of 33–36 and an age range of 27–31. Britannica gives death in 36 CE. I used the commonly cited circa AD 5 to circa AD 34 estimate and calculated 34 - 5 = 29. Confidence is moderate-low because the sources preserve only approximate chronology.",
+  "shortDescriptionEn": "Saint Stephen, also known as Stephen the Protomartyr, was a Greek-speaking Jewish Christian in Jerusalem and one of the first deacons of the early Church. Remembered as Christianity’s first martyr, he was admired for his preaching and care for the community’s poor and widows. Accused of blasphemy after a forceful speech before the Sanhedrin, he was taken outside the city and stoned to death, with Saul of Tarsus present as a witness.",
+  "shortDescriptionFr": "Saint Étienne, aussi appelé Étienne le Protomartyr, était un chrétien juif hellénophone de Jérusalem et l’un des premiers diacres de l’Église primitive. Il est surtout connu comme le premier martyr chrétien, apprécié pour sa prédication et son service auprès des pauvres et des veuves de la communauté. Accusé de blasphème après un discours vigoureux devant le Sanhédrin, il fut conduit hors de la ville et lapidé, en présence de Saul de Tarse.",
+  "shortDescriptionDe": "Der heilige Stephanus, auch Stephanus der Protomärtyrer genannt, war ein griechischsprachiger jüdischer Christ in Jerusalem und einer der ersten Diakone der frühen Kirche. Er gilt als erster Märtyrer des Christentums und wurde für seine Predigt und seinen Dienst an Armen und Witwen geschätzt. Nach einer leidenschaftlichen Rede vor dem Sanhedrin wurde er der Gotteslästerung beschuldigt, aus der Stadt geführt und gesteinigt; Saulus von Tarsus war als Zeuge anwesend.",
+  "shortDescriptionEs": "San Esteban, también conocido como Esteban el Protomártir, fue un cristiano judío de habla griega en Jerusalén y uno de los primeros diáconos de la Iglesia primitiva. Se le recuerda como el primer mártir del cristianismo, destacado por su predicación y por su servicio a los pobres y a las viudas de la comunidad. Acusado de blasfemia tras un discurso ante el Sanedrín, fue llevado fuera de la ciudad y apedreado hasta morir, con Saulo de Tarso presente como testigo.",
+  "shortDescriptionRu": "Святой Стефан, также известный как первомученик Стефан, был грекоязычным иудео-христианином в Иерусалиме и одним из первых диаконов ранней Церкви. Его помнят как первого христианского мученика, проповедника и служителя общины, заботившегося о бедных и вдовах. После сильной речи перед Синедрионом его обвинили в богохульстве, вывели за город и побили камнями; при казни присутствовал Савл из Тарса.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Stephen",
+    "https://www.britannica.com/biography/Saint-Stephen",
+    "https://www.newadvent.org/cathen/14286b.htm",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Stephen",
+    "https://commons.wikimedia.org/wiki/File:St-stephen.jpg",
+    "https://www.nationalgallery.org.uk/paintings/carlo-crivelli-saint-stephen"
+  ],
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/St-stephen.jpg",
+    "https://commons.wikimedia.org/wiki/File:St-stephen.jpg",
+    "https://www.nationalgallery.org.uk/paintings/carlo-crivelli-saint-stephen",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Stephen"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q168769",  "Name": "Mehmed I",  "BirthDate": "1386-01-01T00:00:00Z",  "DeathDate": "1421-05-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mehmed%20I%20miniature.jpg",  "SiteLinksCnt": 74,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"19987":{"pageid":19987,"ns":0,"title":"Mehmed I","extract":"Mehmed I (Turkish: I. Mehmed; c.\u20091386/87 \u2013 26 May 1421), also known as Mehmed \u00c7elebi (Ottoman Turkish: \u0686\u0644\u0628\u06cc \u0645\u062d\u0645\u062f, \"the noble-born\") or Kiri\u015f\u00e7i (Greek: \u039a\u03c5\u03c1\u03b9\u03c4\u03b6\u03ae\u03c2, romanized: Kyritzis, \"lord's son\"), was the sultan of the Ottoman Empire from 1413 to 1421. Son of Sultan Bayezid I and his concubine Devlet Hatun, he fought with his brothers over control of the Ottoman realm in the Ottoman Interregnum (1402\u20131413). Starting from the province of R\u00fbm he managed to bring first Anatolia and then the European territories (Rumelia) under his control, reuniting the Ottoman state by 1413, and ruling it until his death in 1421. Called \"The Restorer\", he reestablished central authority in Anatolia, and he expanded the Ottoman presence in Europe through the conquest of Dobruja in 1419. Venice destroyed his fleet off Gallipoli in 1416 when the Ottomans lost a naval war."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q168769")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q168769",
+  "isRealHuman": true,
+  "birthDate": "1386-01-01",
+  "deathDate": "1421-05-26",
+  "ageAtDeath": 35,
+  "confidence": 82,
+  "confidenceExplained": "The death date of 26 May 1421 is well supported, but the birth date is approximate, usually given as c. 1386 or 1386/87. Using 1386 as the best-supported estimate gives an age at death of 35; this also matches sources that explicitly state he died at age 35, though some references give the range 34–35.",
+  "shortDescriptionEn": "Mehmed I, also known as Mehmed Çelebi, was the Ottoman sultan who restored dynastic unity after the Ottoman Interregnum, defeating rival brothers and reuniting Anatolia and Rumelia under central rule by 1413. Remembered as “the Restorer,” he rebuilt authority after the crisis caused by Timur’s victory at Ankara. He died on 26 May 1421, probably in Edirne, after an illness described in later accounts as a heart attack or dysentery, leaving the throne to his son Murad II.",
+  "shortDescriptionFr": "Mehmed Ier, aussi appelé Mehmed Çelebi, fut le sultan ottoman qui rétablit l’unité dynastique après l’Interrègne ottoman, en vainquant ses frères rivaux et en réunissant l’Anatolie et la Roumélie sous une autorité centrale en 1413. Surnommé « le Restaurateur », il releva l’État après la crise provoquée par la victoire de Tamerlan à Ankara. Il mourut le 26 mai 1421, probablement à Edirne, après une maladie décrite plus tard comme une crise cardiaque ou une dysenterie, et son fils Murad II lui succéda.",
+  "shortDescriptionDe": "Mehmed I., auch Mehmed Çelebi genannt, war der osmanische Sultan, der nach dem Osmanischen Interregnum die dynastische Einheit wiederherstellte, seine rivalisierenden Brüder besiegte und Anatolien sowie Rumelien bis 1413 erneut unter zentrale Herrschaft brachte. Als „Wiederhersteller“ blieb er in Erinnerung, weil er den Staat nach der Krise infolge Timurs Sieg bei Ankara stabilisierte. Er starb am 26. Mai 1421, wahrscheinlich in Edirne, nach einer Krankheit, die spätere Berichte als Herzinfarkt oder Ruhr beschreiben; ihm folgte sein Sohn Murad II.",
+  "shortDescriptionEs": "Mehmed I, también conocido como Mehmed Çelebi, fue el sultán otomano que restauró la unidad dinástica tras el Interregno otomano, derrotando a sus hermanos rivales y reuniendo Anatolia y Rumelia bajo un gobierno central en 1413. Recordado como “el Restaurador”, reconstruyó la autoridad del Estado después de la crisis causada por la victoria de Tamerlán en Ankara. Murió el 26 de mayo de 1421, probablemente en Edirne, tras una enfermedad descrita posteriormente como un ataque cardíaco o disentería, y fue sucedido por su hijo Murad II.",
+  "shortDescriptionRu": "Мехмед I, также известный как Мехмед Челеби, был османским султаном, восстановившим династическое единство после Османского междуцарствия: он победил соперничавших братьев и к 1413 году вновь объединил Анатолию и Румелию под центральной властью. Его называли «Восстановителем» за укрепление государства после кризиса, вызванного победой Тимура при Анкаре. Он умер 26 мая 1421 года, вероятно в Эдирне, после болезни, которую позднейшие источники описывают как сердечный приступ или дизентерию; престол перешёл к его сыну Мураду II.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mehmed_I",
+    "https://www.britannica.com/biography/Mehmed-I",
+    "https://www.wikidata.org/wiki/Q168769",
+    "https://www.dailysabah.com/arts/portrait/mighty-sovereigns-of-the-ottoman-throne-sultan-mehmed-i",
+    "https://commons.wikimedia.org/wiki/Category:Mehmed_I",
+    "https://en.numista.com/catalogue/ruler.php?id=2428"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q109598",  "Name": "Tibullus",  "BirthDate": "-0050-01-01T00:00:00Z",  "DeathDate": "-0015-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Tibullus.jpg",  "SiteLinksCnt": 73,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"162217":{"pageid":162217,"ns":0,"title":"Tibullus","extract":"Albius Tibullus (c.\u200955 BC \u2013 c.\u200919 BC) was a Latin poet and writer of elegies. His first and second books of poetry are extant; many other texts attributed to him are of questionable origins.\nLittle is known about the life of Tibullus. There are only a few references to him by later writers and a short Life of doubtful authority. Neither his praenomen nor his birthplace is known, and his gentile name has been questioned. His status was probably that of a Roman eques (so the Life affirms), and he had inherited a considerable estate. Like Virgil and Propertius, he seems to have lost most of it in 41 BC in the confiscations of Mark Antony and Octavian."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q109598")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q109598",
+  "isRealHuman": true,
+  "birthDate": "-0055-01-01",
+  "deathDate": "-0019-01-01",
+  "ageAtDeath": 36,
+  "confidence": 62,
+  "confidenceExplained": "The death year 19 BC is strongly supported by standard references, while the birth year is usually given as circa 55 BC, though some scholarly summaries allow a wider range from about 55 to 48 BC. Using the most common estimate, 55 BC to 19 BC gives an age at death of about 36. Because both exact dates are unknown, the number should be treated as a best historical estimate rather than a precise civil-age calculation.",
+  "shortDescriptionEn": "Albius Tibullus was a Roman poet of the late Republic and early Augustan age, celebrated for refined Latin elegies about love, rural peace, loyalty, and emotional restraint. Linked with the circle of Messalla Corvinus, he is usually placed among the great Roman elegists between Gallus, Propertius, and Ovid. He appears to have died young, probably in 19 BC, around the time of Virgil’s death; no reliable cause is preserved, but ancient poets treated his passing as a notable literary loss.",
+  "shortDescriptionFr": "Albius Tibullus fut un poète romain de la fin de la République et du début de l’époque augustéenne, célèbre pour ses élégies latines sur l’amour, la paix rurale, la fidélité et la retenue. Associé au cercle de Messalla Corvinus, il compte parmi les grands élégiaques romains, entre Gallus, Properce et Ovide. Il mourut jeune, probablement en 19 av. J.-C., vers l’époque de la mort de Virgile; aucune cause certaine n’est connue, mais les poètes antiques ont présenté sa disparition comme une perte littéraire importante.",
+  "shortDescriptionDe": "Albius Tibullus war ein römischer Dichter der späten Republik und der frühen augusteischen Zeit, berühmt für seine fein gearbeiteten lateinischen Elegien über Liebe, ländliche Ruhe, Treue und Zurückhaltung. Er gehörte zum Umfeld des Messalla Corvinus und wird zu den großen römischen Elegikern zwischen Gallus, Properz und Ovid gezählt. Er starb offenbar jung, wahrscheinlich 19 v. Chr., etwa zur Zeit von Vergils Tod; eine verlässliche Todesursache ist nicht überliefert, doch antike Dichter sahen seinen Tod als bedeutenden Verlust.",
+  "shortDescriptionEs": "Albio Tibulo fue un poeta romano de la última República y los primeros años de la época augustea, famoso por sus elegías latinas sobre el amor, la paz del campo, la lealtad y la emoción contenida. Vinculado al círculo de Mesala Corvino, suele figurar entre los grandes elegíacos romanos junto a Galo, Propercio y Ovidio. Murió joven, probablemente en 19 a. C., cerca de la muerte de Virgilio; no se conserva una causa fiable, pero los autores antiguos trataron su fallecimiento como una pérdida literaria notable.",
+  "shortDescriptionRu": "Альбий Тибулл был римским поэтом поздней Республики и ранней эпохи Августа, прославившимся изящными латинскими элегиями о любви, сельском покое, верности и сдержанном чувстве. Его связывают с кругом Мессалы Корвина, а в истории литературы он стоит среди главных римских элегиков — между Галлом, Проперцием и Овидием. Он умер молодым, вероятно в 19 году до н. э., примерно во время смерти Вергилия; достоверная причина смерти неизвестна, но античные поэты воспринимали его уход как заметную литературную потерю.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tibullus",
+    "https://www.britannica.com/biography/Albius-Tibullus",
+    "https://www.poetryfoundation.org/poets/tibullus",
+    "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-6441",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tibullus,_Albius",
+    "https://commons.wikimedia.org/wiki/File:Tibullus.jpg",
+    "https://commons.wikimedia.org/wiki/Albius_Tibullus",
+    "https://commons.wikimedia.org/wiki/File:Tibull.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1280278",  "Name": "Radoje Domanović",  "BirthDate": "1873-02-16T00:00:00Z",  "DeathDate": "1908-08-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Radoje%20Domanovic.PNG",  "SiteLinksCnt": 69,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"1645113":{"pageid":1645113,"ns":0,"title":"Radoje Domanovi\u0107","extract":"Radoje Domanovi\u0107 (Serbian Cyrillic: \u0420\u0430\u0434\u043e\u0458\u0435 \u0414\u043e\u043c\u0430\u043d\u043e\u0432\u0438\u045b; February 16, 1873 \u2013 August 17, 1908) was a Serbian journalist, writer and teacher, most famous for his satirical short stories. His adult years were a constant fight against tuberculosis. This circumstance of his life, and the affection which he inspired in all who knew him, created an aura of romanticism and sentimentality which stand in contrast to his literary accomplishments as a satirist and a powerful critic of the contemporary Serbian society."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1280278")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1280278",
+  "isRealHuman": true,
+  "birthDate": "1873-02-16",
+  "deathDate": "1908-08-17",
+  "ageAtDeath": 35,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are corroborated by Wikipedia, Wikidata, Wikimedia Commons, and the Radoje Domanović Project. Wikidata gives Julian calendar dates, while Wikipedia and modern biographies give Gregorian equivalents; both systems yield the same completed age of 35. The only minor uncertainty concerns wording around the medical cause, since sources mention tuberculosis and some add chronic pneumonia.",
+  "shortDescriptionEn": "Radoje Domanović was a Serbian writer, journalist and teacher, remembered as one of the sharpest satirists of Serbian literature. His stories such as \"The Leader\", \"Danga\" and \"Stradija\" attacked political hypocrisy, blind obedience and the failures of public life with bleak, memorable irony. He died in Belgrade on 1908-08-17, aged 35, after a long struggle with tuberculosis, with some biographical accounts also mentioning chronic pneumonia and poverty.",
+  "shortDescriptionFr": "Radoje Domanović était un écrivain, journaliste et enseignant serbe, considéré comme l’un des grands satiristes de la littérature serbe. Dans des textes comme \"Le Chef\", \"Danga\" et \"Stradija\", il dénonçait l’hypocrisie politique, l’obéissance aveugle et les travers de la société avec une ironie sombre et puissante. Il est mort à Belgrade le 1908-08-17, à l’âge de 35 ans, après une longue lutte contre la tuberculose, parfois associée dans les sources à une pneumonie chronique et à la pauvreté.",
+  "shortDescriptionDe": "Radoje Domanović war ein serbischer Schriftsteller, Journalist und Lehrer und gilt als einer der bedeutendsten Satiriker der serbischen Literatur. In Erzählungen wie \"Der Führer\", \"Danga\" und \"Stradija\" griff er politische Heuchelei, blinden Gehorsam und gesellschaftliche Missstände mit scharfer, düsterer Ironie an. Er starb am 1908-08-17 in Belgrad im Alter von 35 Jahren nach einem langen Kampf gegen Tuberkulose; einige biografische Quellen erwähnen zusätzlich chronische Lungenentzündung und Armut.",
+  "shortDescriptionEs": "Radoje Domanović fue un escritor, periodista y profesor serbio, recordado como uno de los grandes satíricos de la literatura serbia. En relatos como \"El líder\", \"Danga\" y \"Stradija\" criticó la hipocresía política, la obediencia ciega y los defectos de la vida pública con una ironía amarga y eficaz. Murió en Belgrado el 1908-08-17, a los 35 años, tras una larga lucha contra la tuberculosis; algunas fuentes biográficas también mencionan neumonía crónica y pobreza.",
+  "shortDescriptionRu": "Радое Доманович был сербским писателем, журналистом и учителем, одним из самых известных сатириков сербской литературы. В рассказах «Вождь», «Данга» и «Страдия» он резко высмеивал политическое лицемерие, слепое повиновение и пороки общественной жизни. Он умер в Белграде 1908-08-17 в возрасте 35 лет после долгой борьбы с туберкулёзом; в некоторых биографических источниках также упоминаются хроническая пневмония и бедность.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Radoje_Domanovi%C4%87",
+    "https://www.wikidata.org/wiki/Q1280278",
+    "https://domanovic.org/foreign-languages/english/",
+    "https://commons.wikimedia.org/wiki/File:Radoje_Domanovic.PNG",
+    "https://commons.wikimedia.org/wiki/Category:Radoje_Domanovi%C4%87",
+    "https://upload.wikimedia.org/wikipedia/commons/6/63/Radoje_Domanovic.PNG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170026",  "Name": "Valentinian III",  "BirthDate": "0419-07-03T00:00:00Z",  "DeathDate": "0455-03-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Solidus%20ValentinianIII-wedding.jpg",  "SiteLinksCnt": 67,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"74647":{"pageid":74647,"ns":0,"title":"Valentinian III","extract":"Valentinian III (Latin: Placidus Valentinianus; 2 July 419 \u2013 16 March 455) was Roman emperor in the West from 425 to 455. Starting in childhood, his reign over the Roman Empire was one of the longest, but was dominated by civil wars among powerful generals and the barbarian invasions. He was the youngest sole emperor in the Western Roman Empire (aged 6).\nHe was the son of Galla Placidia and Constantius III, and as the great-grandson of Valentinian I (r.\u2009364\u2013375) he was the last emperor of the Valentinianic dynasty. As a grandson of Theodosius I (r.\u2009379\u2013395), Valentinian was also a member of the Theodosian dynasty, to which his wife, Licinia Eudoxia, also belonged. A year before assuming the rank of augustus, Valentinian was given the imperial rank of caesar by his half-cousin and co-emperor Theodosius II (r.\u2009402\u2013450). The augusta Galla Placidia had great influence during her son's rule, as did the military commander Flavius Aetius, who defended the western empire against Germanic and Hunnic invasions. Attila the Hun repeatedly menaced Valentinian's domains, being repulsed by a coalition under Aetius's leadership at the Battle of the Catalaunian Plains and calling off a subsequent invasion after negotiations led by Pope Leo I. \nThe emperor later fell out with Aetius and killed him. Valentinian was assassinated in turn by Aetius's bodyguards, ending a reign marked by the ongoing collapse of the western empire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170026")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q170026",
+  "isRealHuman": true,
+  "birthDate": "0419-07-02",
+  "deathDate": "0455-03-16",
+  "ageAtDeath": 35,
+  "confidence": 98,
+  "confidenceExplained": "Multiple reliable reference sources agree that Valentinian III was born on 2 July 419 and died on 16 March 455. Since he died before reaching his birthday in 455, his age at death was 35. The only uncertainty comes from the supplied Wikidata-style data being one day different, but the consensus of historical references strongly supports 2 July and 16 March.",
+  "shortDescriptionEn": "Valentinian III was Western Roman emperor from 425 to 455, placed on the throne as a child and long overshadowed by his mother Galla Placidia and the general Flavius Aetius. His reign saw the Western Empire weakened by internal power struggles, Vandal expansion in North Africa, and pressure from the Huns under Attila. In 454 Valentinian personally killed Aetius after falling under suspicion and court intrigue. The next year, on 16 March 455, he was assassinated in Rome by former followers of Aetius, a violent end that further destabilized the already collapsing western imperial government.",
+  "shortDescriptionFr": "Valentinien III fut empereur romain d’Occident de 425 à 455, monté sur le trône encore enfant et longtemps dominé par sa mère Galla Placidia puis par le général Flavius Aetius. Son règne fut marqué par l’affaiblissement de l’Empire d’Occident, les guerres de pouvoir internes, l’expansion vandale en Afrique du Nord et la menace des Huns d’Attila. En 454, Valentinien fit tuer Aetius de sa propre main, dans un climat de méfiance politique. Le 16 mars 455, il fut assassiné à Rome par d’anciens hommes d’Aetius, une mort brutale qui accéléra encore l’instabilité de l’Occident romain.",
+  "shortDescriptionDe": "Valentinian III. war von 425 bis 455 weströmischer Kaiser und bestieg den Thron bereits als Kind. Lange stand er im Schatten seiner Mutter Galla Placidia und des mächtigen Heermeisters Flavius Aetius. Seine Herrschaft war geprägt vom Niedergang der weströmischen Macht, inneren Machtkämpfen, dem Verlust Nordafrikas an die Vandalen und der Bedrohung durch Attilas Hunnen. Im Jahr 454 ließ Valentinian Aetius eigenhändig töten, nachdem er dessen Loyalität anzweifelte. Am 16. März 455 wurde er in Rom von früheren Gefolgsleuten Aetius’ ermordet, ein gewaltsames Ende in einer Zeit rasch wachsender imperialer Instabilität.",
+  "shortDescriptionEs": "Valentiniano III fue emperador romano de Occidente de 425 a 455, elevado al trono cuando aún era un niño y durante mucho tiempo eclipsado por su madre Gala Placidia y por el general Flavio Aecio. Su reinado estuvo marcado por la debilidad creciente del Imperio occidental, las luchas internas, la expansión vándala en el norte de África y la amenaza de los hunos de Atila. En 454, Valentiniano mató personalmente a Aecio tras desconfiar de su poder. El 16 de marzo de 455 fue asesinado en Roma por antiguos seguidores de Aecio, una muerte violenta que agravó la crisis del poder imperial occidental.",
+  "shortDescriptionRu": "Валентиниан III был императором Западной Римской империи с 425 по 455 год, взойдя на престол еще ребенком. Долгое время на его правление влияли мать Галла Плацидия и могущественный полководец Флавий Аэций. Его эпоха прошла на фоне ослабления западной имперской власти, внутренних распрей, захвата вандалами Северной Африки и угрозы со стороны гуннов Аттилы. В 454 году Валентиниан собственноручно убил Аэция, заподозрив его в нелояльности. 16 марта 455 года он был убит в Риме бывшими людьми Аэция, и эта насильственная смерть еще сильнее расшатала власть Западной империи.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Valentinian_III",
+    "https://www.britannica.com/biography/Valentinian-III",
+    "https://www.livius.org/articles/person/valentinian-iii/",
+    "https://snl.no/Valentinian_3.",
+    "https://commons.wikimedia.org/wiki/Category:Valentinian_III"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q55398",  "Name": "Bernadette Soubirous",  "BirthDate": "1844-01-07T00:00:00Z",  "DeathDate": "1879-04-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bernadette%20Soubirous.jpg",  "SiteLinksCnt": 65,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"240951":{"pageid":240951,"ns":0,"title":"Bernadette Soubirous","extract":"Bernadette Soubirous, SCN (; French: [b\u025b\u0281nad\u025bt subi\u0281u]; Occitan: Bernadeta Sobir\u00f3s [be\u027ena\u02c8\u00f0et\u0254 su\u03b2i\u02c8\u027eus]; 7 January 1844 \u2013 16 April 1879), also known as Bernadette of Lourdes (religious name Marie-Bernarde), was a miller's daughter from Lourdes (Lorda in Occitan), in the department of Hautes-Pyr\u00e9n\u00e9es in France, and is best known for experiencing apparitions of a \"young lady\" who asked for a chapel to be built at the nearby cave-grotto. These apparitions occurred between 11 February and 16 July 1858, and the young lady who appeared to her identified herself as the \"Immaculate Conception\".\nAfter a canonical investigation, Soubirous's reports were eventually declared \"worthy of belief\" on 18 February 1862, and the Marian apparition became known as Our Lady of Lourdes. In 1866, Soubirous joined the Sisters of Charity of Nevers at their convent in Nevers where she spent the last years of her life. Her body is said by the Catholic Church to remain internally incorrupt. The grotto where the apparitions occurred became a major pilgrimage site and Marian shrine known as the Sanctuary of Our Lady of Lourdes, attracting around five million pilgrims of all denominations each year.\nPope Pius XI beatified Soubirous on 14 June 1925 and canonized her on 8 December 1933. Her feast day, initially specified as 18 February \u2013 the day Mary promised to make her happy, not in this life, but in the other \u2013 is now observed in most places on the date of her death, 16 April."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q55398")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q55398",
+  "isRealHuman": true,
+  "birthDate": "1844-01-07",
+  "deathDate": "1879-04-16",
+  "ageAtDeath": 35,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistently reported by multiple reputable sources, including Wikipedia, Britannica, and the Lourdes sanctuary timeline. The age is calculated directly from 1844-01-07 to 1879-04-16, giving 35 full years. Confidence is not 100 only because historical records can contain minor transcription differences, though no meaningful conflict was found here.",
+  "shortDescriptionEn": "Bernadette Soubirous, later known as Saint Bernadette of Lourdes, was a French Catholic visionary from a poor miller’s family in Lourdes. In 1858, at the age of fourteen, she reported a series of apparitions at the grotto of Massabielle, events that led to the rise of Lourdes as one of the world’s best-known pilgrimage shrines. She later entered the Sisters of Charity of Nevers and lived quietly in religious service. Long troubled by asthma and other illnesses, she became increasingly frail in her final years and died in Nevers on 16 April 1879, aged 35.",
+  "shortDescriptionFr": "Bernadette Soubirous, connue plus tard comme sainte Bernadette de Lourdes, était une voyante catholique française issue d’une famille pauvre de meuniers à Lourdes. En 1858, à quatorze ans, elle déclara avoir vu une série d’apparitions à la grotte de Massabielle, événements qui contribuèrent à faire de Lourdes l’un des grands lieux de pèlerinage du monde. Elle entra ensuite chez les Sœurs de la Charité de Nevers et mena une vie religieuse discrète. Affaiblie depuis longtemps par l’asthme et d’autres maladies, elle passa ses dernières années dans une santé fragile et mourut à Nevers le 16 avril 1879, à l’âge de 35 ans.",
+  "shortDescriptionDe": "Bernadette Soubirous, später als heilige Bernadette von Lourdes bekannt, war eine französische katholische Visionärin aus einer armen Müllerfamilie in Lourdes. Im Jahr 1858 berichtete sie als Vierzehnjährige von mehreren Erscheinungen an der Grotte von Massabielle; diese Ereignisse machten Lourdes zu einem der bekanntesten Wallfahrtsorte der Welt. Später trat sie den Schwestern der Nächstenliebe von Nevers bei und führte ein zurückgezogenes Ordensleben. Seit ihrer Kindheit gesundheitlich geschwächt, besonders durch Asthma und weitere Leiden, wurde sie in ihren letzten Jahren immer kränker und starb am 16. April 1879 in Nevers im Alter von 35 Jahren.",
+  "shortDescriptionEs": "Bernadette Soubirous, conocida más tarde como santa Bernardita de Lourdes, fue una visionaria católica francesa nacida en una familia pobre de molineros en Lourdes. En 1858, cuando tenía catorce años, afirmó haber presenciado una serie de apariciones en la gruta de Massabielle, hechos que convirtieron Lourdes en uno de los santuarios de peregrinación más conocidos del mundo. Después ingresó en las Hermanas de la Caridad de Nevers y vivió una vida religiosa discreta. Marcada durante años por el asma y otras enfermedades, se debilitó mucho al final de su vida y murió en Nevers el 16 de abril de 1879, a los 35 años.",
+  "shortDescriptionRu": "Бернадетта Субиру, позднее известная как святая Бернадетта Лурдская, была французской католической визионеркой из бедной семьи мельника в Лурде. В 1858 году, когда ей было четырнадцать лет, она сообщила о серии явлений у грота Масабьель; эти события сделали Лурд одним из самых известных мест паломничества в мире. Позже она вступила в конгрегацию Сестёр милосердия в Невере и вела тихую монашескую жизнь. С детства страдавшая астмой и другими болезнями, в последние годы она сильно ослабла и умерла в Невере 16 апреля 1879 года в возрасте 35 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bernadette_Soubirous",
+    "https://www.britannica.com/biography/Saint-Bernadette-of-Lourdes",
+    "https://www.lourdes-france.org/sainte-bernadette-soubirous/",
+    "https://www.sainte-bernadette-soubirous-nevers.com/en/pages/our-history/",
+    "https://commons.wikimedia.org/wiki/Category:Portraits_of_Bernadette_Soubirous",
+    "https://commons.wikimedia.org/wiki/File:Bernadette_Soubirous.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bernadette_soubirous_1_publicdomain.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bernadette_Soubirous_en_1863_photo_Billard-Perrin_4.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q189705",  "Name": "Zenobia",  "BirthDate": "0240-01-01T00:00:00Z",  "DeathDate": "0275-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Edward%20Poynter%2C%20Zenobia%20Captive%201878.jpg",  "SiteLinksCnt": 63,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"43382":{"pageid":43382,"ns":0,"title":"Zenobia","extract":"Septimia Zenobia (Palmyrene Aramaic: \ud802\udc61\ud802\udc76\ud802\udc66\ud802\udc61\ud802\udc69\u200e, romanized: Bat-Zabbai; c.\u2009240 \u2013 c.\u2009274) was a third-century queen of the Palmyrene Empire in Syria. Many legends surround her ancestry; she was probably not a commoner. She married Odaenathus, who became king of the city of Palmyra in 260, elevating it to supreme power in the Near East by defeating the Sasanian Empire of Persia and stabilizing the Roman East. After Odaenathus' assassination in 267, Zenobia became the regent of her son Vaballathus and held de facto power throughout his reign (267 to 272).\nIn 270, Zenobia launched an invasion that brought most of the Roman East under her sway and culminated with the annexation of Egypt. By mid-271 her realm extended from Ancyra, central Anatolia, to Upper Egypt, although she remained nominally subordinate to Rome. However, in reaction to the campaign of the Roman emperor Aurelian in 272, Zenobia declared her son emperor and assumed the title of empress, thus declaring Palmyra's independence from Rome. The Romans were victorious after heavy fighting; the empress was besieged in her capital and captured in late 272 by Aurelian, who exiled her to Rome, where she spent the remainder of her life.\nZenobia was a cultured monarch and fostered an intellectual environment in her court, which was open to scholars and philosophers. She was tolerant toward her subjects and protected religious minorities. The empress maintained a stable administration, which governed a multicultural, multiethnic empire. Zenobia died after 274, and many tales have been recorded about her fate. Her rise and fall have inspired historians, artists and novelists, and she is a patriotic symbol in Syria."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q189705")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q189705",
+  "isRealHuman": true,
+  "birthDate": "0240-01-01",
+  "deathDate": "0275-01-01",
+  "ageAtDeath": 35,
+  "confidence": 45,
+  "confidenceExplained": "Zenobia is securely identifiable as the historical queen of Palmyra, but both her birth and death dates are approximate. Reputable references usually place her birth around 240 or 240–241 and say she died after 274; some datasets and traditions use circa 275. I used 0240-01-01 and 0275-01-01 as normalized estimates, giving an age at death of 35, but the exact age could plausibly differ by at least a year and possibly more if the later-life accounts are true.",
+  "shortDescriptionEn": "Zenobia was the formidable queen of Palmyra in Roman Syria, ruling as regent for her son Vaballathus and briefly building a powerful eastern empire that stretched into Egypt and Anatolia. Educated, politically bold, and admired for her court culture, she challenged Rome during the third-century crisis. In 272 she was defeated by Emperor Aurelian, captured while trying to flee toward Persia, and taken into Roman custody; later accounts disagree whether she died soon afterward or lived in Italy.",
+  "shortDescriptionFr": "Zénobie fut la puissante reine de Palmyre, en Syrie romaine, gouvernant comme régente pour son fils Wahballat et créant brièvement un empire oriental étendu jusqu’à l’Égypte et l’Anatolie. Souveraine cultivée, ambitieuse et entourée d’intellectuels, elle défia Rome pendant la crise du IIIe siècle. En 272, l’empereur Aurélien la vainquit, la fit capturer alors qu’elle tentait de fuir vers la Perse, puis l’emmena sous contrôle romain; les récits divergent sur sa fin, entre une mort peu après et une vie ultérieure en Italie.",
+  "shortDescriptionDe": "Zenobia war die eindrucksvolle Königin von Palmyra im römischen Syrien und regierte als Regentin für ihren Sohn Vaballathus. Für kurze Zeit schuf sie ein mächtiges östliches Reich, das bis nach Ägypten und Anatolien reichte. Sie galt als gebildet, politisch entschlossen und als Förderin eines gelehrten Hofes. 272 wurde sie von Kaiser Aurelian besiegt, auf der Flucht in Richtung Persien gefangen genommen und in römische Gewalt gebracht; spätere Quellen widersprechen sich, ob sie bald starb oder in Italien weiterlebte.",
+  "shortDescriptionEs": "Zenobia fue la poderosa reina de Palmira, en la Siria romana, y gobernó como regente de su hijo Vabalato. Durante un breve periodo construyó un imperio oriental que llegó a incluir Egipto y partes de Anatolia. Culta, audaz y rodeada de filósofos y eruditos, desafió a Roma en plena crisis del siglo III. En 272 fue derrotada por el emperador Aureliano, capturada cuando intentaba huir hacia Persia y llevada bajo custodia romana; las fuentes posteriores no coinciden sobre si murió poco después o vivió en Italia.",
+  "shortDescriptionRu": "Зенобия была могущественной царицей Пальмиры в римской Сирии и правила как регент при своём сыне Вабаллате. На короткое время она создала сильную восточную державу, включавшую Египет и часть Малой Азии. Образованная, решительная и окружавшая себя философами, она бросила вызов Риму во время кризиса III века. В 272 году император Аврелиан разбил её войска, Зенобию захватили при попытке бежать к персам и отправили под римский контроль; поздние источники расходятся в том, умерла ли она вскоре или жила затем в Италии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Zenobia",
+    "https://www.britannica.com/biography/Zenobia",
+    "https://www.worldhistory.org/zenobia/",
+    "https://www.wikidata.org/wiki/Q189705",
+    "https://www.nationalgeographic.com/history/history-magazine/article/history-queen-zenobia-defied-rome",
+    "https://commons.wikimedia.org/wiki/File:Sir_Edward_Poynter,_Zenobia_Captive_1878.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q189779",  "Name": "Antonio José de Sucre",  "BirthDate": "1795-02-03T00:00:00Z",  "DeathDate": "1830-06-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Tovar%20y%20Tovar%2012.JPG",  "SiteLinksCnt": 60,  "Age": 35}
+{"batchcomplete":"","query":{"pages":{"228111":{"pageid":228111,"ns":0,"title":"Antonio Jos\u00e9 de Sucre","extract":"Antonio Jos\u00e9 de Sucre y Alcal\u00e1 (Spanish pronunciation: [an\u02c8tonjo xo\u02c8se \u00f0e \u02c8suk\u027eej alka\u02c8la] ; 3 February 1795 \u2013 4 June 1830), known as the \"Gran Mariscal de Ayacucho\" (English: \"Grand Marshal of Ayacucho\"), was a Venezuelan general and politician who served as the president of Bolivia from 1825 to 1828. A close friend and associate of Sim\u00f3n Bol\u00edvar, he was one of the primary leaders of South America's struggle for independence from the Spanish Empire.\nBorn to an aristocratic family in Cuman\u00e1, Sucre joined the revolt against Spanish rule in 1814 and quickly established himself as a highly capable military leader. In 1822, he led the Patriot forces to triumph at the Battle of Pichincha and liberated Quito, from which modern Ecuador would eventually emerge. As Bol\u00edvar's chief lieutenant, he went on to score a decisive victory over the Spanish Royalist army at the Battle of Ayacucho in 1824, which effectively secured the independence of Peru. Afterwards he moved into Upper Peru, pacified the Royalist resistance and set up an administration on Bol\u00edvar's orders. The region achieved independence as the Bolivia, and Sucre was inaugurated as president of the new republic after Bol\u00edvar passed on the duty.\nSucre's tenure as president was beset by difficulties, and opposition to his rule mounted as the populace turned against Bol\u00edvar and his followers. He was forced to resign in 1828, but was recalled to military duty on the outbreak of the Gran Colombia\u2013Peru War, in which he commanded Colombian forces and fought the Peruvian invaders to a standstill. He was assassinated in Berruecos, Colombia in 1830, and the identity of the conspirators remains a subject of historical speculation."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q189779")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q189779",
+  "isRealHuman": true,
+  "birthDate": "1795-02-03",
+  "deathDate": "1830-06-04",
+  "ageAtDeath": 35,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikipedia, Wikidata, Wikimedia Commons, and Encyclopaedia Britannica. The age at death is exactly 35 full years from 1795-02-03 to 1830-06-04; Britannica also explicitly states that he died aged 35. Confidence is not 100 only because historical biographical data can occasionally contain minor calendar or transcription discrepancies.",
+  "shortDescriptionEn": "Antonio José de Sucre y Alcalá was a Venezuelan general and statesman, one of Simón Bolívar’s closest lieutenants and a leading commander in South America’s wars of independence. Celebrated as the Grand Marshal of Ayacucho, he helped secure independence for Ecuador and Peru and became Bolivia’s first constitutionally elected leader. After years of political tension in Gran Colombia, he was ambushed and shot dead near Berruecos on 4 June 1830, aged 35.",
+  "shortDescriptionFr": "Antonio José de Sucre y Alcalá fut un général et homme d’État vénézuélien, l’un des plus proches lieutenants de Simón Bolívar et un chef majeur des guerres d’indépendance sud-américaines. Surnommé le Grand Maréchal d’Ayacucho, il contribua à libérer l’Équateur et le Pérou et devint le premier dirigeant constitutionnellement élu de la Bolivie. Dans un contexte de tensions politiques en Grande Colombie, il fut pris dans une embuscade et abattu près de Berruecos le 4 juin 1830, à l’âge de 35 ans.",
+  "shortDescriptionDe": "Antonio José de Sucre y Alcalá war ein venezolanischer General und Staatsmann, einer der engsten Mitstreiter Simón Bolívars und ein zentraler Befehlshaber in den südamerikanischen Unabhängigkeitskriegen. Als Großmarschall von Ayacucho trug er entscheidend zur Befreiung Ecuadors und Perus bei und wurde der erste verfassungsgemäß gewählte Staatschef Boliviens. Nach zunehmenden politischen Spannungen in Großkolumbien geriet er nahe Berruecos in einen Hinterhalt und wurde am 4. Juni 1830 im Alter von 35 Jahren erschossen.",
+  "shortDescriptionEs": "Antonio José de Sucre y Alcalá fue un general y político venezolano, uno de los colaboradores más cercanos de Simón Bolívar y una figura clave en las guerras de independencia sudamericanas. Conocido como el Gran Mariscal de Ayacucho, ayudó a asegurar la independencia de Ecuador y Perú y llegó a ser el primer gobernante constitucionalmente elegido de Bolivia. En medio de las tensiones políticas de la Gran Colombia, fue emboscado y asesinado a tiros cerca de Berruecos el 4 de junio de 1830, a los 35 años.",
+  "shortDescriptionRu": "Антонио Хосе де Сукре-и-Алькала был венесуэльским генералом и государственным деятелем, одним из ближайших соратников Симона Боливара и ключевых командиров войн за независимость Южной Америки. Известный как Великий маршал Аякучо, он сыграл важную роль в освобождении Эквадора и Перу и стал первым конституционно избранным руководителем Боливии. На фоне политического распада Великой Колумбии он попал в засаду и был застрелен близ Берруэкоса 4 июня 1830 года в возрасте 35 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Tovar%20y%20Tovar%2012.JPG",
+    "https://commons.wikimedia.org/wiki/File:AJSucre.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Antonio_Jos%C3%A9_de_Sucre"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antonio_Jos%C3%A9_de_Sucre",
+    "https://www.britannica.com/biography/Antonio-Jose-de-Sucre",
+    "https://www.wikidata.org/wiki/Q189779",
+    "https://commons.wikimedia.org/wiki/Category:Antonio_Jos%C3%A9_de_Sucre"
+  ]
+}
