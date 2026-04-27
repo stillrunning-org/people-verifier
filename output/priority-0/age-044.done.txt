@@ -1,0 +1,1017 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5685",  "Name": "Anton Chekhov",  "BirthDate": "1860-01-29T00:00:00Z",  "DeathDate": "1904-07-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Chekhov%20with%20bow-tie%20sepia%20image.jpg",  "SiteLinksCnt": 238,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"2447":{"pageid":2447,"ns":0,"title":"Anton Chekhov","extract":"Anton Pavlovich Chekhov (; Russian: \u0410\u043d\u0442\u043e\u043d \u041f\u0430\u0432\u043b\u043e\u0432\u0438\u0447 \u0427\u0435\u0445\u043e\u0432;\n29 January [O.S. 17 January] 1860 \u2013 15 July [O.S. 2 July] 1904) was a Russian playwright and short story writer. Widely considered one of the greatest writers of all time, his career as a playwright produced four classics, and his best short stories are held in high esteem by writers and critics. Along with Henrik Ibsen and August Strindberg, Chekhov is often referred to as one of the three seminal figures in the birth of early modernism in the theatre. Chekhov was a physician by profession. \"Medicine is my lawful wife,\" he once said, \"and literature is my mistress.\"\nChekhov renounced the theatre after the reception of The Seagull in 1896, but the play was revived to acclaim in 1898 by Konstantin Stanislavski's Moscow Art Theatre, which subsequently also produced Chekhov's Uncle Vanya and premiered his last two plays, Three Sisters and The Cherry Orchard. These four works present a challenge to the acting ensemble as well as to audiences, because in place of conventional action Chekhov offers a \"theatre of mood\" and a \"submerged life in the text.\" \nChekhov began writing stories to earn money, but as his artistic ambition grew, he made formal innovations that influenced the evolution of the modern short story. He wrote that it is not the duty of writers to solve problems, but to correctly state them."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5685")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5685",
+  "isRealHuman": true,
+  "birthDate": "1860-01-29",
+  "deathDate": "1904-07-15",
+  "ageAtDeath": 44,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are confirmed by multiple reliable reference sources, including Wikipedia, Wikidata, Britannica, and Wikimedia Commons. The age calculation is straightforward: Anton Chekhov was born on 1860-01-29 and died on 1904-07-15, after his 44th birthday and before his 45th.",
+  "shortDescriptionEn": "Anton Pavlovich Chekhov was a Russian playwright, short-story writer, and physician whose spare, psychologically subtle style helped reshape modern drama and fiction. His major plays include The Seagull, Uncle Vanya, Three Sisters, and The Cherry Orchard, while his stories remain landmarks of literary realism. Long ill with tuberculosis, he traveled to Badenweiler, Germany, seeking relief; he died there on 15 July 1904 at the age of 44 after years of declining health.",
+  "shortDescriptionFr": "Anton Pavlovitch Tchekhov était un dramaturge, nouvelliste et médecin russe dont l’écriture concise, attentive aux silences et aux tensions intérieures, a profondément marqué le théâtre et la nouvelle modernes. Ses œuvres majeures comprennent La Mouette, Oncle Vania, Les Trois Sœurs et La Cerisaie. Atteint depuis longtemps de tuberculose, il se rendit à Badenweiler, en Allemagne, pour tenter d’améliorer sa santé; il y mourut le 15 juillet 1904, à l’âge de 44 ans.",
+  "shortDescriptionDe": "Anton Pawlowitsch Tschechow war ein russischer Dramatiker, Erzähler und Arzt, dessen knapper, psychologisch genauer Stil das moderne Theater und die Kurzgeschichte entscheidend prägte. Zu seinen bekanntesten Werken zählen Die Möwe, Onkel Wanja, Drei Schwestern und Der Kirschgarten. Seit Jahren an Tuberkulose leidend, reiste er zur Kur nach Badenweiler in Deutschland; dort starb er am 15. Juli 1904 im Alter von 44 Jahren.",
+  "shortDescriptionEs": "Antón Pávlovich Chéjov fue un dramaturgo, cuentista y médico ruso cuya escritura sobria y psicológicamente precisa transformó el teatro y el relato moderno. Entre sus obras más célebres están La gaviota, Tío Vania, Tres hermanas y El jardín de los cerezos. Enfermo de tuberculosis durante años, viajó a Badenweiler, Alemania, en busca de alivio; murió allí el 15 de julio de 1904, a los 44 años.",
+  "shortDescriptionRu": "Антон Павлович Чехов был русским драматургом, писателем и врачом, чья лаконичная и психологически тонкая манера письма сильно повлияла на современную драму и короткий рассказ. Среди его главных произведений — «Чайка», «Дядя Ваня», «Три сестры» и «Вишнёвый сад». Много лет страдая от туберкулёза, он уехал на лечение в Баденвейлер в Германии; там он умер 15 июля 1904 года в возрасте 44 лет.",
+  "pictureUrls": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Chekhov%20with%20bow-tie%20sepia%20image.jpg",
+    "https://commons.wikimedia.org/wiki/Anton_Pavlovich_Chekhov"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anton_Chekhov",
+    "https://www.wikidata.org/wiki/Q5685",
+    "https://www.britannica.com/biography/Anton-Chekhov",
+    "https://commons.wikimedia.org/wiki/Anton_Pavlovich_Chekhov",
+    "https://pubmed.ncbi.nlm.nih.gov/380022/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q35802",  "Name": "Benedictus de Spinoza",  "BirthDate": "1632-11-24T00:00:00Z",  "DeathDate": "1677-02-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Spinoza.jpg",  "SiteLinksCnt": 176,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"3408":{"pageid":3408,"ns":0,"title":"Baruch Spinoza","extract":"Baruch (de) Spinoza (24 November 1632 \u2013 21 February 1677), also known under his Latinized pen name Benedictus de Spinoza, was a philosopher of Portuguese-Jewish origin, who was born and lived in the Dutch Republic. A forerunner of the Age of Enlightenment, Spinoza significantly influenced modern biblical criticism, 17th-century rationalism, and Dutch intellectual culture, establishing himself as one of the most important and radical philosophers of the early modern period. Influenced by Stoicism, Thomas Hobbes, Ren\u00e9 Descartes, Ibn Tufayl, and heterodox Christians, Spinoza was a leading philosopher of the Dutch Golden Age.\nSpinoza was born in Amsterdam to a Marrano family that fled Portugal for the more tolerant Dutch Republic. He received a traditional Jewish education, learning Hebrew and studying sacred texts within the Portuguese Jewish community, where his father was a prominent merchant. As a young man, Spinoza challenged rabbinic authority and questioned Jewish doctrines, leading to his permanent expulsion from his Jewish community in 1656. Following that expulsion, he distanced himself from all religious affiliations and devoted himself to philosophical inquiry and lens grinding. Spinoza attracted a dedicated circle of followers who gathered to discuss his writings and joined him in the intellectual pursuit of truth.\nSpinoza published sparingly during his lifetime to circumvent persecution and the suppression of his works. In his Tractatus Theologico-Politicus, described by Steven Nadler as \"one of the most important books of Western thought\", Spinoza questioned the divine origin of the Hebrew Bible and the nature of God while arguing that ecclesiastic authority should have no role in a secular, democratic state. Ethics argues for a view of God that scholars interpret variously as pantheistic, panentheistic, or atheistic, and it explores the place of human freedom in a world devoid of theological, cosmological, and political moorings. Rejecting messianism and the emphasis on the afterlife, Spinoza emphasized appreciating and valuing life for oneself and others. By advocating for individual liberty in its moral, psychological, and metaphysical dimensions, Spinoza helped establish the genre of political writing called secular theology.\nSpinoza\u2019s philosophy addresses multiple areas of philosophical discourse, including metaphysics, epistemology, political philosophy, ethics, philosophy of mind, and philosophy of science. His works were published posthumously by his friends and influenced philosophers for the next two centuries. Spinoza is celebrated as one of the most original and influential thinkers of the seventeenth century. Rebecca Goldstein described him as \"the renegade Jew who gave us modernity\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q35802")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q35802",
+  "isRealHuman": true,
+  "birthDate": "1632-11-24",
+  "deathDate": "1677-02-21",
+  "ageAtDeath": 44,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are strongly supported by Wikidata, Wikipedia, Britannica, and the Stanford Encyclopedia of Philosophy. The age calculation is straightforward: Spinoza was born on 1632-11-24 and died on 1677-02-21, before reaching his 45th birthday, so he was 44. A small uncertainty is reserved only for normal historical-source caution, not for the calculation itself.",
+  "shortDescriptionEn": "Baruch Spinoza, also known by his Latin name Benedictus de Spinoza, was a Portuguese-Dutch philosopher whose radical rationalism helped shape modern biblical criticism, Enlightenment thought, democratic political theory, and debates about God, nature, freedom, and the mind. Excommunicated from Amsterdam’s Portuguese-Jewish community in 1656, he lived independently as a thinker and lens grinder while writing works such as the Theological-Political Treatise and Ethics. He died in The Hague on 21 February 1677 at age 44, probably from a lung illness often linked to tuberculosis and possibly aggravated by glass dust from lens grinding.",
+  "shortDescriptionFr": "Baruch Spinoza, également connu sous son nom latin Benedictus de Spinoza, fut un philosophe portugais-néerlandais dont le rationalisme radical a marqué la critique biblique moderne, la pensée des Lumières, la théorie politique démocratique et les débats sur Dieu, la nature, la liberté et l’esprit. Excommunié de la communauté juive portugaise d’Amsterdam en 1656, il mena une vie indépendante de penseur et de polisseur de lentilles, écrivant notamment le Traité théologico-politique et l’Éthique. Il mourut à La Haye le 21 février 1677, à l’âge de 44 ans, probablement d’une maladie pulmonaire souvent associée à la tuberculose et peut-être aggravée par la poussière de verre liée au polissage des lentilles.",
+  "shortDescriptionDe": "Baruch Spinoza, auch unter seinem lateinischen Namen Benedictus de Spinoza bekannt, war ein portugiesisch-niederländischer Philosoph, dessen radikaler Rationalismus die moderne Bibelkritik, das Denken der Aufklärung, die demokratische politische Theorie sowie Debatten über Gott, Natur, Freiheit und Geist prägte. Nach seinem Ausschluss aus der portugiesisch-jüdischen Gemeinde Amsterdams im Jahr 1656 lebte er als unabhängiger Denker und Linsenschleifer und verfasste Werke wie den Theologisch-politischen Traktat und die Ethik. Er starb am 21. Februar 1677 in Den Haag im Alter von 44 Jahren, wahrscheinlich an einer Lungenerkrankung, die häufig mit Tuberkulose und möglicherweise mit Glasstaub aus dem Linsenschleifen in Verbindung gebracht wird.",
+  "shortDescriptionEs": "Baruch Spinoza, también conocido por su nombre latino Benedictus de Spinoza, fue un filósofo portugués-neerlandés cuyo racionalismo radical influyó en la crítica bíblica moderna, el pensamiento de la Ilustración, la teoría política democrática y los debates sobre Dios, la naturaleza, la libertad y la mente. Excomulgado de la comunidad judía portuguesa de Ámsterdam en 1656, vivió de forma independiente como pensador y pulidor de lentes, y escribió obras como el Tratado teológico-político y la Ética. Murió en La Haya el 21 de febrero de 1677, a los 44 años, probablemente por una enfermedad pulmonar asociada a menudo con la tuberculosis y quizá agravada por el polvo de vidrio producido al pulir lentes.",
+  "shortDescriptionRu": "Барух Спиноза, также известный под латинским именем Бенедикт де Спиноза, был португало-нидерландским философом, чей радикальный рационализм повлиял на современную библейскую критику, мысль Просвещения, демократическую политическую теорию и споры о Боге, природе, свободе и разуме. После отлучения от португальско-еврейской общины Амстердама в 1656 году он жил как независимый мыслитель и шлифовальщик линз, создав такие труды, как «Богословско-политический трактат» и «Этика». Он умер в Гааге 21 февраля 1677 года в возрасте 44 лет, вероятно, от болезни лёгких, часто связываемой с туберкулёзом и, возможно, усугублённой стеклянной пылью от шлифовки линз.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Baruch_Spinoza",
+    "https://www.wikidata.org/wiki/Q35802",
+    "https://plato.stanford.edu/entries/spinoza/",
+    "https://www.britannica.com/biography/Benedict-de-Spinoza",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Spinoza.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2908",  "Name": "Antoine de Saint-Exupéry",  "BirthDate": "1900-06-29T00:00:00Z",  "DeathDate": "1944-07-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/11exupery-inline1-500.jpg",  "SiteLinksCnt": 167,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"63174":{"pageid":63174,"ns":0,"title":"Antoine de Saint-Exup\u00e9ry","extract":"Antoine Marie Jean-Baptiste Roger, vicomte de Saint-Exup\u00e9ry (29 June 1900 \u2013 c. 31 July 1944), known simply as Antoine de Saint-Exup\u00e9ry (UK: , US: , French: [\u0251\u0303twan d\u0259 s\u025b\u0303t\u203f\u025b\u0261zype\u0281i] ), was a French writer, poet, journalist and aviator.\nBorn in Lyon to an aristocratic family, Saint-Exup\u00e9ry trained as a commercial pilot in the early 1920s, working airmail routes across Europe, Africa, and South America. Between 1926 and 1939, four of his literary works were published: the short story The Aviator, novels Southern Mail and Night Flight, and the memoir Wind, Sand and Stars. Saint-Exup\u00e9ry joined the French Air Force for World War II and flew reconnaissance missions until France's armistice with Germany in 1940. After being demobilised by the Air Force, Saint-Exup\u00e9ry lived in exile in the United States between 1941 and 1943 and helped persuade it to enter the war. During this time, his works Flight to Arras and The Little Prince were published.\n\nSaint-Exup\u00e9ry returned to combat by joining the Free French Air Force in 1943, despite being past the maximum age for a war pilot and in declining health. On 31 July 1944, during a reconnaissance mission over Corsica, Saint-Exup\u00e9ry's plane disappeared: it is presumed to have crashed. Debris from the wreckage was discovered near Marseille in 2000, but the cause of the crash remains unknown."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2908")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2908",
+  "isRealHuman": true,
+  "birthDate": "1900-06-29",
+  "deathDate": "1944-07-31",
+  "ageAtDeath": 44,
+  "confidence": 96,
+  "confidenceExplained": "The birth date, death/disappearance date, identity, and profession are consistently supported by Wikipedia and Britannica. The only small uncertainty is that Saint-Exupéry disappeared during a reconnaissance flight and his body was not recovered; however, 31 July 1944 is the accepted date of death, and it clearly places him at 44 years old.",
+  "shortDescriptionEn": "Antoine de Saint-Exupéry was a French aviator, writer, poet and journalist whose flying career shaped some of the most memorable literature of the 20th century. He worked on pioneering airmail routes across Europe, Africa and South America, and his books, including Night Flight, Wind, Sand and Stars and The Little Prince, combined adventure, moral reflection and poetic clarity. During World War II he flew reconnaissance missions for France. On 31 July 1944, aged 44, his aircraft disappeared over the Mediterranean during a mission near Corsica and Marseille; wreckage was later found, but the exact cause of the crash remains uncertain.",
+  "shortDescriptionFr": "Antoine de Saint-Exupéry était un aviateur, écrivain, poète et journaliste français dont l’expérience du vol a profondément marqué son œuvre. Pilote sur les premières lignes aéropostales en Europe, en Afrique et en Amérique du Sud, il a écrit notamment Vol de nuit, Terre des hommes et Le Petit Prince, mêlant aventure, méditation morale et poésie limpide. Pendant la Seconde Guerre mondiale, il effectua des missions de reconnaissance pour la France. Le 31 juillet 1944, à l’âge de 44 ans, son avion disparut au-dessus de la Méditerranée lors d’une mission près de la Corse et de Marseille; des débris furent retrouvés plus tard, mais la cause exacte du crash demeure incertaine.",
+  "shortDescriptionDe": "Antoine de Saint-Exupéry war ein französischer Flieger, Schriftsteller, Dichter und Journalist, dessen Erfahrungen in der Luftfahrt sein literarisches Werk entscheidend prägten. Als Pilot auf frühen Luftpostrouten in Europa, Afrika und Südamerika sammelte er Eindrücke, die in Werke wie Nachtflug, Wind, Sand und Sterne und Der kleine Prinz einflossen. Seine Bücher verbinden Abenteuer, Nachdenklichkeit und poetische Klarheit. Im Zweiten Weltkrieg flog er Aufklärungsmissionen für Frankreich. Am 31. Juli 1944 verschwand sein Flugzeug über dem Mittelmeer bei einem Einsatz in der Nähe von Korsika und Marseille; er war 44 Jahre alt, und die genaue Absturzursache ist bis heute nicht sicher geklärt.",
+  "shortDescriptionEs": "Antoine de Saint-Exupéry fue un aviador, escritor, poeta y periodista francés cuya experiencia como piloto dio forma a una de las obras literarias más queridas del siglo XX. Voló en rutas pioneras de correo aéreo por Europa, África y Sudamérica, y escribió libros como Vuelo nocturno, Tierra de hombres y El principito, donde combinó aventura, reflexión moral y una prosa poética. Durante la Segunda Guerra Mundial realizó misiones de reconocimiento para Francia. El 31 de julio de 1944, a los 44 años, su avión desapareció sobre el Mediterráneo durante una misión cerca de Córcega y Marsella; más tarde se hallaron restos, pero la causa exacta del accidente sigue siendo incierta.",
+  "shortDescriptionRu": "Антуан де Сент-Экзюпери был французским лётчиком, писателем, поэтом и журналистом, чья авиационная судьба стала основой его литературного мира. Он летал на ранних почтовых авиалиниях в Европе, Африке и Южной Америке, а его книги, включая Ночной полёт, Планету людей и Маленького принца, соединили приключение, нравственное размышление и поэтическую ясность. Во время Второй мировой войны он выполнял разведывательные полёты за Францию. 31 июля 1944 года, в возрасте 44 лет, его самолёт исчез над Средиземным морем во время миссии недалеко от Корсики и Марселя; обломки позднее нашли, но точная причина крушения остаётся неизвестной.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+    "https://www.britannica.com/biography/Antoine-de-Saint-Exupery",
+    "https://www.encyclopedia.com/people/literature-and-arts/french-literature-biographies/antoine-de-saint-exupery",
+    "https://www.wikidata.org/wiki/Q2908"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1512",  "Name": "Robert Louis Stevenson",  "BirthDate": "1850-11-13T00:00:00Z",  "DeathDate": "1894-12-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Louis%20Stevenson%20by%20Henry%20Walter%20Barnett%20bw.jpg",  "SiteLinksCnt": 153,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"26444":{"pageid":26444,"ns":0,"title":"Robert Louis Stevenson","extract":"Robert Louis Stevenson (Louis  like Lewis; born Robert Lewis Balfour Stevenson; 13 November 1850 \u2013 3 December 1894) was a Scottish novelist, essayist, poet and travel writer. He is best known for the novels Treasure Island (1883), Strange Case of Dr Jekyll and Mr Hyde (1886), and Kidnapped (1886) and for the poetry collection A Child's Garden of Verses (1885).\nBorn and educated in Edinburgh, Stevenson suffered from serious bronchial trouble for much of his life but managed to write prolifically and travel widely despite his poor health. As a young man, he mixed in London literary circles, receiving encouragement from Sidney Colvin, Andrew Lang, Edmund Gosse, Leslie Stephen and W. E. Henley, the last of whom may have provided the model for Long John Silver in Treasure Island. In 1890 he settled in Samoa, where, alarmed at increasing European and American influence in the South Sea islands, his writing turned from romance and adventure fiction toward a darker realism. He died of a stroke in his island home in 1894 at age 44.\nA celebrity in his lifetime, Stevenson's critical reputation has fluctuated since his death, although today his works are held in general acclaim. In 2018 he was ranked just behind Charles Dickens as the 26th-most-translated author in the world."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1512")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1512",
+  "isRealHuman": true,
+  "birthDate": "1850-11-13",
+  "deathDate": "1894-12-03",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable biographical sources agree that Robert Louis Stevenson was born on 1850-11-13 and died on 1894-12-03. Since his death occurred after his birthday in 1894, his age at death was exactly 44 years.",
+  "shortDescriptionEn": "Robert Louis Stevenson was a Scottish novelist, poet, essayist and travel writer whose restless imagination produced Treasure Island, Kidnapped, Strange Case of Dr Jekyll and Mr Hyde, and A Child's Garden of Verses. Born in Edinburgh and often weakened by chronic respiratory illness, he turned poor health and travel into literary energy, eventually settling in Samoa, where he became known as Tusitala, the teller of tales. On 3 December 1894, at his home in Vailima, he suddenly collapsed after speaking with his wife and died within hours, probably from a stroke or brain haemorrhage. He was buried on Mount Vaea overlooking the sea.",
+  "shortDescriptionFr": "Robert Louis Stevenson était un romancier, poète, essayiste et écrivain voyageur écossais, auteur de Treasure Island, Kidnapped, Strange Case of Dr Jekyll and Mr Hyde et A Child's Garden of Verses. Né à Édimbourg et longtemps fragilisé par de graves troubles respiratoires, il transforma la maladie et le voyage en matière littéraire, avant de s'installer aux Samoa, où il fut appelé Tusitala, le conteur. Le 3 décembre 1894, dans sa maison de Vailima, il s'effondra soudainement après avoir parlé avec son épouse et mourut quelques heures plus tard, probablement d'un accident vasculaire cérébral ou d'une hémorragie cérébrale. Il fut enterré sur le mont Vaea, face à la mer.",
+  "shortDescriptionDe": "Robert Louis Stevenson war ein schottischer Romancier, Dichter, Essayist und Reiseschriftsteller, bekannt für Treasure Island, Kidnapped, Strange Case of Dr Jekyll and Mr Hyde und A Child's Garden of Verses. In Edinburgh geboren und zeitlebens von schweren Atemwegsbeschwerden geplagt, machte er Krankheit, Abenteuerlust und Reisen zu einem Motor seiner Literatur. Später ließ er sich auf Samoa nieder, wo man ihn Tusitala, den Geschichtenerzähler, nannte. Am 3. Dezember 1894 brach er in seinem Haus in Vailima plötzlich zusammen, nachdem er mit seiner Frau gesprochen hatte, und starb wenige Stunden später, wahrscheinlich an einem Schlaganfall oder einer Hirnblutung. Begraben wurde er auf dem Mount Vaea mit Blick auf das Meer.",
+  "shortDescriptionEs": "Robert Louis Stevenson fue un novelista, poeta, ensayista y escritor de viajes escocés, célebre por Treasure Island, Kidnapped, Strange Case of Dr Jekyll and Mr Hyde y A Child's Garden of Verses. Nacido en Edimburgo y marcado durante gran parte de su vida por problemas respiratorios, convirtió la enfermedad, el viaje y la aventura en una literatura de enorme energía narrativa. En sus últimos años se estableció en Samoa, donde fue conocido como Tusitala, el narrador de historias. El 3 de diciembre de 1894, en su casa de Vailima, se desplomó repentinamente tras hablar con su esposa y murió pocas horas después, probablemente por un derrame cerebral o una hemorragia cerebral. Fue enterrado en el monte Vaea, con vistas al mar.",
+  "shortDescriptionRu": "Роберт Льюис Стивенсон был шотландским романистом, поэтом, эссеистом и автором путевых книг, прославившимся произведениями Treasure Island, Kidnapped, Strange Case of Dr Jekyll and Mr Hyde и A Child's Garden of Verses. Он родился в Эдинбурге и большую часть жизни страдал от тяжелых респираторных проблем, но сумел превратить болезнь, путешествия и жажду приключений в яркую литературную силу. В последние годы он жил на Самоа, где получил имя Туситала, рассказчик историй. 3 декабря 1894 года в своем доме в Ваилиме он внезапно упал после разговора с женой и умер через несколько часов, вероятно, от инсульта или кровоизлияния в мозг. Его похоронили на горе Ваеа с видом на море.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson",
+    "https://www.britannica.com/biography/Robert-Louis-Stevenson",
+    "https://kids.britannica.com/kids/article/Robert-Louis-Stevenson/390853",
+    "https://media.nls.uk/news/letter-tells-of-final-hours-of-robert-louis-stevenson",
+    "https://robert-louis-stevenson.org/life/",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Louis%20Stevenson%20by%20Henry%20Walter%20Barnett%20bw.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw214495/Robert-Louis-Stevenson"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131149",  "Name": "Henry David Thoreau",  "BirthDate": "1817-07-12T00:00:00Z",  "DeathDate": "1862-05-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20D.%20Maxham%20-%20Henry%20David%20Thoreau%20-%20Restored%20-%20greyscale%20-%20straightened.jpg",  "SiteLinksCnt": 143,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"43421":{"pageid":43421,"ns":0,"title":"Henry David Thoreau","extract":"Henry David Thoreau (born David Henry Thoreau; July 12, 1817 \u2013 May 6, 1862) was an American naturalist, essayist, poet, and philosopher. A leading transcendentalist, he is best known for his book Walden, a reflection upon simple living in natural surroundings, and his essay \"Civil Disobedience\" (originally published as \"Resistance to Civil Government\"), an argument in favor of citizen disobedience against an unjust state.\nThoreau's books, articles, essays, journals, and poetry amount to more than 20 volumes. Among his lasting contributions are his writings on natural history and philosophy, in which he anticipated the methods and findings of ecology and environmental history, two sources of modern-day environmentalism. His literary style interweaves close observation of nature, personal experience, pointed rhetoric, symbolic meanings, and historical lore, while displaying a poetic sensibility, philosophical austerity, and attention to practical detail. He was also deeply interested in the idea of survival in the face of hostile elements, historical change, and natural decay; at the same time he advocated abandoning waste and illusion to discover life's true essential needs.\nThoreau was a lifelong abolitionist, delivering lectures that attacked the fugitive slave law while praising the writings of Wendell Phillips and defending the abolitionist John Brown. Thoreau's philosophy of civil disobedience later influenced the political thoughts and actions of notable figures such as Leo Tolstoy, Mahatma Gandhi, and Martin Luther King Jr.\nThoreau is sometimes referred to retrospectively as an anarchist, but may perhaps be more properly regarded as a proto-anarchist."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131149")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q131149",
+  "isRealHuman": true,
+  "birthDate": "1817-07-12",
+  "deathDate": "1862-05-06",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The identity is unambiguous: the Wikidata ID Q131149, supplied name, dates, and encyclopedia summaries all match Henry David Thoreau. His birth date is consistently given as 1817-07-12 and his death date as 1862-05-06. Because he died about two months before his 45th birthday, the calculated age at death is exactly 44.",
+  "shortDescriptionEn": "Henry David Thoreau was an American naturalist, essayist, poet, philosopher, abolitionist, and leading figure of Transcendentalism. He is best remembered for Walden, his classic meditation on simple living in nature, and Civil Disobedience, a powerful argument against unjust government authority. In his final years his health declined from long-running tuberculosis, worsened after a cold and bronchitis; he died at his mother’s home in Concord, Massachusetts, on May 6, 1862, at age 44.",
+  "shortDescriptionFr": "Henry David Thoreau était un naturaliste, essayiste, poète, philosophe et abolitionniste américain, figure majeure du transcendantalisme. Il reste surtout connu pour Walden, réflexion devenue classique sur la vie simple au contact de la nature, et pour La Désobéissance civile, texte majeur contre l’autorité injuste de l’État. Ses dernières années furent marquées par la tuberculose, aggravée après un refroidissement et une bronchite; il mourut chez sa mère à Concord, dans le Massachusetts, le 6 mai 1862, à l’âge de 44 ans.",
+  "shortDescriptionDe": "Henry David Thoreau war ein amerikanischer Naturforscher, Essayist, Dichter, Philosoph, Abolitionist und eine zentrale Gestalt des Transzendentalismus. Berühmt wurde er vor allem durch Walden, seine klassische Betrachtung über ein einfaches Leben in der Natur, sowie durch Civil Disobedience, einen einflussreichen Essay gegen ungerechte Staatsgewalt. In seinen letzten Jahren verschlechterte sich seine Gesundheit durch Tuberkulose, nach einer Erkältung und Bronchitis weiter geschwächt; er starb am 6. Mai 1862 im Haus seiner Mutter in Concord, Massachusetts, im Alter von 44 Jahren.",
+  "shortDescriptionEs": "Henry David Thoreau fue un naturalista, ensayista, poeta, filósofo y abolicionista estadounidense, además de una figura destacada del trascendentalismo. Se le recuerda sobre todo por Walden, su célebre reflexión sobre la vida sencilla en la naturaleza, y por Desobediencia civil, una defensa influyente de la resistencia frente a un gobierno injusto. En sus últimos años sufrió un deterioro causado por la tuberculosis, agravado tras un resfriado y una bronquitis; murió en la casa de su madre en Concord, Massachusetts, el 6 de mayo de 1862, a los 44 años.",
+  "shortDescriptionRu": "Генри Дэвид Торо был американским натуралистом, эссеистом, поэтом, философом, аболиционистом и одной из ключевых фигур трансцендентализма. Больше всего он известен книгой Уолден, ставшей классическим размышлением о простой жизни среди природы, и эссе О гражданском неповиновении, влиятельным выступлением против несправедливой государственной власти. В последние годы его здоровье ухудшалось из-за туберкулёза, усугублённого простудой и бронхитом; он умер в доме своей матери в Конкорде, штат Массачусетс, 6 мая 1862 года в возрасте 44 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Benjamin_D._Maxham_-_Henry_David_Thoreau_-_Restored_-_greyscale_-_straightened.jpg",
+    "https://commons.wikimedia.org/wiki/File:Benjamin_D._Maxham_-_Henry_David_Thoreau_-_Restored.jpg",
+    "https://commons.wikimedia.org/wiki/File:Benjamin_D._Maxham_-_Henry_David_Thoreau_-_Restored_-_sepia_-_straightened.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Photographs_of_Thoreau"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_David_Thoreau",
+    "https://www.britannica.com/biography/Henry-David-Thoreau",
+    "https://www.wikidata.org/wiki/Q131149",
+    "https://www.walden.org/what-we-do/library/thoreau/a-brief-chronology/",
+    "https://www.pbs.org/wgbh/americanexperience/features/brown-henry-david-thoreau/",
+    "https://concordlibrary.org/special-collections/essays-on-concord-history/a-gentle-death-tuberculosis-in-19th-century-concord",
+    "https://commons.wikimedia.org/wiki/File:Benjamin_D._Maxham_-_Henry_David_Thoreau_-_Restored_-_greyscale_-_straightened.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q676555",  "Name": "Francis of Assisi",  "BirthDate": "1182-07-01T00:00:00Z",  "DeathDate": "1226-10-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/StFrancis%20part.jpg",  "SiteLinksCnt": 139,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"11638":{"pageid":11638,"ns":0,"title":"Francis of Assisi","extract":"Giovanni di Pietro di Bernardone (c. 1181\u20133 October 1226), known as Francis of Assisi, was an Italian mystic, poet and Catholic friar who founded the religious order of the Franciscans. Inspired to lead a Christian life of poverty, he became a beggar and an itinerant preacher.\nOne of the most venerated figures in Christianity, Francis was canonized by Pope Gregory IX on 16 July 1228. He is commonly portrayed wearing a brown habit with a rope tied around his waist, featuring three knots symbolizing the evangelical counsels of poverty, chastity, and obedience.\nIn 1219, Francis went to Egypt in an attempt to convert the sultan Al-Kamil and put an end to the conflict of the Fifth Crusade. In 1223, he arranged for the first live nativity scene as part of the annual Christmas celebration in Greccio. According to Christian tradition, Francis displayed stigmata resembling the wounds on the hands and feet of crucified Christ during the apparition of a seraphic angel in a religious ecstasy in 1224.\nFrancis is associated with patronage of animals and the environment. It became customary for churches to hold ceremonies blessing animals on his feast day of 4 October, which became World Animal Day. Francis was noted for his devotion to the Eucharist. Along with Catherine of Siena, Francis was designated patron saint of Italy. He is also the namesake of the city of San Francisco. 17 September is the feast of Francis' stigmatization."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q676555")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q676555",
+  "isRealHuman": true,
+  "birthDate": "1182-07-01",
+  "deathDate": "1226-10-03",
+  "ageAtDeath": 44,
+  "confidence": 72,
+  "confidenceExplained": "Francis of Assisi is well attested as a historical person. The death date is strongly supported as 3 October 1226. The exact birth date is not known: major sources give 1181/1182 or circa 1181. I used 1182-07-01 as a reasonable estimated date within the commonly cited range, which gives an age at death of 44. If a late-1181 birth were assumed, the age could still be approximately 44, while some 1181 assumptions could yield 45.",
+  "shortDescriptionEn": "Francis of Assisi, born Giovanni di Pietro di Bernardone, was an Italian mystic, preacher, poet, and founder of the Franciscan movement. He rejected wealth for radical poverty, inspired followers across medieval Europe, and became closely associated with peace, animals, the natural world, and devotion to Christ. In his final years he suffered severe illness and, according to Christian tradition, bore the stigmata. He returned to Assisi and died near the Portiuncula on 3 October 1226, aged 44.",
+  "shortDescriptionFr": "François d’Assise, né Giovanni di Pietro di Bernardone, fut un mystique, prédicateur et poète italien, fondateur du mouvement franciscain. Il renonça à la richesse pour une pauvreté radicale, attira de nombreux disciples dans l’Europe médiévale et resta associé à la paix, aux animaux, à la nature et à la dévotion au Christ. Dans ses dernières années, il souffrit de graves maladies et, selon la tradition chrétienne, porta les stigmates. Revenu à Assise, il mourut près de la Portioncule le 3 octobre 1226, à 44 ans.",
+  "shortDescriptionDe": "Franz von Assisi, geboren als Giovanni di Pietro di Bernardone, war ein italienischer Mystiker, Prediger, Dichter und Gründer der franziskanischen Bewegung. Er verzichtete auf Reichtum zugunsten radikaler Armut, gewann im mittelalterlichen Europa viele Anhänger und wurde mit Frieden, Tieren, Naturverbundenheit und Christusfrömmigkeit verbunden. In seinen letzten Jahren litt er an schweren Krankheiten und trug der christlichen Überlieferung zufolge die Stigmata. Er kehrte nach Assisi zurück und starb am 3. Oktober 1226 nahe der Portiuncula im Alter von 44 Jahren.",
+  "shortDescriptionEs": "Francisco de Asís, nacido Giovanni di Pietro di Bernardone, fue un místico, predicador y poeta italiano, fundador del movimiento franciscano. Renunció a la riqueza por una pobreza radical, inspiró a seguidores por toda la Europa medieval y quedó asociado con la paz, los animales, la naturaleza y la devoción a Cristo. En sus últimos años sufrió graves enfermedades y, según la tradición cristiana, llevó los estigmas. Regresó a Asís y murió cerca de la Porciúncula el 3 de octubre de 1226, a los 44 años.",
+  "shortDescriptionRu": "Франциск Ассизский, родившийся как Джованни ди Пьетро ди Бернардоне, был итальянским мистиком, проповедником, поэтом и основателем францисканского движения. Он отказался от богатства ради радикальной бедности, вдохновил последователей по всей средневековой Европе и стал ассоциироваться с миром, животными, природой и преданностью Христу. В последние годы он тяжело болел и, согласно христианской традиции, носил стигматы. Он вернулся в Ассизи и умер возле Порциункулы 3 октября 1226 года в возрасте 44 лет.",
+  "pictures": [
+    "https://www.wikiart.org/en/cimabue/saint-francis-of-assisi-detail",
+    "https://en.wikipedia.org/wiki/File:Saint_Francis_of_Assisi_by_Jusepe_de_Ribera.jpg",
+    "https://paintingvalley.com/saint-francis-of-assisi-painting",
+    "https://catherinenolinfineart.blogspot.com/2015/09/st-francis-of-assisi-new-painting.html"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francis_of_Assisi",
+    "https://www.britannica.com/biography/Saint-Francis-of-Assisi",
+    "https://www.newadvent.org/cathen/06221a.htm",
+    "https://www.franciscanmedia.org/franciscan-tradition-and-resources/chronology-of-the-life-of-st-francis/",
+    "https://www.franciscanmedia.org/franciscan-tradition-and-resources/transitus-st-francis-embraces-sister-death/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q93354",  "Name": "F. Scott Fitzgerald",  "BirthDate": "1896-09-24T00:00:00Z",  "DeathDate": "1940-12-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/F.%20Scott%20Fitzgerald%20%281929%20photo%20portrait%20by%20Nickolas%20Muray%29%20Cropped.jpg",  "SiteLinksCnt": 121,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"12505972":{"pageid":12505972,"ns":0,"title":"F. Scott Fitzgerald","extract":"Francis Scott Key Fitzgerald (September 24, 1896 \u2013 December 21, 1940), widely known as F. Scott Fitzgerald or simply Scott Fitzgerald, was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term that he popularized in his short story collection Tales of the Jazz Age. He published four novels, four story collections, and 164 short stories. He achieved transient success and fortune in the 1920s, but did not receive critical acclaim until after his death. He is now widely regarded as one of the greatest American writers of the 20th century.\nFitzgerald was born into a middle-class family in Saint Paul, Minnesota, but he was raised primarily in New York state. He attended Princeton University where he befriended future literary critic Edmund Wilson. He had a failed romantic relationship with Chicago socialite Ginevra King and dropped out of Princeton in 1917 to join the Army during World War I. While stationed in Alabama, he met Zelda Sayre, a Southern debutante who belonged to Montgomery's exclusive country-club set. She initially rejected Fitzgerald's marriage proposal due to his lack of financial prospects, but she agreed to marry him after he published the commercially successful This Side of Paradise (1920). The novel became a cultural sensation and cemented his reputation as one of the eminent writers of the decade.\nHis second novel The Beautiful and Damned (1922) propelled Fitzgerald further into the cultural elite. To maintain his affluent lifestyle, he wrote numerous stories for popular magazines such as The Saturday Evening Post, Collier's Weekly, and Esquire. He frequented Europe during this period, where he befriended modernist writers and artists of the \"Lost Generation\" expatriate community, including Ernest Hemingway. His third novel The Great Gatsby (1925) received generally favorable reviews but was a commercial failure, selling fewer than 23,000 copies in its first year. Despite its lackluster debut, The Great Gatsby is hailed by some literary critics as the \"Great American Novel\". Fitzgerald finished his last completed novel Tender Is the Night (1934) following the deterioration of his wife's mental health and her placement in a mental institution for schizophrenia.\nFitzgerald struggled financially because of the declining popularity of his works during the Great Depression. He then moved to Hollywood where he embarked on an unsuccessful career as a screenwriter. While living in Hollywood, he cohabited with columnist Sheilah Graham, his final companion before his death. He had long struggled with alcoholism, and he attained sobriety only to die of a heart attack in 1940 at age 44. His friend Edmund Wilson edited and published the unfinished The Last Tycoon (1941). Wilson described Fitzgerald's style: \"romantic, but also cynical; he is bitter as well as ecstatic; astringent as well as lyrical. He casts himself in the role of playboy, yet at the playboy he incessantly mocks. He is vain, a little malicious, of quick intelligence and wit, and has the Irish gift for turning language into something iridescent and surprising.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q93354")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q93354",
+  "isRealHuman": true,
+  "birthDate": "1896-09-24",
+  "deathDate": "1940-12-21",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently given by Wikipedia, Britannica, Biography.com, and other biographical sources. Calculating from September 24, 1896 to December 21, 1940 gives 44 full years, with his 45th birthday still nine months away.",
+  "shortDescriptionEn": "F. Scott Fitzgerald was an American novelist, essayist, and short story writer whose work helped define the Jazz Age, a term he helped popularize. He is best remembered for The Great Gatsby, as well as This Side of Paradise, The Beautiful and Damned, and Tender Is the Night. His sharp portraits of ambition, wealth, romance, and disillusion made him one of the major American writers of the 20th century. After years of financial strain, declining health, and work as a Hollywood screenwriter, he died of a heart attack in Los Angeles on December 21, 1940, at age 44.",
+  "shortDescriptionFr": "F. Scott Fitzgerald était un romancier, essayiste et nouvelliste américain dont l’œuvre a contribué à définir l’âge du jazz, une expression qu’il a aidé à populariser. Il reste surtout connu pour Gatsby le Magnifique, ainsi que pour L’Envers du paradis, Les Heureux et les Damnés et Tendre est la nuit. Ses portraits incisifs de l’ambition, de la richesse, de l’amour et de la désillusion en ont fait l’un des grands écrivains américains du XXe siècle. Après des années de difficultés financières, de santé fragile et de travail comme scénariste à Hollywood, il est mort d’une crise cardiaque à Los Angeles le 21 décembre 1940, à l’âge de 44 ans.",
+  "shortDescriptionDe": "F. Scott Fitzgerald war ein amerikanischer Romancier, Essayist und Kurzgeschichtenautor, dessen Werk das Jazz Age entscheidend prägte, einen Begriff, den er mit bekannt machte. Am berühmtesten ist er für Der große Gatsby, daneben für Diesseits vom Paradies, Die Schönen und Verdammten und Zärtlich ist die Nacht. Seine scharfen Darstellungen von Ehrgeiz, Reichtum, Liebe und Ernüchterung machten ihn zu einem der wichtigsten amerikanischen Schriftsteller des 20. Jahrhunderts. Nach Jahren finanzieller Sorgen, angeschlagener Gesundheit und Arbeit als Drehbuchautor in Hollywood starb er am 21. Dezember 1940 in Los Angeles an einem Herzinfarkt, im Alter von 44 Jahren.",
+  "shortDescriptionEs": "F. Scott Fitzgerald fue un novelista, ensayista y cuentista estadounidense cuya obra ayudó a definir la Era del Jazz, una expresión que él contribuyó a popularizar. Es recordado sobre todo por El gran Gatsby, además de A este lado del paraíso, Hermosos y malditos y Suave es la noche. Sus agudos retratos de la ambición, la riqueza, el amor y la desilusión lo convirtieron en uno de los grandes escritores estadounidenses del siglo XX. Tras años de dificultades económicas, problemas de salud y trabajo como guionista en Hollywood, murió de un ataque al corazón en Los Ángeles el 21 de diciembre de 1940, a los 44 años.",
+  "shortDescriptionRu": "Фрэнсис Скотт Фицджеральд был американским романистом, эссеистом и автором рассказов, чьи книги помогли определить образ «века джаза» — выражения, которое он сам популяризировал. Больше всего он известен романом Великий Гэтсби, а также произведениями По эту сторону рая, Прекрасные и проклятые и Ночь нежна. Его точные и яркие изображения честолюбия, богатства, любви и разочарования сделали его одним из ключевых американских писателей XX века. После лет финансовых трудностей, ухудшения здоровья и работы сценаристом в Голливуде он умер от сердечного приступа в Лос-Анджелесе 21 декабря 1940 года в возрасте 44 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/F._Scott_Fitzgerald",
+    "https://www.britannica.com/biography/F-Scott-Fitzgerald",
+    "https://www.loc.gov/item/today-in-history/september-24/",
+    "https://www.biography.com/authors-writers/f-scott-fitzgerald",
+    "https://fscottfitzgeraldsociety.org/about-us-2/biography/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43067",  "Name": "Heinrich Himmler",  "BirthDate": "1900-10-07T00:00:00Z",  "DeathDate": "1945-05-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-S72707%2C%20Heinrich%20Himmler.jpg",  "SiteLinksCnt": 118,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"13436":{"pageid":13436,"ns":0,"title":"Heinrich Himmler","extract":"Heinrich Luitpold Himmler (German: [\u02c8ha\u026an\u0281\u026a\u00e7 \u02c8lu\u02d0\u026atp\u0254lt \u02c8h\u026aml\u0250] ; 7 October 1900 \u2013 23 May 1945) was a German Nazi politician and military leader. He was the 4th Reichsf\u00fchrer of the Schutzstaffel (Protection Squadron; SS) from 1929 to 1945. He was a leading member of the Nazi Party, and one of the most powerful figures in Nazi Germany. He was also one of the main architects of the Holocaust, the genocide of Europe's Jewish population.\nAfter serving in a reserve battalion during World War I without seeing combat, Himmler went on to join the Nazi Party in 1923. In 1925, he joined the SS, which was initially a small paramilitary arm of the Nazi Party that served as a bodyguard unit for Adolf Hitler. Himmler rose steadily through the SS's ranks to become Reichsf\u00fchrer-SS by 1929. Under Himmler's leadership, the SS grew from a 290-man battalion into one of the most powerful institutions in Nazi Germany. Over the course of his career, Himmler acquired a reputation for good organisational skills and for selecting highly competent subordinates, such as Reinhard Heydrich. From 1943 onwards, he was both Chief of the Kriminalpolizei (Criminal Police) and Minister of the Interior, which gave him oversight of all police and security forces (including the Gestapo). He also controlled the Waffen-SS, a branch of the SS that served in combat alongside the Wehrmacht (Germany's armed forces) in World War II.\nAs the principal enforcer of the Nazis' racial policies, Himmler was responsible for operating concentration and extermination camps as well as forming the Einsatzgruppen death squads in German-occupied Europe. In this capacity, he played a central role in the genocide of an estimated 5.5\u20136 million Jews and the deaths of millions of other victims during the Holocaust. A day before the launch of Operation Barbarossa in June 1941, Himmler commissioned the drafting of Generalplan Ost, which was approved by Hitler in May 1942 and implemented by the Nazi regime, resulting in the deaths of approximately 14 million people in Eastern Europe.\nIn the last years of World War II, Hitler appointed Himmler as Commander of the Replacement Army and General Plenipotentiary for the administration of the Third Reich (Generalbevollm\u00e4chtigter f\u00fcr die Verwaltung). He was later given command of the Army Group Upper Rhine and the Army Group Vistula. He failed to achieve his assigned objectives, and Hitler replaced him in these posts. Realising the war was lost, Himmler attempted, without Hitler's knowledge, to open peace talks with the western Allies in March 1945. When Hitler learned of this on 28 April, he dismissed Himmler from all his posts and ordered his arrest. Himmler attempted to go into hiding but was captured by British forces. He died by suicide in British custody on 23 May 1945.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43067")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43067",
+  "isRealHuman": true,
+  "birthDate": "1900-10-07",
+  "deathDate": "1945-05-23",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The birth date, death date, and identity are consistent across multiple reliable references, including Wikipedia, Encyclopaedia Britannica, and the United States Holocaust Memorial Museum. Since Himmler was born on 1900-10-07 and died on 1945-05-23, he had not yet reached his 45th birthday, making his age at death 44.",
+  "shortDescriptionEn": "Heinrich Himmler was a German Nazi politician and military leader, best known as Reichsführer-SS and one of the most powerful figures in Nazi Germany. He built the SS into a vast instrument of terror, controlled major police and security forces, and played a central role in organizing the Holocaust and Nazi occupation policies. In the final weeks of World War II, after failed attempts to negotiate with the Western Allies, he was dismissed by Hitler, captured by British forces, and died by suicide in custody on 23 May 1945 at the age of 44.",
+  "shortDescriptionFr": "Heinrich Himmler était un homme politique et chef militaire nazi allemand, surtout connu comme Reichsführer-SS et comme l’une des figures les plus puissantes de l’Allemagne nazie. Il transforma la SS en un vaste instrument de terreur, contrôla d’importantes forces policières et de sécurité, et joua un rôle central dans l’organisation de la Shoah et des politiques d’occupation nazies. Dans les dernières semaines de la Seconde Guerre mondiale, après avoir tenté sans succès de négocier avec les Alliés occidentaux, il fut destitué par Hitler, capturé par les forces britanniques, puis se suicida en détention le 23 mai 1945, à l’âge de 44 ans.",
+  "shortDescriptionDe": "Heinrich Himmler war ein deutscher nationalsozialistischer Politiker und Militärführer, vor allem bekannt als Reichsführer-SS und als eine der mächtigsten Personen im nationalsozialistischen Deutschland. Er baute die SS zu einem weitreichenden Terrorapparat aus, kontrollierte zentrale Polizei- und Sicherheitskräfte und spielte eine maßgebliche Rolle bei der Organisation des Holocaust und der nationalsozialistischen Besatzungspolitik. In den letzten Wochen des Zweiten Weltkriegs versuchte er erfolglos, mit den westlichen Alliierten zu verhandeln; danach wurde er von Hitler entmachtet, von britischen Truppen gefangen genommen und starb am 23. Mai 1945 im Alter von 44 Jahren durch Suizid in Haft.",
+  "shortDescriptionEs": "Heinrich Himmler fue un político y dirigente militar nazi alemán, conocido principalmente como Reichsführer-SS y como una de las figuras más poderosas de la Alemania nazi. Convirtió las SS en un enorme aparato de terror, controló fuerzas policiales y de seguridad clave, y desempeñó un papel central en la organización del Holocausto y de las políticas de ocupación nazis. En las últimas semanas de la Segunda Guerra Mundial, tras intentar sin éxito negociar con los Aliados occidentales, fue destituido por Hitler, capturado por fuerzas británicas y murió por suicidio bajo custodia el 23 de mayo de 1945, a los 44 años.",
+  "shortDescriptionRu": "Генрих Гиммлер был немецким нацистским политиком и военным руководителем, наиболее известным как рейхсфюрер СС и одна из самых влиятельных фигур нацистской Германии. Он превратил СС в огромный аппарат террора, контролировал ключевые полицейские и службы безопасности, а также сыграл центральную роль в организации Холокоста и нацистской оккупационной политики. В последние недели Второй мировой войны, после неудачных попыток договориться с западными союзниками, он был отстранён Гитлером, захвачен британскими войсками и 23 мая 1945 года покончил с собой в заключении в возрасте 44 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Heinrich_Himmler",
+    "https://www.britannica.com/biography/Heinrich-Himmler",
+    "https://encyclopedia.ushmm.org/content/en/article/heinrich-himmler"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37571",  "Name": "Jackson Pollock",  "BirthDate": "1912-01-28T00:00:00Z",  "DeathDate": "1956-08-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jackson%20Pollock%20by%20Hans%20Namuth.jpg",  "SiteLinksCnt": 116,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"16307":{"pageid":16307,"ns":0,"title":"Jackson Pollock","extract":"Paul Jackson Pollock (; January 28, 1912 \u2013 August 11, 1956) was an American painter. A major figure in the abstract expressionist movement, he was widely noticed for his \"drip technique\" of pouring or splashing liquid household paint onto a horizontal surface, enabling him to view and paint his canvases from all angles. It was called all-over painting and action painting, because Pollock covered the entire canvas and used the force of his whole body to paint, often in a frenetic dancing style. This extreme form of abstraction divided critics: some praised the immediacy of the creation, while others derided the random effects.\nA reclusive and volatile personality, Pollock struggled with alcoholism for most of his life. In 1945, he married artist Lee Krasner, who became an important influence on his career and on his legacy. Pollock died in August 1956 at age 44 in an alcohol-related single-car collision when he was driving. Four months after his death, Pollock was given a memorial retrospective exhibition at the Museum of Modern Art (MoMA) in New York City. A larger, more comprehensive exhibition of his work was held there in 1967. In 1998 and 1999, Pollock's work was honored with large-scale retrospective exhibitions at MoMA and the Tate Gallery in London."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37571")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q37571",
+  "isRealHuman": true,
+  "birthDate": "1912-01-28",
+  "deathDate": "1956-08-11",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently supported by multiple reliable biographical sources. Jackson Pollock was born on 1912-01-28 and died on 1956-08-11, after his 44th birthday that year, so the calculated age at death is exactly 44.",
+  "shortDescriptionEn": "Jackson Pollock was an American painter and one of the defining figures of Abstract Expressionism, best known for his revolutionary drip technique and physically intense approach to painting. His work helped shift the center of modern art toward New York and made him a symbol of postwar artistic risk. He died at 44 in an alcohol-related single-car crash near his home in Springs, New York, a violent end that intensified the legend surrounding his life and art.",
+  "shortDescriptionFr": "Jackson Pollock était un peintre américain et l’une des figures majeures de l’expressionnisme abstrait, célèbre pour sa technique du dripping et sa manière très physique de peindre. Son œuvre a contribué à faire de New York un centre essentiel de l’art moderne d’après-guerre. Il est mort à 44 ans dans un accident de voiture impliquant l’alcool près de sa maison à Springs, dans l’État de New York, une fin brutale qui a renforcé le mythe entourant sa vie et son œuvre.",
+  "shortDescriptionDe": "Jackson Pollock war ein amerikanischer Maler und eine Schlüsselfigur des Abstrakten Expressionismus, berühmt für seine revolutionäre Drip-Painting-Technik und seine körperlich intensive Arbeitsweise. Sein Werk trug dazu bei, New York zu einem Zentrum der modernen Nachkriegskunst zu machen. Er starb im Alter von 44 Jahren bei einem alkoholbedingten Autounfall nahe seinem Haus in Springs, New York, ein tragisches Ende, das seinen künstlerischen Mythos weiter verstärkte.",
+  "shortDescriptionEs": "Jackson Pollock fue un pintor estadounidense y una figura esencial del expresionismo abstracto, conocido por su revolucionaria técnica de goteo y por una forma de pintar intensamente física. Su obra ayudó a situar a Nueva York en el centro del arte moderno de posguerra. Murió a los 44 años en un accidente automovilístico de un solo vehículo relacionado con el alcohol, cerca de su casa en Springs, Nueva York, un final abrupto que aumentó la leyenda de su vida y su arte.",
+  "shortDescriptionRu": "Джексон Поллок был американским художником и одной из ключевых фигур абстрактного экспрессионизма, прославившимся своей техникой разбрызгивания краски и физически напряжённым способом работы. Его творчество помогло сделать Нью-Йорк одним из центров послевоенного модернистского искусства. Он погиб в 44 года в автокатастрофе с участием одного автомобиля, связанной с алкоголем, недалеко от своего дома в Спрингсе, штат Нью-Йорк, что придало его биографии ещё более трагический и легендарный оттенок.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jackson_Pollock",
+    "https://www.britannica.com/biography/Jackson-Pollock",
+    "https://www.moma.org/collection/artists/4675",
+    "https://www.guggenheim.org/artwork/artist/jackson-pollock",
+    "https://www.tate.org.uk/art/artists/jackson-pollock-1785"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q187447",  "Name": "Pablo Escobar",  "BirthDate": "1949-12-01T00:00:00Z",  "DeathDate": "1993-12-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pablo%20Escobar%20Mug.jpg",  "SiteLinksCnt": 109,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"161570":{"pageid":161570,"ns":0,"title":"Pablo Escobar","extract":"Pablo Emilio Escobar Gaviria (; Spanish: [\u02c8pa\u03b2lo esko\u02c8\u03b2a\u027e]; 1 December 1949 \u2013 2 December 1993) was a Colombian drug lord, narcoterrorist, and politician who was the founder and leader of the Medell\u00edn Cartel. Dubbed the \"King of Cocaine\", Escobar was one of the wealthiest conventional criminals in history, having amassed an estimated net worth of US$30 billion by his death,\nwhile his drug cartel monopolized the cocaine trade into the US in the 1980s and early 1990s.\nBorn in Rionegro and raised in Medell\u00edn, Escobar studied briefly at the Universidad Aut\u00f3noma Latinoamericana of Medell\u00edn but left without graduating; he instead began engaging in criminality, selling illegal cigarettes and fake lottery tickets, as well as participating in motor vehicle theft and more heinous crimes. In the early 1970s, he began to work for various drug smugglers, often kidnapping and holding people for ransom. In 1976, Escobar founded the Medell\u00edn Cartel, which distributed powder cocaine, and established the first smuggling routes from Peru, Bolivia and Ecuador, through Colombia and eventually into the United States.\nEscobar's infiltration into the US created a rapidly increasing demand for cocaine and by the 1980s it was estimated Escobar led monthly shipments of 70 to 80 tons into the US from Colombia. He quickly became one of the richest people in the world, but constantly battled rival cartels domestically and abroad, leading to massacres and the murders of police officers, judges, locals, and prominent politicians.\nIn the 1982 Colombian parliamentary election, Escobar was elected as an alternate member of the Chamber of Representatives as part of the Liberal Party. Through this, he was responsible for community projects such as the construction of houses and football pitches, which gained him popularity among the locals of towns he frequented; however, Escobar's political ambitions were thwarted by the Colombian and US governments, who routinely pushed for his arrest, with Escobar believed to have orchestrated the Avianca Flight 203 and DAS Building bombings in retaliation. In 1991, Escobar surrendered to authorities, and was sentenced to five years' imprisonment on a host of charges, but struck a deal of no extradition with Colombian president C\u00e9sar Gaviria, with the ability of being housed in his own, self-built prison, La Catedral. In 1992, Escobar escaped and went into hiding when authorities attempted to move him to a more standard holding facility, leading to a nationwide manhunt. As a result, the Medell\u00edn Cartel crumbled, and in 1993, Escobar was killed in his hometown by the Colombian National Police, a day after his 44th birthday.\nEscobar's legacy remains controversial; while many denounce the heinous nature of his crimes, he was seen as a \"Robin Hood-like\" figure for many in Colombia, as he provided amenities to the poor. His killing was mourned and his funeral attended by over 25,000 people. Additionally, his private estate, Hacienda N\u00e1poles, has been transformed into a theme park. His life has also served as inspiration for or has been dramatized widely in film, television, and in music."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q187447")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q187447",
+  "isRealHuman": true,
+  "birthDate": "1949-12-01",
+  "deathDate": "1993-12-02",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The birth date, death date, and age at death are consistently reported by major references including Wikipedia and Britannica. Since Escobar died on 1993-12-02, one day after his 44th birthday on 1993-12-01, the calculated age at death is 44.",
+  "shortDescriptionEn": "Pablo Emilio Escobar Gaviria was a Colombian drug lord, narcoterrorist, politician, and founder of the Medellín Cartel, one of the most powerful cocaine-trafficking organizations of the late twentieth century. Known as the “King of Cocaine,” he combined extreme violence with populist gestures that made his legacy deeply controversial. After escaping from his self-built prison, La Catedral, he became the target of a major manhunt and was killed in Medellín on 2 December 1993 during a rooftop shootout with Colombian security forces, one day after turning 44.",
+  "shortDescriptionFr": "Pablo Emilio Escobar Gaviria était un narcotrafiquant colombien, narcoterroriste, homme politique et fondateur du cartel de Medellín, l’une des organisations de trafic de cocaïne les plus puissantes de la fin du XXe siècle. Surnommé le « roi de la cocaïne », il a mêlé violence extrême et gestes populistes, laissant un héritage très controversé. Après son évasion de sa prison privée, La Catedral, il fut traqué lors d’une vaste chasse à l’homme et tué à Medellín le 2 décembre 1993 lors d’une fusillade sur un toit avec les forces colombiennes, un jour après ses 44 ans.",
+  "shortDescriptionDe": "Pablo Emilio Escobar Gaviria war ein kolumbianischer Drogenboss, Narcoterrorist, Politiker und Gründer des Medellín-Kartells, einer der mächtigsten Kokainhandelsorganisationen des späten 20. Jahrhunderts. Als „König des Kokains“ bekannt, verband er extreme Gewalt mit populistischen Gesten, was sein Vermächtnis bis heute hoch umstritten macht. Nach seiner Flucht aus seinem selbst errichteten Gefängnis La Catedral wurde er landesweit gejagt und am 2. Dezember 1993 in Medellín bei einem Schusswechsel auf einem Dach mit kolumbianischen Sicherheitskräften getötet, einen Tag nach seinem 44. Geburtstag.",
+  "shortDescriptionEs": "Pablo Emilio Escobar Gaviria fue un narcotraficante colombiano, narcoterrorista, político y fundador del Cartel de Medellín, una de las organizaciones de tráfico de cocaína más poderosas de finales del siglo XX. Conocido como el “rey de la cocaína”, combinó una violencia extrema con gestos populistas que hicieron de su legado algo profundamente controvertido. Tras escapar de su prisión autoconstruida, La Catedral, fue objeto de una gran persecución y murió en Medellín el 2 de diciembre de 1993 durante un tiroteo en un tejado con fuerzas colombianas, un día después de cumplir 44 años.",
+  "shortDescriptionRu": "Пабло Эмилио Эскобар Гавирия был колумбийским наркобароном, наркотеррористом, политиком и основателем Медельинского картеля, одной из самых могущественных организаций по торговле кокаином в конце XX века. Известный как «король кокаина», он сочетал крайнюю жестокость с популистскими жестами, из-за чего его наследие остается крайне противоречивым. После побега из собственной тюрьмы Ла-Катедраль он стал целью масштабной охоты и был убит в Медельине 2 декабря 1993 года во время перестрелки на крыше с колумбийскими силами безопасности, на следующий день после своего 44-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pablo_Escobar",
+    "https://www.britannica.com/biography/Pablo-Escobar",
+    "https://museum.dea.gov/museum-collection/collection-spotlight/artifact/pablo-escobar-life-mask",
+    "https://en.wikipedia.org/wiki/Death_of_Pablo_Escobar",
+    "https://www.britannica.com/question/When-did-Pablo-Escobar-die"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131412",  "Name": "Mary, Queen of Scots",  "BirthDate": "1542-12-18T00:00:00Z",  "DeathDate": "1587-02-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Queen%20of%20Scots%20Blairs%20Museum.jpg",  "SiteLinksCnt": 108,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"20603":{"pageid":20603,"ns":0,"title":"Mary, Queen of Scots","extract":"Mary, Queen of Scots (8 December 1542 \u2013 8 February 1587), also known as Mary Stuart or Mary I of Scotland, was Queen of Scotland from 14 December 1542 until her forced abdication on 24 July 1567.\nThe only surviving legitimate child of James V of Scotland, Mary was six days old when her father died, and she inherited the throne. During her childhood, Scotland was governed by regents, first by the heir to the throne, James Hamilton, Earl of Arran, and then by her mother, Mary of Guise. In 1548, she was betrothed to Francis, the Dauphin of France, and was sent to be brought up in France, where she would be safe from invading English forces during the Rough Wooing. Mary married Francis in 1558, becoming queen consort of France from his accession in 1559 until his death in December 1560. Widowed, Mary returned to Scotland in August 1561. The tense religious and political climate following the Scottish Reformation that Mary encountered on her return to Scotland was further agitated by prominent Scots such as John Knox, who openly questioned whether her subjects had a duty to obey her. The early years of her personal rule were marked by pragmatism, tolerance, and moderation. She issued a proclamation accepting the religious settlement in Scotland as she had found it upon her return, retained advisers such as James Stewart, Earl of Moray (her illegitimate half-brother), and William Maitland of Lethington, and governed as the Catholic monarch of a Protestant kingdom.\nIn 1565, Mary married her half-cousin Henry Stuart, Lord Darnley; they had a son, James. Their marriage soured after Darnley orchestrated the murder of Mary's Italian secretary and close friend David Rizzio. In February 1567, Darnley's residence was destroyed by an explosion, and he was found murdered in the nearby garden. James Hepburn, 4th Earl of Bothwell, was generally believed to have orchestrated Darnley's death, but he was acquitted of the charge in April 1567 and in the following month, he married Mary. Following an uprising against the couple, Mary was imprisoned in Lochleven Castle. In July 1567, she was forced to abdicate in favour of her one-year-old son James VI. After an unsuccessful attempt to regain the throne, she fled southward seeking the protection of her first cousin once removed, Elizabeth I of England.\nAs a great-granddaughter of Henry VII of England, Mary had once claimed Elizabeth's throne as her own and was considered the legitimate sovereign of England by many English Catholics, including participants in a rebellion known as the Rising of the North. Perceiving Mary as a threat, Elizabeth had her confined in various castles and manor houses in the interior of England. After eighteen and a half years in captivity, Mary was found guilty of plotting to assassinate Elizabeth in 1586 and was beheaded the following year at Fotheringhay Castle. Mary's life and execution established her in popular culture as a romanticised historical figure."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131412")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q131412",
+  "isRealHuman": true,
+  "birthDate": "1542-12-08",
+  "deathDate": "1587-02-08",
+  "ageAtDeath": 44,
+  "confidence": 99,
+  "confidenceExplained": "The identity is directly supported by the supplied data and by multiple reliable references. The conventional historical dates are 1542-12-08 and 1587-02-08, which gives an age at death of 44. Minor calendar-style complications exist for 16th-century Britain, but they do not change the completed-year age.",
+  "shortDescriptionEn": "Mary, Queen of Scots, also known as Mary Stuart, became queen of Scotland as an infant and later briefly served as queen consort of France. Her life was shaped by dynastic claims, religious conflict, and turbulent Scottish politics, including forced abdication in favor of her son James VI. After fleeing to England, she spent nearly two decades in captivity and was executed at Fotheringhay Castle in 1587 after being convicted of involvement in a plot against Elizabeth I.",
+  "shortDescriptionFr": "Marie Stuart, reine d’Écosse, monta sur le trône alors qu’elle n’était encore qu’un nourrisson et devint plus tard brièvement reine consort de France. Sa vie fut marquée par les rivalités dynastiques, les conflits religieux et les crises politiques écossaises, jusqu’à son abdication forcée en faveur de son fils Jacques VI. Réfugiée en Angleterre, elle resta près de vingt ans prisonnière avant d’être exécutée au château de Fotheringhay en 1587, après sa condamnation pour complot contre Élisabeth Ire.",
+  "shortDescriptionDe": "Maria Stuart, Königin von Schottland, wurde bereits als Säugling Königin und war später kurzzeitig Königin von Frankreich. Ihr Leben war geprägt von dynastischen Ansprüchen, religiösen Spannungen und schweren politischen Konflikten in Schottland, die schließlich zu ihrer erzwungenen Abdankung zugunsten ihres Sohnes Jakob VI. führten. Nach ihrer Flucht nach England blieb sie fast zwei Jahrzehnte in Gefangenschaft und wurde 1587 auf Schloss Fotheringhay hingerichtet, nachdem sie wegen Beteiligung an einem Komplott gegen Elisabeth I. verurteilt worden war.",
+  "shortDescriptionEs": "María, reina de Escocia, también conocida como María Estuardo, heredó el trono escocés siendo apenas una niña y más tarde fue brevemente reina consorte de Francia. Su vida estuvo marcada por reclamaciones dinásticas, tensiones religiosas y una política escocesa muy inestable, que terminó con su abdicación forzada en favor de su hijo Jacobo VI. Tras huir a Inglaterra, permaneció casi dos décadas cautiva y fue ejecutada en el castillo de Fotheringhay en 1587, después de ser condenada por participar en un complot contra Isabel I.",
+  "shortDescriptionRu": "Мария Стюарт, королева Шотландии, унаследовала престол еще младенцем и позднее недолгое время была королевой-консортом Франции. Ее жизнь прошла на фоне династических претензий, религиозных конфликтов и бурной шотландской политики, завершившейся вынужденным отречением в пользу сына Якова VI. После бегства в Англию она почти два десятилетия провела в заключении и была казнена в замке Фотерингей в 1587 году после обвинения в заговоре против Елизаветы I.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mary,_Queen_of_Scots",
+    "https://www.britannica.com/biography/Mary-queen-of-Scotland",
+    "https://www.nms.ac.uk/discover-catalogue/the-life-death-and-legacy-of-mary-queen-of-scots",
+    "https://www.royal.uk/mary-queen-scots-r1542-1567",
+    "https://www.npg.org.uk/collections/search/portrait/mw04273/mary-queen-of-scots"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34970",  "Name": "D. H. Lawrence",  "BirthDate": "1885-09-11T00:00:00Z",  "DeathDate": "1930-03-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/D%20H%20Lawrence%20passport%20photograph.jpg",  "SiteLinksCnt": 105,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"44191":{"pageid":44191,"ns":0,"title":"D. H. Lawrence","extract":"David Herbert Lawrence (11 September 1885 \u2013 2 March 1930) was an English novelist, short story writer, poet, playwright, literary critic, travel writer, essayist, and painter. His modernist works reflect on modernity, social alienation and industrialisation, while championing sexuality, vitality and instinct. Four of his most famous novels \u2013 Sons and Lovers\n(1913), The Rainbow (1915), Women in Love (1920), and Lady Chatterley's Lover  (1928) \u2013 were the subject of censorship trials for their radical portrayals of romance, sexuality, and use of explicit language.\nLawrence's opinions and artistic preferences earned him a controversial reputation; he endured persecution and the misrepresentation of his creative work throughout his life, much of which he spent in a voluntary exile that he described as a \"savage enough pilgrimage\". At the time of his death, he had been variously scorned as tasteless, avant-garde, and a pornographer who had only garnered success for erotica; however, the English novelist and critic E. M. Forster, in an obituary notice, challenged this widely held view, describing him as \"the greatest imaginative novelist of our generation\". Later, the English literary critic F. R. Leavis also championed both his artistic integrity and his moral seriousness.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34970")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q34970",
+  "isRealHuman": true,
+  "birthDate": "1885-09-11",
+  "deathDate": "1930-03-02",
+  "ageAtDeath": 44,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable biographical sources agree that D. H. Lawrence was born on 1885-09-11 and died on 1930-03-02. Since he died before reaching his birthday in September 1930, the calculated age at death is 44. Confidence is very high; the only small uncertainty is wording around the immediate medical cause, commonly described as tuberculosis or complications of tuberculosis.",
+  "shortDescriptionEn": "D. H. Lawrence was an English novelist, poet, essayist, playwright, travel writer, critic, and painter whose work challenged early twentieth-century ideas about class, sexuality, industrial society, and emotional freedom. Best known for Sons and Lovers, The Rainbow, Women in Love, and Lady Chatterley's Lover, he became both influential and controversial for his intense psychological realism and frank treatment of desire. His health had long been weakened by tuberculosis, and after time in a sanatorium he died from complications of the disease at Villa Robermond in Vence, France, on 2 March 1930, aged 44.",
+  "shortDescriptionFr": "D. H. Lawrence était un romancier, poète, essayiste, dramaturge, écrivain voyageur, critique et peintre anglais, dont l'œuvre a remis en question les idées du début du XXe siècle sur la classe sociale, la sexualité, la société industrielle et la liberté émotionnelle. Surtout connu pour Sons and Lovers, The Rainbow, Women in Love et Lady Chatterley's Lover, il fut à la fois influent et controversé par son réalisme psychologique intense et son traitement direct du désir. Sa santé était depuis longtemps affaiblie par la tuberculose et, après un séjour en sanatorium, il mourut des complications de cette maladie à la Villa Robermond, à Vence, en France, le 2 mars 1930, à l'âge de 44 ans.",
+  "shortDescriptionDe": "D. H. Lawrence war ein englischer Romancier, Dichter, Essayist, Dramatiker, Reiseschriftsteller, Kritiker und Maler, dessen Werk die Vorstellungen des frühen 20. Jahrhunderts von Klasse, Sexualität, Industriegesellschaft und emotionaler Freiheit herausforderte. Besonders bekannt wurde er durch Sons and Lovers, The Rainbow, Women in Love und Lady Chatterley's Lover; zugleich galt er wegen seines intensiven psychologischen Realismus und seiner offenen Darstellung von Begehren als einflussreich und umstritten. Seine Gesundheit war lange durch Tuberkulose geschwächt, und nach einem Sanatoriumsaufenthalt starb er am 2. März 1930 in der Villa Robermond in Vence, Frankreich, an Komplikationen der Krankheit, im Alter von 44 Jahren.",
+  "shortDescriptionEs": "D. H. Lawrence fue un novelista, poeta, ensayista, dramaturgo, escritor de viajes, crítico y pintor inglés cuya obra desafió las ideas de comienzos del siglo XX sobre la clase social, la sexualidad, la sociedad industrial y la libertad emocional. Es especialmente conocido por Sons and Lovers, The Rainbow, Women in Love y Lady Chatterley's Lover, y fue influyente y polémico por su intenso realismo psicológico y su tratamiento franco del deseo. Su salud estuvo debilitada durante años por la tuberculosis y, tras pasar por un sanatorio, murió por complicaciones de la enfermedad en Villa Robermond, en Vence, Francia, el 2 de marzo de 1930, a los 44 años.",
+  "shortDescriptionRu": "Д. Г. Лоуренс был английским романистом, поэтом, эссеистом, драматургом, автором путевых книг, критиком и художником, чьи произведения бросали вызов представлениям начала XX века о классе, сексуальности, индустриальном обществе и эмоциональной свободе. Он особенно известен романами Sons and Lovers, The Rainbow, Women in Love и Lady Chatterley's Lover, а его психологическая напряженность и откровенное изображение желания сделали его одновременно влиятельным и спорным автором. Его здоровье много лет подтачивала туберкулезная болезнь, и после пребывания в санатории он умер от ее осложнений на вилле Робермон в Вансе, Франция, 2 марта 1930 года в возрасте 44 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/D._H._Lawrence",
+    "https://www.britannica.com/biography/D-H-Lawrence",
+    "https://www.poetryfoundation.org/poets/d-h-lawrence",
+    "https://www.npg.org.uk/collections/search/person/mp02651/david-herbert-dh-lawrence",
+    "https://www.npg.org.uk/collections/search/portrait/mw66674/",
+    "https://www.npg.org.uk/collections/search/portrait/mw07583/DH-Lawrence"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44003",  "Name": "Theodor Herzl",  "BirthDate": "1860-05-02T00:00:00Z",  "DeathDate": "1904-07-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Theodor%20Herzl.jpg",  "SiteLinksCnt": 103,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"8233758":{"pageid":8233758,"ns":0,"title":"Theodor Herzl","extract":"Theodor Herzl (2 May 1860 \u2013 3 July 1904) was a Hungarian Jewish journalist and lawyer who was the father of modern political Zionism. Herzl formed the Zionist Organization and promoted Jewish immigration to Palestine, which, in the late 19th century was part of the Ottoman Empire, in an effort to form a Jewish state. Due to his Zionist work, he is known in Hebrew as Chozeh HaMedinah (\u05d7\u05d5\u05b9\u05d6\u05b5\u05d4 \u05d4\u05b7\u05de\u05b0\u05d3\u05b4\u05d9\u05e0\u05b8\u05d4), lit.\u2009'Visionary of the State'. He is specifically mentioned in the Israeli Declaration of Independence and is officially referred to as \"the spiritual father of the Jewish State\".\nHerzl was born in Pest, then part of the Kingdom of Hungary, to a prosperous Neolog Jewish family. After a brief legal career in Vienna, he became the Paris correspondent for the Viennese newspaper Neue Freie Presse. Confronted with antisemitic events in Vienna, he reached the conclusion that anti-Jewish sentiment would make Jewish assimilation impossible, and that the only solution for Jews was the establishment of a Jewish state. In 1896, Herzl published the pamphlet Der Judenstaat, in which he elaborated his visions of a Jewish homeland. His ideas attracted international attention, and rapidly established him as a major figure in the Jewish world.\nIn 1897, Herzl convened the First Zionist Congress in Basel, Switzerland, and was elected president of the Zionist Organization. He began a series of diplomatic initiatives to build support for a Jewish state, appealing unsuccessfully to German emperor Wilhelm II and Ottoman sultan Abdul Hamid II. At the Sixth Zionist Congress in 1903, Herzl presented the Uganda Scheme, endorsed by Colonial Secretary Joseph Chamberlain on behalf of the British government. The proposal, which sought to create a temporary refuge for the Jews in British East Africa following the Kishinev pogrom, was met with strong opposition and ultimately rejected. Herzl died of a heart ailment in 1904 at the age of 44, and was buried in Vienna. In 1949, his remains were taken to Israel and reinterred on Mount Herzl."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44003")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44003",
+  "isRealHuman": true,
+  "birthDate": "1860-05-02",
+  "deathDate": "1904-07-03",
+  "ageAtDeath": 44,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given by multiple reliable biographical sources as 2 May 1860 and 3 July 1904, so the completed age at death calculates to 44. The only minor uncertainty concerns the exact medical phrasing of the cause of death, not the age.",
+  "shortDescriptionEn": "Theodor Herzl was a Hungarian Jewish journalist, lawyer, writer, and political activist best known as the founder of modern political Zionism. His 1896 pamphlet Der Judenstaat and his leadership of the First Zionist Congress in Basel helped turn the idea of a Jewish state into an organized international movement. He died on 3 July 1904 at age 44, after serious heart-related illness; some accounts also describe pneumonia and an exhausted, weakened heart after years of intense political work.",
+  "shortDescriptionFr": "Theodor Herzl était un journaliste, avocat, écrivain et militant politique juif hongrois, surtout connu comme le fondateur du sionisme politique moderne. Son pamphlet Der Judenstaat, publié en 1896, et son rôle dans le premier congrès sioniste de Bâle ont transformé l’idée d’un État juif en mouvement international organisé. Il est mort le 3 juillet 1904 à l’âge de 44 ans, après de graves problèmes cardiaques; certaines sources évoquent aussi une pneumonie et un cœur affaibli par des années d’efforts politiques intenses.",
+  "shortDescriptionDe": "Theodor Herzl war ein ungarisch-jüdischer Journalist, Jurist, Schriftsteller und politischer Aktivist, der als Begründer des modernen politischen Zionismus gilt. Mit seiner Schrift Der Judenstaat von 1896 und seiner Führung beim Ersten Zionistenkongress in Basel machte er die Idee eines jüdischen Staates zu einer organisierten internationalen Bewegung. Er starb am 3. Juli 1904 im Alter von 44 Jahren nach schweren Herzproblemen; manche Darstellungen nennen außerdem eine Lungenentzündung und ein durch jahrelange politische Anstrengung geschwächtes Herz.",
+  "shortDescriptionEs": "Theodor Herzl fue un periodista, abogado, escritor y activista político judío húngaro, reconocido como el fundador del sionismo político moderno. Su folleto Der Judenstaat, publicado en 1896, y su liderazgo en el Primer Congreso Sionista de Basilea ayudaron a convertir la idea de un Estado judío en un movimiento internacional organizado. Murió el 3 de julio de 1904 a los 44 años, tras una grave enfermedad cardíaca; algunas fuentes también mencionan neumonía y un corazón debilitado por años de intensa actividad política.",
+  "shortDescriptionRu": "Теодор Герцль был венгерским еврейским журналистом, юристом, писателем и политическим деятелем, известным как основатель современного политического сионизма. Его брошюра Der Judenstaat, опубликованная в 1896 году, и руководство Первым сионистским конгрессом в Базеле превратили идею еврейского государства в организованное международное движение. Он умер 3 июля 1904 года в возрасте 44 лет после тяжелых сердечных проблем; некоторые источники также упоминают пневмонию и сердце, ослабленное годами напряженной политической работы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Theodor_Herzl",
+    "https://www.britannica.com/biography/Theodor-Herzl",
+    "https://www.jewishvirtuallibrary.org/jsource/biography/Herzl.html",
+    "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/herzl-theodor-1860-1904",
+    "https://commons.wikimedia.org/wiki/Theodor_Herzl"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1423",  "Name": "Domitian",  "BirthDate": "0051-10-22T00:00:00Z",  "DeathDate": "0096-09-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Busto%20di%20Domiziano%20-%20Napoli%20museo%20Archeologico.jpg",  "SiteLinksCnt": 96,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"8592":{"pageid":8592,"ns":0,"title":"Domitian","extract":"Domitian (  d\u0259-MISH-\u0259n, -\u2060ee-\u0259n; Latin: Domitianus (24 October 51 \u2013 18 September 96) was Roman emperor from 81 to 96. The son of Vespasian and the younger brother of Titus, his two predecessors on the throne, he was the last member of the Flavian dynasty. Described by the historian Brian W. Jones as \"a ruthless but efficient autocrat\", his authoritarian style of ruling put him at sharp odds with the Senate, whose powers he drastically curtailed.\nDomitian had a minor and largely ceremonial role during the reigns of his father and brother. After the death of his brother, Domitian was declared emperor by the Praetorian Guard. His 15-year reign was the longest since Tiberius. As emperor, Domitian strengthened the economy by revaluing the Roman coinage, expanded the border defenses of the empire, and initiated a massive building program to restore the damaged city of Rome. Significant wars were fought in Britain, where his general Agricola made significant gains in his attempt to conquer Caledonia (Scotland), and in Dacia (modern-day Romania), where Domitian was unable to achieve a decisive victory against King Decebalus. Domitian's government exhibited strong authoritarian characteristics. Religious, military, and cultural propaganda fostered a cult of personality, and by nominating himself as perpetual censor, he sought to control public and private morals.\nAs a consequence, Domitian was popular with the people and the army, but considered a tyrant by members of the Roman Senate. Domitian's reign came to an end in 96 when he was assassinated by court officials. He was succeeded the same day by his advisor Nerva. After his death, Domitian's memory was condemned to oblivion by the Senate, while senatorial and equestrian authors such as Tacitus, Pliny the Younger, and Suetonius propagated the view of Domitian as a cruel and paranoid tyrant. Modern revisionists have instead characterized Domitian as a ruthless but efficient autocrat whose cultural, economic, and political programs provided the foundation of the peaceful second century."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1423")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1423",
+  "isRealHuman": true,
+  "birthDate": "0051-10-24",
+  "deathDate": "0096-09-18",
+  "ageAtDeath": 44,
+  "confidence": 98,
+  "confidenceExplained": "Multiple reliable sources, including Wikipedia, Britannica, Livius, and Wikidata, agree that Domitian was born on 24 October 51 CE and died on 18 September 96 CE. Calculating from those dates gives 44 years, because he died a little over a month before his 45th birthday.",
+  "shortDescriptionEn": "Domitian, born Titus Flavius Domitianus, was Roman emperor from 81 to 96 CE and the last ruler of the Flavian dynasty. The son of Vespasian and younger brother of Titus, he strengthened imperial administration, promoted major building projects, and maintained strong support among the army and people, while alienating much of the Senate through authoritarian rule. He died at age 44 in Rome after being assassinated in a palace conspiracy by court officials, and was succeeded the same day by Nerva.",
+  "shortDescriptionFr": "Domitien, né Titus Flavius Domitianus, fut empereur romain de 81 à 96 et le dernier souverain de la dynastie flavienne. Fils de Vespasien et frère cadet de Titus, il renforça l’administration impériale, lança d’importants chantiers à Rome et conserva l’appui de l’armée et du peuple, tout en s’opposant durement au Sénat par son autoritarisme. Il mourut à 44 ans à Rome, assassiné lors d’une conspiration de palais menée par des officiers de la cour, et Nerva lui succéda le jour même.",
+  "shortDescriptionDe": "Domitian, geboren als Titus Flavius Domitianus, war von 81 bis 96 n. Chr. römischer Kaiser und der letzte Herrscher der flavischen Dynastie. Als Sohn Vespasians und jüngerer Bruder des Titus stärkte er die kaiserliche Verwaltung, förderte große Bauprogramme und blieb bei Heer und Volk beliebt, geriet jedoch wegen seiner autoritären Herrschaft in scharfen Konflikt mit dem Senat. Er starb im Alter von 44 Jahren in Rom, als er in einer Palastverschwörung von Hofbeamten ermordet wurde; noch am selben Tag folgte ihm Nerva nach.",
+  "shortDescriptionEs": "Domiciano, nacido como Tito Flavio Domiciano, fue emperador romano de 81 a 96 d. C. y el último gobernante de la dinastía Flavia. Hijo de Vespasiano y hermano menor de Tito, reforzó la administración imperial, impulsó grandes obras públicas y mantuvo el apoyo del ejército y del pueblo, aunque su estilo autoritario lo enfrentó con el Senado. Murió a los 44 años en Roma, asesinado en una conspiración palaciega organizada por funcionarios de la corte, y fue sucedido ese mismo día por Nerva.",
+  "shortDescriptionRu": "Домициан, родившийся как Тит Флавий Домициан, был римским императором с 81 по 96 год и последним правителем династии Флавиев. Сын Веспасиана и младший брат Тита, он укреплял имперское управление, развивал масштабное строительство и пользовался поддержкой армии и народа, но из-за авторитарного стиля правления резко конфликтовал с сенатом. Он умер в 44 года в Риме, будучи убит в ходе дворцового заговора придворных чиновников; в тот же день его преемником стал Нерва.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Domitian",
+    "https://www.britannica.com/biography/Domitian",
+    "https://www.wikidata.org/wiki/Q1423",
+    "https://www.livius.org/articles/person/domitian/",
+    "https://www.worldhistory.org/image/2527/roman-emperor-domitian-altes-museum/",
+    "https://commons.wikimedia.org/wiki/File:Busto_di_Domiziano_-_Napoli_museo_Archeologico.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132984",  "Name": "Shota Rustaveli",  "BirthDate": "1172-01-01T00:00:00Z",  "DeathDate": "1216-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-Monastery-of-the-Cross-689.jpg",  "SiteLinksCnt": 95,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"409517":{"pageid":409517,"ns":0,"title":"Shota Rustaveli","extract":"Shota Rustaveli (Georgian: \u10e8\u10dd\u10d7\u10d0 \u10e0\u10e3\u10e1\u10d7\u10d0\u10d5\u10d4\u10da\u10d8, c.\u20091160 \u2013 after c. 1220), mononymously known simply as Rustaveli, was a medieval Georgian poet. He is considered to be the pre-eminent poet of the Georgian Golden Age and one of the greatest contributors to Georgian literature. Rustaveli was the author of The Knight in the Panther's Skin, a Georgian national epic poem."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132984")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q132984",
+  "isRealHuman": true,
+  "birthDate": "1160-01-01",
+  "deathDate": "1220-01-01",
+  "ageAtDeath": 60,
+  "confidence": 35,
+  "confidenceExplained": "The identity is very secure, but the age is a low-confidence estimate. Major biographical sources describe Shota Rustaveli as born circa 1160 and dying after circa 1220, while Wikidata-style authority data sometimes gives 1172 and 1216. Because the prompt requires a number, I used the more widely repeated c.1160–after c.1220 tradition and calculated an approximate minimum/conventional age of 60.",
+  "shortDescriptionEn": "Shota Rustaveli was a medieval Georgian poet of the Georgian Golden Age and the celebrated author of The Knight in the Panther’s Skin, Georgia’s national epic. Associated with Queen Tamar’s court, he became a defining voice of Georgian literature, blending chivalric romance, moral reflection, and Persian-influenced poetic culture. The exact details of his final years are uncertain; tradition connects him with Jerusalem and the Monastery of the Cross, where a famous fresco is associated with him. Using the common estimate c.1160 to after c.1220, his age at death is estimated at 60.",
+  "shortDescriptionFr": "Shota Rustaveli fut un poète géorgien médiéval de l’âge d’or géorgien et l’auteur célébré du Chevalier à la peau de panthère, l’épopée nationale de la Géorgie. Lié à la cour de la reine Tamar, il a marqué durablement la littérature géorgienne par une poésie mêlant idéal chevaleresque, réflexion morale et influences persanes. Les circonstances exactes de sa fin de vie restent incertaines; la tradition le rattache à Jérusalem et au monastère de la Croix, où une fresque célèbre lui est associée. En retenant l’estimation courante c.1160 à après c.1220, son âge au décès est estimé à 60 ans.",
+  "shortDescriptionDe": "Shota Rustaveli war ein mittelalterlicher georgischer Dichter des Goldenen Zeitalters Georgiens und der berühmte Autor von Der Recke im Tigerfell, dem georgischen Nationalepos. Er wird mit dem Hof Königin Tamars verbunden und prägte die georgische Literatur durch eine Verbindung von Ritterideal, moralischer Reflexion und persisch beeinflusster Dichtung. Die genauen Umstände seiner letzten Jahre sind nicht belegt; die Überlieferung verbindet ihn mit Jerusalem und dem Kreuzkloster, wo ein bekanntes Fresko mit ihm in Verbindung steht. Ausgehend von der üblichen Datierung um 1160 bis nach ca. 1220 wird sein Sterbealter auf 60 Jahre geschätzt.",
+  "shortDescriptionEs": "Shota Rustaveli fue un poeta georgiano medieval de la Edad de Oro de Georgia y el célebre autor de El caballero de la piel de pantera, la epopeya nacional georgiana. Vinculado a la corte de la reina Tamar, se convirtió en una figura central de la literatura georgiana, combinando romance caballeresco, reflexión moral e influencias poéticas persas. Los detalles exactos de sus últimos años no están documentados; la tradición lo relaciona con Jerusalén y el Monasterio de la Cruz, donde se conserva un famoso fresco asociado con él. Usando la estimación común c.1160 a después de c.1220, su edad al morir se estima en 60 años.",
+  "shortDescriptionRu": "Шота Руставели был средневековым грузинским поэтом эпохи Золотого века Грузии и прославленным автором «Витязя в тигровой шкуре», национального эпоса Грузии. Его связывают с двором царицы Тамары; его поэзия стала одним из символов грузинской литературы, соединяя рыцарский идеал, нравственную философию и персидские литературные влияния. Точные обстоятельства его последних лет неизвестны; традиция связывает его с Иерусалимом и монастырём Креста, где находится знаменитая фреска, ассоциируемая с ним. Если принять распространённую датировку около 1160 — после около 1220 года, его возраст на момент смерти оценивается в 60 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Shota_Rustaveli",
+    "https://www.britannica.com/biography/Shota-Rustaveli",
+    "https://www.wikidata.org/wiki/Q132984",
+    "https://commons.wikimedia.org/wiki/File:Jerusalem-Monastery-of-the-Cross-689.jpg",
+    "https://oxfordinterfaithforum.org/blog/the-65th-anniversary-of-the-iconic-interculturalist-poet-shota-rustavelis-medieval-fresco/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102851",  "Name": "Boethius",  "BirthDate": "0480-01-01T00:00:00Z",  "DeathDate": "0524-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Boethius%20initial%20consolation%20philosophy.jpg",  "SiteLinksCnt": 93,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"195684":{"pageid":195684,"ns":0,"title":"Boethius","extract":"Anicius Manlius Severinus Boethius, commonly known simply as Boethius (; Latin: Boetius; c. 480\u2013524 AD), was a Roman senator, consul, magister officiorum, polymath, historian, and philosopher of the Early Middle Ages. He was a central figure in the translation of the Greek classics into Latin, a precursor to the Scholastic movement, and, along with Cassiodorus, one of the two leading Christian scholars of the 6th century. The local cult of Boethius in the Diocese of Pavia was sanctioned by the Sacred Congregation of Rites in 1883, confirming the diocese's custom of honoring him on 23 October.\nBoethius was born in Rome a few years after the forced abdication of the last Western Roman emperor, Romulus Augustulus. A member of the Anicii family, he was orphaned following the family's sudden decline and was raised by Quintus Aurelius Memmius Symmachus, a later consul. After mastering both Latin and Greek in his youth, Boethius rose to prominence as a statesman during the Ostrogothic Kingdom, becoming a senator by age 25, a consul by age 33, and later chosen as a personal advisor to Theodoric the Great.\nIn seeking to reconcile the teachings of Plato and Aristotle with Christian theology, Boethius sought to translate the entirety of the Greek classics for Western scholars. He published numerous transcriptions and commentaries of the works of Nicomachus, Porphyry, and Cicero, among others, and wrote extensively on matters concerning music, mathematics, and theology. Though his translations were unfinished following an untimely death, it is largely due to them that the works of Aristotle survived into the Renaissance.\nDespite his successes as a senior official, Boethius became deeply unpopular among other members of the Ostrogothic court for denouncing the extensive corruption prevalent among other members of government. After publicly defending fellow consul Caecina Albinus from charges of conspiracy, he was imprisoned by Theodoric around the year 523. While jailed Boethius wrote On the Consolation of Philosophy, a philosophical treatise on fortune, death, and other issues which became one of the most influential and widely reproduced works of the Early Middle Ages. He was tortured and executed in 524, becoming a martyr in the Christian faith by tradition."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102851")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q102851",
+  "isRealHuman": true,
+  "birthDate": "0480-01-01",
+  "deathDate": "0524-01-01",
+  "ageAtDeath": 44,
+  "confidence": 65,
+  "confidenceExplained": "Boethius is clearly the historical figure identified by the supplied Wikidata and Wikipedia data. His exact birth and death days are not known, and even the years vary by source: many references use c. 480–524, which gives age 44, while Britannica and Stanford give earlier birth or later death ranges that could place him in his late forties or early fifties. I used the most common simplified chronology, but with moderate confidence.",
+  "shortDescriptionEn": "Anicius Manlius Severinus Boethius, known simply as Boethius, was a Roman senator, consul, scholar, philosopher, and one of the key transmitters of Greek learning to the Latin Middle Ages. His writings on logic, music, mathematics, theology, and especially The Consolation of Philosophy made him one of the most influential thinkers of early medieval Europe. After falling from favor at the Ostrogothic court, he was imprisoned by Theodoric the Great, wrote his famous philosophical work in captivity, and was tortured and executed at about age 44.",
+  "shortDescriptionFr": "Anicius Manlius Severinus Boethius, plus connu sous le nom de Boèce, fut un sénateur romain, consul, savant et philosophe, essentiel dans la transmission de la pensée grecque au Moyen Âge latin. Ses travaux sur la logique, la musique, les mathématiques, la théologie et surtout La Consolation de la philosophie ont profondément marqué la culture médiévale. Tombé en disgrâce à la cour ostrogothe, il fut emprisonné sur ordre de Théodoric le Grand, rédigea son œuvre la plus célèbre en captivité, puis fut torturé et exécuté vers l’âge de 44 ans.",
+  "shortDescriptionDe": "Anicius Manlius Severinus Boethius, meist einfach Boethius genannt, war ein römischer Senator, Konsul, Gelehrter und Philosoph sowie ein zentraler Vermittler griechischen Wissens an das lateinische Mittelalter. Seine Schriften über Logik, Musik, Mathematik, Theologie und besonders Der Trost der Philosophie prägten das europäische Denken über Jahrhunderte. Nachdem er am ostgotischen Hof in Ungnade gefallen war, ließ Theoderich der Große ihn inhaftieren; im Gefängnis schrieb er sein berühmtestes Werk, bevor er im Alter von etwa 44 Jahren gefoltert und hingerichtet wurde.",
+  "shortDescriptionEs": "Anicio Manlio Severino Boecio, conocido simplemente como Boecio, fue un senador romano, cónsul, erudito y filósofo, decisivo para transmitir la cultura griega al Occidente latino medieval. Sus obras sobre lógica, música, matemáticas, teología y, sobre todo, La consolación de la filosofía lo convirtieron en una figura intelectual fundamental de la Alta Edad Media. Tras perder el favor de la corte ostrogoda, fue encarcelado por orden de Teodorico el Grande, escribió su obra más famosa en prisión y fue torturado y ejecutado aproximadamente a los 44 años.",
+  "shortDescriptionRu": "Аниций Манлий Северин Боэций, обычно называемый просто Боэцием, был римским сенатором, консулом, учёным и философом, сыгравшим ключевую роль в передаче греческой мысли латинскому Средневековью. Его труды по логике, музыке, математике, богословию и особенно Утешение философией оказали огромное влияние на европейскую интеллектуальную традицию. После падения в немилость при остготском дворе он был заключён в тюрьму по приказу Теодориха Великого, написал там своё самое знаменитое произведение, а затем был подвергнут пыткам и казнён примерно в 44 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Boethius",
+    "https://www.britannica.com/biography/Anicius-Manlius-Severinus-Boethius",
+    "https://plato.stanford.edu/entries/boethius/",
+    "https://www.newadvent.org/cathen/02610b.htm",
+    "https://iep.utm.edu/boethius/",
+    "https://www.wikidata.org/wiki/Q102851"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q104358",  "Name": "Billie Holiday",  "BirthDate": "1915-04-07T00:00:00Z",  "DeathDate": "1959-07-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Billie%20Holiday%20and%20Mister%2C%20Downbeat%2C%20New%20York%2C%20N.Y.%2C%20ca.%20Feb.%201947%20%28LOC%2C%205020400274%2C%20cropped%29.jpg",  "SiteLinksCnt": 89,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"50420":{"pageid":50420,"ns":0,"title":"Billie Holiday","extract":"Billie Holiday (born Eleanora Fagan; April 7, 1915 \u2013 July 17, 1959) was an American jazz and swing music singer. Nicknamed \"Lady Day\" by her friend and music partner, Lester Young, Holiday made significant contributions to jazz music and pop singing. Her vocal style, strongly influenced by jazz instrumentalists, inspired a new way of manipulating phrasing and tempo. Holiday was known for her vocal delivery and improvisational skills.\nAfter a turbulent childhood, Holiday began singing in nightclubs in Harlem where she was heard by producer John Hammond, who liked her voice. Holiday signed a recording contract with Brunswick in 1935. Her collaboration with Teddy Wilson produced the hit \"What a Little Moonlight Can Do\", which became a jazz standard. Throughout the 1930s and 1940s, Holiday had mainstream success on labels such as Columbia and Decca. However, by the late 1940s, she was beset with legal troubles and drug abuse. After a short prison sentence, Holiday performed a sold-out concert at Carnegie Hall. She was a successful concert performer throughout the 1950s, with two further sold-out shows at Carnegie Hall. Because of personal struggles and an altered voice, Holiday's final recordings were met with mixed reaction, but were mild commercial successes. Her final album, Lady in Satin, was released in 1958. Holiday died of cirrhosis and heart failure on July 17, 1959, at age 44.\nHoliday won four Grammy Awards, all of them posthumously, for Best Historical Album. She was inducted into the Grammy Hall of Fame and the National Rhythm & Blues Hall of Fame. In 2000, Holiday was also inducted into the Rock and Roll Hall of Fame as an early influence; their website states that \"Billie Holiday changed jazz forever\". She was named one of the 50 Great Voices by NPR and was ranked fourth on the Rolling Stone list of \"200 Greatest Singers of All Time\" (2023). Several films about Holiday's life have been released, most recently The United States vs. Billie Holiday (2021)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q104358")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q104358",
+  "isRealHuman": true,
+  "birthDate": "1915-04-07",
+  "deathDate": "1959-07-17",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by major reference sources, including Wikipedia and Britannica, and the age calculation from 1915-04-07 to 1959-07-17 is exactly 44 years. The cited sources also explicitly state that Billie Holiday died at age 44.",
+  "shortDescriptionEn": "Billie Holiday, born Eleanora Fagan and nicknamed “Lady Day,” was one of the most influential American jazz and swing singers of the twentieth century. Her phrasing, emotional timing, and unmistakable voice changed the way popular songs could be sung, and recordings such as “Strange Fruit,” “God Bless the Child,” and “Lady Sings the Blues” helped define her legacy. Her later years were marked by legal troubles, addiction, and declining health. She died in New York City on July 17, 1959, at age 44, after severe illness linked to cirrhosis and heart failure.",
+  "shortDescriptionFr": "Billie Holiday, née Eleanora Fagan et surnommée « Lady Day », fut l’une des grandes voix américaines du jazz et du swing au XXe siècle. Son phrasé, son sens dramatique du tempo et sa manière très personnelle d’habiter chaque chanson ont profondément influencé le chant populaire. Des titres comme « Strange Fruit », « God Bless the Child » et « Lady Sings the Blues » restent au cœur de son héritage. Ses dernières années furent assombries par des problèmes judiciaires, l’addiction et une santé fragile. Elle mourut à New York le 17 juillet 1959, à 44 ans, après une grave maladie liée à une cirrhose et à une insuffisance cardiaque.",
+  "shortDescriptionDe": "Billie Holiday, geboren als Eleanora Fagan und bekannt als „Lady Day“, war eine der prägendsten amerikanischen Jazz- und Swing-Sängerinnen des 20. Jahrhunderts. Ihre Phrasierung, ihr Gefühl für Timing und ihre unverwechselbare, verletzliche Stimme veränderten den Gesang in Jazz und Pop nachhaltig. Aufnahmen wie „Strange Fruit“, „God Bless the Child“ und „Lady Sings the Blues“ machten sie zu einer kulturellen Ikone. Ihre letzten Jahre waren von juristischen Problemen, Sucht und schwerer Krankheit überschattet. Sie starb am 17. Juli 1959 in New York City im Alter von 44 Jahren an den Folgen von Leberzirrhose und Herzversagen.",
+  "shortDescriptionEs": "Billie Holiday, nacida Eleanora Fagan y apodada “Lady Day”, fue una de las cantantes estadounidenses de jazz y swing más influyentes del siglo XX. Su fraseo, su dominio del tempo y la intensidad emocional de su voz transformaron la interpretación de la música popular. Canciones como “Strange Fruit”, “God Bless the Child” y “Lady Sings the Blues” consolidaron su lugar en la historia. Sus últimos años estuvieron marcados por problemas legales, adicciones y un deterioro grave de su salud. Murió en Nueva York el 17 de julio de 1959, a los 44 años, tras complicaciones asociadas con cirrosis e insuficiencia cardíaca.",
+  "shortDescriptionRu": "Билли Холидей, урождённая Элеонора Фейган и известная под прозвищем «Lady Day», была одной из самых влиятельных американских джазовых и свинговых певиц XX века. Её фразировка, чувство ритма и узнаваемая эмоциональная манера исполнения изменили представление о вокале в популярной музыке. Песни «Strange Fruit», «God Bless the Child» и «Lady Sings the Blues» стали важной частью её наследия. Последние годы её жизни были омрачены юридическими проблемами, зависимостью и ухудшением здоровья. Она умерла в Нью-Йорке 17 июля 1959 года в возрасте 44 лет после тяжёлых осложнений, связанных с циррозом и сердечной недостаточностью.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Billie_Holiday",
+    "https://www.britannica.com/biography/Billie-Holiday",
+    "https://rockhall.com/inductees/billie-holiday/",
+    "https://www.kennedy-center.org/education/resources-for-educators/classroom-resources/media-and-interactives/artists/holiday-billie/",
+    "https://billieholiday.com/billie-holiday-timeline/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43270",  "Name": "Pieter Brueghel the Elder",  "BirthDate": "1525-01-01T00:00:00Z",  "DeathDate": "1569-09-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20The%20Painter%20and%20the%20Buyer%2C%20ca.%201566%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 89,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"64384":{"pageid":64384,"ns":0,"title":"Pieter Bruegel the Elder","extract":"Pieter Bruegel (also Brueghel or Breughel) the Elder ( BROY-g\u0259l, US also  BROO-g\u0259l; Dutch: [\u02c8pit\u0259r \u02c8br\u00f8\u02d0\u0263\u0259l] ; c.\u20091525\u20131530 \u2013 9 September 1569) was among the most significant artists of Dutch and Flemish Renaissance painting, a painter and printmaker, known for his landscapes and peasant scenes (so-called genre painting); he was a pioneer in presenting both types of subject as large paintings.\nHe was a formative influence on Dutch Golden Age painting and later painting in general in his innovative choices of subject matter, as one of the first generation of artists to grow up when religious subjects had ceased to be the natural subject matter of painting. He also painted no portraits, the other mainstay of Netherlandish art. After his training and travels to Italy, he returned in 1555 to settle in Antwerp, where he worked mainly as a prolific designer of prints for the leading publisher of the day. At the end of the 1550s, he made painting his main medium, and all his famous paintings come from the following period of little more than a decade before his early death in 1569, when he was probably in his early forties.\nIn the 20th and 21st centuries, Bruegel's works have inspired artists in both the literary arts and in cinema. His painting Landscape with the Fall of Icarus, now thought only to survive in copies, is the subject of the final lines of the 1938 poem \"Mus\u00e9e des Beaux Arts\" by W. H. Auden. Russian film director Andrei Tarkovsky refers to Bruegel's paintings in his films several times, including Solaris (1972) and Mirror (1975). Director Lars von Trier also uses Bruegel's paintings in his film Melancholia (2011).\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43270")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43270",
+  "isRealHuman": true,
+  "birthDate": "1525-01-01",
+  "deathDate": "1569-09-09",
+  "ageAtDeath": 44,
+  "confidence": 67,
+  "confidenceExplained": "The identity is certain, and the death year and place are well supported. The exact birth date is not known; major sources give circa 1525 or a range around 1525/1530, and Wikipedia explicitly gives an age range of 39 to 44. I selected 1525-01-01 as the most practical estimate because several sources use circa 1525 and the provided Wikidata-style data also points to 1525, yielding age 44 at death.",
+  "shortDescriptionEn": "Pieter Bruegel the Elder was one of the great Flemish Renaissance painters, celebrated for panoramic landscapes, sharp social observation, and vivid scenes of peasant life such as The Hunters in the Snow, The Peasant Wedding, and The Tower of Babel. He worked in Antwerp and later Brussels, helping turn everyday life into a serious subject for large-scale painting. He died in Brussels in 1569, probably in his early forties; some sources say shortly before his death he asked his wife to burn drawings that may have been politically or religiously risky.",
+  "shortDescriptionFr": "Pieter Bruegel l’Ancien fut l’un des grands peintres de la Renaissance flamande, célèbre pour ses paysages panoramiques, son regard social incisif et ses scènes de la vie paysanne, comme Les Chasseurs dans la neige, La Noce paysanne et La Tour de Babel. Actif à Anvers puis à Bruxelles, il fit de la vie quotidienne un sujet majeur de la grande peinture. Il mourut à Bruxelles en 1569, vraisemblablement au début de la quarantaine; selon une tradition ancienne, il aurait demandé à sa femme de brûler des dessins jugés trop dangereux sur le plan politique ou religieux.",
+  "shortDescriptionDe": "Pieter Bruegel der Ältere war einer der bedeutendsten flämischen Renaissance-Maler, berühmt für weite Landschaften, scharfe Beobachtung des Alltags und lebendige Bauernszenen wie Die Jäger im Schnee, Die Bauernhochzeit und Der Turmbau zu Babel. Er arbeitete in Antwerpen und später in Brüssel und machte das gewöhnliche Leben zu einem würdigen Thema großer Malerei. Er starb 1569 in Brüssel, wahrscheinlich Anfang vierzig; einer frühen Überlieferung zufolge bat he seine Frau kurz vor dem Tod, Zeichnungen zu verbrennen, die politisch oder religiös gefährlich wirken konnten.",
+  "shortDescriptionEs": "Pieter Bruegel el Viejo fue uno de los grandes pintores del Renacimiento flamenco, famoso por sus paisajes panorámicos, su aguda observación social y sus escenas de la vida campesina, como Los cazadores en la nieve, La boda campesina y La torre de Babel. Trabajó en Amberes y después en Bruselas, y convirtió la vida cotidiana en un tema digno de la gran pintura. Murió en Bruselas en 1569, probablemente en sus primeros cuarenta años; según una tradición temprana, antes de morir pidió a su esposa que quemara dibujos que podían parecer políticamente o religiosamente peligrosos.",
+  "shortDescriptionRu": "Питер Брейгель Старший был одним из крупнейших мастеров фламандского Возрождения, знаменитым панорамными пейзажами, острым взглядом на общество и живыми сценами крестьянской жизни, такими как Охотники на снегу, Крестьянская свадьба и Вавилонская башня. Он работал в Антверпене, затем в Брюсселе, сделав повседневную жизнь важной темой большой живописи. Он умер в Брюсселе в 1569 году, вероятно в начале пятого десятка; по раннему преданию, перед смертью он попросил жену сжечь рисунки, которые могли быть сочтены политически или религиозно опасными.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pieter_Bruegel_the_Elder",
+    "https://www.britannica.com/biography/Pieter-Bruegel-the-Elder",
+    "https://www.khm.at/en/digital/artists/pieter-bruegel-the-elder",
+    "https://www.metmuseum.org/essays/pieter-bruegel-the-elder-ca-1525-1569",
+    "https://www.nga.gov/artists/1031-pieter-bruegel-elder",
+    "https://www.wikidata.org/wiki/Q43270",
+    "https://commons.wikimedia.org/wiki/File:Wierix,_Johannes_(attributed_to)_-_Portrait_of_Pieter_Brueghel_(I)_-_1572_-_RP-P-1907-593_cropped.jpg",
+    "https://commons.wikimedia.org/wiki/File:Wierix,_Johannes_(attributed_to)_-_Portrait_of_Pieter_Bruegel_(I)_-_1571_-_WGA12414.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q126513",  "Name": "Steve Irwin",  "BirthDate": "1962-02-22T00:00:00Z",  "DeathDate": "2006-09-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Irwin.jpg",  "SiteLinksCnt": 85,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"6873934":{"pageid":6873934,"ns":0,"title":"Steve Irwin","extract":"Stephen Robert Irwin (22 February 1962 \u2013 4 September 2006) was an Australian conservationist, environmentalist, zookeeper, television personality, and wildlife educator. Nicknamed the \"Crocodile Hunter\", he is regarded as an influential figure in Australian popular culture, and as one of the greatest conservationists of all time.\nIrwin grew up around crocodiles and other types of reptiles and was educated regarding them by his father, Bob. He achieved international fame in the late 1990s from the television series The Crocodile Hunter, an internationally broadcast wildlife documentary series that he co-hosted with his wife, Terri. The couple also hosted the series Croc Files, The Crocodile Hunter Diaries, and New Breed Vets. They also co-owned and operated Australia Zoo, founded by Steve's parents in Beerwah, Queensland. They had two children, Bindi and Robert.\nOn 4 September 2006, Irwin died from an injury caused by a stingray while filming an underwater documentary in the Great Barrier Reef. His death became international news and was met with expressions of shock and grief by fans, the media, governments, and non-profit organisations. Numerous parks, zoos, streets, the vessel MY Steve Irwin, the snail species Crikey steveirwini, and the asteroid 57567 Crikey have been named in his honour. The Irwin family continues to operate Australia Zoo."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q126513")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q126513",
+  "isRealHuman": true,
+  "birthDate": "1962-02-22",
+  "deathDate": "2006-09-04",
+  "ageAtDeath": 44,
+  "confidence": 100,
+  "confidenceExplained": "The birth date and death date are consistently reported by Wikipedia, Britannica, and Australia Zoo. Calculating from 1962-02-22 to 2006-09-04 gives 44 full years, because Steve Irwin died before his 45th birthday.",
+  "shortDescriptionEn": "Steve Irwin was an Australian conservationist, zookeeper, wildlife educator, and television personality whose boundless energy made him internationally famous as the Crocodile Hunter. Through his documentaries, Australia Zoo, and hands-on approach to reptiles and endangered wildlife, he became one of the most recognizable advocates for animal conservation. He died at age 44 on 4 September 2006 while filming an underwater documentary at the Great Barrier Reef, after a stingray barb pierced his chest, causing fatal injury.",
+  "shortDescriptionFr": "Steve Irwin était un défenseur australien de la nature, gardien de zoo, éducateur animalier et personnalité de télévision, devenu célèbre dans le monde entier sous le surnom de Crocodile Hunter. Grâce à ses documentaires, à l’Australia Zoo et à son contact direct avec les reptiles et les espèces menacées, il est devenu l’un des visages les plus marquants de la conservation animale. Il est mort à 44 ans le 4 septembre 2006, alors qu’il tournait un documentaire sous-marin sur la Grande Barrière de corail, après qu’une raie l’a frappé à la poitrine avec son dard, provoquant une blessure mortelle.",
+  "shortDescriptionDe": "Steve Irwin war ein australischer Naturschützer, Zoodirektor, Wildtierpädagoge und Fernsehstar, der als Crocodile Hunter weltweit bekannt wurde. Mit seinen Dokumentationen, dem Australia Zoo und seinem direkten Umgang mit Reptilien und bedrohten Tieren wurde er zu einer der bekanntesten Stimmen des Artenschutzes. Er starb am 4. September 2006 im Alter von 44 Jahren, während er am Great Barrier Reef eine Unterwasserdokumentation drehte; der Stachel eines Stechrochens traf ihn in die Brust und verursachte eine tödliche Verletzung.",
+  "shortDescriptionEs": "Steve Irwin fue un conservacionista australiano, cuidador de zoológico, educador sobre vida silvestre y personalidad televisiva, famoso internacionalmente como el Crocodile Hunter. A través de sus documentales, Australia Zoo y su trato directo con reptiles y especies amenazadas, se convirtió en uno de los defensores de la conservación animal más reconocibles del mundo. Murió a los 44 años el 4 de septiembre de 2006 mientras filmaba un documental submarino en la Gran Barrera de Coral, cuando la púa de una raya le atravesó el pecho y le causó una lesión fatal.",
+  "shortDescriptionRu": "Стив Ирвин был австралийским защитником природы, сотрудником и совладельцем зоопарка, просветителем о дикой природе и телеведущим, прославившимся во всём мире как «Охотник на крокодилов». Благодаря документальным фильмам, работе в Australia Zoo и бесстрашному общению с рептилиями и редкими животными он стал одним из самых узнаваемых популяризаторов охраны природы. Он умер 4 сентября 2006 года в возрасте 44 лет во время съёмок подводного документального фильма на Большом Барьерном рифе, когда шип ската ударил его в грудь и нанёс смертельную травму.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Steve_Irwin",
+    "https://www.britannica.com/biography/Steve-Irwin",
+    "https://australiazoo.com.au/about-us/the-irwins/steve/",
+    "https://kids.britannica.com/students/article/Steve-Irwin/438134",
+    "https://en.wikipedia.org/wiki/Death_of_Steve_Irwin"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76367",  "Name": "Martin Bormann",  "BirthDate": "1900-06-17T00:00:00Z",  "DeathDate": "1945-05-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-R14128A%2C%20Martin%20Bormann.jpg",  "SiteLinksCnt": 78,  "Age": 44}
+{"batchcomplete":"","query":{"pages":{"20618":{"pageid":20618,"ns":0,"title":"Martin Bormann","extract":"Martin Ludwig Bormann (17 June 1900 \u2013 2 May 1945) was a German Nazi Party official and head of the Nazi Party Chancellery, private secretary to Adolf Hitler, and a war criminal. Bormann gained immense power by using his position as Hitler's private secretary to control the flow of information and access to Hitler. He used his position to create an extensive bureaucracy and involve himself as much as possible in the decision-making.\nBorn in Wegeleben, Bormann joined a paramilitary Freikorps organisation in 1922 while working as manager of a large estate. He served nearly a year in prison as an accomplice to his friend Rudolf H\u00f6ss (later commandant of Auschwitz concentration camp) in the murder of school teacher Walther Kadow. Bormann joined the Nazi Party in 1927 and the Schutzstaffel (SS) in 1937. He initially worked in the party's insurance service, and transferred in July 1933 to the office of Deputy F\u00fchrer Rudolf Hess, where he served as chief of staff.\nBormann gained acceptance into Hitler's inner circle and accompanied him everywhere, providing briefings and summaries of events and requests. He was appointed as Hitler's personal secretary on 12 April 1943. After Hess's solo flight to Britain on 10 May 1941 to seek peace negotiations with the British government, Bormann assumed Hess's former duties, with the title of Head of the Parteikanzlei (Party Chancellery). He had final approval over civil service appointments, and helped review and approve legislation. He was a leading proponent of reducing the influence of Christian churches and favoured harsh treatment of Jews and Slavs in the areas conquered by Germany during World War II.\nBormann returned with Hitler to the F\u00fchrerbunker in Berlin on 16 January 1945 as the Red Army approached the city. After Hitler committed suicide, Bormann and others attempted to flee Berlin on 2 May to avoid capture by the Soviets. Bormann likely committed suicide on a bridge near Lehrter station. His body was buried nearby on 8 May 1945, but remained unfound for decades. The missing Bormann was tried in absentia by the International Military Tribunal in the Nuremberg trials of 1945 and 1946, where he was convicted of war crimes and crimes against humanity and sentenced to death by hanging. Bormann's body was found in 1972 and confirmed as his in 1973; the identification was reaffirmed in 1998 by DNA tests."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76367")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q76367",
+  "isRealHuman": true,
+  "birthDate": "1900-06-17",
+  "deathDate": "1945-05-02",
+  "ageAtDeath": 44,
+  "confidence": 95,
+  "confidenceExplained": "The birth date, death date, and age at death are consistent across major reference sources. The exact circumstances of death were uncertain for decades because Bormann disappeared during the fall of Berlin, but the identification of his remains was later confirmed, including by DNA testing. The calculated age is certain if the accepted dates of 1900-06-17 and 1945-05-02 are used: he died before his 45th birthday, so he was 44.",
+  "shortDescriptionEn": "Martin Ludwig Bormann was a German Nazi Party official who became one of Adolf Hitler’s most powerful aides, serving as head of the Nazi Party Chancellery and Hitler’s private secretary. He controlled access to Hitler, influenced appointments and legislation, and was later convicted in absentia at the Nuremberg trials for war crimes and crimes against humanity. As Soviet forces closed in on Berlin, Bormann fled the Führerbunker on 2 May 1945 and most likely died by suicide near Lehrter station; his remains were found decades later and confirmed as his.",
+  "shortDescriptionFr": "Martin Ludwig Bormann était un responsable du parti nazi allemand devenu l’un des collaborateurs les plus puissants d’Adolf Hitler, à la tête de la chancellerie du parti nazi et secrétaire privé de Hitler. Il contrôlait l’accès au Führer, influençait les nominations et la législation, et fut condamné par contumace aux procès de Nuremberg pour crimes de guerre et crimes contre l’humanité. Alors que les forces soviétiques entraient dans Berlin, Bormann quitta le Führerbunker le 2 mai 1945 et mourut très probablement par suicide près de la gare de Lehrter; ses restes furent retrouvés des décennies plus tard et identifiés.",
+  "shortDescriptionDe": "Martin Ludwig Bormann war ein deutscher Funktionär der NSDAP und wurde als Leiter der Parteikanzlei sowie Privatsekretär Adolf Hitlers zu einem der mächtigsten Männer im Umfeld Hitlers. Er kontrollierte den Zugang zu Hitler, beeinflusste Ernennungen und Gesetzgebung und wurde später bei den Nürnberger Prozessen in Abwesenheit wegen Kriegsverbrechen und Verbrechen gegen die Menschlichkeit verurteilt. Als sowjetische Truppen Berlin erreichten, floh Bormann am 2. Mai 1945 aus dem Führerbunker und starb wahrscheinlich durch Suizid nahe dem Lehrter Bahnhof; seine Überreste wurden Jahrzehnte später gefunden und bestätigt.",
+  "shortDescriptionEs": "Martin Ludwig Bormann fue un funcionario alemán del Partido Nazi que llegó a ser uno de los colaboradores más poderosos de Adolf Hitler, como jefe de la Cancillería del Partido Nazi y secretario privado de Hitler. Controlaba el acceso al Führer, influyó en nombramientos y legislación, y fue condenado en ausencia en los juicios de Núremberg por crímenes de guerra y crímenes contra la humanidad. Cuando las fuerzas soviéticas cerraban el cerco sobre Berlín, Bormann huyó del Führerbunker el 2 de mayo de 1945 y probablemente murió por suicidio cerca de la estación de Lehrter; sus restos fueron hallados décadas después y confirmados.",
+  "shortDescriptionRu": "Мартин Людвиг Борман был немецким функционером НСДАП и одним из самых влиятельных помощников Адольфа Гитлера, возглавляя партийную канцелярию и выполняя обязанности личного секретаря Гитлера. Он контролировал доступ к фюреру, влиял на назначения и законодательные решения, а позднее был заочно осуждён на Нюрнбергском процессе за военные преступления и преступления против человечности. Когда советские войска вошли в Берлин, Борман покинул фюрербункер 2 мая 1945 года и, вероятнее всего, покончил с собой рядом со станцией Лертер; его останки были найдены спустя десятилетия и подтверждены.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Martin_Bormann",
+    "https://www.britannica.com/biography/Martin-Bormann",
+    "https://www.jewishvirtuallibrary.org/martin-bormann",
+    "https://www.jewishvirtuallibrary.org/jsource/Holocaust/verdicts.html"
+  ]
+}
