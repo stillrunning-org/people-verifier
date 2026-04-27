@@ -1,0 +1,1053 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q36322",  "Name": "Jane Austen",  "BirthDate": "1775-12-16T00:00:00Z",  "DeathDate": "1817-07-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/CassandraAusten-JaneAusten%28c.1810%29%20hires.jpg",  "SiteLinksCnt": 201,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"15782":{"pageid":15782,"ns":0,"title":"Jane Austen","extract":"Jane Austen ( OST-in, AW-stin; 16 December 1775 \u2013 18 July 1817) was an English writer known primarily for her six novels, which implicitly interpret, critique, and comment on the English landed gentry at the end of the 18th century.\nAusten's plots often explore the dependence of women on marriage for the pursuit of favourable social standing and economic security. Her works are implicit critiques of the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism. Her use of social commentary, realism, wit, and irony have earned her acclaim amongst critics and scholars.\nAusten wrote major novels before the age of 22, but she was not published until she was 35. The anonymously published Sense and Sensibility (1811), Pride and Prejudice (1813), Mansfield Park (1814), and Emma (1816) were moderate successes, but they did not bring her public fame in her lifetime. She wrote two other novels\u2014Northanger Abbey and Persuasion, both published posthumously in 1817\u2014and began another, eventually titled Sanditon, but it was left unfinished on her death. She also left behind three volumes of juvenile writings in manuscript, the short epistolary novel Lady Susan, and the unfinished novel The Watsons.\nSince her death Austen's novels have rarely been out of print. A significant transition in her reputation occurred in 1833, when they were republished in Richard Bentley's Standard Novels series (illustrated by Ferdinand Pickering and sold as a set). They gradually gained wide acclaim and popular readership. In 1869 her nephew published A Memoir of Jane Austen. Her work has inspired a large number of critical essays and has been included in many literary anthologies. \nHer novels have been frequently adapted into film and television. Notable film adaptations include Pride and Prejudice (1940), Sense and Sensibility (1995), Emma (1996), Mansfield Park (1999), Bride and Prejudice (2004), Pride & Prejudice (2005), Love & Friendship (2016), and Emma (2020). Notable television adaptations include Persuasion (1995), Pride and Prejudice (1995), Northanger Abbey (2007), Persuasion (2007), Lost in Austen (2008), Sense and Sensibility (2008), Emma (2009), and Sanditon (2019\u20132023).\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q36322")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q36322",
+  "isRealHuman": true,
+  "birthDate": "1775-12-16",
+  "deathDate": "1817-07-18",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "Jane Austen's identity, birth date, death date, and age at death are consistently documented by major reference sources. The age calculation is straightforward: she was born on 16 December 1775 and died on 18 July 1817, before her 42nd birthday. The only uncertainty concerns the exact medical cause of death, not the age.",
+  "shortDescriptionEn": "Jane Austen was an English novelist whose sharply observant fiction transformed the novel of manners and helped shape literary realism. Best known for Pride and Prejudice, Sense and Sensibility, Emma, Mansfield Park, Persuasion, and Northanger Abbey, she wrote with wit, irony, and unusual insight into class, marriage, money, and women’s limited choices in Georgian society. Her fame grew greatly after her death, and her books have remained central to English literature. In her final year she suffered a serious, poorly understood illness, moved to Winchester to seek medical help, and died there on 18 July 1817 at the age of 41; later theories have included Addison’s disease, Hodgkin lymphoma, lupus, tuberculosis, and cancer.",
+  "shortDescriptionFr": "Jane Austen était une romancière anglaise dont l’observation fine de la société a transformé le roman de mœurs et contribué à l’essor du réalisme littéraire. Célèbre pour Orgueil et Préjugés, Raison et Sentiments, Emma, Mansfield Park, Persuasion et L’Abbaye de Northanger, elle a décrit avec esprit, ironie et lucidité les questions de classe sociale, de mariage, d’argent et les choix limités des femmes dans la société géorgienne. Sa célébrité s’est surtout affirmée après sa mort, et ses romans sont restés essentiels dans la littérature anglaise. Durant sa dernière année, elle souffrit d’une maladie grave dont la cause demeure incertaine, partit à Winchester pour être soignée, et y mourut le 18 juillet 1817 à l’âge de 41 ans; les hypothèses modernes incluent notamment la maladie d’Addison, un lymphome de Hodgkin, le lupus, la tuberculose ou un cancer.",
+  "shortDescriptionDe": "Jane Austen war eine englische Schriftstellerin, deren scharfsinnige Gesellschaftsbeobachtung den Sittenroman erneuerte und den literarischen Realismus mitprägte. Am bekanntesten ist sie für Stolz und Vorurteil, Verstand und Gefühl, Emma, Mansfield Park, Überredung und Die Abtei von Northanger. Mit Witz, Ironie und großer Genauigkeit schrieb sie über Stand, Ehe, Geld und die begrenzten Handlungsmöglichkeiten von Frauen in der georgianischen Gesellschaft. Ihr Ruhm wuchs vor allem nach ihrem Tod, und ihre Romane gehören bis heute zum Kern der englischen Literatur. In ihrem letzten Lebensjahr litt sie an einer schweren, nicht eindeutig diagnostizierten Krankheit, zog zur Behandlung nach Winchester und starb dort am 18. Juli 1817 im Alter von 41 Jahren; spätere Vermutungen reichen von Morbus Addison und Hodgkin-Lymphom bis zu Lupus, Tuberkulose oder Krebs.",
+  "shortDescriptionEs": "Jane Austen fue una novelista inglesa cuya mirada aguda sobre la sociedad transformó la novela de costumbres y ayudó a definir el realismo literario. Es especialmente conocida por Orgullo y prejuicio, Sentido y sensibilidad, Emma, Mansfield Park, Persuasión y La abadía de Northanger. Escribió con ingenio, ironía y precisión sobre la clase social, el matrimonio, el dinero y las limitadas opciones de las mujeres en la sociedad georgiana. Su reputación creció mucho después de su muerte, y sus novelas siguen siendo fundamentales en la literatura inglesa. En su último año padeció una enfermedad grave y mal comprendida, se trasladó a Winchester para recibir atención médica y murió allí el 18 de julio de 1817 a los 41 años; las teorías modernas han propuesto enfermedad de Addison, linfoma de Hodgkin, lupus, tuberculosis o cáncer.",
+  "shortDescriptionRu": "Джейн Остин была английской писательницей, чья тонкая наблюдательность изменила роман нравов и помогла сформировать литературный реализм. Она наиболее известна романами «Гордость и предубеждение», «Разум и чувства», «Эмма», «Мэнсфилд-парк», «Доводы рассудка» и «Нортенгерское аббатство». С остроумием, иронией и редкой точностью она писала о классе, браке, деньгах и ограниченных возможностях женщин в георгианской Англии. Настоящая слава пришла к ней уже после смерти, а ее книги стали классикой английской литературы. В последний год жизни Остин страдала от тяжелой болезни, точная причина которой до сих пор обсуждается, переехала в Винчестер ради лечения и умерла там 18 июля 1817 года в возрасте 41 года; среди современных версий называют болезнь Аддисона, лимфому Ходжкина, волчанку, туберкулез и рак.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Jane_Austen_by_Cassandra_Austen,_gro%C3%9F.jpg",
+    "https://commons.wikimedia.org/wiki/File:JaneAusten,_by_Cassandra_Austen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cassandra_Austen-Jane_Austen(c.1810).jpg",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/CassandraAusten-JaneAusten%28c.1810%29%20hires.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jane_Austen",
+    "https://www.britannica.com/biography/Jane-Austen",
+    "https://www.britannica.com/question/How-did-Jane-Austen-die",
+    "https://janeaustens.house/jane-austen/timeline/",
+    "https://janeaustens.house/object/extract-from-british-medical-journal-18-july-1964/",
+    "https://commons.wikimedia.org/wiki/File:Jane_Austen_by_Cassandra_Austen,_gro%C3%9F.jpg",
+    "https://commons.wikimedia.org/wiki/File:JaneAusten,_by_Cassandra_Austen.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cassandra_Austen-Jane_Austen(c.1810).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1496",  "Name": "Ferdinand Magellan",  "BirthDate": "1480-01-01T00:00:00Z",  "DeathDate": "1521-05-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20de%20Hernando%20de%20Magallanes.jpg",  "SiteLinksCnt": 195,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"19914843":{"pageid":19914843,"ns":0,"title":"Ferdinand Magellan","extract":"Ferdinand Magellan (c.\u20091480 \u2013 27 April 1521) was a Portuguese explorer best known for planning and leading the 1519\u20131522 Spanish expedition to the East Indies. During this expedition, he discovered the Strait of Magellan, performed the first European crossing of the Pacific Ocean, and made the first known European contact with the Philippines. Magellan himself was killed in battle in the Philippines in 1521, but his crew, commanded by Spanish navigator Juan Sebasti\u00e1n Elcano, completed the return trip to Spain in 1522, achieving the first circumnavigation of Earth in history. \nBorn around 1480 into a family of minor Portuguese nobility, Magellan became a skilled sailor and naval officer in the service of the Portuguese Crown in Asia. However, King Manuel I refused to support Magellan's plan to reach the Moluccas, or Spice Islands, by sailing westwards around the American continent. Magellan then proposed the same plan to King Charles I of Spain, who approved it. In Seville, he married, fathered two children, and organized the expedition. In 1518, for his allegiance to the Hispanic monarchy, Magellan was appointed an admiral of the Spanish fleet and given command of the expedition\u2014the five-ship \"Armada of Molucca\". He also was made a Commander of the Order of Santiago, one of the highest military ranks of the Spanish Empire.\nGranted special powers and privileges by the king, he led the Armada from Sanl\u00facar de Barrameda southwest across the Atlantic Ocean, to the eastern coast of South America, and south to Patagonia. Despite a series of storms and mutinies, the expedition successfully passed through the Strait of Magellan into the Mar del Sur, which Magellan renamed the Mar Pacifico, or Pacific Ocean. The expedition landed at Guam after an arduous crossing of the Pacific, and then reached the Philippines. There, on 27 April 1521, Magellan died in the Battle of Mactan after being shot in the neck with a poison arrow. Under the command of Captain Juan Sebasti\u00e1n Elcano, the expedition finally reached the Spice Islands. The fleet's two remaining ships then parted ways, one attempting, unsuccessfully, to reach New Spain by sailing east across the Pacific. The other ship, commanded by Elcano, sailed west across the Indian Ocean and north along the Atlantic coast of Africa, finally returning to Spain in September 1522.\nWhile in the Kingdom of Portugal's service, Magellan had already reached the Malay Archipelago in Southeast Asia on previous voyages traveling east (from 1505 to 1511\u20131512). By visiting this area again but now traveling west, Magellan achieved a nearly complete personal circumnavigation of the globe for the first time in history."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1496")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1496",
+  "isRealHuman": true,
+  "birthDate": "1480-01-01",
+  "deathDate": "1521-04-27",
+  "ageAtDeath": 41,
+  "confidence": 65,
+  "confidenceExplained": "The identification as Ferdinand Magellan and the death date of 27 April 1521 are strongly supported by major references. The age is less certain because his birth is usually given only as circa 1480, without a reliable month or day. Using 1480-01-01 as the required estimate gives 41, though the true age could plausibly have been 40 or 41.",
+  "shortDescriptionEn": "Ferdinand Magellan was a Portuguese navigator and explorer who led the Spanish expedition of 1519–1522 toward the Spice Islands, opened the Strait of Magellan, and achieved the first documented European crossing of the Pacific. Although he did not complete the circumnavigation himself, his expedition later returned to Spain under Juan Sebastián Elcano. Magellan died at 41 during the Battle of Mactan in the Philippines, where local forces resisting Spanish intervention overwhelmed his small landing party.",
+  "shortDescriptionFr": "Ferdinand Magellan était un navigateur et explorateur portugais qui dirigea l’expédition espagnole de 1519–1522 vers les îles aux Épices, ouvrit le détroit de Magellan et réalisa la première traversée européenne documentée du Pacifique. Il ne termina pas lui-même le tour du monde, achevé ensuite par l’équipage sous Juan Sebastián Elcano. Magellan mourut à 41 ans lors de la bataille de Mactan, aux Philippines, où des forces locales opposées à l’intervention espagnole submergèrent son petit groupe débarqué.",
+  "shortDescriptionDe": "Ferdinand Magellan war ein portugiesischer Seefahrer und Entdecker, der die spanische Expedition von 1519–1522 zu den Gewürzinseln führte, die Magellanstraße erschloss und die erste dokumentierte europäische Überquerung des Pazifiks vollbrachte. Die Weltumsegelung vollendete er nicht selbst; sie wurde später unter Juan Sebastián Elcano abgeschlossen. Magellan starb mit 41 Jahren in der Schlacht von Mactan auf den Philippinen, als einheimische Kräfte seine kleine Landungstruppe überwältigten.",
+  "shortDescriptionEs": "Fernando de Magallanes fue un navegante y explorador portugués que dirigió la expedición española de 1519–1522 hacia las islas de las Especias, abrió el estrecho de Magallanes y realizó la primera travesía europea documentada del Pacífico. Aunque no completó personalmente la circunnavegación, su expedición regresó después a España bajo el mando de Juan Sebastián Elcano. Magallanes murió a los 41 años en la batalla de Mactán, en Filipinas, donde fuerzas locales que resistían la intervención española derrotaron a su reducido grupo.",
+  "shortDescriptionRu": "Фернан Магеллан был португальским мореплавателем и исследователем, возглавившим испанскую экспедицию 1519–1522 годов к Островам пряностей, открывшим путь через Магелланов пролив и совершившим первое документированное европейское пересечение Тихого океана. Сам он не завершил кругосветное плавание: его экспедиция вернулась в Испанию под командованием Хуана Себастьяна Элькано. Магеллан умер в 41 год в битве при Мактане на Филиппинах, где местные силы, сопротивлявшиеся испанскому вмешательству, разгромили его небольшой отряд.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ferdinand_Magellan",
+    "https://www.britannica.com/biography/Ferdinand-Magellan",
+    "https://www.encyclopedia.com/people/history/explorers-travelers-and-conquerors-biographies/ferdinand-magellan",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9262276/",
+    "https://commons.wikimedia.org/wiki/File:Retrato_de_Hernando_de_Magallanes.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7251",  "Name": "Alan Turing",  "BirthDate": "1912-06-23T00:00:00Z",  "DeathDate": "1954-06-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alan%20Turing%20%281951%29%20%28crop%29.jpg",  "SiteLinksCnt": 188,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"1208":{"pageid":1208,"ns":0,"title":"Alan Turing","extract":"Alan Mathison Turing (; 23 June 1912 \u2013 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.\nBorn in London, Turing was raised in southern England. He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University. During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence. He led Hut 8, the section responsible for German naval cryptanalysis. Turing devised techniques for speeding the breaking of German ciphers, including improvements to the pre-war Polish bomba method, an electromechanical machine that could find settings for the Enigma machine. He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements.\nAfter the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer. In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology. Turing wrote on the chemical basis of morphogenesis and predicted oscillating chemical reactions such as the Belousov\u2013Zhabotinsky reaction, first observed in the 1960s. Despite these accomplishments, he was never fully recognised during his lifetime because much of his work was covered by the Official Secrets Act.\nIn 1952, Turing was prosecuted for homosexual acts. He accepted hormone treatment, a procedure commonly referred to as chemical castration, as an alternative to prison. Turing died on 7 June 1954, aged 41, from cyanide poisoning. An inquest determined his death as suicide, but the evidence is also consistent with accidental poisoning. Following a campaign in 2009, British prime minister Gordon Brown made an official public apology for \"the appalling way [Turing] was treated\". Queen Elizabeth II granted a pardon in 2013. The term \"Alan Turing law\" is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts.\nTuring left an extensive legacy in mathematics and computing which has become widely recognised with statues and many things named after him, including an annual award for computing innovation. His portrait appears on the Bank of England \u00a350 note, first released on 23 June 2021 to coincide with his birthday. The audience vote in a 2019 BBC series named Turing the greatest scientist of the 20th century.\nThe cognitive scientist Douglas Hofstadter writes:\n\nAtheist, homosexual, eccentric, marathon-running mathematician, A. M. Turing was in large part responsible not only for the concept of computers, incisive theorems about their powers, and a clear vision of the possibility of computer minds, but also for the cracking of German ciphers during the Second World War. It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7251")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7251",
+  "isRealHuman": true,
+  "birthDate": "1912-06-23",
+  "deathDate": "1954-06-07",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across the provided data and major reference sources. Alan Turing was born on 1912-06-23 and died on 1954-06-07, 16 days before his 42nd birthday, so his age at death was 41.",
+  "shortDescriptionEn": "Alan Mathison Turing was an English mathematician, logician, cryptanalyst and pioneering computer scientist whose work shaped theoretical computer science, artificial intelligence and modern computing. During the Second World War he played a crucial role at Bletchley Park in breaking German ciphers, including Enigma-related naval traffic. After the war he designed early stored-program computer concepts and explored mathematical biology. In 1952 he was prosecuted for homosexual acts and underwent hormone treatment instead of imprisonment. He died in Wilmslow, Cheshire, on 7 June 1954 from cyanide poisoning; the inquest ruled suicide, though later discussion has noted that accidental poisoning cannot be entirely excluded.",
+  "shortDescriptionFr": "Alan Mathison Turing était un mathématicien, logicien, cryptanalyste et pionnier anglais de l’informatique, dont les travaux ont profondément marqué l’informatique théorique, l’intelligence artificielle et le calcul moderne. Pendant la Seconde Guerre mondiale, il joua un rôle essentiel à Bletchley Park dans le déchiffrement des codes allemands, notamment ceux liés à Enigma. Après la guerre, il travailla sur des concepts d’ordinateurs à programme enregistré et sur la biologie mathématique. En 1952, il fut poursuivi pour actes homosexuels et accepta un traitement hormonal pour éviter la prison. Il mourut à Wilmslow, dans le Cheshire, le 7 juin 1954 d’un empoisonnement au cyanure; l’enquête conclut au suicide, même si l’hypothèse d’un accident a ensuite été discutée.",
+  "shortDescriptionDe": "Alan Mathison Turing war ein englischer Mathematiker, Logiker, Kryptoanalytiker und Wegbereiter der Informatik, dessen Arbeit die theoretische Informatik, künstliche Intelligenz und das moderne Rechnen prägte. Im Zweiten Weltkrieg spielte er in Bletchley Park eine zentrale Rolle beim Entschlüsseln deutscher Codes, insbesondere im Zusammenhang mit der Enigma. Nach dem Krieg arbeitete er an frühen Konzepten speicherprogrammierter Computer und an mathematischer Biologie. 1952 wurde er wegen homosexueller Handlungen strafrechtlich verfolgt und unterzog sich statt einer Haftstrafe einer Hormonbehandlung. Er starb am 7. Juni 1954 in Wilmslow, Cheshire, an einer Cyanidvergiftung; die Untersuchung wertete den Tod als Suizid, obwohl später auch ein Unfall als Möglichkeit diskutiert wurde.",
+  "shortDescriptionEs": "Alan Mathison Turing fue un matemático, lógico, criptoanalista y pionero inglés de la informática, cuyas ideas influyeron decisivamente en la informática teórica, la inteligencia artificial y la computación moderna. Durante la Segunda Guerra Mundial tuvo un papel crucial en Bletchley Park descifrando códigos alemanes, incluidos mensajes relacionados con Enigma. Tras la guerra trabajó en diseños tempranos de computadoras con programa almacenado y en biología matemática. En 1952 fue procesado por actos homosexuales y aceptó tratamiento hormonal como alternativa a la prisión. Murió en Wilmslow, Cheshire, el 7 de junio de 1954 por envenenamiento con cianuro; la investigación oficial concluyó suicidio, aunque posteriormente se ha señalado que un accidente no puede descartarse por completo.",
+  "shortDescriptionRu": "Алан Мэтисон Тьюринг был английским математиком, логиком, криптоаналитиком и одним из основоположников информатики; его идеи сильно повлияли на теоретическую информатику, искусственный интеллект и современные вычисления. Во время Второй мировой войны он сыграл ключевую роль в Блетчли-парке, помогая взламывать немецкие шифры, включая сообщения, связанные с «Энигмой». После войны он работал над ранними проектами компьютеров с хранимой программой и занимался математической биологией. В 1952 году его преследовали за гомосексуальные отношения, и он согласился на гормональное лечение вместо тюремного заключения. Он умер в Уилмслоу, графство Чешир, 7 июня 1954 года от отравления цианидом; следствие признало смерть самоубийством, хотя позднее обсуждалась и возможность несчастного случая.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alan_Turing",
+    "https://www.britannica.com/biography/Alan-Turing",
+    "https://www.npg.org.uk/collections/search/person/mp18700/alan-mathison-turing",
+    "https://www.npg.org.uk/collections/search/portrait/mw165875/Alan-Turing",
+    "https://commons.wikimedia.org/wiki/Category:Alan_Turing"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3355",  "Name": "Amelia Earhart",  "BirthDate": "1897-07-24T00:00:00Z",  "DeathDate": "1939-01-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Amelia%20Earhart%201935.jpg",  "SiteLinksCnt": 124,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"85234":{"pageid":85234,"ns":0,"title":"Amelia Earhart","extract":"Amelia Mary Earhart ( AIR-hart; born July 24, 1897; disappeared July 2, 1937; declared dead January 5, 1939) was an American aviator and aviation pioneer who became one of the most celebrated figures of early flight.  \nIn 1928, she was the first female passenger to cross the Atlantic by airplane. In 1932, she became the first woman to make a nonstop solo transatlantic flight, and was awarded the Distinguished Flying Cross for her achievement. She was one of the first aviators to promote commercial air travel, wrote best-selling books about her flying experiences, and helped found the Ninety-Nines, an organization for female pilots.\n\nOn July 2, 1937, she disappeared over the Pacific Ocean while attempting to become the first female pilot to circumnavigate the world. Since her disappearance, Earhart  has become a global cultural figure and numerous films, documentaries, and books have recounted her life."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3355")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q3355",
+  "isRealHuman": true,
+  "birthDate": "1897-07-24",
+  "deathDate": "1937-07-02",
+  "ageAtDeath": 39,
+  "confidence": 86,
+  "confidenceExplained": "The identity and birth date are very well established. The legal death date was January 5, 1939, which would make her 41, but that was a court declaration after her disappearance. For the moment of dying, the best historical estimate is July 2, 1937, when Earhart and Fred Noonan disappeared over the Pacific while low on fuel and unable to find Howland Island. Because her body and aircraft were never conclusively found, the exact biological death date cannot be proven; however, using the disappearance date gives the most defensible calculated age: 39.",
+  "shortDescriptionEn": "Amelia Earhart was an American aviation pioneer, author, and one of the most admired figures in early flight. She became the first woman to fly solo nonstop across the Atlantic and used her fame to promote aviation, commercial air travel, and opportunities for women pilots. In 1937, while attempting to circumnavigate the globe with navigator Fred Noonan, she disappeared over the central Pacific near Howland Island. Despite major searches, neither she nor her aircraft was found, and her final flight became one of aviation history’s enduring mysteries.",
+  "shortDescriptionFr": "Amelia Earhart était une pionnière américaine de l’aviation, autrice et l’une des figures les plus célèbres des débuts du vol moderne. Elle fut la première femme à traverser seule et sans escale l’Atlantique en avion, et utilisa sa notoriété pour encourager l’aviation commerciale et la place des femmes dans le pilotage. En 1937, lors d’une tentative de tour du monde avec le navigateur Fred Noonan, elle disparut au-dessus du Pacifique central près de l’île Howland. Malgré de vastes recherches, ni elle ni son avion ne furent retrouvés, faisant de sa dernière traversée un mystère durable de l’histoire aéronautique.",
+  "shortDescriptionDe": "Amelia Earhart war eine amerikanische Flugpionierin, Autorin und eine der bekanntesten Persönlichkeiten der frühen Luftfahrt. Sie war die erste Frau, die allein und ohne Zwischenstopp den Atlantik überflog, und setzte ihre Berühmtheit ein, um die Luftfahrt, den kommerziellen Flugverkehr und Chancen für Pilotinnen zu fördern. 1937 verschwand sie bei dem Versuch, mit dem Navigator Fred Noonan die Erde zu umrunden, über dem zentralen Pazifik nahe Howland Island. Trotz groß angelegter Suchaktionen wurden weder sie noch ihr Flugzeug gefunden; ihr letzter Flug blieb eines der großen Rätsel der Luftfahrtgeschichte.",
+  "shortDescriptionEs": "Amelia Earhart fue una pionera estadounidense de la aviación, escritora y una de las figuras más admiradas de los primeros años del vuelo moderno. Fue la primera mujer en cruzar sola y sin escalas el Atlántico en avión, y aprovechó su fama para impulsar la aviación, los vuelos comerciales y las oportunidades para las mujeres piloto. En 1937, mientras intentaba dar la vuelta al mundo con el navegante Fred Noonan, desapareció sobre el Pacífico central cerca de la isla Howland. A pesar de amplias búsquedas, ni ella ni su avión fueron encontrados, y su último vuelo se convirtió en uno de los grandes misterios de la historia de la aviación.",
+  "shortDescriptionRu": "Амелия Эрхарт была американской пионеркой авиации, писательницей и одной из самых известных фигур ранней истории полётов. Она стала первой женщиной, совершившей одиночный беспосадочный перелёт через Атлантику, и использовала свою известность для продвижения авиации, коммерческих авиаперевозок и возможностей для женщин-пилотов. В 1937 году, во время попытки облететь Землю с штурманом Фредом Нунаном, она исчезла над центральной частью Тихого океана близ острова Хауленд. Масштабные поиски не обнаружили ни её, ни самолёт, а последний полёт Эрхарт стал одной из самых известных загадок в истории авиации.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.britannica.com/biography/Amelia-Earhart",
+    "https://www.pbs.org/wgbh/americanexperience/features/earhart-timeline/",
+    "https://airandspace.si.edu/stories/editorial/amelia-earhart-missing-80-years-not-forgotten",
+    "https://www.si.edu/object/amelia-earhart%3Anasm_A19500108000"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q25369",  "Name": "Kobe Bryant",  "BirthDate": "1978-08-23T00:00:00Z",  "DeathDate": "2020-01-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/KBryant8.jpg",  "SiteLinksCnt": 114,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"246185":{"pageid":246185,"ns":0,"title":"Kobe Bryant","extract":"Kobe Bean Bryant ( KOH-bee; August 23, 1978 \u2013 January 26, 2020) was an American professional basketball player. A shooting guard, he spent his entire 20-year career with the Los Angeles Lakers in the National Basketball Association (NBA). Widely regarded as one of the greatest and most influential players in the sport's history, Bryant won five NBA championships and was an 18-time All-Star, four-time All-Star MVP, 15-time member of the All-NBA Team, 12-time member of the All-Defensive Team, the 2008 NBA Most Valuable Player (MVP), two-time NBA Finals MVP, and two-time scoring champion. He ranks fourth in league all-time regular season and postseason scoring. Bryant was posthumously named to the NBA 75th Anniversary Team in 2021 and was a two-time inductee to the Naismith Memorial Basketball Hall of Fame, for his playing career in 2020 and as a member of the 2008 U.S. Olympic team in 2025.\nThe son of NBA player Joe Bryant, Bryant was born in Philadelphia and partly raised in Italy. Recognized as the top American high school basketball player while at Lower Merion High School in the Philadelphia suburb of Ardmore, Bryant declared for the 1996 NBA draft and was selected by the Charlotte Hornets with the 13th pick; he was then traded to the Lakers. As a rookie, Bryant earned a reputation as a high-flyer by winning the 1997 Slam Dunk Contest and was named an All-Star by his second season. Despite his contentious relationship with teammate Shaquille O'Neal, the pair led the Lakers to three consecutive NBA championships from 2000 to 2002. In 2003, Bryant was charged with sexual assault. Charges were dropped after the accuser refused to testify, and a lawsuit was settled out of court, with Bryant issuing an apology and admitting to a sexual encounter he maintained was consensual.\nAfter the Lakers lost the 2004 NBA Finals, O'Neal was traded and Bryant became the franchise's cornerstone. He led the NBA in scoring in the 2005\u201306 and 2006\u201307 seasons. On January 22, 2006, Bryant scored a career-high 81 points, the third most scored in a single NBA game behind Wilt Chamberlain's 100-point game and Bam Adebayo's 83-point game. Bryant led the team to championships in 2009 and 2010, and was named NBA Finals MVP both times. He continued to be among the league's premier players through the 2012\u201313 season when he suffered a torn achilles tendon. The last years of his playing career were hampered by injuries and limited playing time. Bryant retired after the 2015\u201316 season. In 2017, the Lakers retired both his Nos. 8 and 24, making Bryant the only player in NBA history to have multiple numbers retired by the same franchise.\nThe all-time leading scorer in Lakers history, Bryant was the first guard in NBA history to play 20 seasons. His 18 All-Star designations are the third most ever, and his four NBA All-Star Game MVP Awards are tied with Bob Pettit for the most in history. Bryant gave himself the nickname Black Mamba in the mid-2000s, and the epithet became widely adopted by the public. He won gold medals on the 2008 and 2012 U.S. Olympic teams. In 2018, Bryant won the Academy Award for Best Animated Short Film for Dear Basketball (2017), becoming the only person to win both an Olympic gold medal and an Oscar.\nIn January 2020, Bryant and his 13-year-old daughter Gianna were among nine people who died in a helicopter crash in Calabasas, California. A number of tributes and memorials followed, and the NBA All-Star Game MVP was renamed in Bryant's honor."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q25369")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q25369",
+  "isRealHuman": true,
+  "birthDate": "1978-08-23",
+  "deathDate": "2020-01-26",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The identity is clear from the Wikidata ID, name, dates, and biography. Multiple reliable sources agree that Kobe Bryant was born on 1978-08-23 and died on 2020-01-26. Calculating from those dates gives 41 years old at death, because his 42nd birthday would have been later in 2020.",
+  "shortDescriptionEn": "Kobe Bryant was an American basketball icon who spent his entire 20-season NBA career with the Los Angeles Lakers. A five-time NBA champion, 18-time All-Star, league MVP, Olympic gold medalist, and Oscar winner for Dear Basketball, he became one of the defining athletes of his generation. He died on January 26, 2020, aged 41, in a helicopter crash in Calabasas, California, alongside his daughter Gianna and seven others.",
+  "shortDescriptionFr": "Kobe Bryant était une icône américaine du basket-ball qui a passé toute sa carrière NBA de 20 saisons avec les Los Angeles Lakers. Quintuple champion NBA, 18 fois All-Star, MVP de la ligue, médaillé d’or olympique et lauréat d’un Oscar pour Dear Basketball, il est devenu l’un des sportifs majeurs de sa génération. Il est mort le 26 janvier 2020, à l’âge de 41 ans, dans un accident d’hélicoptère à Calabasas, en Californie, avec sa fille Gianna et sept autres personnes.",
+  "shortDescriptionDe": "Kobe Bryant war eine amerikanische Basketball-Ikone, die ihre gesamte 20-jährige NBA-Karriere bei den Los Angeles Lakers verbrachte. Als fünffacher NBA-Champion, 18-maliger All-Star, Liga-MVP, Olympiasieger und Oscarpreisträger für Dear Basketball prägte er eine ganze Sportgeneration. Er starb am 26. Januar 2020 im Alter von 41 Jahren bei einem Hubschrauberabsturz in Calabasas, Kalifornien, zusammen mit seiner Tochter Gianna und sieben weiteren Menschen.",
+  "shortDescriptionEs": "Kobe Bryant fue un icono estadounidense del baloncesto que pasó toda su carrera de 20 temporadas en la NBA con Los Angeles Lakers. Cinco veces campeón de la NBA, 18 veces All-Star, MVP de la liga, medallista olímpico de oro y ganador del Óscar por Dear Basketball, se convirtió en uno de los deportistas más influyentes de su generación. Murió el 26 de enero de 2020, a los 41 años, en un accidente de helicóptero en Calabasas, California, junto con su hija Gianna y otras siete personas.",
+  "shortDescriptionRu": "Коби Брайант был американской иконой баскетбола, проведшей всю 20-летнюю карьеру в НБА в составе Los Angeles Lakers. Пятикратный чемпион НБА, 18-кратный участник Матча всех звёзд, MVP лиги, олимпийский чемпион и обладатель «Оскара» за Dear Basketball, он стал одним из главных спортсменов своего поколения. Он погиб 26 января 2020 года в возрасте 41 года в результате крушения вертолёта в Калабасасе, Калифорния, вместе со своей дочерью Джианной и ещё семью людьми.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kobe_Bryant",
+    "https://www.britannica.com/biography/Kobe-Bryant",
+    "https://www.nba.com/news/kobe-bryant-dies-helicopter-crash",
+    "https://www.nba.com/kobe-bryant-tribute",
+    "https://www.ntsb.gov/investigations/Pages/DCA20MA059.aspx",
+    "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_2014.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_dunk.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kobe_Bryant_dunking_2013.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42305",  "Name": "Richard I of England",  "BirthDate": "1157-09-15T00:00:00Z",  "DeathDate": "1199-04-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Richard%20I%20of%20England%20in%20the%20Brief%20Abridgement%20of%20the%20Chronicles%20of%20England.jpg",  "SiteLinksCnt": 110,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"26368":{"pageid":26368,"ns":0,"title":"Richard I of England","extract":"Richard I (8 September 1157 \u2013 6 April 1199), known as Richard the Lionheart or Richard C\u0153ur de Lion (Old Norman French: Quor de Lion) because of his reputation as a great military leader and warrior, was King of England from 1189 until his death in 1199. He also ruled as Duke of Normandy, Aquitaine, and Gascony; Lord of Cyprus; Count of Poitiers, Anjou, Maine, and Nantes; and was overlord of Brittany at various times during the same period. He was the third of five sons of Henry II of England and Eleanor of Aquitaine and was therefore not expected to become king, but his two elder brothers predeceased their father.\nBy the age of 16, Richard had taken command of his own army, putting down rebellions in Poitou against his father. Richard was an important Christian commander during the Third Crusade, leading the campaign after the departure of Philip II of France. Despite achieving several victories against his Muslim counterpart, Saladin, he was ultimately forced to end his campaign without retaking Jerusalem.\nRichard probably spoke both French and Occitan, and based on the testimony of Roger of Howden, most likely understood Middle English. He was born in England, where he spent his childhood; before becoming duke of Aquitaine, however, he lived most of his adult life in the Duchy of Aquitaine, in the southwest of France. Following his accession to the crown of England, he spent very little time, perhaps as little as six months, in England. Most of his reign was spent on Crusade, in captivity, or actively defending the French portions of the Angevin Empire. Though regarded as a model king and a paragon of chivalry during the four centuries after his death and viewed as a pious and chivalrous hero by his subjects, he was later perceived by historians as a ruler who treated the kingdom of England merely as a source of revenue for his armies rather than a land entrusted to his stewardship. This view of Richard has come under increasing scrutiny by modern historians, who view it as anachronistic. Richard I is an enduring iconic figure both in England and in France."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42305")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q42305",
+  "isRealHuman": true,
+  "birthDate": "1157-09-08",
+  "deathDate": "1199-04-06",
+  "ageAtDeath": 41,
+  "confidence": 98,
+  "confidenceExplained": "High confidence: multiple major reference sources give Richard I's birth date as 1157-09-08 and death date as 1199-04-06, and the resulting completed age is 41. The conflicting 1157-09-15 and 1199-04-13 dates are likely calendar-conversion or data-shift errors; they still produce the same completed age of 41.",
+  "shortDescriptionEn": "Richard I of England, remembered as Richard the Lionheart, was a Plantagenet king famed for his military skill, leadership in the Third Crusade, and rule over a wide Angevin realm that included England, Normandy, Aquitaine, and Anjou. Although he became an enduring symbol of chivalric kingship, he spent little of his reign in England. In 1199, while besieging Châlus-Chabrol in Aquitaine, he was struck by a crossbow bolt; the wound became gangrenous, and he died on 6 April at the age of 41.",
+  "shortDescriptionFr": "Richard Ier d’Angleterre, surnommé Richard Cœur de Lion, fut un roi Plantagenêt célèbre pour ses talents militaires, son rôle majeur dans la troisième croisade et son autorité sur un vaste ensemble angevin comprenant l’Angleterre, la Normandie, l’Aquitaine et l’Anjou. Devenu une figure durable de la chevalerie, il passa pourtant peu de temps dans son royaume anglais. En 1199, lors du siège de Châlus-Chabrol en Aquitaine, il fut touché par un carreau d’arbalète; la blessure se gangrena, et il mourut le 6 avril à l’âge de 41 ans.",
+  "shortDescriptionDe": "Richard I. von England, bekannt als Richard Löwenherz, war ein König aus dem Haus Plantagenet, berühmt für seine militärische Begabung, seine Führungsrolle im Dritten Kreuzzug und seine Herrschaft über ein weitreichendes angevinisches Reich mit England, der Normandie, Aquitanien und Anjou. Trotz seines späteren Rufs als Ideal ritterlicher Könige verbrachte er nur wenig Zeit in England. 1199 wurde er bei der Belagerung von Châlus-Chabrol in Aquitanien von einem Armbrustbolzen getroffen; die Wunde entzündete sich brandig, und er starb am 6. April im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Ricardo I de Inglaterra, conocido como Ricardo Corazón de León, fue un rey Plantagenet célebre por su capacidad militar, su liderazgo en la Tercera Cruzada y su dominio sobre un amplio imperio angevino que incluía Inglaterra, Normandía, Aquitania y Anjou. Aunque se convirtió en un símbolo duradero de la monarquía caballeresca, pasó muy poco tiempo en Inglaterra. En 1199, durante el asedio de Châlus-Chabrol en Aquitania, recibió el impacto de una ballesta; la herida se gangrenó y murió el 6 de abril a los 41 años.",
+  "shortDescriptionRu": "Ричард I Английский, известный как Ричард Львиное Сердце, был королём из династии Плантагенетов, прославившимся военным талантом, участием в Третьем крестовом походе и властью над обширными анжуйскими владениями, включая Англию, Нормандию, Аквитанию и Анжу. В последующей традиции он стал символом рыцарского короля, хотя в самой Англии провёл мало времени. В 1199 году при осаде замка Шалю-Шаброль в Аквитании он был ранен арбалетным болтом; рана загноилась и привела к гангрене, и 6 апреля он умер в возрасте 41 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Richard_I_of_England",
+    "https://www.britannica.com/biography/Richard-I-king-of-England",
+    "https://www.wikidata.org/wiki/Q42305",
+    "https://commons.wikimedia.org/wiki/Category:Richard_I_of_England",
+    "https://www.historyhit.com/how-did-richard-the-lionheart-die/",
+    "https://www.historyextra.com/period/medieval/how-when-richard-lionheart-died/",
+    "https://www.npg.org.uk/collections/search/portrait/mw283155/King-Richard-I-the-Lionheart",
+    "https://www.npg.org.uk/collections/search/portrait/mw123117/King-Richard-I-the-Lionheart"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1421",  "Name": "Titus",  "BirthDate": "0039-12-28T00:00:00Z",  "DeathDate": "0081-09-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Head%20Titus%20Glyptothek%20Munich%20338.jpg",  "SiteLinksCnt": 101,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"55251":{"pageid":55251,"ns":0,"title":"Titus","extract":"Titus Flavius Vespasianus ( ; 30 December 39 \u2013 13 September 81 AD) was Roman emperor from 79 to 81 AD. A member of the Flavian dynasty, Titus succeeded his father Vespasian upon his death, becoming the first Roman emperor ever to succeed his biological father.\nBefore becoming emperor, Titus gained renown as a military commander, serving under his father in Judaea during the First Jewish\u2013Roman War. The campaign came to a brief halt with the death of emperor Nero in 68 AD, launching Vespasian's bid for the imperial power during the Year of the Four Emperors. When Vespasian was declared Emperor on 1 July 69 AD, Titus was left in charge of ending the Jewish rebellion. In 70 AD, he besieged and captured Jerusalem, and destroyed the city and the Second Temple. For this achievement Titus was awarded a triumph; the Arch of Titus commemorates his victory and still stands today.\nDuring his father's rule, Titus gained notoriety in Rome serving as prefect of the Praetorian Guard, and for carrying on a controversial relationship with the Jewish queen Berenice. Despite concerns over his character, Titus ruled to great acclaim following the death of Vespasian on 23 June 79 AD, and was considered a good emperor by Suetonius and other contemporary historians.\nAs emperor, Titus is best known for completing the Colosseum and for his generosity in relieving the suffering caused by two disasters, the eruption of Mount Vesuvius in AD 79 and a fire in Rome in 80 AD. After barely two years in office, Titus died of a fever on 13 September 81 AD. He was deified by the Roman Senate and succeeded by his younger brother Domitian."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1421")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1421",
+  "isRealHuman": true,
+  "birthDate": "0039-12-30",
+  "deathDate": "0081-09-13",
+  "ageAtDeath": 41,
+  "confidence": 95,
+  "confidenceExplained": "The age calculation is highly reliable because major reference sources agree that Titus was born on 30 December 39 CE and died on 13 September 81 CE. He had not yet reached his 42nd birthday, so the integer age at death is 41. Some supplied data gives dates two days earlier, but that still produces the same age; remaining uncertainty concerns ancient-date transmission and the exact medical cause of death rather than the age number.",
+  "shortDescriptionEn": "Titus Flavius Vespasianus was Roman emperor from 79 to 81 CE and a leading figure of the Flavian dynasty. Before ruling, he commanded Roman forces in the Jewish War and captured Jerusalem in 70, an event later commemorated by the Arch of Titus. As emperor he completed the Colosseum and became known for disaster relief after Vesuvius and a major fire in Rome. His reign was brief: after the amphitheatre games, he fell ill and died of fever on 13 September 81, aged 41, and was succeeded by his brother Domitian.",
+  "shortDescriptionFr": "Titus Flavius Vespasianus fut empereur romain de 79 à 81 et l’une des grandes figures de la dynastie flavienne. Avant son règne, il se distingua comme commandant lors de la guerre de Judée et prit Jérusalem en 70, victoire commémorée par l’Arc de Titus. Devenu empereur, il acheva le Colisée et fut apprécié pour son aide après l’éruption du Vésuve et un incendie à Rome. Son règne fut très court : tombé malade après les jeux de l’amphithéâtre, il mourut de fièvre le 13 septembre 81, à l’âge de 41 ans, avant d’être remplacé par son frère Domitien.",
+  "shortDescriptionDe": "Titus Flavius Vespasianus war von 79 bis 81 römischer Kaiser und eine zentrale Gestalt der flavischen Dynastie. Vor seiner Herrschaft wurde er als Feldherr im Jüdischen Krieg bekannt und eroberte im Jahr 70 Jerusalem, ein Sieg, an den der Titusbogen erinnert. Als Kaiser vollendete er das Kolosseum und galt wegen seiner Hilfe nach dem Vesuvausbruch und einem Brand in Rom als beliebt. Seine Regierung dauerte jedoch kaum zwei Jahre: Nach den Spielen im Amphitheater erkrankte er und starb am 13. September 81 im Alter von 41 Jahren an Fieber; Nachfolger wurde sein Bruder Domitian.",
+  "shortDescriptionEs": "Tito Flavio Vespasiano fue emperador romano de 79 a 81 y una figura clave de la dinastía Flavia. Antes de gobernar, ganó fama como comandante en la guerra judía y tomó Jerusalén en el año 70, victoria recordada por el Arco de Tito. Como emperador completó el Coliseo y fue elogiado por su ayuda tras la erupción del Vesubio y un gran incendio en Roma. Su reinado fue muy breve: después de los juegos del anfiteatro enfermó y murió de fiebre el 13 de septiembre de 81, a los 41 años, siendo sucedido por su hermano Domiciano.",
+  "shortDescriptionRu": "Тит Флавий Веспасиан был римским императором с 79 по 81 год и одним из главных представителей династии Флавиев. До восшествия на престол он прославился как военачальник в Иудейской войне и в 70 году взял Иерусалим, что позднее было увековечено Аркой Тита. Став императором, он завершил строительство Колизея и запомнился помощью пострадавшим после извержения Везувия и пожара в Риме. Его правление оказалось коротким: после игр в амфитеатре он заболел и умер от лихорадки 13 сентября 81 года в возрасте 41 года; ему наследовал брат Домициан.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Head%20Titus%20Glyptothek%20Munich%20338.jpg",
+    "https://commons.wikimedia.org/wiki/File:Head_Titus_Glyptothek_Munich_338.jpg",
+    "https://commons.wikimedia.org/wiki/File:Titus.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Titus"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Titus",
+    "https://www.britannica.com/biography/Titus",
+    "https://www.wikidata.org/wiki/Q1421",
+    "https://commons.wikimedia.org/wiki/File:Head_Titus_Glyptothek_Munich_338.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Titus"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q19198",  "Name": "Chester Bennington",  "BirthDate": "1976-03-20T00:00:00Z",  "DeathDate": "2017-07-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Linkin%20Park-Rock%20im%20Park%202014-%20by%202eight%203SC0327.jpg",  "SiteLinksCnt": 97,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"142809":{"pageid":142809,"ns":0,"title":"Chester Bennington","extract":"Chester Charles Bennington (March 20, 1976 \u2013 July 20, 2017) was an American singer and songwriter who was the lead vocalist of the rock band Linkin Park. He was also the lead vocalist of Grey Daze, Dead by Sunrise, and Stone Temple Pilots at various points in his career.\nBennington first gained prominence as a vocalist following the release of Linkin Park's debut album, Hybrid Theory (2000), which was a worldwide commercial success. The album was certified Diamond by the Recording Industry Association of America in 2005, making it the bestselling debut album of the decade. He continued as the band's lead vocalist for their next six studio albums, from Meteora (2003) to One More Light (2017), with each charting within the top three spots of the Billboard 200.\nBennington formed his own band, Dead by Sunrise, as a side project in 2005. The band's debut album, Out of Ashes, was released on October 13, 2009. He became the lead singer of Stone Temple Pilots in 2013 to release the extended play record High Rise on October 8, 2013, via their own record label, Play Pen, but left in 2015 to focus solely on Linkin Park. As an actor, he appeared in films such as Crank (2006), Crank: High Voltage (2009), and Saw 3D (2010).\nBennington struggled with depression and substance abuse for most of his life, starting in his childhood. On July 20, 2017, he was found dead at his home in Palos Verdes Estates, California. The coroner concluded that his death was a result of suicide by hanging. Hit Parader magazine placed Bennington at number 46 on their list of the \"Top 100 Metal Vocalists of All Time.\" Bennington has been ranked by several publications as one of the greatest rock vocalists of his generation. Writing for Billboard, Dan Weiss stated that Bennington \"turned nu-metal universal\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q19198")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q19198",
+  "isRealHuman": true,
+  "birthDate": "1976-03-20",
+  "deathDate": "2017-07-20",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The birth date and death date are consistent across the provided Wikidata/Wikipedia information and independent public sources. Chester Bennington was born on 1976-03-20 and died on 2017-07-20, after his 41st birthday that year, so the calculated age at death is exactly 41.",
+  "shortDescriptionEn": "Chester Bennington was an American singer, songwriter, and actor best known as the powerful lead vocalist of Linkin Park, whose debut album Hybrid Theory became one of the defining rock records of the 2000s. He also performed with Grey Daze, Dead by Sunrise, and Stone Temple Pilots, earning recognition for a voice that could shift from vulnerability to explosive intensity. Bennington struggled with depression and substance abuse for much of his life, and he died by suicide at his home in California on July 20, 2017, at the age of 41.",
+  "shortDescriptionFr": "Chester Bennington était un chanteur, auteur-compositeur et acteur américain, surtout connu comme la voix puissante de Linkin Park, dont le premier album Hybrid Theory a marqué le rock des années 2000. Il a également chanté avec Grey Daze, Dead by Sunrise et Stone Temple Pilots, et s’est imposé par une voix capable de passer de la fragilité à une intensité explosive. Bennington a lutté pendant une grande partie de sa vie contre la dépression et les addictions, et il est mort par suicide à son domicile en Californie le 20 juillet 2017, à l’âge de 41 ans.",
+  "shortDescriptionDe": "Chester Bennington war ein US-amerikanischer Sänger, Songwriter und Schauspieler, vor allem bekannt als die kraftvolle Stimme von Linkin Park, deren Debütalbum Hybrid Theory den Rock der 2000er Jahre prägte. Außerdem sang er bei Grey Daze, Dead by Sunrise und Stone Temple Pilots und wurde für seine Fähigkeit geschätzt, Verletzlichkeit und explosive Intensität in einer Stimme zu verbinden. Bennington kämpfte über viele Jahre mit Depressionen und Suchtproblemen; am 20. Juli 2017 starb er durch Suizid in seinem Haus in Kalifornien, im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Chester Bennington fue un cantante, compositor y actor estadounidense, conocido principalmente como la poderosa voz de Linkin Park, cuyo álbum debut Hybrid Theory definió buena parte del rock de los años 2000. También cantó con Grey Daze, Dead by Sunrise y Stone Temple Pilots, y fue admirado por una voz capaz de combinar vulnerabilidad emocional con una intensidad explosiva. Bennington luchó durante gran parte de su vida contra la depresión y el abuso de sustancias, y murió por suicidio en su casa de California el 20 de julio de 2017, a los 41 años.",
+  "shortDescriptionRu": "Честер Беннингтон был американским певцом, автором песен и актёром, наиболее известным как мощный вокалист группы Linkin Park, чей дебютный альбом Hybrid Theory стал одной из знаковых рок-пластинок 2000-х. Он также выступал с Grey Daze, Dead by Sunrise и Stone Temple Pilots, прославившись голосом, в котором уязвимость сочеталась с взрывной эмоциональной силой. На протяжении жизни Беннингтон боролся с депрессией и зависимостью; 20 июля 2017 года он умер в результате самоубийства в своём доме в Калифорнии, в возрасте 41 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chester_Bennington",
+    "https://grammy.com/news/linkin-park-former-stp-frontman-chester-bennington-dies",
+    "https://www.imdb.com/name/nm1057933/",
+    "https://simple.wikipedia.org/wiki/Chester_Bennington",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Linkin%20Park-Rock%20im%20Park%202014-%20by%202eight%203SC0327.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q737533",  "Name": "Louis XIII of France",  "BirthDate": "1601-09-27T00:00:00Z",  "DeathDate": "1643-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/LouisXIII.jpg",  "SiteLinksCnt": 94,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"77062":{"pageid":77062,"ns":0,"title":"Louis XIII","extract":"Louis XIII (French pronunciation: [lwi t\u0281\u025bz]; sometimes called the Just; 27 September 1601 \u2013 14 May 1643) was King of France from 1610 until his death in 1643 and King of Navarre (as Louis II) from 1610 to 1620, when the crown of Navarre was merged with the French crown.\nShortly before his ninth birthday, Louis became king of France and Navarre after his father Henry IV was assassinated. His mother, Marie de' Medici, acted as regent during his minority. Mismanagement of the kingdom and ceaseless political intrigues by Marie and her Italian favourites led the young king to take power in 1617 by exiling his mother and executing her followers, including Concino Concini, the most influential Italian at the French court.\nLouis XIII, taciturn and suspicious, relied heavily on his chief ministers, first Charles d'Albert, duc de Luynes and then Cardinal Richelieu, to govern the Kingdom of France. The King and the Cardinal are remembered for establishing the Acad\u00e9mie fran\u00e7aise, and ending the revolt of the French nobility. They systematically destroyed the castles of defiant lords, and denounced the use of private violence (dueling, carrying weapons, and maintaining private armies). By the end of the 1620s, Richelieu had established \"the royal monopoly of force\" as the ruling doctrine. The king's reign was also marked by the struggles against the Huguenots and Habsburg Spain."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q737533")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q737533",
+  "isRealHuman": true,
+  "birthDate": "1601-09-27",
+  "deathDate": "1643-05-14",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "The identity and life dates are consistently supported by Wikipedia and Encyclopaedia Britannica. The age is a straightforward calendar calculation from 1601-09-27 to 1643-05-14: he had not yet reached his 42nd birthday, so he died aged 41. The only small uncertainty concerns the precise modern medical labeling of his final illness, not the age calculation.",
+  "shortDescriptionEn": "Louis XIII of France, known as Louis the Just, became king as a child after the assassination of his father Henry IV and ruled during a decisive stage in the rise of Bourbon power. Working closely with Cardinal Richelieu, he helped strengthen royal authority, confront noble rebellions and the Huguenots, and position France against Habsburg Spain. His reign also saw the birth of the future Louis XIV. After a long final illness, probably involving tuberculosis and severe intestinal disease, Louis XIII died on 14 May 1643 at the age of 41.",
+  "shortDescriptionFr": "Louis XIII de France, surnommé le Juste, devint roi enfant après l’assassinat de son père Henri IV et régna à une période décisive de la montée en puissance des Bourbons. Avec le cardinal de Richelieu, il renforça l’autorité royale, affronta les révoltes nobiliaires et huguenotes, et engagea la France contre les Habsbourg d’Espagne. Son règne vit aussi naître le futur Louis XIV. Après une longue maladie, probablement liée à la tuberculose et à de graves troubles intestinaux, Louis XIII mourut le 14 mai 1643 à l’âge de 41 ans.",
+  "shortDescriptionDe": "Ludwig XIII. von Frankreich, genannt der Gerechte, wurde nach der Ermordung seines Vaters Heinrich IV. schon als Kind König und regierte in einer entscheidenden Phase des Aufstiegs der Bourbonen. Zusammen mit Kardinal Richelieu stärkte er die königliche Macht, bekämpfte Adelsaufstände und die Hugenotten und führte Frankreich in die Auseinandersetzung mit dem habsburgischen Spanien. Unter seiner Herrschaft wurde auch der spätere Ludwig XIV. geboren. Nach langer Krankheit, wahrscheinlich im Zusammenhang mit Tuberkulose und schweren Darmleiden, starb Ludwig XIII. am 14. Mai 1643 im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Luis XIII de Francia, llamado el Justo, llegó al trono siendo niño tras el asesinato de su padre Enrique IV y gobernó durante una etapa clave del fortalecimiento borbónico. Junto con el cardenal Richelieu, reforzó la autoridad real, enfrentó rebeliones nobiliarias y hugonotes, y situó a Francia contra la España de los Habsburgo. Su reinado también vio nacer al futuro Luis XIV. Tras una larga enfermedad, probablemente relacionada con tuberculosis y graves problemas intestinales, Luis XIII murió el 14 de mayo de 1643 a los 41 años.",
+  "shortDescriptionRu": "Людовик XIII Французский, прозванный Справедливым, стал королём ещё ребёнком после убийства своего отца Генриха IV и правил в важный период укрепления власти Бурбонов. В союзе с кардиналом Ришельё он усилил королевскую власть, подавлял мятежи знати и гугенотов и втянул Францию в борьбу с испанскими Габсбургами. При нём родился будущий Людовик XIV. После долгой болезни, вероятно связанной с туберкулёзом и тяжёлыми кишечными осложнениями, Людовик XIII умер 14 мая 1643 года в возрасте 41 года.",
+  "pictureUrls": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/LouisXIII.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20Portrait%20de%20Louis%20XIII%20%281601-1643%29%2C%20roi%20de%20France%20-%20P2465%20-%20Mus%C3%A9e%20Carnavalet.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20XIII%20roi%20de%20France.jpg",
+    "https://data.fitzmuseum.cam.ac.uk/imagestore/pdp/pdp11/P_8162_R.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Louis_XIII",
+    "https://www.britannica.com/biography/Louis-XIII",
+    "https://commons.wikimedia.org/wiki/File:Anonymous_-_Portrait_de_Louis_XIII_(1601-1643),_roi_de_France_-_P2465_-_Mus%C3%A9e_Carnavalet.jpg",
+    "https://commons.wikimedia.org/wiki/File:Louis_XIII_roi_de_France.jpg",
+    "https://collections.louvre.fr/en/ark:/53355/cl010064782",
+    "https://data.fitzmuseum.cam.ac.uk/id/object/141135"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q184535",  "Name": "Sofia Kovalevskaya",  "BirthDate": "1850-01-15T00:00:00Z",  "DeathDate": "1891-02-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sofja%20Wassiljewna%20Kowalewskaja%201.jpg",  "SiteLinksCnt": 91,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"105587":{"pageid":105587,"ns":0,"title":"Sofya Kovalevskaya","extract":"Sofya Vasilyevna Kovalevskaya (Russian: \u0421\u043e\u0444\u044c\u044f \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u043d\u0430 \u041a\u043e\u0432\u0430\u043b\u0435\u0432\u0441\u043a\u0430\u044f; born Korvin-Krukovskaya; 15 January [O.S. 3 January] 1850 \u2013 10 February 1891) was a Russian mathematician who made noteworthy contributions to analysis, partial differential equations and mechanics. She was a pioneer of equality for women in mathematics. Kovalevskaya was the first woman to earn a doctorate in mathematics, in the modern sense of that term, the first woman in Europe in modern times appointed to a full professorship in mathematics, as well as one of the first women to work for a scientific journal as an editor. According to historian of science Ann Hibner Koblitz, Kovalevskaya was \"the greatest known woman scientist before the twentieth century\".\nHistorian of mathematics Roger Cooke writes:\n\n... the more I reflect on her life and consider the magnitude of her achievements, set against the weight of the obstacles she had to overcome, the more I admire her.  For me she has taken on a heroic stature achieved by very few other people in history. To venture, as she did, into academia, a world almost no woman had yet explored, and to be consequently the object of curious scrutiny, while a doubting society looked on, half-expecting her to fail, took tremendous courage and determination. To achieve, as she did, at least two major results of lasting value to scholarship, is evidence of a considerable talent, developed through iron discipline.\n\nHer sister was the socialist Anne Jaclard.\nThere are several alternative transliterations of her name. She herself used Sophie Kowalevski (or occasionally Kowalevsky) in her academic publications. In Sweden she was known as Sonja Kovalevsky; Sonja (Russian \u0421\u043e\u043d\u044f) is her Russian nickname."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q184535")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q184535",
+  "isRealHuman": true,
+  "birthDate": "1850-01-15",
+  "deathDate": "1891-02-10",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, and MacTutor. The date calculation is straightforward: from 1850-01-15 to 1891-02-10, she had already passed her 41st birthday. Minor uncertainty only concerns transliteration/name variants and Old Style/New Style calendar presentation, but they do not change the calculated age.",
+  "shortDescriptionEn": "Sofya Kovalevskaya was a Russian mathematician and writer whose work in analysis, partial differential equations, and mechanics made her one of the most important scientists of the nineteenth century. She became the first woman in modern Europe to receive a doctorate in mathematics and later held a professorship in Stockholm, breaking barriers in a field that had almost entirely excluded women. She died in Stockholm on 10 February 1891, aged 41, after influenza developed into pneumonia following a trip to Nice.",
+  "shortDescriptionFr": "Sofya Kovalevskaya était une mathématicienne et écrivaine russe, reconnue pour ses travaux en analyse, en équations aux dérivées partielles et en mécanique. Première femme de l’Europe moderne à obtenir un doctorat en mathématiques, elle devint ensuite professeure à Stockholm et ouvrit une voie décisive aux femmes dans les sciences. Elle mourut à Stockholm le 10 février 1891, à l’âge de 41 ans, après qu’une grippe se fut compliquée en pneumonie au retour d’un voyage à Nice.",
+  "shortDescriptionDe": "Sofya Kovalevskaya war eine russische Mathematikerin und Schriftstellerin, deren Arbeiten zur Analysis, zu partiellen Differentialgleichungen und zur Mechanik sie zu einer der bedeutendsten Wissenschaftlerinnen des 19. Jahrhunderts machten. Sie war die erste Frau im modernen Europa, die in Mathematik promovierte, und wurde später Professorin in Stockholm, ein außergewöhnlicher Durchbruch in einer fast ausschließlich männlichen akademischen Welt. Sie starb am 10. Februar 1891 in Stockholm im Alter von 41 Jahren, nachdem sich eine Grippe nach einer Reise nach Nizza zu einer Lungenentzündung verschlimmert hatte.",
+  "shortDescriptionEs": "Sofya Kovalevskaya fue una matemática y escritora rusa, célebre por sus aportes al análisis, las ecuaciones diferenciales parciales y la mecánica. Fue la primera mujer de la Europa moderna en obtener un doctorado en matemáticas y más tarde ocupó una cátedra en Estocolmo, abriendo camino en un mundo académico casi cerrado a las mujeres. Murió en Estocolmo el 10 de febrero de 1891, a los 41 años, después de que una gripe se complicara con neumonía tras regresar de un viaje a Niza.",
+  "shortDescriptionRu": "Софья Ковалевская была русской математикой и писательницей, прославившейся работами в области анализа, дифференциальных уравнений в частных производных и механики. Она стала первой женщиной в Европе нового времени, получившей докторскую степень по математике, а затем профессором в Стокгольме, преодолев барьеры почти полностью мужской академической среды. Она умерла в Стокгольме 10 февраля 1891 года в возрасте 41 года: после поездки в Ниццу грипп осложнился пневмонией.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sofya_Kovalevskaya",
+    "https://www.britannica.com/biography/Sofya-Vasilyevna-Kovalevskaya",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/",
+    "https://commons.wikimedia.org/wiki/File:Sofia_Kovalevskaya.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sofya_Kovalevskaya,_1890.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82180",  "Name": "Mata Hari",  "BirthDate": "1876-08-07T00:00:00Z",  "DeathDate": "1917-10-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Margaretha%20Geertruida%20MacLeod-Zelle%20in%20the%20Dutch%20East%20Indies%20-%201900.jpg",  "SiteLinksCnt": 90,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"45610":{"pageid":45610,"ns":0,"title":"Mata Hari","extract":"Margaretha Geertruida MacLeod (n\u00e9e Zelle, Dutch: [m\u0251r\u0263a\u02d0\u02c8re\u02d0ta\u02d0 \u0263e\u02d0r\u02c8tr\u0153yda\u02d0 \u02c8z\u025bl\u0259]; 7 August 1876 \u2013 15 October 1917), better known by the stage name Mata Hari ( MAH-t\u0259 HAR-ee, Dutch: [\u02c8ma\u02d0ta\u02d0 \u02c8\u0266a\u02d0ri]; Indonesian for 'sun', lit.\u2009'eye of the day'), was a Dutch exotic dancer and courtesan who was convicted of being a spy for Germany during World War I. She was executed by firing squad in France.\nThe idea of a beautiful exotic dancer using her powers of seduction as a spy made her name synonymous with the femme fatale. Mata Hari's story has inspired books, films, and other works. Later biographers argue that she was convicted and condemned because the French Army needed a scapegoat, and that the files used to secure her conviction contained falsifications. Some have even stated that she could not have been a spy and was innocent."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82180")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82180",
+  "isRealHuman": true,
+  "birthDate": "1876-08-07",
+  "deathDate": "1917-10-15",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The identity and dates are well documented across multiple reliable sources. Mata Hari was born on 7 August 1876 and died on 15 October 1917, after her birthday that year, making the calculated age at death exactly 41.",
+  "shortDescriptionEn": "Mata Hari, born Margaretha Geertruida Zelle in the Netherlands, became one of early twentieth-century Europe’s most famous exotic dancers and courtesans, cultivating a dramatic stage persona that fascinated Parisian society. During World War I, her travels and relationships with officers drew suspicion, and she was convicted by France of spying for Germany. Her guilt remains debated, but she was executed by firing squad at Vincennes on 15 October 1917, aged 41.",
+  "shortDescriptionFr": "Mata Hari, née Margaretha Geertruida Zelle aux Pays-Bas, devint l’une des danseuses exotiques et courtisanes les plus célèbres de l’Europe du début du XXe siècle, grâce à un personnage scénique audacieux qui fascina le public parisien. Pendant la Première Guerre mondiale, ses voyages et ses relations avec des officiers éveillèrent les soupçons, et la France la condamna pour espionnage au profit de l’Allemagne. Sa culpabilité reste discutée, mais elle fut fusillée à Vincennes le 15 octobre 1917, à l’âge de 41 ans.",
+  "shortDescriptionDe": "Mata Hari, geboren als Margaretha Geertruida Zelle in den Niederlanden, wurde zu einer der bekanntesten exotischen Tänzerinnen und Kurtisanen Europas im frühen 20. Jahrhundert. Mit ihrer kunstvoll inszenierten Bühnenfigur zog sie besonders in Paris große Aufmerksamkeit auf sich. Im Ersten Weltkrieg machten ihre Reisen und Beziehungen zu Offizieren sie verdächtig; Frankreich verurteilte sie wegen Spionage für Deutschland. Ihre Schuld ist bis heute umstritten, doch sie wurde am 15. Oktober 1917 in Vincennes erschossen, im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Mata Hari, nacida Margaretha Geertruida Zelle en los Países Bajos, se convirtió en una de las bailarinas exóticas y cortesanas más famosas de la Europa de comienzos del siglo XX, con una identidad escénica que fascinó al París de la Belle Époque. Durante la Primera Guerra Mundial, sus viajes y relaciones con oficiales despertaron sospechas, y Francia la condenó por espiar para Alemania. Su culpabilidad sigue siendo discutida, pero fue ejecutada por un pelotón de fusilamiento en Vincennes el 15 de octubre de 1917, a los 41 años.",
+  "shortDescriptionRu": "Мата Хари, родившаяся в Нидерландах как Маргарета Гертруда Зелле, стала одной из самых известных экзотических танцовщиц и куртизанок Европы начала XX века, создав яркий сценический образ, покоривший парижскую публику. Во время Первой мировой войны её поездки и связи с офицерами вызвали подозрения, и во Франции её признали виновной в шпионаже в пользу Германии. Её вина до сих пор оспаривается, но 15 октября 1917 года она была расстреляна в Венсене в возрасте 41 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mata_Hari",
+    "https://www.britannica.com/biography/Mata-Hari-Dutch-dancer-and-spy",
+    "https://www.smithsonianmag.com/smart-news/revisiting-myth-mata-hari-sultry-spy-government-scapegoat-180967013/",
+    "https://history.blog.gov.uk/2017/10/13/mata-hari-the-execution-of-an-alleged-international-spy-mistress/",
+    "https://commons.wikimedia.org/wiki/Category:Mata_Hari"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q260",  "Name": "Jean-François Champollion",  "BirthDate": "1790-12-23T00:00:00Z",  "DeathDate": "1832-03-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Cogniet%20-%20Jean-Francois%20Champollion.jpg",  "SiteLinksCnt": 85,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"55434":{"pageid":55434,"ns":0,"title":"Jean-Fran\u00e7ois Champollion","extract":"Jean-Fran\u00e7ois Champollion (French: [\u0292\u0251\u0303 f\u0281\u0251\u0303swa \u0283\u0251\u0303p\u0254lj\u0254\u0303]), also known as Champollion le jeune ('the Younger'; 23 December 1790 \u2013 4 March 1832), was a French philologist and orientalist, known primarily as the decipherer of Egyptian hieroglyphs and a founding figure in the field of Egyptology. Partially raised by his brother, the scholar Jacques Joseph Champollion-Figeac, Champollion was a child prodigy in philology, giving his first public paper on the decipherment of Demotic in his late teens. As a young man he was renowned in scientific circles, and read Coptic, Ancient Greek, Latin, Hebrew and Arabic.\nDuring the early 19th century, French culture experienced a period of 'Egyptomania', brought on by Napoleon's discoveries in Egypt during his campaign there (1798\u20131801), which also brought to light the trilingual Rosetta Stone. Scholars debated the age of Egyptian civilization and the function and nature of the hieroglyphic script, which language if any it recorded, and the degree to which the signs were phonetic (representing speech sounds) or ideographic (recording semantic concepts directly). Many thought that the script was used only for sacred and ritual functions, and that as such it was unlikely to be decipherable since it was tied to esoteric and philosophical ideas, and did not record historical information. The significance of Champollion's decipherment was that he showed these assumptions to be wrong, and made it possible to begin to retrieve many kinds of information recorded by the ancient Egyptians.\nChampollion lived in a period of political turmoil in France, which continuously threatened to disrupt his research in various ways. During the Napoleonic Wars, he was able to avoid conscription, but his Napoleonic allegiances meant that he was considered suspect by the subsequent Royalist regime. His own actions, sometimes brash and reckless, did not help his case. His relations with important political and scientific figures of the time, such as Joseph Fourier and Silvestre de Sacy, helped him, although in some periods he lived exiled from the scientific community.\nIn 1820, Champollion embarked in earnest on the project of the decipherment of hieroglyphic script, soon overshadowing the achievements of British polymath Thomas Young, who had made the first advances in decipherment before 1819. In 1822, Champollion published his first breakthrough in the decipherment of the Rosetta hieroglyphs, showing that the Egyptian writing system was a combination of phonetic and ideographic signs \u2013 the first such script discovered. In 1824, he published a Pr\u00e9cis in which he detailed a decipherment of the hieroglyphic script demonstrating the values of its phonetic and ideographic signs. In 1829, he travelled to Egypt where he was able to read many hieroglyphic texts that had never before been studied and brought home a large body of new drawings of hieroglyphic inscriptions. Home again, he was given a professorship in Egyptology but lectured only a few times before his health, ruined by the hardships of the Egyptian journey, forced him to give up teaching. He died in Paris in 1832, 41 years old. His grammar of Ancient Egyptian was published posthumously under the supervision of his brother.\nDuring his life as well as long after his death, intense discussions over the merits of his decipherment were carried out among Egyptologists. Some faulted him for not having given sufficient credit to the early discoveries of Young, accusing him of plagiarism, and others long disputed the accuracy of his decipherments. However, subsequent findings and confirmations of his readings by scholars building on his results gradually led to the general acceptance of his work. Although some still argue that he should have acknowledged the contributions of Young, his decipherment is now universally accepted and has been the basis for all further developments in the field. Consequently, he is regarded as the \"Founder and Father of Egyptology\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q260")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q260",
+  "isRealHuman": true,
+  "birthDate": "1790-12-23",
+  "deathDate": "1832-03-04",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently given by major reference sources as 23 December 1790 and 4 March 1832. Since he died before his birthday in 1832, his age at death was exactly 41 years.",
+  "shortDescriptionEn": "Jean-François Champollion was a French philologist and orientalist best known for deciphering Egyptian hieroglyphs, a breakthrough that opened ancient Egyptian texts to modern scholarship and made him a founding figure of Egyptology. A gifted linguist from youth, he used Coptic, Greek, and the Rosetta Stone to show that hieroglyphs combined phonetic and ideographic signs. After a demanding scholarly career and an expedition to Egypt, his health deteriorated; he died in Paris on 4 March 1832, reportedly after an apoplectic attack, at the age of 41.",
+  "shortDescriptionFr": "Jean-François Champollion fut un philologue et orientaliste français, célèbre pour avoir déchiffré les hiéroglyphes égyptiens, une avancée qui permit aux chercheurs modernes d’accéder aux textes de l’Égypte ancienne et fit de lui l’un des fondateurs de l’égyptologie. Linguiste exceptionnel dès sa jeunesse, il s’appuya sur le copte, le grec et la pierre de Rosette pour démontrer que les hiéroglyphes mêlaient signes phonétiques et idéographiques. Après une carrière intense et une expédition éprouvante en Égypte, sa santé déclina; il mourut à Paris le 4 mars 1832, vraisemblablement d’une attaque d’apoplexie, à l’âge de 41 ans.",
+  "shortDescriptionDe": "Jean-François Champollion war ein französischer Philologe und Orientalist, berühmt für die Entzifferung der ägyptischen Hieroglyphen, wodurch altägyptische Texte der modernen Forschung zugänglich wurden und er zu einer Gründungsfigur der Ägyptologie wurde. Schon früh ein außergewöhnlicher Sprachbegabter, nutzte er Koptisch, Griechisch und den Stein von Rosette, um zu zeigen, dass Hieroglyphen phonetische und ideographische Zeichen verbanden. Nach einer intensiven wissenschaftlichen Laufbahn und einer anstrengenden Ägyptenreise verschlechterte sich seine Gesundheit; er starb am 4. März 1832 in Paris, offenbar nach einem Schlaganfall, im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Jean-François Champollion fue un filólogo y orientalista francés, célebre por descifrar los jeroglíficos egipcios, un logro que abrió los textos del antiguo Egipto a la investigación moderna y lo convirtió en una figura fundadora de la egiptología. Dotado para las lenguas desde joven, recurrió al copto, al griego y a la piedra de Rosetta para demostrar que los jeroglíficos combinaban signos fonéticos e ideográficos. Tras una carrera académica intensa y una exigente expedición a Egipto, su salud se deterioró; murió en París el 4 de marzo de 1832, al parecer tras un ataque apoplético, a los 41 años.",
+  "shortDescriptionRu": "Жан-Франсуа Шампольон был французским филологом и востоковедом, прославившимся расшифровкой египетских иероглифов; это открытие сделало тексты Древнего Египта доступными современной науке и закрепило за ним роль одного из основателей египтологии. С юности одарённый лингвист, он использовал коптский, греческий язык и Розеттский камень, чтобы доказать, что иероглифы сочетали фонетические и идеографические знаки. После напряжённой научной работы и тяжёлой экспедиции в Египет его здоровье ухудшилось; он умер в Париже 4 марта 1832 года, вероятно после апоплексического удара, в возрасте 41 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion",
+    "https://www.britannica.com/biography/Jean-Francois-Champollion",
+    "https://www.nature.com/articles/129307b0",
+    "https://www.wikidata.org/wiki/Q260",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Leon%20Cogniet%20-%20Jean-Francois%20Champollion.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q103268",  "Name": "Gregory III",  "BirthDate": "0700-01-01T00:00:00Z",  "DeathDate": "0741-12-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/178-7866%20IMG%20-%20Gregorius%20III%20AV.png",  "SiteLinksCnt": 84,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"24194":{"pageid":24194,"ns":0,"title":"Pope Gregory III","extract":"Pope Gregory III (Latin: Gregorius III; died 28 November 741) was the bishop of Rome from 11 February 731 to his death on 28 November 741. His pontificate, like that of his predecessor, was disturbed by Byzantine iconoclasm and the advance of the Lombards, in which he invoked the intervention of Charles Martel, although ultimately in vain. He was the last pope to seek the consent of the Byzantine exarch of Ravenna for his election, the last pope of Syrian origin, and the last pope born outside Europe until the election of Pope Francis 1,272 years later in 2013."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q103268")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q103268",
+  "isRealHuman": true,
+  "birthDate": "0669-01-01",
+  "deathDate": "0741-11-28",
+  "ageAtDeath": 72,
+  "confidence": 45,
+  "confidenceExplained": "The identification as Pope Gregory III and the death date of 28 November 741 are well supported. The birth date is not known in major encyclopedic sources; I used the 669? estimate found in ecclesiastical chronology databases. With the conventional estimated date 0669-01-01, his age at death calculates to 72, though the true age could plausibly have been 71 or 72 depending on his actual birthday.",
+  "shortDescriptionEn": "Pope Gregory III was a Syrian-born bishop of Rome who led the Catholic Church from 731 to 741 during the Byzantine iconoclast controversy and the mounting Lombard threat in Italy. He defended the veneration of images, worked to strengthen Rome, and sought help from Charles Martel against Lombard pressure. He died in Rome on 28 November 741, after failing to halt the Lombard advance, and was buried in St. Peter's Basilica in the oratory he had built.",
+  "shortDescriptionFr": "Le pape Grégoire III, né en Syrie, dirigea l’Église catholique de 731 à 741, au cœur de la crise iconoclaste byzantine et de la menace croissante des Lombards en Italie. Il défendit la vénération des images, renforça Rome et chercha l’aide de Charles Martel contre les Lombards. Il mourut à Rome le 28 novembre 741, après avoir échoué à arrêter leur progression, et fut enterré dans la basilique Saint-Pierre, dans l’oratoire qu’il avait fait construire.",
+  "shortDescriptionDe": "Papst Gregor III. war ein in Syrien geborener Bischof von Rom, der die katholische Kirche von 731 bis 741 während des byzantinischen Bilderstreits und der wachsenden Langobardengefahr in Italien führte. Er verteidigte die Verehrung heiliger Bilder, ließ Rom stärken und bat Karl Martell um Hilfe gegen die Langobarden. Er starb am 28. November 741 in Rom, nachdem es ihm nicht gelungen war, den langobardischen Vormarsch aufzuhalten, und wurde im Petersdom in dem von ihm errichteten Oratorium beigesetzt.",
+  "shortDescriptionEs": "El papa Gregorio III, nacido en Siria, dirigió la Iglesia católica de 731 a 741 durante la controversia iconoclasta bizantina y la creciente amenaza lombarda en Italia. Defendió la veneración de las imágenes, reforzó Roma y pidió ayuda a Carlos Martel frente a los lombardos. Murió en Roma el 28 de noviembre de 741, tras no lograr detener el avance lombardo, y fue enterrado en la basílica de San Pedro, en el oratorio que él mismo había construido.",
+  "shortDescriptionRu": "Папа Григорий III, родившийся в Сирии, возглавлял Католическую церковь с 731 по 741 год в период византийского иконоборческого конфликта и растущей угрозы со стороны лангобардов в Италии. Он защищал почитание священных изображений, укреплял Рим и обращался за помощью к Карлу Мартеллу против лангобардов. Он умер в Риме 28 ноября 741 года, так и не сумев остановить их продвижение, и был похоронен в базилике Святого Петра, в построенной им оратории.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Gregory_III",
+    "https://www.newadvent.org/cathen/06789a.htm",
+    "https://www.britannica.com/biography/Saint-Gregory-III",
+    "https://www.catholic-hierarchy.org/bishop/bgregiii.html",
+    "https://gcatholic.org/hierarchy/pope/G03",
+    "https://www.wikidata.org/wiki/Q103268"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q134128",  "Name": "Cnut the Great",  "BirthDate": "0994-01-01T00:00:00Z",  "DeathDate": "1035-11-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Knut%20der%20Gro%C3%9Fe%20cropped.jpg",  "SiteLinksCnt": 78,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"40501":{"pageid":40501,"ns":0,"title":"Cnut","extract":"Cnut ( k\u0259-NYOOT; Old Norse: Kn\u00fatr; c.\u2009990 \u2013 12 November 1035), also known as Canute and with the epithet the Great, was King of England from 1016, King of Denmark from 1018, and King of Norway from 1028 until his death in 1035. The three kingdoms united under Cnut's rule are referred to together as the North Sea Empire by historians.\nAs a Danish prince, Cnut won the throne of England in 1016 in the wake of centuries of Viking activity in northwestern Europe. His later accession to the Danish throne in 1018 brought the crowns of England and Denmark together. Cnut sought to keep this power base by uniting Danes and English under cultural bonds of wealth and custom. After a decade of conflict with opponents in Scandinavia, Cnut claimed the crown of Norway in Trondheim in 1028. In 1031, Malcolm II of Scotland also submitted to him, though Anglo-Norse influence over Scotland was weak and ultimately did not last by the time of Cnut's death.\nDominion of England lent the Danes an important link to the maritime zone between the islands of Great Britain and Ireland, where Cnut, like his father before him, had a strong interest and wielded much influence among the Norse\u2013Gaels. Cnut's possession of England's dioceses and the continental Diocese of Denmark \u2013 with a claim laid upon it by the Holy Roman Empire's Archdiocese of Hamburg-Bremen \u2013 was a source of great prestige and leverage among the magnates of Christendom (gaining notable concessions such as one on the price of the pallium of his bishops, though they still had to travel to obtain the pallium, as well as on the tolls his people had to pay on the way to Rome). After his 1026 victory against Norway and Sweden, and on his way back from Rome where he attended the coronation of the Holy Roman Emperor, Cnut deemed himself \"King of all England and Denmark and the Norwegians and of some of the Swedes\" in a letter written for the benefit of his subjects. Medieval historian Norman Cantor called him \"the most effective king in Anglo-Saxon history\".\nHe is popularly invoked in the context of the legend of King Canute and the tide."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q134128")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q134128",
+  "isRealHuman": true,
+  "birthDate": "0990-01-01",
+  "deathDate": "1035-11-12",
+  "ageAtDeath": 45,
+  "confidence": 65,
+  "confidenceExplained": "The identification and death date are highly reliable: the subject is Cnut, also known as Canute the Great, and multiple sources place his death on 12 November 1035 at Shaftesbury. The exact birth date is not known; sources vary between about 990, 994, 995, or 996. I used c. 990, matching the main Wikipedia estimate and its 'aged around 45' statement, so the age is a historically informed estimate rather than a precise civil-record calculation.",
+  "shortDescriptionEn": "Cnut the Great, also known as Canute, was the Danish ruler who built a powerful North Sea realm, reigning as king of England from 1016, Denmark from 1018, and Norway from 1028. A skilled conqueror and administrator, he tied together Anglo-Saxon and Scandinavian elites and became one of the most formidable rulers of eleventh-century Europe. He died on 12 November 1035 at Shaftesbury in Dorset, probably in his mid-forties, and was buried at Winchester; after his death, his empire quickly began to fragment among rival heirs.",
+  "shortDescriptionFr": "Cnut le Grand, aussi appelé Canut, fut le souverain danois qui forma un puissant royaume de la mer du Nord, régnant sur l’Angleterre à partir de 1016, le Danemark à partir de 1018 et la Norvège à partir de 1028. Conquérant habile et administrateur efficace, il sut rapprocher les élites anglo-saxonnes et scandinaves et devint l’un des princes les plus redoutés de l’Europe du XIe siècle. Il mourut le 12 novembre 1035 à Shaftesbury, dans le Dorset, probablement vers 45 ans, puis fut inhumé à Winchester; après sa mort, son empire se désagrégea rapidement entre ses héritiers rivaux.",
+  "shortDescriptionDe": "Knut der Große, auch Canute genannt, war der dänische Herrscher, der ein mächtiges Nordseereich schuf und ab 1016 über England, ab 1018 über Dänemark und ab 1028 über Norwegen regierte. Als erfolgreicher Eroberer und geschickter Verwalter verband er angelsächsische und skandinavische Eliten und wurde zu einem der einflussreichsten Herrscher Europas im 11. Jahrhundert. Er starb am 12. November 1035 in Shaftesbury in Dorset, vermutlich im Alter von etwa 45 Jahren, und wurde in Winchester bestattet; nach seinem Tod zerfiel sein Reich rasch unter konkurrierenden Erben.",
+  "shortDescriptionEs": "Cnut el Grande, también conocido como Canuto, fue el gobernante danés que creó un poderoso imperio del mar del Norte, reinando en Inglaterra desde 1016, en Dinamarca desde 1018 y en Noruega desde 1028. Conquistador capaz y administrador pragmático, unió a élites anglosajonas y escandinavas y se convirtió en uno de los monarcas más influyentes de la Europa del siglo XI. Murió el 12 de noviembre de 1035 en Shaftesbury, Dorset, probablemente con unos 45 años, y fue enterrado en Winchester; tras su muerte, su imperio empezó a fragmentarse rápidamente entre herederos rivales.",
+  "shortDescriptionRu": "Кнуд Великий, также известный как Канут, был датским правителем, создавшим мощную державу Северного моря: он правил Англией с 1016 года, Данией с 1018 года и Норвегией с 1028 года. Умелый завоеватель и прагматичный администратор, он связал англосаксонскую и скандинавскую знать и стал одним из самых влиятельных монархов Европы XI века. Он умер 12 ноября 1035 года в Шафтсбери, Дорсет, вероятно примерно в 45 лет, и был похоронен в Уинчестере; после его смерти держава быстро начала распадаться из-за соперничества наследников.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Knut%20der%20Gro%C3%9Fe%20cropped.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw308660",
+    "https://www.npg.org.uk/collections/search/portrait/mw15006/Canute-or-Cnut-the-Great",
+    "https://www.npg.org.uk/collections/search/portrait/mw123024/Canute-King-of-England-Denmark-and-Norway"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cnut",
+    "https://www.britannica.com/biography/Canute-I",
+    "https://www.newadvent.org/cathen/03306c.htm",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Canute",
+    "https://www.vikingeskibsmuseet.dk/en/professions/education/viking-age-people/historical-characters/cnut-the-great-of-denmark-england-and-norway",
+    "https://www.npg.org.uk/collections/search/portrait/mw308660"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2022",  "Name": "Cesare Pavese",  "BirthDate": "1908-09-09T00:00:00Z",  "DeathDate": "1950-08-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Cesare%20pavese.jpg",  "SiteLinksCnt": 76,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"1368802":{"pageid":1368802,"ns":0,"title":"Cesare Pavese","extract":"Cesare Pavese (UK:  pav-AY-zay, -\u2060zee; Italian: [\u02c8t\u0283e\u02d0zare pa\u02c8ve\u02d0ze, \u02c8t\u0283\u025b\u02d0-, -e\u02d0se]; 9 September 1908 \u2013 27 August 1950) was an Italian novelist, poet, short story writer, translator, literary critic, and essayist. He is often referred to as one of the most influential Italian writers of his time.\nPavese was reportedly apolitical in the 1930s, but he was moving in antifascist circles. He served a short sentence as a political prisoner. Though eligible for drafting into the Italian Armed Forces during World War II, he did not see any active service. He spent part of the war hospitalized due to asthma. Many of his friends in Turin joined the partisans,  but Pavese took no part in the armed struggle in the vicinity of the city. After the war, Pavese joined the Italian Communist Party and worked on the party's newspaper, L'Unit\u00e0.  Toward the end of his life, he was suffering from depression and political disillusionment. He committed suicide by an overdose of barbiturates."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2022")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2022",
+  "isRealHuman": true,
+  "birthDate": "1908-09-09",
+  "deathDate": "1950-08-27",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikipedia, Wikidata, Britannica, and other biographical sources. The age calculation is straightforward: Cesare Pavese died on 1950-08-27, before reaching his birthday on 1950-09-09, so he was 41 years old. Confidence is 99 rather than 100 only because secondary sources can occasionally differ on details of death circumstances.",
+  "shortDescriptionEn": "Cesare Pavese was an Italian novelist, poet, short-story writer, translator, literary critic, and essayist, widely regarded as one of the major Italian literary figures of the mid-20th century. He helped bring modern American and English-language literature to Italian readers and wrote works marked by solitude, memory, politics, and the landscape of Piedmont. In 1950, the same year he won the Strega Prize, he died in Turin by suicide from a barbiturate overdose at age 41.",
+  "shortDescriptionFr": "Cesare Pavese était un romancier, poète, nouvelliste, traducteur, critique littéraire et essayiste italien, considéré comme l’une des grandes figures de la littérature italienne du milieu du XXe siècle. Il contribua à faire connaître en Italie la littérature moderne américaine et anglophone, tout en explorant dans son œuvre la solitude, la mémoire, la politique et les paysages du Piémont. En 1950, l’année où il reçut le prix Strega, il mourut à Turin par suicide à la suite d’une overdose de barbituriques, à l’âge de 41 ans.",
+  "shortDescriptionDe": "Cesare Pavese war ein italienischer Romancier, Dichter, Erzähler, Übersetzer, Literaturkritiker und Essayist und zählt zu den bedeutenden italienischen Schriftstellern des mittleren 20. Jahrhunderts. Er machte moderne amerikanische und englischsprachige Literatur in Italien bekannter und schrieb über Einsamkeit, Erinnerung, Politik und die Landschaft des Piemont. 1950, im selben Jahr, in dem er den Premio Strega gewann, starb er in Turin durch Suizid infolge einer Barbiturat-Überdosis im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Cesare Pavese fue un novelista, poeta, cuentista, traductor, crítico literario y ensayista italiano, considerado una de las figuras más importantes de la literatura italiana de mediados del siglo XX. Ayudó a acercar la literatura moderna estadounidense y anglófona al público italiano, y su obra exploró la soledad, la memoria, la política y el paisaje del Piamonte. En 1950, el mismo año en que ganó el Premio Strega, murió en Turín por suicidio mediante una sobredosis de barbitúricos a los 41 años.",
+  "shortDescriptionRu": "Чезаре Павезе был итальянским романистом, поэтом, автором рассказов, переводчиком, литературным критиком и эссеистом, одной из заметнейших фигур итальянской литературы середины XX века. Он много сделал для знакомства итальянских читателей с современной американской и англоязычной литературой, а в собственных произведениях обращался к темам одиночества, памяти, политики и пьемонтского пейзажа. В 1950 году, в год получения премии Стрега, он умер в Турине, покончив с собой передозировкой барбитуратов, в возрасте 41 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cesare_Pavese",
+    "https://www.britannica.com/biography/Cesare-Pavese",
+    "https://www.wikidata.org/wiki/Q2022",
+    "https://www.poetryfoundation.org/poets/cesare-pavese",
+    "https://pubmed.ncbi.nlm.nih.gov/9132365/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q312967",  "Name": "Guru Gobind Singh",  "BirthDate": "1666-12-22T00:00:00Z",  "DeathDate": "1708-10-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Guru%20Gobind%20Singh.jpg",  "SiteLinksCnt": 67,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"518562":{"pageid":518562,"ns":0,"title":"Guru Gobind Singh","extract":"Guru Gobind Singh (Punjabi pronunciation: [g\u028a\u027eu\u02d0 go\u02d0b\u026an\u032ad\u032a\u1d4a s\u026a\u0301\u014bg\u1d4a]; born Gobind Das; 22 December 1666 \u2013 7 October 1708) was the tenth and last human Sikh Guru. He was a warrior, poet, and philosopher. In 1675, at the age of nine, he was formally made the leader of the Sikhs after his father Guru Tegh Bahadur\u2014the ninth Sikh Guru\u2014was executed by the emperor Aurangzeb. His four biological sons died during his lifetime\u2014two in battle and two executed by the Mughal administrator Wazir Khan.\nAmong his notable contributions to Sikhism are founding the Sikh warrior community called Khalsa in 1699 and introducing the Five Ks, the five articles of faith that Khalsa Sikhs wear at all times. Guru Gobind Singh is credited with the Dasam Granth whose hymns are a sacred part of Sikh prayers and Khalsa rituals. He is also credited as the one who finalized and enshrined the Guru Granth Sahib as Sikhism's primary holy religious scripture and the eternal Guru. He also established the concept of Guru Panth as his spiritual successor, however this manner of guruship is seldom evoked today. Guru Gobind Singh is remembered as being the founder of Paonta Sahib (in 1685) and Damdama Sahib (in 1705)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q312967")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q312967",
+  "isRealHuman": true,
+  "birthDate": "1666-12-22",
+  "deathDate": "1708-10-07",
+  "ageAtDeath": 41,
+  "confidence": 96,
+  "confidenceExplained": "The identity and dates are strongly supported by multiple sources, including Wikipedia, Britannica, and The Sikh Encyclopedia. Some Sikh-community sources present calendar-converted dates such as January 5, 1667 and October 21, 1708, but these still produce an age at death of 41. The confidence is high because the age is stable across the main date conventions.",
+  "shortDescriptionEn": "Guru Gobind Singh was the tenth and last human Sikh Guru, remembered as a spiritual leader, poet, warrior, and philosopher. He founded the Khalsa in 1699, shaped Sikh identity through the Five Ks, and is traditionally credited with finalizing the Guru Granth Sahib as the eternal Guru. In 1708, while at Nanded, he was attacked and stabbed by assassins connected in tradition to his Mughal enemies. He fought back, but the wounds proved fatal, and he died on 7 October 1708 at the age of 41.",
+  "shortDescriptionFr": "Guru Gobind Singh fut le dixième et dernier Guru humain du sikhisme, célèbre comme chef spirituel, poète, guerrier et philosophe. Il fonda le Khalsa en 1699, renforça l’identité sikhe avec les Cinq K et est traditionnellement associé à l’établissement du Guru Granth Sahib comme Guru éternel. En 1708, à Nanded, il fut attaqué et poignardé par des assassins liés, selon la tradition, à ses ennemis moghols. Il riposta, mais ses blessures furent mortelles, et il mourut le 7 octobre 1708 à l’âge de 41 ans.",
+  "shortDescriptionDe": "Guru Gobind Singh war der zehnte und letzte menschliche Guru der Sikhs, bekannt als geistlicher Führer, Dichter, Krieger und Philosoph. Er gründete 1699 die Khalsa, prägte die Sikh-Identität durch die Fünf K und gilt traditionell als derjenige, der den Guru Granth Sahib als ewigen Guru bestätigte. Im Jahr 1708 wurde er in Nanded von Attentätern angegriffen und niedergestochen, die in der Überlieferung mit seinen mogulischen Gegnern verbunden werden. Er wehrte sich, doch die Verletzungen waren tödlich; er starb am 7. Oktober 1708 im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Guru Gobind Singh fue el décimo y último Gurú humano del sijismo, recordado como líder espiritual, poeta, guerrero y filósofo. Fundó la Khalsa en 1699, consolidó la identidad sij mediante las Cinco K y la tradición le atribuye la confirmación del Guru Granth Sahib como Gurú eterno. En 1708, en Nanded, fue atacado y apuñalado por asesinos vinculados en la tradición a sus enemigos mogoles. Logró defenderse, pero las heridas fueron mortales, y murió el 7 de octubre de 1708 a los 41 años.",
+  "shortDescriptionRu": "Гуру Гобинд Сингх был десятым и последним человеческим гуру сикхов, духовным лидером, поэтом, воином и философом. В 1699 году он основал Хальсу, укрепил сикхскую идентичность через Пять К и, согласно традиции, утвердил Гуру Грантх Сахиб как вечного гуру. В 1708 году в Нандеде на него напали убийцы, которых традиция связывает с его могольскими противниками, и нанесли ему ножевые ранения. Он сумел дать отпор, но раны оказались смертельными; он умер 7 октября 1708 года в возрасте 41 года.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Guru_Gobind_Singh.jpg",
+    "https://commons.wikimedia.org/wiki/File:Historical_depiction_of_Guru_Gobind_Singh_07.jpg",
+    "https://en.wikipedia.org/wiki/Guru_Gobind_Singh",
+    "https://commons.wikimedia.org/wiki/File:Guru_Gobind_Singh_preparing_amrit.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guru_Gobind_Singh",
+    "https://www.britannica.com/biography/Guru-Gobind-Singh",
+    "https://www.thesikhencyclopedia.com/gobind-singh-guru/",
+    "https://commons.wikimedia.org/wiki/File:Guru_Gobind_Singh.jpg",
+    "https://commons.wikimedia.org/wiki/File:Historical_depiction_of_Guru_Gobind_Singh_07.jpg",
+    "https://commons.wikimedia.org/wiki/File:Guru_Gobind_Singh_preparing_amrit.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11734",  "Name": "Engelbert Dollfuss",  "BirthDate": "1892-10-04T00:00:00Z",  "DeathDate": "1934-07-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Engelbert%20Dollfuss.png",  "SiteLinksCnt": 63,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"10150":{"pageid":10150,"ns":0,"title":"Engelbert Dollfuss","extract":"Engelbert Dollfuss (alternatively Dollfu\u00df; 4 October 1892 \u2013 25 July 1934) was an Austrian politician and dictator who served as chancellor of Austria between 1932 and 1934. Having served as Minister for Forests and Agriculture, he ascended to Federal Chancellor in 1932 in the midst of a crisis for the conservative and nationalist government. This crisis culminated in the self-elimination of the Austrian Parliament, a coup sparked by the resignation of the presiding officers of the National Council. Suppressing the Socialist movement in the Austrian Civil War and later banning the Austrian Nazi Party, he cemented his rule through the First of May Constitution in 1934. Later that year, Dollfuss was assassinated as part of a failed coup attempt by Nazi agents. His successor Kurt Schuschnigg maintained the regime until Adolf Hitler's Anschluss in 1938."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11734")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q11734",
+  "isRealHuman": true,
+  "birthDate": "1892-10-04",
+  "deathDate": "1934-07-25",
+  "ageAtDeath": 41,
+  "confidence": 100,
+  "confidenceExplained": "The birth date 1892-10-04 and death date 1934-07-25 are confirmed by multiple biographical sources. Since Dollfuss died before his birthday in 1934, the calculated age at death is exactly 41.",
+  "shortDescriptionEn": "Engelbert Dollfuss was an Austrian politician who served as chancellor from 1932 to 1934. A conservative Catholic leader, he dismantled parliamentary democracy, suppressed political opponents, and built an authoritarian corporatist regime often associated with Austrofascism. On 25 July 1934, during a failed Nazi coup attempt in Vienna, Austrian Nazi conspirators entered the Chancellery and shot him; he died the same day at age 41.",
+  "shortDescriptionFr": "Engelbert Dollfuss fut un homme politique autrichien, chancelier de 1932 à 1934. Dirigeant catholique conservateur, il mit fin au fonctionnement parlementaire, réprima ses adversaires politiques et établit un régime autoritaire corporatiste souvent associé à l’austrofascisme. Le 25 juillet 1934, lors d’une tentative de coup d’État nazie à Vienne, des conspirateurs nazis autrichiens pénétrèrent dans la chancellerie et le blessèrent par balle; il mourut le jour même à l’âge de 41 ans.",
+  "shortDescriptionDe": "Engelbert Dollfuß war ein österreichischer Politiker und von 1932 bis 1934 Bundeskanzler. Als konservativ-katholischer Regierungschef schaltete er die parlamentarische Demokratie aus, bekämpfte politische Gegner und errichtete einen autoritären Ständestaat, der häufig mit dem Austrofaschismus verbunden wird. Am 25. Juli 1934 drangen österreichische Nationalsozialisten während eines gescheiterten Putschversuchs in das Bundeskanzleramt in Wien ein und schossen auf ihn; er starb noch am selben Tag im Alter von 41 Jahren.",
+  "shortDescriptionEs": "Engelbert Dollfuss fue un político austríaco que ejerció como canciller entre 1932 y 1934. Líder católico conservador, desmanteló la democracia parlamentaria, reprimió a sus adversarios políticos y construyó un régimen autoritario corporativista, a menudo vinculado al austrofascismo. El 25 de julio de 1934, durante un fallido intento de golpe nazi en Viena, conspiradores nazis austríacos entraron en la Cancillería y le dispararon; murió ese mismo día a los 41 años.",
+  "shortDescriptionRu": "Энгельберт Дольфус был австрийским политиком и занимал пост канцлера Австрии с 1932 по 1934 год. Консервативный католический лидер, он ликвидировал парламентскую демократию, подавил политических противников и создал авторитарный корпоративный режим, часто связываемый с австрофашизмом. 25 июля 1934 года, во время неудачной попытки нацистского переворота в Вене, австрийские нацистские заговорщики ворвались в канцелярию и застрелили его; он умер в тот же день в возрасте 41 года.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Engelbert%20Dollfuss.png",
+    "https://commons.wikimedia.org/wiki/File:Engelbert_Dollfuss.jpg",
+    "https://www.parlament.gv.at/bild/4744960"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Engelbert_Dollfuss",
+    "https://www.britannica.com/biography/Engelbert-Dollfuss",
+    "https://www.parlament.gv.at/en/experience/the-building/architecture-history/index.html",
+    "https://commons.wikimedia.org/wiki/File:Engelbert_Dollfuss.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Engelbert%20Dollfuss.png"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q52596",  "Name": "Abebe Bikila",  "BirthDate": "1932-08-07T00:00:00Z",  "DeathDate": "1973-10-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Abebe%20Bikila%201968c.jpg",  "SiteLinksCnt": 63,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"671288":{"pageid":671288,"ns":0,"title":"Abebe Bikila","extract":"Shambel Abebe Bikila (Amharic: \u123b\u121d\u1260\u120d \u12a0\u1260\u1260 \u1262\u1242\u120b; August 7, 1932 \u2013 October 25, 1973) was an Ethiopian marathon runner who was a back-to-back Olympic marathon champion. He was the first Ethiopian Olympic gold medalist, winning his first gold medal at the 1960 Summer Olympics in Rome while running barefoot. At the 1964 Tokyo Olympics, he won his second gold medal, making him the first athlete to successfully defend an Olympic marathon title. In both victories, he ran in world record time.\nBorn in Shewa, Abebe moved to Addis Ababa around 1952 and joined the 5th Infantry Regiment of the Ethiopian Imperial Guard, an elite infantry division that safeguarded the emperor of Ethiopia. Abebe served in the Kagnew Battalion during the Korean War.\nEnlisting as a soldier before his athletic career, he rose to the rank of shambel (captain). Abebe participated in a total of sixteen marathons. He placed second on his first marathon in Addis Ababa, won twelve other races, and finished fifth in the 1963 Boston Marathon. In July 1967, he sustained the first of several sports-related leg injuries that prevented him from finishing his last two marathons. Abebe was a pioneer in long-distance running. Mamo Wolde, Juma Ikangaa, Tegla Loroupe, Paul Tergat, and Haile Gebrselassie\u2014all recipients of the New York Road Runners' Abebe Bikila Award\u2014are a few of the athletes who have followed in his footsteps to establish East Africa as a force in long-distance running.\nOn March 22, 1969, Abebe was paralysed due to a car accident. He regained some upper-body mobility, but he never walked again. While he was receiving medical treatment in England, Abebe competed in archery and table tennis at the 1970 Stoke Mandeville Games in London. Those games were an early predecessor of the Paralympic Games. He competed in both sports at a 1971 competition for disabled people in Norway and won its cross-country sleigh-riding event. Abebe died at age 41 in 1973 of a cerebral haemorrhage related to his accident four years earlier. He received a state funeral, and Emperor Haile Selassie declared a national day of mourning. Many schools, venues, and events, including Abebe Bikila Stadium in Addis Ababa, are named after him. He is the subject of biographies and films documenting his athletic career, and he is often featured in publications about the marathon and the Olympics."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q52596")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q52596",
+  "isRealHuman": true,
+  "birthDate": "1932-08-07",
+  "deathDate": "1973-10-25",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given by major reference sources such as Wikipedia and Britannica. The age calculation is exact: Abebe Bikila was born on 1932-08-07 and died on 1973-10-25, after his 41st birthday.",
+  "shortDescriptionEn": "Abebe Bikila was an Ethiopian marathon runner and one of the defining figures in Olympic distance running. He won the 1960 Olympic marathon in Rome while running barefoot, becoming Ethiopia’s first Olympic gold medalist, and defended his title at Tokyo in 1964, both times in world-record performances. After a 1969 car accident left him paralyzed, he remained active in adaptive sport. He died in Addis Ababa on 1973-10-25 at age 41 from a cerebral hemorrhage linked to the accident.",
+  "shortDescriptionFr": "Abebe Bikila était un marathonien éthiopien et l’une des grandes figures de la course de fond olympique. Il remporta le marathon des Jeux de Rome en 1960 pieds nus, devenant le premier champion olympique éthiopien, puis conserva son titre à Tokyo en 1964, à chaque fois avec un record du monde. Après un accident de voiture en 1969 qui le laissa paralysé, il participa encore à des compétitions de sport adapté. Il mourut à Addis-Abeba le 1973-10-25 à l’âge de 41 ans d’une hémorragie cérébrale liée à cet accident.",
+  "shortDescriptionDe": "Abebe Bikila war ein äthiopischer Marathonläufer und eine prägende Gestalt des olympischen Langstreckenlaufs. 1960 gewann er in Rom barfuß den Marathon und wurde damit Äthiopiens erster Olympiasieger; 1964 verteidigte er in Tokio seinen Titel, beide Male mit Weltrekord. Nach einem Autounfall im Jahr 1969, der ihn lähmte, blieb er im Behindertensport aktiv. Er starb am 1973-10-25 in Addis Abeba im Alter von 41 Jahren an einer Hirnblutung, die mit den Folgen des Unfalls in Verbindung stand.",
+  "shortDescriptionEs": "Abebe Bikila fue un maratonista etíope y una de las figuras más importantes del fondo olímpico. Ganó el maratón de los Juegos Olímpicos de Roma 1960 corriendo descalzo, convirtiéndose en el primer medallista de oro olímpico de Etiopía, y defendió su título en Tokio 1964, ambas veces con récord mundial. Tras un accidente automovilístico en 1969 que lo dejó paralizado, siguió compitiendo en deportes adaptados. Murió en Addis Abeba el 1973-10-25 a los 41 años por una hemorragia cerebral relacionada con aquel accidente.",
+  "shortDescriptionRu": "Абебе Бикила был эфиопским марафонцем и одной из ключевых фигур в истории олимпийского бега на длинные дистанции. В 1960 году в Риме он выиграл марафон босиком, став первым олимпийским чемпионом из Эфиопии, а в 1964 году в Токио защитил титул; обе победы были одержаны с мировыми рекордами. После автомобильной аварии 1969 года, приведшей к параличу, он продолжал участвовать в адаптивном спорте. Он умер в Аддис-Абебе 1973-10-25 в возрасте 41 года от кровоизлияния в мозг, связанного с последствиями аварии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Abebe_Bikila",
+    "https://www.britannica.com/biography/Abebe-Bikila",
+    "https://www.olympics.com/en/athletes/abebe-bikila"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7068",  "Name": "Julien Offray de La Mettrie",  "BirthDate": "1709-12-12T00:00:00Z",  "DeathDate": "1751-11-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Julien%20Offray%20de%20La%20Mettrie.jpg",  "SiteLinksCnt": 63,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"829899":{"pageid":829899,"ns":0,"title":"Julien Offray de La Mettrie","extract":"Julien Offray de La Mettrie (French: [\u0254f\u0281\u025b d\u0259 la met\u0281i]; 23 November 1709 \u2013 11 November 1751) was a French physician and philosopher, and one of the earliest of the French materialists of the Enlightenment. He is best known for his 1747 work L'homme machine (Man a Machine).\nLa Mettrie is most remembered for taking the position that humans are complex animals and no more have souls than other animals do. He considered that the mind is part of the body and that life should be lived so as to produce pleasure (hedonism). His views were so controversial that he had to flee France and settle in Berlin."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7068")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7068",
+  "isRealHuman": true,
+  "birthDate": "1709-11-23",
+  "deathDate": "1751-11-11",
+  "ageAtDeath": 41,
+  "confidence": 98,
+  "confidenceExplained": "The exact birth date is disputed across sources, with reported dates including 23 November, 12 December, 19 December, and 25 December 1709. The death date is consistently given as 11 November 1751. Since all plausible birth dates fall after 11 November, Julien Offray de La Mettrie had not yet reached his 42nd birthday, so his age at death was 41.",
+  "shortDescriptionEn": "Julien Offray de La Mettrie was a French physician and Enlightenment philosopher whose bold materialism made him one of the most provocative thinkers of the eighteenth century. In L’homme machine, he argued that human beings could be understood as complex physical organisms rather than bodies animated by an immaterial soul, a view that scandalized religious and philosophical authorities and forced him into exile. He later found protection at the Prussian court of Frederick the Great. La Mettrie died in 1751, aged 41, after reportedly developing a gastric illness and violent fever following a feast held in his honor.",
+  "shortDescriptionFr": "Julien Offray de La Mettrie fut un médecin français et un philosophe des Lumières dont le matérialisme audacieux fit de lui l’un des penseurs les plus provocateurs du XVIIIe siècle. Dans L’homme machine, il soutint que l’être humain pouvait être compris comme un organisme physique complexe plutôt que comme un corps animé par une âme immatérielle, une thèse qui scandalisa les autorités religieuses et philosophiques et le poussa à l’exil. Il trouva ensuite protection à la cour prussienne de Frédéric II. La Mettrie mourut en 1751, à 41 ans, après avoir, selon les récits, contracté une maladie gastrique puis une forte fièvre à la suite d’un banquet donné en son honneur.",
+  "shortDescriptionDe": "Julien Offray de La Mettrie war ein französischer Arzt und Philosoph der Aufklärung, dessen radikaler Materialismus ihn zu einem der provokantesten Denker des 18. Jahrhunderts machte. In L’homme machine vertrat er die Ansicht, der Mensch sei als komplexer körperlicher Organismus zu verstehen und nicht als von einer immateriellen Seele beseelter Körper. Diese Position erregte religiösen und philosophischen Anstoß und zwang ihn ins Exil; später fand er Schutz am preußischen Hof Friedrichs des Großen. La Mettrie starb 1751 im Alter von 41 Jahren, nachdem er Berichten zufolge nach einem Festessen zu seinen Ehren an einer Magenkrankheit und heftigem Fieber erkrankt war.",
+  "shortDescriptionEs": "Julien Offray de La Mettrie fue un médico francés y filósofo de la Ilustración cuyo materialismo radical lo convirtió en uno de los pensadores más provocadores del siglo XVIII. En L’homme machine defendió que el ser humano podía entenderse como un organismo físico complejo, no como un cuerpo animado por un alma inmaterial. Sus ideas escandalizaron a autoridades religiosas y filosóficas y lo obligaron al exilio, hasta que encontró protección en la corte prusiana de Federico el Grande. La Mettrie murió en 1751, a los 41 años, tras sufrir, según los relatos, una enfermedad gástrica y una fiebre intensa después de un banquete celebrado en su honor.",
+  "shortDescriptionRu": "Жюльен Офре де Ламетри был французским врачом и философом эпохи Просвещения, чей смелый материализм сделал его одним из самых вызывающих мыслителей XVIII века. В трактате «Человек-машина» он утверждал, что человека можно понимать как сложный физический организм, а не как тело, оживляемое нематериальной душой. Эти идеи вызвали скандал среди религиозных и философских авторитетов и вынудили его к изгнанию; позже он нашёл покровительство при прусском дворе Фридриха Великого. Ламетри умер в 1751 году в возрасте 41 года после, как сообщалось, желудочного заболевания и сильной лихорадки, возникших после пира в его честь.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20de%20Julien%20Offray%20de%20La%20Mettrie.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Julien_Offray_de_La_Mettrie"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Julien_Offray_de_La_Mettrie",
+    "https://www.britannica.com/biography/Julien-Offroy-de-La-Mettrie",
+    "https://www.encyclopedia.com/people/philosophy-and-religion/philosophy-biographies/julien-offray-de-la-mettrie",
+    "https://commons.wikimedia.org/wiki/File:Portrait_de_Julien_Offray_de_La_Mettrie.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q190731",  "Name": "Shamil Basayev",  "BirthDate": "1965-01-14T00:00:00Z",  "DeathDate": "2006-07-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Shamil%20Basaev2.jpg",  "SiteLinksCnt": 62,  "Age": 41}
+{"batchcomplete":"","query":{"pages":{"386473":{"pageid":386473,"ns":0,"title":"Shamil Basayev","extract":"Shamil Salmanovich Basayev (Chechen: \u0421\u0430\u043b\u043c\u0430\u043d \u0412\u043e\u04c0 \u0428\u0430\u043c\u0438\u043b\u044c; Salman Voj \u015eamil; Russian: \u0428\u0430\u043c\u0438\u043b\u044c \u0421\u0430\u043b\u043c\u0430\u043d\u043e\u0432\u0438\u0447 \u0411\u0430\u0441\u0430\u0435\u0432; 14 January 1965 \u2013 10 July 2006), also known by his kunya Abu Idris, was a Chechen guerrilla leader who served as a senior military commander in the breakaway Chechen Republic of Ichkeria. He held the rank of brigadier general in the Armed Forces of Ichkeria, and was posthumously declared generalissimo. As a military commander in the separatist armed forces of Chechnya, one of his most notable battles was the separatist recapture of Grozny in 1996, which he personally planned and commanded together with Aslan Maskhadov. He also masterminded several of the worst terrorist attacks that occurred in Russia.\nStarting as a field commander in the Transcaucasus, Basayev led guerrilla campaigns against Russian forces for years, as well as launching mass-hostage takings of civilians, with his goal being the withdrawal of Russian soldiers from Chechnya. From 1997 to 1998, he also served as the vice-prime minister of the breakaway state in Aslan Maskhadov's government. Beginning in 2003, Basayev used the nom de guerre and title of \"Emir Abdullah Shamil Abu-Idris\". As Basayev acquired a reputation for ruthlessness, he became revered among his peers and eventually became the highest ranking Chechen military commander and was considered the undisputed leader of the Chechen insurgency as well as being the overall senior leader of all other Chechen rebel factions.\nBasayev personally led the Budyonnovsk hospital raid in 1995, ordered the Beslan school siege in 2004, and was responsible for numerous attacks on security forces in and around Chechnya. He also masterminded the 2002 Moscow theater hostage crisis, the 2002 Grozny truck bombing, and the 2004 Russian aircraft bombings. He was also one of the leaders of the 2004 Nazran raid. ABC News described Basayev as \"one of the most-wanted terrorists in the world\", while the Council on Foreign Relations analyst Steven Sestanovich described him as \"the most feared and hated man in Russia\". Despite his reputation, journalist Tom de Waal described him as \"almost unassuming in the flesh\", being \"of medium height, with a bushy beard and high forehead worthy of a Moscow intellectual, and a quiet voice.\"\nBasayev was killed in a truck explosion during an arms deal in July 2006. Forensic evidence suggests that his death was caused when a landmine he was examining exploded, but Russian officials have also claimed that one of the Kamaz trucks used was booby-trapped and detonated to destroy the arms shipment, also killing Basayev."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q190731")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q190731",
+  "isRealHuman": true,
+  "birthDate": "1965-01-14",
+  "deathDate": "2006-07-10",
+  "ageAtDeath": 41,
+  "confidence": 99,
+  "confidenceExplained": "The birth date 1965-01-14 and death date 2006-07-10 are consistently listed by Wikipedia and Wikidata, and contemporary obituary coverage reported his death at age 41. The arithmetic is exact because his 2006 birthday had already occurred before his death on 10 July.",
+  "shortDescriptionEn": "Shamil Salmanovich Basayev was a Chechen militant and separatist commander who became one of the most prominent and feared figures of the Chechen wars. He served in senior military roles within the breakaway Chechen Republic of Ichkeria and was linked to major attacks including the Budyonnovsk hospital raid, the Moscow theater hostage crisis, and the Beslan school siege. Basayev died on 10 July 2006 near Ekazhevo, Ingushetia, in a powerful explosion during an arms-related operation; Russian officials described it as a security-service action, while other accounts suggested an accidental detonation.",
+  "shortDescriptionFr": "Chamil Salmanovitch Bassaïev était un militant tchétchène et commandant séparatiste, devenu l’une des figures les plus connues et les plus redoutées des guerres de Tchétchénie. Il occupa des fonctions militaires importantes au sein de la République tchétchène d’Itchkérie et fut associé à de graves attaques, dont la prise d’otages de l’hôpital de Boudionnovsk, la crise du théâtre de Moscou et la prise d’otages de Beslan. Il est mort le 10 juillet 2006 près d’Ekazhevo, en Ingouchie, dans une violente explosion liée à un transfert d’armes; les autorités russes ont présenté sa mort comme le résultat d’une opération des services de sécurité, tandis que d’autres récits évoquent une détonation accidentelle.",
+  "shortDescriptionDe": "Schamil Salmanowitsch Bassajew war ein tschetschenischer Militant und Separatistenkommandeur, der zu einer der bekanntesten und gefürchtetsten Figuren der Tschetschenienkriege wurde. Er bekleidete hohe militärische Positionen in der abtrünnigen Tschetschenischen Republik Itschkerien und wurde mit schweren Anschlägen in Verbindung gebracht, darunter die Geiselnahme im Krankenhaus von Budjonnowsk, die Geiselnahme im Moskauer Theater und die Beslan-Schulbesetzung. Bassajew starb am 10. Juli 2006 nahe Ekaschewo in Inguschetien bei einer schweren Explosion im Zusammenhang mit Waffen; russische Behörden bezeichneten den Vorfall als Sicherheitsoperation, während andere Darstellungen eine unbeabsichtigte Detonation nahelegen.",
+  "shortDescriptionEs": "Shamil Salmanovich Basayev fue un militante checheno y comandante separatista que llegó a ser una de las figuras más conocidas y temidas de las guerras de Chechenia. Ocupó altos cargos militares en la separatista República Chechena de Ichkeria y fue vinculado con ataques graves como la toma del hospital de Budiónnovsk, la crisis de rehenes del teatro de Moscú y el asedio de la escuela de Beslán. Murió el 10 de julio de 2006 cerca de Ekazhevo, Ingusetia, en una fuerte explosión relacionada con armas; las autoridades rusas la describieron como una operación de seguridad, aunque otros relatos apuntan a una detonación accidental.",
+  "shortDescriptionRu": "Шамиль Салманович Басаев был чеченским боевиком и сепаратистским командиром, ставшим одной из самых известных и опасных фигур чеченских войн. Он занимал высокие военные позиции в самопровозглашённой Чеченской Республике Ичкерия и был связан с крупными нападениями, включая захват больницы в Будённовске, захват заложников в московском театре и теракт в Беслане. Басаев погиб 10 июля 2006 года возле Экажево в Ингушетии в результате мощного взрыва, связанного с оружием; российские власти назвали это операцией спецслужб, тогда как другие версии указывают на случайную детонацию.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Shamil%20Basaev2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Shamil_Basaev2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Shamil_Basaev.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Shamil_Basaev"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Shamil_Basayev",
+    "https://www.wikidata.org/wiki/Q190731",
+    "https://commons.wikimedia.org/wiki/File:Shamil_Basaev2.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Shamil_Basaev",
+    "https://www.theguardian.com/news/2006/jul/11/guardianobituaries.chechnya",
+    "https://www.theguardian.com/world/2006/jul/11/russia.chechnya",
+    "https://www.theguardian.com/world/2006/jul/19/russia.chechnya",
+    "https://www.britannica.com/biography/Shamil-Basayev"
+  ]
+}
