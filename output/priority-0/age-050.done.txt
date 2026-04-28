@@ -1,0 +1,1041 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2831",  "Name": "Michael Jackson",  "BirthDate": "1958-08-29T00:00:00Z",  "DeathDate": "2009-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Jackson%201983%20%283x4%20cropped%29%20%28contrast%29.jpg",  "SiteLinksCnt": 325,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"14995351":{"pageid":14995351,"ns":0,"title":"Michael Jackson","extract":"Michael Joseph Jackson (August 29, 1958 \u2013 June 25, 2009) was an American singer, songwriter, dancer, and philanthropist. Dubbed the \"King of Pop\", he is widely regarded as one of the most culturally significant figures of the 20th century. Over a four-decade career, his musical achievements broke American racial barriers and made him a dominant figure worldwide. Through his songs, concerts, and fashion, he proliferated visual performance for artists in popular music, popularizing street dance moves such as the moonwalk, the robot, and the anti-gravity lean. Jackson is often deemed the greatest entertainer of all time.\nThe eighth child of the Jackson family, Jackson made his public debut at age six as the lead singer of the Jackson 5, one of Motown's most successful acts. He rose to solo stardom with the album Off the Wall (1979) and achieved unprecedented global success with Thriller (1982), the best-selling album in history. Its short film-style music videos for \"Thriller\", \"Beat It\", and \"Billie Jean\" redefined the medium as an art form. Jackson followed it with Bad (1987), the first album to produce five US Billboard Hot 100 number-one singles: \"I Just Can't Stop Loving You\", \"Bad\", \"The Way You Make Me Feel\", \"Man in the Mirror\", and \"Dirty Diana\". His albums Dangerous (1991) and HIStory (1995) spawned the respective US number-one singles \"Black or White\" and \"You Are Not Alone\"; the latter was the first song to debut atop the Hot 100. Jackson's final album, Invincible (2001), is the most expensive album ever made.\nFrom the mid-1980s, Jackson came under public scrutiny due to changes in his appearance, relationships, behavior, and lifestyle. He was accused of sexually abusing the child of a family friend in 1993. In 2005, Jackson was tried and acquitted of further such allegations and other charges. In 2009, while preparing for This Is It, a series of comeback concerts, he died from an overdose of propofol administered by his personal physician Conrad Murray, who was convicted of involuntary manslaughter in 2011. Jackson's death triggered global reactions, creating unprecedented surges of internet traffic and a spike in his music sales. His televised memorial service, held at the Staples Center in Los Angeles, is estimated to have been viewed by more than 2.5 billion people.\nJackson is one of the best-selling music artists of all time, with estimated sales of over 500 million records as a solo artist. He is also\u2014along with Paul McCartney and Phil Collins\u2014one of three recording artists to have sold over 100 million records both as solo artists and separately as principal members of a band. He holds a joint-record for a male solo artist with 13 Billboard Hot 100 number-one singles and is the only artist to have a top-ten single in six decades. One of the most-awarded music artists in history, Jackson received 13 Grammy Awards, the Grammy Legend Award, and the Grammy Lifetime Achievement Award; 26 American Music Awards; 12 World Music Awards; 8 MTV Video Music Awards; 6 Brit Awards; and 3 presidential honors. He was inducted into numerous halls of fame, including the Rock and Roll Hall of Fame twice, the Songwriters Hall of Fame, and the Dance Hall of Fame. Having donated an estimated $500 million, Jackson is credited with setting a standard for celebrity charity. In 2024, half of his music catalogue was sold to Sony for $600 million, the largest music acquisition for a single artist."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2831")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2831",
+  "isRealHuman": true,
+  "birthDate": "1958-08-29",
+  "deathDate": "2009-06-25",
+  "ageAtDeath": 50,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are directly supported by multiple reliable references, including Wikipedia, Encyclopaedia Britannica, and GRAMMY.com. Michael Jackson was born on 1958-08-29 and died on 2009-06-25, before reaching his 51st birthday, so the calculated age is exactly 50.",
+  "shortDescriptionEn": "Michael Jackson was an American singer, songwriter, dancer, and global pop icon whose music, videos, choreography, and style reshaped popular entertainment. From his childhood with the Jackson 5 to solo milestones such as Off the Wall, Thriller, Bad, and Dangerous, he became one of the best-selling and most influential performers in history. He died in Los Angeles on June 25, 2009, at age 50, from cardiac arrest linked to acute propofol and sedative intoxication while preparing for his This Is It concert series.",
+  "shortDescriptionFr": "Michael Jackson était un chanteur, auteur-compositeur, danseur et symbole mondial de la pop américain, dont la musique, les clips, la chorégraphie et le style ont transformé le divertissement populaire. De ses débuts avec les Jackson 5 à ses grands albums solo comme Off the Wall, Thriller, Bad et Dangerous, il est devenu l’un des artistes les plus vendus et les plus influents de l’histoire. Il est mort à Los Angeles le 25 juin 2009, à l’âge de 50 ans, d’un arrêt cardiaque lié à une intoxication aiguë au propofol et à des sédatifs alors qu’il préparait la série de concerts This Is It.",
+  "shortDescriptionDe": "Michael Jackson war ein US-amerikanischer Sänger, Songwriter, Tänzer und weltweites Pop-Idol, dessen Musik, Musikvideos, Choreografie und Stil die Popkultur nachhaltig prägten. Von seiner Kindheit bei den Jackson 5 bis zu Solo-Erfolgen wie Off the Wall, Thriller, Bad und Dangerous wurde er zu einem der meistverkauften und einflussreichsten Künstler der Geschichte. Er starb am 25. Juni 2009 in Los Angeles im Alter von 50 Jahren an einem Herzstillstand infolge einer akuten Vergiftung durch Propofol und Beruhigungsmittel, während er sich auf seine Konzertreihe This Is It vorbereitete.",
+  "shortDescriptionEs": "Michael Jackson fue un cantante, compositor, bailarín e ícono mundial del pop estadounidense, cuya música, videos, coreografías y estilo transformaron el entretenimiento popular. Desde su infancia con los Jackson 5 hasta sus grandes álbumes solistas como Off the Wall, Thriller, Bad y Dangerous, llegó a ser uno de los artistas más vendidos e influyentes de la historia. Murió en Los Ángeles el 25 de junio de 2009, a los 50 años, por un paro cardíaco relacionado con una intoxicación aguda por propofol y sedantes mientras preparaba su serie de conciertos This Is It.",
+  "shortDescriptionRu": "Майкл Джексон был американским певцом, автором песен, танцором и мировой иконой поп-музыки, чьи песни, клипы, хореография и сценический стиль изменили массовую культуру. От детских выступлений в составе Jackson 5 до сольных альбомов Off the Wall, Thriller, Bad и Dangerous он стал одним из самых продаваемых и влиятельных артистов в истории. Он умер в Лос-Анджелесе 25 июня 2009 года в возрасте 50 лет от остановки сердца, связанной с острой интоксикацией пропофолом и седативными препаратами, во время подготовки к концертной серии This Is It.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Michael_Jackson",
+    "https://www.britannica.com/biography/Michael-Jackson",
+    "https://www.grammy.com/artists/michael-jackson/13202",
+    "https://www.biography.com/musicians/michael-jackson-final-days",
+    "https://commons.wikimedia.org/wiki/File:Michael_Jackson_1983_(HQ)_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Michael_Jackson_with_Grammy_Awards_in_1984.jpg",
+    "https://commons.wikimedia.org/wiki/File:Michael_Jackson_1984_(enhanced).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5676",  "Name": "Matsuo Bashō",  "BirthDate": "1644-01-01T00:00:00Z",  "DeathDate": "1694-11-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Basho%20by%20Buson.jpg",  "SiteLinksCnt": 199,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"90625":{"pageid":90625,"ns":0,"title":"Matsuo Bash\u014d","extract":"Matsuo Bash\u014d (\u677e\u5c3e \u82ad\u8549; Japanese pronunciation: [ma.ts\u026f.o (|) ba.\u0255o\u02d0], 1644 \u2013 November 28, 1694); born Matsuo Kinsaku (\u677e\u5c3e \u91d1\u4f5c), later known as Matsuo Ch\u016bemon Munefusa (\u677e\u5c3e \u5fe0\u53f3\u885b\u9580 \u5b97\u623f) was the most famous Japanese poet of the Edo period. During his lifetime, Bash\u014d was recognized for his works in the collaborative haikai no renga form; today, after centuries of commentary, he is recognized as the greatest master of haiku (then called hokku). He is also well known for his travel essays beginning with Records of a Weather-Exposed Skeleton (1684), written after his journey west to Kyoto and Nara.\nMatsuo Bash\u014d's poetry is internationally renowned, and many of his poems are inscribed on monuments and traditional sites in Japan. Although Bash\u014d is famous in the West for his hokku, he himself believed his best work lay in leading and participating in renku. As he himself said, \"Many of my followers can write hokku as well as I can. Where I show who I really am is in linking haikai verses.\"\nBash\u014d was introduced to poetry at a young age, and after integrating himself into the intellectual scene of Edo (now Tokyo), he quickly became well known throughout Japan. He made a living as a teacher but then renounced the social, urban life of the literary circles and was inclined to wander throughout the country, heading west, east, and far into the northern wilderness to gain inspiration for his writing. His poems were influenced by his firsthand experience of the world around him, often encapsulating the feeling of a scene in a few simple elements."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5676")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5676",
+  "isRealHuman": true,
+  "birthDate": "1644-01-01",
+  "deathDate": "1694-11-28",
+  "ageAtDeath": 50,
+  "confidence": 86,
+  "confidenceExplained": "The identity is very certain: the Wikidata ID, name, dates, and description all point to Matsuo Bashō. The death date and place are well attested, and Britannica gives his age at death as 50. Confidence is below 100 because the exact day and month of birth are not firmly known; the birth date here uses January 1 as a year-only placeholder, while the age follows the standard biographical lifespan 1644–1694 and published 'aged 50' references.",
+  "shortDescriptionEn": "Matsuo Bashō was the great Edo-period Japanese poet who transformed haikai and later became celebrated as the supreme master of haiku. Born near Ueno in Iga Province, he built a life around teaching, travel, literary experiment, and sharply observed scenes of nature and impermanence. His travel writing, especially the journey associated with The Narrow Road to the Deep North, helped make wandering itself part of his artistic legend. In 1694, while traveling again, Bashō fell ill in Osaka, apparently from a stomach ailment, and died there on November 28 at about age 50, surrounded by the aura of the road that had shaped his poetry.",
+  "shortDescriptionFr": "Matsuo Bashō fut le grand poète japonais de l’époque d’Edo, celui qui porta le haikai à un niveau nouveau et qui fut ensuite reconnu comme le maître majeur du haïku. Né près d’Ueno, dans la province d’Iga, il mena une vie de professeur, de voyageur et d’observateur attentif de la nature, de la saison et de l’impermanence. Ses récits de voyage, notamment l’itinéraire lié à La Sente étroite du Bout-du-Monde, ont fait de l’errance une partie essentielle de sa légende littéraire. En 1694, lors d’un nouveau voyage, il tomba malade à Osaka, probablement d’un trouble gastrique, et y mourut le 28 novembre à environ 50 ans.",
+  "shortDescriptionDe": "Matsuo Bashō war der große japanische Dichter der Edo-Zeit, der das Haikai erneuerte und später als herausragender Meister des Haiku galt. Geboren nahe Ueno in der Provinz Iga, verband er Unterricht, Reisen, literarische Disziplin und eine außergewöhnliche Aufmerksamkeit für Natur, Jahreszeiten und Vergänglichkeit. Seine Reisetexte, besonders die mit Auf schmalen Pfaden durchs Hinterland verbundene Wanderung, machten das Unterwegssein zu einem Kern seiner dichterischen Gestalt. 1694 wurde Bashō auf einer weiteren Reise in Osaka krank, offenbar an einem Magenleiden, und starb dort am 28. November im Alter von etwa 50 Jahren.",
+  "shortDescriptionEs": "Matsuo Bashō fue el gran poeta japonés del período Edo, célebre por transformar el haikai y por ser recordado como el maestro supremo del haiku. Nacido cerca de Ueno, en la provincia de Iga, vivió entre la enseñanza, los viajes, la experimentación literaria y una mirada precisa hacia la naturaleza, las estaciones y la fugacidad. Sus diarios de viaje, en especial el recorrido asociado con Sendas de Oku, convirtieron el caminar en parte central de su mito poético. En 1694, durante otro viaje, Bashō enfermó en Osaka, al parecer de una dolencia estomacal, y murió allí el 28 de noviembre a los 50 años aproximadamente.",
+  "shortDescriptionRu": "Мацуо Басё был великим японским поэтом периода Эдо, обновившим хайкай и позднее признанным одним из высших мастеров хайку. Он родился близ Уэно в провинции Ига и прожил жизнь, связанную с преподаванием, странствиями, литературным поиском и тонким вниманием к природе, временам года и быстротечности. Его путевые произведения, особенно путешествие, связанное с Узкой дорогой на дальний Север, сделали дорогу важной частью его поэтического образа. В 1694 году, во время очередного путешествия, Басё заболел в Осаке, вероятно желудочным недугом, и умер там 28 ноября примерно в 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Matsuo_Bash%C5%8D",
+    "https://www.britannica.com/biography/Basho-Japanese-poet",
+    "https://www.nippon.com/en/japan-topics/b07224/",
+    "https://poets.org/poet/matsuo-basho",
+    "https://commons.wikimedia.org/wiki/File:Matsuo%2BBasho.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nakamura_Hochu_-_Portrait_of_Matsuo_Basho_-_2006.210.10a-b_-_Yale_University_Art_Gallery.jpg",
+    "https://commons.wikimedia.org/wiki/File:Matsuo_Basho_by_Sugiyama_Sanpu.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7324",  "Name": "James Cook",  "BirthDate": "1728-10-27T00:00:00Z",  "DeathDate": "1779-02-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Captainjamescookportrait.jpg",  "SiteLinksCnt": 184,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"15630":{"pageid":15630,"ns":0,"title":"James Cook","extract":"Captain James Cook (7 November 1728 \u2013 14 February 1779) was a British Royal Navy officer, explorer, and cartographer who led three voyages of exploration to the Pacific and Southern Oceans between 1768 and 1779. He completed the first recorded circumnavigation of the main islands of New Zealand, and led the first recorded visit by Europeans to the east coast of Australia and the Hawaiian Islands.\nCook joined the British merchant navy as a teenager before enlisting in the Royal Navy in 1755. He first saw combat during the Seven Years' War, when he fought in the Siege of Louisbourg. Later in the war he surveyed and mapped much of the entrance to the St. Lawrence River during the Siege of Quebec. In the 1760s he mapped the coastline of Newfoundland and made important astronomical observations which brought him to the attention of the Admiralty and the Royal Society. This acclaim came at a pivotal moment in British overseas exploration, and it led to his commission in 1768 as commander of HMS Endeavour for the first of his three voyages.  \nDuring these voyages, Cook sailed tens of thousands of miles across largely uncharted areas, mapping coastlines, islands, and features across the globe in greater detail than previously charted \u2013 including Easter Island, Alaska and South Georgia Island. He made contact with numerous indigenous peoples and claimed several territories for the Kingdom of Great Britain. Renowned for exceptional seamanship and courage in times of danger, he was patient, persistent, sober, and competent, but sometimes hot-tempered. His contributions to the prevention of scurvy, a disease common among sailors, led the Royal Society to award him the Copley Gold Medal.\nIn 1779, during his second visit to Hawaii, Cook was killed when a dispute with Native Hawaiians turned violent. His voyages left a legacy of scientific and geographical knowledge that influenced his successors well into the 20th century. Numerous memorials have been dedicated to him worldwide."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7324")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7324",
+  "isRealHuman": true,
+  "birthDate": "1728-10-27",
+  "deathDate": "1779-02-14",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The identity is unambiguous: the Wikidata ID, name, image, and biography all refer to Captain James Cook. The only complication is the Old Style/New Style calendar difference for his birth date: 27 October 1728 is the Julian/Old Style form, while 7 November 1728 is the Gregorian/New Style equivalent. His death date, 14 February 1779, is consistently attested, and under either birth-date convention he was 50 years old when he died.",
+  "shortDescriptionEn": "Captain James Cook was a British Royal Navy officer, explorer, navigator, and cartographer whose three Pacific voyages transformed European knowledge of the Pacific, New Zealand, Australia’s east coast, and many island regions. Known for disciplined seamanship, careful mapping, and scientific observation, he became one of the most influential maritime figures of the eighteenth century. During his third voyage, a dispute at Kealakekua Bay in Hawaii escalated into violence, and Cook was killed there on 14 February 1779 at the age of 50.",
+  "shortDescriptionFr": "Le capitaine James Cook était un officier de la Royal Navy britannique, explorateur, navigateur et cartographe dont les trois voyages dans le Pacifique ont profondément renouvelé les connaissances européennes sur le Pacifique, la Nouvelle-Zélande, la côte est de l’Australie et de nombreuses îles. Réputé pour sa rigueur maritime, ses cartes précises et son intérêt scientifique, il devint l’une des grandes figures navales du XVIIIe siècle. Lors de son troisième voyage, un conflit à la baie de Kealakekua, à Hawaï, dégénéra en violence, et Cook y fut tué le 14 février 1779, à l’âge de 50 ans.",
+  "shortDescriptionDe": "Captain James Cook war ein britischer Offizier der Royal Navy, Entdecker, Navigator und Kartograf, dessen drei Pazifikreisen das europäische Wissen über den Pazifik, Neuseeland, die Ostküste Australiens und zahlreiche Inselregionen entscheidend erweiterten. Er galt als außergewöhnlich fähiger Seemann, präziser Vermesser und wissenschaftlich interessierter Expeditionsleiter und wurde zu einer der prägenden maritimen Gestalten des 18. Jahrhunderts. Auf seiner dritten Reise eskalierte in der Kealakekua Bay auf Hawaii ein Streit zu Gewalt; Cook wurde dort am 14. Februar 1779 im Alter von 50 Jahren getötet.",
+  "shortDescriptionEs": "El capitán James Cook fue un oficial de la Marina Real británica, explorador, navegante y cartógrafo cuyos tres viajes por el Pacífico transformaron el conocimiento europeo del océano Pacífico, Nueva Zelanda, la costa oriental de Australia y numerosas islas. Admirado por su pericia marinera, sus mapas detallados y su interés científico, llegó a ser una de las figuras marítimas más influyentes del siglo XVIII. Durante su tercer viaje, una disputa en la bahía de Kealakekua, en Hawái, se volvió violenta, y Cook murió allí el 14 de febrero de 1779 a los 50 años.",
+  "shortDescriptionRu": "Капитан Джеймс Кук был британским офицером Королевского флота, исследователем, мореплавателем и картографом, чьи три путешествия по Тихому океану существенно расширили европейские знания о регионе, Новой Зеландии, восточном побережье Австралии и многих островах. Он прославился выдающимся мореходным мастерством, точными картами и вниманием к научным наблюдениям, став одной из ключевых морских фигур XVIII века. Во время третьего путешествия конфликт в бухте Кеалакекуа на Гавайях перерос в насилие, и Кук был убит там 14 февраля 1779 года в возрасте 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_Cook",
+    "https://www.britannica.com/biography/James-Cook",
+    "https://www.rmg.co.uk/collections/objects/rmgc-object-11916",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Captainjamescookportrait.jpg",
+    "https://portrait.gov.au/portraits/2000.25/portrait-of-captain-james-cook-rn",
+    "https://portrait.gov.au/portraits/2012.62/captain-james-cook",
+    "https://australian.museum/about/history/exhibitions/trailblazers/james-cook/"
+  ]
+}
+```￣奇米影视 乐多
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7304",  "Name": "Gustav Mahler",  "BirthDate": "1860-07-07T00:00:00Z",  "DeathDate": "1911-05-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Photo%20of%20Gustav%20Mahler%20by%20Moritz%20N%C3%A4hr%2001.jpg",  "SiteLinksCnt": 147,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"65174":{"pageid":65174,"ns":0,"title":"Gustav Mahler","extract":"Gustav Mahler (German: [\u02c8\u0261\u028astaf \u02c8ma\u02d0l\u0250] ; 7 July 1860 \u2013 18 May 1911) was a Romantic composer, and one of the leading conductors of his generation. As a composer he acted as a bridge between the 19th-century tradition and the modernism of the early 20th century. While in his lifetime his status as a conductor was established beyond question, his own music gained wide popularity only after periods of relative neglect, which included a ban on its performance in much of Europe during the Nazi era. After 1945 his compositions were rediscovered by a new generation of listeners; Mahler then became one of the most frequently performed and recorded of all composers, a position he has sustained into the 21st century.\nBorn in Bohemia to Jewish parents of humble origins, the German-speaking Mahler displayed his musical gifts at an early age. After graduating from the Vienna Conservatory in 1878, he held a succession of conducting posts of rising importance in the opera houses of Europe, culminating in his appointment in 1897 as director of the Vienna Court Opera (Hofoper). During his ten years in Vienna, Mahler\u2014who had converted to Catholicism to secure the post\u2014experienced regular opposition and hostility from the anti-Semitic press. Nevertheless, his innovative productions and insistence on the highest performance standards ensured his reputation as one of the greatest of opera conductors, particularly as an interpreter of the stage works of Wagner, Mozart, and Tchaikovsky. Late in his life he was briefly director of New York's Metropolitan Opera and the New York Philharmonic.\nMahler's \u0153uvre is relatively limited; for much of his life composing was necessarily a part-time activity while he earned his living as a conductor. Aside from early works such as a movement from a piano quartet composed when he was a student in Vienna, Mahler's works are generally designed for large orchestral forces, symphonic choruses and operatic soloists. These works were frequently controversial when first performed, and several were slow to receive critical and popular approval; exceptions included his Second Symphony, and the triumphant premiere of his Eighth Symphony in 1910. Some of Mahler's immediate musical successors included the composers of the Second Viennese School, notably Arnold Schoenberg, Alban Berg and Anton Webern. Dmitri Shostakovich and Benjamin Britten are among later 20th-century composers who admired and were influenced by Mahler. The International Gustav Mahler Society was established in 1955 to honour the composer's life and achievements."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7304")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7304",
+  "isRealHuman": true,
+  "birthDate": "1860-07-07",
+  "deathDate": "1911-05-18",
+  "ageAtDeath": 50,
+  "confidence": 100,
+  "confidenceExplained": "The identity is directly supported by the Wikidata ID, the supplied name, and matching biographical extracts. The birth and death dates are exact and consistently given as 7 July 1860 and 18 May 1911; calculating from those dates gives 50, because Mahler died before his 51st birthday.",
+  "shortDescriptionEn": "Gustav Mahler was an Austro-Bohemian Romantic composer and one of the most influential conductors of his generation, remembered for symphonies and songs that helped bridge 19th-century Romanticism and early modernism. Born in Bohemia to a German-speaking Jewish family, he rose through major European opera posts and became director of the Vienna Court Opera before later working in New York. His final years were marked by heart trouble and serious infection; after a last conducting season in New York, he returned to Europe and died in Vienna on 18 May 1911 at age 50.",
+  "shortDescriptionFr": "Gustav Mahler fut un compositeur romantique austro-bohémien et l’un des chefs d’orchestre les plus marquants de sa génération, célèbre pour des symphonies et des lieder qui relient le romantisme du XIXe siècle au modernisme naissant. Né en Bohême dans une famille juive germanophone, il occupa de grands postes lyriques européens et dirigea l’Opéra de la Cour de Vienne avant de travailler brièvement à New York. Ses dernières années furent assombries par des problèmes cardiaques et une grave infection; après sa dernière saison new-yorkaise, il revint en Europe et mourut à Vienne le 18 mai 1911, à l’âge de 50 ans.",
+  "shortDescriptionDe": "Gustav Mahler war ein austro-böhmischer Komponist der Spätromantik und einer der bedeutendsten Dirigenten seiner Generation; seine Sinfonien und Lieder schlugen eine Brücke vom 19. Jahrhundert zur frühen Moderne. In Böhmen in eine deutschsprachige jüdische Familie geboren, stieg er über wichtige Opernpositionen bis zum Direktor der Wiener Hofoper auf und wirkte später kurz in New York. Seine letzten Jahre waren von einem Herzleiden und einer schweren Infektion geprägt; nach seiner letzten New Yorker Saison kehrte er nach Europa zurück und starb am 18. Mai 1911 in Wien im Alter von 50 Jahren.",
+  "shortDescriptionEs": "Gustav Mahler fue un compositor romántico austro-bohemio y uno de los directores de orquesta más influyentes de su generación, recordado por sinfonías y canciones que enlazan el Romanticismo del siglo XIX con el modernismo temprano. Nacido en Bohemia en una familia judía germanoparlante, ascendió por importantes teatros de ópera europeos hasta dirigir la Ópera de la Corte de Viena y más tarde trabajó brevemente en Nueva York. Sus últimos años estuvieron marcados por problemas cardíacos y una infección grave; tras su última temporada neoyorquina regresó a Europa y murió en Viena el 18 de mayo de 1911, a los 50 años.",
+  "shortDescriptionRu": "Густав Малер был австро-богемским композитором позднего романтизма и одним из выдающихся дирижёров своего поколения; его симфонии и песни связали традиции XIX века с ранним музыкальным модернизмом. Он родился в Богемии в немецкоязычной еврейской семье, прошёл путь через ведущие европейские оперные театры и стал директором Венской придворной оперы, позднее недолго работал в Нью-Йорке. Последние годы его жизни были омрачены болезнью сердца и тяжёлой инфекцией; после последнего нью-йоркского сезона он вернулся в Европу и умер в Вене 18 мая 1911 года в возрасте 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gustav_Mahler",
+    "https://www.wikidata.org/wiki/Q7304",
+    "https://mahlerfoundation.org/mahler/chronology/1911-posthumously/years-posthumously/",
+    "https://pubmed.ncbi.nlm.nih.gov/38634866/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8003",  "Name": "Sergei Eisenstein",  "BirthDate": "1898-01-22T00:00:00Z",  "DeathDate": "1948-02-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sergei%20Eisenstein%2003.jpg",  "SiteLinksCnt": 144,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"28380":{"pageid":28380,"ns":0,"title":"Sergei Eisenstein","extract":"Sergei Mikhailovich Eisenstein (22 January [O.S. 10 January] 1898 \u2013 11 February 1948) was a Soviet film director, screenwriter, film editor and film theorist. Considered one of the greatest filmmakers of all time, he was a pioneer in the theory and practice of montage. He is noted in particular for his silent films Strike (1925), Battleship Potemkin (1925) and October (1928), as well as the historical epics Alexander Nevsky (1938) and Ivan the Terrible (1945/1958). In its decennial poll, the magazine Sight and Sound named his Battleship Potemkin the 54th-greatest film of all time."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8003")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8003",
+  "isRealHuman": true,
+  "birthDate": "1898-01-22",
+  "deathDate": "1948-02-11",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are strongly supported by Wikidata-linked data, Wikipedia, Britannica, and historical biographical sources. The only minor ambiguity is calendar-style notation for the birth date, but the accepted Gregorian date is 1898-01-22 and it does not affect the calculated age at death: he had turned 50 before dying on 1948-02-11.",
+  "shortDescriptionEn": "Sergei Mikhailovich Eisenstein was a Soviet film director, screenwriter, editor, and theorist whose ideas about montage changed cinema worldwide. His silent films Strike, Battleship Potemkin, and October helped define revolutionary screen language, while Alexander Nevsky and Ivan the Terrible showed his command of historical epic. He died in Moscow on 11 February 1948, only weeks after his 50th birthday, reportedly after a severe heart attack.",
+  "shortDescriptionFr": "Sergueï Mikhaïlovitch Eisenstein fut un réalisateur, scénariste, monteur et théoricien soviétique dont la conception du montage a profondément marqué l’histoire du cinéma. Ses films muets La Grève, Le Cuirassé Potemkine et Octobre ont imposé un langage visuel révolutionnaire, tandis qu’Alexandre Nevski et Ivan le Terrible ont confirmé son talent pour l’épopée historique. Il mourut à Moscou le 11 février 1948, quelques semaines après son 50e anniversaire, apparemment à la suite d’une grave crise cardiaque.",
+  "shortDescriptionDe": "Sergei Michailowitsch Eisenstein war ein sowjetischer Filmregisseur, Drehbuchautor, Filmeditor und Theoretiker, dessen Montagetechnik das Kino weltweit prägte. Mit Stummfilmen wie Streik, Panzerkreuzer Potemkin und Oktober schuf er eine revolutionäre Bildsprache; später bewies er mit Alexander Newski und Iwan der Schreckliche seine Stärke im historischen Epos. Er starb am 11. Februar 1948 in Moskau, nur wenige Wochen nach seinem 50. Geburtstag, Berichten zufolge an einem schweren Herzinfarkt.",
+  "shortDescriptionEs": "Serguéi Mijáilovich Eisenstein fue un director, guionista, montador y teórico soviético cuyas ideas sobre el montaje transformaron el cine mundial. Sus películas mudas La huelga, El acorazado Potemkin y Octubre definieron un lenguaje visual revolucionario, mientras que Alexander Nevsky e Iván el Terrible demostraron su dominio de la épica histórica. Murió en Moscú el 11 de febrero de 1948, pocas semanas después de cumplir 50 años, al parecer tras un grave ataque al corazón.",
+  "shortDescriptionRu": "Сергей Михайлович Эйзенштейн был советским кинорежиссёром, сценаристом, монтажёром и теоретиком кино, чьи идеи монтажа оказали огромное влияние на мировой кинематограф. Его немые фильмы Стачка, Броненосец «Потёмкин» и Октябрь сформировали революционный киноязык, а Александр Невский и Иван Грозный показали его масштаб как автора исторических эпопей. Он умер в Москве 11 февраля 1948 года, всего через несколько недель после своего 50-летия, по сообщениям — от тяжёлого сердечного приступа.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sergei_Eisenstein",
+    "https://www.britannica.com/biography/Sergey-Eisenstein",
+    "https://www.historytoday.com/archive/death-sergei-eisenstein",
+    "https://www.wikidata.org/wiki/Q8003"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40787",  "Name": "Nicholas II of Russia",  "BirthDate": "1868-05-18T00:00:00Z",  "DeathDate": "1918-07-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20II%20de%20russie.jpg",  "SiteLinksCnt": 135,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"30172853":{"pageid":30172853,"ns":0,"title":"Nicholas II","extract":"Nicholas II (Nikolai Alexandrovich Romanov; 18 May [O.S. 6 May] 1868 \u2013 17 July 1918) was Emperor of Russia from 1 November 1894 until his abdication in 1917. He was the last monarch of Russia before the Russian Revolution, and oversaw the Russian Empire's participation in World War I. In 1918, the Romanovs were murdered, putting an end to the dynasty.\nBorn in Tsarskoye Selo, Nicholas was the eldest son of Emperor Alexander III and Empress Maria Feodorovna. He was educated privately and trained for military service, but was widely considered ill-prepared for the demands of ruling a vast empire. As a constitutional monarch, he resisted political reform and retained autocratic control over the nation's governance despite the establishment of the Duma. While his reign witnessed significant industrial growth and diplomatic engagement, it was also marked by domestic unrest, military defeats, and widespread criticism of his leadership.\nNicholas faced mounting disapproval following Russia's defeat in the Russo-Japanese War as well as the turmoil of the 1905 Revolution. During World War I, his popularity declined even further as military losses and economic hardship eroded public confidence in his rule. In March 1917, the February Revolution forced his abdication, ending the Romanov dynasty's 304-year rule. He and his family were imprisoned by the Provisional Government and later transferred to Bolshevik custody. On 17 July 1918, they were executed in Yekaterinburg.\nIn the years following his death, Nicholas was reviled by Soviet historians and state propaganda as a \"callous tyrant\" who \"persecuted his own people while sending countless soldiers to their deaths in pointless conflicts\". Despite being viewed more positively in recent years, the majority view among historians is that Nicholas was a well-intentioned yet poor ruler who proved incapable of handling the challenges facing his nation. He and his family were canonised as passion bearers by the Russian Orthodox Church in 2000, following the discovery and reburial of their remains in 1998."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40787")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q40787",
+  "isRealHuman": true,
+  "birthDate": "1868-05-18",
+  "deathDate": "1918-07-17",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikidata, Wikipedia, and Britannica. The age calculation is straightforward: Nicholas II was born on 1868-05-18 and died on 1918-07-17, after his 50th birthday that year. Minor historical calendar notation exists because Russia used the Julian calendar at the time of his birth, but the commonly used modern dates give age 50.",
+  "shortDescriptionEn": "Nicholas II, born Nikolai Alexandrovich Romanov, was the last Emperor of Russia, ruling from 1894 until his abdication during the upheaval of 1917. His reign saw industrial growth but also deep political unrest, the Russo-Japanese War, the 1905 Revolution, and the strains of World War I. After abdicating, he and his family were held by revolutionary authorities and were executed by Bolsheviks in Yekaterinburg on 17 July 1918, ending the Romanov dynasty’s rule.",
+  "shortDescriptionFr": "Nicolas II, né Nikolaï Alexandrovitch Romanov, fut le dernier empereur de Russie, régnant de 1894 jusqu’à son abdication au cœur des bouleversements de 1917. Son règne connut une croissance industrielle, mais aussi de fortes tensions politiques, la guerre russo-japonaise, la révolution de 1905 et les difficultés de la Première Guerre mondiale. Après son abdication, lui et sa famille furent détenus par les autorités révolutionnaires puis exécutés par les bolcheviks à Iekaterinbourg le 17 juillet 1918.",
+  "shortDescriptionDe": "Nikolaus II., geboren als Nikolai Alexandrowitsch Romanow, war der letzte Kaiser von Russland und regierte von 1894 bis zu seiner Abdankung während der Umwälzungen von 1917. Seine Herrschaft war von industriellem Wachstum, aber auch von politischer Unruhe, dem Russisch-Japanischen Krieg, der Revolution von 1905 und den Belastungen des Ersten Weltkriegs geprägt. Nach seiner Abdankung wurden er und seine Familie von revolutionären Kräften festgehalten und am 17. Juli 1918 in Jekaterinburg von Bolschewiki erschossen.",
+  "shortDescriptionEs": "Nicolás II, nacido Nikolái Aleksándrovich Románov, fue el último emperador de Rusia y gobernó desde 1894 hasta su abdicación durante la crisis revolucionaria de 1917. Su reinado incluyó crecimiento industrial, pero también fuerte agitación política, la guerra ruso-japonesa, la Revolución de 1905 y las presiones de la Primera Guerra Mundial. Tras abdicar, él y su familia quedaron bajo custodia revolucionaria y fueron ejecutados por los bolcheviques en Ekaterimburgo el 17 de julio de 1918.",
+  "shortDescriptionRu": "Николай II, родившийся как Николай Александрович Романов, был последним императором России и правил с 1894 года до отречения во время революционных событий 1917 года. Его царствование сопровождалось промышленным ростом, но также политическим кризисом, русско-японской войной, революцией 1905 года и тяжёлыми последствиями Первой мировой войны. После отречения он и его семья находились под стражей революционных властей и были расстреляны большевиками в Екатеринбурге 17 июля 1918 года.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20II%20de%20russie.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw189072/Nicholas-II-Emperor-of-Russia",
+    "https://www.npg.org.uk/collections/search/portrait/mw157406/Nicholas-II-Emperor-of-Russia",
+    "https://www.npg.org.uk/collections/search/portrait/mw201117/Nicholas-II-Emperor-of-Russia"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nicholas_II",
+    "https://www.wikidata.org/wiki/Q40787",
+    "https://www.britannica.com/biography/Nicholas-II-tsar-of-Russia",
+    "https://www.britannica.com/biography/Nicholas-II-tsar-of-Russia/Abdication-and-death",
+    "https://commons.wikimedia.org/wiki/File:Nicolas_II_de_russie.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q39607",  "Name": "Antoine Lavoisier",  "BirthDate": "1743-08-26T00:00:00Z",  "DeathDate": "1794-05-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/David%20-%20Portrait%20of%20Monsieur%20Lavoisier%20%28cropped%29.jpg",  "SiteLinksCnt": 127,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"1822":{"pageid":1822,"ns":0,"title":"Antoine Lavoisier","extract":"Antoine-Laurent de Lavoisier ( l\u0259-VWAH-zee-ay; French: [\u0251\u0303twan l\u0254\u0281\u0251\u0303 d\u0259 lavwazje]; 26 August 1743 \u2013 8 May 1794), also Antoine Lavoisier after the French Revolution, was a French nobleman and chemist who was central to the 18th-century chemical revolution and who had a large influence on both the history of chemistry and the history of biology.\nIt is generally accepted that Lavoisier's great accomplishments in chemistry stem largely from his changing the science from a qualitative to a quantitative one.\nLavoisier is noted for his discovery of the role oxygen plays in combustion, opposing the prior phlogiston theory of combustion.  He named oxygen (1778), recognizing it as an element, and also recognized hydrogen as an element (1783).  By using more precise measurements than previous experimenters, he confirmed the  developing theory that, although matter in a closed system may change its form or shape, its mass always remains the same (now known as the law of conservation of mass), which led to the development of the balanced physical and chemical reaction equations that we still use today.\nLavoisier helped construct the metric system, wrote the first extensive list of elements, in which he predicted the existence of silicon, and helped to reform chemical nomenclature. (1787)\nHis wife and laboratory assistant, Marie-Anne Paulze Lavoisier, became a renowned chemist in her own right, and worked with him to develop the metric system of measurements.\nLavoisier was a powerful member of a number of aristocratic councils, and an administrator of the Ferme g\u00e9n\u00e9rale. The Ferme g\u00e9n\u00e9rale was one of the most hated components of the Ancien R\u00e9gime because of the profits it took at the expense of the state, the secrecy of the terms of its contracts, and the violence of its armed agents. All of these political and economic activities enabled him to fund his scientific research. At the height of the French Revolution, he was charged with tax fraud and selling adulterated tobacco, and was guillotined despite appeals to spare his life in recognition of his contributions to science.  A year and a half later, he was exonerated by the French government."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q39607")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q39607",
+  "isRealHuman": true,
+  "birthDate": "1743-08-26",
+  "deathDate": "1794-05-08",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and execution details are corroborated by multiple reliable sources. The age calculation is exact: Lavoisier died on 1794-05-08, before his 51st birthday on 1794-08-26, so he was 50.",
+  "shortDescriptionEn": "Antoine-Laurent de Lavoisier was a French chemist, nobleman, and public administrator whose careful quantitative experiments helped transform chemistry into a modern science. He clarified the role of oxygen in combustion, helped reform chemical nomenclature, and influenced the development of the metric system. During the French Revolution, his former role in the tax-collecting Ferme générale made him politically vulnerable; he was convicted with other tax farmers and guillotined in Paris on 8 May 1794, aged 50.",
+  "shortDescriptionFr": "Antoine-Laurent de Lavoisier était un chimiste, noble et administrateur français dont les expériences quantitatives ont contribué à faire de la chimie une science moderne. Il a éclairci le rôle de l’oxygène dans la combustion, participé à la réforme de la nomenclature chimique et influencé le développement du système métrique. Pendant la Révolution française, son ancienne fonction dans la Ferme générale le rendit vulnérable politiquement ; condamné avec d’autres fermiers généraux, il fut guillotiné à Paris le 8 mai 1794, à l’âge de 50 ans.",
+  "shortDescriptionDe": "Antoine-Laurent de Lavoisier war ein französischer Chemiker, Adliger und Verwaltungsbeamter, dessen präzise quantitative Experimente die Chemie zu einer modernen Wissenschaft machten. Er klärte die Rolle des Sauerstoffs bei der Verbrennung, half bei der Reform der chemischen Nomenklatur und beeinflusste die Entwicklung des metrischen Systems. Während der Französischen Revolution wurde ihm seine frühere Tätigkeit für die Steuerpachtgesellschaft Ferme générale zum Verhängnis; er wurde mit anderen Steuerpächtern verurteilt und am 8. Mai 1794 in Paris guillotiniert, im Alter von 50 Jahren.",
+  "shortDescriptionEs": "Antoine-Laurent de Lavoisier fue un químico, noble y administrador francés cuyas mediciones rigurosas ayudaron a convertir la química en una ciencia moderna. Explicó el papel del oxígeno en la combustión, contribuyó a reformar la nomenclatura química e influyó en el desarrollo del sistema métrico. Durante la Revolución francesa, su antigua relación con la Ferme générale, encargada de recaudar impuestos, lo volvió políticamente vulnerable; fue condenado junto con otros recaudadores y guillotinado en París el 8 de mayo de 1794, a los 50 años.",
+  "shortDescriptionRu": "Антуан-Лоран де Лавуазье был французским химиком, дворянином и государственным администратором, чьи точные количественные опыты помогли превратить химию в современную науку. Он объяснил роль кислорода в горении, участвовал в реформе химической номенклатуры и повлиял на развитие метрической системы. Во время Французской революции его прежняя связь с налоговой системой Ferme générale сделала его уязвимым; он был осуждён вместе с другими откупщиками и гильотинирован в Париже 8 мая 1794 года в возрасте 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antoine_Lavoisier",
+    "https://www.britannica.com/biography/Antoine-Lavoisier",
+    "https://www.acs.org/education/whatischemistry/landmarks/lavoisier.html",
+    "https://commons.wikimedia.org/wiki/File:David_-_Portrait_of_Monsieur_Lavoisier_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Lavoisier.jpg",
+    "https://commons.wikimedia.org/wiki/File:Antoine_Laurent_de_Lavoisier.png"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183126",  "Name": "Ramakrishna",  "BirthDate": "1836-02-18T00:00:00Z",  "DeathDate": "1886-08-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ramakrishna.jpg",  "SiteLinksCnt": 112,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"422504":{"pageid":422504,"ns":0,"title":"Ramakrishna","extract":"Ramakrishna (18 February 1836 \u2013 16 August 1886), also called Ramakrishna Paramahamsa (Bengali: \u09b0\u09be\u09ae\u0995\u09c3\u09b7\u09cd\u09a3 \u09aa\u09b0\u09ae\u09b9\u0982\u09b8, romanized: Ram\u00f4k\u1e5b\u1e63\u1e47o P\u00f4romoh\u00f4\u1e45so; pronounced [ram\u0254kri\u0282no p\u0254romo\u0266\u0254\u014b\u0283o] ; IAST: R\u0101mak\u1e5b\u1e63\u1e47a Paramaha\u1e43sa), born Ramakrishna  Chattopadhyay (his childhood nickname was Gadadhar), was an Indian Hindu mystic. He was a devotee of the goddess Kali, but adhered to various religious practices from the Hindu traditions of Vaishnavism, Tantric Shaktism, and Advaita Vedanta, as well as Christianity and Sufi Islam. His parable-based teachings advocated the essential unity of religions and proclaimed that world religions are \"so many paths to reach one and the same goal\". He is regarded by his followers as an avatar (divine incarnation).\n\nRamakrishna was born in Kamarpukur, Bengal Presidency, India. He described going through religious experiences in childhood. Around the  age twenty, he became a temple priest at the Dakshineshwar Kali Temple in Calcutta. While at the temple, his devotional temperament and intense religious practices led him to experience various spiritual visions. He was assured of the authenticity and sanctity of his visions by several religious teachers.\nRamakrishna's native language was Bengali, but he also spoke Hindi (Hindustani) and understood Sanskrit. There are instances recorded in the Gospel of Ramakrishna of him using English words a few times.\nIn 1859, in accordance with then prevailing customs, Ramakrishna was married to Sarada Devi, a marriage that was never consummated. As described in the Gospel of Ramakrishna, he took spiritual instruction from several gurus in various paths and religions, and was also initiated into sannyasa in 1865 by Tota Puri, a vedanta monk. Ramakrishna gained widespread acclaim amongst the temple visiting public as a guru, attracting social leaders, elites, and common people alike. Although initially reluctant to consider himself a guru, he eventually taught disciples and founded the monastic Ramakrishna Order. His emphasis on direct spiritual experience instead of adhering to scriptural injunctions has been influential. Ramakrishna died due to throat cancer on the night of 15 August 1886. After his death, his chief disciple Swami Vivekananda continued and expanded his spiritual mission, both in India and the West."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183126")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q183126",
+  "isRealHuman": true,
+  "birthDate": "1836-02-18",
+  "deathDate": "1886-08-16",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The birth date 1836-02-18 and death date 1886-08-16 are consistently given by Wikipedia and Britannica, and they match the supplied Wikidata-derived record. Since Ramakrishna had already had his birthday in 1886 before dying in August, the integer age at death is 50.",
+  "shortDescriptionEn": "Ramakrishna Paramahamsa, born Gadadhar Chattopadhyay, was a 19th-century Indian Hindu mystic and priest whose teachings emphasized direct spiritual experience and the unity of religious paths. Associated with the Dakshineswar Kali Temple, he drew disciples including Swami Vivekananda, who later spread his message widely. In his final year he suffered from throat cancer and was cared for by disciples at Cossipore, where he died on 16 August 1886 at age 50.",
+  "shortDescriptionFr": "Ramakrishna Paramahamsa, né Gadadhar Chattopadhyay, fut un mystique et prêtre hindou indien du XIXe siècle, connu pour son insistance sur l’expérience spirituelle directe et l’unité des voies religieuses. Lié au temple de Kali de Dakshineswar, il attira des disciples comme Swami Vivekananda, qui propagea ensuite son message. Dans sa dernière année, il souffrit d’un cancer de la gorge et fut soigné par ses disciples à Cossipore, où il mourut le 16 août 1886 à l’âge de 50 ans.",
+  "shortDescriptionDe": "Ramakrishna Paramahamsa, geboren als Gadadhar Chattopadhyay, war ein indischer hinduistischer Mystiker und Priester des 19. Jahrhunderts, dessen Lehre direkte spirituelle Erfahrung und die Einheit religiöser Wege betonte. Er wirkte am Dakshineswar-Kali-Tempel und gewann Schüler wie Swami Vivekananda, der seine Botschaft später weitertrug. In seinem letzten Lebensjahr litt er an Kehlkopfkrebs und wurde in Cossipore von seinen Schülern gepflegt, wo er am 16. August 1886 im Alter von 50 Jahren starb.",
+  "shortDescriptionEs": "Ramakrishna Paramahamsa, nacido Gadadhar Chattopadhyay, fue un místico y sacerdote hindú indio del siglo XIX cuyas enseñanzas destacaban la experiencia espiritual directa y la unidad de los caminos religiosos. Vinculado al templo de Kali en Dakshineswar, atrajo discípulos como Swami Vivekananda, quien más tarde difundió ampliamente su mensaje. En su último año padeció cáncer de garganta y fue cuidado por sus discípulos en Cossipore, donde murió el 16 de agosto de 1886 a los 50 años.",
+  "shortDescriptionRu": "Рамакришна Парамахамса, родившийся как Гададхар Чаттопадхьяй, был индийским индуистским мистиком и жрецом XIX века, учившим важности непосредственного духовного опыта и единства религиозных путей. Он был связан с храмом Кали в Дакшинешваре и привлёк учеников, включая Свами Вивекананду, который позднее распространил его учение. В последний год жизни он страдал от рака горла и находился под уходом учеников в Коссипоре, где умер 16 августа 1886 года в возрасте 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ramakrishna",
+    "https://www.britannica.com/biography/Ramakrishna",
+    "https://belurmath.org/sri-ramakrishna/",
+    "https://www.wikidata.org/wiki/Q183126",
+    "https://commons.wikimedia.org/wiki/File:Ramakrishna.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43063",  "Name": "Archduke Franz Ferdinand of Austria",  "BirthDate": "1863-12-18T00:00:00Z",  "DeathDate": "1914-06-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20Schmutzer%20-%20Franz%20Ferdinand%20von%20%C3%96sterreich-Este%2C%20um%201914.jpg",  "SiteLinksCnt": 106,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"7955693":{"pageid":7955693,"ns":0,"title":"Archduke Franz Ferdinand of Austria","extract":"Archduke Franz Ferdinand Carl Ludwig Joseph Maria of Austria (Francis Ferdinand, 18 December 1863 \u2013 28 June 1914) was the heir presumptive to the throne of Austria-Hungary. His assassination in Sarajevo was the most immediate cause of World War I.\nFranz Ferdinand was the eldest son of Archduke Karl Ludwig of Austria, the younger brother of Emperor Franz Joseph I of Austria. Following the death of Crown Prince Rudolf in 1889 and the death of Karl Ludwig in 1896, Franz Ferdinand became the heir presumptive to the Austro-Hungarian throne. His courtship of Sophie Chotek, a lady-in-waiting, caused conflict within the imperial household, and their morganatic marriage in 1900 was only allowed after he renounced his descendants' rights to the throne. Franz Ferdinand held significant influence over the military, and in 1913 he was appointed inspector general of the Austro-Hungarian Armed Forces.\nOn 28 June 1914, Franz Ferdinand and his wife were assassinated in Sarajevo by the 19-year-old Gavrilo Princip, a member of Young Bosnia. Franz Ferdinand's assassination led to the July Crisis and precipitated Austria-Hungary's declaration of war against Serbia, which in turn triggered a series of events that eventually led \u2013 four weeks after his death \u2013 to Austria-Hungary's allies and Serbia's allies declaring war on each other, starting World War I."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43063")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43063",
+  "isRealHuman": true,
+  "birthDate": "1863-12-18",
+  "deathDate": "1914-06-28",
+  "ageAtDeath": 50,
+  "confidence": 100,
+  "confidenceExplained": "The birth date and death date are well documented across Wikipedia, Wikidata, and Britannica. Calculating from 1863-12-18 to 1914-06-28 gives 50 years, since Franz Ferdinand died before reaching his birthday in December 1914.",
+  "shortDescriptionEn": "Archduke Franz Ferdinand of Austria was the Habsburg heir presumptive to the Austro-Hungarian throne and an influential military figure in the empire. His marriage to Sophie Chotek challenged court protocol because it was morganatic, but he remained central to imperial politics and army affairs. On 28 June 1914, during a visit to Sarajevo, he and Sophie were shot by Gavrilo Princip, a Young Bosnia nationalist; the assassination triggered the July Crisis and helped set World War I in motion.",
+  "shortDescriptionFr": "L’archiduc François-Ferdinand d’Autriche était l’héritier présomptif du trône austro-hongrois et une figure importante des affaires militaires de l’empire. Son mariage morganatique avec Sophie Chotek provoqua des tensions à la cour, mais il conserva un rôle politique et dynastique majeur. Le 28 juin 1914, lors d’une visite à Sarajevo, lui et Sophie furent tués par Gavrilo Princip, nationaliste lié à Jeune Bosnie; cet assassinat déclencha la crise de juillet et contribua au déclenchement de la Première Guerre mondiale.",
+  "shortDescriptionDe": "Erzherzog Franz Ferdinand von Österreich war der Thronfolger der österreichisch-ungarischen Monarchie und eine einflussreiche Gestalt in Militär- und Hofangelegenheiten. Seine morganatische Ehe mit Sophie Chotek belastete das Verhältnis zum Kaiserhof, doch seine politische Bedeutung blieb groß. Am 28. Juni 1914 wurden er und Sophie bei einem Besuch in Sarajevo von Gavrilo Princip, einem Nationalisten aus dem Umfeld von Junges Bosnien, erschossen; das Attentat löste die Julikrise aus und trug unmittelbar zum Beginn des Ersten Weltkriegs bei.",
+  "shortDescriptionEs": "El archiduque Francisco Fernando de Austria fue el heredero presunto del trono austrohúngaro y una figura influyente en los asuntos militares del imperio. Su matrimonio morganático con Sofía Chotek provocó tensiones en la corte, aunque mantuvo un papel central en la política dinástica. El 28 de junio de 1914, durante una visita a Sarajevo, él y Sofía fueron asesinados por Gavrilo Princip, nacionalista vinculado a la Joven Bosnia; el atentado desencadenó la Crisis de Julio y ayudó a provocar la Primera Guerra Mundial.",
+  "shortDescriptionRu": "Эрцгерцог Франц Фердинанд Австрийский был наследником австро-венгерского престола и заметной фигурой в военных и династических делах империи. Его морганатический брак с Софией Хотек вызвал напряжение при дворе, но не лишил его политического веса. 28 июня 1914 года во время визита в Сараево он и София были застрелены Гаврилой Принципом, националистом из круга «Молодой Боснии»; это убийство вызвало Июльский кризис и стало одним из непосредственных толчков к Первой мировой войне.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Archduke_Franz_Ferdinand_of_Austria",
+    "https://www.wikidata.org/wiki/Q43063",
+    "https://www.britannica.com/biography/Franz-Ferdinand-Archduke-of-Austria-Este",
+    "https://www.britannica.com/facts/Franz-Ferdinand-Archduke-of-Austria-Este",
+    "https://commons.wikimedia.org/wiki/Category:Archduke_Franz_Ferdinand_of_Austria"
+  ],
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20Schmutzer%20-%20Franz%20Ferdinand%20von%20%C3%96sterreich-Este%2C%20um%201914.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20Schmutzer%20-%20Franz%20Ferdinand%20von%20%C3%96sterreich-Este%2C%20um%201914%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Franz%20Ferdinand%201892%20mit%20Unterschrift.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Archduke%20Franz%20Ferdinand%20of%20Austria%20-%20b%26w.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q483512",  "Name": "Isadora Duncan",  "BirthDate": "1877-05-26T00:00:00Z",  "DeathDate": "1927-09-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/1923.%20duncan%20%28cropped%29.jpg",  "SiteLinksCnt": 106,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"160640":{"pageid":160640,"ns":0,"title":"Isadora Duncan","extract":"Angela Isadora Duncan (May 26, 1877, or May 27, 1878 \u2013 September 14, 1927) was an American-born dancer and choreographer, who was a pioneer of modern contemporary dance and performed to great acclaim throughout Europe and the United States. Born and raised in California, she lived and danced in Western Europe, the U.S., and Soviet Russia from the age of 22. She died when her scarf became entangled in the wheel and axle of the car in which she was travelling in Nice, France."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q483512")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q483512",
+  "isRealHuman": true,
+  "birthDate": "1877-05-26",
+  "deathDate": "1927-09-14",
+  "ageAtDeath": 50,
+  "confidence": 90,
+  "confidenceExplained": "The person is Isadora Duncan. The best-supported birth date is 1877-05-26, although some references mention an alternate date of 1878-05-27. Her death date is consistently given as 1927-09-14. Using 1877-05-26, she was 50 years old at death; confidence is reduced only because of the known alternate birth-date tradition.",
+  "shortDescriptionEn": "Isadora Duncan was an American-born dancer and choreographer whose barefoot, flowing, expressive style helped free dance from the strict conventions of classical ballet and made her a foundational figure in modern dance. She built her career across Europe, the United States, and Soviet Russia, inspiring artists and audiences with movement shaped by music, nature, and ancient Greek ideals. She died in Nice, France, when her long scarf became caught in the wheel and axle of an open car, pulling her from the vehicle and fatally injuring her neck.",
+  "shortDescriptionFr": "Isadora Duncan était une danseuse et chorégraphe américaine dont le style pieds nus, libre et expressif a contribué à libérer la danse des règles rigides du ballet classique et à fonder la danse moderne. Elle fit carrière en Europe, aux États-Unis et en Russie soviétique, marquant son époque par une gestuelle inspirée par la musique, la nature et l’Antiquité grecque. Elle mourut à Nice, en France, lorsque sa longue écharpe se prit dans la roue et l’essieu d’une voiture découverte, la projetant hors du véhicule et lui causant une blessure mortelle au cou.",
+  "shortDescriptionDe": "Isadora Duncan war eine in den USA geborene Tänzerin und Choreografin, deren barfüßiger, fließender und ausdrucksstarker Stil den Tanz von den starren Regeln des klassischen Balletts löste und sie zu einer Wegbereiterin des modernen Tanzes machte. Sie wirkte in Europa, den Vereinigten Staaten und Sowjetrussland und verband Musik, Naturgefühl und antike griechische Ideale zu einer neuen Bühnensprache. Sie starb in Nizza, Frankreich, als sich ihr langer Schal im Rad und in der Achse eines offenen Autos verfing, sie aus dem Wagen riss und tödlich am Hals verletzte.",
+  "shortDescriptionEs": "Isadora Duncan fue una bailarina y coreógrafa nacida en Estados Unidos cuyo estilo descalzo, fluido y expresivo ayudó a liberar la danza de las convenciones rígidas del ballet clásico y la convirtió en una figura clave de la danza moderna. Desarrolló su carrera en Europa, Estados Unidos y la Rusia soviética, inspirando a artistas y públicos con movimientos basados en la música, la naturaleza y la antigua Grecia. Murió en Niza, Francia, cuando su larga bufanda se enredó en la rueda y el eje de un automóvil abierto, la arrastró fuera del vehículo y le causó una lesión mortal en el cuello.",
+  "shortDescriptionRu": "Айседора Дункан была американской танцовщицей и хореографом, чья босоногая, свободная и выразительная манера помогла освободить танец от жестких канонов классического балета и сделала ее одной из основательниц современного танца. Она выступала и работала в Европе, США и Советской России, создавая сценический язык, вдохновленный музыкой, природой и античной Грецией. Она погибла в Ницце, Франция, когда ее длинный шарф запутался в колесе и оси открытого автомобиля, выбросив ее из машины и смертельно травмировав шею.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Isadora_Duncan",
+    "https://www.britannica.com/biography/Isadora-Duncan",
+    "https://commons.wikimedia.org/wiki/Isadora_Duncan",
+    "https://dance.washington.edu/people/isadora-duncan"
+  ],
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/1923.%20duncan%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Isadora_Duncan_portrait.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Isadora_Duncan_1915.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Isadora_Duncan_by_Arnold_Genthe.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q118992",  "Name": "Menander",  "BirthDate": "-0340-01-01T00:00:00Z",  "DeathDate": "-0290-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%9C%D0%B5%D0%BD%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%20%D0%90%20850.jpg",  "SiteLinksCnt": 104,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"160570":{"pageid":160570,"ns":0,"title":"Menander","extract":"Menander ( ; Ancient Greek: \u039c\u03ad\u03bd\u03b1\u03bd\u03b4\u03c1\u03bf\u03c2, romanized: M\u00e9nandros; c. 342/341 \u2013 c. 290 BC) was a Greek playwright and the best-known representative of Athenian New Comedy. He wrote 108 comedies and took the prize at the Lenaia festival eight times. His record at the City Dionysia is unknown.\nHe was one of the most popular writers and most highly admired poets in antiquity, but his work was considered lost before the early Middle Ages. It now survives only in Latin-language adaptations by Terence and Plautus and, in the original Greek, in highly fragmentary form, most of which were discovered on papyrus in Egyptian tombs during the early to mid-20th century. In the 1950s, to the great excitement of Classicists, it was announced that a single play by Menander, Dyskolos, had finally been rediscovered in the Bodmer Papyri intact enough to be performed."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q118992")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q118992",
+  "isRealHuman": true,
+  "birthDate": "-0342-01-01",
+  "deathDate": "-0291-01-01",
+  "ageAtDeath": 51,
+  "confidence": 62,
+  "confidenceExplained": "Menander is clearly identifiable as the Athenian playwright of New Comedy. Ancient biographical dates are approximate: reliable sources variously give his birth as about 342/341 BCE and his death as about 292, 291, or 290 BCE, with an age range commonly stated as 50–52. Choosing 342 BCE for birth and 291 BCE for death gives the most balanced estimate of 51 years.",
+  "shortDescriptionEn": "Menander was the leading playwright of Athenian New Comedy, admired for sharp, humane comedies about everyday life, family tensions, love, money, and social masks. He wrote more than a hundred plays, though only Dyskolos survives nearly complete. Ancient tradition says he died in his early fifties after drowning while swimming at Piraeus, Athens’s harbor.",
+  "shortDescriptionFr": "Ménandre fut le grand auteur de la Nouvelle Comédie athénienne, célèbre pour ses pièces fines et humaines sur la vie quotidienne, les conflits familiaux, l’amour, l’argent et les conventions sociales. Il écrivit plus de cent comédies, mais seul Dyskolos nous est parvenu presque entier. Selon la tradition antique, il mourut au début de la cinquantaine, noyé en nageant au Pirée, le port d’Athènes.",
+  "shortDescriptionDe": "Menander war der bedeutendste Dichter der attischen Neuen Komödie, bekannt für kluge, lebensnahe Stücke über Alltag, Familie, Liebe, Geld und soziale Rollen. Er schrieb über hundert Komödien, von denen nur Dyskolos fast vollständig erhalten ist. Der antiken Überlieferung zufolge starb er Anfang fünfzig, als er beim Schwimmen im Hafen von Piräus bei Athen ertrank.",
+  "shortDescriptionEs": "Menandro fue el gran dramaturgo de la Nueva Comedia ateniense, célebre por sus comedias inteligentes y humanas sobre la vida cotidiana, la familia, el amor, el dinero y las apariencias sociales. Escribió más de cien obras, aunque solo Dyskolos se conserva casi completa. La tradición antigua afirma que murió a comienzos de la cincuentena, ahogado mientras nadaba en el Pireo, el puerto de Atenas.",
+  "shortDescriptionRu": "Менандр был главным автором афинской Новой комедии, прославившимся тонкими и человечными пьесами о повседневной жизни, семейных конфликтах, любви, деньгах и социальных ролях. Он написал более ста комедий, но почти полностью сохранилась только «Дискол». По античной традиции, он умер в начале пятидесятых лет, утонув во время купания в Пирее, афинской гавани.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%9C%D0%B5%D0%BD%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%20%D0%90%20850.jpg",
+    "https://www.doaks.org/resources/online-exhibits/ancient-art-at-dumbarton-oaks/the-classical-world-at-dumbarton-oaks/portrait-of-menander",
+    "https://museum.classics.cam.ac.uk/collections/casts/menander",
+    "https://commons.wikimedia.org/wiki/File:Portrait_head_of_the_poet_Menander_from_Athens._Roman_copy.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Menander",
+    "https://www.britannica.com/biography/Menander-Greek-dramatist",
+    "https://www.encyclopedia.com/people/literature-and-arts/classical-literature-biographies/menander",
+    "https://www.penn.museum/sites/expedition/relevant-information-about-menander/",
+    "https://museum.classics.cam.ac.uk/collections/casts/menander",
+    "https://commons.wikimedia.org/wiki/File:Portrait_head_of_the_poet_Menander_from_Athens._Roman_copy.jpg",
+    "https://www.wikidata.org/wiki/Q118992"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83476",  "Name": "Alfred the Great",  "BirthDate": "0849-01-01T00:00:00Z",  "DeathDate": "0899-10-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20the%20Great%20silver%20coin.jpg",  "SiteLinksCnt": 102,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"1640":{"pageid":1640,"ns":0,"title":"Alfred the Great","extract":"Alfred the Great (Old English: \u00c6lfr\u01e3d [\u02c8\u00e6\u026bv\u02ccr\u00e6\u02d0d]; c.\u2009849 \u2013 26 October 899) was King of the West Saxons from 871 to 886, and King of the Anglo-Saxons from 886 until his death in 899. He was the youngest son of King \u00c6thelwulf and \u00c6thelwulf's first wife Osburh, who both died when Alfred was young. Three of Alfred's brothers, \u00c6thelbald, \u00c6thelberht and \u00c6thelred, reigned in turn before him. Under Alfred's rule, considerable administrative and military reforms were introduced, prompting lasting change in England.\nAfter ascending the throne, Alfred spent several years fighting Viking invasions. He won a decisive victory at the Battle of Edington in 878 and made an agreement with the Vikings, dividing England between Anglo-Saxon territory and the Viking-ruled Danelaw, which consisted of Scandinavian York, the north-east Midlands, and East Anglia. Alfred also oversaw the conversion of the Viking leader Guthrum to Christianity. He defended his kingdom against the Viking attempt at conquest, becoming the dominant ruler in England. In 886 Alfred began styling himself \"King of the Anglo-Saxons\" after reoccupying London from the Vikings. Details of his life are described in a work by the 9th-century Welsh scholar and bishop Asser.\nAlfred had a reputation as a learned and merciful man of a gracious and level-headed nature who encouraged education, establishing a court school for both nobles and commoners to be educated in both English and Latin, and improving the legal system and military structure and his people's quality of life. He was given the epithet \"the Great\" from as early as the 13th century, though it was only popularised from the 16th century. Alfred is the only native-born English monarch to be labelled as such."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83476")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q83476",
+  "isRealHuman": true,
+  "birthDate": "0849-01-01",
+  "deathDate": "0899-10-26",
+  "ageAtDeath": 50,
+  "confidence": 85,
+  "confidenceExplained": "Alfred the Great is well-attested as a historical Anglo-Saxon ruler. His death date is consistently given by major references as 26 October 899. His exact birth day is not known, and sources variously give 849 or 847–849, so age at death cannot be exact to the day. Using the commonly accepted birth year 849 and the reported death date in 899 gives age 50; this is also the age stated by the official Royal Family website.",
+  "shortDescriptionEn": "Alfred the Great was King of Wessex from 871 and later styled himself King of the Anglo-Saxons, becoming famous for resisting Viking conquest, reorganizing military defenses, encouraging learning, and strengthening law and administration. His victory at Edington and settlement with Guthrum reshaped early medieval England. Alfred died at Winchester on 26 October 899, probably after years of suffering from a painful chronic illness whose exact nature remains uncertain.",
+  "shortDescriptionFr": "Alfred le Grand fut roi du Wessex à partir de 871, puis se présenta comme roi des Anglo-Saxons. Il est resté célèbre pour sa résistance aux Vikings, sa réorganisation militaire, son soutien à l’éducation et ses réformes juridiques et administratives. Sa victoire d’Edington et son accord avec Guthrum ont profondément marqué l’Angleterre médiévale. Il mourut à Winchester le 26 octobre 899, probablement après avoir souffert pendant des années d’une maladie chronique douloureuse dont la nature exacte demeure incertaine.",
+  "shortDescriptionDe": "Alfred der Große war ab 871 König von Wessex und nannte sich später König der Angelsachsen. Berühmt wurde er durch seinen Widerstand gegen die Wikinger, seine militärischen Reformen, seine Förderung von Bildung sowie seine Verbesserungen von Recht und Verwaltung. Sein Sieg bei Edington und die Einigung mit Guthrum prägten das frühmittelalterliche England nachhaltig. Alfred starb am 26. Oktober 899 in Winchester, vermutlich nach jahrelangem Leiden an einer schmerzhaften chronischen Krankheit, deren genaue Ursache unbekannt ist.",
+  "shortDescriptionEs": "Alfredo el Grande fue rey de Wessex desde 871 y más tarde se presentó como rey de los anglosajones. Es recordado por resistir la conquista vikinga, reorganizar las defensas militares, promover la educación y fortalecer la ley y la administración. Su victoria en Edington y el acuerdo con Guthrum cambiaron el rumbo de la Inglaterra medieval temprana. Murió en Winchester el 26 de octubre de 899, probablemente tras años de padecer una enfermedad crónica dolorosa cuya causa exacta sigue siendo incierta.",
+  "shortDescriptionRu": "Альфред Великий был королём Уэссекса с 871 года, а позднее стал именовать себя королём англосаксов. Он прославился сопротивлением викингам, военной реорганизацией, поддержкой образования и укреплением законов и управления. Его победа при Эдингтоне и соглашение с Гутрумом заметно изменили раннесредневековую Англию. Альфред умер в Винчестере 26 октября 899 года, вероятно после многих лет мучительной хронической болезни, точная природа которой остаётся неизвестной.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20the%20Great%20silver%20coin.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw00045/King-Alfred-The-Great",
+    "https://www.royalmintmuseum.org.uk/collection/coins/alfred-the-great-penny/",
+    "https://collections.museumsvictoria.com.au/items/58244"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alfred_the_Great",
+    "https://www.royal.uk/alfred-great-r-871-899",
+    "https://www.britannica.com/biography/Alfred-king-of-Wessex",
+    "https://www.royalmintmuseum.org.uk/collection/coins/alfred-the-great-penny/",
+    "https://www.npg.org.uk/collections/search/portrait/mw00045/King-Alfred-The-Great"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131761",  "Name": "Humphry Davy",  "BirthDate": "1778-12-17T00:00:00Z",  "DeathDate": "1829-05-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Humphry%20Davy%2C%20Bt%20by%20Thomas%20Phillips.jpg",  "SiteLinksCnt": 101,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"14369":{"pageid":14369,"ns":0,"title":"Humphry Davy","extract":"Sir Humphry Davy, 1st Baronet (17 December 1778 \u2013 29 May 1829) was a British chemist and inventor who invented the Davy lamp and a very early form of arc lamp. He is also remembered for isolating, by using electricity, several elements for the first time: potassium and sodium in 1807 and calcium, strontium, barium, magnesium and boron the following year, as well as for discovering the elemental nature of chlorine and iodine. Davy also studied the forces involved in these separations, inventing the new field of electrochemistry. He is credited with discovering clathrate hydrates.\nIn 1799, he experimented with nitrous oxide and was astonished at how it made him laugh. He nicknamed it \"laughing gas\" and wrote about its potential as an anaesthetic to relieve pain during surgery. Davy was a baronet, President of the Royal Society (PRS), Member of the Royal Irish Academy (MRIA), a founder member and Fellow of the Geological Society of London, and a member of the American Philosophical Society. Berzelius called Davy's 1806 Bakerian Lecture \"On Some Chemical Agencies of Electricity\" \"one of the best memoirs which has ever enriched the theory of chemistry.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131761")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q131761",
+  "isRealHuman": true,
+  "birthDate": "1778-12-17",
+  "deathDate": "1829-05-29",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, Britannica, and Westminster Abbey. The age calculation is straightforward: Humphry Davy was born on 1778-12-17 and died on 1829-05-29, before reaching his 51st birthday, so he was 50. Confidence is not 100 only because historical medical details around the final illness are less exact than the dates.",
+  "shortDescriptionEn": "Sir Humphry Davy was a brilliant British chemist and inventor whose experiments helped found electrochemistry. He isolated or helped identify several elements, including potassium, sodium, calcium, strontium, barium and magnesium, investigated nitrous oxide, and invented the miner’s safety lamp known as the Davy lamp. In later life his health deteriorated; after another stroke in 1829, he died in Geneva on 29 May 1829 at the age of 50 and was buried there.",
+  "shortDescriptionFr": "Sir Humphry Davy fut un chimiste et inventeur britannique de premier plan, dont les travaux contribuèrent à fonder l’électrochimie. Il isola ou contribua à identifier plusieurs éléments, dont le potassium, le sodium, le calcium, le strontium, le baryum et le magnésium, étudia le protoxyde d’azote et inventa la lampe de sûreté des mineurs, dite lampe de Davy. Vers la fin de sa vie, sa santé déclina; après une nouvelle attaque en 1829, il mourut à Genève le 29 mai 1829, à l’âge de 50 ans, et y fut enterré.",
+  "shortDescriptionDe": "Sir Humphry Davy war ein bedeutender britischer Chemiker und Erfinder, dessen Experimente die Elektrochemie entscheidend prägten. Er isolierte oder half, mehrere Elemente zu bestimmen, darunter Kalium, Natrium, Calcium, Strontium, Barium und Magnesium, untersuchte Lachgas und erfand die Gruben-Sicherheitslampe, die als Davy-Lampe bekannt wurde. In seinen letzten Jahren verschlechterte sich seine Gesundheit; nach einem weiteren Schlaganfall im Jahr 1829 starb er am 29. Mai 1829 in Genf im Alter von 50 Jahren und wurde dort begraben.",
+  "shortDescriptionEs": "Sir Humphry Davy fue un destacado químico e inventor británico, cuyas investigaciones ayudaron a establecer la electroquímica. Aisló o contribuyó a identificar varios elementos, entre ellos potasio, sodio, calcio, estroncio, bario y magnesio; estudió el óxido nitroso e inventó la lámpara de seguridad minera conocida como lámpara de Davy. En sus últimos años su salud empeoró; tras sufrir otro derrame en 1829, murió en Ginebra el 29 de mayo de 1829 a los 50 años y fue enterrado allí.",
+  "shortDescriptionRu": "Сэр Хамфри Дэви был выдающимся британским химиком и изобретателем, чьи опыты стали важной основой электрохимии. Он выделил или помог установить природу ряда элементов, включая калий, натрий, кальций, стронций, барий и магний, изучал закись азота и изобрёл шахтёрскую безопасную лампу, известную как лампа Дэви. В последние годы его здоровье ухудшалось; после очередного инсульта в 1829 году он умер в Женеве 29 мая 1829 года в возрасте 50 лет и был похоронен там.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Humphry_Davy",
+    "https://www.britannica.com/biography/Sir-Humphry-Davy-Baronet",
+    "https://www.sciencehistory.org/education/scientific-biographies/humphry-davy/",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/sir-humphry-davy/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q166092",  "Name": "Camillo Benso di Cavour",  "BirthDate": "1810-08-10T00:00:00Z",  "DeathDate": "1861-06-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/11%20Meyer-Pierson.jpg",  "SiteLinksCnt": 93,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"43152198":{"pageid":43152198,"ns":0,"title":"Camillo Benso, Count of Cavour","extract":"Camillo Paolo Filippo Giulio Benso, Count of Cavour, Isolabella and Leri (Italian: [ka\u02c8millo \u02c8b\u025bnso]; 10 August 1810 \u2013 6 June 1861), generally known as the Count of Cavour ( k\u0259-VOOR; Italian: Conte di Cavour [\u02c8konte di ka\u02c8vur]) or simply Cavour, was an Italian politician, statesman, businessman, economist, and noble, and a leading figure in the movement towards Italian unification. He was one of the leaders of the Historical Right and Prime Minister of the Kingdom of Sardinia from 1852, a position he maintained (except for a six-month resignation) until his death, throughout the Second Italian War of Independence and Giuseppe Garibaldi's campaigns to unite Italy. After the declaration of a united Kingdom of Italy, Cavour took office as the first Prime Minister of Italy; he died after only three months in office and did not live to see the Roman Question solved through the complete unification of the country after the Capture of Rome in 1870.\nCavour put forth several economic reforms in his native region of Piedmont, at that time part of the Kingdom of Sardinia, in his earlier years and founded the political newspaper Il Risorgimento. After being elected to the Chamber of Deputies, he quickly rose in rank through the Piedmontese government, coming to dominate the Chamber of Deputies through a union of centre-left and centre-right politicians. After a large rail system expansion program, Cavour became prime minister in 1852. As prime minister, Cavour successfully negotiated Piedmont's way through the Crimean War, the Second Italian War of Independence, and Garibaldi's Expedition of the Thousand, managing to manoeuvre Piedmont diplomatically to become a new great power in Europe, controlling a nearly united Italy that was five times as large as Piedmont had been before he came to power.\nEnglish historian Denis Mack Smith says Cavour was the most successful parliamentarian in Italian history, but he was not especially democratic. Cavour was often dictatorial, ignored his ministerial colleagues and parliament, and interfered in parliamentary elections. He also practised trasformismo and other policies which were carried over into post-Risorgimento Italy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q166092")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q166092",
+  "isRealHuman": true,
+  "birthDate": "1810-08-10",
+  "deathDate": "1861-06-06",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata-derived information, Wikipedia, and Britannica. Calculating from 1810-08-10 to 1861-06-06 gives 50 full years, because he died about two months before his 51st birthday. The only minor uncertainty is around the exact medical diagnosis of his final illness, commonly described as fever and often attributed to malaria, but this does not affect the age calculation.",
+  "shortDescriptionEn": "Camillo Benso, Count of Cavour, was a Piedmontese statesman, reformer, journalist, and one of the chief architects of Italian unification. As prime minister of the Kingdom of Sardinia and then the first prime minister of the Kingdom of Italy, he used diplomacy, economic modernization, and calculated alliances to turn Piedmont into the political engine of the Risorgimento. He died in Turin on 6 June 1861, only a few months after Italy was proclaimed a kingdom, following a sudden severe fever commonly attributed to malaria; he was 50.",
+  "shortDescriptionFr": "Camillo Benso, comte de Cavour, fut un homme d’État piémontais, réformateur, journaliste et l’un des principaux artisans de l’unification italienne. Premier ministre du royaume de Sardaigne puis premier président du Conseil du royaume d’Italie, il utilisa la diplomatie, la modernisation économique et des alliances soigneusement négociées pour faire du Piémont le moteur politique du Risorgimento. Il mourut à Turin le 6 juin 1861, quelques mois seulement après la proclamation du royaume d’Italie, à la suite d’une forte fièvre soudaine généralement attribuée au paludisme ; il avait 50 ans.",
+  "shortDescriptionDe": "Camillo Benso, Graf von Cavour, war ein piemontesischer Staatsmann, Reformer, Publizist und einer der wichtigsten Architekten der italienischen Einigung. Als Ministerpräsident des Königreichs Sardinien und anschließend erster Ministerpräsident des Königreichs Italien setzte er auf Diplomatie, wirtschaftliche Modernisierung und gezielte Bündnisse, um Piemont zum politischen Motor des Risorgimento zu machen. Er starb am 6. Juni 1861 in Turin, nur wenige Monate nach der Ausrufung des Königreichs Italien, nach einem plötzlichen schweren Fieber, das häufig als Malaria gedeutet wird; er war 50 Jahre alt.",
+  "shortDescriptionEs": "Camillo Benso, conde de Cavour, fue un estadista piamontés, reformador, periodista y uno de los principales arquitectos de la unificación italiana. Como primer ministro del Reino de Cerdeña y después primer jefe de gobierno del Reino de Italia, utilizó la diplomacia, la modernización económica y alianzas calculadas para convertir al Piamonte en el motor político del Risorgimento. Murió en Turín el 6 de junio de 1861, apenas unos meses después de proclamarse el Reino de Italia, tras una fiebre repentina y grave que suele atribuirse a la malaria; tenía 50 años.",
+  "shortDescriptionRu": "Камилло Бенсо, граф Кавур, был пьемонтским государственным деятелем, реформатором, журналистом и одним из главных архитекторов объединения Италии. Будучи премьер-министром Сардинского королевства, а затем первым премьер-министром объединенного Итальянского королевства, он использовал дипломатию, экономическую модернизацию и продуманные союзы, чтобы превратить Пьемонт в политический центр Рисорджименто. Он умер в Турине 6 июня 1861 года, всего через несколько месяцев после провозглашения Итальянского королевства, после внезапной тяжелой лихорадки, которую часто связывают с малярией; ему было 50 лет.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/11%20Meyer-Pierson.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw148084/Camillo-Paolo-Filippo-Giulio-Benso-Count-of-Cavour",
+    "https://www.britannica.com/biography/Camillo-Benso-conte-di-Cavour",
+    "https://commons.wikimedia.org/wiki/Category:Portraits_of_Camillo_Benso,_Count_of_Cavour"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Camillo_Benso,_Count_of_Cavour",
+    "https://www.britannica.com/biography/Camillo-Benso-conte-di-Cavour",
+    "https://www.ebsco.com/research-starters/history/camillo-benso-count-cavour",
+    "https://www.wikidata.org/wiki/Q166092",
+    "https://commons.wikimedia.org/wiki/Category:Portraits_of_Camillo_Benso,_Count_of_Cavour"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44258",  "Name": "Basil of Caesarea",  "BirthDate": "0329-01-01T00:00:00Z",  "DeathDate": "0379-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Basil%20of%20Caesarea.jpg",  "SiteLinksCnt": 93,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"175143":{"pageid":175143,"ns":0,"title":"Basil of Caesarea","extract":"Basil of Caesarea, also called Saint Basil the Great (330 \u2013 1 or 2 January 379), was an early Christian prelate of the who served as Bishop of Caesarea Mazaca in Cappadocia from 370 until his death in 379. He was an influential theologian who supported the Nicene Creed and opposed heresies within the early Christian church such as Arianism and Apollinarianism.\nIn addition to his work as a theologian, Basil was known for his care of the poor and underprivileged. Basil established guidelines for monastic life which focus on community life, liturgical prayer, and manual labor. Together with Pachomius, he is remembered as a father of communal monasticism in Eastern Christianity. He is considered a saint by the traditions of both Eastern and Western Christianity.\nBasil, together with his brother Gregory of Nyssa and his friend Gregory of Nazianzus, are collectively referred to as the Cappadocian Fathers. The Eastern Orthodox Church and Eastern Catholic Churches have given him, together with Gregory of Nazianzus and John Chrysostom, the title of Great Hierarch. Along with them and Athanasius of Alexandria he is also regarded as one of the four Great Greek Church Fathers and is recognized as a Doctor of the Church in the Roman Catholic Church. He is sometimes referred to by the epithet Ouranophantor (Koine Greek: \u039f\u1f50\u03c1\u03b1\u03bd\u03bf\u03c6\u03ac\u03bd\u03c4\u03c9\u03c1), lit.\u2009'revealer of heavenly mysteries'."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44258")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44258",
+  "isRealHuman": true,
+  "birthDate": "0329-01-01",
+  "deathDate": "0379-01-01",
+  "ageAtDeath": 50,
+  "confidence": 70,
+  "confidenceExplained": "Basil of Caesarea is a well-attested historical bishop and theologian. The death date is usually given as 1 January 379, though some sources say 1 or 2 January. The birth year varies between 329 and 330, and the exact month and day are not known. I used 329-01-01 as a structured estimate because Britannica and the Catholic Encyclopedia give 329 or probably 329, and Britannica explicitly states that he died aged 50. The age is therefore a reasoned estimate rather than an exact modern vital-record calculation.",
+  "shortDescriptionEn": "Basil of Caesarea, known as Saint Basil the Great, was a fourth-century Christian bishop, theologian, defender of the Nicene Creed, and one of the Cappadocian Fathers. Bishop of Caesarea from 370, he shaped Eastern Christian monastic life, argued against Arianism, and became famous for charitable institutions serving the poor and sick. He died in Caesarea on 1 January 379, probably around age 50; ancient accounts and modern summaries connect his early death with illness, especially liver disease, and with the strain of severe ascetic practices.",
+  "shortDescriptionFr": "Basile de Césarée, connu comme saint Basile le Grand, fut un évêque et théologien chrétien du IVe siècle, défenseur du symbole de Nicée et l’un des Pères cappadociens. Évêque de Césarée à partir de 370, il marqua profondément le monachisme oriental, combattit l’arianisme et se distingua par son action envers les pauvres et les malades. Il mourut à Césarée le 1er janvier 379, probablement vers l’âge de 50 ans; sa mort précoce est généralement liée à une maladie, notamment du foie, aggravée par une vie ascétique très austère.",
+  "shortDescriptionDe": "Basilius von Caesarea, bekannt als Basilius der Große, war ein christlicher Bischof und Theologe des 4. Jahrhunderts, Verteidiger des nicänischen Glaubens und einer der kappadokischen Väter. Seit 370 Bischof von Caesarea, prägte er das östliche Mönchtum, bekämpfte den Arianismus und wurde für seine Fürsorge für Arme und Kranke berühmt. Er starb am 1. Januar 379 in Caesarea, wahrscheinlich im Alter von etwa 50 Jahren; sein früher Tod wird mit Krankheit, besonders einem Leberleiden, und der Belastung durch strenge Askese in Verbindung gebracht.",
+  "shortDescriptionEs": "Basilio de Cesarea, conocido como san Basilio el Grande, fue un obispo y teólogo cristiano del siglo IV, defensor del Credo de Nicea y uno de los Padres capadocios. Como obispo de Cesarea desde 370, influyó en el monacato oriental, combatió el arrianismo y destacó por sus obras de asistencia a pobres y enfermos. Murió en Cesarea el 1 de enero de 379, probablemente hacia los 50 años; su muerte temprana suele relacionarse con una enfermedad, en especial hepática, y con el desgaste causado por una vida ascética muy rigurosa.",
+  "shortDescriptionRu": "Василий Кесарийский, известный как святитель Василий Великий, был христианским епископом и богословом IV века, защитником Никейского Символа веры и одним из Каппадокийских отцов. С 370 года он был епископом Кесарии, оказал большое влияние на восточное монашество, выступал против арианства и прославился заботой о бедных и больных. Он умер в Кесарии 1 января 379 года, вероятно примерно в 50 лет; его раннюю смерть связывают с болезнью, особенно заболеванием печени, а также с истощением от суровой аскетической жизни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Basil_of_Caesarea",
+    "https://www.britannica.com/biography/Saint-Basil-the-Great",
+    "https://www.newadvent.org/cathen/02330b.htm",
+    "https://www.britannica.com/summary/Saint-Basil-the-Great",
+    "https://www.goarch.org/-/stbasil",
+    "https://www.oca.org/saints/lives/2016/01/01/100003-saint-basil-the-great-archbishop-of-caesarea-in-cappadocia",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Basil%20of%20Caesarea.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q130650",  "Name": "Philip II of Macedon",  "BirthDate": "-0385-01-01T00:00:00Z",  "DeathDate": "-0335-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Phillip%20II%2C%20king%20of%20Macedonia%2C%20Roman%20copy%20of%20Greek%20original%2C%20Ny%20Carlsberg%20Glyptotek%2C%20Copenhagen%20%2836420294055%29.jpg",  "SiteLinksCnt": 91,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"54204":{"pageid":54204,"ns":0,"title":"Philip II of Macedon","extract":"Philip II of Macedon (Ancient Greek: \u03a6\u03af\u03bb\u03b9\u03c0\u03c0\u03bf\u03c2, romanized: Ph\u00edlippos; 382 BC \u2013 October 336 BC) was the king (basileus) of Macedon from 359 BC until his death in 336 BC. \nThe rise of Macedon, from a kingdom initially at the periphery of classical Greek affairs, to a power that came to dominate Ancient Greece in the span of less than 25 years, was largely thanks to the character and policies of Philip. He was the father of Alexander the Great and a member of the ruling Argead dynasty that founded the kingdom of the Macedonians.\nMacedon achieved domination over Greece during Philip II's reign by the reformation of the Macedonian army, including the establishment of the Macedonian phalanx, the use of combined arms tactics and his extensive use of siege engines and artillery, as well as by the use of effective diplomacy and marriage alliances. After defeating the Greek city-states of Athens and Thebes at the Battle of Chaeronea in 338 BC, Philip II led the effort to establish a federation of Greek states known as the Hellenic League, with him as the elected hegemon and commander-in-chief of Greece for a planned invasion of the Achaemenid Empire. However, his assassination by a royal bodyguard, Pausanias of Orestis, led to the immediate succession of his son Alexander, who would go on to invade the Achaemenid Empire in his father's stead."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q130650")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q130650",
+  "isRealHuman": true,
+  "birthDate": "-0382-01-01",
+  "deathDate": "-0336-10-25",
+  "ageAtDeath": 46,
+  "confidence": 85,
+  "confidenceExplained": "The identity is clear: the Wikidata ID and article extract refer to Philip II of Macedon. Major references consistently give his birth year as 382 BCE and death year as 336 BCE, with death in October at Aegae. The exact birth day and month are not securely known, so 46 is a calculated historical estimate rather than a day-exact age.",
+  "shortDescriptionEn": "Philip II of Macedon was the ambitious king who transformed Macedon from a peripheral kingdom into the dominant power of Greece. He rebuilt the army, perfected the Macedonian phalanx, used diplomacy and marriage alliances with ruthless skill, and prepared the campaign against Persia that his son Alexander the Great would later carry out. In October 336 BCE, while attending royal wedding celebrations at Aegae, Philip was stabbed by his bodyguard Pausanias of Orestis and died suddenly at about 46.",
+  "shortDescriptionFr": "Philippe II de Macédoine fut le roi ambitieux qui transforma la Macédoine d’un royaume périphérique en puissance dominante du monde grec. Il réorganisa l’armée, perfectionna la phalange macédonienne, sut utiliser la diplomatie et les alliances matrimoniales, et prépara l’expédition contre la Perse que son fils Alexandre le Grand mènerait ensuite. En octobre 336 av. J.-C., lors de fêtes de mariage royales à Aigai, il fut poignardé par son garde du corps Pausanias d’Orestide et mourut vers l’âge de 46 ans.",
+  "shortDescriptionDe": "Philipp II. von Makedonien war der ehrgeizige König, der Makedonien von einem Randstaat zur führenden Macht Griechenlands machte. Er reformierte das Heer, entwickelte die makedonische Phalanx weiter, nutzte Diplomatie und Heiratsbündnisse mit großem Geschick und bereitete den Feldzug gegen Persien vor, den sein Sohn Alexander der Große später ausführen sollte. Im Oktober 336 v. Chr. wurde Philipp während königlicher Hochzeitsfeiern in Aigai von seinem Leibwächter Pausanias von Orestis erstochen und starb mit etwa 46 Jahren.",
+  "shortDescriptionEs": "Filipo II de Macedonia fue el ambicioso rey que convirtió a Macedonia, antes un reino periférico, en la potencia dominante de Grecia. Reformó el ejército, perfeccionó la falange macedonia, manejó con habilidad la diplomacia y las alianzas matrimoniales, y preparó la campaña contra Persia que después realizaría su hijo Alejandro Magno. En octubre de 336 a. C., durante unas celebraciones de boda reales en Egas, fue apuñalado por su guardaespaldas Pausanias de Orestis y murió con unos 46 años.",
+  "shortDescriptionRu": "Филипп II Македонский был амбициозным царём, превратившим Македонию из окраинного царства в главную силу греческого мира. Он реформировал армию, усовершенствовал македонскую фалангу, умело использовал дипломатию и брачные союзы и подготовил поход против Персии, который позже осуществил его сын Александр Македонский. В октябре 336 года до н. э., во время царских свадебных торжеств в Эгах, Филипп был заколот своим телохранителем Павсанием из Орестиды и умер примерно в 46 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_II_of_Macedon",
+    "https://www.britannica.com/biography/Philip-II-king-of-Macedonia",
+    "https://education.nationalgeographic.org/resource/philip-ii-macedon/",
+    "https://www.livius.org/articles/person/philip-ii-of-macedonia/",
+    "https://commons.wikimedia.org/wiki/File:Phillip_II,_king_of_Macedonia,_Roman_copy_of_Greek_original,_Ny_Carlsberg_Glyptotek,_Copenhagen_(36420294055).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q122290",  "Name": "Jean-Paul Marat",  "BirthDate": "1743-05-24T00:00:00Z",  "DeathDate": "1793-07-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-Paul%20Marat%20-%20portrait%20peint%20par%20Joseph%20Boze.jpg",  "SiteLinksCnt": 87,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"62182":{"pageid":62182,"ns":0,"title":"Jean-Paul Marat","extract":"Jean-Paul Marat (UK: , US: , French: [\u0292\u0251\u0303p\u0254l ma\u0281a]; born Mara; 24 May 1743 \u2013 13 July 1793) was a French political theorist, physician, and scientist. A journalist and politician during the French Revolution, he was a vigorous defender of the sans-culottes, a radical voice, and published his views in pamphlets, placards and newspapers. His periodical L'Ami du peuple (The Friend of the People) made him an unofficial link with the radical Jacobin group that came to power after June 1793.\nHis journalism was known for its fierce tone and uncompromising stance toward the new leaders and institutions of the revolution. Responsibility for the September Massacres has been attributed to him, given his position of renown at the time, and a paper trail of decisions leading up to the massacres. Others posit that the collective mentality which made them possible resulted from circumstances and not from the will of any particular individual. Marat was assassinated by Charlotte Corday, a Girondin sympathizer, while taking a medicinal bath for his debilitating skin condition. Corday was executed four days later for his assassination, on 17 July 1793.\nIn death, Marat became an icon to the Montagnards faction of the Jacobins as well as the greater sans-culotte population, and a revolutionary martyr; according to contemporary accounts, some even mourned him with a kind of prayer: \"O heart of Jesus! O sacred heart of Marat.\" The most famous painter in Paris, Jacques-Louis David, immortalized Marat in his iconic painting The Death of Marat. David and Marat were part of the Paris Commune leadership anchored in the Cordeliers section, from where the Revolution is said to have started in 1789 because those who stormed the Bastille lived there. Both David and Marat were on the Commune's Committee of General Security during the beginnings of what would become known as the Reign of Terror."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q122290")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q122290",
+  "isRealHuman": true,
+  "birthDate": "1743-05-24",
+  "deathDate": "1793-07-13",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are highly consistent across the supplied Wikidata/Wikipedia data and independent reference sources. Since Jean-Paul Marat died after his birthday in 1793, the age calculation is straightforward: 1793 - 1743 = 50.",
+  "shortDescriptionEn": "Jean-Paul Marat was a French revolutionary journalist, physician, scientist, and political theorist whose newspaper L'Ami du peuple made him one of the most uncompromising voices of the radical movement during the French Revolution. A fierce defender of the sans-culottes and a figure associated with the Montagnards, he became both influential and deeply divisive. Suffering from a severe skin condition, he often worked from a medicinal bath; on 13 July 1793, he was stabbed there by Charlotte Corday, a Girondin sympathizer, and soon became a revolutionary martyr.",
+  "shortDescriptionFr": "Jean-Paul Marat fut un journaliste révolutionnaire français, médecin, scientifique et théoricien politique, dont le journal L'Ami du peuple fit de lui l'une des voix les plus intransigeantes du courant radical pendant la Révolution française. Défenseur ardent des sans-culottes et proche des Montagnards, il exerça une influence considérable tout en suscitant de fortes hostilités. Atteint d'une grave maladie de peau, il travaillait souvent dans un bain médicinal ; le 13 juillet 1793, il y fut poignardé par Charlotte Corday, sympathisante girondine, avant d'être transformé en martyr révolutionnaire.",
+  "shortDescriptionDe": "Jean-Paul Marat war ein französischer Revolutionsjournalist, Arzt, Wissenschaftler und politischer Theoretiker, dessen Zeitung L'Ami du peuple ihn zu einer der kompromisslosesten Stimmen der radikalen Französischen Revolution machte. Als leidenschaftlicher Verteidiger der Sansculotten und mit den Montagnards verbunden, wurde er zugleich einflussreich und stark umstritten. Wegen einer schweren Hautkrankheit arbeitete er häufig in einem medizinischen Bad; am 13. Juli 1793 wurde er dort von Charlotte Corday, einer Sympathisantin der Girondisten, erstochen und kurz darauf als revolutionärer Märtyrer verehrt.",
+  "shortDescriptionEs": "Jean-Paul Marat fue un periodista revolucionario francés, médico, científico y teórico político, cuyo periódico L'Ami du peuple lo convirtió en una de las voces más radicales e inflexibles de la Revolución francesa. Defensor enérgico de los sans-culottes y figura vinculada a los montañeses, alcanzó gran influencia y provocó intensas enemistades. A causa de una grave enfermedad de la piel, solía trabajar desde un baño medicinal; el 13 de julio de 1793 fue apuñalado allí por Charlotte Corday, simpatizante girondina, y pronto fue convertido en mártir revolucionario.",
+  "shortDescriptionRu": "Жан-Поль Марат был французским революционным журналистом, врачом, учёным и политическим теоретиком; его газета L'Ami du peuple сделала его одним из самых непримиримых радикальных голосов Французской революции. Он выступал защитником санкюлотов, был связан с монтаньярами и стал одновременно влиятельной и крайне спорной фигурой. Из-за тяжёлого кожного заболевания Марат часто работал в лечебной ванне; 13 июля 1793 года там его заколола Шарлотта Корде, сторонница жирондистов, после чего он быстро превратился в революционного мученика.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean-Paul_Marat",
+    "https://www.britannica.com/biography/Jean-Paul-Marat",
+    "https://www.wikidata.org/wiki/Q122290",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Paul%20Marat%20-%20portrait%20peint%20par%20Joseph%20Boze.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76323",  "Name": "Alfred Wegener",  "BirthDate": "1880-09-10T00:00:00Z",  "DeathDate": "1930-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Wegener%20ca.1924-30.jpg",  "SiteLinksCnt": 87,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"1331018":{"pageid":1331018,"ns":0,"title":"Alfred Wegener","extract":"Alfred Lothar Wegener (; German: [\u02c8\u0294alf\u0281e\u02d0t \u02c8ve\u02d0\u0261\u0259n\u0250]; 1 November 1880 \u2013 November 1930) was a German climatologist, geologist, geophysicist, meteorologist, and polar researcher.\nDuring his lifetime he was primarily known for his achievements in meteorology and as a pioneer of polar research, but today he is most remembered as the originator of the continental drift hypothesis by suggesting in 1912 that the continents are slowly drifting around the Earth (German: Kontinentalverschiebung).\nHis hypothesis was not accepted by mainstream geology until the 1960s, when numerous discoveries such as palaeomagnetism provided strong support for continental drift, and thereby a substantial basis for today's model of plate tectonics.\nWegener was involved in several expeditions to Greenland to study polar air circulation before the existence of the jet stream was accepted. Expedition participants made many meteorological observations and were the first to overwinter on the inland Greenland ice sheet and the first to bore ice cores on a moving Arctic glacier."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76323")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q76323",
+  "isRealHuman": true,
+  "birthDate": "1880-11-01",
+  "deathDate": "1930-11-02",
+  "ageAtDeath": 50,
+  "confidence": 93,
+  "confidenceExplained": "The identity is clear: Alfred Lothar Wegener. Multiple reliable sources agree that he was born on 1880-11-01 and died in Greenland in November 1930 at age 50. The exact day of death is not fully settled because his body was found months later; some sources only give November 1930, while Wikimedia Commons gives November 2 or 3. I used 1930-11-02 as the best estimate, and the age remains 50 for any plausible November 1930 death date.",
+  "shortDescriptionEn": "Alfred Lothar Wegener was a German meteorologist, geophysicist, polar researcher, and the scientist who proposed the continental drift hypothesis, a once-ridiculed idea that later became central to plate tectonics. He also made important contributions to meteorology and Greenland exploration. During his 1930 Greenland expedition, he helped resupply the remote Eismitte station in extreme cold. After leaving with Rasmus Villumsen for the west coast, Wegener died on the ice, probably from exhaustion and heart failure; his body was found months later.",
+  "shortDescriptionFr": "Alfred Lothar Wegener était un météorologue, géophysicien et explorateur polaire allemand, surtout connu pour avoir proposé l’hypothèse de la dérive des continents, longtemps contestée avant de devenir une base essentielle de la tectonique des plaques. Il contribua aussi à la météorologie et à l’exploration du Groenland. Lors de son expédition groenlandaise de 1930, il participa au ravitaillement de la station isolée d’Eismitte dans un froid extrême. Après son départ vers la côte ouest avec Rasmus Villumsen, Wegener mourut sur la glace, probablement d’épuisement et d’une défaillance cardiaque; son corps fut retrouvé plusieurs mois plus tard.",
+  "shortDescriptionDe": "Alfred Lothar Wegener war ein deutscher Meteorologe, Geophysiker und Polarforscher, der vor allem als Begründer der Kontinentalverschiebungshypothese bekannt wurde, einer zunächst abgelehnten Idee, die später grundlegend für die Plattentektonik wurde. Auch in der Meteorologie und Grönlandforschung leistete er wichtige Beiträge. Während seiner Grönlandexpedition 1930 half er, die abgelegene Station Eismitte unter extremen Bedingungen zu versorgen. Nach dem Aufbruch zur Westküste mit Rasmus Villumsen starb Wegener auf dem Inlandeis, vermutlich an Erschöpfung und Herzversagen; sein Körper wurde Monate später gefunden.",
+  "shortDescriptionEs": "Alfred Lothar Wegener fue un meteorólogo, geofísico y explorador polar alemán, célebre por proponer la hipótesis de la deriva continental, una idea inicialmente rechazada que después se convirtió en una base de la tectónica de placas. También realizó aportes importantes a la meteorología y a la exploración de Groenlandia. Durante su expedición groenlandesa de 1930, ayudó a abastecer la estación remota de Eismitte bajo un frío extremo. Tras partir hacia la costa occidental con Rasmus Villumsen, Wegener murió sobre el hielo, probablemente por agotamiento e insuficiencia cardíaca; su cuerpo fue hallado meses después.",
+  "shortDescriptionRu": "Альфред Лотар Вегенер был немецким метеорологом, геофизиком и полярным исследователем, наиболее известным как автор гипотезы дрейфа континентов, сначала отвергнутой, но позднее ставшей одной из основ тектоники плит. Он также внес важный вклад в метеорологию и исследования Гренландии. Во время гренландской экспедиции 1930 года он участвовал в снабжении удаленной станции Айсмитте в условиях сильнейшего холода. После выхода к западному побережью вместе с Расмусом Виллумсеном Вегенер умер на леднике, вероятно от истощения и сердечной недостаточности; его тело нашли лишь несколько месяцев спустя.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alfred_Wegener",
+    "https://www.britannica.com/biography/Alfred-Wegener",
+    "https://commons.wikimedia.org/wiki/Alfred_Wegener",
+    "https://science.nasa.gov/earth/earth-observatory/alfred-wegener/",
+    "https://pubs.usgs.gov/gip/dynamic/wegener.html",
+    "https://ucmp.berkeley.edu/history/wegener.html",
+    "https://www.environmentandsociety.org/exhibitions/wegener-diaries/biography-alfred-wegener",
+    "https://www.environmentandsociety.org/exhibitions/wegener-diaries/educational-film-wegener-groenlandexpedition",
+    "https://www.environmentandsociety.org/exhibitions/wegener-diaries/greenland-diaries"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q162819",  "Name": "Catherine of Aragon",  "BirthDate": "1485-12-16T00:00:00Z",  "DeathDate": "1536-01-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20of%20Aragon%20%281485-1536%29.jpg",  "SiteLinksCnt": 83,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"6942":{"pageid":6942,"ns":0,"title":"Catherine of Aragon","extract":"Catherine of Aragon (Spanish: Catalina de Arag\u00f3n, also spelled Katherine; 16 December 1485 \u2013 7 January 1536) was Queen of England as the first wife of Henry VIII from their marriage on 11 June 1509 until its annulment on 23 May 1533. She had previously been Princess of Wales as the wife of Henry's elder brother Arthur, Prince of Wales for a short time before his death.\nCatherine was born at the Archbishop's Palace of Alcal\u00e1 de Henares, and was the youngest child of Isabella I of Castile and Ferdinand II of Aragon. She was three years old when she was betrothed to Arthur, the eldest son of Henry VII of England. They married in 1501, but Arthur died five months later. Catherine spent years in limbo, and during this time, she held the position of ambassador of the Aragonese crown to England in 1507, the first known female ambassador in European history. She married Henry VIII shortly after his accession in 1509. For six months in 1513, she served as regent of England while Henry was in France. During that time the English defeated a Scottish invasion at the Battle of Flodden, an event in which Catherine played an important part with an emotional speech about courage and patriotism.\nBy 1526, Henry was infatuated with Anne Boleyn and dissatisfied that his marriage to Catherine had produced no surviving sons, leaving their daughter Mary as heir presumptive at a time when there was no established precedent for a woman on the throne. He sought to have their marriage annulled, setting in motion a chain of events that led to England's schism with the Catholic Church. When Pope Clement VII refused to annul the marriage, Henry defied him by assuming supremacy over religious matters in England. In 1533, their marriage was consequently declared invalid and Henry married Anne on the judgement of clergy in England, without reference to the pope. Catherine refused to accept Henry as supreme head of the Church in England and considered herself the King's rightful wife and queen, attracting much popular sympathy. Despite this, Henry acknowledged her only as dowager princess of Wales. After being banished from court by Henry, Catherine lived out the remainder of her life at Kimbolton Castle, dying there in January 1536, probably of cancer. The English people held Catherine in high esteem, and her death set off tremendous mourning. Her daughter Mary became the first undisputed English queen regnant in 1553.\nCatherine commissioned The Education of a Christian Woman by Juan Luis Vives, who dedicated the book, controversial at the time, to the Queen in 1523. Such was Catherine's impression on people that even her adversary Thomas Cromwell said of her, \"If not for her sex, she could have defied all the heroes of History.\" She successfully appealed for the lives of the rebels involved in the Evil May Day, for the sake of their families, and also won widespread admiration by starting an extensive programme for the relief of the poor. Catherine was a patron of Renaissance humanism and a friend of the great scholars Erasmus of Rotterdam and Thomas More."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q162819")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q162819",
+  "isRealHuman": true,
+  "birthDate": "1485-12-16",
+  "deathDate": "1536-01-07",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The figure is clearly Catherine of Aragon. Multiple reliable sources give her birth date as 16 December 1485 and death date as 7 January 1536. She had turned 50 on 16 December 1535, so her age at death was 50. The only uncertainty is the common historical variation in older records, but modern references consistently use these dates.",
+  "shortDescriptionEn": "Catherine of Aragon was a Spanish princess, daughter of Ferdinand II of Aragon and Isabella I of Castile, and became Queen of England as the first wife of Henry VIII. Educated, politically capable, and widely respected, she served as regent in 1513 while Henry was in France and remained a symbol of dignity during the crisis over their marriage. After Henry sought an annulment and broke with papal authority, Catherine was removed from court and recognized only as Dowager Princess of Wales. She spent her final years at Kimbolton Castle, where she died on 7 January 1536, probably from cancer, at the age of 50.",
+  "shortDescriptionFr": "Catherine d’Aragon était une princesse espagnole, fille de Ferdinand II d’Aragon et d’Isabelle Ire de Castille, devenue reine d’Angleterre comme première épouse d’Henri VIII. Instruite, politiquement habile et très respectée, elle exerça la régence en 1513 pendant l’absence du roi et conserva une grande dignité durant la crise de son mariage. Après la demande d’annulation d’Henri et sa rupture avec l’autorité papale, Catherine fut écartée de la cour et reconnue seulement comme princesse douairière de Galles. Elle passa ses dernières années au château de Kimbolton, où elle mourut le 7 janvier 1536, probablement d’un cancer, à l’âge de 50 ans.",
+  "shortDescriptionDe": "Katharina von Aragón war eine spanische Prinzessin, Tochter Ferdinands II. von Aragón und Isabellas I. von Kastilien, und wurde als erste Ehefrau Heinrichs VIII. Königin von England. Sie war gebildet, politisch fähig und hoch angesehen; 1513 führte sie während Heinrichs Frankreichfeldzug die Regentschaft. In der Krise um ihre Ehe blieb sie standhaft und bestand auf ihrer Stellung als rechtmäßige Königin. Nach Heinrichs Annullierungsbestrebungen und dem Bruch mit der päpstlichen Autorität wurde sie vom Hof entfernt und nur noch als verwitwete Fürstin von Wales anerkannt. Ihre letzten Jahre verbrachte sie auf Kimbolton Castle, wo sie am 7. Januar 1536 wahrscheinlich an Krebs starb, im Alter von 50 Jahren.",
+  "shortDescriptionEs": "Catalina de Aragón fue una princesa española, hija de Fernando II de Aragón e Isabel I de Castilla, y llegó a ser reina de Inglaterra como primera esposa de Enrique VIII. Educada, firme y políticamente capaz, actuó como regente en 1513 mientras Enrique estaba en Francia y mantuvo una gran dignidad durante la crisis de su matrimonio. Tras el intento de anulación de Enrique y la ruptura con la autoridad papal, Catalina fue apartada de la corte y reconocida solo como princesa viuda de Gales. Pasó sus últimos años en el castillo de Kimbolton, donde murió el 7 de enero de 1536, probablemente de cáncer, a los 50 años.",
+  "shortDescriptionRu": "Екатерина Арагонская была испанской принцессой, дочерью Фердинанда II Арагонского и Изабеллы I Кастильской, и стала королевой Англии как первая жена Генриха VIII. Образованная, стойкая и политически способная, она в 1513 году исполняла обязанности регента, пока Генрих находился во Франции, и сохраняла достоинство во время кризиса их брака. После попытки Генриха добиться аннулирования брака и разрыва с папской властью Екатерину удалили от двора и признавали лишь вдовствующей принцессой Уэльской. Последние годы она провела в замке Кимболтон, где умерла 7 января 1536 года, вероятно от рака, в возрасте 50 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Catherine_of_Aragon",
+    "https://www.britannica.com/biography/Catherine-of-Aragon",
+    "https://www.npg.org.uk/collections/search/person/mp00801/katherine-of-aragon",
+    "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/katherine-of-aragon/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q57073",  "Name": "Daniel Gabriel Fahrenheit",  "BirthDate": "1686-05-24T00:00:00Z",  "DeathDate": "1736-09-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fahrenheit%20small.jpg",  "SiteLinksCnt": 83,  "Age": 50}
+{"batchcomplete":"","query":{"pages":{"8663":{"pageid":8663,"ns":0,"title":"Daniel Gabriel Fahrenheit","extract":"Daniel Gabriel Fahrenheit FRS (24 May 1686 \u2013 16 September 1736) was a physicist, inventor, and scientific instrument maker. He was born in Poland to a family of German origin, although he spent much of his life in the Dutch Republic. Fahrenheit significantly improved the design and manufacture of thermometers; his were accurate and consistent enough that different observers, each with their own Fahrenheit thermometers, could reliably compare temperature measurements with each other. Fahrenheit is also credited with producing the first successful mercury-in-glass thermometers, which were more accurate than the spirit-filled thermometers of his time and of a generally superior design. The popularity of his thermometers also led to the widespread adoption of his Fahrenheit scale, with which they were provided."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q57073")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q57073",
+  "isRealHuman": true,
+  "birthDate": "1686-05-24",
+  "deathDate": "1736-09-16",
+  "ageAtDeath": 50,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata, Wikipedia, and Britannica. Some older sources give the birth date as 14 May Old Style, equivalent to 24 May Gregorian, but either date still makes him 50 at death on 16 September 1736.",
+  "shortDescriptionEn": "Daniel Gabriel Fahrenheit was a physicist, inventor, and maker of scientific instruments, born in Gdańsk and active for much of his career in the Dutch Republic. He transformed temperature measurement by producing reliable thermometers, developing the mercury-in-glass thermometer, and creating the Fahrenheit scale. In early September 1736 he became seriously ill in The Hague, made and amended his will, and died there on 16 September 1736 at the age of 50. He was buried in the Kloosterkerk a few days later.",
+  "shortDescriptionFr": "Daniel Gabriel Fahrenheit était un physicien, inventeur et fabricant d’instruments scientifiques, né à Gdańsk et actif une grande partie de sa vie dans la République néerlandaise. Il a profondément amélioré la mesure de la température grâce à des thermomètres fiables, au thermomètre à mercure et à l’échelle Fahrenheit. Au début de septembre 1736, il tomba gravement malade à La Haye, fit puis modifia son testament, et y mourut le 16 septembre 1736 à l’âge de 50 ans. Il fut enterré quelques jours plus tard dans la Kloosterkerk.",
+  "shortDescriptionDe": "Daniel Gabriel Fahrenheit war ein Physiker, Erfinder und Hersteller wissenschaftlicher Instrumente, geboren in Danzig und über weite Strecken seines Lebens in der Niederländischen Republik tätig. Er prägte die Temperaturmessung durch zuverlässige Thermometer, das Quecksilberthermometer und die nach ihm benannte Fahrenheit-Skala. Anfang September 1736 erkrankte er in Den Haag schwer, ließ sein Testament aufsetzen und ändern, und starb dort am 16. September 1736 im Alter von 50 Jahren. Wenige Tage später wurde er in der Kloosterkerk bestattet.",
+  "shortDescriptionEs": "Daniel Gabriel Fahrenheit fue un físico, inventor y fabricante de instrumentos científicos, nacido en Gdańsk y activo durante gran parte de su vida en la República Neerlandesa. Cambió la medición de la temperatura al crear termómetros fiables, desarrollar el termómetro de mercurio y establecer la escala Fahrenheit. A comienzos de septiembre de 1736 enfermó gravemente en La Haya, redactó y modificó su testamento, y murió allí el 16 de septiembre de 1736 a los 50 años. Fue enterrado pocos días después en la Kloosterkerk.",
+  "shortDescriptionRu": "Даниэль Габриэль Фаренгейт был физиком, изобретателем и мастером научных приборов, родившимся в Гданьске и большую часть жизни работавшим в Голландской республике. Он существенно изменил измерение температуры: создавал надежные термометры, разработал ртутный термометр и температурную шкалу Фаренгейта. В начале сентября 1736 года он тяжело заболел в Гааге, составил и изменил завещание, а 16 сентября 1736 года умер там в возрасте 50 лет. Через несколько дней его похоронили в церкви Kloosterkerk.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Daniel_Gabriel_Fahrenheit",
+    "https://www.britannica.com/biography/Daniel-Gabriel-Fahrenheit",
+    "https://www.wikidata.org/wiki/Q57073",
+    "https://encyclopedia.pub/entry/35452",
+    "https://commons.wikimedia.org/wiki/File:Fahrenheit_small.jpg"
+  ]
+}

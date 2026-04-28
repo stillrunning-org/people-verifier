@@ -1,0 +1,1032 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9438",  "Name": "Thomas Aquinas",  "BirthDate": "1225-01-01T00:00:00Z",  "DeathDate": "1274-03-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/St-thomas-aquinasFXD.jpg",  "SiteLinksCnt": 206,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"21490957":{"pageid":21490957,"ns":0,"title":"Thomas Aquinas","extract":"Thomas Aquinas  (  \u0259-KWY-n\u0259s; Italian: Tommaso d'Aquino, lit.\u2009'Thomas of Aquino'; c.\u20091225 \u2013 7 March 1274) was an Italian Dominican friar and priest, theologian, and philosopher. He is considered one of the most influential thinkers in the history of Catholic theology and Western philosophy.\nThomas was a proponent of natural theology and the father of a school of thought (encompassing both theology and philosophy) known as Thomism. He argued that God is the source of the light of natural reason and the light of faith. He embraced several ideas put forward by Aristotle and sought to synthesize Aristotelian philosophy with the principles of Christianity. Among his best-known ideas include his Five Ways for proving the existence of God, his virtue ethics, and his sacramental theology. In addition to its vast influence on Catholic thought, his philosophy has influenced modern virtue ethics, aesthetics, and cognitive theory.\nThomas's best-known work is the unfinished Summa Theologica, or Summa Theologiae (1265\u20131274), which is a comprehensive guide to the theology of the Catholic Church. His body of work also includes the Disputed Questions on Truth (1256\u20131259), the Summa contra Gentiles (1259\u20131265), and numerous commentaries on Christian Scripture and on Aristotle. He is also known for his Eucharistic hymns, which form a part of the Church's liturgy.\nThomas has been described as \"the most influential thinker of the medieval period\" and is generally considered to be one of the Catholic Church's greatest theologians and philosophers. As one of the 38 Doctors of the Church, he is known by multiple titles, including Doctor Angelicus (\"Angelic Doctor\"), Doctor Communis (\"Universal Doctor\"), and Doctor Humanitatis (\"Doctor of Humanity\")."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9438")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9438",
+  "isRealHuman": true,
+  "birthDate": "1225-01-01",
+  "deathDate": "1274-03-07",
+  "ageAtDeath": 49,
+  "confidence": 70,
+  "confidenceExplained": "Thomas Aquinas's death date is well attested as 7 March 1274, but his exact birthday is not known; sources usually give c. 1225 or 1224/25. I used 1225-01-01 as a practical estimated birth date, which gives age 49. The historically safest range is 48–49, so confidence in the single integer 49 is moderate rather than high.",
+  "shortDescriptionEn": "Thomas Aquinas was an Italian Dominican friar, theologian, philosopher, and one of the defining minds of medieval Scholasticism. He joined Aristotelian philosophy with Christian theology, shaped Catholic intellectual tradition, and wrote major works including the Summa Theologiae and Summa contra Gentiles. In 1274, while traveling to the Second Council of Lyon, he became seriously ill after a head injury and was taken to Fossanova Abbey, where Cistercian monks cared for him until his death on 7 March.",
+  "shortDescriptionFr": "Thomas d’Aquin était un frère dominicain italien, théologien, philosophe et l’une des grandes figures de la scolastique médiévale. Il a uni la philosophie d’Aristote à la théologie chrétienne, marqué durablement la pensée catholique, et laissé des œuvres majeures comme la Somme théologique et la Somme contre les Gentils. En 1274, alors qu’il se rendait au deuxième concile de Lyon, il tomba gravement malade après une blessure à la tête et fut conduit à l’abbaye de Fossanova, où les moines cisterciens le soignèrent jusqu’à sa mort le 7 mars.",
+  "shortDescriptionDe": "Thomas von Aquin war ein italienischer Dominikaner, Theologe, Philosoph und eine prägende Gestalt der mittelalterlichen Scholastik. Er verband aristotelische Philosophie mit christlicher Theologie, beeinflusste die katholische Geistesgeschichte tiefgreifend und verfasste bedeutende Werke wie die Summa Theologiae und die Summa contra Gentiles. 1274 wurde er auf dem Weg zum Zweiten Konzil von Lyon nach einer Kopfverletzung schwer krank und kam in die Abtei Fossanova, wo ihn Zisterziensermönche bis zu seinem Tod am 7. März pflegten.",
+  "shortDescriptionEs": "Tomás de Aquino fue un fraile dominico italiano, teólogo, filósofo y una de las figuras centrales de la escolástica medieval. Integró la filosofía de Aristóteles con la teología cristiana, influyó profundamente en la tradición intelectual católica y escribió obras fundamentales como la Summa Theologiae y la Summa contra Gentiles. En 1274, mientras viajaba al Segundo Concilio de Lyon, enfermó gravemente tras una lesión en la cabeza y fue llevado a la abadía de Fossanova, donde los monjes cistercienses lo cuidaron hasta su muerte el 7 de marzo.",
+  "shortDescriptionRu": "Фома Аквинский был итальянским доминиканским монахом, теологом, философом и одной из ключевых фигур средневековой схоластики. Он соединил философию Аристотеля с христианским богословием, оказал огромное влияние на католическую мысль и написал такие труды, как «Сумма теологии» и «Сумма против язычников». В 1274 году, направляясь на Второй Лионский собор, он тяжело заболел после травмы головы и был доставлен в аббатство Фоссанова, где цистерцианские монахи ухаживали за ним до его смерти 7 марта.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Aquinas",
+    "https://plato.stanford.edu/entries/aquinas/",
+    "https://www.britannica.com/biography/Saint-Thomas-Aquinas",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Aquinas_by_Sandro_Botticelli.jpg",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Aquinas_by_Fra_Bartolommeo.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8747",  "Name": "Euclid",  "BirthDate": "-0333-01-01T00:00:00Z",  "DeathDate": "-0284-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Euklid2.jpg",  "SiteLinksCnt": 201,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"9331":{"pageid":9331,"ns":0,"title":"Euclid","extract":"Euclid (; Ancient Greek: \u0395\u1f50\u03ba\u03bb\u03b5\u03af\u03b4\u03b7\u03c2; fl.\u2009300 BC) was an ancient Greek mathematician active as a geometer and logician. Considered the \"father of geometry\", he is chiefly known for the Elements treatise, which established the foundations of geometry that largely dominated the field until the early 19th century. His system, now referred to as Euclidean geometry, involved innovations in combination with a synthesis of theories from earlier Greek mathematicians, including Eudoxus of Cnidus, Hippocrates of Chios, Thales and Theaetetus. With Archimedes and Apollonius of Perga, Euclid is generally considered among the greatest mathematicians of antiquity, and one of the most influential in the history of mathematics.\nVery little is known of Euclid's life, and most information comes from the scholars Proclus and Pappus of Alexandria many centuries later. Medieval Islamic mathematicians invented a fanciful biography, and medieval Byzantine and early Renaissance scholars mistook him for the earlier philosopher Euclid of Megara. It is now generally accepted that he spent his career in Alexandria and lived around 300 BC, after Plato's students and before Archimedes. There is some speculation that Euclid studied at the Platonic Academy and later taught at the Musaeum; he is regarded as bridging the earlier Platonic tradition in Athens with the later tradition of Alexandria.\nIn the Elements, Euclid deduced the theorems from a small set of axioms. He also wrote works on perspective, conic sections, spherical geometry, number theory, and mathematical rigour. In addition to the Elements, Euclid wrote a central early text in the optics field, Optics, and lesser-known works including Data and Phaenomena. Euclid's authorship of On Divisions of Figures and Catoptrics has been questioned. He is thought to have written many lost works."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8747")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8747",
+  "isRealHuman": true,
+  "birthDate": "-0325-01-01",
+  "deathDate": "-0265-01-01",
+  "ageAtDeath": 60,
+  "confidence": 35,
+  "confidenceExplained": "Euclid's exact birth and death dates are not known. The age 60 is calculated from the commonly used scholarly estimate of about 325 BCE for his birth and about 265 BCE for his death. Other reliable sources describe him mainly as flourishing around 300 BCE and note that details of his life and death are very poorly documented, so the number is a best-estimate rather than a verified age.",
+  "shortDescriptionEn": "Euclid of Alexandria was an ancient Greek mathematician, geometer, and logician, best known as the author of Elements, the work that organized geometry through axioms, definitions, and proofs and shaped mathematical education for more than two millennia. His life is obscure, but he is usually placed in Alexandria around 300 BCE, during the early Ptolemaic period. No ancient source preserves the details of his final illness or death; the best working estimate is that he died in Alexandria around 265 BCE, aged about 60, after founding a mathematical tradition that influenced Archimedes, Apollonius, and later science.",
+  "shortDescriptionFr": "Euclide d’Alexandrie était un mathématicien, géomètre et logicien grec de l’Antiquité, surtout connu comme l’auteur des Éléments, ouvrage qui a organisé la géométrie autour d’axiomes, de définitions et de démonstrations et qui a marqué l’enseignement des mathématiques pendant plus de deux millénaires. Sa vie reste très mal connue, mais on le situe généralement à Alexandrie vers 300 av. J.-C., au début de l’époque ptolémaïque. Aucun témoignage ancien ne décrit précisément sa maladie finale ou sa mort; l’estimation la plus raisonnable le fait mourir à Alexandrie vers 265 av. J.-C., à environ 60 ans, après avoir fondé une tradition mathématique majeure.",
+  "shortDescriptionDe": "Euklid von Alexandria war ein antiker griechischer Mathematiker, Geometer und Logiker, berühmt als Autor der Elemente, eines Werks, das Geometrie durch Axiome, Definitionen und Beweise systematisierte und den Mathematikunterricht über zwei Jahrtausende prägte. Über sein Leben ist nur wenig sicher bekannt, doch wird er gewöhnlich um 300 v. Chr. in Alexandria in die frühe ptolemäische Zeit eingeordnet. Antike Quellen überliefern keine genauen Umstände seiner letzten Krankheit oder seines Todes; die plausibelste Arbeitsschätzung ist, dass er um 265 v. Chr. in Alexandria starb, im Alter von etwa 60 Jahren.",
+  "shortDescriptionEs": "Euclides de Alejandría fue un matemático, geómetra y lógico griego de la Antigüedad, conocido sobre todo como autor de los Elementos, la obra que organizó la geometría mediante axiomas, definiciones y demostraciones y dominó la enseñanza matemática durante más de dos mil años. Su biografía es muy incierta, pero suele situarse en Alejandría hacia 300 a. C., en los primeros tiempos ptolemaicos. Ninguna fuente antigua conserva los detalles de su enfermedad final o de su muerte; la mejor estimación práctica es que murió en Alejandría hacia 265 a. C., con unos 60 años.",
+  "shortDescriptionRu": "Евклид Александрийский был древнегреческим математиком, геометром и логиком, наиболее известным как автор «Начал» — труда, который изложил геометрию через аксиомы, определения и доказательства и определял математическое образование более двух тысяч лет. Его биография почти неизвестна, но обычно его связывают с Александрией около 300 года до н. э., в раннюю эпоху Птолемеев. Древние источники не сообщают обстоятельств его последней болезни или смерти; наиболее разумная рабочая оценка — он умер в Александрии около 265 года до н. э. в возрасте примерно 60 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Euclid",
+    "https://www.britannica.com/biography/Euclid-Greek-mathematician",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+    "https://www.wikidata.org/wiki/Q8747",
+    "https://commons.wikimedia.org/wiki/File:Portrait_of_Euclid_Wellcome_L0019815.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7192",  "Name": "Qin Shi Huang",  "BirthDate": "-0258-01-01T00:00:00Z",  "DeathDate": "-0209-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Qinshihuang.jpg",  "SiteLinksCnt": 196,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"99598":{"pageid":99598,"ns":0,"title":"Qin Shi Huang","extract":"Qin Shi Huang (February 259 \u2013 12 July 210 BC) was the founder of the Qin dynasty and the first emperor of China. Rather than maintain the title of \"king\" borne by the previous Shang and Zhou rulers, he assumed the invented title of \"emperor\", which would see continuous use by monarchs in China and other countries for the next two millennia. \nBorn in Handan, the capital of Zhao, as Ying Zheng (\u5b34\u653f) or Zhao Zheng (\u8d99\u653f), his parents were King Zhuangxiang of Qin and Lady Zhao. The wealthy merchant L\u00fc Buwei assisted him in succeeding his father as the king of Qin, after which he became King Zheng of Qin (\u79e6\u738b\u653f). By 221 BC, he had conquered all the other warring states and unified all of China, and he ascended the throne as China's first emperor. During his reign, his generals greatly expanded the size of the Chinese state: campaigns south of Chu permanently added the Yue lands of Hunan and Guangdong to the Sinosphere, and campaigns in Inner Asia conquered the Ordos Plateau from the nomadic Xiongnu, although the Xiongnu later rallied under Modu Chanyu.\nQin Shi Huang also worked with his minister Li Si to enact major economic and political reforms aimed at the standardization of the diverse practices among earlier Chinese states. He is traditionally said to have banned and burned many books and executed scholars. His public works projects included the incorporation of diverse state walls into a single Great Wall of China and a massive new national road system, as well as his city-sized mausoleum guarded by a life-sized Terracotta Army. He ruled until his death in 210 BC, during his fifth tour of eastern China.\nQin Shi Huang has often been portrayed as a tyrant and strict Legalist\u2014characterizations that stem partly from the scathing assessments made during the Han dynasty that succeeded the Qin. Since the mid-20th century, scholars have begun questioning this evaluation, inciting considerable discussion on the actual nature of his policies and reforms. According to the sinologist Michael Loewe \"few would contest the view that the achievements of his reign have exercised a paramount influence on the whole of China's subsequent history, marking the start of an epoch that closed in 1911.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7192")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7192",
+  "isRealHuman": true,
+  "birthDate": "-0258-02-01",
+  "deathDate": "-0209-07-12",
+  "ageAtDeath": 49,
+  "confidence": 95,
+  "confidenceExplained": "Modern references consistently identify Qin Shi Huang as born in February 259 BC and dead on 12 July 210 BC, with age at death given as 49. The exact birth day is not securely known, so I estimated it as 1 February; however, Wikidata's possible birth range still falls before the July death date, so the completed age remains 49.",
+  "shortDescriptionEn": "Qin Shi Huang, born Ying Zheng, was the founder of the Qin dynasty and the first emperor of a unified China. After defeating the rival Warring States, he centralized rule, standardized writing, weights, measures and coinage, expanded roads and walls, and left behind the famous mausoleum guarded by the Terracotta Army. He died in 210 BC during his fifth inspection tour of eastern China after becoming seriously ill; later tradition links his final years to an obsession with immortality, and mercury-based elixirs have often been suggested as a possible factor, though the exact cause remains uncertain.",
+  "shortDescriptionFr": "Qin Shi Huang, né Ying Zheng, fut le fondateur de la dynastie Qin et le premier empereur d’une Chine unifiée. Après avoir vaincu les royaumes rivaux des Royaumes combattants, il centralisa le pouvoir, standardisa l’écriture, les poids, les mesures et la monnaie, développa routes et murailles, et fit construire un immense mausolée protégé par l’armée de terre cuite. Il mourut en 210 av. J.-C. pendant sa cinquième tournée d’inspection dans l’est de l’empire, après être tombé gravement malade; la tradition associe ses dernières années à sa quête d’immortalité, avec l’hypothèse d’élixirs au mercure, sans certitude sur la cause exacte.",
+  "shortDescriptionDe": "Qin Shi Huang, geboren als Ying Zheng, war der Gründer der Qin-Dynastie und der erste Kaiser eines geeinten China. Nach dem Sieg über die rivalisierenden Reiche der Zeit der Streitenden Staaten zentralisierte er die Herrschaft, vereinheitlichte Schrift, Gewichte, Maße und Münzen, ließ Straßen und Mauern ausbauen und hinterließ sein gewaltiges Mausoleum mit der Terrakottaarmee. Er starb 210 v. Chr. während seiner fünften Inspektionsreise durch Ostchina, nachdem er schwer erkrankt war; seine letzten Jahre werden oft mit der Suche nach Unsterblichkeit und möglichen quecksilberhaltigen Elixieren verbunden, doch die genaue Todesursache ist ungewiss.",
+  "shortDescriptionEs": "Qin Shi Huang, nacido como Ying Zheng, fue el fundador de la dinastía Qin y el primer emperador de una China unificada. Tras derrotar a los demás Estados Combatientes, centralizó el gobierno, estandarizó la escritura, los pesos, las medidas y la moneda, impulsó redes de caminos y murallas, y dejó como legado su enorme mausoleo custodiado por el Ejército de Terracota. Murió en 210 a. C. durante su quinta gira de inspección por el este de China, después de enfermar gravemente; la tradición relaciona sus últimos años con la búsqueda de la inmortalidad y posibles elixires con mercurio, aunque la causa exacta no está demostrada.",
+  "shortDescriptionRu": "Цинь Шихуан, родившийся как Ин Чжэн, был основателем династии Цинь и первым императором объединённого Китая. Победив соперничающие царства эпохи Сражающихся царств, он централизовал власть, унифицировал письменность, меры, весы и монету, развивал дороги и стены, а также оставил грандиозный мавзолей с Терракотовой армией. Он умер в 210 году до н. э. во время пятой инспекционной поездки по востоку Китая после тяжёлой болезни; поздняя традиция связывает его последние годы с поиском бессмертия и возможным приёмом ртутных эликсиров, но точная причина смерти остаётся неясной.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+    "https://www.britannica.com/biography/Qin-Shi-Huang",
+    "https://www.wikidata.org/wiki/Q7192",
+    "https://commons.wikimedia.org/wiki/Category:Qin_Shi_Huang",
+    "https://www.liverpoolmuseums.org.uk/stories/who-was-chinas-first-emperor"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34597",  "Name": "James A. Garfield",  "BirthDate": "1831-11-19T00:00:00Z",  "DeathDate": "1881-09-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Abram%20Garfield%2C%20photo%20portrait%20seated.jpg",  "SiteLinksCnt": 147,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"40400":{"pageid":40400,"ns":0,"title":"James A. Garfield","extract":"James Abram Garfield (November 19, 1831 \u2013 September 19, 1881) was the 20th president of the United States, serving from March 1881 until his death in September that year after being shot in July. A preacher, lawyer, and Civil War general, Garfield served nine terms in the United States House of Representatives and is the only sitting member of the House to be elected president. Before he ran for president, the Ohio General Assembly had elected him to the U.S. Senate, a position he declined upon becoming president-elect.\nGarfield was born into poverty in a log cabin and grew up in northeast Ohio. After graduating from Williams College in 1856, he studied law and became an attorney. Garfield was a preacher in the Restoration Movement and president of the Western Reserve Eclectic Institute, affiliated with the Disciples. He was elected as a Republican member of the Ohio State Senate in 1859, serving until 1861. Garfield opposed Confederate secession, was a major general in the Union Army during the American Civil War, and fought in the battles of Middle Creek, Shiloh, and Chickamauga. He was elected to Congress in 1862 to represent Ohio's 19th district. Throughout his congressional service, Garfield firmly supported the gold standard and gained a reputation as a skilled orator. He initially agreed with Radical Republican views on Reconstruction but later favored a Moderate Republican\u2013aligned approach to civil rights enforcement for freedmen. Garfield's aptitude for mathematics extended to his own proof of the Pythagorean theorem, published in 1876, and his advocacy of using statistics to inform government policy.\nAt the 1880 Republican National Convention, delegates chose Garfield, who had not sought the White House, as a compromise presidential nominee on the 36th ballot. In the 1880 presidential election, he conducted a low-key front porch campaign and narrowly defeated the Democratic nominee, Winfield Scott Hancock. Garfield's accomplishments as president included his assertion of presidential authority against senatorial courtesy in executive appointments, a purge of corruption in the Post Office, and his appointment of a Supreme Court justice. He advocated for agricultural technology, an educated electorate, and civil rights for African Americans. He also proposed substantial civil service reforms, which were passed by Congress in 1883 as the Pendleton Civil Service Reform Act and signed into law by his successor, Chester A. Arthur. Garfield was a member of the intraparty \"Half-Breed\" faction that used the powers of the presidency to defy the powerful \"Stalwart\" Senator Roscoe Conkling from New York. He did this by appointing Blaine faction leader William H. Robertson to the lucrative post of Collector of the Port of New York. The ensuing political battle resulted in Robertson's confirmation and the resignations of Conkling and Thomas C. Platt from the Senate.\nOn July 2, 1881, Garfield was shot by Charles J. Guiteau, a deluded office seeker. He died on September 19 from infections related to the wounds and was succeeded by Vice President Chester A. Arthur. Due to Garfield's brief term in office and lack of major changes during his tenure, historians tend to rank him as a below-average president or omit his name entirely from rankings, though some view Garfield's potential favorably, praising him for anti-corruption and pro-civil rights stances."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34597")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q34597",
+  "isRealHuman": true,
+  "birthDate": "1831-11-19",
+  "deathDate": "1881-09-19",
+  "ageAtDeath": 49,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable biographical sources agree that James A. Garfield was born on 1831-11-19 and died on 1881-09-19. Since he died two months before his 50th birthday, his age at death was 49.",
+  "shortDescriptionEn": "James Abram Garfield was the 20th president of the United States, a former Union general, educator, lawyer, preacher, and long-serving congressman from Ohio. Elected in 1880 as a compromise Republican nominee, he is remembered for his intellect, support for civil rights, anti-corruption instincts, and advocacy of civil service reform. Garfield was shot by Charles J. Guiteau on July 2, 1881, only months into his presidency, and died on September 19, 1881, after infections related to the wound.",
+  "shortDescriptionFr": "James Abram Garfield fut le 20e président des États-Unis, ancien général de l’Union, éducateur, avocat, prédicateur et député de longue date de l’Ohio. Élu en 1880 comme candidat républicain de compromis, il est resté connu pour son intelligence, son soutien aux droits civiques, son opposition à la corruption et son intérêt pour la réforme de la fonction publique. Garfield fut blessé par balle par Charles J. Guiteau le 2 juillet 1881, quelques mois seulement après son entrée en fonction, et mourut le 19 septembre 1881 d’infections liées à sa blessure.",
+  "shortDescriptionDe": "James Abram Garfield war der 20. Präsident der Vereinigten Staaten, zuvor General der Union, Pädagoge, Anwalt, Prediger und langjähriger Kongressabgeordneter aus Ohio. 1880 wurde er als republikanischer Kompromisskandidat gewählt und blieb für seine Intelligenz, seine Unterstützung der Bürgerrechte, seinen Kampf gegen Korruption und sein Interesse an Reformen des öffentlichen Dienstes in Erinnerung. Garfield wurde am 2. Juli 1881, nur wenige Monate nach Amtsantritt, von Charles J. Guiteau angeschossen und starb am 19. September 1881 an Infektionen infolge der Wunde.",
+  "shortDescriptionEs": "James Abram Garfield fue el vigésimo presidente de Estados Unidos, además de general de la Unión, educador, abogado, predicador y congresista por Ohio durante muchos años. Elegido en 1880 como candidato republicano de compromiso, es recordado por su inteligencia, su defensa de los derechos civiles, su postura contra la corrupción y su impulso a la reforma del servicio civil. Garfield fue baleado por Charles J. Guiteau el 2 de julio de 1881, pocos meses después de asumir la presidencia, y murió el 19 de septiembre de 1881 por infecciones relacionadas con la herida.",
+  "shortDescriptionRu": "Джеймс Абрам Гарфилд был 20-м президентом США, бывшим генералом армии Союза, педагогом, юристом, проповедником и многолетним конгрессменом от Огайо. Избранный в 1880 году как компромиссный кандидат республиканцев, он запомнился умом, поддержкой гражданских прав, антикоррупционными взглядами и стремлением реформировать государственную службу. 2 июля 1881 года, всего через несколько месяцев после вступления в должность, Гарфилд был ранен Чарльзом Дж. Гито и умер 19 сентября 1881 года от инфекций, связанных с ранением.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_A._Garfield",
+    "https://millercenter.org/president/garfield",
+    "https://millercenter.org/president/garfield/death-of-the-president",
+    "https://www.whitehousehistory.org/bios/james-garfield",
+    "https://www.britannica.com/biography/James-A-Garfield"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42",  "Name": "Douglas Adams",  "BirthDate": "1952-03-11T00:00:00Z",  "DeathDate": "2001-05-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Douglas%20adams%20portrait.jpg",  "SiteLinksCnt": 132,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"8091":{"pageid":8091,"ns":0,"title":"Douglas Adams","extract":"Douglas No\u00ebl Adams (11 March 1952 \u2013 11 May 2001) was an English author, humourist, and screenwriter. He was best known as the creator of The Hitchhiker's Guide to the Galaxy, a 1978 radio comedy series which he adapted into a \"trilogy\" of five books that sold over 14 million copies in his lifetime. He also adapted it into a 1981 television series, a 1984 video game and a 2005 feature film.\nAdams wrote the novels Dirk Gently's Holistic Detective Agency (1987) and The Long Dark Tea-Time of the Soul (1988), and co-wrote The Meaning of Liff (1983), The Deeper Meaning of Liff (1990) and Last Chance to See (1990). He wrote three serials for the television series Doctor Who including the unaired serial Shada and City of Death (1979) which he co-wrote with producer Graham Williams, and served as script editor for its 17th season. He co-wrote the sketch \"Patient Abuse\" for the final episode of Monty Python's Flying Circus. A posthumous collection of his selected works, including chapters of his final unfinished novel, was published as The Salmon of Doubt in 2002.\nKnown for his sharp wit and procrastination, Adams called himself a \"radical atheist\" and was an advocate for environmentalism and conservation. He was a lover of music, fast cars, technological innovation, and the Apple Macintosh.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q42",
+  "isRealHuman": true,
+  "birthDate": "1952-03-11",
+  "deathDate": "2001-05-11",
+  "ageAtDeath": 49,
+  "confidence": 100,
+  "confidenceExplained": "The identity and dates are confirmed by multiple reliable public sources, including Wikipedia and Encyclopaedia Britannica. The age is straightforward to calculate: Douglas Adams was born on 1952-03-11 and died on 2001-05-11, two months after his 49th birthday.",
+  "shortDescriptionEn": "Douglas Noël Adams was an English author, humorist, screenwriter, and technology enthusiast, best remembered as the creator of The Hitchhiker’s Guide to the Galaxy and the Dirk Gently novels. His comic imagination mixed science fiction, philosophy, absurdity, and sharp wordplay, making him one of Britain’s most distinctive modern comic writers. Adams died suddenly in Santa Barbara, California, after collapsing from a heart attack while resting from a workout at a gym; he was 49.",
+  "shortDescriptionFr": "Douglas Noël Adams était un écrivain, humoriste, scénariste et passionné de technologie anglais, surtout connu comme le créateur du Guide du voyageur galactique et des romans Dirk Gently. Son humour mêlait science-fiction, philosophie, absurdité et jeux de mots avec une voix très reconnaissable. Adams est mort soudainement à Santa Barbara, en Californie, après s’être effondré à la suite d’une crise cardiaque alors qu’il se reposait après une séance d’entraînement dans une salle de sport ; il avait 49 ans.",
+  "shortDescriptionDe": "Douglas Noël Adams war ein englischer Schriftsteller, Humorist, Drehbuchautor und Technikliebhaber, vor allem bekannt als Schöpfer von Per Anhalter durch die Galaxis und der Dirk-Gently-Romane. Sein Witz verband Science-Fiction, Philosophie, Absurdität und sprachliche Brillanz zu einem unverwechselbaren Ton. Adams starb plötzlich in Santa Barbara, Kalifornien, nachdem er sich nach einem Training in einem Fitnessstudio ausruhte und infolge eines Herzinfarkts zusammenbrach; er war 49 Jahre alt.",
+  "shortDescriptionEs": "Douglas Noël Adams fue un escritor, humorista, guionista y entusiasta de la tecnología inglés, recordado sobre todo como el creador de Guía del autoestopista galáctico y de las novelas de Dirk Gently. Su imaginación cómica combinó ciencia ficción, filosofía, absurdo y juegos de palabras con una voz inconfundible. Adams murió repentinamente en Santa Bárbara, California, tras sufrir un infarto mientras descansaba después de hacer ejercicio en un gimnasio; tenía 49 años.",
+  "shortDescriptionRu": "Дуглас Ноэль Адамс был английским писателем, юмористом, сценаристом и энтузиастом технологий, наиболее известным как создатель «Автостопом по галактике» и романов о Дирке Джентли. Его комический стиль сочетал научную фантастику, философию, абсурд и остроумную игру слов, сделав его одним из самых узнаваемых британских авторов своего времени. Адамс внезапно умер в Санта-Барбаре, Калифорния, после сердечного приступа, когда отдыхал после тренировки в спортзале; ему было 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Douglas_Adams",
+    "https://www.britannica.com/biography/Douglas-Adams",
+    "https://www.theguardian.com/theguardian/2003/jun/14/guardianletters4",
+    "https://www.npg.org.uk/collections/search/portrait/mw58419/Douglas-Adams",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Douglas%20adams%20portrait.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q34503",  "Name": "Mehmed II",  "BirthDate": "1432-04-08T00:00:00Z",  "DeathDate": "1481-05-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fatih%20Sultan%20Mehmed%20Han%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AE%D8%A7%D9%86%20%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD.jpg",  "SiteLinksCnt": 121,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"19046":{"pageid":19046,"ns":0,"title":"Mehmed II","extract":"Mehmed II  (Ottoman Turkish: \u0645\u062d\u0645\u062f \u062b\u0627\u0646\u0649, romanized: Me\u1e25emmed-i s\u0331\u0101n\u012b; Turkish: II. Mehmed, pronounced [icin\u02c8d\u0292i \u02c8mehmet]; 30 March 1432 \u2013 3 May 1481), commonly known as Mehmed the Conqueror (Ottoman Turkish: \u0627\u0628\u0648 \u0627\u0644\u0641\u062a\u062d, romanized: Eb\u016b'l-fet\u1e25, lit.\u2009'the Father of Conquest'; Turkish: F\u00e2tih Sultan Mehmed), was the sultan of the Ottoman Empire twice, from August 1444 to September 1446 and then later from February 1451 to May 1481.\nDuring Mehmed II's first reign, he defeated the crusade led by John Hunyadi after Hungarian incursions into his lands violated the Treaty of Edirne and Szeged. When Mehmed II ascended the throne again in 1451, he strengthened the Ottoman Navy and made preparations to attack Constantinople. At the age of 21, he conquered Constantinople and brought an end to the Byzantine Empire. After the conquest, Mehmed claimed the title caesar of Rome (Ottoman Turkish: \u0642\u06cc\u0635\u0631 \u0631\u0648\u0645, romanized: qay\u1e63ar-i r\u016bm), based on the fact that Constantinople had been the seat and capital of the surviving Eastern Roman Empire since its consecration in 330 AD by Emperor Constantine I. The claim was soon recognized by the Patriarchate of Constantinople, but rejected by most European monarchs.\nMehmed continued his conquests and reunified Anatolia, and campaigned as far west as Bosnia in Southeast Europe. At home, he implemented many political and social reforms. He was a patron of the arts and sciences, and by the end of his reign, Constantinople had been transformed into a thriving imperial capital. He is considered a hero in modern-day Turkey and parts of the wider Muslim world, with Istanbul's Fatih district, Fatih Sultan Mehmet Bridge and Fatih Mosque being named after him."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q34503")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q34503",
+  "isRealHuman": true,
+  "birthDate": "1432-03-30",
+  "deathDate": "1481-05-03",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The figure is consistently identified as Mehmed II / Mehmed the Conqueror. Major references give the conventional historical dates as 1432-03-30 and 1481-05-03, while the prompt's 1432-04-08 and 1481-05-12 are compatible proleptic-Gregorian equivalents. Both calculations give an age at death of 49. The exact medical cause of death is less certain, but the age is very well supported.",
+  "shortDescriptionEn": "Mehmed II, known as Mehmed the Conqueror, was the Ottoman sultan whose capture of Constantinople in 1453 ended the Byzantine Empire and transformed the city into the empire’s great capital. A brilliant and ambitious ruler, he expanded Ottoman power across Anatolia and the Balkans while strengthening law, administration, architecture, and learning. In 1481, while setting out on another campaign, he became gravely ill near Gebze; gout was reported, and later accounts raised the possibility of poisoning. He died aged 49.",
+  "shortDescriptionFr": "Mehmed II, dit Mehmed le Conquérant, fut le sultan ottoman qui prit Constantinople en 1453, mettant fin à l’Empire byzantin et faisant de la ville un centre impérial majeur. Chef militaire redoutable et souverain réformateur, il étendit la puissance ottomane en Anatolie et dans les Balkans, tout en favorisant le droit, l’architecture et le savoir. En 1481, au début d’une nouvelle campagne, il tomba gravement malade près de Gebze; la goutte est mentionnée, avec des soupçons ultérieurs d’empoisonnement. Il mourut à 49 ans.",
+  "shortDescriptionDe": "Mehmed II, bekannt als Mehmed der Eroberer, war der osmanische Sultan, der 1453 Konstantinopel einnahm, das Byzantinische Reich beendete und die Stadt zu einem neuen imperialen Zentrum machte. Als energischer Feldherr und Herrscher erweiterte er die osmanische Macht in Anatolien und auf dem Balkan und förderte Verwaltung, Recht, Baukunst und Gelehrsamkeit. 1481 erkrankte er schwer, als er zu einem weiteren Feldzug aufbrach, nahe Gebze; Gicht wurde berichtet, auch Vergiftung wurde vermutet. Er starb mit 49 Jahren.",
+  "shortDescriptionEs": "Mehmed II, conocido como Mehmed el Conquistador, fue el sultán otomano que tomó Constantinopla en 1453, puso fin al Imperio bizantino y convirtió la ciudad en una gran capital imperial. Fue un gobernante ambicioso y un comandante excepcional, amplió el poder otomano en Anatolia y los Balcanes e impulsó la ley, la administración, la arquitectura y el saber. En 1481, al iniciar otra campaña, cayó gravemente enfermo cerca de Gebze; se menciona la gota y algunas fuentes sugieren posible envenenamiento. Murió a los 49 años.",
+  "shortDescriptionRu": "Мехмед II, известный как Мехмед Завоеватель, был османским султаном, взявшим Константинополь в 1453 году, положив конец Византийской империи и превратив город в важнейшую столицу Османов. Он был выдающимся полководцем и энергичным правителем, расширил власть империи в Анатолии и на Балканах, укреплял законы, управление, архитектуру и образование. В 1481 году, отправляясь в новый поход, он тяжело заболел близ Гебзе; упоминается подагра, а также возможное отравление. Он умер в возрасте 49 лет.",
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Fatih%20Sultan%20Mehmed%20Han%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AE%D8%A7%D9%86%20%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sultan%20Mehmet%20II.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Mehmed.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Mehmed_II_Doppelbildnis.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mehmed_II",
+    "https://www.britannica.com/biography/Mehmed-II-Ottoman-sultan",
+    "https://www.britannica.com/biography/Mehmed-II-Ottoman-sultan/Mehmeds-empire",
+    "https://www.wikidata.org/wiki/Q34503",
+    "https://commons.wikimedia.org/wiki/Fatih_Sultan_Mehmed",
+    "https://commons.wikimedia.org/wiki/File:Sultan_Mehmet_II.jpg",
+    "https://commons.wikimedia.org/wiki/File:Mehmed.jpg",
+    "https://commons.wikimedia.org/wiki/File:Mehmed_II_Doppelbildnis.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q120180",  "Name": "Alexander III of Russia",  "BirthDate": "1845-03-10T00:00:00Z",  "DeathDate": "1894-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Tsar%20Alexander%20III%20c.%201885.jpg",  "SiteLinksCnt": 97,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"1592":{"pageid":1592,"ns":0,"title":"Alexander III of Russia","extract":"Alexander III (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 III \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0420\u043e\u043c\u0430\u043d\u043e\u0432, romanized: Aleksandr III Aleksandrovich Romanov; 10 March 1845 \u2013 1 November 1894) was Emperor of Russia, King of Poland and Grand Duke of Finland from 13 March 1881 until his death in 1894. He was highly reactionary in domestic affairs and reversed some of the liberal reforms of his father, Alexander II, a policy of \"counter-reforms\" (Russian: \u043a\u043e\u043d\u0442\u0440\u0440\u0435\u0444\u043e\u0440\u043c\u044b).\nDuring his reign, Russia fought no major wars, and he came to be known as The Peacemaker (Russian: \u0426\u0430\u0440\u044c-\u041c\u0438\u0440\u043e\u0442\u0432\u043e\u0440\u0435\u0446, romanized: Tsar\u2019-Mirotvorets \nRussian pronunciation: [(t)s\u0251\u02d0r m\u02b2\u026ar\u0250\u02c8tvor\u02b2\u026at\u0361s]), a laudatory title enduring into 21st century historiography. His major foreign policy achievement was the Franco-Russian Alliance, a major shift in international relations that eventually embroiled Russia in World War I. His political legacy represented a direct challenge to the European cultural order set forth by German statesman Otto von Bismarck, intermingling Russian influences with the shifting balances of power."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q120180")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q120180",
+  "isRealHuman": true,
+  "birthDate": "1845-03-10",
+  "deathDate": "1894-11-01",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The identification is clear: the Wikidata ID, name, dates, title, and Wikipedia extract all point to Alexander III of Russia. Major references agree on 10 March 1845 as the Gregorian birth date and 1 November 1894 as the Gregorian death date. From 1845-03-10 to 1894-11-01 he had reached his 49th birthday but not his 50th, so the age at death is 49. The only minor caveat is the historical Old Style/New Style calendar notation in Russian sources, but the normalized dates consistently calculate to the same integer age.",
+  "shortDescriptionEn": "Alexander III of Russia was Emperor of Russia, King of Poland, and Grand Duke of Finland from 1881 until 1894. A firm autocrat, he reversed many of Alexander II’s liberal reforms, promoted Russian nationalism, and became known as “the Peacemaker” because Russia fought no major wars during his reign. His later years were marked by declining health, and in 1894 he became gravely ill with kidney disease. Too weak to travel farther, he remained at Livadia in Crimea, where he died on 1 November 1894 at the age of 49.",
+  "shortDescriptionFr": "Alexandre III de Russie fut empereur de Russie, roi de Pologne et grand-duc de Finlande de 1881 à 1894. Autocrate convaincu, il revint sur plusieurs réformes libérales de son père Alexandre II, encouragea le nationalisme russe et fut surnommé « le Pacificateur », car la Russie ne mena pas de grande guerre sous son règne. Ses dernières années furent assombries par une santé déclinante. En 1894, atteint d’une grave maladie rénale, il resta trop faible pour quitter Livadia, en Crimée, où il mourut le 1er novembre 1894 à l’âge de 49 ans.",
+  "shortDescriptionDe": "Alexander III. von Russland war von 1881 bis 1894 Kaiser von Russland, König von Polen und Großfürst von Finnland. Als entschiedener Autokrat machte er viele liberale Reformen seines Vaters Alexander II. rückgängig, förderte den russischen Nationalismus und wurde als „Friedensstifter“ bekannt, weil Russland während seiner Herrschaft keinen großen Krieg führte. In seinen letzten Jahren verschlechterte sich seine Gesundheit deutlich. 1894 erkrankte er schwer an einem Nierenleiden und blieb, zu schwach für weitere Reisen, in Livadia auf der Krim, wo er am 1. November 1894 im Alter von 49 Jahren starb.",
+  "shortDescriptionEs": "Alejandro III de Rusia fue emperador de Rusia, rey de Polonia y gran duque de Finlandia desde 1881 hasta 1894. Autócrata firme, revirtió varias reformas liberales de su padre Alejandro II, impulsó el nacionalismo ruso y recibió el apodo de “el Pacificador” porque Rusia no libró grandes guerras durante su reinado. Sus últimos años estuvieron marcados por un deterioro creciente de la salud. En 1894 sufrió una grave enfermedad renal y, demasiado débil para seguir viajando, permaneció en Livadia, Crimea, donde murió el 1 de noviembre de 1894 a los 49 años.",
+  "shortDescriptionRu": "Александр III был императором России, царём Польским и великим князем Финляндским с 1881 по 1894 год. Убеждённый сторонник самодержавия, он свернул многие либеральные реформы Александра II, усиливал русский национализм и получил прозвище «Миротворец», поскольку при нём Россия не вела крупных войн. Последние годы его жизни были омрачены ухудшением здоровья. В 1894 году тяжёлая болезнь почек резко ослабила императора; он остановился в Ливадии в Крыму, где умер 1 ноября 1894 года в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_III_of_Russia",
+    "https://www.britannica.com/biography/Alexander-III-emperor-of-Russia",
+    "https://www.saint-petersburg.com/royal-family/alexander-iii/",
+    "https://www.alexanderpalace.org/palace/alexbio.php",
+    "https://www.wikidata.org/wiki/Q120180"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q128267",  "Name": "Joseph",  "BirthDate": "-0029-01-01T00:00:00Z",  "DeathDate": "0020-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Scuola%20veneta%20-%20Altare%20di%20San%20Giuseppe%2C%20gi%C3%A0%20di%20San%20Marco%20-%20Santi%20Giovanni%20e%20Paolo.jpg",  "SiteLinksCnt": 97,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"19085400":{"pageid":19085400,"ns":0,"title":"Saint Joseph","extract":"According to the canonical Gospels, Joseph was a 1st-century Jewish man of Nazareth who was married to Mary, the mother of Jesus, and was the legal father of Jesus.\nJoseph is venerated as Saint Joseph in the Catholic Church, Eastern Orthodox Church, Oriental Orthodox Church, Anglicanism and Lutheranism. In Catholic traditions, Joseph is regarded as the patron saint of workers and is associated with various feast days. The month of March is dedicated to Saint Joseph. Pope Pius IX declared him to be both the patron and the protector of the Catholic Church, in addition to his patronages of the sick and of a holy death, due to the belief that he died in the presence of Jesus and Mary. Joseph has become patron of various dioceses and places. Being a patron saint of virgins, he is venerated as \"most chaste\". The veneration of the pure and most Chaste Heart of Joseph has, in contrast to the Most Sacred Heart of Jesus and the Immaculate Heart of Mary, no liturgical cultus, but is a private devotion.\nSeveral venerated images of Saint Joseph have been granted a decree of canonical coronation by a pontiff. Religious iconography often depicts him with lilies or spikenard. With the present-day growth of Mariology, the theological field of Josephology has also grown and since the 1950s centers for studying it have been formed."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q128267")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q128267",
+  "isRealHuman": true,
+  "birthDate": "-0029-01-01",
+  "deathDate": "0020-01-01",
+  "ageAtDeath": 49,
+  "confidence": 35,
+  "confidenceExplained": "Saint Joseph is a Gospel figure placed in 1st-century Nazareth, but no contemporary source gives his birth date, death date, or age. The best historical constraint is that he was alive when Jesus was twelve and was probably dead before Jesus' public ministry, certainly before the Crucifixion. I therefore used the supplied approximate chronology, around 30 BCE to 20 CE, which gives an estimated age of 49. Confidence is low because the number is a reasoned estimate, not a documented age.",
+  "shortDescriptionEn": "Saint Joseph was a 1st-century Jewish craftsman of Nazareth, husband of Mary and legal father of Jesus in the Christian Gospels. Remembered as a just, protective, and quietly decisive figure, he appears in the infancy narratives, the flight into Egypt, and the family’s life in Nazareth. His death is not described in the Gospels; tradition places it before Jesus’ public ministry, likely in Nazareth, and later devotion made him patron of a peaceful death because he was believed to have died in the presence of Jesus and Mary.",
+  "shortDescriptionFr": "Saint Joseph était un artisan juif du Ier siècle, originaire de Nazareth, époux de Marie et père légal de Jésus dans les Évangiles chrétiens. Figure discrète mais essentielle, il est associé aux récits de l’enfance, à la fuite en Égypte et à la vie familiale à Nazareth. Sa mort n’est pas racontée dans les Évangiles; la tradition la situe avant le ministère public de Jésus, probablement à Nazareth, et la piété chrétienne en a fait le patron d’une bonne mort parce qu’il aurait quitté ce monde auprès de Jésus et de Marie.",
+  "shortDescriptionDe": "Der heilige Joseph war ein jüdischer Handwerker des 1. Jahrhunderts aus Nazareth, der in den christlichen Evangelien als Ehemann Marias und gesetzlicher Vater Jesu erscheint. Er gilt als gerechter, schützender und pflichtbewusster Mann, verbunden mit den Kindheitserzählungen Jesu, der Flucht nach Ägypten und dem Leben der Familie in Nazareth. Sein Tod wird in den Evangelien nicht geschildert; die Überlieferung setzt ihn vor den Beginn des öffentlichen Wirkens Jesu, wohl in Nazareth, und verehrt Joseph als Patron eines friedlichen Todes, weil er nach frommer Vorstellung in der Nähe Jesu und Marias starb.",
+  "shortDescriptionEs": "San José fue un artesano judío del siglo I, de Nazaret, esposo de María y padre legal de Jesús según los Evangelios cristianos. Se le recuerda como una figura justa, protectora y silenciosamente decisiva, presente en los relatos de la infancia, la huida a Egipto y la vida familiar en Nazaret. Su muerte no aparece narrada en los Evangelios; la tradición la sitúa antes del ministerio público de Jesús, probablemente en Nazaret, y por ello llegó a ser venerado como patrono de la buena muerte, al creerse que murió acompañado por Jesús y María.",
+  "shortDescriptionRu": "Святой Иосиф был иудейским ремесленником I века из Назарета, мужем Марии и законным отцом Иисуса в христианских Евангелиях. Его образ связан с праведностью, заботой и тихой решительностью: он появляется в рассказах о детстве Иисуса, бегстве в Египет и жизни семьи в Назарете. Его смерть в Евангелиях не описана; традиция относит её ко времени до начала общественного служения Иисуса, вероятно в Назарете, а позднее почитание сделало Иосифа покровителем мирной смерти, поскольку считалось, что он умер рядом с Иисусом и Марией.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saint_Joseph",
+    "https://www.britannica.com/biography/Saint-Joseph",
+    "https://www.newadvent.org/cathen/08504a.htm",
+    "https://www.catholic.org/saints/saint.php?saint_id=4",
+    "https://www.catholic.com/magazine/online-edition/old-joseph-young-joseph",
+    "https://commons.wikimedia.org/wiki/File:Saint_Joseph_with_the_Infant_Jesus_by_Guido_Reni,_c_1635.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q129234",  "Name": "Hatshepsut",  "BirthDate": "-1506-01-01T00:00:00Z",  "DeathDate": "-1457-01-03T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/HatshepsutStatuette%20MuseumOfFineArtsBoston.png",  "SiteLinksCnt": 95,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"60832":{"pageid":60832,"ns":0,"title":"Hatshepsut","extract":"Hatshepsut ( haht-SHEPP-sut; c.\u20091505\u20131458 BC) was the sixth pharaoh of the Eighteenth Dynasty of Egypt, ruling first as regent, then as queen regnant from c.\u20091479 BC until c.\u20091458 BC (Low Chronology) and the Great Royal Wife of Pharaoh Thutmose II. She was Egypt's second confirmed woman who ruled in her own right, the first being Sobekneferu/Neferusobek in the Twelfth Dynasty. \nHatshepsut was the daughter of Thutmose I and Great Royal Wife, Ahmose. Upon the death of her husband and half-brother Thutmose II, she had initially ruled as regent to her stepson, Thutmose III, who inherited the throne at the age of two. Several years into her regency, Hatshepsut assumed the position of pharaoh and adopted the full royal titulary, making her a co-ruler alongside Thutmose III. In order to establish herself in the Egyptian patriarchy, she took on traditionally male roles and was depicted as a male pharaoh, with physically masculine traits and traditionally male garb. She emphasized both the qualities of men and women to convey the idea that she was both a mother and father to the realm. Hatshepsut's reign was a period of great prosperity and general peace. One of the most prolific builders in Ancient Egypt, she oversaw large-scale construction projects such as the Karnak Temple Complex, the Red Chapel, the Speos Artemidos and most famously, the Mortuary Temple of Hatshepsut at Deir el-Bahari. \nHatshepsut presumably died in Year 22 of the reign of Thutmose III. Towards the end of the reign of Thutmose III and into the reign of his son Amenhotep II, an attempt was made to remove her from official accounts of Egyptian historiography: her statues were destroyed, her monuments were defaced, and many of her achievements were ascribed to other pharaohs.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q129234")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q129234",
+  "isRealHuman": true,
+  "birthDate": "-1503-01-01",
+  "deathDate": "-1457-01-16",
+  "ageAtDeath": 46,
+  "confidence": 55,
+  "confidenceExplained": "The death date is relatively well anchored to 16 January 1458 BCE in the low chronology, but Hatshepsut's birth year is approximate and varies by source. Current references place her birth between about 1505 and 1495 BCE, while another reputable summary gives around 1504 BCE. I used 1504 BCE as a practical single estimate, producing age 46. Ages from the late 30s to about 50 are possible depending on the chosen birth estimate and whether the proposed mummy identification is accepted.",
+  "shortDescriptionEn": "Hatshepsut was one of ancient Egypt’s most powerful rulers, an 18th-Dynasty queen who first governed as regent for Thutmose III and then took the full titles and regalia of pharaoh. Her reign favored trade, wealth, religious display, and ambitious building, including major work at Karnak and her dramatic mortuary temple at Deir el-Bahari. She probably died in 1458 BCE at about 46; the cause is unknown, though later theories have suggested illness such as cancer, and after her death parts of her image and record were deliberately erased.",
+  "shortDescriptionFr": "Hatchepsout fut l’une des dirigeantes les plus puissantes de l’Égypte ancienne, une reine de la XVIIIe dynastie qui gouverna d’abord comme régente de Thoutmôsis III avant d’adopter les titres et les attributs complets du pharaon. Son règne fut marqué par le commerce, la richesse, l’affirmation religieuse et de grands chantiers, notamment à Karnak et dans son temple funéraire de Deir el-Bahari. Elle mourut probablement en 1458 av. J.-C. vers 46 ans; la cause reste inconnue, même si certaines hypothèses évoquent une maladie comme le cancer, et une partie de son souvenir fut ensuite effacée des monuments.",
+  "shortDescriptionDe": "Hatschepsut war eine der mächtigsten Herrscherinnen des alten Ägypten, eine Königin der 18. Dynastie, die zunächst als Regentin für Thutmosis III. regierte und später die vollen Titel und Insignien eines Pharaos annahm. Ihre Herrschaft stand für Handel, Wohlstand, religiöse Selbstdarstellung und große Bauprojekte, darunter Arbeiten in Karnak und ihr eindrucksvoller Totentempel in Deir el-Bahari. Sie starb wahrscheinlich 1458 v. Chr. im Alter von etwa 46 Jahren; die Todesursache ist unbekannt, auch wenn Krankheiten wie Krebs vermutet wurden, und nach ihrem Tod wurden Teile ihres Andenkens auf Monumenten getilgt.",
+  "shortDescriptionEs": "Hatshepsut fue una de las gobernantes más poderosas del antiguo Egipto, una reina de la dinastía XVIII que primero actuó como regente de Tutmosis III y después asumió los títulos y atributos completos de faraón. Su reinado se asoció con comercio, prosperidad, legitimidad religiosa y grandes obras, entre ellas construcciones en Karnak y su imponente templo funerario en Deir el-Bahari. Probablemente murió en 1458 a. C. a los 46 años; se desconoce la causa, aunque se han propuesto enfermedades como el cáncer, y tras su muerte parte de su imagen y memoria fue borrada de monumentos.",
+  "shortDescriptionRu": "Хатшепсут была одной из самых влиятельных правительниц Древнего Египта: царица XVIII династии сначала правила как регент при Тутмосе III, а затем приняла полные титулы и регалии фараона. Ее правление связывают с торговым процветанием, религиозной легитимацией власти и масштабным строительством, включая работы в Карнаке и знаменитый заупокойный храм в Дейр-эль-Бахри. Вероятно, она умерла в 1458 году до н. э. примерно в 46 лет; причина смерти неизвестна, хотя выдвигались версии о болезни, например раке, а после смерти часть ее изображений и упоминаний была намеренно уничтожена.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/HatshepsutStatuette%20MuseumOfFineArtsBoston.png",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Hatshepsut%201.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Hatshepsut-CollosalGraniteSphinx01_MetropolitanMuseum.png",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sphinx_Metropolitan.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hatshepsut",
+    "https://www.britannica.com/biography/Hatshepsut",
+    "https://www.worldhistory.org/hatshepsut/",
+    "https://kids.nationalgeographic.com/history/article/hatshepsut",
+    "https://www.smithsonianmag.com/science-nature/egyptian-mummy-identified-as-legendary-hatshepsut-180940772/",
+    "https://commons.wikimedia.org/wiki/File:Hatshepsut_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hatshepsut-CollosalGraniteSphinx01_MetropolitanMuseum.png",
+    "https://commons.wikimedia.org/wiki/File:Sphinx_Metropolitan.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q119702",  "Name": "Anne of Great Britain",  "BirthDate": "1665-02-06T00:00:00Z",  "DeathDate": "1714-08-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dahl%2C%20Michael%20-%20Queen%20Anne%20-%20NPG%206187.jpg",  "SiteLinksCnt": 94,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"46684":{"pageid":46684,"ns":0,"title":"Anne, Queen of Great Britain","extract":"Anne (6 February 1665 \u2013 1 August 1714) was Queen of England, Scotland, and Ireland from 8 March 1702, and Queen of Great Britain and Ireland following the ratification of the Acts of Union 1707 merging the kingdoms of England and Scotland, until her death in 1714.\nAnne was born during the reign of her uncle King Charles II. Her father was Charles's younger brother and heir presumptive, James, whose suspected Roman Catholicism was unpopular in England. On Charles's instructions, Anne and her elder sister Mary were raised as Anglicans. Mary married her Dutch Protestant cousin, William III of Orange, in 1677, and Anne married Prince George of Denmark, a Lutheran, in 1683. On Charles's death in 1685, James succeeded to the throne, but three years later he was deposed in the Glorious Revolution of 1688. Mary and William became joint monarchs. Although the sisters had been close, disagreements over Anne's finances, status, and choice of acquaintances arose shortly after Mary's accession and they became estranged. William and Mary had no children. After Mary's death in 1694, William reigned alone until his own death in 1702, when Anne succeeded him.\nDuring her reign, Anne favoured moderate Tory politicians, who were more likely to share her Anglican religious views than their opponents, the Whigs. The Whigs grew more powerful during the course of the War of the Spanish Succession, until 1710 when Anne dismissed many of them from office. Her close friendship with Sarah Churchill, Duchess of Marlborough, turned sour as the result of political differences. The Duchess took revenge with an unflattering description of the Queen in her memoirs, which was widely accepted by historians until Anne was reassessed in the late 20th century.\nAnne was plagued by poor health throughout her life, and from her thirties she grew increasingly ill and obese. Despite 17 pregnancies, she died without surviving issue and was the last monarch of the House of Stuart. The loss of her young son, Prince William, precipitated a potential succession crisis.  Under the Act of Settlement 1701, which excluded all Catholics, Anne was succeeded by her second cousin George I of the House of Hanover."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q119702")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q119702",
+  "isRealHuman": true,
+  "birthDate": "1665-02-06",
+  "deathDate": "1714-08-01",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The birth date, death date, and age at death are directly supported by multiple reliable sources, including Wikipedia and Britannica. The dates are historical Old Style British dates, but converting consistently does not change the integer age: she had already passed her birthday in 1714.",
+  "shortDescriptionEn": "Anne, Queen of Great Britain and Ireland, was the last Stuart monarch and the ruler under whom England and Scotland were united by the Acts of Union in 1707. Her reign was marked by the War of the Spanish Succession, fierce Whig-Tory rivalries, and the growing power of ministers. Chronically ill for much of her life and devastated by the deaths of all her children, she became unable to walk in her final years, suffered a stroke on 30 July 1714, and died at Kensington Palace on 1 August 1714, aged 49.",
+  "shortDescriptionFr": "Anne, reine de Grande-Bretagne et d’Irlande, fut la dernière souveraine de la maison Stuart et régna au moment où l’Angleterre et l’Écosse furent unies par les Actes d’Union de 1707. Son règne fut marqué par la guerre de Succession d’Espagne, les rivalités entre whigs et tories et l’influence croissante des ministres. Longtemps affaiblie par la maladie et bouleversée par la mort de tous ses enfants, elle ne pouvait presque plus marcher à la fin de sa vie, subit une attaque le 30 juillet 1714 et mourut au palais de Kensington le 1er août 1714, à 49 ans.",
+  "shortDescriptionDe": "Anne, Königin von Großbritannien und Irland, war die letzte Monarchin aus dem Haus Stuart und regierte während der Vereinigung Englands und Schottlands durch die Acts of Union von 1707. Ihre Herrschaft war geprägt vom Spanischen Erbfolgekrieg, Machtkämpfen zwischen Whigs und Tories und dem wachsenden Einfluss ihrer Minister. Sie litt zeitlebens unter schwerer Krankheit und verlor alle ihre Kinder; in ihren letzten Jahren konnte sie kaum noch gehen, erlitt am 30. Juli 1714 einen Schlaganfall und starb am 1. August 1714 im Kensington Palace im Alter von 49 Jahren.",
+  "shortDescriptionEs": "Ana, reina de Gran Bretaña e Irlanda, fue la última monarca de la Casa de Estuardo y gobernó durante la unión de Inglaterra y Escocia mediante las Actas de Unión de 1707. Su reinado estuvo marcado por la guerra de Sucesión española, las luchas entre whigs y tories y el creciente peso político de sus ministros. Afectada por una salud frágil durante gran parte de su vida y por la muerte de todos sus hijos, en sus últimos años apenas podía caminar; sufrió un derrame el 30 de julio de 1714 y murió en el palacio de Kensington el 1 de agosto de 1714, a los 49 años.",
+  "shortDescriptionRu": "Анна, королева Великобритании и Ирландии, была последней правительницей из династии Стюартов и царствовала в период объединения Англии и Шотландии Актами об унии 1707 года. Ее правление прошло на фоне войны за испанское наследство, соперничества вигов и тори и усиления роли министров. Всю жизнь она страдала от слабого здоровья и пережила смерть всех своих детей; в последние годы почти не могла ходить, 30 июля 1714 года перенесла инсульт и умерла в Кенсингтонском дворце 1 августа 1714 года в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain",
+    "https://www.britannica.com/biography/Anne-queen-of-Great-Britain-and-Ireland",
+    "https://www.royal.uk/queen-anne",
+    "https://www.hrp.org.uk/kensington-palace/history-and-stories/queen-anne/",
+    "https://www.npg.org.uk/collections/search/portrait/mw08095/Queen-Anne",
+    "https://commons.wikimedia.org/wiki/File:Dahl,_Michael_-_Queen_Anne_-_NPG_6187.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q134661",  "Name": "Q134661",  "BirthDate": "1815-11-02T00:00:00Z",  "DeathDate": "1864-12-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Photo%20of%20George%20Boole%20standing.png",  "SiteLinksCnt": 94,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"38298":{"pageid":38298,"ns":0,"title":"George Boole","extract":"George Boole ( BOOL; 2 November 1815 \u2013 8 December 1864) was an English autodidact, mathematician, philosopher and logician who served as the first professor of mathematics at Queen's College, Cork in Ireland.  He worked in the fields of differential equations and algebraic logic, and is best known as the author of The Laws of Thought (1854), which contains Boolean algebra. Boolean logic, essential to computer programming, is credited with helping to lay the foundations for the Information Age.\nBoole was the son of a shoemaker. He received a primary school education and learned Latin and modern languages through various means. At 16, he began teaching to support his family. He established his own school at 19 and later ran a boarding school in Lincoln. Boole was an active member of local societies and collaborated with fellow mathematicians. In 1849, he was appointed the first professor of mathematics at Queen's College, Cork (now University College Cork) in Ireland, where he met his future wife, Mary Everest. He continued his involvement in social causes and maintained connections with Lincoln. In 1864, Boole died due to fever-induced pleural effusion after developing pneumonia.\nBoole published around 50 articles and several separate publications in his lifetime. Some of his key works include a paper on early invariant theory and \"The Mathematical Analysis of Logic\", which introduced symbolic logic. Boole also wrote two systematic treatises: \"Treatise on Differential Equations\" and \"Treatise on the Calculus of Finite Differences\". He contributed to the theory of linear differential equations and the study of the sum of residues of a rational function. In 1847, Boole developed Boolean algebra, a fundamental concept in binary logic, which laid the groundwork for the algebra of logic tradition and forms the foundation of digital circuit design and modern computer science. Boole also attempted to discover a general method in probabilities, focusing on determining the consequent probability of events logically connected to given probabilities.\nBoole's work was expanded upon by various scholars, such as Charles Sanders Peirce and William Stanley Jevons. Boole's ideas later gained practical applications when Claude Shannon and Victor Shestakov employed Boolean algebra to optimize the design of electromechanical relay systems, leading to the development of modern electronic digital computers. His contributions to mathematics earned him various honours, including the Royal Society's first gold prize for mathematics, the Keith Medal, and honorary degrees from the Universities of Dublin and Oxford. University College Cork celebrated the 200th anniversary of Boole's birth in 2015, highlighting his significant impact on the digital age."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q134661")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q134661",
+  "isRealHuman": true,
+  "birthDate": "1815-11-02",
+  "deathDate": "1864-12-08",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "George Boole's birth and death dates are consistently reported by multiple biographical sources. Since he was born on 1815-11-02 and died on 1864-12-08, he had already passed his 49th birthday by the time of death.",
+  "shortDescriptionEn": "George Boole was an English self-taught mathematician, philosopher, and logician whose work transformed symbolic logic and laid foundations for Boolean algebra, a cornerstone of modern computing and digital circuit design. He became the first professor of mathematics at Queen's College, Cork, and wrote the influential The Laws of Thought. In late 1864, after walking to lecture through heavy rain and remaining in wet clothes, he developed pneumonia and died in Cork from related complications at the age of 49.",
+  "shortDescriptionFr": "George Boole était un mathématicien, philosophe et logicien anglais largement autodidacte, dont les travaux ont transformé la logique symbolique et posé les bases de l’algèbre booléenne, essentielle à l’informatique moderne et aux circuits numériques. Il fut le premier professeur de mathématiques au Queen's College de Cork et publia l’ouvrage majeur The Laws of Thought. À la fin de 1864, après avoir marché sous une forte pluie pour donner cours et être resté dans ses vêtements mouillés, il contracta une pneumonie et mourut à Cork de complications liées à cette maladie, à l’âge de 49 ans.",
+  "shortDescriptionDe": "George Boole war ein englischer, weitgehend autodidaktischer Mathematiker, Philosoph und Logiker, dessen Arbeiten die symbolische Logik veränderten und die Grundlage der Booleschen Algebra bildeten, die für moderne Computertechnik und digitale Schaltungen zentral ist. Er wurde der erste Mathematikprofessor am Queen's College in Cork und veröffentlichte das einflussreiche Werk The Laws of Thought. Ende 1864 ging er bei starkem Regen zu einer Vorlesung und blieb in nasser Kleidung; kurz darauf erkrankte er an Pneumonie und starb in Cork an den Folgen, im Alter von 49 Jahren.",
+  "shortDescriptionEs": "George Boole fue un matemático, filósofo y lógico inglés en gran parte autodidacta, cuyo trabajo transformó la lógica simbólica y sentó las bases del álgebra booleana, fundamental para la informática moderna y el diseño de circuitos digitales. Fue el primer profesor de matemáticas del Queen's College de Cork y escribió la influyente obra The Laws of Thought. A finales de 1864, tras caminar bajo una fuerte lluvia para dar clase y permanecer con la ropa mojada, contrajo neumonía y murió en Cork por complicaciones relacionadas, a los 49 años.",
+  "shortDescriptionRu": "Джордж Буль был английским математиком-самоучкой, философом и логиком, чьи работы изменили символическую логику и заложили основы булевой алгебры, важнейшей для современной информатики и цифровых схем. Он стал первым профессором математики в Queen's College в Корке и написал влиятельную книгу The Laws of Thought. В конце 1864 года, после того как он прошёл под сильным дождём на лекцию и оставался в мокрой одежде, у него развилась пневмония; он умер в Корке от связанных осложнений в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/George_Boole",
+    "https://www.britannica.com/biography/George-Boole",
+    "https://plato.stanford.edu/entries/boole/",
+    "https://georgeboole.com/boole/life/ucc/death/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q129308",  "Name": "John, King of England",  "BirthDate": "1166-12-31T00:00:00Z",  "DeathDate": "1216-10-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/King%20John%20hunting%20-%20Statutes%20of%20England%20%2814th%20C%29%2C%20f.116%20-%20BL%20Cotton%20MS%20Claudius%20D%20II.jpg",  "SiteLinksCnt": 93,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"16550":{"pageid":16550,"ns":0,"title":"John, King of England","extract":"John (Christmastide 1166/7 \u2013 19 October 1216) was King of England from 1199 until his death in 1216. He lost the Duchy of Normandy and most of his other French lands to King Philip II of France, resulting in the collapse of the Angevin Empire and contributing to the subsequent growth in power of the French Capetian dynasty during the 13th century. The baronial revolt at the end of John's reign led to the sealing of Magna Carta, a document considered a foundational milestone in English and later British constitutional history.\nJohn was the youngest son of King Henry II of England and Duchess Eleanor of Aquitaine. He was nicknamed John Lackland (Norman: Jean sans Terre, lit.\u2009'John without land') because, as a younger son, he was not expected to inherit significant lands. He became Henry's favourite child following the failed revolt of 1173\u20131174 by his brothers Henry the Young King, Richard, and Geoffrey against their father. John was appointed Lord of Ireland in 1177 and given lands in England and on the continent. During the reign of his brother Richard I, he unsuccessfully attempted a rebellion against Richard's royal administrators while the King was participating in the Third Crusade, but he was proclaimed king after Richard died in 1199. He came to an agreement with Philip II of France to recognise John's possession of the continental Angevin lands at the peace treaty of Le Goulet in 1200.\nWhen war with France broke out again in 1202, John achieved early victories, but shortages of military resources and his treatment of Norman, Breton, and Anjou nobles resulted in the collapse of his empire in northern France in 1204. He spent much of the next decade attempting to regain these lands, raising huge revenues, reforming his armed forces and rebuilding continental alliances. His judicial reforms had a lasting effect on the English common law system, as well as providing an additional source of revenue. His dispute with Pope Innocent III over the election of Archbishop of Canterbury Stephen Langton led to the Papal Interdict of 1208, in which church services were banned until 1214, as well as John's excommunication the following year, a dispute he finally settled in 1213. John's attempt to defeat Philip in 1214 failed because of the French victory over John's allies at the Battle of Bouvines. When he returned to England, John faced a rebellion by many of his barons, who were unhappy with his fiscal policies and his treatment of many of England's most powerful nobles. Magna Carta was drafted as a peace treaty between John and the barons, and agreed in 1215. However, neither side complied with its conditions. Civil war erupted shortly afterwards, with the barons aided by Prince Louis of France. It soon descended into a stalemate. \nJohn died of dysentery contracted while on campaign in eastern England in late 1216; supporters of his son Henry III went on to achieve victory over Louis and the rebel barons the following year.\nContemporary chroniclers were mostly critical of John's performance as king, and his reign has since been the subject of significant debate and periodic revision by historians from the 16th century onwards. Historian Jim Bradbury has summarised the current historical opinion of John's positive qualities, observing that John is today usually considered a \"hard-working administrator, an able man, an able general\". Nonetheless, modern historians agree that he also had many faults as king, including what historian Ralph Turner describes as \"distasteful, even dangerous personality traits\", such as pettiness, spitefulness, and cruelty. These negative qualities provided extensive material for fiction writers in the Victorian era, and John remains a recurring character within Western popular culture, primarily as a villain in Robin Hood folklore."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q129308")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q129308",
+  "isRealHuman": true,
+  "birthDate": "1166-12-24",
+  "deathDate": "1216-10-19",
+  "ageAtDeath": 49,
+  "confidence": 70,
+  "confidenceExplained": "John's identity is clear, and his death in October 1216 is well attested. The age-at-death calculation is less certain because medieval sources and modern references differ on whether he was born in late 1166 or 1167, and some give the death as 18/19 October. Using the common estimate of 24 December 1166 and 19 October 1216 gives age 49, which also matches the age stated in the Wikipedia article.",
+  "shortDescriptionEn": "John, King of England from 1199 to 1216, was the youngest son of Henry II and Eleanor of Aquitaine and is remembered as John Lackland. His reign saw the loss of Normandy to Philip II of France, conflict with the papacy, heavy taxation, and the baronial crisis that led to the sealing of Magna Carta in 1215. During the First Barons' War, while campaigning in eastern England, he became seriously ill, probably with dysentery, and died at Newark Castle on 19 October 1216.",
+  "shortDescriptionFr": "Jean, roi d’Angleterre de 1199 à 1216, était le plus jeune fils d’Henri II et d’Aliénor d’Aquitaine, connu sous le surnom de Jean sans Terre. Son règne fut marqué par la perte de la Normandie face à Philippe II de France, des tensions avec la papauté, une fiscalité impopulaire et la crise baronniale qui conduisit à la Magna Carta en 1215. Pendant la première guerre des Barons, alors qu’il faisait campagne dans l’est de l’Angleterre, il tomba gravement malade, probablement de dysenterie, et mourut au château de Newark le 19 octobre 1216.",
+  "shortDescriptionDe": "Johann, König von England von 1199 bis 1216, war der jüngste Sohn Heinrichs II. und Eleonores von Aquitanien und ist als Johann Ohneland bekannt. Seine Herrschaft war geprägt vom Verlust der Normandie an Philipp II. von Frankreich, Konflikten mit dem Papsttum, hoher Besteuerung und dem Aufstand der Barone, der 1215 zur Besiegelung der Magna Carta führte. Während des Ersten Baronenkriegs erkrankte er auf einem Feldzug in Ostengland schwer, wahrscheinlich an Dysenterie, und starb am 19. Oktober 1216 auf Newark Castle.",
+  "shortDescriptionEs": "Juan, rey de Inglaterra de 1199 a 1216, fue el hijo menor de Enrique II y Leonor de Aquitania y pasó a la historia como Juan sin Tierra. Su reinado estuvo marcado por la pérdida de Normandía frente a Felipe II de Francia, los conflictos con el papado, una fuerte presión fiscal y la rebelión baronial que llevó al sellado de la Carta Magna en 1215. Durante la Primera Guerra de los Barones, mientras hacía campaña en el este de Inglaterra, enfermó gravemente, probablemente de disentería, y murió en el castillo de Newark el 19 de octubre de 1216.",
+  "shortDescriptionRu": "Иоанн, король Англии с 1199 по 1216 год, был младшим сыном Генриха II и Алиеноры Аквитанской и известен как Иоанн Безземельный. Его правление запомнилось потерей Нормандии в пользу Филиппа II Французского, конфликтом с папством, тяжёлыми налогами и восстанием баронов, приведшим к принятию Великой хартии вольностей в 1215 году. Во время Первой баронской войны, находясь в походе на востоке Англии, он тяжело заболел, вероятно дизентерией, и умер в замке Ньюарк 19 октября 1216 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John,_King_of_England",
+    "https://www.britannica.com/biography/John-king-of-England",
+    "https://www.royal.uk/john-lackland",
+    "https://www.westminster-abbey.org/abbey-commemorations/royals/john/",
+    "https://www.britroyals.com/kings.asp?id=john",
+    "https://commons.wikimedia.org/wiki/File:King_John_hunting_-_Statutes_of_England_(14th_C),_f.116_-_BL_Cotton_MS_Claudius_D_II.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw03474/King-John"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q494660",  "Name": "Selim I",  "BirthDate": "1470-10-19T00:00:00Z",  "DeathDate": "1520-10-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Yavuz%20Sultan%20Gazi%20Selim%20Han%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D9%8A%20%D9%8A%D8%A7%D9%88%D9%88%D8%B2%20%D8%B3%D9%84%D9%8A%D9%85%20%D8%AE%D8%A7%D9%86.jpg",  "SiteLinksCnt": 90,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"53021034":{"pageid":53021034,"ns":0,"title":"Selim I","extract":"Selim I (Ottoman Turkish: \u0633\u0644\u064a\u0645 \u0627\u0644\u0623\u0648\u0644; Turkish: I. Selim; 10 October 1470 \u2013 22 September 1520), also known as Selim the Grim or Selim the Resolute (Turkish: Yavuz Sultan Selim), was the sultan of the Ottoman Empire from 1512 to 1520. Despite lasting only eight years, his reign is notable for the enormous expansion of the Empire, particularly his conquest between 1516 and 1517 of the entire Mamluk Sultanate of Egypt, which included all of the Levant, Hejaz, Tihamah and Egypt itself. On the eve of his death in 1520, the Ottoman Empire spanned about 3.4 million km2 (1.3 million sq mi), having grown by seventy percent during Selim's reign.\nSelim's conquest of the Middle Eastern heartlands of the Muslim world, and particularly his assumption of the role of guardian of the pilgrimage routes to Mecca and Medina, established the Ottoman Empire as the pre-eminent Muslim state. His conquests dramatically shifted the empire's geographical and cultural center of gravity away from the Balkans and toward the Middle East. By the eighteenth century, Selim's conquest of the Mamluk Sultanate had come to be romanticized as the moment when the Ottomans seized leadership over the rest of the Muslim world, and consequently Selim is popularly remembered as the first legitimate Ottoman Caliph, although stories of an official transfer of the caliphal office from the Mamluk Abbasid dynasty to the Ottomans were a later invention."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q494660")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q494660",
+  "isRealHuman": true,
+  "birthDate": "1470-10-10",
+  "deathDate": "1520-09-22",
+  "ageAtDeath": 49,
+  "confidence": 95,
+  "confidenceExplained": "The identification as Selim I is clear from the Wikidata ID, name, and biography. The main uncertainty is calendar/date handling: some machine-readable data shifts the dates to 1470-10-19 and 1520-10-02, while standard historical references use 1470-10-10 and 1520-09-22. Both date pairs still produce an age at death of 49, because he died shortly before his 50th birthday.",
+  "shortDescriptionEn": "Selim I, known as Yavuz Sultan Selim or Selim the Grim, was the Ottoman sultan from 1512 to 1520. In only eight years he dramatically expanded Ottoman power, defeating the Safavids at Chaldiran and conquering the Mamluk Sultanate, bringing Syria, Egypt, the Hejaz, and key pilgrimage routes under Ottoman control. He died near Çorlu after a severe illness, traditionally linked to a badly treated carbuncle or boil, though later writers have suggested other causes such as cancer or plague.",
+  "shortDescriptionFr": "Selim Ier, appelé Yavuz Sultan Selim ou Selim le Terrible, fut sultan ottoman de 1512 à 1520. En seulement huit ans, il transforma l’Empire ottoman en puissance dominante du Moyen-Orient, vainquit les Safavides à Tchaldiran et conquit le sultanat mamelouk, intégrant la Syrie, l’Égypte, le Hedjaz et les grandes routes du pèlerinage. Il mourut près de Çorlu après une grave maladie, traditionnellement attribuée à un furoncle ou anthrax mal soigné, même si d’autres hypothèses comme le cancer ou la peste ont été avancées.",
+  "shortDescriptionDe": "Selim I., bekannt als Yavuz Sultan Selim oder Selim der Gestrenge, war von 1512 bis 1520 Sultan des Osmanischen Reiches. In nur acht Regierungsjahren erweiterte er das Reich erheblich, besiegte die Safawiden bei Tschaldiran und eroberte das Mamlukensultanat, wodurch Syrien, Ägypten, der Hedschas und wichtige Pilgerwege unter osmanische Kontrolle kamen. Er starb nahe Çorlu nach schwerer Krankheit, die traditionell mit einem schlecht behandelten Karbunkel oder Geschwür erklärt wird; spätere Deutungen nennen auch Krebs oder Pest.",
+  "shortDescriptionEs": "Selim I, conocido como Yavuz Sultan Selim o Selim el Severo, fue sultán otomano de 1512 a 1520. En solo ocho años amplió de forma decisiva el poder otomano, derrotó a los safávidas en Chaldiran y conquistó el sultanato mameluco, incorporando Siria, Egipto, el Hiyaz y rutas clave de peregrinación. Murió cerca de Çorlu tras una grave enfermedad, tradicionalmente atribuida a un carbunco o forúnculo mal tratado, aunque también se han propuesto causas como cáncer o peste.",
+  "shortDescriptionRu": "Селим I, известный как Явуз Султан Селим или Селим Грозный, был османским султаном с 1512 по 1520 год. За восемь лет правления он резко расширил державу, победил Сефевидов при Чалдыране и завоевал Мамлюкский султанат, подчинив Сирию, Египет, Хиджаз и важные маршруты паломничества. Он умер близ Чорлу после тяжелой болезни, которую традиционно связывают с плохо леченным карбункулом или нарывом, хотя позднее назывались и другие версии, включая рак или чуму.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Selim_I",
+    "https://www.wikidata.org/wiki/Q494660",
+    "https://www.britannica.com/biography/Selim-I",
+    "https://kids.britannica.com/students/article/Selim-I/336111",
+    "https://www.iranicaonline.org/articles/ottoman-persian-relations-i-under-sultan-selim-i-and-shah-esmail-i/",
+    "https://www.cambridge.org/core/books/plague-and-empire-in-the-early-modern-mediterranean-world/plague-of-empire/CC04B43D0EA72C89155B5301C0663F7C"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76725",  "Name": "Max Stirner",  "BirthDate": "1806-10-25T00:00:00Z",  "DeathDate": "1856-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Max%20Stirner-k.jpg",  "SiteLinksCnt": 90,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"112282":{"pageid":112282,"ns":0,"title":"Max Stirner","extract":"Johann Caspar Schmidt (25 October 1806 \u2013 26 June 1856), known by the pen name Max Stirner (; German: [\u02c8\u0283t\u026a\u0281n\u0250]), was a German philosopher, dealing mainly with the Hegelian notion of social alienation and self-consciousness. Stirner is often seen as one of the forerunners of nihilism, existentialism, psychoanalytic theory, postmodernism, individualist anarchism, and egoism.\nBorn in 1806 in Bayreuth, Bavaria, Stirner's life and work are known largely through a biography by John Henry Mackay. Following the death of his father, he was raised in West Prussia after his mother's remarriage. Stirner studied at the University of Berlin, where he attended Hegel's lectures. He then moved into teaching and became involved with the Young Hegelians in Berlin. Although he struggled to secure a permanent academic post, Stirner became a fixture in intellectual circles and wrote his most famous work, The Ego and Its Own (1844), while supporting himself as a teacher.\nStirner married twice, first to Agnes Burtz, who died in 1838, and later to Marie D\u00e4hnhardt. He attempted and failed at business before turning to translation and writing. Stirner died in Berlin in 1856, having spent his later years in relative obscurity, despite the enduring influence of his radical individualist philosophy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76725")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q76725",
+  "isRealHuman": true,
+  "birthDate": "1806-10-25",
+  "deathDate": "1856-06-26",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The birth date is consistently given as 25 October 1806. The death date has a minor source discrepancy: major summary sources such as Wikipedia, Britannica, and Wikidata give 26 June 1856, while Stanford Encyclopedia of Philosophy and some biographical traditions give 25 June 1856. The calculated age is unaffected by this one-day discrepancy: in both cases he died before his 50th birthday, so the age at death is 49.",
+  "shortDescriptionEn": "Max Stirner, born Johann Caspar Schmidt, was a German philosopher associated with the Young Hegelians and best known for The Ego and Its Own, a radical defense of individual self-ownership that later influenced egoism, individualist anarchism, and critiques of ideology. He spent much of his life as a teacher, writer, and translator in Berlin, often in financial difficulty. In 1856, still obscure and poor, he developed a severe fever or tumor reportedly following an insect bite or sting on the neck. He died in Berlin at age 49, with only a small circle aware of his passing.",
+  "shortDescriptionFr": "Max Stirner, né Johann Caspar Schmidt, était un philosophe allemand lié aux Jeunes hégéliens et surtout connu pour L’Unique et sa propriété, défense radicale de l’individu qui influença ensuite l’égoïsme philosophique, l’anarchisme individualiste et la critique des idéologies. Il vécut principalement à Berlin comme enseignant, écrivain et traducteur, souvent dans une situation matérielle fragile. En 1856, encore pauvre et peu reconnu, il fut atteint d’une forte fièvre ou d’une tumeur, généralement attribuée à une piqûre d’insecte au cou. Il mourut à Berlin à 49 ans, presque ignoré du grand public.",
+  "shortDescriptionDe": "Max Stirner, geboren als Johann Caspar Schmidt, war ein deutscher Philosoph aus dem Umfeld der Junghegelianer und wurde vor allem durch Der Einzige und sein Eigentum bekannt, eine radikale Verteidigung individueller Eigenheit, die später Egoismus, individualistischen Anarchismus und Ideologiekritik beeinflusste. Er lebte überwiegend in Berlin als Lehrer, Schriftsteller und Übersetzer, oft unter schwierigen finanziellen Umständen. 1856 erkrankte er, noch immer verarmt und wenig beachtet, an einem schweren Fieber beziehungsweise Tumor, der meist auf einen Insektenstich am Hals zurückgeführt wird. Er starb in Berlin im Alter von 49 Jahren.",
+  "shortDescriptionEs": "Max Stirner, nacido Johann Caspar Schmidt, fue un filósofo alemán vinculado a los jóvenes hegelianos y conocido sobre todo por El único y su propiedad, una defensa radical de la individualidad que influyó en el egoísmo filosófico, el anarquismo individualista y la crítica de las ideologías. Vivió principalmente en Berlín como profesor, escritor y traductor, con frecuentes problemas económicos. En 1856, todavía pobre y poco reconocido, sufrió una fiebre grave o un tumor atribuido a una picadura de insecto en el cuello. Murió en Berlín a los 49 años, casi sin atención pública.",
+  "shortDescriptionRu": "Макс Штирнер, урожденный Иоганн Каспар Шмидт, был немецким философом, связанным с младогегельянцами, и наиболее известен книгой Единственный и его собственность — радикальной защитой индивидуальной самости, повлиявшей на философский эгоизм, индивидуалистический анархизм и критику идеологий. Большую часть жизни он провел в Берлине как учитель, писатель и переводчик, часто испытывая финансовые трудности. В 1856 году, оставаясь бедным и почти забытым, он заболел тяжелой лихорадкой или опухолью, которую обычно связывают с укусом насекомого в шею. Он умер в Берлине в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Max_Stirner",
+    "https://www.britannica.com/biography/Max-Stirner",
+    "https://plato.stanford.edu/entries/max-stirner/",
+    "https://www.wikidata.org/wiki/Q76725",
+    "https://commons.wikimedia.org/wiki/File:Max_Stirner-k.jpg",
+    "https://commons.wikimedia.org/wiki/File:Friedrich_Engels_-_Max_Stirner_(1892)_V02-1.2_raw.jpg",
+    "https://commons.wikimedia.org/wiki/File:Friedrich_Engels_-_Die_Freien_(1842)-1.1_V01-1.2_raw_RGASPI_(cropped).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q128358",  "Name": "Bayezid I",  "BirthDate": "1354-03-08T00:00:00Z",  "DeathDate": "1403-03-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sultan%20Gazi%20Y%C4%B1ld%C4%B1r%C4%B1m%20Bayezid%20Han%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D9%8A%20%D9%8A%D9%84%D8%AF%D8%B1%D9%85%20%D8%A8%D8%A7%D9%8A%D8%B2%D9%8A%D8%AF%20%D8%AE%D8%A7%D9%86.jpg",  "SiteLinksCnt": 84,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"4241":{"pageid":4241,"ns":0,"title":"Bayezid I","extract":"Bayezid I (Ottoman Turkish: \u0628\u0627\u064a\u0632\u064a\u062f \u0627\u0648\u0644; Turkish: I. Bayezid), also known as Bayezid the Thunderbolt (Ottoman Turkish: \u06cc\u0644\u062f\u06cc\u0631\u0645 \u0628\u0627\u064a\u0632\u064a\u062f; Turkish: Y\u0131ld\u0131r\u0131m Bayezid; c.\u20091360 \u2013 8 March 1403), was the sultan of the Ottoman Empire from 1389 to 1402. He adopted the title of Sultan-i R\u00fbm, R\u00fbm being the Arabic name for the Eastern Roman Empire. In 1394, Bayezid unsuccessfully besieged Constantinople. Bayezid vanquished all the Beyliks and proceeded to conquer and vassalize the entirety of Anatolia. In 1402, he once more besieged Constantinople, appearing to find success, but he ultimately withdrew due to the invasion of the Turco-Mongol conqueror Timur. He defeated the crusaders at the Battle of Nicopolis in what is now Bulgaria in 1396. He was later defeated and captured by Timur at the Battle of Ankara in 1402 and died in captivity in March 1403, which triggered the Ottoman Interregnum between his sons."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q128358")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q128358",
+  "isRealHuman": true,
+  "birthDate": "1354-03-08",
+  "deathDate": "1403-03-08",
+  "ageAtDeath": 49,
+  "confidence": 72,
+  "confidenceExplained": "Bayezid I is securely identified as the Ottoman sultan known as Yıldırım Bayezid. The death date of 8 March 1403 is supported by several strong sources, including Wikidata, Wikimedia Commons, Wikipedia, and TDV İslâm Ansiklopedisi. The birth year is less certain: some sources give c. 1360, but the specialist TDV article by Halil İnalcık states 755 AH / 1354, and Wikidata/Commons record circa 8 March 1354. Using the best-supported 1354-03-08 estimate and 1403-03-08 death date gives an age at death of 49.",
+  "shortDescriptionEn": "Bayezid I, known as Yıldırım or “the Thunderbolt,” was the fourth sultan of the Ottoman Empire, ruling from 1389 to 1402. A bold and fast-moving commander, he expanded Ottoman authority across Anatolia and the Balkans and defeated a major crusading army at Nicopolis in 1396. His rise was halted by Timur, who defeated and captured him at the Battle of Ankara in 1402. Bayezid died in captivity at Akşehir on 8 March 1403, and his death helped trigger the Ottoman Interregnum among his sons.",
+  "shortDescriptionFr": "Bayezid Ier, surnommé Yıldırım ou « le Foudroyant », fut le quatrième sultan de l’Empire ottoman, régnant de 1389 à 1402. Chef militaire énergique, il renforça le pouvoir ottoman en Anatolie et dans les Balkans et remporta une victoire majeure contre les croisés à Nicopolis en 1396. Son ascension fut brisée par Tamerlan, qui le vainquit et le captura à la bataille d’Ankara en 1402. Bayezid mourut en captivité à Akşehir le 8 mars 1403, ouvrant une période de luttes dynastiques connue comme l’Interrègne ottoman.",
+  "shortDescriptionDe": "Bayezid I., genannt Yıldırım oder „der Blitz“, war der vierte Sultan des Osmanischen Reiches und regierte von 1389 bis 1402. Als energischer Feldherr weitete er die osmanische Macht in Anatolien und auf dem Balkan aus und schlug 1396 ein großes Kreuzfahrerheer bei Nikopolis. Sein Aufstieg endete, als Timur ihn 1402 in der Schlacht bei Ankara besiegte und gefangen nahm. Bayezid starb am 8. März 1403 in Gefangenschaft in Akşehir; sein Tod leitete den osmanischen Thronfolgekampf des Interregnums ein.",
+  "shortDescriptionEs": "Bayezid I, conocido como Yıldırım o “el Rayo”, fue el cuarto sultán del Imperio otomano y gobernó entre 1389 y 1402. Comandante enérgico y ambicioso, extendió el dominio otomano por Anatolia y los Balcanes y derrotó a los cruzados en Nicópolis en 1396. Su avance se detuvo cuando Timur lo venció y capturó en la batalla de Ankara en 1402. Bayezid murió cautivo en Akşehir el 8 de marzo de 1403, y su muerte desencadenó el Interregno otomano entre sus hijos.",
+  "shortDescriptionRu": "Баязид I, известный как Йылдырым — «Молниеносный», был четвёртым султаном Османской империи и правил с 1389 по 1402 год. Энергичный полководец, он расширил власть османов в Анатолии и на Балканах и в 1396 году разбил крестоносцев при Никополе. Его возвышение оборвалось после поражения от Тимура в битве при Анкаре в 1402 году, где он был захвачен в плен. Баязид умер в плену в Акшехире 8 марта 1403 года, а его смерть стала началом османского междуцарствия между его сыновьями.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bayezid_I",
+    "https://islamansiklopedisi.org.tr/bayezid-i",
+    "https://www.britannica.com/biography/Bayezid-I",
+    "https://www.wikidata.org/wiki/Q128358",
+    "https://commons.wikimedia.org/wiki/Category:Bayezid_I",
+    "https://www.worldhistory.org/image/9411/bayezid-i/",
+    "https://en.numista.com/catalogue/ruler.php?id=2425"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q151874",  "Name": "Anna Pavlova",  "BirthDate": "1881-01-31T00:00:00Z",  "DeathDate": "1931-01-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Anna%20pavlova%20-c.%201905.jpg",  "SiteLinksCnt": 84,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"63157":{"pageid":63157,"ns":0,"title":"Anna Pavlova","extract":"Anna Pavlovna Pavlova (born Anna Matveyevna Pavlova; 12 February [O.S. 31 January] 1881 \u2013 23 January 1931) was a Russian prima ballerina. She was a principal artist of the Imperial Russian Ballet and the Ballets Russes of Sergei Diaghilev, but is most recognized for creating the role of The Dying Swan and, with her own company, being the first ballerina to tour the world, including South America, India, Mexico and Australia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q151874")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q151874",
+  "isRealHuman": true,
+  "birthDate": "1881-02-12",
+  "deathDate": "1931-01-23",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The identity is unambiguous: the supplied Wikidata ID, name, extract, and image all point to Anna Pavlovna Pavlova. The only date complication is the Russian Old Style birth date, 1881-01-31, which corresponds to 1881-02-12 in the Gregorian calendar. Her death date is consistently recorded as 1931-01-23. Under either birth-date convention she had not yet reached her 50th birthday, so the integer age at death is certainly 49.",
+  "shortDescriptionEn": "Anna Pavlova was a Russian prima ballerina whose delicate style and dramatic presence made her one of the most famous dancers of the early twentieth century. A star of the Imperial Russian Ballet and briefly associated with the Ballets Russes, she became inseparable from The Dying Swan and helped turn ballet into a global touring art. She died in The Hague on 23 January 1931, aged 49, after falling seriously ill while travelling; accounts commonly describe pleurisy, sometimes linked with pneumonia.",
+  "shortDescriptionFr": "Anna Pavlova était une prima ballerina russe dont la grâce fragile et l’intensité scénique ont marqué le ballet du début du XXe siècle. Vedette du Ballet impérial russe et brièvement liée aux Ballets russes, elle reste associée à La Mort du cygne et à des tournées qui ont popularisé le ballet dans le monde entier. Elle est morte à La Haye le 23 janvier 1931, à l’âge de 49 ans, après être tombée gravement malade en voyage; les récits évoquent surtout une pleurésie, parfois associée à une pneumonie.",
+  "shortDescriptionDe": "Anna Pavlova war eine russische Primaballerina, deren feine Technik und ausdrucksstarke Bühnenpräsenz sie zu einer der berühmtesten Tänzerinnen des frühen 20. Jahrhunderts machten. Sie tanzte am Kaiserlichen Russischen Ballett, war kurz mit den Ballets Russes verbunden und wurde vor allem durch Der sterbende Schwan sowie ihre weltweiten Tourneen berühmt. Sie starb am 23. Januar 1931 in Den Haag im Alter von 49 Jahren, nachdem sie auf Reisen schwer erkrankt war; meist wird Pleuritis genannt, teils im Zusammenhang mit einer Lungenentzündung.",
+  "shortDescriptionEs": "Anna Pavlova fue una prima ballerina rusa cuya elegancia, expresividad y presencia escénica la convirtieron en una de las bailarinas más célebres del siglo XX. Figura del Ballet Imperial Ruso y vinculada brevemente a los Ballets Rusos, quedó para siempre asociada con La muerte del cisne y con giras internacionales que llevaron el ballet a públicos de todo el mundo. Murió en La Haya el 23 de enero de 1931, a los 49 años, tras enfermar gravemente durante un viaje; las fuentes suelen hablar de pleuresía, a veces relacionada con neumonía.",
+  "shortDescriptionRu": "Анна Павловна Павлова была русской прима-балериной, чья утончённая манера танца и сценическая выразительность сделали её одной из самых знаменитых артисток балета начала XX века. Она выступала в Императорском русском балете, была связана с «Русскими сезонами» и особенно прославилась миниатюрой «Умирающий лебедь», а её гастроли помогли сделать балет мировым искусством. Павлова умерла в Гааге 23 января 1931 года в возрасте 49 лет после тяжёлой болезни во время поездки; чаще всего причиной называют плеврит, иногда связанный с пневмонией.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anna_Pavlova",
+    "https://www.britannica.com/biography/Anna-Pavlova",
+    "https://www.londonmuseum.org.uk/collections/london-stories/the-great-ballet-dancer-anna-pavlova/",
+    "https://www.portrait.gov.au/portraits/2015.76/anna-pavlova",
+    "https://www.npg.org.uk/collections/search/portrait/mw196441/Anna-Pavlova"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170267",  "Name": "Andreas Vesalius",  "BirthDate": "1515-01-10T00:00:00Z",  "DeathDate": "1564-10-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vesalius%20Fabrica%20portrait.jpg",  "SiteLinksCnt": 83,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"32491":{"pageid":32491,"ns":0,"title":"Andreas Vesalius","extract":"Andries van Wezel (31 December 1514 \u2013 15 October 1564), Latinized as Andreas Vesalius (), was an anatomist and physician who wrote De Humani Corporis Fabrica Libri Septem (On the fabric of the human body in seven books), which is considered one of the most influential books on human anatomy and a major advance over the long-dominant work of Galen. Vesalius is often referred to as the founder of modern human anatomy. He was born in Brussels, which was then part of the Habsburg Netherlands. He was a professor at the University of Padua (1537\u20131542) and later became Imperial physician at the court of Emperor Charles V."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170267")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q170267",
+  "isRealHuman": true,
+  "birthDate": "1514-12-31",
+  "deathDate": "1564-10-15",
+  "ageAtDeath": 49,
+  "confidence": 92,
+  "confidenceExplained": "The age at death is highly reliable: multiple biographical sources give Andreas Vesalius as born on 1514-12-31 and dying on 1564-10-15, which makes him 49 because he died before his birthday in December. Some records show calendar-converted dates such as 1515-01-10 and 1564-10-26, or a one-day variation in the death date, but these variants still yield age 49.",
+  "shortDescriptionEn": "Andreas Vesalius was a Flemish anatomist and physician whose 1543 masterpiece De humani corporis fabrica transformed the study of the human body by grounding anatomy in direct dissection rather than inherited Galenic authority. He taught at Padua and later served the imperial court. In 1564, after a pilgrimage to the Holy Land, he became ill or was stranded during the return voyage and died on the Greek island of Zakynthos at the age of 49.",
+  "shortDescriptionFr": "Andreas Vesalius fut un anatomiste et médecin flamand dont le chef-d’œuvre de 1543, De humani corporis fabrica, transforma l’étude du corps humain en fondant l’anatomie sur la dissection directe plutôt que sur l’autorité héritée de Galien. Il enseigna à Padoue puis servit la cour impériale. En 1564, après un pèlerinage en Terre sainte, il tomba malade ou fut abandonné lors du voyage de retour et mourut sur l’île grecque de Zante à 49 ans.",
+  "shortDescriptionDe": "Andreas Vesalius war ein flämischer Anatom und Arzt, dessen 1543 erschienenes Hauptwerk De humani corporis fabrica die Erforschung des menschlichen Körpers grundlegend veränderte, weil es Anatomie auf direkte Sektion statt auf überlieferte galenische Autorität stützte. Er lehrte in Padua und diente später am Kaiserhof. 1564 wurde er nach einer Pilgerreise ins Heilige Land auf der Rückfahrt krank oder strandete und starb auf der griechischen Insel Zakynthos im Alter von 49 Jahren.",
+  "shortDescriptionEs": "Andreas Vesalius fue un anatomista y médico flamenco cuyo gran libro de 1543, De humani corporis fabrica, cambió el estudio del cuerpo humano al basar la anatomía en la disección directa y no en la autoridad heredada de Galeno. Enseñó en Padua y más tarde sirvió en la corte imperial. En 1564, tras una peregrinación a Tierra Santa, enfermó o quedó varado durante el viaje de regreso y murió en la isla griega de Zante a los 49 años.",
+  "shortDescriptionRu": "Андреас Везалий был фламандским анатомом и врачом, чей труд 1543 года De humani corporis fabrica преобразил изучение человеческого тела, поставив в центр прямое вскрытие, а не унаследованный авторитет Галена. Он преподавал в Падуе, а затем служил при императорском дворе. В 1564 году, возвращаясь из паломничества в Святую землю, он заболел или оказался задержан в пути и умер на греческом острове Закинф в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Andreas_Vesalius",
+    "https://www.britannica.com/biography/Andreas-Vesalius",
+    "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/vesalius-andreas",
+    "https://embryo.asu.edu/pages/andreas-vesalius-1514-1564",
+    "https://collection.sciencemuseumgroup.org.uk/people/cp37732/andreas-vesalius",
+    "https://commons.wikimedia.org/wiki/Andreas_Vesalius",
+    "https://www.wikidata.org/wiki/Q170267"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1666",  "Name": "Jacques Brel",  "BirthDate": "1929-04-08T00:00:00Z",  "DeathDate": "1978-10-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Brel%20%281962%29.jpg",  "SiteLinksCnt": 82,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"91751":{"pageid":91751,"ns":0,"title":"Jacques Brel","extract":"Jacques Romain Georges Brel (French: [\u0292\u0251k \u0281\u0254m\u025b\u0303 \u0292\u0254\u0281\u0292 b\u0281\u025bl] ; 8 April 1929 \u2013 9 October 1978) was a Belgian singer and actor who composed and performed theatrical songs. He generated a large, devoted following\u2014initially in Belgium and France, but later throughout the world. He is considered a master of the modern chanson.\nAlthough he recorded most of his songs in French and occasionally in Dutch, he became an influence on English-speaking songwriters and performers, such as Scott Walker, David Bowie, Brett Anderson, Alex Harvey, Marc Almond, Neil Hannon, and Rod McKuen. English translations of his songs were recorded by many performers, including Bowie, Walker, Anderson, Ray Charles, Judy Collins, John Denver, The Kingston Trio, Nina Simone, Shirley Bassey, James Dean Bradfield, Frank Sinatra, and Andy Williams.\nBrel was a successful actor, appearing in ten films. He directed two films, one of which, Le Far West, was nominated for the Palme d'Or at the Cannes Film Festival in 1973. Having sold over 25 million records worldwide, Brel is the third-best-selling Belgian recording artist of all time. Brel married Th\u00e9r\u00e8se \"Miche\" Michielsen in 1950, and the couple had three children. He also had a romantic relationship with actress and dancer Maddly Bamy from 1972 until his death in 1978.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1666")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1666",
+  "isRealHuman": true,
+  "birthDate": "1929-04-08",
+  "deathDate": "1978-10-09",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently reported by Wikidata-derived data, Wikipedia, and Britannica. The exact age is straightforward to calculate: Jacques Brel was born on 1929-04-08 and died on 1978-10-09, after his birthday that year, making him 49. Minor variation exists in sources about whether to describe the death as lung cancer or pulmonary embolism, but this does not affect the age calculation.",
+  "shortDescriptionEn": "Jacques Brel was a Belgian singer-songwriter, actor, and director whose intense, theatrical chansons made him one of the defining voices of French-language popular music. Songs such as “Ne me quitte pas” and “Amsterdam” helped his work travel far beyond Belgium and France, influencing generations of performers. After years of illness, including lung cancer, he was hospitalized near Paris and died in Bobigny on 9 October 1978, widely reported as the result of a pulmonary embolism. He was 49 and was later buried in the Marquesas Islands.",
+  "shortDescriptionFr": "Jacques Brel fut un auteur-compositeur-interprète, acteur et réalisateur belge, célèbre pour ses chansons dramatiques, poétiques et profondément théâtrales. Avec des titres comme « Ne me quitte pas » et « Amsterdam », il est devenu l’une des grandes figures de la chanson francophone et a marqué des artistes bien au-delà de la Belgique et de la France. Après plusieurs années de maladie, notamment un cancer du poumon, il fut hospitalisé près de Paris et mourut à Bobigny le 9 octobre 1978, le plus souvent à la suite d’une embolie pulmonaire. Il avait 49 ans et fut ensuite enterré aux îles Marquises.",
+  "shortDescriptionDe": "Jacques Brel war ein belgischer Sänger, Liedermacher, Schauspieler und Regisseur, dessen leidenschaftliche und theatralische Chansons ihn zu einer prägenden Figur der französischsprachigen Musik machten. Lieder wie „Ne me quitte pas“ und „Amsterdam“ machten ihn weit über Belgien und Frankreich hinaus bekannt und beeinflussten zahlreiche spätere Künstler. Nach längerer Krankheit, darunter Lungenkrebs, wurde er nahe Paris ins Krankenhaus gebracht und starb am 9. Oktober 1978 in Bobigny, meist als Folge einer Lungenembolie angegeben. Er war 49 Jahre alt und wurde später auf den Marquesas-Inseln beigesetzt.",
+  "shortDescriptionEs": "Jacques Brel fue un cantautor, actor y director belga cuyas canciones intensas y teatrales lo convirtieron en una de las voces esenciales de la chanson francófona. Obras como “Ne me quitte pas” y “Amsterdam” llevaron su influencia mucho más allá de Bélgica y Francia, inspirando a intérpretes de varias generaciones. Tras años de enfermedad, incluido un cáncer de pulmón, fue hospitalizado cerca de París y murió en Bobigny el 9 de octubre de 1978, generalmente señalado como consecuencia de una embolia pulmonar. Tenía 49 años y fue enterrado posteriormente en las Islas Marquesas.",
+  "shortDescriptionRu": "Жак Брель был бельгийским певцом, автором песен, актёром и режиссёром, чьи эмоциональные и театральные шансоны сделали его одной из ключевых фигур франкоязычной музыки. Песни вроде «Ne me quitte pas» и «Amsterdam» принесли ему известность далеко за пределами Бельгии и Франции и повлияли на многих исполнителей. После нескольких лет болезни, включая рак лёгких, он был госпитализирован недалеко от Парижа и умер в Бобиньи 9 октября 1978 года; непосредственной причиной часто называют лёгочную эмболию. Ему было 49 лет, позднее его похоронили на Маркизских островах.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jacques_Brel",
+    "https://www.britannica.com/biography/Jacques-Brel",
+    "https://www.imdb.com/name/nm0107035/bio/",
+    "https://www.ebsco.com/research-starters/biography/jacques-brel",
+    "https://commons.wikimedia.org/wiki/File:Jacques_Brel_1971_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jacques_Brel_(1962).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q167052",  "Name": "Gregory IV",  "BirthDate": "0795-01-01T00:00:00Z",  "DeathDate": "0844-01-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Papa%20Gregorio%20IV.png",  "SiteLinksCnt": 82,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"24195":{"pageid":24195,"ns":0,"title":"Pope Gregory IV","extract":"Pope Gregory IV (Latin: Gregorius IV; died 25 January 844) was the bishop of Rome and leader of the Papal States from October 827 to his death on 25 January 844. His pontificate was notable for the papacy\u2019s attempts to intervene in the quarrels between Emperor Louis the Pious and his sons. It also saw the breakup of the Carolingian Empire in 843."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q167052")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q167052",
+  "isRealHuman": true,
+  "birthDate": "0795-01-01",
+  "deathDate": "0844-01-25",
+  "ageAtDeath": 49,
+  "confidence": 62,
+  "confidenceExplained": "The identity and death date are well supported: multiple sources identify Q167052 as Pope Gregory IV and give his death as 25 January 844 in Rome. The birth date is uncertain; several sources use circa 795, while some older/reference sources say only that the date is unknown. I used 0795-01-01 as a required estimated date, which gives age 49. Because the exact birthday is unknown, the real age could plausibly have been 48 or 49, and a minority source tradition gives a wider estimate.",
+  "shortDescriptionEn": "Pope Gregory IV was a Roman churchman who led the Catholic Church during the turbulent Carolingian age, from the late 820s until 844. Remembered for trying to mediate the bitter conflict between Emperor Louis the Pious and his sons, he also strengthened Rome’s defenses, rebuilt churches, and helped establish All Saints’ Day in the Roman calendar. He died in Rome on 25 January 844 after about sixteen years as pope; no precise cause of death is recorded, and he was buried in St. Peter’s Basilica.",
+  "shortDescriptionFr": "Le pape Grégoire IV fut un prélat romain qui dirigea l’Église catholique pendant la période agitée des Carolingiens, de la fin des années 820 jusqu’en 844. Il est surtout connu pour ses tentatives de médiation dans le conflit entre l’empereur Louis le Pieux et ses fils, mais aussi pour ses travaux de défense d’Ostie, ses restaurations d’églises et son rôle dans la fête de la Toussaint. Il mourut à Rome le 25 janvier 844 après environ seize ans de pontificat; la cause exacte de sa mort n’est pas connue, et il fut enterré dans la basilique Saint-Pierre.",
+  "shortDescriptionDe": "Papst Gregor IV. war ein römischer Geistlicher, der die katholische Kirche in der unruhigen Karolingerzeit von den späten 820er Jahren bis 844 leitete. Bekannt wurde er vor allem durch seine Vermittlungsversuche im Konflikt zwischen Kaiser Ludwig dem Frommen und dessen Söhnen; außerdem ließ er Ostia befestigen, Kirchen erneuern und förderte das Allerheiligenfest. Er starb am 25. Januar 844 in Rom nach rund sechzehn Jahren Pontifikat; eine genaue Todesursache ist nicht überliefert, und er wurde im Petersdom bestattet.",
+  "shortDescriptionEs": "El papa Gregorio IV fue un eclesiástico romano que dirigió la Iglesia católica durante la convulsa época carolingia, desde finales de la década de 820 hasta 844. Se le recuerda por sus intentos de mediar en el conflicto entre el emperador Luis el Piadoso y sus hijos, así como por reforzar Ostia, restaurar iglesias y promover la celebración de Todos los Santos. Murió en Roma el 25 de enero de 844 tras unos dieciséis años de pontificado; no se conserva una causa exacta de muerte, y fue enterrado en la basílica de San Pedro.",
+  "shortDescriptionRu": "Папа Григорий IV был римским церковным деятелем, возглавлявшим Католическую церковь в бурную каролингскую эпоху — с конца 820-х годов до 844 года. Он известен попытками вмешаться и примирить стороны в конфликте между императором Людовиком Благочестивым и его сыновьями, а также укреплением Остии, восстановлением римских церквей и поддержкой праздника Всех святых. Он умер в Риме 25 января 844 года после примерно шестнадцати лет понтификата; точная причина смерти не зафиксирована, похоронен он был в базилике Святого Петра.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Papa%20Gregorio%20IV.png",
+    "https://commons.wikimedia.org/wiki/Category:Gregorius_IV",
+    "https://en.wikipedia.org/wiki/Pope_Gregory_IV"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Gregory_IV",
+    "https://www.wikidata.org/wiki/Q167052",
+    "https://www.britannica.com/biography/Gregory-IV",
+    "https://www.newadvent.org/cathen/06789b.htm",
+    "https://www.treccani.it/enciclopedia/gregorio-iv_%28Enciclopedia-dei-Papi%29/",
+    "https://www.beweb.chiesacattolica.it/persone/persona/3681/Papa+Gregorio+IV",
+    "https://commons.wikimedia.org/wiki/Category:Gregorius_IV"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q84284",  "Name": "Christian Doppler",  "BirthDate": "1803-11-29T00:00:00Z",  "DeathDate": "1853-03-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Doppler.jpg",  "SiteLinksCnt": 82,  "Age": 49}
+{"batchcomplete":"","query":{"pages":{"7080":{"pageid":7080,"ns":0,"title":"Christian Doppler","extract":"Christian Andreas Doppler (; German: [\u02c8d\u0254pl\u0250] ; 29 November 1803 \u2013 17 March 1853) was an Austrian mathematician and physicist. He formulated the principle \u2013 now known as the Doppler effect \u2013 that the observed frequency of a wave depends on the relative speed of the source and the observer."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q84284")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q84284",
+  "isRealHuman": true,
+  "birthDate": "1803-11-29",
+  "deathDate": "1853-03-17",
+  "ageAtDeath": 49,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, Britannica, Wikimedia Commons, and the Christian Doppler Knowledge Platform. The age at death is calculated directly from 1803-11-29 to 1853-03-17: he had not yet reached his 50th birthday, so he was 49. Confidence is not 100 only because one secondary source found during checking appears to contain an erroneous age, but it conflicts with the agreed dates.",
+  "shortDescriptionEn": "Christian Andreas Doppler was an Austrian mathematician and physicist whose name became attached to one of the most familiar ideas in wave science: the Doppler effect, the change in observed frequency caused by motion between source and observer. Born in Salzburg, he worked in Prague and Vienna and influenced physics, astronomy, acoustics, and later medical imaging. His final years were marked by worsening chest and lung problems, probably tuberculosis; seeking a gentler climate, he went to Venice, where he died on 1853-03-17 at age 49.",
+  "shortDescriptionFr": "Christian Andreas Doppler était un mathématicien et physicien autrichien, passé à la postérité grâce à l’effet Doppler, qui décrit la variation de fréquence observée lorsqu’une source d’ondes et un observateur sont en mouvement relatif. Né à Salzbourg, il travailla notamment à Prague et à Vienne, et son idée devint essentielle en physique, en astronomie, en acoustique et plus tard en imagerie médicale. Ses dernières années furent assombries par de graves troubles pulmonaires, probablement la tuberculose; parti à Venise pour un climat plus favorable, il y mourut le 1853-03-17 à l’âge de 49 ans.",
+  "shortDescriptionDe": "Christian Andreas Doppler war ein österreichischer Mathematiker und Physiker, dessen Name durch den Doppler-Effekt weltbekannt wurde: die Änderung der beobachteten Frequenz einer Welle bei relativer Bewegung von Quelle und Beobachter. Der in Salzburg geborene Gelehrte wirkte unter anderem in Prag und Wien und prägte Physik, Astronomie, Akustik und später auch die medizinische Diagnostik. In seinen letzten Jahren verschlechterte sich seine Gesundheit durch schwere Brust- und Lungenbeschwerden, vermutlich Tuberkulose; er reiste nach Venedig in der Hoffnung auf Erholung und starb dort am 1853-03-17 im Alter von 49 Jahren.",
+  "shortDescriptionEs": "Christian Andreas Doppler fue un matemático y físico austríaco recordado por el efecto Doppler, la variación de la frecuencia observada de una onda cuando la fuente y el observador se mueven entre sí. Nacido en Salzburgo, trabajó en Praga y Viena, y su principio se volvió fundamental para la física, la astronomía, la acústica y, mucho después, la imagen médica. Sus últimos años estuvieron marcados por problemas graves de pecho y pulmones, probablemente tuberculosis; viajó a Venecia buscando un clima más benigno, pero murió allí el 1853-03-17 a los 49 años.",
+  "shortDescriptionRu": "Кристиан Андреас Доплер был австрийским математиком и физиком, чьё имя навсегда связано с эффектом Доплера — изменением наблюдаемой частоты волны при относительном движении источника и наблюдателя. Уроженец Зальцбурга, он работал в Праге и Вене, а его идея стала важной для физики, астрономии, акустики и позднее медицинской диагностики. Последние годы его жизни были омрачены тяжёлыми грудными и лёгочными заболеваниями, вероятно туберкулёзом; надеясь на более мягкий климат, он уехал в Венецию, где умер 1853-03-17 в возрасте 49 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Christian_Doppler",
+    "https://www.britannica.com/biography/Christian-Doppler",
+    "https://www.christian-doppler.net/en/resume/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3743612/",
+    "https://commons.wikimedia.org/wiki/Category:Christian_Doppler",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Doppler.jpg"
+  ]
+}
