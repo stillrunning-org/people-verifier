@@ -1,0 +1,1049 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q991",  "Name": "Fyodor Dostoyevsky",  "BirthDate": "1821-11-11T00:00:00Z",  "DeathDate": "1881-02-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vasily%20Perov%20-%20%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20-%20Google%20Art%20Project.jpg",  "SiteLinksCnt": 251,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"11625":{"pageid":11625,"ns":0,"title":"Fyodor Dostoevsky","extract":"Fyodor Mikhailovich Dostoevsky (11 November [O.S. 30 October] 1821 \u2013 9 February [O.S. 28 January] 1881) was a Russian philosopher, novelist, short story writer, essayist and journalist. He is regarded as one of the greatest novelists in both Russian and world literature, and many of his works are considered highly influential masterpieces. Dostoevsky's literary works explore the human condition in the troubled political, social and spiritual atmospheres of 19th-century Russia, and engage with a variety of philosophical and religious themes. His most acclaimed novels include Crime and Punishment (1866), The Idiot (1869), Demons (1872), The Adolescent (1875) and The Brothers Karamazov (1880). His Notes from Underground, a novella published in 1864, is considered one of the first works of existentialist literature.\nBorn in Moscow in 1821, Dostoevsky was introduced to literature at an early age through fairy tales and legends and through books by Russian and foreign authors. His mother died in 1837, and around the same time, he left school to enter the Nikolayev Military Engineering Institute (later renamed the Military Engineering-Technical University). After graduating, he worked as an engineer and briefly enjoyed a lavish lifestyle, translating books to earn extra money. In the mid-1840s, he wrote his first novel, Poor Folk, which gained him entry into Saint Petersburg's literary circles. However, he was arrested in 1849 for belonging to a literary group, the Petrashevsky Circle, that discussed banned books critical of Tsarist Russia. Dostoevsky was sentenced to death, but the sentence was commuted at the last moment. He spent four years in a Siberian hard labour camp, which inspired him to write The House of the Dead (1860\u20131862). Aside from the labour camp also followed six years of compulsory military service in exile. In the following years, Dostoevsky worked as a journalist, publishing and editing several magazines of his own and later A Writer's Diary, a collection of his writings. He began to travel around Western Europe and developed a gambling addiction, which led to financial hardship. For a time, he had to beg for money, but he eventually became one of the most widely read and highly regarded Russian writers.\nDostoevsky's body of work consists of thirteen novels, three novellas, seventeen short stories, and numerous other works. His writings were widely read both within and beyond his native Russia, influencing an equally great number of later writers, including Russians such as Aleksandr Solzhenitsyn and Anton Chekhov, the philosophers Albert Camus and Jean-Paul Sartre, and the emergence of Existentialism and Freudianism. Friedrich Nietzsche called him \"the only psychologist from whom I had something to learn\" in Twilight of the Idols, one of his final works before suffering a mental collapse.  His books have been translated into over 170 languages, and served as the inspiration for many films.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q991")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q991",
+  "isRealHuman": true,
+  "birthDate": "1821-11-11",
+  "deathDate": "1881-02-09",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given as 11 November 1821 and 9 February 1881 in modern Gregorian form. The age calculation is unambiguous: he died before reaching his 60th birthday in 1881, so he was 59. Confidence is not 100 only because historical sources may phrase Old Style/New Style calendar dates differently, but the converted dates and age agree.",
+  "shortDescriptionEn": "Fyodor Dostoevsky was a Russian novelist, journalist and thinker whose psychological fiction reshaped world literature. His major works include Crime and Punishment, The Idiot, Demons and The Brothers Karamazov, novels famous for their moral intensity, spiritual conflict and unforgettable characters. In his final days in Saint Petersburg, he suffered repeated pulmonary hemorrhages; after a last decline at home, he died on 9 February 1881 at the age of 59.",
+  "shortDescriptionFr": "Fiodor Dostoïevski était un romancier, journaliste et penseur russe dont l’œuvre psychologique a profondément marqué la littérature mondiale. Crime et Châtiment, L’Idiot, Les Démons et Les Frères Karamazov explorent la culpabilité, la foi, la liberté et les contradictions humaines avec une intensité rare. Dans ses derniers jours à Saint-Pétersbourg, il subit plusieurs hémorragies pulmonaires; affaibli chez lui, il mourut le 9 février 1881 à l’âge de 59 ans.",
+  "shortDescriptionDe": "Fjodor Dostojewski war ein russischer Romancier, Journalist und Denker, dessen psychologische Erzählkunst die Weltliteratur nachhaltig veränderte. Zu seinen bekanntesten Werken zählen Schuld und Sühne, Der Idiot, Die Dämonen und Die Brüder Karamasow, geprägt von Schuld, Glauben, Freiheit und moralischen Extremen. In seinen letzten Tagen in Sankt Petersburg erlitt er wiederholte Lungenblutungen; er starb am 9. Februar 1881 zu Hause im Alter von 59 Jahren.",
+  "shortDescriptionEs": "Fiódor Dostoievski fue un novelista, periodista y pensador ruso cuya ficción psicológica transformó la literatura universal. Obras como Crimen y castigo, El idiota, Los demonios y Los hermanos Karamázov exploran la culpa, la fe, la libertad y las zonas más oscuras de la conciencia humana. En sus últimos días en San Petersburgo sufrió repetidas hemorragias pulmonares; murió en su casa el 9 de febrero de 1881, a los 59 años.",
+  "shortDescriptionRu": "Фёдор Михайлович Достоевский был русским писателем, публицистом и мыслителем, чьи психологические романы стали частью мировой классики. Среди его главных произведений — «Преступление и наказание», «Идиот», «Бесы» и «Братья Карамазовы», где он исследовал вину, веру, свободу и человеческую совесть. В последние дни в Санкт-Петербурге он перенёс несколько лёгочных кровотечений; 9 февраля 1881 года он умер дома в возрасте 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky",
+    "https://www.britannica.com/biography/Fyodor-Dostoyevsky",
+    "https://www.encyclopedia.com/reference/encyclopedias-almanacs-transcripts-and-maps/dostoyevsky-feodor-mikhailovich",
+    "https://pubmed.ncbi.nlm.nih.gov/40081534/",
+    "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7198",  "Name": "Ovid",  "BirthDate": "-0042-03-18T00:00:00Z",  "DeathDate": "0017-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ovid%20by%20an%20anonymous%20sculptor.jpg",  "SiteLinksCnt": 199,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"37802":{"pageid":37802,"ns":0,"title":"Ovid","extract":"Publius Ovidius Naso (Latin: [\u02c8pu\u02d0bli\u028as \u0254\u02c8w\u026adi\u028as \u02c8na\u02d0so\u02d0]; 20 March 43 BC \u2013 AD 17/18), known in English as Ovid ( OV-id), was a Roman poet who lived during the reign of Augustus. He was a younger contemporary of Virgil and Horace, with whom he is often ranked as one of the three canonical poets of Latin literature. The Imperial scholar Quintilian considered him the last of the Latin love elegists. Although Ovid enjoyed enormous popularity during his lifetime, the emperor Augustus exiled him to Tomis, the capital of the newly organised province of Moesia, on the Black Sea, where he remained for the last nine or ten years of his life. Ovid himself attributed his banishment to a carmen et error (\"poem and a mistake\"), but his reluctance to disclose specifics has resulted in much speculation among scholars.\nOvid is most famous for the Metamorphoses, a continuous mythological narrative in fifteen books written in dactylic hexameters. He is also known for works in elegiac couplets such as Ars Amatoria (\"The Art of Love\") and Fasti. His poetry was much imitated during Late Antiquity and the Middle Ages, and greatly influenced Western art and literature. The Metamorphoses remains one of the most important sources of classical mythology today."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7198")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7198",
+  "isRealHuman": true,
+  "birthDate": "-0042-03-20",
+  "deathDate": "0017-12-31",
+  "ageAtDeath": 59,
+  "confidence": 74,
+  "confidenceExplained": "The identification is certain: Q7198 is Publius Ovidius Naso, known as Ovid. The birth date of 20 March 43 BCE is strongly supported by major references. The death year is less certain: many sources give 17 CE, while others say 17/18 CE, and no exact day is known. I estimated a late-17 CE death date because Britannica, Poetry Foundation, and other references give 17 CE, and this yields an age of 59 using modern age calculation without a year zero.",
+  "shortDescriptionEn": "Ovid, born Publius Ovidius Naso, was one of the great poets of Augustan Rome, celebrated for the Metamorphoses, Ars Amatoria, Amores, Heroides, Fasti, and his elegant mastery of myth, love poetry, and transformation. In 8 CE Augustus exiled him to Tomis on the Black Sea for what Ovid famously called a carmen et error, “a poem and a mistake.” He spent his final years pleading to return to Rome, but died in exile at about 59.",
+  "shortDescriptionFr": "Ovide, né Publius Ovidius Naso, fut l’un des grands poètes de la Rome augustéenne, célèbre pour les Métamorphoses, l’Art d’aimer, les Amours, les Héroïdes, les Fastes et son art brillant du mythe, de l’amour et de la métamorphose. En 8 apr. J.-C., Auguste l’exila à Tomis, sur la mer Noire, pour ce qu’Ovide appela un carmen et error, « un poème et une erreur ». Il passa ses dernières années à demander son rappel à Rome, mais mourut en exil vers 59 ans.",
+  "shortDescriptionDe": "Ovid, geboren als Publius Ovidius Naso, war einer der großen Dichter des augusteischen Rom und ist vor allem für die Metamorphosen, Ars Amatoria, Amores, Heroides, Fasti und seine meisterhafte Behandlung von Mythos, Liebe und Verwandlung bekannt. Im Jahr 8 n. Chr. verbannte ihn Augustus nach Tomis am Schwarzen Meer wegen dessen, was Ovid carmen et error nannte, „ein Gedicht und ein Fehler“. Er bat jahrelang um Rückkehr nach Rom, starb jedoch im Exil mit etwa 59 Jahren.",
+  "shortDescriptionEs": "Ovidio, nacido Publius Ovidius Naso, fue uno de los grandes poetas de la Roma de Augusto, famoso por las Metamorfosis, Ars Amatoria, Amores, Heroidas, Fastos y su brillante tratamiento del mito, el amor y la transformación. En el año 8 d. C., Augusto lo desterró a Tomis, en el mar Negro, por lo que Ovidio llamó carmen et error, «un poema y un error». Pasó sus últimos años suplicando volver a Roma, pero murió en el exilio alrededor de los 59 años.",
+  "shortDescriptionRu": "Овидий, полное имя Публий Овидий Назон, был одним из великих поэтов эпохи Августа, прославившимся Метаморфозами, Наукой любви, Любовными элегиями, Героинями, Фастами и изящным соединением мифа, любви и темы превращения. В 8 году н. э. Август сослал его в Томы на Черном море за то, что сам Овидий назвал carmen et error, «стихотворение и ошибка». Последние годы он просил разрешить ему вернуться в Рим, но умер в изгнании примерно в 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ovid",
+    "https://www.britannica.com/biography/Ovid-Roman-poet",
+    "https://www.poetryfoundation.org/poets/ovid",
+    "https://www.nationalgallery.org.uk/paintings/learn-about-art/who-was-ovid",
+    "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-4632"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q26825",  "Name": "Herodotus",  "BirthDate": "-0483-01-01T00:00:00Z",  "DeathDate": "-0424-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marble%20bust%20of%20Herodotos%20MET%20DT11742%20%28cropped%29.jpg",  "SiteLinksCnt": 195,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"13574":{"pageid":13574,"ns":0,"title":"Herodotus","extract":"Herodotus (Ancient Greek: \u1f29\u03c1\u03cc\u03b4\u03bf\u03c4\u03bf\u03c2, romanised: H\u0113r\u00f3dotos; c.\u2009484 \u2013 c.\u2009425 BC) was a Greek historian and geographer from the Greek city of Halicarnassus (now Bodrum, Turkey), under Persian control in the 5th century BC, and a later citizen of Thurii in modern Calabria, Italy. He wrote the Histories, a detailed account of the Greco-Persian Wars, among other subjects such as the rise of the Achaemenid dynasty of Cyrus. He has been described as \"The Father of History\", a title conferred on him by the ancient Roman orator Cicero.\nThe Histories primarily cover the lives of prominent kings and famous battles such as Marathon, Thermopylae, Artemisium, Salamis, Plataea, and Mycale. His work deviates from the main topics to provide a cultural, ethnographical, geographical, and historiographical background that forms an essential part of the narrative and provides readers with a wellspring of additional information.\nHerodotus was criticised in his times for his inclusion of \"legends and fanciful accounts\" in his work. The contemporaneous historian Thucydides, who covered the Peloponnesian War in his History of the Peloponnesian War, would separately accuse Herodotus of making up stories for entertainment. Herodotus retorted that he reported what he could see and what he was told. A sizeable portion of the Histories has since been confirmed by modern historians and archaeologists."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q26825")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q26825",
+  "isRealHuman": true,
+  "birthDate": "-0483-01-01",
+  "deathDate": "-0424-01-01",
+  "ageAtDeath": 59,
+  "confidence": 72,
+  "confidenceExplained": "Herodotus is a well-attested historical person, but his birth and death dates are approximate. The common scholarly range is about 484 BCE to about 425 BCE, which gives an estimated age of 59. Confidence is reduced because some references give a broader death window, such as circa 430–420 BCE, and neither exact day nor exact cause of death is known.",
+  "shortDescriptionEn": "Herodotus was a Greek historian and geographer from Halicarnassus, best known for the Histories, his wide-ranging account of the Greco-Persian Wars, imperial power, travel, customs, and storytelling across the ancient Mediterranean and Near East. Cicero later called him the “Father of History,” a title that reflects both his ambition and his lasting influence. He appears to have died around 425 BCE, probably in late middle age, with ancient tradition associating his final years with Thurii in southern Italy or, less certainly, Pella in Macedon. No reliable account preserves the cause of his death, so his age at death is best estimated as 59.",
+  "shortDescriptionFr": "Hérodote était un historien et géographe grec originaire d’Halicarnasse, surtout connu pour les Histoires, vaste récit des guerres médiques, des empires, des voyages, des coutumes et des traditions du monde méditerranéen et proche-oriental. Cicéron l’a ensuite surnommé le « père de l’histoire », formule qui résume son ambition et son influence durable. Il serait mort vers 425 av. J.-C., probablement à un âge mûr, ses dernières années étant parfois associées à Thourioi en Italie du Sud ou, plus incertainement, à Pella en Macédoine. Aucune source fiable ne rapporte la cause précise de sa mort; son âge au décès est donc estimé à 59 ans.",
+  "shortDescriptionDe": "Herodot war ein griechischer Historiker und Geograph aus Halikarnassos, berühmt für die Historien, eine weit ausgreifende Darstellung der Perserkriege, politischer Macht, Reisen, Sitten und Erzähltraditionen im Mittelmeerraum und im Vorderen Orient. Cicero nannte ihn später den „Vater der Geschichtsschreibung“, ein Titel, der seinen Anspruch und seine Nachwirkung gut beschreibt. Er starb wohl um 425 v. Chr., vermutlich im späteren mittleren Alter; seine letzten Jahre werden in der Überlieferung mit Thurioi in Süditalien oder weniger sicher mit Pella in Makedonien verbunden. Eine verlässliche Angabe zur Todesursache ist nicht erhalten, daher wird sein Sterbealter auf 59 Jahre geschätzt.",
+  "shortDescriptionEs": "Heródoto fue un historiador y geógrafo griego de Halicarnaso, célebre por las Historias, una obra amplia sobre las guerras médicas, los imperios, los viajes, las costumbres y los relatos del Mediterráneo antiguo y del Cercano Oriente. Cicerón lo llamó más tarde el “padre de la historia”, un título que refleja su ambición narrativa y su influencia duradera. Murió probablemente hacia 425 a. C., en una etapa avanzada de su vida, y la tradición vincula sus últimos años con Turios, en el sur de Italia, o con menos seguridad con Pela, en Macedonia. No se conserva una explicación fiable de la causa de su muerte, por lo que su edad al morir se estima en 59 años.",
+  "shortDescriptionRu": "Геродот был греческим историком и географом из Галикарнаса, наиболее известным как автор «Истории» — масштабного рассказа о греко-персидских войнах, власти империй, путешествиях, обычаях и преданиях древнего Средиземноморья и Ближнего Востока. Позднее Цицерон назвал его «отцом истории», и это прозвище отражает как размах его труда, так и его влияние. Считается, что он умер около 425 года до н. э., вероятно в позднем среднем возрасте; последние годы традиционно связывают с Фуриями в Южной Италии или, менее уверенно, с Пеллой в Македонии. Достоверных сведений о причине смерти не сохранилось, поэтому возраст на момент смерти оценивается в 59 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Category:Herodotus",
+    "https://commons.wikimedia.org/wiki/File:Herodotus-bust-noBG.png",
+    "https://www.metmuseum.org/art/collection/search/245829"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Herodotus",
+    "https://www.britannica.com/biography/Herodotus-Greek-historian",
+    "https://www.encyclopedia.com/people/history/historians-ancient-biographies/herodotus",
+    "https://www.worldhistory.org/herodotus/",
+    "https://www.metmuseum.org/art/collection/search/245829",
+    "https://commons.wikimedia.org/wiki/Category:Herodotus"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q40909",  "Name": "Virginia Woolf",  "BirthDate": "1882-01-25T00:00:00Z",  "DeathDate": "1941-03-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20Woolf%201927.jpg",  "SiteLinksCnt": 173,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"32742":{"pageid":32742,"ns":0,"title":"Virginia Woolf","extract":"Adeline Virginia Woolf (; n\u00e9e Stephen; 25 January 1882 \u2013  28 March 1941) was an English writer and one of the most influential 20th-century modernist authors. She helped to pioneer the use of stream of consciousness narration as a literary device.\nVirginia Woolf was born in South Kensington, London, into an affluent and intellectual family as the seventh child of Julia Prinsep Jackson and Leslie Stephen. She grew up in a blended household of eight children, including her sister, the painter Vanessa Bell. Educated at home in English classics and Victorian literature, Woolf later attended King\u2019s College London, where she studied classics and history and encountered early advocates for women\u2019s rights and education.\nAfter the death of her father in 1904, Woolf and her family moved to the bohemian Bloomsbury district, where she became a founding member of the influential Bloomsbury Group. She married Leonard Woolf in 1912, and together they established the Hogarth Press in 1917, which published much of her work. They eventually settled in Sussex in 1940, maintaining their involvement in literary circles throughout their lives.\n\nWoolf began publishing professionally in 1900 and rose to prominence during the interwar period with novels like Mrs Dalloway (1925), To the Lighthouse (1927), and Orlando (1928), as well as the feminist essay A Room of One\u2019s Own (1929). Her work became central to 1970s feminist criticism and remains influential worldwide, having been translated into over 50 languages. Woolf\u2019s legacy endures through extensive scholarship, cultural portrayals, and tributes such as memorials, societies, and university buildings bearing her name."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q40909")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q40909",
+  "isRealHuman": true,
+  "birthDate": "1882-01-25",
+  "deathDate": "1941-03-28",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistently confirmed by major reference sources, including Wikipedia and Britannica. The age is directly calculable from the full dates: Virginia Woolf had turned 59 on 25 January 1941 and died on 28 March 1941.",
+  "shortDescriptionEn": "Virginia Woolf was an English novelist, essayist, publisher, and critic, widely regarded as one of the defining modernist writers of the 20th century. Her works, including Mrs Dalloway, To the Lighthouse, Orlando, and A Room of One’s Own, helped transform narrative form through psychological depth and stream-of-consciousness technique. After years of recurring mental illness and amid the strain of wartime Britain, she died by suicide on 28 March 1941, drowning in the River Ouse near her home in Sussex.",
+  "shortDescriptionFr": "Virginia Woolf était une romancière, essayiste, éditrice et critique anglaise, considérée comme l’une des grandes figures du modernisme littéraire du XXe siècle. Ses œuvres, notamment Mrs Dalloway, To the Lighthouse, Orlando et A Room of One’s Own, ont renouvelé le roman par leur profondeur psychologique et l’usage du flux de conscience. Après des années de troubles psychiques récurrents, aggravés par le contexte de la guerre, elle s’est suicidée le 28 mars 1941 en se noyant dans la rivière Ouse, près de sa maison dans le Sussex.",
+  "shortDescriptionDe": "Virginia Woolf war eine englische Romanautorin, Essayistin, Verlegerin und Kritikerin und gilt als eine der prägenden Stimmen der literarischen Moderne des 20. Jahrhunderts. Mit Werken wie Mrs Dalloway, To the Lighthouse, Orlando und A Room of One’s Own veränderte sie die Erzählkunst durch psychologische Genauigkeit und Bewusstseinsstrom-Technik. Nach jahrelangen wiederkehrenden psychischen Krisen und unter dem Druck des Kriegs in Großbritannien starb sie am 28. März 1941 durch Suizid, indem sie sich im Fluss Ouse nahe ihrem Haus in Sussex ertränkte.",
+  "shortDescriptionEs": "Virginia Woolf fue una novelista, ensayista, editora y crítica inglesa, reconocida como una de las figuras centrales del modernismo literario del siglo XX. Obras como Mrs Dalloway, To the Lighthouse, Orlando y A Room of One’s Own transformaron la narrativa con su profundidad psicológica y su uso del monólogo interior. Tras años de enfermedad mental recurrente y en medio de la tensión de la Gran Bretaña en guerra, murió por suicidio el 28 de marzo de 1941, ahogándose en el río Ouse cerca de su casa en Sussex.",
+  "shortDescriptionRu": "Вирджиния Вулф была английской писательницей, эссеисткой, издательницей и литературным критиком, одной из ключевых фигур модернизма XX века. Ее произведения, включая Mrs Dalloway, To the Lighthouse, Orlando и A Room of One’s Own, изменили форму романа благодаря психологической глубине и технике потока сознания. После многих лет повторяющихся психических расстройств и на фоне напряжения военной Британии она покончила с собой 28 марта 1941 года, утонув в реке Уз недалеко от своего дома в Сассексе.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Virginia_Woolf",
+    "https://www.britannica.com/biography/Virginia-Woolf",
+    "https://www.britannica.com/biography/Virginia-Woolf/Mrs-Dalloway-To-the-Lighthouse-A-Room-of-Ones-Own-and-other-major-works",
+    "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw19901/Virginia-Woolf",
+    "https://www.npg.org.uk/collections/search/portrait/mw08081/Virginia-Woolf"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9372",  "Name": "Sima Qian",  "BirthDate": "-0144-01-01T00:00:00Z",  "DeathDate": "-0085-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Si%20maqian.jpg",  "SiteLinksCnt": 142,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"27636":{"pageid":27636,"ns":0,"title":"Sima Qian","extract":"Sima Qian (c.\u2009145 BC \u2013 c.\u200986 BC) was a Chinese historian during the early Han dynasty. He is considered the father of Chinese historiography for the Shiji (sometimes translated into English as Records of the Grand Historian), a general history of China covering more than two thousand years from the rise of the legendary Yellow Emperor and formation of the first Chinese polity to the reign of Emperor Wu of Han, during which Sima wrote. As the first universal history of the world as it was known to the ancient Chinese, the Shiji served as a model for official histories for subsequent dynasties across the Sinosphere until the 20th century.\nSima Qian's father, Sima Tan, first conceived of the ambitious project of writing a complete history of China, but had completed only some preparatory sketches at the time of his death. After inheriting his father's position as court historian in the imperial court, he was determined to fulfill his father's dying wish of composing and putting together this epic work of history. However, in 99 BC, he would fall victim to the Li Ling affair for speaking out in defense of the general, who was blamed for an unsuccessful campaign against the Xiongnu. Given the choice of being executed or castrated, he chose the latter in order to finish his historical work. Although he is universally remembered for the Records, surviving works indicate that he was also a gifted poet and prose writer, and he was instrumental in the creation of the Taichu calendar, which was officially promulgated in 104 BC.\nSima was acutely aware of the importance of his work to posterity and its relationship to his own personal suffering. In the postface of the Records, he implicitly compared his universal history of China to the classics of his day, the Guoyu by Zuo Qiuming, \"Li Sao\" by Qu Yuan, and the Art of War by Sun Bin, pointing out that their authors all suffered great personal misfortunes before their lasting monumental works could come to fruition. Sima Qian is also depicted in the Wu Shuang Pu by Jin Guliang."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9372")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9372",
+  "isRealHuman": true,
+  "birthDate": "-0144-01-01",
+  "deathDate": "-0085-01-01",
+  "ageAtDeath": 59,
+  "confidence": 63,
+  "confidenceExplained": "Sima Qian is securely identified, but his birth and death years are approximate. The most common chronology is c. 145 BCE to c. 86 BCE, which gives an estimated age at death of 59. Confidence is moderate because some sources give 135 BCE as an alternative birth year or c. 87 BCE as the death year, which would change the calculated age.",
+  "shortDescriptionEn": "Sima Qian was a Han dynasty historian, astronomer, court official, and the author of the Shiji, or Records of the Grand Historian, a vast history that shaped Chinese historiography for centuries. After defending the defeated general Li Ling in 99 BCE, he was sentenced to death and chose castration instead so he could complete his life’s work. He appears to have died around 86 BCE, after preserving one of ancient China’s most influential historical monuments.",
+  "shortDescriptionFr": "Sima Qian fut un historien, astronome et fonctionnaire de la dynastie Han, surtout connu comme l’auteur du Shiji, ou Mémoires historiques, œuvre majeure qui a profondément marqué l’historiographie chinoise. Après avoir défendu le général vaincu Li Ling en 99 av. J.-C., il fut condamné à mort et choisit la castration afin de pouvoir achever son ouvrage. Il serait mort vers 86 av. J.-C., laissant l’un des monuments intellectuels les plus durables de la Chine ancienne.",
+  "shortDescriptionDe": "Sima Qian war ein Historiker, Astronom und Hofbeamter der Han-Dynastie und verfasste das Shiji, die Aufzeichnungen des Großen Historikers, ein Werk, das die chinesische Geschichtsschreibung über Jahrhunderte prägte. Nachdem er 99 v. Chr. den besiegten General Li Ling verteidigt hatte, wurde er zum Tod verurteilt und wählte die Kastration, um sein Lebenswerk vollenden zu können. Er starb vermutlich um 86 v. Chr., nachdem er eines der einflussreichsten Geschichtswerke des alten China hinterlassen hatte.",
+  "shortDescriptionEs": "Sima Qian fue un historiador, astrónomo y funcionario de la dinastía Han, célebre por escribir el Shiji, o Registros del Gran Historiador, una obra que modeló la historiografía china durante siglos. Tras defender al general derrotado Li Ling en el año 99 a. C., fue condenado a muerte y eligió la castración para poder terminar su obra. Murió probablemente hacia el 86 a. C., después de legar uno de los monumentos históricos más importantes de la antigua China.",
+  "shortDescriptionRu": "Сыма Цянь был историком, астрономом и придворным чиновником эпохи Хань, автором «Ши цзи» — «Исторических записок», труда, который на века определил китайскую историографию. В 99 году до н. э., после защиты потерпевшего поражение полководца Ли Лина, он был приговорён к смерти и выбрал кастрацию, чтобы завершить своё главное произведение. Вероятно, он умер около 86 года до н. э., оставив один из самых влиятельных исторических памятников древнего Китая.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sima_Qian",
+    "https://www.britannica.com/biography/Sima-Qian",
+    "https://www.worldhistory.org/Sima_Qian/",
+    "https://afe.easia.columbia.edu/ps/cup/sima_qian_letter.pdf",
+    "https://en.chinaculture.org/focus/focus/2010expo_en/2010-04/21/content_377402.htm",
+    "https://commons.wikimedia.org/wiki/File:Si_maqian.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41568",  "Name": "Michel de Montaigne",  "BirthDate": "1533-03-10T00:00:00Z",  "DeathDate": "1592-09-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Montaigne-Dumonstier.jpg",  "SiteLinksCnt": 140,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"44307":{"pageid":44307,"ns":0,"title":"Michel de Montaigne","extract":"Michel Eyquem, Seigneur de Montaigne (28 February 1533 \u2013 13 September 1592), commonly known as just Michel de Montaigne, was one of the most significant philosophers of the French Renaissance. He is known for popularising the essay as a literary genre. His work is noted for its merging of casual anecdotes and autobiography with intellectual insight. Montaigne had a direct influence on numerous writers of Western literature; his Essais contain some of the most influential essays ever written.\nDuring his lifetime, Montaigne was admired more as a statesman than as an author. The tendency in his essays to digress into anecdotes and personal ruminations was seen as detrimental to proper style, rather than as an innovation; moreover, his declaration that \"I am myself the matter of my book\" was viewed by his contemporaries as self-indulgent. In time, however, Montaigne came to be recognised as embodying the spirit of critical thought and open inquiry that began to emerge around that time. He is best known for his sceptical remark, \"Que s\u00e7ay-je ?\" (\"What do I know?\", in Middle French; \"Que sais-je ?\" in modern French)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41568")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41568",
+  "isRealHuman": true,
+  "birthDate": "1533-02-28",
+  "deathDate": "1592-09-13",
+  "ageAtDeath": 59,
+  "confidence": 97,
+  "confidenceExplained": "The identity is secure: Q41568 corresponds to Michel Eyquem de Montaigne. Most biographical sources give 28 February 1533 as his birth date and 13 September 1592 as his death date, while some sources or calendar-normalized records show dates shifted by about ten days. These discrepancies do not affect the calculated age: he had already turned 59 in 1592.",
+  "shortDescriptionEn": "Michel de Montaigne was a French Renaissance writer, philosopher, statesman, and humanist whose Essais helped create the modern literary essay. A former magistrate and mayor of Bordeaux, he wrote with unusual intimacy about judgment, friendship, education, fear, illness, and the limits of certainty. He died at the Château de Montaigne at 59, after long suffering from kidney stones and, according to traditional accounts, a severe throat infection or peritonsillar abscess that impaired his speech near the end.",
+  "shortDescriptionFr": "Michel de Montaigne fut un écrivain, philosophe, homme d’État et humaniste de la Renaissance française, dont les Essais ont contribué à fonder le genre moderne de l’essai. Ancien magistrat et maire de Bordeaux, il écrivit avec une liberté rare sur le jugement, l’amitié, l’éducation, la peur, la maladie et les limites de la certitude. Il mourut au château de Montaigne à 59 ans, après avoir longtemps souffert de calculs rénaux et, selon les récits traditionnels, d’une grave infection de la gorge ou d’un abcès péri-amygdalien qui affecta sa parole à la fin.",
+  "shortDescriptionDe": "Michel de Montaigne war ein französischer Schriftsteller, Philosoph, Staatsmann und Humanist der Renaissance, dessen Essais die moderne literarische Essayform entscheidend prägten. Als früherer Richter und Bürgermeister von Bordeaux schrieb er ungewöhnlich persönlich über Urteilskraft, Freundschaft, Erziehung, Angst, Krankheit und die Grenzen der Gewissheit. Er starb im Château de Montaigne im Alter von 59 Jahren, nachdem ihn jahrelang Nierensteine geplagt hatten und ihm nach traditionellen Berichten zuletzt eine schwere Halsentzündung oder ein Peritonsillarabszess die Sprache nahm.",
+  "shortDescriptionEs": "Michel de Montaigne fue un escritor, filósofo, estadista y humanista del Renacimiento francés, cuyos Essais ayudaron a crear el ensayo literario moderno. Antiguo magistrado y alcalde de Burdeos, escribió con una franqueza poco común sobre el juicio, la amistad, la educación, el miedo, la enfermedad y los límites de la certeza. Murió en el Château de Montaigne a los 59 años, tras años de padecer cálculos renales y, según los relatos tradicionales, una grave infección de garganta o absceso periamigdalino que afectó su habla en sus últimos días.",
+  "shortDescriptionRu": "Мишель де Монтень был французским писателем, философом, государственным деятелем и гуманистом эпохи Возрождения; его «Опыты» во многом сформировали современный литературный жанр эссе. Бывший магистрат и мэр Бордо, он писал необычайно откровенно о суждении, дружбе, воспитании, страхе, болезни и пределах достоверного знания. Он умер в замке Монтень в возрасте 59 лет: долгие годы его мучили камни в почках, а традиционные источники связывают последние дни с тяжелой инфекцией горла или перитонзиллярным абсцессом, из-за которого он почти лишился речи.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
+    "https://www.britannica.com/biography/Michel-de-Montaigne",
+    "https://plato.stanford.edu/entries/montaigne/",
+    "https://chateau-montaigne.com/en/pages/la-tour-de-montaigne",
+    "https://commons.wikimedia.org/wiki/File:Montaigne-Dumonstier.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_de_Michel_de_Montaigne.jpg",
+    "https://gallica.bnf.fr/ark:/12148/btv1b84010182.item",
+    "https://pubmed.ncbi.nlm.nih.gov/25639069/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37085",  "Name": "Solomon",  "BirthDate": "-0989-01-01T00:00:00Z",  "DeathDate": "-0930-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/087.King%20Solomon%20in%20Old%20Age.jpg",  "SiteLinksCnt": 139,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"28329":{"pageid":28329,"ns":0,"title":"Solomon","extract":"Solomon (), also called Jedidiah, was a king of ancient Israel, according to the Hebrew Bible. The successor of his father David, he is described as the penultimate ruler of all Twelve Tribes of Israel under a united Israel and Judah. His reign is hypothesized to have lasted from c.\u2009970\u2013931 BCE. According to the biblical narrative, his reign brought commercial prosperity through alliances and trade, but his accumulation of wealth, horses, and foreign wives, many of whom introduced idolatry, led to divine punishment. After Solomon's death, his son Rehoboam\u2019s harsh policies led the northern Israelites to reject the Davidic line and follow Jeroboam, splitting the kingdom into Israel in the north and Judah in the south, according to the Hebrew Bible.\nConsidered a Jewish prophet, Solomon is portrayed as wealthy, wise, powerful, and a dedicated follower of Yahweh (God), as attested by the eponymous Solomon's Temple. He is also traditionally regarded as the author of the biblical books of Proverbs, Ecclesiastes, and Song of Songs. He is also the subject of many later references and legends, most notably in the Testament of Solomon, part of biblical apocrypha from the 1st century CE.\nThe historicity of Solomon is the subject of significant debate. While current scholarship generally allows for the possibility of a historical Solomon, the details of his reign over Israel and Judah are contested and the biblical portrayal of his apparent empire's opulence is considered highly likely to be an anachronistic exaggeration.\nSolomon is also revered in Christianity and Islam. In the New Testament, he is portrayed as a teacher of wisdom, compared to Jesus, and invoked rhetorically to illustrate God's generosity. In the Quran, he is considered to be a major Islamic prophet. In primarily non-biblical circles, Solomon also came to be known as a magician and an exorcist, with numerous amulets and medallion seals dating from the Hellenistic period invoking his name."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37085")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q37085",
+  "isRealHuman": true,
+  "birthDate": "-0989-01-01",
+  "deathDate": "-0930-01-01",
+  "ageAtDeath": 59,
+  "confidence": 35,
+  "confidenceExplained": "The age is an informed estimate, not a documented exact age. Solomon's birth year is not securely known, and ancient chronologies vary. I used the provided Wikidata-style dates, equivalent to about 990 BCE birth and 931 BCE death, supported broadly by sources that place his reign around 971/970–931 BCE or list him as born c. 991 BCE and dead c. 930 BCE. This gives an estimated age at death of 59.",
+  "shortDescriptionEn": "Solomon was a king of ancient Israel, remembered as the son of David and Bathsheba, the builder of the First Temple in Jerusalem, and a ruler famed for wisdom, wealth, diplomacy, and ambitious building projects. Later Jewish, Christian, and Islamic traditions linked him with Proverbs, Ecclesiastes, Song of Songs, and many legends of judgment and learning. He is said to have died in Jerusalem after a long reign, probably of natural causes. His death was followed by a succession crisis: Rehoboam inherited the throne, but discontent over royal burdens helped split the kingdom into Israel in the north and Judah in the south.",
+  "shortDescriptionFr": "Salomon fut un roi de l’ancien Israël, connu comme le fils de David et de Bethsabée, le constructeur du Premier Temple de Jérusalem et un souverain associé à la sagesse, à la richesse, à la diplomatie et à de vastes chantiers. Les traditions juive, chrétienne et islamique l’ont ensuite lié aux Proverbes, à l’Ecclésiaste, au Cantique des cantiques et à de nombreuses légendes de jugement et de savoir. Il serait mort à Jérusalem après un long règne, probablement de causes naturelles. Sa disparition provoqua une crise de succession: Roboam monta sur le trône, mais le mécontentement contre les charges royales contribua à diviser le royaume entre Israël au nord et Juda au sud.",
+  "shortDescriptionDe": "Salomo war ein König des alten Israel, bekannt als Sohn Davids und Batsebas, als Bauherr des Ersten Tempels in Jerusalem und als Herrscher, dessen Name mit Weisheit, Reichtum, Diplomatie und großen Bauprojekten verbunden ist. Jüdische, christliche und islamische Traditionen brachten ihn später mit den Sprüchen, Kohelet, dem Hohenlied und vielen Legenden über Urteilskraft und Wissen in Verbindung. Er soll nach langer Herrschaft in Jerusalem gestorben sein, wahrscheinlich eines natürlichen Todes. Nach seinem Tod folgte eine Nachfolgekrise: Rehabeam wurde König, doch Unzufriedenheit über königliche Lasten trug zur Teilung des Reiches in Israel im Norden und Juda im Süden bei.",
+  "shortDescriptionEs": "Salomón fue un rey del antiguo Israel, recordado como hijo de David y Betsabé, constructor del Primer Templo de Jerusalén y gobernante célebre por su sabiduría, riqueza, diplomacia y grandes proyectos arquitectónicos. Las tradiciones judía, cristiana e islámica lo vincularon después con Proverbios, Eclesiastés, el Cantar de los Cantares y numerosas leyendas de juicio y conocimiento. Se dice que murió en Jerusalén tras un largo reinado, probablemente por causas naturales. Su muerte abrió una crisis sucesoria: Roboam heredó el trono, pero el descontento por las cargas reales ayudó a dividir el reino en Israel al norte y Judá al sur.",
+  "shortDescriptionRu": "Соломон был царём древнего Израиля, известным как сын Давида и Вирсавии, строитель Первого храма в Иерусалиме и правитель, чьё имя связано с мудростью, богатством, дипломатией и масштабным строительством. В иудейской, христианской и исламской традициях его позднее связывали с Притчами, Екклесиастом, Песнью песней и многочисленными легендами о справедливом суде и знании. Считается, что он умер в Иерусалиме после долгого правления, вероятно, естественной смертью. После его смерти начался кризис наследования: Ровоам занял престол, но недовольство царскими повинностями привело к расколу царства на северный Израиль и южную Иудею.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Solomon",
+    "https://www.britannica.com/biography/Solomon",
+    "https://www.jewishencyclopedia.com/articles/13842-solomon",
+    "https://www.ebsco.com/research-starters/history/solomon",
+    "https://www.worldhistory.org/solomon/",
+    "https://commons.wikimedia.org/wiki/File:087.King_Solomon_in_Old_Age.jpg",
+    "https://commons.wikimedia.org/wiki/File:Song_of_solomon.jpg",
+    "https://www.wikidata.org/wiki/Q37085"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q502",  "Name": "Stendhal",  "BirthDate": "1783-01-23T00:00:00Z",  "DeathDate": "1842-03-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Stendhal.jpg",  "SiteLinksCnt": 135,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"26773":{"pageid":26773,"ns":0,"title":"Stendhal","extract":"Marie-Henri Beyle (French: [ma\u0281i \u0251\u0303\u0281i b\u025bl]; 23 January 1783 \u2013 23 March 1842), better known by his pen name Stendhal (UK: , US: , French: [st\u025b\u0303dal, st\u0251\u0303dal]), was a French writer. Best known for the novels Le Rouge et le Noir (The Red and the Black, 1830) and La Chartreuse de Parme (The Charterhouse of Parma, 1839), he is highly regarded for the acute analysis of his characters' psychology and considered one of the early and foremost practitioners of realism. A self-proclaimed egotist, the neologism for the same characteristic in his characters was \"Beylism\".\nStendhal is also known for De l'amour, his work on \"passionate love\" in which the concept of \"crystallization\" was invented. The book was mostly ignored after publishing, but has been lauded posthumously as one of the first \"modern\" attempts at understanding love. Sharon Brehm, a president of the APA, has called Stendhal \"a first-rate psychologist before the official term was coined\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q502")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q502",
+  "isRealHuman": true,
+  "birthDate": "1783-01-23",
+  "deathDate": "1842-03-23",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, Wikimedia Commons, and biographical sources. The age calculation is exact: Stendhal was born on 1783-01-23 and died on 1842-03-23, two months after his 59th birthday. The only minor uncertainty concerns the precise wording of the final medical event, variously described as stroke or apoplexy, but it does not affect the age.",
+  "shortDescriptionEn": "Stendhal, born Marie-Henri Beyle, was a French novelist and sharp observer of ambition, desire, and self-deception. His best-known works, The Red and the Black and The Charterhouse of Parma, helped shape literary realism through their unusually modern psychological insight. After years of poor health and diplomatic service, he suffered a stroke in Paris and died there on 23 March 1842, aged 59.",
+  "shortDescriptionFr": "Stendhal, né Marie-Henri Beyle, fut un romancier français au regard incisif sur l’ambition, le désir et les illusions personnelles. Ses œuvres majeures, Le Rouge et le Noir et La Chartreuse de Parme, ont marqué l’émergence du réalisme littéraire par leur finesse psychologique. Après une période de santé fragile et de service consulaire, il fut frappé par une attaque à Paris et y mourut le 23 mars 1842, à l’âge de 59 ans.",
+  "shortDescriptionDe": "Stendhal, geboren als Marie-Henri Beyle, war ein französischer Schriftsteller mit einem außergewöhnlich scharfen Blick für Ehrgeiz, Liebe und Selbsttäuschung. Mit Die Kartause von Parma und Rot und Schwarz prägte er den literarischen Realismus und die psychologische Erzählkunst des 19. Jahrhunderts. Nach gesundheitlichen Problemen und Jahren im diplomatischen Dienst erlitt er in Paris einen Schlaganfall und starb dort am 23. März 1842 im Alter von 59 Jahren.",
+  "shortDescriptionEs": "Stendhal, nacido Marie-Henri Beyle, fue un novelista francés célebre por su mirada penetrante sobre la ambición, el deseo y el autoengaño. Sus novelas Rojo y negro y La cartuja de Parma ayudaron a definir el realismo literario gracias a su profundidad psicológica. Tras años de salud delicada y servicio consular, sufrió un derrame cerebral en París y murió allí el 23 de marzo de 1842, a los 59 años.",
+  "shortDescriptionRu": "Стендаль, родившийся как Мари-Анри Бейль, был французским писателем, тонко изображавшим честолюбие, любовь и самообман. Его романы «Красное и чёрное» и «Пармская обитель» стали важными вехами реализма благодаря необычайной психологической точности. После периода слабого здоровья и дипломатической службы он перенёс инсульт в Париже и умер там 23 марта 1842 года в возрасте 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Stendhal",
+    "https://www.britannica.com/biography/Stendhal-French-author",
+    "https://commons.wikimedia.org/wiki/Stendhal",
+    "https://www.napoleon-empire.org/en/personalities/stendhal.php",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2991757/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12718",  "Name": "Auguste Comte",  "BirthDate": "1798-01-19T00:00:00Z",  "DeathDate": "1857-09-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20dAuguste%20Comte%20%28maison%20dA.%20Comte%2C%20Paris%29%20%282424895050%29.jpg",  "SiteLinksCnt": 130,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"132471":{"pageid":132471,"ns":0,"title":"Auguste Comte","extract":"Isidore Auguste Marie Fran\u00e7ois Xavier Comte (; French: [o\u0261yst(\u0259) k\u0254\u0303t] ; 19 January 1798 \u2013 5 September 1857) was a French philosopher, mathematician and writer who formulated the doctrine of positivism. He is often regarded as the first philosopher of science in the modern sense of the term. Comte's ideas were fundamental to the development of sociology, with him inventing the very term and treating the discipline as the crowning achievement of the sciences.\nInfluenced by Henri de Saint-Simon, Comte's work attempted to remedy the social disorder caused by the French Revolution, which he believed indicated an imminent transition to a new form of society. He sought to establish a new social doctrine based on science, which he labeled positivism. He had a major impact on 19th-century thought, influencing the work of social thinkers such as John Stuart Mill and George Eliot. His concept of Sociology and social evolutionism set the tone for early social theorists and anthropologists such as Harriet Martineau and Herbert Spencer, evolving into modern academic sociology presented by \u00c9mile Durkheim as practical and objective social research.\nComte's social theories culminated in his \"Religion of Humanity\", which presaged the development of non-theistic religious humanist and secular humanist organizations in the 19th century. He may also have coined the word altruism."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12718")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q12718",
+  "isRealHuman": true,
+  "birthDate": "1798-01-19",
+  "deathDate": "1857-09-05",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, Wikidata, and the Stanford Encyclopedia of Philosophy. The age calculation is straightforward: Auguste Comte was born on 1798-01-19 and died on 1857-09-05, before reaching his 60th birthday, so he was 59.",
+  "shortDescriptionEn": "Auguste Comte was a French philosopher, mathematician, and writer best known for founding positivism and giving sociology its name, helping shape modern social theory and the philosophy of science. His work influenced later thinkers across sociology, politics, and anthropology. In his later years he developed the Religion of Humanity, a secular moral system. Comte died in Paris on 5 September 1857, aged 59, reportedly from stomach cancer, and was buried at Père Lachaise Cemetery.",
+  "shortDescriptionFr": "Auguste Comte était un philosophe, mathématicien et écrivain français, surtout connu comme fondateur du positivisme et comme celui qui a donné son nom à la sociologie, contribuant à structurer la théorie sociale moderne et la philosophie des sciences. Son œuvre influença de nombreux penseurs en sociologie, en politique et en anthropologie. Dans ses dernières années, il développa la Religion de l’Humanité, un système moral laïque. Comte mourut à Paris le 5 septembre 1857, à l’âge de 59 ans, probablement d’un cancer de l’estomac, et fut enterré au cimetière du Père-Lachaise.",
+  "shortDescriptionDe": "Auguste Comte war ein französischer Philosoph, Mathematiker und Schriftsteller, bekannt als Begründer des Positivismus und als der Denker, der der Soziologie ihren Namen gab. Damit prägte er die moderne Gesellschaftstheorie und die Philosophie der Wissenschaft nachhaltig. Seine Ideen beeinflussten spätere Soziologen, politische Denker und Anthropologen. In seinen letzten Jahren entwickelte er die Religion der Menschheit, ein säkulares Moralsystem. Comte starb am 5. September 1857 in Paris im Alter von 59 Jahren, Berichten zufolge an Magenkrebs, und wurde auf dem Friedhof Père Lachaise beigesetzt.",
+  "shortDescriptionEs": "Auguste Comte fue un filósofo, matemático y escritor francés, célebre por fundar el positivismo y por dar nombre y forma sistemática a la sociología. Su pensamiento influyó en la teoría social moderna, la filosofía de la ciencia, la política y la antropología. En sus últimos años desarrolló la Religión de la Humanidad, un sistema moral secular. Comte murió en París el 5 de septiembre de 1857, a los 59 años, al parecer de cáncer de estómago, y fue enterrado en el cementerio del Père Lachaise.",
+  "shortDescriptionRu": "Огюст Конт был французским философом, математиком и писателем, наиболее известным как основатель позитивизма и мыслитель, давший название социологии и попытавшийся выстроить её как строгую науку. Его идеи заметно повлияли на социальную теорию, философию науки, политику и антропологию. В поздние годы он разработал «Религию человечества» — светскую моральную систему. Конт умер в Париже 5 сентября 1857 года в возрасте 59 лет, предположительно от рака желудка, и был похоронен на кладбище Пер-Лашез.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:A.Comte-A01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Auguste_Comte2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Auguste_Comte_CIPB0366.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_dAuguste_Comte_(maison_dA._Comte,_Paris)_(2424895050).jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Auguste_Comte",
+    "https://www.britannica.com/biography/Auguste-Comte",
+    "https://plato.stanford.edu/entries/comte/",
+    "https://www.wikidata.org/wiki/Q12718",
+    "https://commons.wikimedia.org/wiki/File:A.Comte-A01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Auguste_Comte_CIPB0366.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82778",  "Name": "Pliny the Elder",  "BirthDate": "0020-01-01T00:00:00Z",  "DeathDate": "0079-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Illustrazione%20del%20Lombardo%20Veneto%20Vol%203%20Plinio%20Secondo%20300dpi.jpg",  "SiteLinksCnt": 126,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"44920":{"pageid":44920,"ns":0,"title":"Pliny the Elder","extract":"Gaius Plinius Secundus (Como, 23 or 24 \u2013 Stabiae, 25 August 79), known in English as Pliny the Elder ( PLIN-ee), was a Roman author, naturalist, scientist, naval and army commander of the early Roman Empire, procurator, and friend of the emperor Vespasian. Pliny wrote the encyclopedic Naturalis Historia (Natural History), a thirty-seven-volume work covering a vast array of topics on human knowledge and the natural world, which became an editorial model for encyclopedias. He spent most of his spare time studying, writing, and investigating natural and geographic phenomena in the field.\nPliny produced seven works spanning 102 volumes, of which only Natural History survives. Among the lost works was the twenty-volume Bella Germaniae (Wars of Germania), used as a source by other prominent Roman historians including Plutarch, Tacitus, and Suetonius. Tacitus may have used Bella Germaniae as the primary source for his work, De origine et situ Germanorum (On the Origin and Situation of the Germani). Also substantial was the thirty-one-volume history A fine Aufidii Bassi, which extended Aufidius Bassus' earlier historical work to Pliny's day.\nPliny the Elder died in AD 79 in Stabiae while attempting to rescue people from the eruption of Mount Vesuvius."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82778")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82778",
+  "isRealHuman": true,
+  "birthDate": "0023-09-01",
+  "deathDate": "0079-08-25",
+  "ageAtDeath": 55,
+  "confidence": 68,
+  "confidenceExplained": "Pliny the Elder's identity is certain, and the death during the Vesuvius eruption in AD 79 is very well attested. The exact birth date is not known: sources usually give AD 23 or 24, and one source says he was in his fifty-sixth year and probably born in late AD 23. Using a best-estimate birth date in late 23 and the traditional death date of 25 August 79 gives a modern completed age of 55. Some references round or state the age as 56, so confidence in the single integer is moderate rather than high.",
+  "shortDescriptionEn": "Pliny the Elder, born Gaius Plinius Secundus, was a Roman author, naturalist, naval commander, and imperial official whose vast Natural History became one of antiquity’s most influential encyclopedic works. Curious to the end, he sailed across the Bay of Naples during the eruption of Mount Vesuvius, partly to observe the phenomenon and partly to help people in danger. He died at Stabiae amid the disaster, probably after respiratory distress or collapse caused by the volcanic conditions.",
+  "shortDescriptionFr": "Pline l’Ancien, né Gaius Plinius Secundus, était un auteur romain, naturaliste, commandant naval et haut fonctionnaire de l’Empire. Son immense Histoire naturelle devint l’une des œuvres encyclopédiques les plus influentes de l’Antiquité. Fidèle à sa curiosité, il traversa la baie de Naples pendant l’éruption du Vésuve, à la fois pour observer le phénomène et pour secourir des personnes menacées. Il mourut à Stabies au cœur de la catastrophe, probablement après une détresse respiratoire ou un malaise lié aux conditions volcaniques.",
+  "shortDescriptionDe": "Plinius der Ältere, geboren als Gaius Plinius Secundus, war ein römischer Schriftsteller, Naturforscher, Flottenkommandant und kaiserlicher Beamter. Seine umfangreiche Naturalis historia wurde zu einem der einflussreichsten enzyklopädischen Werke der Antike. Aus Wissensdrang und Hilfsbereitschaft überquerte er während des Ausbruchs des Vesuvs die Bucht von Neapel, um das Ereignis zu beobachten und gefährdeten Menschen zu helfen. In Stabiae starb er inmitten der Katastrophe, vermutlich nach Atemnot oder einem Zusammenbruch unter den vulkanischen Bedingungen.",
+  "shortDescriptionEs": "Plinio el Viejo, nacido como Gaius Plinius Secundus, fue un autor romano, naturalista, comandante naval y funcionario imperial. Su monumental Historia natural se convirtió en una de las obras enciclopédicas más influyentes de la Antigüedad. Movido por la curiosidad y por el deseo de ayudar, cruzó la bahía de Nápoles durante la erupción del Vesubio para observar el fenómeno y socorrer a personas en peligro. Murió en Estabia durante el desastre, probablemente tras sufrir dificultad respiratoria o un colapso provocado por las condiciones volcánicas.",
+  "shortDescriptionRu": "Плиний Старший, родившийся как Гай Плиний Секунд, был римским писателем, натуралистом, флотоводцем и имперским чиновником. Его огромная «Естественная история» стала одним из самых влиятельных энциклопедических трудов античности. Даже в последние часы он оставался исследователем: во время извержения Везувия пересёк Неаполитанский залив, чтобы наблюдать явление и помочь людям в опасности. Он умер в Стабиях во время катастрофы, вероятно после дыхательного приступа или коллапса, вызванного вулканическими условиями.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pliny_the_Elder",
+    "https://www.britannica.com/biography/Pliny-the-Elder",
+    "https://www.ebsco.com/research-starters/biography/pliny-elder",
+    "https://www.attalus.org/pliny/ep6.html",
+    "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Pliny_the_Elder/frontispiece.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q15948",  "Name": "Émile Durkheim",  "BirthDate": "1858-04-15T00:00:00Z",  "DeathDate": "1917-11-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%89mile%20Durkheim.jpg",  "SiteLinksCnt": 123,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"38218":{"pageid":38218,"ns":0,"title":"\u00c9mile Durkheim","extract":"David \u00c9mile Durkheim (;  French: [emil dy\u0281k\u025bm] or [dy\u0281kajm]; 15 April 1858 \u2013 15 November 1917) was a French sociologist. He formally established the academic discipline of sociology, and is commonly cited as one of the principal architects of modern social science, along with Karl Marx and Max Weber.\nMuch of Durkheim's work concerns the inability of societies to maintain their integrity and coherence in modernity, an era in which traditional social and religious ties are much less universal, and in which new social institutions have come into being. His conception of the scientific study of society laid the groundwork for modern sociology. He used such scientific tools as statistics, surveys, and historical observation in his analysis of suicides in Roman Catholic and Protestant groups.\nDurkheim's first major sociological work was De la division du travail social (1893; The Division of Labour in Society), followed in 1895 by Les R\u00e8gles de la m\u00e9thode sociologique (The Rules of Sociological Method). Also in 1895, he set up the first European department of sociology and became France's first professor of sociology. His seminal monograph, Le Suicide (1897), a study of suicide rates in Roman Catholic and Protestant populations, pioneered modern social research, serving to distinguish social science from psychology and political philosophy. In 1898, he established the journal L'Ann\u00e9e sociologique. Les formes \u00e9l\u00e9mentaires de la vie religieuse (1912; The Elementary Forms of the Religious Life) presented a theory of religion, comparing the social and cultural lives of aboriginal and modern societies.\nDurkheim was preoccupied with the acceptance of sociology as a legitimate science. Refining the positivism originally set forth by Auguste Comte, he promoted what could be considered as a form of epistemological realism, as well as the use of the hypothetico-deductive model in social science. For Durkheim, sociology was the science of institutions, understanding the term in its broader meaning as the \"beliefs and modes of behaviour instituted by the collectivity,\" with its aim being to discover structural social facts. He was a major proponent of structural functionalism, a foundational perspective in both sociology and anthropology. In his view, social science should be purely holistic in the sense that sociology should study phenomena attributed to society at large, rather than being limited to the study of specific actions of individuals.\nDurkheim remained a dominant force in French intellectual life until his death in 1917, presenting numerous lectures and publishing works on a variety of topics, including the sociology of knowledge, morality, social stratification, religion, law, education, and deviance. Some terms that he coined, such as \"collective consciousness\", are now also used by laypeople."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q15948")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q15948",
+  "isRealHuman": true,
+  "birthDate": "1858-04-15",
+  "deathDate": "1917-11-15",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, and Wikidata. The age calculation is exact: Émile Durkheim was born on 1858-04-15 and died on 1917-11-15, after his birthday that year, so he was 59. Confidence is not 100 only because historical accounts may vary slightly in wording around the medical cause of death, though not around the dates.",
+  "shortDescriptionEn": "Émile Durkheim was a French sociologist who helped establish sociology as a rigorous academic discipline and remains one of the central architects of modern social science. His works on social facts, solidarity, religion, education, and suicide shaped how societies are studied. In his final years he was deeply affected by World War I and by the death of his son André at the front; he died in Paris on 15 November 1917 after a stroke, aged 59.",
+  "shortDescriptionFr": "Émile Durkheim était un sociologue français qui a contribué à faire de la sociologie une discipline universitaire rigoureuse et demeure l’un des grands fondateurs des sciences sociales modernes. Ses travaux sur les faits sociaux, la solidarité, la religion, l’éducation et le suicide ont profondément marqué l’étude des sociétés. Ses dernières années furent assombries par la Première Guerre mondiale et par la mort de son fils André au front ; il mourut à Paris le 15 novembre 1917 après une attaque cérébrale, à l’âge de 59 ans.",
+  "shortDescriptionDe": "Émile Durkheim war ein französischer Soziologe, der entscheidend dazu beitrug, die Soziologie als wissenschaftliche Disziplin zu etablieren, und bis heute zu den prägenden Begründern der modernen Sozialwissenschaften zählt. Seine Arbeiten über soziale Tatsachen, Solidarität, Religion, Bildung und Suizid beeinflussten die Gesellschaftsanalyse nachhaltig. Seine letzten Jahre wurden vom Ersten Weltkrieg und vom Tod seines Sohnes André an der Front überschattet; er starb am 15. November 1917 in Paris nach einem Schlaganfall im Alter von 59 Jahren.",
+  "shortDescriptionEs": "Émile Durkheim fue un sociólogo francés que ayudó a consolidar la sociología como una disciplina académica rigurosa y sigue siendo una de las figuras fundamentales de las ciencias sociales modernas. Sus estudios sobre los hechos sociales, la solidaridad, la religión, la educación y el suicidio transformaron la forma de analizar las sociedades. Sus últimos años estuvieron marcados por la Primera Guerra Mundial y por la muerte de su hijo André en el frente; murió en París el 15 de noviembre de 1917 tras sufrir un derrame cerebral, a los 59 años.",
+  "shortDescriptionRu": "Эмиль Дюркгейм был французским социологом, одним из тех, кто превратил социологию в строгую академическую дисциплину и заложил основы современной социальной науки. Его работы о социальных фактах, солидарности, религии, образовании и самоубийстве сильно повлияли на изучение общества. Последние годы его жизни были омрачены Первой мировой войной и гибелью сына Андре на фронте; он умер в Париже 15 ноября 1917 года после инсульта, в возрасте 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/%C3%89mile_Durkheim",
+    "https://www.britannica.com/biography/Emile-Durkheim",
+    "https://www.wikidata.org/wiki/Q15948",
+    "https://iep.utm.edu/emile-durkheim/",
+    "https://commons.wikimedia.org/wiki/File:%C3%89mile_Durkheim.jpg",
+    "https://commons.wikimedia.org/wiki/Category:%C3%89mile_Durkheim"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44279",  "Name": "Oliver Cromwell",  "BirthDate": "1599-05-05T00:00:00Z",  "DeathDate": "1658-09-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Cromwell%20by%20Samuel%20Cooper.jpg",  "SiteLinksCnt": 122,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"22413":{"pageid":22413,"ns":0,"title":"Oliver Cromwell","extract":"Oliver Cromwell (25 April 1599 \u2013 3 September 1658) was an English statesman, farmer and soldier, widely regarded as one of the most important figures in British history. He came to prominence during the Wars of the Three Kingdoms, initially as a senior commander in the Parliamentarian army and later as a politician. A leading advocate of the execution of Charles I in January 1649, which led to the establishment of the Commonwealth of England, Cromwell ruled as Lord Protector from December 1653 until his death.\nAlthough elected Member of Parliament (MP) for Huntingdon in 1628, much of Cromwell's life prior to 1640 was marked by financial and personal failure. He briefly contemplated emigration to New England but became a religious Independent in the 1630s and thereafter believed his successes were the result of divine providence. In 1640, he served as MP for Cambridge in the Short and Long Parliaments. He joined the Parliamentarian army when the First English Civil War began in August 1642 and quickly demonstrated his military prowess. In 1645, he was appointed commander of the New Model Army cavalry under Thomas Fairfax, and he played a key role in winning the English Civil War.\nThe death of Charles I and exile of his son Charles II, followed by military victories in Ireland and in Scotland, firmly established the Commonwealth and Cromwell's dominance of the new regime. In December 1653, he was named Lord Protector, a position he retained for the remaining five years of his life. After his death in 1658, he was succeeded by his son Richard, whose weakness led to a power vacuum. This culminated in the 1660 Stuart Restoration, after which Cromwell's body was removed from Westminster Abbey and re-hanged at Tyburn on 30 January 1661. His head was cut off and displayed on the roof of Westminster Hall. It remained there until at least 1684.\nCromwell's historical reputation is continually debated. He is a controversial figure due to his use of military force to acquire and retain political power, his role in the execution of Charles I, and the brutality of his 1649 conquest of Ireland. Winston Churchill described Cromwell as a military dictator, while others view him a hero of liberty.\nFirst proposed in 1856, his statue outside the Houses of Parliament was not erected until 1895, with most of the funds privately supplied by Prime Minister Archibald Primrose."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44279")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44279",
+  "isRealHuman": true,
+  "birthDate": "1599-05-05",
+  "deathDate": "1658-09-13",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "Oliver Cromwell's identity and lifespan are very well documented. The only ambiguity is calendar style: English Old Style dates are usually given as 1599-04-25 and 1658-09-03, while the supplied data gives Gregorian equivalents 1599-05-05 and 1658-09-13. Both date pairs produce the same age at death: 59.",
+  "shortDescriptionEn": "Oliver Cromwell was an English soldier, parliamentarian and statesman who rose from provincial gentry to become one of the central figures of the English Civil Wars. A gifted cavalry commander for Parliament, he helped defeat the royalists, supported the trial and execution of Charles I, and later ruled England, Scotland and Ireland as Lord Protector. His legacy remains fiercely debated, admired by some for religious and political reform and condemned by others for military rule and brutal campaigns, especially in Ireland. He died at Whitehall in 1658, aged 59, probably after a severe illness involving malarial fever, urinary or kidney trouble, and likely sepsis.",
+  "shortDescriptionFr": "Oliver Cromwell fut un soldat, parlementaire et homme d’État anglais qui passa de la petite noblesse provinciale au premier plan pendant les guerres civiles anglaises. Commandant de cavalerie talentueux du camp parlementaire, il contribua à la défaite des royalistes, soutint le procès et l’exécution de Charles Ier, puis gouverna l’Angleterre, l’Écosse et l’Irlande comme Lord Protecteur. Son héritage reste profondément controversé, entre défenseur de réformes religieuses et politiques pour les uns et chef militaire autoritaire pour les autres, notamment à cause de ses campagnes en Irlande. Il mourut à Whitehall en 1658, à 59 ans, probablement après une maladie mêlant fièvre paludéenne, troubles urinaires ou rénaux, et sepsie probable.",
+  "shortDescriptionDe": "Oliver Cromwell war ein englischer Soldat, Parlamentarier und Staatsmann, der während der Englischen Bürgerkriege von einem Landadligen zu einer der mächtigsten Figuren des Landes aufstieg. Als fähiger Kavallerieführer der Parlamentsarmee trug er entscheidend zur Niederlage der Royalisten bei, unterstützte den Prozess und die Hinrichtung Karls I. und regierte später England, Schottland und Irland als Lordprotektor. Sein Ruf ist bis heute umstritten: Manche sehen in ihm einen Förderer religiöser und politischer Reformen, andere einen militärischen Machthaber, besonders wegen seiner brutalen Feldzüge in Irland. Er starb 1658 in Whitehall im Alter von 59 Jahren, wahrscheinlich nach einer schweren Erkrankung mit Malariafieber, Harn- oder Nierenproblemen und vermutlich Sepsis.",
+  "shortDescriptionEs": "Oliver Cromwell fue un soldado, parlamentario y estadista inglés que pasó de la nobleza rural a convertirse en una figura decisiva de las guerras civiles inglesas. Como brillante comandante de caballería del bando parlamentario, ayudó a derrotar a los realistas, apoyó el juicio y la ejecución de Carlos I y más tarde gobernó Inglaterra, Escocia e Irlanda como Lord Protector. Su legado sigue siendo muy controvertido: para algunos fue impulsor de reformas religiosas y políticas; para otros, un gobernante militar, especialmente recordado por sus duras campañas en Irlanda. Murió en Whitehall en 1658, a los 59 años, probablemente tras una grave enfermedad con fiebre palúdica, problemas urinarios o renales y posible sepsis.",
+  "shortDescriptionRu": "Оливер Кромвель был английским военным, парламентарием и государственным деятелем, который во время Английских гражданских войн поднялся от провинциального дворянина до одной из ключевых фигур страны. Как талантливый кавалерийский командир армии парламента, он помог разгромить роялистов, поддержал суд и казнь Карла I, а затем правил Англией, Шотландией и Ирландией как лорд-протектор. Его наследие до сих пор вызывает споры: одни видят в нём сторонника религиозных и политических реформ, другие — военного правителя, особенно из-за жестоких кампаний в Ирландии. Он умер в Уайтхолле в 1658 году в возрасте 59 лет, вероятно после тяжёлой болезни, связанной с малярийной лихорадкой, мочевыми или почечными проблемами и вероятным сепсисом.",
+  "imageUrls": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Cromwell%20by%20Samuel%20Cooper.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw01601/Oliver-Cromwell",
+    "https://www.npg.org.uk/collections/search/portrait/mw135257/Oliver-Cromwell",
+    "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/oliver-cromwell/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Oliver_Cromwell",
+    "https://www.britannica.com/biography/Oliver-Cromwell",
+    "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/oliver-cromwell/",
+    "https://www.wikidata.org/wiki/Q44279",
+    "https://commons.wikimedia.org/wiki/File:Oliver_Cromwell_by_Samuel_Cooper.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw01601/Oliver-Cromwell"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q742",  "Name": "Jean Racine",  "BirthDate": "1639-12-01T00:00:00Z",  "DeathDate": "1699-04-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20racine.jpg",  "SiteLinksCnt": 118,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"52201":{"pageid":52201,"ns":0,"title":"Jean Racine","extract":"Jean-Baptiste Racine ( rass-EEN, US also  r\u0259-SEEN; French: [\u0292\u0251\u0303 batist \u0281asin]; 22 December 1639 \u2013 21 April 1699) was a French dramatist, one of the three great playwrights of 17th-century France, along with Moli\u00e8re and Corneille, as well as an important literary figure in the Western tradition and world literature. Racine was primarily a tragedian, producing such \"examples of neoclassical perfection\" as Ph\u00e8dre, Andromaque, and Athalie. He did write one comedy, Les Plaideurs, and a muted tragedy, Esther, for the young.\nRacine's plays displayed his mastery of the dodecasyllabic (12 syllable) French alexandrine. His writing is renowned for its elegance, purity, speed, and fury, and for what American poet Robert Lowell described as a \"diamond-edge\", and the \"glory of its hard, electric rage\". Racine's dramaturgy is marked by his psychological insight, the prevailing passion of his characters, and the nakedness of both plot and stage."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q742")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q742",
+  "isRealHuman": true,
+  "birthDate": "1639-12-21",
+  "deathDate": "1699-04-21",
+  "ageAtDeath": 59,
+  "confidence": 96,
+  "confidenceExplained": "The identity is certain: Q742 is Jean-Baptiste Racine. The death date, 21 April 1699, is strongly supported. The exact birth day is slightly inconsistent across sources: some give 21 December 1639, others 22 December 1639 or only December 1639/baptism on 22 December. This does not affect the calculated age at death, because Racine died in April 1699, before either December birthday, so he was 59.",
+  "shortDescriptionEn": "Jean-Baptiste Racine was one of the defining playwrights of French classicism, admired for the concentrated power and psychological precision of tragedies such as Andromaque, Britannicus, Bérénice, Phèdre, Esther, and Athalie. A rival and successor to Corneille in the age of Louis XIV, he helped shape French literary taste through severe form, elegant alexandrine verse, and characters driven by passion, duty, jealousy, and guilt. He later served as royal historiographer and was a member of the Académie française. Racine died in Paris on 21 April 1699 at the age of 59, reportedly from liver cancer; he had wished to be buried at Port-Royal, and his remains were later transferred to Saint-Étienne-du-Mont.",
+  "shortDescriptionFr": "Jean-Baptiste Racine fut l’un des grands maîtres du classicisme français, célèbre pour la tension dramatique et la finesse psychologique de tragédies comme Andromaque, Britannicus, Bérénice, Phèdre, Esther et Athalie. Héritier et rival de Corneille sous le règne de Louis XIV, il imposa une langue d’une grande pureté, un vers alexandrin d’une précision remarquable et des personnages dominés par la passion, le devoir et la culpabilité. Il devint aussi historiographe du roi et membre de l’Académie française. Racine mourut à Paris le 21 avril 1699, à l’âge de 59 ans, probablement d’un cancer du foie; il souhaitait être inhumé à Port-Royal, et ses restes furent ensuite transférés à Saint-Étienne-du-Mont.",
+  "shortDescriptionDe": "Jean-Baptiste Racine war einer der prägenden Dramatiker des französischen Klassizismus und wurde vor allem durch die psychologische Schärfe und formale Strenge von Tragödien wie Andromaque, Britannicus, Bérénice, Phèdre, Esther und Athalie berühmt. Im Frankreich Ludwigs XIV. stand er neben Corneille und Molière im Zentrum der literarischen Kultur; seine alexandrinischen Verse verbinden Eleganz, Spannung und schonungslose Analyse von Leidenschaft, Pflicht und Schuld. Später wirkte er als königlicher Historiograf und gehörte der Académie française an. Racine starb am 21. April 1699 in Paris im Alter von 59 Jahren, Berichten zufolge an Leberkrebs; er wollte in Port-Royal bestattet werden, seine Gebeine wurden später nach Saint-Étienne-du-Mont überführt.",
+  "shortDescriptionEs": "Jean-Baptiste Racine fue uno de los dramaturgos esenciales del clasicismo francés, célebre por la intensidad contenida y la precisión psicológica de tragedias como Andromaque, Britannicus, Bérénice, Phèdre, Esther y Athalie. En la Francia de Luis XIV, junto a Corneille y Molière, ayudó a fijar un ideal teatral basado en la claridad formal, el verso alejandrino y personajes desgarrados por la pasión, el deber, los celos y la culpa. También fue historiógrafo real y miembro de la Académie française. Racine murió en París el 21 de abril de 1699, a los 59 años, al parecer de cáncer de hígado; pidió ser enterrado en Port-Royal, y sus restos fueron trasladados más tarde a Saint-Étienne-du-Mont.",
+  "shortDescriptionRu": "Жан-Батист Расин был одним из главных драматургов французского классицизма, прославившимся напряжёнными и психологически точными трагедиями, среди которых Andromaque, Britannicus, Bérénice, Phèdre, Esther и Athalie. Во Франции Людовика XIV он стоял рядом с Корнелем и Мольером, доведя до совершенства строгую театральную форму, александрийский стих и изображение героев, разрываемых страстью, долгом, ревностью и виной. Позднее он служил королевским историографом и был членом Французской академии. Расин умер в Париже 21 апреля 1699 года в возрасте 59 лет, предположительно от рака печени; он хотел быть похоронен в Пор-Рояле, а позднее его останки перенесли в церковь Сент-Этьен-дю-Мон.",
+  "pictureUrls": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Jean%20racine.jpg",
+    "https://commons.wikimedia.org/wiki/Jean_Racine",
+    "https://collections.louvre.fr/ark:/53355/cl020214546",
+    "https://www.museedegrenoble.fr/oeuvre/5177/1922-portrait-de-jean-racine-1639-1699.htm"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean_Racine",
+    "https://www.britannica.com/biography/Jean-Racine",
+    "https://www.wikidata.org/wiki/Q742",
+    "https://www.academie-francaise.fr/les-immortels/jean-racine",
+    "https://commons.wikimedia.org/wiki/Jean_Racine"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q69339",  "Name": "Nathaniel Hawthorne",  "BirthDate": "1804-07-04T00:00:00Z",  "DeathDate": "1864-05-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nathaniel%20Hawthorne%20-%20NARA%20-%20530280cr.jpg",  "SiteLinksCnt": 116,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"21787":{"pageid":21787,"ns":0,"title":"Nathaniel Hawthorne","extract":"Nathaniel Hawthorne (n\u00e9 Hathorne; July 4, 1804 \u2013 May 19, 1864) was an American novelist and short story writer. His works often focus on history, morality, and religion.\nHe was born in 1804 in Salem, Massachusetts, from a family long associated with the town. Hawthorne entered Bowdoin College in 1821, was elected to Phi Beta Kappa in 1824, and graduated in 1825. He published his first work in 1828, the novel Fanshawe; he later tried to suppress it, feeling that it was not equal to the standard of his later work. He published several short stories in periodicals, which he collected in 1837 as Twice-Told Tales. The following year, he became engaged to Sophia Peabody. He worked at the Boston Custom House and joined Brook Farm, a transcendentalist community, before marrying Peabody in 1842. The couple moved to The Old Manse in Concord, Massachusetts, later moving to Salem, the Berkshires, then to The Wayside in Concord. The Scarlet Letter was published in 1850, followed by a succession of other novels. A political appointment as consul took Hawthorne and family to Europe before their return to Concord in 1860. Hawthorne died on May 19, 1864.\nMuch of Hawthorne's writing centers on New England, and many works feature moral metaphors with an anti-Puritan inspiration. His fiction works are considered part of the Romantic movement and, more specifically, dark romanticism. His themes often center on the inherent evil and sin of humanity, and his works often have moral messages and deep psychological complexity. His published works include novels, short stories, and a biography of his college friend Franklin Pierce, written for his 1852 campaign for President of the United States, which Pierce won, becoming the 14th president.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q69339")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q69339",
+  "isRealHuman": true,
+  "birthDate": "1804-07-04",
+  "deathDate": "1864-05-19",
+  "ageAtDeath": 59,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikidata-derived information, Wikipedia, and Britannica. The age calculation is straightforward: Nathaniel Hawthorne was born on 1804-07-04 and died on 1864-05-19, before reaching his 60th birthday, so he was 59.",
+  "shortDescriptionEn": "Nathaniel Hawthorne was a major American novelist and short-story writer, best known for The Scarlet Letter and The House of the Seven Gables. His fiction explored guilt, morality, Puritan inheritance, secrecy, and the darker corners of New England history with a distinctive symbolic intensity. In his final years his health declined, and while traveling for recovery with his longtime friend Franklin Pierce, he died in his sleep in Plymouth, New Hampshire, on May 19, 1864, at the age of 59.",
+  "shortDescriptionFr": "Nathaniel Hawthorne fut un grand romancier et nouvelliste américain, surtout connu pour La Lettre écarlate et La Maison aux sept pignons. Son œuvre explore la culpabilité, la morale, l’héritage puritain, les secrets et les zones sombres de l’histoire de la Nouvelle-Angleterre avec une forte dimension symbolique. Dans ses dernières années, sa santé déclina; parti en voyage de convalescence avec son ami de longue date Franklin Pierce, il mourut dans son sommeil à Plymouth, dans le New Hampshire, le 19 mai 1864, à l’âge de 59 ans.",
+  "shortDescriptionDe": "Nathaniel Hawthorne war ein bedeutender amerikanischer Romancier und Kurzgeschichtenautor, bekannt vor allem für Der scharlachrote Buchstabe und Das Haus mit den sieben Giebeln. Seine Werke behandeln Schuld, Moral, das puritanische Erbe, Geheimnisse und die dunkleren Seiten der Geschichte Neuenglands in dichter symbolischer Form. In seinen letzten Jahren verschlechterte sich seine Gesundheit; während einer Erholungsreise mit seinem langjährigen Freund Franklin Pierce starb er am 19. Mai 1864 in Plymouth, New Hampshire, im Schlaf, im Alter von 59 Jahren.",
+  "shortDescriptionEs": "Nathaniel Hawthorne fue un destacado novelista y cuentista estadounidense, especialmente recordado por La letra escarlata y La casa de los siete tejados. Su obra exploró la culpa, la moral, la herencia puritana, los secretos y los aspectos más oscuros de la historia de Nueva Inglaterra con una intensa carga simbólica. En sus últimos años su salud se deterioró, y durante un viaje de recuperación con su viejo amigo Franklin Pierce murió mientras dormía en Plymouth, Nuevo Hampshire, el 19 de mayo de 1864, a los 59 años.",
+  "shortDescriptionRu": "Натаниел Готорн был выдающимся американским романистом и автором рассказов, наиболее известным по произведениям «Алая буква» и «Дом о семи фронтонах». Его проза исследовала вину, мораль, пуританское наследие, тайны и мрачные стороны истории Новой Англии, отличаясь напряжённой символичностью. В последние годы его здоровье ухудшалось; во время поездки для восстановления сил со своим давним другом Франклином Пирсом он умер во сне в Плимуте, штат Нью-Гэмпшир, 19 мая 1864 года, в возрасте 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nathaniel_Hawthorne",
+    "https://www.britannica.com/biography/Nathaniel-Hawthorne",
+    "https://salempl.org/wiki/index.php?title=Hawthorne%2C_Nathaniel",
+    "https://npg.si.edu/nathaniel-hawthorne",
+    "https://www.npg.org.uk/collections/search/portrait/mw57855/Nathaniel-Hawthorne"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q71243",  "Name": "Clark Gable",  "BirthDate": "1901-02-01T00:00:00Z",  "DeathDate": "1960-11-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Clark%20Gable%20Publicity%20Photo%2C%201945.jpg",  "SiteLinksCnt": 103,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"42083":{"pageid":42083,"ns":0,"title":"Clark Gable","extract":"William Clark Gable (February 1, 1901 \u2013 November 16, 1960) was an American actor often referred to as the \"King of Hollywood\". He appeared in more than 60 motion pictures across a variety of genres during a 37-year career, three decades of which he spent as a leading man. In 1999, the American Film Institute ranked Gable as the seventh greatest male screen legend of classical Hollywood cinema.\nGable won the Academy Award for Best Actor for his role in Frank Capra's It Happened One Night (1934) and earned nominations in the same category for portraying Fletcher Christian in Frank Lloyd's Mutiny on the Bounty (1935) and Rhett Butler in Victor Fleming's Gone with the Wind (1939). For his comedic performances in George Seaton's Teacher's Pet (1958) and Walter Lang's But Not for Me (1959), Gable received nominations for the Golden Globe Award for Best Actor in a Motion Picture \u2013 Musical or Comedy. His other notable films include William A. Wellman's Call of the Wild (1935), George Sidney's Key to the City (1950), and John Ford's Mogambo (1953). His final on-screen role was as an aging cowboy in John Huston's The Misfits (1961).\nGable was one of the most consistently bankable stars in the history of Hollywood, appearing 16 times on Quigley Publishing's annual Top Ten Money Making Stars Poll. He appeared opposite many of the most popular actresses of their time, including Jean Harlow, Greta Garbo, Joan Crawford, Myrna Loy, Lana Turner, Norma Shearer, Ava Gardner, Carole Lombard, Marilyn Monroe, and Gene Tierney. He died of a heart attack in 1960 at age 59."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q71243")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q71243",
+  "isRealHuman": true,
+  "birthDate": "1901-02-01",
+  "deathDate": "1960-11-16",
+  "ageAtDeath": 59,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable biographical sources agree that William Clark Gable was born on 1901-02-01 and died on 1960-11-16. The age calculation is exact: he had turned 59 on 1960-02-01 and died before his 60th birthday.",
+  "shortDescriptionEn": "Clark Gable was one of classic Hollywood’s defining leading men, famously nicknamed the “King of Hollywood.” Best remembered as Rhett Butler in Gone with the Wind, he also won the Academy Award for It Happened One Night and remained a major box-office draw for decades. In November 1960, shortly after completing The Misfits, he was hospitalized following a heart attack and died in Los Angeles on November 16, 1960, reportedly after a second heart attack. He was 59.",
+  "shortDescriptionFr": "Clark Gable fut l’un des grands premiers rôles de l’âge d’or d’Hollywood, surnommé le « King of Hollywood ». Célèbre pour son rôle de Rhett Butler dans Autant en emporte le vent, il remporta aussi l’Oscar du meilleur acteur pour New York-Miami et resta une valeur sûre du box-office pendant des décennies. En novembre 1960, peu après le tournage des Désaxés, il fut hospitalisé à la suite d’une crise cardiaque et mourut à Los Angeles le 16 novembre 1960, apparemment après une seconde attaque. Il avait 59 ans.",
+  "shortDescriptionDe": "Clark Gable war einer der prägenden Hauptdarsteller des klassischen Hollywood und wurde oft als „King of Hollywood“ bezeichnet. Besonders berühmt wurde er als Rhett Butler in Vom Winde verweht; zudem gewann er den Oscar für Es geschah in einer Nacht und blieb über Jahrzehnte ein Publikumsmagnet. Im November 1960, kurz nach Abschluss von Misfits – Nicht gesellschaftsfähig, wurde er nach einem Herzinfarkt ins Krankenhaus eingeliefert und starb am 16. November 1960 in Los Angeles, Berichten zufolge nach einem zweiten Herzinfarkt. Er war 59 Jahre alt.",
+  "shortDescriptionEs": "Clark Gable fue uno de los galanes más emblemáticos del Hollywood clásico, conocido como el “Rey de Hollywood”. Recordado sobre todo como Rhett Butler en Lo que el viento se llevó, también ganó el Óscar por Sucedió una noche y se mantuvo durante décadas como una estrella muy rentable. En noviembre de 1960, poco después de terminar The Misfits, fue hospitalizado tras sufrir un ataque al corazón y murió en Los Ángeles el 16 de noviembre de 1960, al parecer después de un segundo infarto. Tenía 59 años.",
+  "shortDescriptionRu": "Кларк Гейбл был одной из главных звезд классического Голливуда и получил прозвище «Король Голливуда». Больше всего его помнят по роли Ретта Батлера в фильме «Унесённые ветром»; он также получил «Оскар» за фильм «Это случилось однажды ночью» и десятилетиями оставался кассовой звездой. В ноябре 1960 года, вскоре после завершения съёмок фильма «Неприкаянные», он был госпитализирован после сердечного приступа и умер в Лос-Анджелесе 16 ноября 1960 года, как сообщалось, после второго приступа. Ему было 59 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Clark%20Gable%20Publicity%20Photo%2C%201945.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gable,_Clark_01.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Clark_Gable",
+    "https://www.publicdomainpictures.net/en/view-image.php?image=517258&picture=clark-gable"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Clark_Gable",
+    "https://www.britannica.com/biography/Clark-Gable",
+    "https://johnclarkgable.com/",
+    "https://commons.wikimedia.org/wiki/Clark_Gable",
+    "https://commons.wikimedia.org/wiki/Category:Clark_Gable"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q155547",  "Name": "Johann Gottfried Herder",  "BirthDate": "1744-08-25T00:00:00Z",  "DeathDate": "1803-12-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Gottfried%20Herder%202.jpg",  "SiteLinksCnt": 102,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"294037":{"pageid":294037,"ns":0,"title":"Johann Gottfried Herder","extract":"Johann Gottfried von Herder ( HUR-d\u0259r; German: [\u02c8jo\u02d0han \u02c8\u0261\u0254tf\u0281i\u02d0t \u02c8h\u025b\u0281d\u0250]; 25 August 1744 \u2013 18 December 1803) was a German philosopher, theologian, pastor, poet, and literary critic. Herder is associated with the Age of Enlightenment, Sturm und Drang, and Weimar Classicism. He was a Romantic philosopher and poet who argued that true German culture was to be discovered among the common people (das Volk). He also stated that it was through folk songs, folk poetry, and folk dances that the true spirit of the nation (der Volksgeist) was popularized. He is credited with establishing or advancing a number of important disciplines: hermeneutics, linguistics, anthropology, and \"a secular philosophy of history.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q155547")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q155547",
+  "isRealHuman": true,
+  "birthDate": "1744-08-25",
+  "deathDate": "1803-12-18",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable biographical sources agree on the birth date, death date, places, and identity. The age calculation is exact: Johann Gottfried Herder was born on 1744-08-25 and died on 1803-12-18, after his birthday that year, so he was 59 years old. Confidence is slightly below 100 only because the precise medical cause of death is described generally rather than with a modern diagnosis.",
+  "shortDescriptionEn": "Johann Gottfried Herder was a German philosopher, theologian, pastor, poet, and literary critic whose work helped shape Sturm und Drang, Weimar Classicism, modern hermeneutics, linguistics, anthropology, and the philosophy of history. He argued that language, folk poetry, and popular traditions expressed the spirit of a people, making him a major figure in European cultural thought. In his final years in Weimar, chronic illness and personal isolation increasingly interrupted his work; after attempts to recover through spa treatments, he suffered a relapse and died on 18 December 1803 at the age of 59.",
+  "shortDescriptionFr": "Johann Gottfried Herder était un philosophe, théologien, pasteur, poète et critique littéraire allemand, associé au Sturm und Drang, au classicisme de Weimar, à l’herméneutique moderne, à la linguistique, à l’anthropologie et à la philosophie de l’histoire. Il soutenait que la langue, la poésie populaire et les traditions exprimaient l’esprit d’un peuple, ce qui fit de lui une figure majeure de la pensée culturelle européenne. Dans ses dernières années à Weimar, une maladie chronique et un isolement croissant interrompirent son travail; après des cures thermales restées insuffisantes, il connut une rechute et mourut le 18 décembre 1803 à l’âge de 59 ans.",
+  "shortDescriptionDe": "Johann Gottfried Herder war ein deutscher Philosoph, Theologe, Pastor, Dichter und Literaturkritiker, der Sturm und Drang, Weimarer Klassik, moderne Hermeneutik, Sprachwissenschaft, Anthropologie und Geschichtsphilosophie entscheidend mitprägte. Er betonte, dass Sprache, Volkslieder und überlieferte Dichtung den Geist eines Volkes ausdrücken, und wurde damit zu einer Schlüsselfigur des europäischen Kulturdenkens. In seinen letzten Weimarer Jahren wurde seine Arbeit zunehmend durch chronische Krankheiten und persönliche Isolation überschattet; nach Kuraufenthalten erlitt er einen Rückfall und starb am 18. Dezember 1803 im Alter von 59 Jahren.",
+  "shortDescriptionEs": "Johann Gottfried Herder fue un filósofo, teólogo, pastor, poeta y crítico literario alemán, vinculado al Sturm und Drang, al clasicismo de Weimar, a la hermenéutica moderna, la lingüística, la antropología y la filosofía de la historia. Defendió que la lengua, la poesía popular y las tradiciones expresaban el espíritu de un pueblo, lo que lo convirtió en una figura clave del pensamiento cultural europeo. En sus últimos años en Weimar, las enfermedades crónicas y el aislamiento personal interrumpieron cada vez más su trabajo; tras intentar recuperarse mediante tratamientos termales, sufrió una recaída y murió el 18 de diciembre de 1803 a los 59 años.",
+  "shortDescriptionRu": "Иоганн Готфрид Гердер был немецким философом, теологом, пастором, поэтом и литературным критиком, связанным с движением «Буря и натиск», веймарским классицизмом, современной герменевтикой, языкознанием, антропологией и философией истории. Он утверждал, что язык, народная поэзия и традиции выражают дух народа, благодаря чему стал одной из ключевых фигур европейской культурной мысли. В последние годы в Веймаре его работу всё сильнее прерывали хронические болезни и личная изоляция; после попыток лечения на курортах у него случился рецидив, и 18 декабря 1803 года он умер в возрасте 59 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Johann_Gottfried_Herder",
+    "https://www.britannica.com/biography/Johann-Gottfried-von-Herder",
+    "https://plato.stanford.edu/entries/herder/",
+    "https://de.wikipedia.org/wiki/Johann_Gottfried_Herder",
+    "https://www.deutsche-biographie.de/gnd118549553.html",
+    "https://www.nndb.com/people/280/000093998/",
+    "https://www.pfarrerverband.de/pfarrerblatt/archiv?cHash=a6b9b179642d6aa43953a12bfb351392&tx_pvpfarrerblatt_pi1%5Baction%5D=print&tx_pvpfarrerblatt_pi1%5Bcontroller%5D=Item&tx_pvpfarrerblatt_pi1%5BitemId%5D=1327"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q134180",  "Name": "Truman Capote",  "BirthDate": "1924-09-30T00:00:00Z",  "DeathDate": "1984-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Truman%20Capote%20by%20Jack%20Mitchell.jpg",  "SiteLinksCnt": 101,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"155736":{"pageid":155736,"ns":0,"title":"Truman Capote","extract":"Truman Garcia Capote ( k\u0259-POH-tee; born Truman Streckfus Persons; September 30, 1924 \u2013 August 25, 1984) was an American novelist, screenwriter, playwright, and actor. Several of his short stories, novels, and plays have been praised as literary classics, and he is regarded as one of the founders of New Journalism, along with Gay Talese, Hunter S. Thompson, Norman Mailer, Joan Didion, and Tom Wolfe. His work and his life story have been adapted into and have been the subject of more than 20 films and television productions.\nCapote had a troubled childhood caused by his parents' divorce, a long absence from his mother, and multiple moves. He was planning to become a writer by the time he was eight years old, and he honed his writing ability throughout his childhood. He began his professional career writing short stories. The critical success of \"Miriam\" (1945) attracted the attention of Random House publisher Bennett Cerf and resulted in a contract to write the novel Other Voices, Other Rooms (1948). He achieved widespread acclaim with Breakfast at Tiffany's (1958)\u2014a novella about a fictional New York caf\u00e9 society girl named Holly Golightly, and the true crime novel In Cold Blood (1966)\u2014a journalistic work about the murder of a Kansas farm family in their home. Capote spent six years writing the latter, aided by his lifelong friend Harper Lee, who wrote To Kill a Mockingbird (1960)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q134180")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q134180",
+  "isRealHuman": true,
+  "birthDate": "1924-09-30",
+  "deathDate": "1984-08-25",
+  "ageAtDeath": 59,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are confirmed by multiple reputable sources, including Wikipedia and Britannica. The calculation is exact: Truman Capote died on 1984-08-25, about one month before his 60th birthday on 1984-09-30, so his age at death was 59. Confidence is not 100 only because secondary sources sometimes summarize death circumstances differently, but the age is highly secure.",
+  "shortDescriptionEn": "Truman Capote was an American novelist, short-story writer, screenwriter, playwright, and actor whose sharp prose and flair for celebrity made him one of the most recognizable literary figures of the 20th century. He is best remembered for Breakfast at Tiffany's and In Cold Blood, a landmark work of literary true crime often associated with New Journalism. In his later years, his health declined amid alcohol and drug dependence, and he died in Bel Air, Los Angeles, at age 59. The reported cause was liver disease complicated by phlebitis and multiple drug intoxication.",
+  "shortDescriptionFr": "Truman Capote était un romancier, nouvelliste, scénariste, dramaturge et acteur américain, célèbre pour son style incisif et sa présence mondaine autant que pour son œuvre littéraire. Il reste surtout associé à Petit déjeuner chez Tiffany et à De sang-froid, livre majeur du récit criminel littéraire et du Nouveau Journalisme. Ses dernières années furent marquées par un déclin de santé lié à l’alcool et aux médicaments. Il est mort à Bel Air, Los Angeles, à 59 ans; la cause rapportée fut une maladie du foie compliquée par une phlébite et une intoxication médicamenteuse multiple.",
+  "shortDescriptionDe": "Truman Capote war ein amerikanischer Romancier, Kurzgeschichtenautor, Drehbuchautor, Dramatiker und Schauspieler, dessen präziser Stil und gesellschaftliche Berühmtheit ihn zu einer prägenden literarischen Figur des 20. Jahrhunderts machten. Bekannt wurde er vor allem durch Frühstück bei Tiffany und Kaltblütig, ein Schlüsselwerk des literarischen True Crime und des New Journalism. In seinen letzten Jahren verschlechterte sich seine Gesundheit im Zusammenhang mit Alkohol- und Medikamentenabhängigkeit. Er starb in Bel Air, Los Angeles, im Alter von 59 Jahren; als Ursache wurden Lebererkrankung, Phlebitis und multiple Medikamentenintoxikation genannt.",
+  "shortDescriptionEs": "Truman Capote fue un novelista, cuentista, guionista, dramaturgo y actor estadounidense, famoso por su prosa afilada y por una vida pública tan llamativa como su obra. Se le recuerda especialmente por Desayuno en Tiffany's y A sangre fría, una obra clave del true crime literario y del Nuevo Periodismo. En sus últimos años sufrió un deterioro de salud asociado al abuso de alcohol y medicamentos. Murió en Bel Air, Los Ángeles, a los 59 años; la causa reportada fue enfermedad hepática complicada por flebitis e intoxicación múltiple por fármacos.",
+  "shortDescriptionRu": "Трумен Капоте был американским романистом, автором рассказов, сценаристом, драматургом и актером, чья точная проза и яркая светская репутация сделали его одной из заметнейших литературных фигур XX века. Больше всего его помнят по Завтраку у Тиффани и Хладнокровному убийству, важнейшему произведению литературного true crime и Нового журнализма. В последние годы его здоровье ухудшалось на фоне зависимости от алкоголя и лекарств. Он умер в Бел-Эйре, Лос-Анджелес, в 59 лет; сообщалось, что причиной стала болезнь печени, осложненная флебитом и множественной лекарственной интоксикацией.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Truman_Capote",
+    "https://www.britannica.com/biography/Truman-Capote",
+    "https://people.com/truman-capote-death-what-to-know-8608567",
+    "https://www.pbs.org/wnet/americanmasters/masters/truman-capote/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q140412",  "Name": "John Donne",  "BirthDate": "1572-01-01T00:00:00Z",  "DeathDate": "1631-03-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Donne%20by%20Isaac%20Oliver.jpg",  "SiteLinksCnt": 101,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"15838":{"pageid":15838,"ns":0,"title":"John Donne","extract":"John Donne ( DUN; 1571 or 1572 \u2013 31 March 1631) was an English poet, scholar, soldier and secretary born into a recusant family, who later became a cleric in the Church of England. Under royal patronage, he was made Dean of St Paul's Cathedral in London (1621\u20131631). He is considered the preeminent representative of the metaphysical poets. His poetical works are noted for their metaphorical and sensual style and include sonnets, love poems, religious poems, Latin translations, epigrams, elegies, songs and satires. He is also known for his sermons.\nDonne's style is characterised by abrupt openings and various paradoxes, ironies and dislocations. These features, along with his frequent dramatic or everyday speech rhythms, his tense syntax and his tough eloquence, were both a reaction against the smoothness of conventional Elizabethan poetry and an adaptation into English of European baroque and mannerist techniques. His early career was marked by poetry that bore immense knowledge of English society. A theme in Donne's later poetry is the idea of true religion, something that he spent much time considering and about which he often theorised. He wrote secular poems as well as erotic and love poems. He is particularly famous for his mastery of metaphysical conceits.\nDespite his great education and poetic talents, Donne lived in poverty for several years, relying heavily on wealthy friends. This was as a result of his secret marriage to Anne More, with whom he eventually had twelve children. He served as a member of Parliament in 1601 and in 1614. In 1615 he unwillingly was ordained Anglican deacon and then priest at the king's insistence."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q140412")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q140412",
+  "isRealHuman": true,
+  "birthDate": "1572-01-24",
+  "deathDate": "1631-03-31",
+  "ageAtDeath": 59,
+  "confidence": 75,
+  "confidenceExplained": "John Donne’s death date is well established as 1631-03-31. His exact birth date is not securely known: major references give 1571 or 1572, and some narrow it to between 1572-01-24 and 1572-06-19. I used 1572-01-24 as a best estimate within that scholarly range; this gives age 59 at death. Confidence is reduced because if he was born after 1631-03-31 in the accepted 1572 range, the calculated age would be 58.",
+  "shortDescriptionEn": "John Donne was an English poet, preacher, scholar, and later Dean of St Paul’s Cathedral, remembered as the leading voice of the metaphysical poets. His work fused passion, intellect, religious anxiety, and startling imagery in love poems, satires, sermons, and devotional writing. He died in London on 31 March 1631, probably after a period of serious illness, and was buried in old St Paul’s Cathedral; his memorial famously survived the Great Fire of London.",
+  "shortDescriptionFr": "John Donne était un poète, prédicateur et érudit anglais, devenu plus tard doyen de la cathédrale Saint-Paul de Londres, et l’une des grandes figures de la poésie métaphysique. Son œuvre mêle passion, intelligence, inquiétude religieuse et images saisissantes dans des poèmes d’amour, des satires, des sermons et des textes dévotionnels. Il mourut à Londres le 31 mars 1631, probablement après une grave maladie, et fut enterré dans l’ancienne cathédrale Saint-Paul, où son monument survécut au Grand Incendie de Londres.",
+  "shortDescriptionDe": "John Donne war ein englischer Dichter, Prediger und Gelehrter, später Dekan der St Paul’s Cathedral in London, und gilt als zentrale Stimme der metaphysischen Dichtung. Seine Werke verbinden Leidenschaft, Scharfsinn, religiöse Unruhe und überraschende Bildsprache in Liebesgedichten, Satiren, Predigten und geistlichen Texten. Er starb am 31. März 1631 in London, vermutlich nach schwerer Krankheit, und wurde in der alten St Paul’s Cathedral beigesetzt; sein Denkmal überstand später den Großen Brand von London.",
+  "shortDescriptionEs": "John Donne fue un poeta, predicador y erudito inglés, más tarde deán de la catedral de San Pablo de Londres, y una de las figuras principales de la poesía metafísica. Su obra combina pasión, ingenio, inquietud religiosa e imágenes sorprendentes en poemas amorosos, sátiras, sermones y escritos devocionales. Murió en Londres el 31 de marzo de 1631, probablemente tras un periodo de enfermedad grave, y fue enterrado en la antigua catedral de San Pablo; su monumento sobrevivió al Gran Incendio de Londres.",
+  "shortDescriptionRu": "Джон Донн был английским поэтом, проповедником и учёным, позднее деканом собора Святого Павла в Лондоне, и считается одной из ключевых фигур метафизической поэзии. Его творчество сочетало страсть, интеллектуальную дерзость, религиозную тревогу и яркие метафоры в любовной лирике, сатирах, проповедях и духовной прозе. Он умер в Лондоне 31 марта 1631 года, вероятно после тяжёлой болезни, и был похоронен в старом соборе Святого Павла; его памятник пережил Великий лондонский пожар.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Donne%20by%20Isaac%20Oliver.jpg",
+    "https://commons.wikimedia.org/wiki/File:John_Donne_by_Isaac_Oliver.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw01900/John-Donne"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Donne",
+    "https://www.britannica.com/biography/John-Donne",
+    "https://www.poetryfoundation.org/poets/john-donne",
+    "https://commons.wikimedia.org/wiki/File:John_Donne_by_Isaac_Oliver.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw01900/John-Donne"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q169234",  "Name": "Abu Bakr al-Razi",  "BirthDate": "0866-01-01T00:00:00Z",  "DeathDate": "0925-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Al-RaziInGerardusCremonensis1250.JPG",  "SiteLinksCnt": 98,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"78209":{"pageid":78209,"ns":0,"title":"Abu Bakr al-Razi","extract":"Ab\u016b Bakr al-R\u0101z\u012b, also known as Rhazes (full name: \u0623\u0628\u0648 \u0628\u06a9\u0631 \u0645\u062d\u0645\u062f \u0628\u0646 \u0632\u06a9\u0631\u06cc\u0627\u0621 \u0627\u0644\u0631\u0627\u0632\u064a, Ab\u016b Bakr Mu\u1e25ammad ibn Zakariyy\u0101\u02be al-R\u0101z\u012b), 864 or 865 \u2013 925 or 935 CE, was a Persian physician, philosopher and alchemist who lived during the Islamic Golden Age. He is widely regarded as one of the most important figures in the history of medicine, and also wrote on logic, astronomy and grammar. He is also known for his criticism of religion, especially with regard to the concepts of prophethood and revelation. However, the religio-philosophical aspects of his thought, which also included a belief in five \"eternal principles\", are fragmentary and only reported by authors who were often hostile to him.\nA comprehensive thinker, al-Razi made fundamental and enduring contributions to various fields, which he recorded in over 200 manuscripts, and is particularly remembered for numerous advances in medicine through his observations and discoveries. An early proponent of experimental medicine, he became a successful doctor, and served as chief physician of Baghdad and Ray hospitals. As a teacher of medicine, he attracted students of all backgrounds and interests and was said to be compassionate and devoted to the service of his patients, whether rich or poor. Along with Th\u0101bit ibn Qurra (836\u2013901), he was one of the first to clinically distinguish between smallpox and measles.\nThrough translation, his medical works and ideas became known among medieval European practitioners and profoundly influenced medical education in the Latin West. Some volumes of his work Al-Mansuri, namely \"On Surgery\" and \"A General Book on Therapy\", became part of the medical curriculum in Western universities. Edward Granville Browne considers him as \"probably the greatest and most original of all the Muslim physicians, and one of the most prolific as an author\". Additionally, he has been described as the father of pediatrics, and a pioneer of obstetrics and ophthalmology."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q169234")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q169234",
+  "isRealHuman": true,
+  "birthDate": "0865-01-01",
+  "deathDate": "0925-10-27",
+  "ageAtDeath": 60,
+  "confidence": 78,
+  "confidenceExplained": "The identity is clear: this is Abu Bakr Muhammad ibn Zakariyya al-Razi, or Rhazes. The exact birth day is not known, and major references disagree on the year range, with some giving 864/865-925/935 or c.854-925/935. However, several strong sources give 865-925, and one medical-history source states that he died on 27 October 925 at age 60; Wikipedia also reports al-Biruni's statement that he died in Ray in 925 at sixty years of age. I use 60 as the best-supported calculated/estimated age.",
+  "shortDescriptionEn": "Abu Bakr al-Razi, known in Europe as Rhazes, was a Persian physician, philosopher and alchemist of the Islamic Golden Age, celebrated for clinical observation, experimental medicine and influential medical works such as al-Hawi. He worked in Ray and Baghdad and became one of the most respected physicians of the medieval world. In his last years he reportedly suffered from cataracts or blindness, returned to Ray, and died there in 925, traditionally at about 60 years old.",
+  "shortDescriptionFr": "Abu Bakr al-Razi, connu en Europe sous le nom de Rhazès, était un médecin, philosophe et alchimiste persan de l'âge d'or islamique, célèbre pour son sens de l'observation clinique, sa médecine expérimentale et des ouvrages médicaux majeurs comme al-Hawi. Il travailla à Ray et à Bagdad et devint l'une des grandes autorités médicales du Moyen Âge. Dans ses dernières années, il aurait souffert de cataractes ou de cécité, serait revenu à Ray, où il mourut en 925, traditionnellement vers l'âge de 60 ans.",
+  "shortDescriptionDe": "Abu Bakr al-Razi, in Europa als Rhazes bekannt, war ein persischer Arzt, Philosoph und Alchemist des islamischen Goldenen Zeitalters, berühmt für klinische Beobachtung, experimentelle Medizin und einflussreiche Werke wie al-Hawi. Er wirkte in Ray und Bagdad und wurde zu einer der bedeutendsten medizinischen Autoritäten des Mittelalters. In seinen letzten Jahren litt er Berichten zufolge an Katarakten oder Erblindung, kehrte nach Ray zurück und starb dort 925, traditionell im Alter von etwa 60 Jahren.",
+  "shortDescriptionEs": "Abu Bakr al-Razi, conocido en Europa como Rhazes, fue un médico, filósofo y alquimista persa de la Edad de Oro islámica, célebre por la observación clínica, la medicina experimental y obras médicas influyentes como al-Hawi. Trabajó en Ray y Bagdad y llegó a ser una de las grandes autoridades médicas del mundo medieval. En sus últimos años habría sufrido cataratas o ceguera, regresó a Ray y murió allí en 925, tradicionalmente a los 60 años.",
+  "shortDescriptionRu": "Абу Бакр ар-Рази, известный в Европе как Разес, был персидским врачом, философом и алхимиком исламского Золотого века, прославившимся клиническими наблюдениями, опытным подходом к медицине и влиятельными трудами, включая al-Hawi. Он работал в Рее и Багдаде и стал одним из самых авторитетных медиков Средневековья. В последние годы, по сообщениям источников, он страдал катарактой или слепотой, вернулся в Рей и умер там в 925 году, традиционно в возрасте около 60 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Abu_Bakr_al-Razi",
+    "https://plato.stanford.edu/entries/abu-bakr-al-razi/",
+    "https://www.britannica.com/biography/al-Razi",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6074295/",
+    "https://www.baus.org.uk/museum/1452/rhazes_iran",
+    "https://commons.wikimedia.org/wiki/File:Al-RaziInGerardusCremonensis1250.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43527",  "Name": "Sitting Bull",  "BirthDate": "1831-01-01T00:00:00Z",  "DeathDate": "1890-12-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sitting%20Bull.jpg",  "SiteLinksCnt": 97,  "Age": 59}
+{"batchcomplete":"","query":{"pages":{"152833":{"pageid":152833,"ns":0,"title":"Sitting Bull","extract":"Sitting Bull (Lakota: T\u021fat\u021f\u00e1\u014bka \u00cdyotake [t\u02e3a\u02c8t\u02e3\u0259\u0303ka \u02c8ij\u0254tak\u025b]; c.\u20091831\u201337 \u2013 December 15, 1890) was a Hunkpapa Lakota leader who led his people during years of resistance against United States government policies. Sitting Bull was killed by Indian agency police accompanied by U.S. officers and supported by U.S. troops on the Standing Rock Indian Reservation during an attempt to arrest him at a time when authorities feared that he would join the Ghost Dance movement.\nBefore the Battle of the Little Bighorn, Sitting Bull had a vision in which he saw many soldiers, \"as thick as grasshoppers\", falling upside down into the Lakota camp, which his people took as a foreshadowing of a major victory in which many soldiers would be killed. About three weeks later, the confederated Lakota tribes with the Northern Cheyenne defeated the 7th Cavalry under Lt. Col. George Armstrong Custer on June 25, 1876, annihilating Custer's battalion and seeming to fulfill Sitting Bull's prophetic vision. Sitting Bull's leadership inspired his people to a major victory. In response, the U.S. government sent thousands more soldiers to the area, forcing many of the Lakota to surrender over the next year. Sitting Bull refused to surrender, and in May 1877, he led his band north to Wood Mountain, North-West Territories, now Saskatchewan. He remained there until 1881, when he and most of his band returned to U.S. territory and surrendered to U.S. forces.\nAfter working as a performer with Buffalo Bill's Wild West show, Sitting Bull returned to the Standing Rock Agency in South Dakota. Because of fears that Sitting Bull would use his influence to support the Ghost Dance movement, Indian Service agent James McLaughlin at Fort Yates ordered his arrest. During an ensuing struggle between Sitting Bull's followers and the agency police, Sitting Bull was shot in the chest and head by Standing Rock policemen Lieutenant Bull Head (Tatankapah, Lakota: T\u021fat\u021f\u00e1\u014bka P\u021f\u00e1) and Red Tomahawk (Marcelus Chankpidutah, Lakota: \u010cha\u014b\u021fp\u00ed D\u00fata), after the police were fired upon by Sitting Bull's supporters. His body was taken to nearby Fort Yates for burial. In 1953, his Lakota family exhumed what were believed to be his remains, reburying them near Mobridge, South Dakota, near his birthplace."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43527")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43527",
+  "isRealHuman": true,
+  "birthDate": "1831-01-01",
+  "deathDate": "1890-12-15",
+  "ageAtDeath": 59,
+  "confidence": 68,
+  "confidenceExplained": "Sitting Bull's death date is well established as 1890-12-15. His birth date is not exact: reliable sources give either about 1831 or a range from 1831 to 1837. I used 1831-01-01 as the best estimate, matching the supplied data and several biographical sources, which gives an age at death of 59. The age should be treated as an informed estimate rather than a precise civil-record calculation.",
+  "shortDescriptionEn": "Sitting Bull was a Hunkpapa Lakota holy man, political leader, and symbol of Indigenous resistance on the northern Great Plains. He helped unite Lakota and allied peoples against U.S. expansion and is closely associated with the 1876 victory at the Battle of the Little Bighorn, preceded by his famous vision of soldiers falling into camp. After years of pressure, exile in Canada, surrender, and life at Standing Rock, he was shot and killed during an attempted arrest by Indian agency police amid official fears that he might support the Ghost Dance movement.",
+  "shortDescriptionFr": "Sitting Bull était un homme sacré et chef politique hunkpapa lakota, devenu l’un des grands symboles de la résistance autochtone dans les Grandes Plaines du Nord. Il contribua à rassembler les Lakotas et leurs alliés face à l’expansion des États-Unis et reste associé à la victoire de 1876 à Little Bighorn, annoncée selon la tradition par sa vision de soldats tombant dans le camp. Après l’exil au Canada, la reddition et la vie à Standing Rock, il fut tué par balle lors d’une tentative d’arrestation par la police indienne, dans un contexte de peur officielle autour du mouvement de la Ghost Dance.",
+  "shortDescriptionDe": "Sitting Bull war ein heiliger Mann und politischer Führer der Hunkpapa-Lakota und wurde zu einem der bekanntesten Symbole des indigenen Widerstands in den nördlichen Great Plains. Er half, Lakota und verbündete Gruppen gegen die Ausdehnung der Vereinigten Staaten zu vereinen, und ist eng mit dem Sieg am Little Bighorn 1876 verbunden, dem seine berühmte Vision fallender Soldaten vorausging. Nach Exil in Kanada, Kapitulation und Leben in Standing Rock wurde er bei einem Verhaftungsversuch durch indianische Agenturpolizisten erschossen, als die Behörden seine Verbindung zur Ghost-Dance-Bewegung fürchteten.",
+  "shortDescriptionEs": "Sitting Bull fue un líder espiritual y político hunkpapa lakota, convertido en uno de los grandes símbolos de la resistencia indígena en las Grandes Llanuras del norte. Ayudó a unir a los lakotas y a pueblos aliados frente a la expansión de Estados Unidos, y se le asocia estrechamente con la victoria de 1876 en Little Bighorn, precedida por su célebre visión de soldados cayendo en el campamento. Tras el exilio en Canadá, la rendición y la vida en Standing Rock, fue abatido durante un intento de arresto por la policía india, en medio del temor oficial a que apoyara el movimiento de la Danza de los Espíritus.",
+  "shortDescriptionRu": "Сидящий Бык был духовным и политическим лидером хункпапа-лакота и стал одним из самых известных символов сопротивления коренных народов на северных Великих равнинах. Он помог объединить лакота и их союзников против расширения власти США и тесно связан с победой при Литл-Бигхорне в 1876 году, которой, по преданию, предшествовало его видение падающих в лагерь солдат. После изгнания в Канаду, сдачи и жизни в резервации Стэндинг-Рок он был застрелен во время попытки ареста индейской полицией, когда власти опасались его возможной поддержки движения Пляски духов.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Sitting%20Bull.jpg",
+    "https://npgallery.nps.gov/LIBI/GetAsset/2b3f1e09eee64b95b58ad47b553fd34c/proxymdres.jpg",
+    "https://npgallery.nps.gov/LIBI/AssetDetail/2b3f1e09eee64b95b58ad47b553fd34c"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sitting_Bull",
+    "https://www.britannica.com/biography/Sitting-Bull",
+    "https://www.nps.gov/libi/learn/historyculture/sitting-bull.htm",
+    "https://www.history.com/articles/sitting-bull",
+    "https://www.pbs.org/wgbh/americanexperience/features/oakley-sitting-bull/",
+    "https://npgallery.nps.gov/LIBI/AssetDetail/2b3f1e09eee64b95b58ad47b553fd34c"
+  ]
+}
