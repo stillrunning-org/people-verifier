@@ -1,0 +1,1046 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q535",  "Name": "Victor Hugo",  "BirthDate": "1802-02-26T00:00:00Z",  "DeathDate": "1885-05-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Hugo%20by%20%C3%89tienne%20Carjat%201876%20-%20full.jpg",  "SiteLinksCnt": 265,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"42146":{"pageid":42146,"ns":0,"title":"Victor Hugo","extract":"Victor-Marie Hugo, vicomte Hugo (French: [vikt\u0254\u0281 ma\u0281i y\u0261o] ; 26 February 1802 \u2013 22 May 1885) was a French Romantic author, poet, essayist, playwright, journalist, human rights activist and politician.\nHis most famous works are the novels The Hunchback of Notre-Dame (1831) and Les Mis\u00e9rables (1862). In France, Hugo is renowned for his poetry collections, such as Les Contemplations and La L\u00e9gende des si\u00e8cles (The Legend of the Ages). Hugo was at the forefront of the Romantic literary movement with his play Cromwell and drama Hernani. His works have inspired music, both during his lifetime and after his death, including the opera Rigoletto and the musicals Les Mis\u00e9rables and Notre-Dame de Paris. He produced more than 4,000 drawings in his lifetime, and campaigned for social causes such as the abolition of capital punishment and slavery.\nAlthough he was a committed royalist when young, Hugo's views changed as the decades passed, and he became a passionate supporter of republicanism, serving in politics as both deputy and senator. His work touched upon most of the political and social issues and the artistic trends of his time. His opposition to absolutism, and his literary stature, established him as a national hero. Hugo died on 22 May 1885, aged 83. He was given a state funeral in the Panth\u00e9on of Paris, which was attended by over two million people, the largest in French history.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q535")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q535",
+  "isRealHuman": true,
+  "birthDate": "1802-02-26",
+  "deathDate": "1885-05-22",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently reported by Wikipedia, Britannica, Wikidata, and museum/biographical sources. The age calculation is straightforward because Victor Hugo died on 1885-05-22, after his birthday on 1885-02-26, making him 83 years old.",
+  "shortDescriptionEn": "Victor Hugo was a towering French Romantic author, poet, playwright, political figure, and campaigner for social causes, best known internationally for Les Misérables and The Hunchback of Notre-Dame. A national literary hero, he died in Paris on 22 May 1885 at age 83, commonly reported after pneumonia, and his death triggered extraordinary public mourning and a state funeral at the Panthéon.",
+  "shortDescriptionFr": "Victor Hugo fut une figure majeure du romantisme français : écrivain, poète, dramaturge, homme politique et défenseur de grandes causes sociales, célèbre notamment pour Les Misérables et Notre-Dame de Paris. Il mourut à Paris le 22 mai 1885 à l’âge de 83 ans, généralement après une pneumonie, et sa disparition provoqua un immense deuil national ainsi que des funérailles solennelles au Panthéon.",
+  "shortDescriptionDe": "Victor Hugo war eine Schlüsselfigur der französischen Romantik: Schriftsteller, Dichter, Dramatiker, Politiker und engagierter Verfechter sozialer Anliegen, international berühmt durch Les Misérables und Der Glöckner von Notre-Dame. Er starb am 22. Mai 1885 in Paris im Alter von 83 Jahren, meist im Zusammenhang mit einer Lungenentzündung beschrieben, worauf eine gewaltige nationale Trauer und ein Staatsbegräbnis im Panthéon folgten.",
+  "shortDescriptionEs": "Victor Hugo fue una figura central del Romanticismo francés: escritor, poeta, dramaturgo, político y defensor de causas sociales, célebre en todo el mundo por Los miserables y Nuestra Señora de París. Murió en París el 22 de mayo de 1885 a los 83 años, generalmente tras una neumonía, y su fallecimiento provocó un duelo nacional extraordinario y un funeral de Estado en el Panteón.",
+  "shortDescriptionRu": "Виктор Гюго был одной из главных фигур французского романтизма: писателем, поэтом, драматургом, политиком и защитником общественных идеалов, всемирно известным благодаря романам «Отверженные» и «Собор Парижской Богоматери». Он умер в Париже 22 мая 1885 года в возрасте 83 лет, чаще всего указывается, что после пневмонии; его смерть вызвала общенациональный траур и государственные похороны в Пантеоне.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Victor_Hugo",
+    "https://www.britannica.com/biography/Victor-Hugo",
+    "https://www.wikidata.org/wiki/Q535",
+    "https://maisonvictorhugo.besancon.fr/en/maison-victor-hugo-2/victor-hugo/",
+    "https://commons.wikimedia.org/wiki/Creator:Victor_Hugo",
+    "https://commons.wikimedia.org/wiki/File:Victor_Hugo_001.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_de_Victor_Hugo_(1802-1885),_%C3%A9crivain_et_po%C3%A8te._PH4841.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9068",  "Name": "Voltaire",  "BirthDate": "1694-11-21T00:00:00Z",  "DeathDate": "1778-05-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20de%20Largilli%C3%A8re%20-%20Portrait%20de%20Voltaire%20%281694-1778%29%20en%201718%20-%20P208%20-%20Mus%C3%A9e%20Carnavalet%20-%202.jpg",  "SiteLinksCnt": 254,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"32375":{"pageid":32375,"ns":0,"title":"Voltaire","extract":"Fran\u00e7ois-Marie Arouet (French: [f\u0281\u0251\u0303swa ma\u0281i a\u0281w\u025b]; 21 November 1694 \u2013 30 May 1778), known by his pen name Voltaire (, US also ; French: [v\u0254lt\u025b\u02d0\u0281]), was a French Enlightenment writer, philosopher (philosophe), satirist, and historian. Famous for his wit and his criticism of Christianity (especially of the Catholic Church) and of slavery, Voltaire was an advocate of freedom of speech, freedom of religion, and separation of church and state.\nVoltaire was a versatile and prolific writer, producing works in almost every literary form, including plays, poems, novels, essays, histories, and even scientific expositions. He wrote more than 20,000 letters and 2,000 books and pamphlets. Voltaire was one of the first authors to become renowned and commercially successful internationally. He was an outspoken advocate of civil liberties and was at constant risk from the strict censorship laws of the Catholic French monarchy. His polemics witheringly satirized intolerance and religious dogma, as well as the French institutions of his day. His best-known work and magnum opus, Candide, is a novella that comments on, criticizes, and ridicules many events, thinkers and philosophies of his time, most notably Gottfried Leibniz and his belief that our world is of necessity the \"best of all possible worlds\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9068")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9068",
+  "isRealHuman": true,
+  "birthDate": "1694-11-21",
+  "deathDate": "1778-05-30",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "Very high confidence: multiple standard references identify the person as Voltaire, born François-Marie Arouet, with birth date 1694-11-21 and death date 1778-05-30. The age calculation is exact because he died before his birthday in 1778: 1778 - 1694 = 84, minus one year = 83. The only minor uncertainty concerns disputed anecdotes about his final words and deathbed scene, not the vital dates or age.",
+  "shortDescriptionEn": "Voltaire, born François-Marie Arouet, was one of the sharpest voices of the French Enlightenment: a playwright, historian, polemicist, philosopher and tireless critic of intolerance, censorship and religious dogmatism. His wit, especially in works such as Candide, made him a European celebrity and a lasting symbol of intellectual freedom. In 1778 he returned triumphantly to Paris after decades away, but his health deteriorated soon afterward. He died there on 30 May 1778, aged 83; because of his conflict with the Church, his burial initially became a sensitive and politically charged matter.",
+  "shortDescriptionFr": "Voltaire, né François-Marie Arouet, fut l’une des grandes voix des Lumières françaises : dramaturge, historien, polémiste, philosophe et adversaire infatigable de l’intolérance, de la censure et du fanatisme religieux. Son esprit mordant, notamment dans Candide, fit de lui une célébrité européenne et un symbole durable de la liberté intellectuelle. En 1778, il revint triomphalement à Paris après de longues années d’éloignement, mais sa santé déclina rapidement. Il y mourut le 30 mai 1778, à 83 ans; en raison de ses conflits avec l’Église, sa sépulture devint d’abord une affaire délicate et très politique.",
+  "shortDescriptionDe": "Voltaire, geboren als François-Marie Arouet, war eine der prägnantesten Stimmen der französischen Aufklärung: Dramatiker, Historiker, Polemiker, Philosoph und unermüdlicher Kritiker von Intoleranz, Zensur und religiösem Dogmatismus. Sein scharfer Witz, besonders in Candide, machte ihn europaweit berühmt und zu einem bleibenden Symbol geistiger Freiheit. 1778 kehrte er nach vielen Jahren triumphal nach Paris zurück, doch kurz darauf verschlechterte sich seine Gesundheit. Er starb dort am 30. Mai 1778 im Alter von 83 Jahren; wegen seines Konflikts mit der Kirche wurde seine Bestattung zunächst zu einer heiklen und politisch aufgeladenen Angelegenheit.",
+  "shortDescriptionEs": "Voltaire, nacido François-Marie Arouet, fue una de las voces más brillantes de la Ilustración francesa: dramaturgo, historiador, polemista, filósofo y crítico incansable de la intolerancia, la censura y el dogmatismo religioso. Su ingenio, especialmente en obras como Cándido, lo convirtió en una celebridad europea y en un símbolo perdurable de la libertad intelectual. En 1778 regresó triunfalmente a París tras muchos años de ausencia, pero su salud empeoró poco después. Murió allí el 30 de mayo de 1778, a los 83 años; por sus conflictos con la Iglesia, su entierro se convirtió inicialmente en un asunto delicado y políticamente cargado.",
+  "shortDescriptionRu": "Вольтер, урождённый Франсуа-Мари Аруэ, был одним из самых ярких голосов французского Просвещения: драматургом, историком, полемистом, философом и неутомимым критиком нетерпимости, цензуры и религиозного догматизма. Его остроумие, особенно в «Кандиде», сделало его европейской знаменитостью и устойчивым символом интеллектуальной свободы. В 1778 году он триумфально вернулся в Париж после многих лет отсутствия, но вскоре его здоровье резко ухудшилось. Он умер там 30 мая 1778 года в возрасте 83 лет; из-за его конфликта с Церковью вопрос о погребении сразу стал деликатным и политически напряжённым.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Voltaire",
+    "https://www.britannica.com/biography/Voltaire",
+    "https://www.britannica.com/summary/Voltaire",
+    "https://plato.stanford.edu/entries/voltaire/",
+    "https://www.voltaire.ox.ac.uk/about-voltaire/",
+    "https://commons.wikimedia.org/wiki/Voltaire",
+    "https://commons.wikimedia.org/wiki/File:Nicolas_de_Largillière_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_Musée_Carnavalet_-_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Maurice_Quentin_de_La_Tour,_portrait_de_Voltaire_(1735)_avec_agrandissement.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9215",  "Name": "Sigmund Freud",  "BirthDate": "1856-05-06T00:00:00Z",  "DeathDate": "1939-09-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sigmund%20Freud%2C%20by%20Max%20Halberstadt%20%28cropped%29.jpg",  "SiteLinksCnt": 249,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"26743":{"pageid":26743,"ns":0,"title":"Sigmund Freud","extract":"Sigmund Freud (born Sigismund Schlomo Freud; 6 May 1856 \u2013 23 September 1939) was an Austrian neurologist and the founder of psychoanalysis, a clinical method for evaluating and treating pathologies arising from conflicts in the psyche through dialogue between patient and psychoanalyst, and the distinctive theory of mind and human agency derived from it. \nIn creating psychoanalysis Freud introduced therapeutic methods such as free association, the interpretation of dreams, and the analysis of  transference phenomena that arise in the clinical setting. Freud's redefinition of sexuality to include infantile stages led him to formulate the Oedipus complex as the central tenet of psychoanalytical theory. His analysis of dreams as wish fulfillments provided him with models for the clinical analysis of symptom formation and the underlying mechanisms of repression. Accordingly, on this basis, Freud elaborated his theory of the unconscious and went on to develop a model of psychic structure comprising id, ego, and superego (a tripartite model of the mind). Freud postulated the existence of libido (sexualised psychic energy), with which mental processes and structures are invested and that generates erotic attachments and a death drive, the source of compulsive repetition, hate, aggression, and neurotic guilt. In his later work, Freud developed a wide-ranging interpretation and critique of religion and culture.\nThough in overall decline as diagnostic and clinical practice, psychoanalysis remains influential within psychology, psychiatry, psychotherapy, and across the humanities. It thus continues to generate extensive and highly contested debate \nconcerning its therapeutic efficacy, its scientific status, and whether it advances or hinders the feminist cause. Nonetheless, Freud's work has suffused contemporary Western thought and popular culture. W. H. Auden's 1940 poetic tribute to Freud describes him as having created \"a whole climate of opinion / under whom we conduct our different lives\".\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9215")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9215",
+  "isRealHuman": true,
+  "birthDate": "1856-05-06",
+  "deathDate": "1939-09-23",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable biographical sources agree that Sigmund Freud was born on 1856-05-06 and died on 1939-09-23. The completed-age calculation is straightforward: he died after his birthday in 1939, so he was 83. Minor historical discussion about the exact hour and final morphine doses does not affect the date-based age calculation.",
+  "shortDescriptionEn": "Sigmund Freud was an Austrian neurologist and the founder of psychoanalysis, whose ideas about the unconscious, repression, dreams, sexuality, and the structure of the mind reshaped psychology, literature, medicine, and modern culture. After fleeing Nazi-controlled Vienna for London in 1938, he spent his final months in Hampstead. He died on 23 September 1939 at age 83 after years of painful oral and jaw cancer; his physician Max Schur administered morphine at Freud’s request to relieve terminal suffering.",
+  "shortDescriptionFr": "Sigmund Freud était un neurologue autrichien et le fondateur de la psychanalyse, dont les théories sur l’inconscient, le refoulement, les rêves, la sexualité et la structure du psychisme ont profondément marqué la psychologie, la médecine, la littérature et la culture moderne. Après avoir fui Vienne sous domination nazie pour Londres en 1938, il passa ses derniers mois à Hampstead. Il mourut le 23 septembre 1939 à l’âge de 83 ans, après de longues souffrances dues à un cancer de la bouche et de la mâchoire; son médecin Max Schur lui administra de la morphine à sa demande pour apaiser ses douleurs terminales.",
+  "shortDescriptionDe": "Sigmund Freud war ein österreichischer Neurologe und der Begründer der Psychoanalyse, dessen Vorstellungen vom Unbewussten, von Verdrängung, Träumen, Sexualität und der Struktur der Psyche Psychologie, Medizin, Literatur und moderne Kultur nachhaltig prägten. Nach seiner Flucht aus dem nationalsozialistisch beherrschten Wien nach London im Jahr 1938 verbrachte er seine letzten Monate in Hampstead. Er starb am 23. September 1939 im Alter von 83 Jahren nach jahrelangen schweren Schmerzen durch Mund- und Kieferkrebs; sein Arzt Max Schur verabreichte ihm auf Freuds Wunsch Morphium, um das Leiden im Endstadium zu lindern.",
+  "shortDescriptionEs": "Sigmund Freud fue un neurólogo austríaco y el fundador del psicoanálisis, cuyas ideas sobre el inconsciente, la represión, los sueños, la sexualidad y la estructura de la mente transformaron la psicología, la medicina, la literatura y la cultura moderna. Tras huir de la Viena controlada por los nazis y establecerse en Londres en 1938, pasó sus últimos meses en Hampstead. Murió el 23 de septiembre de 1939 a los 83 años, después de años de doloroso cáncer oral y de mandíbula; su médico Max Schur le administró morfina a petición de Freud para aliviar su sufrimiento terminal.",
+  "shortDescriptionRu": "Зигмунд Фрейд был австрийским неврологом и основателем психоанализа; его идеи о бессознательном, вытеснении, сновидениях, сексуальности и структуре психики заметно изменили психологию, медицину, литературу и современную культуру. В 1938 году, спасаясь от нацистского режима в Вене, он переехал в Лондон и провёл последние месяцы в Хэмпстеде. Он умер 23 сентября 1939 года в возрасте 83 лет после многолетних мучительных страданий от рака полости рта и челюсти; по просьбе Фрейда его врач Макс Шур ввёл ему морфин, чтобы облегчить терминальную боль.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sigmund_Freud",
+    "https://www.britannica.com/biography/Sigmund-Freud",
+    "https://www.britannica.com/question/What-did-Sigmund-Freud-die-of",
+    "https://www.freud.org.uk/about-us/the-house/anna-freuds-story/",
+    "https://commons.wikimedia.org/wiki/File:Sigmund_Freud,_by_Max_Halberstadt.jpg",
+    "https://www.loc.gov/exhibits/freud/freud01.html",
+    "https://www.freud.org.uk/photo-library/freud-family/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11812",  "Name": "Thomas Jefferson",  "BirthDate": "1743-04-13T00:00:00Z",  "DeathDate": "1826-07-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Official%20Presidential%20portrait%20of%20Thomas%20Jefferson%20%28by%20Rembrandt%20Peale%2C%201800%29%28cropped%29.jpg",  "SiteLinksCnt": 222,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"29922":{"pageid":29922,"ns":0,"title":"Thomas Jefferson","extract":"Thomas Jefferson (April 13 [O.S. April 2], 1743 \u2013 July 4, 1826) was a Founding Father, second vice president, and third president of the United States from 1801 to 1809. Jefferson was the primary author of the Declaration of Independence. He was a leading proponent of democracy, republicanism, and natural rights, and produced formative documents and decisions at the state, national, and international levels.\nJefferson was born into the Colony of Virginia's planter class. During the American Revolution, he represented Virginia in the Second Continental Congress, which unanimously adopted the Declaration of Independence. Jefferson's advocacy for individual rights, including freedom of thought, speech, and religion, helped shape the ideological foundations of the revolution. Jefferson served as the second governor of Virginia from 1779 to 1781. In 1785, Congress appointed him as U.S. Minister to France, where he served from 1785 to 1789. President George Washington then appointed Jefferson the nation's first secretary of state, where he served from 1790 to 1793. In 1792, Jefferson and political ally James Madison organized the Democratic-Republican Party to oppose the Federalist Party during the formation of the nation's First Party System. Jefferson and Federalist John Adams became both personal friends and political rivals. In the 1796 U.S. presidential election between the two, Jefferson came in second, which made him Adams' vice president under the electoral laws of the time. Four years later, in the 1800 presidential election, Jefferson again challenged Adams and won the presidency. When running for reelection in 1804, Jefferson overwhelmingly defeated the Federalists' Charles Cotesworth Pinckney of South Carolina.\nJefferson's presidency assertively defended the nation's shipping and trade interests against Barbary pirates and aggressive British trade policies, promoted a western expansionist policy with the Louisiana Purchase, which doubled the nation's geographic size, and reduced military forces and expenditures following successful negotiations with France. In his second presidential term, Jefferson was beset by difficulties at home, including the trial of his former vice president Aaron Burr. In 1807, Jefferson implemented the Embargo Act to defend the nation's industries from British threats to U.S. shipping, limit foreign trade, and stimulate the birth of the American manufacturing.\nJefferson is ranked among the upper tier of U.S. presidents both by scholars and in public opinion. Presidential scholars and historians have praised Jefferson's advocacy of religious freedom and tolerance, his peaceful acquisition of the Louisiana Territory from France, and his leadership in supporting the Lewis and Clark Expedition. They acknowledge his lifelong ownership of large numbers of slaves, but offer varying interpretations of his views on and relationship with slavery."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11812")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q11812",
+  "isRealHuman": true,
+  "birthDate": "1743-04-13",
+  "deathDate": "1826-07-04",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "Thomas Jefferson's identity and dates are consistently confirmed by major historical sources. The only nuance is the Old Style birth date, April 2, 1743, which corresponds to April 13, 1743 in the modern Gregorian calendar; either way, he had already passed his birthday in 1826, so the calculated age at death is 83.",
+  "shortDescriptionEn": "Thomas Jefferson was an American Founding Father, principal author of the Declaration of Independence, third president of the United States, advocate of religious liberty, architect of Monticello, founder of the University of Virginia, and a major but deeply contradictory figure because he enslaved hundreds of people. He died at Monticello on July 4, 1826, the fiftieth anniversary of the Declaration, after declining health in his final months; he was 83.",
+  "shortDescriptionFr": "Thomas Jefferson fut l’un des Pères fondateurs des États-Unis, l’auteur principal de la Déclaration d’indépendance, le troisième président américain, un défenseur de la liberté religieuse, l’architecte de Monticello et le fondateur de l’Université de Virginie, tout en restant une figure profondément contradictoire en raison des centaines de personnes qu’il réduisit en esclavage. Il mourut à Monticello le 4 juillet 1826, cinquantième anniversaire de la Déclaration, après plusieurs mois de santé déclinante; il avait 83 ans.",
+  "shortDescriptionDe": "Thomas Jefferson war ein amerikanischer Gründervater, Hauptverfasser der Unabhängigkeitserklärung, dritter Präsident der Vereinigten Staaten, Verfechter religiöser Freiheit, Architekt von Monticello und Gründer der University of Virginia, zugleich aber eine widersprüchliche Figur, weil er Hunderte Menschen versklavte. Er starb am 4. Juli 1826 in Monticello, genau am fünfzigsten Jahrestag der Unabhängigkeitserklärung, nach monatelang nachlassender Gesundheit; er wurde 83 Jahre alt.",
+  "shortDescriptionEs": "Thomas Jefferson fue uno de los Padres Fundadores de Estados Unidos, autor principal de la Declaración de Independencia, tercer presidente del país, defensor de la libertad religiosa, arquitecto de Monticello y fundador de la Universidad de Virginia, aunque también una figura profundamente contradictoria por haber esclavizado a cientos de personas. Murió en Monticello el 4 de julio de 1826, en el cincuentenario de la Declaración, tras meses de deterioro de salud; tenía 83 años.",
+  "shortDescriptionRu": "Томас Джефферсон был одним из отцов-основателей США, главным автором Декларации независимости, третьим президентом Соединённых Штатов, сторонником религиозной свободы, архитектором Монтичелло и основателем Виргинского университета, оставаясь при этом глубоко противоречивой фигурой из-за владения сотнями порабощённых людей. Он умер в Монтичелло 4 июля 1826 года, в пятидесятую годовщину принятия Декларации, после нескольких месяцев ухудшения здоровья; ему было 83 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Jefferson",
+    "https://www.monticello.org/thomas-jefferson/brief-biography-of-jefferson/",
+    "https://www.whitehouse.gov/about-the-white-house/presidents/thomas-jefferson/",
+    "https://blogs.loc.gov/headlinesandheroes/2022/07/deaths-of-john-adams-and-thomas-jefferson-on-july-4th/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8442",  "Name": "Otto von Bismarck",  "BirthDate": "1815-04-01T00:00:00Z",  "DeathDate": "1898-07-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20146-2005-0057%2C%20Otto%20von%20Bismarck.jpg",  "SiteLinksCnt": 218,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"22416":{"pageid":22416,"ns":0,"title":"Otto von Bismarck","extract":"Otto Eduard Leopold, Prince of Bismarck, Count of Bismarck-Sch\u00f6nhausen, Duke of Lauenburg (1 April 1815 \u2013 30 July 1898) was a German statesman and diplomat who oversaw the unification of Germany and served as its first chancellor from 1871 to 1890. Bismarck's Realpolitik and firm governance earned him the nickname Iron Chancellor (Eiserner Kanzler).\nFrom Junker landowner origins, Bismarck rose rapidly in Prussian politics under King Wilhelm I of Prussia. He served as the Prussian ambassador to Russia and France and in both houses of the Prussian parliament. From 1862 to 1890, he held office as the minister president and foreign minister of Prussia. Under Bismarck's leadership, Prussia provoked three short, decisive wars against Denmark, Austria, and France. After Austria's defeat in 1866, he replaced the German Confederation with the North German Confederation, which aligned the smaller North German states with Prussia while excluding Austria. In 1870, Bismarck secured France's defeat with support from the independent South German states before overseeing the creation of a unified German Empire under Prussian rule. Following Germany's unification, he was given the aristocratic title Prince of Bismarck (F\u00fcrst von Bismarck). From 1871 onwards, his balance-of-power approach to diplomacy helped maintain Germany's position in a peaceful Europe. While averse to maritime colonialism, Bismarck acquiesced to elite and popular opinion by acquiring colonies.\nAs part of his domestic political maneuvering, Bismarck created the first welfare state, with the goal of undermining his socialist opponents. In the 1870s, he allied himself with the low-tariff, anti-Catholic Liberals and fought the Catholic Church, in what was called the Kulturkampf (lit.\u2009'culture struggle'). This was unsuccessful, with the Catholics responding by forming the powerful German Centre Party and using universal male suffrage to gain a bloc of seats. Bismarck responded by ending the Kulturkampf, breaking with the Liberals and forming a political alliance with the Centre Party to fight the Socialists. Under his direction, the Imperial Reichstag was sidelined and did not control government policy. A staunch monarchist, Bismarck ruled autocratically through a strong bureaucracy with power concentrated in the hands of the Junker elite. After being dismissed from office by Wilhelm II, he retired to write his memoirs.\nBismarck is most famous for his role in German unification. During the German Imperial period, he became a hero to German nationalists, who built monuments honouring him. Historians praise him as a visionary who kept the peace in Europe through diplomacy. However, he has been criticized for his domestic policies, such as his persecution of Catholics, as well as his authoritarian rule in general as Chancellor.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8442")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8442",
+  "isRealHuman": true,
+  "birthDate": "1815-04-01",
+  "deathDate": "1898-07-30",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The identity and dates are consistently confirmed by Wikidata, Wikipedia, Britannica, and historical summaries. The age calculation is straightforward: Otto von Bismarck was born on 1815-04-01 and died on 1898-07-30, after his birthday that year, making him 83 at death.",
+  "shortDescriptionEn": "Otto von Bismarck was the Prussian statesman who engineered German unification and became the first chancellor of the German Empire, ruling through Realpolitik, diplomacy, and a hard-edged political style that earned him the nickname the Iron Chancellor. After being forced from office in 1890, he spent his final years in Friedrichsruh writing memoirs and criticizing Kaiser Wilhelm II. His health declined badly in the 1890s, with reports of foot gangrene, pain, fever, breathing trouble, and increasing dependence on a wheelchair. He died at Friedrichsruh on 1898-07-30 at the age of 83.",
+  "shortDescriptionFr": "Otto von Bismarck fut l’homme d’État prussien qui mena l’unification allemande et devint le premier chancelier de l’Empire allemand, gouvernant par la Realpolitik, la diplomatie et une autorité inflexible qui lui valut le surnom de chancelier de fer. Écarté du pouvoir en 1890, il passa ses dernières années à Friedrichsruh, rédigeant ses mémoires et critiquant l’empereur Guillaume II. Dans les années 1890, sa santé se détériora fortement, avec une gangrène du pied, des douleurs, de la fièvre, des difficultés respiratoires et une dépendance croissante au fauteuil roulant. Il mourut à Friedrichsruh le 1898-07-30 à l’âge de 83 ans.",
+  "shortDescriptionDe": "Otto von Bismarck war der preußische Staatsmann, der die deutsche Einigung maßgeblich herbeiführte und erster Reichskanzler des Deutschen Kaiserreichs wurde. Mit Realpolitik, diplomatischem Geschick und einem harten Regierungsstil prägte er Europa und erhielt den Beinamen Eiserner Kanzler. Nach seiner Entlassung 1890 lebte er auf Friedrichsruh, schrieb seine Erinnerungen und blieb ein scharfer Kritiker Wilhelms II. In den 1890er Jahren verschlechterte sich seine Gesundheit deutlich; berichtet werden Fußgangrän, Schmerzen, Fieber, Atembeschwerden und zunehmende Rollstuhl-Abhängigkeit. Er starb am 1898-07-30 in Friedrichsruh im Alter von 83 Jahren.",
+  "shortDescriptionEs": "Otto von Bismarck fue el estadista prusiano que dirigió la unificación alemana y se convirtió en el primer canciller del Imperio alemán, usando la Realpolitik, la diplomacia y un estilo de gobierno firme que le dio el apodo de Canciller de Hierro. Tras ser apartado del poder en 1890, pasó sus últimos años en Friedrichsruh escribiendo sus memorias y criticando al káiser Guillermo II. En la década de 1890 su salud empeoró mucho, con informes de gangrena en un pie, dolor, fiebre, problemas respiratorios y creciente dependencia de una silla de ruedas. Murió en Friedrichsruh el 1898-07-30 a los 83 años.",
+  "shortDescriptionRu": "Отто фон Бисмарк был прусским государственным деятелем, который сыграл ключевую роль в объединении Германии и стал первым канцлером Германской империи. Его Realpolitik, дипломатическое мастерство и жесткий стиль управления принесли ему прозвище Железный канцлер. После отставки в 1890 году он жил во Фридрихсру, писал мемуары и резко критиковал кайзера Вильгельма II. В 1890-е годы его здоровье сильно ухудшилось: источники упоминают гангрену стопы, боли, жар, затрудненное дыхание и зависимость от инвалидного кресла. Он умер во Фридрихсру 1898-07-30 в возрасте 83 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Otto_von_Bismarck",
+    "https://www.wikidata.org/wiki/Q8442",
+    "https://www.britannica.com/biography/Otto-von-Bismarck",
+    "https://www.historytoday.com/archive/death-bismarck",
+    "https://www.dhm.de/lemo/biografie/otto-bismarck",
+    "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-2005-0057,_Otto_von_Bismarck.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q8768",  "Name": "Henry Ford",  "BirthDate": "1863-07-30T00:00:00Z",  "DeathDate": "1947-04-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20ford%201919.jpg",  "SiteLinksCnt": 198,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"13371":{"pageid":13371,"ns":0,"title":"Henry Ford","extract":"Henry Ford (July 30, 1863 \u2013 April 7, 1947) was an American industrialist and business magnate. As the founder of the Ford Motor Company, he is credited as a pioneer in making automobiles affordable for middle-class Americans through the system that came to be known as Fordism. In 1911, he was awarded a patent for the transmission mechanism that would be used in the Ford Model T and other automobiles.\nFord was born in a farmhouse in Springwells Township, Michigan, and left home at the age of 16 to find work in Detroit. It was a few years before this time that Ford first experienced automobiles, and throughout the later half of the 1880s, he began repairing and later constructing engines, and through the 1890s worked with a division of Edison Electric. He founded the Ford Motor Company in 1903 after prior failures in business, but was successful in constructing automobiles.\nThe introduction of the Ford Model T vehicle in 1908 is credited with having revolutionized both transportation and American industry. As the sole owner of the Ford Motor Company, Ford became one of the wealthiest people in the world. He was also among the pioneers of the five-day work-week. Ford believed that consumerism could help to bring about world peace. His commitment to systematically lowering costs resulted in many technical and business innovations, including a franchise system, which allowed for car dealerships throughout North America and in major cities on six continents.\nFord was known for his pacifism during the first years of World War I, although during the war his company became a major supplier of weapons. He promoted the League of Nations. In the 1920s, Ford promoted antisemitism through his newspaper The Dearborn Independent and the book The International Jew. He opposed his country's entry into World War II, and served for a time on the board of the America First Committee. After his son Edsel died in 1943, Ford resumed control of the company, but was too frail to make decisions and quickly came under the control of several of his subordinates. He turned over the company to his grandson Henry Ford II in 1945. Upon his death in 1947, he left most of his wealth to the Ford Foundation and control of the company to his family."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q8768")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q8768",
+  "isRealHuman": true,
+  "birthDate": "1863-07-30",
+  "deathDate": "1947-04-07",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are confirmed by multiple independent sources, including Wikipedia, Britannica, Henry Ford Health, and the Automotive Hall of Fame. The age calculation is straightforward: Henry Ford died on 1947-04-07, before his 84th birthday on 1947-07-30, so he was 83.",
+  "shortDescriptionEn": "Henry Ford was an American industrialist and the founder of the Ford Motor Company, best known for the Model T and for making automobile ownership possible for millions through high-volume production and the moving assembly line. His ideas reshaped manufacturing worldwide, though his legacy is also shadowed by his antisemitic publications. In his final years, after earlier strokes and declining health, Ford died at his Fair Lane estate in Dearborn, Michigan, on April 7, 1947, from a cerebral hemorrhage. He was 83.",
+  "shortDescriptionFr": "Henry Ford était un industriel américain, fondateur de la Ford Motor Company, célèbre pour la Ford Model T et pour avoir rendu l’automobile accessible à des millions de personnes grâce à la production de masse et à la chaîne de montage mobile. Ses méthodes ont transformé l’industrie mondiale, même si son héritage reste assombri par ses publications antisémites. Après plusieurs problèmes de santé et des attaques cérébrales, il mourut le 7 avril 1947 dans sa propriété de Fair Lane, à Dearborn, d’une hémorragie cérébrale. Il avait 83 ans.",
+  "shortDescriptionDe": "Henry Ford war ein US-amerikanischer Industrieller und Gründer der Ford Motor Company. Berühmt wurde er durch das Model T und durch Produktionsmethoden, die das Auto für Millionen Menschen erschwinglich machten, besonders die bewegte Fließbandfertigung. Seine Ideen veränderten die industrielle Produktion weltweit, doch sein Vermächtnis ist auch durch antisemitische Veröffentlichungen belastet. In seinen letzten Jahren litt Ford unter nachlassender Gesundheit und früheren Schlaganfällen. Am 7. April 1947 starb er auf seinem Anwesen Fair Lane in Dearborn an einer Hirnblutung. Er wurde 83 Jahre alt.",
+  "shortDescriptionEs": "Henry Ford fue un industrial estadounidense y fundador de Ford Motor Company, famoso por el Model T y por convertir el automóvil en un producto accesible para millones de personas mediante la producción a gran escala y la línea de montaje móvil. Sus métodos cambiaron la fabricación moderna en todo el mundo, aunque su legado también está marcado por sus publicaciones antisemitas. En sus últimos años sufrió problemas de salud y varios episodios cardiovasculares. Murió el 7 de abril de 1947 en su finca Fair Lane, en Dearborn, por una hemorragia cerebral. Tenía 83 años.",
+  "shortDescriptionRu": "Генри Форд был американским промышленником и основателем Ford Motor Company, прославившимся моделью Ford Model T и массовым производством, которое сделало автомобиль доступным для миллионов людей. Его конвейерные методы изменили мировую промышленность, хотя его наследие омрачено антисемитскими публикациями. В последние годы здоровье Форда ухудшалось, у него были перенесённые инсульты и сердечно-сосудистые проблемы. Он умер 7 апреля 1947 года в своём поместье Fair Lane в Дирборне от кровоизлияния в мозг. Ему было 83 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Henry_Ford",
+    "https://www.britannica.com/money/Henry-Ford",
+    "https://www.henryford.com/about/culture/history/people",
+    "https://automotivehalloffame.org/honoree/henry-ford/",
+    "https://www.pbs.org/wgbh/americanexperience/features/henryford/",
+    "https://commons.wikimedia.org/wiki/File:Henry_Ford_1919.jpg",
+    "https://commons.wikimedia.org/wiki/File:H.Ford_et_sa_Ford_T.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q35900",  "Name": "Omar Khayyám",  "BirthDate": "1048-05-24T00:00:00Z",  "DeathDate": "1131-12-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Omar%20Khayyam2.JPG",  "SiteLinksCnt": 165,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"92550":{"pageid":92550,"ns":0,"title":"Omar Khayyam","extract":"Omar Khayyam (1048\u20131131) was a Persian poet and polymath, known for his contributions to mathematics, astronomy, philosophy, and Persian literature. He was born in Nishapur, Iran and lived during the Seljuk era, around the time of the First Crusade.\nAs a mathematician, Omar Khayyam was the first to provide a general solution for all third-degree polynomials by using the intersection of two conic sections, a method often later attributed to Descartes. Unlike Descartes, Khayyam performed these geometric calculations by selecting a unit length while strictly adhering to the rule of homogeneity. Additionally, in his work On the Division of a Quarter of a Circle, he attempted to derive approximate numerical solutions for cubic equations using trigonometric tables. He also contributed to a deeper understanding of Euclid's parallel axiom. The Saccheri quadrilateral is sometimes called a Khayyam\u2013Saccheri quadrilateral to credit Omar Khayyam who described it in his 11th century book Ris\u0101la f\u012b \u0161ar\u1e25 m\u0101 a\u0161kala min mu\u1e63\u0101dar\u0101t kit\u0101b Uql\u012bdis (Explanations of the difficulties in the postulates of Euclid). As an astronomer, he calculated the duration of the solar year with remarkable precision and accuracy, and designed the Jalali calendar, a solar calendar with a very precise 33-year intercalation cycle\n which provided the basis for the Persian calendar that is still in use after nearly a millennium.\nThere is a tradition of attributing poetry to Omar Khayyam, written in the form of quatrains (rub\u0101\u02bfiy\u0101t \u0631\u0628\u0627\u0639\u06cc\u0627\u062a). This poetry became widely known to the English-reading world in a translation by Edward FitzGerald (Rubaiyat of Omar Khayyam, 1859), which enjoyed great success in the Orientalism of the fin de si\u00e8cle."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q35900")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q35900",
+  "isRealHuman": true,
+  "birthDate": "1048-05-18",
+  "deathDate": "1131-12-04",
+  "ageAtDeath": 83,
+  "confidence": 78,
+  "confidenceExplained": "The age 83 is calculated from the commonly accepted dates 1048-05-18 to 1131-12-04, which are used by Wikipedia, Britannica, MacTutor and several biographical references. Confidence is not higher because specialist sources note that medieval evidence for Khayyam's exact birth and death dates is disputed, with some alternative death ranges proposed. Nevertheless, 83 is the best-supported and most widely cited age.",
+  "shortDescriptionEn": "Omar Khayyam was a Persian polymath of the Seljuk era: a mathematician who studied cubic equations, an astronomer associated with calendar reform, a philosopher, and the poet later made famous in the West through the Rubáiyát. Born in Nishapur, he spent much of his life between scholarship, courtly scientific work, and periods of withdrawal. He died in Nishapur on 4 December 1131 at about 83; the precise cause is not securely recorded, though later accounts connect his final years with declining health and a quiet return to his hometown, where his tomb became famous for the story of blossoms falling over it.",
+  "shortDescriptionFr": "Omar Khayyam fut un polymathe persan de l’époque seldjoukide : mathématicien des équations cubiques, astronome lié à la réforme du calendrier, philosophe et poète rendu célèbre en Occident par les Rubáiyát. Né à Nishapur, il mena une vie partagée entre recherche savante, service scientifique auprès du pouvoir et périodes de retrait. Il mourut à Nishapur le 4 décembre 1131, vers l’âge de 83 ans ; la cause exacte de sa mort n’est pas connue avec certitude, mais les récits tardifs évoquent une santé déclinante et un retour discret dans sa ville natale, où son tombeau fut associé à la légende des fleurs tombant sur sa sépulture.",
+  "shortDescriptionDe": "Omar Khayyam war ein persischer Universalgelehrter der Seldschukenzeit: Mathematiker der kubischen Gleichungen, Astronom im Umfeld der Kalenderreform, Philosoph und Dichter, der im Westen besonders durch die Rubáiyát berühmt wurde. Geboren in Nishapur, bewegte er sich zwischen wissenschaftlicher Arbeit, höfischen Aufgaben und Phasen zurückgezogenen Lebens. Er starb am 4. Dezember 1131 in Nishapur im Alter von etwa 83 Jahren; die genaue Todesursache ist nicht zuverlässig überliefert, doch spätere Berichte verbinden seine letzten Jahre mit nachlassender Gesundheit und einer stillen Rückkehr in seine Heimatstadt, wo sein Grab wegen der Erzählung von herabfallenden Blüten berühmt wurde.",
+  "shortDescriptionEs": "Omar Khayyam fue un polímata persa de la época selyúcida: matemático dedicado a las ecuaciones cúbicas, astrónomo vinculado a la reforma del calendario, filósofo y poeta conocido mundialmente por el Rubáiyát. Nacido en Nishapur, vivió entre la investigación, el trabajo científico en la corte y etapas de retiro. Murió en Nishapur el 4 de diciembre de 1131, aproximadamente a los 83 años; no se conserva una causa exacta de muerte, aunque las fuentes tardías hablan de una salud debilitada y de su regreso tranquilo a su ciudad natal, donde su tumba se hizo célebre por la historia de las flores que caían sobre ella.",
+  "shortDescriptionRu": "Омар Хайям был персидским учёным-энциклопедистом эпохи Сельджуков: математиком, исследовавшим кубические уравнения, астрономом, связанным с календарной реформой, философом и поэтом, прославившимся благодаря рубаи. Он родился в Нишапуре и прожил жизнь между научными занятиями, придворной учёной службой и периодами уединения. Он умер в Нишапуре 4 декабря 1131 года примерно в возрасте 83 лет; точная причина смерти достоверно не известна, но поздние рассказы связывают его последние годы с ухудшением здоровья и тихим возвращением в родной город, где его могила стала известна легендой о цветах, падающих на надгробие.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Omar_Khayyam2.JPG",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Omar%20Khayyam2.JPG",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Khayyam/",
+    "https://ordinaryphilosophy.com/2016/05/18/happy-birthday-omar-khayyam/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Omar_Khayyam",
+    "https://www.britannica.com/biography/Omar-Khayyam-Persian-poet-and-astronomer",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Khayyam/",
+    "https://www.iranicaonline.org/articles/khayyam-omar/khayyam-omar-i-life/",
+    "https://plato.stanford.edu/entries/umar-khayyam/",
+    "https://commons.wikimedia.org/wiki/File:Omar_Khayyam2.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9041",  "Name": "James Watt",  "BirthDate": "1736-01-19T00:00:00Z",  "DeathDate": "1819-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Watt%20by%20Henry%20Howard.jpg",  "SiteLinksCnt": 159,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"16142":{"pageid":16142,"ns":0,"title":"James Watt","extract":"James Watt  (; 30 January 1736 (19 January 1736 OS) \u2013 25 August 1819) was a Scottish inventor, engineer and chemist who improved on Thomas Newcomen's 1712 Newcomen steam engine with his Watt steam engine in 1776, which was fundamental to the changes brought by the Industrial Revolution in both his native Great Britain and the rest of the world.\nWhile working as an instrument maker at the University of Glasgow, Watt became interested in the technology of steam engines. At the time engineers such as John Smeaton were aware of the inefficiencies of Newcomen's engine and aimed to improve it. Watt's insight was to realise that contemporary engine designs wasted a great deal of energy by repeatedly cooling and reheating the cylinder. Watt introduced a design enhancement, the separate condenser, which avoided this waste of energy and radically improved the power, efficiency, and cost-effectiveness of steam engines. Eventually, he adapted his engine to produce rotary motion, greatly broadening its use beyond pumping water.\nWatt attempted to commercialise his invention, but experienced great financial difficulties until he entered a partnership with Matthew Boulton in 1775. The new firm of Boulton and Watt was eventually highly successful and Watt became a wealthy man. In his retirement, Watt continued to develop new inventions though none was as significant as his steam engine work.\nAs Watt developed the concept of horsepower, the SI unit of power, the watt, was named after him."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9041")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9041",
+  "isRealHuman": true,
+  "birthDate": "1736-01-19",
+  "deathDate": "1819-08-25",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The identification as James Watt is clear from the Wikidata ID, name, image, and encyclopedia extract. Multiple reputable sources give his death date as 25 August 1819 and his age as 83. The only minor uncertainty is calendrical: some sources present 19 January 1736 as Old Style and 30 January 1736 as the New Style equivalent, but both dates still produce an age at death of 83.",
+  "shortDescriptionEn": "James Watt was a Scottish inventor, engineer, and chemist whose improvements to the steam engine helped power the Industrial Revolution. His separate condenser and later engine designs made steam power far more efficient and practical for factories, mines, and transport. After a long and influential career, he died at Heathfield Hall near Birmingham on 25 August 1819, aged 83, and was buried at St Mary's Church, Handsworth.",
+  "shortDescriptionFr": "James Watt était un inventeur, ingénieur et chimiste écossais dont les améliorations apportées à la machine à vapeur ont contribué à accélérer la révolution industrielle. Son condenseur séparé et ses perfectionnements ultérieurs ont rendu la vapeur beaucoup plus efficace et utile dans les usines, les mines et les transports. Après une longue carrière influente, il est mort à Heathfield Hall, près de Birmingham, le 25 août 1819, à l'âge de 83 ans, puis a été enterré à l'église St Mary's de Handsworth.",
+  "shortDescriptionDe": "James Watt war ein schottischer Erfinder, Ingenieur und Chemiker, dessen Verbesserungen der Dampfmaschine die Industrielle Revolution entscheidend voranbrachten. Sein separater Kondensator und spätere technische Weiterentwicklungen machten Dampfkraft deutlich effizienter und für Fabriken, Bergwerke und Verkehr nutzbarer. Nach einem langen und einflussreichen Leben starb er am 25. August 1819 im Heathfield Hall bei Birmingham im Alter von 83 Jahren und wurde in der St Mary's Church in Handsworth beigesetzt.",
+  "shortDescriptionEs": "James Watt fue un inventor, ingeniero y químico escocés cuyas mejoras de la máquina de vapor ayudaron a impulsar la Revolución Industrial. Su condensador separado y sus diseños posteriores hicieron que la energía de vapor fuera mucho más eficiente y práctica para fábricas, minas y transporte. Tras una vida larga e influyente, murió en Heathfield Hall, cerca de Birmingham, el 25 de agosto de 1819, a los 83 años, y fue enterrado en la iglesia de St Mary's, Handsworth.",
+  "shortDescriptionRu": "Джеймс Уатт был шотландским изобретателем, инженером и химиком, чьи усовершенствования паровой машины стали одним из двигателей промышленной революции. Его отдельный конденсатор и последующие инженерные решения сделали паровую энергию гораздо более эффективной и применимой на фабриках, в шахтах и на транспорте. После долгой и влиятельной жизни он умер 25 августа 1819 года в Хитфилд-холле близ Бирмингема в возрасте 83 лет и был похоронен в церкви Святой Марии в Хандсворте.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_Watt",
+    "https://www.britannica.com/biography/James-Watt",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/james-watt/",
+    "https://www.birmingham.ac.uk/news-archive/2019/james-watt-and-the-celebration-of-innovation"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6105",  "Name": "Hebe Camargo",  "BirthDate": "1929-03-08T00:00:00Z",  "DeathDate": "2012-09-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hebe%20Camargo.jpg",  "SiteLinksCnt": 150,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"25807927":{"pageid":25807927,"ns":0,"title":"Hebe Camargo","extract":"Hebe Maria Monteiro de Camargo Ravagnani  (Portuguese pronunciation: [\u02c8\u025bbi m\u0250\u02c8\u027ei.\u0250 m\u00f5\u02c8tej\u027eu d\u0292i k\u0250\u02c8ma\u0281\u0261u \u02cc\u0281av\u0250\u02c8\u0272\u0250\u0303ni]; 8 March 1929 \u2013 29 September 2012) was a Brazilian television host, singer and actress. She is considered the \"Queen of Brazilian Television\" (Portuguese: Rainha da Televis\u00e3o Brasileira). \nCamargo began her career as a singer in the 1940s before transitioning to radio and television. As a singer, Camargo appeared in comedy films by Mazzaropi. In the 1950s, she entered television and worked as a presenter in a series on TV Paulista and appear on the weekday program, O Mundo \u00e9 das Mulheres (The World Belongs to Women). In the 1960s, Camargo moved to the Rede Record network. In 1966, the network began broadcasting a Sunday program featuring Camargo as an interviewer. Camargo was seen on almost every television station in Brazil, including the Rede Record and Rede Bandeirantes, in the 1970s and 1980s. In 1980, after a long hiatus she returned to work as an interviewer. From 1986 to 2010, Camargo was on the SBT Network, where she presented the television programs Hebe and Fora do Ar. \nIn 1995, EMI released a CD of Camargo's greatest hits and, in 2006, she celebrated her thousandth program on the SBT. Camargo died at her home on 29 September 2012. Her net worth was over US$360 million."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6105")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6105",
+  "isRealHuman": true,
+  "birthDate": "1929-03-08",
+  "deathDate": "2012-09-29",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia and biographical sources, and Reuters explicitly reported that Hebe Camargo died at 83. The calendar calculation from 1929-03-08 to 2012-09-29 gives 83 because her birthday had already occurred in 2012. Minor wording differences exist around the immediate cause of death, usually cardiac arrest or heart attack, but they do not affect the age calculation.",
+  "shortDescriptionEn": "Hebe Camargo was one of Brazil’s most beloved television personalities: a presenter, singer and actress whose warm interview style and glamorous presence earned her the nickname “Queen of Brazilian Television.” She began in radio and music before becoming a fixture on Brazilian TV for decades. She died at her home in São Paulo on 29 September 2012, aged 83, after a long fight with peritoneal cancer and an apparent cardiac arrest.",
+  "shortDescriptionFr": "Hebe Camargo fut l’une des figures les plus aimées de la télévision brésilienne : présentatrice, chanteuse et actrice, elle était surnommée la « reine de la télévision brésilienne » grâce à son style chaleureux, élégant et très populaire. Après ses débuts dans la radio et la chanson, elle marqua plusieurs décennies de télévision. Elle est morte chez elle à São Paulo le 29 septembre 2012, à 83 ans, après avoir combattu un cancer du péritoine et à la suite d’un arrêt cardiaque.",
+  "shortDescriptionDe": "Hebe Camargo war eine der beliebtesten Fernsehpersönlichkeiten Brasiliens: Moderatorin, Sängerin und Schauspielerin, bekannt für ihren glamourösen Auftritt und ihre herzliche Interviewführung, die ihr den Beinamen „Königin des brasilianischen Fernsehens“ einbrachte. Nach Anfängen im Radio und in der Musik prägte sie jahrzehntelang das brasilianische Fernsehen. Sie starb am 29. September 2012 im Alter von 83 Jahren zu Hause in São Paulo, nach einem Kampf gegen Bauchfellkrebs und offenbar infolge eines Herzstillstands.",
+  "shortDescriptionEs": "Hebe Camargo fue una de las figuras más queridas de la televisión brasileña: presentadora, cantante y actriz, famosa por su carisma, su estilo glamuroso y su apodo de «reina de la televisión brasileña». Comenzó en la radio y la música antes de convertirse durante décadas en un rostro esencial de la televisión de Brasil. Murió en su casa de São Paulo el 29 de septiembre de 2012, a los 83 años, tras luchar contra un cáncer de peritoneo y sufrir un paro cardíaco.",
+  "shortDescriptionRu": "Эби Камаргу была одной из самых любимых телезвёзд Бразилии: телеведущей, певицей и актрисой, известной своим обаянием, ярким стилем и прозвищем «королева бразильского телевидения». Начав с радио и музыки, она на десятилетия стала заметной фигурой бразильского телевидения. Она умерла дома в Сан-Паулу 29 сентября 2012 года в возрасте 83 лет после борьбы с раком брюшины и, по сообщениям, сердечной остановки.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hebe_Camargo",
+    "https://www.reuters.com/article/lifestyle/apresentadora-hebe-camargo-morre-aos-83-anos-idUSSPE88S010/",
+    "https://artsandculture.google.com/story/her-majesty-hebe-the-queen-of-tv-folha-de-sp/TwUBB7pRPucZgg?hl=en",
+    "https://pt.wikipedia.org/wiki/Hebe_Camargo",
+    "https://www.imdb.com/name/nm0131249/bio/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q37327",  "Name": "Samuel Beckett",  "BirthDate": "1906-04-13T00:00:00Z",  "DeathDate": "1989-12-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Samuel%20Beckett%2C%20Pic%2C%201%20%28cropped%29.jpg",  "SiteLinksCnt": 138,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"27640":{"pageid":27640,"ns":0,"title":"Samuel Beckett","extract":"Samuel Barclay Beckett ( ; 13 April 1906 \u2013 22 December 1989) was an Irish playwright, poet, novelist, and literary critic. Writing in both English and French, his literary and theatrical works feature bleak, impersonal, and tragicomic episodes of life, coupled with black comedy and literary nonsense. Beckett is widely regarded as one of the most influential and important writers of the 20th century, credited with transforming modern theatre. As a major figure of Irish literature, he is best known for his tragicomedy play Waiting for Godot (1953). For his foundational contribution to both literature and theatre, Beckett received the 1969 Nobel Prize in Literature, \"for his writing, which\u2014in new forms for the novel and drama\u2014in the destitution of modern man acquires its elevation.\"\nDuring his early career, Beckett worked as a literary critic and commentator, and in 1930 he took up a role as a lecturer in Dublin. He wrote his first novel Dream of Fair to Middling Women in 1932, which influenced many of his later works, but it was not published until after his death. Around this time, Beckett also began studying artistic expressions and art history, particularly of paintings displayed at the National Gallery of Ireland. He was a close friend of the Irish writer James Joyce, and cited him as a major inspiration for his works. As a resident of Paris for most of his adult life, Beckett wrote in both French and English, sometimes under the pseudonym Andrew Belis. His later literary works, especially his plays, became increasingly austere and minimalistic as his career progressed, involving more aesthetic and linguistic experimentation, with techniques of stream of consciousness, repetition and self-reference. During the Second World War, Beckett became a member of the French Resistance group Gloria SMH (R\u00e9seau Gloria) and was awarded the Croix de Guerre in 1949.\nHis works were well received by critics and theatre audiences during his own lifetime, and his career spanned both Ireland and France, with short stints in Germany and Italy. During these terms, Beckett collaborated with many actors, actresses and theatre directors for his plays, including Jack MacGowran, Billie Whitelaw, Jocelyn Herbert, and Walter Asmus. Beckett's works are known for their existential themes, and these made them an important part of 20th-century plays and dramas. In 1961, he shared the inaugural Prix International with Jorge Luis Borges. He was also the first Saoi of the Aosd\u00e1na, having been elected to the position in 1984.\nBeckett is considered to be one of the last modernist writers and a key figure in what Martin Esslin called the \"Theatre of the Absurd.\" He died in 1989 and was buried at the Cimeti\u00e8re du Montparnasse. His most well-known play, Waiting for Godot, has since become a centrepiece of modernist literature, and in a public poll conducted by London's Royal National Theatre in 1998, it was voted as \"the most significant English-language play of the 20th century.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q37327")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q37327",
+  "isRealHuman": true,
+  "birthDate": "1906-04-13",
+  "deathDate": "1989-12-22",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "Samuel Beckett's birth date, death date, and age at death are consistent across Wikipedia, Nobel Prize records, Britannica, and contemporary obituary-derived sources. The age calculation from 1906-04-13 to 1989-12-22 gives 83 years.",
+  "shortDescriptionEn": "Samuel Barclay Beckett was an Irish novelist, playwright, poet, and critic, celebrated as one of the defining literary voices of the twentieth century. Writing in both English and French, he transformed modern drama with works such as Waiting for Godot, Endgame, and Krapp's Last Tape, and received the 1969 Nobel Prize in Literature. In his final years in Paris, his health declined severely; after living in a nursing home and suffering from respiratory illness, including emphysema, he died on 22 December 1989 at the age of 83 and was buried in Montparnasse Cemetery.",
+  "shortDescriptionFr": "Samuel Barclay Beckett était un romancier, dramaturge, poète et critique irlandais, l'une des grandes voix littéraires du XXe siècle. Écrivant en anglais comme en français, il a profondément transformé le théâtre moderne avec des œuvres comme En attendant Godot, Fin de partie et La Dernière Bande, et a reçu le prix Nobel de littérature en 1969. Installé à Paris à la fin de sa vie, il connut un net déclin de santé; après un séjour en maison de repos et des troubles respiratoires, notamment liés à l'emphysème, il mourut le 22 décembre 1989 à l'âge de 83 ans et fut enterré au cimetière du Montparnasse.",
+  "shortDescriptionDe": "Samuel Barclay Beckett war ein irischer Romancier, Dramatiker, Dichter und Kritiker und zählt zu den prägenden literarischen Stimmen des 20. Jahrhunderts. Er schrieb auf Englisch und Französisch und veränderte das moderne Theater mit Werken wie Warten auf Godot, Endspiel und Das letzte Band; 1969 erhielt er den Nobelpreis für Literatur. In seinen letzten Jahren in Paris verschlechterte sich seine Gesundheit stark; nach einem Aufenthalt in einem Pflegeheim und schweren Atemproblemen, darunter Emphysem, starb er am 22. Dezember 1989 im Alter von 83 Jahren und wurde auf dem Friedhof Montparnasse beigesetzt.",
+  "shortDescriptionEs": "Samuel Barclay Beckett fue un novelista, dramaturgo, poeta y crítico irlandés, considerado una de las voces literarias decisivas del siglo XX. Escribió tanto en inglés como en francés y renovó el teatro moderno con obras como Esperando a Godot, Final de partida y La última cinta de Krapp; en 1969 recibió el Premio Nobel de Literatura. En sus últimos años en París su salud se deterioró gravemente; tras vivir en una residencia y sufrir problemas respiratorios, incluido enfisema, murió el 22 de diciembre de 1989 a los 83 años y fue enterrado en el cementerio de Montparnasse.",
+  "shortDescriptionRu": "Сэмюэл Баркли Беккет был ирландским романистом, драматургом, поэтом и критиком, одной из ключевых литературных фигур XX века. Он писал на английском и французском языках и изменил современный театр такими произведениями, как В ожидании Годо, Конец игры и Последняя лента Крэппа; в 1969 году получил Нобелевскую премию по литературе. Последние годы он провел в Париже, где его здоровье резко ухудшилось; находясь в доме престарелых и страдая от тяжелых респираторных проблем, включая эмфизему, он умер 22 декабря 1989 года в возрасте 83 лет и был похоронен на кладбище Монпарнас.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Samuel_Beckett",
+    "https://www.nobelprize.org/prizes/literature/1969/beckett/facts/",
+    "https://www.britannica.com/biography/Samuel-Beckett",
+    "https://samuelbeckettsociety.org/2017/12/22/samuel-beckett-died-this-day/",
+    "https://samuelbeckettsociety.org/biography/",
+    "https://www.npg.org.uk/collections/search/portrait/mw243548/Samuel-Barclay-Beckett",
+    "https://www.npg.org.uk/collections/search/portrait/mw07089/Samuel-Beckett",
+    "https://www.npg.org.uk/collections/search/portrait/mw193116/Samuel-Beckett"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q42596",  "Name": "Frédéric Mistral",  "BirthDate": "1830-09-08T00:00:00Z",  "DeathDate": "1914-03-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Frederic%20Mistral%20portrait%20photo.jpg",  "SiteLinksCnt": 123,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"7628795":{"pageid":7628795,"ns":0,"title":"Fr\u00e9d\u00e9ric Mistral","extract":"Joseph \u00c9tienne Fr\u00e9d\u00e9ric Mistral (French: [mist\u0281al]; Occitan: Jos\u00e8p Est\u00e8ve Frederic Mistral, 8 September 1830 \u2013 25 March 1914) was an Occitan writer and lexicographer of the Proven\u00e7al form of the language. He received the 1904 Nobel Prize in Literature \"in recognition of the fresh originality and true inspiration of his poetic production, which faithfully reflects the natural scenery and native spirit of his people, and, in addition, his significant work as a Proven\u00e7al philologist\". Mistral was a founding member of the F\u00e9librige and member of the Acad\u00e9mie de Marseille.\nHis name in his native language was Frederi Mistral (Mistrau) according to the Mistralian orthography, or Frederic Mistral (or Mistrau) according to the classical orthography.\nMistral's fame was owing in part to Alphonse de Lamartine who sang his praises in the 40th edition of his periodical  Cours familier de litt\u00e9rature, following the publication of Mistral's long poem Mir\u00e8io. Alphonse Daudet, with whom he maintained a long friendship, eulogized him in \"Poet Mistral\", one of the stories in his collection Letters from My Windmill (Lettres de mon moulin)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q42596")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q42596",
+  "isRealHuman": true,
+  "birthDate": "1830-09-08",
+  "deathDate": "1914-03-25",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are confirmed by multiple reliable sources, including Wikipedia, NobelPrize.org, and Britannica. The age calculation is straightforward: Frédéric Mistral was born on 1830-09-08 and died on 1914-03-25, before his 84th birthday, so he was 83.",
+  "shortDescriptionEn": "Frédéric Mistral was a French Provençal and Occitan poet, writer, and lexicographer, best known for championing the language and culture of Provence and for co-founding the Félibrige literary movement. His epic poem Mirèio and his scholarly work on Provençal helped make him one of the leading cultural figures of southern France, and he shared the 1904 Nobel Prize in Literature. Mistral died on 25 March 1914 in Maillane, the same village where he had been born, at the age of 83; standard biographical sources record the place and date but do not emphasize a dramatic or unusual cause of death.",
+  "shortDescriptionFr": "Frédéric Mistral était un poète, écrivain et lexicographe français de langue provençale et occitane, célèbre pour avoir défendu la langue et la culture de Provence et pour avoir cofondé le Félibrige. Son poème épique Mirèio et son travail savant sur le provençal firent de lui l’une des grandes figures culturelles du Midi, et il partagea le prix Nobel de littérature en 1904. Mistral mourut le 25 mars 1914 à Maillane, le village même où il était né, à l’âge de 83 ans ; les sources biographiques courantes indiquent surtout la date et le lieu de sa mort, sans mettre en avant une cause exceptionnelle.",
+  "shortDescriptionDe": "Frédéric Mistral war ein französischer provenzalischer und okzitanischer Dichter, Schriftsteller und Lexikograf, der sich besonders für die Sprache und Kultur der Provence einsetzte und die literarische Bewegung Félibrige mitbegründete. Mit seinem Epos Mirèio und seiner wissenschaftlichen Arbeit zum Provenzalischen wurde er zu einer prägenden Kulturfigur Südfrankreichs; 1904 erhielt er gemeinsam den Nobelpreis für Literatur. Mistral starb am 25. März 1914 in Maillane, demselben Dorf, in dem er geboren worden war, im Alter von 83 Jahren; gängige biografische Quellen nennen vor allem Ort und Datum seines Todes und berichten keine außergewöhnlichen Todesumstände.",
+  "shortDescriptionEs": "Frédéric Mistral fue un poeta, escritor y lexicógrafo francés de tradición provenzal y occitana, conocido por defender la lengua y la cultura de Provenza y por cofundar el movimiento literario Félibrige. Su poema épico Mirèio y su trabajo filológico sobre el provenzal lo convirtieron en una figura cultural clave del sur de Francia, y compartió el Premio Nobel de Literatura de 1904. Mistral murió el 25 de marzo de 1914 en Maillane, el mismo pueblo donde había nacido, a los 83 años; las fuentes biográficas habituales destacan la fecha y el lugar de su muerte, sin señalar una causa dramática o inusual.",
+  "shortDescriptionRu": "Фредерик Мистраль был французским провансальским и окситанским поэтом, писателем и лексикографом, прославившимся защитой языка и культуры Прованса и участием в основании литературного движения Фелибриж. Его эпическая поэма Mirèio и филологическая работа над провансальским языком сделали его одной из ключевых культурных фигур юга Франции; в 1904 году он разделил Нобелевскую премию по литературе. Мистраль умер 25 марта 1914 года в Майяне, той же деревне, где родился, в возрасте 83 лет; основные биографические источники указывают дату и место смерти, но не выделяют каких-либо необычных обстоятельств.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Mistral",
+    "https://www.nobelprize.org/prizes/literature/1904/mistral/facts/",
+    "https://www.britannica.com/biography/Frederic-Mistral",
+    "https://www.britannica.com/summary/Frederic-Mistral",
+    "https://www.wikidata.org/wiki/Q42596",
+    "https://commons.wikimedia.org/wiki/File:Frederic_Mistral_portrait_photo.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43523",  "Name": "Gerhart Hauptmann",  "BirthDate": "1862-11-15T00:00:00Z",  "DeathDate": "1946-06-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gerhart%20Hauptmann%20nobel.jpg",  "SiteLinksCnt": 122,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"230776":{"pageid":230776,"ns":0,"title":"Gerhart Hauptmann","extract":"Gerhart Johann Robert Hauptmann (German: [\u02c8\u0261e\u02d0\u0250\u032fha\u0281t \u02c8ha\u028aptman] ; 15 November 1862 \u2013 6 June 1946) was a German dramatist and novelist. He is counted among the most important promoters of literary naturalism, though he integrated other styles into his work as well. He received the Nobel Prize in Literature in 1912."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43523")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43523",
+  "isRealHuman": true,
+  "birthDate": "1862-11-15",
+  "deathDate": "1946-06-06",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata-linked data, Wikipedia, NobelPrize.org, and Britannica. The age calculation is straightforward: Gerhart Hauptmann died on 1946-06-06, before reaching his 84th birthday on 1946-11-15, so he was 83.",
+  "shortDescriptionEn": "Gerhart Hauptmann was a German dramatist, novelist, and one of the leading figures of literary naturalism, awarded the Nobel Prize in Literature in 1912 for his outstanding dramatic work. Known for works such as The Weavers and Before Dawn, he helped reshape modern German theatre. He died on 6 June 1946 in Agnetendorf, shortly after World War II, amid the upheaval and expulsions affecting Germans in Silesia; accounts commonly identify bronchitis as the immediate cause.",
+  "shortDescriptionFr": "Gerhart Hauptmann était un dramaturge et romancier allemand, l’une des grandes figures du naturalisme littéraire, récompensé par le prix Nobel de littérature en 1912 pour l’importance de son œuvre dramatique. Connu notamment pour Les Tisserands et Avant l’aube, il a profondément marqué le théâtre allemand moderne. Il est mort le 6 juin 1946 à Agnetendorf, peu après la Seconde Guerre mondiale, dans le contexte troublé des expulsions de populations allemandes en Silésie; la bronchite est généralement mentionnée comme cause immédiate de sa mort.",
+  "shortDescriptionDe": "Gerhart Hauptmann war ein deutscher Dramatiker und Romancier und eine der prägenden Gestalten des literarischen Naturalismus; 1912 erhielt er den Nobelpreis für Literatur für sein bedeutendes dramatisches Werk. Mit Stücken wie Die Weber und Vor Sonnenaufgang veränderte er das moderne deutsche Theater nachhaltig. Er starb am 6. Juni 1946 in Agnetendorf, kurz nach dem Zweiten Weltkrieg, inmitten der Umbrüche und Vertreibungen in Schlesien; als unmittelbare Todesursache wird meist Bronchitis genannt.",
+  "shortDescriptionEs": "Gerhart Hauptmann fue un dramaturgo y novelista alemán, una de las figuras centrales del naturalismo literario, galardonado con el Premio Nobel de Literatura en 1912 por la fuerza y variedad de su obra dramática. Obras como Los tejedores y Antes del amanecer lo convirtieron en una figura clave del teatro alemán moderno. Murió el 6 de junio de 1946 en Agnetendorf, poco después de la Segunda Guerra Mundial, durante las convulsiones y expulsiones de alemanes en Silesia; la bronquitis suele señalarse como la causa inmediata de su muerte.",
+  "shortDescriptionRu": "Герхарт Гауптман был немецким драматургом и прозаиком, одним из ключевых представителей литературного натурализма; в 1912 году он получил Нобелевскую премию по литературе за выдающийся вклад в драматическое искусство. Его пьесы, включая «Ткачей» и «Перед восходом солнца», заметно повлияли на развитие современного немецкого театра. Он умер 6 июня 1946 года в Агнетендорфе вскоре после Второй мировой войны, на фоне послевоенных потрясений и выселения немцев из Силезии; непосредственной причиной смерти обычно называют бронхит.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gerhart_Hauptmann",
+    "https://www.nobelprize.org/prizes/literature/1912/hauptmann/facts/",
+    "https://www.britannica.com/biography/Gerhart-Hauptmann",
+    "https://commons.wikimedia.org/wiki/Gerhart_Hauptmann",
+    "https://www.wikidata.org/wiki/Q43523"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46602",  "Name": "Ivan Bunin",  "BirthDate": "1870-10-22T00:00:00Z",  "DeathDate": "1953-11-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Bunin%20%28sepia%29.jpg",  "SiteLinksCnt": 122,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"164425":{"pageid":164425,"ns":0,"title":"Ivan Bunin","extract":"Ivan Alekseyevich Bunin ( BOO-neen or  BOO-nin; Russian: \u0418\u0432\u0430\u0301\u043d \u0410\u043b\u0435\u043a\u0441\u0435\u0301\u0435\u0432\u0438\u0447 \u0411\u0443\u0301\u043d\u0438\u043d, IPA: [\u026a\u02c8van \u0250l\u02b2\u026ak\u02c8s\u02b2ej\u026av\u02b2\u026ad\u0291 \u02c8bun\u02b2\u026an] ; 22 October [O.S. 10 October] 1870 \u2013 8 November 1953) was the first Russian writer awarded the Nobel Prize in Literature, in 1933.  He was noted for the strict artistry with which he carried on the classical Russian traditions in the writing of prose and poetry. The texture of his poems and stories, sometimes referred to as \"Bunin brocade\", is considered to be one of the richest in the language.\nBest known for his short novels The Village (1910) and Dry Valley (1912), autobiographical novel The Life of Arseniev (1933, 1939), short stories collection Dark Avenues (1946) and 1917\u20131918 diary Cursed Days (1926), Bunin was a revered figure among white emigres, European critics, and many of his fellow writers, who viewed him as a true heir to the tradition of realism in Russian literature established by Tolstoy and Chekhov."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46602")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q46602",
+  "isRealHuman": true,
+  "birthDate": "1870-10-22",
+  "deathDate": "1953-11-08",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are confirmed by multiple reliable sources, including Wikipedia, NobelPrize.org, Britannica, and Wikidata. The age calculation is straightforward: Ivan Bunin was born on 1870-10-22 and died on 1953-11-08, after his birthday in 1953, making him 83 years old at death.",
+  "shortDescriptionEn": "Ivan Alekseyevich Bunin was a Russian poet, novelist, short-story writer, and memoirist, celebrated for the classical precision and lyrical richness of his prose. In 1933 he became the first Russian writer to receive the Nobel Prize in Literature, with works such as The Village, Dry Valley, The Life of Arseniev, Cursed Days, and Dark Avenues securing his place among the major figures of Russian literature. After the Russian Revolution, he lived in emigration, mainly in France. Bunin died in Paris on 8 November 1953, reportedly after years of declining health; heart failure, cardiac asthma, and pulmonary sclerosis are commonly cited in accounts of his final illness.",
+  "shortDescriptionFr": "Ivan Alekseïevitch Bounine fut un poète, romancier, nouvelliste et mémorialiste russe, admiré pour la précision classique et la richesse lyrique de sa prose. En 1933, il devint le premier écrivain russe à recevoir le prix Nobel de littérature, et des œuvres comme Le Village, La Vie d’Arséniev, Jours maudits et Les Allées sombres ont confirmé son importance dans la littérature russe. Après la Révolution russe, il vécut en exil, surtout en France. Bounine mourut à Paris le 8 novembre 1953, après une santé déclinante; l’insuffisance cardiaque, l’asthme cardiaque et la sclérose pulmonaire sont généralement mentionnés parmi les causes de sa mort.",
+  "shortDescriptionDe": "Iwan Alexejewitsch Bunin war ein russischer Dichter, Romancier, Erzähler und Memoirenschreiber, bekannt für die klassische Strenge und lyrische Dichte seiner Prosa. 1933 erhielt er als erster russischer Schriftsteller den Nobelpreis für Literatur; Werke wie Das Dorf, Suchodol, Das Leben Arsenjews, Verfluchte Tage und Dunkle Alleen machten ihn zu einer prägenden Gestalt der russischen Literatur. Nach der Russischen Revolution lebte er im Exil, vor allem in Frankreich. Bunin starb am 8. November 1953 in Paris nach länger nachlassender Gesundheit; Herzversagen, Herzasthma und Lungensklerose werden häufig als Ursachen seiner letzten Erkrankung genannt.",
+  "shortDescriptionEs": "Iván Alekséyevich Bunin fue un poeta, novelista, cuentista y memorialista ruso, reconocido por la precisión clásica y la intensidad lírica de su prosa. En 1933 se convirtió en el primer escritor ruso en recibir el Premio Nobel de Literatura, y obras como La aldea, La vida de Arséniev, Días malditos y Alamedas oscuras consolidaron su lugar en la literatura rusa. Tras la Revolución rusa vivió en el exilio, principalmente en Francia. Bunin murió en París el 8 de noviembre de 1953, después de años de deterioro de salud; las fuentes suelen mencionar insuficiencia cardíaca, asma cardíaca y esclerosis pulmonar entre las causas de su enfermedad final.",
+  "shortDescriptionRu": "Иван Алексеевич Бунин был русским поэтом, прозаиком, новеллистом и мемуаристом, прославившимся классической точностью стиля и редкой лирической насыщенностью прозы. В 1933 году он стал первым русским писателем, получившим Нобелевскую премию по литературе; среди его важнейших произведений — «Деревня», «Суходол», «Жизнь Арсеньева», «Окаянные дни» и «Тёмные аллеи». После Русской революции Бунин жил в эмиграции, главным образом во Франции. Он умер в Париже 8 ноября 1953 года после ухудшения здоровья; в биографических источниках обычно упоминаются сердечная недостаточность, сердечная астма и лёгочный склероз как причины его последней болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ivan_Bunin",
+    "https://www.nobelprize.org/prizes/literature/1933/bunin/facts/",
+    "https://www.britannica.com/biography/Ivan-Bunin",
+    "https://www.wikidata.org/wiki/Q46602",
+    "https://commons.wikimedia.org/wiki/File:Ivan_Bunin_(sepia).jpg",
+    "https://commons.wikimedia.org/wiki/File:Ivan_Bunin_1933.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bunin_Ivan_1937.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q144535",  "Name": "Herbert Spencer",  "BirthDate": "1820-04-27T00:00:00Z",  "DeathDate": "1903-12-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Herbert%20Spencer.jpg",  "SiteLinksCnt": 119,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"248859":{"pageid":248859,"ns":0,"title":"Herbert Spencer","extract":"Herbert Spencer (27 April 1820 \u2013 8 December 1903) was an English polymath active as a philosopher, psychologist, biologist, sociologist, and anthropologist. Spencer originated the expression \"survival of the fittest\", which he coined in Principles of Biology (1864) after reading Charles Darwin's 1859 book On the Origin of Species. The term strongly suggests natural selection, yet Spencer saw evolution as extending into realms of sociology and ethics, so he also supported Lamarckism.\nSpencer developed an all-embracing conception of evolution as the progressive development of the physical world, biological organisms, the human mind, and human culture and societies. As a polymath, he contributed to a wide range of subjects, including ethics, religion, anthropology, economics, political theory, philosophy, literature, astronomy, biology, sociology, and psychology. During his lifetime he achieved tremendous authority, mainly in English-speaking academia. Spencer was \"the single most famous European intellectual in the closing decades of the nineteenth century\" but his influence declined sharply after 1900: \"Who now reads Spencer?\" asked Talcott Parsons in 1937."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q144535")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q144535",
+  "isRealHuman": true,
+  "birthDate": "1820-04-27",
+  "deathDate": "1903-12-08",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The birth date, death date, death place, and age at death are consistent across Wikipedia, Britannica, Wikidata, and historical biographical sources. The age calculation is straightforward: Herbert Spencer was born on 27 April 1820 and died on 8 December 1903, after his 83rd birthday.",
+  "shortDescriptionEn": "Herbert Spencer was an English philosopher, sociologist, psychologist, biologist, and political thinker whose ambitious evolutionary worldview made him one of the most influential Victorian intellectuals. He coined the phrase \"survival of the fittest\" and tried to connect biology, psychology, society, and ethics through his Synthetic Philosophy. In his last years he continued to write, often by dictation, while suffering from poor health. He died in Brighton, Sussex, on 8 December 1903 at the age of 83, and his ashes were later interred at Highgate Cemetery in London.",
+  "shortDescriptionFr": "Herbert Spencer était un philosophe, sociologue, psychologue, biologiste et penseur politique anglais, l’un des intellectuels victoriens les plus influents. Il a popularisé une vision évolutionniste de la société et a forgé l’expression « survival of the fittest », tout en cherchant à relier biologie, psychologie, morale et organisation sociale dans sa philosophie synthétique. Dans ses dernières années, il continua à écrire, souvent sous dictée, malgré une santé déclinante. Il mourut à Brighton, dans le Sussex, le 8 décembre 1903, à l’âge de 83 ans, et ses cendres furent ensuite déposées au cimetière de Highgate à Londres.",
+  "shortDescriptionDe": "Herbert Spencer war ein englischer Philosoph, Soziologe, Psychologe, Biologe und politischer Denker und gehörte zu den einflussreichsten Intellektuellen des viktorianischen Zeitalters. Er prägte den Ausdruck \"survival of the fittest\" und versuchte, Biologie, Psychologie, Gesellschaft und Ethik in seiner synthetischen Philosophie zu einem umfassenden evolutionären System zu verbinden. In seinen letzten Jahren schrieb er trotz schlechter Gesundheit weiter, häufig per Diktat. Er starb am 8. Dezember 1903 in Brighton, Sussex, im Alter von 83 Jahren; seine Asche wurde später auf dem Highgate Cemetery in London beigesetzt.",
+  "shortDescriptionEs": "Herbert Spencer fue un filósofo, sociólogo, psicólogo, biólogo y pensador político inglés, considerado uno de los intelectuales victorianos más influyentes. Acuñó la expresión \"survival of the fittest\" y trató de unir biología, psicología, sociedad y ética dentro de su amplia Filosofía Sintética. En sus últimos años siguió escribiendo, a menudo dictando sus textos, mientras su salud se deterioraba. Murió en Brighton, Sussex, el 8 de diciembre de 1903, a los 83 años, y sus cenizas fueron posteriormente depositadas en el cementerio de Highgate, en Londres.",
+  "shortDescriptionRu": "Герберт Спенсер был английским философом, социологом, психологом, биологом и политическим мыслителем, одним из самых влиятельных интеллектуалов викторианской эпохи. Он ввёл выражение «survival of the fittest» и пытался связать биологию, психологию, общество и этику в единую эволюционную систему, известную как синтетическая философия. В последние годы он продолжал писать, часто диктуя тексты, несмотря на ухудшение здоровья. Спенсер умер в Брайтоне, Суссекс, 8 декабря 1903 года в возрасте 83 лет; его прах позднее был захоронен на Хайгейтском кладбище в Лондоне.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Herbert%20Spencer.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw05948/Herbert-Spencer",
+    "https://www.npg.org.uk/collections/search/portrait/mw111229/Herbert-Spencer",
+    "https://library.si.edu/image-gallery/73606"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Herbert_Spencer",
+    "https://www.britannica.com/biography/Herbert-Spencer",
+    "https://plato.stanford.edu/entries/spencer/",
+    "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1912_supplement/Spencer,_Herbert",
+    "https://www.wikidata.org/wiki/Q144535",
+    "https://www.npg.org.uk/collections/search/portrait/mw05948/Herbert-Spencer",
+    "https://www.npg.org.uk/collections/search/portrait/mw111229/Herbert-Spencer",
+    "https://library.si.edu/image-gallery/73606"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41866",  "Name": "Justinian I",  "BirthDate": "0482-05-12T00:00:00Z",  "DeathDate": "0565-11-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20of%20Justinianus%20I%20-%20Basilica%20San%20Vitale%20%28Ravenna%29.jpg",  "SiteLinksCnt": 119,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"16209":{"pageid":16209,"ns":0,"title":"Justinian I","extract":"Justinian I (Latin: Iustinianus, Ancient Greek: \u1f38\u03bf\u03c5\u03c3\u03c4\u03b9\u03bd\u03b9\u03b1\u03bd\u03cc\u03c2, romanized: Ioustinian\u00f3s; 482 \u2013 14 November 565), also known as Justinian the Great, was Roman emperor from 527 to 565.\nHis reign was marked by the ambitious but only partly realized renovatio imperii, or 'restoration of the Empire'. This ambition was expressed by the partial recovery of the territories of the defunct Western Roman Empire. His general, Belisarius, swiftly conquered the Vandal Kingdom in North Africa. Subsequently, Belisarius, Narses, and other generals conquered the Ostrogothic Kingdom, restoring Dalmatia, Sicily, Italy, and Rome to the empire after more than half a century of rule by the Ostrogoths. The praetorian prefect Liberius reclaimed the south of the Iberian Peninsula, establishing the province of Spania. These campaigns re-established Roman control over the western Mediterranean, increasing the Empire's annual revenue by over a million solidi. During his reign, Justinian also subdued the Tzani, a people on the east coast of the Black Sea that had never been under Roman rule before. He engaged the Sasanian Empire in the east during Kavad I's reign, and later again during Khosrow I's reign; this second conflict was partially initiated due to his ambitions in the west.\nJustinian is regarded as one of the most prominent and influential Roman emperors. One of the most enduring aspects of his legacy was the uniform rewriting of Roman law, the Corpus Juris Civilis, which was first applied throughout the Eastern Mediterannean and is still the basis of civil law in many modern states. His reign also marked a blossoming of Byzantine culture, and his building program yielded works such as the Hagia Sophia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41866")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41866",
+  "isRealHuman": true,
+  "birthDate": "0482-05-11",
+  "deathDate": "0565-11-14",
+  "ageAtDeath": 83,
+  "confidence": 82,
+  "confidenceExplained": "The identity is very secure. The death date 14 November 565 is strongly supported by Wikidata, Wikipedia, and Britannica. The age is less certain because sources differ on the birth year: Wikidata lists 11 May 482, while Britannica gives 483 and age 82. Using the better-supported Wikidata/Wikipedia-style chronology gives 83, and several sources explicitly state or imply that he died aged about 83.",
+  "shortDescriptionEn": "Justinian I, also known as Justinian the Great, was the Eastern Roman emperor from 527 to 565 and one of the most influential rulers of late antiquity. He is remembered for the Corpus Juris Civilis, the reconquest of parts of the western Roman Empire, and major building projects such as Hagia Sophia. In his final years he became increasingly focused on religion and succession politics; he died in Constantinople on 14 November 565, apparently at night in the imperial palace, and was succeeded by his nephew Justin II.",
+  "shortDescriptionFr": "Justinien Ier, aussi appelé Justinien le Grand, fut empereur romain d’Orient de 527 à 565 et l’un des souverains les plus marquants de l’Antiquité tardive. Il est célèbre pour le Corpus Juris Civilis, la reconquête de territoires occidentaux de l’ancien Empire romain et de grands chantiers comme Sainte-Sophie. Dans ses dernières années, il se concentra davantage sur les questions religieuses et la succession; il mourut à Constantinople le 14 novembre 565, vraisemblablement de nuit dans le palais impérial, et son neveu Justin II lui succéda.",
+  "shortDescriptionDe": "Justinian I., auch Justinian der Große genannt, war von 527 bis 565 oströmischer Kaiser und einer der prägendsten Herrscher der Spätantike. Bekannt ist er vor allem für das Corpus Juris Civilis, die Rückeroberung westlicher Gebiete des früheren Römischen Reiches und Bauprojekte wie die Hagia Sophia. In seinen letzten Jahren wandte er sich verstärkt religiösen Fragen und der Nachfolge zu; er starb am 14. November 565 in Konstantinopel, offenbar nachts im Kaiserpalast, und wurde von seinem Neffen Justin II. beerbt.",
+  "shortDescriptionEs": "Justiniano I, también conocido como Justiniano el Grande, fue emperador romano de Oriente entre 527 y 565 y una de las figuras más importantes de la Antigüedad tardía. Se le recuerda por el Corpus Juris Civilis, la reconquista de territorios occidentales del antiguo Imperio romano y obras monumentales como Santa Sofía. En sus últimos años se centró cada vez más en la religión y en la sucesión; murió en Constantinopla el 14 de noviembre de 565, al parecer de noche en el palacio imperial, y le sucedió su sobrino Justino II.",
+  "shortDescriptionRu": "Юстиниан I, известный также как Юстиниан Великий, был восточноримским императором с 527 по 565 год и одной из ключевых фигур поздней античности. Его помнят благодаря Corpus Juris Civilis, попыткам вернуть западные земли бывшей Римской империи и грандиозным строительным проектам, включая Святую Софию. В последние годы жизни он всё больше занимался религиозными вопросами и проблемой наследования; он умер в Константинополе 14 ноября 565 года, по-видимому ночью в императорском дворце, а власть перешла к его племяннику Юстину II.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20of%20Justinianus%20I%20-%20Basilica%20San%20Vitale%20%28Ravenna%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Justinian%20mosaik%20ravenna.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Justinian_I",
+    "https://www.wikidata.org/wiki/Q41866",
+    "https://www.britannica.com/biography/Justinian-I",
+    "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-3519",
+    "https://www.historytoday.com/archive/months-past/death-justinian-i",
+    "https://www.metmuseum.org/essays/the-byzantine-state-under-justinian-i-justinian-the-great"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47285",  "Name": "J. J. Thomson",  "BirthDate": "1856-12-18T00:00:00Z",  "DeathDate": "1940-08-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/J.J.%20Thomson%20LCCN2014715407.jpg",  "SiteLinksCnt": 119,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"70085":{"pageid":70085,"ns":0,"title":"J. J. Thomson","extract":"Sir Joseph John Thomson (18 December 1856 \u2013 30 August 1940) was a British physicist. He received the 1906 Nobel Prize in Physics \"in recognition of the great merits of his theoretical and experimental investigations on the conduction of electricity by gases.\" In 1897, he showed that cathode rays were composed of previously unknown negatively charged particles (now called electrons), which he calculated must have bodies much smaller than atoms and a very large charge-to-mass ratio. The electron was the first subatomic particle to be discovered.\nThomson is credited with finding the first evidence for isotopes of a stable (non-radioactive) element in 1912, as part of his exploration into the composition of canal rays (positive ions). His experiments to determine the nature of positively charged particles, with Francis William Aston, were the first use of mass spectrometry and led to the development of the mass spectrograph.\nThomson was an influential teacher, and seven of his students went on to win Nobel Prizes: Ernest Rutherford (Chemistry 1908), Lawrence Bragg (Physics 1915), Charles Barkla (Physics 1917), Francis Aston (Chemistry 1922), Charles Thomson Rees Wilson (Physics 1927), Owen Richardson (Physics 1928) and Edward Appleton (Physics 1947). His son, George Paget Thomson, shared the 1937 Nobel Prize in Physics with Clinton Davisson \"for their experimental discovery of the diffraction of electrons by crystals\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47285")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q47285",
+  "isRealHuman": true,
+  "birthDate": "1856-12-18",
+  "deathDate": "1940-08-30",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, NobelPrize.org, and Westminster Abbey. The age is exactly calculable: born 1856-12-18, died 1940-08-30, before his 84th birthday, so he was 83.",
+  "shortDescriptionEn": "Sir Joseph John Thomson was a British physicist whose work transformed atomic science. In 1897 he showed that cathode rays were made of tiny negatively charged particles, later called electrons, and he received the 1906 Nobel Prize in Physics for research on electrical conduction in gases. He spent most of his career at Cambridge, shaping the Cavendish Laboratory into a center of modern physics. Thomson died in Cambridge on 30 August 1940 at age 83; his ashes were interred in Westminster Abbey near Newton and Rutherford.",
+  "shortDescriptionFr": "Sir Joseph John Thomson était un physicien britannique qui a profondément changé la compréhension de la structure atomique. En 1897, il montra que les rayons cathodiques étaient constitués de minuscules particules chargées négativement, appelées plus tard électrons, et il reçut le prix Nobel de physique en 1906 pour ses travaux sur la conduction électrique dans les gaz. Il passa l’essentiel de sa carrière à Cambridge, où il fit du laboratoire Cavendish un haut lieu de la physique moderne. Thomson mourut à Cambridge le 30 août 1940, à l’âge de 83 ans; ses cendres furent déposées à l’abbaye de Westminster, près de Newton et Rutherford.",
+  "shortDescriptionDe": "Sir Joseph John Thomson war ein britischer Physiker, der das Verständnis des Atoms grundlegend veränderte. 1897 zeigte er, dass Kathodenstrahlen aus winzigen negativ geladenen Teilchen bestehen, die später Elektronen genannt wurden, und 1906 erhielt er den Nobelpreis für Physik für seine Arbeiten zur elektrischen Leitung in Gasen. Den größten Teil seiner Laufbahn verbrachte er in Cambridge, wo er das Cavendish Laboratory zu einem Zentrum der modernen Physik machte. Thomson starb am 30. August 1940 in Cambridge im Alter von 83 Jahren; seine Asche wurde in der Westminster Abbey nahe Newton und Rutherford beigesetzt.",
+  "shortDescriptionEs": "Sir Joseph John Thomson fue un físico británico que cambió de forma decisiva la comprensión de la estructura atómica. En 1897 demostró que los rayos catódicos estaban formados por diminutas partículas con carga negativa, más tarde llamadas electrones, y recibió el Premio Nobel de Física de 1906 por sus investigaciones sobre la conducción eléctrica en gases. Desarrolló gran parte de su carrera en Cambridge, donde convirtió el Laboratorio Cavendish en un centro clave de la física moderna. Thomson murió en Cambridge el 30 de agosto de 1940, a los 83 años; sus cenizas fueron enterradas en la Abadía de Westminster, cerca de Newton y Rutherford.",
+  "shortDescriptionRu": "Сэр Джозеф Джон Томсон был британским физиком, чьи работы существенно изменили представления о строении атома. В 1897 году он показал, что катодные лучи состоят из крошечных отрицательно заряженных частиц, позднее названных электронами, а в 1906 году получил Нобелевскую премию по физике за исследования электрической проводимости газов. Большую часть карьеры он провёл в Кембридже, превратив Кавендишскую лабораторию в один из центров современной физики. Томсон умер в Кембридже 30 августа 1940 года в возрасте 83 лет; его прах был захоронен в Вестминстерском аббатстве рядом с Ньютоном и Резерфордом.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/J._J._Thomson",
+    "https://www.britannica.com/biography/J-J-Thomson",
+    "https://www.nobelprize.org/prizes/physics/1906/thomson/biographical/",
+    "https://www.nobelprize.org/prizes/physics/1906/thomson/facts/",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/sir-joseph-john-thomson",
+    "https://commons.wikimedia.org/wiki/File:J.J_Thomson.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41178",  "Name": "Haile Selassie I",  "BirthDate": "1892-07-23T00:00:00Z",  "DeathDate": "1975-08-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Haile%20Selassie%20in%20full%20dress.jpg",  "SiteLinksCnt": 116,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"42120":{"pageid":42120,"ns":0,"title":"Haile Selassie","extract":"Haile Selassie I (born Tafari Makonnen or Lij Tafari; 23 July 1892 \u2013 27 August 1975) was Emperor of Ethiopia from 1930 to 1974. He rose to power as the Regent Plenipotentiary of Ethiopia (Enderase) under Empress Zewditu between 1916 and 1930.\nWidely considered to be a defining figure in modern Ethiopian history, he is accorded divine importance in Rastafari, an Abrahamic religion that emerged in the 1930s. A few years before he began his reign over the Ethiopian Empire, Selassie defeated Ethiopian army commander Ras Gugsa Welle Bitul, nephew of Empress Taytu Betul, at the Battle of Anchem. He belonged to the Solomonic dynasty, founded by Emperor Yekuno Amlak in 1270.\nSelassie, seeking to modernise Ethiopia, introduced political and social reforms including the 1931 constitution and the abolition of slavery in 1942. He led the empire during the Second Italo-Ethiopian War, and after its defeat was exiled to the United Kingdom. When the Italian occupation of East Africa began, he traveled to Anglo-Egyptian Sudan to coordinate the Ethiopian struggle against Fascist Italy; he returned home after the East African campaign of World War II. He dissolved the Federation of Ethiopia and Eritrea, established by the United Nations General Assembly in 1950, and annexed Eritrea as one of Ethiopia's provinces, while also fighting to prevent Eritrean secession. As an internationalist, Selassie led Ethiopia's accession to the United Nations. In 1963, he presided over the formation of the Organisation of African Unity, the precursor of the African Union, and served as its first chairman. By the early 1960s, prominent African socialists such as Kwame Nkrumah envisioned the creation of a \"United States of Africa\". Their rhetoric was anti-Western; Selassie saw this as a threat to his alliances. He attempted to influence a more moderate posture within the group.\nAmidst popular uprisings, Selassie was overthrown by the Derg military junta in the 1974 coup d'\u00e9tat. With support from the Soviet Union, the Derg began governing Ethiopia as a Marxist\u2013Leninist state. In 1994, three years after the fall of the Derg regime, it was revealed to the public that the Derg had assassinated Selassie at the Jubilee Palace in Addis Ababa on 27 August 1975. On 5 November 2000, his excavated remains were buried at the Holy Trinity Cathedral of Addis Ababa.\nAmong adherents of Rastafari, Selassie is called the returned Jesus, although he was an adherent of the Ethiopian Orthodox Church himself. He has been criticised for his suppression of rebellions among the landed aristocracy (Mesafint), which consistently opposed his changes. Others have criticised Ethiopia's failure to modernise rapidly enough. During his reign, the Harari people were persecuted and many left their homes. His administration was criticised as autocratic and illiberal by groups such as Human Rights Watch. According to some sources, late into Selassie's administration, the Oromo language was banned from education, public speaking and use in administration, though there was never a law that criminalised any language. His government relocated many Amhara people into southern Ethiopia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41178")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41178",
+  "isRealHuman": true,
+  "birthDate": "1892-07-23",
+  "deathDate": "1975-08-27",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by major reference sources, including Wikipedia and Britannica. The age calculation is straightforward: Haile Selassie died after his birthday in 1975, so 1975 - 1892 = 83. Minor uncertainty remains only around the precise circumstances of death, not the age.",
+  "shortDescriptionEn": "Haile Selassie I, born Tafari Makonnen, was Emperor of Ethiopia from 1930 to 1974 and one of the most recognizable African leaders of the 20th century. He promoted modernization, helped bring Ethiopia into the League of Nations and the United Nations, and became a central symbolic figure for the Rastafari movement. Deposed by the Derg military junta in 1974, he spent his final months under house arrest in Addis Ababa. He died on 27 August 1975 at age 83; official accounts first described natural causes, but later evidence indicated he was likely strangled on the orders of the military regime.",
+  "shortDescriptionFr": "Haile Selassie Ier, né Tafari Makonnen, fut empereur d’Éthiopie de 1930 à 1974 et l’un des dirigeants africains les plus marquants du XXe siècle. Il encouragea la modernisation du pays, fit entrer l’Éthiopie dans la Société des Nations puis dans l’ONU, et devint une figure centrale du mouvement rastafari. Renversé par la junte militaire du Derg en 1974, il passa ses derniers mois en résidence surveillée à Addis-Abeba. Il mourut le 27 août 1975 à l’âge de 83 ans; la version officielle parla d’abord de causes naturelles, mais des éléments ultérieurs ont indiqué qu’il avait probablement été étranglé sur ordre du régime militaire.",
+  "shortDescriptionDe": "Haile Selassie I., geboren als Tafari Makonnen, war von 1930 bis 1974 Kaiser von Äthiopien und einer der bekanntesten afrikanischen Staatsmänner des 20. Jahrhunderts. Er trieb Modernisierungsprojekte voran, führte Äthiopien in den Völkerbund und später in die Vereinten Nationen und wurde zu einer zentralen Symbolfigur der Rastafari-Bewegung. 1974 wurde er von der Militärjunta Derg gestürzt und verbrachte seine letzten Monate unter Hausarrest in Addis Abeba. Er starb am 27. August 1975 im Alter von 83 Jahren; offiziell hieß es zunächst, er sei eines natürlichen Todes gestorben, doch spätere Hinweise deuteten darauf hin, dass er vermutlich auf Befehl des Militärregimes erdrosselt wurde.",
+  "shortDescriptionEs": "Haile Selassie I, nacido como Tafari Makonnen, fue emperador de Etiopía de 1930 a 1974 y una de las figuras africanas más reconocidas del siglo XX. Impulsó la modernización del país, llevó a Etiopía a la Sociedad de Naciones y a las Naciones Unidas, y se convirtió en una figura simbólica central para el movimiento rastafari. Fue depuesto por la junta militar del Derg en 1974 y pasó sus últimos meses bajo arresto domiciliario en Addis Abeba. Murió el 27 de agosto de 1975 a los 83 años; al principio se informó oficialmente que había muerto por causas naturales, pero pruebas posteriores indicaron que probablemente fue estrangulado por orden del régimen militar.",
+  "shortDescriptionRu": "Хайле Селассие I, родившийся как Тафари Маконнен, был императором Эфиопии с 1930 по 1974 год и одним из самых узнаваемых африканских лидеров XX века. Он продвигал модернизацию страны, способствовал вступлению Эфиопии в Лигу Наций и ООН и стал важнейшей символической фигурой для движения растафари. В 1974 году его свергла военная хунта Дерг, после чего последние месяцы жизни он провёл под домашним арестом в Аддис-Абебе. Он умер 27 августа 1975 года в возрасте 83 лет; сначала официально сообщалось о естественных причинах смерти, но позднейшие данные указывали, что он, вероятно, был задушен по приказу военного режима.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Haile%20Selassie%20in%20full%20dress.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw52127/Haile-Selassie-I-Emperor-of-Ethiopia",
+    "https://commons.wikimedia.org/wiki/File:Haile_Selassie_in_full_dress.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Haile_Selassie",
+    "https://www.britannica.com/biography/Haile-Selassie-I",
+    "https://www.britannica.com/question/How-did-Haile-Selassie-I-die",
+    "https://www.washingtonpost.com/archive/politics/1994/12/15/ethiopian-court-hears-how-emperor-was-killed/af51020c-547c-4b9c-92df-52be6e2a2241/",
+    "https://www.npg.org.uk/collections/search/portrait/mw52127/Haile-Selassie-I-Emperor-of-Ethiopia",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Haile%20Selassie%20in%20full%20dress.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q173869",  "Name": "Alfred Tennyson",  "BirthDate": "1809-08-06T00:00:00Z",  "DeathDate": "1892-10-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Alfred%2C%20Lord%20Tennyson%20by%20Julia%20Margaret%20Cameron.jpg",  "SiteLinksCnt": 115,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"59209":{"pageid":59209,"ns":0,"title":"Alfred, Lord Tennyson","extract":"Alfred Tennyson, 1st Baron Tennyson  (; 6 August 1809 \u2013 6 October 1892) was an English poet. He was Poet Laureate of the United Kingdom during much of Queen Victoria's reign. In 1829 he was awarded the Chancellor's Gold Medal at Cambridge for one of his first pieces, \"Timbuktu\". He published his first solo collection of poems, Poems, Chiefly Lyrical, in 1830. \"Claribel\" and \"Mariana\", which remain some of Tennyson's most celebrated poems, were included in this volume. Although described by some critics as overly sentimental, his poems ultimately proved popular and brought Tennyson to the attention of well-known writers of the day, including Samuel Taylor Coleridge. Tennyson's early poetry, with its medievalism and powerful visual imagery, was a major influence on the Pre-Raphaelite Brotherhood.\nTennyson also focused on short lyrics, such as \"Break, Break, Break\", \"The Charge of the Light Brigade\", \"Tears, Idle Tears\", and \"Crossing the Bar\". Much of his verse was based on classical mythological themes, such as \"Ulysses\" and \"The Lotos-Eaters\". \"In Memoriam A.H.H.\" was written to commemorate his friend Arthur Hallam, a fellow poet and student at Trinity College, Cambridge, after he died of a stroke at the age of 22. Tennyson also wrote notable blank verse, including Idylls of the King, \"Ulysses\", and \"Tithonus\". During his career, Tennyson attempted drama, but his plays enjoyed little success.\nA number of phrases from Tennyson's work have become commonplace in the English language, including \"Nature, red in tooth and claw\" (\"In Memoriam A.H.H.\"), \"'Tis better to have loved and lost / Than never to have loved at all\", \"Theirs not to reason why, / Theirs but to do and die\", \"My strength is as the strength of ten, / Because my heart is pure\", \"To strive, to seek, to find, and not to yield\", \"Knowledge comes, but Wisdom lingers\", and \"The old order changeth, yielding place to new\". He is the ninth most frequently quoted writer in The Oxford Dictionary of Quotations."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q173869")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q173869",
+  "isRealHuman": true,
+  "birthDate": "1809-08-06",
+  "deathDate": "1892-10-06",
+  "ageAtDeath": 83,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by major reference sources, including Wikipedia, Encyclopaedia Britannica, and Westminster Abbey. The age calculation is exact: from 1809-08-06 to 1892-10-06 is 83 completed years.",
+  "shortDescriptionEn": "Alfred Tennyson, 1st Baron Tennyson, was one of the defining poets of Victorian Britain and served as Poet Laureate for much of Queen Victoria's reign. His best-known works include In Memoriam A.H.H., The Charge of the Light Brigade, Ulysses, and Idylls of the King. He died at Aldworth on 6 October 1892, aged 83, after a final illness, and was buried in Poets' Corner at Westminster Abbey.",
+  "shortDescriptionFr": "Alfred Tennyson, 1er baron Tennyson, fut l'un des grands poètes de la Grande-Bretagne victorienne et occupa la fonction de Poet Laureate pendant une grande partie du règne de la reine Victoria. Parmi ses œuvres les plus célèbres figurent In Memoriam A.H.H., The Charge of the Light Brigade, Ulysses et Idylls of the King. Il mourut à Aldworth le 6 octobre 1892, à l'âge de 83 ans, après une dernière maladie, puis fut inhumé au Coin des poètes de l'abbaye de Westminster.",
+  "shortDescriptionDe": "Alfred Tennyson, 1. Baron Tennyson, war einer der prägenden Dichter des viktorianischen Großbritanniens und diente während eines großen Teils der Regierungszeit Königin Victorias als Poet Laureate. Zu seinen bekanntesten Werken zählen In Memoriam A.H.H., The Charge of the Light Brigade, Ulysses und Idylls of the King. Er starb am 6. Oktober 1892 im Alter von 83 Jahren in Aldworth nach einer letzten Krankheit und wurde in der Poets' Corner der Westminster Abbey beigesetzt.",
+  "shortDescriptionEs": "Alfred Tennyson, primer barón Tennyson, fue uno de los poetas esenciales de la Gran Bretaña victoriana y ejerció como Poet Laureate durante gran parte del reinado de la reina Victoria. Entre sus obras más conocidas se encuentran In Memoriam A.H.H., The Charge of the Light Brigade, Ulysses e Idylls of the King. Murió en Aldworth el 6 de octubre de 1892, a los 83 años, tras una última enfermedad, y fue enterrado en el Rincón de los Poetas de la abadía de Westminster.",
+  "shortDescriptionRu": "Альфред Теннисон, 1-й барон Теннисон, был одним из главных поэтов викторианской Британии и большую часть правления королевы Виктории занимал должность поэта-лауреата. Среди его самых известных произведений — In Memoriam A.H.H., The Charge of the Light Brigade, Ulysses и Idylls of the King. Он умер в Олдворте 6 октября 1892 года в возрасте 83 лет после последней болезни и был похоронен в Уголке поэтов Вестминстерского аббатства.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Alfred%2C%20Lord%20Tennyson%20by%20Julia%20Margaret%20Cameron.jpg",
+    "https://www.metmuseum.org/art/collection/search/282041",
+    "https://www.npg.org.uk/collections/search/portrait/mw06261/Alfred-Lord-Tennyson",
+    "https://www.metmuseum.org/art/collection/search/268718"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Alfred,_Lord_Tennyson",
+    "https://www.britannica.com/biography/Alfred-Lord-Tennyson",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/alfred-lord-tennyson/",
+    "https://www.poetryfoundation.org/poets/alfred-tennyson",
+    "https://www.metmuseum.org/art/collection/search/282041",
+    "https://www.npg.org.uk/collections/search/portrait/mw06261/Alfred-Lord-Tennyson",
+    "https://www.metmuseum.org/art/collection/search/268718"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q14277",  "Name": "William Herschel",  "BirthDate": "1738-11-15T00:00:00Z",  "DeathDate": "1822-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/William%20Herschel01.jpg",  "SiteLinksCnt": 114,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"33971":{"pageid":33971,"ns":0,"title":"William Herschel","extract":"Frederick William Herschel  ( HUR-sh\u0259l; German: Friedrich Wilhelm Herschel [\u02c8f\u0281i\u02d0d\u0281\u026a\u00e7 \u02c8v\u026alh\u025blm \u02c8h\u025b\u0281\u0283l\u0329]; 15 November 1738 \u2013 25 August 1822) was a German\u2013British astronomer and composer. He frequently collaborated with his younger sister and fellow astronomer Caroline Herschel. Born in the Electorate of Hanover, he followed his father into the military band of Hanover, before immigrating to Britain in 1757 at the age of 19.\nTaking an interest in astronomy in 1766, Herschel constructed his first large telescope in 1774, after which he spent nine years carrying out sky surveys to investigate double stars. Herschel published catalogues of nebulae in 1802 (2,500 objects) and in 1820 (5,000 objects). The resolving power of the Herschel telescopes revealed that many objects called nebulae in the Messier catalogue were actually clusters of stars. On 13 March 1781 while making observations he made note of a new object in the constellation of Gemini. This would, after several weeks of verification and consultation with other astronomers, be confirmed to be a new planet, eventually given the name of Uranus. This was the first planet to be discovered since antiquity, and Herschel became famous overnight. As a result of this discovery, George III appointed him Court Astronomer. He was elected a Fellow of the Royal Society and grants were provided for the construction of new telescopes.\nHerschel pioneered the use of astronomical spectrophotometry, using prisms and temperature measuring equipment to measure the wavelength distribution of stellar spectra. In the course of these investigations, Herschel discovered infrared radiation.\nOther work included an improved determination of the rotation period of Mars, the discovery that the Martian polar caps vary seasonally, the discovery of Titania and Oberon (moons of Uranus) and Enceladus and Mimas (moons of Saturn). Herschel was made a Knight of the Royal Guelphic Order in 1816. He was the first President of the Royal Astronomical Society when it was founded in 1820. He died in August 1822, and his work was continued by his only son, John Herschel."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q14277")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q14277",
+  "isRealHuman": true,
+  "birthDate": "1738-11-15",
+  "deathDate": "1822-08-25",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given by Wikipedia and Encyclopaedia Britannica as 15 November 1738 and 25 August 1822. Calculating from those dates gives 83 full years, because Herschel died before his 84th birthday. The only minor uncertainty is around the exact medical cause of death; reliable summaries state that he died in Slough after a long illness.",
+  "shortDescriptionEn": "William Herschel was a German-born British astronomer and composer whose handmade telescopes helped transform observational astronomy. He discovered Uranus in 1781, identified infrared radiation, studied double stars and nebulae, and became one of the most celebrated astronomers of his age. He died at Observatory House in Slough, England, on 25 August 1822, after a long illness, at the age of 83.",
+  "shortDescriptionFr": "William Herschel était un astronome et compositeur germano-britannique dont les télescopes construits à la main ont profondément transformé l’astronomie d’observation. Il découvrit Uranus en 1781, mit en évidence le rayonnement infrarouge, étudia les étoiles doubles et les nébuleuses, et devint l’un des astronomes les plus célèbres de son époque. Il mourut à Observatory House, à Slough, en Angleterre, le 25 août 1822, après une longue maladie, à l’âge de 83 ans.",
+  "shortDescriptionDe": "William Herschel war ein deutsch-britischer Astronom und Komponist, dessen selbst gebaute Teleskope die beobachtende Astronomie entscheidend voranbrachten. Er entdeckte 1781 Uranus, wies Infrarotstrahlung nach, untersuchte Doppelsterne und Nebel und wurde zu einem der berühmtesten Astronomen seiner Zeit. Er starb am 25. August 1822 im Observatory House in Slough, England, nach längerer Krankheit im Alter von 83 Jahren.",
+  "shortDescriptionEs": "William Herschel fue un astrónomo y compositor germano-británico cuyos telescopios construidos por él mismo ayudaron a transformar la astronomía observacional. Descubrió Urano en 1781, identificó la radiación infrarroja, estudió estrellas dobles y nebulosas, y se convirtió en uno de los astrónomos más reconocidos de su época. Murió en Observatory House, en Slough, Inglaterra, el 25 de agosto de 1822, tras una larga enfermedad, a los 83 años.",
+  "shortDescriptionRu": "Уильям Гершель был немецко-британским астрономом и композитором, чьи собственноручно построенные телескопы заметно изменили наблюдательную астрономию. В 1781 году он открыл Уран, обнаружил инфракрасное излучение, изучал двойные звёзды и туманности и стал одним из самых известных астрономов своего времени. Он умер в Observatory House в Слау, Англия, 25 августа 1822 года после продолжительной болезни в возрасте 83 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/William_Herschel",
+    "https://www.britannica.com/biography/William-Herschel",
+    "https://www.rmg.co.uk/collections/objects/rmgc-object-14237",
+    "https://www.npg.org.uk/collections/search/portrait/mw03111/Sir-William-Herschel",
+    "https://www.space.com/17432-william-herschel.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q46373",  "Name": "Edgar Degas",  "BirthDate": "1834-07-19T00:00:00Z",  "DeathDate": "1917-09-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20self%20portrait%201855FXD.jpg",  "SiteLinksCnt": 113,  "Age": 83}
+{"batchcomplete":"","query":{"pages":{"63146":{"pageid":63146,"ns":0,"title":"Edgar Degas","extract":"Edgar Degas (UK: , US: ; born Hilaire-Germain-Edgar De Gas, French: [il\u025b\u02d0\u0281 \u0292\u025b\u0281m\u025b\u0303 \u025bd\u0261a\u0281 d\u0259 \u0261a]; 19 July 1834 \u2013 27 September 1917) was a French Impressionist artist famous for his pastel drawings and oil paintings.\nDegas also produced bronze sculptures, prints, and drawings. Degas is especially identified with the subject of dance; more than half of his works depict dancers. Although Degas is regarded as one of the founders of Impressionism, he rejected the term, preferring to be called a realist, and did not paint outdoors as many Impressionists did.\nDegas was a superb draftsman, and particularly masterly in depicting movement, as can be seen in his rendition of dancers and bathing female nudes. In addition to ballet dancers and bathing women, Degas painted racehorses and racing jockeys, as well as portraits. His portraits are notable for their psychological complexity and their portrayal of human isolation.\nAt the beginning of his career, Degas wanted to be a history painter, a calling for which he was well prepared by his rigorous academic training and close study of classical Western art. In his early thirties he changed course, and by bringing the traditional methods of a history painter to bear on contemporary subject matter, he became a classical painter of modern life.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q46373")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q46373",
+  "isRealHuman": true,
+  "birthDate": "1834-07-19",
+  "deathDate": "1917-09-27",
+  "ageAtDeath": 83,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, and major museum/biographical sources. The age is calculated directly from 1834-07-19 to 1917-09-27; because Degas had already had his birthday in 1917, he was 83 at death.",
+  "shortDescriptionEn": "Edgar Degas was a French painter, draftsman, printmaker, sculptor, and one of the key figures associated with Impressionism, though he preferred to think of himself as a realist. He became famous for penetrating scenes of modern Paris, especially dancers, racehorses, café life, and women caught in private moments, using bold composition and masterful pastel work. In his final years, worsening eyesight left him increasingly withdrawn and nearly blind; he died in Paris on 27 September 1917 at the age of 83 and was buried in Montmartre Cemetery.",
+  "shortDescriptionFr": "Edgar Degas était un peintre, dessinateur, graveur et sculpteur français, associé à l’impressionnisme même s’il se considérait plutôt comme un réaliste. Il est devenu célèbre pour ses scènes de la vie parisienne moderne, notamment les danseuses, les chevaux de course, les cafés et les femmes saisies dans des instants intimes, avec un sens remarquable du cadrage et du pastel. Dans ses dernières années, sa vue se détériora fortement, le rendant de plus en plus isolé et presque aveugle ; il mourut à Paris le 27 septembre 1917, à l’âge de 83 ans, et fut enterré au cimetière de Montmartre.",
+  "shortDescriptionDe": "Edgar Degas war ein französischer Maler, Zeichner, Grafiker und Bildhauer, der eng mit dem Impressionismus verbunden ist, obwohl er sich selbst eher als Realisten sah. Berühmt wurde er durch scharfsinnig beobachtete Szenen des modernen Pariser Lebens, besonders Tänzerinnen, Rennpferde, Café-Szenen und Frauen in privaten Momenten, oft mit ungewöhnlichen Bildausschnitten und meisterhafter Pastelltechnik. In seinen letzten Jahren verschlechterte sich sein Augenlicht stark, er wurde zunehmend zurückgezogen und fast blind; er starb am 27. September 1917 in Paris im Alter von 83 Jahren und wurde auf dem Friedhof Montmartre beigesetzt.",
+  "shortDescriptionEs": "Edgar Degas fue un pintor, dibujante, grabador y escultor francés, vinculado al impresionismo aunque prefería considerarse realista. Alcanzó fama por sus escenas de la vida moderna parisina, especialmente bailarinas, caballos de carreras, cafés y mujeres en momentos privados, con composiciones audaces y un dominio excepcional del pastel. En sus últimos años, su vista se deterioró gravemente, se volvió cada vez más aislado y casi ciego; murió en París el 27 de septiembre de 1917 a los 83 años y fue enterrado en el cementerio de Montmartre.",
+  "shortDescriptionRu": "Эдгар Дега был французским живописцем, рисовальщиком, гравёром и скульптором, тесно связанным с импрессионизмом, хотя сам он предпочитал считать себя реалистом. Он прославился сценами современной парижской жизни: балеринами, скачками, кафе и женщинами в частных, почти случайно подмеченных моментах, сочетая необычные ракурсы с виртуозной пастельной техникой. В последние годы его зрение сильно ухудшилось, он стал всё более замкнутым и почти слепым; Дега умер в Париже 27 сентября 1917 года в возрасте 83 лет и был похоронен на кладбище Монмартр.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edgar_Degas",
+    "https://www.britannica.com/biography/Edgar-Degas",
+    "https://www.metmuseum.org/essays/edgar-degas-1834-1917-painting-and-drawing",
+    "https://artuk.org/discover/artists/degas-edgar-18341917",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20self%20portrait%201855FXD.jpg",
+    "https://www.metmuseum.org/art/collection/search/436158"
+  ]
+}

@@ -1,0 +1,1037 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q35064",  "Name": "Agatha Christie",  "BirthDate": "1890-09-15T00:00:00Z",  "DeathDate": "1976-01-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Agatha%20Christie%20in%20Nederland%20%28detectiveschrijfster%29%2C%20bij%20aankomst%20op%20Schiphol%20me%2C%20Bestanddeelnr%20916-8898%20%28cropped%29.jpg",  "SiteLinksCnt": 192,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"984":{"pageid":984,"ns":0,"title":"Agatha Christie","extract":"Dame Agatha Mary Clarissa Mallowan, Lady Mallowan (n\u00e9e Miller, 15 September 1890 \u2013 12 January 1976), usually known by her first married name, Agatha Christie, was an English author known for her 66 detective novels and 14 short-story collections, particularly those revolving around fictional detectives Hercule Poirot and Miss Marple. She is widely regarded as one of the greatest writers, particularly in the mystery genre.\nA writer during the \"Golden Age of Detective Fiction\", Christie has been called the \"Queen of Crime\"\u2014a nickname now trademarked by her estate\u2014or the \"Queen of Mystery\". She wrote the world's longest-running play, the murder mystery The Mousetrap, which has been performed in the West End of London since 1952. She also wrote six novels under the pseudonym Mary Westmacott. In 1971, she was made a Dame (DBE) by Queen Elizabeth II for her contributions to literature. She is the best-selling novelist of all time, her books having sold more than two billion copies.\nChristie was born into a wealthy upper-middle-class family in Torquay, Devon, and was largely home-schooled. She was initially an unsuccessful writer with six consecutive rejections, but this changed in 1920, when The Mysterious Affair at Styles, featuring detective Hercule Poirot, was published. Her first husband was Archibald Christie; they married in 1914 and had one child before divorcing in 1928. Following the breakdown of her marriage and the death of her mother in 1926, she made international headlines by going missing for 11 days. During both world wars, she served in hospital dispensaries, acquiring a thorough knowledge of the poisons that featured in many of her novels, short stories, and plays. Following her marriage to archaeologist Max Mallowan in 1930, she spent several months each year on archaeological excavations in the Middle East and used her first-hand knowledge of this profession in her fiction.\nAccording to UNESCO's Index Translationum, she remains the most-translated individual author. Her novel And Then There Were None is one of the top-selling books of all time, with about 100 million copies sold. Christie's stage play The Mousetrap holds the world record for the longest initial run. It opened at the Ambassadors Theatre in the West End on 25 November 1952, and by 2018, more than 27,500 performances had been given. The play was temporarily closed in 2020 because of COVID-19 lockdowns in London before it reopened in 2021.\nIn 1955, Christie was the first recipient of the Mystery Writers of America's Grand Master Award. Later that year, Witness for the Prosecution received an Edgar Award for best play. In 2013, she was voted the best crime writer and The Murder of Roger Ackroyd the best crime novel ever by 600 professional novelists of the Crime Writers' Association. In 2015, And Then There Were None was named the \"World's Favourite Christie\" in a vote sponsored by the author's estate. Many of Christie's books and short stories have been adapted for television, radio, video games, and graphic novels. More than 30 feature films are based on her work."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q35064")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q35064",
+  "isRealHuman": true,
+  "birthDate": "1890-09-15",
+  "deathDate": "1976-01-12",
+  "ageAtDeath": 85,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, and death date are consistently reported by major references. Agatha Christie was born on 1890-09-15 and died on 1976-01-12; because she had not yet reached her birthday in 1976, her age at death was exactly 85.",
+  "shortDescriptionEn": "Agatha Christie was an English novelist, playwright, and short-story writer whose ingenious mysteries made her one of the best-selling authors in history. Best known for Hercule Poirot, Miss Marple, The Mousetrap, Murder on the Orient Express, and And Then There Were None, she helped define the modern detective story with elegant plotting and memorable twists. She died at age 85 on 12 January 1976 of natural causes at Winterbrook House in Wallingford, Oxfordshire, and was buried nearby at St Mary’s Churchyard in Cholsey.",
+  "shortDescriptionFr": "Agatha Christie était une romancière, dramaturge et nouvelliste anglaise dont les intrigues policières ingénieuses ont fait d’elle l’une des auteures les plus vendues de l’histoire. Célèbre pour Hercule Poirot, Miss Marple, The Mousetrap, Le Crime de l’Orient-Express et Dix Petits Nègres, elle a profondément marqué le roman policier moderne par ses constructions élégantes et ses retournements mémorables. Elle est morte à 85 ans le 12 janvier 1976 de causes naturelles à Winterbrook House, à Wallingford dans l’Oxfordshire, puis a été enterrée tout près, au cimetière de St Mary à Cholsey.",
+  "shortDescriptionDe": "Agatha Christie war eine englische Schriftstellerin, Dramatikerin und Autorin von Kurzgeschichten, deren raffiniert gebaute Kriminalromane sie zu einer der meistverkauften Autorinnen der Geschichte machten. Berühmt wurde sie durch Hercule Poirot, Miss Marple, The Mousetrap, Mord im Orient-Express und Und dann gabs keines mehr; mit eleganten Plots und überraschenden Wendungen prägte sie den modernen Detektivroman entscheidend. Sie starb am 12. Januar 1976 im Alter von 85 Jahren eines natürlichen Todes in Winterbrook House in Wallingford, Oxfordshire, und wurde auf dem nahegelegenen Kirchhof von St Mary in Cholsey beigesetzt.",
+  "shortDescriptionEs": "Agatha Christie fue una novelista, dramaturga y cuentista inglesa cuyas ingeniosas historias de misterio la convirtieron en una de las autoras más vendidas de la historia. Famosa por Hercule Poirot, Miss Marple, The Mousetrap, Asesinato en el Orient Express y Diez negritos, ayudó a definir la novela detectivesca moderna con tramas elegantes y giros memorables. Murió a los 85 años el 12 de enero de 1976 por causas naturales en Winterbrook House, en Wallingford, Oxfordshire, y fue enterrada cerca, en el cementerio de St Mary en Cholsey.",
+  "shortDescriptionRu": "Агата Кристи была английской писательницей, драматургом и автором рассказов, чьи изобретательные детективные сюжеты сделали её одной из самых продаваемых писательниц в истории. Её имя связано с Эркюлем Пуаро, мисс Марпл, пьесой The Mousetrap, романами «Убийство в Восточном экспрессе» и «Десять негритят»; она во многом сформировала современный детектив благодаря точной интриге и эффектным развязкам. Она умерла 12 января 1976 года в возрасте 85 лет от естественных причин в доме Winterbrook House в Уоллингфорде, Оксфордшир, и была похоронена неподалёку, на кладбище церкви Святой Марии в Чолси.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Agatha%20Christie%20in%20Nederland%20%28detectiveschrijfster%29%2C%20bij%20aankomst%20op%20Schiphol%20me%2C%20Bestanddeelnr%20916-8898%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/File:Agatha_Christie_as_a_young_woman.jpg",
+    "https://commons.wikimedia.org/wiki/Agatha_Christie"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Agatha_Christie",
+    "https://www.britannica.com/biography/Agatha-Christie",
+    "https://www.agathachristie.com/en/about-christie",
+    "https://commons.wikimedia.org/wiki/Agatha_Christie",
+    "https://www.npg.org.uk/collections/search/person/mp05154/agatha-christie"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11813",  "Name": "James Madison",  "BirthDate": "1751-03-16T00:00:00Z",  "DeathDate": "1836-06-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Madison.jpg",  "SiteLinksCnt": 173,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"15950":{"pageid":15950,"ns":0,"title":"James Madison","extract":"James Madison (March 16, 1751 [O.S. March 5, 1750] \u2013 June 28, 1836) was an American statesman, diplomat, and Founding Father who served as the fourth president of the United States from 1809 to 1817. Madison was popularly acclaimed as the \"Father of the Constitution\" for his pivotal role in drafting and promoting the Constitution of the United States and the Bill of Rights.\nMadison was born into a prominent slave-owning planter family in Virginia. In 1774, strongly opposed to British taxation, Madison joined with the Patriots. He was a member of both the Virginia House of Delegates and the Continental Congress during and after the American Revolutionary War. Dissatisfied with the weak national government established by the Articles of Confederation, he helped organize the Constitutional Convention, which produced a new constitution designed to strengthen republican government against democratic assembly. Madison's Virginia Plan was the basis for the convention's deliberations. He became one of the leaders in the movement to ratify the Constitution and joined Alexander Hamilton and John Jay in writing The Federalist Papers, a series of pro-ratification essays that remain prominent among works of political science in American history. \nMadison emerged as an important leader in the House of Representatives and was a close adviser to President George Washington. During the early 1790s, Madison opposed the economic program and the accompanying centralization of power favored by Secretary of the Treasury Hamilton. Alongside Thomas Jefferson, he organized the Democratic\u2013Republican Party in opposition to Hamilton's Federalist Party. Madison served as Jefferson's Secretary of State from 1801 to 1809, during which time he helped convince Jefferson to submit the Louisiana Purchase Treaty for approval by the Senate.\nMadison was elected president in 1808. Motivated by a desire to acquire land held by Britain, Spain, and Native Americans, and after diplomatic protests with a trade embargo failed to end British seizures of American-shipped goods, Madison led the United States into the War of 1812. Madison was re-elected in the 1812 election, which was held during wartime. The war convinced Madison of the necessity of a stronger federal government. Although the war ended inconclusively in 1815, many Americans viewed it as a successful \"second war of independence\" against Britain which bolstered Madison's popularity. He presided over the creation of the Second Bank of the United States and the enactment of the protective Tariff of 1816. The United States acquired \n26,000,000 acres (110,000 km2) of land through treaties or war from Native American tribes during Madison's presidency. \nRetiring from public office at the end of his presidency in 1817, Madison returned to his plantation, Montpelier, where he died in 1836. Madison was a slave owner; he freed one slave in 1783 to prevent a slave rebellion at Montpelier but did not free any in his will. Historians regard Madison as one of the most significant Founding Fathers of the United States, and have generally ranked him as an above-average president, although they are critical of his endorsement of slavery and his leadership during the War of 1812. Madison's name is commemorated in many landmarks across the nation, with prominent examples including Madison Square Garden, James Madison University, the James Madison Memorial Building, the capital city of Wisconsin, and the USS James Madison.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11813")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q11813",
+  "isRealHuman": true,
+  "birthDate": "1751-03-16",
+  "deathDate": "1836-06-28",
+  "ageAtDeath": 85,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently reported by Wikipedia, Encyclopaedia Britannica, and Montpelier. The age calculation is straightforward: James Madison died after his birthday in 1836, making him 85.",
+  "shortDescriptionEn": "James Madison was an American statesman, Founding Father, chief architect of the U.S. Constitution, co-author of The Federalist Papers, and the fourth president of the United States from 1809 to 1817. Remembered as the “Father of the Constitution,” he also helped shape the Bill of Rights and led the country during the War of 1812. In his final years at Montpelier, his health declined; he died on the morning of June 28, 1836, reportedly over breakfast, with congestive heart failure often cited as the cause.",
+  "shortDescriptionFr": "James Madison était un homme d’État américain, Père fondateur, principal architecte de la Constitution des États-Unis, coauteur des Federalist Papers et quatrième président des États-Unis de 1809 à 1817. Surnommé le « Père de la Constitution », il joua aussi un rôle majeur dans l’élaboration du Bill of Rights et dirigea le pays pendant la guerre de 1812. Dans ses dernières années à Montpelier, sa santé se détériora; il mourut le matin du 28 juin 1836, apparemment pendant le petit-déjeuner, une insuffisance cardiaque congestive étant souvent mentionnée comme cause.",
+  "shortDescriptionDe": "James Madison war ein amerikanischer Staatsmann, Gründervater, maßgeblicher Architekt der Verfassung der Vereinigten Staaten, Mitautor der Federalist Papers und von 1809 bis 1817 der vierte Präsident der USA. Als „Vater der Verfassung“ bekannt, prägte er auch die Bill of Rights und führte das Land während des Krieges von 1812. In seinen letzten Jahren auf Montpelier verschlechterte sich seine Gesundheit; er starb am Morgen des 28. Juni 1836, Berichten zufolge beim Frühstück, wobei häufig kongestive Herzinsuffizienz als Todesursache genannt wird.",
+  "shortDescriptionEs": "James Madison fue un estadista estadounidense, Padre Fundador, principal arquitecto de la Constitución de Estados Unidos, coautor de The Federalist Papers y cuarto presidente del país entre 1809 y 1817. Conocido como el “Padre de la Constitución”, también ayudó a dar forma a la Carta de Derechos y dirigió la nación durante la Guerra de 1812. En sus últimos años en Montpelier, su salud fue empeorando; murió la mañana del 28 de junio de 1836, al parecer durante el desayuno, y suele citarse la insuficiencia cardíaca congestiva como causa.",
+  "shortDescriptionRu": "Джеймс Мэдисон был американским государственным деятелем, одним из отцов-основателей, ключевым архитектором Конституции США, соавтором «Федералиста» и четвертым президентом США в 1809–1817 годах. Его часто называют «отцом Конституции»; он также сыграл важную роль в создании Билля о правах и руководил страной во время Англо-американской войны 1812 года. В последние годы в Монпилиере его здоровье ухудшалось; утром 28 июня 1836 года он умер, по распространенным сведениям, за завтраком, а причиной часто указывают застойную сердечную недостаточность.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_Madison",
+    "https://www.britannica.com/biography/James-Madison",
+    "https://obamawhitehouse.archives.gov/1600/presidents/jamesmadison",
+    "https://www.montpelier.org/learn/the-life-of-james-madison/",
+    "https://www.archives.gov/nhprc/projects/catalog/james-madison"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q25973",  "Name": "Hermann Hesse",  "BirthDate": "1877-07-02T00:00:00Z",  "DeathDate": "1962-08-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hermann%20Hesse%202.jpg",  "SiteLinksCnt": 160,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"13578":{"pageid":13578,"ns":0,"title":"Hermann Hesse","extract":"Hermann Karl Hesse (German: [\u02c8h\u025b\u0281man \u02c8h\u025bs\u0259] ; 2 July 1877 \u2013 9 August 1962) was a German-Swiss poet and novelist, and winner of the 1946 Nobel Prize in Literature. His interest in Eastern religious, spiritual, and philosophical traditions, combined with his involvement with Jungian analysis, helped to shape his literary work. His best-known novels include Demian, Steppenwolf, Siddhartha, Narcissus and Goldmund, and The Glass Bead Game, each of which explores an individual's search for authenticity, self-knowledge, and spirituality. \nHesse was a widely read author in German-speaking countries during his lifetime, but his more enduring international fame did not come until a few years after his death, when, in the mid-1960s, his works became enormously popular with post-World War II generation readers in the United States, Europe, and elsewhere."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q25973")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q25973",
+  "isRealHuman": true,
+  "birthDate": "1877-07-02",
+  "deathDate": "1962-08-09",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are confirmed by multiple reliable references, including Wikipedia, Britannica, and NobelPrize.org. The age calculation is exact because Hermann Hesse died after his 85th birthday in 1962. There is slightly less certainty around the precise medical wording of the final cause, since sources emphasize different aspects, but this does not affect the calculated age.",
+  "shortDescriptionEn": "Hermann Hesse was a German-Swiss novelist, poet, essayist, and painter whose works, including Siddhartha, Steppenwolf, Demian, and The Glass Bead Game, explored self-knowledge, spirituality, alienation, and the search for an authentic life. He received the Nobel Prize in Literature in 1946 and became one of the most widely read German-language authors of the twentieth century. In his final years he lived quietly in Montagnola, Switzerland, increasingly frail and reportedly affected by leukemia; he died there in his sleep on 9 August 1962, with a cerebral hemorrhage often cited as the immediate cause.",
+  "shortDescriptionFr": "Hermann Hesse était un romancier, poète, essayiste et peintre germano-suisse, auteur de Siddhartha, Le Loup des steppes, Demian et Le Jeu des perles de verre. Son œuvre explore la quête de soi, la spiritualité, l’aliénation et le refus des conventions, ce qui lui valut le prix Nobel de littérature en 1946 et une influence durable bien au-delà du monde germanophone. Dans ses dernières années, il vécut retiré à Montagnola, en Suisse, affaibli et, selon plusieurs récits biographiques, atteint de leucémie; il y mourut dans son sommeil le 9 août 1962, une hémorragie cérébrale étant souvent mentionnée comme cause immédiate.",
+  "shortDescriptionDe": "Hermann Hesse war ein deutsch-schweizerischer Schriftsteller, Dichter, Essayist und Maler, bekannt durch Werke wie Siddhartha, Der Steppenwolf, Demian und Das Glasperlenspiel. Seine Bücher kreisen um Selbstsuche, Spiritualität, Entfremdung und den Weg zu innerer Freiheit; 1946 erhielt er den Nobelpreis für Literatur. Seine letzten Jahre verbrachte Hesse zurückgezogen in Montagnola im Tessin, zunehmend geschwächt und biografischen Darstellungen zufolge an Leukämie leidend; am 9. August 1962 starb er dort im Schlaf, wobei häufig eine Hirnblutung als unmittelbare Todesursache genannt wird.",
+  "shortDescriptionEs": "Hermann Hesse fue un novelista, poeta, ensayista y pintor germano-suizo, autor de obras como Siddhartha, El lobo estepario, Demian y El juego de los abalorios. Su literatura exploró la búsqueda de identidad, la espiritualidad, la alienación y la tensión entre individuo y sociedad, y en 1946 recibió el Premio Nobel de Literatura. En sus últimos años vivió de forma retirada en Montagnola, Suiza, cada vez más frágil y, según varias biografías, afectado por leucemia; murió allí mientras dormía el 9 de agosto de 1962, y con frecuencia se cita una hemorragia cerebral como causa inmediata.",
+  "shortDescriptionRu": "Герман Гессе был немецко-швейцарским романистом, поэтом, эссеистом и художником, автором таких произведений, как «Сиддхартха», «Степной волк», «Демиан» и «Игра в бисер». Его книги посвящены поиску себя, духовности, отчуждению и внутренней свободе; в 1946 году он получил Нобелевскую премию по литературе. Последние годы Гессе провёл уединённо в Монтаньоле, Швейцария, становясь всё более слабым; биографические источники упоминают лейкемию, а непосредственной причиной смерти часто называют кровоизлияние в мозг. Он умер во сне 9 августа 1962 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hermann_Hesse",
+    "https://www.nobelprize.org/prizes/literature/1946/hesse/biographical/",
+    "https://www.britannica.com/biography/Hermann-Hesse",
+    "https://hesse.projects.gss.ucsb.edu/life/jennifer.html",
+    "https://www.hermann-hesse.de/leben-und-werk/biografie/",
+    "https://www.hermann-hesse.de/leben-und-werk/multimedia/hesse-portraits/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q41532",  "Name": "Carl Jung",  "BirthDate": "1875-07-26T00:00:00Z",  "DeathDate": "1961-06-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Jung%2C%20Carl%20Gustav%20%281875-1961%29-Portrait-Portr%2014163%20%28cropped%29.tif",  "SiteLinksCnt": 150,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"42031":{"pageid":42031,"ns":0,"title":"Carl Jung","extract":"Carl Gustav Jung ( YUUNG; Swiss Standard German: [karl j\u028a\u014b]; 26 July 1875 \u2013 6 June 1961) was a Swiss psychiatrist, psychotherapist, and psychologist who founded the school of analytical psychology. He was a prolific author of over twenty books, illustrator, and correspondent, and academic, best known for his concept of archetypes. Widely considered one of the most influential psychologists of all time, Jung's work has fostered not only scholarship, but also popular interest. His work has been influential in the fields of psychiatry, anthropology, archaeology, literature, philosophy, psychology, and religious studies. \nJung worked as a research scientist at the Burgh\u00f6lzli psychiatric hospital in Zurich, under Eugen Bleuler. He established himself as an influential mind, developing a friendship with Freud, founder of psychoanalysis, and conducting a lengthy correspondence regarding their joint vision of human psychology. Freud saw the younger Jung not only as the heir he had been seeking to take forward his \"new science\" of psychoanalysis, but as a means to legitimise his own work: Freud and other contemporary psychoanalysts were Jews facing rising antisemitism in Europe, while Jung was raised as Christian, although he did not strictly adhere to traditional Christian doctrine, seeing religion, including Christianity, as a powerful expression of the human psyche and its search for meaning.  Freud secured Jung's appointment as president of Freud's newly founded International Psychoanalytical Association. Jung's research and personal vision, however, made it difficult to follow his older colleague's doctrine, and they parted ways. This division was painful for Jung and resulted in the establishment of Jung's analytical psychology, as a comprehensive system separate from psychoanalysis.\nAmong the central concepts of analytical psychology is individuation\u2014the lifelong psychological process of differentiation of the self out of each individual's conscious and unconscious elements. Jung considered it to be the main task of human development. He created some of the best-known psychological concepts, including synchronicity, archetypal phenomena, the collective unconscious, the psychological complex, and extraversion and introversion. His treatment of American businessman and politician Rowland Hazard in 1926 with his conviction that alcoholics may recover if they have a \"vital spiritual (or religious) experience\" played a crucial role in the chain of events that led to the formation of Alcoholics Anonymous. Jung was an artist, craftsman, builder, and prolific writer. Many of his works were not published until after his death, and some remain unpublished.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q41532")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q41532",
+  "isRealHuman": true,
+  "birthDate": "1875-07-26",
+  "deathDate": "1961-06-06",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia and Britannica: 26 July 1875 and 6 June 1961. Since Jung died about seven weeks before his 86th birthday, the calculated age at death is 85. Confidence is not 100 only because secondary sources sometimes vary in details about the immediate medical circumstances of death.",
+  "shortDescriptionEn": "Carl Gustav Jung was a Swiss psychiatrist and psychotherapist who founded analytical psychology and reshaped modern ideas about the unconscious, archetypes, personality types, dreams, myth, and religion. Once closely associated with Sigmund Freud, he later developed an independent school of thought that influenced psychology, literature, spirituality, and cultural studies. Jung died in Küsnacht, Switzerland, on 6 June 1961 at the age of 85, after a short illness and in the context of circulatory health problems reported in biographical accounts.",
+  "shortDescriptionFr": "Carl Gustav Jung était un psychiatre et psychothérapeute suisse, fondateur de la psychologie analytique. Il a profondément marqué la compréhension moderne de l’inconscient, des archétypes, des types psychologiques, des rêves, des mythes et de la religion. D’abord proche de Sigmund Freud, il a ensuite créé une pensée indépendante qui a influencé la psychologie, la littérature, la spiritualité et les études culturelles. Jung est mort à Küsnacht, en Suisse, le 6 juin 1961, à l’âge de 85 ans, après une courte maladie et dans un contexte de troubles circulatoires mentionnés par des sources biographiques.",
+  "shortDescriptionDe": "Carl Gustav Jung war ein Schweizer Psychiater und Psychotherapeut sowie der Begründer der analytischen Psychologie. Er prägte moderne Vorstellungen vom Unbewussten, von Archetypen, Persönlichkeitstypen, Träumen, Mythen und Religion. Nach einer frühen Nähe zu Sigmund Freud entwickelte er eine eigenständige Schule, die Psychologie, Literatur, Spiritualität und Kulturwissenschaft nachhaltig beeinflusste. Jung starb am 6. Juni 1961 in Küsnacht in der Schweiz im Alter von 85 Jahren, nach kurzer Krankheit und vor dem Hintergrund von in biografischen Darstellungen erwähnten Kreislaufleiden.",
+  "shortDescriptionEs": "Carl Gustav Jung fue un psiquiatra y psicoterapeuta suizo, fundador de la psicología analítica. Transformó las ideas modernas sobre el inconsciente, los arquetipos, los tipos de personalidad, los sueños, los mitos y la religión. Tras una etapa de cercanía con Sigmund Freud, desarrolló una escuela propia que influyó en la psicología, la literatura, la espiritualidad y los estudios culturales. Jung murió en Küsnacht, Suiza, el 6 de junio de 1961, a los 85 años, después de una breve enfermedad y en el contexto de problemas circulatorios señalados por fuentes biográficas.",
+  "shortDescriptionRu": "Карл Густав Юнг был швейцарским психиатром и психотерапевтом, основателем аналитической психологии. Он существенно изменил современные представления о бессознательном, архетипах, типах личности, сновидениях, мифах и религии. После раннего сотрудничества с Зигмундом Фрейдом Юнг создал самостоятельное направление, оказавшее влияние на психологию, литературу, духовную культуру и гуманитарные науки. Юнг умер в Кюснахте, Швейцария, 6 июня 1961 года в возрасте 85 лет, после непродолжительной болезни и на фоне проблем с кровообращением, упоминаемых в биографических источниках.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Carl_Jung",
+    "https://www.britannica.com/biography/Carl-Jung",
+    "https://www.britannica.com/summary/Carl-Jung",
+    "https://www.thesap.org.uk/articles-on-jungian-psychology-2/carl-gustav-jung/",
+    "https://www.jungiananalysts.org/jung_bio.html"
+  ],
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Jung%2C%20Carl%20Gustav%20%281875-1961%29-Portrait-Portr%2014163%20%28cropped%29.tif",
+    "https://www.britannica.com/biography/Carl-Jung",
+    "https://www.jungiananalysts.org/jung_bio.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q25351",  "Name": "Theodor Mommsen",  "BirthDate": "1817-11-30T00:00:00Z",  "DeathDate": "1903-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Theodor%20Mommsen%2002.jpg",  "SiteLinksCnt": 126,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"85762":{"pageid":85762,"ns":0,"title":"Theodor Mommsen","extract":"Christian Matthias Theodor Mommsen (; German: [\u02c8te\u02d0odo\u02d0\u0250\u032f \u02c8m\u0254mzn\u0329] ; 30 November 1817 \u2013 1 November 1903) was a German classical scholar, historian, jurist, journalist, politician and archaeologist. He is widely regarded as one of the greatest classicists of the 19th century.  He received the 1902 Nobel Prize in Literature for his historical writings, including The History of Rome, after having been nominated by 18 members of the Prussian Academy of Sciences. He was also a prominent German politician, as a member of the Prussian and German parliaments. His works on Roman law and on the law of obligations had a significant impact on the German civil code."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q25351")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q25351",
+  "isRealHuman": true,
+  "birthDate": "1817-11-30",
+  "deathDate": "1903-11-01",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Encyclopaedia Britannica, and NobelPrize.org. The age calculation is exact: born 1817-11-30 and died 1903-11-01, 29 days before his 86th birthday, so he was 85. Confidence is not 100 only because historical death circumstances are less uniformly documented than the dates.",
+  "shortDescriptionEn": "Theodor Mommsen was a towering German classical scholar, historian, jurist, journalist, politician, and archaeologist, best known for his monumental History of Rome and for winning the 1902 Nobel Prize in Literature. His work helped reshape the study of Roman history through rigorous use of inscriptions and legal sources. He died in Charlottenburg near Berlin on 1 November 1903, aged 85; later medical discussion describes his final cause as a stroke, after years of declining health.",
+  "shortDescriptionFr": "Theodor Mommsen fut un immense savant allemand, historien de l’Antiquité, juriste, journaliste, homme politique et archéologue, surtout célèbre pour son Histoire romaine et pour le prix Nobel de littérature reçu en 1902. Ses travaux ont renouvelé l’étude de Rome grâce à l’usage méthodique des inscriptions et des sources juridiques. Il mourut à Charlottenbourg, près de Berlin, le 1er novembre 1903, à l’âge de 85 ans; des analyses médicales ultérieures attribuent sa mort à un accident vasculaire cérébral, après une santé déclinante.",
+  "shortDescriptionDe": "Theodor Mommsen war ein herausragender deutscher Althistoriker, Klassischer Philologe, Jurist, Journalist, Politiker und Archäologe, berühmt vor allem für seine Römische Geschichte und den Literaturnobelpreis von 1902. Mit seiner systematischen Nutzung von Inschriften und Rechtsquellen prägte er die moderne Erforschung der römischen Geschichte nachhaltig. Er starb am 1. November 1903 in Charlottenburg bei Berlin im Alter von 85 Jahren; spätere medizinische Einschätzungen nennen einen Schlaganfall als Todesursache, nach Jahren gesundheitlicher Schwäche.",
+  "shortDescriptionEs": "Theodor Mommsen fue un destacado erudito alemán: historiador clásico, jurista, periodista, político y arqueólogo, célebre por su Historia de Roma y por recibir el Premio Nobel de Literatura en 1902. Su método, basado en inscripciones y fuentes jurídicas, transformó el estudio moderno de la historia romana. Murió en Charlottenburg, cerca de Berlín, el 1 de noviembre de 1903, a los 85 años; estudios médicos posteriores señalan que falleció de un derrame cerebral tras un periodo de deterioro de salud.",
+  "shortDescriptionRu": "Теодор Моммзен был выдающимся немецким антиковедом, историком, юристом, журналистом, политиком и археологом, наиболее известным благодаря труду «История Рима» и Нобелевской премии по литературе 1902 года. Его исследования, основанные на надписях и правовых источниках, существенно изменили изучение древнеримской истории. Он умер 1 ноября 1903 года в Шарлоттенбурге близ Берлина в возрасте 85 лет; позднейшие медицинские оценки называют причиной смерти инсульт после периода ухудшения здоровья.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Theodor_Mommsen",
+    "https://www.britannica.com/biography/Theodor-Mommsen",
+    "https://www.nobelprize.org/prizes/literature/1902/mommsen/facts/",
+    "https://www.nobelprize.org/prizes/literature/1902/mommsen/biographical/",
+    "https://puvodni.mzm.cz/Anthropologie/article.php?ID=2392",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Theodor%20Mommsen%2002.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q151403",  "Name": "Thomas Carlyle",  "BirthDate": "1795-12-04T00:00:00Z",  "DeathDate": "1881-02-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Carlyle%20by%20Sir%20John%20Everett%20Millais%2C%201st%20Bt.jpg",  "SiteLinksCnt": 119,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"128422":{"pageid":128422,"ns":0,"title":"Thomas Carlyle","extract":"Thomas Carlyle (4 December 1795 \u2013 5 February 1881) was a Scottish essayist, historian and philosopher. Known as the \"sage of Chelsea\", his writings strongly influenced the intellectual and artistic culture of the Victorian era.\nCarlyle was born in Ecclefechan, a village in Dumfriesshire, Scotland. He attended the University of Edinburgh, where he excelled in mathematics and invented the Carlyle circle. After finishing the arts course he prepared to become a minister in the Burgher Church while working as a schoolmaster. He quit these and several other endeavours before settling on literature, writing for the Edinburgh Encyclop\u00e6dia and working as a translator. He initially gained prominence in English-language literary circles for his extensive writing on German Romantic literature and philosophy. These themes were explored in his first major work, a semi-autobiographical philosophical novel entitled Sartor Resartus (1833\u201334).\nCarlyle eventually relocated to London, where he published The French Revolution: A History (1837). Its popular success made him a celebrity, prompting the collection and reissue of his earlier essays under the title of Critical and Miscellaneous Essays (1838-39). His subsequent works were highly regarded throughout Europe and North America, including On Heroes (1841), Past and Present (1843), Cromwell's Letters (1845), Latter-Day Pamphlets (1850), and Frederick the Great (1858\u201365). He founded the London Library, helped to establish the National Portrait Galleries in London and in Edinburgh, became Lord Rector of the University of Edinburgh in 1865 and received the Pour le M\u00e9rite in 1874, amongst other honours.\nCarlyle occupied a central position in Victorian culture, being considered the \"undoubted head of English letters\" and a \"secular prophet\". Posthumously, a series of publications by his friend James Anthony Froude damaged Carlyle's reputation, provoking controversy about his personal life and his marriage to Jane Welsh Carlyle in particular. His reputation further declined in the aftermaths of the First World War and the Second World War, when his philosophy was seen as a precursor of both Prussianism and fascism. Growing scholarship in the field of Carlyle studies since the 1950s has improved his standing, and although little-read today, he is yet recognised as \"one of the enduring monuments of [English] literature\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q151403")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q151403",
+  "isRealHuman": true,
+  "birthDate": "1795-12-04",
+  "deathDate": "1881-02-05",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "Thomas Carlyle's birth date, death date, identity, and biographical details are confirmed by multiple reliable sources including Wikipedia and Encyclopaedia Britannica. One portrait-related source gives a slightly different death date, but the widely accepted date is 1881-02-05, and either date still gives the same age at death: 85.",
+  "shortDescriptionEn": "Thomas Carlyle was a Scottish essayist, historian, philosopher, and one of the sharpest voices of the Victorian age, remembered for works such as Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. Known as the “sage of Chelsea,” he influenced literature, politics, history-writing, and moral thought across Britain and beyond. In his final days he fell into a coma on 2 February 1881, briefly regained consciousness, and died in London on the morning of 5 February 1881 at the age of 85. He was buried in Ecclefechan, Scotland, rather than Westminster Abbey, in accordance with his wishes.",
+  "shortDescriptionFr": "Thomas Carlyle était un essayiste, historien et philosophe écossais, l’une des voix les plus marquantes de l’époque victorienne, connu pour Sartor Resartus, La Révolution française et On Heroes, Hero-Worship, and the Heroic in History. Surnommé le « sage de Chelsea », il exerça une forte influence sur la littérature, la pensée morale, l’écriture de l’histoire et la culture politique britannique. Dans ses derniers jours, il tomba dans le coma le 2 février 1881, reprit brièvement conscience, puis mourut à Londres le matin du 5 février 1881, à l’âge de 85 ans. Il fut enterré à Ecclefechan, en Écosse, plutôt qu’à l’abbaye de Westminster, conformément à ses volontés.",
+  "shortDescriptionDe": "Thomas Carlyle war ein schottischer Essayist, Historiker und Philosoph und eine der einflussreichsten Stimmen des viktorianischen Zeitalters. Bekannt wurde er durch Werke wie Sartor Resartus, The French Revolution und On Heroes, Hero-Worship, and the Heroic in History. Als „Weiser von Chelsea“ prägte er Literatur, Geschichtsschreibung, moralisches Denken und politische Kultur in Großbritannien und darüber hinaus. In seinen letzten Tagen fiel er am 2. Februar 1881 ins Koma, kam kurz wieder zu Bewusstsein und starb am Morgen des 5. Februar 1881 in London im Alter von 85 Jahren. Seinem Wunsch entsprechend wurde er nicht in Westminster Abbey, sondern in Ecclefechan in Schottland beigesetzt.",
+  "shortDescriptionEs": "Thomas Carlyle fue un ensayista, historiador y filósofo escocés, una de las voces intelectuales más influyentes de la época victoriana. Es recordado por obras como Sartor Resartus, La Revolución francesa y On Heroes, Hero-Worship, and the Heroic in History. Conocido como el “sabio de Chelsea”, influyó en la literatura, la historiografía, el pensamiento moral y la cultura política británica. En sus últimos días cayó en coma el 2 de febrero de 1881, recuperó brevemente la conciencia y murió en Londres la mañana del 5 de febrero de 1881, a los 85 años. Fue enterrado en Ecclefechan, Escocia, en lugar de la abadía de Westminster, de acuerdo con sus deseos.",
+  "shortDescriptionRu": "Томас Карлейль был шотландским эссеистом, историком и философом, одной из самых влиятельных интеллектуальных фигур викторианской эпохи. Он известен такими произведениями, как Sartor Resartus, «Французская революция» и On Heroes, Hero-Worship, and the Heroic in History. Его называли «мудрецом из Челси», а его идеи заметно повлияли на литературу, историческую мысль, моральную философию и политическую культуру Британии. В последние дни жизни он впал в кому 2 февраля 1881 года, ненадолго пришёл в сознание и умер в Лондоне утром 5 февраля 1881 года в возрасте 85 лет. Согласно его воле, он был похоронен не в Вестминстерском аббатстве, а в Экклфехане, Шотландия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Thomas_Carlyle",
+    "https://www.britannica.com/biography/Thomas-Carlyle",
+    "https://www.britannica.com/summary/Thomas-Carlyle",
+    "https://commons.wikimedia.org/wiki/Category:Portraits_of_Thomas_Carlyle",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Carlyle_Millais_Portrait_Gallery.png",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Carlyle._Photograph_by_Elliott_%26_Fry._Wellcome_V0027634_(Cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Carlyle_profile,_by_Julia_Margaret_Cameron.jpg",
+    "https://commons.wikimedia.org/wiki/File:Thomas_Carlyle_daguerreotype,_1848.jpg",
+    "https://www.npg.org.uk/collections/search/personExtended/mp00760/thomas-carlyle"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q60206",  "Name": "Ariel Sharon",  "BirthDate": "1928-02-26T00:00:00Z",  "DeathDate": "2014-01-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ariel%20Sharon%20official%20portrait%202001.webp",  "SiteLinksCnt": 119,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"2944":{"pageid":2944,"ns":0,"title":"Ariel Sharon","extract":"Ariel \"Arik\" Sharon (Hebrew: \u05d0\u05b2\u05e8\u05b4\u05d9\u05d0\u05b5\u05dc (\u05d0\u05b8\u05e8\u05b4\u05d9\u05e7) \u05e9\u05b8\u05c1\u05e8\u05d5\u05b9\u05df, [a\u0281i\u02c8(\u0294)el \u0283a\u02c8\u0281on] ; 26 February 1928 \u2013 11 January 2014) was an Israeli general and politician who served as the prime minister of Israel from March 2001 until April 2006.\nBorn in Kfar Malal in Palestine to Russian Jewish immigrants, he rose in the ranks of the Israeli Army from its creation in 1948, participating in the 1948 Palestine war as platoon commander of the Alexandroni Brigade and taking part in several battles. Sharon became an instrumental figure in the creation of Unit 101 and the reprisal operations, including the 1953 Qibya massacre, as well as in the 1956 Suez Crisis, the Six-Day War of 1967, the War of Attrition, and the Yom-Kippur War of 1973. Yitzhak Rabin called Sharon \"the greatest field commander in our history\". Upon leaving the military, Sharon entered politics, joining the Likud party, and served in a number of ministerial posts in Likud-led governments in 1977\u201392 and 1996\u201399. As Minister of Defense, he directed the 1982 Lebanon War. An official enquiry found that he bore \"personal responsibility\" for the Sabra and Shatila massacre of Palestinian refugees, for which he became known as the \"Butcher of Beirut\" among Arabs. He was subsequently removed as defense minister.\nFrom the 1970s through to the 1990s, Sharon championed construction of Israeli settlements in the Israeli-occupied West Bank and Gaza Strip. He became the leader of the Likud in 1999, and in 2000, amid campaigning for the 2001 prime ministerial election, made a controversial visit to the Al-Aqsa complex on the Temple Mount, triggering the Second Intifada. He subsequently defeated Ehud Barak in the election and served as Israel's prime minister from 2001 to 2006. As Prime Minister, Sharon orchestrated the construction of the Israeli West Bank barrier in 2002\u20132003 and Israel's unilateral disengagement from the Gaza Strip in 2005. Facing stiff opposition to the latter policy within the Likud, in November 2005 he left Likud to form a new party, Kadima. He had been expected to win the next election and was widely interpreted as planning on \"clearing Israel out of most of the West Bank\", in a series of unilateral withdrawals. Following a stroke on 4 January 2006, Sharon remained in a permanent vegetative state until his death in 2014.\nSharon remains a highly polarizing figure in Middle Eastern history. Israelis almost universally revere Sharon as a war hero and statesman, whereas Palestinians and Human Rights Watch have criticized him as a war criminal, with the latter lamenting that he was never held accountable."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q60206")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q60206",
+  "isRealHuman": true,
+  "birthDate": "1928-02-26",
+  "deathDate": "2014-01-11",
+  "ageAtDeath": 85,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, and contemporary obituary coverage. Ariel Sharon was born on 1928-02-26 and died on 2014-01-11; because he died before his birthday in 2014, his age at death was 85.",
+  "shortDescriptionEn": "Ariel Sharon was an Israeli general and politician, a central and highly controversial figure in Israel’s military and political history. A veteran commander in several Arab-Israeli wars, he later served in multiple cabinet posts and became prime minister of Israel in 2001. He is remembered both for his hardline security policies and for the 2005 disengagement from Gaza. In January 2006, while still in office, he suffered a massive stroke and entered a long coma. After years of severe incapacitation and declining health, he died on 2014-01-11 at the age of 85.",
+  "shortDescriptionFr": "Ariel Sharon était un général et homme politique israélien, figure centrale et très controversée de l’histoire militaire et politique d’Israël. Commandant lors de plusieurs guerres israélo-arabes, il occupa ensuite de nombreux postes ministériels avant de devenir Premier ministre en 2001. Il reste associé à une ligne sécuritaire dure ainsi qu’au retrait israélien de Gaza en 2005. En janvier 2006, alors qu’il était encore au pouvoir, il subit un grave accident vasculaire cérébral et sombra dans un long coma. Après des années d’incapacité sévère et de santé déclinante, il mourut le 2014-01-11 à l’âge de 85 ans.",
+  "shortDescriptionDe": "Ariel Sharon war ein israelischer General und Politiker, eine zentrale und zugleich stark umstrittene Figur der Militär- und Politikgeschichte Israels. Als Kommandeur nahm er an mehreren arabisch-israelischen Kriegen teil, später bekleidete er zahlreiche Ministerämter und wurde 2001 Ministerpräsident Israels. In Erinnerung bleibt er sowohl für seine harte Sicherheitspolitik als auch für den israelischen Rückzug aus Gaza 2005. Im Januar 2006 erlitt er noch während seiner Amtszeit einen schweren Schlaganfall und fiel in ein langes Koma. Nach Jahren schwerer Handlungsunfähigkeit und nachlassender Gesundheit starb er am 2014-01-11 im Alter von 85 Jahren.",
+  "shortDescriptionEs": "Ariel Sharon fue un general y político israelí, una figura central y muy controvertida de la historia militar y política de Israel. Comandó fuerzas en varias guerras árabe-israelíes, ocupó numerosos cargos ministeriales y llegó a ser primer ministro en 2001. Se le recuerda tanto por sus duras políticas de seguridad como por la retirada israelí de Gaza en 2005. En enero de 2006, mientras aún estaba en el cargo, sufrió un grave derrame cerebral y quedó en coma prolongado. Tras años de incapacitación severa y deterioro de salud, murió el 2014-01-11 a los 85 años.",
+  "shortDescriptionRu": "Ариэль Шарон был израильским генералом и политиком, одной из ключевых и самых противоречивых фигур в военной и политической истории Израиля. Он командовал войсками в нескольких арабо-израильских войнах, занимал ряд министерских постов и в 2001 году стал премьер-министром Израиля. Его помнят как сторонника жесткой политики безопасности, а также как инициатора вывода израильских сил и поселений из сектора Газа в 2005 году. В январе 2006 года, находясь у власти, он перенес тяжелый инсульт и впал в длительную кому. После многих лет тяжелой недееспособности и ухудшения здоровья он умер 2014-01-11 в возрасте 85 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ariel_Sharon",
+    "https://www.britannica.com/biography/Ariel-Sharon",
+    "https://www.abc.net.au/news/2014-01-11/former-israeli-prime-minister-sharon-dead/5195912",
+    "https://www.newyorker.com/news/news-desk/remembering-ariel-sharon"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102513",  "Name": "Harriet Beecher Stowe",  "BirthDate": "1811-06-14T00:00:00Z",  "DeathDate": "1896-07-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Beecher-Stowe.jpg",  "SiteLinksCnt": 117,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"164100":{"pageid":164100,"ns":0,"title":"Harriet Beecher Stowe","extract":"Harriet Elisabeth Beecher Stowe (; June 14, 1811 \u2013 July 1, 1896) was an American author and abolitionist. She came from the religious Beecher family and wrote the popular novel Uncle Tom's Cabin (1852), which depicts the harsh conditions experienced by enslaved African Americans. The book reached an audience of millions as a novel and play and was influential in the United States and in Great Britain, energizing anti-slavery forces in the American North, while provoking widespread anger in the South. Stowe wrote 30 books, including novels, three travel memoirs, and collections of articles and letters. She was influential both for her writings and for her public stances and debates on social issues of the day."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102513")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q102513",
+  "isRealHuman": true,
+  "birthDate": "1811-06-14",
+  "deathDate": "1896-07-01",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable biographical sources agree that Harriet Beecher Stowe was born on 1811-06-14 and died on 1896-07-01. The age calculation is direct: she had already passed her birthday in 1896, so she was 85 years old at death. Confidence is not 100 only because minor historical sources occasionally contain age-reporting errors, but the dates themselves are strongly corroborated.",
+  "shortDescriptionEn": "Harriet Beecher Stowe was an American author and abolitionist whose 1852 novel Uncle Tom’s Cabin became one of the most influential anti-slavery works of the nineteenth century. A member of the prominent Beecher family, she wrote novels, essays, travel books, and social commentary that shaped public debate in the United States and Britain. In later life she lived largely in Hartford, Connecticut, where she experienced declining health and cognitive difficulties; she died there on July 1, 1896, just 17 days after turning 85.",
+  "shortDescriptionFr": "Harriet Beecher Stowe était une écrivaine et abolitionniste américaine dont le roman La Case de l’oncle Tom, publié en 1852, devint l’une des œuvres antiesclavagistes les plus influentes du XIXe siècle. Issue de la célèbre famille Beecher, elle écrivit des romans, des essais, des récits de voyage et des textes engagés qui marquèrent le débat public aux États-Unis et en Grande-Bretagne. À la fin de sa vie, elle vécut surtout à Hartford, dans le Connecticut, où sa santé et ses facultés cognitives déclinèrent; elle y mourut le 1er juillet 1896, 17 jours après son 85e anniversaire.",
+  "shortDescriptionDe": "Harriet Beecher Stowe war eine amerikanische Schriftstellerin und Abolitionistin, deren Roman Onkel Toms Hütte von 1852 zu einem der einflussreichsten Werke gegen die Sklaverei im 19. Jahrhundert wurde. Als Mitglied der bekannten Beecher-Familie schrieb sie Romane, Essays, Reiseberichte und gesellschaftliche Kommentare, die die öffentliche Debatte in den Vereinigten Staaten und Großbritannien prägten. In ihren späteren Jahren lebte sie überwiegend in Hartford, Connecticut, wo ihre Gesundheit und geistige Klarheit nachließen; dort starb sie am 1. Juli 1896, 17 Tage nach ihrem 85. Geburtstag.",
+  "shortDescriptionEs": "Harriet Beecher Stowe fue una escritora y abolicionista estadounidense cuyo libro La cabaña del tío Tom, publicado en 1852, se convirtió en una de las obras antiesclavistas más influyentes del siglo XIX. Miembro de la destacada familia Beecher, escribió novelas, ensayos, libros de viaje y comentarios sociales que influyeron en el debate público de Estados Unidos y Gran Bretaña. En sus últimos años vivió principalmente en Hartford, Connecticut, donde sufrió un deterioro de salud y de sus capacidades cognitivas; murió allí el 1 de julio de 1896, 17 días después de cumplir 85 años.",
+  "shortDescriptionRu": "Гарриет Бичер-Стоу была американской писательницей и аболиционисткой, чей роман «Хижина дяди Тома», опубликованный в 1852 году, стал одним из самых влиятельных антирабовладельческих произведений XIX века. Она происходила из известной семьи Бичер и писала романы, эссе, путевые заметки и общественно-политические тексты, заметно повлиявшие на дискуссии в США и Великобритании. В последние годы она в основном жила в Хартфорде, штат Коннектикут, где ее здоровье и когнитивные способности ухудшались; она умерла там 1 июля 1896 года, через 17 дней после своего 85-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Harriet_Beecher_Stowe",
+    "https://www.britannica.com/biography/Harriet-Beecher-Stowe",
+    "https://www.womenshistory.org/education-resources/biographies/harriet-beecher-stowe",
+    "https://www.battlefields.org/learn/biographies/harriet-beecher-stowe",
+    "https://commons.wikimedia.org/wiki/Category:Harriet_Beecher_Stowe"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q45936",  "Name": "Strabo",  "BirthDate": "-0062-01-01T00:00:00Z",  "DeathDate": "0023-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Strabo.jpg",  "SiteLinksCnt": 114,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"52121":{"pageid":52121,"ns":0,"title":"Strabo","extract":"Strabo (; Greek: \u03a3\u03c4\u03c1\u03ac\u03b2\u03c9\u03bd, romanized: Str\u00e1b\u014dn; 64 or 63 BC \u2013 c.\u200924 AD) was an ancient Greek geographer who lived in Asia Minor during the transitional period of the Roman Republic into the Roman Empire. He is best known for his work Geographica, which presented a descriptive history of people and places from different regions of the world known during his lifetime. Additionally, Strabo authored historical works, but only fragments and quotations of these survive in the writings of other authors."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q45936")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q45936",
+  "isRealHuman": true,
+  "birthDate": "-0063-01-01",
+  "deathDate": "0024-01-01",
+  "ageAtDeath": 87,
+  "confidence": 64,
+  "confidenceExplained": "The identity is very secure: Q45936 is Strabo of Amaseia. The age is an informed estimate because ancient sources do not preserve exact birth and death days, and sources vary between 64 or 63 BCE for birth and around AD 24 or after AD 21 for death. I use the commonly cited 64 BCE to c. AD 24 range, which gives about 87 years and matches the common 'aged c. 87' summary.",
+  "shortDescriptionEn": "Strabo of Amaseia was an ancient Greek geographer, historian, and philosopher from Pontus. His seventeen-book Geographica blended travel, political history, ethnography, and scholarship into one of the most important surviving surveys of the Greco-Roman world. He appears to have died around AD 24, after still referring to events of AD 23; no reliable ancient account preserves the exact cause or place of his death.",
+  "shortDescriptionFr": "Strabon d'Amasée fut un géographe, historien et philosophe grec originaire du Pont. Ses dix-sept livres de Géographie mêlent voyage, histoire politique, ethnographie et érudition, et constituent l'un des grands tableaux conservés du monde gréco-romain. Il semble être mort vers 24 apr. J.-C., après avoir encore mentionné des événements de 23; aucune source antique fiable ne donne la cause ni le lieu exact de sa mort.",
+  "shortDescriptionDe": "Strabon von Amaseia war ein griechischer Geograph, Historiker und Philosoph aus Pontos. Seine siebzehnbändige Geographika verband Reiseerfahrung, politische Geschichte, Völkerkunde und Gelehrsamkeit zu einem der wichtigsten erhaltenen Bilder der griechisch-römischen Welt. Er starb wohl um 24 n. Chr., nachdem er noch Ereignisse des Jahres 23 erwähnt hatte; eine verlässliche antike Quelle für Ursache oder genauen Ort seines Todes ist nicht überliefert.",
+  "shortDescriptionEs": "Estrabón de Amasia fue un geógrafo, historiador y filósofo griego originario del Ponto. Su Geografía, en diecisiete libros, unió viajes, historia política, etnografía y erudición en una de las visiones más importantes que se conservan del mundo grecorromano. Probablemente murió hacia el año 24 d. C., después de aludir todavía a hechos del año 23; no se conserva una fuente antigua fiable sobre la causa ni el lugar exacto de su muerte.",
+  "shortDescriptionRu": "Страбон из Амасии был древнегреческим географом, историком и философом из Понта. Его семнадцатикнижная «География» объединила путешествия, политическую историю, этнографию и ученость, став одним из важнейших сохранившихся описаний греко-римского мира. По-видимому, он умер около 24 года н. э., после того как еще упоминал события 23 года; достоверные античные сведения о точной причине и месте его смерти не сохранились.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Strabo",
+    "https://www.britannica.com/biography/Strabo",
+    "https://www.wikidata.org/wiki/Q45936",
+    "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/home.html",
+    "https://library.si.edu/image-gallery/73448",
+    "https://www.worldhistory.org/image/6446/strabo/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q43720",  "Name": "Pius IX",  "BirthDate": "1792-05-13T00:00:00Z",  "DeathDate": "1878-02-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Pius%20IX%2C%20by%20Adolphe%20Braun%2C%201875.jpg",  "SiteLinksCnt": 109,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"54161":{"pageid":54161,"ns":0,"title":"Pope Pius IX","extract":"Pope Pius IX (Italian: Pio IX; born Giovanni Maria Battista Pietro Pellegrino Isidoro Mastai-Ferretti; 13 May 1792 \u2013 7 February 1878) was head of the Catholic Church from 16 June 1846 until his death in February 1878. \nHis reign of nearly 32 years is the longest verified of any pope in history and second only to Saint Peter according to Catholic tradition. He was notable for convoking the First Vatican Council in 1868 which defined the dogma of papal infallibility before taking a break in summer of 1870. The council never reconvened. At the same time, France started the Franco-Prussian War and removed the troops that protected the Papal States, which allowed the Capture of Rome by the Kingdom of Italy on 20 September 1870. Thereafter, he refused to leave Vatican City, declaring himself a \"prisoner in the Vatican\".\nAt the time of his election, he was a liberal reformer, and during his early papacy, he notably eased restrictions on Jewish movement and granted an amnesty to revolutionaries, but his approach changed radically, after the Revolutions of 1848. When his prime minister, Pellegrino Rossi, was assassinated and Pius himself was made prisoner in his own palace, he fled Rome and excommunicated all participants in the short-lived Roman Republic. After its suppression by the French army and his return in 1850, his policies and doctrinal pronouncements became increasingly conservative. He was responsible for the kidnapping of Edgardo Mortara, a six-year-old taken by force from his Jewish family who went on to become a Catholic priest in his own right and unsuccessfully attempted to convert his Jewish parents.\nIn his 1849 encyclical Ubi primum, he emphasized Mary's role in salvation. In 1854, he promulgated the dogma of the Immaculate Conception, articulating a long-held Catholic belief that Mary, the Mother of God, was conceived without original sin. His 1864 Syllabus of Errors was a strong condemnation of liberalism, modernism, moral relativism, secularization, separation of church and state, and other Enlightenment ideas.\nHis appeal for financial support revived global donations known as Peter's Pence. He strengthened the central power of the Holy See and Roman Curia over the worldwide Catholic Church, while also formalizing the pope's ultimate doctrinal authority (the dogma of papal infallibility defined in 1870). Pope John Paul II beatified him in 2000."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q43720")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q43720",
+  "isRealHuman": true,
+  "birthDate": "1792-05-13",
+  "deathDate": "1878-02-07",
+  "ageAtDeath": 85,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently reported by Wikipedia, Britannica, and the Catholic Encyclopedia. The age is also confirmed by date calculation: he died on 1878-02-07, before his 86th birthday on 1878-05-13.",
+  "shortDescriptionEn": "Pope Pius IX, born Giovanni Maria Mastai-Ferretti, led the Catholic Church from 1846 to 1878, the longest verified papal reign in history. His pontificate shaped modern Catholicism through the proclamation of the Immaculate Conception, the First Vatican Council, and the definition of papal infallibility, while also witnessing the loss of the Papal States. He died in Rome on 7 February 1878 after a short final illness, having reached the age of 85.",
+  "shortDescriptionFr": "Le pape Pie IX, né Giovanni Maria Mastai-Ferretti, dirigea l’Église catholique de 1846 à 1878, durant le plus long pontificat vérifié de l’histoire. Son règne marqua profondément le catholicisme moderne avec la proclamation de l’Immaculée Conception, le premier concile du Vatican et la définition de l’infaillibilité pontificale, tout en voyant disparaître les États pontificaux. Il mourut à Rome le 7 février 1878 après une brève maladie, à l’âge de 85 ans.",
+  "shortDescriptionDe": "Papst Pius IX., geboren als Giovanni Maria Mastai-Ferretti, stand von 1846 bis 1878 an der Spitze der katholischen Kirche und hatte das längste historisch gesicherte Pontifikat. Seine Amtszeit prägte den modernen Katholizismus durch die Verkündung der Unbefleckten Empfängnis, das Erste Vatikanische Konzil und die Definition der päpstlichen Unfehlbarkeit, während zugleich der Kirchenstaat unterging. Er starb am 7. Februar 1878 in Rom nach kurzer Krankheit im Alter von 85 Jahren.",
+  "shortDescriptionEs": "El papa Pío IX, nacido Giovanni Maria Mastai-Ferretti, dirigió la Iglesia católica de 1846 a 1878, en el pontificado verificado más largo de la historia. Su gobierno marcó el catolicismo moderno con la proclamación de la Inmaculada Concepción, el Concilio Vaticano I y la definición de la infalibilidad papal, mientras presenciaba la pérdida de los Estados Pontificios. Murió en Roma el 7 de febrero de 1878 tras una breve enfermedad, a los 85 años.",
+  "shortDescriptionRu": "Папа Пий IX, родившийся как Джованни Мария Мастаи-Ферретти, возглавлял Католическую церковь с 1846 по 1878 год, что считается самым долгим достоверно подтверждённым понтификатом. Его правление сильно повлияло на современный католицизм: при нём были провозглашены догмат о Непорочном зачатии, состоялся Первый Ватиканский собор и была определена папская непогрешимость, а Папская область прекратила существование. Он умер в Риме 7 февраля 1878 года после короткой болезни в возрасте 85 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Pope_Pius_IX",
+    "https://www.britannica.com/biography/Pius-IX",
+    "https://www.newadvent.org/cathen/12134b.htm",
+    "https://www.vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/1497-7-february-blessed-pius-ix.html",
+    "https://commons.wikimedia.org/wiki/File:Pius_IX,_by_Adolphe_Braun,_1875.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q44593",  "Name": "V. S. Naipaul",  "BirthDate": "1932-08-17T00:00:00Z",  "DeathDate": "2018-08-11T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/VS%20Naipaul%202016%20Dhaka.jpg",  "SiteLinksCnt": 109,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"29636499":{"pageid":29636499,"ns":0,"title":"V. S. Naipaul","extract":"Sir Vidiadhar Surajprasad Naipaul  (; 17 August 1932 \u2013 11 August 2018) was a Trinidad and Tobago-born British writer renowned for his work of fiction and nonfiction in English. He is known for his comic early novels set in Trinidad, his bleaker novels of alienation in the wider world, and his vigilant chronicles of life and travels. He wrote in prose that was widely admired, but his views sometimes aroused controversy. He published more than thirty books over fifty years.\nNaipaul's breakthrough novel A House for Mr Biswas was published in 1961. Naipaul won the Booker Prize in 1971 for his novel In a Free State. He won the Jerusalem Prize in 1983, and was awarded the Trinity Cross, Trinidad and Tobago's highest national honour, in 1990. He received a knighthood in 1990, and the Nobel Prize in Literature in 2001.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q44593")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q44593",
+  "isRealHuman": true,
+  "birthDate": "1932-08-17",
+  "deathDate": "2018-08-11",
+  "ageAtDeath": 85,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across multiple reliable sources, including Wikipedia, NobelPrize.org, and Britannica. The age calculation is exact: Naipaul died on 2018-08-11, six days before his birthday on 2018-08-17, so he had not yet turned 86 and was 85.",
+  "shortDescriptionEn": "V. S. Naipaul was a Trinidad-born British novelist, essayist, and travel writer, celebrated for sharply observant works on colonialism, displacement, identity, and postcolonial societies. His major books include A House for Mr Biswas, In a Free State, and A Bend in the River, and he received the Nobel Prize in Literature in 2001. He died peacefully at his home in London on 11 August 2018, six days before his 86th birthday, reportedly surrounded by those close to him.",
+  "shortDescriptionFr": "V. S. Naipaul était un romancier, essayiste et écrivain voyageur britannique né à Trinité, connu pour ses œuvres lucides sur le colonialisme, l’exil, l’identité et les sociétés postcoloniales. Parmi ses livres majeurs figurent Une maison pour Monsieur Biswas, In a Free State et À la courbe du fleuve; il reçut le prix Nobel de littérature en 2001. Il est mort paisiblement chez lui à Londres le 11 août 2018, six jours avant son 86e anniversaire, entouré de ses proches selon les témoignages publiés.",
+  "shortDescriptionDe": "V. S. Naipaul war ein in Trinidad geborener britischer Romancier, Essayist und Reiseschriftsteller, berühmt für seine scharfsinnigen Werke über Kolonialismus, Entwurzelung, Identität und postkoloniale Gesellschaften. Zu seinen wichtigsten Büchern zählen A House for Mr Biswas, In a Free State und A Bend in the River; 2001 erhielt er den Nobelpreis für Literatur. Er starb am 11. August 2018 friedlich in seinem Haus in London, sechs Tage vor seinem 86. Geburtstag, Berichten zufolge im Kreis nahestehender Menschen.",
+  "shortDescriptionEs": "V. S. Naipaul fue un novelista, ensayista y escritor de viajes británico nacido en Trinidad, reconocido por sus obras incisivas sobre el colonialismo, el desarraigo, la identidad y las sociedades poscoloniales. Entre sus libros más importantes están Una casa para Mr. Biswas, In a Free State y Un recodo en el río, y recibió el Premio Nobel de Literatura en 2001. Murió pacíficamente en su casa de Londres el 11 de agosto de 2018, seis días antes de cumplir 86 años, según los informes acompañado por personas cercanas.",
+  "shortDescriptionRu": "В. С. Найпол был британским романистом, эссеистом и автором путевых книг, родившимся в Тринидаде; его произведения прославились точным и нередко беспощадным взглядом на колониализм, перемещение, идентичность и постколониальные общества. Среди его главных книг — «Дом для мистера Бисваса», In a Free State и «Излучина реки»; в 2001 году он получил Нобелевскую премию по литературе. Он мирно умер у себя дома в Лондоне 11 августа 2018 года, за шесть дней до 86-летия, по сообщениям, в окружении близких.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/V._S._Naipaul",
+    "https://www.nobelprize.org/prizes/literature/2001/naipaul/facts/",
+    "https://www.britannica.com/biography/V-S-Naipaul",
+    "https://www.theguardian.com/books/2018/aug/11/vs-naipaul-nobel-prize-winning-british-author-dies-aged-85",
+    "https://www.npg.org.uk/collections/search/portrait/mw58104/VS-Naipaul",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/VS%20Naipaul%202016%20Dhaka.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q82122",  "Name": "Jean-Baptiste de Lamarck",  "BirthDate": "1744-08-01T00:00:00Z",  "DeathDate": "1829-12-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jean-Baptiste%20de%20Lamarck.jpg",  "SiteLinksCnt": 108,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"145704":{"pageid":145704,"ns":0,"title":"Jean-Baptiste Lamarck","extract":"Jean-Baptiste Pierre Antoine de Monet, chevalier de Lamarck (1 August 1744 \u2013 18 December 1829), often known simply as Lamarck (; French: [\u0292\u0251\u0303batist lama\u0281k]), was a French naturalist, biologist, academic, and soldier. He was an early proponent of the idea that biological evolution occurred and proceeded in accordance with natural laws, though the mechanism he suggested has been refuted at large.\nLamarck fought in the Seven Years' War against Prussia, and was awarded a commission for bravery on the battlefield. Posted to Monaco, Lamarck became interested in natural history and resolved to study medicine. He retired from the army after being injured in 1766, and returned to his medical studies. Lamarck developed a particular interest in botany, and later, after he published the three-volume work Flore fran\u00e7oise (1778), he gained membership of the French Academy of Sciences in 1779. Lamarck became involved in the Jardin des Plantes and was appointed to the Chair of Botany in 1788. When the French National Assembly founded the Mus\u00e9um national d'Histoire naturelle in 1793, Lamarck became a professor of zoology.\nIn 1801, he published Syst\u00e8me des animaux sans vert\u00e8bres, a major work on the classification of invertebrates, a term which he coined. In an 1802 publication, he became one of the first to use the term \"biology\" in its modern sense. Lamarck continued his work as a premier authority on invertebrate zoology. He is remembered, at least in malacology, as a taxonomist of considerable stature.\nThe modern era generally remembers Lamarck for a theory of inheritance of acquired characteristics, called Lamarckism (inaccurately named after him), soft inheritance, or use/disuse theory, which he described in his 1809 Philosophie zoologique. Though, the idea of soft inheritance antedates him, and while it was a small element of his theory of evolution,  in his time it was accepted by many natural historians. Lamarck's idea of use/disuse later aligned with Darwin's idea of natural selection and is believe to in part have inspired Darwin, who ended up contradicting Lamarckism. Lamarck's contribution to evolutionary theory consisted of the first truly cohesive theory of biological evolution, in which an alchemical complexifying force drove organisms up a ladder of complexity, and a second environmental force adapted them to local environments through use and disuse of characteristics, differentiating them from other organisms. Scientists have debated whether advances in the field of transgenerational epigenetics mean that Lamarck was to an extent correct, or not."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q82122")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q82122",
+  "isRealHuman": true,
+  "birthDate": "1744-08-01",
+  "deathDate": "1829-12-18",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are confirmed by multiple reliable biographical sources, including Wikipedia, Britannica, Wikidata/Wikimedia Commons, and the University of California Museum of Paleontology. The age also checks arithmetically: Lamarck was born on 1744-08-01 and died on 1829-12-18, after his birthday that year, so he was 85.",
+  "shortDescriptionEn": "Jean-Baptiste Lamarck was a French naturalist, biologist, botanist, zoologist, academic, and former soldier, remembered as one of the earliest major theorists of biological evolution and for the idea later called Lamarckism. He helped develop the study and classification of invertebrates and became a professor at the Muséum national d'Histoire naturelle. His later years were harsh: he gradually became blind, his evolutionary ideas were widely rejected in his lifetime, and he died in Paris on 18 December 1829 at age 85, in poverty and obscurity.",
+  "shortDescriptionFr": "Jean-Baptiste Lamarck était un naturaliste, biologiste, botaniste, zoologiste, universitaire et ancien soldat français, connu comme l’un des premiers grands théoriciens de l’évolution biologique et pour l’idée appelée plus tard lamarckisme. Il joua un rôle important dans l’étude et la classification des invertébrés et devint professeur au Muséum national d’Histoire naturelle. Ses dernières années furent difficiles : devenu progressivement aveugle, contesté par une grande partie de ses contemporains, il mourut à Paris le 18 décembre 1829 à l’âge de 85 ans, dans la pauvreté et l’obscurité.",
+  "shortDescriptionDe": "Jean-Baptiste Lamarck war ein französischer Naturforscher, Biologe, Botaniker, Zoologe, Akademiker und ehemaliger Soldat, der als einer der frühen großen Theoretiker der biologischen Evolution gilt und mit dem später sogenannten Lamarckismus verbunden ist. Er prägte die Erforschung und Klassifikation der Wirbellosen und wurde Professor am Muséum national d’Histoire naturelle. Seine letzten Jahre waren schwer: Er erblindete allmählich, seine Evolutionstheorie wurde zu Lebzeiten stark abgelehnt, und er starb am 18. Dezember 1829 in Paris im Alter von 85 Jahren, verarmt und weitgehend unbeachtet.",
+  "shortDescriptionEs": "Jean-Baptiste Lamarck fue un naturalista, biólogo, botánico, zoólogo, académico y antiguo soldado francés, recordado como uno de los primeros grandes teóricos de la evolución biológica y por la idea que más tarde se llamó lamarckismo. Contribuyó de forma decisiva al estudio y la clasificación de los invertebrados y fue profesor en el Muséum national d’Histoire naturelle. Sus últimos años fueron duros: perdió progresivamente la vista, sus ideas evolutivas fueron muy discutidas en vida, y murió en París el 18 de diciembre de 1829, a los 85 años, en pobreza y oscuridad.",
+  "shortDescriptionRu": "Жан-Батист Ламарк был французским натуралистом, биологом, ботаником, зоологом, учёным и бывшим военным, известным как один из первых крупных теоретиков биологической эволюции и как автор идей, позднее получивших название ламаркизма. Он внёс важный вклад в изучение и классификацию беспозвоночных и стал профессором Национального музея естественной истории в Париже. Последние годы его жизни были тяжёлыми: он постепенно ослеп, его эволюционные взгляды при жизни часто отвергались, и он умер в Париже 18 декабря 1829 года в возрасте 85 лет, в бедности и почти без признания.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jean-Baptiste_Lamarck",
+    "https://www.britannica.com/biography/Jean-Baptiste-Lamarck",
+    "https://www.wikidata.org/wiki/Q82122",
+    "https://commons.wikimedia.org/wiki/Creator:Jean-Baptiste_de_Lamarck",
+    "https://ucmp.berkeley.edu/history/lamarck.html",
+    "https://evolution.berkeley.edu/the-history-of-evolutionary-thought/1800s/early-concepts-of-evolution-jean-baptiste-lamarck/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q180081",  "Name": "Cato the Elder",  "BirthDate": "-0233-01-01T00:00:00Z",  "DeathDate": "-0148-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Patrizio%20Torlonia.jpg",  "SiteLinksCnt": 107,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"75861":{"pageid":75861,"ns":0,"title":"Cato the Elder","extract":"Marcus Porcius Cato (, KAH-toe; 234\u2013149 BC), also known as Cato the Censor (Latin: Censorius), the Elder and the Wise, was a Roman soldier, senator, and historian known for his conservatism and opposition to Hellenization. He was the first to write history in Latin with his Origines, a now fragmentary work on the history of Rome.  His work De agri cultura, a treatise on agriculture, rituals, and recipes, is the oldest extant prose written in the Latin language.  His epithet \"Elder\" distinguishes him from his great-grandson Senator Cato the Younger, who opposed Julius Caesar.\nHe came from an ancient plebeian family who were noted for their military service. Like his forefathers, Cato was devoted to agriculture when not serving in the army. Having attracted the attention of Lucius Valerius Flaccus, he was brought to Rome. He was successively military tribune (214 BC), quaestor (204), aedile (199), praetor (198), consul (195) together with Flaccus, and censor (184). As praetor, he expelled usurers from Sardinia. As censor, he tried to save Rome's ancestral customs and combat Hellenistic influences.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q180081")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q180081",
+  "isRealHuman": true,
+  "birthDate": "-0233-01-01",
+  "deathDate": "-0148-01-01",
+  "ageAtDeath": 85,
+  "confidence": 88,
+  "confidenceExplained": "Cato the Elder is securely identified as Marcus Porcius Cato. The death year 149 BCE is well supported, and the most accepted chronology gives 234 BCE as his birth year and 85 as his age at death. Confidence is not 100 because ancient sources report conflicting ages, including 86 or 90, and exact birth/death days are unknown; the dates use January 1 as a BCE placeholder in astronomical year numbering.",
+  "shortDescriptionEn": "Marcus Porcius Cato, better known as Cato the Elder or Cato the Censor, was a Roman soldier, senator, orator, and early Latin prose writer whose stern traditionalism made him a symbol of old Republican discipline. He fought in the Second Punic War, rose to the consulship and censorship, opposed Greek cultural influence, and became famous for demanding that Carthage be destroyed. He died in 149 BCE at about 85, still politically active in old age and only a few years before Rome finally razed Carthage.",
+  "shortDescriptionFr": "Marcus Porcius Cato, connu comme Caton l’Ancien ou Caton le Censeur, fut un soldat, sénateur, orateur et l’un des premiers grands prosateurs latins. Défenseur austère des anciennes mœurs républicaines, il combattit pendant la deuxième guerre punique, devint consul puis censeur, s’opposa à l’influence grecque et réclama sans relâche la destruction de Carthage. Il mourut en 149 av. J.-C., vers 85 ans, encore engagé dans la vie politique romaine, peu avant la chute définitive de Carthage.",
+  "shortDescriptionDe": "Marcus Porcius Cato, bekannt als Cato der Ältere oder Cato der Zensor, war ein römischer Soldat, Senator, Redner und früher lateinischer Prosaschriftsteller. Als strenger Verteidiger altrömischer Sitten kämpfte er im Zweiten Punischen Krieg, wurde Konsul und Zensor, bekämpfte griechischen kulturellen Einfluss und forderte berühmt die Zerstörung Karthagos. Er starb 149 v. Chr. mit etwa 85 Jahren, noch immer politisch einflussreich, nur wenige Jahre vor der endgültigen Vernichtung Karthagos.",
+  "shortDescriptionEs": "Marco Porcio Catón, conocido como Catón el Viejo o Catón el Censor, fue un soldado, senador, orador y uno de los primeros grandes prosistas latinos de Roma. Defensor severo de las antiguas virtudes republicanas, luchó en la segunda guerra púnica, llegó al consulado y a la censura, rechazó la influencia cultural griega y se hizo célebre por exigir la destrucción de Cartago. Murió en 149 a. C. con unos 85 años, todavía activo en la política romana y pocos años antes de la caída definitiva de Cartago.",
+  "shortDescriptionRu": "Марк Порций Катон, известный как Катон Старший или Катон Цензор, был римским воином, сенатором, оратором и одним из первых значительных прозаиков на латинском языке. Он прославился суровой защитой староримских нравов, участвовал во Второй Пунической войне, стал консулом и цензором, выступал против греческого влияния и настойчиво требовал уничтожения Карфагена. Он умер в 149 году до н. э. примерно в 85 лет, оставаясь влиятельным в глубокой старости, незадолго до окончательного разгрома Карфагена.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Patrizio_Torlonia.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/8c/Patrizio_Torlonia.jpg",
+    "https://www.worldhistory.org/image/6421/cato-the-elder/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cato_the_Elder",
+    "https://www.britannica.com/biography/Marcus-Porcius-Cato-Roman-statesman-234-149-BCE",
+    "https://www.wikidata.org/wiki/Q180081",
+    "https://www.encyclopedia.com/people/history/ancient-history-rome-biographies/cato-elder",
+    "https://commons.wikimedia.org/wiki/File:Patrizio_Torlonia.jpg",
+    "https://www.worldhistory.org/image/6421/cato-the-elder/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q130975",  "Name": "Robert A. Millikan",  "BirthDate": "1868-03-22T00:00:00Z",  "DeathDate": "1953-12-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Andrews%20Millikan%201920s.jpg",  "SiteLinksCnt": 105,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"49008":{"pageid":49008,"ns":0,"title":"Robert Millikan","extract":"Robert Andrews Millikan (March 22, 1868 \u2013 December 19, 1953) was an American experimental physicist who received the Nobel Prize in Physics in 1923 \"for his work on the elementary charge of electricity and on the photoelectric effect.\"\nAs Chairman of the Executive Council of Caltech (the school's governing body at the time) from 1921 to 1945, Millikan helped to turn the school into one of the leading research institutions in the United States. He also served on the board of trustees for Science Service, now known as Society for Science & the Public, from 1921 to 1953."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q130975")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q130975",
+  "isRealHuman": true,
+  "birthDate": "1868-03-22",
+  "deathDate": "1953-12-19",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, NobelPrize.org, Britannica, and Caltech memorial material. The age calculation is straightforward: Robert A. Millikan was born on 1868-03-22 and died on 1953-12-19, after his birthday that year, making him 85. Confidence is not 100 only because historical records can occasionally differ in minor biographical details, though no meaningful conflict was found here.",
+  "shortDescriptionEn": "Robert Andrews Millikan was an American experimental physicist whose oil-drop experiment gave a landmark measurement of the elementary electric charge. He won the 1923 Nobel Prize in Physics for work on the elementary charge of electricity and the photoelectric effect, and later helped build Caltech into a major research institution. Millikan died in San Marino, California, on December 19, 1953, after an illness of several months; he was 85 years old and was buried at Forest Lawn Memorial Park in Glendale.",
+  "shortDescriptionFr": "Robert Andrews Millikan était un physicien expérimental américain, célèbre pour l’expérience de la goutte d’huile qui permit de mesurer avec précision la charge élémentaire de l’électron. Il reçut le prix Nobel de physique en 1923 pour ses travaux sur la charge électrique élémentaire et l’effet photoélectrique, puis joua un rôle majeur dans l’essor de Caltech comme institution scientifique. Millikan mourut à San Marino, en Californie, le 19 décembre 1953, après plusieurs mois de maladie; il avait 85 ans et fut inhumé au Forest Lawn Memorial Park de Glendale.",
+  "shortDescriptionDe": "Robert Andrews Millikan war ein amerikanischer Experimentalphysiker, dessen Öltröpfchenexperiment eine wegweisende Messung der elementaren elektrischen Ladung lieferte. 1923 erhielt er den Nobelpreis für Physik für seine Arbeiten zur Elementarladung und zum photoelektrischen Effekt; später prägte er den Ausbau des California Institute of Technology zu einer führenden Forschungseinrichtung. Millikan starb am 19. Dezember 1953 in San Marino, Kalifornien, nach einer mehrmonatigen Krankheit; er wurde 85 Jahre alt und auf dem Forest Lawn Memorial Park in Glendale beigesetzt.",
+  "shortDescriptionEs": "Robert Andrews Millikan fue un físico experimental estadounidense, conocido por el experimento de la gota de aceite que permitió medir con gran precisión la carga elemental del electrón. Recibió el Premio Nobel de Física en 1923 por sus trabajos sobre la carga eléctrica elemental y el efecto fotoeléctrico, y más tarde ayudó a convertir Caltech en una institución científica de primer nivel. Millikan murió en San Marino, California, el 19 de diciembre de 1953, tras varios meses de enfermedad; tenía 85 años y fue enterrado en el Forest Lawn Memorial Park de Glendale.",
+  "shortDescriptionRu": "Роберт Эндрюс Милликен был американским физиком-экспериментатором, прославившимся опытом с масляными каплями, который позволил точно измерить элементарный электрический заряд. В 1923 году он получил Нобелевскую премию по физике за работы по элементарному заряду и фотоэлектрическому эффекту, а позднее сыграл важную роль в превращении Калифорнийского технологического института в крупный научный центр. Милликен умер 19 декабря 1953 года в Сан-Марино, Калифорния, после нескольких месяцев болезни; ему было 85 лет, и он был похоронен на кладбище Forest Lawn Memorial Park в Глендейле.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Millikan",
+    "https://www.nobelprize.org/prizes/physics/1923/millikan/biographical/",
+    "https://www.nobelprize.org/prizes/physics/1923/millikan/facts/",
+    "https://www.britannica.com/biography/Robert-Millikan",
+    "https://calteches.library.caltech.edu/150/1/Millikan.pdf",
+    "https://library.si.edu/image-gallery/73673",
+    "https://mitmuseum.mit.edu/collections/object/MEM-2648"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q48246",  "Name": "Ernst Haeckel",  "BirthDate": "1834-02-16T00:00:00Z",  "DeathDate": "1919-08-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ernst%20Haeckel%201860.jpg",  "SiteLinksCnt": 104,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"9668":{"pageid":9668,"ns":0,"title":"Ernst Haeckel","extract":"Ernst Heinrich Philipp August Haeckel (; German: [\u025b\u0281nst \u02c8h\u025bkl\u0329]; 16 February 1834 \u2013 9 August 1919) was a German zoologist, naturalist, eugenicist, philosopher, physician, professor, marine biologist and artist. He discovered, described and named thousands of new species, mapped a genealogical tree relating all life forms and coined many terms in biology, including ecology, phylum, phylogeny, ontogeny, and Protista. Haeckel promoted and popularised Charles Darwin's work in Germany and developed the disproven but influential recapitulation theory (\"ontogeny recapitulates phylogeny\"), later generalizing it into the so called \"Biogenetic Law\". He wrongly claimed that an individual organism's biological development, or ontogeny, parallels and summarizes its species' evolutionary development, or phylogeny, using incorrectly drawn images of human embryonic development to derive the law. Whether they were intentionally falsified, or drawn poorly by accident is a matter of debate.\nThe published artwork of Haeckel includes over 100 detailed, multi-colour illustrations of animals and sea creatures, collected in his Kunstformen der Natur (\"Art Forms in Nature\"), a book which would go on to influence the Art Nouveau artistic movement. As a philosopher, Ernst Haeckel wrote Die Weltr\u00e4thsel (1895\u20131899; in English: The Riddles of the Universe, 1900), the genesis for the term \"world riddle\" (Weltr\u00e4tsel); and Freedom in Science and Teaching to support teaching evolution. He also coined the \"Biogenetic Law\".\nHaeckel promoted scientific racism and embraced the idea of Social Darwinism. He was the first person to characterize the Great War as the \"first\" World War, which he did as early as 1914.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q48246")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q48246",
+  "isRealHuman": true,
+  "birthDate": "1834-02-16",
+  "deathDate": "1919-08-09",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are highly consistent across Wikidata, Wikipedia, Britannica, and scholarly biographical sources. Born on 1834-02-16 and died on 1919-08-09, he had already passed his birthday in 1919, so the calculated age at death is 85.",
+  "shortDescriptionEn": "Ernst Haeckel was a German zoologist, naturalist, physician, philosopher, professor, marine biologist, and artist, famous for promoting Darwinism in Germany, coining influential biological terms, and creating striking scientific illustrations such as Kunstformen der Natur. In his final years he became frail after family loss and injuries, sold his Villa Medusa in Jena in 1918, and died there on 9 August 1919 at the age of 85.",
+  "shortDescriptionFr": "Ernst Haeckel était un zoologiste, naturaliste, médecin, philosophe, professeur, biologiste marin et artiste allemand, célèbre pour avoir diffusé le darwinisme en Allemagne, introduit des termes biologiques importants et réalisé les illustrations scientifiques de Kunstformen der Natur. Dans ses dernières années, affaibli par des deuils familiaux et des blessures, il vendit sa Villa Medusa à Iéna en 1918 et y mourut le 9 août 1919 à l’âge de 85 ans.",
+  "shortDescriptionDe": "Ernst Haeckel war ein deutscher Zoologe, Naturforscher, Arzt, Philosoph, Professor, Meeresbiologe und Künstler, bekannt als energischer Vermittler des Darwinismus in Deutschland, als Präger wichtiger biologischer Begriffe und als Schöpfer eindrucksvoller Tafeln in Kunstformen der Natur. In seinen letzten Jahren wurde er nach familiären Verlusten und Verletzungen zunehmend gebrechlich, verkaufte 1918 seine Villa Medusa in Jena und starb dort am 9. August 1919 im Alter von 85 Jahren.",
+  "shortDescriptionEs": "Ernst Haeckel fue un zoólogo, naturalista, médico, filósofo, profesor, biólogo marino y artista alemán, célebre por impulsar el darwinismo en Alemania, acuñar términos biológicos influyentes y producir las extraordinarias láminas científicas de Kunstformen der Natur. En sus últimos años quedó debilitado por pérdidas familiares y lesiones, vendió su Villa Medusa en Jena en 1918 y murió allí el 9 de agosto de 1919 a los 85 años.",
+  "shortDescriptionRu": "Эрнст Геккель был немецким зоологом, натуралистом, врачом, философом, профессором, морским биологом и художником, известным как один из главных популяризаторов дарвинизма в Германии, автор важных биологических терминов и создатель впечатляющих иллюстраций Kunstformen der Natur. В последние годы он ослаб после семейных утрат и травм, в 1918 году продал свою виллу Medusa в Йене и умер там 9 августа 1919 года в возрасте 85 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ernst_Haeckel",
+    "https://www.wikidata.org/wiki/Q48246",
+    "https://www.britannica.com/biography/Ernst-Haeckel",
+    "https://www.britannica.com/summary/Ernst-Haeckel",
+    "https://embryo.asu.edu/pages/ernst-heinrich-philipp-august-haeckel-1834-1919",
+    "https://link.springer.com/article/10.1007/s12064-019-00276-4",
+    "https://www.lindahall.org/about/news/scientist-of-the-day/ernst-haeckel-2/",
+    "https://commons.wikimedia.org/wiki/Category:Ernst_Haeckel"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q131721",  "Name": "Johannes Diderik van der Waals",  "BirthDate": "1837-11-23T00:00:00Z",  "DeathDate": "1923-03-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20der%20Waals.jpg",  "SiteLinksCnt": 100,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"230711":{"pageid":230711,"ns":0,"title":"Johannes Diderik van der Waals","extract":"Johannes Diderik van der Waals (Dutch: [jo\u02d0\u02c8\u0266\u0251n\u0259z \u02c8did\u0259r\u026ak f\u0251n d\u0259r \u02c8\u028ba\u02d0ls] ; 23 November 1837 \u2013 8 March 1923) was a Dutch theoretical physicist who received the Nobel Prize in Physics in 1910 \"for his work on the equation of state for gases and liquids.\" Van der Waals started his career as a schoolteacher, before becoming the first physics professor of the University of Amsterdam when its status was upgraded to Municipal University in 1877.\nHis name is primarily associated with the van der Waals equation, an equation of state that describes the behavior of gases and their condensation to the liquid phase. His name is also associated with van der Waals forces (forces between stable molecules), with van der Waals molecules (small molecular clusters bound by van der Waals forces), and with the van der Waals radius (size of molecules). James Clerk Maxwell once said that, \"there can be no doubt that the name of Van der Waals will soon be among the foremost in molecular science.\"\nIn his 1873 thesis, Van der Waals noted the non-ideality of real gases and attributed it to the existence of intermolecular interactions. He introduced the first equation of state derived by the assumption of a finite volume occupied by the constituent molecules. Spearheaded by Ernst Mach and Wilhelm Ostwald, a strong philosophical current that denied the existence of molecules arose towards the end of the 19th century. The molecular existence was considered unproven and the molecular hypothesis unnecessary. At the time Van der Waals's thesis was written (1873), the molecular structure of fluids had not been accepted by most physicists, and liquid and vapor were often considered as chemically distinct. But Van der Waals's work affirmed the reality of molecules and allowed an assessment of their size and attractive strength. His new formula revolutionized the study of equations of state. By comparing his equation of state with experimental data, Van der Waals was able to obtain estimates for the actual size of molecules and the strength of their mutual attraction.\nThe effect of Van der Waals's work on molecular physics in the 20th century was direct and fundamental. By introducing parameters characterizing molecular size and attraction in constructing his equation of state, Van der Waals set the tone for modern molecular science. That molecular aspects such as size, shape, attraction, and multipolar interactions should form the basis for mathematical formulations of the thermodynamic and transport properties of fluids is presently considered an axiom. With the help of the Van der Waals's equation of state, the critical-point parameters of gases could be accurately predicted from thermodynamic measurements made at much higher temperatures. Nitrogen, oxygen, hydrogen, and helium subsequently succumbed to liquefaction. Heike Kamerlingh Onnes was significantly influenced by the pioneering work of Van der Waals. In 1908, Onnes became the first to make liquid helium; this led directly to his 1911 discovery of superconductivity."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q131721")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q131721",
+  "isRealHuman": true,
+  "birthDate": "1837-11-23",
+  "deathDate": "1923-03-08",
+  "ageAtDeath": 85,
+  "confidence": 98,
+  "confidenceExplained": "The birth date and death date are confirmed by NobelPrize.org and Wikipedia, both matching Wikidata: 1837-11-23 to 1923-03-08. The age calculation is exact because the full dates are known: he died before his birthday in 1923, so 1923 - 1837 - 1 = 85. Confidence is slightly below 100 because a few secondary sources list the death date as 1923-03-09, but the Nobel source supports 1923-03-08.",
+  "shortDescriptionEn": "Johannes Diderik van der Waals was a Dutch theoretical physicist whose work transformed the understanding of gases, liquids, molecular attraction, and the continuity between gas and liquid states. He received the 1910 Nobel Prize in Physics for his equation of state for gases and liquids, and his name remains attached to van der Waals forces and the van der Waals equation. He died in Amsterdam on 8 March 1923, at the age of 85; no specific medical cause is commonly cited in major references, but he died after a long academic life and several years after retirement.",
+  "shortDescriptionFr": "Johannes Diderik van der Waals était un physicien théoricien néerlandais dont les travaux ont profondément renouvelé la compréhension des gaz, des liquides, de l’attraction moléculaire et de la continuité entre les états gazeux et liquide. Il reçut le prix Nobel de physique en 1910 pour son équation d’état des gaz et des liquides, et son nom reste associé aux forces de van der Waals. Il mourut à Amsterdam le 8 mars 1923, à l’âge de 85 ans; les grandes références ne donnent généralement pas de cause médicale précise, mais sa mort survint après une longue carrière universitaire et plusieurs années après sa retraite.",
+  "shortDescriptionDe": "Johannes Diderik van der Waals war ein niederländischer theoretischer Physiker, dessen Arbeit das Verständnis von Gasen, Flüssigkeiten, molekularer Anziehung und dem Übergang zwischen gasförmigem und flüssigem Zustand entscheidend prägte. 1910 erhielt er den Nobelpreis für Physik für seine Zustandsgleichung für Gase und Flüssigkeiten; sein Name lebt in der van-der-Waals-Gleichung und den van-der-Waals-Kräften weiter. Er starb am 8. März 1923 in Amsterdam im Alter von 85 Jahren; eine genaue medizinische Todesursache wird in den wichtigsten Quellen nicht üblicherweise genannt, doch sein Tod kam nach einem langen akademischen Leben und Jahre nach seiner Emeritierung.",
+  "shortDescriptionEs": "Johannes Diderik van der Waals fue un físico teórico neerlandés cuya obra cambió la comprensión de los gases, los líquidos, la atracción molecular y la continuidad entre los estados gaseoso y líquido. Recibió el Premio Nobel de Física en 1910 por su ecuación de estado para gases y líquidos, y su nombre sigue asociado a las fuerzas de van der Waals y a la ecuación de van der Waals. Murió en Ámsterdam el 8 de marzo de 1923, a los 85 años; las principales referencias no suelen indicar una causa médica específica, pero falleció tras una larga vida académica y varios años después de retirarse.",
+  "shortDescriptionRu": "Йоханнес Дидерик ван дер Ваальс был нидерландским физиком-теоретиком, чьи работы существенно изменили представления о газах, жидкостях, молекулярном притяжении и непрерывности между газовым и жидким состояниями. В 1910 году он получил Нобелевскую премию по физике за уравнение состояния газов и жидкостей; его имя осталось в терминах «силы Ван-дер-Ваальса» и «уравнение Ван-дер-Ваальса». Он умер в Амстердаме 8 марта 1923 года в возрасте 85 лет; в основных справочных источниках конкретная медицинская причина смерти обычно не указывается, но смерть наступила после долгой научной карьеры и спустя годы после выхода на пенсию.",
+  "pictures": [
+    "https://www.nobelprize.org/prizes/physics/1910/waals/facts/",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20der%20Waals.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_of_Johannes_Diderik_van_der_Waals_(1837-1923),_Physicist_(2553691748).jpg",
+    "https://www.lindahall.org/about/news/scientist-of-the-day/johannes-diderik-van-der-wals/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Johannes_Diderik_van_der_Waals",
+    "https://www.nobelprize.org/prizes/physics/1910/waals/facts/",
+    "https://www.nobelprize.org/prizes/physics/1910/waals/biographical/",
+    "https://www.britannica.com/biography/Johannes-Diederik-van-der-Waals",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20der%20Waals.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portrait_of_Johannes_Diderik_van_der_Waals_(1837-1923),_Physicist_(2553691748).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q47434",  "Name": "Edmond Halley",  "BirthDate": "1656-11-08T00:00:00Z",  "DeathDate": "1742-01-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Edmond%20Halley%20072.jpg",  "SiteLinksCnt": 99,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"36858805":{"pageid":36858805,"ns":0,"title":"Edmond Halley","extract":"Edmond (or Edmund) Halley  (; 8 November [O.S. 29 October] 1656 \u2013 25 January 1742 [O.S. 14 January 1741]) was an English astronomer, mathematician and physicist. He was the second Astronomer Royal in Britain, succeeding John Flamsteed in 1720.\nFrom an observatory he constructed on Saint Helena in 1676\u201377, Halley catalogued the southern celestial hemisphere and recorded a transit of Mercury across the Sun. He realised that a similar transit of Venus could be used to determine the distances between Earth, Venus, and the Sun. Upon his return to England, he was made a fellow of the Royal Society, and with the help of King Charles II, was granted a master's degree from Oxford.\nHalley encouraged and helped fund the publication of Isaac Newton's influential Philosophi\u00e6 Naturalis Principia Mathematica (1687). From observations Halley made in September 1682, he used Newton's law of universal gravitation to compute the periodicity of Halley's Comet in his 1705 Synopsis of the Astronomy of Comets. It was named after him upon its predicted return in 1758, which he did not live to see.\nBeginning in 1698, Halley made sailing expeditions and made observations on the conditions of terrestrial magnetism. In 1718, he discovered the proper motion of the \"fixed stars\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q47434")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q47434",
+  "isRealHuman": true,
+  "birthDate": "1656-11-08",
+  "deathDate": "1742-01-25",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The person is clearly Edmond Halley. The supplied Wikidata ID, name, dates, and Wikipedia extract all match. The main ambiguity is calendar style: England used the Julian calendar during Halley's lifetime, so some sources give death as 14 January 1742 old style, while the Gregorian equivalent is 25 January 1742. Both calendar systems yield an age at death of 85.",
+  "shortDescriptionEn": "Edmond Halley was an English astronomer, mathematician, physicist, navigator, and Astronomer Royal, best remembered for calculating the orbit of the comet later named Halley’s Comet and predicting its return. He also catalogued southern stars, studied terrestrial magnetism, supported the publication of Newton’s Principia, and contributed to early actuarial science. He died peacefully at Greenwich while still Astronomer Royal, aged 85, and was buried at St Margaret’s, Lee, near the observatory with which his final decades were closely linked.",
+  "shortDescriptionFr": "Edmond Halley était un astronome, mathématicien, physicien, navigateur anglais et Astronomer Royal, surtout connu pour avoir calculé l’orbite de la comète qui porte aujourd’hui son nom et prévu son retour. Il catalogua aussi les étoiles australes, étudia le magnétisme terrestre, soutint la publication des Principia de Newton et contribua aux débuts de la science actuarielle. Il mourut paisiblement à Greenwich, toujours en fonction comme Astronomer Royal, à l’âge de 85 ans, puis fut enterré à St Margaret’s, Lee, près de l’observatoire.",
+  "shortDescriptionDe": "Edmond Halley war ein englischer Astronom, Mathematiker, Physiker, Seefahrer und Astronomer Royal, berühmt dafür, die Bahn des später nach ihm benannten Halleyschen Kometen berechnet und dessen Wiederkehr vorhergesagt zu haben. Außerdem katalogisierte er Sterne des Südhimmels, erforschte den Erdmagnetismus, förderte die Veröffentlichung von Newtons Principia und leistete Beiträge zur frühen Versicherungsmathematik. Er starb friedlich in Greenwich, noch im Amt des Astronomer Royal, im Alter von 85 Jahren und wurde in St Margaret’s, Lee, nahe seinem Observatorium beigesetzt.",
+  "shortDescriptionEs": "Edmond Halley fue un astrónomo, matemático, físico, navegante inglés y Astronomer Royal, recordado sobre todo por calcular la órbita del cometa que después llevaría su nombre y predecir su regreso. También catalogó estrellas del hemisferio sur, estudió el magnetismo terrestre, ayudó a impulsar la publicación de los Principia de Newton y aportó a los inicios de la ciencia actuarial. Murió tranquilamente en Greenwich, aún como Astronomer Royal, a los 85 años, y fue enterrado en St Margaret’s, Lee, cerca del observatorio.",
+  "shortDescriptionRu": "Эдмонд Галлей был английским астрономом, математиком, физиком, мореплавателем и Королевским астрономом, наиболее известным тем, что рассчитал орбиту кометы, позднее названной его именем, и предсказал её возвращение. Он также каталогизировал звёзды южного неба, изучал земной магнетизм, содействовал публикации ньютоновских Principia и внёс вклад в раннюю актуарную науку. Он мирно умер в Гринвиче, всё ещё занимая должность Королевского астронома, в возрасте 85 лет и был похоронен в St Margaret’s, Lee, рядом с обсерваторией.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Edmond_Halley",
+    "https://www.britannica.com/biography/Edmond-Halley",
+    "https://www.wikidata.org/wiki/Q47434",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Halley/",
+    "https://www.westminster-abbey.org/abbey-commemorations/commemorations/edmond-halley",
+    "https://www.rmg.co.uk/collections/objects/rmgc-object-14208",
+    "https://www.npg.org.uk/collections/search/portrait/mw09662/Edmond-Halley",
+    "https://www.historytoday.com/archive/months-past/birth-edmond-halley"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q49034",  "Name": "Hedy Lamarr",  "BirthDate": "1914-11-09T00:00:00Z",  "DeathDate": "2000-01-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hedy%20Lamarr%20in%20The%20Heavenly%20Body%201944.jpg",  "SiteLinksCnt": 98,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"170982":{"pageid":170982,"ns":0,"title":"Hedy Lamarr","extract":"Hedy Lamarr (; born Hedwig Eva Maria Kiesler; November 9, 1914 \u2013  January 19, 2000) was an Austrian and American actress and inventor. Regarded as a successful film star, she also co-invented a radio guidance system during World War II.\nAfter a brief early film career in Czechoslovakia, including the controversial erotic romantic drama Ecstasy (1933), she fled from her first husband, Friedrich Mandl, and secretly moved to Paris. Traveling to London, she met Louis B. Mayer, who offered her a film contract in Hollywood. Lamarr became a film star with her performance in the romantic drama Algiers (1938). She achieved further success with the Western Boom Town (1940) and the drama White Cargo (1942). Lamarr's most successful film was the religious epic Samson and Delilah (1949). She also acted on television before the release of her final film in 1958. She was honored with a star on the Hollywood Walk of Fame in 1960.\nAt the beginning of World War II, along with composer George Antheil, Lamarr co-invented a radio guidance system for Allied torpedoes that used spread spectrum and frequency hopping technology to defeat the threat of radio jamming by the Axis powers.  This approach, conceptualized as a \"Secret Communication System\", was intended to provide secure, jam-resistant communication for weapon guidance by spreading the signal across multiple frequencies. Similar technology was used in operational systems only beginning in 1962, which was well after World War II and three years after the expiry of the Lamarr\u2013Antheil patent. Frequency hopping, which existed and was utilized before the Lamarr\u2013Antheil patent, is a foundational technology for spread spectrum communications. Its principles are utilized for secure wireless networking, including Bluetooth and early versions of Wi-Fi, which use variants of spread spectrum to protect data from interception and interference.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q49034")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q49034",
+  "isRealHuman": true,
+  "birthDate": "1914-11-09",
+  "deathDate": "2000-01-19",
+  "ageAtDeath": 85,
+  "confidence": 98,
+  "confidenceExplained": "The calculated age is highly reliable: Hedy Lamarr was born on 1914-11-09 and died on 2000-01-19, which is before her 86th birthday in 2000, so she was 85. A small uncertainty remains only because some older references give the birth year as 1913/14, but the dominant modern sources use 1914.",
+  "shortDescriptionEn": "Hedy Lamarr was an Austrian-born American film star and inventor, celebrated for her Hollywood glamour in films such as Algiers, White Cargo, and Samson and Delilah, and later recognized for co-developing a frequency-hopping communication system that helped inspire modern wireless technologies. In her later years she lived more privately in Florida. She died at her home in Casselberry, Florida, on January 19, 2000, from heart disease, at the age of 85; part of her ashes were later scattered in Austria’s Vienna Woods.",
+  "shortDescriptionFr": "Hedy Lamarr était une actrice américaine née en Autriche et une inventrice, célèbre pour son élégance hollywoodienne dans des films comme Algiers, White Cargo et Samson and Delilah, puis reconnue pour avoir co-développé un système de communication par saut de fréquence qui a inspiré des technologies sans fil modernes. Dans ses dernières années, elle mena une vie plus discrète en Floride. Elle est morte chez elle à Casselberry, en Floride, le 19 janvier 2000, d’une maladie cardiaque, à l’âge de 85 ans; une partie de ses cendres fut ensuite dispersée dans le Wienerwald, en Autriche.",
+  "shortDescriptionDe": "Hedy Lamarr war eine in Österreich geborene amerikanische Filmschauspielerin und Erfinderin, berühmt für ihre Hollywood-Rollen in Filmen wie Algiers, White Cargo und Samson and Delilah und später gewürdigt für die Mitentwicklung eines Frequenzsprung-Kommunikationssystems, das moderne Funktechnologien mitprägte. In ihren letzten Jahren lebte sie zurückgezogener in Florida. Sie starb am 19. Januar 2000 in ihrem Haus in Casselberry, Florida, an einer Herzerkrankung, im Alter von 85 Jahren; ein Teil ihrer Asche wurde später im Wienerwald verstreut.",
+  "shortDescriptionEs": "Hedy Lamarr fue una actriz estadounidense nacida en Austria e inventora, admirada por su glamour de Hollywood en películas como Algiers, White Cargo y Samson and Delilah, y reconocida más tarde por co-desarrollar un sistema de comunicación por salto de frecuencia que inspiró tecnologías inalámbricas modernas. En sus últimos años vivió de forma más reservada en Florida. Murió en su casa de Casselberry, Florida, el 19 de enero de 2000, por una enfermedad cardíaca, a los 85 años; parte de sus cenizas fueron esparcidas después en los Bosques de Viena.",
+  "shortDescriptionRu": "Хеди Ламарр была американской актрисой австрийского происхождения и изобретательницей, прославившейся голливудскими ролями в фильмах Algiers, White Cargo и Samson and Delilah, а позднее получившей признание за совместную разработку системы связи с перестройкой частоты, повлиявшей на современные беспроводные технологии. В последние годы она жила более уединённо во Флориде. Она умерла в своём доме в Касселберри, Флорида, 19 января 2000 года от сердечного заболевания в возрасте 85 лет; часть её праха позднее была развеяна в Венском лесу.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hedy_Lamarr",
+    "https://www.womenshistory.org/education-resources/biographies/hedy-lamarr",
+    "https://www.nationalww2museum.org/war/articles/hedy-lamarrs-wwii-invention-helped-shape-modern-tech",
+    "https://www.britannica.com/biography/Hedy-Lamarr",
+    "https://www.biography.com/actors/hedy-lamarr",
+    "https://www.hedylamarr.com/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q132589",  "Name": "Camilo José Cela",  "BirthDate": "1916-05-11T00:00:00Z",  "DeathDate": "2002-01-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Camilo%20Jos%C3%A9%20Cela.%20Fototeca.%20Biblioteca%20Virtual%20del%20Patrimonio%20Bibliogr%C3%A1fico.jpg",  "SiteLinksCnt": 97,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"297979":{"pageid":297979,"ns":0,"title":"Camilo Jos\u00e9 Cela","extract":"Camilo Jos\u00e9 Cela y Trulock, 1st Marquess of Iria Flavia (Spanish: [kamilo xo\u02c8se \u02c8\u03b8ela]; 11 May 1916 \u2013 17 January 2002) was a Spanish novelist, poet, story writer and essayist associated with the Generation of '36 movement.\nHe was awarded the 1989 Nobel Prize in Literature \"for a rich and intensive prose, which with restrained compassion forms a challenging vision of man's vulnerability\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q132589")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q132589",
+  "isRealHuman": true,
+  "birthDate": "1916-05-11",
+  "deathDate": "2002-01-17",
+  "ageAtDeath": 85,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, NobelPrize.org, Britannica, and the Camilo José Cela Foundation. The age calculation is straightforward: he was born on 1916-05-11 and died on 2002-01-17, before his 86th birthday, so he was 85. Confidence is not 100 only because secondary sources vary slightly in wording around the medical circumstances of death, though not in the dates or age.",
+  "shortDescriptionEn": "Camilo José Cela was a major Spanish novelist, poet, short-story writer and essayist, associated with the Generation of ’36 and known for works such as The Family of Pascual Duarte and The Hive. His stark, inventive prose helped reshape postwar Spanish literature, and in 1989 he received the Nobel Prize in Literature. Cela died in Madrid on 17 January 2002 at the age of 85, after suffering from heart disease.",
+  "shortDescriptionFr": "Camilo José Cela fut un grand romancier, poète, nouvelliste et essayiste espagnol, lié à la Génération de 1936 et célèbre notamment pour La Famille de Pascual Duarte et La Ruche. Son style âpre, original et souvent provocateur a profondément marqué la littérature espagnole d’après-guerre, et il reçut le prix Nobel de littérature en 1989. Il mourut à Madrid le 17 janvier 2002, à l’âge de 85 ans, après avoir souffert d’une maladie cardiaque.",
+  "shortDescriptionDe": "Camilo José Cela war ein bedeutender spanischer Romancier, Dichter, Erzähler und Essayist, der mit der Generation von 1936 verbunden wird und vor allem für Werke wie Die Familie des Pascual Duarte und Der Bienenkorb bekannt ist. Seine schonungslose, sprachlich eigenwillige Prosa prägte die spanische Nachkriegsliteratur; 1989 erhielt er den Nobelpreis für Literatur. Cela starb am 17. Januar 2002 in Madrid im Alter von 85 Jahren, nachdem er an einer Herzerkrankung gelitten hatte.",
+  "shortDescriptionEs": "Camilo José Cela fue un destacado novelista, poeta, narrador y ensayista español, vinculado a la Generación del 36 y conocido por obras como La familia de Pascual Duarte y La colmena. Su prosa áspera, innovadora y provocadora renovó la literatura española de posguerra, y en 1989 recibió el Premio Nobel de Literatura. Cela murió en Madrid el 17 de enero de 2002, a los 85 años, tras padecer una enfermedad cardíaca.",
+  "shortDescriptionRu": "Камило Хосе Села был выдающимся испанским романистом, поэтом, новеллистом и эссеистом, связанным с «поколением 1936 года» и известным по произведениям Семья Паскуаля Дуарте и Улей. Его жесткая, выразительная и новаторская проза заметно изменила испанскую послевоенную литературу; в 1989 году он получил Нобелевскую премию по литературе. Села умер в Мадриде 17 января 2002 года в возрасте 85 лет после болезни сердца.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Camilo_Jos%C3%A9_Cela",
+    "https://www.nobelprize.org/prizes/literature/1989/cela/facts/",
+    "https://www.nobelprize.org/prizes/literature/1989/cela/biographical/",
+    "https://www.britannica.com/biography/Camilo-Jose-Cela",
+    "https://fundacioncela.gal/en/biography",
+    "https://www.encyclopedia.com/arts/educational-magazines/cela-camilo-jose-1916-2002",
+    "https://www.theguardian.com/books/2002/jan/17/artsandhumanities.highereducation"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160499",  "Name": "Charles-Maurice de Talleyrand-Périgord",  "BirthDate": "1754-02-02T00:00:00Z",  "DeathDate": "1839-05-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Maurice%20de%20Talleyrand-P%C3%A9rigord%20by%20Fran%C3%A7ois%20G%C3%A9rard%2C%201808.jpg",  "SiteLinksCnt": 95,  "Age": 85}
+{"batchcomplete":"","query":{"pages":{"48542":{"pageid":48542,"ns":0,"title":"Charles Maurice de Talleyrand-P\u00e9rigord","extract":"Charles-Maurice de Talleyrand-P\u00e9rigord (; French: [\u0283a\u0281l m\u0254\u0281is d\u0259 tal(\u025b)\u0281\u0251\u0303 pe\u0281i\u0261\u0254\u0281, mo\u0281-]; 2 February 1754 \u2013 17 May 1838), 1st Prince of Benevento, then Prince of Talleyrand, was a French secularized clergyman, statesman, and leading diplomat. After studying theology, he became Agent-General of the Clergy in 1780. In 1789, just before the French Revolution, he became Bishop of Autun. He worked at the highest levels of successive French governments, most commonly as foreign minister or in some other diplomatic capacity. He served as the French representative to the Congress of Vienna. His career spanned the regimes of Louis XVI, the years of the French Revolution, Napoleon, Louis XVIII, Charles X, and Louis Philippe I. Those Talleyrand served often distrusted him but found him extremely useful. The name \"Talleyrand\" has become a byword for crafty and cynical diplomacy.\nTalleyrand was Napoleon's chief diplomat during the years when French military victories brought one European state after another under French hegemony. Most of the time, he worked for peace so as to consolidate France's gains. He succeeded in obtaining peace with Austria through the 1801 Treaty of Lun\u00e9ville and with Britain in the 1802 Treaty of Amiens. He could not prevent the renewal of war in 1803 but by 1805 he opposed his emperor's renewed wars against Austria, Prussia, and Russia. He resigned as foreign minister in August 1807, but retained the trust of Napoleon. He conspired to undermine the emperor's plans through secret dealings with Tsar Alexander I of Russia and the Austrian minister Klemens von Metternich. Talleyrand sought a negotiated secure peace so as to perpetuate the gains of the French Revolution. Napoleon rejected peace; when he fell in 1814, Talleyrand supported the Bourbon Restoration decided by the Allies. He played a major role at the Congress of Vienna in 1814\u20131815, where he negotiated a favorable settlement for France and played a role in unwinding the Napoleonic Wars.\nTalleyrand polarizes opinion. Some regard him as one of the most versatile, skilled, and influential diplomats in European history, with a clear-eyed and realistic view of the French national interest. Others, on the other hand, see him as a serial turncoat seeking only his own advantage, betraying  the ancien r\u00e9gime, the French Revolution, and Napoleon in turn for his own gain."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160499")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q160499",
+  "isRealHuman": true,
+  "birthDate": "1754-02-02",
+  "deathDate": "1838-05-17",
+  "ageAtDeath": 84,
+  "confidence": 99,
+  "confidenceExplained": "The birth date 1754-02-02 and death date 1838-05-17 are consistently given by Wikipedia, Encyclopaedia Britannica, and Napoleon.org. The supplied 1839 death year appears to be an error. Because Talleyrand died after his birthday in 1838, the calculated age at death is exactly 84.",
+  "shortDescriptionEn": "Charles-Maurice de Talleyrand-Périgord was one of France’s most adaptable and influential diplomats, serving through the Revolution, Napoleon’s empire, the Bourbon Restoration, and the July Monarchy. A former bishop turned statesman, he helped shape European diplomacy after Napoleon, especially at the Congress of Vienna. He died in Paris on 17 May 1838, shortly after reconciling formally with the Catholic Church and receiving the last sacraments; he was later buried near his château at Valençay.",
+  "shortDescriptionFr": "Charles-Maurice de Talleyrand-Périgord fut l’un des diplomates français les plus influents et les plus habiles, actif sous la Révolution, l’Empire napoléonien, la Restauration et la monarchie de Juillet. Ancien évêque devenu homme d’État, il joua un rôle majeur dans l’équilibre européen après Napoléon, notamment au congrès de Vienne. Il mourut à Paris le 17 mai 1838, peu après s’être formellement réconcilié avec l’Église catholique et avoir reçu les derniers sacrements; il fut ensuite inhumé près de son château de Valençay.",
+  "shortDescriptionDe": "Charles-Maurice de Talleyrand-Périgord war einer der anpassungsfähigsten und einflussreichsten Diplomaten Frankreichs und diente während der Revolution, unter Napoleon, in der Bourbonen-Restauration und unter der Julimonarchie. Der frühere Bischof wurde Staatsmann und prägte die europäische Diplomatie nach Napoleon, besonders auf dem Wiener Kongress. Er starb am 17. Mai 1838 in Paris, kurz nachdem er sich formell mit der katholischen Kirche ausgesöhnt und die letzten Sakramente empfangen hatte; später wurde er nahe seinem Schloss Valençay bestattet.",
+  "shortDescriptionEs": "Charles-Maurice de Talleyrand-Périgord fue uno de los diplomáticos franceses más influyentes y adaptables, con cargos durante la Revolución, el Imperio napoleónico, la Restauración borbónica y la Monarquía de Julio. Antiguo obispo convertido en estadista, ayudó a definir la diplomacia europea posterior a Napoleón, especialmente en el Congreso de Viena. Murió en París el 17 de mayo de 1838, poco después de reconciliarse formalmente con la Iglesia católica y recibir los últimos sacramentos; más tarde fue enterrado cerca de su château de Valençay.",
+  "shortDescriptionRu": "Шарль-Морис де Талейран-Перигор был одним из самых влиятельных и гибких дипломатов Франции, служившим при Революции, Наполеоне, Бурбонской реставрации и Июльской монархии. Бывший епископ, ставший государственным деятелем, он сыграл важную роль в формировании европейской дипломатии после Наполеона, особенно на Венском конгрессе. Он умер в Париже 17 мая 1838 года, незадолго до смерти формально примирившись с Католической церковью и получив последние таинства; позднее его похоронили близ замка Валансе.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charles_Maurice_de_Talleyrand-P%C3%A9rigord",
+    "https://www.britannica.com/biography/Charles-Maurice-de-Talleyrand-prince-de-Benevent",
+    "https://www.napoleon.org/en/history-of-the-two-empires/biographies/talleyrand-perigord-charles-maurice-de/",
+    "https://www.napoleon.org/en/history-of-the-two-empires/paintings/portrait-of-charles-maurice-de-talleyrand-perigord-by-francois-gerard/",
+    "https://www.npg.org.uk/collections/search/portrait/mw73031"
+  ]
+}
