@@ -1,0 +1,1039 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q80976",  "Name": "Prince Philip, Duke of Edinburgh",  "BirthDate": "1921-06-10T00:00:00Z",  "DeathDate": "2021-04-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Duke%20of%20Edinburgh%2033%20Allan%20Warren.jpg",  "SiteLinksCnt": 127,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"62093":{"pageid":62093,"ns":0,"title":"Prince Philip, Duke of Edinburgh","extract":"Prince Philip, Duke of Edinburgh (born Prince Philip of Greece and Denmark,\nlater Philip Mountbatten; 10 June 1921 \u2013 9 April 2021), was the husband of Queen Elizabeth II and served as consort of the British monarch from her accession on 6 February 1952 until his death in 2021, making him the longest-serving royal consort in British history.\nPhilip was born in Greece into the Greek and Danish royal families. His family was exiled from the country when he was 18 months old. Educated in France, Germany, and the United Kingdom, he joined the Royal Navy in 1939 at the age of 18. In July 1939, he began corresponding with Princess Elizabeth, then aged 13, the elder daughter and heir presumptive of King George VI. During the Second World War, Philip served with distinction in the Mediterranean and Pacific fleets of the Royal Navy.\nIn the summer of 1946, King George VI granted Philip permission to marry Elizabeth, who was then 20. Prior to the official announcement of their engagement in July 1947, Philip renounced his Greek and Danish royal titles and styles, became a naturalised British subject, and adopted the surname Mountbatten from his maternal grandparents. In November 1947, he married Elizabeth, was granted the style \"His Royal Highness\", and was created Duke of Edinburgh, Earl of Merioneth, and Baron Greenwich. They had four children: Charles, Anne, Andrew, and Edward. Following Elizabeth\u2019s accession to the throne in 1952, Philip left active naval service, having attained the rank of commander. In 1957, he was formally created a British prince.\nA keen sportsman, Philip played a significant role in the development of the equestrian discipline of carriage driving. He served as patron, president, or member of more than 780 organisations, including the World Wide Fund for Nature, and was chairman of The Duke of Edinburgh's Award, an international youth awards programme for people aged 14 to 24. Philip is the longest-lived male member of the British royal family. He retired from public duties in 2017 at the age of 96, having completed 22,219 solo engagements and delivered 5,493 speeches since 1952. He died at Windsor Castle two months before his 100th birthday."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q80976")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q80976",
+  "isRealHuman": true,
+  "birthDate": "1921-06-10",
+  "deathDate": "2021-04-09",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "Prince Philip's birth date, death date, and age at death are consistently reported by Wikipedia, Wikidata, Encyclopaedia Britannica, and the official Royal Family death announcement. The age calculation is exact: he was born on 1921-06-10 and died on 2021-04-09, before reaching his 100th birthday, so he was 99.",
+  "shortDescriptionEn": "Prince Philip, Duke of Edinburgh, was born Prince Philip of Greece and Denmark and became the husband of Queen Elizabeth II, serving for decades as the British monarch’s consort. A former Royal Navy officer, he was known for his public service, patronage work, interest in science and conservation, and the Duke of Edinburgh’s Award. He died peacefully at Windsor Castle on 9 April 2021, aged 99; his death came after a period of declining health and was officially associated with old age.",
+  "shortDescriptionFr": "Le prince Philip, duc d’Édimbourg, né prince Philippe de Grèce et de Danemark, fut l’époux de la reine Élisabeth II et l’accompagna pendant des décennies comme consort du souverain britannique. Ancien officier de la Royal Navy, il fut connu pour son service public, ses parrainages, son intérêt pour la science et la conservation, ainsi que pour le Prix du duc d’Édimbourg. Il est mort paisiblement au château de Windsor le 9 avril 2021, à l’âge de 99 ans, après une période de santé déclinante; sa mort fut officiellement liée à la vieillesse.",
+  "shortDescriptionDe": "Prinz Philip, Herzog von Edinburgh, wurde als Prinz Philip von Griechenland und Dänemark geboren und war der Ehemann von Königin Elisabeth II., die er über Jahrzehnte als Gemahl der britischen Monarchin begleitete. Der frühere Offizier der Royal Navy war bekannt für seinen öffentlichen Dienst, seine Schirmherrschaften, sein Interesse an Wissenschaft und Naturschutz sowie den Duke of Edinburgh’s Award. Er starb am 9. April 2021 friedlich auf Schloss Windsor im Alter von 99 Jahren; seinem Tod ging eine Phase nachlassender Gesundheit voraus, offiziell wurde hohes Alter als Ursache genannt.",
+  "shortDescriptionEs": "El príncipe Felipe, duque de Edimburgo, nació como príncipe Felipe de Grecia y Dinamarca y fue el esposo de la reina Isabel II, a quien acompañó durante décadas como consorte de la monarca británica. Antiguo oficial de la Royal Navy, fue conocido por su servicio público, sus patrocinios, su interés por la ciencia y la conservación, y el Premio Duque de Edimburgo. Murió pacíficamente en el castillo de Windsor el 9 de abril de 2021, a los 99 años; su muerte llegó tras un periodo de salud debilitada y fue registrada oficialmente como relacionada con la vejez.",
+  "shortDescriptionRu": "Принц Филипп, герцог Эдинбургский, родился как принц Греции и Дании и стал супругом королевы Елизаветы II, десятилетиями исполняя роль консорта британского монарха. Бывший офицер Королевского флота, он был известен общественной службой, покровительством организациям, интересом к науке и охране природы, а также премией Герцога Эдинбургского. Он мирно умер в Виндзорском замке 9 апреля 2021 года в возрасте 99 лет; смерти предшествовал период ухудшения здоровья, а официально причиной был указан преклонный возраст.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Prince_Philip,_Duke_of_Edinburgh",
+    "https://www.royal.uk/announcement-death-duke-edinburgh",
+    "https://www.britannica.com/biography/Philip-duke-of-Edinburgh",
+    "https://www.wikidata.org/wiki/Q80976",
+    "https://en.wikipedia.org/wiki/Death_and_funeral_of_Prince_Philip,_Duke_of_Edinburgh"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q104183",  "Name": "Lillian Gish",  "BirthDate": "1893-10-14T00:00:00Z",  "DeathDate": "1993-02-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lillian%20Gish-edit1.jpg",  "SiteLinksCnt": 93,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"197736":{"pageid":197736,"ns":0,"title":"Lillian Gish","extract":"Lillian Diana Gish (October 14, 1893 \u2013 February 27, 1993) was an American actress best known for her work in movies of the silent era. Her film-acting career spanned 75 years, from 1912, in silent film shorts, to 1987. Gish was dubbed the \"First Lady of the Screen\" by Vanity Fair in 1927 and is credited with pioneering fundamental film performance techniques. In 1999, the American Film Institute ranked Gish as the 17th-greatest female movie star of classical Hollywood cinema.\nHaving acted on stage with her sister as a child, Gish was a prominent film star from 1912 into the 1920s, being particularly associated with the films of director D. W. Griffith. This included her leading role in the highest-grossing film of the silent era, Griffith's The Birth of a Nation (1915). Her other major films and performances from the silent era included Intolerance (1916), Broken Blossoms (1919), Way Down East (1920), Orphans of the Storm (1921), La Boh\u00e8me (1926), and The Wind (1928).\nAt the dawn of the sound era, she returned to the stage and appeared in film occasionally, with roles in the Western Duel in the Sun (1946) and the thriller The Night of the Hunter (1955). She was nominated for the Academy Award for Best Supporting Actress for Duel in the Sun. Gish also had major supporting roles in Portrait of Jennie (1948), A Wedding (1978), and Sweet Liberty (1986).\nShe also did considerable television work from the early 1950s into the 1980s, and retired after playing opposite Bette Davis and Vincent Price in the 1987 film The Whales of August. During her later years, Gish became a dedicated advocate for the appreciation and preservation of silent film. Despite being better known for her film work, she also performed on stage, and was inducted into the American Theater Hall of Fame in 1972. In 1971, she was awarded an Academy Honorary Award for her career achievements. She was awarded a Kennedy Center Honor for her contribution to American culture through performing arts in 1982."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q104183")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q104183",
+  "isRealHuman": true,
+  "birthDate": "1893-10-14",
+  "deathDate": "1993-02-27",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "Multiple reliable sources agree on the birth date, death date, and age at death. The age calculation is straightforward: Lillian Gish died on 1993-02-27, before reaching her 100th birthday on 1993-10-14, so she was 99. Confidence is not set to 100 only because some biographical traditions around early Hollywood performers can contain minor date ambiguities, but the documentary and reference consensus is very strong.",
+  "shortDescriptionEn": "Lillian Diana Gish was an American actress, director, and screenwriter, celebrated as one of silent cinema’s defining performers and often called the “First Lady of American Cinema.” Her screen career stretched from D. W. Griffith’s early silent films through The Whales of August in 1987, and she became a major advocate for preserving silent film. She died in her sleep at her Manhattan home on February 27, 1993; heart failure is commonly cited as the cause of death. She was 99.",
+  "shortDescriptionFr": "Lillian Diana Gish était une actrice, réalisatrice et scénariste américaine, considérée comme l’une des grandes figures du cinéma muet et souvent surnommée la « First Lady of American Cinema ». Sa carrière à l’écran s’étendit des premiers films muets de D. W. Griffith jusqu’à The Whales of August en 1987, et elle défendit activement la mémoire du cinéma muet. Elle est morte dans son sommeil, à son domicile de Manhattan, le 27 février 1993; l’insuffisance cardiaque est généralement citée comme cause du décès. Elle avait 99 ans.",
+  "shortDescriptionDe": "Lillian Diana Gish war eine US-amerikanische Schauspielerin, Regisseurin und Drehbuchautorin, die als eine der prägenden Darstellerinnen des Stummfilms gilt und oft als „First Lady of American Cinema“ bezeichnet wurde. Ihre Filmkarriere reichte von frühen Arbeiten mit D. W. Griffith bis zu The Whales of August im Jahr 1987; später setzte sie sich energisch für die Bewahrung des Stummfilmerbes ein. Sie starb am 27. Februar 1993 im Schlaf in ihrer Wohnung in Manhattan; als Todesursache wird meist Herzversagen genannt. Sie wurde 99 Jahre alt.",
+  "shortDescriptionEs": "Lillian Diana Gish fue una actriz, directora y guionista estadounidense, reconocida como una de las figuras esenciales del cine mudo y conocida a menudo como la “First Lady of American Cinema”. Su carrera cinematográfica fue desde los primeros filmes mudos de D. W. Griffith hasta The Whales of August en 1987, y en sus últimos años defendió con pasión la preservación del cine silente. Murió mientras dormía en su casa de Manhattan el 27 de febrero de 1993; la insuficiencia cardíaca suele citarse como la causa de muerte. Tenía 99 años.",
+  "shortDescriptionRu": "Лиллиан Диана Гиш была американской актрисой, режиссёром и сценаристкой, одной из ключевых звёзд немого кино, которую часто называли «первой леди американского кино». Её экранная карьера началась в ранних фильмах Д. У. Гриффита и продолжалась до фильма The Whales of August 1987 года; позднее она активно выступала за сохранение наследия немого кинематографа. Она умерла во сне в своём доме на Манхэттене 27 февраля 1993 года; причиной смерти обычно указывают сердечную недостаточность. Ей было 99 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Lillian_Gish-edit1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lillian_Gish_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Lillian_Gish_Colour.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Lillian_Gish"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lillian_Gish",
+    "https://www.britannica.com/biography/Lillian-Gish",
+    "https://scholar.lib.vt.edu/VA-news/ROA-Times/issues/1993/rt0393/930301/03010060.htm",
+    "https://www.cmgworldwide.com/clients/lillian-gish/",
+    "https://commons.wikimedia.org/wiki/File:Lillian_Gish-edit1.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Lillian_Gish"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q207405",  "Name": "Zsa Zsa Gabor",  "BirthDate": "1917-02-06T00:00:00Z",  "DeathDate": "2016-12-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gabor%2C%20Zsa%20Zsa.jpg",  "SiteLinksCnt": 84,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"152860":{"pageid":152860,"ns":0,"title":"Zsa Zsa Gabor","extract":"Zsa Zsa Gabor (born S\u00e1ri G\u00e1bor; February 6, 1917 \u2013 December 18, 2016) was a Hungarian-American socialite and actress. Her sisters were socialite Magda Gabor and actress and businesswoman Eva Gabor.\nGabor competed in the 1933 Miss Hungary pageant, where she placed as second runner-up. She began her stage career in Vienna the following year. Gabor emigrated from Hungary to the United States in 1941 and became a sought-after actress with \"European flair and style\". Her first film role was a supporting role in Lovely to Look At, released in 1952. The same year, she appeared in We're Not Married! and in her most famous film, Moulin Rouge. Gabor appeared in more than 70 movies, and her acting career continued into the 1990s.\nOutside of her career, Gabor was famous for her glamour, her extravagant Hollywood lifestyle, and her series of marriages. Gabor had nine husbands, including hotel magnate Conrad Hilton and actor George Sanders."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q207405")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q207405",
+  "isRealHuman": true,
+  "birthDate": "1917-02-06",
+  "deathDate": "2016-12-18",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia and Britannica, and obituary sources report the same age at death. The age calculation is straightforward: she died after her birthday in 2016, so 2016 - 1917 = 99. The only minor uncertainty is the wording of the immediate cause of death, reported as heart failure or cardiac arrest, which does not affect the age calculation.",
+  "shortDescriptionEn": "Zsa Zsa Gabor was a Hungarian-American actress and socialite whose glamour, wit, marriages, and unmistakable public persona made her one of classic Hollywood’s most recognizable celebrities. Born in Budapest as Sári Gábor, she moved to the United States and appeared in films including Moulin Rouge and Queen of Outer Space, while becoming famous for her quotable charm and extravagant lifestyle. She died in Los Angeles on December 18, 2016, at age 99, after years of declining health; reports described heart failure or cardiac arrest following a long illness.",
+  "shortDescriptionFr": "Zsa Zsa Gabor était une actrice et mondaine hungaro-américaine dont le glamour, l’esprit, les mariages très médiatisés et la personnalité flamboyante ont marqué l’âge d’or d’Hollywood. Née Sári Gábor à Budapest, elle s’installa aux États-Unis et joua notamment dans Moulin Rouge et Queen of Outer Space, tout en devenant célèbre pour son élégance théâtrale et ses répliques piquantes. Elle est morte à Los Angeles le 18 décembre 2016, à l’âge de 99 ans, après plusieurs années de santé fragile; sa mort a été attribuée à une insuffisance cardiaque ou à un arrêt cardiaque après une longue maladie.",
+  "shortDescriptionDe": "Zsa Zsa Gabor war eine ungarisch-amerikanische Schauspielerin und Society-Persönlichkeit, deren Glamour, Witz, zahlreiche Ehen und unverwechselbare öffentliche Rolle sie zu einer der bekanntesten Figuren des klassischen Hollywood machten. In Budapest als Sári Gábor geboren, ging sie in die Vereinigten Staaten und spielte unter anderem in Moulin Rouge und Queen of Outer Space, wurde aber ebenso für ihren extravaganten Stil und ihre schlagfertigen Auftritte berühmt. Sie starb am 18. Dezember 2016 in Los Angeles im Alter von 99 Jahren nach langer gesundheitlicher Schwäche; Berichte nannten Herzversagen beziehungsweise Herzstillstand nach langer Krankheit.",
+  "shortDescriptionEs": "Zsa Zsa Gabor fue una actriz y celebridad social húngaro-estadounidense cuya mezcla de glamour, ingenio, matrimonios célebres y presencia pública la convirtió en una figura inolvidable del Hollywood clásico. Nacida en Budapest como Sári Gábor, emigró a Estados Unidos y actuó en películas como Moulin Rouge y Queen of Outer Space, aunque su fama también se apoyó en su estilo extravagante y sus frases memorables. Murió en Los Ángeles el 18 de diciembre de 2016, a los 99 años, tras años de problemas de salud; las crónicas mencionaron insuficiencia cardíaca o paro cardíaco después de una larga enfermedad.",
+  "shortDescriptionRu": "Жа Жа Габор была венгерско-американской актрисой и светской знаменитостью, чьи гламур, остроумие, многочисленные браки и яркий публичный образ сделали ее одной из самых узнаваемых фигур классического Голливуда. Она родилась в Будапеште как Шари Габор, переехала в США и снималась в фильмах Moulin Rouge и Queen of Outer Space, но не меньше прославилась своим роскошным стилем и эффектными высказываниями. Она умерла в Лос-Анджелесе 18 декабря 2016 года в возрасте 99 лет после многих лет ухудшения здоровья; в сообщениях причиной называли сердечную недостаточность или остановку сердца после длительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Zsa_Zsa_Gabor",
+    "https://www.britannica.com/biography/Zsa-Zsa-Gabor",
+    "https://www.latimes.com/local/obituaries/la-me-zsa-zsa-gabor-20161218-story.html",
+    "https://www.sbs.com.au/news/article/zsa-zsa-gabor-dies-of-a-heart-attack-aged-99/67o1b5cwy",
+    "https://commons.wikimedia.org/wiki/File:Gabor,_Zsa_Zsa.jpg"
+  ],
+  "pictureUrls": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Gabor%2C%20Zsa%20Zsa.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Zsa_Zsa_Gabor_-_premiere_1960.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q184566",  "Name": "Charles Hard Townes",  "BirthDate": "1915-07-28T00:00:00Z",  "DeathDate": "2015-01-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Townes.jpg",  "SiteLinksCnt": 83,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"396568":{"pageid":396568,"ns":0,"title":"Charles H. Townes","extract":"Charles Hard Townes (July 28, 1915 \u2013 January 27, 2015) was an American physicist. Townes worked on the theory and application of the maser, for which he obtained the fundamental patent, and other work in quantum electronics associated with both maser and laser devices. He shared the 1964 Nobel Prize in Physics with Nikolay Basov and Alexander Prokhorov. Townes was an adviser to the United States Government, meeting every US president from Harry S. Truman (1945) to Bill Clinton (1999).\nTownes directed the U.S. government's Science and Technology Advisory Committee for the Apollo lunar landing program. After becoming a professor of the University of California, Berkeley, in 1967, he began an astrophysical program that produced several important discoveries, for example, the black hole at the center of the Milky Way galaxy.\nTownes was religious, and believed that science and religion are converging to provide a greater understanding of the nature and purpose of the universe."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q184566")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q184566",
+  "isRealHuman": true,
+  "birthDate": "1915-07-28",
+  "deathDate": "2015-01-27",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are confirmed by Wikipedia, NobelPrize.org, UC Berkeley, University of California memorial records, and Britannica. The age calculation is straightforward: Charles H. Townes was born on 1915-07-28 and died on 2015-01-27, before reaching his 100th birthday, so his age at death was 99.",
+  "shortDescriptionEn": "Charles Hard Townes was an American physicist whose work reshaped modern optics and quantum electronics. He helped develop the maser, contributed decisively to the concept of the laser, and shared the 1964 Nobel Prize in Physics with Nikolay Basov and Alexander Prokhorov. A longtime professor and researcher at institutions including Columbia, MIT, and UC Berkeley, he also applied lasers to astronomy. Townes died peacefully in Oakland, California, on January 27, 2015, after a long scientific life; he was 99 years old.",
+  "shortDescriptionFr": "Charles Hard Townes était un physicien américain dont les travaux ont profondément marqué l’optique moderne et l’électronique quantique. Il participa au développement du maser, joua un rôle majeur dans l’émergence du laser et partagea le prix Nobel de physique 1964 avec Nikolaï Bassov et Alexandre Prokhorov. Professeur et chercheur à Columbia, au MIT et à l’université de Californie à Berkeley, il appliqua aussi les lasers à l’astronomie. Townes est mort paisiblement à Oakland, en Californie, le 27 janvier 2015, au terme d’une longue vie scientifique; il avait 99 ans.",
+  "shortDescriptionDe": "Charles Hard Townes war ein amerikanischer Physiker, dessen Arbeit die moderne Optik und Quantenelektronik entscheidend prägte. Er trug zur Entwicklung des Masers bei, war maßgeblich am Konzept des Lasers beteiligt und teilte sich 1964 den Nobelpreis für Physik mit Nikolai Bassow und Alexander Prochorow. Als Forscher und Professor wirkte er unter anderem an Columbia, am MIT und an der University of California, Berkeley, und nutzte Laser später auch in der Astronomie. Townes starb am 27. Januar 2015 friedlich in Oakland, Kalifornien, nach einem langen wissenschaftlichen Leben; er wurde 99 Jahre alt.",
+  "shortDescriptionEs": "Charles Hard Townes fue un físico estadounidense cuyo trabajo transformó la óptica moderna y la electrónica cuántica. Participó en el desarrollo del máser, fue una figura clave en la idea del láser y compartió el Premio Nobel de Física de 1964 con Nikolái Básov y Aleksandr Prójorov. Fue profesor e investigador en instituciones como Columbia, MIT y la Universidad de California en Berkeley, y también aplicó los láseres a la astronomía. Townes murió pacíficamente en Oakland, California, el 27 de enero de 2015, tras una larga vida científica; tenía 99 años.",
+  "shortDescriptionRu": "Чарльз Хард Таунс был американским физиком, чьи работы существенно повлияли на современную оптику и квантовую электронику. Он участвовал в создании мазера, сыграл важную роль в развитии идеи лазера и разделил Нобелевскую премию по физике 1964 года с Николаем Басовым и Александром Прохоровым. Таунс работал в Колумбийском университете, MIT и Калифорнийском университете в Беркли, а позднее применял лазеры в астрономии. Он умер спокойно в Окленде, Калифорния, 27 января 2015 года после долгой научной жизни; ему было 99 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Charles_H._Townes",
+    "https://www.nobelprize.org/prizes/physics/1964/townes/facts/",
+    "https://www.nobelprize.org/prizes/physics/1964/townes/biographical/",
+    "https://news.berkeley.edu/2015/01/27/nobel-laureate-and-laser-inventor-charles-townes-dies-at-99/",
+    "https://senate.universityofcalifornia.edu/_files/inmemoriam/html/CharlesHardTownes.html",
+    "https://www.britannica.com/biography/Charles-Hard-Townes"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q213550",  "Name": "Billy Graham",  "BirthDate": "1918-11-07T00:00:00Z",  "DeathDate": "2018-02-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Graham%20bw%20photo%2C%20April%2011%2C%201966.jpg",  "SiteLinksCnt": 81,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"690865":{"pageid":690865,"ns":0,"title":"Billy Graham","extract":"William Franklin  Graham Jr. (; November 7, 1918 \u2013 February 21, 2018) was an American evangelist, ordained Southern Baptist minister, and civil rights advocate, whose broadcasts and world tours featuring live sermons became well known in the mid-to-late 20th century. Throughout his career, spanning over six decades, Graham rose to prominence as an evangelical Christian figure in the United States and abroad.\nAccording to a biographer, Graham was considered \"among the most influential Christian leaders\" of the 20th century. Beginning in the late 1940s and early 1950s, Graham became known for filling stadiums and other massive venues around the world where he preached live sermons; these were often broadcast via radio and television with some continuing to be seen into the 21st century. During his six decades on television, Graham hosted his annual \"crusades\", evangelistic live-campaigns, from 1947 until his retirement in 2005. He also hosted the radio show Hour of Decision from 1950 to 1954. He repudiated racial segregation, at a time of intense racial strife in the United States, insisting on racial integration for all of his revivals and crusades, as early as 1953. He also later invited Martin Luther King Jr. to preach jointly at a revival in New York City in 1957. In addition to his religious aims, he helped shape the worldview of a huge number of people who came from different backgrounds, leading them to find a relationship between the Bible and contemporary secular viewpoints. According to his website, Graham spoke to live audiences consisting of at least 210 million people, in more than 185 countries and territories, through various meetings, including BMS World Mission and Global Mission events.\nGraham was close to US presidents Dwight D. Eisenhower, Lyndon B. Johnson (one of his closest friends), and Richard Nixon. He was also lifelong friends with Robert Schuller, another televangelist and the founding pastor of the Crystal Cathedral, whom Graham talked into starting his own television ministry. Graham's evangelism was appreciated by mainline Protestant denominations, as he encouraged mainline Protestants, who were converted to his evangelical message, to remain within or return to their mainline churches. Despite early suspicions and apprehension on his part towards Catholicism\u2014common among contemporaneous evangelical Protestants\u2014Graham eventually developed amicable ties with many American Catholic Church figures, later encouraging unity between Catholics and Protestants.\nGraham operated a variety of media and publishing outlets; according to his staff, more than 3.2 million people have responded to the invitation at Billy Graham Crusades to \"accept Jesus Christ as their personal savior\". Graham's lifetime audience, including radio and television broadcasts, likely surpassed billions of people. As a result of his crusades, Graham possibly preached the gospel to more people, live and in-person, than anyone in the history of Christianity. Graham was on Gallup's list of most admired men and women a record 61 times. Grant Wacker wrote that, by the mid-1960s, he had become the \"Great Legitimator\", saying: \"By then his presence conferred status on presidents, acceptability on wars, shame on racial prejudice, desirability on decency, dishonor on indecency, and prestige on civic events.\"\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q213550")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q213550",
+  "isRealHuman": true,
+  "birthDate": "1918-11-07",
+  "deathDate": "2018-02-21",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, Britannica, and the official Billy Graham memorial/obituary pages. The age calculation is straightforward: from 1918-11-07 to 2018-02-21 is 99 years because he died before his 100th birthday.",
+  "shortDescriptionEn": "Billy Graham was an American evangelical preacher and one of the most influential Christian figures of the 20th century, known for his mass 'crusades,' radio and television ministry, bestselling books, and spiritual counsel to U.S. presidents. His preaching reached audiences across the world and made him a defining public voice of modern evangelicalism. He died at his home in Montreat, North Carolina, on February 21, 2018, at the age of 99, after a long life marked by later-years health decline.",
+  "shortDescriptionFr": "Billy Graham était un prédicateur évangélique américain et l’une des figures chrétiennes les plus influentes du XXe siècle, célèbre pour ses grandes campagnes de prédication, ses émissions de radio et de télévision, ses livres à succès et ses conseils spirituels à plusieurs présidents américains. Son message a touché des publics dans le monde entier et a façonné l’évangélisme moderne. Il est mort à son domicile de Montreat, en Caroline du Nord, le 21 février 2018, à l’âge de 99 ans, après une longue vie marquée par un déclin de santé dans ses dernières années.",
+  "shortDescriptionDe": "Billy Graham war ein amerikanischer evangelikaler Prediger und eine der einflussreichsten christlichen Persönlichkeiten des 20. Jahrhunderts. Bekannt wurde er durch seine großen Evangelisationsveranstaltungen, Radio- und Fernseharbeit, erfolgreiche Bücher und seine geistliche Beratung mehrerer US-Präsidenten. Seine Predigten erreichten Menschen weltweit und prägten das moderne Evangelikalismus-Verständnis. Er starb am 21. Februar 2018 in seinem Haus in Montreat, North Carolina, im Alter von 99 Jahren, nach einem langen Leben und gesundheitlichen Einschränkungen in seinen späten Jahren.",
+  "shortDescriptionEs": "Billy Graham fue un predicador evangélico estadounidense y una de las figuras cristianas más influyentes del siglo XX, conocido por sus grandes campañas de predicación, su ministerio en radio y televisión, sus libros superventas y su asesoría espiritual a presidentes de Estados Unidos. Su mensaje llegó a audiencias de todo el mundo y lo convirtió en una voz clave del evangelicalismo moderno. Murió en su casa de Montreat, Carolina del Norte, el 21 de febrero de 2018, a los 99 años, tras una vida larga y con problemas de salud en sus últimos años.",
+  "shortDescriptionRu": "Билли Грэм был американским евангелистским проповедником и одной из самых влиятельных христианских фигур XX века, известной массовыми проповедническими кампаниями, радио- и телеминистерством, популярными книгами и духовными консультациями для президентов США. Его проповеди звучали по всему миру и сделали его одним из символов современного евангеликализма. Он умер 21 февраля 2018 года в своем доме в Монтрите, Северная Каролина, в возрасте 99 лет, после долгой жизни и ухудшения здоровья в поздние годы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Billy_Graham",
+    "https://memorial.billygraham.org/official-obituary/",
+    "https://memorial.billygraham.org/biography/",
+    "https://www.britannica.com/biography/Billy-Graham",
+    "https://media.billygraham.org/billy-graham-biography/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q373895",  "Name": "Betty White",  "BirthDate": "1922-01-17T00:00:00Z",  "DeathDate": "2021-12-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Betty%20White%201988%20Emmy%20Awards%20%28cropped%202%29.jpg",  "SiteLinksCnt": 81,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"415045":{"pageid":415045,"ns":0,"title":"Betty White","extract":"Betty Marion Ludden (n\u00e9e White; January 17, 1922 \u2013 December 31, 2021) was an American actress and comedian. A pioneer of early television with a career spanning almost seven decades, she was noted for her vast number of television appearances, acting in sitcoms, sketch comedy, and game shows. \nWhite produced and starred in the series Life with Elizabeth (1953\u20131955), thus becoming the first woman to produce a sitcom. After moving from radio to television, she became a staple panelist of American game shows such as Password, Match Game, Tattletales, To Tell the Truth, The Hollywood Squares, and The $25,000 Pyramid. Dubbed \"the first lady of game shows\", she became the first woman to receive the Daytime Emmy Award for Outstanding Game Show Host for the show Just Men! in 1983. She also became more widely known for her guest roles and recurring appearances on shows such as The Carol Burnett Show, Mama's Family, The Bold and the Beautiful and Boston Legal.\nWhite's well known acting roles included Sue Ann Nivens on the CBS sitcom The Mary Tyler Moore Show (1973\u20131977), Rose Nylund on the NBC sitcom The Golden Girls (1985\u20131992), and Elka Ostrovsky on the TV Land sitcom Hot in Cleveland (2010\u20132015). She had a late career resurgence when she starred in the romantic comedy film The Proposal (2009) and hosted Saturday Night Live the following year, garnering her a Primetime Emmy Award for Outstanding Guest Actress in a Comedy Series. The 2018 documentary Betty White: First Lady of Television detailed her life and career.\nFor her lengthy work in radio, television, and film, White twice earned the Guinness World Record for the longest TV career by a female entertainer in both 2014 and 2018. She received various awards and nominations, including seven Emmy Awards, three Screen Actors Guild Awards, and a Grammy Award. She received a star on the Hollywood Walk of Fame and was inducted into the Television Hall of Fame in 1995."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q373895")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q373895",
+  "isRealHuman": true,
+  "birthDate": "1922-01-17",
+  "deathDate": "2021-12-31",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "Betty White's birth date, death date, and age at death are consistently reported by Wikipedia, Britannica, Wikidata, and AP News. The integer age is calculated from 1922-01-17 to 2021-12-31: she had already turned 99 and died 17 days before her 100th birthday.",
+  "shortDescriptionEn": "Betty White was an American actress, comedian, and television pioneer whose career stretched across nearly seven decades, from early live television to The Mary Tyler Moore Show, The Golden Girls, Hot in Cleveland, game shows, and late-career viral fame. Known for her sharp timing, warmth, and lifelong animal advocacy, she became one of the most beloved figures in American entertainment. She died at her home in Brentwood, Los Angeles, on December 31, 2021, at age 99; her death certificate cited a stroke suffered six days earlier.",
+  "shortDescriptionFr": "Betty White était une actrice, humoriste et pionnière de la télévision américaine, avec une carrière de près de sept décennies, des débuts de la télévision en direct à The Mary Tyler Moore Show, The Golden Girls, Hot in Cleveland, aux jeux télévisés et à une popularité tardive sur Internet. Admirée pour son sens comique, sa chaleur et son engagement durable pour la protection des animaux, elle est devenue l’une des figures les plus aimées du divertissement américain. Elle est morte chez elle à Brentwood, Los Angeles, le 31 décembre 2021, à l’âge de 99 ans; son certificat de décès mentionnait un AVC survenu six jours auparavant.",
+  "shortDescriptionDe": "Betty White war eine US-amerikanische Schauspielerin, Komikerin und Pionierin des Fernsehens, deren Laufbahn fast sieben Jahrzehnte umspannte — von den Anfängen des Live-Fernsehens bis zu The Mary Tyler Moore Show, The Golden Girls, Hot in Cleveland, Gameshows und später Internet-Popularität. Mit trockenem Humor, großer Herzlichkeit und lebenslangem Einsatz für den Tierschutz wurde sie zu einer der beliebtesten Persönlichkeiten der amerikanischen Unterhaltung. Sie starb am 31. Dezember 2021 im Alter von 99 Jahren in ihrem Haus in Brentwood, Los Angeles; laut Sterbeurkunde war die Ursache ein sechs Tage zuvor erlittener Schlaganfall.",
+  "shortDescriptionEs": "Betty White fue una actriz, comediante y pionera de la televisión estadounidense cuya carrera abarcó casi siete décadas, desde la televisión en directo de sus primeros años hasta The Mary Tyler Moore Show, The Golden Girls, Hot in Cleveland, concursos televisivos y una fama tardía en internet. Admirada por su timing cómico, su calidez y su defensa de los animales, llegó a ser una de las figuras más queridas del entretenimiento estadounidense. Murió en su casa de Brentwood, Los Ángeles, el 31 de diciembre de 2021, a los 99 años; su certificado de defunción atribuyó la muerte a un derrame cerebral sufrido seis días antes.",
+  "shortDescriptionRu": "Бетти Уайт была американской актрисой, комедианткой и одной из пионерок телевидения; её карьера длилась почти семь десятилетий — от раннего прямого эфира до The Mary Tyler Moore Show, The Golden Girls, Hot in Cleveland, телеигр и поздней интернет-славы. Её любили за точное чувство юмора, доброжелательность и многолетнюю защиту животных, и она стала одной из самых узнаваемых фигур американского телевидения. Она умерла 31 декабря 2021 года в своём доме в Брентвуде, Лос-Анджелес, в возрасте 99 лет; согласно свидетельству о смерти, причиной стал инсульт, перенесённый за шесть дней до смерти.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Betty_White_1988_Emmy_Awards_(cropped_2).jpg",
+    "https://commons.wikimedia.org/wiki/File:Betty_White_1988_Emmy_Awards_(cropped).jpg",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Betty%20White%201988%20Emmy%20Awards%20%28cropped%202%29.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Betty_White",
+    "https://apnews.com/article/betty-white-entertainment-health-mary-tyler-moore-stroke-539ed0de10ae82a9e03961949c7e7e69",
+    "https://www.britannica.com/biography/Betty-White",
+    "https://www.wikidata.org/wiki/Q373895",
+    "https://commons.wikimedia.org/wiki/File:Betty_White_1988_Emmy_Awards_(cropped_2).jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q186630",  "Name": "Ernesto Sabato",  "BirthDate": "1911-06-24T00:00:00Z",  "DeathDate": "2011-04-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/ErnestoSabato001.JPG",  "SiteLinksCnt": 71,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"1699656":{"pageid":1699656,"ns":0,"title":"Ernesto Sabato","extract":"Ernesto Sabato (Spanish: [\u02c8sa\u03b2a\u00f0o]; June 24, 1911 \u2013 April 30, 2011) was an Argentine novelist, essayist, painter, and physicist. According to the BBC he \"won some of the most prestigious prizes in Hispanic literature\" and \"became very influential in the literary world throughout Latin America\". Upon his death El Pa\u00eds dubbed him the \"last classic writer in Argentine literature\".\nSabato was distinguished by his bald pate and brush moustache and wore tinted spectacles and open-necked shirts. He was born in Rojas, a small town in Buenos Aires Province. Sabato began his studies at the Colegio Nacional de La Plata. He then studied physics at the Universidad Nacional de La Plata, where he earned a PhD. He then attended the Sorbonne in Paris and worked at the Curie Institute. After World War II, he lost interest in science and started writing.\nSabato's oeuvre includes three novels: El T\u00fanel (1948), Sobre h\u00e9roes y tumbas (1961) and Abadd\u00f3n el exterminador (1974). The first of these received critical acclaim upon its publication from, among others, fellow writers Albert Camus and Thomas Mann. The second is regarded as his masterpiece, though he nearly burnt it like many of his other works. Sabato's essays cover topics as diverse as metaphysics, politics and tango. His writings led him to receive many international prizes, including the Miguel de Cervantes Prize (Spain), the Legion of Honour (France), the Jerusalem Prize (Israel), and the Prix du Meilleur Livre \u00c9tranger (France).\nAt the request of President Ra\u00fal Alfons\u00edn, he presided over the CONADEP Commission that investigated the fate of those who suffered forced disappearance during the Dirty War of the 1970s. The result of these findings was published in 1984, bearing the title Nunca M\u00e1s (Never Again)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q186630")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q186630",
+  "isRealHuman": true,
+  "birthDate": "1911-06-24",
+  "deathDate": "2011-04-30",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia and Britannica, and obituaries explicitly state that Ernesto Sabato died aged 99. The age calculation is exact: he died on 2011-04-30, before his 100th birthday on 2011-06-24.",
+  "shortDescriptionEn": "Ernesto Sabato was an Argentine novelist, essayist, painter, and former physicist, best known for The Tunnel, On Heroes and Tombs, and The Angel of Darkness. A major moral and literary voice in Argentina, he also led the CONADEP commission investigating crimes of the military dictatorship. He died at his home in Santos Lugares on 30 April 2011, aged 99, shortly before his 100th birthday, after bronchitis-related complications.",
+  "shortDescriptionFr": "Ernesto Sabato était un romancier, essayiste, peintre et ancien physicien argentin, surtout connu pour Le Tunnel, Héros et tombes et L’Ange des ténèbres. Grande voix morale et littéraire de l’Argentine, il présida aussi la CONADEP, chargée d’enquêter sur les crimes de la dictature militaire. Il est mort chez lui à Santos Lugares le 30 avril 2011, à 99 ans, peu avant son centième anniversaire, après des complications liées à une bronchite.",
+  "shortDescriptionDe": "Ernesto Sabato war ein argentinischer Romancier, Essayist, Maler und ehemaliger Physiker, bekannt vor allem für Der Tunnel, Über Helden und Gräber und Abaddón, der Vernichter. In Argentinien galt er als bedeutende literarische und moralische Stimme; zudem leitete er die CONADEP-Kommission zur Untersuchung der Verbrechen der Militärdiktatur. Er starb am 30. April 2011 in seinem Haus in Santos Lugares im Alter von 99 Jahren, kurz vor seinem 100. Geburtstag, nach bronchitisbedingten Komplikationen.",
+  "shortDescriptionEs": "Ernesto Sabato fue un novelista, ensayista, pintor y exfísico argentino, célebre por El túnel, Sobre héroes y tumbas y Abaddón el exterminador. Figura central de la literatura argentina y voz moral del país, presidió la CONADEP, que investigó los crímenes de la dictadura militar. Murió en su casa de Santos Lugares el 30 de abril de 2011, a los 99 años, poco antes de cumplir 100, tras complicaciones relacionadas con una bronquitis.",
+  "shortDescriptionRu": "Эрнесто Сабато был аргентинским романистом, эссеистом, художником и бывшим физиком, наиболее известным по книгам «Туннель», «О героях и могилах» и «Аваддон-губитель». Он стал одной из важнейших литературных и нравственных фигур Аргентины, а также возглавлял комиссию CONADEP, расследовавшую преступления военной диктатуры. Он умер дома в Сантос-Лугаресе 30 апреля 2011 года в возрасте 99 лет, незадолго до 100-летия, после осложнений, связанных с бронхитом.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ernesto_Sabato",
+    "https://www.britannica.com/biography/Ernesto-Sabato",
+    "https://www.reuters.com/article/lifestyle/argentine-writer-ernesto-sabato-dies-at-age-99-idUSTRE73T1AO/",
+    "https://www.theguardian.com/world/2011/may/01/ernesto-sabato-obituary",
+    "https://www.washingtonpost.com/local/obituaries/we-need-header-that-reads-ernesto-sabato-99-ernesto-sabato-writer-who-led-investigation-of-argentinas-dirty-war-dies-at-99/2010/09/21/AFubphMF_story.html",
+    "https://www.latimes.com/archives/blogs/afterword/story/2011-04-30/writer-ernesto-sabato-who-led-probe-of-crimes-committed-by-argentinas-dictatorship-dies-at-99",
+    "https://www.abc.net.au/news/2011-05-01/writer-ernesto-sabato-dies-aged-99/2699706",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/ErnestoSabato001.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q105962",  "Name": "Maurice Allais",  "BirthDate": "1911-05-31T00:00:00Z",  "DeathDate": "2010-10-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/ALLAIS%20PN%20Maurice-24x30-2001b.jpg",  "SiteLinksCnt": 68,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"414266":{"pageid":414266,"ns":0,"title":"Maurice Allais","extract":"Maurice F\u00e9lix Charles Allais (French pronunciation: [m\u0254\u0281is feliks \u0283a\u0281l al\u025b]; 31 May 1911 \u2013 9 October 2010) was a French physicist and economist, the 1988 winner of the Nobel Memorial Prize in Economic Sciences \"for his pioneering contributions to the theory of markets and efficient utilization of resources\", along with John Hicks (Value and Capital, 1939) and Paul Samuelson (The Foundations of Economic Analysis, 1947), to neoclassical synthesis. They formalize the self-regulation of markets, which Keynes refuted but reiterated some of Allais's ideas.\nBorn in Paris, France, Allais attended the Lyc\u00e9e Lakanal, graduated from the \u00c9cole Polytechnique in Paris and studied at the \u00c9cole nationale sup\u00e9rieure des mines de Paris. His academic and other posts have included being Professor of Economics at the \u00c9cole Nationale Sup\u00e9rieure des Mines de Paris (since 1944) and Director of its Economic Analysis Centre (since 1946). In 1949, he received the title of doctor-engineer from the University of Paris, Faculty of Science. He also held teaching positions at various institutions, including at the university of Paris X\u2013Nanterre. His first works oriented him towards the sciences of the concrete and the experiments of fundamental physics, on which he will also publish numerous works, notably on pendular oscillations and the laws of gravitation. It's after a trip in 1933 to the United States during the Great Depression, that he decides to make the economy. Allais died at his home in Saint-Cloud, near Paris, at the age of 99.\nAllais considered L\u00e9on Walras, Wilfredo Pareto, and Irving Fisher to be his primary influences. He was reluctant to write in or translate his work into English, and many of his major contributions became known to the dominant community only when they were independently rediscovered or popularized by English-speaking economists. At the same time, he claimed Keynes's liberalism and declared himself in favor of an important public sector. Allais attended the inaugural meeting of the Mont Pelerin Society, but he was alone among the attendees to refuse to sign the statement of aims because of a disagreement over the extent of property rights. He exerted an important influence, at the end of the war, on French economists such as G\u00e9rard Debreu, Jacques Lesourne, Edmond Malinvaud and Marcel Boiteux.\nPaul Samuelson said \"Had Allais earliest writings been in English, a generation of economic theory would have taken a different course\", and felt the Nobel Prize should have been awarded to him much earlier. Assar Lindbeck, the chairman of the selection committee, considered Allais as \"a giant within the world of economic analysis\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q105962")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q105962",
+  "isRealHuman": true,
+  "birthDate": "1911-05-31",
+  "deathDate": "2010-10-09",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are confirmed by multiple reliable sources, including Wikipedia, NobelPrize.org, Britannica, and Wikidata. The age calculation is straightforward: Maurice Allais was born on 1911-05-31 and died on 2010-10-09, after his birthday that year, so he was 99.",
+  "shortDescriptionEn": "Maurice Félix Charles Allais was a French economist and physicist, best known for winning the 1988 Nobel Memorial Prize in Economic Sciences for his pioneering work on markets and efficient use of resources. He also gave his name to the Allais paradox in decision theory. Allais died on 9 October 2010 in the Paris area, widely reported as Saint-Cloud near Paris, after a long life of 99 years.",
+  "shortDescriptionFr": "Maurice Félix Charles Allais était un économiste et physicien français, surtout connu pour avoir reçu en 1988 le prix Nobel d’économie pour ses travaux pionniers sur les marchés et l’utilisation efficace des ressources. Son nom reste aussi associé au paradoxe d’Allais en théorie de la décision. Il est mort le 9 octobre 2010 dans la région parisienne, souvent indiquée comme Saint-Cloud près de Paris, à l’âge de 99 ans.",
+  "shortDescriptionDe": "Maurice Félix Charles Allais war ein französischer Ökonom und Physiker, bekannt als Träger des Nobel-Gedächtnispreises für Wirtschaftswissenschaften 1988 für seine wegweisenden Beiträge zur Theorie der Märkte und zur effizienten Nutzung von Ressourcen. Sein Name ist außerdem mit dem Allais-Paradoxon der Entscheidungstheorie verbunden. Er starb am 9. Oktober 2010 im Raum Paris, häufig als Saint-Cloud nahe Paris angegeben, im Alter von 99 Jahren.",
+  "shortDescriptionEs": "Maurice Félix Charles Allais fue un economista y físico francés, conocido por recibir en 1988 el Premio Nobel de Economía por sus contribuciones pioneras a la teoría de los mercados y al uso eficiente de los recursos. Su nombre también está ligado a la paradoja de Allais en la teoría de la decisión. Murió el 9 de octubre de 2010 en la zona de París, generalmente indicada como Saint-Cloud, cerca de París, a los 99 años.",
+  "shortDescriptionRu": "Морис Феликс Шарль Алле был французским экономистом и физиком, наиболее известным как лауреат Нобелевской премии по экономике 1988 года за новаторский вклад в теорию рынков и эффективного использования ресурсов. Его имя также связано с парадоксом Алле в теории принятия решений. Он умер 9 октября 2010 года в районе Парижа, часто указывается Сен-Клу близ Парижа, в возрасте 99 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Maurice_Allais",
+    "https://www.nobelprize.org/prizes/economic-sciences/1988/allais/facts/",
+    "https://www.nobelprize.org/prizes/economic-sciences/1988/allais/photo-gallery/",
+    "https://www.britannica.com/money/Maurice-Allais",
+    "https://www.wikidata.org/wiki/Q105962",
+    "https://www.latimes.com/local/obituaries/la-me-maurice-allais-20101013-story.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q115490",  "Name": "Tadeusz Reichstein",  "BirthDate": "1897-07-20T00:00:00Z",  "DeathDate": "1996-08-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Thadeus%20Reichstein%20ETH-Bib%20Portr%2010137.jpg",  "SiteLinksCnt": 68,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"387419":{"pageid":387419,"ns":0,"title":"Tadeusz Reichstein","extract":"Tadeusz Reichstein (20 July 1897 \u2013 1 August 1996), also known as Tadeus Reichstein, was a Polish-Swiss chemist and a Nobel Prize in Physiology or Medicine laureate (1950), which was awarded for his work on the isolation of cortisone."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q115490")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q115490",
+  "isRealHuman": true,
+  "birthDate": "1897-07-20",
+  "deathDate": "1996-08-01",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, NobelPrize.org, and Britannica. The age calculation is straightforward: Tadeusz Reichstein was born on 1897-07-20 and died on 1996-08-01, after his 99th birthday. Confidence is not 100 only because public biographical sources usually do not document the exact time of day of death, which is irrelevant for the integer age here.",
+  "shortDescriptionEn": "Tadeusz Reichstein was a Polish-born Swiss chemist whose work helped transform modern medicine, especially through research on adrenal cortex hormones and cortisone, for which he shared the 1950 Nobel Prize in Physiology or Medicine. He also played an important role in the synthesis of vitamin C. Reichstein died in Basel, Switzerland, on 1 August 1996 at the age of 99; public sources report the place and date of death but not a detailed medical cause.",
+  "shortDescriptionFr": "Tadeusz Reichstein était un chimiste suisse d’origine polonaise dont les travaux ont marqué la médecine moderne, notamment par ses recherches sur les hormones du cortex surrénalien et la cortisone, qui lui valurent le prix Nobel de physiologie ou médecine en 1950. Il joua aussi un rôle important dans la synthèse de la vitamine C. Reichstein est mort à Bâle, en Suisse, le 1er août 1996, à l’âge de 99 ans ; les sources publiques indiquent la date et le lieu de son décès, mais pas de cause médicale détaillée.",
+  "shortDescriptionDe": "Tadeusz Reichstein war ein in Polen geborener Schweizer Chemiker, dessen Forschung die moderne Medizin stark beeinflusste, besonders durch seine Arbeiten zu Hormonen der Nebennierenrinde und Cortison, für die er 1950 den Nobelpreis für Physiologie oder Medizin mit erhielt. Außerdem war er an wichtigen Fortschritten bei der Synthese von Vitamin C beteiligt. Reichstein starb am 1. August 1996 in Basel in der Schweiz im Alter von 99 Jahren; öffentliche Quellen nennen Ort und Datum seines Todes, aber keine genaue medizinische Todesursache.",
+  "shortDescriptionEs": "Tadeusz Reichstein fue un químico suizo nacido en Polonia cuya obra influyó profundamente en la medicina moderna, sobre todo por sus investigaciones sobre las hormonas de la corteza suprarrenal y la cortisona, por las que compartió el Premio Nobel de Fisiología o Medicina de 1950. También tuvo un papel destacado en la síntesis de la vitamina C. Reichstein murió en Basilea, Suiza, el 1 de agosto de 1996, a los 99 años; las fuentes públicas registran el lugar y la fecha de su muerte, pero no una causa médica detallada.",
+  "shortDescriptionRu": "Тадеуш Рейхштейн был швейцарским химиком польского происхождения, чьи исследования заметно повлияли на современную медицину, особенно работы по гормонам коры надпочечников и кортизону, за которые он разделил Нобелевскую премию по физиологии или медицине 1950 года. Он также сыграл важную роль в синтезе витамина C. Рейхштейн умер в Базеле, Швейцария, 1 августа 1996 года в возрасте 99 лет; открытые источники указывают дату и место смерти, но не сообщают подробную медицинскую причину.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tadeusz_Reichstein",
+    "https://www.nobelprize.org/prizes/medicine/1950/reichstein/facts/",
+    "https://www.nobelprize.org/prizes/medicine/1950/reichstein/biographical/",
+    "https://www.britannica.com/biography/Tadeus-Reichstein",
+    "https://commons.wikimedia.org/wiki/File:Thadeus_Reichstein_ETH-Bib_Portr_10137.jpg"
+  ],
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Thadeus%20Reichstein%20ETH-Bib%20Portr%2010137.jpg",
+    "https://www.nobelprize.org/prizes/medicine/1950/reichstein/facts/",
+    "https://commons.wikimedia.org/wiki/File:Thadeus_Reichstein_ETH-Bib_Portr_10137.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q218661",  "Name": "Morarji Desai",  "BirthDate": "1896-02-29T00:00:00Z",  "DeathDate": "1995-04-10T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Morarji%20Desai%201978b.jpg",  "SiteLinksCnt": 67,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"334672":{"pageid":334672,"ns":0,"title":"Morarji Desai","extract":"Morarji Ranchhodji Desai (29 February 1896 \u2013 10 April 1995) was an Indian politician and independence activist who served as the prime minister of India between 1977 and 1979 leading the government formed by the Janata Party. During his long career in politics, he held many important posts in government such as the chief minister of Bombay State, the home minister, the finance minister, and the deputy prime minister.\nFollowing the death of Prime Minister Lal Bahadur Shastri, Desai was a strong contender for the position of Prime Minister, only to be defeated by Indira Gandhi in 1966. He was appointed as Minister of Finance and Deputy Prime Minister in Indira Gandhi's cabinet, until 1969. When Indian National Congress split in 1969 he became a part of the INC (O). After the controversial emergency was lifted in 1977, the political parties of the opposition fought together against the INC (I), under the umbrella of the Janata Party, and won the 1977 election. Desai was elected prime minister, and became the first non-Congress prime minister of India. Desai was the second and the last prime minister to have been born in the nineteenth century. \nDesai was known for his peace activism and created efforts to initiate peace between India and rival Pakistan. After India's first nuclear test in 1974, Desai helped restore friendly relations with China and Pakistan, and vowed to avoid armed conflict such as the Indo-Pakistani war of 1971. He was honoured with the highest civilian award of Pakistan, the Nishan-e-Pakistan on 19 May 1990.\nHe is the oldest person to hold the office of prime minister in the history of Indian politics, at the age of 81. He was also the first former deputy prime minister to occupy the primary post. He subsequently retired from all political posts, but continued to campaign for the Janata Party in 1980. He was conferred with India's highest civilian honour, the Bharat Ratna. He died at the age of 99 in 1995.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q218661")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q218661",
+  "isRealHuman": true,
+  "birthDate": "1896-02-29",
+  "deathDate": "1995-04-10",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are strongly confirmed by Wikipedia, Britannica, Wikidata, and contemporary obituary sources. Morarji Desai was born on 1896-02-29 and died on 1995-04-10; because his death occurred after his leap-day birthday in 1995, the calculated age at death is 99. The only minor uncertainty is how leap-day birthdays are legally or culturally observed in non-leap years, but all major biographical sources also report age 99.",
+  "shortDescriptionEn": "Morarji Ranchhodji Desai was an Indian independence activist and senior statesman who became Prime Minister of India from 1977 to 1979, leading the Janata Party government after the Emergency era. Known for his austerity, discipline, and Gandhian outlook, he also held major posts including Chief Minister of Bombay State and Union Finance Minister. In his final years he lived in Mumbai and was honored as one of the last major figures of India’s freedom struggle. He died in Bombay, now Mumbai, on 10 April 1995 at age 99, after hospitalization for low blood pressure and a chest infection and reported surgery for a blood clot in the brain.",
+  "shortDescriptionFr": "Morarji Ranchhodji Desai fut un militant de l’indépendance indienne et un homme d’État majeur, devenu Premier ministre de l’Inde de 1977 à 1979 à la tête du gouvernement du Janata Party après la période de l’état d’urgence. Réputé pour son austérité, sa discipline et ses convictions gandhiennes, il occupa aussi des fonctions importantes, notamment celles de chef du gouvernement de l’État de Bombay et de ministre des Finances. Dans ses dernières années, il vécut à Mumbai et fut honoré comme l’un des grands survivants de la génération de la lutte pour l’indépendance. Il mourut à Bombay, aujourd’hui Mumbai, le 10 avril 1995 à l’âge de 99 ans, après une hospitalisation pour une tension artérielle basse et une infection pulmonaire, avec des sources mentionnant une opération liée à un caillot sanguin au cerveau.",
+  "shortDescriptionDe": "Morarji Ranchhodji Desai war ein indischer Unabhängigkeitsaktivist und bedeutender Staatsmann, der von 1977 bis 1979 als Premierminister Indiens die Regierung der Janata Party nach der Emergency-Ära führte. Er galt als asketisch, diszipliniert und stark von gandhianischen Überzeugungen geprägt und bekleidete zuvor wichtige Ämter, darunter das des Chief Ministers des Bundesstaates Bombay und des indischen Finanzministers. In seinen letzten Jahren lebte er in Mumbai und wurde als einer der letzten großen Vertreter der Freiheitsbewegung geehrt. Er starb am 10. April 1995 in Bombay, dem heutigen Mumbai, im Alter von 99 Jahren, nachdem er wegen niedrigen Blutdrucks und einer Brustinfektion behandelt worden war; Berichte erwähnen außerdem eine Operation wegen eines Blutgerinnsels im Gehirn.",
+  "shortDescriptionEs": "Morarji Ranchhodji Desai fue un activista de la independencia india y un destacado estadista que ocupó el cargo de primer ministro de la India entre 1977 y 1979, al frente del gobierno del Janata Party tras la etapa de la Emergencia. Conocido por su austeridad, disciplina y visión gandhiana, también desempeñó cargos importantes como jefe de gobierno del Estado de Bombay y ministro de Finanzas de la Unión. En sus últimos años vivió en Mumbai y fue reconocido como una de las grandes figuras supervivientes de la lucha por la independencia. Murió en Bombay, hoy Mumbai, el 10 de abril de 1995 a los 99 años, después de ser hospitalizado por baja presión arterial y una infección torácica, con informes que mencionan una cirugía por un coágulo de sangre en el cerebro.",
+  "shortDescriptionRu": "Морарджи Ранчходжи Десаи был индийским борцом за независимость и крупным государственным деятелем, занимавшим пост премьер-министра Индии с 1977 по 1979 год во главе правительства партии Джаната после периода чрезвычайного положения. Он был известен аскетизмом, строгой дисциплиной и приверженностью гандианским принципам, а ранее занимал важные должности, включая пост главного министра штата Бомбей и министра финансов Индии. В последние годы он жил в Мумбаи и пользовался уважением как один из последних крупных представителей поколения борцов за независимость. Он умер в Бомбее, ныне Мумбаи, 10 апреля 1995 года в возрасте 99 лет после госпитализации из-за низкого давления и грудной инфекции; в сообщениях также упоминалась операция по поводу тромба в мозге.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Morarji_Desai",
+    "https://www.britannica.com/biography/Morarji-Desai",
+    "https://www.pmindia.gov.in/en/former_pm/shri-morarji-desai-2/",
+    "https://www.wikidata.org/wiki/Q218661",
+    "https://www.washingtonpost.com/archive/local/1995/04/11/morarji-desai-dies-at-age-99/ef130273-ac56-41b0-acf6-34409ef2ce81/",
+    "https://www.upi.com/Archives/1995/04/10/Former-Indian-prime-minister-dies/4357797486400/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q310309",  "Name": "Bernard Le Bovier de Fontenelle",  "BirthDate": "1657-02-11T00:00:00Z",  "DeathDate": "1757-01-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Fontenelle.jpg",  "SiteLinksCnt": 64,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"165158":{"pageid":165158,"ns":0,"title":"Bernard Le Bovier de Fontenelle","extract":"Bernard Le Bovier de Fontenelle (; French: [f\u0254\u0303t\u0259n\u025bl]; 11 February 1657 \n\u2013 9 January 1757), also called Bernard Le Bouyer de Fontenelle, was a French writer and a member of three of the academies of the Institut de France, noted especially for his accessible treatment of scientific topics during the unfolding of the Age of Enlightenment."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q310309")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q310309",
+  "isRealHuman": true,
+  "birthDate": "1657-02-11",
+  "deathDate": "1757-01-09",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The identity and dates are consistent across Wikidata, Wikipedia, Encyclopaedia Britannica, and the Biographical Encyclopedia of Astronomers. The age is calculated from 1657-02-11 to 1757-01-09: he died 33 days before his 100th birthday, so the completed age is 99.",
+  "shortDescriptionEn": "Bernard Le Bovier de Fontenelle was a French Enlightenment writer, philosopher, and one of the great early popularizers of science, best known for making astronomy and new ideas about the universe accessible to educated readers. A member of major French academies and long-time secretary of the Académie des Sciences, he helped bridge literary culture and scientific thought. He died in Paris on 9 January 1757 at the age of 99, just over a month before he would have turned 100; no dramatic death story is usually recorded, and his death is mainly remembered for closing an exceptionally long intellectual life.",
+  "shortDescriptionFr": "Bernard Le Bovier de Fontenelle fut un écrivain, philosophe et vulgarisateur scientifique français des Lumières, célèbre pour avoir rendu l’astronomie et les débats sur l’univers compréhensibles à un large public cultivé. Membre de grandes académies françaises et secrétaire durable de l’Académie des sciences, il relia avec élégance culture littéraire et pensée scientifique. Il mourut à Paris le 9 janvier 1757 à l’âge de 99 ans, un peu plus d’un mois avant son centième anniversaire; sa mort n’est pas associée à un épisode dramatique particulier, mais marque la fin d’une vie intellectuelle exceptionnellement longue.",
+  "shortDescriptionDe": "Bernard Le Bovier de Fontenelle war ein französischer Schriftsteller, Philosoph und früher Popularisator der Wissenschaften der Aufklärung, besonders bekannt dafür, astronomische und kosmologische Ideen einem gebildeten Publikum verständlich zu machen. Als Mitglied bedeutender französischer Akademien und langjähriger Sekretär der Académie des Sciences verband er literarische Eleganz mit wissenschaftlichem Denken. Er starb am 9. Januar 1757 in Paris im Alter von 99 Jahren, nur wenige Wochen vor seinem 100. Geburtstag; über außergewöhnliche Todesumstände wird gewöhnlich nichts berichtet, weshalb sein Tod vor allem als Ende eines erstaunlich langen Gelehrtenlebens gilt.",
+  "shortDescriptionEs": "Bernard Le Bovier de Fontenelle fue un escritor, filósofo y divulgador científico francés de la Ilustración, célebre por presentar la astronomía y las nuevas ideas sobre el universo de forma clara y atractiva para el público culto. Miembro de importantes academias francesas y secretario durante décadas de la Académie des Sciences, unió la cultura literaria con el pensamiento científico. Murió en París el 9 de enero de 1757 a los 99 años, poco más de un mes antes de cumplir 100; no se suele mencionar una causa o escena dramática de muerte, sino el cierre de una vida intelectual extraordinariamente larga.",
+  "shortDescriptionRu": "Бернар Ле Бовье де Фонтенель был французским писателем, философом и одним из ранних популяризаторов науки эпохи Просвещения, особенно известным тем, что делал астрономию и новые представления о Вселенной доступными образованной публике. Он состоял в ведущих французских академиях и долгое время был секретарём Академии наук, соединяя литературное мастерство с научным мышлением. Он умер в Париже 9 января 1757 года в возрасте 99 лет, чуть больше чем за месяц до своего столетия; каких-либо драматических обстоятельств смерти обычно не приводят, и она воспринимается прежде всего как завершение исключительно долгой интеллектуальной жизни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bernard_Le_Bovier_de_Fontenelle",
+    "https://www.britannica.com/biography/Bernard-Le-Bovier-sieur-de-Fontenelle",
+    "https://www.wikidata.org/wiki/Q310309",
+    "https://commons.wikimedia.org/wiki/Bernard_Le_Bovier_de_Fontenelle",
+    "https://mathshistory.st-andrews.ac.uk/BEA/fontenelle_bea.pdf",
+    "https://www.npg.org.uk/collections/search/portrait/mw74351/Bernard-le-Bovier-de-Fontenelle"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q153210",  "Name": "Jack Steinberger",  "BirthDate": "1921-05-25T00:00:00Z",  "DeathDate": "2020-12-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jack-Steinberger-2008.JPG",  "SiteLinksCnt": 63,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"789046":{"pageid":789046,"ns":0,"title":"Jack Steinberger","extract":"Jack Steinberger (born Hans Jakob Steinberger; May 25, 1921 \u2013 December 12, 2020) was a German-born American physicist noted for his work with neutrinos, the subatomic particles considered to be elementary constituents of matter. He was a recipient of the 1988 Nobel Prize in Physics, along with Leon M. Lederman and Melvin Schwartz, for the discovery of the muon neutrino. Through his career as an experimental particle physicist, he held positions at the University of California, Berkeley, Columbia University (1950\u201368), and the CERN (1968\u201386). He was also a recipient of the United States National Medal of Science in 1988, and the Matteucci Medal from the Italian Academy of Sciences in 1990."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q153210")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q153210",
+  "isRealHuman": true,
+  "birthDate": "1921-05-25",
+  "deathDate": "2020-12-12",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable sources, including Wikipedia, NobelPrize.org, CERN, the University of Chicago, and The Guardian, agree that Jack Steinberger was born on 1921-05-25 and died on 2020-12-12. Since he died after his birthday in 2020, the calculated age at death is exactly 99.",
+  "shortDescriptionEn": "Jack Steinberger was a German-born American experimental physicist and 1988 Nobel Prize laureate in Physics, honored with Leon M. Lederman and Melvin Schwartz for work that demonstrated the muon neutrino. A refugee from Nazi Germany, he built a long career at Chicago, Columbia, Brookhaven, and CERN. He died in Geneva, Switzerland, on 12 December 2020 at the age of 99; public obituaries emphasize his advanced age and scientific legacy rather than a specific medical cause.",
+  "shortDescriptionFr": "Jack Steinberger était un physicien expérimental américano-allemand, lauréat du prix Nobel de physique en 1988 avec Leon M. Lederman et Melvin Schwartz pour les travaux ayant établi l’existence du neutrino muonique. Réfugié juif ayant fui l’Allemagne nazie, il mena une carrière majeure à Chicago, Columbia, Brookhaven et au CERN. Il est mort à Genève, en Suisse, le 12 décembre 2020, à l’âge de 99 ans; les notices nécrologiques publiques soulignent surtout son grand âge et son héritage scientifique, sans préciser de cause médicale.",
+  "shortDescriptionDe": "Jack Steinberger war ein deutsch-amerikanischer Experimentalphysiker und Nobelpreisträger für Physik von 1988, ausgezeichnet gemeinsam mit Leon M. Lederman und Melvin Schwartz für Arbeiten zum Nachweis des Myon-Neutrinos. Als jüdischer Flüchtling aus NS-Deutschland machte er später Karriere in Chicago, Columbia, Brookhaven und am CERN. Er starb am 12. Dezember 2020 in Genf in der Schweiz im Alter von 99 Jahren; öffentliche Nachrufe betonen vor allem sein hohes Alter und sein wissenschaftliches Vermächtnis, ohne eine konkrete medizinische Todesursache zu nennen.",
+  "shortDescriptionEs": "Jack Steinberger fue un físico experimental germano-estadounidense y premio Nobel de Física de 1988, galardonado junto con Leon M. Lederman y Melvin Schwartz por los trabajos que demostraron el neutrino muónico. Refugiado judío que escapó de la Alemania nazi, desarrolló una carrera influyente en Chicago, Columbia, Brookhaven y el CERN. Murió en Ginebra, Suiza, el 12 de diciembre de 2020, a los 99 años; las necrológicas públicas destacan principalmente su avanzada edad y su legado científico, sin indicar una causa médica específica.",
+  "shortDescriptionRu": "Джек Стейнбергер был немецко-американским физиком-экспериментатором и лауреатом Нобелевской премии по физике 1988 года, которую он разделил с Леоном Ледерманом и Мелвином Шварцем за работы, доказавшие существование мюонного нейтрино. Еврейский беженец из нацистской Германии, он сделал выдающуюся карьеру в Чикаго, Колумбийском университете, Брукхейвене и CERN. Он умер в Женеве, Швейцария, 12 декабря 2020 года в возрасте 99 лет; публичные некрологи подчеркивают его преклонный возраст и научное наследие, не называя конкретную медицинскую причину смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jack_Steinberger",
+    "https://www.nobelprize.org/prizes/physics/1988/steinberger/facts/",
+    "https://home.cern/jack-steinberger-1921-2020/",
+    "https://news.uchicago.edu/story/jack-steinberger-nobel-winning-physicist-and-uchicago-alum-1921-2020",
+    "https://www.theguardian.com/science/2021/jan/11/jack-steinberger-obituary"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q157268",  "Name": "Robert Solow",  "BirthDate": "1924-08-23T00:00:00Z",  "DeathDate": "2023-12-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Solow%20by%20Olaf%20Storbeck.jpg",  "SiteLinksCnt": 63,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"216359":{"pageid":216359,"ns":0,"title":"Robert Solow","extract":"Robert Merton Solow, GCIH (; August 23, 1924 \u2013 December 21, 2023) was an American economist known for his studies of economic growth and the development of the Solow\u2013Swan model, for which he won the 1987 Nobel Memorial Prize in Economic Sciences.\nHe was Institute Professor Emeritus of Economics at the Massachusetts Institute of Technology, where he was a professor from 1949 on. He was awarded the John Bates Clark Medal in 1961, the Nobel Memorial Prize in Economic Sciences in 1987, and the Presidential Medal of Freedom in 2014. Four of his PhD students, George Akerlof, Joseph Stiglitz, Peter Diamond, and William Nordhaus, later received Nobel Memorial Prizes in Economic Sciences in their own right."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q157268")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q157268",
+  "isRealHuman": true,
+  "birthDate": "1924-08-23",
+  "deathDate": "2023-12-21",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are exact and corroborated by NobelPrize.org, MIT News, Britannica, and Wikipedia. The age calculation is straightforward: Robert Solow was born on 1924-08-23 and died on 2023-12-21, after his 99th birthday and before his 100th.",
+  "shortDescriptionEn": "Robert Merton Solow was an American economist whose work reshaped modern thinking about economic growth, especially through the Solow–Swan model and his emphasis on technological progress as a driver of prosperity. A long-time professor at MIT, he received the 1987 Nobel Memorial Prize in Economic Sciences, along with honors such as the National Medal of Science and the Presidential Medal of Freedom. He died at his home in Lexington, Massachusetts, on December 21, 2023, at the age of 99, leaving a legacy that still anchors how economists study productivity, innovation, and long-term growth.",
+  "shortDescriptionFr": "Robert Merton Solow était un économiste américain dont les travaux ont profondément marqué la théorie moderne de la croissance, notamment avec le modèle de Solow–Swan et l’idée que le progrès technologique est un moteur essentiel de la prospérité. Professeur de longue date au MIT, il a reçu le prix Nobel d’économie en 1987, ainsi que la National Medal of Science et la Presidential Medal of Freedom. Il est mort à son domicile de Lexington, dans le Massachusetts, le 21 décembre 2023, à l’âge de 99 ans, laissant une influence durable sur l’étude de la productivité, de l’innovation et de la croissance à long terme.",
+  "shortDescriptionDe": "Robert Merton Solow war ein amerikanischer Ökonom, dessen Arbeiten das moderne Verständnis von Wirtschaftswachstum prägten, besonders durch das Solow–Swan-Modell und seine Betonung des technologischen Fortschritts als Quelle von Wohlstand. Er lehrte jahrzehntelang am MIT und erhielt 1987 den Nobel-Gedächtnispreis für Wirtschaftswissenschaften sowie Auszeichnungen wie die National Medal of Science und die Presidential Medal of Freedom. Er starb am 21. Dezember 2023 im Alter von 99 Jahren in seinem Zuhause in Lexington, Massachusetts, und hinterließ ein Werk, das die Analyse von Produktivität, Innovation und langfristigem Wachstum weiterhin bestimmt.",
+  "shortDescriptionEs": "Robert Merton Solow fue un economista estadounidense que transformó la forma moderna de entender el crecimiento económico, sobre todo mediante el modelo Solow–Swan y su énfasis en el progreso tecnológico como motor de la prosperidad. Profesor durante décadas en el MIT, recibió el Premio Nobel de Economía en 1987, además de reconocimientos como la National Medal of Science y la Presidential Medal of Freedom. Murió en su casa de Lexington, Massachusetts, el 21 de diciembre de 2023, a los 99 años, dejando una influencia central en el estudio de la productividad, la innovación y el crecimiento a largo plazo.",
+  "shortDescriptionRu": "Роберт Мертон Солоу был американским экономистом, чьи работы существенно изменили современное понимание экономического роста, прежде всего благодаря модели Солоу–Свона и акценту на технологическом прогрессе как источнике долгосрочного благосостояния. Он десятилетиями преподавал в MIT и получил Нобелевскую премию по экономике 1987 года, а также Национальную научную медаль США и Президентскую медаль Свободы. Солоу умер у себя дома в Лексингтоне, штат Массачусетс, 21 декабря 2023 года в возрасте 99 лет, оставив наследие, которое по-прежнему влияет на изучение производительности, инноваций и долгосрочного роста.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Robert_Solow",
+    "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/facts/",
+    "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/biographical/",
+    "https://news.mit.edu/2023/institute-professor-emeritus-robert-solow-dies-1222",
+    "https://www.britannica.com/money/Robert-Solow",
+    "https://commons.wikimedia.org/wiki/Category:Robert_Solow"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1687170",  "Name": "Jens Christian Skou",  "BirthDate": "1918-10-08T00:00:00Z",  "DeathDate": "2018-05-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Skou2008.jpg",  "SiteLinksCnt": 58,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"437629":{"pageid":437629,"ns":0,"title":"Jens Christian Skou","extract":"Jens Christian Skou (Danish pronunciation: [\u02c8jens \u02c8k\u02b0\u0281estj\u00e6n \u02c8sk\u028cw\u02c0, - \u02c8k\u02b0\u0281\u00e6s-]; 8 October 1918 \u2013 28 May 2018) was a Danish biochemist and Nobel laureate."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1687170")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1687170",
+  "isRealHuman": true,
+  "birthDate": "1918-10-08",
+  "deathDate": "2018-05-28",
+  "ageAtDeath": 99,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable sources agree that Jens Christian Skou was born on 8 October 1918 and died on 28 May 2018. Calculating completed years from those dates gives 99, because he died a little over four months before his 100th birthday.",
+  "shortDescriptionEn": "Jens Christian Skou was a Danish biochemist, physician and Nobel laureate whose discovery of the sodium-potassium pump, Na+/K+-ATPase, transformed understanding of how living cells maintain ion balance. Awarded the 1997 Nobel Prize in Chemistry, he spent much of his career at Aarhus University. He died in Aarhus, Denmark, on 28 May 2018 at the age of 99; public university notices emphasized his long scientific life rather than reporting a specific cause of death.",
+  "shortDescriptionFr": "Jens Christian Skou était un biochimiste et médecin danois, lauréat du prix Nobel, dont la découverte de la pompe sodium-potassium, Na+/K+-ATPase, a profondément changé la compréhension de l’équilibre ionique des cellules. Récompensé par le prix Nobel de chimie en 1997, il a mené une grande partie de sa carrière à l’université d’Aarhus. Il est mort à Aarhus, au Danemark, le 28 mai 2018, à l’âge de 99 ans; les communiqués publics ont surtout souligné sa longue vie scientifique sans préciser une cause particulière du décès.",
+  "shortDescriptionDe": "Jens Christian Skou war ein dänischer Biochemiker, Arzt und Nobelpreisträger, dessen Entdeckung der Natrium-Kalium-Pumpe, Na+/K+-ATPase, das Verständnis des Ionenhaushalts lebender Zellen grundlegend prägte. Für diese Arbeit erhielt er 1997 den Nobelpreis für Chemie und wirkte lange an der Universität Aarhus. Er starb am 28. Mai 2018 in Aarhus, Dänemark, im Alter von 99 Jahren; öffentliche Nachrufe betonten vor allem sein außergewöhnlich langes Forscherleben und nannten keine spezielle Todesursache.",
+  "shortDescriptionEs": "Jens Christian Skou fue un bioquímico y médico danés, ganador del Premio Nobel, cuya identificación de la bomba sodio-potasio, Na+/K+-ATPasa, cambió la comprensión de cómo las células mantienen su equilibrio iónico. Recibió el Premio Nobel de Química en 1997 y desarrolló gran parte de su carrera en la Universidad de Aarhus. Murió en Aarhus, Dinamarca, el 28 de mayo de 2018, a los 99 años; los comunicados públicos destacaron su larga trayectoria científica sin señalar una causa concreta de muerte.",
+  "shortDescriptionRu": "Йенс Кристиан Скоу был датским биохимиком, врачом и нобелевским лауреатом, чьё открытие натрий-калиевой помпы, Na+/K+-АТФазы, существенно изменило представления о поддержании ионного баланса в живых клетках. В 1997 году он получил Нобелевскую премию по химии и многие годы работал в Орхусском университете. Он умер в Орхусе, Дания, 28 мая 2018 года в возрасте 99 лет; в публичных сообщениях о смерти главным образом подчёркивалась его долгая научная жизнь, без указания конкретной причины смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jens_Christian_Skou",
+    "https://www.nobelprize.org/prizes/chemistry/1997/skou/facts/",
+    "https://www.nobelprize.org/prizes/chemistry/1997/skou/biographical/",
+    "https://health.au.dk/en/display/artikel/nobel-laureate-medical-doctor-and-physiologist-jens-christian-skou-has-died",
+    "https://www.britannica.com/biography/Jens-C-Skou",
+    "https://www.science.org/doi/10.1126/science.aau5275"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q317769",  "Name": "Gulzarilal Nanda",  "BirthDate": "1898-07-04T00:00:00Z",  "DeathDate": "1998-01-15T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gulzarilal%20Nanda%201999%20stamp%20of%20India.jpg",  "SiteLinksCnt": 58,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"435592":{"pageid":435592,"ns":0,"title":"Gulzarilal Nanda","extract":"Gulzarilal Nanda (4 July 1898 \u2013 15 January 1998) was an Indian politician and economist who specialised in labour issues. He served as the acting Prime Minister of India for two 13-day tenures following the deaths of Jawaharlal Nehru in 1964 and Lal Bahadur Shastri in 1966 respectively. Both his terms ended after the ruling Indian National Congress's parliamentary party elected a new prime minister. He was awarded the Bharat Ratna, India's highest civilian award, in 1997.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q317769")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q317769",
+  "isRealHuman": true,
+  "birthDate": "1898-07-04",
+  "deathDate": "1998-01-15",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The identification is unambiguous: the Wikidata ID, Wikipedia extract, Britannica entry, and official PM India profile all refer to Gulzarilal Nanda. The birth and death dates are consistently reported as 1898-07-04 and 1998-01-15. Calculating from those dates gives 99 years, because he died before his 100th birthday in July 1998.",
+  "shortDescriptionEn": "Gulzarilal Nanda was an Indian politician, economist, labour specialist, and senior Congress leader who twice served as acting Prime Minister of India, first after Jawaharlal Nehru’s death in 1964 and again after Lal Bahadur Shastri’s death in 1966. Known for his work on labour issues and public service, he was awarded the Bharat Ratna in 1997. He died in Ahmedabad, Gujarat, on 15 January 1998 at the age of 99, remembered as a modest statesman who guided India through two brief but delicate transitions of power.",
+  "shortDescriptionFr": "Gulzarilal Nanda était un homme politique indien, économiste et spécialiste des questions du travail, membre important du Congrès. Il fut deux fois Premier ministre par intérim de l’Inde, après la mort de Jawaharlal Nehru en 1964 puis après celle de Lal Bahadur Shastri en 1966. Réputé pour son engagement social et sa vie simple, il reçut le Bharat Ratna en 1997. Il mourut à Ahmedabad, au Gujarat, le 15 janvier 1998, à l’âge de 99 ans, après avoir été associé à deux moments sensibles de transition nationale.",
+  "shortDescriptionDe": "Gulzarilal Nanda war ein indischer Politiker, Ökonom und Experte für Arbeitsfragen sowie ein führendes Mitglied des Indian National Congress. Zweimal übernahm er kurzzeitig das Amt des amtierenden Premierministers Indiens: 1964 nach dem Tod Jawaharlal Nehrus und 1966 nach dem Tod Lal Bahadur Shastris. Für seinen öffentlichen Dienst wurde er 1997 mit dem Bharat Ratna ausgezeichnet. Er starb am 15. Januar 1998 in Ahmedabad, Gujarat, im Alter von 99 Jahren und blieb als bescheidener Staatsmann in Erinnerung, der Indien durch zwei heikle Übergangsphasen führte.",
+  "shortDescriptionEs": "Gulzarilal Nanda fue un político indio, economista y especialista en asuntos laborales, además de una figura destacada del Congreso Nacional Indio. Sirvió dos veces como primer ministro interino de la India, tras la muerte de Jawaharlal Nehru en 1964 y de Lal Bahadur Shastri en 1966. Reconocido por su servicio público y su vida austera, recibió el Bharat Ratna en 1997. Murió en Ahmedabad, Guyarat, el 15 de enero de 1998 a los 99 años, recordado por conducir al país durante dos transiciones políticas breves pero delicadas.",
+  "shortDescriptionRu": "Гулзарилал Нанда был индийским политиком, экономистом и специалистом по вопросам труда, одним из видных деятелей Индийского национального конгресса. Он дважды кратко исполнял обязанности премьер-министра Индии: после смерти Джавахарлала Неру в 1964 году и после смерти Лала Бахадура Шастри в 1966 году. За государственную службу он был удостоен награды Бхарат Ратна в 1997 году. Нанда умер в Ахмадабаде, штат Гуджарат, 15 января 1998 года в возрасте 99 лет, оставшись в памяти как скромный государственный деятель переходных эпох.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gulzarilal_Nanda",
+    "https://www.britannica.com/biography/Gulzarilal-Nanda",
+    "https://www.pmindia.gov.in/en/former_pm/shri-gulzari-lal-nanda-2/",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Gulzarilal%20Nanda%201999%20stamp%20of%20India.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102395",  "Name": "Paul D. Boyer",  "BirthDate": "1918-07-31T00:00:00Z",  "DeathDate": "2018-06-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Paul%20D.%20Boyer.jpg",  "SiteLinksCnt": 55,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"509451":{"pageid":509451,"ns":0,"title":"Paul D. Boyer","extract":"Paul Delos Boyer (July 31, 1918 \u2013 June 2, 2018) was an American biochemist, analytical chemist, and a professor of chemistry at University of California, Los Angeles (UCLA). He shared the 1997 Nobel Prize in Chemistry for research on the \"enzymatic mechanism underlying the biosynthesis of adenosine triphosphate (ATP)\" (ATP synthase) with John E. Walker, making Boyer the first Utah-born Nobel laureate; the remainder of the Prize in that year was awarded to Danish chemist Jens Christian Skou for his discovery of the Na+/K+-ATPase."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102395")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q102395",
+  "isRealHuman": true,
+  "birthDate": "1918-07-31",
+  "deathDate": "2018-06-02",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across NobelPrize.org, Wikipedia, Britannica, UCLA-related sources, and other biographical references. The age is an exact calendar calculation: Paul D. Boyer died on 2018-06-02, before reaching his 100th birthday on 2018-07-31, so he was 99.",
+  "shortDescriptionEn": "Paul D. Boyer was an American biochemist and UCLA professor whose work helped explain how ATP synthase produces adenosine triphosphate, the molecule that powers cellular life. He shared the 1997 Nobel Prize in Chemistry with John E. Walker and Jens C. Skou. Boyer died at his home in Los Angeles on June 2, 2018, at age 99; reports describe the cause as respiratory failure, just under two months before his 100th birthday.",
+  "shortDescriptionFr": "Paul D. Boyer était un biochimiste américain et professeur à l’UCLA, célèbre pour avoir expliqué le fonctionnement de l’ATP synthase, l’enzyme qui permet aux cellules de produire l’adénosine triphosphate, source majeure d’énergie biologique. Il partagea le prix Nobel de chimie 1997 avec John E. Walker et Jens C. Skou. Boyer est mort chez lui à Los Angeles le 2 juin 2018, à l’âge de 99 ans; les sources indiquent une insuffisance respiratoire, moins de deux mois avant son centième anniversaire.",
+  "shortDescriptionDe": "Paul D. Boyer war ein US-amerikanischer Biochemiker und UCLA-Professor, der entscheidend dazu beitrug zu erklären, wie die ATP-Synthase Adenosintriphosphat erzeugt, den zentralen Energieträger lebender Zellen. 1997 erhielt er gemeinsam mit John E. Walker und Jens C. Skou den Nobelpreis für Chemie. Boyer starb am 2. Juni 2018 in seinem Haus in Los Angeles im Alter von 99 Jahren; als Todesursache wird Atemversagen genannt, weniger als zwei Monate vor seinem 100. Geburtstag.",
+  "shortDescriptionEs": "Paul D. Boyer fue un bioquímico estadounidense y profesor de la UCLA, reconocido por explicar cómo la ATP sintasa produce adenosín trifosfato, una molécula esencial para la energía celular. Compartió el Premio Nobel de Química de 1997 con John E. Walker y Jens C. Skou. Boyer murió en su casa de Los Ángeles el 2 de junio de 2018, a los 99 años; las fuentes señalan insuficiencia respiratoria, poco menos de dos meses antes de cumplir 100 años.",
+  "shortDescriptionRu": "Пол Д. Бойер был американским биохимиком и профессором Калифорнийского университета в Лос-Анджелесе, известным работами о том, как АТФ-синтаза производит аденозинтрифосфат — ключевую молекулу энергетического обмена клетки. В 1997 году он разделил Нобелевскую премию по химии с Джоном Э. Уокером и Йенсом К. Скоу. Бойер умер 2 июня 2018 года у себя дома в Лос-Анджелесе в возрасте 99 лет; причиной смерти называют дыхательную недостаточность, менее чем за два месяца до его 100-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Paul_D._Boyer",
+    "https://www.nobelprize.org/prizes/chemistry/1997/boyer/facts/",
+    "https://www.britannica.com/biography/Paul-D-Boyer",
+    "https://www.chemistry.ucla.edu/news/remembering-nobel-laureate-emeritus-professor-paul-d-boyer/",
+    "https://senate.universityofcalifornia.edu/in-memoriam/files/paul-boyer.html",
+    "https://www.science.org/doi/10.1126/science.aau6601",
+    "https://www.nobelprize.org/prizes/chemistry/1997/boyer/photo-gallery/",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20D.%20Boyer.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q297758",  "Name": "Nathalie Sarraute",  "BirthDate": "1900-07-18T00:00:00Z",  "DeathDate": "1999-10-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nathalie%20Sarraute%20-%20portrait%20de%20Fernand%20Michaud%20-%20btv1b103295272.jpg",  "SiteLinksCnt": 52,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"652685":{"pageid":652685,"ns":0,"title":"Nathalie Sarraute","extract":"Nathalie Sarraute (French: [natali sa\u0281ot]; born Natalia Ilinichna Tcherniak (Russian: \u041d\u0430\u0442\u0430\u0301\u043b\u044c\u044f \u0418\u043b\u044c\u0438\u0301\u043d\u0438\u0447\u043d\u0430 \u0427\u0435\u0440\u043d\u044f\u0301\u043a); 18 July [O.S. 5 July] 1900 \u2013 19 October 1999) was a French writer and lawyer. She was nominated in 1969 for the Nobel Prize in Literature by Nobel Committee member Lars Gyllensten."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q297758")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q297758",
+  "isRealHuman": true,
+  "birthDate": "1900-07-18",
+  "deathDate": "1999-10-19",
+  "ageAtDeath": 99,
+  "confidence": 98,
+  "confidenceExplained": "The age calculation is exact if the widely attested Gregorian dates are used: 1900-07-18 to 1999-10-19 equals 99 years. Multiple reliable sources give the same birth and death dates and state that she died aged 99. Confidence is slightly below 100 only because a few secondary sources contain minor inconsistencies about details such as place of death or alternative birth-year mentions, but the 1900 birth year and 1999 death date are overwhelmingly supported.",
+  "shortDescriptionEn": "Nathalie Sarraute was a Russian-born French novelist, playwright, essayist, and lawyer, celebrated as one of the early theorists and major voices of the Nouveau Roman. Her work, including Tropisms and Portrait of a Man Unknown, explored subtle inner movements of thought rather than conventional plot. She died in Paris on 19 October 1999 at the age of 99, after remaining intellectually active into her final years; no dramatic public cause of death is central to her historical record.",
+  "shortDescriptionFr": "Nathalie Sarraute était une romancière, dramaturge, essayiste et avocate française née en Russie, reconnue comme l’une des grandes figures du Nouveau Roman. Avec des œuvres comme Tropismes et Portrait d’un inconnu, elle a déplacé le roman vers les mouvements intérieurs, les tensions psychologiques fines et les sensations presque imperceptibles. Elle est morte à Paris le 19 octobre 1999, à l’âge de 99 ans, après avoir continué à écrire très tard dans sa vie; les sources publiques ne mettent pas en avant de cause de décès particulière.",
+  "shortDescriptionDe": "Nathalie Sarraute war eine in Russland geborene französische Schriftstellerin, Dramatikerin, Essayistin und Juristin und gilt als eine der prägenden Stimmen des Nouveau Roman. In Werken wie Tropismen und Porträt eines Unbekannten untersuchte sie weniger äußere Handlung als die kaum sichtbaren Regungen des Bewusstseins. Sie starb am 19. Oktober 1999 in Paris im Alter von 99 Jahren, nachdem sie bis ins hohe Alter literarisch aktiv geblieben war; eine besondere öffentliche Todesursache steht in den Quellen nicht im Vordergrund.",
+  "shortDescriptionEs": "Nathalie Sarraute fue una novelista, dramaturga, ensayista y abogada francesa nacida en Rusia, considerada una de las figuras clave del Nouveau Roman. Obras como Tropismos y Retrato de un desconocido transformaron la narrativa al centrarse en impulsos interiores, tensiones psicológicas y percepciones mínimas. Murió en París el 19 de octubre de 1999, a los 99 años, tras una vida literaria excepcionalmente larga; las fuentes públicas no destacan una causa específica de muerte.",
+  "shortDescriptionRu": "Натали Саррот была французской писательницей, драматургом, эссеисткой и юристом русского происхождения, одной из ключевых фигур «нового романа». В книгах вроде «Тропизмов» и «Портрета неизвестного» она исследовала не столько сюжет, сколько тончайшие движения сознания и скрытые психологические импульсы. Она умерла в Париже 19 октября 1999 года в возрасте 99 лет, оставаясь литературно активной почти до конца жизни; в открытых источниках не выделяется какая-либо особая причина смерти.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nathalie_Sarraute",
+    "https://www.britannica.com/biography/Nathalie-Sarraute",
+    "https://www.theguardian.com/news/1999/oct/21/guardianobituaries",
+    "https://www.ebsco.com/research-starters/history/nathalie-sarraute",
+    "https://jwa.org/encyclopedia/article/sarraute-nathalie",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Nathalie%20Sarraute%20-%20portrait%20de%20Fernand%20Michaud%20-%20btv1b103295272.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q310149",  "Name": "Cleanthes",  "BirthDate": "-0330-01-01T00:00:00Z",  "DeathDate": "-0231-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Cleanthes%20from%20L.%20Annaei%20Senecae%20philosophi%20Opera%2C%201605%2C%20title%20page%20detail.png",  "SiteLinksCnt": 50,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"171297":{"pageid":171297,"ns":0,"title":"Cleanthes","extract":"Cleanthes (; Ancient Greek: \u039a\u03bb\u03b5\u03ac\u03bd\u03b8\u03b7\u03c2; c. 330 BC \u2013 c. 230 BC), of Assos, was a Greek Stoic philosopher and boxer who was the successor to Zeno of Citium as the second head (scholarch) of the Stoic school in Athens. Originally a boxer, he came to Athens where he took up philosophy, listening to Zeno's lectures. He supported himself by working as a water-carrier at night. After the death of Zeno, c. 262 BC, he became the head of the school, a post he held for the next 32 years. Cleanthes successfully preserved and developed Zeno's doctrines. He originated new ideas in Stoic physics, and developed Stoicism in accordance with the principles of materialism and pantheism. Among the fragments of Cleanthes' writings which have come down to us, the largest is a Hymn to Zeus. His pupil was Chrysippus who became one of the most important Stoic thinkers."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q310149")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q310149",
+  "isRealHuman": true,
+  "birthDate": "-0330-01-01",
+  "deathDate": "-0231-01-01",
+  "ageAtDeath": 99,
+  "confidence": 78,
+  "confidenceExplained": "The exact day and month are not known, and ancient testimony is not perfectly consistent: Diogenes Laertius is reported elsewhere as giving 80, and a modern scholar cited by Wikipedia prefers 101. However, multiple ancient authorities are cited for age 99, Wikipedia states he died at 99, and Britannica's date range of 331/330 BCE to 232/231 BCE supports an age of about 99. I therefore use 99 as the best-supported estimate.",
+  "shortDescriptionEn": "Cleanthes of Assos was a Greek Stoic philosopher, once a boxer, who studied under Zeno of Citium and succeeded him as the second head of the Stoic school in Athens. Known for his endurance, poverty, night work as a water-carrier, and his surviving Hymn to Zeus, he helped shape early Stoic physics and religious thought. He died at about 99 after an illness involving severe gum inflammation: advised to fast, he recovered but chose to continue fasting, saying he was already too far along the road to death.",
+  "shortDescriptionFr": "Cléanthe d’Assos était un philosophe stoïcien grec, d’abord boxeur, qui étudia auprès de Zénon de Kition avant de lui succéder comme deuxième chef de l’école stoïcienne à Athènes. Célèbre pour son endurance, sa pauvreté, son travail nocturne de porteur d’eau et son Hymne à Zeus, il contribua fortement à la physique et à la pensée religieuse du stoïcisme primitif. Il mourut vers 99 ans après une grave inflammation des gencives : on lui conseilla de jeûner, il se rétablit, puis choisit de poursuivre le jeûne en disant qu’il était déjà trop avancé sur le chemin de la mort.",
+  "shortDescriptionDe": "Kleanthes von Assos war ein griechischer stoischer Philosoph und früherer Boxer, der bei Zenon von Kition studierte und ihm als zweiter Leiter der stoischen Schule in Athen nachfolgte. Berühmt für seine Ausdauer, seine Armut, seine nächtliche Arbeit als Wasserträger und seinen Hymnus an Zeus, prägte er die frühe stoische Physik und Religionsphilosophie. Er starb mit etwa 99 Jahren nach einer schweren Zahnfleischentzündung: Ärzte rieten ihm zum Fasten, er erholte sich, setzte das Fasten jedoch fort, weil er nach eigenen Worten schon zu weit auf dem Weg zum Tod sei.",
+  "shortDescriptionEs": "Cleantes de Asos fue un filósofo estoico griego, antes boxeador, que estudió con Zenón de Citio y lo sucedió como segundo director de la escuela estoica en Atenas. Recordado por su resistencia, su pobreza, su trabajo nocturno como aguador y su Himno a Zeus, ayudó a dar forma a la física y la religiosidad del estoicismo temprano. Murió hacia los 99 años tras una grave inflamación de las encías: los médicos le aconsejaron ayunar, se recuperó, pero decidió seguir sin comer, diciendo que ya estaba demasiado avanzado en el camino hacia la muerte.",
+  "shortDescriptionRu": "Клеанф из Асса был греческим стоическим философом и бывшим кулачным бойцом, учеником Зенона Китийского и вторым главой стоической школы в Афинах. Он прославился выносливостью, бедностью, ночной работой водоносом и сохранившимся «Гимном Зевсу», а также заметно повлиял на раннюю стоическую физику и религиозную мысль. Он умер примерно в 99 лет после сильного воспаления дёсен: врачи велели ему поститься, он поправился, но решил продолжить пост, сказав, что уже слишком далеко продвинулся по дороге к смерти.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Cleanthes%20from%20L.%20Annaei%20Senecae%20philosophi%20Opera%2C%201605%2C%20title%20page%20detail.png",
+    "https://commons.wikimedia.org/wiki/File:Cleanthes_from_L._Annaei_Senecae_philosophi_Opera,_1605,_title_page_detail.png",
+    "https://ancientrome.ru/art/artworken/img.htm?id=2628",
+    "https://ancientrome.ru/art/artworken/img.htm?id=2630"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cleanthes",
+    "https://www.britannica.com/biography/Cleanthes",
+    "https://www.wikidata.org/wiki/Q310149",
+    "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/7/Cleanthes%2A.html",
+    "https://commons.wikimedia.org/wiki/File:Cleanthes_from_L._Annaei_Senecae_philosophi_Opera,_1605,_title_page_detail.png",
+    "https://ancientrome.ru/art/artworken/img.htm?id=2628"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q11941",  "Name": "Carl Barks",  "BirthDate": "1901-03-27T00:00:00Z",  "DeathDate": "2000-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Carl%20barks.jpg",  "SiteLinksCnt": 49,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"7345":{"pageid":7345,"ns":0,"title":"Carl Barks","extract":"Carl Barks (March 27, 1901 \u2013 August 25, 2000) was an American cartoonist, author, and painter. He is best known for his work in Disney comic books, as the writer and artist of the first Donald Duck stories and as the creator of Scrooge McDuck. He worked anonymously until late in his career; fans dubbed him \"The Duck Man\" and \"The Good Duck Artist\". In 1987, Barks was one of the three inaugural inductees of the Will Eisner Comic Book Hall of Fame.\nBarks worked for Walt Disney Productions and Western Publishing where he created Duckburg and many of its inhabitants, such as Scrooge McDuck (1947), Gladstone Gander (1948), the Beagle Boys (1951), The Junior Woodchucks (1951), Gyro Gearloose (1952), Cornelius Coot (1952), Flintheart Glomgold (1956), John D. Rockerduck (1961) and Magica De Spell (1961).\nHe has been named by animation historian Leonard Maltin as \"the most popular and widely read artist-writer in the world\". Will Eisner called him \"the Hans Christian Andersen of comic books.\" Beginning especially in the 1980s, Barks' artistic contributions would be a primary source for animated adaptations such as DuckTales and its 2017 remake."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q11941")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q11941",
+  "isRealHuman": true,
+  "birthDate": "1901-03-27",
+  "deathDate": "2000-08-25",
+  "ageAtDeath": 99,
+  "confidence": 99,
+  "confidenceExplained": "Multiple independent sources agree on Carl Barks's birth date, death date, and age at death. The calculation from 1901-03-27 to 2000-08-25 gives 99 years, since he had already had his birthday in 2000. Confidence is not 100 only because public biographical records can contain minor transcription errors, but there is no meaningful conflict here.",
+  "shortDescriptionEn": "Carl Barks was an American cartoonist, writer, and painter whose Disney comic-book stories shaped the world of Donald Duck and introduced Scrooge McDuck, Duckburg, and many of its unforgettable inhabitants. Long anonymous to readers, he became known as “The Duck Man” and “The Good Duck Artist.” In later life he received major comics and Disney honors. Barks died in Grants Pass, Oregon, on August 25, 2000, at age 99, after suffering from leukemia; accounts describe him as dying quietly in his sleep.",
+  "shortDescriptionFr": "Carl Barks était un dessinateur, scénariste et peintre américain dont les bandes dessinées Disney ont profondément marqué l’univers de Donald Duck, en créant notamment Picsou, Donaldville et de nombreux personnages devenus classiques. Resté longtemps anonyme pour les lecteurs, il fut surnommé “The Duck Man” et “The Good Duck Artist.” À la fin de sa vie, il reçut d’importantes distinctions dans le monde de la bande dessinée et de Disney. Barks est mort à Grants Pass, dans l’Oregon, le 25 août 2000, à l’âge de 99 ans, après avoir souffert d’une leucémie; il serait décédé paisiblement dans son sommeil.",
+  "shortDescriptionDe": "Carl Barks war ein amerikanischer Comiczeichner, Autor und Maler, dessen Disney-Comics die Welt von Donald Duck prägten und Figuren wie Dagobert Duck, Entenhausen und viele weitere Bewohner dieses Kosmos einführten. Lange blieb er für die Leser anonym, bevor er als “The Duck Man” und “The Good Duck Artist” berühmt wurde. Später erhielt er bedeutende Auszeichnungen der Comic- und Disney-Welt. Barks starb am 25. August 2000 in Grants Pass, Oregon, im Alter von 99 Jahren, nachdem er an Leukämie erkrankt war; Berichten zufolge schlief er ruhig ein.",
+  "shortDescriptionEs": "Carl Barks fue un historietista, guionista y pintor estadounidense cuyas historias para Disney definieron gran parte del mundo del Pato Donald y presentaron a Rico McPato, Duckburg y muchos de sus personajes más recordados. Durante años trabajó de forma anónima, hasta que los aficionados lo apodaron “The Duck Man” y “The Good Duck Artist.” En su vejez recibió importantes reconocimientos del cómic y de Disney. Barks murió en Grants Pass, Oregón, el 25 de agosto de 2000, a los 99 años, tras padecer leucemia; las crónicas señalan que falleció tranquilamente mientras dormía.",
+  "shortDescriptionRu": "Карл Баркс был американским художником комиксов, сценаристом и живописцем, чьи истории Disney во многом сформировали мир Дональда Дака и подарили читателям Скруджа Макдака, Даксбург и множество других запоминающихся персонажей. Долгое время он работал анонимно, а поклонники позже прозвали его “The Duck Man” и “The Good Duck Artist.” В поздние годы он получил важные награды в мире комиксов и Disney. Баркс умер в Грантс-Пассе, штат Орегон, 25 августа 2000 года в возрасте 99 лет после болезни, связанной с лейкемией; сообщалось, что он тихо скончался во сне.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Carl_Barks",
+    "https://d23.com/walt-disney-legend/carl-barks/",
+    "https://www.findagrave.com/memorial/22104/carl-barks",
+    "https://www.encyclopedia.com/arts/culture-magazines/barks-carl",
+    "https://www.wikidata.org/wiki/Q11941",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Carl%20barks.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q316343",  "Name": "Vasubandhu",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0399-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vasubandhu.JPG",  "SiteLinksCnt": 47,  "Age": 99}
+{"batchcomplete":"","query":{"pages":{"304972":{"pageid":304972,"ns":0,"title":"Vasubandhu","extract":"Vasubandhu (traditional Chinese: \u4e16\u89aa; ; pinyin: Sh\u00ecq\u012bn;  Tibetan: \u0f51\u0f56\u0fb1\u0f72\u0f42\u0f0b\u0f42\u0f49\u0f7a\u0f53\u0f0b Wylie: dbyig gnyen; fl. 4th to 5th century CE) was an influential Indian Buddhist monk and scholar. He was a philosopher who wrote commentary on the Abhidharma, from the perspectives of the Sarvastivada and Sautr\u0101ntika schools. After his conversion to Mahayana Buddhism, along with his half-brother, Asanga, he was also one of the main founders of the Yogacara school.\nVasubandhu's Abhidharmako\u015bak\u0101rik\u0101 (\"Commentary on the Treasury of the Abhidharma\") is widely used in Tibetan and East Asian Buddhism, as the major source for non-Mahayana Abhidharma philosophy. His philosophical verse works set forth the standard for the Indian Yogacara metaphysics of \"appearance only\" (vij\u00f1apti-m\u0101tra), which has been described as a form of \"epistemological idealism\", phenomenology and close to Immanuel Kant's transcendental idealism. Apart from this, he wrote several commentaries, works on logic,  argumentation and devotional poetry.\nVasubandhu is one of the most influential thinkers in the Indian Buddhist philosophical tradition. Because of their association with Nalanda university, Vasubandhu and Asanga are amongst the so-called Seventeen Nalanda Masters. In J\u014ddo Shinsh\u016b, he is considered the Second Patriarch; in Chan Buddhism, he is the 21st Patriarch."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q316343")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q316343",
+  "isRealHuman": true,
+  "birthDate": "0400-01-01",
+  "deathDate": "0480-01-01",
+  "ageAtDeath": 80,
+  "confidence": 65,
+  "confidenceExplained": "Vasubandhu is a well-attested historical Buddhist philosopher, but his exact lifetime is disputed. Sources place him broadly in the 4th to 5th century CE, with proposed ranges such as 316–396, 320–400, 390–470, and 400–480; several imply a lifespan of about 80 years, and traditional accounts explicitly say he died at age 80. I chose c. 400–480 CE as a practical website-friendly estimate and calculated ageAtDeath as 80.",
+  "shortDescriptionEn": "Vasubandhu was an influential Indian Buddhist monk, philosopher, and logician from Gandhara, remembered for the Abhidharmakośa and for helping shape Yogācāra, the “consciousness-only” school, alongside his brother Asaṅga. His writings became foundational across Indian, Tibetan, and East Asian Buddhism. Traditional accounts say that late in life he withdrew toward contemplation and refused further public debates; he is said to have died at about 80, with sources differing on whether this was in Ayodhyā or during a visit to present-day Nepal.",
+  "shortDescriptionFr": "Vasubandhu fut un moine, philosophe et logicien bouddhiste indien originaire du Gandhara, célèbre pour l’Abhidharmakośa et pour son rôle majeur dans la formation de l’école Yogācāra, dite de la « conscience seule », avec son frère Asaṅga. Ses traités ont profondément marqué le bouddhisme indien, tibétain et est-asiatique. Les traditions rapportent qu’à la fin de sa vie il se consacra davantage à la méditation et refusa de nouveaux débats; il serait mort vers 80 ans, les récits situant sa mort soit à Ayodhyā, soit lors d’un séjour dans l’actuel Népal.",
+  "shortDescriptionDe": "Vasubandhu war ein einflussreicher indischer buddhistischer Mönch, Philosoph und Logiker aus Gandhāra, bekannt für den Abhidharmakośa und für seine prägende Rolle in der Yogācāra-Schule, der Lehre von der „Nur-Bewusstheit“, zusammen mit seinem Bruder Asaṅga. Seine Schriften wurden in der indischen, tibetischen und ostasiatischen buddhistischen Tradition grundlegend. Späte Überlieferungen berichten, dass er sich im Alter stärker der Kontemplation widmete und weitere Debatten ablehnte; er soll mit etwa 80 Jahren gestorben sein, wobei die Berichte Ayodhyā oder eine Reise ins heutige Nepal nennen.",
+  "shortDescriptionEs": "Vasubandhu fue un influyente monje, filósofo y lógico budista indio de Gandhara, recordado por el Abhidharmakośa y por su papel en la formación de la escuela Yogācāra, la doctrina de la «solo conciencia», junto con su hermano Asaṅga. Sus obras fueron fundamentales para el budismo indio, tibetano y de Asia oriental. Las tradiciones dicen que en sus últimos años se dedicó más a la contemplación y rechazó nuevos debates públicos; habría muerto hacia los 80 años, aunque las fuentes sitúan su muerte de forma distinta, en Ayodhyā o durante una visita al actual Nepal.",
+  "shortDescriptionRu": "Васубандху был влиятельным индийским буддийским монахом, философом и логиком из Гандхары, известным благодаря «Абхидхармакоше» и ключевой роли в развитии школы йогачары, учения о «только сознании», вместе со своим братом Асангой. Его труды стали основополагающими для индийской, тибетской и восточноазиатской буддийской мысли. Согласно поздним традициям, в конце жизни он больше занимался созерцательной практикой и отказывался от новых публичных диспутов; считается, что он умер примерно в 80 лет, хотя источники расходятся, называя Айодхью или поездку на территорию современного Непала.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vasubandhu",
+    "https://plato.stanford.edu/entries/vasubandhu/",
+    "https://iep.utm.edu/vasubandhu/",
+    "https://studybuddhism.com/en/tibetan-buddhism/spiritual-teachers/vasubandhu",
+    "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/vasubandhu",
+    "https://www.ebsco.com/research-starters/biography/vasubandhu",
+    "https://www.britannica.com/biography/Vasubandhu",
+    "https://commons.wikimedia.org/wiki/File:Vasubandhu.JPG"
+  ]
+}

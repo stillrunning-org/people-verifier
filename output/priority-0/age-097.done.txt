@@ -1,0 +1,1031 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q33760",  "Name": "Bertrand Russell",  "BirthDate": "1872-05-18T00:00:00Z",  "DeathDate": "1970-02-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bertrand%20Russell%20photo.jpg",  "SiteLinksCnt": 185,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"4163":{"pageid":4163,"ns":0,"title":"Bertrand Russell","extract":"Bertrand Arthur William Russell, 3rd Earl Russell (18 May 1872 \u2013 2 February 1970), was an English  philosopher, logician, mathematician, and public intellectual. He influenced mathematics, logic, set theory, and various areas of analytic philosophy.\nHe was one of the early 20th century's prominent logicians and a founder of analytic philosophy, along with his predecessor Gottlob Frege, his friend and colleague G. E. Moore, and his student and prot\u00e9g\u00e9 Ludwig Wittgenstein. Russell with Moore led the British \"revolt against idealism\". Together with his former teacher Alfred North Whitehead, Russell wrote Principia Mathematica, a milestone in the development of classical logic and a major attempt to reduce the whole of mathematics to logic (see logicism). Russell's article \"On Denoting\" has been considered a \"paradigm of philosophy\".\nRussell was educated at Trinity College at the University of Cambridge, where he graduated in 1893. He was a pacifist who championed anti-imperialism and chaired the England-based India League. He went to prison for his pacifism during the First World War, and he initially supported appeasing Adolf Hitler's Nazi Germany, before changing his view in 1943, describing war as a necessary \"lesser of two evils\". In the wake of the Second World War, he welcomed American global hegemony in preference to either Soviet hegemony or no (or ineffective) world leadership, even if it were to come at the cost of using their nuclear weapons. He would later criticise Stalinist totalitarianism, condemn the United States' involvement in the Vietnam War, and become an outspoken proponent of nuclear disarmament.\nIn 1950, Russell was awarded the Nobel Prize in Literature \"in recognition of his varied and significant writings in which he champions humanitarian ideals and freedom of thought\". He was also the recipient of the De Morgan Medal (1932), Sylvester Medal (1934), Kalinga Prize (1957), and Jerusalem Prize (1963)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q33760")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q33760",
+  "isRealHuman": true,
+  "birthDate": "1872-05-18",
+  "deathDate": "1970-02-02",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, Encyclopaedia Britannica, and NobelPrize.org. Calculating from 1872-05-18 to 1970-02-02 gives 97 years because Russell died before reaching his 98th birthday.",
+  "shortDescriptionEn": "Bertrand Russell was a British philosopher, logician, mathematician, public intellectual, and one of the defining figures of analytic philosophy. He helped reshape modern logic and philosophy of mathematics, co-authored Principia Mathematica, wrote widely on politics and society, and received the 1950 Nobel Prize in Literature. In his final years he remained politically active, especially in anti-war causes. He died of influenza at his home in Penrhyndeudraeth, Wales, on 2 February 1970, aged 97; he was cremated shortly afterward.",
+  "shortDescriptionFr": "Bertrand Russell fut un philosophe, logicien, mathématicien et intellectuel public britannique, l’une des grandes figures de la philosophie analytique. Il contribua profondément à la logique moderne et à la philosophie des mathématiques, coécrivit Principia Mathematica, publia de nombreux essais politiques et sociaux, et reçut le prix Nobel de littérature en 1950. Jusqu’à la fin de sa vie, il resta engagé dans les causes pacifistes. Il mourut de la grippe à son domicile de Penrhyndeudraeth, au pays de Galles, le 2 février 1970, à l’âge de 97 ans; il fut incinéré peu après.",
+  "shortDescriptionDe": "Bertrand Russell war ein britischer Philosoph, Logiker, Mathematiker und öffentlicher Intellektueller sowie eine der prägenden Gestalten der analytischen Philosophie. Er beeinflusste die moderne Logik und die Philosophie der Mathematik maßgeblich, war Mitautor der Principia Mathematica, schrieb viel über Politik und Gesellschaft und erhielt 1950 den Nobelpreis für Literatur. Bis ins hohe Alter blieb er politisch aktiv, besonders in Friedens- und Antikriegsfragen. Er starb am 2. Februar 1970 im Alter von 97 Jahren in seinem Haus in Penrhyndeudraeth, Wales, an Influenza; kurz darauf wurde er eingeäschert.",
+  "shortDescriptionEs": "Bertrand Russell fue un filósofo, lógico, matemático e intelectual público británico, y una de las figuras decisivas de la filosofía analítica. Transformó la lógica moderna y la filosofía de las matemáticas, fue coautor de Principia Mathematica, escribió extensamente sobre política y sociedad, y recibió el Premio Nobel de Literatura en 1950. En sus últimos años siguió activo en causas pacifistas y contra la guerra. Murió de influenza en su casa de Penrhyndeudraeth, Gales, el 2 de febrero de 1970, a los 97 años; fue cremado poco después.",
+  "shortDescriptionRu": "Бертран Рассел был британским философом, логиком, математиком и общественным интеллектуалом, одним из ключевых представителей аналитической философии. Он оказал большое влияние на современную логику и философию математики, был соавтором Principia Mathematica, много писал о политике и обществе и получил Нобелевскую премию по литературе в 1950 году. В последние годы он продолжал активно выступать против войны. Рассел умер от гриппа в своём доме в Пенриндейдрате, Уэльс, 2 февраля 1970 года в возрасте 97 лет; вскоре после этого он был кремирован.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bertrand_Russell",
+    "https://www.britannica.com/biography/Bertrand-Russell",
+    "https://www.nobelprize.org/prizes/literature/1950/russell/biographical/",
+    "https://plato.stanford.edu/entries/russell/",
+    "https://www.wikidata.org/wiki/Q33760"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q83333",  "Name": "James Watson",  "BirthDate": "1928-04-06T00:00:00Z",  "DeathDate": "2025-11-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20D.%20Watson%20%28cropped%29.jpg",  "SiteLinksCnt": 108,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"16289":{"pageid":16289,"ns":0,"title":"James Watson","extract":"James Dewey Watson (April 6, 1928 \u2013 November 6, 2025) was an American molecular biologist, geneticist, and zoologist. In 1953, he and Francis Crick co-authored an academic paper in Nature proposing the double helix structure of the DNA molecule, building on research by Rosalind Franklin and Raymond Gosling. In 1962, Watson, Crick, and Maurice Wilkins were awarded the Nobel Prize in Physiology or Medicine \"for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material\".\nWatson graduated from the University of Chicago in 1947 and received his doctorate from Indiana University Bloomington in 1950. After a post-doctoral year at the University of Copenhagen with Herman Kalckar and Ole Maal\u00f8e, Watson worked at the University of Cambridge's Cavendish Laboratory in England, where he met his future collaborator Francis Crick. From 1956 to 1976, Watson was employed by the faculty of the Harvard University Biology Department, promoting research in molecular biology.\nFrom 1968, Watson served as the director of the Cold Spring Harbor Laboratory (CSHL) in Laurel Hollow, New York, greatly expanding its level of funding and research. At CSHL, he shifted his research emphasis to the study of cancer, along with making it a world-leading research center in molecular biology. In 1994, Watson started as president and served for 10 years. He was then appointed chancellor, serving until his resignation in 2007 after making comments claiming that there is a genetic link between race and intelligence. In 2019, after the broadcast of a documentary where Watson reiterated these views on race and genetics, CSHL revoked his honorary titles and severed all ties with him.\nWatson wrote many science books, including the textbook Molecular Biology of the Gene (1965) and his bestselling book The Double Helix (1968). He made derogatory comments about Rosalind Franklin, who had been responsible for gathering data that led to the discovery of the structure of DNA, and was criticized for misogyny. Between 1988 and 1992, Watson was associated with the National Institutes of Health, helping to establish the Human Genome Project, which completed the task of mapping the human genome in 2003.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q83333")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q83333",
+  "isRealHuman": true,
+  "birthDate": "1928-04-06",
+  "deathDate": "2025-11-06",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "Multiple independent and authoritative sources identify the person as James Dewey Watson and give the same birth date, death date, and age at death. The age calculation is straightforward: he was born on 1928-04-06 and died on 2025-11-06, seven months after his 97th birthday. Minor uncertainty remains only because some sources differ slightly on the exact place of death, not on the date or age.",
+  "shortDescriptionEn": "James Dewey Watson was an American molecular biologist, geneticist, and zoologist whose name became inseparable from the 1953 proposal of DNA’s double-helix structure with Francis Crick, work that helped launch modern molecular biology and earned him a share of the 1962 Nobel Prize in Physiology or Medicine. He later influenced genetics through Cold Spring Harbor Laboratory and the early Human Genome Project, while his reputation was also damaged by racist and controversial public remarks. Watson died on November 6, 2025, at age 97, reportedly after hospice care following treatment for an infection.",
+  "shortDescriptionFr": "James Dewey Watson était un biologiste moléculaire, généticien et zoologiste américain, resté célèbre pour avoir proposé en 1953, avec Francis Crick, la structure en double hélice de l’ADN, une découverte qui a transformé la biologie moderne et lui a valu une part du prix Nobel de physiologie ou médecine en 1962. Il a ensuite marqué la génétique à Cold Spring Harbor Laboratory et dans les débuts du Human Genome Project, tout en voyant sa réputation ternie par des propos racistes et controversés. Watson est mort le 6 novembre 2025, à l’âge de 97 ans, après des soins en hospice à la suite du traitement d’une infection.",
+  "shortDescriptionDe": "James Dewey Watson war ein US-amerikanischer Molekularbiologe, Genetiker und Zoologe, dessen Name vor allem mit dem 1953 gemeinsam mit Francis Crick vorgeschlagenen Doppelhelix-Modell der DNA verbunden ist; diese Arbeit prägte die moderne Molekularbiologie und brachte ihm 1962 einen Anteil am Nobelpreis für Physiologie oder Medizin ein. Später beeinflusste er die Genetik am Cold Spring Harbor Laboratory und in der frühen Phase des Human Genome Project, während sein Ansehen durch rassistische und kontroverse Äußerungen schwer beschädigt wurde. Watson starb am 6. November 2025 im Alter von 97 Jahren, Berichten zufolge nach Hospizpflege infolge der Behandlung einer Infektion.",
+  "shortDescriptionEs": "James Dewey Watson fue un biólogo molecular, genetista y zoólogo estadounidense, conocido sobre todo por proponer en 1953 junto con Francis Crick la estructura de doble hélice del ADN, un avance que transformó la biología moderna y le valió una parte del Premio Nobel de Fisiología o Medicina de 1962. Más tarde influyó en la genética desde el Cold Spring Harbor Laboratory y en los inicios del Proyecto Genoma Humano, aunque su reputación quedó dañada por declaraciones racistas y controvertidas. Watson murió el 6 de noviembre de 2025, a los 97 años, al parecer tras recibir cuidados de hospicio después del tratamiento de una infección.",
+  "shortDescriptionRu": "Джеймс Дьюи Уотсон был американским молекулярным биологом, генетиком и зоологом, прежде всего известным как один из авторов предложенной в 1953 году вместе с Фрэнсисом Криком модели двойной спирали ДНК; эта работа изменила современную биологию и принесла ему долю Нобелевской премии по физиологии или медицине 1962 года. Позднее он заметно повлиял на развитие генетики в Cold Spring Harbor Laboratory и на ранний этап проекта «Геном человека», хотя его репутация была серьезно подорвана расистскими и спорными публичными высказываниями. Уотсон умер 6 ноября 2025 года в возрасте 97 лет, как сообщалось, после пребывания в хосписе вслед за лечением инфекции.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_Watson",
+    "https://www.nobelprize.org/prizes/medicine/1962/watson/facts/",
+    "https://www.nobelprize.org/prizes/medicine/1962/watson/biographical/",
+    "https://www.britannica.com/biography/James-Dewey-Watson",
+    "https://apnews.com/article/c1f6d589f2d0d4751859168f9fae295c",
+    "https://www.reuters.com/business/healthcare-pharmaceuticals/james-watson-co-discoverer-dnas-double-helix-dead-97-2025-11-07/",
+    "https://www.scientificamerican.com/article/james-watson-co-discoverer-of-dna-dead-at-97/",
+    "https://www.theguardian.com/science/2025/nov/09/james-watson-obituary",
+    "https://www.nobelprize.org/prizes/medicine/1962/watson/photo-gallery/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q93284",  "Name": "Marc Chagall",  "BirthDate": "1887-07-06T00:00:00Z",  "DeathDate": "1985-03-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Shagal%20Choumoff.jpg",  "SiteLinksCnt": 102,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"63135":{"pageid":63135,"ns":0,"title":"Marc Chagall","extract":"Marc Chagall (born Moishe Shagal; 6 July [O.S. 24 June] 1887 \u2013 28 March 1985) was a Russian and French artist of Jewish ancestry. An early modernist, he was associated with the \u00c9cole de Paris, as well as several major artistic styles and created works in a wide range of artistic formats, including painting, drawings, book illustrations, stained glass, stage sets, ceramics, tapestries and fine art prints.\nChagall was born in 1887, into a Jewish family near Vitebsk, today in Belarus, but at that time in the Pale of Settlement of the Russian Empire. Before World War I, he travelled between Saint Petersburg, Paris, and Berlin. During that period, he created his own mixture and style of modern art, based on his ideas of Eastern European and Jewish folklore. He spent the wartime years in Vitebsk and Petrograd, becoming one of the Russia's most distinguished artists and a member of the modernist avant-garde, founding the Vitebsk Museum of Modern Art and People's Art School. He later worked in and near Moscow in difficult conditions during hard times in Russia following the Bolshevik Revolution, before leaving again for Paris in 1923. During World War II, he escaped occupied France to the United States, where he lived in New York City for seven years before returning to France in 1948.\nArt critic Robert Hughes referred to Chagall as \"the quintessential Jewish artist of the twentieth century.\" According to art historian Michael J. Lewis, Chagall was considered to be \"the last survivor of the first generation of European modernists.\u201d For decades, he \"had also been respected as the world's pre-eminent Jewish artist.\u201d Using the medium of stained glass, he produced windows for the cathedrals of Reims and Metz as well as the Fraum\u00fcnster in Z\u00fcrich, windows for the UN and the Art Institute of Chicago and the Jerusalem Windows in Israel. He also did large-scale paintings, including part of the ceiling of the Paris Op\u00e9ra. He experienced modernism's \"golden age\" in Paris, where \"he synthesized the art forms of Cubism, Symbolism, and Fauvism, and the influence of Fauvism gave rise to Surrealism\". Yet throughout these phases of his style he remained \"most emphatically a Jewish artist, whose work was one long dreamy reverie of life in his native Vitebsk.\" \"When Matisse dies,\u201d Pablo Picasso remarked in the 1950s, \"Chagall will be the only painter left who understands what colour really is.\u201d\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q93284")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q93284",
+  "isRealHuman": true,
+  "birthDate": "1887-07-06",
+  "deathDate": "1985-03-28",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The identification is very strong: the Wikidata ID, name, image, and article extract all correspond to Marc Chagall. The death date is consistently given as 1985-03-28, and the age at death is confirmed as 97 by major sources. There is a minor one-day discrepancy in some sources for the birth date, likely due to old-style/new-style calendar handling, but either 1887-07-06 or 1887-07-07 still gives an age at death of 97.",
+  "shortDescriptionEn": "Marc Chagall was a Belarusian-born Russian and French Jewish artist whose dreamlike paintings, stained glass, prints, stage designs, and murals made him one of the great poetic figures of modern art. Associated with the École de Paris and touched by Cubism, Expressionism, and Surrealism without being confined by any one movement, he filled his work with lovers, musicians, animals, village memories, and biblical imagery. He died on 28 March 1985 in Saint-Paul-de-Vence, France, at the age of 97, late in a long career that continued almost to the end of his life.",
+  "shortDescriptionFr": "Marc Chagall était un artiste juif né en Biélorussie, devenu russe puis français, dont les peintures oniriques, vitraux, gravures, décors de scène et fresques ont fait de lui l’une des grandes figures poétiques de l’art moderne. Proche de l’École de Paris et marqué par le cubisme, l’expressionnisme et le surréalisme sans appartenir strictement à un seul courant, il peupla son œuvre d’amoureux, de musiciens, d’animaux, de souvenirs de village et d’images bibliques. Il est mort le 28 mars 1985 à Saint-Paul-de-Vence, en France, à l’âge de 97 ans, après une carrière exceptionnellement longue poursuivie presque jusqu’à la fin.",
+  "shortDescriptionDe": "Marc Chagall war ein in Belarus geborener jüdischer Künstler, der später mit Russland und Frankreich verbunden war und mit seinen traumhaften Gemälden, Glasfenstern, Druckgrafiken, Bühnenbildern und Wandarbeiten zu den poetischsten Gestalten der Moderne wurde. Er stand der École de Paris nahe und nahm Einflüsse von Kubismus, Expressionismus und Surrealismus auf, ohne sich ganz einer einzigen Richtung zu unterwerfen; seine Bildwelt ist voller Liebender, Musiker, Tiere, Dorferinnerungen und biblischer Motive. Er starb am 28. März 1985 in Saint-Paul-de-Vence in Frankreich im Alter von 97 Jahren, nach einem langen Schaffen, das fast bis zu seinem Tod andauerte.",
+  "shortDescriptionEs": "Marc Chagall fue un artista judío nacido en Bielorrusia y vinculado a Rusia y Francia, célebre por sus pinturas de atmósfera soñadora, vitrales, grabados, escenografías y murales. Asociado con la École de Paris e influido por el cubismo, el expresionismo y el surrealismo sin quedar limitado por una sola escuela, llenó su obra de amantes, músicos, animales, recuerdos de aldea e imágenes bíblicas. Murió el 28 de marzo de 1985 en Saint-Paul-de-Vence, Francia, a los 97 años, tras una carrera extraordinariamente larga que se mantuvo activa casi hasta el final.",
+  "shortDescriptionRu": "Марк Шагал был еврейским художником, родившимся на территории современной Беларуси и связанным с русской и французской культурой; его сновидческие картины, витражи, графика, театральные декорации и монументальные работы сделали его одной из самых поэтичных фигур модернизма. Он был близок к Парижской школе и испытал влияние кубизма, экспрессионизма и сюрреализма, но не сводился ни к одному направлению; в его мире часто появляются влюблённые, музыканты, животные, воспоминания о местечке и библейские образы. Он умер 28 марта 1985 года в Сен-Поль-де-Вансе во Франции в возрасте 97 лет, продолжая творческую работу почти до конца жизни.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Shagal%20Choumoff.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Marc_Chagall"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Marc_Chagall",
+    "https://www.britannica.com/biography/Marc-Chagall",
+    "https://www.guggenheim.org/artwork/artist/marc-chagall",
+    "https://www.tate.org.uk/art/artists/marc-chagall-881",
+    "https://www.jhi.pl/en/articles/march-28th-anniversary-of-marc-chagalls-death-find-the-artists-works-on-the-delet-website%2C584",
+    "https://commons.wikimedia.org/wiki/Category:Marc_Chagall"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q160278",  "Name": "John D. Rockefeller",  "BirthDate": "1839-07-08T00:00:00Z",  "DeathDate": "1937-05-23T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John-D-Rockefeller-sen.jpg",  "SiteLinksCnt": 101,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"186300":{"pageid":186300,"ns":0,"title":"John D. Rockefeller","extract":"John Davison Rockefeller Sr. (July 8, 1839 \u2013 May 23, 1937) was an American businessman and philanthropist. He was one of the wealthiest Americans of all time and one of the richest people in modern history. Rockefeller was born into a large family in Upstate New York who moved several times before eventually settling in Cleveland, Ohio. He became an assistant bookkeeper at age 16 and went into several business partnerships beginning at age 20, concentrating his business on oil refining. Rockefeller founded the Standard Oil Company in 1870. He ran it until 1897 and remained its largest shareholder. In his retirement, he focused his energy and wealth on philanthropy, especially regarding education, medicine, higher education, and modernizing the Southern United States.\nRockefeller's wealth grew substantially as kerosene and gasoline became increasingly important commodities, eventually making him the richest person in the United States. By 1900, Standard Oil controlled about 90% of the nation's oil production. The company lowered production costs and expanded oil distribution through corporate and technological innovations, but it also benefited from a legal environment that enabled consolidation. Critics argue that regulatory capture played a role in facilitating its monopoly power\u2013a view reinforced by Rockefeller's reputed remark, \"Competition is a sin.\" \nRockefeller's company and business practices came under criticism, particularly in the writings of author Ida Tarbell.  The Supreme Court ruled in 1911 that Standard Oil must be dismantled for violation of federal antitrust laws. It was broken up into 34 separate entities, which included companies that became ExxonMobil, Chevron Corporation, and others\u2014some of which remain among the largest companies by revenue worldwide. Consequently, Rockefeller became the country's first billionaire, with a fortune worth nearly 2% of the national economy. His personal wealth was estimated in 1913 at $900 million, which was almost 3% of the US gross domestic product (GDP) of $39.1 billion that year.\nRockefeller spent much of the last 40 years of his life in retirement at Kykuit, his estate in Westchester County, New York, defining the structure of modern philanthropy, along with other key industrialists such as Andrew Carnegie. His fortune was used chiefly to create the modern systematic approach of targeted philanthropy through the creation of foundations that supported medicine, education, and scientific research. His foundations pioneered developments in medical research and were instrumental in the near-eradication of hookworm in the American South, and yellow fever in the United States. He and Carnegie gave form and impetus through their charities to the work of Abraham Flexner, who in his essay \"Medical Education in America\" emphatically endowed empiricism as the basis for the US medical system of the 20th century.\nRockefeller was the founder of the University of Chicago and Rockefeller University, and funded the establishment of Central Philippine University in the Philippines. He was a devout mainline Baptist Christian and supported many church-based institutions. He adhered to total abstinence from alcohol and tobacco throughout his life. For advice, he relied closely on his wife, Laura Spelman Rockefeller; they had four daughters and a son together. He was a faithful congregant of the Erie Street Baptist Mission Church, taught Sunday school, and served as a trustee, clerk, and occasional janitor. Religion was a guiding force throughout his life, and he believed it to be the source of his success. Rockefeller was also considered a supporter of capitalism based on a perspective of social Darwinism, and he was quoted often as saying, \"The growth of a large business is merely a survival of the fittest.\""}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q160278")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q160278",
+  "isRealHuman": true,
+  "birthDate": "1839-07-08",
+  "deathDate": "1937-05-23",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia and Encyclopaedia Britannica, and the age calculation is exact: John D. Rockefeller died on 1937-05-23, less than two months before his 98th birthday on 1937-07-08, making him 97.",
+  "shortDescriptionEn": "John Davison Rockefeller Sr. was an American industrialist and philanthropist who founded Standard Oil and became one of the wealthiest and most influential business figures in modern history. His fortune helped fund major institutions in education, medicine, and public health, including the University of Chicago, Rockefeller University, and the Rockefeller Foundation. He died at his home, The Casements, in Ormond Beach, Florida, on May 23, 1937, reportedly from arteriosclerosis, just weeks before his 98th birthday.",
+  "shortDescriptionFr": "John Davison Rockefeller Sr. était un industriel et philanthrope américain, fondateur de Standard Oil et l’une des figures économiques les plus riches et influentes de l’histoire moderne. Sa fortune servit à financer de grandes institutions dans l’éducation, la médecine et la santé publique, notamment l’Université de Chicago, l’Université Rockefeller et la Fondation Rockefeller. Il est mort dans sa résidence The Casements, à Ormond Beach en Floride, le 23 mai 1937, apparemment des suites d’une artériosclérose, quelques semaines avant son 98e anniversaire.",
+  "shortDescriptionDe": "John Davison Rockefeller Sr. war ein amerikanischer Industrieller und Philanthrop, Gründer von Standard Oil und eine der reichsten und einflussreichsten Wirtschaftsfiguren der modernen Geschichte. Sein Vermögen finanzierte bedeutende Einrichtungen in Bildung, Medizin und öffentlicher Gesundheit, darunter die University of Chicago, die Rockefeller University und die Rockefeller Foundation. Er starb am 23. Mai 1937 in seinem Haus The Casements in Ormond Beach, Florida, Berichten zufolge an Arteriosklerose, nur wenige Wochen vor seinem 98. Geburtstag.",
+  "shortDescriptionEs": "John Davison Rockefeller Sr. fue un industrial y filántropo estadounidense, fundador de Standard Oil y una de las figuras empresariales más ricas e influyentes de la historia moderna. Su fortuna ayudó a financiar grandes instituciones de educación, medicina y salud pública, como la Universidad de Chicago, la Universidad Rockefeller y la Fundación Rockefeller. Murió en su casa, The Casements, en Ormond Beach, Florida, el 23 de mayo de 1937, al parecer por arteriosclerosis, pocas semanas antes de cumplir 98 años.",
+  "shortDescriptionRu": "Джон Дэвисон Рокфеллер-старший был американским промышленником и филантропом, основателем Standard Oil и одной из самых богатых и влиятельных деловых фигур современной истории. Его состояние помогло финансировать крупные учреждения в сфере образования, медицины и общественного здравоохранения, включая Чикагский университет, Рокфеллеровский университет и Фонд Рокфеллера. Он умер 23 мая 1937 года в своем доме The Casements в Ормонд-Бич, Флорида, как сообщается, от артериосклероза, всего за несколько недель до 98-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_D._Rockefeller",
+    "https://www.britannica.com/money/John-D-Rockefeller",
+    "https://rockarch.org/resources/about-the-rockefellers/john-d-rockefeller-sr/",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/John-D-Rockefeller-sen.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q104372",  "Name": "Doris Day",  "BirthDate": "1922-04-03T00:00:00Z",  "DeathDate": "2019-05-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Doris%20Day%201958%20crop.jpg",  "SiteLinksCnt": 100,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"8300":{"pageid":8300,"ns":0,"title":"Doris Day","extract":"Doris Day (born Doris Mary Anne Kappelhoff; April 3, 1922 \u2013 May 13, 2019) was an American actress and singer. With an entertainment career that spanned nearly 50 years, Day was one of the most popular and acclaimed female singers of the 1940s and 1950s, with a parallel career as a leading actress in Hollywood films, where she became one of the biggest box-office stars of the 1960s. She was known for her on-screen girl next door image and her distinctive singing voice.\nDay began her career as a big band singer in 1937, achieving commercial success in 1945 with two No. 1 recordings, \"Sentimental Journey\" and \"My Dreams Are Getting Better All the Time\" with Les Brown and His Band of Renown. She left Brown to embark on a solo career and recorded more than 650 songs from 1947 to 1967. Her recording of \"Que Sera, Sera (Whatever Will Be, Will Be)\" became known as her signature song and was inducted into the Grammy Hall of Fame in 2011.\nDay made her film debut with the musical Romance on the High Seas (1948). She played the title role in the musical Calamity Jane (1953) and starred in the thriller The Man Who Knew Too Much (1956). She co-starred with Rock Hudson in three successful comedies: Pillow Talk (1959), for which she was nominated for the Academy Award for Best Actress, Lover Come Back (1961) and Send Me No Flowers (1964). Day also worked with actor  James Garner on both Move Over, Darling (1963) and The Thrill of It All (1963). After ending her film career in 1968, she starred in her own television sitcom The Doris Day Show (1968\u20131973).\nIn 1989, Day was awarded the Golden Globe and the Cecil B. DeMille Award for Lifetime Achievement in Motion Pictures. In 2004, she was awarded the Presidential Medal of Freedom. In 2008, she received the Grammy Lifetime Achievement Award as well as a Legend Award from the Society of Singers. In 2011, she was awarded the Los Angeles Film Critics Association's Career Achievement Award. As of 2020, Day was one of eight recording artists to have been the top box-office earner in the United States four times. Day was a prominent advocate for animal welfare and founded the advocacy group Doris Day Animal League (DDAL) and the non-profit organization Doris Day Pet Foundation, now the Doris Day Animal Foundation (DDAF)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q104372")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q104372",
+  "isRealHuman": true,
+  "birthDate": "1922-04-03",
+  "deathDate": "2019-05-13",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "Doris Day's birth date and death date are consistently reported by Wikipedia, Britannica, PBS, the Los Angeles Times, and related contemporary obituaries. The age calculation is straightforward: she died after her birthday in 2019, so 2019 - 1922 = 97.",
+  "shortDescriptionEn": "Doris Day was an American singer, actress, and animal-welfare advocate whose bright voice and sunny screen presence made her one of the defining entertainers of mid-20th-century Hollywood. Born Doris Mary Anne Kappelhoff in Cincinnati, she rose from big-band singing to film stardom in musicals, comedies, and romantic hits such as Pillow Talk, while Que Sera, Sera became her signature song. Later in life she largely left Hollywood and devoted herself to animal protection. She died at her Carmel Valley, California home on May 13, 2019, after contracting pneumonia, having reportedly been in good health for her age shortly before her final illness.",
+  "shortDescriptionFr": "Doris Day était une chanteuse, actrice et militante américaine pour la protection des animaux, célèbre pour sa voix lumineuse et sa présence chaleureuse qui ont marqué Hollywood au milieu du XXe siècle. Née Doris Mary Anne Kappelhoff à Cincinnati, elle passa du chant avec les grands orchestres au cinéma, dans des comédies musicales, des comédies romantiques et des succès comme Pillow Talk; Que Sera, Sera devint sa chanson emblématique. Plus tard, elle s’éloigna largement du spectacle pour se consacrer à la cause animale. Elle est morte le 13 mai 2019 dans sa maison de Carmel Valley, en Californie, après avoir contracté une pneumonie, alors qu’elle était encore décrite comme en bonne santé pour son âge peu avant sa dernière maladie.",
+  "shortDescriptionDe": "Doris Day war eine US-amerikanische Sängerin, Schauspielerin und Tierschutzaktivistin, deren klare Stimme und freundliche Leinwandpräsenz sie zu einer prägenden Unterhaltungskünstlerin des mittleren 20. Jahrhunderts machten. Geboren als Doris Mary Anne Kappelhoff in Cincinnati, wurde sie zunächst als Big-Band-Sängerin bekannt und anschließend ein Hollywoodstar in Musicals, Komödien und romantischen Erfolgen wie Pillow Talk; Que Sera, Sera wurde ihr Erkennungslied. Später zog sie sich weitgehend aus dem Showgeschäft zurück und widmete sich dem Tierschutz. Sie starb am 13. Mai 2019 in ihrem Haus in Carmel Valley, Kalifornien, nachdem sie an einer Lungenentzündung erkrankt war; kurz zuvor galt sie für ihr Alter noch als gesundheitlich robust.",
+  "shortDescriptionEs": "Doris Day fue una cantante, actriz y defensora del bienestar animal estadounidense, recordada por su voz luminosa y una presencia en pantalla que definió parte del Hollywood de mediados del siglo XX. Nacida como Doris Mary Anne Kappelhoff en Cincinnati, pasó de cantar con grandes orquestas a protagonizar musicales, comedias y éxitos románticos como Pillow Talk; Que Sera, Sera se convirtió en su canción más asociada. En sus últimos años se alejó en gran medida del espectáculo y dedicó mucha energía a la protección de los animales. Murió el 13 de mayo de 2019 en su casa de Carmel Valley, California, tras contraer neumonía, aunque poco antes se la describía como en excelente estado físico para su edad.",
+  "shortDescriptionRu": "Дорис Дэй была американской певицей, актрисой и защитницей животных, чьи светлый голос и обаятельный экранный образ сделали её одной из знаковых фигур Голливуда середины XX века. Урождённая Дорис Мэри Энн Каппельхофф из Цинциннати, она начала карьеру как певица биг-бэндов, а затем стала звездой мюзиклов, комедий и романтических фильмов, включая Pillow Talk; песня Que Sera, Sera стала её визитной карточкой. Позднее она в основном отошла от шоу-бизнеса и посвятила себя защите животных. Она умерла 13 мая 2019 года в своём доме в Кармел-Вэлли, Калифорния, после заболевания пневмонией; незадолго до этого сообщалось, что для своего возраста она была в хорошей физической форме.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Doris_Day",
+    "https://www.britannica.com/biography/Doris-Day",
+    "https://www.pbs.org/newshour/arts/legendary-actress-and-singer-doris-day-dies-at-97",
+    "https://www.latimes.com/local/obituaries/la-me-doris-day-dead-20190513-story.html",
+    "https://commons.wikimedia.org/wiki/Doris_Day",
+    "https://commons.wikimedia.org/wiki/File:Doris_Day_-_1957.JPG",
+    "https://commons.wikimedia.org/wiki/Category:Doris_Day"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q183679",  "Name": "Tsung-Dao Lee",  "BirthDate": "1926-11-24T00:00:00Z",  "DeathDate": "2024-08-04T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/TD%20Lee.jpg",  "SiteLinksCnt": 77,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"252081":{"pageid":252081,"ns":0,"title":"Tsung-Dao Lee","extract":"Tsung-Dao Lee (Chinese: \u674e\u653f\u9053; pinyin: L\u01d0 Zh\u00e8ngd\u00e0o; November 24, 1926 \u2013 August 4, 2024) was a Chinese-American physicist known for his work on parity violation, the Lee\u2013Yang theorem, particle physics, relativistic heavy ion (RHIC) physics, nontopological solitons, and soliton stars. He was a university professor emeritus at Columbia University in New York City, where he taught from 1953 until his retirement in 2012.\nIn 1957, at the age of 30, Lee won the Nobel Prize in Physics with Chen Ning Yang for their work on the violation of the parity law in weak interactions, which Chien-Shiung Wu experimentally proved from 1956 to 1957, with her well known Wu experiment.\nLee remains the youngest Nobel laureate in the science fields after World War II. He is the third-youngest Nobel laureate in sciences in history after William L. Bragg (who won the prize at 25 with his father William H. Bragg in 1915) and Werner Heisenberg (who won in 1932 also at 30). Lee and Yang were the first Chinese laureates. Since he became a naturalized American citizen in 1963, Lee is also the youngest American ever to have won a Nobel Prize."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q183679")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q183679",
+  "isRealHuman": true,
+  "birthDate": "1926-11-24",
+  "deathDate": "2024-08-04",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and reported age at death are confirmed by multiple reliable sources, including Wikipedia, NobelPrize.org, Columbia University, the Associated Press, Britannica, the Institute for Advanced Study, and CERN Courier. The age calculation is straightforward: Tsung-Dao Lee was born on 1926-11-24 and died on 2024-08-04, before reaching his 98th birthday, so he was 97.",
+  "shortDescriptionEn": "Tsung-Dao Lee was a Chinese-American theoretical physicist whose work helped reshape modern particle physics. Born in Shanghai, he became one of the youngest Nobel laureates in science when he shared the 1957 Nobel Prize in Physics with Chen Ning Yang for showing that parity symmetry is violated in weak interactions. He spent much of his career at Columbia University and influenced generations of physicists through work on particle theory, statistical mechanics, solitons, and scientific exchange between China and the United States. Lee died at his home in San Francisco on August 4, 2024, at the age of 97, leaving behind a legacy remembered across the international physics community.",
+  "shortDescriptionFr": "Tsung-Dao Lee était un physicien théoricien sino-américain dont les travaux ont profondément marqué la physique des particules moderne. Né à Shanghai, il devint l’un des plus jeunes lauréats scientifiques du prix Nobel lorsqu’il partagea le prix Nobel de physique 1957 avec Chen Ning Yang pour avoir montré que la symétrie de parité est violée dans les interactions faibles. Il fit l’essentiel de sa carrière à l’Université Columbia et influença plusieurs générations de physiciens par ses recherches sur la théorie des particules, la mécanique statistique, les solitons et les échanges scientifiques entre la Chine et les États-Unis. Lee est mort chez lui à San Francisco le 4 août 2024, à l’âge de 97 ans, laissant un héritage majeur dans la communauté scientifique internationale.",
+  "shortDescriptionDe": "Tsung-Dao Lee war ein chinesisch-amerikanischer theoretischer Physiker, dessen Arbeiten die moderne Teilchenphysik entscheidend veränderten. In Shanghai geboren, wurde er einer der jüngsten Nobelpreisträger der Naturwissenschaften, als er 1957 gemeinsam mit Chen Ning Yang den Nobelpreis für Physik erhielt, weil sie zeigten, dass die Paritätssymmetrie bei schwachen Wechselwirkungen verletzt wird. Den größten Teil seiner Laufbahn verbrachte er an der Columbia University; seine Forschung zu Teilchentheorie, statistischer Mechanik, Solitonen und zum wissenschaftlichen Austausch zwischen China und den USA prägte Generationen von Physikern. Lee starb am 4. August 2024 im Alter von 97 Jahren in seinem Haus in San Francisco und wurde weltweit als eine prägende Gestalt der Physik gewürdigt.",
+  "shortDescriptionEs": "Tsung-Dao Lee fue un físico teórico chino-estadounidense cuyas investigaciones transformaron la física moderna de partículas. Nacido en Shanghái, se convirtió en uno de los laureados científicos más jóvenes con el Nobel cuando compartió el Premio Nobel de Física de 1957 con Chen Ning Yang por demostrar que la simetría de paridad se viola en las interacciones débiles. Desarrolló gran parte de su carrera en la Universidad de Columbia e influyó en generaciones de físicos con trabajos sobre teoría de partículas, mecánica estadística, solitones e intercambio científico entre China y Estados Unidos. Lee murió en su casa de San Francisco el 4 de agosto de 2024, a los 97 años, dejando una huella profunda en la física internacional.",
+  "shortDescriptionRu": "Цзун-Дао Ли был китайско-американским физиком-теоретиком, чьи работы существенно изменили современную физику элементарных частиц. Родившийся в Шанхае, он стал одним из самых молодых научных нобелевских лауреатов, когда в 1957 году разделил Нобелевскую премию по физике с Чжэньнином Янгом за доказательство нарушения четности в слабых взаимодействиях. Значительную часть карьеры он провел в Колумбийском университете и оказал влияние на поколения физиков своими исследованиями в теории частиц, статистической механике, солитонах и научном обмене между Китаем и США. Ли умер у себя дома в Сан-Франциско 4 августа 2024 года в возрасте 97 лет, оставив значительное наследие в мировой науке.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tsung-Dao_Lee",
+    "https://www.nobelprize.org/prizes/physics/1957/lee/biographical/",
+    "https://fas.columbia.edu/news/memoriam-university-professor-emeritus-tsung-dao-lee",
+    "https://apnews.com/article/tsung-dao-lee-nobel-physics-obituary-a8d9804312ccb1d3d5c89da4661440fe",
+    "https://www.britannica.com/biography/Tsung-Dao-Lee",
+    "https://www.ias.edu/news/featured-story/290241",
+    "https://cerncourier.com/a/tsung-dao-lee-1926-2024/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q189987",  "Name": "Nicolaas Bloembergen",  "BirthDate": "1920-03-11T00:00:00Z",  "DeathDate": "2017-09-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nicolaas%20Bloembergen%201981.jpg",  "SiteLinksCnt": 77,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"396737":{"pageid":396737,"ns":0,"title":"Nicolaas Bloembergen","extract":"Nicolaas Bloembergen (March 11, 1920 \u2013 September 5, 2017) was a Dutch\u2013American physicist recognized for his work in developing driving principles behind nonlinear optics for laser spectroscopy. During his career, he was a professor at Harvard University and later at the University of Arizona and at Leiden University in 1973 (as Lorentz Professor).\nBloembergen shared the 1981 Nobel Prize in Physics along with Arthur Schawlow and Kai Siegbahn because their work \"has had a profound effect on our present knowledge of the constitution of matter\" through the use of laser spectroscopy. In particular, Bloembergen was singled out because he \"founded a new field of science we now call non-linear optics\" by mixing \"two or more beams of laser light... in order to produce laser light of a different wave length\" and thus significantly broaden the laser spectroscopy frequency band."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q189987")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q189987",
+  "isRealHuman": true,
+  "birthDate": "1920-03-11",
+  "deathDate": "2017-09-05",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, NobelPrize.org, Harvard Gazette, Britannica, and major obituary sources. Since Nicolaas Bloembergen died on 2017-09-05 after his birthday on 2017-03-11, the calculated age at death is exactly 97. Minor variation exists only in descriptions of the immediate medical cause, not in the age.",
+  "shortDescriptionEn": "Nicolaas Bloembergen was a Dutch-American physicist whose work shaped magnetic resonance, masers, lasers, and nonlinear optics. A longtime Harvard professor, he shared the 1981 Nobel Prize in Physics for major contributions to laser spectroscopy. He died on September 5, 2017, in Tucson, Arizona, at age 97; obituaries reported cardiorespiratory failure or a heart-related cause.",
+  "shortDescriptionFr": "Nicolaas Bloembergen était un physicien néerlandais-américain dont les travaux ont marqué la résonance magnétique, les masers, les lasers et l’optique non linéaire. Professeur de longue date à Harvard, il partagea le prix Nobel de physique 1981 pour ses contributions majeures à la spectroscopie laser. Il est mort le 5 septembre 2017 à Tucson, en Arizona, à l’âge de 97 ans; les nécrologies évoquent une défaillance cardiorespiratoire ou une cause cardiaque.",
+  "shortDescriptionDe": "Nicolaas Bloembergen war ein niederländisch-amerikanischer Physiker, dessen Arbeiten die Magnetresonanz, Maser, Laser und die nichtlineare Optik prägten. Als langjähriger Harvard-Professor erhielt er 1981 anteilig den Nobelpreis für Physik für grundlegende Beiträge zur Laserspektroskopie. Er starb am 5. September 2017 in Tucson, Arizona, im Alter von 97 Jahren; Nachrufe nannten Herz-Kreislauf-Versagen beziehungsweise eine herzbedingte Ursache.",
+  "shortDescriptionEs": "Nicolaas Bloembergen fue un físico neerlandés-estadounidense cuyo trabajo influyó en la resonancia magnética, los máseres, los láseres y la óptica no lineal. Profesor durante muchos años en Harvard, compartió el Premio Nobel de Física de 1981 por sus aportes fundamentales a la espectroscopia láser. Murió el 5 de septiembre de 2017 en Tucson, Arizona, a los 97 años; las necrológicas mencionaron fallo cardiorrespiratorio o una causa relacionada con el corazón.",
+  "shortDescriptionRu": "Николас Блумберген был нидерландско-американским физиком, чьи работы повлияли на развитие магнитного резонанса, мазеров, лазеров и нелинейной оптики. Долгое время он преподавал в Гарварде и в 1981 году разделил Нобелевскую премию по физике за вклад в лазерную спектроскопию. Он умер 5 сентября 2017 года в Тусоне, штат Аризона, в возрасте 97 лет; в некрологах причиной называли кардиореспираторную недостаточность или сердечную причину.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolaas%20Bloembergen%201981.jpg",
+    "https://www.nobelprize.org/prizes/physics/1981/bloembergen/facts/",
+    "https://physicsworld.com/a/laser-spectroscopy-pioneer-nicolaas-bloembergen-dies-at-97/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nicolaas_Bloembergen",
+    "https://www.nobelprize.org/prizes/physics/1981/bloembergen/facts/",
+    "https://news.harvard.edu/gazette/story/2018/11/nicolaas-bloembergen-97/",
+    "https://www.washingtonpost.com/local/obituaries/nicolaas-bloembergen-winner-of-nobel-prize-in-physics-dies-at-97/2017/09/09/2e8af4dc-9335-11e7-8754-d478688d23b4_story.html",
+    "https://www.britannica.com/biography/Nicolaas-Bloembergen",
+    "https://physicsworld.com/a/laser-spectroscopy-pioneer-nicolaas-bloembergen-dies-at-97/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q186042",  "Name": "John Kenneth Galbraith",  "BirthDate": "1908-10-15T00:00:00Z",  "DeathDate": "2006-04-29T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Kenneth%20Galbraith%20from%20the%20back%20cover%20of%20%22The%20Affluent%20Society%22.jpeg",  "SiteLinksCnt": 75,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"84271":{"pageid":84271,"ns":0,"title":"John Kenneth Galbraith","extract":"John Kenneth Galbraith  (October 15, 1908 \u2013 April 29, 2006), also known as J. K. Galbraith or Ken Galbraith, was a Canadian-American economist, diplomat, public official, and intellectual. His books on economic topics were bestsellers from the 1950s through the 2000s. As an economist, he leaned toward post-Keynesian economics from an institutionalist perspective. He served as the deputy director of the powerful Office of Price Administration (OPA) during World War II in charge of stabilizing all prices, wages and rents in the American economy, to combat the threat of inflation and hoarding during a time of shortages and rationing, a task which was successfully accomplished.\nGalbraith was a long-time Harvard faculty member and stayed with Harvard University for half a century as a professor of economics. He was a prolific author and wrote four dozen books, including several novels, and published more than a thousand articles and essays on various subjects. Among his works was a trilogy on economics, American Capitalism (1952), The Affluent Society (1958), and The New Industrial State (1967).\nGalbraith was active in Democratic Party politics, serving in the administrations of Franklin D. Roosevelt, Harry S. Truman, John F. Kennedy, and Lyndon B. Johnson. He served as United States Ambassador to India under the Kennedy administration. His political activism, literary output and outspokenness brought him wide fame during his lifetime. Galbraith was one of the few to receive both the World War II Medal of Freedom (1946) and the Presidential Medal of Freedom (2000) for his public service and contributions to science.  During the Watergate scandal, Galbraith discovered that he had been placed on the Master list of Nixon's political opponents."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q186042")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q186042",
+  "isRealHuman": true,
+  "birthDate": "1908-10-15",
+  "deathDate": "2006-04-29",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistently reported by Wikipedia, Britannica, and Harvard Gazette. The age calculation is exact: John Kenneth Galbraith was born on 1908-10-15 and died on 2006-04-29, before reaching his 98th birthday, so he was 97.",
+  "shortDescriptionEn": "John Kenneth Galbraith was a Canadian-American economist, Harvard professor, diplomat, and one of the most widely read public intellectuals of the twentieth century. Known for works such as The Affluent Society and The New Industrial State, he shaped debates on capitalism, inequality, corporate power, and public policy with wit and clarity. He also served as U.S. ambassador to India under President John F. Kennedy. Galbraith died in Cambridge, Massachusetts, on April 29, 2006, after a hospital stay, reportedly of natural causes, at the age of 97.",
+  "shortDescriptionFr": "John Kenneth Galbraith était un économiste canado-américain, professeur à Harvard, diplomate et l’un des intellectuels publics les plus lus du XXe siècle. Auteur de livres majeurs comme The Affluent Society et The New Industrial State, il a marqué les débats sur le capitalisme, les inégalités, le pouvoir des grandes entreprises et le rôle de l’État. Il fut aussi ambassadeur des États-Unis en Inde sous John F. Kennedy. Galbraith est mort à Cambridge, dans le Massachusetts, le 29 avril 2006, après une hospitalisation, vraisemblablement de causes naturelles, à l’âge de 97 ans.",
+  "shortDescriptionDe": "John Kenneth Galbraith war ein kanadisch-amerikanischer Ökonom, Harvard-Professor, Diplomat und einer der meistgelesenen öffentlichen Intellektuellen des 20. Jahrhunderts. Mit Werken wie The Affluent Society und The New Industrial State prägte er Debatten über Kapitalismus, Ungleichheit, Unternehmensmacht und staatliche Politik. Unter Präsident John F. Kennedy diente er außerdem als US-Botschafter in Indien. Galbraith starb am 29. April 2006 in Cambridge, Massachusetts, nach einem Krankenhausaufenthalt, Berichten zufolge eines natürlichen Todes, im Alter von 97 Jahren.",
+  "shortDescriptionEs": "John Kenneth Galbraith fue un economista canadiense-estadounidense, profesor de Harvard, diplomático y uno de los intelectuales públicos más leídos del siglo XX. Autor de obras como The Affluent Society y The New Industrial State, influyó en los debates sobre capitalismo, desigualdad, poder corporativo y política pública con un estilo claro y mordaz. También fue embajador de Estados Unidos en la India durante la presidencia de John F. Kennedy. Galbraith murió en Cambridge, Massachusetts, el 29 de abril de 2006, tras una estancia en el hospital, al parecer por causas naturales, a los 97 años.",
+  "shortDescriptionRu": "Джон Кеннет Гэлбрейт был канадско-американским экономистом, профессором Гарварда, дипломатом и одним из самых читаемых публичных интеллектуалов XX века. Его книги, включая The Affluent Society и The New Industrial State, повлияли на дискуссии о капитализме, неравенстве, власти корпораций и роли государства. При президенте Джоне Кеннеди он также служил послом США в Индии. Гэлбрейт умер 29 апреля 2006 года в Кембридже, штат Массачусетс, после пребывания в больнице, как сообщалось, от естественных причин, в возрасте 97 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/John_Kenneth_Galbraith",
+    "https://www.britannica.com/money/John-Kenneth-Galbraith",
+    "https://news.harvard.edu/gazette/story/2006/05/economist-john-kenneth-galbraith-dies-at-97/",
+    "https://news.harvard.edu/gazette/story/2006/05/john-kenneth-galbraith-a-timeline-of-his-life/",
+    "https://www.theguardian.com/news/2006/may/01/guardianobituaries.usa",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/John%20Kenneth%20Galbraith%20from%20the%20back%20cover%20of%20%22The%20Affluent%20Society%22.jpeg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q105480",  "Name": "Kenneth Kaunda",  "BirthDate": "1924-04-28T00:00:00Z",  "DeathDate": "2021-06-17T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20David%20Kaunda.jpg",  "SiteLinksCnt": 73,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"17355":{"pageid":17355,"ns":0,"title":"Kenneth Kaunda","extract":"Kenneth Kaunda (28 April 1924 \u2013 17 June 2021), also known as KK, was a Zambian politician who served as the first president of Zambia from 1964 to 1991. He was at the forefront of the campaign for independence from the British Empire, though he would subsequently establish himself as a dictator and oversee Zambia\u2019s economic collapse once this was achieved. Dissatisfied with Harry Nkumbula's leadership of the Northern Rhodesian African National Congress, he broke away and founded the Zambian African National Congress, later becoming the head of the socialist United National Independence Party (UNIP).\nKaunda was the first president of independent Zambia. In 1973, following tribal and inter-party violence, all political parties except UNIP were banned through an amendment of the constitution after the signing of the Choma Declaration. At the same time, Kaunda oversaw the acquisition of majority stakes in key foreign-owned companies. The 1973 oil crisis and a slump in export revenues put Zambia in a state of economic crisis. Unrest forced Kaunda to change the rules that had kept him in power. Multi-party elections took place in 1991, in which Frederick Chiluba, the leader of the Movement for Multi-Party Democracy, ousted Kaunda.\nHe was briefly stripped of Zambian citizenship in 1998, but the decision was overturned two years later in 2000."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q105480")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q105480",
+  "isRealHuman": true,
+  "birthDate": "1924-04-28",
+  "deathDate": "2021-06-17",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "Kenneth Kaunda's birth date, death date, and age at death are consistent across Wikipedia, Britannica, and contemporary obituary/news sources. The calculated age is 97 because he was born on 1924-04-28 and died on 2021-06-17, after his birthday that year.",
+  "shortDescriptionEn": "Kenneth David Kaunda was a Zambian teacher, anti-colonial leader, and politician who became Zambia’s first president, serving from independence in 1964 until 1991. Known widely as “KK,” he played a major role in Zambia’s independence movement and in southern Africa’s liberation politics, though his long rule also became increasingly authoritarian. Kaunda died in Lusaka on 17 June 2021 at age 97, after being treated for pneumonia and following a short illness.",
+  "shortDescriptionFr": "Kenneth David Kaunda était un enseignant, dirigeant anticolonial et homme politique zambien, devenu le premier président de la Zambie de l’indépendance en 1964 jusqu’en 1991. Surnommé « KK », il joua un rôle central dans le mouvement d’indépendance zambien et dans les luttes de libération en Afrique australe, même si son long pouvoir devint aussi de plus en plus autoritaire. Kaunda est mort à Lusaka le 17 juin 2021, à l’âge de 97 ans, après avoir été soigné pour une pneumonie et à la suite d’une courte maladie.",
+  "shortDescriptionDe": "Kenneth David Kaunda war ein sambischer Lehrer, antikolonialer Anführer und Politiker, der von der Unabhängigkeit 1964 bis 1991 als erster Präsident Sambias amtierte. Weithin als „KK“ bekannt, prägte er den Unabhängigkeitskampf Sambias und die Befreiungspolitik im südlichen Afrika, auch wenn seine lange Herrschaft zunehmend autoritäre Züge annahm. Kaunda starb am 17. Juni 2021 in Lusaka im Alter von 97 Jahren, nachdem er wegen einer Lungenentzündung behandelt worden war und nach kurzer Krankheit.",
+  "shortDescriptionEs": "Kenneth David Kaunda fue un maestro, líder anticolonial y político zambiano que se convirtió en el primer presidente de Zambia, gobernando desde la independencia en 1964 hasta 1991. Conocido como “KK”, tuvo un papel decisivo en la independencia de Zambia y en la política de liberación del África austral, aunque su prolongado mandato también se volvió cada vez más autoritario. Kaunda murió en Lusaka el 17 de junio de 2021, a los 97 años, tras recibir tratamiento por neumonía y después de una breve enfermedad.",
+  "shortDescriptionRu": "Кеннет Дэвид Каунда был замбийским учителем, антиколониальным лидером и политиком, ставшим первым президентом Замбии и руководившим страной с момента независимости в 1964 году до 1991 года. Широко известный как «КК», он сыграл ключевую роль в движении за независимость Замбии и в освободительной политике юга Африки, хотя его долгое правление со временем приобрело всё более авторитарный характер. Каунда умер в Лусаке 17 июня 2021 года в возрасте 97 лет после лечения от пневмонии и непродолжительной болезни.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kenneth_Kaunda",
+    "https://www.britannica.com/biography/Kenneth-Kaunda",
+    "https://www.theguardian.com/world/2021/jun/17/kenneth-kaunda-obituary",
+    "https://www.abc.net.au/news/2021-06-18/kenneth-kaunda-zambia-president-dies/100225158",
+    "https://simple.wikipedia.org/wiki/Kenneth_Kaunda",
+    "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Kenneth_Kaunda"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q189990",  "Name": "Antony Hewish",  "BirthDate": "1924-05-11T00:00:00Z",  "DeathDate": "2021-09-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/26.%20Tagung%201976%20Physiker%3B%20Gruppen%20beim%20Bayrischen%20Fr%C3%BChst%C3%BCck%20Antony%20Hewish%20-%20W134Nr.106841b%20-%20Willy%20Pragher.jpg",  "SiteLinksCnt": 72,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"300769":{"pageid":300769,"ns":0,"title":"Antony Hewish","extract":"Antony Hewish (11 May 1924 \u2013 13 September 2021) was a British radio astronomer who won the Nobel Prize for Physics in 1974 (together with fellow radio-astronomer Martin Ryle) for his role in the discovery of pulsars. He was also awarded the Eddington Medal of the Royal Astronomical Society in 1969."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q189990")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q189990",
+  "isRealHuman": true,
+  "birthDate": "1924-05-11",
+  "deathDate": "2021-09-13",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistently given by Wikipedia, NobelPrize.org, Britannica, and major obituary sources. The age calculation is straightforward: Antony Hewish was born on 1924-05-11 and died on 2021-09-13, after his 97th birthday. Public sources do not appear to specify a detailed medical cause of death, but the date and age are highly reliable.",
+  "shortDescriptionEn": "Antony Hewish was a British radio astronomer and Nobel Prize laureate whose work at Cambridge helped lead to the discovery of pulsars, one of the landmark astronomical findings of the twentieth century. He shared the 1974 Nobel Prize in Physics with Martin Ryle, though the award later became controversial because Jocelyn Bell Burnell, who first noticed the pulsar signal as a graduate student, was not included. Hewish died on 13 September 2021 at the age of 97; public obituaries record his death but do not give a detailed medical cause.",
+  "shortDescriptionFr": "Antony Hewish était un radioastronome britannique et lauréat du prix Nobel, dont les travaux à Cambridge ont contribué à la découverte des pulsars, l’une des grandes avancées astronomiques du XXe siècle. Il partagea le prix Nobel de physique 1974 avec Martin Ryle, une récompense ensuite discutée car Jocelyn Bell Burnell, qui avait repéré la première le signal d’un pulsar comme doctorante, n’avait pas été incluse. Hewish est mort le 13 septembre 2021 à l’âge de 97 ans; les nécrologies publiques annoncent son décès sans préciser de cause médicale détaillée.",
+  "shortDescriptionDe": "Antony Hewish war ein britischer Radioastronom und Nobelpreisträger, dessen Arbeit in Cambridge zur Entdeckung der Pulsare beitrug, einer der bedeutenden astronomischen Entdeckungen des 20. Jahrhunderts. 1974 erhielt er gemeinsam mit Martin Ryle den Nobelpreis für Physik; die Auszeichnung blieb umstritten, weil Jocelyn Bell Burnell, die als Doktorandin das erste Pulsarsignal bemerkte, nicht mitgeehrt wurde. Hewish starb am 13. September 2021 im Alter von 97 Jahren; öffentliche Nachrufe nennen seinen Tod, aber keine ausführliche medizinische Todesursache.",
+  "shortDescriptionEs": "Antony Hewish fue un radioastrónomo británico y premio Nobel cuyo trabajo en Cambridge ayudó a descubrir los púlsares, uno de los hallazgos astronómicos más importantes del siglo XX. Compartió el Premio Nobel de Física de 1974 con Martin Ryle, aunque el galardón fue polémico porque Jocelyn Bell Burnell, quien detectó por primera vez la señal de un púlsar cuando era estudiante de doctorado, no fue incluida. Hewish murió el 13 de septiembre de 2021 a los 97 años; las fuentes públicas registran su muerte, pero no detallan una causa médica concreta.",
+  "shortDescriptionRu": "Энтони Хьюиш был британским радиоастрономом и лауреатом Нобелевской премии, чья работа в Кембридже привела к открытию пульсаров — одного из важнейших астрономических открытий XX века. В 1974 году он разделил Нобелевскую премию по физике с Мартином Райлом, хотя это решение стало спорным, поскольку Джоселин Белл Бёрнелл, первой заметившая сигнал пульсара будучи аспиранткой, не была включена в число лауреатов. Хьюиш умер 13 сентября 2021 года в возрасте 97 лет; публичные некрологи сообщают о его смерти, но не указывают подробную медицинскую причину.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Antony_Hewish",
+    "https://www.nobelprize.org/prizes/physics/1974/hewish/facts/",
+    "https://www.britannica.com/biography/Antony-Hewish",
+    "https://www.theguardian.com/science/2021/oct/03/sir-antony-hewish-obituary",
+    "https://physicsworld.com/a/nobel-prize-winning-astronomer-antony-hewish-dies-aged-97/",
+    "https://royalsocietypublishing.org/rsbm/article/doi/10.1098/rsbm.2021.0045/116172/Antony-Hewish-11-May-1924-13-September-2021Antony"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q216983",  "Name": "Kenan Evren",  "BirthDate": "1917-07-17T00:00:00Z",  "DeathDate": "2015-05-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Kenan%20Evren%20%28cropped%29.png",  "SiteLinksCnt": 72,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"617363":{"pageid":617363,"ns":0,"title":"Kenan Evren","extract":"Ahmet Kenan Evren (17 July 1917 \u2013 9 May 2015) was a Turkish military officer who served as the 7th president of Turkey from 1982 to 1989. He assumed the post by leading the 1980 military coup.\nOn 18 June 2014, a Turkish court sentenced him to life imprisonment and demotion of his military rank, (down to private from army general) for leading the military coup in 1980. He was found guilty of obstructing democracy by deposing the prime minister S\u00fcleyman Demirel and of abolishing the parliament, senate and the constitution. This sentence was under appeal at the time of his death."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q216983")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q216983",
+  "isRealHuman": true,
+  "birthDate": "1917-07-17",
+  "deathDate": "2015-05-09",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The birth date 1917-07-17 and death date 2015-05-09 are consistently reported by Wikipedia and contemporary news coverage. Since he died before his 98th birthday in July 2015, the calculated age at death is 97.",
+  "shortDescriptionEn": "Ahmet Kenan Evren was a Turkish army general who led the 12 September 1980 military coup and later served as Turkey’s 7th president from 1982 to 1989. His rule remains controversial because the coup era brought mass arrests, torture allegations, executions, and long-lasting political repression. In 2014 he was sentenced to life imprisonment for his role in the coup, though age and illness prevented him from serving time in prison. Evren died on 9 May 2015 at a military hospital in Ankara after multiple organ failure linked to old age. He was 97.",
+  "shortDescriptionFr": "Ahmet Kenan Evren était un général turc qui mena le coup d’État militaire du 12 septembre 1980 avant de devenir le 7e président de la Turquie, de 1982 à 1989. Son héritage reste très controversé en raison des arrestations massives, des accusations de torture, des exécutions et de la répression politique associées à cette période. En 2014, il fut condamné à la prison à vie pour son rôle dans le coup d’État, mais son âge et son état de santé l’empêchèrent de purger cette peine en prison. Evren est mort le 9 mai 2015 dans un hôpital militaire à Ankara, après une défaillance multiviscérale liée au grand âge. Il avait 97 ans.",
+  "shortDescriptionDe": "Ahmet Kenan Evren war ein türkischer General, der den Militärputsch vom 12. September 1980 anführte und anschließend von 1982 bis 1989 als 7. Präsident der Türkei amtierte. Sein Vermächtnis ist stark umstritten, da die Putschzeit von Massenverhaftungen, Foltervorwürfen, Hinrichtungen und politischer Repression geprägt war. 2014 wurde er wegen seiner Rolle beim Putsch zu lebenslanger Haft verurteilt, doch Alter und Krankheit verhinderten eine tatsächliche Haftverbüßung. Evren starb am 9. Mai 2015 in einem Militärkrankenhaus in Ankara an multiplem Organversagen im Zusammenhang mit hohem Alter. Er wurde 97 Jahre alt.",
+  "shortDescriptionEs": "Ahmet Kenan Evren fue un general turco que encabezó el golpe militar del 12 de septiembre de 1980 y después ejerció como séptimo presidente de Turquía entre 1982 y 1989. Su legado sigue siendo muy controvertido por las detenciones masivas, las acusaciones de tortura, las ejecuciones y la represión política asociadas a aquella etapa. En 2014 fue condenado a cadena perpetua por su papel en el golpe, aunque su edad y su mala salud impidieron que cumpliera la pena en prisión. Evren murió el 9 de mayo de 2015 en un hospital militar de Ankara, tras sufrir un fallo multiorgánico relacionado con la vejez. Tenía 97 años.",
+  "shortDescriptionRu": "Ахмет Кенан Эврен был турецким генералом, возглавившим военный переворот 12 сентября 1980 года, а затем занимавшим пост 7-го президента Турции с 1982 по 1989 год. Его наследие остается крайне спорным из-за массовых арестов, обвинений в пытках, казней и политических репрессий, связанных с периодом военного режима. В 2014 году он был приговорен к пожизненному заключению за роль в перевороте, однако из-за преклонного возраста и болезни фактически не отбывал срок в тюрьме. Эврен умер 9 мая 2015 года в военном госпитале в Анкаре от полиорганной недостаточности, связанной со старостью. Ему было 97 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kenan_Evren",
+    "https://www.reuters.com/article/lifestyle/former-turkish-president-evren-symbol-of-military-era-dies-at-97-idUSKBN0NU0QP/",
+    "https://www.theguardian.com/world/2015/may/10/kenan-evren-leader-of-turkeys-1980-military-coup-and-former-president-dies",
+    "https://www.reuters.com/article/world/former-turkish-military-chief-evren-sentenced-to-life-for-staging-1980-coup-idUSKBN0ET25F/",
+    "https://www.aa.com.tr/tr/pg/foto-galeri/7-cumhurbaskani-kenan-evren-hayatini-kaybetti/0/17042"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2571",  "Name": "Walter Scheel",  "BirthDate": "1919-07-08T00:00:00Z",  "DeathDate": "2016-08-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20146-1989-047-20%2C%20Walter%20Scheel.jpg",  "SiteLinksCnt": 69,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"299315":{"pageid":299315,"ns":0,"title":"Walter Scheel","extract":"Walter Scheel (German: [\u02c8valt\u0250 \u02c8\u0283e\u02d0l] ; 8 July 1919 \u2013 24 August 2016) was a German statesman. A member of the Nazi Party who joined the Free Democratic Party of Germany (FDP) in 1946, he first served in government as the Federal Minister of Economic Cooperation and Development from 1961 to 1966 and later as President of Germany from 1974 to 1979. He led the FDP from 1968 to 1974.\nDuring the chancellorship of Willy Brandt, Scheel was Federal Minister of Foreign Affairs and the Vice Chancellor. Scheel became acting Chancellor of West Germany from 7\u201316 May 1974 following Brandt's resignation after the Guillaume Affair. He was elected shortly after as the president of West Germany, remaining in the role until 1979. Scheel was a member of the Protestant Church in Germany."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2571")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2571",
+  "isRealHuman": true,
+  "birthDate": "1919-07-08",
+  "deathDate": "2016-08-24",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "Walter Scheel’s birth and death dates are confirmed by multiple independent sources, including Wikipedia, the official German Federal President biography, AP reporting, and major obituaries. The age calculation is exact: born 1919-07-08 and died 2016-08-24, after his 97th birthday. Confidence is 99 rather than 100 only because exact time-of-day is not relevant to the requested whole-year age.",
+  "shortDescriptionEn": "Walter Scheel was a leading liberal politician of West Germany, serving as foreign minister, vice-chancellor, briefly acting chancellor, and Federal President from 1974 to 1979. A central figure in the FDP, he helped shape Ostpolitik and West Germany’s détente with Eastern Europe. He died in Bad Krozingen on 24 August 2016, aged 97, after a long illness, and was remembered with state honours as one of the defining public figures of the Bonn Republic.",
+  "shortDescriptionFr": "Walter Scheel fut une grande figure libérale de l’Allemagne de l’Ouest, ministre des Affaires étrangères, vice-chancelier, brièvement chancelier par intérim, puis président fédéral de 1974 à 1979. Dirigeant important du FDP, il contribua à l’Ostpolitik et au rapprochement avec l’Europe de l’Est. Il est mort à Bad Krozingen le 24 août 2016, à l’âge de 97 ans, après une longue maladie, et fut honoré comme l’un des visages majeurs de la République de Bonn.",
+  "shortDescriptionDe": "Walter Scheel war ein prägender liberaler Politiker der Bundesrepublik: Außenminister, Vizekanzler, kurzzeitig geschäftsführender Bundeskanzler und von 1974 bis 1979 Bundespräsident. Als führender FDP-Politiker gestaltete er die Ostpolitik und die Entspannung gegenüber Osteuropa mit. Er starb am 24. August 2016 in Bad Krozingen im Alter von 97 Jahren nach langer Krankheit und wurde als eine Schlüsselfigur der Bonner Republik gewürdigt.",
+  "shortDescriptionEs": "Walter Scheel fue una figura liberal clave de Alemania Occidental: ministro de Asuntos Exteriores, vicecanciller, brevemente canciller en funciones y presidente federal entre 1974 y 1979. Como dirigente del FDP, ayudó a impulsar la Ostpolitik y la distensión con Europa del Este. Murió en Bad Krozingen el 24 de agosto de 2016, a los 97 años, tras una larga enfermedad, y fue recordado con honores de Estado como una figura central de la República de Bonn.",
+  "shortDescriptionRu": "Вальтер Шеель был одним из ведущих либеральных политиков Западной Германии: министром иностранных дел, вице-канцлером, кратковременно исполняющим обязанности канцлера и федеральным президентом в 1974–1979 годах. Как лидер СвДП он участвовал в формировании восточной политики и разрядки с Восточной Европой. Он умер 24 августа 2016 года в Бад-Кроцингене в возрасте 97 лет после долгой болезни и был почтён как одна из заметнейших фигур Боннской республики.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Walter_Scheel",
+    "https://www.bundespraesident.de/EN/role-and-functions/the-german-federal-presidents/walter-scheel/walter-scheel_node.html",
+    "https://apnews.com/general-news-d3a4818cdc8b4aef908be90077b60fa8",
+    "https://www.theguardian.com/world/2016/aug/24/walter-scheel-obituary",
+    "https://www.auswaertiges-amt.de/en/newsroom/news/160824-bm-zum-tod-walter-scheel-282880",
+    "https://de.wikipedia.org/wiki/Walter_Scheel"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q76948",  "Name": "Caroline Herschel",  "BirthDate": "1750-03-16T00:00:00Z",  "DeathDate": "1848-01-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/1829%20Melchior%20Gommar%20Tieleman%2C%20%C3%96lgem%C3%A4lde%20Caroline%20Herschel%20Hannover.tif",  "SiteLinksCnt": 68,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"207843":{"pageid":207843,"ns":0,"title":"Caroline Herschel","extract":"Caroline Lucretia Herschel ( HUR-sh\u0259l, HAIR-sh\u0259l, German: [ka\u0281o\u02c8li\u02d0n\u0259 \u02c8h\u025b\u0281\u0283l\u0329]; 16 March 1750 \u2013 9 January 1848) was a German astronomer, whose most significant contributions to astronomy were the discoveries of several comets, including the periodic comet 35P/Herschel\u2013Rigollet, which bears her name. She was the younger sister of astronomer William Herschel, with whom she worked for most of her career.\nShe was the first known professional female astronomer, and the first woman to receive a salary as a scientist, and the first woman in England to hold a government position. She was also the first woman to publish scientific findings in the Philosophical Transactions of the Royal Society, to be awarded a Gold Medal of the Royal Astronomical Society (1828), and to be named an honorary Member of the Royal Astronomical Society (1835, with Mary Somerville). She was named an honorary member of the Royal Irish Academy (1838). The King of Prussia presented her with a gold medal for Science on the occasion of her 96th birthday (1846)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q76948")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q76948",
+  "isRealHuman": true,
+  "birthDate": "1750-03-16",
+  "deathDate": "1848-01-09",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia-derived data, Encyclopaedia Britannica, and Royal Museums Greenwich. The age calculation is straightforward: Caroline Herschel was born on 16 March 1750 and died on 9 January 1848, a little over two months before her 98th birthday, so she was 97.",
+  "shortDescriptionEn": "Caroline Lucretia Herschel was a German-born astronomer who became one of the most important observational scientists of the 18th and early 19th centuries. Working first alongside her brother William Herschel and later independently, she discovered several comets, helped catalogue thousands of nebulae and star clusters, and became the first woman in Britain to receive a salary for scientific work. In later life she returned to Hanover, remained respected by Europe’s astronomical community, and continued cataloguing work despite declining physical strength. She died peacefully in Hanover on 9 January 1848, aged 97.",
+  "shortDescriptionFr": "Caroline Lucretia Herschel était une astronome née en Allemagne, devenue l’une des grandes observatrices du ciel de la fin du XVIIIe et du début du XIXe siècle. D’abord collaboratrice de son frère William Herschel, puis chercheuse reconnue à part entière, elle découvrit plusieurs comètes, contribua au catalogage de milliers de nébuleuses et d’amas stellaires, et fut la première femme en Grande-Bretagne à recevoir un salaire pour un travail scientifique. Dans ses dernières années, elle retourna à Hanovre, où elle conserva l’estime du monde astronomique. Elle y mourut paisiblement le 9 janvier 1848, à l’âge de 97 ans.",
+  "shortDescriptionDe": "Caroline Lucretia Herschel war eine in Deutschland geborene Astronomin und eine der bedeutenden Himmelsbeobachterinnen des späten 18. und frühen 19. Jahrhunderts. Zunächst arbeitete sie mit ihrem Bruder William Herschel zusammen, später wurde sie für eigene Entdeckungen bekannt, darunter mehrere Kometen. Sie half außerdem bei der Katalogisierung Tausender Nebel und Sternhaufen und war die erste Frau in Großbritannien, die für wissenschaftliche Arbeit ein Gehalt erhielt. Im Alter lebte sie wieder in Hannover und blieb in der europäischen Astronomie hoch angesehen. Dort starb sie am 9. Januar 1848 friedlich im Alter von 97 Jahren.",
+  "shortDescriptionEs": "Caroline Lucretia Herschel fue una astrónoma nacida en Alemania y una de las observadoras más notables del cielo entre finales del siglo XVIII y comienzos del XIX. Trabajó primero junto a su hermano William Herschel y después ganó reconocimiento por sus propios descubrimientos, incluidos varios cometas. También contribuyó a catalogar miles de nebulosas y cúmulos estelares, y fue la primera mujer en Gran Bretaña en recibir un salario por trabajo científico. En sus últimos años regresó a Hannover, donde siguió siendo muy respetada por la comunidad astronómica. Murió pacíficamente allí el 9 de enero de 1848, a los 97 años.",
+  "shortDescriptionRu": "Каролина Лукреция Гершель была немецкой по происхождению астрономкой и одной из выдающихся наблюдательниц неба конца XVIII — начала XIX века. Сначала она работала вместе со своим братом Уильямом Гершелем, а затем получила признание за собственные открытия, включая несколько комет. Она также помогла каталогизировать тысячи туманностей и звездных скоплений и стала первой женщиной в Британии, получавшей жалование за научную работу. В последние годы жизни она вернулась в Ганновер, где оставалась уважаемой фигурой в астрономическом сообществе. Она мирно умерла там 9 января 1848 года в возрасте 97 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Caroline_Herschel",
+    "https://www.britannica.com/biography/Caroline-Lucretia-Herschel",
+    "https://www.rmg.co.uk/stories/space-astronomy/caroline-herschel-first-paid-female-astronomer",
+    "https://kids.britannica.com/students/article/Caroline-Herschel/326222"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q111240",  "Name": "Jim Lovell",  "BirthDate": "1928-03-25T00:00:00Z",  "DeathDate": "2025-08-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/James%20Lovell.jpg",  "SiteLinksCnt": 64,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"344336":{"pageid":344336,"ns":0,"title":"Jim Lovell","extract":"James Arthur Lovell Jr. (  LUV-\u0259l; March 25, 1928 \u2013 August 7, 2025) was an American astronaut, naval aviator, test pilot, and mechanical engineer. In 1968, as command module pilot of Apollo 8, he, along with Frank Borman and William Anders, became one of the first three astronauts to fly to and orbit the Moon. He then commanded the Apollo 13 lunar mission in 1970 which, after a critical failure en route, looped around the Moon and returned safely to Earth.\nA 1952 graduate of the United States Naval Academy in Annapolis, Maryland, Lovell flew McDonnell F2H Banshee night fighters. He was deployed in the Western Pacific aboard the aircraft carrier USS Shangri-La. In January 1958, he entered a six-month test pilot training course at the Naval Air Test Center at Naval Air Station Patuxent River, Maryland, with Class 20 and graduated at the top of the class. He was then assigned to Electronics Test, working with radar, and in 1960 he became the Navy's McDonnell Douglas F-4 Phantom II program manager. In 1961, he became a flight instructor and safety engineering officer at Naval Air Station Oceana in Virginia Beach, Virginia, and completed Aviation Safety School at the University of Southern California.\nLovell was not selected by NASA as one of the Mercury Seven astronauts due to a temporarily high bilirubin count. He was accepted in September 1962 as one of the second group of astronauts needed for the Gemini and Apollo programs. Before Apollo, Lovell flew in space on two Gemini missions: Gemini 7 (with Borman) in 1965 and Gemini 12 in 1966. He was the first person to fly into space four times. He was the first person to reach the Moon twice, and the only returnee who never walked on the surface. He was a recipient of the Congressional Space Medal of Honor and the Presidential Medal of Freedom. He cowrote the 1994 book Lost Moon, on which the 1995 film Apollo 13 was based, and he was featured in a cameo appearance in the film. Lovell died in 2025, aged 97."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q111240")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q111240",
+  "isRealHuman": true,
+  "birthDate": "1928-03-25",
+  "deathDate": "2025-08-07",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "Multiple current sources, including NASA, Wikipedia, and Britannica, agree that Jim Lovell was born on 1928-03-25 and died on 2025-08-07 in Lake Forest, Illinois. Because his death occurred after his birthday in 2025, his age at death calculates unambiguously as 97.",
+  "shortDescriptionEn": "Jim Lovell was an American astronaut, naval aviator, test pilot, and mechanical engineer whose career placed him at the center of the Gemini and Apollo programs. He flew on Gemini 7, Gemini 12, Apollo 8, and Apollo 13, becoming one of the first humans to orbit the Moon and later the calm commander who helped turn Apollo 13’s near-disaster into a safe return. Lovell died on August 7, 2025, in Lake Forest, Illinois, at age 97; public reports emphasized his long life, his family’s tribute, and NASA’s remembrance of his courage and optimism.",
+  "shortDescriptionFr": "Jim Lovell était un astronaute américain, aviateur naval, pilote d’essai et ingénieur mécanicien, figure majeure des programmes Gemini et Apollo. Il participa à Gemini 7, Gemini 12, Apollo 8 et Apollo 13, devenant l’un des premiers hommes à orbiter autour de la Lune, puis le commandant calme qui contribua au retour sain et sauf d’Apollo 13 après une explosion en vol. Lovell est mort le 7 août 2025 à Lake Forest, dans l’Illinois, à l’âge de 97 ans; les hommages ont surtout rappelé sa longue vie, sa famille et le souvenir laissé à la NASA par son courage et son optimisme.",
+  "shortDescriptionDe": "Jim Lovell war ein amerikanischer Astronaut, Marineflieger, Testpilot und Maschinenbauingenieur, der zu den prägenden Persönlichkeiten der Gemini- und Apollo-Programme gehörte. Er flog mit Gemini 7, Gemini 12, Apollo 8 und Apollo 13, wurde einer der ersten Menschen in der Mondumlaufbahn und später der besonnene Kommandant, der Apollo 13 nach einer Explosion im All sicher zurück zur Erde führte. Lovell starb am 7. August 2025 in Lake Forest, Illinois, im Alter von 97 Jahren; Nachrufe und NASA-Würdigungen betonten sein langes Leben, seine Familie, seinen Mut und seinen Optimismus.",
+  "shortDescriptionEs": "Jim Lovell fue un astronauta estadounidense, aviador naval, piloto de pruebas e ingeniero mecánico, una figura clave de los programas Gemini y Apollo. Voló en Gemini 7, Gemini 12, Apollo 8 y Apollo 13, fue uno de los primeros seres humanos en orbitar la Luna y luego el sereno comandante que ayudó a convertir la crisis de Apollo 13 en un regreso seguro. Lovell murió el 7 de agosto de 2025 en Lake Forest, Illinois, a los 97 años; los homenajes públicos destacaron su larga vida, el recuerdo de su familia y el legado de valor y optimismo celebrado por la NASA.",
+  "shortDescriptionRu": "Джим Ловелл был американским астронавтом, морским лётчиком, лётчиком-испытателем и инженером-механиком, одной из ключевых фигур программ Gemini и Apollo. Он летал на Gemini 7, Gemini 12, Apollo 8 и Apollo 13, стал одним из первых людей, облетевших Луну, а затем спокойным командиром, помогшим вернуть экипаж Apollo 13 на Землю после аварии в космосе. Ловелл умер 7 августа 2025 года в Лейк-Форесте, штат Иллинойс, в возрасте 97 лет; в сообщениях о его смерти подчёркивались его долгая жизнь, память семьи, мужество и оптимизм, которые отмечала NASA.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jim_Lovell",
+    "https://www.nasa.gov/news-release/acting-nasa-administrator-reflects-on-legacy-of-astronaut-jim-lovell/",
+    "https://www.nasa.gov/former-astronaut-james-a-lovell/",
+    "https://www.britannica.com/biography/Jim-Lovell",
+    "https://apnews.com/article/ed08c1efc0a74fbd9d47868ff9983a23",
+    "https://www.theguardian.com/science/2025/aug/10/jim-lovell-apollo-13-obituary"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q109553",  "Name": "Renato Dulbecco",  "BirthDate": "1914-02-22T00:00:00Z",  "DeathDate": "2012-02-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Renato%20Dulbecco%20crop.jpg",  "SiteLinksCnt": 60,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"744909":{"pageid":744909,"ns":0,"title":"Renato Dulbecco","extract":"Renato Dulbecco ( dul-BEK-oh, Italian: [re\u02c8na\u02d0to dul\u02c8b\u025bkko, -\u02c8bek-]; February 22, 1914 \u2013 February 19, 2012) was an Italian\u2013American virologist who won the 1975 Nobel Prize in Physiology or Medicine for his work on oncoviruses, which are viruses that can cause cancer when they infect animal cells. He studied at the University of Turin under Giuseppe Levi, along with fellow students Salvador Luria and Rita Levi-Montalcini, who also moved to the U.S. with him and won Nobel prizes. He was drafted into the Italian army in World War II, but later joined the resistance."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q109553")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q109553",
+  "isRealHuman": true,
+  "birthDate": "1914-02-22",
+  "deathDate": "2012-02-19",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable sources, including Wikipedia, NobelPrize.org, Encyclopaedia Britannica, the Salk Institute, and Caltech, consistently give Renato Dulbecco's birth date as 1914-02-22 and death date as 2012-02-19. He died three days before his 98th birthday, so the calculated age at death is 97.",
+  "shortDescriptionEn": "Renato Dulbecco was an Italian-American virologist and physician whose research transformed understanding of how tumor viruses interact with the genetic material of cells. He shared the 1975 Nobel Prize in Physiology or Medicine for discoveries that helped connect viruses, cancer, and molecular biology. After a long international career in Italy, the United States, and the United Kingdom, he died at his home in La Jolla, California, on 19 February 2012, just three days before his 98th birthday.",
+  "shortDescriptionFr": "Renato Dulbecco était un virologue et médecin italo-américain dont les recherches ont profondément renouvelé la compréhension des interactions entre les virus tumoraux et le matériel génétique des cellules. Il a partagé le prix Nobel de physiologie ou médecine en 1975 pour des découvertes majeures reliant virus, cancer et biologie moléculaire. Après une longue carrière internationale en Italie, aux États-Unis et au Royaume-Uni, il est mort à son domicile de La Jolla, en Californie, le 19 février 2012, trois jours seulement avant son 98e anniversaire.",
+  "shortDescriptionDe": "Renato Dulbecco war ein italienisch-amerikanischer Virologe und Mediziner, dessen Forschung das Verständnis dafür prägte, wie Tumorviren mit dem genetischen Material von Zellen wechselwirken. Für diese Arbeiten, die Viren, Krebs und Molekularbiologie miteinander verbanden, erhielt er 1975 gemeinsam den Nobelpreis für Physiologie oder Medizin. Nach einer langen internationalen Laufbahn in Italien, den Vereinigten Staaten und Großbritannien starb er am 19. Februar 2012 in seinem Zuhause in La Jolla, Kalifornien, nur drei Tage vor seinem 98. Geburtstag.",
+  "shortDescriptionEs": "Renato Dulbecco fue un virólogo y médico ítalo-estadounidense cuyas investigaciones cambiaron la comprensión de cómo los virus tumorales interactúan con el material genético de las células. Compartió el Premio Nobel de Fisiología o Medicina de 1975 por descubrimientos que vincularon los virus, el cáncer y la biología molecular. Tras una extensa carrera internacional en Italia, Estados Unidos y el Reino Unido, murió en su casa de La Jolla, California, el 19 de febrero de 2012, apenas tres días antes de cumplir 98 años.",
+  "shortDescriptionRu": "Ренато Дульбекко был итало-американским вирусологом и врачом, чьи исследования существенно изменили представления о том, как опухолевые вирусы взаимодействуют с генетическим материалом клетки. В 1975 году он разделил Нобелевскую премию по физиологии или медицине за открытия, связавшие вирусы, рак и молекулярную биологию. После долгой международной карьеры в Италии, США и Великобритании он умер 19 февраля 2012 года в своем доме в Ла-Хойе, Калифорния, всего за три дня до 98-летия.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Renato_Dulbecco",
+    "https://www.nobelprize.org/prizes/medicine/1975/dulbecco/facts/",
+    "https://www.britannica.com/biography/Renato-Dulbecco",
+    "https://www.salk.edu/news-release/renato-dulbecco-nobel-laureate-and-pioneering-cancer-researcher-dies-at-97/",
+    "https://www.caltech.edu/about/news/remembering-renato-dulbecco-4231",
+    "https://www.science.org/doi/10.1126/science.1221692",
+    "https://www.wikidata.org/wiki/Q109553"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q232299",  "Name": "Stanley Cohen",  "BirthDate": "1922-11-17T00:00:00Z",  "DeathDate": "2020-02-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20Cohen-Biochemist.jpg",  "SiteLinksCnt": 60,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"699537":{"pageid":699537,"ns":0,"title":"Stanley Cohen (biochemist)","extract":"Stanley Cohen (November 17, 1922 \u2013 February 5, 2020) was an American biochemist who, along with Rita Levi-Montalcini, was awarded the Nobel Prize in Physiology or Medicine in 1986 for the isolation of nerve growth factor and the discovery of epidermal growth factor."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q232299")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q232299",
+  "isRealHuman": true,
+  "birthDate": "1922-11-17",
+  "deathDate": "2020-02-05",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The birth and death dates are consistent across Wikipedia, NobelPrize.org, Vanderbilt, NIH/NICHD, Britannica, ASBMB, and The Lancet. The age calculation is straightforward: born 1922-11-17 and died 2020-02-05, before his 98th birthday, so he was 97.",
+  "shortDescriptionEn": "Stanley Cohen was an American biochemist whose discoveries helped explain how cells grow, communicate, and develop. With Rita Levi-Montalcini, he shared the 1986 Nobel Prize in Physiology or Medicine for work connected to nerve growth factor and epidermal growth factor, research that later influenced cancer biology and targeted therapies. He died in Nashville, Tennessee, on February 5, 2020, at the age of 97; public obituaries report the place and date of death but do not emphasize a specific medical cause.",
+  "shortDescriptionFr": "Stanley Cohen était un biochimiste américain dont les découvertes ont aidé à comprendre comment les cellules croissent, communiquent et se développent. Avec Rita Levi-Montalcini, il a reçu le prix Nobel de physiologie ou médecine en 1986 pour des travaux liés au facteur de croissance nerveuse et au facteur de croissance épidermique, recherches qui ont ensuite marqué la biologie du cancer et les thérapies ciblées. Il est mort à Nashville, dans le Tennessee, le 5 février 2020, à l’âge de 97 ans; les nécrologies publiques indiquent surtout le lieu et la date de son décès, sans mettre en avant de cause médicale précise.",
+  "shortDescriptionDe": "Stanley Cohen war ein US-amerikanischer Biochemiker, dessen Entdeckungen wesentlich zum Verständnis von Zellwachstum, Zellkommunikation und Entwicklung beitrugen. Gemeinsam mit Rita Levi-Montalcini erhielt er 1986 den Nobelpreis für Physiologie oder Medizin für Arbeiten zum Nervenwachstumsfaktor und zum epidermalen Wachstumsfaktor, Forschung, die später auch die Krebsbiologie und zielgerichtete Therapien beeinflusste. Er starb am 5. Februar 2020 in Nashville, Tennessee, im Alter von 97 Jahren; öffentliche Nachrufe nennen vor allem Ort und Datum seines Todes, ohne eine bestimmte medizinische Todesursache hervorzuheben.",
+  "shortDescriptionEs": "Stanley Cohen fue un bioquímico estadounidense cuyas investigaciones ayudaron a explicar cómo crecen, se comunican y se desarrollan las células. Junto con Rita Levi-Montalcini, recibió el Premio Nobel de Fisiología o Medicina de 1986 por trabajos relacionados con el factor de crecimiento nervioso y el factor de crecimiento epidérmico, hallazgos que más tarde influyeron en la biología del cáncer y en terapias dirigidas. Murió en Nashville, Tennessee, el 5 de febrero de 2020, a los 97 años; las necrológicas públicas destacan el lugar y la fecha de su muerte, sin señalar una causa médica específica.",
+  "shortDescriptionRu": "Стэнли Коэн был американским биохимиком, чьи открытия помогли понять, как клетки растут, взаимодействуют и развиваются. Вместе с Ритой Леви-Монтальчини он получил Нобелевскую премию по физиологии или медицине 1986 года за работы, связанные с фактором роста нервов и эпидермальным фактором роста; эти исследования позже повлияли на биологию рака и развитие таргетной терапии. Он умер в Нэшвилле, штат Теннесси, 5 февраля 2020 года в возрасте 97 лет; публичные некрологи указывают место и дату смерти, но не выделяют конкретную медицинскую причину.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Stanley_Cohen_(biochemist)",
+    "https://www.nobelprize.org/prizes/medicine/1986/cohen/facts/",
+    "https://news.vumc.org/2020/02/06/nobel-prize-winning-biochemist-stanley-cohen-dies-at-97/",
+    "https://www.nichd.nih.gov/newsroom/news/021420-cohen",
+    "https://www.asbmb.org/asbmb-today/people/032320/retrospective-stanley-cohen",
+    "https://www.britannica.com/biography/Stanley-Cohen",
+    "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30550-X/fulltext"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q215705",  "Name": "Lazar Kaganovich",  "BirthDate": "1893-11-22T00:00:00Z",  "DeathDate": "1991-07-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9B%D0%B0%D0%B7%D0%B0%D1%80%D1%8C%20%D0%9C%D0%BE%D0%B8%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87%20%D0%9A%D0%B0%D0%B3%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg",  "SiteLinksCnt": 58,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"400491":{"pageid":400491,"ns":0,"title":"Lazar Kaganovich","extract":"Lazar Moiseyevich Kaganovich (Russian: \u041b\u0430\u0437\u0430\u0440\u044c \u041c\u043e\u0438\u0441\u0435\u0435\u0432\u0438\u0447 \u041a\u0430\u0433\u0430\u043d\u043e\u0432\u0438\u0447; 22 November [O.S. 10 November] 1893 \u2013 July 25, 1991) was a Soviet politician and one of Joseph Stalin's closest associates.\nBorn to a Jewish family in Ukraine, Kaganovich worked as a shoemaker and joined the Russian Social Democratic Labour Party in 1911. During and after the 1917 October Revolution, he held leading positions in Bolshevik organizations in Belarus and Russia, and helped consolidate Soviet rule in Turkestan. In 1922, Stalin placed Kaganovich in charge of an organizational department of the Communist Party, assisting the former in consolidating his grip on the party. Kaganovich was appointed First Secretary of the Communist Party of Ukraine in 1925, and a full member of the Politburo and Stalin's deputy party secretary in 1930. In 1932\u201333, he helped enforce grain quotas in Ukraine which contributed to the Holodomor famine. From the mid-1930s on, Kaganovich variously served as the People's Commissar for Railways, Heavy Industry and Oil Industry. Following the outbreak of the Second World War, he was appointed a member of the State Defence Committee.\nAfter Stalin's death in 1953 and the rise of Nikita Khrushchev, Kaganovich quickly lost his influence. After joining in a failed coup against Khrushchev in 1957, Kaganovich was dismissed from the Presidium and demoted to the director of a  potash  works in Perm and later in a cement works in Sverdlovsk in the Urals. He was expelled from the party in 1961 and lived out his life as a pensioner in Moscow. At his death in 1991, he was the last surviving Old Bolshevik.  The Soviet Union itself outlasted him by only five months, dissolving on 26 December 1991."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q215705")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q215705",
+  "isRealHuman": true,
+  "birthDate": "1893-11-22",
+  "deathDate": "1991-07-25",
+  "ageAtDeath": 97,
+  "confidence": 99,
+  "confidenceExplained": "The identification is direct from Wikidata and Wikipedia, and the birth and death dates are corroborated by Wikipedia, Britannica, Wikidata, and other biographical sources. The age calculation is straightforward: Lazar Kaganovich was born on 1893-11-22 and died on 1991-07-25, before reaching his 98th birthday, so he was 97.",
+  "shortDescriptionEn": "Lazar Moiseyevich Kaganovich was a powerful Soviet politician, Bolshevik veteran, and one of Joseph Stalin’s most loyal senior associates. He held major party and government posts, including leadership roles in Ukraine, transport, heavy industry, and the Soviet leadership, and was closely associated with forced collectivization, Stalinist repression, and the consolidation of the Soviet command system. After Stalin’s death he lost influence, was removed from top leadership after opposing Khrushchev, expelled from the Communist Party in 1961, and lived his final decades in obscurity. He died in Moscow on 25 July 1991 at the age of 97, only months before the dissolution of the Soviet Union.",
+  "shortDescriptionFr": "Lazar Moïsseïevitch Kaganovitch fut un haut dirigeant soviétique, vieux bolchevik et l’un des collaborateurs les plus fidèles de Joseph Staline. Il occupa d’importantes fonctions dans le parti et l’État, notamment en Ukraine, dans les transports, l’industrie lourde et la direction soviétique, et reste associé à la collectivisation forcée, aux répressions staliniennes et au durcissement du système soviétique. Après la mort de Staline, son influence déclina; il fut écarté du pouvoir après s’être opposé à Khrouchtchev, puis exclu du Parti communiste en 1961. Il passa ses dernières décennies dans une relative obscurité et mourut à Moscou le 25 juillet 1991, à l’âge de 97 ans, quelques mois avant la disparition de l’URSS.",
+  "shortDescriptionDe": "Lazar Moissejewitsch Kaganowitsch war ein einflussreicher sowjetischer Politiker, Altbolschewik und einer der loyalsten Vertrauten Josef Stalins. Er bekleidete wichtige Partei- und Staatsämter, unter anderem in der Ukraine, im Verkehrswesen, in der Schwerindustrie und in der sowjetischen Führung, und war eng mit Zwangskollektivierung, stalinistischer Repression und dem Ausbau des sowjetischen Kommandosystems verbunden. Nach Stalins Tod verlor er rasch an Einfluss, wurde nach seinem Widerstand gegen Chruschtschow aus der Führung entfernt und 1961 aus der Kommunistischen Partei ausgeschlossen. Seine letzten Jahrzehnte verbrachte er zurückgezogen; er starb am 25. Juli 1991 in Moskau im Alter von 97 Jahren, nur wenige Monate vor dem Zerfall der Sowjetunion.",
+  "shortDescriptionEs": "Lazar Moiseyevich Kaganovich fue un poderoso político soviético, veterano bolchevique y uno de los colaboradores más leales de Iósif Stalin. Ocupó altos cargos del partido y del Estado, incluidos puestos clave en Ucrania, el transporte, la industria pesada y la dirección soviética, y quedó asociado con la colectivización forzosa, la represión estalinista y la consolidación del sistema de mando soviético. Tras la muerte de Stalin perdió influencia, fue apartado del poder después de oponerse a Jrushchov y expulsado del Partido Comunista en 1961. Vivió sus últimas décadas en relativa oscuridad y murió en Moscú el 25 de julio de 1991, a los 97 años, pocos meses antes de la disolución de la Unión Soviética.",
+  "shortDescriptionRu": "Лазарь Моисеевич Каганович был влиятельным советским политиком, старым большевиком и одним из самых преданных соратников Иосифа Сталина. Он занимал крупные партийные и государственные посты, включая руководящие должности на Украине, в сфере транспорта, тяжелой промышленности и в высшем советском руководстве, и тесно связан с принудительной коллективизацией, сталинскими репрессиями и укреплением командной системы СССР. После смерти Сталина его влияние быстро ослабло: после выступления против Хрущёва он был отстранён от высшей власти, а в 1961 году исключён из КПСС. Последние десятилетия он прожил в относительной безвестности и умер в Москве 25 июля 1991 года в возрасте 97 лет, всего за несколько месяцев до распада Советского Союза.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lazar_Kaganovich",
+    "https://www.britannica.com/biography/Lazar-Moiseyevich-Kaganovich",
+    "https://www.wikidata.org/wiki/Q215705",
+    "https://commons.wikimedia.org/wiki/Category:Lazar_Kaganovich",
+    "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CK%5CA%5CKaganovichLazar.htm",
+    "https://www.ebsco.com/research-starters/history/lazar-kaganovich"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q271939",  "Name": "Chuck Yeager",  "BirthDate": "1923-02-13T00:00:00Z",  "DeathDate": "2020-12-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Yeager%20photo%20portrait%20head%20on%20shoulders%20left%20side.jpg",  "SiteLinksCnt": 57,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"6185":{"pageid":6185,"ns":0,"title":"Chuck Yeager","extract":"Brigadier General Charles Elwood Yeager ( YAY-g\u0259r, February 13, 1923 \u2013 December 7, 2020) was a United States Air Force officer, flying ace, and record-setting test pilot who in October 1947 became the first pilot in history confirmed to have exceeded the speed of sound in level flight.\nYeager was raised in Hamlin, West Virginia. His career began in World War II as a private in the United States Army, assigned to the Army Air Forces in 1941. After serving as an aircraft mechanic, in September 1942, he entered enlisted pilot training and upon graduation was promoted to the rank of flight officer (the World War II Army Air Force version of the Army's warrant officer), later achieving most of his aerial victories as a P-51 Mustang fighter pilot on the Western Front, where he was credited with shooting down 11.5 enemy aircraft. The half credit is from a second pilot assisting him in a single shootdown. On October 12, 1944, he attained \"ace in a day\" status, shooting down five enemy aircraft in one mission.\nAfter the war, Yeager became a test pilot and flew many types of aircraft, including experimental rocket-powered aircraft for the National Advisory Committee for Aeronautics (NACA). Through the NACA program, he became the first human to officially break the sound barrier on October 14, 1947, when he flew the experimental Bell X-1 at Mach 1.05 at an altitude of 45,000 ft (13,700 m), for which he won both the Collier and Mackay trophies in 1948. He broke several other speed and altitude records in the following years. In 1962, he became the first commandant of the USAF Aerospace Research Pilot School, which trained and produced astronauts for NASA and the Air Force.\nYeager later commanded fighter squadrons and wings in Germany, as well as in Southeast Asia during the Vietnam War. In recognition of his achievements and the outstanding performance ratings of those units, he was promoted to brigadier general in 1969 and inducted into the National Aviation Hall of Fame in 1973, retiring on March 1, 1975, for its colloquial similarity to \"Mach 1\". His three-war active-duty flying career spanned more than 30 years and took him to many parts of the world, including the Korean War zone and the Soviet Union during the height of the Cold War.\nYeager is referred to by many as one of the greatest pilots of all time, and was ranked fifth on Flying's list of the 51 Heroes of Aviation in 2013. He flew more than 360 different types of aircraft over a 70-year period, and continued to fly for two decades after retirement as a consultant pilot for the United States Air Force. In 2020 at the age of 97, Yeager died in a Los Angeles-area hospital."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q271939")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q271939",
+  "isRealHuman": true,
+  "birthDate": "1923-02-13",
+  "deathDate": "2020-12-07",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "Multiple reliable sources, including Wikipedia, Britannica, the U.S. Air Force biography page, and aviation/history sources, agree that Chuck Yeager was born on 1923-02-13 and died on 2020-12-07. Since his death occurred after his birthday in 2020, his age at death was exactly 97.",
+  "shortDescriptionEn": "Chuck Yeager was an American U.S. Air Force officer, World War II flying ace, and legendary test pilot who became the first pilot confirmed to break the sound barrier in level flight, flying the Bell X-1 in October 1947. His career made him one of aviation’s defining figures, later celebrated for decades of service, test flying, and public influence. He died on December 7, 2020, in a Los Angeles hospital at the age of 97; reports identified the death as coming after a long life marked by military service and aviation achievement.",
+  "shortDescriptionFr": "Chuck Yeager était un officier de l’U.S. Air Force, as de la Seconde Guerre mondiale et pilote d’essai légendaire, devenu le premier pilote confirmé à franchir le mur du son en vol horizontal avec le Bell X-1 en octobre 1947. Sa carrière a fait de lui une figure majeure de l’histoire de l’aviation, reconnue pour ses vols d’essai, son service militaire et son influence durable. Il est mort le 7 décembre 2020 dans un hôpital de Los Angeles, à l’âge de 97 ans, après une vie presque entièrement associée aux avions, aux records et au service public.",
+  "shortDescriptionDe": "Chuck Yeager war ein Offizier der U.S. Air Force, Jagdfliegerass des Zweiten Weltkriegs und berühmter Testpilot, der im Oktober 1947 mit der Bell X-1 als erster bestätigter Pilot im Horizontalflug die Schallmauer durchbrach. Seine Laufbahn machte ihn zu einer prägenden Figur der Luftfahrtgeschichte, bekannt für militärischen Dienst, Rekordflüge und jahrzehntelange Erfahrung als Pilot. Er starb am 7. Dezember 2020 in einem Krankenhaus in Los Angeles im Alter von 97 Jahren; sein Tod beendete ein Leben, das eng mit Mut, Technik und moderner Fliegerei verbunden war.",
+  "shortDescriptionEs": "Chuck Yeager fue un oficial de la Fuerza Aérea de Estados Unidos, as de la Segunda Guerra Mundial y legendario piloto de pruebas que en octubre de 1947 se convirtió en el primer piloto confirmado en superar la velocidad del sonido en vuelo nivelado, a bordo del Bell X-1. Su carrera lo convirtió en una figura esencial de la historia de la aviación, admirado por sus récords, su servicio militar y su influencia pública. Murió el 7 de diciembre de 2020 en un hospital de Los Ángeles, a los 97 años, tras una vida asociada a la aviación experimental y al servicio nacional.",
+  "shortDescriptionRu": "Чак Йегер был офицером ВВС США, асом Второй мировой войны и знаменитым лётчиком-испытателем, который в октябре 1947 года на Bell X-1 стал первым пилотом, официально преодолевшим скорость звука в горизонтальном полёте. Его карьера сделала его одной из ключевых фигур в истории авиации, символом испытательной лётной школы, военной службы и технической смелости. Он умер 7 декабря 2020 года в больнице Лос-Анджелеса в возрасте 97 лет, завершив долгую жизнь, тесно связанную с рекордами, самолётами и американской авиационной историей.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chuck_Yeager",
+    "https://www.britannica.com/biography/Chuck-Yeager",
+    "https://www.af.mil/About-Us/Biographies/Display/Article/105165/charles-e-chuck-yeager/",
+    "https://achievement.org/achiever/general-chuck-yeager/",
+    "https://www.nationalww2museum.org/war/articles/chuck-yeager-fighter-ace-test-pilot",
+    "https://npg.si.edu/exhibition/memoriam-chuck-yeager-1923%E2%80%932020"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q315528",  "Name": "Lee Teng-hui",  "BirthDate": "1923-01-15T00:00:00Z",  "DeathDate": "2020-07-30T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Lee%20Teng-hui%20official%20portrait.png",  "SiteLinksCnt": 57,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"55078":{"pageid":55078,"ns":0,"title":"Lee Teng-hui","extract":"Lee Teng-hui (Chinese: \u674e\u767b\u8f1d; pinyin: L\u01d0 D\u0113nghu\u012b; 15 January 1923 \u2013 30 July 2020) was a Taiwanese statesman, economist, and agronomist who served as the fourth president of the Republic of China and chairman of the Kuomintang from 1988 to 2000. He was the first president to be born in Taiwan, the last to be indirectly elected, and the first to be directly elected.\nBorn in Taihoku Prefecture, Lee was raised under Japanese rule. He was educated at Kyoto Imperial University and served in the Imperial Japanese Army during World War II before graduating from National Taiwan University. He then studied agricultural economics in the United States, where he earned his doctorate from Cornell University in 1968, beginning a career as an economics professor. As a member of the Kuomintang (KMT), he was appointed Mayor of Taipei in 1978 and became governor of Taiwan Province in 1981 under President Chiang Ching-kuo. Lee succeeded Chiang as president after Chiang's death in 1988.\nDuring his presidency, Lee oversaw the end of martial law in Taiwan and led reforms to democratize the Republic of China. He was an advocate of the Taiwanese localization movement, sought to establish greater international recognition of the country, and has been credited as the president who completed Taiwan's democratic transition. After leaving office, he remained active in Taiwanese politics as a major influence on the pro-independence Taiwan Solidarity Union (TSU), and recruited for the party in the past. After Lee campaigned for TSU candidates in the 2001 Taiwanese legislative election, he was expelled by the KMT. His post-presidency was also marked by efforts to maintain greater relations between Taiwan and Japan."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q315528")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q315528",
+  "isRealHuman": true,
+  "birthDate": "1923-01-15",
+  "deathDate": "2020-07-30",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "The identity, birth date, death date, and age at death are consistently reported by Wikipedia and Britannica. The calculated age from 1923-01-15 to 2020-07-30 is 97 years, and Britannica explicitly states he died aged 97.",
+  "shortDescriptionEn": "Lee Teng-hui was a Taiwanese statesman, economist, and agronomist who served as president of the Republic of China from 1988 to 2000 and became known as a key architect of Taiwan’s democratic transformation. Often called “Mr. Democracy,” he oversaw major political liberalization and Taiwan’s first direct presidential election. He died in Taipei on 30 July 2020 at age 97 after months of illness, with reports citing infections, cardiac problems, multiple organ failure, and septic shock.",
+  "shortDescriptionFr": "Lee Teng-hui était un homme d’État, économiste et agronome taïwanais, président de la République de Chine de 1988 à 2000 et figure centrale de la démocratisation de Taïwan. Souvent surnommé « M. Démocratie », il accompagna la libéralisation politique et la première élection présidentielle directe du pays. Il est mort à Taipei le 30 juillet 2020 à l’âge de 97 ans, après plusieurs mois de maladie, des infections, des problèmes cardiaques, une défaillance multiviscérale et un choc septique ayant été rapportés.",
+  "shortDescriptionDe": "Lee Teng-hui war ein taiwanischer Staatsmann, Ökonom und Agrarwissenschaftler, der von 1988 bis 2000 Präsident der Republik China war und als zentrale Figur der Demokratisierung Taiwans gilt. Wegen seiner Rolle bei politischen Reformen und der ersten direkten Präsidentenwahl wurde er oft „Mr. Democracy“ genannt. Er starb am 30. Juli 2020 in Taipeh im Alter von 97 Jahren nach monatelanger Krankheit; berichtet wurden Infektionen, Herzprobleme, multiples Organversagen und septischer Schock.",
+  "shortDescriptionEs": "Lee Teng-hui fue un estadista, economista y agrónomo taiwanés que presidió la República de China entre 1988 y 2000 y fue una figura decisiva en la democratización de Taiwán. Conocido a menudo como «Señor Democracia», impulsó la liberalización política y la primera elección presidencial directa de la isla. Murió en Taipéi el 30 de julio de 2020 a los 97 años, tras meses de enfermedad, con informes que mencionan infecciones, problemas cardíacos, fallo multiorgánico y choque séptico.",
+  "shortDescriptionRu": "Ли Дэнхуэй был тайваньским государственным деятелем, экономистом и агрономом, занимавшим пост президента Китайской Республики с 1988 по 2000 год и сыгравшим ключевую роль в демократизации Тайваня. Его часто называли «господин Демократия» за политические реформы и проведение первых прямых президентских выборов. Он умер в Тайбэе 30 июля 2020 года в возрасте 97 лет после нескольких месяцев болезни; сообщалось об инфекциях, сердечных проблемах, полиорганной недостаточности и септическом шоке.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_official_portrait.png",
+    "https://www.president.gov.tw/Page/86",
+    "https://commons.wikimedia.org/wiki/File:President_Lee_teng_hui.png",
+    "https://commons.wikimedia.org/wiki/Category:Portraits_of_Lee_Teng-hui"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lee_Teng-hui",
+    "https://www.britannica.com/biography/Lee-Teng-hui",
+    "https://en.wikipedia.org/wiki/Death_and_funeral_of_Lee_Teng-hui",
+    "https://www.abc.net.au/news/2020-07-31/lee-teng-hui-taiwan-mr-democracy-dies/12513800",
+    "https://commons.wikimedia.org/wiki/File:Lee_Teng-hui_official_portrait.png",
+    "https://www.president.gov.tw/Page/86"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q94992",  "Name": "Karl Malden",  "BirthDate": "1912-03-22T00:00:00Z",  "DeathDate": "2009-07-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Karl%20Malden%202.jpg",  "SiteLinksCnt": 56,  "Age": 97}
+{"batchcomplete":"","query":{"pages":{"342375":{"pageid":342375,"ns":0,"title":"Karl Malden","extract":"Karl Malden (born Mladen George Sekulovich; March 22, 1912 \u2013 July 1, 2009) was an American stage, movie and television actor who first achieved acclaim in the original Broadway productions of Arthur Miller's All My Sons and Tennessee Williams' A Streetcar Named Desire in 1946 and 1947. Recreating the role of Mitch in the 1951 film of Streetcar, he won the Academy Award for Best Supporting Actor.\nMalden was primarily a character actor, who according to Robert Berkvist, \"for more than 60 years brought an intelligent intensity and a homespun authenticity to roles in theater, film, and television\", especially in such classic films as A Streetcar Named Desire and On the Waterfront (1954), for which he received a second Best Supporting Oscar nomination. \nHe also played in high-profile Hollywood films such as I Confess (1953), Baby Doll (1956), The Hanging Tree (1959), Pollyanna (1960), One-Eyed Jacks (1961), How the West Was Won (1962), Gypsy (1962), Cheyenne Autumn (1964), Birdman of Alcatraz (1962) and Patton (1970). From 1972 to 1977, he portrayed the leading role of Lt. Mike Stone in the primetime television crime drama The Streets of San Francisco. He was later an advertising spokesman for American Express. \nFilm and culture critic Charles Champlin described Malden as \"an Everyman, but one whose range moved easily up and down the levels of society and the IQ scale, from heroes to heavies and ordinary, decent guys just trying to get along\", and at the time of his death, Malden was described as \"one of the great character actors of his time\" who created a number of \"powerhouse performances on screen\". \nMalden served as president of the Academy of Motion Picture Arts and Sciences from 1989 to 1992."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q94992")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q94992",
+  "isRealHuman": true,
+  "birthDate": "1912-03-22",
+  "deathDate": "2009-07-01",
+  "ageAtDeath": 97,
+  "confidence": 100,
+  "confidenceExplained": "Karl Malden's birth date, death date, and age at death are consistently reported by Wikipedia, Britannica, The Guardian, IMDb, and obituary sources. Born on 1912-03-22 and died on 2009-07-01, he had already passed his birthday in 2009, so the calculated age is exactly 97.",
+  "shortDescriptionEn": "Karl Malden, born Mladen George Sekulovich, was an American actor celebrated for his forceful character roles on stage, film, and television. He won the Academy Award for Best Supporting Actor for A Streetcar Named Desire and became widely known for On the Waterfront and The Streets of San Francisco. Malden died of natural causes at his Brentwood/Los Angeles home on July 1, 2009, surrounded by family, at the age of 97.",
+  "shortDescriptionFr": "Karl Malden, né Mladen George Sekulovich, était un acteur américain reconnu pour ses rôles de caractère puissants au théâtre, au cinéma et à la télévision. Il a remporté l’Oscar du meilleur acteur dans un second rôle pour Un tramway nommé Désir et est resté célèbre pour Sur les quais et Les Rues de San Francisco. Il est mort de causes naturelles à son domicile de Brentwood/Los Angeles le 1er juillet 2009, entouré de sa famille, à l’âge de 97 ans.",
+  "shortDescriptionDe": "Karl Malden, geboren als Mladen George Sekulovich, war ein US-amerikanischer Schauspieler, der für kraftvolle Charakterrollen auf der Bühne, im Film und im Fernsehen bekannt wurde. Für Endstation Sehnsucht gewann er den Oscar als bester Nebendarsteller; außerdem prägten Filme wie Die Faust im Nacken und die Serie Die Straßen von San Francisco seinen Ruf. Malden starb am 1. Juli 2009 in seinem Haus in Brentwood/Los Angeles eines natürlichen Todes, im Kreis seiner Familie, im Alter von 97 Jahren.",
+  "shortDescriptionEs": "Karl Malden, nacido como Mladen George Sekulovich, fue un actor estadounidense admirado por sus intensos papeles de carácter en teatro, cine y televisión. Ganó el Óscar al mejor actor de reparto por Un tranvía llamado Deseo y también destacó en La ley del silencio y en la serie Las calles de San Francisco. Murió por causas naturales en su casa de Brentwood/Los Ángeles el 1 de julio de 2009, rodeado de su familia, a los 97 años.",
+  "shortDescriptionRu": "Карл Молден, урождённый Младен Джордж Секулович, был американским актёром, прославившимся сильными характерными ролями в театре, кино и на телевидении. Он получил премию «Оскар» за роль второго плана в фильме «Трамвай “Желание”» и запомнился по картинам «В порту» и сериалу «Улицы Сан-Франциско». Молден умер 1 июля 2009 года у себя дома в Брентвуде/Лос-Анджелесе от естественных причин, в окружении семьи, в возрасте 97 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Karl_Malden",
+    "https://www.britannica.com/biography/Karl-Malden",
+    "https://www.theguardian.com/film/2009/jul/01/karl-malden-dead-film-television",
+    "https://www.theguardian.com/film/2009/jul/02/karl-malden-obituary",
+    "https://www.imdb.com/name/nm0001500/",
+    "https://www.legacy.com/us/obituaries/latimes/name/karl-malden-obituary?id=22628642"
+  ]
+}
