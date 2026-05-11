@@ -496,7 +496,20 @@
       }
 
       function getChatGptUrl(promptText) {
-        return `https://chatgpt.com/?prompt=${encodeURIComponent(promptText)}`;
+        const DELIMETER = '\n\nFigure out who is the real historical figure behind it.';
+        let split = promptText.split(DELIMETER);
+        let url = `https://chatgpt.com/?prompt=${encodeURIComponent(promptText)}`;
+        if (split.length !== 2) {
+          alert(`Invalid prompt: ${promptText}`);
+          return url;
+        }
+
+        let descrLength = split[0].length;
+        while (url.length > 4000) {
+          descrLength -= 100;
+          url = `https://chatgpt.com/?prompt=${encodeURIComponent(split[0].substr(0, descrLength) + DELIMETER + split[1])}`;
+        }
+        return url;
       }
 
       function renderAll() {

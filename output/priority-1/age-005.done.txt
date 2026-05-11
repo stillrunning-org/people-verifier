@@ -1,0 +1,1076 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q181928",  "Name": "Madelberta",  "BirthDate": "0700-01-01T00:00:00Z",  "DeathDate": "0705-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Madelberte-Maubeuge.jpg",  "SiteLinksCnt": 7,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"68329149":{"pageid":68329149,"ns":0,"title":"Madelberte of Maubeuge","extract":"Saint Madelberte of Maubeuge (or Machtelberthe; died c. 705) was a 7th-century nun related to the Merovingian dynasty.\nShe became abbess of Maubeuge Abbey in the County of Hainaut, now in northern France near the Belgian border. She died in 705 or 706."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q181928")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q181928",
+  "isRealHuman": true,
+  "birthDate": "0638-01-01",
+  "deathDate": "0705-09-07",
+  "ageAtDeath": 67,
+  "confidence": 50,
+  "confidenceExplained": "The identity is strong: the sources consistently identify Q181928 as Saint Madelberte/Madelberta of Maubeuge, abbess and daughter of Saint Vincent Madelgarius and Saint Waltrude. The death year is fairly secure, usually given as 705 or 706, with a diocesan source saying she died suddenly in 705 after nine years as abbess. The birth year is not firmly recorded; the best hagiographical clue places her birth shortly before Dagobert I's death around 638, while another tradition suggests 636–637. I therefore estimate 638 and calculate age 67 at death.",
+  "shortDescriptionEn": "Saint Madelberte of Maubeuge, also known as Madelberta or Machtelberthe, was a 7th-century Frankish noblewoman and Benedictine abbess connected with the Merovingian world. A daughter of Saint Vincent Madelgarius and Saint Waltrude, she was educated at Maubeuge Abbey under her aunt Saint Aldegonde and later succeeded her sister Aldetrude as abbess. Remembered for charity, discipline, and care for the poor, she died suddenly at Maubeuge in 705 after about nine years leading the monastery; her feast is kept on 7 September.",
+  "shortDescriptionFr": "Sainte Madelberte de Maubeuge, aussi appelée Madelberta ou Machtelberthe, fut une noble franque du VIIe siècle et abbesse bénédictine liée au monde mérovingien. Fille de saint Vincent Madelgaire et de sainte Waudru, elle fut formée à l’abbaye de Maubeuge auprès de sa tante sainte Aldegonde, puis succéda à sa sœur Aldetrude comme abbesse. Réputée pour sa charité, sa discipline monastique et son accueil des pauvres, elle mourut subitement à Maubeuge en 705 après environ neuf ans d’abbatiat; sa fête est célébrée le 7 septembre.",
+  "shortDescriptionDe": "Die heilige Madelberte von Maubeuge, auch Madelberta oder Machtelberthe genannt, war eine fränkische Adlige und benediktinische Äbtissin des 7. Jahrhunderts aus dem merowingischen Umfeld. Als Tochter des heiligen Vincent Madelgarius und der heiligen Waltrude wurde sie im Kloster Maubeuge unter ihrer Tante, der heiligen Aldegonde, erzogen und folgte später ihrer Schwester Aldetrude als Äbtissin. Sie blieb wegen ihrer Wohltätigkeit, klösterlichen Strenge und Fürsorge für Arme in Erinnerung; sie starb 705 plötzlich in Maubeuge nach etwa neun Jahren als Äbtissin, ihr Gedenktag ist der 7. September.",
+  "shortDescriptionEs": "Santa Madelberte de Maubeuge, también llamada Madelberta o Machtelberthe, fue una noble franca y abadesa benedictina del siglo VII vinculada al mundo merovingio. Hija de san Vicente Madelgarius y santa Waltrude, fue educada en la abadía de Maubeuge bajo la guía de su tía santa Aldegonde y más tarde sucedió a su hermana Aldetrude como abadesa. Se la recuerda por su caridad, disciplina monástica y atención a los pobres; murió repentinamente en Maubeuge en 705, tras unos nueve años al frente del monasterio, y su fiesta se celebra el 7 de septiembre.",
+  "shortDescriptionRu": "Святая Мадельберта Мобёжская, также известная как Мадельберта или Махтельберта, была франкской знатной женщиной VII века и бенедиктинской аббатисой, связанной с меровингской средой. Дочь святого Винсента Мадельгария и святой Вальтруды, она воспитывалась в аббатстве Мобёж под руководством своей тёти святой Альдегонды, а затем сменила сестру Альдетруду во главе монастыря. Её помнили за милосердие, монашескую строгость и заботу о бедных; она внезапно умерла в Мобёже в 705 году после примерно девяти лет аббатства, а её память отмечается 7 сентября.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Madelberte_of_Maubeuge",
+    "https://nominis.cef.fr/contenus/saint/1812/Sainte-Madelberte.html",
+    "https://media.cathocambrai.com/1051579.pdf",
+    "https://www.ecatholic2000.com/butler/vol9/september28.shtml",
+    "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/madelberte-fl-7th-c",
+    "https://omniumsanctorumhiberniae.com/2014/09/07/saint-madelberta-of-maubeuge-september-7/",
+    "https://commons.wikimedia.org/wiki/File:Saint_Madelberte-Maubeuge.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Madalberta"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2837843",  "Name": "Allegra Byron",  "BirthDate": "1817-01-12T00:00:00Z",  "DeathDate": "1822-04-20T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Allegra%20Byron.jpg",  "SiteLinksCnt": 7,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"7276812":{"pageid":7276812,"ns":0,"title":"Allegra Byron","extract":"Clara Allegra Byron (12 January 1817 \u2013 20 April 1822) was the illegitimate daughter of the poet George Gordon, Lord Byron, and Claire Clairmont.\nBorn in Bath, England, she was initially named Alba, meaning \"dawn\", or \"white\", by her mother. At first she lived with her mother, her mother's stepsister, Mary Shelley, and Mary's husband Percy Bysshe Shelley. When she was fifteen months old, she was turned over to Byron, who changed her name to Allegra. Byron placed her with foster families and later in a Roman Catholic convent, where she died at the age of five of typhus or malaria.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2837843")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2837843",
+  "isRealHuman": true,
+  "birthDate": "1817-01-12",
+  "deathDate": "1822-04-20",
+  "ageAtDeath": 5,
+  "confidence": 98,
+  "confidenceExplained": "The calculated age at death is highly reliable: Allegra Byron died on 1822-04-20 and was born in January 1817, so she was 5 years old. Sources disagree by one day on the birth date, 1817-01-12 versus 1817-01-13, but this does not affect the integer age. Her father’s intended inscription also gave her age as five years and three months.",
+  "shortDescriptionEn": "Clara Allegra Byron was the young daughter of Romantic poet Lord Byron and Claire Clairmont, born in Bath and originally named Alba before Byron renamed her Allegra. Her short life was entangled with the Byron–Shelley circle and the strained decisions of the adults around her. She was placed in a convent school at Bagnacavallo, where she developed a fever in April 1822 and died, aged 5, probably of typhus or malaria.",
+  "shortDescriptionFr": "Clara Allegra Byron était la jeune fille du poète romantique Lord Byron et de Claire Clairmont, née à Bath sous le prénom d’Alba avant d’être renommée Allegra par Byron. Sa brève existence resta liée au cercle Byron-Shelley et aux choix difficiles des adultes qui l’entouraient. Placée dans un couvent-école à Bagnacavallo, elle contracta une forte fièvre en avril 1822 et mourut à l’âge de 5 ans, probablement du typhus ou du paludisme.",
+  "shortDescriptionDe": "Clara Allegra Byron war die kleine Tochter des romantischen Dichters Lord Byron und Claire Clairmont; sie wurde in Bath geboren und zunächst Alba genannt, bevor Byron sie in Allegra umbenannte. Ihr kurzes Leben war eng mit dem Byron-Shelley-Kreis und den belastenden Entscheidungen der Erwachsenen um sie herum verbunden. In einer Klosterschule in Bagnacavallo bekam sie im April 1822 hohes Fieber und starb im Alter von 5 Jahren, vermutlich an Typhus oder Malaria.",
+  "shortDescriptionEs": "Clara Allegra Byron fue la hija pequeña del poeta romántico Lord Byron y de Claire Clairmont, nacida en Bath y llamada inicialmente Alba antes de que Byron la rebautizara como Allegra. Su breve vida quedó ligada al círculo de Byron y los Shelley, y a las tensas decisiones de los adultos que la rodeaban. Fue internada en un convento-escuela de Bagnacavallo, donde sufrió una fiebre grave en abril de 1822 y murió con 5 años, probablemente de tifus o malaria.",
+  "shortDescriptionRu": "Клара Аллегра Байрон была маленькой дочерью поэта-романтика лорда Байрона и Клэр Клермонт; она родилась в Бате и сначала получила имя Альба, пока Байрон не переименовал ее в Аллегру. Ее короткая жизнь оказалась связана с кругом Байрона и Шелли и с тяжелыми решениями взрослых вокруг нее. В монастырской школе в Баньокавалло в апреле 1822 года у нее началась сильная лихорадка, и она умерла в возрасте 5 лет, вероятно от тифа или малярии.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Allegra_Byron",
+    "https://commons.wikimedia.org/wiki/File:Allegra_Byron.jpg",
+    "https://artuk.org/discover/artworks/allegra-daughter-of-lord-byron-18171822-232281",
+    "https://www.wikidata.org/wiki/Q2837843",
+    "https://byronsociety.blogspot.com/2018/01/clara-allegra-byron-baptismal-record.html",
+    "https://greekherald.com.au/news/new-data-on-lord-byrons-illegitimate-daughter-brought-to-light/",
+    "https://www.bassaromagnamia.it/en/poitofintrests/allegra-byron-1817-1822-2/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q782789",  "Name": "Pietro Corsini",  "BirthDate": "1400-01-01T00:00:00Z",  "DeathDate": "1405-08-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Smf%2C%20tomba%20dipinta%20pietro%20corsini%20by%20bicci%20di%20lorenzo.JPG",  "SiteLinksCnt": 7,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"5054295":{"pageid":5054295,"ns":0,"title":"Pietro Corsini","extract":"Pietro Corsini, n\u00e9 \u00e0 Florence et mort le 16 ao\u00fbt 1403 \u00e0 Avignon, \u00e9tait un eccl\u00e9siastique italien. Il fut \u00e9v\u00eaque de Volterra, puis Florence et enfin \u00e9lev\u00e9 au rang de cardinal."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q782789")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q782789",
+  "isRealHuman": true,
+  "birthDate": "1335-01-01",
+  "deathDate": "1405-08-16",
+  "ageAtDeath": 70,
+  "confidence": 78,
+  "confidenceExplained": "The death date, 16 August 1405, is strongly supported by Treccani, Italian Wikipedia, Catholic-Hierarchy, Wikimedia Commons, and the Opera di Santa Maria del Fiore. The birth date is only approximate: most sources give circa 1335 or the early decades of the 14th century. I use 1335-01-01 as a conventional estimate, matching Catholic-Hierarchy's calculated age of about 70.6. Therefore the best integer age at death is 70, but confidence is reduced because the exact birthday is unknown.",
+  "shortDescriptionEn": "Pietro Corsini was a Florentine churchman from the powerful Corsini family, trained in canon law and active at the papal court in Avignon. He became bishop of Volterra, then bishop of Florence, and in 1370 was created cardinal, later serving as cardinal-bishop of Porto e Santa Rufina and dean of the College of Cardinals. A skilled diplomat during the Western Schism, he remained deeply involved in the politics of the Avignon papacy. He died in Avignon on 16 August 1405, aged about 70; his body was first kept there and later returned to Florence, where his memory was honored with a funerary monument.",
+  "shortDescriptionFr": "Pietro Corsini fut un prélat florentin issu de la puissante famille Corsini, formé au droit canon et actif à la cour pontificale d’Avignon. Il devint évêque de Volterra, puis évêque de Florence, avant d’être créé cardinal en 1370 et de devenir cardinal-évêque de Porto e Santa Rufina, puis doyen du Collège des cardinaux. Diplomate habile pendant le Grand Schisme d’Occident, il resta lié au monde avignonnais. Il mourut à Avignon le 16 août 1405, vers l’âge de 70 ans; son corps fut d’abord déposé sur place, puis ramené à Florence, où un monument funéraire entretint sa mémoire.",
+  "shortDescriptionDe": "Pietro Corsini war ein florentinischer Kirchenmann aus der einflussreichen Familie Corsini, ausgebildet im kanonischen Recht und eng mit dem päpstlichen Hof in Avignon verbunden. Er wurde Bischof von Volterra, danach Bischof von Florenz und 1370 zum Kardinal erhoben; später war er Kardinalbischof von Porto e Santa Rufina und Dekan des Kardinalskollegiums. Während des Abendländischen Schismas trat er als erfahrener Diplomat hervor. Er starb am 16. August 1405 in Avignon im Alter von etwa 70 Jahren; sein Leichnam wurde zunächst dort verwahrt und später nach Florenz überführt, wo ein Grabmonument an ihn erinnerte.",
+  "shortDescriptionEs": "Pietro Corsini fue un eclesiástico florentino de la poderosa familia Corsini, formado en derecho canónico y vinculado a la corte pontificia de Aviñón. Fue obispo de Volterra, después obispo de Florencia, y en 1370 fue creado cardenal; más tarde ocupó el cargo de cardenal-obispo de Porto e Santa Rufina y decano del Colegio Cardenalicio. Durante el Cisma de Occidente destacó como diplomático y actor político de la obediencia aviñonesa. Murió en Aviñón el 16 de agosto de 1405, con unos 70 años; su cuerpo fue conservado primero allí y más tarde trasladado a Florencia, donde se le dedicó un monumento funerario.",
+  "shortDescriptionRu": "Пьетро Корсини был флорентийским церковным деятелем из влиятельного рода Корсини, знатоком канонического права и участником папской политики в Авиньоне. Он был епископом Вольтерры, затем епископом Флоренции, а в 1370 году стал кардиналом; позднее занимал сан кардинала-епископа Порто и Санта-Руфины и был деканом Коллегии кардиналов. В годы Великого западного раскола он играл заметную дипломатическую роль. Корсини умер в Авиньоне 16 августа 1405 года примерно в 70 лет; сначала его тело находилось там, а позднее было перевезено во Флоренцию, где его память увековечили надгробным памятником.",
+  "sources": [
+    "https://it.wikipedia.org/wiki/Pietro_Corsini",
+    "https://www.treccani.it/enciclopedia/pietro-corsini_%28Dizionario-Biografico%29/",
+    "https://www.catholic-hierarchy.org/bishop/bcorsinp.html",
+    "https://duomo.firenze.it/en/discover/cathedral/9147/",
+    "https://commons.wikimedia.org/wiki/Category:Pietro_Corsini",
+    "https://commons.wikimedia.org/wiki/File:Portret_van_kardinaal_Pietro_Corsini_Portretten_van_beroemde_Italianen_met_wapenschild_in_ondermarge_(serietitel),_RP-P-1909-4908.jpg",
+    "https://commons.wikimedia.org/wiki/File:Smf,_tomba_dipinta_pietro_corsini_by_bicci_di_lorenzo.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q113293207",  "Name": "Freya",  "BirthDate": "2017-01-01T00:00:00Z",  "DeathDate": "2022-08-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%27Freya%27%20at%20Seahouses%20Harbour%20-%20geograph.org.uk%20-%207022827.jpg",  "SiteLinksCnt": 6,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"71521133":{"pageid":71521133,"ns":0,"title":"Freya (walrus)","extract":"Freya was a young female walrus who appeared along the coasts of several western European countries (the Netherlands, Germany, the United Kingdom, Denmark, Sweden, and Norway) from October 2021 until her death on 14 August 2022. A rare sighting in the areas where she appeared, she attracted the attention of wildlife enthusiasts and the wider public. In the summer of 2022, after sunbathing on and sinking boats in the Oslofjord, she was shot after concerns about her and the public's safety. She weighed approximately 600 kilograms (1,300 lb). The decision to kill Freya was criticised by many wildlife experts."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q113293207")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q113293207",
+  "isRealHuman": false,
+  "birthDate": "2017-01-01",
+  "deathDate": "2022-08-14",
+  "ageAtDeath": 5,
+  "confidence": 85,
+  "confidenceExplained": "The entity is clearly Freya the walrus, not a human. Wikidata gives her birth as circa 2017 and death as 2022-08-14, while multiple contemporary reports describe her as a young or five-year-old female walrus. Because the exact day and month of birth are not known, the age could technically depend on her real birthday, but the best supported and commonly reported age at death is 5.",
+  "shortDescriptionEn": "Freya was a young female walrus who became famous after appearing along the coasts of several western European countries, including the Netherlands, Germany, the United Kingdom, Denmark, Sweden, and Norway. She drew crowds in the Oslofjord in summer 2022 by climbing onto boats, resting in marinas, and becoming an unlikely wildlife celebrity. On 14 August 2022, Norwegian authorities euthanized her after repeated warnings to the public to keep their distance were ignored and officials said they could not ensure human safety or her welfare.",
+  "shortDescriptionFr": "Freya était une jeune femelle morse devenue célèbre après avoir été observée le long des côtes de plusieurs pays d’Europe occidentale, notamment les Pays-Bas, l’Allemagne, le Royaume-Uni, le Danemark, la Suède et la Norvège. Durant l’été 2022, elle a attiré les foules dans l’Oslofjord en montant sur des bateaux, en se reposant dans les ports et en devenant une célébrité animale inattendue. Le 14 août 2022, les autorités norvégiennes l’ont euthanasiée après que les avertissements demandant au public de garder ses distances ont été ignorés, invoquant des risques pour la sécurité humaine et pour son bien-être.",
+  "shortDescriptionDe": "Freya war ein junges Walrossweibchen, das bekannt wurde, nachdem es an den Küsten mehrerer westeuropäischer Länder auftauchte, darunter die Niederlande, Deutschland, das Vereinigte Königreich, Dänemark, Schweden und Norwegen. Im Sommer 2022 zog sie im Oslofjord große Menschenmengen an, weil sie auf Boote kletterte, in Häfen ruhte und zu einer ungewöhnlichen Tierberühmtheit wurde. Am 14. August 2022 wurde sie von norwegischen Behörden eingeschläfert, nachdem wiederholte Warnungen, Abstand zu halten, missachtet worden waren und die Behörden weder die Sicherheit der Menschen noch ihr Wohlergehen gewährleisten konnten.",
+  "shortDescriptionEs": "Freya fue una joven morsa hembra que se hizo famosa tras aparecer en las costas de varios países de Europa occidental, entre ellos los Países Bajos, Alemania, el Reino Unido, Dinamarca, Suecia y Noruega. En el verano de 2022 atrajo multitudes en el fiordo de Oslo al subirse a embarcaciones, descansar en puertos deportivos y convertirse en una inesperada celebridad de la fauna marina. El 14 de agosto de 2022, las autoridades noruegas la sacrificaron después de que se ignoraran repetidas advertencias para mantener la distancia y se alegara que no podían garantizar la seguridad pública ni su bienestar.",
+  "shortDescriptionRu": "Фрейя была молодой самкой моржа, ставшей известной после появления у берегов нескольких западноевропейских стран, включая Нидерланды, Германию, Великобританию, Данию, Швецию и Норвегию. Летом 2022 года она привлекала толпы людей в Осло-фьорде: забиралась на лодки, отдыхала в маринах и стала неожиданной знаменитостью среди диких животных. 14 августа 2022 года норвежские власти усыпили её после того, как люди неоднократно игнорировали предупреждения держаться на расстоянии, а чиновники заявили, что не могут гарантировать безопасность людей и благополучие животного.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Freya_(walrus)",
+    "https://www.wikidata.org/wiki/Q113293207",
+    "https://commons.wikimedia.org/wiki/Category:Freya_(walrus)",
+    "https://www.bbc.com/news/world-europe-62539485",
+    "https://www.theguardian.com/environment/2022/aug/14/freya-the-walrus-euthanised-after-troubling-crowds-in-oslo-fjord"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q116735385",  "Name": "Liberty Island",  "BirthDate": "2020-02-02T00:00:00Z",  "DeathDate": "2025-04-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Liberty%20Island%2020250427.jpg",  "SiteLinksCnt": 6,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"75126553":{"pageid":75126553,"ns":0,"title":"Liberty Island (horse)","extract":"Liberty Island (Japanese: \u30ea\u30d0\u30c6\u30a3\u30a2\u30a4\u30e9\u30f3\u30c9; February 2, 2020 \u2013 April 27, 2025) was a Japanese thoroughbred racehorse.\nLiberty Island became the Japanese Triple Tiara winner of 2023. Her name is derived from the island of the same name in New York Harbor, where the Statue of Liberty is installed (as her mother is named \"Yankee Rose\").\nHer major victories include the 2022 Hanshin Juvenile Fillies, the 2023 Oka Sho, Yushun Himba, and Shuka Sho. She was awarded the JRA Award for Best Two-Year-Old Filly for 2022 and the JRA Award for Best Three-Year-Old Filly for 2023.\nLiberty Island died on April 27, 2025, at the age of 5. She was euthanized after sustaining a life-threatening injury while racing in the Queen Elizabeth II Cup at Sha Tin Racecourse."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q116735385")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q116735385",
+  "isRealHuman": false,
+  "birthDate": "2020-02-02",
+  "deathDate": "2025-04-27",
+  "ageAtDeath": 5,
+  "confidence": 99,
+  "confidenceExplained": "The entity is consistently identified by Wikipedia, Wikimedia Commons, and racing sources as Liberty Island, a Japanese Thoroughbred racehorse. The birth and death dates are explicit and consistent: 2020-02-02 to 2025-04-27 equals 5 full years. Confidence is not 100 only because the subject is not a human, so the requested human-identification task does not apply.",
+  "shortDescriptionEn": "Liberty Island was a celebrated Japanese Thoroughbred racehorse, the 2023 Japanese Triple Tiara winner and one of the standout fillies of her generation, with major victories including the Hanshin Juvenile Fillies, Oka Sho, Yushun Himba and Shuka Sho. She died at age 5 after suffering a severe foreleg injury during the Queen Elizabeth II Cup at Sha Tin, where she was pulled up and later euthanized.",
+  "shortDescriptionFr": "Liberty Island était une célèbre jument pur-sang japonaise, lauréate de la Triple Couronne des pouliches japonaises en 2023 et l’une des grandes figures de sa génération, avec des victoires majeures dans les Hanshin Juvenile Fillies, l’Oka Sho, le Yushun Himba et le Shuka Sho. Elle est morte à l’âge de 5 ans après une grave blessure à l’antérieur lors de la Queen Elizabeth II Cup à Sha Tin, où elle a été arrêtée puis euthanasiée.",
+  "shortDescriptionDe": "Liberty Island war ein gefeiertes japanisches Vollblutrennpferd, Gewinnerin der Japanese Triple Tiara 2023 und eine der herausragenden Stuten ihrer Generation, mit wichtigen Siegen in den Hanshin Juvenile Fillies, Oka Sho, Yushun Himba und Shuka Sho. Sie starb im Alter von 5 Jahren nach einer schweren Verletzung am Vorderbein im Queen Elizabeth II Cup in Sha Tin, wo sie angehalten und später eingeschläfert wurde.",
+  "shortDescriptionEs": "Liberty Island fue una célebre yegua purasangre japonesa, ganadora de la Triple Tiara japonesa de 2023 y una de las potrancas más destacadas de su generación, con triunfos importantes en Hanshin Juvenile Fillies, Oka Sho, Yushun Himba y Shuka Sho. Murió a los 5 años tras sufrir una grave lesión en una pata delantera durante la Queen Elizabeth II Cup en Sha Tin, donde fue detenida y posteriormente sacrificada.",
+  "shortDescriptionRu": "Liberty Island была знаменитой японской чистокровной скаковой лошадью, победительницей японской Triple Tiara 2023 года и одной из выдающихся кобыл своего поколения, выигравшей Hanshin Juvenile Fillies, Oka Sho, Yushun Himba и Shuka Sho. Она умерла в возрасте 5 лет после тяжелой травмы передней ноги во время Queen Elizabeth II Cup в Ша-Тине, где была остановлена и затем усыплена.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Liberty_Island_(horse)",
+    "https://www.wikidata.org/wiki/Q116735385",
+    "https://commons.wikimedia.org/wiki/Category:Liberty_Island_(horse)",
+    "https://www.thoroughbreddailynews.com/hkjc-champions-day-marred-by-death-of-liberty-island/",
+    "https://idolhorse.com/horse-racing-news/hong-kong/liberty-island-hkjc-reviewing-vet-protocols-as-ceo-admits-we-have-to-improve-communication/",
+    "https://en.netkeiba.com/news/news_detail.html?id=2222"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6685229",  "Name": "Trịnh Cán",  "BirthDate": "1777-01-01T00:00:00Z",  "DeathDate": "1782-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%C4%90%E1%BA%B7ng%20Th%E1%BB%8B%20Hu%E1%BB%87%20v%C3%A0%20Tr%E1%BB%8Bnh%20C%C3%A1n.png",  "SiteLinksCnt": 6,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"39535866":{"pageid":39535866,"ns":0,"title":"Tr\u1ecbnh C\u00e1n","extract":"\u0110i\u1ec7n \u0110\u00f4 V\u01b0\u01a1ng Tr\u1ecbnh C\u00e1n (ch\u1eef H\u00e1n: \u912d\u6a8a, 1777 \u2013 17 December 1782) was a child heir of northern Vietnam's Tr\u1ecbnh lords and the ninth Tr\u1ecbnh lord. His mother was \u0110\u1eb7ng Th\u1ecb Hu\u1ec7 who undertook a war to retain his place as lord, but her armies were defeated by warlord Tr\u1ecbnh Kh\u1ea3i. He was born and died in Thang Long (now Hanoi)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6685229")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6685229",
+  "isRealHuman": true,
+  "birthDate": "1777-01-01",
+  "deathDate": "1782-12-17",
+  "ageAtDeath": 5,
+  "confidence": 74,
+  "confidenceExplained": "The historical figure is clearly Trịnh Cán, a child Trịnh lord. Multiple public sources give 1777 as the birth year and 17 December 1782 as the death date; Vietnamese Wikipedia explicitly lists him as dying at age 5. The confidence is not higher because the exact birthday is unknown, English Wikipedia gives age as 4-5, and Vietnamese text also preserves a conflicting traditional account implying a different age. For the required exact calculation, I used 1777-01-01 as the estimated birth date, making the age at death 5.",
+  "shortDescriptionEn": "Trịnh Cán, known by the title Điện Đô Vương, was the young son of Trịnh Sâm and Đặng Thị Huệ and briefly became the ninth Trịnh lord in northern Đại Việt in 1782. His rule lasted only weeks, with real power held by his mother and allies amid a bitter succession struggle. After a military coup backed his half-brother Trịnh Khải, the sickly child lord was deposed, exiled, and died soon afterward in Đông Kinh at about age 5.",
+  "shortDescriptionFr": "Trịnh Cán, connu sous le titre de Điện Đô Vương, était le jeune fils de Trịnh Sâm et de Đặng Thị Huệ. Il devint brièvement le neuvième seigneur Trịnh du nord du Đại Việt en 1782, dans un contexte de rivalité dynastique où sa mère et ses partisans gouvernaient en pratique. Après un coup de force favorable à son demi-frère Trịnh Khải, l’enfant, déjà fragile, fut déposé, exilé et mourut peu après à Đông Kinh, vers l’âge de 5 ans.",
+  "shortDescriptionDe": "Trịnh Cán, mit dem Titel Điện Đô Vương, war der junge Sohn von Trịnh Sâm und Đặng Thị Huệ und wurde 1782 kurzzeitig der neunte Trịnh-Fürst im nördlichen Đại Việt. Seine Herrschaft dauerte nur wenige Wochen, während seine Mutter und ihre Verbündeten die Macht ausübten und ein erbitterter Nachfolgekampf eskalierte. Nach einem Putsch zugunsten seines Halbbruders Trịnh Khải wurde der kränkliche Kinderfürst abgesetzt, verbannt und starb bald darauf in Đông Kinh im Alter von etwa 5 Jahren.",
+  "shortDescriptionEs": "Trịnh Cán, conocido por el título de Điện Đô Vương, fue el joven hijo de Trịnh Sâm y Đặng Thị Huệ y llegó a ser brevemente el noveno señor Trịnh del norte de Đại Việt en 1782. Su gobierno duró apenas unas semanas, con el poder efectivo en manos de su madre y sus aliados durante una dura disputa sucesoria. Tras un golpe militar que favoreció a su medio hermano Trịnh Khải, el niño, de salud débil, fue depuesto, enviado al exilio y murió poco después en Đông Kinh, con unos 5 años.",
+  "shortDescriptionRu": "Чинь Кан, носивший титул Дьен До Выонг, был малолетним сыном Чинь Шама и Данг Тхи Хюэ и в 1782 году ненадолго стал девятым правителем рода Чинь в северной части Дайвьета. Его власть продлилась всего несколько недель, а фактически двором управляли его мать и её союзники на фоне ожесточённой борьбы за наследование. После переворота в пользу его сводного брата Чинь Кхая болезненный ребёнок-правитель был низложен, сослан и вскоре умер в Донгкине примерно в возрасте 5 лет.",
+  "pictures": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C4%90%E1%BA%B7ng%20Th%E1%BB%8B%20Hu%E1%BB%87%20v%C3%A0%20Tr%E1%BB%8Bnh%20C%C3%A1n.png",
+      "caption": "Portrait of Đặng Thị Huệ and Trịnh Cán from Trịnh Gia Chính Phả"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BA%B7ng_Th%E1%BB%8B_Hu%E1%BB%87_v%C3%A0_Tr%E1%BB%8Bnh_C%C3%A1n.png",
+      "caption": "Wikimedia Commons file page for the same historical image"
+    }
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_C%C3%A1n",
+    "https://vi.wikipedia.org/wiki/Tr%E1%BB%8Bnh_C%C3%A1n",
+    "https://www.wikidata.org/wiki/Q6685229",
+    "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BA%B7ng_Th%E1%BB%8B_Hu%E1%BB%87_v%C3%A0_Tr%E1%BB%8Bnh_C%C3%A1n.png",
+    "https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_lords"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q75385563",  "Name": "Maria Isabel Ana de Borbón",  "BirthDate": "1743-04-30T00:00:00Z",  "DeathDate": "1749-03-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bonito%20-%20Infanta%20Maria%20Isabel%20-%20Patrimonio%20Nacional.jpg",  "SiteLinksCnt": 6,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"74384579":{"pageid":74384579,"ns":0,"title":"Princess Maria Isabel Ana of Naples and Sicily","extract":"Princess Maria Isabel Ana of Naples and Sicily (30 April 1743  \u2013  5 March 1749) was the third daughter of Charles VII of Naples and III of Sicily and Maria Amalia of Saxony, who later became King Charles III and Queen Maria Amalia of Spain. She was the older sister of kings Charles IV of Spain and Ferdinand I of the Two Sicilies. She died before her father's accession to the Spanish throne, and thus never held the title of Infanta of Spain."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q75385563")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q75385563",
+  "isRealHuman": true,
+  "birthDate": "1743-04-30",
+  "deathDate": "1749-03-05",
+  "ageAtDeath": 5,
+  "confidence": 98,
+  "confidenceExplained": "The identity and dates are confirmed by multiple consistent sources, including Wikipedia, Wikidata/Wikimedia Commons, and the Real Academia de la Historia. The completed age calculation from 1743-04-30 to 1749-03-05 gives 5 years, since she died before her sixth birthday. The exact cause of death is not clearly recorded in the accessible sources, so the death circumstances are described cautiously.",
+  "shortDescriptionEn": "Princess Maria Isabel Ana of Naples and Sicily, born María Isabella Anna de Borbón y Sajonia, was a Bourbon princess and daughter of Charles VII of Naples and Sicily, later Charles III of Spain, and Maria Amalia of Saxony. A child of the Neapolitan royal court, she was connected to the future Spanish and Two Sicilies royal lines. She died in Naples on 5 March 1749, still a child and shortly before her sixth birthday, and was buried in Santa Chiara.",
+  "shortDescriptionFr": "La princesse Maria Isabel Ana de Naples et de Sicile, née María Isabella Anna de Borbón y Sajonia, était une princesse bourbonienne, fille de Charles VII de Naples et de Sicile, futur Charles III d’Espagne, et de Marie-Amélie de Saxe. Enfant de la cour royale napolitaine, elle appartenait à une lignée liée aux futures monarchies d’Espagne et des Deux-Siciles. Elle mourut à Naples le 5 mars 1749, encore enfant et peu avant son sixième anniversaire, puis fut inhumée à Santa Chiara.",
+  "shortDescriptionDe": "Prinzessin Maria Isabel Ana von Neapel und Sizilien, geboren als María Isabella Anna de Borbón y Sajonia, war eine bourbonische Prinzessin und Tochter Karls VII. von Neapel und Sizilien, des späteren Königs Karl III. von Spanien, und Maria Amalias von Sachsen. Als Kind des neapolitanischen Königshofs gehörte sie zu einer Familie, die eng mit den späteren Herrscherlinien Spaniens und beider Sizilien verbunden war. Sie starb am 5. März 1749 in Neapel, noch im Kindesalter und kurz vor ihrem sechsten Geburtstag, und wurde in Santa Chiara beigesetzt.",
+  "shortDescriptionEs": "La princesa María Isabel Ana de Nápoles y Sicilia, nacida María Isabella Anna de Borbón y Sajonia, fue una princesa borbónica, hija de Carlos VII de Nápoles y Sicilia, más tarde Carlos III de España, y de María Amalia de Sajonia. Criada en el entorno de la corte napolitana, pertenecía a una familia vinculada a las futuras casas reales de España y de las Dos Sicilias. Murió en Nápoles el 5 de marzo de 1749, todavía niña y poco antes de cumplir seis años, y fue enterrada en Santa Chiara.",
+  "shortDescriptionRu": "Принцесса Мария Исабель Ана Неаполитанская и Сицилийская, урождённая María Isabella Anna de Borbón y Sajonia, была принцессой из династии Бурбонов, дочерью Карла VII Неаполитанского и Сицилийского, будущего короля Испании Карла III, и Марии Амалии Саксонской. Она росла при неаполитанском дворе и принадлежала к семье, связанной с будущими королевскими линиями Испании и Обеих Сицилий. Она умерла в Неаполе 5 марта 1749 года, ещё ребёнком и незадолго до шестого дня рождения, и была похоронена в Санта-Кьяра.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Princess_Maria_Isabel_Ana_of_Naples_and_Sicily",
+    "https://www.wikidata.org/wiki/Q75385563",
+    "https://historia-hispanica.rah.es/biografias/8151-maria-isabella-anna-de-borbon-y-sajonia",
+    "https://commons.wikimedia.org/wiki/Category:Princess_Maria_Isabel_Ana_of_Naples_and_Sicily",
+    "https://commons.wikimedia.org/wiki/File:Princess_Maria_Isabel_of_Naples_and_Sicily.jpg",
+    "https://commons.wikimedia.org/wiki/File:Bonito_-_Infanta_Maria_Isabel_-_Patrimonio_Nacional.jpg",
+    "https://www.museodelprado.es/en/the-collection/art-work/maria-isabel-of-bourbon-and-saxony-infanta-of/c64d6d56-2972-43c9-9022-69c748f40078"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q16139267",  "Name": "Nabhachara Chamrassri",  "BirthDate": "1884-05-05T00:00:00Z",  "DeathDate": "1889-08-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nabhachara%20Chamrassri.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"24338306":{"pageid":24338306,"ns":0,"title":"Nabhachara Chamrassri","extract":"Nabhachara Chamrassri (Thai: \u0e19\u0e20\u0e32\u0e08\u0e23\u0e08\u0e33\u0e23\u0e31\u0e2a\u0e28\u0e23\u0e35; RTGS: Naphachonchamratsi; 5 May 1884 \u2013 31 August 1889), was the Princess of Siam (later Thailand). She was a member of the Siamese royal family. She was a daughter of Chulalongkorn.\nHer mother was Saisavali Bhiromya, daughter of Prince Ladavalya, the Prince Bhumindra Bhakdi and Lady Chin. She was given her full name by her father as Nabhachara Chamrassri Bhadravadi Rajadhida (Thai: \u0e19\u0e20\u0e32\u0e08\u0e23\u0e08\u0e33\u0e23\u0e31\u0e2a\u0e28\u0e23\u0e35 \u0e20\u0e31\u0e17\u0e23\u0e32\u0e27\u0e14\u0e35\u0e23\u0e32\u0e0a\u0e18\u0e34\u0e14\u0e32}; RTGS: Naphachonchamratsi Pattharawadiratchathida)\nShe had 3 siblings; an elder brother, and 2 younger sisters:\n\nPrince Yugala Dighambara, the Prince of Lopburi (17 March 1883 \u2013 8 April 1932)\nPrincess Malini Nobhadara, the Princess of Srisatchanalai (31 July 1885 \u2013 22 December 1924)\nPrincess Nibha Nobhadol, the Princess of Uthong (4 December 1886 \u2013 29 January 1935)\nPrincess Nabhachara Chamrassri died in her childhood on 31 August 1889, at age 5."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q16139267")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q16139267",
+  "isRealHuman": true,
+  "birthDate": "1884-05-05",
+  "deathDate": "1889-08-31",
+  "ageAtDeath": 5,
+  "confidence": 95,
+  "confidenceExplained": "The age is calculated directly from the birth date 1884-05-05 and death date 1889-08-31, which are consistently given by Wikipedia, Wikidata, and Wikimedia Commons. The exact cause of death is not clearly documented in the accessible sources, but the death date and resulting age of 5 full years are well supported.",
+  "shortDescriptionEn": "Nabhachara Chamrassri was a Princess of Siam from the Chakri dynasty, born at the Grand Palace in Bangkok as a daughter of King Chulalongkorn, Rama V, and Saisavali Bhiromya. Her life was brief, but she remains recorded among the royal children of one of Siam’s most important modernizing monarchs. She died in childhood at the Grand Palace on 31 August 1889, at the age of 5; common public sources do not clearly preserve a cause of death.",
+  "shortDescriptionFr": "Nabhachara Chamrassri était une princesse de Siam de la dynastie Chakri, née au Grand Palais de Bangkok, fille du roi Chulalongkorn, Rama V, et de Saisavali Bhiromya. Sa vie fut très courte, mais son nom demeure lié aux enfants royaux de l’un des souverains les plus importants de la modernisation du Siam. Elle mourut dans l’enfance au Grand Palais le 31 août 1889, à l’âge de 5 ans; les sources publiques courantes ne donnent pas clairement la cause du décès.",
+  "shortDescriptionDe": "Nabhachara Chamrassri war eine Prinzessin von Siam aus der Chakri-Dynastie, geboren im Großen Palast in Bangkok als Tochter von König Chulalongkorn, Rama V., und Saisavali Bhiromya. Obwohl ihr Leben nur kurz war, blieb sie als eines der königlichen Kinder eines der bedeutendsten Modernisierer Siams verzeichnet. Sie starb im Kindesalter am 31. August 1889 im Großen Palast, im Alter von 5 Jahren; eine genaue Todesursache ist in den gängigen öffentlichen Quellen nicht eindeutig überliefert.",
+  "shortDescriptionEs": "Nabhachara Chamrassri fue una princesa de Siam de la dinastía Chakri, nacida en el Gran Palacio de Bangkok como hija del rey Chulalongkorn, Rama V, y de Saisavali Bhiromya. Aunque su vida fue muy breve, quedó registrada entre los hijos reales de uno de los monarcas más importantes en la modernización de Siam. Murió durante la infancia en el Gran Palacio el 31 de agosto de 1889, a los 5 años; las fuentes públicas habituales no conservan con claridad la causa de su muerte.",
+  "shortDescriptionRu": "Набхачара Чамрассри была принцессой Сиама из династии Чакри, родившейся в Большом дворце в Бангкоке, дочерью короля Чулалонгкорна, Рамы V, и Сайсавали Бхиромья. Ее жизнь оказалась очень короткой, но она осталась в исторических записях как одна из царственных детей одного из главных модернизаторов Сиама. Она умерла в детстве в Большом дворце 31 августа 1889 года, в возрасте 5 лет; точная причина смерти в доступных публичных источниках ясно не указана.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nabhachara_Chamrassri",
+    "https://www.wikidata.org/wiki/Q16139267",
+    "https://commons.wikimedia.org/wiki/Category:Nabhachara_Chamrassri",
+    "https://commons.wikimedia.org/wiki/File:Nabhachara_Chamrassri.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Nabhachara%20Chamrassri.jpg",
+    "https://www.geni.com/people/Princess-Nabhachara-Chamrassri/6000000028753891518"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1662812",  "Name": "Inge Pohmann",  "BirthDate": "2000-01-01T00:00:00Z",  "DeathDate": "2005-01-26T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Tennis%20Nederland%20tegen%20Duitsland%20te%20Venlo%2C%20mevr%20Rouwenhorst%20%28links%29%20en%20mevr%20J%2C%20Bestanddeelnr%20908-8915%20%28cropped%29.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"57593515":{"pageid":57593515,"ns":0,"title":"Inge Pohmann","extract":"Inge Pohmann (n\u00e9e Hartelt; 1921 or 1922 \u2013 26 January 2005) was a German female tennis player whose career lasted from the end of World War II until the mid-1950s. \nPohmann won the German national singles title in 1950, 1951 and 1953. She was the No.1 ranked player in Germany in 1950.\nShe was a three-time singles runner-up at the International German Championships in Hamburg. In 1948, playing under the flag of Allied-occupied Germany she lost the final to compatriot Ursula Rosenow. The following year, 1949, Mary Ter\u00e1n de Weiss defeated her in the final three sets, as did Joy Mottram in 1954.\nPohmann competed in the Wimbledon Championships in 1952 and 1955. At both editions she was defeated in the first round of the singles event. In 1952 she partnered Henri Paul Brechbuhl in the mixed doubles event and lost their first match. She teamed up with compatriot Erika Vollmer in the 1955 doubles event and reached it to the third round.\nAt the international Wiesbaden tournament in May 1954 she reached the final of the singles event which she lost in straight sets to world No. 1 ranked player Maureen Connolly.\nIn July 1950 she received the Silbernes Lorbeerblatt (Silver Laurel Leaf), the highest sports award in Germany. She was the first female sportsperson to receive the award.\nShe was the mother of tennis player Hans-J\u00fcrgen Pohmann."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1662812")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1662812",
+  "isRealHuman": true,
+  "birthDate": "1921-07-27",
+  "deathDate": "2005-01-26",
+  "ageAtDeath": 83,
+  "confidence": 88,
+  "confidenceExplained": "The exact birth date is not publicly established in the accessible sources, which give 1921 or 1922. However, German Wikipedia states that Inge Pohmann died at age 83, and that is consistent with a birth date between 1921-01-27 and 1922-01-26. I used a midpoint estimate within that range for the required YYYY-MM-DD birthDate, while the ageAtDeath value of 83 is strongly supported.",
+  "shortDescriptionEn": "Inge Pohmann, born Inge Hartelt, was a German tennis player active from the postwar years into the mid-1950s. She won the German national singles championship in 1950, 1951 and 1953, was Germany’s No. 1 woman in 1950, and later became known as the mother of tennis player and broadcaster Hans-Jürgen Pohmann. She died in Berlin on 26 January 2005 at the age of 83; available public sources give the place, date and age, but do not report a specific cause of death.",
+  "shortDescriptionFr": "Inge Pohmann, née Inge Hartelt, était une joueuse de tennis allemande active de l’après-guerre au milieu des années 1950. Elle remporta le championnat national allemand en simple en 1950, 1951 et 1953, fut numéro 1 allemande en 1950, et fut aussi la mère du joueur et commentateur Hans-Jürgen Pohmann. Elle mourut à Berlin le 26 janvier 2005 à l’âge de 83 ans ; les sources publiques disponibles indiquent le lieu, la date et l’âge, mais ne donnent pas de cause précise du décès.",
+  "shortDescriptionDe": "Inge Pohmann, geborene Inge Hartelt, war eine deutsche Tennisspielerin, deren Laufbahn von der Nachkriegszeit bis in die Mitte der 1950er Jahre reichte. Sie gewann 1950, 1951 und 1953 die deutschen Einzelmeisterschaften, stand 1950 auf Platz eins der deutschen Damenrangliste und war die Mutter des späteren Davis-Cup-Spielers und Sportreporters Hans-Jürgen Pohmann. Sie starb am 26. Januar 2005 in Berlin im Alter von 83 Jahren; öffentlich zugängliche Quellen nennen Ort, Datum und Alter, aber keine konkrete Todesursache.",
+  "shortDescriptionEs": "Inge Pohmann, nacida Inge Hartelt, fue una tenista alemana activa desde los años posteriores a la Segunda Guerra Mundial hasta mediados de la década de 1950. Ganó el campeonato nacional alemán individual en 1950, 1951 y 1953, fue la número 1 de Alemania en 1950 y también fue madre del tenista y comentarista Hans-Jürgen Pohmann. Murió en Berlín el 26 de enero de 2005 a los 83 años; las fuentes públicas disponibles indican el lugar, la fecha y la edad, pero no informan una causa concreta de muerte.",
+  "shortDescriptionRu": "Инге Поманн, урождённая Инге Хартельт, была немецкой теннисисткой, выступавшей с послевоенных лет до середины 1950-х. Она выигрывала чемпионат Германии в одиночном разряде в 1950, 1951 и 1953 годах, была первой ракеткой Германии среди женщин в 1950 году и была матерью теннисиста и спортивного комментатора Ханса-Юргена Поманна. Она умерла в Берлине 26 января 2005 года в возрасте 83 лет; доступные публичные источники указывают место, дату и возраст, но не сообщают конкретную причину смерти.",
+  "pictures": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Inge_Pohmann_1957.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Inge_Pohmann_1957.jpg",
+      "caption": "Inge Pohmann in 1957"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Tennis_Nederland_tegen_Duitsland_te_Venlo%2C_mevr_Rouwenhorst_%28links%29_en_mevr_J%2C_Bestanddeelnr_908-8915_%28cropped%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tennis_Nederland_tegen_Duitsland_te_Venlo,_mevr_Rouwenhorst_(links)_en_mevr_J,_Bestanddeelnr_908-8915_(cropped).jpg",
+      "caption": "Cropped 1957 tennis photograph showing Inge Pohmann"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Tennis_Nederland_tegen_Duitsland_te_Venlo%2C_mevr_Rouwenhorst_%28links%29_en_mevr_J%2C_Bestanddeelnr_908-8915.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tennis_Nederland_tegen_Duitsland_te_Venlo,_mevr_Rouwenhorst_(links)_en_mevr_J,_Bestanddeelnr_908-8915.jpg",
+      "caption": "Original 1957 Netherlands–Germany tennis photograph; Pohmann is on the right"
+    }
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Inge_Pohmann",
+    "https://de.wikipedia.org/wiki/Inge_Pohmann",
+    "https://www.wikidata.org/wiki/Q1662812",
+    "https://commons.wikimedia.org/wiki/Category:Inge_Pohmann",
+    "https://commons.wikimedia.org/wiki/File:Inge_Pohmann_1957.jpg",
+    "https://commons.wikimedia.org/wiki/File:Tennis_Nederland_tegen_Duitsland_te_Venlo,_mevr_Rouwenhorst_(links)_en_mevr_J,_Bestanddeelnr_908-8915_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Tennis_Nederland_tegen_Duitsland_te_Venlo,_mevr_Rouwenhorst_(links)_en_mevr_J,_Bestanddeelnr_908-8915.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q18530575",  "Name": "Penelope Boothby",  "BirthDate": "1785-04-11T00:00:00Z",  "DeathDate": "1791-03-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Penelope%20Boothby%20by%20Joshua%20Reynolds.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"3774095":{"pageid":3774095,"ns":0,"title":"Penelope Boothby","extract":"Penelope Boothby (11 April 1785 \u2013 13 March 1791) was a girl who has become one of the most famous child characters in British art. Her image inspired the paintings by Joshua Reynolds, Henry Fuseli, John Everett Millais, a sculpture by Thomas Banks, photographs of Lewis Carroll, as well as sonnets of Brooke Boothby, her father. \nAccording to art historians and historians, in the art of the 19th\u201320th centuries Penelope Boothby became a classic child of the Romantic era, the keeper of heavenly innocence, a symbol of \"what we have lost and what we are afraid to lose\". The image of Penelope was actively exploited by popular culture throughout the 20th century."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q18530575")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q18530575",
+  "isRealHuman": true,
+  "birthDate": "1785-04-11",
+  "deathDate": "1791-03-13",
+  "ageAtDeath": 5,
+  "confidence": 92,
+  "confidenceExplained": "The age at death is highly secure: the commonly cited dates are 11 April 1785 and 13 March 1791, which makes her 5 years old, just under one month short of her sixth birthday. A few art-historical sources give 12 April 1785 or describe her as dying 'in her sixth year' or 'aged six', but these variants still produce the same integer age of 5.",
+  "shortDescriptionEn": "Penelope Boothby was the only child of Sir Brooke Boothby and Susanna Bristow, and became one of the most memorable child figures in British art after Joshua Reynolds painted her in 1788 in the famous mob-cap portrait. Her image later echoed through works by Henry Fuseli, Thomas Banks, John Everett Millais and even Lewis Carroll’s photographic imagination. She died at Ashbourne in 1791, aged 5, after about a month of illness; her father’s grief led to poems, a Fuseli painting and Banks’s celebrated sleeping-child monument at St Oswald’s Church.",
+  "shortDescriptionFr": "Penelope Boothby était la fille unique de Sir Brooke Boothby et de Susanna Bristow, devenue l’une des figures enfantines les plus marquantes de l’art britannique grâce au portrait peint par Joshua Reynolds en 1788, avec son célèbre bonnet. Son image inspira ensuite Henry Fuseli, Thomas Banks, John Everett Millais et l’imaginaire photographique de Lewis Carroll. Elle mourut à Ashbourne en 1791, à l’âge de 5 ans, après environ un mois de maladie; le chagrin de son père donna naissance à des sonnets, à une peinture de Fuseli et au célèbre monument funéraire de Banks à St Oswald’s Church.",
+  "shortDescriptionDe": "Penelope Boothby war das einzige Kind von Sir Brooke Boothby und Susanna Bristow und wurde durch Joshua Reynolds’ Porträt von 1788 mit der markanten Haube zu einer der bekanntesten Kinderfiguren der britischen Kunst. Ihr Bild wirkte später in Werken von Henry Fuseli, Thomas Banks, John Everett Millais und sogar in der fotografischen Vorstellungswelt Lewis Carrolls nach. Sie starb 1791 in Ashbourne im Alter von 5 Jahren nach etwa einmonatiger Krankheit; die Trauer ihres Vaters führte zu Gedichten, einem Gemälde von Fuseli und Banks’ berühmtem Grabmal eines schlafenden Kindes in St Oswald’s Church.",
+  "shortDescriptionEs": "Penelope Boothby fue la única hija de Sir Brooke Boothby y Susanna Bristow, y se convirtió en una de las figuras infantiles más recordadas del arte británico gracias al retrato que Joshua Reynolds pintó en 1788 con su célebre cofia. Su imagen inspiró después a Henry Fuseli, Thomas Banks, John Everett Millais e incluso al imaginario fotográfico de Lewis Carroll. Murió en Ashbourne en 1791, a los 5 años, tras alrededor de un mes de enfermedad; el duelo de su padre dio lugar a sonetos, a una pintura de Fuseli y al famoso monumento funerario de Banks en St Oswald’s Church.",
+  "shortDescriptionRu": "Пенелопа Бутби была единственной дочерью сэра Брука Бутби и Сюзанны Бристоу и стала одной из самых запоминающихся детских фигур в британском искусстве после портрета Джошуа Рейнольдса 1788 года с узнаваемым чепцом. Ее образ позднее отозвался в работах Генри Фюзели, Томаса Бэнкса, Джона Эверетта Милле и даже в фотографическом воображении Льюиса Кэрролла. Она умерла в Ашборне в 1791 году в возрасте 5 лет после примерно месячной болезни; горе отца воплотилось в сонетах, картине Фюзели и знаменитом надгробном памятнике Бэнкса в церкви St Oswald’s.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Penelope%20Boothby%20by%20Joshua%20Reynolds.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw115008/Penelope-Boothby",
+    "https://collections.soane.org/object-m44",
+    "https://www.britishmuseum.org/collection/object/P_1852-1211-484"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Penelope_Boothby",
+    "https://commons.wikimedia.org/wiki/File:Penelope_Boothby_by_Joshua_Reynolds.jpg",
+    "https://www.npg.org.uk/collections/search/portrait/mw115008/Penelope-Boothby",
+    "https://collections.soane.org/object-m44",
+    "https://www.nationalchurchestrust.org/church/st-oswald-ashbourne",
+    "https://www.britishmuseum.org/collection/object/P_1852-1211-484"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3750159",  "Name": "Archduke Franz Leopold, Hereditary Grand Duke of Tuscany",  "BirthDate": "1794-12-15T00:00:00Z",  "DeathDate": "1800-05-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Leopoldo%20d%27Asburgo-Lorena.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"4196917":{"pageid":4196917,"ns":0,"title":"Francesco Leopoldo d'Asburgo-Lorena","extract":"Francesco Leopoldo d'Asburgo-Lorena (Firenze, 15 dicembre 1794 \u2013 Vienna, 18 maggio 1800) fu Gran principe di Toscana."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3750159")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q3750159",
+  "isRealHuman": true,
+  "birthDate": "1794-12-15",
+  "deathDate": "1800-05-18",
+  "ageAtDeath": 5,
+  "confidence": 98,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata, Italian Wikipedia, Czech Wikipedia, and Commons-linked metadata. The integer age is certain from the dates: he died before his sixth birthday. Confidence is not 100 only because the exact death circumstances are sparsely sourced in short encyclopedia entries.",
+  "shortDescriptionEn": "Francesco Leopoldo d'Asburgo-Lorena, known in English as Archduke Franz Leopold, Hereditary Grand Duke of Tuscany, was the first son and heir of Grand Duke Ferdinand III of Tuscany and Luisa Maria Amalia of Naples and Sicily. Born in Florence into the Habsburg-Lorraine dynasty, he held the title of Grand Prince of Tuscany from birth. He died in Vienna at age 5 while his family was in exile, reportedly after falling from a carriage; his younger brother Leopold later became heir and eventually Grand Duke Leopold II.",
+  "shortDescriptionFr": "Francesco Leopoldo d'Asburgo-Lorena, connu en français comme l'archiduc François-Léopold, grand-prince héréditaire de Toscane, était le premier fils et héritier du grand-duc Ferdinand III de Toscane et de Luisa Maria Amalia de Naples et de Sicile. Né à Florence dans la maison de Habsbourg-Lorraine, il porta dès sa naissance le titre de grand-prince de Toscane. Il mourut à Vienne à l'âge de 5 ans, alors que sa famille était en exil, vraisemblablement après une chute de voiture; son frère cadet Léopold devint ensuite l'héritier et plus tard le grand-duc Léopold II.",
+  "shortDescriptionDe": "Francesco Leopoldo d'Asburgo-Lorena, auf Deutsch Erzherzog Franz Leopold, Erbgroßherzog von Toskana, war der erste Sohn und Erbe von Großherzog Ferdinand III. von Toskana und Luisa Maria Amalia von Neapel-Sizilien. Er wurde in Florenz in das Haus Habsburg-Lothringen geboren und trug von Geburt an den Titel des Großprinzen von Toskana. Er starb in Wien im Alter von 5 Jahren, während seine Familie im Exil lebte, Berichten zufolge nach einem Sturz aus einer Kutsche; danach wurde sein jüngerer Bruder Leopold Thronerbe und später Großherzog Leopold II.",
+  "shortDescriptionEs": "Francesco Leopoldo d'Asburgo-Lorena, conocido en español como el archiduque Francisco Leopoldo de Austria-Toscana, fue el primer hijo varón y heredero del gran duque Fernando III de Toscana y de Luisa María Amalia de Nápoles y Sicilia. Nacido en Florencia dentro de la casa de Habsburgo-Lorena, llevó desde su nacimiento el título de gran príncipe de Toscana. Murió en Viena a los 5 años, mientras su familia estaba en el exilio, al parecer tras caer de un carruaje; su hermano menor Leopoldo pasó a ser el heredero y más tarde gobernó como Leopoldo II.",
+  "shortDescriptionRu": "Франческо Леопольдо д’Асбурго-Лорена, известный также как эрцгерцог Франц Леопольд, наследный великий принц Тосканы, был первым сыном и наследником великого герцога Тосканы Фердинанда III и Луизы Марии Амалии Неаполитанско-Сицилийской. Он родился во Флоренции в династии Габсбургов-Лотарингских и с рождения считался наследником тосканского великогерцогского престола. Он умер в Вене в возрасте 5 лет, когда семья находилась в изгнании, предположительно после падения из кареты; наследником стал его младший брат Леопольд, будущий великий герцог Леопольд II.",
+  "sources": [
+    "https://it.wikipedia.org/wiki/Francesco_Leopoldo_d%27Asburgo-Lorena",
+    "https://cs.wikipedia.org/wiki/Franti%C5%A1ek_Leopold_Habsbursko-Lotrinsk%C3%BD",
+    "https://www.wikidata.org/wiki/Q3750159",
+    "https://commons.wikimedia.org/wiki/File:Francesco_Leopoldo_d%27Asburgo-Lorena.jpg",
+    "https://commons.wikimedia.org/wiki/File:Francesco_Leopoldo_d%27Asburgo-Lorena_2008.jpg",
+    "https://commons.wikimedia.org/wiki/File:Giovanni_Marras_Familie_Gro%C3%9Fherzog_Ferdinand_III_von_Toskana.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Archduke_Francesco_Leopoldo"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5367617",  "Name": "Elsie Paroubek",  "BirthDate": "1906-01-01T00:00:00Z",  "DeathDate": "1911-05-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Elsie%20Paroubek.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"32479114":{"pageid":32479114,"ns":0,"title":"Elsie Paroubek","extract":"Eli\u0161ka \"Elsie\" Paroubek (1906 \u2013 c. April 8, 1911) was an American girl who was a victim of kidnapping and murder in the spring of 1911. Her disappearance and the subsequent search for her preoccupied Illinois, Wisconsin, and Minnesota law enforcement for six weeks. Her funeral was attended by between 2,000 and 3,000 people.\nThe story of the girl's death, and especially her photograph in the Chicago Daily News, were inspirations for Henry Darger's immense fantasy novel In the Realms of the Unreal."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5367617")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5367617",
+  "isRealHuman": true,
+  "birthDate": "1906-04-22",
+  "deathDate": "1911-04-08",
+  "ageAtDeath": 4,
+  "confidence": 82,
+  "confidenceExplained": "Elsie Paroubek's exact birthdate is not known because her birth was apparently not registered. The best-supported reconstruction is that she was 3 at the April 21, 1910 census and 4 at death according to her gravestone, which makes a birthdate after April 21, 1906 plausible. I use 1906-04-22 as a conservative estimate and 1911-04-08 as the likely death date, matching the date of disappearance and the common historical account. Some sources round her age to 5 or give a later death date, so the confidence is high but not absolute.",
+  "shortDescriptionEn": "Eliška “Elsie” Paroubek was a Czech-American child from Chicago whose 1911 disappearance became one of the city’s most widely followed missing-person cases. Her photograph later became connected with artist Henry Darger’s imaginative work. She vanished while going to visit her aunt; after weeks of searching, her body was found in the Chicago Sanitary and Ship Canal, and her death was treated as a likely homicide.",
+  "shortDescriptionFr": "Eliška « Elsie » Paroubek était une enfant tchéco-américaine de Chicago dont la disparition en 1911 mobilisa fortement la police, la presse et le public. Sa photographie est aussi devenue liée à l’univers de l’artiste Henry Darger. Elle disparut en allant rendre visite à sa tante ; plusieurs semaines plus tard, son corps fut retrouvé dans le Chicago Sanitary and Ship Canal, et sa mort fut considérée comme probablement criminelle.",
+  "shortDescriptionDe": "Eliška „Elsie“ Paroubek war ein tschechisch-amerikanisches Kind aus Chicago, dessen Verschwinden 1911 große öffentliche Aufmerksamkeit erregte. Ihr Foto wurde später mit dem Werk des Künstlers Henry Darger in Verbindung gebracht. Sie verschwand auf dem Weg zu ihrer Tante; Wochen später wurde ihre Leiche im Chicago Sanitary and Ship Canal gefunden, und ihr Tod wurde als wahrscheinliches Tötungsdelikt behandelt.",
+  "shortDescriptionEs": "Eliška “Elsie” Paroubek fue una niña checo-estadounidense de Chicago cuya desaparición en 1911 atrajo una enorme atención policial y periodística. Su fotografía quedó después vinculada a la obra del artista Henry Darger. Desapareció cuando iba a visitar a su tía; semanas más tarde su cuerpo apareció en el Chicago Sanitary and Ship Canal, y su muerte fue tratada como un probable homicidio.",
+  "shortDescriptionRu": "Элишка «Элси» Пароубек была чешско-американской девочкой из Чикаго, исчезновение которой в 1911 году вызвало широкий общественный резонанс и масштабные поиски. Ее фотография позднее стала связана с творчеством художника Генри Дарджера. Она пропала по дороге к тете; спустя несколько недель ее тело нашли в Чикагском санитарно-судовом канале, а смерть рассматривалась как вероятное убийство.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Elsie%20Paroubek.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Elsie%20Paroubek%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Grave%20of%20Eli%C5%A1ka%20Paroubek%20%281906%E2%80%931911%29%20at%20Bohemian%20National%20Cemetery%2C%20Chicago.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Elsie_Paroubek",
+    "https://www.wikidata.org/wiki/Q5367617",
+    "https://www.findagrave.com/memorial/19844142/eli%C5%A1ka-paroubek",
+    "https://www.alcatrazeast.com/crime-library/kidnappings/elsie-paroubek/",
+    "https://www.americanhauntingsink.com/gypsies",
+    "https://commons.wikimedia.org/wiki/File:Elsie_Paroubek.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Elsie_Paroubek"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5479838",  "Name": "Descartés",  "BirthDate": "1635-07-19T00:00:00Z",  "DeathDate": "1640-09-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Descartes%20pleurant%20sa%20fille.jpg",  "SiteLinksCnt": 5,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"3187048":{"pageid":3187048,"ns":0,"title":"Francine Descartes","extract":"Francine Descartes (19 July 1635, Deventer \u2013 7 September 1640, Amersfoort) was Ren\u00e9 Descartes's daughter.\nFrancine was the daughter of Helena Jans van der Strom, a domestic servant of Thomas Sergeant \u2014 a bookshop owner and associate of Descartes at whose house in Amsterdam Descartes lodged on 15 October 1634. When Descartes moved back from Amsterdam to Deventer the following winter, Helena went with him. Although Francine was referred to as an illegitimate child, her baptism in Deventer on 7 August 1635, was recorded among the legitimate births. Helena officially remained Descartes' servant, and Ren\u00e9 referred to Francine as his niece, but both were included in his life. In 1640 Descartes wrote that he would bring his daughter to France to learn the language and be educated, but before that could happen, Francine died of scarlet fever at the age of five. Russell Shorto postulated that the experience of fatherhood and losing a child formed a turning point in Descartes' work, changing its focus from medicine to a quest for universal answers.\nHelena was the only woman with whom Descartes is known to have been intimate and she and Descartes appear to have remained close after Francine's death. Helena may have moved with Descartes to his next addresses \u2014 including in 1643 to Egmond-Binnen \u2014 where in 1644 she married the local innkeeper Jan Jansz van Wel.  Notary acts discovered by Jeroen van de Ven show that Descartes provided the 1000-guilder dowry for this wedding. Descartes himself would remain in Egmond-Binnen until 1649, the longest period he ever stayed at any residence.\nFrancine had four half brothers through her mother, Helena:\n\nJustinus Jansz van Wel, son of Jan Jansz van Wel, Helena's first husband,\nJan van Lienen,\nWouter van Lienen and\nWillem van Lienen from Helena's second husband, Jacob van Lienen.\nAfter Francine's death, Ren\u00e9 Descartes is said to have constructed an automaton in her likeness, though there is not currently a reliable contemporary source on this matter."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5479838")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5479838",
+  "isRealHuman": true,
+  "birthDate": "1635-07-19",
+  "deathDate": "1640-09-07",
+  "ageAtDeath": 5,
+  "confidence": 98,
+  "confidenceExplained": "The identity is strongly supported by the matching Wikidata item Q5479838 and the English Wikipedia article for Francine Descartes. Both give the same full birth and death dates, so the completed age at death can be calculated directly: she had turned 5 on 19 July 1640 and died on 7 September 1640. The small uncertainty is only because surviving biographical coverage is limited.",
+  "shortDescriptionEn": "Francine Descartes was the young daughter of philosopher René Descartes and Helena Jans van der Strom. Born in Deventer in 1635, she occupied a quiet but emotionally significant place in Descartes’s life; he reportedly planned to bring her to France for education. That future ended suddenly in 1640, when she died in Amersfoort of scarlet fever at the age of 5, a loss often described as deeply affecting her father.",
+  "shortDescriptionFr": "Francine Descartes était la jeune fille du philosophe René Descartes et d’Helena Jans van der Strom. Née à Deventer en 1635, elle tint une place discrète mais importante dans la vie affective de Descartes, qui aurait voulu l’emmener en France pour son éducation. Ce projet fut interrompu en 1640, lorsqu’elle mourut à Amersfoort de la scarlatine à l’âge de 5 ans, une disparition qui marqua profondément son père.",
+  "shortDescriptionDe": "Francine Descartes war die kleine Tochter des Philosophen René Descartes und von Helena Jans van der Strom. Sie wurde 1635 in Deventer geboren und nahm in Descartes’ Privatleben eine stille, aber bedeutende Rolle ein; er soll geplant haben, sie zur Ausbildung nach Frankreich zu bringen. Dazu kam es nicht mehr: 1640 starb sie in Amersfoort im Alter von 5 Jahren an Scharlach, ein Verlust, der ihren Vater schwer getroffen haben soll.",
+  "shortDescriptionEs": "Francine Descartes fue la hija pequeña del filósofo René Descartes y de Helena Jans van der Strom. Nacida en Deventer en 1635, ocupó un lugar discreto pero importante en la vida personal de Descartes, quien al parecer planeaba llevarla a Francia para educarla. Ese futuro se truncó en 1640, cuando murió en Amersfoort de escarlatina a los 5 años, una pérdida que suele considerarse profundamente dolorosa para su padre.",
+  "shortDescriptionRu": "Франсин Декарт была маленькой дочерью философа Рене Декарта и Хелены Янс ван дер Стром. Она родилась в Девентере в 1635 году и занимала тихое, но важное место в личной жизни Декарта; он, как сообщается, собирался перевезти её во Францию для обучения. Этим планам не суждено было осуществиться: в 1640 году она умерла в Амерсфорте от скарлатины в возрасте 5 лет, и эта утрата, вероятно, глубоко потрясла её отца.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Descartes_pleurant_sa_fille.jpg",
+    "https://commons.wikimedia.org/wiki/File:Registre_bapt%C3%AAme_Francine.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francine_Descartes",
+    "https://www.wikidata.org/wiki/Q5479838",
+    "https://commons.wikimedia.org/wiki/Category:Francine_Descartes",
+    "https://commons.wikimedia.org/wiki/File:Descartes_pleurant_sa_fille.jpg",
+    "https://fr.wikipedia.org/wiki/Fichier:Descartes_pleurant_sa_fille.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q12470697",  "Name": "Ade Irma Suryani Nasution",  "BirthDate": "1960-02-19T00:00:00Z",  "DeathDate": "1965-10-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AH%20Nasution%20with%20his%20family%20-%201965.jpg",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"43300":{"pageid":43300,"ns":0,"title":"Ade Irma Suryani Nasution","extract":"Ade Irma Suryani Nasution (19 Februari 1960 \u2013 6 Oktober 1965) adalah putri bungsu Jenderal Besar Abdul Haris Nasution. Ade terbunuh dalam peristiwa Gerakan 30 September yang berusaha untuk menculik Abdul Haris Nasution. Ade yang berumur lima tahun tertembak ketika berusaha menjadi tameng ayahandanya. Dalam peristiwa tersebut tewas juga ajudan Abdul Haris Nasution yaitu Pierre Tendean.\nSebelum meninggal, Ade sempat dirawat di RSPAD Gatot Soebroto Jakarta Pusat. Namun, nyawanya tidak tertolong. Dia meninggal pada tanggal 6 Oktober 1965. Pemerintah membangun monumen di tempat peristirahatan terakhirnya, di kawasan Kebayoran Baru, Jakarta Selatan, persis di samping Kantor Wali Kota Jakarta Selatan. Di depan nisannya, tertulis kata-kata dari sang ayah, Jenderal A.H. Nasution. \"Anak saya yang tercinta, engkau telah mendahului gugur sebagai perisai ayahmu.\"\nSaat ini, namanya diabadikan sebagai nama jalan, sekolah taman kanak-kanak, hingga panti asuhan, di beberapa daerah di Indonesia. Salah satunya adalah taman permainan dan rekreasi di Kota Cirebon yang diberi nama Taman Ade Irma Suryani Nasution."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q12470697")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q12470697",
+  "isRealHuman": true,
+  "birthDate": "1960-02-19",
+  "deathDate": "1965-10-06",
+  "ageAtDeath": 5,
+  "confidence": 99,
+  "confidenceExplained": "Birth and death dates are consistent across Wikidata/Wikimedia Commons, Indonesian Wikipedia, and biographical listings. The age is directly calculable: from 1960-02-19 to 1965-10-06 is 5 years, 7 months, and 17 days, so the integer age at death is 5. Confidence is not 100 only because some secondary accounts describe the shooting date as the night of 30 September or early 1 October 1965, but the death date itself is consistently 6 October 1965.",
+  "shortDescriptionEn": "Ade Irma Suryani Nasution was the youngest daughter of Indonesian general Abdul Haris Nasution and Johana Sunarti Nasution. Remembered in Indonesia as a child victim of the political violence surrounding the 30 September Movement, she became associated with public memory of the 1965 crisis. During the attempted kidnapping of her father, she was shot in the family home and died several days later in Jakarta at age 5.",
+  "shortDescriptionFr": "Ade Irma Suryani Nasution était la plus jeune fille du général indonésien Abdul Haris Nasution et de Johana Sunarti Nasution. Elle est restée dans la mémoire publique indonésienne comme une victime enfant de la violence politique liée au Mouvement du 30 septembre. Lors de la tentative d’enlèvement visant son père, elle fut touchée par balles au domicile familial et mourut quelques jours plus tard à Jakarta, à l’âge de 5 ans.",
+  "shortDescriptionDe": "Ade Irma Suryani Nasution war die jüngste Tochter des indonesischen Generals Abdul Haris Nasution und von Johana Sunarti Nasution. In Indonesien wird sie als kindliches Opfer der politischen Gewalt rund um die Bewegung des 30. September erinnert. Bei dem Versuch, ihren Vater zu entführen, wurde sie im Haus der Familie angeschossen und starb wenige Tage später in Jakarta im Alter von 5 Jahren.",
+  "shortDescriptionEs": "Ade Irma Suryani Nasution fue la hija menor del general indonesio Abdul Haris Nasution y de Johana Sunarti Nasution. En Indonesia se la recuerda como una víctima infantil de la violencia política relacionada con el Movimiento del 30 de Septiembre. Durante el intento de secuestro contra su padre, recibió disparos en la casa familiar y murió pocos días después en Yakarta, a los 5 años.",
+  "shortDescriptionRu": "Аде Ирма Сурьяни Насутион была младшей дочерью индонезийского генерала Абдула Хариса Насутиона и Йоханы Сунарти Насутион. В Индонезии её помнят как ребёнка, ставшего жертвой политического насилия, связанного с Движением 30 сентября. Во время попытки похищения её отца она была ранена выстрелами в семейном доме и умерла через несколько дней в Джакарте в возрасте 5 лет.",
+  "sources": [
+    "https://id.wikipedia.org/wiki/Ade_Irma_Suryani_Nasution",
+    "https://en.wikipedia.org/wiki/30_September_Movement",
+    "https://commons.wikimedia.org/wiki/Category:Ade_Irma_Suryani_Nasution",
+    "https://commons.wikimedia.org/wiki/File:AH_Nasution_with_his_family_-_1965.jpg",
+    "https://www.kompas.com/skola/image/2020/09/29/150000269/ade-irma-suryani-putri-jenderal-ah-nasution-yang-jadi-korban-g30s",
+    "https://www.findagrave.com/memorial/195058190/ade_irma_suryani-nasution"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1621628",  "Name": "Vancho Sarbaka",  "BirthDate": "1900-01-01T00:00:00Z",  "DeathDate": "1905-04-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Sarbakov.JPG",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"4526454":{"pageid":4526454,"ns":0,"title":"Iwan Sarbakow","extract":"Iwan Sarbakow (bulgarisch \u0418\u0432\u0430\u043d \u0421\u044a\u0440\u0431\u0430\u043a\u043e\u0432), auch Wantscho Sarbaka genannt, (bulgarisch \u0412\u0430\u043d\u0447\u043e \u0421\u044a\u0440\u0431\u0430\u043a\u043e\u0432; mazedonisch: \u0412\u0430\u043d\u0447\u043e \u0421\u0440\u0431\u0430\u043a\u043e\u0432 Van\u010do Srbakov; * im 19. Jahrhundert in Vrane\u0161tica bei Ki\u010devo, Osmanisches Reich, heute Nordmazedonien; \u2020 24. April 1905 in der N\u00e4he vom Dorf Cer, Osmanisches Reich, heute Nordmazedonien) war ein bulgarisch-makedonischer Revolution\u00e4r und Mitglied der Inneren Makedonisch-Adrianopeler Revolution\u00e4ren Organisation (IMARO). Zudem wurde er von der IMARO zum Wojwoden f\u00fcr die Ki\u010devo-Pore\u010de-Region ernannt."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1621628")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1621628",
+  "isRealHuman": true,
+  "birthDate": "1878-07-01",
+  "deathDate": "1905-04-24",
+  "ageAtDeath": 26,
+  "confidence": 35,
+  "confidenceExplained": "The identity and death date are well supported, but no reliable source found gives an exact birth date. Sources state only '19th century' or 'late 19th century'. I estimated 1878-07-01 because Sarbakov was already an adult emigrant, baker, armed-band organizer and voivode by 1903; the exact age may be off by several years.",
+  "shortDescriptionEn": "Ivan Mickov Sarbakov, better known as Vancho Sarbaka or Srbakov, was an IMARO revolutionary from Vraneštica in the Kičevo region of Ottoman Macedonia. A baker by trade, he became a voivode active in Kičevo and Poreče and took part in the Ilinden Uprising. In April 1905, near Cer, his detachment with Hristo Uzunov was surrounded by Ottoman troops; Sarbakov tried to break the cordon with bombs and was killed, dying at an estimated age of 26.",
+  "shortDescriptionFr": "Ivan Mickov Sarbakov, mieux connu sous le nom de Vancho Sarbaka ou Srbakov, fut un révolutionnaire de l’IMARO originaire de Vraneštica, dans la région de Kičevo en Macédoine ottomane. Boulanger de métier, il devint voïvode actif à Kičevo et Poreče et participa à l’insurrection d’Ilinden. En avril 1905, près de Cer, son détachement avec Hristo Uzunov fut encerclé par les troupes ottomanes; Sarbakov tenta de rompre le cordon avec des bombes et fut tué, à un âge estimé à 26 ans.",
+  "shortDescriptionDe": "Ivan Mickov Sarbakov, besser bekannt als Vancho Sarbaka oder Srbakov, war ein IMARO-Revolutionär aus Vraneštica in der Region Kičevo im osmanischen Makedonien. Von Beruf Bäcker, wurde er Wojwode in Kičevo und Poreče und nahm am Ilinden-Aufstand teil. Im April 1905 wurde seine Abteilung mit Hristo Uzunov nahe Cer von osmanischen Truppen umzingelt; Sarbakov versuchte, den Ring mit Bomben zu durchbrechen, und wurde getötet, geschätzt im Alter von 26 Jahren.",
+  "shortDescriptionEs": "Ivan Mickov Sarbakov, más conocido como Vancho Sarbaka o Srbakov, fue un revolucionario de la IMARO nacido en Vraneštica, en la región de Kičevo de la Macedonia otomana. Panadero de oficio, llegó a ser voivoda activo en Kičevo y Poreče y participó en el levantamiento de Ilinden. En abril de 1905, cerca de Cer, su destacamento junto a Hristo Uzunov fue rodeado por tropas otomanas; Sarbakov intentó romper el cerco con bombas y murió, con una edad estimada de 26 años.",
+  "shortDescriptionRu": "Иван Мицков Сарбаков, более известный как Ванчо Сарбака или Србаков, был революционером ВМОРО из Вранештицы в Кичевском крае османской Македонии. По профессии пекарь, он стал воеводой, действовал в Кичево и Поречье и участвовал в Илинденском восстании. В апреле 1905 года у села Цер его отряд вместе с Христо Узуновым был окружён османскими войсками; Сарбаков попытался прорвать кольцо бомбами и погиб, предположительно в возрасте 26 лет.",
+  "sources": [
+    "https://bg.wikipedia.org/wiki/%D0%92%D0%B0%D0%BD%D1%87%D0%BE_%D0%A1%D1%8A%D1%80%D0%B1%D0%B0%D0%BA%D0%BE%D0%B2",
+    "https://mk.wikipedia.org/wiki/%D0%92%D0%B0%D0%BD%D1%87%D0%BE_%D0%A1%D1%80%D0%B1%D0%B0%D0%BA%D0%BE%D0%B2",
+    "https://de.wikipedia.org/wiki/Iwan_Sarbakow",
+    "https://www.wikidata.org/wiki/Q1621628",
+    "https://www.mn.mk/makedonski-legendi/12219",
+    "https://commons.wikimedia.org/wiki/File:Ivan_Sarbakov.JPG",
+    "https://commons.wikimedia.org/wiki/Category:Vancho_Sarbaka",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Sarbakov.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1906507",  "Name": "Infanta Maria del Pilar of Spain",  "BirthDate": "1912-09-15T00:00:00Z",  "DeathDate": "1918-05-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Infanta%20Maria%20del%20Pilar%20de%20Baviera%20from%20The%20family%20of%20Ferdinand%20Maria%20of%20Bavaria%20%28cropped%29.jpg",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"4486518":{"pageid":4486518,"ns":0,"title":"Mar\u00eda del Pilar de Baviera y Borb\u00f3n","extract":"Mar\u00eda del Pilar de Baviera y Borb\u00f3n (Madrid, 15 de septiembre de 1912\u200b-ibidem, 9 de mayo de 1918\u200b) fue la cuarta y \u00faltima hija del infante Fernando Mar\u00eda de Baviera (que previamente hab\u00eda ostentado el t\u00edtulo de pr\u00edncipe) y de la infanta Mar\u00eda Teresa de Borb\u00f3n. Por decisi\u00f3n de su t\u00edo materno, el rey de Espa\u00f1a, Mar\u00eda del Pilar recibi\u00f3 el t\u00edtulo de infanta de Espa\u00f1a."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1906507")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1906507",
+  "isRealHuman": true,
+  "birthDate": "1912-09-15",
+  "deathDate": "1918-05-09",
+  "ageAtDeath": 5,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata, Spanish Wikipedia, Wikimedia Commons, and genealogical sources. The age calculation is straightforward: born 1912-09-15 and died 1918-05-09, before her sixth birthday, so age at death was 5. Confidence is slightly below 100 only because cause-of-death details rely mainly on secondary historical summaries.",
+  "shortDescriptionEn": "María del Pilar de Baviera y Borbón was the youngest daughter of Prince Ferdinand Maria of Bavaria and Infanta María Teresa of Spain, and by decision of King Alfonso XIII she held the dignity of Infanta of Spain. Born in Madrid into the Bourbon-Wittelsbach royal line, she spent her brief life within the Spanish court. She died in Madrid on 9 May 1918 from meningitis, before reaching her sixth birthday, and was buried in the Pantheon of the Infantes at El Escorial.",
+  "shortDescriptionFr": "María del Pilar de Bavière y Borbón était la plus jeune fille du prince Ferdinand Marie de Bavière et de l’infante María Teresa d’Espagne; par décision du roi Alphonse XIII, elle reçut la dignité d’infante d’Espagne. Née à Madrid dans la lignée royale Bourbon-Wittelsbach, elle vécut sa courte existence dans l’entourage de la cour espagnole. Elle mourut à Madrid le 9 mai 1918 d’une méningite, avant son sixième anniversaire, et fut enterrée au Panthéon des Infants de l’Escurial.",
+  "shortDescriptionDe": "María del Pilar de Baviera y Borbón war die jüngste Tochter von Prinz Ferdinand Maria von Bayern und Infantin María Teresa von Spanien; durch Entscheidung König Alfons’ XIII. trug sie den Rang einer Infantin von Spanien. In Madrid in die bourbonisch-wittelsbachische Königslinie geboren, verbrachte sie ihr kurzes Leben im Umfeld des spanischen Hofes. Sie starb am 9. Mai 1918 in Madrid an Meningitis, noch vor ihrem sechsten Geburtstag, und wurde im Pantheon der Infanten im Escorial beigesetzt.",
+  "shortDescriptionEs": "María del Pilar de Baviera y Borbón fue la hija menor del infante Fernando María de Baviera y de la infanta María Teresa de Borbón; por decisión de Alfonso XIII recibió la dignidad de infanta de España. Nacida en Madrid dentro de la línea real Borbón-Wittelsbach, vivió su breve vida en el entorno de la corte española. Murió en Madrid el 9 de mayo de 1918 a causa de una meningitis, antes de cumplir seis años, y fue enterrada en el Panteón de Infantes de El Escorial.",
+  "shortDescriptionRu": "Мария дель Пилар Баварская-и-Бурбон была младшей дочерью принца Фердинанда Марии Баварского и инфанты Марии Терезы Испанской; по решению короля Альфонсо XIII она получила достоинство инфанты Испании. Родившись в Мадриде в королевской линии Бурбонов-Виттельсбахов, она прожила свою короткую жизнь рядом с испанским двором. Она умерла в Мадриде 9 мая 1918 года от менингита, не дожив до шестого дня рождения, и была похоронена в Пантеоне инфантов в Эскориале.",
+  "imageUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Infanta%20Maria%20del%20Pilar%20de%20Baviera%20from%20The%20family%20of%20Ferdinand%20Maria%20of%20Bavaria%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/The%20family%20of%20Ferdinand%20Maria%20of%20Bavaria.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando%20de%20Baviera%20e%20hijos.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Los%20hijos%20del%20infante%20D.%20Fernando%201.png",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Los%20hijos%20del%20infante%20D.%20Fernando%202.png"
+  ],
+  "sources": [
+    "https://es.wikipedia.org/wiki/Mar%C3%ADa_del_Pilar_de_Baviera_y_Borb%C3%B3n",
+    "https://www.wikidata.org/wiki/Q1906507",
+    "https://commons.wikimedia.org/wiki/Category:Infanta_Mar%C3%ADa_del_Pilar_of_Bavaria",
+    "https://gw.geneanet.org/asguille?lang=es&n=de+baviera+y+borbon&p=maria+del+pilar"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2039298",  "Name": "Otto I",  "BirthDate": "1300-01-01T00:00:00Z",  "DeathDate": "1305-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/GrabGrafOttoWaldeck.jpg",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"68300328":{"pageid":68300328,"ns":0,"title":"Otto I, Count of Waldeck","extract":"Otto I, Count of Waldeck (c. 1262 \u2013 11 November 1305) was the count of Waldeck from 1275/76 until his murder in November 1305.\nOtto was the youngest son of Henry III of Waldeck and Matilda of Cuyk-Arnsberg, a daughter of Count Gottfried III of Arnsberg and heiress of Wewelsburg.  Henry III died in 1267, a few years before his father, Count Adolf I of Waldeck, and therefore the inheritance of Waldeck went from Adolf I to his grandsons.  Henry III's eldest son Adolf II of Waldeck served as regent of the County of Waldeck upon his grandfather's death in 1270.  However, at the time of Henry III's death, his three sons with their mother Matilda decided that the County of Waldeck should descend to whoever of the three sons were to marry the then underage Sophia, daughter of Henry I, Landgrave of Hesse.  Ultimately, it was Henry III's youngest son Otto who married Sophia of Hesse in 1275/76.  Upon the marriage of Otto and Sophia, Adolf II abdicated rule of the County of Waldeck in favor of his brother Otto and entered the clergy, later becoming Bishop of Li\u00e8ge in 1301.  Henry III's second son, Gottfried, became Bishop of Minden in 1304.  Their sister Adelheid married Simon I of Lippe in Detmold in 1276.\nDuring the 45-year reign of Adolf I, he made Waldeck a viable territory.  He founded the cities of Waldeck, Sachsenhausen and Freienhagen.  He began building the castle and town of Rhoden and gained the rule of Korbach.  He also gained influence over Lichtenfels Castle with the cities of F\u00fcrstenberg and Sachsenberg.  Otto I continued his grandfather's policy of expansion to the west against the Duchy of Westphalia which was owned by the Archbishops of Cologne.  During the War of the Limburg Succession, he sided with Duke John I of Brabant in the war against Archbishop Siegfried of Westerburg. During this war, Otto destroyed the Cologne city of Hallenberg.  The war ended in the decisive victory of Duke John's side in the Battle of Worringen.  As a result of the war, Otto gained Volksmarsen, half of Kugelsburg and Canstein Castle.  In 1298 Otto acquired the Nordenau Castle and became a threat to the Cologne city of Winterburg.  Count Otto I's efforts led to significant success in expanding the territory controlled by Waldeck.\nIn 1305, a feud broke out in Eichsfeld, where Otto's enemies, the Lords of Strive and Adelebsen, were opposing the city of Heiligenstadt.  Otto, who had served the Archbishopric of Mainz as bailiff for Eichsfeld since 1303, was obligated to assist Heiligenstadt.  During this feud, Otto was captured by his enemies, put in a dungeon and strangled against the rules of martial law.  He is buried in the grave chapel of St. Nicholas in the Marienthal monastery in Netze, next to his parents and grandparents.  His grave slab is the oldest monument still preserved in the monastery.  The monastery had been donated by the Waldeck family in 1228.  Otto's father Henry III was the first member of the Waldeck family to be buried there."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2039298")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2039298",
+  "isRealHuman": true,
+  "birthDate": "1262-01-01",
+  "deathDate": "1305-11-11",
+  "ageAtDeath": 43,
+  "confidence": 78,
+  "confidenceExplained": "The identity is very secure: Q2039298 is Otto I, Count of Waldeck, and multiple sources agree on his death on 11 November 1305. The exact day and month of birth are not preserved; the best-supported birth estimate is circa 1262, which gives an age of about 43 at death. The age could theoretically be 42 if he was born after 11 November 1262, but 43 is the best single-number estimate and is also consistent with genealogical summaries.",
+  "shortDescriptionEn": "Otto I, Count of Waldeck, was a medieval German nobleman of the House of Waldeck who ruled the county from about 1275/1276 to 1305. He strengthened Waldeck’s territorial position, married Sophia of Hesse, and became involved in regional conflicts around Westphalia and Eichsfeld. In 1305, while acting in support of Heiligenstadt during a feud, he was captured by enemies, imprisoned, and murdered, reportedly strangled in violation of martial custom.",
+  "shortDescriptionFr": "Otto Ier, comte de Waldeck, était un noble allemand médiéval de la maison de Waldeck, qui gouverna le comté vers 1275/1276 jusqu’en 1305. Il renforça la position territoriale de Waldeck, épousa Sophie de Hesse et participa aux conflits régionaux autour de la Westphalie et de l’Eichsfeld. En 1305, alors qu’il soutenait Heiligenstadt dans une querelle féodale, il fut capturé par ses ennemis, emprisonné puis assassiné, probablement étranglé contrairement aux usages de la guerre.",
+  "shortDescriptionDe": "Otto I., Graf von Waldeck, war ein mittelalterlicher deutscher Adliger aus dem Haus Waldeck und regierte die Grafschaft etwa von 1275/1276 bis 1305. Er festigte die territoriale Stellung Waldecks, heiratete Sophie von Hessen und war in regionale Auseinandersetzungen in Westfalen und im Eichsfeld verwickelt. Im Jahr 1305 wurde er während einer Fehde, in der er Heiligenstadt unterstützen sollte, von Gegnern gefangen genommen, eingekerkert und ermordet, wohl durch Erdrosseln entgegen den damaligen Kriegsregeln.",
+  "shortDescriptionEs": "Otón I, conde de Waldeck, fue un noble alemán medieval de la Casa de Waldeck que gobernó el condado aproximadamente desde 1275/1276 hasta 1305. Reforzó la posición territorial de Waldeck, se casó con Sofía de Hesse y participó en conflictos regionales en torno a Westfalia y Eichsfeld. En 1305, mientras apoyaba a Heiligenstadt durante una disputa feudal, fue capturado por sus enemigos, encarcelado y asesinado, al parecer estrangulado en contra de las normas militares de la época.",
+  "shortDescriptionRu": "Отто I, граф Вальдекский, был средневековым немецким аристократом из дома Вальдеков и правил графством примерно с 1275/1276 года до 1305 года. Он укреплял территориальное положение Вальдека, был женат на Софии Гессенской и участвовал в региональных конфликтах в Вестфалии и Айхсфельде. В 1305 году, выступая на стороне Хайлигенштадта во время феодальной распри, он был захвачен врагами, заключён в темницу и убит, вероятно задушен вопреки военным обычаям.",
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/GrabGrafOttoWaldeck.jpg",
+    "https://commons.wikimedia.org/wiki/File:GrabGrafOttoWaldeck.jpg",
+    "https://effigiesandbrasses.com/882/4507"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Otto_I,_Count_of_Waldeck",
+    "https://de.wikipedia.org/wiki/Otto_I._(Waldeck)",
+    "https://www.wikidata.org/wiki/Q2039298",
+    "https://commons.wikimedia.org/wiki/Category:Otto_I,_Count_of_Waldeck",
+    "https://commons.wikimedia.org/wiki/File:GrabGrafOttoWaldeck.jpg",
+    "https://effigiesandbrasses.com/882/4507",
+    "https://ancestors.familysearch.org/en/LH2Q-YWN/graf-otto-i-von-waldeck-1266-1305"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q74399293",  "Name": "Timur",  "BirthDate": "2014-07-08T00:00:00Z",  "DeathDate": "2019-11-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Amur%20and%20Timur%20002.jpg",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"redirects":[{"from":"Timur (goat)","to":"Amur and Timur"}],"pages":{"49584144":{"pageid":49584144,"ns":0,"title":"Amur and Timur","extract":"Amur and Timur (Russian: \u0410\u043c\u0443\u0440 \u0438 \u0422\u0438\u043c\u0443\u0440) are, respectively, a Siberian tiger and a goat who established an unlikely interspecies friendship in a safari park in Primorye in the Far East of Russia. In 2015, Timur was placed in Amur's enclosure as food but, by his confident behavior, established a rapport with Amur, who did not eat him. In 2016, the pair were separated after a fight and Timur was moved to the Exhibition of Achievements of National Economy (VDNKh) in Moscow. Timur died on November 5, 2019, aged 5, despite the average goat life expectancy ranging between 15 and 18 years."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q74399293")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q74399293",
+  "isRealHuman": false,
+  "birthDate": "2014-07-08",
+  "deathDate": "2019-11-05",
+  "ageAtDeath": 5,
+  "confidence": 95,
+  "confidenceExplained": "The identity is strongly supported by Wikidata, which lists Timur as an individual goat, not a human, and by the linked Wikipedia article about Amur and Timur. The age calculation is straightforward from the listed dates: born 2014-07-08 and died 2019-11-05, which gives 5 completed years. Confidence is not 100 because Wikidata marks the birth and death dates without inline references, although external reports also give the death date and age.",
+  "shortDescriptionEn": "Timur was a Russian goat who became famous after being placed in the enclosure of Amur, a Siberian tiger, at Primorsky Safari Park in 2015. Instead of becoming prey, he formed an unlikely bond with the tiger, drawing international attention. Timur later suffered health problems after an altercation with Amur and died of natural causes on 2019-11-05 at the age of 5.",
+  "shortDescriptionFr": "Timur était un bouc russe devenu célèbre après avoir été placé en 2015 dans l’enclos d’Amur, un tigre de Sibérie, au parc safari de Primorié. Au lieu d’être dévoré, il a noué un lien inattendu avec le tigre, attirant l’attention internationale. Sa santé s’est ensuite dégradée après une altercation avec Amur, et il est mort de causes naturelles le 2019-11-05 à l’âge de 5 ans.",
+  "shortDescriptionDe": "Timur war ein russischer Ziegenbock, der 2015 berühmt wurde, nachdem er im Primorski-Safaripark in das Gehege des sibirischen Tigers Amur gesetzt worden war. Statt als Beute zu enden, entwickelte er eine ungewöhnliche Bindung zu dem Tiger und wurde international bekannt. Nach einer Auseinandersetzung mit Amur verschlechterte sich seine Gesundheit; er starb am 2019-11-05 im Alter von 5 Jahren an natürlichen Ursachen.",
+  "shortDescriptionEs": "Timur fue un macho cabrío ruso que se hizo famoso en 2015 tras ser colocado en el recinto de Amur, un tigre siberiano, en el Parque Safari de Primorie. En lugar de convertirse en presa, creó un vínculo inesperado con el tigre y atrajo atención internacional. Más tarde sufrió problemas de salud tras un altercado con Amur y murió por causas naturales el 2019-11-05 a los 5 años.",
+  "shortDescriptionRu": "Тимур был российским козлом, прославившимся в 2015 году после того, как его поместили в вольер к амурскому тигру Амуру в Приморском сафари-парке. Вместо того чтобы стать добычей, он неожиданно подружился с тигром и получил международную известность. После стычки с Амуром здоровье Тимура ухудшилось, и 2019-11-05 он умер естественной смертью в возрасте 5 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Amur%20and%20Timur%20002.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Amur%20and%20Timur%20008.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Amur_and_Timur",
+    "https://www.wikidata.org/wiki/Q74399293",
+    "https://phys.org/news/2019-11-russian-goat-friends-tiger-dies.html",
+    "https://www.globaltimes.cn/content/1169641.shtml",
+    "https://commons.wikimedia.org/wiki/Category:Timur_(goat)"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7809730",  "Name": "Titan",  "BirthDate": "2005-01-01T00:00:00Z",  "DeathDate": "2010-03-31T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Titan%20and%20Diana%20Taylor.jpg",  "SiteLinksCnt": 4,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"25100184":{"pageid":25100184,"ns":0,"title":"Titan (dog)","extract":"Titan (2005 \u2013 31 March 2010) was an American male white Great Dane who was a holder of the Guinness World Record as the world's tallest dog. His official height was 107.3 centimetres (42.2 in) from the floor to his shoulder. The previous holder was another Great Dane, Gibson, who measured 107.2 centimetres (42.2 in), and died in August 2009. During the nomination process, Titan, who suffered from several health conditions, fought off competition from a Newfoundland from North Dakota and another Great Dane, from Arizona. On February 22, 2010, Titan was dethroned as world's tallest dog by Giant George, a Great Dane from Arizona."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7809730")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7809730",
+  "isRealHuman": false,
+  "birthDate": "2005-01-01",
+  "deathDate": "2010-03-31",
+  "ageAtDeath": 5,
+  "confidence": 78,
+  "confidenceExplained": "Titan is clearly identified by Wikidata and Wikipedia as a male white Great Dane, not a human. The death date is specific: 2010-03-31. The birth date is only given as 2005 in the article and appears normalized to 2005-01-01 in the supplied data, so the exact birthday is uncertain. Using the available normalized date gives an age at death of 5.",
+  "shortDescriptionEn": "Titan was an American white Great Dane owned by Diana Taylor and recognized by Guinness World Records as the world’s tallest dog, measuring about 107.3 cm at the shoulder. He became famous in 2009, partly because of his extraordinary size and partly because he lived with serious health problems including deafness, partial blindness, and epilepsy. Titan died on 31 March 2010 from complications caused by a ruptured intestine.",
+  "shortDescriptionFr": "Titan était un dogue allemand blanc américain appartenant à Diana Taylor et reconnu par le Guinness World Records comme le chien le plus grand du monde, avec environ 107,3 cm au garrot. Devenu célèbre en 2009, il impressionnait par sa taille exceptionnelle mais vivait aussi avec de graves problèmes de santé, notamment la surdité, une cécité partielle et l’épilepsie. Titan est mort le 31 mars 2010 à la suite de complications provoquées par une rupture de l’intestin.",
+  "shortDescriptionDe": "Titan war eine amerikanische weiße Deutsche Dogge im Besitz von Diana Taylor und wurde von Guinness World Records als größter Hund der Welt anerkannt; seine Schulterhöhe betrug etwa 107,3 cm. Berühmt wurde er 2009 nicht nur wegen seiner außergewöhnlichen Größe, sondern auch wegen seiner schweren gesundheitlichen Probleme, darunter Taubheit, teilweise Blindheit und Epilepsie. Titan starb am 31. März 2010 an Komplikationen infolge eines Darmrisses.",
+  "shortDescriptionEs": "Titan fue un gran danés blanco estadounidense, propiedad de Diana Taylor, reconocido por Guinness World Records como el perro más alto del mundo, con unos 107,3 cm hasta el hombro. Alcanzó fama en 2009 tanto por su tamaño extraordinario como por vivir con problemas de salud graves, entre ellos sordera, ceguera parcial y epilepsia. Titan murió el 31 de marzo de 2010 por complicaciones derivadas de una ruptura intestinal.",
+  "shortDescriptionRu": "Титан был американским белым немецким догом, принадлежавшим Диане Тейлор, и был признан Guinness World Records самым высоким псом в мире: его рост в холке составлял около 107,3 см. Он стал известен в 2009 году благодаря своим необычайным размерам, а также тем, что жил с серьезными проблемами со здоровьем, включая глухоту, частичную слепоту и эпилепсию. Титан умер 31 марта 2010 года от осложнений, вызванных разрывом кишечника.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Titan_(dog)",
+    "https://www.wikidata.org/wiki/Q7809730",
+    "https://www.nbcsandiego.com/news/local/its-official-titan-is-top-dog/2095974/",
+    "https://www.guinnessworldrecords.com/news/2022/5/can-i-ride-him-zeus-the-great-dane-confirmed-as-worlds-tallest-dog"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q102176802",  "Name": "Q102176802",  "BirthDate": "2015-01-01T00:00:00Z",  "DeathDate": "2020-04-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Os%20Cachou%20Necropsia.jpg",  "SiteLinksCnt": 3,  "Age": 5}
+{"batchcomplete":"","query":{"pages":{"1819094":{"pageid":1819094,"ns":0,"title":"Cachou","extract":"Cachou (Comenge, 2015 - Les, Val d'Aran, 9 d'abril de 2020) fou un os bru d'ascend\u00e8ncia eslovena nascut als Pirineus centrals. Va tenir gran repercussi\u00f3 medi\u00e0tica degut als atacs que produ\u00ed al bestiar equ\u00ed de la Vall d'Aran el setembre del 2019, i al fet que aparegu\u00e9 mort pocs mesos despr\u00e9s. La seva defunci\u00f3, produ\u00efda per enverinament, fou el primer cas d'un os mort a la serralada que va arribar a la just\u00edcia espanyola."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q102176802")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q102176802",
+  "isRealHuman": false,
+  "birthDate": "2015-01-01",
+  "deathDate": "2020-04-09",
+  "ageAtDeath": 5,
+  "confidence": 74,
+  "confidenceExplained": "The entity is clearly an individual brown bear, not a human. Birth is only documented to the year 2015, while death is documented as 9 April 2020. Some contemporary reports call Cachou a 6-year-old male, but using the documented 2015 birth year and the exact death date gives an age of 5. The birth date 2015-01-01 is an estimate chosen to satisfy date formatting and age calculation.",
+  "shortDescriptionEn": "Cachou was a male Pyrenean brown bear of Slovenian ancestry, born in the central Pyrenees and considered genetically important for the recovery of the region’s fragile bear population. He became widely known in 2019 after repeated attacks on horses and other livestock in the Val d’Aran, which made him a focus of public controversy. He was found dead near Les on 9 April 2020; later investigation pointed to poisoning with antifreeze, making his death a landmark wildlife-crime case in Spain.",
+  "shortDescriptionFr": "Cachou était un ours brun mâle des Pyrénées, d’ascendance slovène, né dans les Pyrénées centrales et jugé important pour la diversité génétique d’une population d’ours encore fragile. Il est devenu très médiatisé en 2019 après plusieurs attaques contre des chevaux et du bétail dans le Val d’Aran, au cœur d’un vif débat local. Il a été retrouvé mort près de Les le 9 avril 2020; l’enquête a ensuite privilégié la piste d’un empoisonnement à l’antigel, faisant de sa mort une affaire judiciaire marquante.",
+  "shortDescriptionDe": "Cachou war ein männlicher Pyrenäen-Braunbär slowenischer Abstammung, geboren in den zentralen Pyrenäen und genetisch bedeutsam für die Erholung der dortigen kleinen Bärenpopulation. Bekannt wurde er 2019 durch wiederholte Angriffe auf Pferde und anderes Vieh im Val d’Aran, was ihn zum Mittelpunkt einer heftigen lokalen Kontroverse machte. Am 9. April 2020 wurde er bei Les tot aufgefunden; spätere Ermittlungen deuteten auf eine Vergiftung mit Frostschutzmittel hin, wodurch sein Tod zu einem wichtigen spanischen Wildtierkriminalfall wurde.",
+  "shortDescriptionEs": "Cachou fue un oso pardo macho de los Pirineos, de ascendencia eslovena, nacido en los Pirineos centrales y considerado valioso para la diversidad genética de una población todavía frágil. Se hizo muy conocido en 2019 por repetidos ataques a caballos y otro ganado en la Val d’Aran, lo que lo convirtió en un foco de controversia pública. Fue hallado muerto cerca de Les el 9 de abril de 2020; la investigación apuntó después a un envenenamiento con anticongelante, convirtiendo su muerte en un caso judicial destacado sobre fauna protegida.",
+  "shortDescriptionRu": "Кашу был самцом пиренейского бурого медведя словенского происхождения, родившимся в центральных Пиренеях и считавшимся важным для генетического разнообразия местной малочисленной популяции. Широкую известность он получил в 2019 году после серии нападений на лошадей и другой скот в Валь-д’Аране, что вызвало острые споры. 9 апреля 2020 года его нашли мёртвым возле Леса; последующее расследование указало на отравление антифризом, сделав его гибель заметным делом о преступлении против охраняемой фауны.",
+  "sources": [
+    "https://ca.wikipedia.org/wiki/Cachou",
+    "https://fr.wikipedia.org/wiki/Cachou_(ours)",
+    "https://www.wikidata.org/wiki/Q102176802",
+    "https://www.lavanguardia.com/natural/20200409/48400077013/localizan-muerto-en-la-vall-daran-al-oso-cachou-famoso-por-su-voracidad.html",
+    "https://sentientmedia.org/who-killed-cachou-brown-bears-unusual-death-ignites-controversy/",
+    "https://www.sfepm.org/les-actualites-de-la-sfepm/lours-cachou-est-decede-une-perte-pour-la-population-dours.html"
+  ]
+}

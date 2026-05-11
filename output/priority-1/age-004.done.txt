@@ -1,0 +1,1081 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2636618",  "Name": "Princess Louise of France",  "BirthDate": "1728-07-28T00:00:00Z",  "DeathDate": "1733-02-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20Troisi%C3%A8me%2C%20Marie%20Louise%20de%20France%2C%20%281728-1733%29.jpg",  "SiteLinksCnt": 14,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"24247694":{"pageid":24247694,"ns":0,"title":"Marie Louise of France","extract":"Marie Louise of France (28 July 1728 \u2013 19 February 1733) was a French princess, a fille de France. She was the daughter of King Louis XV and Queen Marie Leszczy\u0144ska."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2636618")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2636618",
+  "isRealHuman": true,
+  "birthDate": "1728-07-28",
+  "deathDate": "1733-02-19",
+  "ageAtDeath": 4,
+  "confidence": 99,
+  "confidenceExplained": "The identity, birth date, and death date are consistent across Wikipedia, Wikidata, Wikimedia Commons, and genealogical/memorial sources. From 1728-07-28 to 1733-02-19 she had not yet reached her fifth birthday, so the integer age at death is 4. Confidence is not 100 only because details of the medical circumstances are based on historical accounts rather than a modern medical diagnosis.",
+  "shortDescriptionEn": "Marie Louise of France, known at court as Madame Troisième, was a daughter of King Louis XV and Queen Marie Leszczyńska and a young fille de France raised at Versailles. Born into the Bourbon royal family, she lived only a brief childhood in the French court. In the winter of 1733, during an epidemic at Versailles, she fell ill after catching a cold; contemporary accounts describe harsh treatments such as emetics and bleeding before she died exhausted at the Palace of Versailles at age 4.",
+  "shortDescriptionFr": "Marie-Louise de France, dite Madame Troisième, était une fille du roi Louis XV et de la reine Marie Leszczyńska, élevée à Versailles comme fille de France. Née dans la famille royale des Bourbons, elle ne connut qu’une très courte enfance à la cour. Durant l’hiver 1733, alors qu’une épidémie touchait Versailles, elle tomba malade après avoir pris froid; les récits évoquent des traitements sévères, dont des émétiques et des saignées, avant sa mort d’épuisement au château de Versailles à l’âge de 4 ans.",
+  "shortDescriptionDe": "Marie Louise von Frankreich, am Hof als Madame Troisième bekannt, war eine Tochter von König Ludwig XV. und Königin Maria Leszczyńska und wuchs als fille de France in Versailles auf. Als Mitglied der bourbonischen Königsfamilie erlebte sie nur eine kurze Kindheit am französischen Hof. Im Winter 1733 erkrankte sie während einer Epidemie in Versailles nach einer Erkältung; überliefert sind belastende Behandlungen wie Brechmittel und Aderlass, bevor sie erschöpft im Schloss Versailles im Alter von 4 Jahren starb.",
+  "shortDescriptionEs": "María Luisa de Francia, conocida en la corte como Madame Troisième, fue hija del rey Luis XV y de la reina María Leszczyńska, criada en Versalles como fille de France. Nacida en la familia real borbónica, tuvo una infancia muy breve dentro de la corte francesa. En el invierno de 1733, durante una epidemia en Versalles, enfermó tras resfriarse; las crónicas mencionan tratamientos duros, como eméticos y sangrías, antes de morir agotada en el Palacio de Versalles a los 4 años.",
+  "shortDescriptionRu": "Мария Луиза Французская, известная при дворе как Мадам Третья, была дочерью короля Людовика XV и королевы Марии Лещинской и росла в Версале как fille de France. Родившись в королевской семье Бурбонов, она прожила лишь короткое детство при французском дворе. Зимой 1733 года, во время эпидемии в Версале, она заболела после простуды; источники упоминают тяжелые методы лечения, включая рвотные средства и кровопускание, после чего она умерла от истощения в Версальском дворце в возрасте 4 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Marie_Louise_of_France",
+    "https://www.wikidata.org/wiki/Q2636618",
+    "https://commons.wikimedia.org/wiki/File:Madame_Troisi%C3%A8me,_Marie_Louise_de_France,_(1728-1733).jpg",
+    "https://commons.wikimedia.org/wiki/Category:Princess_Louise_of_France",
+    "https://www.findagrave.com/memorial/84684285/marie-louise-de_france"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2982425",  "Name": "Francesco I Acciaioli",  "BirthDate": "1450-01-01T00:00:00Z",  "DeathDate": "1454-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20I%20Acciaioli.JPG",  "SiteLinksCnt": 14,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"8380149":{"pageid":8380149,"ns":0,"title":"Francesco I Acciaioli","extract":"Francis or Francesco I Acciaioli was the son of Nerio II Acciaioli by his second wife Chiara Zorzi. He succeeded on his father's death in 1451 to the Duchy of Athens under his mother's regency.\nHis mother married the Venetian Bartolomeo Contarini (1453). However, Mehmet II, the Ottoman sultan, intervened at the insistence of the people on the behalf of the young duke Francis and summoned Bartolomeo and Chiara to his court at Adrianople. Another Acciaioli, Francesco II, was sent to Athens as a Turkish client duke. Evidently, the citizenry had mistrusted the two lovers influence over the young duke, for whose safety they may have feared. The young Francesco I remained at the court of the Ottoman sultan."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2982425")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2982425",
+  "isRealHuman": true,
+  "birthDate": "1440-01-01",
+  "deathDate": "1454-12-31",
+  "ageAtDeath": 14,
+  "confidence": 45,
+  "confidenceExplained": "The identity is well supported, but the age is an estimate. Francesco I Acciaioli was certainly a minor when he inherited Athens in 1451. Some sources give only a 15th-century birth, while Russian and genealogical-style references point to circa 1440. His end is also uncertain: several databases and infoboxes give 1454, but narrative sources say he was taken to the Ottoman court and then disappears from the record. I used circa 1440 for birth and circa 1454 for death/disappearance, giving an estimated age of 14.",
+  "shortDescriptionEn": "Francesco I Acciaioli was a young Florentine-Italian noble of the Acciaioli dynasty and Duke of Athens after the death of his father, Nerio II, in 1451. Because he was still a minor, his mother Chiara Zorzi ruled as regent, and her marriage to the Venetian Bartolomeo Contarini made Athenian politics dangerously unstable. Around 1454, Sultan Mehmed II intervened, Francesco was removed from power and taken to the Ottoman court, where he disappears from the record and probably died in custody or exile as a teenager.",
+  "shortDescriptionFr": "Francesco Ier Acciaioli fut un jeune noble italo-florentin de la dynastie Acciaioli et duc d’Athènes après la mort de son père, Nerio II, en 1451. Encore mineur, il laissa le gouvernement effectif à sa mère Chiara Zorzi, dont le mariage avec le Vénitien Bartolomeo Contarini provoqua une crise politique. Vers 1454, le sultan Mehmed II intervint, Francesco fut écarté du pouvoir et emmené à la cour ottomane, où il disparaît des sources et mourut probablement en captivité ou en exil à l’adolescence.",
+  "shortDescriptionDe": "Francesco I. Acciaioli war ein junger florentinisch-italienischer Adliger aus der Familie Acciaioli und wurde nach dem Tod seines Vaters Nerio II. im Jahr 1451 Herzog von Athen. Da er noch minderjährig war, führte seine Mutter Chiara Zorzi die Regentschaft; ihre Ehe mit dem Venezianer Bartolomeo Contarini verschärfte jedoch die Spannungen in Athen. Um 1454 griff Sultan Mehmed II. ein, Francesco wurde entmachtet und an den osmanischen Hof gebracht, wo sich seine Spur verliert und er vermutlich als Jugendlicher in Gefangenschaft oder im Exil starb.",
+  "shortDescriptionEs": "Francesco I Acciaioli fue un joven noble florentino-italiano de la dinastía Acciaioli y duque de Atenas tras la muerte de su padre, Nerio II, en 1451. Como aún era menor de edad, el gobierno quedó en manos de su madre, Chiara Zorzi, cuya boda con el veneciano Bartolomeo Contarini desestabilizó la política ateniense. Hacia 1454, el sultán Mehmed II intervino, Francesco fue apartado del poder y llevado a la corte otomana, donde desaparece de las fuentes y probablemente murió en cautiverio o exilio siendo adolescente.",
+  "shortDescriptionRu": "Франческо I Аччайоли был юным флорентийско-итальянским аристократом из династии Аччайоли и герцогом Афин после смерти своего отца Нерио II в 1451 году. Так как он был несовершеннолетним, фактической правительницей стала его мать Кьяра Цорци, а её брак с венецианцем Бартоломео Контарини вызвал политический кризис. Около 1454 года султан Мехмед II вмешался, Франческо был отстранён и отправлен к османскому двору, после чего исчез из источников и, вероятно, умер в плену или изгнании ещё подростком.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Francesco_I_Acciaioli",
+    "https://fr.wikipedia.org/wiki/Francesco_Ier_Acciaiuoli",
+    "https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%BE_I_%D0%90%D1%87%D1%87%D0%B0%D0%B9%D0%BE%D0%BB%D0%B8",
+    "https://www.wikidata.org/wiki/Q2982425",
+    "https://commons.wikimedia.org/wiki/Category:Francesco_I_Acciaiuoli",
+    "https://commons.wikimedia.org/wiki/File:Francesco_I_Acciaioli.JPG",
+    "https://archive.org/stream/latinsinlevanthi00mill/latinsinlevanthi00mill_djvu.txt",
+    "https://www.worldhistory.org/timeline/Duchy_of_Athens/",
+    "https://www.geni.com/people/Francesco-I-Acciaiuoli-5th-duke-of-Athens/6000000081371506288"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q442235",  "Name": "Leocadia",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Parroquia%20de%20Santa%20Leocadia.JPG",  "SiteLinksCnt": 14,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"7857886":{"pageid":7857886,"ns":0,"title":"Leocadia","extract":"Saint Leocadia (French: Sainte L\u00e9ocadie; Spanish: Santa Leocadia) is a Spanish saint.  She is thought to have suffered martyrdom and died on December 9, ca. 304, in the Diocletianic Persecution.\nThe feast day for St. Leocadia of Toledo appears under 9 December in the historical martyrologies of the ninth century. Her name is not mentioned by Prudentius in his hymn on the martyrs of Spain.  However, in very early times there was a church dedicated to her at Toledo.\nIn the first half of the seventh century \"the church of Saint Leocadia\" was mentioned as the meeting-place of the Fourth Synod of Toledo in 633, as well as of the fifth in 636, and the sixth in 638.\nOf her veneration, the Catholic Encyclopedia writes that \"long before that date, therefore, Leocadia must have been publicly honoured as a martyr. The basilica in question was evidently erected over her grave. There is no doubt of the historical fact of her martyrdom, whilst the date of 9 December for her annual commemoration obviously rests on the tradition of the Church of Toledo. More recently compiled Acts relate that Leocadia was filled with a desire for martyrdom through the story of the martyrdom of St. Eulalia.\"\nBy order of the governor, Decianus, described in the martyrology as the most furious persecutor of the Christians in Spain, she was seized and cruelly tortured in order to make her apostatize, but she remained steadfast and was sent back to prison, where she died from the effects of the torture.\nA church was built over her grave, besides which are two others at Toledo dedicated to her."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q442235")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q442235",
+  "isRealHuman": true,
+  "birthDate": "0289-01-01",
+  "deathDate": "0304-12-09",
+  "ageAtDeath": 15,
+  "confidence": 28,
+  "confidenceExplained": "Her death date is fairly well attested as 9 December, probably around 304, but no reliable birth date survives. The age is a best-effort estimate based on descriptions of Leocadia as very young, even almost a child, in later hagiographical tradition. I estimate a birth year around 289, making her about 15 at death. The exact number is therefore low-confidence, but much more plausible than the misleading Wikidata age of 4.",
+  "shortDescriptionEn": "Saint Leocadia of Toledo was an early Spanish Christian martyr, venerated especially in Toledo and remembered in medieval martyrologies on 9 December. Tradition presents her as a young noblewoman whose steadfast faith made her one of the best-known saints of early Christian Spain. During the Diocletianic persecution, she was arrested by order of the Roman governor Dacian, tortured or threatened to force her apostasy, and confined in harsh prison conditions. She died in prison around 304.",
+  "shortDescriptionFr": "Sainte Léocadie de Tolède fut une martyre chrétienne espagnole des premiers siècles, particulièrement vénérée à Tolède et commémorée le 9 décembre dans les martyrologes médiévaux. La tradition la présente comme une jeune femme de famille noble, devenue l’une des figures marquantes du christianisme ancien en Espagne. Pendant la persécution de Dioclétien, elle fut arrêtée sur ordre du gouverneur romain Dacien, soumise aux menaces ou aux tortures pour la faire apostasier, puis enfermée dans des conditions très dures. Elle mourut en prison vers 304.",
+  "shortDescriptionDe": "Die heilige Leocadia von Toledo war eine frühe spanische christliche Märtyrerin, die besonders in Toledo verehrt und in mittelalterlichen Martyrologien am 9. Dezember genannt wird. Die Überlieferung beschreibt sie als junge Frau aus vornehmer Familie, deren Standhaftigkeit sie zu einer wichtigen Gestalt des frühen Christentums in Spanien machte. Während der diokletianischen Verfolgung wurde sie auf Befehl des römischen Statthalters Dacianus verhaftet, durch Drohungen oder Folter zum Abfall vom Glauben gedrängt und unter harten Bedingungen eingekerkert. Sie starb um 304 im Gefängnis.",
+  "shortDescriptionEs": "Santa Leocadia de Toledo fue una mártir cristiana hispana de los primeros siglos, venerada especialmente en Toledo y recordada el 9 de diciembre en los martirologios medievales. La tradición la presenta como una joven de familia noble, cuya firmeza la convirtió en una de las santas más queridas del cristianismo antiguo en España. Durante la persecución de Diocleciano, fue arrestada por orden del gobernador romano Daciano, presionada o torturada para que apostatara y encerrada en condiciones muy duras. Murió en prisión hacia el año 304.",
+  "shortDescriptionRu": "Святая Леокадия Толедская была раннехристианской испанской мученицей, особенно почитаемой в Толедо и упоминаемой в средневековых мартирологах под 9 декабря. Предание описывает её как юную женщину знатного происхождения, чья стойкость сделала её одной из заметных святых древней христианской Испании. Во время гонений Диоклетиана её арестовали по приказу римского правителя Дациана, угрозами или пытками пытались заставить отречься от веры и заключили в суровые тюремные условия. Она умерла в тюрьме около 304 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Leocadia",
+    "https://www.newadvent.org/cathen/09173b.htm",
+    "https://historia-hispanica.rah.es/biografias/25805-santa-leocadia",
+    "https://es.wikipedia.org/wiki/Leocadia_de_Toledo",
+    "https://es.catholic.net/op/articulos/31913/leocadia-de-toledo-santa.html",
+    "https://commons.wikimedia.org/wiki/File:Saint_Leocadia._Engraving._Wellcome_V0032524.jpg",
+    "https://www.museodelprado.es/coleccion/obra-de-arte/aparicion-de-santa-leocadia-a-san-ildefonso/60d1bf6d-6f67-46d9-80a9-3b7b57e8afb2"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q195942",  "Name": "William of Jülich",  "BirthDate": "1300-01-01T00:00:00Z",  "DeathDate": "1304-08-18T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Warm%20reception%20of%20William%20of%20J%C3%BClich%20in%20Bruges%20%28May%201302%29.jpg",  "SiteLinksCnt": 13,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"12197024":{"pageid":12197024,"ns":0,"title":"William of J\u00fclich","extract":"William of J\u00fclich, called the Younger (Dutch: Willem van Gulik de Jongere; died August 18, 1304), was one of the Flemish noblemen that opposed the annexation policies of the French king Philip IV, together with Pieter de Coninck.\nHe was also archdeacon of the prince-bishopric of Li\u00e8ge. William was the son of William the Elder and grandson of William IV, Count of J\u00fclich, and of Maria, a daughter of Guy of Dampierre, Count of Flanders and Matilda of Bethune. His connection to the Flemish count and his wish to avenge the imprisoning of his uncles Robert III of Bethune and William of Dendermonde by the French king presumably explains his support for the Flemish resistance. An extra incentive for this support could have been the murder of his uncle Walram, Count of J\u00fclich by the French after the Battle of Bulskamp in 1297. The Flemish resistance led to the unexpected victory over the French during the Battle of the Golden Spurs in 1302. William of J\u00fclich gained another victory against the French in the Battle of Arques (1303).\n\nIn 1304 however, the French king returned with an army and defeated the Flemings during the Battle of Mons-en-P\u00e9v\u00e8le. William died during this battle."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q195942")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q195942",
+  "isRealHuman": true,
+  "birthDate": "1275-01-01",
+  "deathDate": "1304-08-18",
+  "ageAtDeath": 29,
+  "confidence": 72,
+  "confidenceExplained": "The death date, identity, family context, and role are well supported across Wikipedia, Wikidata/Commons, and multilingual articles. The exact birth day is not known; the Dutch article gives 1275, while other sources only say the 13th century or unknown. I therefore estimate 1275-01-01, which produces age 29 at death. If he was born after 18 August 1275, the strict age would be 28, so the confidence is moderate rather than high.",
+  "shortDescriptionEn": "William of Jülich the Younger was a nobleman of the House of Jülich, a cleric connected with Liège, and one of the striking Flemish resistance leaders against the annexation policy of Philip IV of France. Allied with figures such as Pieter de Coninck, he helped inspire the Flemish cause around the Battle of the Golden Spurs in 1302 and later fought at Arques. In 1304, during the Battle of Mons-en-Pévèle, he led a daring assault deep into the French lines, was surrounded, and was killed; his body was reportedly never clearly identified.",
+  "shortDescriptionFr": "Guillaume de Juliers le Jeune était un noble de la maison de Juliers, un clerc lié à Liège et l’un des chefs marquants de la résistance flamande contre la politique d’annexion de Philippe IV le Bel. Aux côtés de figures comme Pieter de Coninck, il soutint la cause flamande autour de la bataille des Éperons d’or en 1302 et combattit ensuite à Arques. En 1304, à la bataille de Mons-en-Pévèle, il mena une attaque audacieuse au cœur des lignes françaises, fut encerclé et tué; son corps ne fut apparemment jamais identifié avec certitude.",
+  "shortDescriptionDe": "Wilhelm der Jüngere von Jülich war ein Adeliger aus dem Haus Jülich, ein Kleriker mit Verbindung nach Lüttich und einer der wichtigen Anführer des flämischen Widerstands gegen die Annexionspolitik Philipps IV. von Frankreich. Gemeinsam mit Persönlichkeiten wie Pieter de Coninck unterstützte er die flämische Sache um die Schlacht der Goldenen Sporen 1302 und kämpfte später bei Arques. 1304 führte er in der Schlacht von Mons-en-Pévèle einen kühnen Vorstoß tief in die französischen Reihen, wurde eingeschlossen und getötet; sein Leichnam wurde offenbar nie sicher identifiziert.",
+  "shortDescriptionEs": "Guillermo de Jülich el Joven fue un noble de la casa de Jülich, clérigo vinculado a Lieja y uno de los dirigentes destacados de la resistencia flamenca contra la política de anexión de Felipe IV de Francia. Junto con figuras como Pieter de Coninck, impulsó la causa flamenca en torno a la batalla de las Espuelas de Oro de 1302 y luchó después en Arques. En 1304, durante la batalla de Mons-en-Pévèle, encabezó un ataque audaz dentro de las líneas francesas, fue rodeado y murió; al parecer, su cuerpo nunca fue identificado con certeza.",
+  "shortDescriptionRu": "Вильгельм Младший Юлихский был дворянином из дома Юлихов, клириком, связанным с Льежем, и одним из заметных лидеров фламандского сопротивления политике присоединения, проводимой французским королём Филиппом IV. Вместе с такими фигурами, как Питер де Конинк, он поддерживал фламандское дело во время битвы Золотых шпор 1302 года и позднее сражался при Арке. В 1304 году в битве при Монс-ан-Певеле он возглавил смелую атаку в глубину французских рядов, был окружён и убит; его тело, по-видимому, так и не было надёжно опознано.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Warm_reception_of_William_of_J%C3%BClich_in_Bruges_(May_1302).jpg",
+    "https://commons.wikimedia.org/wiki/File:Kist_van_oxford_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Battle_of_Courtrai2.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/William_of_J%C3%BClich",
+    "https://nl.wikipedia.org/wiki/Willem_van_Gulik_de_Jongere",
+    "https://fr.wikipedia.org/wiki/Guillaume_de_Juliers_(le_jeune)",
+    "https://de.wikipedia.org/wiki/Wilhelm_der_J%C3%BCngere_(J%C3%BClich)",
+    "https://es.wikipedia.org/wiki/Guillermo_de_J%C3%BClich",
+    "https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BB%D1%8C%D0%B3%D0%B5%D0%BB%D1%8C%D0%BC_%D0%9C%D0%BB%D0%B0%D0%B4%D1%88%D0%B8%D0%B9_%D0%AE%D0%BB%D0%B8%D1%85%D1%81%D0%BA%D0%B8%D0%B9",
+    "https://commons.wikimedia.org/wiki/Category:William_of_J%C3%BClich",
+    "https://commons.wikimedia.org/wiki/File:Warm_reception_of_William_of_J%C3%BClich_in_Bruges_(May_1302).jpg",
+    "https://commons.wikimedia.org/wiki/File:Kist_van_oxford_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Battle_of_Courtrai2.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1391756",  "Name": "Hermagoras of Aquileia",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Sant%27%20Ermagora%20e%20un%20devoto%20-%20Matteo%20Giovannetti%20-%20Museo%20Correr.jpg",  "SiteLinksCnt": 12,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"12355026":{"pageid":12355026,"ns":0,"title":"Hermagoras of Aquileia","extract":"Hermagoras of Aquileia (also spelled Hermenagoras, Hermogenes, Ermacoras) (Italian: Sant'Ermagora, Friulian: Sant Mac\u00f4r or Sant Ramacul, Slovene: sveti Mohor; fl. 3rd century \u2013 c. 305) is considered the first bishop of Aquileia, northern Italy. Christian tradition states that he was chosen by Mark to serve as the leader of the nascent Christian community in Aquileia, and that he was consecrated bishop by Peter. Hermagoras and his deacon Fortunatus (Italian: San Fortunato, Friulian: San Fortun\u00e2t, Slovene: sveti Fortunat) evangelized the area but were eventually arrested by Sebastius, a representative of Nero. They were tortured and beheaded."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1391756")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1391756",
+  "isRealHuman": true,
+  "birthDate": "0260-01-01",
+  "deathDate": "0304-07-12",
+  "ageAtDeath": 44,
+  "confidence": 28,
+  "confidenceExplained": "Hermagoras of Aquileia is treated in historical and hagiographic sources as an early Christian cleric and martyr, but his exact birth date is unknown. Wikidata’s apparent 0300 birth date is only a machine-readable representation of '3rd century' and produces the impossible age of 4. His death is usually placed around 304 or 305, with 12 July preserved as the feast day and, in the Passion tradition, the day of death. I estimated a birth year of 260 because he is described as an established bishop or lector active in the late 3rd or early 4th century; that makes the calculated age at death 44. The confidence is low because the age depends on reconstruction, not a documented birth year.",
+  "shortDescriptionEn": "Hermagoras of Aquileia was venerated as the first bishop of Aquileia, an important early Christian center in northern Italy. Later tradition connected him with Saint Mark and Saint Peter, though modern accounts usually place him more cautiously in the late 3rd or early 4th century. He is remembered together with his deacon Fortunatus. Around 304, during the Diocletianic persecutions, the pair were said to have been arrested, tortured, and beheaded, either at Aquileia or possibly at Singidunum, now Belgrade.",
+  "shortDescriptionFr": "Hermagoras d’Aquilée est vénéré comme le premier évêque d’Aquilée, un important centre chrétien du nord de l’Italie. La tradition tardive le rattache à saint Marc et à saint Pierre, mais les récits modernes le placent plutôt à la fin du IIIe ou au début du IVe siècle. Il est commémoré avec son diacre Fortunat. Vers 304, pendant les persécutions de Dioclétien, ils auraient été arrêtés, torturés puis décapités, soit à Aquilée, soit peut-être à Singidunum, l’actuelle Belgrade.",
+  "shortDescriptionDe": "Hermagoras von Aquileia wird als erster Bischof von Aquileia verehrt, einem bedeutenden frühen Zentrum des Christentums in Norditalien. Spätere Überlieferungen verbanden ihn mit Markus und Petrus, doch moderne Darstellungen setzen ihn vorsichtiger in das späte 3. oder frühe 4. Jahrhundert. Er wird zusammen mit seinem Diakon Fortunatus verehrt. Um 304, während der diokletianischen Verfolgungen, sollen beide verhaftet, gefoltert und enthauptet worden sein, entweder in Aquileia oder möglicherweise in Singidunum, dem heutigen Belgrad.",
+  "shortDescriptionEs": "Hermágoras de Aquilea fue venerado como el primer obispo de Aquilea, un importante centro cristiano temprano del norte de Italia. La tradición posterior lo vinculó con san Marcos y san Pedro, aunque los relatos modernos suelen situarlo con más cautela a finales del siglo III o comienzos del IV. Se le recuerda junto a su diácono Fortunato. Hacia 304, durante las persecuciones de Diocleciano, ambos habrían sido arrestados, torturados y decapitados, en Aquilea o quizá en Singidunum, la actual Belgrado.",
+  "shortDescriptionRu": "Ермагор Аквилейский почитается как первый епископ Аквилеи, важного раннехристианского центра на севере Италии. Поздняя традиция связывала его со святым Марком и апостолом Петром, однако современные описания осторожнее относят его к концу III или началу IV века. Его обычно вспоминают вместе с диаконом Фортунатом. Около 304 года, во время гонений Диоклетиана, их, по преданию, арестовали, пытали и обезглавили — в Аквилее или, возможно, в Сингидунуме, современном Белграде.",
+  "pictures": [
+    "https://www.christianiconography.info/Europe%202017/Ljubljana/hermagorasLjubljana.html",
+    "https://www.christianiconography.info/hermagorasFortunatus.html",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Hermagoras_of_Aquileia",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Sant%27%20Ermagora%20e%20un%20devoto%20-%20Matteo%20Giovannetti%20-%20Museo%20Correr.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hermagoras_of_Aquileia",
+    "https://www.wikidata.org/wiki/Q1391756",
+    "https://commons.wikimedia.org/wiki/Category:Saint_Hermagoras_of_Aquileia",
+    "https://www.newadvent.org/cathen/01661c.htm",
+    "https://www.librideipatriarchi.it/en/references/hermagoras-and-fortunatus-saints/",
+    "https://www.nasscal.com/e-clavis-christian-apocrypha/passion-of-hermagora-and-fortunatus/",
+    "https://www.christianiconography.info/hermagorasFortunatus.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2716495",  "Name": "Mladen I Šubić of Bribir",  "BirthDate": "1300-01-01T00:00:00Z",  "DeathDate": "1304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Money%20issued%20by%20Paul%20I%20%C5%A0ubi%C4%87%20of%20Bribir.jpg",  "SiteLinksCnt": 12,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"22005248":{"pageid":22005248,"ns":0,"title":"Mladen I \u0160ubi\u0107 of Bribir","extract":"Mladen I \u0160ubi\u0107 of Bribir (Croatian: Mladen I \u0160ubi\u0107 Bribirski; died 1304) was a Croatian nobleman who was a member of \u0160ubi\u0107 family, at the end of 13th and beginning of the 14th century.\nHe was a brother of a ban of Croatia Paul I \u0160ubi\u0107 of Bribir, who appointed Mladen as a commissar of the Dalmatian city of Split, along with Klis Fortress.\nAfter Paul I \u0160ubi\u0107 declared himself as \"Dominus of Bosnia\" in 1299, he gave to Mladen I the title of Bosnian Ban. Stephen Kotroman had resisted the growth of \u0160ubi\u0107's power in Bosnia, but had lost by 1300 most control over Bosnia to Mladen I \u0160ubi\u0107. After 1302 all of Bosnia was under House of \u0160ubi\u0107. Mladen I controlled most of it, and small part of Bosnia land (the Lower Edges) was ruled by Prince Hrvatin Stjepani\u0107, who was a vassal of the House of \u0160ubi\u0107, which was confirmed by Charles I of Hungary. Bosnian Ban Mladen I \u0160ubi\u0107 had started a campaign in Bosnia to exterminate the adherents of the Bosnian Church \u2013 the Bogumils. In religious conflict Mladen was killed in a battle during 1304. He was inherited by his nephew Mladen II \u0160ubi\u0107, who needed help, so Pavao I \u0160ubi\u0107 himself had to lead an Army to crush the resistance in Bosnia. In 1305 Pavao I took the title of Lord of all of Bosnia (totius Bosniae dominus)."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2716495")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2716495",
+  "isRealHuman": true,
+  "birthDate": "1255-01-01",
+  "deathDate": "1304-01-01",
+  "ageAtDeath": 49,
+  "confidence": 68,
+  "confidenceExplained": "The exact birth day and month are not known, and even the year is approximate. Wikidata only states a 13th-century birth and death in 1304; the Croatian Encyclopedia gives Mladen I as around 1255–1304, which is the best available chronological anchor. Calculating 1304 minus 1255 gives an estimated age at death of 49. Confidence is moderate because the birth year is approximate, but the age is far more plausible than the misleading age 4 derived from a bad 1300 birth date.",
+  "shortDescriptionEn": "Mladen I Šubić of Bribir was a Croatian nobleman from the powerful Šubić family, active at the height of their influence over Croatia, Dalmatia and Bosnia. Brother of Paul I Šubić, he held important posts in Dalmatian cities and was appointed Ban of Bosnia in 1302. His rule was short but turbulent: while trying to enforce Šubić authority and suppress opponents linked with the Bosnian Church, he was killed in battle in 1304, at about 49 years old.",
+  "shortDescriptionFr": "Mladen Ier Šubić de Bribir était un noble croate de la puissante famille Šubić, active au sommet de son influence en Croatie, en Dalmatie et en Bosnie. Frère de Paul Ier Šubić, il occupa des fonctions importantes dans les villes dalmates et fut nommé ban de Bosnie en 1302. Son gouvernement fut bref mais violent : en tentant d’imposer l’autorité des Šubić et de combattre les adversaires liés à l’Église bosnienne, il fut tué au combat en 1304, vers l’âge de 49 ans.",
+  "shortDescriptionDe": "Mladen I. Šubić von Bribir war ein kroatischer Adliger aus der mächtigen Familie Šubić, die um 1300 großen Einfluss in Kroatien, Dalmatien und Bosnien ausübte. Als Bruder von Paul I. Šubić bekleidete er wichtige Ämter in dalmatinischen Städten und wurde 1302 zum Ban von Bosnien ernannt. Seine Herrschaft blieb kurz und konfliktreich: Bei dem Versuch, die Macht der Šubić zu festigen und Gegner aus dem Umfeld der Bosnischen Kirche zu bekämpfen, fiel er 1304 in einer Schlacht, im Alter von etwa 49 Jahren.",
+  "shortDescriptionEs": "Mladen I Šubić de Bribir fue un noble croata de la poderosa familia Šubić, influyente en Croacia, Dalmacia y Bosnia a finales del siglo XIII y comienzos del XIV. Hermano de Pablo I Šubić, ocupó cargos importantes en ciudades dálmatas y fue nombrado ban de Bosnia en 1302. Su gobierno fue breve y agitado: mientras intentaba imponer la autoridad de los Šubić y reprimir a opositores vinculados con la Iglesia bosnia, murió en batalla en 1304, con unos 49 años.",
+  "shortDescriptionRu": "Младен I Шубич Брибирский был хорватским вельможей из могущественного рода Шубичей, чьё влияние распространялось на Хорватию, Далмацию и Боснию. Брат Павла I Шубича, он занимал важные должности в далматинских городах и в 1302 году был назначен баном Боснии. Его правление оказалось коротким и военным: пытаясь укрепить власть Шубичей и подавить противников, связанных с Боснийской церковью, он погиб в бою в 1304 году, примерно в 49 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Money%20issued%20by%20Paul%20I%20%C5%A0ubi%C4%87%20of%20Bribir.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Klis%200807%203.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Bribirski.svg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mladen_I_%C5%A0ubi%C4%87_of_Bribir",
+    "https://www.wikidata.org/wiki/Q2716495",
+    "https://www.enciklopedija.hr/clanak/bribirski",
+    "https://hrcak.srce.hr/7778",
+    "https://commons.wikimedia.org/wiki/File:Klis_0807_3.jpg",
+    "https://commons.wikimedia.org/wiki/File:Money_issued_by_Paul_I_%C5%A0ubi%C4%87_of_Bribir.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q618316",  "Name": "Archduchess Maria Anna of Austria",  "BirthDate": "1835-10-27T00:00:00Z",  "DeathDate": "1840-02-05T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Mariaanna.jpg",  "SiteLinksCnt": 12,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"33915908":{"pageid":33915908,"ns":0,"title":"Archduchess Maria Anna of Austria (born 1835)","extract":"Archduchess Maria Anna of Austria (27 October 1835 \u2013 5 February 1840) was by birth an Archduchess of Austria and a member of the House of Habsburg. She was the fourth child and only daughter of Archduke Franz Karl of Austria and Princess Sophie of Bavaria. Maria Anna died in childhood due to epilepsy."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q618316")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q618316",
+  "isRealHuman": true,
+  "birthDate": "1835-10-27",
+  "deathDate": "1840-02-05",
+  "ageAtDeath": 4,
+  "confidence": 99,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata, Wikipedia, Wikimedia Commons, and genealogical references. The calculated age is 4 full years: she was born on 1835-10-27 and died on 1840-02-05, before her fifth birthday. Confidence is not 100 only because some biographical details around childhood illness depend on secondary historical sources.",
+  "shortDescriptionEn": "Archduchess Maria Anna of Austria, born Maria Anna Carolina Pia von Österreich, was a young Habsburg-Lorraine archduchess, the only daughter of Archduke Franz Karl of Austria and Princess Sophie of Bavaria. Sister of future Emperor Franz Joseph I and Maximilian I of Mexico, she belonged to one of Europe’s most influential dynasties. Although described as robust at birth, she developed epilepsy in early childhood and died in Vienna on 5 February 1840 after a violent seizure, aged 4.",
+  "shortDescriptionFr": "L’archiduchesse Marie-Anne d’Autriche, née Maria Anna Carolina Pia von Österreich, était une jeune archiduchesse de la maison de Habsbourg-Lorraine, fille unique de l’archiduc François-Charles d’Autriche et de la princesse Sophie de Bavière. Sœur du futur empereur François-Joseph Ier et de Maximilien Ier du Mexique, elle appartenait à l’une des dynasties les plus influentes d’Europe. D’abord considérée comme robuste, elle souffrit ensuite d’épilepsie et mourut à Vienne le 5 février 1840 après une violente crise, à l’âge de 4 ans.",
+  "shortDescriptionDe": "Erzherzogin Maria Anna von Österreich, geboren als Maria Anna Carolina Pia von Österreich, war eine junge Erzherzogin aus dem Haus Habsburg-Lothringen, die einzige Tochter von Erzherzog Franz Karl von Österreich und Prinzessin Sophie von Bayern. Als Schwester des späteren Kaisers Franz Joseph I. und Maximilians I. von Mexiko gehörte sie zu einer der einflussreichsten Dynastien Europas. Obwohl sie bei der Geburt kräftig wirkte, zeigte sie früh Anzeichen von Epilepsie und starb am 5. Februar 1840 in Wien nach einem schweren Anfall, im Alter von 4 Jahren.",
+  "shortDescriptionEs": "La archiduquesa María Ana de Austria, nacida Maria Anna Carolina Pia von Österreich, fue una joven archiduquesa de la Casa de Habsburgo-Lorena, única hija del archiduque Francisco Carlos de Austria y de la princesa Sofía de Baviera. Hermana del futuro emperador Francisco José I y de Maximiliano I de México, perteneció a una de las dinastías más influyentes de Europa. Aunque al nacer parecía fuerte, desarrolló epilepsia durante la infancia y murió en Viena el 5 de febrero de 1840 tras una violenta convulsión, a los 4 años.",
+  "shortDescriptionRu": "Эрцгерцогиня Мария Анна Австрийская, урождённая Maria Anna Carolina Pia von Österreich, была юной представительницей дома Габсбургов-Лотарингских, единственной дочерью эрцгерцога Франца Карла Австрийского и принцессы Софии Баварской. Она была сестрой будущего императора Франца Иосифа I и Максимилиана I Мексиканского, принадлежавших к одной из самых влиятельных династий Европы. При рождении её считали крепким ребёнком, но вскоре у неё проявилась эпилепсия; 5 февраля 1840 года она умерла в Вене после тяжёлого приступа в возрасте 4 лет.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Mariaanna.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Detail%20from%20Mariaanna%20(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Josef%20Kriehuber%20Kinder%20Seiner%20Kaiserlichen%20Hoheit%20Franz%20Karl%201838.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Most%20Serene%20Children%20of%20His%20Imperial%20Highness%20Francis%20Charles%20Archduke%20of%20Austria.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Archduchess_Maria_Anna_of_Austria_(born_1835)",
+    "https://commons.wikimedia.org/wiki/Category:Archduchess_Maria_Anna_of_Austria_(1835-1840)",
+    "https://commons.wikimedia.org/wiki/File:Mariaanna.jpg",
+    "https://www.wikidata.org/wiki/Q618316",
+    "https://royal.myorigins.org/p/Archduchess_Maria_Anna_of_Austria/3/",
+    "https://www.historyofroyalwomen.com/sophie-of-bavaria/maria-anna-of-austria-the-loss-of-a-daughter/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2134709",  "Name": "François Joseph of Lorraine, Duke of Guise",  "BirthDate": "1670-08-28T00:00:00Z",  "DeathDate": "1675-03-16T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Vallet%20after%20Paillet%20-%20Fran%C3%A7ois%20Joseph%2C%20Duke%20of%20Alen%C3%A7on%20later%20Duke%20of%20Guise.jpg",  "SiteLinksCnt": 11,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"2956145":{"pageid":2956145,"ns":0,"title":"Fran\u00e7ois Joseph, Duke of Guise","extract":"Fran\u00e7ois Joseph de Lorraine (28 August 1670 \u2013 16 March 1675), Duke of Guise, Duke of Alen\u00e7on and Duke of Angoul\u00eame, was the only son of Louis Joseph, Duke of Guise and \u00c9lisabeth Marguerite d'Orl\u00e9ans, suo jure duchess of Alen\u00e7on."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2134709")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2134709",
+  "isRealHuman": true,
+  "birthDate": "1670-08-28",
+  "deathDate": "1675-03-16",
+  "ageAtDeath": 4,
+  "confidence": 98,
+  "confidenceExplained": "The birth and death dates are explicitly given in both Wikipedia and Wikidata as 1670-08-28 and 1675-03-16. Calculating from those dates gives 4 full years at death, since he died before his fifth birthday. Confidence is slightly below 100 only because early-modern noble biographies can contain copied secondary-source errors, but the date agreement is strong.",
+  "shortDescriptionEn": "François Joseph de Lorraine, Duke of Guise, was the only son of Louis Joseph, Duke of Guise, and Élisabeth Marguerite d’Orléans. Born into one of France’s great noble houses, he inherited the Guise title as a small child after his father’s death and was also associated with the titles Duke of Alençon and Duke of Angoulême. His brief life was marked by frailty: still unable to walk unaided at four, he died at Luxembourg Palace after being dropped by his nurse and suffering a fatal head injury.",
+  "shortDescriptionFr": "François Joseph de Lorraine, duc de Guise, était le fils unique de Louis Joseph, duc de Guise, et d’Élisabeth Marguerite d’Orléans. Né dans l’une des grandes maisons nobles de France, il hérita du titre de Guise encore tout enfant après la mort de son père et porta aussi les titres de duc d’Alençon et de duc d’Angoulême. Sa vie fut très brève et fragile : incapable de marcher seul à quatre ans, il mourut au palais du Luxembourg après avoir été laissé tomber par sa nourrice, à la suite d’une blessure mortelle à la tête.",
+  "shortDescriptionDe": "François Joseph de Lorraine, Herzog von Guise, war der einzige Sohn von Louis Joseph, Herzog von Guise, und Élisabeth Marguerite d’Orléans. Er stammte aus einem der bedeutenden französischen Adelshäuser und erbte den Titel Herzog von Guise bereits als Kleinkind nach dem Tod seines Vaters; außerdem wurde er mit den Titeln Herzog von Alençon und Herzog von Angoulême verbunden. Sein kurzes Leben war von Krankheit geprägt: Mit vier Jahren konnte er noch nicht ohne Hilfe gehen und starb im Palais du Luxembourg, nachdem seine Amme ihn fallen ließ und er eine tödliche Kopfverletzung erlitt.",
+  "shortDescriptionEs": "François Joseph de Lorraine, duque de Guisa, fue el único hijo de Louis Joseph, duque de Guisa, y de Élisabeth Marguerite d’Orléans. Nacido en una de las grandes casas nobiliarias de Francia, heredó el título de Guisa siendo todavía un niño tras la muerte de su padre y también estuvo vinculado a los títulos de duque de Alençon y duque de Angulema. Su vida fue breve y marcada por la fragilidad: aún no podía caminar sin ayuda a los cuatro años y murió en el Palacio de Luxemburgo después de que su nodriza lo dejara caer, causándole una lesión mortal en la cabeza.",
+  "shortDescriptionRu": "Франсуа Жозеф де Лотарингия, герцог де Гиз, был единственным сыном Луи Жозефа, герцога де Гиза, и Элизабет Маргариты Орлеанской. Он принадлежал к одному из самых знатных домов Франции и унаследовал титул герцога де Гиза еще маленьким ребенком после смерти отца; с ним также связывались титулы герцога Алансонского и герцога Ангулемского. Его короткая жизнь была омрачена слабым здоровьем: в четыре года он все еще не мог ходить без помощи и умер в Люксембургском дворце после того, как кормилица уронила его, что привело к смертельной травме головы.",
+  "pictures": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vallet%20after%20Paillet%20-%20Fran%C3%A7ois%20Joseph%2C%20Duke%20of%20Alen%C3%A7on%20later%20Duke%20of%20Guise.jpg",
+      "caption": "Engraving of François Joseph de Lorraine, Duke of Alençon later Duke of Guise, after Antoine Paillet by Guillaume Vallet."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mignard%20-%20Elisabeth%20d%27Orl%C3%A9ans%20with%20her%20son%20-%20Ch%C3%A2teau%20de%20Blois.jpg",
+      "caption": "Pierre Mignard portrait of Élisabeth Marguerite d’Orléans with her son François Joseph."
+    }
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Joseph,_Duke_of_Guise",
+    "https://www.wikidata.org/wiki/Q2134709",
+    "https://commons.wikimedia.org/wiki/File:Vallet_after_Paillet_-_Fran%C3%A7ois_Joseph,_Duke_of_Alen%C3%A7on_later_Duke_of_Guise.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Fran%C3%A7ois_Joseph,_Duke_of_Guise",
+    "https://commons.wikimedia.org/wiki/File:Mignard_-_Elisabeth_d%27Orl%C3%A9ans_with_her_son_-_Ch%C3%A2teau_de_Blois.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q704817",  "Name": "Gorgonius",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Martyr%20de%20saint%20Gorgon.jpg",  "SiteLinksCnt": 11,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"3642191":{"pageid":3642191,"ns":0,"title":"Gorgonius","extract":"Gorgonius or Gorgon (Greek: \u1f0d\u03b3\u03b9\u03bf\u03c2 \u0393\u03bf\u03c1\u03b3\u03cc\u03bd\u03b9\u03bf\u03c2 \u039d\u03b9\u03ba\u03bf\u03bc\u03b7\u03b4\u03b5\u03af\u03b1\u03c2) was a Christian who was martyred in AD 304 alongside Peter Cubicularius and a certain Dorotheus at Nicomedia during the Diocletianic Persecution."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q704817")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q704817",
+  "isRealHuman": true,
+  "birthDate": "0270-01-01",
+  "deathDate": "0304-01-01",
+  "ageAtDeath": 34,
+  "confidence": 60,
+  "confidenceExplained": "The identity is well supported: this is Saint Gorgonius or Gorgon of Nicomedia, a Christian martyr associated with Diocletian's court. The exact birth date is not known; the best concrete estimate found says he was born around 270. The death year is usually given as 304, though some devotional sources give 303. Using the stronger 304 tradition and the estimated birth year 270 gives an estimated age at death of 34. Confidence is moderate because the age depends on an approximate birth year and a death year with minor source variation.",
+  "shortDescriptionEn": "Saint Gorgonius of Nicomedia was a Christian imperial official, often described as a high-ranking member of Emperor Diocletian's household or an officer connected with the palace. Remembered in both Catholic and Orthodox traditions, he became one of the notable martyrs of the Diocletianic Persecution. He was arrested after refusing to abandon his faith and, with companions including Peter Cubicularius and Dorotheus, was tortured and finally strangled at Nicomedia, dying at about 34.",
+  "shortDescriptionFr": "Saint Gorgon, ou Gorgonius de Nicomédie, était un fonctionnaire chrétien de haut rang dans l'entourage de l'empereur Dioclétien, parfois présenté comme officier lié au palais impérial. Vénéré dans les traditions catholique et orthodoxe, il compte parmi les martyrs marquants de la persécution de Dioclétien. Arrêté pour avoir refusé de renier sa foi, il fut torturé avec des compagnons comme Pierre Cubiculaire et Dorothée, puis étranglé à Nicomédie, mourant vers l'âge de 34 ans.",
+  "shortDescriptionDe": "Der heilige Gorgonius von Nikomedia war ein christlicher kaiserlicher Amtsträger, der als hochrangiger Angehöriger des Hofes Kaiser Diokletians oder als Palastoffizier beschrieben wird. In der katholischen und orthodoxen Überlieferung gilt er als einer der bekannten Märtyrer der diokletianischen Verfolgung. Weil er seinen Glauben nicht aufgeben wollte, wurde er zusammen mit Gefährten wie Petrus Cubicularius und Dorotheus gefoltert und schließlich in Nikomedia erdrosselt; er starb mit etwa 34 Jahren.",
+  "shortDescriptionEs": "San Gorgonio de Nicomedia fue un funcionario cristiano del entorno imperial, descrito a menudo como un alto servidor de la casa de Diocleciano o como un oficial relacionado con el palacio. Venerado en las tradiciones católica y ortodoxa, figura entre los mártires destacados de la persecución diocleciana. Arrestado por negarse a abandonar su fe, fue torturado junto con compañeros como Pedro Cubiculario y Doroteo, y finalmente estrangulado en Nicomedia; murió aproximadamente a los 34 años.",
+  "shortDescriptionRu": "Святой Горгоний Никомидийский был христианским императорским служащим, которого обычно описывают как высокопоставленного человека при дворе императора Диоклетиана или дворцового офицера. Он почитается в католической и православной традициях как один из мучеников Диоклетианова гонения. За отказ отречься от веры он был арестован, подвергнут пыткам вместе с такими сподвижниками, как Пётр Кубикуларий и Дорофей, и затем задушен в Никомидии; ему было около 34 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gorgonius",
+    "https://www.newadvent.org/cathen/06651b.htm",
+    "https://www.ecatholic2000.com/eusebius/untitled-238.shtml",
+    "https://pouxeux.catholique88.fr/page/l-eglise-de-pouxeux",
+    "https://www.metmuseum.org/art/collection/search/420033",
+    "https://www.eortologio.gr/christopherklitou/icon_9_march_gorgonius.php"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q5131952",  "Name": "Philip de' Medici",  "BirthDate": "1577-05-30T00:00:00Z",  "DeathDate": "1582-04-08T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Don%20Filippo%20de%27%20Medici%2C%20Gran%20principe%20di%20Toscana.jpg",  "SiteLinksCnt": 10,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"18189035":{"pageid":18189035,"ns":0,"title":"Philip de' Medici","extract":"Philip de' Medici (20 May 1577 \u2013 29 March 1582) was the youngest child of Francesco I de' Medici and Joanna of Austria. He was the heir to the Tuscan throne."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q5131952")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q5131952",
+  "isRealHuman": true,
+  "birthDate": "1577-05-20",
+  "deathDate": "1582-03-29",
+  "ageAtDeath": 4,
+  "confidence": 95,
+  "confidenceExplained": "The person is clearly identifiable as Filippo/Philip de' Medici. The main uncertainty is calendar notation: Wikidata-style normalized dates may appear as 1577-05-30 and 1582-04-08, while historical/Wikipedia dates are 1577-05-20 and 1582-03-29. Both pairs produce the same completed age at death: 4 years.",
+  "shortDescriptionEn": "Philip de' Medici, also known as Filippo de' Medici, was the young Grand Prince of Tuscany and the youngest child of Francesco I de' Medici and Joanna of Austria. His birth secured the Medici succession for another generation, but his life remained confined to the court world of Florence. He died there at age 4, after suffering from hydrocephalus; later study of his remains supported that diagnosis.",
+  "shortDescriptionFr": "Philippe de Médicis, ou Filippo de' Medici, fut le jeune grand prince de Toscane et le plus jeune enfant de François Ier de Médicis et de Jeanne d'Autriche. Sa naissance renforça la succession des Médicis et fut célébrée à la cour florentine. Il mourut à Florence à l'âge de 4 ans, après avoir souffert d'hydrocéphalie; l'étude ultérieure de ses restes a confirmé ce diagnostic.",
+  "shortDescriptionDe": "Philip de' Medici, auch Filippo de' Medici genannt, war der junge Großprinz der Toskana und das jüngste Kind von Francesco I. de' Medici und Johanna von Österreich. Seine Geburt sicherte die dynastische Nachfolge der Medici und wurde am Florentiner Hof gefeiert. Er starb in Florenz im Alter von 4 Jahren, nachdem er an Hydrozephalus gelitten hatte; spätere Untersuchungen seiner Überreste stützten diese Diagnose.",
+  "shortDescriptionEs": "Felipe de Médici, también conocido como Filippo de' Medici, fue el joven gran príncipe de Toscana y el hijo menor de Francisco I de Médici y Juana de Austria. Su nacimiento aseguró la continuidad dinástica de los Médici y fue celebrado en la corte de Florencia. Murió allí a los 4 años, tras padecer hidrocefalia; estudios posteriores de sus restos respaldaron ese diagnóstico.",
+  "shortDescriptionRu": "Филиппо Медичи, также известный как Philip de' Medici, был юным великим принцем Тосканы и младшим ребенком Франческо I Медичи и Иоанны Австрийской. Его рождение укрепило династическое будущее дома Медичи и вызвало торжества при флорентийском дворе. Он умер во Флоренции в возрасте 4 лет, страдая гидроцефалией; позднейшее исследование останков подтвердило этот диагноз.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philip_de%27_Medici",
+    "https://www.wikidata.org/wiki/Q5131952",
+    "https://commons.wikimedia.org/wiki/Category:Filippo_de%27_Medici,_Grand_Prince_of_Tuscany",
+    "https://commons.wikimedia.org/wiki/File:Don_Filippo_de%27_Medici,_Gran_principe_di_Toscana.jpg",
+    "https://commons.wikimedia.org/wiki/File:Don_Filippino_di_Francesco_I_de_Medici.jpg",
+    "https://link.springer.com/article/10.1007/s00381-019-04134-y",
+    "https://pubmed.ncbi.nlm.nih.gov/18450033/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q543665",  "Name": "Anne de Beauchamp, 15th Countess of Warwick",  "BirthDate": "1444-02-23T00:00:00Z",  "DeathDate": "1449-01-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/AnneWarwick1483.jpg",  "SiteLinksCnt": 10,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"2086235":{"pageid":2086235,"ns":0,"title":"Anne Beauchamp, 15th Countess of Warwick","extract":"Anne Beauchamp, 15th Countess of Warwick (14 February 1444 \u2013 3 June 1449), was the only child and heiress of the English nobleman Henry Beauchamp, 1st Duke of Warwick. She died a child aged 5, after which the earldom of Warwick was inherited by her paternal aunt. The title then passed by marriage to Anne's maternal uncle, Richard Neville, the famous 'Kingmaker' of the later Wars of the Roses."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q543665")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q543665",
+  "isRealHuman": true,
+  "birthDate": "1444-02-14",
+  "deathDate": "1449-06-03",
+  "ageAtDeath": 5,
+  "confidence": 92,
+  "confidenceExplained": "The identity is strongly supported by the Wikidata item Q543665 and the matching Wikipedia article for Anne Beauchamp, 15th Countess of Warwick. The most reliable accessible account gives 14 February 1444 as her birth date and 3 June 1449 as her death date, which makes her age at death 5 completed years. Confidence is not 100 because some derivative genealogy sites and metadata confuse her with her aunt Anne Beauchamp, 16th Countess of Warwick, and the provided image URL may also be associated with that later countess.",
+  "shortDescriptionEn": "Anne Beauchamp, 15th Countess of Warwick, was the only child and heiress of Henry Beauchamp, 1st Duke of Warwick, and Cecily Neville. Born at Cardiff in 1444, she inherited the Warwick title as a small child after her father’s death, making her briefly one of the most important young heiresses in England. She died at Ewelme in Oxfordshire on 3 June 1449, aged 5, and was buried at Reading Abbey. Her early death redirected the Warwick inheritance to her aunt, eventually helping raise Richard Neville, the future “Kingmaker,” to prominence.",
+  "shortDescriptionFr": "Anne Beauchamp, 15e comtesse de Warwick, était l’unique enfant et héritière d’Henry Beauchamp, 1er duc de Warwick, et de Cecily Neville. Née à Cardiff en 1444, elle hérita encore toute petite du titre de Warwick après la mort de son père, devenant brièvement l’une des jeunes héritières les plus importantes d’Angleterre. Elle mourut à Ewelme, dans l’Oxfordshire, le 3 juin 1449, à l’âge de 5 ans, puis fut enterrée à l’abbaye de Reading. Sa mort précoce fit passer l’héritage de Warwick à sa tante et contribua ensuite à l’ascension de Richard Neville, le futur « Faiseur de rois ».",
+  "shortDescriptionDe": "Anne Beauchamp, 15. Countess of Warwick, war das einzige Kind und die Erbin von Henry Beauchamp, 1. Duke of Warwick, und Cecily Neville. Sie wurde 1444 in Cardiff geboren und erbte nach dem Tod ihres Vaters bereits als kleines Kind den Warwick-Titel, wodurch sie kurzzeitig zu einer der bedeutendsten jungen Erbinnen Englands wurde. Sie starb am 3. Juni 1449 in Ewelme, Oxfordshire, im Alter von 5 Jahren und wurde in Reading Abbey bestattet. Ihr früher Tod lenkte das Warwick-Erbe auf ihre Tante um und ebnete später Richard Neville, dem berühmten „Königsmacher“, den Weg zu größerem Einfluss.",
+  "shortDescriptionEs": "Anne Beauchamp, XV condesa de Warwick, fue la única hija y heredera de Henry Beauchamp, I duque de Warwick, y de Cecily Neville. Nacida en Cardiff en 1444, heredó siendo una niña el título de Warwick tras la muerte de su padre, lo que la convirtió brevemente en una de las jóvenes herederas más importantes de Inglaterra. Murió en Ewelme, Oxfordshire, el 3 de junio de 1449, a los 5 años, y fue enterrada en la abadía de Reading. Su muerte temprana hizo que la herencia de Warwick pasara a su tía y, más tarde, favoreció el ascenso de Richard Neville, el famoso “Hacedor de reyes”.",
+  "shortDescriptionRu": "Анна Бошан, 15-я графиня Уорик, была единственным ребёнком и наследницей Генри Бошана, 1-го герцога Уорика, и Сесили Невилл. Она родилась в Кардиффе в 1444 году и ещё маленькой девочкой унаследовала титул Уорик после смерти отца, на короткое время став одной из самых заметных юных наследниц Англии. Анна умерла в Юэлме, Оксфордшир, 3 июня 1449 года в возрасте 5 лет и была похоронена в Редингском аббатстве. Её ранняя смерть передала наследство Уориков её тёте и в дальнейшем способствовала возвышению Ричарда Невилла, знаменитого «Делателя королей».",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anne_Beauchamp%2C_15th_Countess_of_Warwick",
+    "https://www.wikidata.org/wiki/Q543665",
+    "https://kids.kiddle.co/Anne_Beauchamp%2C_15th_Countess_of_Warwick",
+    "https://www.wikitree.com/wiki/Beauchamp-2759",
+    "https://www.werelate.org/wiki/Person%3AAnne_de_Beauchamp_%282%29"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q71134",  "Name": "Christian Heinrich Heineken",  "BirthDate": "1721-02-06T00:00:00Z",  "DeathDate": "1725-06-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Heineken%20HAB.jpg",  "SiteLinksCnt": 10,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"1574417":{"pageid":1574417,"ns":0,"title":"Christian Heinrich Heineken","extract":"Christian Heinrich Heineken or Heinecken (February 6, 1721 \u2013 June 27, 1725), also known as \"the infant scholar of L\u00fcbeck\", was a German child prodigy who lived only to the age of four."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q71134")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q71134",
+  "isRealHuman": true,
+  "birthDate": "1721-02-06",
+  "deathDate": "1725-06-27",
+  "ageAtDeath": 4,
+  "confidence": 99,
+  "confidenceExplained": "The integer age at death is very secure: the widely repeated birth date is 1721-02-06, and the usual death date is 1725-06-27, giving 4 years, 4 months, and 21 days. A Britannica-derived source gives 1725-06-22 instead, but that still gives an integer age of 4, so the ageAtDeath value remains unchanged.",
+  "shortDescriptionEn": "Christian Heinrich Heineken, remembered as the “infant scholar of Lübeck,” was an extraordinary German child prodigy whose reported feats included speaking very early, reading biblical texts as a toddler, and astonishing visitors with knowledge of history, geography, Latin, and French. His brilliant but fragile childhood ended in Lübeck at age 4, after longstanding poor health; modern accounts often connect his death with celiac disease or severe intolerance to grain-based foods.",
+  "shortDescriptionFr": "Christian Heinrich Heineken, connu comme « l’enfant savant de Lübeck », fut un prodige allemand dont les talents précoces auraient stupéfié son entourage : parole très jeune, lecture de textes bibliques dès la petite enfance, et connaissances remarquées en histoire, géographie, latin et français. Sa célébrité fut aussi brève que spectaculaire : affaibli par une santé fragile, il mourut à Lübeck à l’âge de 4 ans, sa mort étant souvent associée aujourd’hui à la maladie cœliaque ou à une forte intolérance aux aliments céréaliers.",
+  "shortDescriptionDe": "Christian Heinrich Heineken, das berühmte „Lübecker Wunderkind“, war ein außergewöhnlicher deutscher Frühbegabter, dem schon als Kleinkind erstaunliche Sprach-, Lese- und Gedächtnisleistungen zugeschrieben wurden, darunter Kenntnisse in Bibelstoff, Geschichte, Geographie, Latein und Französisch. Sein kurzes Leben stand jedoch unter dem Zeichen schwacher Gesundheit: Er starb in Lübeck im Alter von 4 Jahren, wobei heutige Darstellungen seinen Tod häufig mit Zöliakie beziehungsweise schwerer Unverträglichkeit von Getreidenahrung verbinden.",
+  "shortDescriptionEs": "Christian Heinrich Heineken, recordado como el “niño sabio de Lübeck”, fue un prodigio alemán al que se atribuyeron capacidades asombrosas: hablar muy pronto, leer textos bíblicos de niño pequeño y demostrar conocimientos de historia, geografía, latín y francés. Su fama nació de una infancia extraordinaria pero muy frágil: murió en Lübeck a los 4 años, y las explicaciones modernas suelen relacionar su muerte con la enfermedad celíaca o una grave intolerancia a productos elaborados con cereales.",
+  "shortDescriptionRu": "Кристиан Генрих Хейнекен, известный как «любекский младенец-учёный», был немецким ребёнком-вундеркиндом, которому приписывали необычайно раннюю речь, чтение библейских текстов в младенческом возрасте и знания истории, географии, латыни и французского языка. Его слава оказалась очень короткой: из-за слабого здоровья он умер в Любеке в возрасте 4 лет, а современные описания часто связывают его смерть с целиакией или тяжёлой непереносимостью зерновой пищи.",
+  "imageUrls": [
+    "https://commons.wikimedia.org/wiki/File:Christian_Heinrich_Heineken.jpg",
+    "https://commons.wikimedia.org/wiki/File:Heineken_HAB.jpg",
+    "https://commons.wikimedia.org/wiki/File:HeinekenFritzsch1726.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Christian_Heinrich_Heineken"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Christian_Heinrich_Heineken",
+    "https://www.wikidata.org/wiki/Q71134",
+    "https://commons.wikimedia.org/wiki/Category:Christian_Heinrich_Heineken",
+    "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Heinecken,_Christian_Heinrich",
+    "https://st-annen-museum.de/das-luebecker-wunderkind",
+    "https://thearticle.hypotheses.org/5483"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6588072",  "Name": "Princess Isabel of York",  "BirthDate": "1676-08-18T00:00:00Z",  "DeathDate": "1681-03-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/PrincessIsabelLelly.jpg",  "SiteLinksCnt": 9,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"35941760":{"pageid":35941760,"ns":0,"title":"Isabel Stuart","extract":"Isabel Stuart (28 August 1676 \u2013 2 March 1681), also called Isobel and Isabella, was a daughter of the future King James II of England and his second wife, Mary of Modena.\nIsabel was born at St James's Palace in London. She was the second daughter of James and Mary, after her sister Catherine Laura who died eleven months before Isabel's birth. Isabel had two older half-sisters from her father's first marriage to Anne Hyde: Mary and Anne; both would become reigning Queens of England. Isabel's paternal grandparents were Charles I of England and his wife Henrietta Maria of France, her maternal grandparents were Alfonso IV d'Este and Laura Martinozzi."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6588072")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6588072",
+  "isRealHuman": true,
+  "birthDate": "1676-08-28",
+  "deathDate": "1681-03-02",
+  "ageAtDeath": 4,
+  "confidence": 95,
+  "confidenceExplained": "Multiple sources identify the person as Isabel/Isabella Stuart, daughter of James, Duke of York, later James II, and Mary of Modena. The exact day of birth appears as 28 August 1676 in modern biographical and portrait sources, while 18 August 1676 appears in some Wikidata-derived contexts, likely reflecting Old Style/Julian dating. This discrepancy does not affect the integer age: from August 1676 to 2 March 1681 she was 4 years old, about five to six months short of her fifth birthday.",
+  "shortDescriptionEn": "Isabel Stuart, also called Isabella Stuart or Princess Isabel of York, was a Stuart princess born at St James's Palace, the daughter of James, Duke of York, later James II of England, and Mary of Modena. For much of her brief life she was a significant dynastic child, placed high in the English succession behind her father and her half-sisters Mary and Anne. She died at St James's Palace on 2 March 1681, aged 4, reportedly of natural causes while her parents were in Scotland, and was buried at Westminster Abbey.",
+  "shortDescriptionFr": "Isabel Stuart, aussi appelée Isabella Stuart ou princesse Isabel d’York, était une princesse de la maison Stuart née au palais de St James, fille de James, duc d’York, futur Jacques II d’Angleterre, et de Marie de Modène. Pendant sa courte vie, elle occupa une place notable dans la succession anglaise, derrière son père et ses demi-sœurs Mary et Anne. Elle mourut au palais de St James le 2 mars 1681, à l’âge de 4 ans, probablement de causes naturelles alors que ses parents se trouvaient en Écosse, puis fut inhumée à l’abbaye de Westminster.",
+  "shortDescriptionDe": "Isabel Stuart, auch Isabella Stuart oder Prinzessin Isabel von York genannt, war eine Prinzessin aus dem Haus Stuart, geboren im St James’s Palace als Tochter von James, Duke of York, dem späteren König Jakob II. von England, und Maria Beatrice d’Este. In ihrem kurzen Leben war sie ein dynastisch bedeutendes Kind und stand zeitweise weit vorn in der englischen Thronfolge hinter ihrem Vater und ihren Halbschwestern Mary und Anne. Sie starb am 2. März 1681 im St James’s Palace im Alter von 4 Jahren, wohl eines natürlichen Todes, während ihre Eltern in Schottland waren, und wurde in Westminster Abbey bestattet.",
+  "shortDescriptionEs": "Isabel Stuart, también conocida como Isabella Stuart o princesa Isabel de York, fue una princesa de la casa Estuardo nacida en el palacio de St James, hija de James, duque de York, futuro Jacobo II de Inglaterra, y de María de Módena. Durante su corta vida ocupó una posición dinástica relevante, situada en la línea sucesoria inglesa detrás de su padre y de sus medias hermanas Mary y Anne. Murió en el palacio de St James el 2 de marzo de 1681, a los 4 años, al parecer por causas naturales mientras sus padres estaban en Escocia, y fue enterrada en la abadía de Westminster.",
+  "shortDescriptionRu": "Изабелла Стюарт, также известная как Изабель Стюарт или принцесса Изабель Йоркская, была принцессой дома Стюартов, родившейся в Сент-Джеймсском дворце в семье Джеймса, герцога Йоркского, будущего короля Англии Якова II, и Марии Моденской. За свою короткую жизнь она имела заметное династическое значение и находилась высоко в линии наследования после отца и сводных сестёр Марии и Анны. Она умерла в Сент-Джеймсском дворце 2 марта 1681 года в возрасте 4 лет, предположительно от естественных причин, когда её родители находились в Шотландии, и была похоронена в Вестминстерском аббатстве.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Isabel_Stuart",
+    "https://www.rct.uk/collection/401249/princess-isabella-1676-81",
+    "https://commons.wikimedia.org/wiki/File:PrincessIsabelLelly.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/PrincessIsabelLelly.jpg",
+    "https://www.npg.org.uk/collections/search/person/mp60515/isabella-stuart",
+    "https://www.sothebys.com/en/buy/auction/2021/old-master-paintings/portrait-of-princess-isabella-stuart-1676-1681",
+    "https://www.unofficialroyalty.com/isabel-stuart-daughter-of-king-james-ii-of-england/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7514393",  "Name": "Silence Suzuka",  "BirthDate": "1994-05-01T00:00:00Z",  "DeathDate": "1998-11-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Silence%20Suzuka.jpg",  "SiteLinksCnt": 9,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"18175166":{"pageid":18175166,"ns":0,"title":"Silence Suzuka","extract":"Silence Suzuka (Japanese: \u30b5\u30a4\u30ec\u30f3\u30b9\u30b9\u30ba\u30ab; May 1, 1994 \u2013 November 1, 1998) was a Japanese Thoroughbred racehorse. He is known for winning the 1998 Takarazuka Kinen.\nAfter debuting in 1997, Silence Suzuka's performance stabilized following a tactical shift in late 1997. In 1998, he won five consecutive graded stakes and secured a Grade I victory in the Takarazuka Kinen.\nDuring the 1998 Tenno Sho (Autumn), he suffered a terminal leg fracture and was subsequently euthanized."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7514393")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q7514393",
+  "isRealHuman": false,
+  "birthDate": "1994-05-01",
+  "deathDate": "1998-11-01",
+  "ageAtDeath": 4,
+  "confidence": 99,
+  "confidenceExplained": "Multiple horse-racing sources agree on the foaling and death dates. The age calculation is straightforward: from 1994-05-01 to 1998-11-01 is 4 full years and 6 months, so the integer age at death is 4. Confidence is not 100 only because exact time of birth and death is not available, but it does not affect the full-year age.",
+  "shortDescriptionEn": "Silence Suzuka was a celebrated Japanese Thoroughbred racehorse, remembered for his spectacular front-running style and his 1998 Takarazuka Kinen victory. In the 1998 Tenno Sho Autumn, while leading the field, he suffered a catastrophic left foreleg fracture and was euthanized soon afterward at age 4.",
+  "shortDescriptionFr": "Silence Suzuka était un célèbre pur-sang japonais, admiré pour son style de course offensif en tête et sa victoire dans le Takarazuka Kinen de 1998. Lors du Tenno Sho d’automne 1998, alors qu’il menait la course, il subit une grave fracture de l’antérieur gauche et fut euthanasié peu après, à l’âge de 4 ans.",
+  "shortDescriptionDe": "Silence Suzuka war ein berühmtes japanisches Vollblutrennpferd, bekannt für seinen spektakulären Tempolauf an der Spitze und seinen Sieg im Takarazuka Kinen 1998. Im Tenno Sho Herbst 1998 erlitt er in Führung liegend einen katastrophalen Bruch am linken Vorderbein und wurde kurz darauf im Alter von 4 Jahren eingeschläfert.",
+  "shortDescriptionEs": "Silence Suzuka fue un célebre pura sangre japonés, recordado por su espectacular estilo de correr en punta y por ganar el Takarazuka Kinen de 1998. En el Tenno Sho de otoño de 1998, mientras lideraba la carrera, sufrió una fractura catastrófica en la pata delantera izquierda y fue sacrificado poco después a los 4 años.",
+  "shortDescriptionRu": "Silence Suzuka был знаменитой японской чистокровной скаковой лошадью, запомнившейся ярким стилем бега впереди пелотона и победой в Takarazuka Kinen 1998 года. На Tenno Sho Autumn 1998 года, лидируя в забеге, он получил тяжелый перелом левой передней ноги и вскоре был усыплен в возрасте 4 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Silence_Suzuka",
+    "https://en.netkeiba.com/db/horse/1994103997/",
+    "https://www.jra.go.jp/gallery/3minmeiba/horse25/",
+    "https://jra-van.jp/fun/memorial/1994103997.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q952301",  "Name": "St. Julian of Brioude",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0304-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20julien%20ath.JPG",  "SiteLinksCnt": 9,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"28039616":{"pageid":28039616,"ns":0,"title":"Julian of Brioude","extract":"Saint Julian of Brioude (\u2020304) was a legendary martyr and saint from the Auvergne region of France. Although the main focus of his cultus was in the small village of Brioude, he was originally from the city of Vienne, and also associated with Clermont. He was most famous through his association with an aristocratic family of bishops of the time, his most notable proponents being St. Gallus of Clermont and St. Gregory of Tours (the latter best known for his Ten Books of Histories). Gregory wrote a vita of Julian, but his attempts to expand the saint's cult from the Auvergne to Touraine and Aquitaine were unsuccessful, and Julian is now only remembered through his basilica in the town of Brioude itself."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q952301")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q952301",
+  "isRealHuman": true,
+  "birthDate": "0275-01-01",
+  "deathDate": "0304-08-28",
+  "ageAtDeath": 29,
+  "confidence": 28,
+  "confidenceExplained": "Julian of Brioude is treated in Christian hagiographic and historical tradition as an early Gallic martyr, but no reliable birth date is preserved. The year 304 is widely used for his martyrdom, though the exact chronology is partly traditional. Because he is described as a Roman soldier or tribune, the Wikidata birth year 300 and age 4 are implausible. I estimate a birth around 275, making him an adult of about 29 at death; the exact age remains uncertain.",
+  "shortDescriptionEn": "Julian of Brioude was an early Christian martyr venerated in Gaul, traditionally described as a Roman soldier from Vienne who had converted to Christianity. His cult became centered at Brioude in Auvergne, where a major basilica later rose over his tomb and helped spread his reputation across medieval France. During the persecution associated with Diocletian, he fled toward Auvergne but was found near Brioude. Tradition says he gave himself up to protect those sheltering him and was beheaded, his head being taken back toward Vienne.",
+  "shortDescriptionFr": "Julien de Brioude fut un martyr chrétien des premiers siècles, vénéré en Gaule et traditionnellement présenté comme un soldat romain originaire de Vienne, converti au christianisme. Son culte se développa surtout à Brioude, en Auvergne, où une grande basilique fut plus tard élevée sur son tombeau et fit de lui l’un des saints les plus connus de la région. Lors de la persécution liée à Dioclétien, il se réfugia en Auvergne, mais fut retrouvé près de Brioude. La tradition rapporte qu’il se livra pour épargner ses hôtes et qu’il fut décapité, sa tête étant ensuite rapportée vers Vienne.",
+  "shortDescriptionDe": "Julian von Brioude war ein frühchristlicher Märtyrer Galliens, der der Überlieferung nach ein römischer Soldat aus Vienne und zum Christentum bekehrt war. Sein Kult konzentrierte sich besonders in Brioude in der Auvergne, wo später über seinem Grab eine bedeutende Basilika entstand und seine Verehrung im mittelalterlichen Frankreich verbreitete. Während der mit Diokletian verbundenen Christenverfolgung floh er nach Auvergne, wurde jedoch nahe Brioude aufgespürt. Der Tradition zufolge stellte er sich, um seine Gastgeber zu schützen, und wurde enthauptet; sein Haupt soll nach Vienne gebracht worden sein.",
+  "shortDescriptionEs": "Julián de Brioude fue un mártir cristiano primitivo venerado en la Galia, tradicionalmente descrito como un soldado romano de Vienne convertido al cristianismo. Su culto se centró en Brioude, en Auvernia, donde más tarde se levantó una importante basílica sobre su tumba y su fama se extendió por la Francia medieval. Durante la persecución asociada a Diocleciano, huyó hacia Auvernia, pero fue localizado cerca de Brioude. La tradición afirma que se entregó para proteger a quienes lo escondían y fue decapitado; su cabeza habría sido llevada de regreso hacia Vienne.",
+  "shortDescriptionRu": "Юлиан Бриудский был раннехристианским мучеником Галлии, которого традиция описывает как римского воина из Вьенна, принявшего христианство. Его почитание особенно укрепилось в Бриуде в Оверни, где позднее над его гробницей выросла знаменитая базилика, сделавшая его одним из заметных святых средневековой Франции. Во время гонений, связываемых с Диоклетианом, он бежал в Овернь, но был найден близ Бриуда. По преданию, он сам вышел к преследователям, чтобы защитить приютивших его людей, и был обезглавлен; его голову затем отнесли к Вьенну.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Julian_of_Brioude",
+    "https://fr.wikipedia.org/wiki/Julien_de_Brioude",
+    "https://nominis.cef.fr/contenus/saint/1753/Saint-Julien-de-Brioude.html",
+    "https://amis-st-julien-royaucourt.org/eglise-saint-julien-de-royaucourt/saint-julien-de-brioude/",
+    "https://archive.org/stream/butlerslivesofthesaintsvol3/Butler%27s%20Lives%20of%20the%20Saints%20Vol%203_djvu.txt",
+    "https://www.histoireaisne.fr/memoires_numerises/chapitres/tome_51/Tome_051_page_239.pdf",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20julien%20ath.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1060353",  "Name": "Buddy",  "BirthDate": "1997-08-07T00:00:00Z",  "DeathDate": "2002-01-02T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Buddy%20Clinton%20dog.jpg",  "SiteLinksCnt": 8,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"483599":{"pageid":483599,"ns":0,"title":"Buddy (Bill Clinton's dog)","extract":"Buddy (August 7, 1997 \u2013 January 2, 2002), a male chocolate-colored Labrador Retriever, was one of two pets kept by the Clinton family while Bill Clinton was President of the United States. The Clintons' other pet was a cat named Socks.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1060353")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1060353",
+  "isRealHuman": false,
+  "birthDate": "1997-08-07",
+  "deathDate": "2002-01-02",
+  "ageAtDeath": 4,
+  "confidence": 99,
+  "confidenceExplained": "The entity is clearly Buddy, Bill Clinton's chocolate Labrador Retriever, not a human being. The birth date is consistently given as 1997-08-07, and the death is reported as 2002-01-02 by Wikipedia/Wikidata and contemporary reporting, with one Clinton Foundation tribute giving 2002-01-03. Either death date gives the same integer age at death: 4.",
+  "shortDescriptionEn": "Buddy was a chocolate-colored Labrador Retriever owned by the Clinton family and became known as one of the presidential pets during Bill Clinton's time in the White House, alongside the cat Socks. Adopted as a puppy in 1997, he appeared in public stories and photographs connected to the Clinton presidency. Buddy died at age 4 after running from the Clintons' Chappaqua, New York, home and being struck by a vehicle; reports described the incident as an accident.",
+  "shortDescriptionFr": "Buddy était un Labrador Retriever chocolat appartenant à la famille Clinton et il est devenu l’un des animaux présidentiels connus pendant la présidence de Bill Clinton, aux côtés du chat Socks. Adopté chiot en 1997, il a figuré dans des récits publics et des photographies liés à la Maison-Blanche. Buddy est mort à l’âge de 4 ans après s’être échappé de la maison des Clinton à Chappaqua, dans l’État de New York, et avoir été renversé par un véhicule; les rapports ont décrit l’incident comme un accident.",
+  "shortDescriptionDe": "Buddy war ein schokoladenbrauner Labrador Retriever der Familie Clinton und wurde während Bill Clintons Zeit im Weißen Haus, zusammen mit der Katze Socks, als Präsidentenhaustier bekannt. Er wurde 1997 als Welpe aufgenommen und erschien in öffentlichen Berichten und Fotos rund um die Clinton-Präsidentschaft. Buddy starb im Alter von 4 Jahren, nachdem er vom Haus der Clintons in Chappaqua, New York, weggelaufen und von einem Fahrzeug erfasst worden war; Berichte bezeichneten den Vorfall als Unfall.",
+  "shortDescriptionEs": "Buddy fue un Labrador Retriever de color chocolate perteneciente a la familia Clinton y se hizo conocido como una de las mascotas presidenciales durante la etapa de Bill Clinton en la Casa Blanca, junto al gato Socks. Adoptado como cachorro en 1997, apareció en relatos públicos y fotografías vinculadas a la presidencia de Clinton. Buddy murió a los 4 años después de salir corriendo de la casa de los Clinton en Chappaqua, Nueva York, y ser atropellado por un vehículo; los informes describieron el hecho como un accidente.",
+  "shortDescriptionRu": "Бадди был шоколадным лабрадором-ретривером семьи Клинтонов и стал известен как один из президентских питомцев во время пребывания Билла Клинтона в Белом доме, наряду с котом Соксом. Его взяли щенком в 1997 году, и он появлялся в публичных историях и фотографиях, связанных с президентством Клинтона. Бадди умер в возрасте 4 лет после того, как выбежал из дома Клинтонов в Чаппакуа, штат Нью-Йорк, и был сбит автомобилем; сообщения описывали произошедшее как несчастный случай.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Buddy_(Bill_Clinton%27s_dog)",
+    "https://www.wikidata.org/wiki/Q1060353",
+    "https://commons.wikimedia.org/wiki/File:Buddy_Clinton_dog.jpg",
+    "https://www.clintonlibrary.gov/museum/socks-buddy-and-history-presidential-pets",
+    "https://www.whitehousehistory.org/photos/fotoware?id=4223CE23619B4E05+A387769923767980",
+    "https://www.mrt.com/news/article/Buddy-the-Clintons-Dog-Dies-7706691.php",
+    "https://www.clintonfoundation.org/press-and-news/general/statement-a-tribute-to-buddy/",
+    "https://www.presidentialpetmuseum.com/pets/buddy/"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q20383561",  "Name": "al-Fazārī",  "BirthDate": "0800-01-01T00:00:00Z",  "DeathDate": "0804-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%A3%D8%A8%D9%88%20%D8%A5%D8%B3%D8%AD%D8%A7%D9%82%20%D8%A7%D9%84%D9%81%D8%B2%D8%A7%D8%B1%D9%8A.png",  "SiteLinksCnt": 8,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"60837356":{"pageid":60837356,"ns":0,"title":"Abu Ishaq al-Fazari","extract":"Ab\u016b Ish\u0101q al-Faz\u0101r\u012b, he was Ibrah\u012bm ibn Mu\u1e25ammad ibn al-\u1e24\u0101rith, Ab\u016b Is\u1e25\u0101q al-Faz\u0101r\u012b, (\u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0628\u0646 \u0645\u062d\u0645\u062f \u0628\u0646 \u0627\u0644\u062d\u0627\u0631\u062b, \u0623\u0628\u0648 \u0625\u0633\u062d\u0627\u0642 \u0627\u0644\u0641\u0632\u0627\u0631\u064a) (d. ca. 804), an Islamic historian, traditionalist and jurist of Iraqi descent."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q20383561")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q20383561",
+  "isRealHuman": true,
+  "birthDate": "0726-05-12",
+  "deathDate": "0804-12-11",
+  "ageAtDeath": 78,
+  "confidence": 58,
+  "confidenceExplained": "The identity is very likely correct: Q20383561 corresponds to Abu Ishaq al-Fazari, i.e. Ibrahim ibn Muhammad ibn al-Harith al-Fazari. The exact birth and death days are not preserved. A modern academic source states he was born in 108 AH and died in 188 AH; converting those Hijri year bounds gives roughly 726/727 CE to 803/804 CE. I use the broad Gregorian conversion and estimate 78 completed solar years at death. In traditional Hijri/lunar terms the age would be about 80 years, and classical sources also describe him as in his eighties or slightly beyond. Confidence is reduced because classical sources disagree on whether he died in 185, 186, or 188 AH.",
+  "shortDescriptionEn": "Abu Ishaq al-Fazari, born Ibrahim ibn Muhammad ibn al-Harith, was an influential early Islamic scholar from Kufa, remembered as a hadith transmitter, jurist, historian, and authority on siyar, the law and ethics of warfare and relations with non-Muslim powers. He studied under leading scholars, followed the legal tradition of al-Awza'i, and spent much of his later life at the frontier town of Mopsuestia. His death is usually placed in 188 AH, around 804 CE; no detailed cause of death is preserved, but biographical notices suggest he died after a long scholarly career, probably in his late seventies by solar reckoning.",
+  "shortDescriptionFr": "Abu Ishaq al-Fazari, né Ibrahim ibn Muhammad ibn al-Harith, fut un savant musulman majeur des premiers siècles de l’islam, originaire de Kufa, connu comme transmetteur de hadiths, juriste, historien et spécialiste du siyar, le droit des relations de guerre et de frontière. Disciple de la tradition d’al-Awza'i, il s’établit à Mopsueste, sur la frontière byzantine, où il enseigna et forma de nombreux élèves. Sa mort est généralement située en 188 AH, vers 804 ; les sources ne donnent pas de cause précise, mais indiquent qu’il mourut après une longue carrière savante, probablement vers 78 ans en années solaires.",
+  "shortDescriptionDe": "Abu Ishaq al-Fazari, geboren als Ibrahim ibn Muhammad ibn al-Harith, war ein bedeutender frühislamischer Gelehrter aus Kufa, bekannt als Hadith-Überlieferer, Jurist, Historiker und Fachmann für siyar, also Fragen des Kriegs- und Grenzrechts. Er stand in der Tradition al-Awza'is und wirkte lange in Mopsuestia an der byzantinischen Grenze, wo er Schüler unterrichtete und als religiöse Autorität galt. Sein Tod wird meist auf 188 AH, etwa 804 n. Chr., datiert; eine genaue Todesursache ist nicht überliefert, doch starb er offenbar nach einem langen Gelehrtenleben, ungefähr im Alter von 78 Sonnenjahren.",
+  "shortDescriptionEs": "Abu Ishaq al-Fazari, nacido como Ibrahim ibn Muhammad ibn al-Harith, fue un destacado sabio islámico temprano de origen kufano, recordado como transmisor de hadices, jurista, historiador y autoridad en siyar, el derecho sobre la guerra y las relaciones fronterizas. Vinculado a la tradición jurídica de al-Awza'i, pasó buena parte de su vida en Mopsuestia, en la frontera con el Imperio bizantino, donde enseñó y atrajo discípulos. Su muerte suele fecharse en 188 AH, hacia 804; las fuentes no conservan una causa concreta, pero lo presentan muriendo tras una larga vida académica, probablemente con unos 78 años solares.",
+  "shortDescriptionRu": "Абу Исхак аль-Фазари, полное имя Ибрахим ибн Мухаммад ибн аль-Харис, был ранним исламским учёным из Куфы, известным как передатчик хадисов, правовед, историк и авторитет в области сийара — норм войны, границы и отношений с немусульманскими державами. Он следовал научной традиции аль-Аузаи и долго жил в Мопсуестии на византийском пограничье, где преподавал и пользовался большим уважением. Его смерть обычно датируют 188 годом хиджры, около 804 года; причина смерти не сохранилась, но источники показывают, что он умер после долгой учёной деятельности, примерно в 78 солнечных лет.",
+  "imageUrls": [
+    "https://commons.wikimedia.org/wiki/File:%D8%A3%D8%A8%D9%88_%D8%A5%D8%B3%D8%AD%D8%A7%D9%82_%D8%A7%D9%84%D9%81%D8%B2%D8%A7%D8%B1%D9%8A.png",
+    "https://upload.wikimedia.org/wikipedia/commons/c/ce/%D8%A3%D8%A8%D9%88_%D8%A5%D8%B3%D8%AD%D8%A7%D9%82_%D8%A7%D9%84%D9%81%D8%B2%D8%A7%D8%B1%D9%8A.png"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Abu_Ishaq_al-Fazari",
+    "https://jeh.uomosul.edu.iq/index.php/jeh/article/view/56013",
+    "https://catalog.perseus.org/catalog/urn:cite:perseus:author.1797",
+    "https://www.islamweb.net/ar/library/content/60/1442/%D8%A3%D8%A8%D9%88-%D8%A5%D8%B3%D8%AD%D8%A7%D9%82-%D8%A7%D9%84%D9%81%D8%B2%D8%A7%D8%B1%D9%8A",
+    "https://www.islamweb.net/ar/library/content/1001/241/%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D8%A8%D9%86-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%A7%D9%84%D8%AD%D8%A7%D8%B1%D8%AB-%D8%A8%D9%86-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A8%D9%86-%D8%AE%D8%A7%D8%B1%D8%AC%D8%A9-%D8%A8%D9%86-%D8%AD%D8%B5%D9%86",
+    "https://commons.wikimedia.org/wiki/File:%D8%A3%D8%A8%D9%88_%D8%A5%D8%B3%D8%AD%D8%A7%D9%82_%D8%A7%D9%84%D9%81%D8%B2%D8%A7%D8%B1%D9%8A.png",
+    "https://www.wikidata.org/wiki/Q20383561"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3119838",  "Name": "Guillaume Farinier",  "BirthDate": "1356-12-23T00:00:00Z",  "DeathDate": "1361-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Guillaume%20Farinier%2C%2002%20%28cropped%29.jpg",  "SiteLinksCnt": 8,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"14279134":{"pageid":14279134,"ns":0,"title":"Guillaume Farinier","extract":"Guillaume Farinier (died 1361) was a French Franciscan from Aquitaine. He became Minister General of the Order of Friars Minor in 1348.\nHe taught theology at the University of Toulouse. He was made Cardinal in 1356."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3119838")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q3119838",
+  "isRealHuman": true,
+  "birthDate": "1300-01-01",
+  "deathDate": "1361-06-17",
+  "ageAtDeath": 61,
+  "confidence": 42,
+  "confidenceExplained": "The death date, identity, career, and plague context are well supported. The birth date is not reliably recorded; the Wikidata date 1356-12-23 is almost certainly a mistaken reuse of the cardinal-creation date. I estimated 1300-01-01 because Farinier was already provincial minister of Aquitaine by 1342, a theology master in 1344, minister general in 1348, and cardinal in 1356. The calculated age of 61 is therefore a reasoned estimate, likely within a broad range rather than exact.",
+  "shortDescriptionEn": "Guillaume Farinier de Gourdon was a French Franciscan theologian from Gourdon, educated and active at Toulouse, who rose from provincial minister of Aquitaine to minister general of the Friars Minor in 1348 and cardinal-priest of Santi Marcellino e Pietro in 1356. He died in Avignon on 17 June 1361, probably aged about 61, during the severe plague outbreak that swept the papal court; he was buried in the Franciscan church there and his estate passed to the Apostolic Camera.",
+  "shortDescriptionFr": "Guillaume Farinier de Gourdon fut un théologien franciscain français, formé à Toulouse, provincial d’Aquitaine puis ministre général des Frères mineurs à partir de 1348, avant d’être créé cardinal-prêtre des Saints-Marcellin-et-Pierre en 1356. Il mourut à Avignon le 17 juin 1361, probablement vers 61 ans, pendant la forte poussée de peste qui frappa la cour pontificale; il fut enterré dans l’église franciscaine de la ville et ses biens revinrent à la Chambre apostolique.",
+  "shortDescriptionDe": "Guillaume Farinier de Gourdon war ein französischer franziskanischer Theologe, mit Studien und Lehrtätigkeit in Toulouse; er wurde Provinzial von Aquitanien, 1348 Generalminister der Minderbrüder und 1356 Kardinalpriester von Santi Marcellino e Pietro. Er starb am 17. Juni 1361 in Avignon, wahrscheinlich mit etwa 61 Jahren, während einer schweren Pestwelle am päpstlichen Hof; beigesetzt wurde er in der dortigen Franziskanerkirche, sein Nachlass fiel an die Apostolische Kammer.",
+  "shortDescriptionEs": "Guillaume Farinier de Gourdon fue un teólogo franciscano francés, formado y activo en Toulouse, que llegó a ser provincial de Aquitania, ministro general de los Frailes Menores en 1348 y cardenal presbítero de Santi Marcellino e Pietro en 1356. Murió en Aviñón el 17 de junio de 1361, probablemente con unos 61 años, durante la dura oleada de peste que afectó a la corte papal; fue sepultado en la iglesia franciscana local y sus bienes pasaron a la Cámara Apostólica.",
+  "shortDescriptionRu": "Гийом Фаринье де Гурдон был французским францисканским богословом, связанным с Тулузским университетом; он стал провинциалом Аквитании, в 1348 году — генеральным министром ордена меньших братьев, а в 1356 году — кардиналом-священником титула Санти-Марчеллино-э-Пьетро. Он умер в Авиньоне 17 июня 1361 года, вероятно примерно в 61 год, во время тяжелой вспышки чумы при папском дворе; его похоронили во францисканской церкви города, а имущество перешло Апостольской палате.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Guillaume%20Farinier%2C%2002%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Fabrizio%2C%20alfonso%20e%20francesco%20boschi%2C%20personalit%C3%A0%20francescane%2C%201642%2C%20guillaume%20farinier%2C%2001.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Chiostro%20di%20ognissanti%2C%20personalit%C3%A0%20francescane%2023%20Guillaume%20Farinier.JPG"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Guillaume_Farinier",
+    "https://pt.wikipedia.org/wiki/Guillaume_Farinier",
+    "https://fr.wikipedia.org/wiki/Guillaume_Farinier",
+    "https://www.catholic-hierarchy.org/bishop/bfarinier.html",
+    "https://gcatholic.org/hierarchy/data/cardI06-1",
+    "https://www.deutsche-biographie.de/104099135.html?language=en",
+    "https://it.cathopedia.org/wiki/Guillaume_Farinier",
+    "https://www.csun.edu/~hcfll004/SV1362.html",
+    "https://commons.wikimedia.org/wiki/Category:Guillaume_Farinier",
+    "https://commons.wikimedia.org/wiki/File:Guillaume_Farinier,_02_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Fabrizio,_alfonso_e_francesco_boschi,_personalit%C3%A0_francescane,_1642,_guillaume_farinier,_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Chiostro_di_ognissanti,_personalit%C3%A0_francescane_23_Guillaume_Farinier.JPG"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4894192",  "Name": "Bernhard IV, Prince of Anhalt-Bernburg",  "BirthDate": "1350-01-01T00:00:00Z",  "DeathDate": "1354-06-28T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Siegel%20Bernhard%20IV%20%28Anhalt%29%20-%20Secret.jpg",  "SiteLinksCnt": 8,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"18921627":{"pageid":18921627,"ns":0,"title":"Bernhard IV, Prince of Anhalt-Bernburg","extract":"Bernhard IV, Prince of Anhalt-Bernburg (died 28 June 1354) was a German prince of the House of Ascania and ruler of the principality of Anhalt-Bernburg.\nHe was the eldest son of Bernhard III, Prince of Anhalt-Bernburg, by his first wife Agnes, daughter of Rudolf I, Duke of Saxe-Wittenberg and Elector of Saxony."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4894192")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4894192",
+  "isRealHuman": true,
+  "birthDate": "1328-01-01",
+  "deathDate": "1354-06-28",
+  "ageAtDeath": 26,
+  "confidence": 60,
+  "confidenceExplained": "The death date, 28 June 1354, is well supported. The birth date is not exact: Wikidata gives only the 14th century, German Wikipedia says circa 1330, and genealogical-linked records point to 1328. I used 1328-01-01 as a practical estimate, giving age 26 at death. If he was born after 28 June 1328, the age would be 25, so the calculated age is plausible but not certain.",
+  "shortDescriptionEn": "Bernhard IV, Prince of Anhalt-Bernburg, was a German nobleman of the House of Ascania and ruler of Anhalt-Bernburg from 1348 to 1354. The eldest son of Bernhard III and Agnes of Saxe-Wittenberg, he inherited the principality as sole ruler and also used the style Margrave of Landsberg. He died young on 28 June 1354, probably about 26, shortly after a planned or possibly formal betrothal to Beatrix of Meissen. He left no children and was succeeded by his brother Henry IV.",
+  "shortDescriptionFr": "Bernard IV d’Anhalt-Bernbourg était un prince allemand de la maison d’Ascanie, souverain d’Anhalt-Bernbourg de 1348 à 1354. Fils aîné de Bernard III et d’Agnès de Saxe-Wittenberg, il hérita de la principauté comme seul prince régnant et porta aussi le titre de margrave de Landsberg. Il mourut jeune le 28 juin 1354, probablement vers 26 ans, peu après des fiançailles prévues ou juridiquement conclues avec Béatrice de Misnie. Sans descendance, il fut remplacé par son frère Henri IV.",
+  "shortDescriptionDe": "Bernhard IV. von Anhalt-Bernburg war ein deutscher Fürst aus dem Haus der Askanier und regierte Anhalt-Bernburg von 1348 bis 1354. Als ältester Sohn Bernhards III. und Agnes’ von Sachsen-Wittenberg übernahm er die Herrschaft allein und führte zudem den Titel eines Markgrafen von Landsberg. Er starb am 28. Juni 1354 in jungen Jahren, wahrscheinlich mit etwa 26 Jahren, kurz nach einer geplanten oder nur rechtlich vollzogenen Verbindung mit Beatrix von Meißen. Da er keine Nachkommen hinterließ, folgte ihm sein Bruder Heinrich IV.",
+  "shortDescriptionEs": "Bernhard IV, príncipe de Anhalt-Bernburg, fue un noble alemán de la Casa de Ascania y gobernó Anhalt-Bernburg entre 1348 y 1354. Era el hijo mayor de Bernhard III y de Inés de Sajonia-Wittenberg, heredó el principado como único gobernante y también usó el título de margrave de Landsberg. Murió joven el 28 de junio de 1354, probablemente a los 26 años, poco después de un compromiso previsto o quizá formal con Beatriz de Meissen. No dejó descendencia y fue sucedido por su hermano Enrique IV.",
+  "shortDescriptionRu": "Бернхард IV, князь Ангальт-Бернбурга, был немецким представителем дома Асканиев и правил Ангальт-Бернбургом с 1348 по 1354 год. Старший сын Бернхарда III и Агнессы Саксен-Виттенбергской, он унаследовал княжество как единоличный правитель и также пользовался титулом маркграфа Ландсберга. Он умер молодым 28 июня 1354 года, вероятно примерно в 26 лет, вскоре после планируемой или формально заключённой помолвки с Беатрисой Мейсенской. Детей он не оставил, и власть перешла к его брату Генриху IV.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bernhard_IV,_Prince_of_Anhalt-Bernburg",
+    "https://de.wikipedia.org/wiki/Bernhard_IV._(Anhalt)",
+    "https://fr.wikipedia.org/wiki/Bernard_IV_d%27Anhalt-Bernbourg",
+    "https://www.wikidata.org/wiki/Q4894192",
+    "https://commons.wikimedia.org/wiki/File:Siegel_Bernhard_IV_(Anhalt)_-_Secret.jpg",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Siegel%20Bernhard%20IV%20%28Anhalt%29%20-%20Secret.jpg",
+    "https://www.geni.com/people/Bernhard-IV-Of-Anhalt-Bernburg-Prince/6000000006727838633",
+    "https://www.wikitree.com/wiki/Anhalt_Bernburg-8",
+    "https://stammler-genealogie.ch/getperson.php?personID=I41415&tree=StammlerBaum"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q583862",  "Name": "Crispina",  "BirthDate": "0300-01-01T00:00:00Z",  "DeathDate": "0304-12-06T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Meister%20von%20San%20Apollinare%20Nuovo%20in%20Ravenna%20002.jpg",  "SiteLinksCnt": 8,  "Age": 4}
+{"batchcomplete":"","query":{"pages":{"5549786":{"pageid":5549786,"ns":0,"title":"Crispina","extract":"Crispina (died 5 December, 304) was a virgin martyr of Africa who suffered during the Diocletian persecution. She was born at Thagora, a town in the Roman province of Numidia, located in Taoura, Algeria. (The Tabula Peutingeriana calls it Thacora) in North Africa.) She died by beheading at Theveste, in Numidia."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q583862")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q583862",
+  "isRealHuman": true,
+  "birthDate": "0270-01-01",
+  "deathDate": "0304-12-05",
+  "ageAtDeath": 34,
+  "confidence": 25,
+  "confidenceExplained": "Her exact birth date is not preserved. The death date of 5 December 304 is well attested, and contemporary or near-traditional accounts describe Crispina as a wealthy matron, wife, and mother of several children. That rules out the supplied age of 4. I estimated a birth around 270, making her 34 at death: old enough to have several children and social standing, but still within the broad 'third century' birth window. Confidence is low for the exact number, but high that she was an adult rather than a child.",
+  "shortDescriptionEn": "Saint Crispina of Thagora was a North African Christian martyr from a distinguished and wealthy family, remembered as a married woman and mother whose courage was praised by Augustine of Hippo. During the Diocletian persecution, she was tried before the proconsul Annius Anullinus at Theveste after refusing to sacrifice to the Roman gods. Humiliated, threatened, and unmoved even by her children’s tears, she was condemned and beheaded on 5 December 304.",
+  "shortDescriptionFr": "Sainte Crispine de Thagora était une martyre chrétienne d’Afrique du Nord, issue d’une famille distinguée et riche, connue comme épouse et mère et admirée plus tard par Augustin d’Hippone. Pendant la persécution de Dioclétien, elle fut jugée à Theveste devant le proconsul Annius Anullinus pour avoir refusé de sacrifier aux dieux romains. Humiliée, menacée et insensible même aux larmes de ses enfants, elle fut condamnée et décapitée le 5 décembre 304.",
+  "shortDescriptionDe": "Die heilige Crispina von Thagora war eine nordafrikanische christliche Märtyrerin aus vornehmer und wohlhabender Familie, überliefert als Ehefrau und Mutter und später von Augustinus von Hippo gerühmt. Während der diokletianischen Verfolgung wurde sie in Theveste vor den Prokonsul Annius Anullinus gebracht, weil sie das Opfer für die römischen Götter verweigerte. Trotz Demütigung, Drohungen und der Tränen ihrer Kinder blieb sie standhaft; sie wurde verurteilt und am 5. Dezember 304 enthauptet.",
+  "shortDescriptionEs": "Santa Crispina de Thagora fue una mártir cristiana del norte de África, perteneciente a una familia distinguida y rica, recordada como esposa y madre y elogiada después por Agustín de Hipona. Durante la persecución de Diocleciano, fue juzgada en Theveste ante el procónsul Annius Anullinus por negarse a sacrificar a los dioses romanos. Humillada, amenazada y sin ceder ni ante las lágrimas de sus hijos, fue condenada y decapitada el 5 de diciembre de 304.",
+  "shortDescriptionRu": "Святая Криспина из Фагоры была североафриканской христианской мученицей из знатной и богатой семьи; предание помнит её как жену и мать, а Августин Гиппонский позднее ставил её в пример верующим. Во время гонений Диоклетиана её судили в Тевесте перед проконсулом Аннием Ануллином за отказ принести жертву римским богам. После унижения, угроз и даже слёз её детей она не отреклась от веры, была приговорена и обезглавлена 5 декабря 304 года.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Crispina",
+    "https://www.newadvent.org/cathen/04490b.htm",
+    "https://faith.nd.edu/saint/st-crispina/",
+    "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/crispina-crispin-and-crispinian-ss",
+    "https://www.johnsanidopoulos.com/2017/12/holy-martyr-crispina-304.html",
+    "https://commons.wikimedia.org/wiki/File:Meister_von_San_Apollinare_Nuovo_in_Ravenna_002.jpg"
+  ]
+}

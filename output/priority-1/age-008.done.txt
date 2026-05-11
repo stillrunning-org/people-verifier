@@ -1,0 +1,1053 @@
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1767909",  "Name": "Sparkie Williams",  "BirthDate": "1954-01-01T00:00:00Z",  "DeathDate": "1962-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sarkiethebudgie.jpg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"22134987":{"pageid":22134987,"ns":0,"title":"Sparkie Williams","extract":"Sparkie Williams (1954\u20131962) was a talking budgie who had a repertoire of more than 500 words and eight nursery rhymes, becoming a national celebrity in the United Kingdom after fronting an advertising campaign for Capern's bird seed, and making a record which sold 20,000 copies. After he died, he was stuffed and put on show at Newcastle's Hancock Museum. Sparkie provided the inspiration for an opera by Michael Nyman and Carsten Nicolai. The opera was performed in Berlin in March 2009."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1767909")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1767909",
+  "isRealHuman": false,
+  "birthDate": "1954-01-01",
+  "deathDate": "1962-12-04",
+  "ageAtDeath": 8,
+  "confidence": 65,
+  "confidenceExplained": "Sparkie Williams is well documented as a budgerigar, not a human. The death date is given precisely as 4 December 1962, but the hatch date is only known as 1954. Using 1954-01-01 as the required estimated birth date gives age 8 at death; however, if Sparkie hatched after 4 December 1954, the age would have been 7, so confidence in the exact integer age is moderate.",
+  "shortDescriptionEn": "Sparkie Williams was a celebrated talking budgerigar from North East England, owned and trained by Mattie Williams. Famous for a vocabulary of more than 500 words, nursery rhymes, a BBC talking-bird contest win, advertising work for Capern's bird seed, and a record that sold about 20,000 copies, he became one of Britain's best-known animal celebrities. He died in Forest Hall on 4 December 1962; afterward, Mattie Williams had him preserved and mounted, and his remains later became part of the Great North Museum: Hancock collection.",
+  "shortDescriptionFr": "Sparkie Williams était une perruche ondulée parlante célèbre du nord-est de l'Angleterre, élevée et entraînée par Mattie Williams. Connue pour un vocabulaire de plus de 500 mots, des comptines, une victoire à un concours de la BBC, des publicités pour les graines Capern et un disque vendu à environ 20 000 exemplaires, elle devint l'un des animaux les plus célèbres de Grande-Bretagne. Sparkie mourut à Forest Hall le 4 décembre 1962; après sa mort, Mattie Williams le fit naturaliser et monter sur un perchoir, avant que sa dépouille rejoigne plus tard les collections du Great North Museum: Hancock.",
+  "shortDescriptionDe": "Sparkie Williams war ein berühmter sprechender Wellensittich aus Nordostengland, der Mattie Williams gehörte und von ihr trainiert wurde. Mit einem Wortschatz von mehr als 500 Wörtern, Kinderreimen, einem Sieg bei einem BBC-Wettbewerb für sprechende Vögel, Werbung für Capern's Vogelfutter und einer Schallplatte mit rund 20.000 verkauften Exemplaren wurde er zu einem der bekanntesten tierischen Stars Großbritanniens. Er starb am 4. Dezember 1962 in Forest Hall; danach ließ Mattie Williams ihn präparieren und auf einer Sitzstange montieren, später kam er in die Sammlung des Great North Museum: Hancock.",
+  "shortDescriptionEs": "Sparkie Williams fue un célebre periquito parlante del nordeste de Inglaterra, propiedad de Mattie Williams, quien lo entrenó. Famoso por un vocabulario de más de 500 palabras, varias canciones infantiles, una victoria en un concurso de aves parlantes de la BBC, anuncios para las semillas Capern y un disco que vendió unas 20.000 copias, se convirtió en una de las celebridades animales más conocidas de Gran Bretaña. Murió en Forest Hall el 4 de diciembre de 1962; después, Mattie Williams lo hizo disecar y montar en una percha, y sus restos pasaron más tarde a la colección del Great North Museum: Hancock.",
+  "shortDescriptionRu": "Спарки Уильямс был знаменитым говорящим волнистым попугайчиком из Северо-Восточной Англии, принадлежавшим Мэтти Уильямс, которая обучала его речи. Он прославился словарным запасом более чем в 500 слов, детскими стишками, победой в конкурсе говорящих птиц BBC, рекламой корма Capern's и пластинкой, разошедшейся тиражом около 20 000 экземпляров, став одной из самых известных животных знаменитостей Британии. Он умер в Форест-Холле 4 декабря 1962 года; после смерти Мэтти Уильямс заказала его чучело на жердочке, а позднее оно вошло в коллекцию Great North Museum: Hancock.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sparkie_Williams",
+    "https://www.wikidata.org/wiki/Q1767909",
+    "https://www.nhsn.org.uk/product/i-sparkie/",
+    "https://museumcrush.org/sparky-the-talking-budgie-speaks-again/",
+    "https://www.theguardian.com/theguardian/2002/apr/06/weekend7.weekend6"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q3072210",  "Name": "Fujiwara no Kiyotada",  "BirthDate": "0950-01-01T00:00:00Z",  "DeathDate": "0958-07-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Sanj%C5%ABrokkasen-gaku%20-%2019%20-%20Kan%C5%8D%20Naonobu%20-%20Fujiwara%20no%20Kiyotada.jpg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"9866279":{"pageid":9866279,"ns":0,"title":"Fujiwara no Kiyotada","extract":"Fujiwara no Kiyotada (\u85e4\u539f \u6e05\u6b63; died July 958) was a Japanese poet, in particular one of the Thirty-six Poetry Immortals. He was the second son of Fujiwara no Kanesuke, also one of the Thirty-six Poetry Immortals. Though his mother's name was not recorded, the Gosen Wakash\u016b, an anthology of Japanese poems, mentions the name \"Mother of Kiyotada\" (\u6e05\u6b63\u6bcd). His elder brother was Masatada."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q3072210")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q3072210",
+  "isRealHuman": true,
+  "birthDate": "0910-01-01",
+  "deathDate": "0958-07-01",
+  "ageAtDeath": 48,
+  "confidence": 35,
+  "confidenceExplained": "The death month and year are well supported as July 958, but the birth date is not recorded. The provided 950 birth year is impossible because Fujiwara no Kiyotada held adult court rank and provincial offices from 930 onward. I estimate a birth around 910, making him about 20 at his first known rank and 48 at death. The exact age could plausibly differ by several years.",
+  "shortDescriptionEn": "Fujiwara no Kiyotada was a mid-Heian Japanese nobleman and waka poet, remembered as one of the Thirty-six Poetry Immortals and as the second son of the poet Fujiwara no Kanesuke. He served in court and provincial offices, including posts connected with Kii, Bizen, Bingo, and the imperial guard, and his poems entered major imperial anthologies. He died in July 958, apparently while still part of the courtly literary world; no specific illness or violent cause is recorded, so his death is best described as an undocumented death in mid-career.",
+  "shortDescriptionFr": "Fujiwara no Kiyotada était un noble japonais du milieu de l’époque de Heian et un poète de waka, connu comme l’un des Trente-six Immortels de la poésie et comme le second fils du poète Fujiwara no Kanesuke. Il occupa des fonctions de cour et des charges provinciales liées notamment à Kii, Bizen, Bingo et à la garde impériale, tandis que ses poèmes furent intégrés à des anthologies impériales. Il mourut en juillet 958, semble-t-il alors qu’il appartenait encore au milieu littéraire de la cour; aucune maladie ni cause violente n’étant connue, sa mort reste mal documentée.",
+  "shortDescriptionDe": "Fujiwara no Kiyotada war ein japanischer Adeliger und Waka-Dichter der mittleren Heian-Zeit, bekannt als einer der Sechsunddreißig Unsterblichen der Dichtung und als zweiter Sohn des Dichters Fujiwara no Kanesuke. Er diente am Hof und in Provinzämtern, unter anderem in Verbindung mit Kii, Bizen, Bingo und der kaiserlichen Garde; seine Gedichte wurden in wichtige kaiserliche Anthologien aufgenommen. Er starb im Juli 958, offenbar noch als aktiver Angehöriger der höfischen Literaturszene. Eine konkrete Krankheit oder gewaltsame Todesursache ist nicht überliefert, daher bleibt sein Tod nur allgemein belegt.",
+  "shortDescriptionEs": "Fujiwara no Kiyotada fue un noble japonés y poeta waka del periodo Heian medio, recordado como uno de los Treinta y seis Inmortales de la Poesía y como segundo hijo del poeta Fujiwara no Kanesuke. Ocupó cargos cortesanos y provinciales relacionados con Kii, Bizen, Bingo y la guardia imperial, y sus poemas fueron incluidos en antologías imperiales. Murió en julio de 958, al parecer todavía vinculado al mundo literario de la corte; no se conserva una causa concreta, enfermedad ni muerte violenta, por lo que su fallecimiento debe describirse como poco documentado.",
+  "shortDescriptionRu": "Фудзивара-но Киётада был японским аристократом и поэтом вака среднего периода Хэйан, известным как один из «тридцати шести бессмертных поэтов» и как второй сын поэта Фудзивары-но Канэсукэ. Он занимал придворные и провинциальные должности, связанные с Ки, Бидзэн, Бинго и императорской стражей; его стихи вошли в императорские антологии. Он умер в июле 958 года, вероятно оставаясь частью придворной литературной среды; конкретная болезнь или насильственная причина смерти не зафиксированы, поэтому обстоятельства его смерти остаются неизвестными.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fujiwara_no_Kiyotada",
+    "https://www.wikidata.org/wiki/Q3072210",
+    "https://kotobank.jp/word/%E8%97%A4%E5%8E%9F%E6%B8%85%E6%AD%A3-1105888",
+    "https://zh.wikipedia.org/zh-cn/%E8%97%A4%E5%8E%9F%E6%B8%85%E6%AD%A3",
+    "https://sugajinjya.or.jp/news/36-26/",
+    "https://www.metmuseum.org/art/collection/search/60443",
+    "https://commons.wikimedia.org/wiki/Category:Fujiwara_no_Kiyotada"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q56733510",  "Name": "Nicolau I of Kongo",  "BirthDate": "1750-01-01T00:00:00Z",  "DeathDate": "1758-08-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Dom%20Nicolas%20I%20Kongo.jpg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"58347491":{"pageid":58347491,"ns":0,"title":"Nicolau I of Kongo","extract":"Nicolau I Misaki mia Nimi was the ruler of the Kingdom of Kongo as a member of the House of Kimpanzu from 1752 until sometime after 1758, during the rotating houses period established by Pedro IV."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q56733510")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q56733510",
+  "isRealHuman": true,
+  "birthDate": "1830-01-01",
+  "deathDate": "1860-02-13",
+  "ageAtDeath": 30,
+  "confidence": 48,
+  "confidenceExplained": "The person behind the portrait is best identified as Dom Nicolau de Água Rosada e Sardonia, also known as Prince Nicolas of Kongo, not the 18th-century ruler described by the Wikidata label. Multiple sources give his lifespan as circa 1830 to 1860 or say he was born around 1830 and assassinated in February 1860 at Kissembo. His exact birth day and death day are not documented; using 1830-01-01 and the best contextual death estimate of 1860-02-13 gives an age at death of 30. A plausible range is roughly 29 to 35, but 30 is the best single-number estimate.",
+  "shortDescriptionEn": "Dom Nicolau de Água Rosada e Sardonia, often called Prince Nicolas of Kongo, was a 19th-century Kongo prince and son of King Henrique II. Educated partly in Portugal, he became one of the earliest African royal figures to challenge Portuguese political and military influence in writing. His public protest in a Lisbon newspaper made him a symbol of literate anti-colonial resistance. In February 1860, while trying to leave Angola after the controversy, he was attacked at Kissembo and killed in obscure, violent circumstances at about age 30.",
+  "shortDescriptionFr": "Dom Nicolau de Água Rosada e Sardonia, souvent appelé le prince Nicolas du Kongo, était un prince kongo du XIXe siècle et fils du roi Henri II. Formé en partie au Portugal, il fut l’une des premières figures royales africaines à contester par écrit l’influence politique et militaire portugaise. Sa protestation publiée dans un journal de Lisbonne en fit un symbole précoce de résistance anticoloniale lettrée. En février 1860, alors qu’il tentait de quitter l’Angola après la polémique, il fut attaqué à Kissembo et tué dans des circonstances violentes et obscures, vers l’âge de 30 ans.",
+  "shortDescriptionDe": "Dom Nicolau de Água Rosada e Sardonia, häufig Prinz Nicolas von Kongo genannt, war ein Kongo-Prinz des 19. Jahrhunderts und Sohn von König Henrique II. Er wurde teilweise in Portugal ausgebildet und gehörte zu den frühesten afrikanischen königlichen Stimmen, die den politischen und militärischen Einfluss Portugals schriftlich angriffen. Sein Protestbrief in einer Lissabonner Zeitung machte ihn zu einem frühen Symbol gebildeten antikolonialen Widerstands. Im Februar 1860 wurde er bei Kissembo angegriffen und unter ungeklärten, gewaltsamen Umständen getötet, als er nach dem Skandal Angola verlassen wollte; er war etwa 30 Jahre alt.",
+  "shortDescriptionEs": "Dom Nicolau de Água Rosada e Sardonia, conocido también como el príncipe Nicolás de Kongo, fue un príncipe kongo del siglo XIX e hijo del rey Henrique II. Educado en parte en Portugal, se convirtió en una de las primeras figuras reales africanas en denunciar por escrito la influencia política y militar portuguesa. Su protesta publicada en un periódico de Lisboa lo convirtió en un símbolo temprano de resistencia anticolonial letrada. En febrero de 1860, mientras intentaba salir de Angola tras la controversia, fue atacado en Kissembo y murió en circunstancias violentas y poco claras, con unos 30 años.",
+  "shortDescriptionRu": "Дом Николау де Агуа Розада э Сардония, известный также как принц Николау Конголезский, был конголезским принцем XIX века и сыном короля Энрике II. Получив часть образования в Португалии, он стал одной из первых африканских королевских фигур, публично выступивших в письменной форме против португальского политического и военного влияния. Его протест, опубликованный в лиссабонской газете, сделал его ранним символом образованного антиколониального сопротивления. В феврале 1860 года, пытаясь покинуть Анголу после скандала, он был атакован в Киссембо и погиб при неясных насильственных обстоятельствах примерно в 30 лет.",
+  "sources": [
+    "https://fr.wikipedia.org/wiki/Henri_III_du_Kongo",
+    "https://en.wikipedia.org/wiki/Nicolau_I_of_Kongo",
+    "https://www.jstor.org/stable/216190",
+    "https://www.theguardian.com/artanddesign/gallery/2015/jul/11/omar-victor-diops-project-diaspora-in-pictures",
+    "https://autograph.org.uk/content/images/editorfiles/384747549-hand-out-omar-victor-diop-final.pdf",
+    "https://whc.unesco.org/en/documents/158858",
+    "https://face2faceafrica.com/article/prince-nicolau-the-first-african-to-protest-against-colonization-through-an-article-that-got-him-killed-by-his-people",
+    "https://kwekudee-tripdownmemorylane.blogspot.com/2012/10/prince-dom-nicolau-of-kongoone-of.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q572846",  "Name": "Erlendur av Færøyene",  "BirthDate": "1300-01-01T00:00:00Z",  "DeathDate": "1308-06-13T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bishop%20Erlend%20Nidaros%20Cathedral%20%28cropped%29.jpg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"348643":{"pageid":348643,"ns":0,"title":"Erlendur p\u00fcsp\u00f6k","extract":"Fer\u00f6eri Erlendur (norv\u00e9gul: Erlend, Bergen, ? \u2013 ugyanott, 1308. j\u00fanius 13.) Fer\u00f6er 14. \u00e9s legh\u00edresebb p\u00fcsp\u00f6ke 1269-t\u0151l 1308-ig. Sz\u00e9khelye Kirkjub\u00f8urban, Streymoy sziget\u00e9n volt."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q572846")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q572846",
+  "isRealHuman": true,
+  "birthDate": "1238-01-01",
+  "deathDate": "1308-06-13",
+  "ageAtDeath": 70,
+  "confidence": 45,
+  "confidenceExplained": "The death date, office, identity, and broad 13th-century birth are well supported, but no reliable source gives an exact birth date. The age 70 is an informed estimate: Erlend was already a Bergen canon and cathedral-school rector before being made bishop in 1268/1269, and medieval canonical expectations for bishops point to an age of at least about 30 at consecration. I therefore estimate a birth around 1238, yielding age 70 at death on 1308-06-13.",
+  "shortDescriptionEn": "Erlend, also known as Erlendur of the Faroe Islands, was a Norwegian Catholic bishop who led the Faroese see at Kirkjubøur from 1269 to 1308. A former canon and cathedral-school rector in Bergen, he strengthened church property, is associated with the Sheep Letter of 1298, and began the ambitious Magnus Cathedral at Kirkjubøur. The project’s cost and his demands on the population helped fuel opposition and rebellion. He was forced back toward Norway and died in Bergen on 13 June 1308, later being buried and venerated in Kirkjubøur.",
+  "shortDescriptionFr": "Erlend, aussi appelé Erlendur des îles Féroé, fut un évêque catholique norvégien à la tête du diocèse féroïen de Kirkjubøur de 1269 à 1308. Ancien chanoine et recteur de l’école cathédrale de Bergen, il renforça les biens de l’Église, est associé à la Lettre des moutons de 1298 et lança la construction de l’ambitieuse cathédrale Magnus à Kirkjubøur. Le coût du chantier et ses exigences envers la population provoquèrent une forte opposition. Contraint de retourner vers la Norvège, il mourut à Bergen le 13 juin 1308, avant d’être enterré et honoré à Kirkjubøur.",
+  "shortDescriptionDe": "Erlend, auch Erlendur von den Färöern genannt, war ein norwegischer katholischer Bischof und leitete den färöischen Bischofssitz Kirkjubøur von 1269 bis 1308. Zuvor war er Kanoniker und Leiter der Kathedralschule in Bergen. Er vergrößerte den Kirchenbesitz, wird mit dem Schafbrief von 1298 verbunden und begann den Bau der ehrgeizigen Magnuskathedrale in Kirkjubøur. Die Kosten des Bauprojekts und seine Forderungen an die Bevölkerung führten zu Widerstand und Aufruhr. Nach seiner Rückkehr nach Norwegen starb er am 13. Juni 1308 in Bergen und wurde später in Kirkjubøur bestattet und verehrt.",
+  "shortDescriptionEs": "Erlend, también conocido como Erlendur de las Islas Feroe, fue un obispo católico noruego que dirigió la sede feroesa de Kirkjubøur entre 1269 y 1308. Antes había sido canónigo y rector de la escuela catedralicia de Bergen. Reforzó las propiedades de la Iglesia, se le vincula con la Carta de las Ovejas de 1298 y comenzó la ambiciosa catedral de Magnus en Kirkjubøur. El coste de esa obra y sus exigencias a la población provocaron oposición y rebelión. Obligado a regresar hacia Noruega, murió en Bergen el 13 de junio de 1308 y fue enterrado y venerado en Kirkjubøur.",
+  "shortDescriptionRu": "Эрленд, также известный как Эрлендур с Фарерских островов, был норвежским католическим епископом, возглавлявшим фарерскую кафедру в Киркьюбёуре с 1269 по 1308 год. До этого он был каноником и ректором кафедральной школы в Бергене. Он усилил церковные владения, связан с «Овечьей грамотой» 1298 года и начал строительство амбициозного собора Магнуса в Киркьюбёуре. Расходы на строительство и его требования к населению вызвали сопротивление и мятеж. После вынужденного возвращения в Норвегию он умер в Бергене 13 июня 1308 года и позднее был похоронен и почитался в Киркьюбёуре.",
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Bishop%20Erlend%20Nidaros%20Cathedral%20%28cropped%29.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Bishop%20Erlend%20Nidaros%20Cathedral.jpg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Domkirka%20statuer%2038.jpg"
+  ],
+  "sources": [
+    "https://no.wikipedia.org/wiki/Erlend_av_F%C3%A6r%C3%B8yene",
+    "https://fo.wikipedia.org/wiki/Erlendur",
+    "https://snl.no/Erlend_-_norsk_geistlig",
+    "https://www.wikidata.org/wiki/Q572846",
+    "https://commons.wikimedia.org/wiki/Category:Erlendur_av_F%C3%A6r%C3%B8yene",
+    "https://commons.wikimedia.org/wiki/File:Bishop_Erlend_Nidaros_Cathedral_(cropped).jpg",
+    "https://commons.wikimedia.org/wiki/File:Bishop_Erlend_Nidaros_Cathedral.jpg",
+    "https://vestfronten.no/statue/st-erlend",
+    "https://bishopscareersblog.wordpress.com/2017/02/16/erlendr-bishop-of-kirkjbour-1269-1308/",
+    "https://www.ssns.org.uk/wp-content/uploads/2019/09/Keillar_1983_Vol_20_pp_38_44.pdf"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q641561",  "Name": "Red Dog",  "BirthDate": "1971-01-01T00:00:00Z",  "DeathDate": "1979-11-21T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Red%20Dog%20Statue%20Front%20View.jpg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"16796662":{"pageid":16796662,"ns":0,"title":"Red Dog (Pilbara)","extract":"Red Dog (c. 1971 \u2013 21 November 1979) was a kelpie/cattle dog cross that was well known for his travels through Western Australia's vast Pilbara region. Red Dog had a series of owners and lengthy periods travelling on his own, essentially becoming a beloved friend and mascot of the greater Pilbara community. A statue was installed in his memory in Dampier, one of the towns to which he often returned. He is frequently referred to as a \"red kelpie\" or a \"red cloud kelpie\"."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q641561")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q641561",
+  "isRealHuman": false,
+  "birthDate": "1971-01-01",
+  "deathDate": "1979-11-21",
+  "ageAtDeath": 8,
+  "confidence": 75,
+  "confidenceExplained": "The death date is well attested as 1979-11-21, but the birth date is only given as circa 1971. I used 1971-01-01 as a practical estimate, which makes the calculated age at death 8. If Red Dog was actually born after 21 November 1971, the age would have been 7, so the age is a best-effort estimate rather than a verified exact number.",
+  "shortDescriptionEn": "Red Dog was a famous kelpie/cattle-dog cross who became a wandering mascot of Western Australia’s Pilbara region in the 1970s, hitching rides, visiting mining towns, and winning the affection of workers and locals. Known as the Pilbara Wanderer, he inspired books, a film, and memorial statues. He died in Karratha on 21 November 1979 after strychnine poisoning, probably from poisoned bait, and was buried in a secret or unmarked location.",
+  "shortDescriptionFr": "Red Dog était un célèbre croisement kelpie/bouvier australien devenu la mascotte errante de la région de Pilbara, en Australie-Occidentale, dans les années 1970. Il voyageait en stop, passait de ville minière en ville minière et s’attira l’affection des habitants et des travailleurs. Surnommé le Pilbara Wanderer, il inspira des livres, un film et des statues commémoratives. Il mourut à Karratha le 21 novembre 1979 après un empoisonnement à la strychnine, probablement lié à un appât empoisonné, puis fut enterré dans un lieu secret ou non marqué.",
+  "shortDescriptionDe": "Red Dog war ein berühmter Kelpie-/Cattle-Dog-Mischling, der in den 1970er Jahren zur wandernden Kultfigur der Pilbara-Region in Western Australia wurde. Er trampte durch Bergbaustädte, fuhr bei Arbeitern mit und wurde von vielen Einheimischen als Maskottchen geliebt. Als Pilbara Wanderer inspirierte er Bücher, einen Film und Denkmäler. Er starb am 21. November 1979 in Karratha nach einer Strychninvergiftung, vermutlich durch vergifteten Köder, und wurde an einem geheimen oder unmarkierten Ort begraben.",
+  "shortDescriptionEs": "Red Dog fue un famoso cruce de kelpie y perro boyero australiano que se convirtió en la mascota errante de la región de Pilbara, en Australia Occidental, durante la década de 1970. Viajaba haciendo autostop, recorría pueblos mineros y se ganó el cariño de trabajadores y vecinos. Conocido como el Pilbara Wanderer, inspiró libros, una película y estatuas conmemorativas. Murió en Karratha el 21 de noviembre de 1979 tras una intoxicación por estricnina, probablemente causada por un cebo envenenado, y fue enterrado en un lugar secreto o sin marcar.",
+  "shortDescriptionRu": "Рыжий Пёс, или Red Dog, был знаменитой помесью келпи и австралийской пастушьей собаки, ставшей в 1970-е годы странствующим символом региона Пилбара в Западной Австралии. Он путешествовал автостопом, появлялся в шахтёрских городках и был любим рабочими и местными жителями. Известный как Pilbara Wanderer, он вдохновил книги, фильм и памятники. Он умер в Каррате 21 ноября 1979 года после отравления стрихнином, вероятно из-за ядовитой приманки, и был похоронен в тайном или безымянном месте.",
+  "pictures": [
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Red%20Dog%20Statue%20Front%20View.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Red_Dog_(Pilbara)",
+    "https://explorekarratha.com/tour-item/red-dog-memorial-statue/"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Red_Dog_(Pilbara)",
+    "https://trove.nla.gov.au/newspaper/article/214548315",
+    "https://www.monumentaustralia.org/themes/culture/animals/display/60364-red-dog/photo/1",
+    "https://www.abc.net.au/news/2022-06-19/pilbara-stalwart-remembers-friend-red-dog/101164380",
+    "https://commons.wikimedia.org/wiki/Category:Red_Dog_(Pilbara)",
+    "https://www.findagrave.com/memorial/86738290/red-dog"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q96479",  "Name": "Philip Louis III, Count of Hanau-Münzenberg",  "BirthDate": "1632-11-26T00:00:00Z",  "DeathDate": "1641-11-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Wappen%20Hanau.svg",  "SiteLinksCnt": 7,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"34954228":{"pageid":34954228,"ns":0,"title":"Philipp Ludwig III, Count of Hanau-M\u00fcnzenberg","extract":"Count Philipp Ludwig III of Hanau-M\u00fcnzenberg (26 November [O.S. 16 November] 1632 in Hanau \u2013 12 November 1641 in The Hague) was the last count of the main Hanau-M\u00fcnzenberg line of the House of Hanau.  After his death, the Hanau-M\u00fcnzenberg-Schwarzenfels line inherited Hanau-M\u00fcnzenberg."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q96479")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q96479",
+  "isRealHuman": true,
+  "birthDate": "1632-11-26",
+  "deathDate": "1641-11-12",
+  "ageAtDeath": 8,
+  "confidence": 98,
+  "confidenceExplained": "The age is highly confident: using the Gregorian dates 1632-11-26 and 1641-11-12, Philipp Ludwig III died 14 days before his ninth birthday, so his age at death was 8. Some sources present old-style/new-style calendar variants for the birth date, and one Hessian biographical entry gives the death as 12/22 November 1641, but all plausible interpretations still give age 8.",
+  "shortDescriptionEn": "Philipp Ludwig III, Count of Hanau-Münzenberg, was the child ruler of a German county during the Thirty Years’ War. Son of Philipp Moritz and Sibylle Christine of Anhalt-Dessau, he inherited Hanau-Münzenberg at about five years old after his father’s death. Much of his short life was shaped by wartime displacement and family refuge in the Netherlands. He died in The Hague on 12 November 1641, aged 8, reportedly of rubella or German measles. His death ended the main Hanau-Münzenberg line and shifted the inheritance to a collateral branch.",
+  "shortDescriptionFr": "Philippe-Louis III, comte de Hanau-Münzenberg, fut le jeune souverain d’un comté allemand pendant la guerre de Trente Ans. Fils de Philippe-Maurice et de Sibylle-Christine d’Anhalt-Dessau, il hérita de Hanau-Münzenberg vers l’âge de cinq ans après la mort de son père. Sa brève existence fut marquée par les déplacements liés à la guerre et par le refuge familial aux Pays-Bas. Il mourut à La Haye le 12 novembre 1641, à l’âge de 8 ans, probablement de la rubéole. Sa mort mit fin à la lignée principale de Hanau-Münzenberg et transmit l’héritage à une branche collatérale.",
+  "shortDescriptionDe": "Philipp Ludwig III., Graf von Hanau-Münzenberg, war ein minderjähriger Landesherr in der Zeit des Dreißigjährigen Krieges. Als Sohn von Philipp Moritz und Sibylle Christine von Anhalt-Dessau erbte er die Grafschaft bereits mit etwa fünf Jahren nach dem Tod seines Vaters. Sein kurzes Leben war von Flucht, dynastischer Unsicherheit und dem Aufenthalt bei oranisch-nassauischen Verwandten in den Niederlanden geprägt. Er starb am 12. November 1641 in Den Haag im Alter von 8 Jahren an Röteln. Mit seinem Tod erlosch die Hauptlinie Hanau-Münzenberg, und die Nachfolge ging an eine Seitenlinie.",
+  "shortDescriptionEs": "Felipe Luis III, conde de Hanau-Münzenberg, fue un gobernante infantil de un condado alemán durante la guerra de los Treinta Años. Hijo de Felipe Mauricio y Sibila Cristina de Anhalt-Dessau, heredó Hanau-Münzenberg con unos cinco años tras la muerte de su padre. Su corta vida estuvo marcada por el desplazamiento provocado por la guerra y por el refugio familiar en los Países Bajos. Murió en La Haya el 12 de noviembre de 1641, a los 8 años, al parecer de rubéola. Su muerte extinguió la línea principal de Hanau-Münzenberg y trasladó la herencia a una rama colateral.",
+  "shortDescriptionRu": "Филипп Людвиг III, граф Ганау-Мюнценберга, был малолетним правителем немецкого графства во время Тридцатилетней войны. Сын Филиппа Морица и Сибиллы Кристины Ангальт-Дессауской, он унаследовал Ганау-Мюнценберг примерно в пять лет после смерти отца. Его короткая жизнь прошла на фоне войны, бегства семьи и пребывания у оранско-нассауских родственников в Нидерландах. Он умер в Гааге 12 ноября 1641 года в возрасте 8 лет, по сообщениям источников, от краснухи. Его смерть оборвала главную линию Ганау-Мюнценберг, и наследование перешло к боковой ветви.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Philipp_Ludwig_III,_Count_of_Hanau-M%C3%BCnzenberg",
+    "https://www.wikidata.org/wiki/Q96479",
+    "https://de.wikipedia.org/wiki/Philipp_Ludwig_III._(Hanau-M%C3%BCnzenberg)",
+    "https://www.deutsche-biographie.de/142409987.html",
+    "https://lagis.hessen.de/de/personen/hessische-biografie/alle-eintraege/4323_hanau-muenzenberg-philipp-moritz-graf-von",
+    "https://commons.wikimedia.org/wiki/File:Wappen_Hanau.svg",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen%20Hanau.svg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q16139926",  "Name": "Chandrmondol",  "BirthDate": "1855-04-24T00:00:00Z",  "DeathDate": "1863-05-14T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Princess%20Chandornmondon.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"52968997":{"pageid":52968997,"ns":0,"title":"Chandrmondol","extract":"Chandrmondol Sobhon Bhagiawati, the Princess Wisutkrasat (Thai: \u0e08\u0e31\u0e19\u0e17\u0e23\u0e21\u0e13\u0e11\u0e25 \u0e42\u0e2a\u0e20\u0e13\u0e20\u0e04\u0e27\u0e14\u0e35; Thai pronunciation: [t\u0255\u0101n.t\u02b0\u0254\u02d0n.m\u014dn.t\u02b0\u014dn s\u01d2\u02d0.p\u02b0\u014dn.p\u02b0\u00e1(\u0294).k\u02b0\u00e1(\u0294).w\u00e1(\u0294).di\u02d0]; RTGS: Chanthonmonthon Sophonphakhawadi; 24 April 1855 \u2014 14 May 1863) also known as Princess Fa-ying or Somdetch Chow Fa-ying (Thai: \u0e2a\u0e21\u0e40\u0e14\u0e47\u0e08\u0e40\u0e08\u0e49\u0e32\u0e1f\u0e49\u0e32\u0e2b\u0e0d\u0e34\u0e07; RTGS: Somdet Chao Fa-ying \"Royal highness Princess\") was a Princess of Siam and daughter of King Mongkut and Queen Debsirindra."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q16139926")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q16139926",
+  "isRealHuman": true,
+  "birthDate": "1855-04-24",
+  "deathDate": "1863-05-14",
+  "ageAtDeath": 8,
+  "confidence": 95,
+  "confidenceExplained": "The age calculation is straightforward from the available dates: born 24 April 1855 and died 14 May 1863, which is 8 years and 20 days. Confidence is high because the English Wikipedia article and Wikidata agree on the dates, identity, royal family links, and cause of death. A small uncertainty remains because the biography relies partly on historical secondary references rather than a directly quoted civil record.",
+  "shortDescriptionEn": "Chandrmondol Sobhon Bhagiawati, later honored as Princess Wisutkrasat, was a Siamese princess of the Chakri dynasty and the only daughter of King Mongkut and Queen Debsirindra. Known affectionately as Princess Fa-ying, she grew up in Bangkok's Grand Palace and was among the royal children exposed to English-language and Western-style tutoring by Anna Leonowens. Her life was brief: she died at the Grand Palace on 14 May 1863, aged 8, during a cholera illness, and was later remembered with a posthumous royal title.",
+  "shortDescriptionFr": "Chandrmondol Sobhon Bhagiawati, honorée plus tard sous le titre de princesse Wisutkrasat, était une princesse siamoise de la dynastie Chakri et la seule fille du roi Mongkut et de la reine Debsirindra. Affectueusement appelée princesse Fa-ying, elle grandit au Grand Palais de Bangkok et reçut, comme d'autres enfants royaux, une éducation marquée par l'anglais et les usages occidentaux auprès d'Anna Leonowens. Sa vie fut très courte : elle mourut au Grand Palais le 14 mai 1863, à l'âge de 8 ans, des suites du choléra, avant de recevoir plus tard un titre royal posthume.",
+  "shortDescriptionDe": "Chandrmondol Sobhon Bhagiawati, später als Prinzessin Wisutkrasat geehrt, war eine siamesische Prinzessin der Chakri-Dynastie und die einzige Tochter von König Mongkut und Königin Debsirindra. Sie war auch als Prinzessin Fa-ying bekannt, wuchs im Großen Palast von Bangkok auf und gehörte zu den königlichen Kindern, die von Anna Leonowens in Englisch und westlichen Umgangsformen unterrichtet wurden. Ihr Leben endete sehr früh: Sie starb am 14. Mai 1863 im Großen Palast im Alter von 8 Jahren an Cholera und erhielt später einen posthumen königlichen Titel.",
+  "shortDescriptionEs": "Chandrmondol Sobhon Bhagiawati, honrada posteriormente como princesa Wisutkrasat, fue una princesa siamesa de la dinastía Chakri y la única hija del rey Mongkut y la reina Debsirindra. También conocida como la princesa Fa-ying, creció en el Gran Palacio de Bangkok y formó parte de los hijos reales que recibieron enseñanza de inglés y modales occidentales de Anna Leonowens. Su vida fue muy breve: murió en el Gran Palacio el 14 de mayo de 1863, a los 8 años, a causa del cólera, y más tarde fue recordada con un título real póstumo.",
+  "shortDescriptionRu": "Чандрамондол Собхон Бхагиявати, позднее удостоенная титула принцессы Висуткрасат, была сиамской принцессой династии Чакри и единственной дочерью короля Монгкута и королевы Дебсириндры. Известная также как принцесса Фа-йинг, она выросла в Большом дворце в Бангкоке и, как один из королевских детей, изучала английский язык и западные манеры у Анны Леоноуэнс. Ее жизнь оборвалась очень рано: 14 мая 1863 года она умерла в Большом дворце от холеры в возрасте 8 лет, а позднее получила посмертный королевский титул.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chandrmondol",
+    "https://www.wikidata.org/wiki/Q16139926",
+    "https://commons.wikimedia.org/wiki/File:Princess_Chandornmondon.jpg",
+    "https://en.wikipedia.org/wiki/Debsirindra",
+    "https://en.wikipedia.org/wiki/List_of_children_of_Mongkut"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q28498323",  "Name": "Charles de France",  "BirthDate": "1392-02-14T00:00:00Z",  "DeathDate": "1401-01-22T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%2C%20Dauphin%20%281392-1401%29.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"10591154":{"pageid":10591154,"ns":0,"title":"Charles de France (1392-1401)","extract":"Charles de France, dauphin de Viennois et duc de Guyenne, n\u00e9 le 6 f\u00e9vrier 1392 \u00e0 Paris et mort le 13 janvier 1401 \u00e0 Vincennes, est un des fils du roi Charles VI de France et d'Isabeau de Bavi\u00e8re."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q28498323")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q28498323",
+  "isRealHuman": true,
+  "birthDate": "1392-02-06",
+  "deathDate": "1401-01-13",
+  "ageAtDeath": 8,
+  "confidence": 95,
+  "confidenceExplained": "The figure is consistently identified as Charles de France (1392-1401), Dauphin of Viennois and Duke of Guyenne, son of Charles VI of France and Isabeau of Bavaria. French Wikipedia, Wikimedia Commons, and Wikidata all support the historical display dates 6 February 1392 and 13 January 1401, and French Wikipedia explicitly gives the age as 8 years, 11 months, and 7 days. The slightly different ISO dates in the supplied data are best explained by calendar-model conversion rather than a different person.",
+  "shortDescriptionEn": "Charles de France was a Valois prince, the second son and fifth child of King Charles VI of France and Isabeau of Bavaria. From birth he held the titles Dauphin of Viennois and Duke of Guyenne, making him heir to the French throne during a politically fragile period marked by his father’s recurring mental illness and regency struggles. Betrothed to Margaret of Burgundy as part of a dynastic alliance, he never married or ruled. He died prematurely at the Château de Vincennes on 13 January 1401, aged 8, and was buried at the royal necropolis of Saint-Denis.",
+  "shortDescriptionFr": "Charles de France était un prince de la maison de Valois, deuxième fils et cinquième enfant du roi Charles VI de France et d’Isabeau de Bavière. Dès sa naissance, il porta les titres de dauphin de Viennois et de duc de Guyenne, ce qui faisait de lui l’héritier du trône dans une période troublée par la maladie mentale récurrente de son père et les tensions de régence. Fiancé à Marguerite de Bourgogne pour des raisons dynastiques, il ne régna jamais. Il mourut prématurément au château de Vincennes le 13 janvier 1401, à l’âge de 8 ans, puis fut inhumé à Saint-Denis.",
+  "shortDescriptionDe": "Charles de France war ein Prinz aus dem Haus Valois, der zweite Sohn und das fünfte Kind von König Karl VI. von Frankreich und Isabeau von Bayern. Seit seiner Geburt trug er die Titel Dauphin von Viennois und Herzog von Guyenne und galt damit als Thronerbe in einer Zeit, die von der wiederkehrenden Geisteskrankheit seines Vaters und von Regentschaftskämpfen geprägt war. Aus dynastischen Gründen wurde er mit Margarete von Burgund verlobt, heiratete jedoch nie und bestieg den Thron nicht. Er starb am 13. Januar 1401 im Schloss Vincennes im Alter von 8 Jahren und wurde in Saint-Denis beigesetzt.",
+  "shortDescriptionEs": "Carlos de Francia fue un príncipe de la casa de Valois, segundo hijo varón y quinto descendiente del rey Carlos VI de Francia e Isabel de Baviera. Desde su nacimiento ostentó los títulos de delfín de Viennois y duque de Guyena, lo que lo convertía en heredero del trono francés en una etapa marcada por la enfermedad mental recurrente de su padre y las disputas de regencia. Prometido con Margarita de Borgoña por motivos dinásticos, nunca llegó a casarse ni a reinar. Murió prematuramente en el castillo de Vincennes el 13 de enero de 1401, a los 8 años, y fue sepultado en Saint-Denis.",
+  "shortDescriptionRu": "Шарль Французский был принцем династии Валуа, вторым сыном и пятым ребёнком короля Франции Карла VI и Изабеллы Баварской. С рождения он носил титулы дофина Вьеннского и герцога Гиеньского, считаясь наследником престола в период, осложнённый повторяющимися приступами душевной болезни его отца и борьбой за власть при регентстве. Его обручили с Маргаритой Бургундской ради династического союза, но он не женился и не стал королём. Он умер преждевременно в Венсенском замке 13 января 1401 года в возрасте 8 лет и был похоронен в Сен-Дени.",
+  "sources": [
+    "https://fr.wikipedia.org/wiki/Charles_de_France_(1392-1401)",
+    "https://commons.wikimedia.org/wiki/Category:Charles_de_France_(1392-1401)",
+    "https://www.wikidata.org/wiki/Q28498323",
+    "http://commons.wikimedia.org/wiki/Special:FilePath/Charles%2C%20Dauphin%20%281392-1401%29.jpg",
+    "https://commons.wikimedia.org/wiki/File:Charles,_6th_Dauphin.jpg",
+    "https://commons.wikimedia.org/wiki/File:Charles,_6th_Dauphin3.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4116894",  "Name": "Samuel O'Reilly",  "BirthDate": "1900-01-01T00:00:00Z",  "DeathDate": "1908-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Inventor-of-Tattoo-machine-Samuel-OReilly.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"174082":{"pageid":174082,"ns":0,"title":"Samuel O'Reilly","extract":"Samuel F. O\u2019Reilly (May 1854 - 29 April 1909) was an American tattoo artist from New York, who patented the first electric tattoo machine on December 8, 1891.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4116894")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4116894",
+  "isRealHuman": true,
+  "birthDate": "1854-05-01",
+  "deathDate": "1909-04-29",
+  "ageAtDeath": 54,
+  "confidence": 95,
+  "confidenceExplained": "Birth is reliably given as May 1854, but the exact day is not known. Because Samuel O'Reilly died on 1909-04-29, before any possible May birthday in 1909, he had not yet turned 55; therefore the calculated age is 54 regardless of the unknown day in May. This is also explicitly supported by Wikipedia, Find a Grave, and Irish America.",
+  "shortDescriptionEn": "Samuel F. O'Reilly was an American tattoo artist from Waterbury, Connecticut, who became a key figure in New York’s Bowery tattoo scene. In 1891 he patented the first electric tattoo machine, adapting Thomas Edison’s autographic printing pen into a tool that transformed tattooing. In April 1909, aged 54, he fell while painting his Brooklyn house; reports say the fall fractured his skull, and he died from a brain hemorrhage.",
+  "shortDescriptionFr": "Samuel F. O'Reilly était un tatoueur américain né à Waterbury, dans le Connecticut, devenu une figure importante du milieu du tatouage new-yorkais, notamment sur le Bowery. En 1891, il breveta la première machine électrique à tatouer, adaptée du stylo autographique de Thomas Edison. En avril 1909, à 54 ans, il tomba alors qu’il peignait sa maison de Brooklyn; sa chute lui causa une fracture du crâne et il mourut d’une hémorragie cérébrale.",
+  "shortDescriptionDe": "Samuel F. O'Reilly war ein amerikanischer Tätowierer aus Waterbury, Connecticut, und eine prägende Figur der New Yorker Bowery-Tattooszene. 1891 patentierte er die erste elektrische Tätowiermaschine, die auf Thomas Edisons autografischem Druckstift beruhte, und veränderte damit das Handwerk dauerhaft. Im April 1909 stürzte er im Alter von 54 Jahren beim Streichen seines Hauses in Brooklyn; der Sturz führte zu einem Schädelbruch und einer Hirnblutung.",
+  "shortDescriptionEs": "Samuel F. O'Reilly fue un tatuador estadounidense nacido en Waterbury, Connecticut, y una figura destacada de la escena del tatuaje en el Bowery de Nueva York. En 1891 patentó la primera máquina eléctrica de tatuar, adaptando el bolígrafo autográfico de Thomas Edison y cambiando el oficio para siempre. En abril de 1909, a los 54 años, cayó mientras pintaba su casa en Brooklyn; la caída le fracturó el cráneo y murió por una hemorragia cerebral.",
+  "shortDescriptionRu": "Сэмюэл Ф. О’Рейли был американским татуировщиком из Уотербери, штат Коннектикут, и заметной фигурой нью-йоркской тату-сцены района Бауэри. В 1891 году он запатентовал первую электрическую татуировочную машинку, приспособив автографическое перо Томаса Эдисона и изменив развитие ремесла. В апреле 1909 года, в возрасте 54 лет, он упал, когда красил свой дом в Бруклине; падение вызвало перелом черепа и кровоизлияние в мозг.",
+  "imageUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Inventor-of-Tattoo-machine-Samuel-OReilly.jpg",
+    "https://irishamerica.com/wp-content/uploads/2016/03/Samuel-OReilly-Tattoo-Fad-NYC.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Samuel_O%27Reilly",
+    "https://www.tattooarchive.com/history/oreilly_samuel.php",
+    "https://www.findagrave.com/memorial/102857701/samuel_f-o%27reilly",
+    "https://www.irishamerica.com/2016/03/oreillys-tattoo-machine-fine-art-for-the-masses-2/",
+    "https://patents.google.com/patent/US464801A/en",
+    "https://commons.wikimedia.org/wiki/File:Inventor-of-Tattoo-machine-Samuel-OReilly.jpg",
+    "https://www.wikidata.org/wiki/Q4116894"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4673047",  "Name": "Ace the Wonder Dog",  "BirthDate": "1938-01-01T00:00:00Z",  "DeathDate": "1946-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ace%20The%20Wonder%20Dog.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"10733324":{"pageid":10733324,"ns":0,"title":"Ace the Wonder Dog","extract":"Ace the Wonder Dog was a German Shepherd dog actor in several films and film serials from 1938 to 1946.  His first appearance was in the 1938 Lew Landers film Blind Alibi. He is considered by many critics an attempt by RKO Pictures to cash in on the success of Warner Bros.' canine sensation, Rin Tin Tin, also a German Shepherd.  \nAfter making several program pictures for RKO, Ace moved to Republic Pictures for several more projects, before moving to Columbia Pictures for a role as the Phantom's sidekick \"Devil\" in the serial The Phantom in 1943.\n\nHis declining popularity meant that most of his appearances after RKO's initial burst of \"Ace\" publicity were for Monogram and the Poverty Row studio Producers Releasing Corporation.  In 1945, he appeared as \"Rusty\" in The Adventures of Rusty, the first of Columbia's eight \"Rusty\" films.  He did not reprise the role in any of the subsequent installments.\nAce is just one of a number of \"Wonder Dogs\" in the history of fictional dogs.  Others include Rin Tin Tin (billed during his 1930 radio show as \"Rin Tin Tin, the Wonder Dog\"), Pal the Wonder Dog, Gaspode the Wonder Dog, Rex the Wonder Dog from silent films, and another unrelated Rex the Wonder Dog from DC Comics. Ace presumptively died sometime after 1946."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4673047")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4673047",
+  "isRealHuman": false,
+  "birthDate": "1938-01-01",
+  "deathDate": "1946-01-01",
+  "ageAtDeath": 8,
+  "confidence": 45,
+  "confidenceExplained": "Ace is clearly documented as a German Shepherd dog actor rather than a human. The age is uncertain because reliable sources give only approximate dates: Wikipedia states birth before 1938 and death after 1946, with 'aged 8 or older', while Wikidata and Find a Grave use year-only 1938–1946 data. I used 8 as the required calculated conservative estimate from the available year-based records.",
+  "shortDescriptionEn": "Ace the Wonder Dog was a German Shepherd screen actor active in American films and serials from 1938 to 1946, including Blind Alibi, The Phantom, Adventures of Rusty, Danny Boy, and God's Country. Marketed in the tradition of canine stars such as Rin Tin Tin, Ace became a familiar B-movie and serial presence. Details of his death were not preserved in public records; he is presumed to have died after his final known 1946 appearances, at about 8 years old or older.",
+  "shortDescriptionFr": "Ace the Wonder Dog était un berger allemand acteur de cinéma, actif dans des films et feuilletons américains de 1938 à 1946, notamment Blind Alibi, The Phantom, Adventures of Rusty, Danny Boy et God's Country. Présenté dans la lignée des vedettes canines comme Rin Tin Tin, il devint une figure familière des séries et films de série B. Les circonstances précises de sa mort ne sont pas conservées dans les sources publiques; il est présumé mort après ses dernières apparitions connues en 1946, vers l'âge de 8 ans ou plus.",
+  "shortDescriptionDe": "Ace the Wonder Dog war ein Deutscher Schäferhund und Filmtierdarsteller, der von 1938 bis 1946 in amerikanischen Spielfilmen und Serials auftrat, darunter Blind Alibi, The Phantom, Adventures of Rusty, Danny Boy und God's Country. In der Tradition berühmter Filmhunde wie Rin Tin Tin vermarktet, wurde Ace zu einer vertrauten Erscheinung in B-Movies und Abenteuerserien. Genaue Umstände seines Todes sind nicht überliefert; er gilt als nach seinen letzten bekannten Auftritten im Jahr 1946 verstorben, ungefähr im Alter von 8 Jahren oder älter.",
+  "shortDescriptionEs": "Ace the Wonder Dog fue un pastor alemán actor de cine, activo en películas y seriales estadounidenses entre 1938 y 1946, incluidos Blind Alibi, The Phantom, Adventures of Rusty, Danny Boy y God's Country. Promocionado en la tradición de estrellas caninas como Rin Tin Tin, Ace se convirtió en una presencia reconocible del cine de serie B y de aventuras. Los detalles exactos de su muerte no se conservan en registros públicos; se presume que murió después de sus últimas apariciones conocidas en 1946, con unos 8 años o más.",
+  "shortDescriptionRu": "Ace the Wonder Dog был немецкой овчаркой-киноактёром, снимавшейся в американских фильмах и киносериалах с 1938 по 1946 год, включая Blind Alibi, The Phantom, Adventures of Rusty, Danny Boy и God's Country. Его продвигали в традиции знаменитых экранных собак вроде Rin Tin Tin, и он стал заметной фигурой приключенческого и малобюджетного кино. Точные обстоятельства смерти в открытых источниках не сохранились; считается, что он умер после последних известных появлений в 1946 году, примерно в возрасте 8 лет или старше.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ace_the_Wonder_Dog",
+    "https://www.wikidata.org/wiki/Q4673047",
+    "https://commons.wikimedia.org/wiki/File:Ace_The_Wonder_Dog.jpg",
+    "https://www.imdb.com/name/nm1211064/",
+    "https://catalog.afi.com/Film/24804-GODS-COUNTRY?cp=1&cxt=Filmography1&pos=2&sid=ecdc077b-96b5-49b3-a388-e539c42bb26c&sr=0.041168746",
+    "https://catalog.afi.com/Film/24744-DANNY-BOY?cp=1&pos=1&sid=c909db98-41ce-4d53-b418-aebec9be8061&sr=0.099627495",
+    "https://www.findagrave.com/memorial/272209620/ace-the_wonder-dog"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4992752",  "Name": "Gennaro Carlo of Naples and Sicily",  "BirthDate": "1780-04-12T00:00:00Z",  "DeathDate": "1789-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Gennaro%20of%20Naples%20and%20Sicily%2Cminiature%20-%20Hofburg.png",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"26246115":{"pageid":26246115,"ns":0,"title":"Prince Gennaro of Naples and Sicily","extract":"Prince Gennaro of Naples and Sicily (Gennaro Carlo Francesco; 12 April 1780 \u2013 1 January 1789) was a Prince of Naples and Sicily. He died of smallpox at age 8. He and his mother are the central figures of a portrait by Angelica Kauffman in 1783."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4992752")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4992752",
+  "isRealHuman": true,
+  "birthDate": "1780-04-12",
+  "deathDate": "1789-01-01",
+  "ageAtDeath": 8,
+  "confidence": 98,
+  "confidenceExplained": "The birth date is consistently given as 12 April 1780, and the main Wikipedia/Wikidata date of death is 1 January 1789. Some records also list 2 January 1789, but both possible dates give the same completed age: 8 years old, because his ninth birthday would have been on 12 April 1789.",
+  "shortDescriptionEn": "Gennaro Carlo Francesco di Borbone, Prince of Naples and Sicily, was a young Bourbon prince, son of Ferdinand IV of Naples and Maria Carolina of Austria. Born into the royal house ruling Naples and Sicily, he was remembered in court portraiture with his mother and siblings and stood close to the succession behind his elder brother Francis. In December 1788 he contracted smallpox at Caserta and died on 1 January 1789, aged 8, during a period when the disease repeatedly struck the Bourbon children.",
+  "shortDescriptionFr": "Gennaro Carlo Francesco di Borbone, prince de Naples et de Sicile, était un jeune prince Bourbon, fils de Ferdinand IV de Naples et de Marie-Caroline d’Autriche. Né dans la maison royale qui régnait sur Naples et la Sicile, il apparaît dans des portraits de cour avec sa mère et ses frères et sœurs, et occupait une place proche de la succession derrière son frère aîné François. En décembre 1788, il contracta la variole à Caserte et mourut le 1er janvier 1789, à l’âge de 8 ans, alors que cette maladie frappait plusieurs enfants Bourbon.",
+  "shortDescriptionDe": "Gennaro Carlo Francesco di Borbone, Prinz von Neapel und Sizilien, war ein junger Bourbonenprinz und Sohn Ferdinands IV. von Neapel und Maria Karolinas von Österreich. Er gehörte zum Königshaus, das Neapel und Sizilien regierte, wurde in höfischen Porträts mit seiner Mutter und seinen Geschwistern festgehalten und stand hinter seinem älteren Bruder Franz nahe an der Thronfolge. Im Dezember 1788 erkrankte er in Caserta an Pocken und starb am 1. Januar 1789 im Alter von 8 Jahren, in einer Zeit, in der die Krankheit mehrere Bourbonenkinder traf.",
+  "shortDescriptionEs": "Gennaro Carlo Francesco di Borbone, príncipe de Nápoles y Sicilia, fue un joven príncipe Borbón, hijo de Fernando IV de Nápoles y María Carolina de Austria. Nacido en la casa real que gobernaba Nápoles y Sicilia, quedó asociado a retratos cortesanos junto a su madre y sus hermanos, y ocupaba una posición cercana a la sucesión detrás de su hermano mayor Francisco. En diciembre de 1788 contrajo viruela en Caserta y murió el 1 de enero de 1789, a los 8 años, durante una etapa en la que la enfermedad golpeó repetidamente a los hijos Borbón.",
+  "shortDescriptionRu": "Дженнаро Карло Франческо ди Борбоне, принц Неаполя и Сицилии, был юным принцем из дома Бурбонов, сыном Фердинанда IV Неаполитанского и Марии Каролины Австрийской. Он принадлежал к династии, правившей Неаполем и Сицилией, известен по придворным портретам с матерью и siblings, and находился близко к линии наследования после старшего брата Франциска. В декабре 1788 года в Казерте он заболел оспой и умер 1 января 1789 года в возрасте 8 лет, в период, когда эта болезнь неоднократно поражала детей Бурбонов.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Prince_Gennaro_of_Naples_and_Sicily",
+    "https://www.wikidata.org/wiki/Q4992752",
+    "https://commons.wikimedia.org/wiki/Category:Prince_Gennaro_of_Naples_and_Sicily",
+    "https://commons.wikimedia.org/wiki/File:Gennaro_of_Naples_and_Sicily,miniature_-_Hofburg.png",
+    "https://commons.wikimedia.org/wiki/File:Bovi_after_Kauffmann_-_The_family_of_Ferdinando_IV.png",
+    "https://commons.wikimedia.org/wiki/File:Maria_Christina_von_Neapel-Sizilien_mit_ihrem_Bruder_Januarius.jpg",
+    "https://www.findagrave.com/memorial/91468590/gennaro-of_naples_and_sicily",
+    "https://www.thepeerage.com/p4552.htm",
+    "https://genealogy.euweb.cz/capet/capet44.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q6766264",  "Name": "Marjorie Fleming",  "BirthDate": "1803-01-15T00:00:00Z",  "DeathDate": "1811-12-19T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Marjorie%20Flemming%20portrait.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"5403641":{"pageid":5403641,"ns":0,"title":"Marjorie Fleming","extract":"Marjorie Fleming (also spelt Marjory; 15 January 1803 \u2013 19 December 1811) was a Scottish child writer and poet. She gained appreciation from Robert Louis Stevenson, Leslie Stephen, and possibly Walter Scott."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q6766264")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q6766264",
+  "isRealHuman": true,
+  "birthDate": "1803-01-15",
+  "deathDate": "1811-12-19",
+  "ageAtDeath": 8,
+  "confidence": 98,
+  "confidenceExplained": "The identity and dates are strongly supported by Wikipedia, Wikidata, Wikimedia Commons, the National Library of Scotland dataset, and John Brown's biographical account, which explicitly gives birth as 15 January 1803 and death as 19 December 1811. The age calculation is straightforward: she died 27 days before her ninth birthday, so her age at death was 8. The small uncertainty is only about historical diagnosis wording, not the age.",
+  "shortDescriptionEn": "Marjorie Fleming, also spelled Marjory Fleming, was a Scottish child writer and poet from Kirkcaldy whose lively journals, letters, and verses later attracted admiration from major literary figures including Robert Louis Stevenson and Leslie Stephen. Her writings, composed mostly in childhood, became valued for their wit, emotional force, and unusually vivid young voice. In late 1811 she contracted measles and seemed to recover, but she then developed a severe head illness described at the time as “water on the head,” now often interpreted as meningitis. She died in Kirkcaldy on 19 December 1811, just short of her ninth birthday, aged 8.",
+  "shortDescriptionFr": "Marjorie Fleming, également appelée Marjory Fleming, était une jeune écrivaine et poétesse écossaise originaire de Kirkcaldy, dont les journaux, lettres et poèmes furent plus tard admirés par des figures littéraires comme Robert Louis Stevenson et Leslie Stephen. Ses textes d’enfant frappent par leur vivacité, leur humour et une voix étonnamment personnelle. À la fin de 1811, elle contracta la rougeole et sembla d’abord se rétablir, avant de souffrir d’une grave affection de la tête décrite alors comme une « eau dans la tête », aujourd’hui souvent comprise comme une méningite. Elle mourut à Kirkcaldy le 19 décembre 1811, peu avant son neuvième anniversaire, à l’âge de 8 ans.",
+  "shortDescriptionDe": "Marjorie Fleming, auch Marjory Fleming geschrieben, war eine schottische Kinderschriftstellerin und Dichterin aus Kirkcaldy, deren Tagebücher, Briefe und Verse später von literarischen Größen wie Robert Louis Stevenson und Leslie Stephen geschätzt wurden. Ihre kindlichen Texte gelten als bemerkenswert lebendig, witzig und eigenständig. Ende 1811 erkrankte sie an Masern und schien sich zunächst zu erholen, entwickelte danach jedoch ein schweres Kopfleiden, das damals als „water on the head“ beschrieben wurde und heute oft als Meningitis gedeutet wird. Sie starb am 19. Dezember 1811 in Kirkcaldy, kurz vor ihrem neunten Geburtstag, im Alter von 8 Jahren.",
+  "shortDescriptionEs": "Marjorie Fleming, también escrita como Marjory Fleming, fue una niña escritora y poeta escocesa de Kirkcaldy, cuyos diarios, cartas y versos recibieron más tarde la admiración de figuras literarias como Robert Louis Stevenson y Leslie Stephen. Sus escritos infantiles destacan por su ingenio, intensidad emocional y una voz sorprendentemente viva. A finales de 1811 contrajo sarampión y pareció recuperarse, pero después desarrolló una grave dolencia de la cabeza descrita en la época como “agua en la cabeza”, hoy interpretada a menudo como meningitis. Murió en Kirkcaldy el 19 de diciembre de 1811, poco antes de cumplir nueve años, a los 8 años.",
+  "shortDescriptionRu": "Марджори Флеминг, также встречающаяся как Марджори или Марджери Флеминг, была шотландской детской писательницей и поэтессой из Кирколди, чьи дневники, письма и стихи позднее вызвали восхищение у таких литературных фигур, как Роберт Льюис Стивенсон и Лесли Стивен. Ее детские записи ценят за живость, остроумие и необычайно яркий личный голос. В конце 1811 года она заболела корью и, казалось, пошла на поправку, но затем у нее развилось тяжелое заболевание головы, описанное современниками как «вода в голове» и ныне часто трактуемое как менингит. Она умерла в Кирколди 19 декабря 1811 года, немного не дожив до девяти лет, в возрасте 8 лет.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Marjorie_Fleming",
+    "https://www.wikidata.org/wiki/Q6766264",
+    "https://commons.wikimedia.org/wiki/File:Marjorie_Flemming_portrait.jpg",
+    "https://data.nls.uk/data/digitised-collections/marjory-fleming/",
+    "https://upload.wikimedia.org/wikipedia/commons/2/21/Marjorie_Fleming_%28IA_marjoriefleming01brow%29.pdf"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q9049682",  "Name": "Nevado",  "BirthDate": "1813-01-01T00:00:00Z",  "DeathDate": "1821-06-24T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Nevado%20%26%20Tinjaca%20Simon%20Bolivar%27s%20companions.jpg",  "SiteLinksCnt": 5,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"19646476":{"pageid":19646476,"ns":0,"title":"Nevado","extract":"Nevado (1813? \u2013 1821) was a Mucuchies dog that was given to Sim\u00f3n Bol\u00edvar by the local people of Mucuch\u00edes, M\u00e9rida, in the Venezuelan Andes."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q9049682")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q9049682",
+  "isRealHuman": false,
+  "birthDate": "1813-01-01",
+  "deathDate": "1821-06-24",
+  "ageAtDeath": 8,
+  "confidence": 55,
+  "confidenceExplained": "The entity clearly describes Nevado, a historical Mucuchíes dog owned by Simón Bolívar, not a human being. The death date, 1821-06-24, is consistently tied to the Battle of Carabobo. The birth date is uncertain and normally given only as circa 1813, so 1813-01-01 is an estimate chosen to produce the required age calculation. If Nevado was born later in 1813, the age could have been 7 rather than 8.",
+  "shortDescriptionEn": "Nevado was a celebrated Mucuchíes dog associated with Simón Bolívar during the Venezuelan War of Independence. Remembered as Bolívar’s loyal companion from the Admirable Campaign, he became part of patriotic folklore in the Venezuelan Andes. He died at the Battle of Carabobo on 24 June 1821, reportedly after being struck by a royalist spear while the battle that helped secure Venezuela’s independence was being fought.",
+  "shortDescriptionFr": "Nevado était un célèbre chien de race mucuchíes associé à Simón Bolívar pendant la guerre d’indépendance du Venezuela. Compagnon fidèle du Libertador depuis la Campagne Admirable, il est devenu une figure du folklore patriotique des Andes vénézuéliennes. Il mourut à la bataille de Carabobo le 24 juin 1821, selon la tradition après avoir été transpercé par une lance royaliste au cours de ce combat décisif pour l’indépendance du Venezuela.",
+  "shortDescriptionDe": "Nevado war ein berühmter Mucuchíes-Hund, der mit Simón Bolívar während des venezolanischen Unabhängigkeitskrieges verbunden war. Als treuer Begleiter Bolívars seit der Campaña Admirable wurde er zu einer Gestalt des patriotischen Anden-Volksgedächtnisses. Er starb am 24. Juni 1821 in der Schlacht von Carabobo, der Überlieferung nach durch eine royalistische Lanze, während eine entscheidende Schlacht für Venezuelas Unabhängigkeit geschlagen wurde.",
+  "shortDescriptionEs": "Nevado fue un célebre perro mucuchíes vinculado a Simón Bolívar durante la guerra de independencia de Venezuela. Recordado como fiel compañero del Libertador desde la Campaña Admirable, pasó a formar parte del imaginario patriótico de los Andes venezolanos. Murió en la batalla de Carabobo el 24 de junio de 1821, según la tradición al ser atravesado por una lanza realista durante el combate decisivo para la independencia venezolana.",
+  "shortDescriptionRu": "Невадо был знаменитой собакой породы мукучиес, связанной с Симоном Боливаром во время войны за независимость Венесуэлы. Его помнят как верного спутника Боливара со времён Великой кампании, и он стал частью патриотического фольклора венесуэльских Анд. Невадо погиб 24 июня 1821 года в битве при Карабобо, по преданию после удара роялистским копьём во время сражения, важного для независимости Венесуэлы.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nevado",
+    "https://www.wikidata.org/wiki/Q9049682",
+    "https://es.wikipedia.org/wiki/Nevado_(perro)",
+    "https://commons.wikimedia.org/wiki/File:Nevado_%26_Tinjaca_Simon_Bolivar%27s_companions.jpg",
+    "https://en.wikipedia.org/wiki/Battle_of_Carabobo",
+    "https://mazo4f.com/en/1813-the-liberator-begins-a-story-with-the-brave-dog-nevado-318538",
+    "https://www.findagrave.com/memorial/124195350/nevado-dog"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q16209171",  "Name": "Gustavus Adolphus of the Palatinate",  "BirthDate": "1632-01-14T00:00:00Z",  "DeathDate": "1641-01-09T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Queen%20Elizabeth%20with%20Prince%20Gustavus.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"42034179":{"pageid":42034179,"ns":0,"title":"Gustavus Adolphus of the Palatinate","extract":"Gustavus Adolphus of the Palatinate (Prince Palatine Gustavus Adolphus; 14 January 1632 \u2013 9 January 1641), was the last son of Frederick V, Elector Palatine (of the House of Wittelsbach), the \"Winter King\" of Bohemia, by his consort, the English princess Elizabeth Stuart. Gustavus was born in the Dutch Republic, where his family had sought refuge after the sequestration of the Electorate during the Thirty Years' War. Gustavus's brother Charles Louis was, as part of the Peace of Westphalia, restored to the Palatinate."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q16209171")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q16209171",
+  "isRealHuman": true,
+  "birthDate": "1632-01-14",
+  "deathDate": "1641-01-09",
+  "ageAtDeath": 8,
+  "confidence": 98,
+  "confidenceExplained": "The birth date 1632-01-14 and death date 1641-01-09 are consistently given by Wikipedia and Wikidata. The age calculation is straightforward: he had completed 8 full years and died five days before his 9th birthday. A small uncertainty remains because the article is brief and secondary-source coverage is limited.",
+  "shortDescriptionEn": "Gustavus Adolphus of the Palatinate was a young German prince of the House of Wittelsbach, born in exile at The Hague as the youngest son of Frederick V, Elector Palatine, the “Winter King” of Bohemia, and Elizabeth Stuart. His short life was shaped by the upheaval of the Thirty Years’ War and his family’s displaced court in the Dutch Republic. He died at The Hague on 9 January 1641, reportedly from epilepsy, only five days before his ninth birthday.",
+  "shortDescriptionFr": "Gustave-Adolphe du Palatinat était un jeune prince allemand de la maison de Wittelsbach, né en exil à La Haye, dernier fils de Frédéric V, électeur palatin et « roi d’un hiver » de Bohême, et d’Élisabeth Stuart. Sa brève existence s’inscrit dans le contexte troublé de la guerre de Trente Ans et de la cour palatine réfugiée dans la République néerlandaise. Il mourut à La Haye le 9 janvier 1641, apparemment d’épilepsie, cinq jours seulement avant son neuvième anniversaire.",
+  "shortDescriptionDe": "Gustav Adolf von der Pfalz war ein junger deutscher Prinz aus dem Haus Wittelsbach, geboren im Exil in Den Haag als jüngster Sohn Friedrichs V., Kurfürst von der Pfalz und „Winterkönig“ von Böhmen, sowie Elisabeth Stuarts. Sein kurzes Leben stand im Schatten des Dreißigjährigen Krieges und des vertriebenen pfälzischen Hofes in der Niederländischen Republik. Er starb am 9. Januar 1641 in Den Haag, Berichten zufolge an Epilepsie, nur fünf Tage vor seinem neunten Geburtstag.",
+  "shortDescriptionEs": "Gustavo Adolfo del Palatinado fue un joven príncipe alemán de la casa de Wittelsbach, nacido en el exilio en La Haya como el hijo menor de Federico V, elector palatino y “rey de invierno” de Bohemia, y de Isabel Estuardo. Su breve vida estuvo marcada por la Guerra de los Treinta Años y por la corte palatina refugiada en la República neerlandesa. Murió en La Haya el 9 de enero de 1641, al parecer de epilepsia, apenas cinco días antes de cumplir nueve años.",
+  "shortDescriptionRu": "Густав Адольф Пфальцский был юным немецким принцем из дома Виттельсбахов, родившимся в изгнании в Гааге как младший сын Фридриха V, курфюрста Пфальца и «зимнего короля» Богемии, и Елизаветы Стюарт. Его короткая жизнь прошла на фоне Тридцатилетней войны и изгнанного пфальцского двора в Нидерландской республике. Он умер в Гааге 9 января 1641 года, предположительно от эпилепсии, всего за пять дней до своего девятого дня рождения.",
+  "pictures": [
+    "https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_with_Prince_Gustavus.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gustav_Adolph_GH.jpg",
+    "https://commons.wikimedia.org/wiki/File:Triumph_of_the_Winter_Queen_-_Prince_Gustavus_Adolphus_and_Elisabeth.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gerrit_van_Honthorst_-_Triumph_of_the_Winter_Queen.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gustavus_Adolphus_of_the_Palatinate",
+    "https://www.wikidata.org/wiki/Q16209171",
+    "https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_with_Prince_Gustavus.jpg",
+    "https://commons.wikimedia.org/wiki/Category:Triumph_of_the_Winter_Queen_(Gerard_van_Honthorst)",
+    "https://ancestors.familysearch.org/en/G1HZ-VTT/prince-gustavus-adolphus-von-der-pfalz-prince-of-palatinate-simmern-1632-1641"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q1650128",  "Name": "Ira Washington Rubel",  "BirthDate": "1900-01-01T00:00:00Z",  "DeathDate": "1908-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ira%20Washington%20Rubel.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"2391730":{"pageid":2391730,"ns":0,"title":"Ira Washington Rubel","extract":"Ira Washington Rubel (\u2020 1908) gilt als Erfinder des Offsetdrucks.\nRubel war Besitzer einer Steindruckerei im US-Bundesstaat New Jersey. Um 1900 baute er eine Maschine f\u00fcr den Gummidruck. Des Weiteren pr\u00e4gte er den Begriff Offsetdruck."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q1650128")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q1650128",
+  "isRealHuman": true,
+  "birthDate": "1860-08-27",
+  "deathDate": "1908-09-04",
+  "ageAtDeath": 48,
+  "confidence": 90,
+  "confidenceExplained": "The calculated age is strongly supported: Find a Grave gives 27 Aug 1860–4 Sep 1908 and explicitly says aged 48; the gravestone image shows the same dates; Wikimedia Commons cites Penrose's Pictorial Annual describing Rubel's death at the Derby Hotel, Bury, England on September 4, 1908; and the Smithsonian confirms he died in 1908 at age 48. Confidence is not 100 because some secondary pages repeat only the year or give the obituary publication date/location in a way that can be misread as the death date.",
+  "shortDescriptionEn": "Ira Washington Rubel was an American printer, businessman, and inventor whose experiments in Nutley, New Jersey, helped create the first commercial offset lithographic press for printing on paper. His use of a rubber blanket to transfer an image made printing sharper and more practical, helping shape twentieth-century publishing and commercial print. In 1907 he went to England to promote and protect his offset press; he died suddenly there in 1908, reportedly of apoplexy or stroke, at the age of 48.",
+  "shortDescriptionFr": "Ira Washington Rubel était un imprimeur, homme d’affaires et inventeur américain dont les expériences à Nutley, dans le New Jersey, ont contribué à créer la première presse offset lithographique commerciale pour l’impression sur papier. Le transfert de l’image par un blanchet en caoutchouc donnait des impressions plus nettes et ouvrit la voie à l’imprimerie moderne. Parti en Angleterre pour promouvoir et défendre son invention, il y mourut soudainement en 1908, probablement d’une apoplexie ou d’un accident vasculaire cérébral, à l’âge de 48 ans.",
+  "shortDescriptionDe": "Ira Washington Rubel war ein amerikanischer Drucker, Unternehmer und Erfinder, dessen Versuche in Nutley, New Jersey, zur ersten kommerziellen Offset-Lithografiepresse für Papier führten. Die Übertragung des Druckbildes über ein Gummituch machte die Ergebnisse schärfer und prägte den modernen industriellen Druck. 1907 ging Rubel nach England, um seine Maschine zu fördern und seine Erfindung zu schützen; dort starb er 1908 plötzlich, vermutlich an Apoplexie beziehungsweise einem Schlaganfall, im Alter von 48 Jahren.",
+  "shortDescriptionEs": "Ira Washington Rubel fue un impresor, empresario e inventor estadounidense cuyos experimentos en Nutley, Nueva Jersey, ayudaron a crear la primera prensa litográfica offset comercial para imprimir sobre papel. Su uso de una mantilla de caucho para transferir la imagen produjo impresiones más nítidas y cambió la industria gráfica moderna. En 1907 viajó a Inglaterra para promover y proteger su prensa offset; murió allí repentinamente en 1908, al parecer de apoplejía o derrame cerebral, a los 48 años.",
+  "shortDescriptionRu": "Айра Вашингтон Рубел был американским печатником, предпринимателем и изобретателем, чьи опыты в Натли, штат Нью-Джерси, привели к созданию первой коммерческой офсетной литографской машины для печати на бумаге. Перенос изображения через резиновое полотно давал более чёткий отпечаток и сильно повлиял на развитие современной полиграфии. В 1907 году он уехал в Англию продвигать и защищать своё изобретение; в 1908 году он внезапно умер там, вероятно от апоплексии или инсульта, в возрасте 48 лет.",
+  "sources": [
+    "https://de.wikipedia.org/wiki/Ira_Washington_Rubel",
+    "https://en.wikipedia.org/wiki/Offset_printing",
+    "https://commons.wikimedia.org/wiki/File:Ira_Washington_Rubel.jpg",
+    "https://americanhistory.si.edu/collections/object/nmah_882246",
+    "https://www.findagrave.com/memorial/44084702/ira_washington-rubel",
+    "https://multimediaman.blog/2012/11/14/ira-w-rubel-1860-1908/",
+    "https://www.historyofinformation.com/detail.php?id=560"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q20961872",  "Name": "Jeanne Van Calck",  "BirthDate": "1897-09-01T00:00:00Z",  "DeathDate": "1906-02-07T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Jeanne%20Van%20Calck%20%281897-1906%29.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"redirects":[{"from":"Jeanne Van Calck","to":"Murder of Jeanne Van Calck"}],"pages":{"65181758":{"pageid":65181758,"ns":0,"title":"Murder of Jeanne Van Calck","extract":"Jeanne Van Calck (17 September 1897 \u2013 7 February 1906), also known as Joanna, was a Belgian child murder victim whose case became a symbol for childhood innocence. Her dismembered body was found on the evening of 7 February 1906, at 22, rue des Hirondelles/Zwaluwenstraat in Brussels. The murder, now known as the Murder of the Rue des Hirondelles, was never solved."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q20961872")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q20961872",
+  "isRealHuman": true,
+  "birthDate": "1897-09-17",
+  "deathDate": "1906-02-07",
+  "ageAtDeath": 8,
+  "confidence": 98,
+  "confidenceExplained": "The age at death is very secure: major sources give Jeanne Van Calck's death date as 1906-02-07 and state that she was 8. There is a conflict over the exact birth day: Wikidata and some imported infobox data show 1897-09-01, while article prose and the English Wikipedia article show 1897-09-17. Since both dates fall before February 1906 and after February 1897, the calculated integer age at death is 8 either way.",
+  "shortDescriptionEn": "Jeanne Van Calck, also known as Joanna, was a Belgian girl from Brussels whose name became associated with one of Belgium’s most notorious unsolved child-murder cases. Remembered as a symbol of childhood innocence, she lived with her grandparents and regularly visited her mother. On 7 February 1906, at age 8, she disappeared during one of those visits; her body was found that night in Brussels, and the case remained unsolved.",
+  "shortDescriptionFr": "Jeanne Van Calck, également appelée Joanna, était une jeune Bruxelloise belge dont le nom est resté lié à l’une des affaires criminelles non élucidées les plus marquantes de Belgique. Devenue un symbole de l’enfance innocente, elle vivait chez ses grands-parents et rendait souvent visite à sa mère. Le 7 février 1906, à l’âge de 8 ans, elle disparut pendant ce trajet; son corps fut retrouvé le soir même à Bruxelles, et le meurtre ne fut jamais élucidé.",
+  "shortDescriptionDe": "Jeanne Van Calck, auch Joanna genannt, war ein belgisches Mädchen aus Brüssel, dessen Name mit einem der bekanntesten ungeklärten Kindermordfälle Belgiens verbunden ist. Sie wurde später als Sinnbild kindlicher Unschuld erinnert, lebte bei ihren Großeltern und besuchte regelmäßig ihre Mutter. Am 7. Februar 1906 verschwand sie im Alter von 8 Jahren auf diesem Weg; ihr Körper wurde noch am selben Abend in Brüssel gefunden, der Täter wurde nie ermittelt.",
+  "shortDescriptionEs": "Jeanne Van Calck, también conocida como Joanna, fue una niña belga de Bruselas cuyo nombre quedó unido a uno de los casos de asesinato infantil sin resolver más conocidos de Bélgica. Recordada como símbolo de la inocencia infantil, vivía con sus abuelos y visitaba a menudo a su madre. El 7 de febrero de 1906, con 8 años, desapareció durante ese trayecto; su cuerpo fue hallado esa misma noche en Bruselas, y el crimen nunca se resolvió.",
+  "shortDescriptionRu": "Жанна Ван Кальк, также известная как Йоанна, была бельгийской девочкой из Брюсселя, чьё имя связано с одним из самых известных нераскрытых убийств ребёнка в Бельгии. Позднее её стали воспринимать как символ детской невинности; она жила у бабушки и дедушки и часто навещала мать. 7 февраля 1906 года, в возрасте 8 лет, она исчезла по дороге; в тот же вечер её тело нашли в Брюсселе, а убийство так и не было раскрыто.",
+  "pictureUrls": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Jeanne%20Van%20Calck%20%281897-1906%29.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jeanne_Van_Calck_(1897-1906).jpg",
+    "https://collections.heritage.brussels/fr/objects/92242"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Murder_of_Jeanne_Van_Calck",
+    "https://fr.wikipedia.org/wiki/Jeanne_Van_Calck",
+    "https://www.wikidata.org/wiki/Q20961872",
+    "https://commons.wikimedia.org/wiki/File:Jeanne_Van_Calck_(1897-1906).jpg",
+    "https://www.vrt.be/vrtnws/nl/2021/12/05/de-nooit-opgehelderde-kindermoord-in-de-brusselse-zwaluwenstraat/",
+    "https://collections.heritage.brussels/fr/objects/92242"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q2377089",  "Name": "Gerulfus",  "BirthDate": "0740-01-01T00:00:00Z",  "DeathDate": "0748-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Hoogaltaar%20Sint-Gerolfkerk%20Drongen%2016-07-2019%2012-11-48.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"40238318":{"pageid":40238318,"ns":0,"title":"Gerulfus","extract":"Gerulfus (also known as Gerolf; Merendree 740\u2013748) is a Roman Catholic Saint of Flanders. His relics are kept in Drongen, after they were removed from his grave in Merendree around 915 or 930. He is the patron saint of young people."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q2377089")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q2377089",
+  "isRealHuman": true,
+  "birthDate": "0740-01-01",
+  "deathDate": "0748-09-21",
+  "ageAtDeath": 8,
+  "confidence": 62,
+  "confidenceExplained": "The identity is clear: the sources point to Saint Gerulfus, also called Gerolf or Gerulphe, of Merendree. The age is less certain because the preserved data usually gives only the birth year 740 and death year 748, while exact death-date traditions vary. I used the local Drongen stained-glass/heritage account giving the murder date as 21 September 748, and estimated the unknown birth date as 1 January 740. That yields age 8; if he was born later in 740, he could have been 7, but 8 is the best supported practical estimate from the available 740–748 tradition.",
+  "shortDescriptionEn": "Gerulfus, also known as Gerolf or Gerulphe, was an early medieval Flemish saint from Merendree, remembered as one of the oldest martyrs of Flanders and later venerated especially in Drongen, where his relics were kept. Tradition says he was the young son of local nobles and had gone to receive confirmation in Ghent. On the way back, he was attacked by his own confirmation sponsor, a jealous relative, and mortally wounded; before dying, he forgave the killer and asked to be buried at Drongen.",
+  "shortDescriptionFr": "Gerulfus, aussi appelé Gerolf ou Gerulphe, était un jeune saint flamand du haut Moyen Âge, originaire de Merendree, vénéré comme l’un des plus anciens martyrs de Flandre et honoré plus tard à Drongen, où ses reliques furent conservées. La tradition le présente comme le fils de nobles locaux, parti recevoir la confirmation à Gand. Au retour, son parrain de confirmation, un parent jaloux, l’attaqua et le blessa mortellement; avant de mourir, Gerulfus lui pardonna et demanda à être enterré à Drongen.",
+  "shortDescriptionDe": "Gerulfus, auch Gerolf oder Gerulphe genannt, war ein junger flämischer Heiliger des frühen Mittelalters aus Merendree und gilt in der Überlieferung als einer der ältesten Märtyrer Flanderns. Seine Verehrung konzentrierte sich später besonders auf Drongen, wo seine Reliquien aufbewahrt wurden. Der Tradition zufolge war er der Sohn lokaler Adliger und reiste nach Gent, um die Firmung zu empfangen. Auf dem Rückweg wurde er von seinem Firmpaten, einem eifersüchtigen Verwandten, angegriffen und tödlich verwundet; sterbend vergab er dem Täter und bat um ein Begräbnis in Drongen.",
+  "shortDescriptionEs": "Gerulfus, también conocido como Gerolf o Gerulphe, fue un joven santo flamenco de la Alta Edad Media nacido en Merendree, recordado como uno de los mártires más antiguos de Flandes y venerado después en Drongen, donde se conservaron sus reliquias. La tradición lo describe como hijo de nobles locales que viajó a Gante para recibir la confirmación. Al regresar, su propio padrino de confirmación, un pariente movido por los celos, lo atacó y lo hirió de muerte; antes de morir, Gerulfus perdonó al agresor y pidió ser enterrado en Drongen.",
+  "shortDescriptionRu": "Герульф, также известный как Герольф или Герульфий, был юным фламандским святым раннего Средневековья из Мерендре и почитается как один из древнейших мучеников Фландрии. Позднее его культ особенно закрепился в Дронгене, где хранились его мощи. По преданию, он был сыном местных знатных родителей и отправился в Гент принять миропомазание. На обратном пути его из ревности смертельно ранил собственный восприемник, дальний родственник; умирая, Герульф простил убийцу и попросил похоронить его в Дронгене.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Gerulfus",
+    "https://nl.wikipedia.org/wiki/Gerulfus",
+    "https://sw.wikipedia.org/wiki/Gerulfi",
+    "https://www.wikidata.org/wiki/Q2377089",
+    "https://basehosting.be/glasramen-1/index.htm",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Hoogaltaar%20Sint-Gerolfkerk%20Drongen%2016-07-2019%2012-11-48.jpg",
+    "https://basehosting.be/website/heemkundige-kring-dronghine/assets/sint-gerolf.jpg",
+    "https://basehosting.be/website/heemkundige-kring-dronghine/assets/moord.jpg",
+    "https://basehosting.be/website/heemkundige-kring-dronghine/assets/vergiffenis.jpg"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q4842936",  "Name": "Bahurada Manimaya",  "BirthDate": "1878-12-19T00:00:00Z",  "DeathDate": "1887-08-27T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Bahurada%20Manimaya.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"24185437":{"pageid":24185437,"ns":0,"title":"Bahurada Manimaya","extract":"Bahurada Manimaya, Princess Debnariratana (Thai: \u0e1e\u0e32\u0e2b\u0e38\u0e23\u0e31\u0e15\u0e21\u0e13\u0e35\u0e21\u0e31\u0e22; RTGS: Phahuratmanimai; 19 December 1878 \u2013 27 August 1887), was a Princess of Siam (later Thailand). She was a member of the Siamese royal family. She was a daughter of Chulalongkorn, King Rama V of Siam."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q4842936")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q4842936",
+  "isRealHuman": true,
+  "birthDate": "1878-12-19",
+  "deathDate": "1887-08-27",
+  "ageAtDeath": 8,
+  "confidence": 96,
+  "confidenceExplained": "The birth and death dates are consistent across Wikidata and the English Wikipedia article. The exact calculation from 1878-12-19 to 1887-08-27 gives 8 years, 8 months, and 8 days, so the integer age at death is 8. Confidence is slightly below 100 because the detailed medical cause of death is not clearly documented beyond reports that she had poor health throughout her life.",
+  "shortDescriptionEn": "Bahurada Manimaya, Princess Debnariratana, was a Siamese princess of the Chakri dynasty, the first daughter of King Chulalongkorn and Queen Saovabha Phongsri. Born in the Grand Palace in Bangkok, she belonged to the inner circle of Siam’s royal family during a period of major modernization under Rama V. Remembered through Phahurat Road in Bangkok, named in her memory, she died very young at the Grand Palace after a life marked by poor health, leaving her parents and the royal household deeply saddened.",
+  "shortDescriptionFr": "Bahurada Manimaya, princesse Debnariratana, était une princesse siamoise de la dynastie Chakri, première fille du roi Chulalongkorn et de la reine Saovabha Phongsri. Née au Grand Palais de Bangkok, elle appartenait au cœur de la famille royale du Siam à l’époque des grandes réformes de Rama V. Son souvenir survit notamment dans le nom de la route Phahurat à Bangkok. De santé fragile tout au long de sa courte vie, elle mourut très jeune au Grand Palais, causant une profonde douleur à ses parents et à la cour.",
+  "shortDescriptionDe": "Bahurada Manimaya, Prinzessin Debnariratana, war eine siamesische Prinzessin aus der Chakri-Dynastie und die erste Tochter von König Chulalongkorn und Königin Saovabha Phongsri. Sie wurde im Großen Palast in Bangkok geboren und gehörte zur engsten königlichen Familie Siams während der Modernisierungszeit unter Rama V. Ihr Andenken lebt unter anderem im Namen der Phahurat Road in Bangkok fort. Sie war ihr Leben lang gesundheitlich schwach und starb noch als Kind im Großen Palast, was ihre Eltern und den Hof tief erschütterte.",
+  "shortDescriptionEs": "Bahurada Manimaya, princesa Debnariratana, fue una princesa siamesa de la dinastía Chakri, primera hija del rey Chulalongkorn y la reina Saovabha Phongsri. Nacida en el Gran Palacio de Bangkok, formó parte del núcleo de la familia real de Siam durante la etapa modernizadora de Rama V. Su memoria quedó vinculada a la carretera Phahurat de Bangkok, llamada en su honor. De salud delicada durante toda su vida, murió siendo una niña en el Gran Palacio, una pérdida que afectó profundamente a sus padres y a la corte.",
+  "shortDescriptionRu": "Бахурада Манимайя, принцесса Дебнариратана, была сиамской принцессой из династии Чакри, первой дочерью короля Чулалонгкорна и королевы Саовабхи Пхонгсри. Она родилась в Большом дворце в Бангкоке и принадлежала к ближайшему кругу королевской семьи Сиама в эпоху реформ Рамы V. Ее память сохранилась, в частности, в названии бангкокской улицы Пхахурат. С детства отличавшаяся слабым здоровьем, она умерла во дворце совсем юной, что стало тяжелой утратой для родителей и королевского двора.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bahurada_Manimaya",
+    "https://www.wikidata.org/wiki/Q4842936",
+    "https://commons.wikimedia.org/wiki/File:Bahurada_Manimaya.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/2/22/Bahurada_Manimaya.jpg",
+    "https://en.wikipedia.org/wiki/List_of_consorts_and_children_of_Chulalongkorn"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q543168",  "Name": "Tesauro Beccaria",  "BirthDate": "1250-01-01T00:00:00Z",  "DeathDate": "1258-09-12T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Domenico%20Pestrini%20Tesauro%20Beccaria.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"1884697":{"pageid":1884697,"ns":0,"title":"Tesauro Beccaria","extract":"Tesauro Beccaria, aussi connu comme Tesauro dei Beccheria et depuis comme San Tesauro (n\u00e9 \u00e0 Pavie, Italie, et mort \u00e0 Florence le 12 septembre 1258) est un eccl\u00e9siastique et un homme politique italien du XIIIe si\u00e8cle. Il est membre de l'ordre des Vallombrosains."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q543168")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q543168",
+  "isRealHuman": true,
+  "birthDate": "1215-01-01",
+  "deathDate": "1258-09-12",
+  "ageAtDeath": 43,
+  "confidence": 45,
+  "confidenceExplained": "The death date is well attested as 12 September 1258, but the birth date is not exact. Treccani gives his birth almost certainly between 1210 and 1220, so I used the midpoint year 1215 and a conventional estimated date of 1 January. The resulting age of 43 is a reasoned midpoint estimate; the plausible historical range is roughly late 30s to late 40s.",
+  "shortDescriptionEn": "Tesauro Beccaria, also known as Tesauro dei Beccheria or San Tesauro, was a 13th-century Italian Vallombrosan churchman from Pavia, remembered as an abbot, political mediator, and possibly a cardinal. Sent to Florence during the bitter Guelf-Ghibelline conflict, he was accused of secretly negotiating with Manfred of Sicily to help the Ghibellines return. Tried and condemned, he was beheaded in Florence on 12 September 1258, an execution that provoked a long papal interdict against the city.",
+  "shortDescriptionFr": "Tesauro Beccaria, aussi appelé Tesauro dei Beccheria ou saint Tesauro, fut un ecclésiastique vallombrosain italien du XIIIe siècle, originaire de Pavie, connu comme abbé, médiateur politique et peut-être cardinal. Envoyé à Florence pendant les tensions entre guelfes et gibelins, il fut accusé d’avoir négocié secrètement avec Manfred de Sicile pour favoriser le retour des gibelins. Jugé puis condamné, il fut décapité à Florence le 12 septembre 1258, une exécution qui entraîna un long interdit pontifical contre la ville.",
+  "shortDescriptionDe": "Tesauro Beccaria, auch Tesauro dei Beccheria oder San Tesauro genannt, war ein italienischer Vallombrosaner des 13. Jahrhunderts aus Pavia, bekannt als Abt, politischer Vermittler und möglicherweise Kardinal. Während des Konflikts zwischen Guelfen und Ghibellinen wurde er nach Florenz gesandt, aber beschuldigt, heimlich mit Manfred von Sizilien über die Rückkehr der Ghibellinen verhandelt zu haben. Nach Prozess und Todesurteil wurde er am 12. September 1258 in Florenz enthauptet; die Hinrichtung führte zu einem jahrelangen päpstlichen Interdikt über die Stadt.",
+  "shortDescriptionEs": "Tesauro Beccaria, también llamado Tesauro dei Beccheria o San Tesauro, fue un eclesiástico vallombrosano italiano del siglo XIII, natural de Pavía, recordado como abad, mediador político y posiblemente cardenal. Enviado a Florencia durante el conflicto entre güelfos y gibelinos, fue acusado de negociar en secreto con Manfredo de Sicilia para facilitar el regreso de los gibelinos. Fue juzgado, condenado y decapitado en Florencia el 12 de septiembre de 1258, ejecución que provocó un prolongado interdicto papal contra la ciudad.",
+  "shortDescriptionRu": "Тезауро Беккариа, также известный как Тезауро деи Беккерия или святой Тезауро, был итальянским церковным деятелем XIII века из Павии, валломброзианским аббатом, политическим посредником и, возможно, кардиналом. Его направили во Флоренцию во время конфликта гвельфов и гибеллинов, но обвинили в тайных переговорах с Манфредом Сицилийским ради возвращения гибеллинов. После суда и смертного приговора он был обезглавлен во Флоренции 12 сентября 1258 года; казнь вызвала многолетний папский интердикт против города.",
+  "sources": [
+    "https://it.wikipedia.org/wiki/Tesauro_Beccaria",
+    "https://www.treccani.it/enciclopedia/tesauro_%28Dizionario-Biografico%29/",
+    "https://commons.wikimedia.org/wiki/Category:Tesauro_Beccaria",
+    "https://commons.wikimedia.org/wiki/File:Domenico_Pestrini_Tesauro_Beccaria.jpg",
+    "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1200161398",
+    "https://www.heiligenlexikon.de/BiographienT/Thesaurus_Beccaria.html"
+  ]
+}
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q64780108",  "Name": "Roger Barows",  "BirthDate": "2016-01-24T00:00:00Z",  "DeathDate": "2024-06-25T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Barows%28JPN%29%20IMG%209010-1%2020181014.jpg",  "SiteLinksCnt": 4,  "Age": 8}
+{"batchcomplete":"","query":{"pages":{"60956028":{"pageid":60956028,"ns":0,"title":"Roger Barows","extract":"Roger Barows (Japanese: \u30ed\u30b8\u30e3\u30fc\u30d0\u30ed\u30fc\u30ba; 24 January 2016 - 25 June 2024) was a Japanese Thoroughbred racehorse and briefly a breeding stallion before his death at the young age of 8 years. He showed some promise as a juvenile in 2018 when he won on his debut and ran second in his only other race. In the following spring he won a minor event in January and finished second in the Kyoto Shimbun Hai before recording an upset victory in the Tokyo Yushun. His racing career ended in August of that same year due to an injury."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q64780108")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+{
+  "id": "http://www.wikidata.org/entity/Q64780108",
+  "isRealHuman": false,
+  "birthDate": "2016-01-24",
+  "deathDate": "2024-06-25",
+  "ageAtDeath": 8,
+  "confidence": 99,
+  "confidenceExplained": "The entity is clearly Roger Barows, a Japanese Thoroughbred racehorse rather than a human. The foaling date is consistently given as 2016-01-24, and multiple racing sources report his death on 2024-06-25 at age 8. Even if a report ambiguously refers to the night before, the integer age at death remains 8.",
+  "shortDescriptionEn": "Roger Barows was a Japanese Thoroughbred racehorse best known for his upset victory in the 2019 Tokyo Yushun, the Japanese Derby, where he won at long odds and gave jockey Suguru Hamanaka a landmark Classic success. Sired by Deep Impact, he retired later that year after injury and became a breeding stallion in Hokkaido. He died young at 8 after reportedly suffering from colic and a sudden deterioration following hospitalization.",
+  "shortDescriptionFr": "Roger Barows était un pur-sang japonais surtout connu pour sa victoire surprise dans le Tokyo Yushun 2019, le Derby japonais, un succès à forte cote qui a marqué la carrière du jockey Suguru Hamanaka. Fils de Deep Impact, il a pris sa retraite sportive la même année après une blessure avant de devenir étalon à Hokkaido. Il est mort jeune, à 8 ans, après avoir souffert de coliques et subi une brusque dégradation de son état lors d’une hospitalisation.",
+  "shortDescriptionDe": "Roger Barows war ein japanisches Vollblutrennpferd, berühmt für seinen überraschenden Sieg im Tokyo Yushun 2019, dem Japanischen Derby, den er als Außenseiter gewann und der Jockey Suguru Hamanaka einen wichtigen Klassikerfolg brachte. Als Sohn von Deep Impact beendete er seine Rennkarriere noch 2019 nach einer Verletzung und wurde Zuchthengst in Hokkaido. Er starb jung mit 8 Jahren, nachdem er Berichten zufolge an Kolik erkrankt war und sich sein Zustand während eines Klinikaufenthalts plötzlich verschlechterte.",
+  "shortDescriptionEs": "Roger Barows fue un caballo purasangre japonés recordado por su sorprendente victoria en el Tokyo Yushun de 2019, el Derby japonés, donde ganó contra los pronósticos y dio al jinete Suguru Hamanaka un triunfo clásico decisivo. Hijo de Deep Impact, se retiró ese mismo año por lesión y pasó a la cría como semental en Hokkaido. Murió joven, a los 8 años, tras sufrir cólicos y un repentino empeoramiento durante su hospitalización.",
+  "shortDescriptionRu": "Roger Barows был японской чистокровной скаковой лошадью, прославившейся неожиданной победой в Tokyo Yushun 2019 года, Японском дерби, где он выиграл вопреки низким ожиданиям и принес жокею Сугуру Хаманаке важнейший классический успех. Сын Deep Impact, он завершил карьеру в том же году из-за травмы и стал племенным жеребцом на Хоккайдо. Он умер молодым, в 8 лет, после колик и резкого ухудшения состояния во время госпитализации.",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Roger_Barows",
+    "https://en.netkeiba.com/news/news_detail.html?id=1234",
+    "https://keiba.sponichi.co.jp/news/20240625s00004000162000c",
+    "https://keiba-headline.com/roger-barows-dies-298773",
+    "https://umanity.jp/racedata/race_newsdet.php?nid=11827508",
+    "https://www.jbis.jp/horse/0001221464/"
+  ]
+}

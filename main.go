@@ -109,7 +109,7 @@ func main() {
 	defer db.Close()
 
 	starting_age := 3
-	priority := 0
+	priority := 1
 
 	for curr_age := starting_age; curr_age < 100000; curr_age++ {
 		persons, err := ReadPersonWithAge(priority, db, curr_age)

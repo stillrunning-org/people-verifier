@@ -1,0 +1,31 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q205365",  "Name": "Cain",  "BirthDate": "-3899-01-01T00:00:00Z",  "DeathDate": "-3199-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Ca%C3%AFn%20venant%20de%20tuer%20son%20fr%C3%A8re%20Abel%20by%20Henri%20Vidal%2C%20Tuileries%20Garden%2C%2018%20July%202017.jpg",  "SiteLinksCnt": 68,  "Age": 700}
+{"batchcomplete":"","query":{"pages":{"56095":{"pageid":56095,"ns":0,"title":"Cain","extract":"Cain is a biblical figure in the Book of Genesis within Abrahamic religions. He is the elder brother of Abel, and the firstborn son of Adam and Eve, the first couple within the Bible. He was a farmer who gave an offering of his crops to God. However, God was not pleased and favored Abel's offering over Cain's. Out of jealousy, Cain killed his brother, for which he was punished by God with the curse and mark of Cain. He had several descendants, starting with his son Enoch and including Lamech.\nSome deem the narrative unclear on God's reason for rejecting Cain's sacrifice. However, in the Christian understanding, 1 John 3:12 explains it was \"Because his own works were evil and his brother's righteous\", while Hebrews 11:4 teaches that Abel's was an offering of faith. His life represents a life of faith. \nSome traditional interpretations within Abrahamic religions consider Cain to be the originator of evil, violence, or greed."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q205365")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+

@@ -1,0 +1,31 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q170547",  "Name": "Anthony the Great",  "BirthDate": "0251-01-01T00:00:00Z",  "DeathDate": "0357-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Anthony%20%28Damaskinos%29.png",  "SiteLinksCnt": 78,  "Age": 106}
+{"batchcomplete":"","query":{"pages":{"3246":{"pageid":3246,"ns":0,"title":"Anthony the Great","extract":"Anthony the Great (c.\u200912 January 251 \u2013 17 January 356) was a Christian monk from Egypt, revered since his death as a saint. He is distinguished from other saints named Anthony, such as Anthony of Padua, by various epithets: Anthony of Egypt, Anthony the Abbot, Anthony of the Desert, Anthony the Anchorite, Anthony the Hermit, and Anthony of Thebes. For his importance among the Desert Fathers and to all later Christian monasticism, he is also known as the Father of All Monks. His feast day is celebrated on 17 January among the Eastern Orthodox and Catholic churches and on Tobi 22 in the Coptic calendar.\nThe biography of Anthony's life by Athanasius of Alexandria helped to spread the concept of Christian monasticism, particularly in Western Europe via its Latin translations. He is often erroneously considered the first Christian monk, but as his biography and other sources make clear, there were many ascetics before him. Anthony was, however, among the first known to go into the wilderness (about AD 270), which seems to have contributed to his renown. Accounts of Anthony enduring supernatural temptation during his sojourn in the Eastern Desert of Egypt inspired the depiction of his temptations in visual art and literature.\nAnthony is invoked against infectious diseases, particularly skin diseases. In the past, many such afflictions, including ergotism, erysipelas, and shingles, were referred to as Saint Anthony's fire."}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q170547")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+

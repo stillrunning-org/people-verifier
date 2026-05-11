@@ -1,0 +1,31 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q7734",  "Name": "Joshua",  "BirthDate": "-1349-01-01T00:00:00Z",  "DeathDate": "-1244-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Collection%20Motais%20de%20Narbonne%20-%20Josu%C3%A9%20arr%C3%A8te%20la%20course%20du%20soleil%20-%20Carlo%20Maratta.jpg",  "SiteLinksCnt": 71,  "Age": 105}
+{"batchcomplete":"","query":{"pages":{"16121":{"pageid":16121,"ns":0,"title":"Joshua","extract":"Joshua ( JOSH-oo-\u0259), also known as Yehoshua (Hebrew: \u05d9\u05b0\u05d4\u05d5\u05b9\u05e9\u05bb\u05c1\u05e2\u05b7\u200e Y\u0259h\u014d\u0161ua\u02bf,\u200d Tiberian: Y\u014fh\u014d\u0161ua\u02bf, lit. 'Yahweh is salvation'), Jehoshua, or Josue, was Moses' assistant in the books of Exodus and Numbers, and later succeeded Moses as leader of the Israelite tribes in the Book of Joshua of the Hebrew Bible. His name was Hoshea (\u05d4\u05d5\u05b9\u05e9\u05b5\u05c1\u05e2\u05b7\u200e H\u014d\u0161\u0113a\u02bf,\u200d lit. 'Save') the son of Nun, of the tribe of Ephraim, but Moses called him \"Yehoshua\" (translated as \"Joshua\" in English), the name by which he is commonly known in English. According to the Bible, he was born in Egypt prior to the Exodus.\nIn Numbers 13:1, the Hebrew Bible identifies Joshua as one of the twelve spies of Israel sent by Moses to explore the land of Canaan. After the death of Moses, he led the Israelite tribes in the conquest of Canaan, and allocated lands to the tribes. According to biblical chronology, Joshua lived some time in the Bronze Age. According to Joshua 24:29 Joshua died at the age of 110.\nJoshua holds a position of respect among Muslims, who also see him as the leader of the faithful following the death of Moses. In Islam, it is also believed that Yusha bin Nun (Joshua) was the \"attendant\" of Moses mentioned in the Quran before Moses meets Khidr. Joshua plays a role in Islamic literature, with significant narration in the hadith.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q7734")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+

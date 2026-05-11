@@ -1,0 +1,31 @@
+
+
+
+-----
+
+
+I have only this information, which might be misleading.
+
+{  "Id": "http://www.wikidata.org/entity/Q200188",  "Name": "Jimmu",  "BirthDate": "-0710-02-05T00:00:00Z",  "DeathDate": "-0584-01-01T00:00:00Z",  "Pic": "http://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Jimmu.jpg",  "SiteLinksCnt": 61,  "Age": 126}
+{"batchcomplete":"","query":{"pages":{"10130":{"pageid":10130,"ns":0,"title":"Emperor Jimmu","extract":"Emperor Jimmu (\u795e\u6b66\u5929\u7687, Jinmu Tenn\u014d; Japanese pronunciation: [d\u0291i\ua71cm.m\u026f (ten.no\u02d0), d\u0291im.m\u026f ten.no\ua71c\u02d0]) was the legendary first emperor of Japan according to the Nihon Shoki and Kojiki. His ascension is traditionally dated as 660 BC. In Japanese mythology, he was a descendant of the sun goddess Amaterasu, through her grandson Ninigi, as well as a descendant of the storm god Susanoo. He launched a military expedition from Hy\u016bga near the Seto Inland Sea, captured Yamato, and established this as his center of power. In modern Japan, Emperor Jimmu's legendary ascension is marked as National Foundation Day on February 11.\nThere is little to no evidence to suggest that Jimmu existed; he is regarded by most modern scholars as a legendary figure.\n\n"}}},"limits":{"extracts":20}}
+
+Figure out who is the real historical figure behind it. Particularly, I need the age they had at the moment of dying. THIS IS THE MUST, THE NUMBER MUST BE IN THE ANSWER. Also include some pictures of the person.If the exact number is not possible to determine (e.g. birth- or deathDate is not known), you must use your best judgement, knowledge and any resources (including external) available to figure it out or calculate it, because the number MUST be calculated somehow.
+
+The description that you generate will be used on a website that shows the list of dead famous people, so keep it relevant, informative, factual, but not boring. Also don't mention if the person was "real" - not real figures will be filtered out anyway.
+
+Return back your thinking followed by a JSON with the following fields:
+- "id" (string, use constant "http://www.wikidata.org/entity/Q200188")
+- "isRealHuman" (boolean, True/False, if a real human being that ever lived on Earth, not a fictional character, not an animal etc)
+- "birthDate" (string in format YYYY-MM-DD, might be your estimate)
+- "deathDate" (string in format YYYY-MM-DD,  might be your estimate),
+- "ageAtDeath" (integer, might be your estimate),
+- "confidence" (integer from 0 to 100, your confidence in the correctness of calculated age, in percents)
+- "confidenceExplained" (string, your explanation of the confidence level)
+- "shortDescriptionEn" (string, short description in English, must include 70% of general information and 30% about the circumstances of their death)
+- "shortDescriptionFr" (string, short description in French, same as above)
+- "shortDescriptionDe" (string, short description in German, same as above)
+- "shortDescriptionEs" (string, short description in Spanish, same as above)
+- "shortDescriptionRu" (string, short description in Russian, same as above)
+- "sources" - (array of HTTP URLs of sources that you were using to prepare the answer and that will be used on my website. Put a wikipedia article to the top)
+
+
